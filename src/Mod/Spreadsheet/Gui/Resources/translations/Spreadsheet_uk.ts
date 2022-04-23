@@ -1,512 +1,512 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
 <TS version="2.1" language="uk" sourcelanguage="en">
-  <context>
+<context>
     <name>Spreadsheet</name>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="739"/>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <location filename="Spreadsheet_legacy.py" line="739"/>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="874"/>
-      <source>Cell</source>
-      <translation>Секція</translation>
+        <location filename="Spreadsheet_legacy.py" line="874"/>
+        <source>Cell</source>
+        <translation>Секція</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="751"/>
-      <source>Apply</source>
-      <translation>Застосувати</translation>
+        <location filename="Spreadsheet_legacy.py" line="751"/>
+        <source>Apply</source>
+        <translation>Застосувати</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="753"/>
-      <source>Apply the changes to the current cell</source>
-      <translation>Застосувати зміни до поточної комірки</translation>
+        <location filename="Spreadsheet_legacy.py" line="753"/>
+        <source>Apply the changes to the current cell</source>
+        <translation>Застосувати зміни до поточної комірки</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="755"/>
-      <source>Delete</source>
-      <translation>Видалити</translation>
+        <location filename="Spreadsheet_legacy.py" line="755"/>
+        <source>Delete</source>
+        <translation>Видалити</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="757"/>
-      <source>Deletes the contents of the current cell</source>
-      <translation>Видаляє вміст поточної комірки</translation>
+        <location filename="Spreadsheet_legacy.py" line="757"/>
+        <source>Deletes the contents of the current cell</source>
+        <translation>Видаляє вміст поточної комірки</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="759"/>
-      <source>Compute</source>
-      <translation>Обчислити</translation>
+        <location filename="Spreadsheet_legacy.py" line="759"/>
+        <source>Compute</source>
+        <translation>Обчислити</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="761"/>
-      <source>Updates the values handled by controllers</source>
-      <translation>Оновлює значення, які обробляються контролерами</translation>
+        <location filename="Spreadsheet_legacy.py" line="761"/>
+        <source>Updates the values handled by controllers</source>
+        <translation>Оновлює значення, які обробляються контролерами</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="907"/>
-      <source>Create Spreadsheet</source>
-      <translation>Створити таблицю</translation>
+        <location filename="Spreadsheet_legacy.py" line="907"/>
+        <source>Create Spreadsheet</source>
+        <translation>Створити таблицю</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="933"/>
-      <source>Add controller</source>
-      <translation>Додати формулу</translation>
+        <location filename="Spreadsheet_legacy.py" line="933"/>
+        <source>Add controller</source>
+        <translation>Додати формулу</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="973"/>
-      <source>Add property controller</source>
-      <translation>Додати контролер властивостей</translation>
+        <location filename="Spreadsheet_legacy.py" line="973"/>
+        <source>Add property controller</source>
+        <translation>Додати контролер властивостей</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>Spreadsheet_Controller</name>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="919"/>
-      <source>Add controller</source>
-      <translation>Додати формулу</translation>
+        <location filename="Spreadsheet_legacy.py" line="919"/>
+        <source>Add controller</source>
+        <translation>Додати формулу</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="922"/>
-      <source>Adds a cell controller to a selected spreadsheet</source>
-      <translation>Додає контролер комірки до вибраної електронної таблиці</translation>
+        <location filename="Spreadsheet_legacy.py" line="922"/>
+        <source>Adds a cell controller to a selected spreadsheet</source>
+        <translation>Додає контролер комірки до вибраної електронної таблиці</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>Spreadsheet_Create</name>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="902"/>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <location filename="Spreadsheet_legacy.py" line="902"/>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="905"/>
-      <source>Adds a spreadsheet object to the active document</source>
-      <translation>Додає об’єкт електронної таблиці до активного документа</translation>
+        <location filename="Spreadsheet_legacy.py" line="905"/>
+        <source>Adds a spreadsheet object to the active document</source>
+        <translation>Додає об’єкт електронної таблиці до активного документа</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>Spreadsheet_PropertyController</name>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="944"/>
-      <source>Add property controller</source>
-      <translation>Додати контролер властивостей</translation>
+        <location filename="Spreadsheet_legacy.py" line="944"/>
+        <source>Add property controller</source>
+        <translation>Додати контролер властивостей</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="947"/>
-      <source>Adds a property controller to a selected spreadsheet</source>
-      <translation>Додає контролер властивостей до вибраної електронної таблиці</translation>
+        <location filename="Spreadsheet_legacy.py" line="947"/>
+        <source>Adds a property controller to a selected spreadsheet</source>
+        <translation>Додає контролер властивостей до вибраної електронної таблиці</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdCreateSpreadsheet</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Create spreadsheet</source>
-      <translation>Створити таблицю</translation>
+        <source>Create spreadsheet</source>
+        <translation>Створити таблицю</translation>
     </message>
     <message>
-      <source>Create a new spreadsheet</source>
-      <translation>Створює нову таблицю</translation>
+        <source>Create a new spreadsheet</source>
+        <translation>Створює нову таблицю</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetAlignBottom</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Align bottom</source>
-      <translation>Вирівняти знизу</translation>
+        <source>Align bottom</source>
+        <translation>Вирівняти знизу</translation>
     </message>
     <message>
-      <source>Bottom-align contents of selected cells</source>
-      <translation>Вирівнює вміст виділених комірок знизу</translation>
+        <source>Bottom-align contents of selected cells</source>
+        <translation>Вирівнює вміст виділених комірок знизу</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetAlignCenter</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Align center</source>
-      <translation>Вирівняти у центрі</translation>
+        <source>Align center</source>
+        <translation>Вирівняти у центрі</translation>
     </message>
     <message>
-      <source>Center-align contents of selected cells</source>
-      <translation>Вирівнює вміст виділених комірок у центрі</translation>
+        <source>Center-align contents of selected cells</source>
+        <translation>Вирівнює вміст виділених комірок у центрі</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetAlignLeft</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Align left</source>
-      <translation>Вирівняти ліворуч</translation>
+        <source>Align left</source>
+        <translation>Вирівняти ліворуч</translation>
     </message>
     <message>
-      <source>Left-align contents of selected cells</source>
-      <translation>Вирівняти ліворуч вміст виділених комірок</translation>
+        <source>Left-align contents of selected cells</source>
+        <translation>Вирівняти ліворуч вміст виділених комірок</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetAlignRight</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Align right</source>
-      <translation>Вирівняти праворуч</translation>
+        <source>Align right</source>
+        <translation>Вирівняти праворуч</translation>
     </message>
     <message>
-      <source>Right-align contents of selected cells</source>
-      <translation>Вирівняти праворуч вміст виділених комірок</translation>
+        <source>Right-align contents of selected cells</source>
+        <translation>Вирівняти праворуч вміст виділених комірок</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetAlignTop</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Align top</source>
-      <translation>Вирівняти вгорі</translation>
+        <source>Align top</source>
+        <translation>Вирівняти вгорі</translation>
     </message>
     <message>
-      <source>Top-align contents of selected cells</source>
-      <translation>Вирівнює вміст виділених комірок вгорі</translation>
+        <source>Top-align contents of selected cells</source>
+        <translation>Вирівнює вміст виділених комірок вгорі</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetAlignVCenter</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Vertically center-align</source>
-      <translation>Вертикальне вирівнювання по центру</translation>
+        <source>Vertically center-align</source>
+        <translation>Вертикальне вирівнювання по центру</translation>
     </message>
     <message>
-      <source>Vertically center-align contents of selected cells</source>
-      <translation>Вирівнює вміст виділених комірок вертикально у центрі</translation>
+        <source>Vertically center-align contents of selected cells</source>
+        <translation>Вирівнює вміст виділених комірок вертикально у центрі</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetExport</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Export spreadsheet</source>
-      <translation>Експортувати таблицю</translation>
+        <source>Export spreadsheet</source>
+        <translation>Експортувати таблицю</translation>
     </message>
     <message>
-      <source>Export spreadsheet to CSV file</source>
-      <translation>Експортує таблицю у CSV-файл</translation>
+        <source>Export spreadsheet to CSV file</source>
+        <translation>Експортує таблицю у CSV-файл</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetImport</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Import spreadsheet</source>
-      <translation>Імпортувати таблицю</translation>
+        <source>Import spreadsheet</source>
+        <translation>Імпортувати таблицю</translation>
     </message>
     <message>
-      <source>Import CSV file into spreadsheet</source>
-      <translation>Імпортує CSV-файл у таблицю</translation>
+        <source>Import CSV file into spreadsheet</source>
+        <translation>Імпортує CSV-файл у таблицю</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetMergeCells</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Merge cells</source>
-      <translation>Об&apos;єднати комірки</translation>
+        <source>Merge cells</source>
+        <translation>Об&apos;єднати комірки</translation>
     </message>
     <message>
-      <source>Merge selected cells</source>
-      <translation>Об'єднує виділені комірки</translation>
+        <source>Merge selected cells</source>
+        <translation>Об&apos;єднує виділені комірки</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetSetAlias</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Set alias</source>
-      <translation>Встановити псевдонім</translation>
+        <source>Set alias</source>
+        <translation>Встановити псевдонім</translation>
     </message>
     <message>
-      <source>Set alias for selected cell</source>
-      <translation>Встановлює псевдонім для виділеної комірки</translation>
+        <source>Set alias for selected cell</source>
+        <translation>Встановлює псевдонім для виділеної комірки</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetSplitCell</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Split cell</source>
-      <translation>Роз'єднати комірку</translation>
+        <source>Split cell</source>
+        <translation>Роз&apos;єднати комірку</translation>
     </message>
     <message>
-      <source>Split previously merged cells</source>
-      <translation>Роз'єднує раніше обʼєднані комірки</translation>
+        <source>Split previously merged cells</source>
+        <translation>Роз&apos;єднує раніше обʼєднані комірки</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetStyleBold</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Bold text</source>
-      <translation>Зробити текст жирним</translation>
+        <source>Bold text</source>
+        <translation>Зробити текст жирним</translation>
     </message>
     <message>
-      <source>Set text in selected cells bold</source>
-      <translation>Робить текст у виділених комірках жирним шрифтом</translation>
+        <source>Set text in selected cells bold</source>
+        <translation>Робить текст у виділених комірках жирним шрифтом</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetStyleItalic</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Italic text</source>
-      <translation>Зробити текст курсивом</translation>
+        <source>Italic text</source>
+        <translation>Зробити текст курсивом</translation>
     </message>
     <message>
-      <source>Set text in selected cells italic</source>
-      <translation>Робить текст у виділених комірках курсивом</translation>
+        <source>Set text in selected cells italic</source>
+        <translation>Робить текст у виділених комірках курсивом</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>CmdSpreadsheetStyleUnderline</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Underline text</source>
-      <translation>Зробити текст підкресленим</translation>
+        <source>Underline text</source>
+        <translation>Зробити текст підкресленим</translation>
     </message>
     <message>
-      <source>Underline text in selected cells</source>
-      <translation>Робить текст у виділених комірках підкресленим</translation>
+        <source>Underline text in selected cells</source>
+        <translation>Робить текст у виділених комірках підкресленим</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>ColorPickerPopup</name>
     <message>
-      <source>Custom Color</source>
-      <translation>Колір, який встановлюється користувачем</translation>
+        <source>Custom Color</source>
+        <translation>Колір, який встановлюється користувачем</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>Command</name>
     <message>
-      <source>Merge cells</source>
-      <translation>Об&apos;єднати комірки</translation>
+        <source>Merge cells</source>
+        <translation>Об&apos;єднати комірки</translation>
     </message>
     <message>
-      <source>Split cell</source>
-      <translation>Роз'єднати комірку</translation>
+        <source>Split cell</source>
+        <translation>Роз&apos;єднати комірку</translation>
     </message>
     <message>
-      <source>Left-align cell</source>
-      <translation>Вирівнювання ліворуч</translation>
+        <source>Left-align cell</source>
+        <translation>Вирівнювання ліворуч</translation>
     </message>
     <message>
-      <source>Center cell</source>
-      <translation>Вирівнювання по центру</translation>
+        <source>Center cell</source>
+        <translation>Вирівнювання по центру</translation>
     </message>
     <message>
-      <source>Right-align cell</source>
-      <translation>Вирівнювання праворуч</translation>
+        <source>Right-align cell</source>
+        <translation>Вирівнювання праворуч</translation>
     </message>
     <message>
-      <source>Top-align cell</source>
-      <translation>Вирівнювання по верхньому краю</translation>
+        <source>Top-align cell</source>
+        <translation>Вирівнювання по верхньому краю</translation>
     </message>
     <message>
-      <source>Bottom-align cell</source>
-      <translation>Вирівнювання по нижньому краю</translation>
+        <source>Bottom-align cell</source>
+        <translation>Вирівнювання по нижньому краю</translation>
     </message>
     <message>
-      <source>Vertically center cells</source>
-      <translation>Вирівнювання вертикально по центру</translation>
+        <source>Vertically center cells</source>
+        <translation>Вирівнювання вертикально по центру</translation>
     </message>
     <message>
-      <source>Set bold text</source>
-      <translation>Виділення тексту напівжирним стилем</translation>
+        <source>Set bold text</source>
+        <translation>Виділення тексту напівжирним стилем</translation>
     </message>
     <message>
-      <source>Set italic text</source>
-      <translation>Виділення тексту курсивом</translation>
+        <source>Set italic text</source>
+        <translation>Виділення тексту курсивом</translation>
     </message>
     <message>
-      <source>Set underline text</source>
-      <translation>Виділення тексту підкреслюванням</translation>
+        <source>Set underline text</source>
+        <translation>Виділення тексту підкреслюванням</translation>
     </message>
     <message>
-      <source>Create Spreadsheet</source>
-      <translation>Створити таблицю</translation>
+        <source>Create Spreadsheet</source>
+        <translation>Створити таблицю</translation>
     </message>
     <message>
-      <source>Set cell properties</source>
-      <translation>Зміна властивостей комірок</translation>
+        <source>Set cell properties</source>
+        <translation>Зміна властивостей комірок</translation>
     </message>
     <message>
-      <source>Edit cell</source>
-      <translation>Редагувати комірку</translation>
+        <source>Edit cell</source>
+        <translation>Редагувати комірку</translation>
     </message>
     <message>
-      <source>Insert rows</source>
-      <translation>Вставити рядки</translation>
+        <source>Insert rows</source>
+        <translation>Вставити рядки</translation>
     </message>
     <message>
-      <source>Remove rows</source>
-      <translation>Видалити рядки</translation>
+        <source>Remove rows</source>
+        <translation>Видалити рядки</translation>
     </message>
     <message>
-      <source>Insert columns</source>
-      <translation>Вставити стовпці</translation>
+        <source>Insert columns</source>
+        <translation>Вставити стовпці</translation>
     </message>
     <message>
-      <source>Clear cell(s)</source>
-      <translation>Очистити комірку(и)</translation>
+        <source>Clear cell(s)</source>
+        <translation>Очистити комірку(и)</translation>
     </message>
     <message>
-      <source>Set foreground color</source>
-      <translation>Встановити колір переднього плану</translation>
+        <source>Set foreground color</source>
+        <translation>Встановити колір переднього плану</translation>
     </message>
     <message>
-      <source>Set background color</source>
-      <translation>Встановити фоновий колір</translation>
+        <source>Set background color</source>
+        <translation>Встановити фоновий колір</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>DlgBindSheet</name>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="14"/>
-      <source>Bind Spreadsheet Cells</source>
-      <translation type="unfinished">Bind Spreadsheet Cells</translation>
+        <location filename="../../DlgBindSheet.ui" line="14"/>
+        <source>Bind Spreadsheet Cells</source>
+        <translation type="unfinished">Bind Spreadsheet Cells</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="20"/>
-      <source>From cells:</source>
-      <translation type="unfinished">From cells:</translation>
+        <location filename="../../DlgBindSheet.ui" line="20"/>
+        <source>From cells:</source>
+        <translation type="unfinished">From cells:</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="27"/>
-      <source>Binding cell range start</source>
-      <translation type="unfinished">Binding cell range start</translation>
+        <location filename="../../DlgBindSheet.ui" line="27"/>
+        <source>Binding cell range start</source>
+        <translation type="unfinished">Binding cell range start</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="34"/>
-      <source>Binding cell range end
+        <location filename="../../DlgBindSheet.ui" line="34"/>
+        <source>Binding cell range end
 </source>
-      <translation type="unfinished">Binding cell range end
+        <translation type="unfinished">Binding cell range end
 </translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="42"/>
-      <source>To cells:</source>
-      <translation type="unfinished">To cells:</translation>
+        <location filename="../../DlgBindSheet.ui" line="42"/>
+        <source>To cells:</source>
+        <translation type="unfinished">To cells:</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="49"/>
-      <source>Starting cell address to bind to. Type &apos;=&apos; if you want to use expression.
+        <location filename="../../DlgBindSheet.ui" line="49"/>
+        <source>Starting cell address to bind to. Type &apos;=&apos; if you want to use expression.
 The expression must evaluates to a string of some cell address.</source>
-      <translation type="unfinished">Starting cell address to bind to. Type &apos;=&apos; if you want to use expression.
+        <translation type="unfinished">Starting cell address to bind to. Type &apos;=&apos; if you want to use expression.
 The expression must evaluates to a string of some cell address.</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="57"/>
-      <source>Ending cell address to bind to. Type &apos;=&apos; if you want to use expression.
+        <location filename="../../DlgBindSheet.ui" line="57"/>
+        <source>Ending cell address to bind to. Type &apos;=&apos; if you want to use expression.
 The expression must evaluates to a string of some cell address.</source>
-      <translation type="unfinished">Ending cell address to bind to. Type &apos;=&apos; if you want to use expression.
+        <translation type="unfinished">Ending cell address to bind to. Type &apos;=&apos; if you want to use expression.
 The expression must evaluates to a string of some cell address.</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="65"/>
-      <source>Sheet:</source>
-      <translation type="unfinished">Sheet:</translation>
+        <location filename="../../DlgBindSheet.ui" line="65"/>
+        <source>Sheet:</source>
+        <translation type="unfinished">Sheet:</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="72"/>
-      <source>Select which spread sheet to bind to.</source>
-      <translation type="unfinished">Select which spread sheet to bind to.</translation>
+        <location filename="../../DlgBindSheet.ui" line="72"/>
+        <source>Select which spread sheet to bind to.</source>
+        <translation type="unfinished">Select which spread sheet to bind to.</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="79"/>
-      <source>Use hidden reference not avoid creating a depdenecy with the referenced object. Use with caution!</source>
-      <translation type="unfinished">Use hidden reference not avoid creating a depdenecy with the referenced object. Use with caution!</translation>
+        <location filename="../../DlgBindSheet.ui" line="79"/>
+        <source>Use hidden reference not avoid creating a depdenecy with the referenced object. Use with caution!</source>
+        <translation type="unfinished">Use hidden reference not avoid creating a depdenecy with the referenced object. Use with caution!</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="82"/>
-      <source>Use hidden reference</source>
-      <translation type="unfinished">Use hidden reference</translation>
+        <location filename="../../DlgBindSheet.ui" line="82"/>
+        <source>Use hidden reference</source>
+        <translation type="unfinished">Use hidden reference</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="91"/>
-      <source>Unbind</source>
-      <translation type="unfinished">Unbind</translation>
+        <location filename="../../DlgBindSheet.ui" line="91"/>
+        <source>Unbind</source>
+        <translation type="unfinished">Unbind</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="98"/>
-      <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+        <location filename="../../DlgBindSheet.ui" line="98"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Cancel</translation>
     </message>
     <message>
-      <location filename="../../DlgBindSheet.ui" line="105"/>
-      <source>OK</source>
-      <translation type="unfinished">OK</translation>
+        <location filename="../../DlgBindSheet.ui" line="105"/>
+        <source>OK</source>
+        <translation type="unfinished">OK</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>DlgSheetConf</name>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="14"/>
-      <source>Setup Configuration Table</source>
-      <translation>Налаштування Таблиці Конфігурацій</translation>
+        <location filename="../../DlgSheetConf.ui" line="14"/>
+        <source>Setup Configuration Table</source>
+        <translation>Налаштування Таблиці Конфігурацій</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="20"/>
-      <source>Cell range:</source>
-      <translation>Діапазон комірок:</translation>
+        <location filename="../../DlgSheetConf.ui" line="20"/>
+        <source>Cell range:</source>
+        <translation>Діапазон комірок:</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="27"/>
-      <source>Starting cell address.
+        <location filename="../../DlgSheetConf.ui" line="27"/>
+        <source>Starting cell address.
 
 The first column of the range is assumed to contain a list of configuration
 names, which will be used to generate a string list and bind to the given
@@ -515,7 +515,7 @@ property for user to dynamically switch configuration.
 The first row of the range will be bound to whatever row (indirectly) selected
 by that property.
 </source>
-      <translation type="unfinished">Starting cell address.
+        <translation type="unfinished">Starting cell address.
 
 The first column of the range is assumed to contain a list of configuration
 names, which will be used to generate a string list and bind to the given
@@ -526,8 +526,8 @@ by that property.
 </translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="42"/>
-      <source>Ending cell address.
+        <location filename="../../DlgSheetConf.ui" line="42"/>
+        <source>Ending cell address.
 
 The first column of the range is assumed to contain a list of configuration
 names, which will be used to generate a string list and bind to the given
@@ -536,7 +536,7 @@ property for user to dynamically switch configuration.
 The first row of the range will be bound to whatever row (indirectly) selected
 by that property.
 </source>
-      <translation type="unfinished">Ending cell address.
+        <translation type="unfinished">Ending cell address.
 
 The first column of the range is assumed to contain a list of configuration
 names, which will be used to generate a string list and bind to the given
@@ -547,539 +547,492 @@ by that property.
 </translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="57"/>
-      <source>Property:</source>
-      <translation type="unfinished">Property:</translation>
+        <location filename="../../DlgSheetConf.ui" line="57"/>
+        <source>Property:</source>
+        <translation type="unfinished">Property:</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="64"/>
-      <source>Type in an expression to specify the object and property name to dynamically
+        <location filename="../../DlgSheetConf.ui" line="64"/>
+        <source>Type in an expression to specify the object and property name to dynamically
 switch the design configuration. The property will be created if not exist.</source>
-      <translation type="unfinished">Type in an expression to specify the object and property name to dynamically
+        <translation type="unfinished">Type in an expression to specify the object and property name to dynamically
 switch the design configuration. The property will be created if not exist.</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="72"/>
-      <source>Group:</source>
-      <translation type="unfinished">Group:</translation>
+        <location filename="../../DlgSheetConf.ui" line="72"/>
+        <source>Group:</source>
+        <translation type="unfinished">Group:</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="79"/>
-      <source>Optional property group name.</source>
-      <translation type="unfinished">Optional property group name.</translation>
+        <location filename="../../DlgSheetConf.ui" line="79"/>
+        <source>Optional property group name.</source>
+        <translation type="unfinished">Optional property group name.</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="88"/>
-      <source>Unsetup</source>
-      <translation type="unfinished">Unsetup</translation>
+        <location filename="../../DlgSheetConf.ui" line="88"/>
+        <source>Unsetup</source>
+        <translation type="unfinished">Unsetup</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="95"/>
-      <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+        <location filename="../../DlgSheetConf.ui" line="95"/>
+        <source>Cancel</source>
+        <translation type="unfinished">Cancel</translation>
     </message>
     <message>
-      <location filename="../../DlgSheetConf.ui" line="102"/>
-      <source>OK</source>
-      <translation type="unfinished">OK</translation>
+        <location filename="../../DlgSheetConf.ui" line="102"/>
+        <source>OK</source>
+        <translation type="unfinished">OK</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>PropertiesDialog</name>
     <message>
-      <source>Cell properties</source>
-      <translation>Властивості комірки</translation>
+        <source>Cell properties</source>
+        <translation>Властивості комірки</translation>
     </message>
     <message>
-      <source>&amp;Color</source>
-      <translation>&amp;Колір</translation>
+        <source>&amp;Color</source>
+        <translation>&amp;Колір</translation>
     </message>
     <message>
-      <source>Text</source>
-      <translation>Текст</translation>
+        <source>Text</source>
+        <translation>Текст</translation>
     </message>
     <message>
-      <source>Background</source>
-      <translation>Фон</translation>
+        <source>Background</source>
+        <translation>Фон</translation>
     </message>
     <message>
-      <source>&amp;Alignment</source>
-      <translation>&amp;Вирівнювання</translation>
+        <source>&amp;Alignment</source>
+        <translation>&amp;Вирівнювання</translation>
     </message>
     <message>
-      <source>Horizontal</source>
-      <translation>По горизонталі</translation>
+        <source>Horizontal</source>
+        <translation>По горизонталі</translation>
     </message>
     <message>
-      <source>Left</source>
-      <translation>Ліворуч</translation>
+        <source>Left</source>
+        <translation>Ліворуч</translation>
     </message>
     <message>
-      <source>Center</source>
-      <translation>Центр</translation>
+        <source>Center</source>
+        <translation>Центр</translation>
     </message>
     <message>
-      <source>Right</source>
-      <translation>Направо</translation>
+        <source>Right</source>
+        <translation>Направо</translation>
     </message>
     <message>
-      <source>Vertical</source>
-      <translation>По вертикалі</translation>
+        <source>Vertical</source>
+        <translation>По вертикалі</translation>
     </message>
     <message>
-      <source>Top</source>
-      <translation>Згори</translation>
+        <source>Top</source>
+        <translation>Згори</translation>
     </message>
     <message>
-      <source>Bottom</source>
-      <translation>Внизу</translation>
+        <source>Bottom</source>
+        <translation>Внизу</translation>
     </message>
     <message>
-      <source>&amp;Style</source>
-      <translation>&amp;Стиль</translation>
+        <source>&amp;Style</source>
+        <translation>&amp;Стиль</translation>
     </message>
     <message>
-      <source>Bold</source>
-      <translation>Жирний</translation>
+        <source>Bold</source>
+        <translation>Жирний</translation>
     </message>
     <message>
-      <source>Italic</source>
-      <translation>Курсив</translation>
+        <source>Italic</source>
+        <translation>Курсив</translation>
     </message>
     <message>
-      <source>Underline</source>
-      <translation>Підкреслений</translation>
+        <source>Underline</source>
+        <translation>Підкреслений</translation>
     </message>
     <message>
-      <source>&amp;Display unit</source>
-      <translation>&amp;Одиниця відображення</translation>
+        <source>&amp;Display unit</source>
+        <translation>&amp;Одиниця відображення</translation>
     </message>
     <message>
-      <source>Unit string</source>
-      <translation>Одиниця виміру</translation>
+        <source>Unit string</source>
+        <translation>Одиниця виміру</translation>
     </message>
     <message>
-      <source>A&amp;lias</source>
-      <translation>П&amp;севдонім</translation>
+        <source>A&amp;lias</source>
+        <translation>П&amp;севдонім</translation>
     </message>
     <message>
-      <source>Alias for this cell</source>
-      <translation>Псевдонім для цієї комірки</translation>
+        <source>Alias for this cell</source>
+        <translation>Псевдонім для цієї комірки</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>QObject</name>
     <message>
-      <source>All (*)</source>
-      <translation>Всі (*)</translation>
+        <source>All (*)</source>
+        <translation>Всі (*)</translation>
     </message>
     <message>
-      <source>Import file</source>
-      <translation>Імпорт файлу</translation>
+        <source>Import file</source>
+        <translation>Імпорт файлу</translation>
     </message>
     <message>
-      <source>Export file</source>
-      <translation>Експорт файлу</translation>
+        <source>Export file</source>
+        <translation>Експорт файлу</translation>
     </message>
     <message>
-      <source>Show spreadsheet</source>
-      <translation>Показати таблицю</translation>
+        <source>Show spreadsheet</source>
+        <translation>Показати таблицю</translation>
     </message>
     <message>
-      <source>Set cell(s) foreground color</source>
-      <translation>Встановити колір переднього плану комірки(ок)</translation>
+        <source>Set cell(s) foreground color</source>
+        <translation>Встановити колір переднього плану комірки(ок)</translation>
     </message>
     <message>
-      <source>Sets the Spreadsheet cell(s) foreground color</source>
-      <translation>Встановлює колір переднього плану комірки(ок) таблиці</translation>
+        <source>Sets the Spreadsheet cell(s) foreground color</source>
+        <translation>Встановлює колір переднього плану комірки(ок) таблиці</translation>
     </message>
     <message>
-      <source>Set cell(s) background color</source>
-      <translation>Встановити фоновий колір комірки(ок)</translation>
+        <source>Set cell(s) background color</source>
+        <translation>Встановити фоновий колір комірки(ок)</translation>
     </message>
     <message>
-      <source>Sets the Spreadsheet cell(s) background color</source>
-      <translation>Встановити фоновий колір комірки(ок) таблиці</translation>
+        <source>Sets the Spreadsheet cell(s) background color</source>
+        <translation>Встановити фоновий колір комірки(ок) таблиці</translation>
     </message>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Spreadsheet does not support range selection when pasting.
+        <source>Spreadsheet does not support range selection when pasting.
 Please select one cell only.</source>
-      <translation>Електронна таблиця не підтримує вибір діапазону під час вставки.
+        <translation>Електронна таблиця не підтримує вибір діапазону під час вставки.
 Будь ласка, виберіть лише одну комірку.</translation>
     </message>
     <message>
-      <source>Copy &amp; Paste failed</source>
-      <translation>Копіювання і вставлення провалено</translation>
+        <source>Copy &amp; Paste failed</source>
+        <translation>Копіювання і вставлення провалено</translation>
     </message>
     <message>
-      <source>Alias contains invalid characters!</source>
-      <translation>Псевдонім містить некоректні символи!</translation>
+        <source>Alias contains invalid characters!</source>
+        <translation>Псевдонім містить некоректні символи!</translation>
     </message>
     <message>
-      <source>Refer to cell by alias, for example
+        <source>Refer to cell by alias, for example
 Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
-      <translation>Зверніться до комірки за псевдонімом, наприклад
+        <translation>Зверніться до комірки за псевдонімом, наприклад
 Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>QtColorPicker</name>
     <message>
-      <source>Black</source>
-      <translation>Чорний</translation>
+        <source>Black</source>
+        <translation>Чорний</translation>
     </message>
     <message>
-      <source>White</source>
-      <translation>Білий</translation>
+        <source>White</source>
+        <translation>Білий</translation>
     </message>
     <message>
-      <source>Red</source>
-      <translation>Червоний</translation>
+        <source>Red</source>
+        <translation>Червоний</translation>
     </message>
     <message>
-      <source>Dark red</source>
-      <translation>Темно-червоний</translation>
+        <source>Dark red</source>
+        <translation>Темно-червоний</translation>
     </message>
     <message>
-      <source>Green</source>
-      <translation>Зелений</translation>
+        <source>Green</source>
+        <translation>Зелений</translation>
     </message>
     <message>
-      <source>Dark green</source>
-      <translation>Темно-Зелений</translation>
+        <source>Dark green</source>
+        <translation>Темно-Зелений</translation>
     </message>
     <message>
-      <source>Blue</source>
-      <translation>Синій</translation>
+        <source>Blue</source>
+        <translation>Синій</translation>
     </message>
     <message>
-      <source>Dark blue</source>
-      <translation>Темно-синій</translation>
+        <source>Dark blue</source>
+        <translation>Темно-синій</translation>
     </message>
     <message>
-      <source>Cyan</source>
-      <translation>Блакитний</translation>
+        <source>Cyan</source>
+        <translation>Блакитний</translation>
     </message>
     <message>
-      <source>Dark cyan</source>
-      <translation>Темно-блакитний</translation>
+        <source>Dark cyan</source>
+        <translation>Темно-блакитний</translation>
     </message>
     <message>
-      <source>Magenta</source>
-      <translation>Пурпуровий</translation>
+        <source>Magenta</source>
+        <translation>Пурпуровий</translation>
     </message>
     <message>
-      <source>Dark magenta</source>
-      <translation>Темно-пурпуровий</translation>
+        <source>Dark magenta</source>
+        <translation>Темно-пурпуровий</translation>
     </message>
     <message>
-      <source>Yellow</source>
-      <translation>Жовтий</translation>
+        <source>Yellow</source>
+        <translation>Жовтий</translation>
     </message>
     <message>
-      <source>Dark yellow</source>
-      <translation>Темно-жовтий</translation>
+        <source>Dark yellow</source>
+        <translation>Темно-жовтий</translation>
     </message>
     <message>
-      <source>Gray</source>
-      <translation>Сірий</translation>
+        <source>Gray</source>
+        <translation>Сірий</translation>
     </message>
     <message>
-      <source>Dark gray</source>
-      <translation>Темно-сірий</translation>
+        <source>Dark gray</source>
+        <translation>Темно-сірий</translation>
     </message>
     <message>
-      <source>Light gray</source>
-      <translation>Світло-сірий</translation>
+        <source>Light gray</source>
+        <translation>Світло-сірий</translation>
     </message>
     <message>
-      <source>Custom Color</source>
-      <translation>Колір, який встановлюється користувачем</translation>
+        <source>Custom Color</source>
+        <translation>Колір, який встановлюється користувачем</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>Sheet</name>
     <message>
-      <source>Form</source>
-      <translation>Форма</translation>
+        <source>Form</source>
+        <translation>Форма</translation>
     </message>
     <message>
-      <source>&amp;Content:</source>
-      <translation>&amp;Зміст:</translation>
+        <source>&amp;Content:</source>
+        <translation>&amp;Зміст:</translation>
     </message>
     <message>
-      <source>&amp;Alias:</source>
-      <translation>&amp;Псевдонім:</translation>
+        <source>&amp;Alias:</source>
+        <translation>&amp;Псевдонім:</translation>
     </message>
     <message>
-      <source>Refer to cell by alias, for example
+        <source>Refer to cell by alias, for example
 Spreadsheet.my_alias_name instead of Spreadsheet.B1</source>
-      <translation>Зверніться до комірки за псевдонімом, наприклад
+        <translation>Зверніться до комірки за псевдонімом, наприклад
 Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>SpreadsheetGui::DlgSettings</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <source>Import/Export Settings</source>
-      <translation>Параметри Імпорту/Експорту</translation>
+        <source>Import/Export Settings</source>
+        <translation>Параметри Імпорту/Експорту</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (') or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ, що використовується для розділення рядків, зазвичай це одинарні лапки (') або подвійні лапки (&amp;quot;). Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ, що використовується для розділення рядків, зазвичай це одинарні лапки (&apos;) або подвійні лапки (&amp;quot;). Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-      <source>"</source>
-      <translation>"</translation>
+        <source>&quot;</source>
+        <translation>&quot;</translation>
     </message>
     <message>
-      <source>Delimiter Character: </source>
-      <translation>Символ розділювача: </translation>
+        <source>Delimiter Character: </source>
+        <translation>Символ розділювача: </translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ &quot;Escape&quot;, як правило, зворотний слеш (\), який використовується для позначення спеціальних символів, які не друкуються, напр. \t = вкладка. Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ &quot;Escape&quot;, як правило, зворотний слеш (\), який використовується для позначення спеціальних символів, які не друкуються, напр. \t = вкладка. Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-      <source>\</source>
-      <translation>\</translation>
+        <source>\</source>
+        <translation>\</translation>
     </message>
     <message>
-      <source>Escape Character: </source>
-      <translation>Символ &quot;Escape&quot;: </translation>
+        <source>Escape Character: </source>
+        <translation>Символ &quot;Escape&quot;: </translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character to use as field delimiter.  Default is tab, but also commonly used are commas (,) and semicolons (;). Select from the list or enter your own in the field. Must be a single character or the words &lt;span style=" font-style:italic;"&gt;tab&lt;/span&gt;, &lt;span style=" font-style:italic;"&gt;comma&lt;/span&gt;, or &lt;span style=" font-style:italic;"&gt;semicolon&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ для позначення роздільника полів. За замовчуванням це символ табулювання, але також часто використовуються коми (,) і крапка з комою (;). Виберіть зі списку або введіть свій власний у поле. Має бути один символ або слова &lt;span style=" font-style:italic;"&gt;табуляція&lt;/span&gt;, &lt;span style=" font-style:italic;"&gt;кома&lt;/span&gt; або &lt;span style =" font-style:italic;"&gt;крапка з комою&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character to use as field delimiter.  Default is tab, but also commonly used are commas (,) and semicolons (;). Select from the list or enter your own in the field. Must be a single character or the words &lt;span style=&quot; font-style:italic;&quot;&gt;tab&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;comma&lt;/span&gt;, or &lt;span style=&quot; font-style:italic;&quot;&gt;semicolon&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ для позначення роздільника полів. За замовчуванням це символ табулювання, але також часто використовуються коми (,) і крапка з комою (;). Виберіть зі списку або введіть свій власний у поле. Має бути один символ або слова &lt;span style=&quot; font-style:italic;&quot;&gt;табуляція&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;кома&lt;/span&gt; або &lt;span style =&quot; font-style:italic;&quot;&gt;крапка з комою&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-      <source>tab</source>
-      <translation>tab</translation>
+        <source>tab</source>
+        <translation>tab</translation>
     </message>
     <message>
-      <source>;</source>
-      <translation>;</translation>
+        <source>;</source>
+        <translation>;</translation>
     </message>
     <message>
-      <source>,</source>
-      <translation>,</translation>
+        <source>,</source>
+        <translation>,</translation>
     </message>
     <message>
-      <source>Quote Character: </source>
-      <translation>Символ лапок: </translation>
+        <source>Quote Character: </source>
+        <translation>Символ лапок: </translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>SpreadsheetGui::Module</name>
     <message>
-      <source>Unnamed</source>
-      <translation>Без назви</translation>
+        <source>Unnamed</source>
+        <translation>Без назви</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>SpreadsheetGui::SheetTableView</name>
     <message>
-      <source>Properties...</source>
-      <translation>Властивості...</translation>
+        <source>Properties...</source>
+        <translation>Властивості...</translation>
     </message>
     <message numerus="yes">
-      <source>Insert %n row(s) above</source>
-      <translation>
-        <numerusform>Вставити %n рядок(ів) вище</numerusform>
-        <numerusform>Вставити %n рядків вище</numerusform>
-        <numerusform>Вставити %n рядків вище</numerusform>
-        <numerusform>Вставити %n рядок(ків) вище</numerusform>
-      </translation>
+        <source>Insert %n row(s) above</source>
+        <translation>
+            <numerusform>Вставити %n рядок(ів) вище</numerusform>
+            <numerusform>Вставити %n рядків вище</numerusform>
+            <numerusform>Вставити %n рядків вище</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-      <source>Insert %n row(s) below</source>
-      <translation>
-        <numerusform>Вставити %n рядок нижче</numerusform>
-        <numerusform>Вставити %n рядків нижче</numerusform>
-        <numerusform>Вставити %n рядків нижче</numerusform>
-        <numerusform>Вставити %n рядок(ків) нижче</numerusform>
-      </translation>
+        <source>Insert %n row(s) below</source>
+        <translation>
+            <numerusform>Вставити %n рядок нижче</numerusform>
+            <numerusform>Вставити %n рядків нижче</numerusform>
+            <numerusform>Вставити %n рядків нижче</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-      <source>Insert %n non-contiguous rows</source>
-      <translation>
-        <numerusform>Вставити %n несуміжний рядок</numerusform>
-        <numerusform>Вставити %n несуміжних рядків</numerusform>
-        <numerusform>Вставити %n несуміжних рядків</numerusform>
-        <numerusform>Вставити %n несуміжний(х) рядок(ів)</numerusform>
-      </translation>
+        <source>Insert %n non-contiguous rows</source>
+        <translation>
+            <numerusform>Вставити %n несуміжний рядок</numerusform>
+            <numerusform>Вставити %n несуміжних рядків</numerusform>
+            <numerusform>Вставити %n несуміжних рядків</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-      <source>Remove row(s)</source>
-      <translation>
-        <numerusform>Видалити рядок</numerusform>
-        <numerusform>Видалити декілька рядків</numerusform>
-        <numerusform>Видалити рядки</numerusform>
-        <numerusform>Видалити рядок(ки)</numerusform>
-      </translation>
+        <source>Remove row(s)</source>
+        <translation>
+            <numerusform>Видалити рядок</numerusform>
+            <numerusform>Видалити декілька рядків</numerusform>
+            <numerusform>Видалити рядки</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-      <source>Insert %n column(s) left</source>
-      <translation>
-        <numerusform>Вставити %n стовпець ліворуч</numerusform>
-        <numerusform>Вставити %n стовпця ліворуч</numerusform>
-        <numerusform>Вставити %n стовпців ліворуч</numerusform>
-        <numerusform>Вставити %n стовпець(і) ліворуч</numerusform>
-      </translation>
+        <source>Insert %n column(s) left</source>
+        <translation>
+            <numerusform>Вставити %n стовпець ліворуч</numerusform>
+            <numerusform>Вставити %n стовпця ліворуч</numerusform>
+            <numerusform>Вставити %n стовпців ліворуч</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-      <source>Insert %n column(s) right</source>
-      <translation>
-        <numerusform>Вставити %n стовпець праворуч</numerusform>
-        <numerusform>Вставити %n стовпця праворуч</numerusform>
-        <numerusform>Вставити %n стовпців праворуч</numerusform>
-        <numerusform>Вставити %n стовпець(і) праворуч</numerusform>
-      </translation>
+        <source>Insert %n column(s) right</source>
+        <translation>
+            <numerusform>Вставити %n стовпець праворуч</numerusform>
+            <numerusform>Вставити %n стовпця праворуч</numerusform>
+            <numerusform>Вставити %n стовпців праворуч</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-      <source>Insert %n non-contiguous columns</source>
-      <translation>
-        <numerusform>Вставити %n несуміжний стовпець</numerusform>
-        <numerusform>Вставити %n несуміжних стовпців</numerusform>
-        <numerusform>Вставити %n несуміжних стовпців</numerusform>
-        <numerusform>Вставити %n несуміжний(х) стовпець(ів)</numerusform>
-      </translation>
+        <source>Insert %n non-contiguous columns</source>
+        <translation>
+            <numerusform>Вставити %n несуміжний стовпець</numerusform>
+            <numerusform>Вставити %n несуміжних стовпців</numerusform>
+            <numerusform>Вставити %n несуміжних стовпців</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
-      <source>Remove column(s)</source>
-      <translation>
-        <numerusform>Видалити стовпець</numerusform>
-        <numerusform>Видалити стовпці</numerusform>
-        <numerusform>Видалити стовпці</numerusform>
-        <numerusform>Видалити стовпець(і)</numerusform>
-      </translation>
+        <source>Remove column(s)</source>
+        <translation>
+            <numerusform>Видалити стовпець</numerusform>
+            <numerusform>Видалити стовпці</numerusform>
+            <numerusform>Видалити стовпці</numerusform>
+        </translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="182"/>
-      <source>Recompute</source>
-      <translation type="unfinished">Recompute</translation>
+        <location filename="../../SheetTableView.cpp" line="182"/>
+        <source>Recompute</source>
+        <translation type="unfinished">Recompute</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="186"/>
-      <source>Bind...</source>
-      <translation type="unfinished">Bind...</translation>
+        <location filename="../../SheetTableView.cpp" line="186"/>
+        <source>Bind...</source>
+        <translation type="unfinished">Bind...</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="190"/>
-      <source>Configuration table...</source>
-      <translation type="unfinished">Configuration table...</translation>
+        <location filename="../../SheetTableView.cpp" line="190"/>
+        <source>Configuration table...</source>
+        <translation type="unfinished">Configuration table...</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="198"/>
-      <source>Merge cells</source>
-      <translation>Об&apos;єднати комірки</translation>
+        <location filename="../../SheetTableView.cpp" line="198"/>
+        <source>Merge cells</source>
+        <translation>Об&apos;єднати комірки</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="200"/>
-      <source>Split cells</source>
-      <translation type="unfinished">Split cells</translation>
+        <location filename="../../SheetTableView.cpp" line="200"/>
+        <source>Split cells</source>
+        <translation type="unfinished">Split cells</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="204"/>
-      <source>Cut</source>
-      <translation type="unfinished">Cut</translation>
+        <location filename="../../SheetTableView.cpp" line="204"/>
+        <source>Cut</source>
+        <translation type="unfinished">Cut</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="206"/>
-      <source>Copy</source>
-      <translation type="unfinished">Copy</translation>
+        <location filename="../../SheetTableView.cpp" line="206"/>
+        <source>Copy</source>
+        <translation type="unfinished">Copy</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="208"/>
-      <source>Paste</source>
-      <translation type="unfinished">Paste</translation>
+        <location filename="../../SheetTableView.cpp" line="208"/>
+        <source>Paste</source>
+        <translation type="unfinished">Paste</translation>
     </message>
     <message>
-      <location filename="../../SheetTableView.cpp" line="210"/>
-      <source>Delete</source>
-      <translation type="unfinished">Delete</translation>
+        <location filename="../../SheetTableView.cpp" line="210"/>
+        <source>Delete</source>
+        <translation type="unfinished">Delete</translation>
     </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>SpreadsheetGui::SheetView</name>
     <message>
-      <location filename="../../SpreadsheetView.cpp" line="262"/>
-      <source>Export PDF</source>
-      <translation>Експорт PDF</translation>
+        <location filename="../../SpreadsheetView.cpp" line="262"/>
+        <source>Export PDF</source>
+        <translation>Експорт PDF</translation>
     </message>
     <message>
-      <location filename="../../SpreadsheetView.cpp" line="263"/>
-      <source>PDF file</source>
-      <translation>PDF файл</translation>
+        <location filename="../../SpreadsheetView.cpp" line="263"/>
+        <source>PDF file</source>
+        <translation>PDF файл</translation>
     </message>
-  </context>
-  <context>
-    <name>Spreadsheet_Controller</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="919"/>
-      <source>Add controller</source>
-      <translation>Додати елемент керування</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="920"/>
-      <source>Adds a cell controller to a selected spreadsheet</source>
-      <translation>Додає елемент керування коміркою до вибраної електронної таблиці</translation>
-    </message>
-  </context>
-  <context>
-    <name>Spreadsheet_Create</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="902"/>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="903"/>
-      <source>Adds a spreadsheet object to the active document</source>
-      <translation>Додає об’єкт електронної таблиці до активного документа</translation>
-    </message>
-  </context>
-  <context>
-    <name>Spreadsheet_PropertyController</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="944"/>
-      <source>Add property controller</source>
-      <translation>Додати контролер властивостей</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="945"/>
-      <source>Adds a property controller to a selected spreadsheet</source>
-      <translation>Додає контролер властивостей до вибраної електронної таблиці</translation>
-    </message>
-  </context>
-  <context>
+</context>
+<context>
     <name>Workbench</name>
     <message>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
+        <source>Spreadsheet</source>
+        <translation>Таблиця</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="50"/>
-      <source>&amp;Spreadsheet</source>
-      <translation>&amp;Таблиця</translation>
+        <location filename="../../Workbench.cpp" line="50"/>
+        <source>&amp;Spreadsheet</source>
+        <translation>&amp;Таблиця</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="51"/>
-      <source>&amp;Alignment</source>
-      <translation>&amp;Вирівнювання</translation>
+        <location filename="../../Workbench.cpp" line="51"/>
+        <source>&amp;Alignment</source>
+        <translation>&amp;Вирівнювання</translation>
     </message>
     <message>
-      <location filename="../../Workbench.cpp" line="52"/>
-      <source>&amp;Styles</source>
-      <translation>&amp;Стилі</translation>
+        <location filename="../../Workbench.cpp" line="52"/>
+        <source>&amp;Styles</source>
+        <translation>&amp;Стилі</translation>
     </message>
-  </context>
+</context>
 </TS>

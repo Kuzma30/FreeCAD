@@ -173,12 +173,12 @@
     <message>
       <location filename="../../Command.cpp" line="71"/>
       <source>Merge cells</source>
-      <translation>Об'єднати комірки</translation>
+      <translation>Об&apos;єднати комірки</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="72"/>
       <source>Merge selected cells</source>
-      <translation>Об'єднати обрані комірки</translation>
+      <translation>Об&apos;єднати обрані комірки</translation>
     </message>
   </context>
   <context>
@@ -284,7 +284,7 @@
     <message>
       <location filename="../../Command.cpp" line="91"/>
       <source>Merge cells</source>
-      <translation>Об'єднати комірки</translation>
+      <translation>Об&apos;єднати комірки</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="146"/>
@@ -470,12 +470,12 @@ The expression must evaluates to a string of some cell address.</translation>
     <message>
       <location filename="../../DlgSheetConf.ui" line="14"/>
       <source>Setup Configuration Table</source>
-      <translation type="unfinished">Setup Configuration Table</translation>
+      <translation>Налаштування Таблиці Конфігурацій</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="20"/>
       <source>Cell range:</source>
-      <translation type="unfinished">Cell range:</translation>
+      <translation>Діапазон комірок:</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="27"/>
@@ -943,7 +943,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="26"/>
       <source>Import/Export Settings</source>
-      <translation>Параметри Імпорт/Експорт</translation>
+      <translation>Параметри Імпорту/Експорту</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="105"/>
@@ -963,7 +963,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="137"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ "Escape", як правило, зворотний слеш (\), який використовується для позначення спеціальних символів, які не друкуються, напр. \t = вкладка. Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ &quot;Escape&quot;, як правило, зворотний слеш (\), який використовується для позначення спеціальних символів, які не друкуються, напр. \t = вкладка. Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="140"/>
@@ -973,7 +973,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="130"/>
       <source>Escape Character: </source>
-      <translation>Символ "Escape": </translation>
+      <translation>Символ &quot;Escape&quot;: </translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="58"/>
@@ -1127,7 +1127,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="198"/>
       <source>Merge cells</source>
-      <translation type="unfinished">Merge cells</translation>
+      <translation>Об&apos;єднати комірки</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="200"/>
@@ -1160,12 +1160,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../SpreadsheetView.cpp" line="262"/>
       <source>Export PDF</source>
-      <translation type="unfinished">Export PDF</translation>
+      <translation>Експорт PDF</translation>
     </message>
     <message>
       <location filename="../../SpreadsheetView.cpp" line="263"/>
       <source>PDF file</source>
-      <translation type="unfinished">PDF file</translation>
+      <translation>PDF файл</translation>
     </message>
   </context>
   <context>
@@ -1173,12 +1173,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="919"/>
       <source>Add controller</source>
-      <translation>Додати формулу</translation>
+      <translation>Додати елемент керування</translation>
     </message>
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="920"/>
       <source>Adds a cell controller to a selected spreadsheet</source>
-      <translation>Додає контролер комірки до вибраної електронної таблиці</translation>
+      <translation>Додає елемент керування коміркою до вибраної електронної таблиці</translation>
     </message>
   </context>
   <context>
@@ -1217,12 +1217,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../Workbench.cpp" line="50"/>
       <source>&amp;Spreadsheet</source>
-      <translation type="unfinished">&amp;Spreadsheet</translation>
+      <translation>&amp;Таблиця</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="51"/>
       <source>&amp;Alignment</source>
-      <translation type="unfinished">&amp;Alignment</translation>
+      <translation>&amp;Вирівнювання</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="52"/>

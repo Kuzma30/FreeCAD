@@ -16,7 +16,7 @@
     <message>
       <location filename="../../Command.cpp" line="894"/>
       <source>Create a new spreadsheet</source>
-      <translation>Створити нову таблицю</translation>
+      <translation>Створює нову таблицю</translation>
     </message>
   </context>
   <context>
@@ -29,12 +29,12 @@
     <message>
       <location filename="../../Command.cpp" line="504"/>
       <source>Align bottom</source>
-      <translation>Вирівняти по нижньому краю</translation>
+      <translation>Вирівняти знизу</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="505"/>
       <source>Bottom-align contents of selected cells</source>
-      <translation>Вирівняти вміст виділених комірок по нижньому краю</translation>
+      <translation>Вирівнює вміст виділених комірок знизу</translation>
     </message>
   </context>
   <context>
@@ -47,12 +47,12 @@
     <message>
       <location filename="../../Command.cpp" line="348"/>
       <source>Align center</source>
-      <translation>Вирівняти по центру</translation>
+      <translation>Вирівняти у центрі</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="349"/>
       <source>Center-align contents of selected cells</source>
-      <translation>Вирівняти по центру вміст виділених комірок</translation>
+      <translation>Вирівнює вміст виділених комірок у центрі</translation>
     </message>
   </context>
   <context>
@@ -65,7 +65,7 @@
     <message>
       <location filename="../../Command.cpp" line="296"/>
       <source>Align left</source>
-      <translation>Вирівняти по лівому краю</translation>
+      <translation>Вирівняти ліворуч</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="297"/>
@@ -83,7 +83,7 @@
     <message>
       <location filename="../../Command.cpp" line="400"/>
       <source>Align right</source>
-      <translation>Вирівняти по правому краю</translation>
+      <translation>Вирівняти праворуч</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="401"/>
@@ -101,12 +101,12 @@
     <message>
       <location filename="../../Command.cpp" line="452"/>
       <source>Align top</source>
-      <translation>Вирівняти по верхньому краю</translation>
+      <translation>Вирівняти вгорі</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="453"/>
       <source>Top-align contents of selected cells</source>
-      <translation>Вирівняти вміст виділених комірок по верхньому краю</translation>
+      <translation>Вирівнює вміст виділених комірок вгорі</translation>
     </message>
   </context>
   <context>
@@ -124,7 +124,7 @@
     <message>
       <location filename="../../Command.cpp" line="557"/>
       <source>Vertically center-align contents of selected cells</source>
-      <translation>Вирівняти вміст виділених комірок вертикально по центру</translation>
+      <translation>Вирівнює вміст виділених комірок вертикально у центрі</translation>
     </message>
   </context>
   <context>
@@ -142,7 +142,7 @@
     <message>
       <location filename="../../Command.cpp" line="236"/>
       <source>Export spreadsheet to CSV file</source>
-      <translation>Експортувати таблицю у CSV-файл</translation>
+      <translation>Експортує таблицю у CSV-файл</translation>
     </message>
   </context>
   <context>
@@ -160,7 +160,7 @@
     <message>
       <location filename="../../Command.cpp" line="186"/>
       <source>Import CSV file into spreadsheet</source>
-      <translation>Імпортувати CSV-файл у таблицю</translation>
+      <translation>Імпортує CSV-файл у таблицю</translation>
     </message>
   </context>
   <context>
@@ -178,7 +178,7 @@
     <message>
       <location filename="../../Command.cpp" line="72"/>
       <source>Merge selected cells</source>
-      <translation>Об&apos;єднати обрані комірки</translation>
+      <translation>Об'єднує виділені комірки</translation>
     </message>
   </context>
   <context>
@@ -196,7 +196,7 @@
     <message>
       <location filename="../../Command.cpp" line="830"/>
       <source>Set alias for selected cell</source>
-      <translation>Встановити псевдонім для обраної комірки</translation>
+      <translation>Встановлює псевдонім для виділеної комірки</translation>
     </message>
   </context>
   <context>
@@ -209,12 +209,12 @@
     <message>
       <location filename="../../Command.cpp" line="126"/>
       <source>Split cell</source>
-      <translation>Розділити комірку</translation>
+      <translation>Роз'єднати комірку</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="127"/>
       <source>Split previously merged cells</source>
-      <translation>Розділити раніше обʼєднані комірки</translation>
+      <translation>Роз'єднує раніше обʼєднані комірки</translation>
     </message>
   </context>
   <context>
@@ -227,12 +227,12 @@
     <message>
       <location filename="../../Command.cpp" line="608"/>
       <source>Bold text</source>
-      <translation>Жирний текст</translation>
+      <translation>Зробити текст жирним</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="609"/>
       <source>Set text in selected cells bold</source>
-      <translation>У виділених комірках відобразити текст жирним шрифтом</translation>
+      <translation>Робить текст у виділених комірках жирним шрифтом</translation>
     </message>
   </context>
   <context>
@@ -245,12 +245,12 @@
     <message>
       <location filename="../../Command.cpp" line="682"/>
       <source>Italic text</source>
-      <translation>Текст курсивом</translation>
+      <translation>Зробити текст курсивом</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="683"/>
       <source>Set text in selected cells italic</source>
-      <translation>У виділених комірках відобразити текст курсивом</translation>
+      <translation>Робить текст у виділених комірках курсивом</translation>
     </message>
   </context>
   <context>
@@ -263,12 +263,12 @@
     <message>
       <location filename="../../Command.cpp" line="756"/>
       <source>Underline text</source>
-      <translation>Підкреслений текст</translation>
+      <translation>Зробити текст підкресленим</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="757"/>
       <source>Underline text in selected cells</source>
-      <translation>У виділених комірках зробити текст підкресленим</translation>
+      <translation>Робить текст у виділених комірках підкресленим</translation>
     </message>
   </context>
   <context>
@@ -289,7 +289,7 @@
     <message>
       <location filename="../../Command.cpp" line="146"/>
       <source>Split cell</source>
-      <translation>Розділити комірку</translation>
+      <translation>Роз'єднати комірку</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="317"/>
@@ -767,7 +767,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
       <location filename="../../qtcolorpicker.cpp" line="416"/>
       <location filename="../../qtcolorpicker.cpp" line="526"/>
       <source>Blue</source>
-      <translation>Cиній</translation>
+      <translation>Синій</translation>
     </message>
     <message>
       <location filename="../../qtcolorpicker.cpp" line="417"/>

@@ -1227,7 +1227,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../Workbench.cpp" line="52"/>
       <source>&amp;Styles</source>
-      <translation>&amp;Стилі</translation>
+      <translation type="unfinished">&amp;Styles</translation>
     </message>
   </context>
 </TS>

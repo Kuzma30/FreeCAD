@@ -1,3 +1,7 @@
+preserve_hierarchy: false
 files:
   - source: src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet.ts
     translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest : Spreadsheet.ts
+    escape_quotes: 0
+    escape_special_characters: 0

@@ -178,7 +178,7 @@
     <message>
       <location filename="../../Command.cpp" line="72"/>
       <source>Merge selected cells</source>
-      <translation>Об'єднує виділені комірки</translation>
+      <translation>Об&apos;єднує виділені комірки</translation>
     </message>
   </context>
   <context>
@@ -209,12 +209,12 @@
     <message>
       <location filename="../../Command.cpp" line="126"/>
       <source>Split cell</source>
-      <translation>Роз'єднати комірку</translation>
+      <translation>Роз&apos;єднати комірку</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="127"/>
       <source>Split previously merged cells</source>
-      <translation>Роз'єднує раніше обʼєднані комірки</translation>
+      <translation>Роз&apos;єднує раніше обʼєднані комірки</translation>
     </message>
   </context>
   <context>
@@ -289,7 +289,7 @@
     <message>
       <location filename="../../Command.cpp" line="146"/>
       <source>Split cell</source>
-      <translation>Роз'єднати комірку</translation>
+      <translation>Роз&apos;єднати комірку</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="317"/>
@@ -324,12 +324,12 @@
     <message>
       <location filename="../../Command.cpp" line="646"/>
       <source>Set bold text</source>
-      <translation>Виділення тексту напівжирним стилем</translation>
+      <translation>Зробити текст напівжирним</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="720"/>
       <source>Set italic text</source>
-      <translation>Виділення тексту курсивом</translation>
+      <translation>Зробити текст курсивом</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="794"/>
@@ -349,7 +349,7 @@
     <message>
       <location filename="../../SheetModel.cpp" line="487"/>
       <source>Edit cell</source>
-      <translation>Редагувати комірку</translation>
+      <translation>Редагування комірки</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="295"/>
@@ -378,12 +378,12 @@
     <message>
       <location filename="../../Workbench.cpp" line="131"/>
       <source>Set foreground color</source>
-      <translation>Встановити колір переднього плану</translation>
+      <translation>Вибір кольору переднього плану</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="158"/>
       <source>Set background color</source>
-      <translation>Встановити фоновий колір</translation>
+      <translation>Вибір кольору фону</translation>
     </message>
   </context>
   <context>
@@ -391,78 +391,78 @@
     <message>
       <location filename="../../DlgBindSheet.ui" line="14"/>
       <source>Bind Spreadsheet Cells</source>
-      <translation type="unfinished">Bind Spreadsheet Cells</translation>
+      <translation>Зв&apos;язування комірок таблиці</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="20"/>
       <source>From cells:</source>
-      <translation>Починаючи з комірки:</translation>
+      <translation>З комірки:</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="27"/>
       <source>Binding cell range start</source>
-      <translation type="unfinished">Binding cell range start</translation>
+      <translation>Початковий діапазон зв&apos;язування комірок</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="34"/>
       <source>Binding cell range end
 </source>
-      <translation type="unfinished">Binding cell range end
+      <translation>Кінцевий діапазон зв&apos;язування комірок
 </translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="42"/>
       <source>To cells:</source>
-      <translation>Закінчуючи коміркою:</translation>
+      <translation>До комірки:</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="49"/>
       <source>Starting cell address to bind to. Type &apos;=&apos; if you want to use expression.
 The expression must evaluates to a string of some cell address.</source>
-      <translation type="unfinished">Starting cell address to bind to. Type &apos;=&apos; if you want to use expression.
-The expression must evaluates to a string of some cell address.</translation>
+      <translation>Початковий діапазон для зв&apos;язування комірок. Наберіть &apos;=&apos; якщо хочете використати вираз.
+Вираз має бути строкою з використанням адреси комірки.</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="57"/>
       <source>Ending cell address to bind to. Type &apos;=&apos; if you want to use expression.
 The expression must evaluates to a string of some cell address.</source>
-      <translation type="unfinished">Ending cell address to bind to. Type &apos;=&apos; if you want to use expression.
-The expression must evaluates to a string of some cell address.</translation>
+      <translation>Кінцевий діапазон для зв&apos;язування комірок. Наберіть &apos;=&apos; якщо хочете використати вираз.
+Вираз має бути строкою з використанням адреси комірки.</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="65"/>
       <source>Sheet:</source>
-      <translation type="unfinished">Sheet:</translation>
+      <translation>Таблиця:</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="72"/>
       <source>Select which spread sheet to bind to.</source>
-      <translation type="unfinished">Select which spread sheet to bind to.</translation>
+      <translation>Виберіть таблицю для зв&apos;язування.</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="79"/>
       <source>Use hidden reference not avoid creating a depdenecy with the referenced object. Use with caution!</source>
-      <translation type="unfinished">Use hidden reference not avoid creating a depdenecy with the referenced object. Use with caution!</translation>
+      <translation>Використання прихованого посилання дозволяє уникнути створення залежності з об&apos;єктом, на який посилаються. Використовуйте з обережністю!</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="82"/>
       <source>Use hidden reference</source>
-      <translation type="unfinished">Use hidden reference</translation>
+      <translation>Використати приховані посилання</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="91"/>
       <source>Unbind</source>
-      <translation type="unfinished">Unbind</translation>
+      <translation>Відв&apos;язати</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="98"/>
       <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+      <translation>Відмінити</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="105"/>
       <source>OK</source>
-      <translation type="unfinished">OK</translation>
+      <translation>Зв&apos;язати</translation>
     </message>
   </context>
   <context>
@@ -470,12 +470,12 @@ The expression must evaluates to a string of some cell address.</translation>
     <message>
       <location filename="../../DlgSheetConf.ui" line="14"/>
       <source>Setup Configuration Table</source>
-      <translation>Налаштування Таблиці Конфігурацій</translation>
+      <translation>Створення Таблиці Конфігурацій</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="20"/>
       <source>Cell range:</source>
-      <translation>Діапазон комірок:</translation>
+      <translation>Діап. комірок:</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="27"/>
@@ -488,15 +488,14 @@ property for user to dynamically switch configuration.
 The first row of the range will be bound to whatever row (indirectly) selected
 by that property.
 </source>
-      <translation type="unfinished">Starting cell address.
+      <translation>Початкова адреса комірки.
 
-The first column of the range is assumed to contain a list of configuration
-names, which will be used to generate a string list and bind to the given
-property for user to dynamically switch configuration.
+Передбачається, що перший стовпець діапазону містить список імен конфігурації,
+які будуть використовуватися для створення списку рядків та прив&apos;язки до цієї 
+властивості, щоб користувач міг динамічно перемикати конфігурації.
 
-The first row of the range will be bound to whatever row (indirectly) selected
-by that property.
-</translation>
+Перший рядок діапазону буде прив&apos;язаний до будь-якого рядка (непрямо), 
+обраного за допомогою цієї властивості.</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="42"/>
@@ -509,52 +508,51 @@ property for user to dynamically switch configuration.
 The first row of the range will be bound to whatever row (indirectly) selected
 by that property.
 </source>
-      <translation type="unfinished">Ending cell address.
+      <translation>Кінцева адреса комірки.
 
-The first column of the range is assumed to contain a list of configuration
-names, which will be used to generate a string list and bind to the given
-property for user to dynamically switch configuration.
+Передбачається, що перший стовпець діапазону містить список імен конфігурації,
+які будуть використовуватися для створення списку рядків та прив&apos;язки до цієї 
+властивості, щоб користувач міг динамічно перемикати конфігурації.
 
-The first row of the range will be bound to whatever row (indirectly) selected
-by that property.
-</translation>
+Перший рядок діапазону буде прив&apos;язаний до будь-якого рядка (непрямо), 
+обраного за допомогою цієї властивості.</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="57"/>
       <source>Property:</source>
-      <translation type="unfinished">Property:</translation>
+      <translation>Властивість:</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="64"/>
       <source>Type in an expression to specify the object and property name to dynamically
 switch the design configuration. The property will be created if not exist.</source>
-      <translation type="unfinished">Type in an expression to specify the object and property name to dynamically
-switch the design configuration. The property will be created if not exist.</translation>
+      <translation>Введіть вираз, щоб вказати назву об’єкта та властивості, щоб динамічно 
+змінювати конфігурацію проекту. Якщо властивість не існує, вона буде створена.</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="72"/>
       <source>Group:</source>
-      <translation type="unfinished">Group:</translation>
+      <translation>Група:</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="79"/>
       <source>Optional property group name.</source>
-      <translation type="unfinished">Optional property group name.</translation>
+      <translation>Не обов&apos;язкова назва групи властивостей.</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="88"/>
       <source>Unsetup</source>
-      <translation type="unfinished">Unsetup</translation>
+      <translation>Видалити</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="95"/>
       <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+      <translation>Відмінити</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="102"/>
       <source>OK</source>
-      <translation type="unfinished">OK</translation>
+      <translation>Створити</translation>
     </message>
   </context>
   <context>
@@ -871,7 +869,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
       <location filename="../../../App/Spreadsheet_legacy.py" line="748"/>
       <location filename="../../../App/Spreadsheet_legacy.py" line="874"/>
       <source>Cell</source>
-      <translation>Секція</translation>
+      <translation>Комірка</translation>
     </message>
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="751"/>
@@ -901,7 +899,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="761"/>
       <source>Updates the values handled by controllers</source>
-      <translation>Оновлює значення, які обробляються контролерами</translation>
+      <translation>Оновлює значення, які обробляються елементами керування</translation>
     </message>
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="907"/>
@@ -911,7 +909,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="933"/>
       <source>Add controller</source>
-      <translation>Додати формулу</translation>
+      <translation>Додати елемент керування</translation>
     </message>
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="959"/>
@@ -925,12 +923,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgBindSheet.cpp" line="180"/>
       <source>Bind cells</source>
-      <translation type="unfinished">Bind cells</translation>
+      <translation>Зв&apos;язати комірки</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.cpp" line="197"/>
       <source>Unbind cells</source>
-      <translation type="unfinished">Unbind cells</translation>
+      <translation>Відв&apos;язати комірки</translation>
     </message>
   </context>
   <context>
@@ -948,7 +946,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="105"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ, що використовується для розділення рядків, зазвичай це одинарні лапки (&amp;apos;) або подвійні лапки (&amp;quot;). Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="111"/>
@@ -978,12 +976,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="58"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character to use as field delimiter.  Default is tab, but also commonly used are commas (,) and semicolons (;). Select from the list or enter your own in the field. Must be a single character or the words &lt;span style=&quot; font-style:italic;&quot;&gt;tab&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;comma&lt;/span&gt;, or &lt;span style=&quot; font-style:italic;&quot;&gt;semicolon&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character to use as field delimiter.  Default is tab, but also commonly used are commas (,) and semicolons (;). Select from the list or enter your own in the field. Must be a single character or the words &lt;span style=&quot; font-style:italic;&quot;&gt;tab&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;comma&lt;/span&gt;, or &lt;span style=&quot; font-style:italic;&quot;&gt;semicolon&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ для позначення роздільника полів. За замовчуванням це символ табулювання, але також часто використовуються коми (,) і крапка з комою (;). Виберіть зі списку або введіть свій власний у поле. Має бути один символ або слова &lt;span style=&quot; font-style:italic;&quot;&gt;табуляція&lt;/span&gt;, &lt;span style=&quot; font-style:italic;&quot;&gt;кома&lt;/span&gt;, або &lt;span style=&quot; font-style:italic;&quot;&gt;крапка з комою&lt;/span&gt;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="74"/>
       <source>tab</source>
-      <translation type="unfinished">tab</translation>
+      <translation>табуляція</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="79"/>
@@ -1006,12 +1004,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSheetConf.cpp" line="245"/>
       <source>Setup configuration table</source>
-      <translation type="unfinished">Setup configuration table</translation>
+      <translation>Створити Таблицю Конфігурацій</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.cpp" line="292"/>
       <source>Unsetup configuration table</source>
-      <translation type="unfinished">Unsetup configuration table</translation>
+      <translation>Видалити таблицю конфігурацій</translation>
     </message>
   </context>
   <context>
@@ -1117,12 +1115,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="186"/>
       <source>Bind...</source>
-      <translation>Прив'язати...</translation>
+      <translation>Прив&apos;язати...</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="190"/>
       <source>Configuration table...</source>
-      <translation type="unfinished">Configuration table...</translation>
+      <translation>Таблиця Конфігурації...</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="198"/>
@@ -1132,7 +1130,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="200"/>
       <source>Split cells</source>
-      <translation>Роз'єднати комірки</translation>
+      <translation>Роз&apos;єднати комірки</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="204"/>

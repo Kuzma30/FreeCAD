@@ -334,7 +334,7 @@
     <message>
       <location filename="../../Command.cpp" line="794"/>
       <source>Set underline text</source>
-      <translation>Виділення тексту підкреслюванням</translation>
+      <translation>Підкреслити текст</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="905"/>
@@ -951,7 +951,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="111"/>
       <source>&quot;</source>
-      <translation type="unfinished">&quot;</translation>
+      <translation>&quot;</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="38"/>
@@ -966,7 +966,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="140"/>
       <source>\</source>
-      <translation type="unfinished">\</translation>
+      <translation>\</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="130"/>
@@ -986,12 +986,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="79"/>
       <source>;</source>
-      <translation type="unfinished">;</translation>
+      <translation>;</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="84"/>
       <source>,</source>
-      <translation type="unfinished">,</translation>
+      <translation>,</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="98"/>

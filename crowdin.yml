@@ -2,9 +2,11 @@ preserve_hierarchy: false
 files:
   - source: src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet.ts
     translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest : Spreadsheet
     escape_quotes: 0
     escape_special_characters: 0
   - source: src/Mod/Sketcher/Gui/Resources/translations/Sketcher.ts
     translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest : Sketcher
     escape_quotes: 0
     escape_special_characters: 0

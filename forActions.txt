@@ -1,5 +1,129 @@
-cd FreeCAD/src/Mod/Spreadsheet
-lupdate App/*.* Gui/*.* *.* -ts Gui/Resources/translations/Spreadsheet.ts
+#
+lupd_option="-noobsolete"
+#lupd_option=""
+Project_Dir="/home/aleksandr/test_crowdin/FreeCAD/"
+cd $Project_Dir
+cd src/Mod/AddonManager/
+lupdate $lupd_option  . -ts Resources/translations/AddonManager.ts
+cd $Project_Dir
 
-cd FreeCAD/src/Mod/Sketcher
-lupdate App/*.* Gui/*.* ProfileLib/*.* *.* -ts Gui/Resources/translations/Sketcher.ts
+cd src/Mod/Arch/
+lupdate $lupd_option  . -ts Resources/translations/Arch.ts
+cd $Project_Dir
+
+cd src/Mod/Draft/
+lupdate $lupd_option draftfunctions draftgeoutils  draftguitools draftmake draftobjects drafttaskpanels drafttests draftutils draftviewproviders . -ts Resources/translations/Draft.ts
+cd $Project_Dir
+
+cd src/Mod/Drawing/
+lupdate $lupd_option App Gui . -ts Gui/Resources/translations/Drawing.ts
+cd $Project_Dir
+
+cd src/Mod/Fem/
+lupdate $lupd_option App Gui femcommands  femexamples femguiutils feminout femmesh femobjects femresult femsolver  femtaskpanels femtools femviewprovider . -ts Gui/Resources/translations/Fem.ts
+cd $Project_Dir
+
+cd src/Gui/
+lupdate $lupd_option 3Dconnexion/  DAGView/  Icons/  Inventor/  Language/  PreferencePacks/  PreferencePackTemplates/  propertyeditor/  QSint/  Quarter/  Stylesheets/  TaskView/ . -ts Language/FreeCAD.ts
+cd $Project_Dir
+
+cd src/Mod/Image
+lupdate $lupd_option App Gui ImageTools . -ts Gui/Resources/translations/Image.ts
+cd $Project_Dir
+
+cd src/Mod/MeshPart
+lupdate $lupd_option App Gui . -ts Gui/Resources/translations/MeshPart.ts
+cd $Project_Dir
+
+cd src/Mod/Mesh
+lupdate $lupd_option App Gui . -ts Gui/Resources/translations/Mesh.ts
+cd $Project_Dir
+
+cd src/Mod/OpenSCAD
+lupdate $lupd_option  . -ts Resources/translations/OpenSCAD.ts
+cd $Project_Dir
+
+cd src/Mod/PartDesign
+lupdate $lupd_option App Gui FeatureHole PartDesignTests Scripts WizardShaft fcgear fcsprocket . -ts Gui/Resources/translations/PartDesign.ts
+cd $Project_Dir
+
+cd src/Mod/Part
+lupdate $lupd_option App  AttachmentEditor  BasicShapes  BOPTools CompoundTools Gui  parttests . -ts Gui/Resources/translations/Part.ts
+cd $Project_Dir
+
+cd src/Mod/Path
+lupdate $lupd_option App/  Data/  DemoParts/  Generators/  Gui/  Images/  libarea/  PathPythonGui/  PathScripts/  PathSimulator/  PathTests/  Tools/ . -ts Gui/Resources/translations/Path.ts
+cd $Project_Dir
+
+cd src/Mod/Points
+lupdate $lupd_option App Gui  . -ts Gui/Resources/translations/Points.ts
+cd $Project_Dir
+
+cd src/Mod/Raytracing
+lupdate $lupd_option App Gui  . -ts Gui/Resources/translations/Raytracing.ts
+cd $Project_Dir
+
+cd src/Mod/ReverseEngineering
+lupdate $lupd_option App Gui . -ts Gui/Resources/translations/ReverseEngineering.ts
+cd $Project_Dir
+
+cd src/Mod/Robot
+lupdate $lupd_option App Gui . -ts Gui/Resources/translations/Robot.ts
+cd $Project_Dir
+
+cd src/Mod/Sketcher
+lupdate $lupd_option App Gui ProfileLib . -ts Gui/Resources/translations/Sketcher.ts
+cd $Project_Dir
+
+cd src/Mod/Spreadsheet
+lupdate $lupd_option App Gui . -ts Gui/Resources/translations/Spreadsheet.ts
+cd $Project_Dir
+
+cd src/Mod/Start
+lupdate $lupd_option App/  Gui/  StartPage/  TestStart/ . -ts Gui/Resources/translations/Start.ts
+cd $Project_Dir
+
+cd src/Mod/TechDraw/
+lupdate $lupd_option App/  Gui/  LineGroup/  PAT/  Patterns/  Symbols/  TDTest/  TechDrawTools/  Templates/ . -ts Gui/Resources/translations/TechDraw.ts
+cd $Project_Dir
+
+cd src/Mod/Test
+lupdate $lupd_option Gui . -ts Gui/Resources/translations/Test.ts
+cd $Project_Dir
+
+cd src/Mod/Tux
+lupdate $lupd_option *.* -ts Resources/translations/Tux.ts
+cd $Project_Dir
+
+cd src/Mod/Web
+lupdate $lupd_option App Gui  . -ts Gui/Resources/translations/Web.ts
+cd $Project_Dir
+
+
+
+- source: src/Mod/AddonManager/Resources/translations/AddonManager.ts
+- source: src/Mod/Arch/Resources/translations/Arch.ts
+- source: src/Mod/Assembly/Gui/Resources/translations/Assembly.ts
+- source: src/Mod/Draft/Resources/translations/Draft.ts
+- source: src/Mod/Drawing/Gui/Resources/translations/Drawing.ts
+- source: src/Mod/Fem/Gui/Resources/translations/Fem.ts
+- source: src/Gui/Language/FreeCAD.ts
+- source: src/Mod/Image/Gui/Resources/translations/Image.ts
+- source: src/Mod/MeshPart/Gui/Resources/translations/MeshPart.ts
+- source: src/Mod/Mesh/Gui/Resources/translations/Mesh.ts
+- source: src/Mod/OpenSCAD/Resources/translations/OpenSCAD.ts
+- source: src/Mod/PartDesign/Gui/Resources/translations/PartDesign.ts
+- source: src/Mod/Part/Gui/Resources/translations/Part.ts
+- source: src/Mod/Path/Gui/Resources/translations/Path.ts
+- source: src/Mod/Points/Gui/Resources/translations/Points.ts
+- source: src/Mod/Raytracing/Gui/Resources/translations/Raytracing.ts
+- source: src/Mod/ReverseEngineering/Gui/Resources/translations/ReverseEngineering.ts
+- source: src/Mod/Robot/Gui/Resources/translations/Robot.ts
+- source: src/Mod/Sketcher/Gui/Resources/translations/Sketcher.ts
+- source: src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet.ts
+- source: src/Mod/Start/Gui/Resources/translations/StartPage.ts
+- source: src/Mod/TechDraw/Gui/Resources/translations/TechDraw.ts
+- source: src/Mod/Test/Gui/Resources/translations/Test.ts
+- source: src/Mod/Tux/Resources/translations/Tux.ts
+- source: src/Mod/Web/Gui/Resources/translations/Web.ts
+

@@ -1033,6 +1033,19 @@
     </message>
 </context>
 <context>
+    <name>AttachmentEditor</name>
+    <message>
+        <location filename="../../../AttachmentEditor/Commands.py" line="79"/>
+        <source>Attachment...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../AttachmentEditor/Commands.py" line="81"/>
+        <source>Edit attachment of selected object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>BlockDefinition</name>
     <message>
         <location filename="../../DlgBlock.ui" line="14"/>
@@ -5425,6 +5438,36 @@ in the 3D view for the sweep path.</source>
     </message>
 </context>
 <context>
+    <name>Part_CompoundFilter</name>
+    <message>
+        <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="57"/>
+        <source>Compound Filter</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="59"/>
+        <source>Filter out objects from a selected compound by characteristics like volume,
+area, or length, or by choosing specific items.
+If a second object is selected, it will be used as reference, for example,
+for collision or distance filtering.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Part_ExplodeCompound</name>
+    <message>
+        <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="56"/>
+        <source>Explode compound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="58"/>
+        <source>Split up a compound of shapes into separate objects.
+It will create a &apos;Compound Filter&apos; for each shape.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Part_FaceMaker</name>
     <message>
         <location filename="../../../App/FaceMaker.cpp" line="171"/>
@@ -5464,6 +5507,111 @@ in the 3D view for the sweep path.</source>
     <message>
         <location filename="../../../App/FeatureExtrusion.cpp" line="344"/>
         <source>Supports making faces with holes, does not support nesting.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Part_JoinConnect</name>
+    <message>
+        <location filename="../../../BOPTools/JoinFeatures.py" line="197"/>
+        <source>Connect objects</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/JoinFeatures.py" line="199"/>
+        <source>Fuses objects, taking care to preserve voids.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Part_JoinCutout</name>
+    <message>
+        <location filename="../../../BOPTools/JoinFeatures.py" line="388"/>
+        <source>Cutout for object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/JoinFeatures.py" line="390"/>
+        <source>Makes a cutout in one object to fit another object.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Part_JoinEmbed</name>
+    <message>
+        <location filename="../../../BOPTools/JoinFeatures.py" line="293"/>
+        <source>Embed object</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/JoinFeatures.py" line="295"/>
+        <source>Fuses one object into another, taking care to preserve voids.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Part_SplitFeatures</name>
+    <message>
+        <location filename="../../../BOPTools/SplitFeatures.py" line="188"/>
+        <source>Boolean fragments</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/SplitFeatures.py" line="190"/>
+        <source>Create a &apos;Boolean Fragments&apos; object from two or more selected objects,
+or from the shapes inside a compound.
+This is a boolean union which is then sliced at the intersections
+of the original shapes.
+A &apos;Compound Filter&apos; can be used to extract the individual slices.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/SplitFeatures.py" line="347"/>
+        <source>Slice to compound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/SplitFeatures.py" line="349"/>
+        <source>Slice a selected object by using other objects as cutting tools.
+The resulting pieces will be stored in a compound.
+A &apos;Compound Filter&apos; can be used to extract the individual slices.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/SplitFeatures.py" line="379"/>
+        <source>Slice apart</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/SplitFeatures.py" line="381"/>
+        <source>Slice a selected object by other objects, and split it apart.
+It will create a &apos;Compound Filter&apos; for each slice.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/SplitFeatures.py" line="529"/>
+        <source>Boolean XOR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BOPTools/SplitFeatures.py" line="531"/>
+        <source>Perform an &apos;exclusive OR&apos; boolean operation with two or more selected objects,
+or with the shapes inside a compound.
+This means the overlapping volumes of the shapes will be removed.
+A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Part_Tube</name>
+    <message>
+        <location filename="../../../BasicShapes/CommandShapes.py" line="44"/>
+        <source>Create tube</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BasicShapes/CommandShapes.py" line="48"/>
+        <source>Creates a tube</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5919,6 +6067,11 @@ Do you want to continue?</source>
     <message>
         <location filename="../../ViewProviderAttachExtension.cpp" line="118"/>
         <source>Attachment editor</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../BasicShapes/CommandShapes.py" line="51"/>
+        <source>Create tube</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

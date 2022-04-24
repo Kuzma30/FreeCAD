@@ -3295,6 +3295,19 @@ click again to end selection</source>
     </message>
 </context>
 <context>
+    <name>PartDesign_InvoluteGear</name>
+    <message>
+        <location filename="../../../InvoluteGearFeature.py" line="57"/>
+        <source>Involute gear...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../InvoluteGearFeature.py" line="59"/>
+        <source>Creates or edit the involute gear definition.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PartDesign_MoveFeature</name>
     <message>
         <location filename="../../CommandBody.cpp" line="728"/>
@@ -3332,6 +3345,19 @@ click again to end selection</source>
     <message>
         <location filename="../../CommandBody.cpp" line="955"/>
         <source>Do you want the last feature to be the new tip?</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesign_Sprocket</name>
+    <message>
+        <location filename="../../../SprocketFeature.py" line="62"/>
+        <source>Sprocket...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../SprocketFeature.py" line="64"/>
+        <source>Creates or edit the sprocket definition.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4509,6 +4535,62 @@ over 90: larger hole radius at the bottom</source>
     <message>
         <location filename="../../TaskTransformedMessages.ui" line="25"/>
         <source>No message</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WizardShaft</name>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaft.py" line="210"/>
+        <source>Shaft design wizard...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaft.py" line="211"/>
+        <source>Start the shaft design wizard</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>WizardShaftTable</name>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaftTable.py" line="43"/>
+        <source>Length [mm]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaftTable.py" line="44"/>
+        <source>Diameter [mm]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaftTable.py" line="45"/>
+        <source>Inner diameter [mm]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaftTable.py" line="46"/>
+        <source>Constraint type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaftTable.py" line="47"/>
+        <source>Start edge type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaftTable.py" line="48"/>
+        <source>Start edge size</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaftTable.py" line="49"/>
+        <source>End edge type</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../WizardShaft/WizardShaftTable.py" line="50"/>
+        <source>End edge size</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

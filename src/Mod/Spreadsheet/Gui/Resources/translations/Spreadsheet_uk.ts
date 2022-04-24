@@ -951,7 +951,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="111"/>
       <source>&quot;</source>
-      <translation>&quot;</translation>
+      <translation type="unfinished">&quot;</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="38"/>
@@ -966,7 +966,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="140"/>
       <source>\</source>
-      <translation>\</translation>
+      <translation type="unfinished">\</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="130"/>
@@ -986,12 +986,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="79"/>
       <source>;</source>
-      <translation>;</translation>
+      <translation type="unfinished">;</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="84"/>
       <source>,</source>
-      <translation>,</translation>
+      <translation type="unfinished">,</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="98"/>

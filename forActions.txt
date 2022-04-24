@@ -1,0 +1,5 @@
+cd FreeCAD/src/Mod/Spreadsheet
+lupdate App/*.* Gui/*.* *.* -ts Gui/Resources/translations/Spreadsheet.ts
+
+cd FreeCAD/src/Mod/Sketcher
+lupdate App/*.* Gui/*.* ProfileLib/*.* *.* -ts Gui/Resources/translations/Sketcher.ts

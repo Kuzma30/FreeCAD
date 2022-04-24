@@ -114,8 +114,8 @@
     </message>
     <message>
       <location filename="../../CommandSketcherTools.cpp" line="104"/>
-      <source>Produce a closed shape by tying the end point of one element with the next element's starting point</source>
-      <translation>Utwórz kształt zamknięty przez połączenie punktu końcowego pierwszego elementu, z punktem początkowym kolejnego elementu</translation>
+      <source>Produce a closed shape by tying the end point of one element with the next element&apos;s starting point</source>
+      <translation type="unfinished">Produce a closed shape by tying the end point of one element with the next element&apos;s starting point</translation>
     </message>
   </context>
   <context>
@@ -420,8 +420,8 @@
     </message>
     <message>
       <location filename="../../CommandSketcherTools.cpp" line="216"/>
-      <source>Tie the end point of the element with next element's starting point</source>
-      <translation>Powiąż punkt końcowy elementu z punktem początkowym następnego elementu</translation>
+      <source>Tie the end point of the element with next element&apos;s starting point</source>
+      <translation type="unfinished">Tie the end point of the element with next element&apos;s starting point</translation>
     </message>
   </context>
   <context>
@@ -638,15 +638,15 @@ na wybranym wierzchołku</translation>
     <name>CmdSketcherConstrainSnellsLaw</name>
     <message>
       <location filename="../../CommandConstraints.cpp" line="6978"/>
-      <source>Constrain refraction (Snell's law')</source>
-      <translation>Wiązanie refrakcji (prawo Snell'a)</translation>
+      <source>Constrain refraction (Snell&apos;s law&apos;)</source>
+      <translation type="unfinished">Constrain refraction (Snell&apos;s law&apos;)</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="6979"/>
-      <source>Create a refraction law (Snell's law) constraint between two endpoints of rays
+      <source>Create a refraction law (Snell&apos;s law) constraint between two endpoints of rays
 and an edge as an interface.</source>
-      <translation>Utwórz wiązanie prawa refrakcji (prawo Snell'a) pomiędzy dwoma punktami końcowymi promieni,
-a krawędzią jako powierzchnią kontaktu.</translation>
+      <translation type="unfinished">Create a refraction law (Snell&apos;s law) constraint between two endpoints of rays
+and an edge as an interface.</translation>
     </message>
   </context>
   <context>
@@ -998,8 +998,8 @@ w odniesieniu do linii lub trzeciego punktu</translation>
     </message>
     <message>
       <location filename="../../CommandCreateGeo.cpp" line="1852"/>
-      <source>Create a polyline in the sketch. 'M' Key cycles behaviour</source>
-      <translation>Utwórz polilinię w szkicu. Klawisz "M" przełącza zachowanie</translation>
+      <source>Create a polyline in the sketch. &apos;M&apos; Key cycles behaviour</source>
+      <translation type="unfinished">Create a polyline in the sketch. &apos;M&apos; Key cycles behaviour</translation>
     </message>
   </context>
   <context>
@@ -1232,12 +1232,12 @@ w odniesieniu do linii lub trzeciego punktu</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="509"/>
-      <source>Set the 'Support' of a sketch.
+      <source>Set the &apos;Support&apos; of a sketch.
 First select the supporting geometry, for example, a face or an edge of a solid object,
 then call this command, then choose the desired sketch.</source>
-      <translation>Ustaw "podparcie" na szkicu.
-Najpierw wybierz geometrię pomocniczą, na przykład powierzchnię lub krawędź obiektu bryłowego,
-wywołaj to polecenie, a następnie wybierz żądany szkic.</translation>
+      <translation type="unfinished">Set the &apos;Support&apos; of a sketch.
+First select the supporting geometry, for example, a face or an edge of a solid object,
+then call this command, then choose the desired sketch.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="561"/>
@@ -1357,9 +1357,9 @@ jako odniesienia lustrzanego odbicia.</translation>
     <message>
       <location filename="../../Command.cpp" line="382"/>
       <source>Place the selected sketch on one of the global coordinate planes.
-This will clear the 'Support' property, if any.</source>
-      <translation>Umieść wybrany szkic na jednej z globalnych płaszczyzn współrzędnych.
-To usunie właściwość "podparcie", jeśli istnieje.</translation>
+This will clear the &apos;Support&apos; property, if any.</source>
+      <translation type="unfinished">Place the selected sketch on one of the global coordinate planes.
+This will clear the &apos;Support&apos; property, if any.</translation>
     </message>
   </context>
   <context>
@@ -1674,13 +1674,13 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1649"/>
-      <source>Add 'Lock' constraint</source>
-      <translation>Dodaj wiązanie blokady odległości</translation>
+      <source>Add &apos;Lock&apos; constraint</source>
+      <translation type="unfinished">Add &apos;Lock&apos; constraint</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1690"/>
-      <source>Add relative 'Lock' constraint</source>
-      <translation>Dodaj względne wiązanie blokady odległości</translation>
+      <source>Add relative &apos;Lock&apos; constraint</source>
+      <translation type="unfinished">Add relative &apos;Lock&apos; constraint</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1735"/>
@@ -1689,8 +1689,8 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1877"/>
-      <source>Add 'Block' constraint</source>
-      <translation>Dodaj wiązanie zablokowania</translation>
+      <source>Add &apos;Block&apos; constraint</source>
+      <translation type="unfinished">Add &apos;Block&apos; constraint</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1921"/>
@@ -1881,8 +1881,8 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="7094"/>
-      <source>Add Snell's law constraint</source>
-      <translation>Dodaj wiązanie prawa Snella</translation>
+      <source>Add Snell&apos;s law constraint</source>
+      <translation type="unfinished">Add Snell&apos;s law constraint</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="7303"/>
@@ -2123,8 +2123,8 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <location filename="../../TaskSketcherConstrains.cpp" line="753"/>
       <location filename="../../TaskSketcherConstrains.cpp" line="975"/>
       <location filename="../../TaskSketcherConstrains.cpp" line="1018"/>
-      <source>Update constraint's virtual space</source>
-      <translation>Aktualizuj wiązania przestrzeni wirtualnej</translation>
+      <source>Update constraint&apos;s virtual space</source>
+      <translation type="unfinished">Update constraint&apos;s virtual space</translation>
     </message>
     <message>
       <location filename="../../DrawSketchHandler.cpp" line="575"/>
@@ -2295,14 +2295,14 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="165"/>
-      <source>Can't map the sketch to selected object. %1.</source>
-      <translation>Nie można odwzorować szkicu dla wybranego obiektu. %1.</translation>
+      <source>Can&apos;t map the sketch to selected object. %1.</source>
+      <translation type="unfinished">Can&apos;t map the sketch to selected object. %1.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="172"/>
       <location filename="../../Command.cpp" line="590"/>
-      <source>Don't attach</source>
-      <translation>Nie dołączaj</translation>
+      <source>Don&apos;t attach</source>
+      <translation type="unfinished">Don&apos;t attach</translation>
     </message>
     <message>
       <location filename="../../CommandAlterGeometry.cpp" line="123"/>
@@ -2598,8 +2598,8 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1192"/>
-      <source>The selected item(s) can't accept a horizontal constraint!</source>
-      <translation>Wybrane detale nie mogą zaakceptować ograniczenia poziomego!</translation>
+      <source>The selected item(s) can&apos;t accept a horizontal constraint!</source>
+      <translation type="unfinished">The selected item(s) can&apos;t accept a horizontal constraint!</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1220"/>
@@ -2608,8 +2608,8 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1429"/>
-      <source>The selected item(s) can't accept a vertical constraint!</source>
-      <translation>Wybrane detale nie mogą zaakceptować ograniczenia pionowego!</translation>
+      <source>The selected item(s) can&apos;t accept a vertical constraint!</source>
+      <translation type="unfinished">The selected item(s) can&apos;t accept a vertical constraint!</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1455"/>
@@ -3461,13 +3461,13 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     </message>
     <message>
       <location filename="../../CommandCreateGeo.cpp" line="6621"/>
-      <source>This object belongs to another body, can't link.</source>
-      <translation>Ten obiekt należy do innej zawartości, nie można stworzyć powiązania.</translation>
+      <source>This object belongs to another body, can&apos;t link.</source>
+      <translation type="unfinished">This object belongs to another body, can&apos;t link.</translation>
     </message>
     <message>
       <location filename="../../CommandCreateGeo.cpp" line="6624"/>
-      <source>This object belongs to another part, can't link.</source>
-      <translation>Ten obiekt należy do innej części, nie można stworzyć powiązania.</translation>
+      <source>This object belongs to another part, can&apos;t link.</source>
+      <translation type="unfinished">This object belongs to another part, can&apos;t link.</translation>
     </message>
   </context>
   <context>
@@ -3699,14 +3699,14 @@ reflected on copies</source>
     <message>
       <location filename="../../SketcherSettings.ui" line="33"/>
       <source>Sketcher dialog will have additional section
-'Advanced solver control' to adjust solver settings</source>
-      <translation>Okno dialogowe Szkicownik będzie miało dodatkową sekcję
-"Zaawansowana kontrola solwera" z ustawieniami</translation>
+&apos;Advanced solver control&apos; to adjust solver settings</source>
+      <translation type="unfinished">Sketcher dialog will have additional section
+&apos;Advanced solver control&apos; to adjust solver settings</translation>
     </message>
     <message>
       <location filename="../../SketcherSettings.ui" line="37"/>
-      <source>Show section 'Advanced solver control' in task dialog</source>
-      <translation>Pokaż sekcję „Zaawansowana kontrola solvera” w oknie zadania</translation>
+      <source>Show section &apos;Advanced solver control&apos; in task dialog</source>
+      <translation type="unfinished">Show section &apos;Advanced solver control&apos; in task dialog</translation>
     </message>
     <message>
       <location filename="../../SketcherSettings.ui" line="53"/>
@@ -4003,7 +4003,7 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="45"/>
       <source>px</source>
-      <translation>px</translation>
+      <translation type="unfinished">px</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="73"/>
@@ -4052,8 +4052,8 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
     </message>
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="185"/>
-      <source>Geometry creation "Continue Mode"</source>
-      <translation>Tworzenie geometrii "Tryb kontynuacji"</translation>
+      <source>Geometry creation &quot;Continue Mode&quot;</source>
+      <translation type="unfinished">Geometry creation &quot;Continue Mode&quot;</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="201"/>
@@ -4062,15 +4062,15 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
     </message>
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="204"/>
-      <source>Constraint creation "Continue Mode"</source>
-      <translation>Tworzenie wiązań "Tryb kontynuacji"</translation>
+      <source>Constraint creation &quot;Continue Mode&quot;</source>
+      <translation type="unfinished">Constraint creation &quot;Continue Mode&quot;</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="220"/>
       <source>Base length units will not be displayed in constraints.
-Supports all unit systems except 'US customary' and 'Building US/Euro'.</source>
-      <translation>Jednostki długości bazowej nie będą wyświetlane podczas tworzenia wiązań.
-Obsługuje wszystkie systemy jednostek oprócz "zwyczajowego USA" i "budowlanego USA/EURO".</translation>
+Supports all unit systems except &apos;US customary&apos; and &apos;Building US/Euro&apos;.</source>
+      <translation type="unfinished">Base length units will not be displayed in constraints.
+Supports all unit systems except &apos;US customary&apos; and &apos;Building US/Euro&apos;.</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="224"/>
@@ -4090,7 +4090,7 @@ Obsługuje wszystkie systemy jednostek oprócz "zwyczajowego USA" i "budowlanego
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="256"/>
       <source>%N = %V</source>
-      <translation>%N = %V</translation>
+      <translation type="unfinished">%N = %V</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="259"/>
@@ -4158,9 +4158,9 @@ Domyślnie to: %N = %V
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="388"/>
       <source>When entering edit mode, force orthographic view of camera.
-Works only when "Restore camera position after editing" is enabled.</source>
-      <translation>Po wejściu do trybu edycji wymuś ortogonalne ujęcie widoku.
-Działa tylko przy włączonej opcji "Przywróć położenie ujęcia widoku po zakończeniu edycji".</translation>
+Works only when &quot;Restore camera position after editing&quot; is enabled.</source>
+      <translation type="unfinished">When entering edit mode, force orthographic view of camera.
+Works only when &quot;Restore camera position after editing&quot; is enabled.</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsDisplay.ui" line="392"/>
@@ -4261,12 +4261,12 @@ Widoczne będą obiekty tylko za płaszczyzną szkicu.</translation>
 
 %2 constraints are linking to the endpoints. The constraints have been listed in Report view (menu View -&gt; Panels -&gt; Report view).
 
-Click "Swap endpoints in constraints" button to reassign endpoints. Do this only once to sketches created in FreeCAD older than v0.15</source>
-      <translation>%1 znaleziono odwrócone łuki z geometrii zewnętrznych. Ich punkty końcowe zostały otoczone na widoku 3D.
+Click &quot;Swap endpoints in constraints&quot; button to reassign endpoints. Do this only once to sketches created in FreeCAD older than v0.15</source>
+      <translation type="unfinished">%1 reversed external-geometry arcs were found. Their endpoints are encircled in 3d view.
 
-%2 wiązania są połaczone do tych punktów końcowych. Te wiązania zostały umieszczone na liście w oknie Widoku raportu (menu Widok -&gt; Panele -&gt; Widok raportu)
+%2 constraints are linking to the endpoints. The constraints have been listed in Report view (menu View -&gt; Panels -&gt; Report view).
 
-Kliknij na przycisk "Zamień punkty końcowe na wiązania" aby ponownie przyporządkować punkty końcowe. Zrób to tylko raz na rysunkach utworzonych w programie FreeCAD, starszym niż w wersji 0.15</translation>
+Click &quot;Swap endpoints in constraints&quot; button to reassign endpoints. Do this only once to sketches created in FreeCAD older than v0.15</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherValidation.cpp" line="231"/>
@@ -4464,8 +4464,8 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstrains.ui" line="155"/>
-      <source>Snell's Law</source>
-      <translation>Prawo Snell'a</translation>
+      <source>Snell&apos;s Law</source>
+      <translation type="unfinished">Snell&apos;s Law</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstrains.ui" line="160"/>
@@ -4639,8 +4639,8 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherElements.ui" line="146"/>
-      <source>Only the type 'Edge' will be available for the list</source>
-      <translation>Na liście dostępny będzie tylko typ "Krawędź"</translation>
+      <source>Only the type &apos;Edge&apos; will be available for the list</source>
+      <translation type="unfinished">Only the type &apos;Edge&apos; will be available for the list</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherElements.ui" line="149"/>
@@ -4727,7 +4727,7 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
       <location filename="../../TaskSketcherElements.cpp" line="879"/>
       <location filename="../../TaskSketcherElements.cpp" line="880"/>
       <source>BSpline</source>
-      <translation>BSpline</translation>
+      <translation type="unfinished">BSpline</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherElements.cpp" line="784"/>
@@ -5030,13 +5030,13 @@ Punkty muszą być ustawione bliżej niż jedna piąta rozmiaru siatki od linii 
     </message>
     <message>
       <location filename="../../ViewProviderSketch.cpp" line="6651"/>
-      <source>Under-constrained sketch with &lt;a href="#dofs"&gt;&lt;span style=" text-decoration: underline; color:#0000ff; background-color: #F8F8FF;"&gt;1 degree&lt;/span&gt;&lt;/a&gt; of freedom. %1</source>
-      <translation>Szkic nie jest w pełni związany, z &lt;a href="#dofs"&gt;&lt;span style=" text-decoration: underline; color:#0000ff; background-color: #F8F8FF;"&gt;1 stopniem&lt;/span&gt;&lt;/a&gt; swobody. %1</translation>
+      <source>Under-constrained sketch with &lt;a href=&quot;#dofs&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff; background-color: #F8F8FF;&quot;&gt;1 degree&lt;/span&gt;&lt;/a&gt; of freedom. %1</source>
+      <translation type="unfinished">Under-constrained sketch with &lt;a href=&quot;#dofs&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff; background-color: #F8F8FF;&quot;&gt;1 degree&lt;/span&gt;&lt;/a&gt; of freedom. %1</translation>
     </message>
     <message>
       <location filename="../../ViewProviderSketch.cpp" line="6654"/>
-      <source>Under-constrained sketch with &lt;a href="#dofs"&gt;&lt;span style=" text-decoration: underline; color:#0000ff; background-color: #F8F8FF;"&gt;%1 degrees&lt;/span&gt;&lt;/a&gt; of freedom. %2</source>
-      <translation>Szkic nie jest w pełni związany, z &lt;a href="#dofs"&gt;&lt;span style=" text-decoration: underline; color:#0000ff; background-color: #F8F8FF;"&gt;%1 stopniami&lt;/span&gt;&lt;/a&gt; swobody. %2</translation>
+      <source>Under-constrained sketch with &lt;a href=&quot;#dofs&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff; background-color: #F8F8FF;&quot;&gt;%1 degrees&lt;/span&gt;&lt;/a&gt; of freedom. %2</source>
+      <translation type="unfinished">Under-constrained sketch with &lt;a href=&quot;#dofs&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff; background-color: #F8F8FF;&quot;&gt;%1 degrees&lt;/span&gt;&lt;/a&gt; of freedom. %2</translation>
     </message>
     <message>
       <location filename="../../ViewProviderSketch.cpp" line="6659"/>
@@ -5402,8 +5402,8 @@ Punkty muszą być ustawione bliżej niż jedna piąta rozmiaru siatki od linii 
     </message>
     <message>
       <location filename="../../Command.cpp" line="534"/>
-      <source>The document doesn't have a sketch</source>
-      <translation>Dokument nie zawiera szkicu</translation>
+      <source>The document doesn&apos;t have a sketch</source>
+      <translation type="unfinished">The document doesn&apos;t have a sketch</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="543"/>
@@ -5454,9 +5454,9 @@ Wybierz metodę, aby dołączyć ten szkic do wybranych obiektów.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="657"/>
-      <source>Can't map a sketch to support:
+      <source>Can&apos;t map a sketch to support:
 %1</source>
-      <translation>Nie można odwzorować rysunku do wsparcia:
+      <translation type="unfinished">Can&apos;t map a sketch to support:
 %1</translation>
     </message>
   </context>
@@ -5575,19 +5575,19 @@ Solver BFGS wykorzystuje algorytm Broyden-Fletcher-Goldfarb-Shanno.</translation
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="47"/>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="393"/>
       <source>BFGS</source>
-      <translation>BFGS</translation>
+      <translation type="unfinished">BFGS</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="52"/>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="398"/>
       <source>LevenbergMarquardt</source>
-      <translation>LevenbergMarquardt</translation>
+      <translation type="unfinished">LevenbergMarquardt</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="57"/>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="403"/>
       <source>DogLeg</source>
-      <translation>DogLeg</translation>
+      <translation type="unfinished">DogLeg</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="69"/>
@@ -5607,17 +5607,17 @@ Solver BFGS wykorzystuje algorytm Broyden-Fletcher-Goldfarb-Shanno.</translation
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="92"/>
       <source>FullPivLU</source>
-      <translation>FullPivLU</translation>
+      <translation type="unfinished">FullPivLU</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="97"/>
       <source>LeastNorm-FullPivLU</source>
-      <translation>LeastNorm-FullPivLU</translation>
+      <translation type="unfinished">LeastNorm-FullPivLU</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="102"/>
       <source>LeastNorm-LDLT</source>
-      <translation>LeastNorm-LDLT</translation>
+      <translation type="unfinished">LeastNorm-LDLT</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="114"/>
@@ -5669,17 +5669,17 @@ do określenia czy rozwiązanie jest zbieżne</translation>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="226"/>
       <source>Param1</source>
-      <translation>Param1</translation>
+      <translation type="unfinished">Param1</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="250"/>
       <source>Param2</source>
-      <translation>Param2</translation>
+      <translation type="unfinished">Param2</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="274"/>
       <source>Param3</source>
-      <translation>Param3</translation>
+      <translation type="unfinished">Param3</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="298"/>
@@ -5723,7 +5723,7 @@ Eigen Sparse QR, algorytm jest zoptymalizowany dla macierzy rzadkich; zwykle szy
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="350"/>
       <source>1E-13</source>
-      <translation>1E-13</translation>
+      <translation type="unfinished">1E-13</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="370"/>
@@ -5752,8 +5752,8 @@ Eigen Sparse QR, algorytm jest zoptymalizowany dla macierzy rzadkich; zwykle szy
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="425"/>
-      <source>Same as 'Maximum iterations', but for redundant solving</source>
-      <translation>To samo co "Maksymalna liczba powtórzeń", ale dla rozwiązywania wtórnego</translation>
+      <source>Same as &apos;Maximum iterations&apos;, but for redundant solving</source>
+      <translation type="unfinished">Same as &apos;Maximum iterations&apos;, but for redundant solving</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="451"/>
@@ -5767,8 +5767,8 @@ Eigen Sparse QR, algorytm jest zoptymalizowany dla macierzy rzadkich; zwykle szy
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="461"/>
-      <source>Same as 'Sketch size multiplier', but for redundant solving</source>
-      <translation>To samo co "Mnożnik rozmiaru szkicu", ale dla rozwiązywania wtórnego</translation>
+      <source>Same as &apos;Sketch size multiplier&apos;, but for redundant solving</source>
+      <translation type="unfinished">Same as &apos;Sketch size multiplier&apos;, but for redundant solving</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="484"/>
@@ -5782,13 +5782,13 @@ Eigen Sparse QR, algorytm jest zoptymalizowany dla macierzy rzadkich; zwykle szy
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="494"/>
-      <source>Same as 'Convergence', but for redundant solving</source>
-      <translation>Tak samo jak w przypadku opcji "Zbieżność", ale dla rozwiązywania wtórnego</translation>
+      <source>Same as &apos;Convergence&apos;, but for redundant solving</source>
+      <translation type="unfinished">Same as &apos;Convergence&apos;, but for redundant solving</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="497"/>
       <source>1E-10</source>
-      <translation>1E-10</translation>
+      <translation type="unfinished">1E-10</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="517"/>

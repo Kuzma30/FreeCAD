@@ -585,7 +585,7 @@ while doing a left or right click and move the mouse up or down</source>
     <message>
       <source>Individuals</source>
       <extracomment>Header for the list of individual people in the Credits list.</extracomment>
-      <translation type="unfinished">Individuals</translation>
+      <translation>Персони</translation>
     </message>
     <message>
       <source>Organizations</source>
@@ -829,7 +829,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Prefix group name</source>
-      <translation type="unfinished">Prefix group name</translation>
+      <translation>Префікс імені групи</translation>
     </message>
   </context>
   <context>
@@ -1612,8 +1612,8 @@ See the FreeCAD Wiki for details about the image.</source>
     <message>
       <source>Choose your preference for toolbar icon size. You can adjust
 this according to your screen size or personal taste</source>
-      <translation type="unfinished">Choose your preference for toolbar icon size. You can adjust
-this according to your screen size or personal taste</translation>
+      <translation>Оберіть ваші пераметри для розміру значка панелі інструментів. Ви можете налаштувати це
+у відповідності до розміру екрану або на власний смак</translation>
     </message>
     <message>
       <source>Tree view mode:</source>
@@ -1635,15 +1635,15 @@ this according to your screen size or personal taste</translation>
       <source>A Splash screen is a small loading window that is shown
 when FreeCAD is launching. If this option is checked, FreeCAD will
 display the splash screen</source>
-      <translation type="unfinished">A Splash screen is a small loading window that is shown
-when FreeCAD is launching. If this option is checked, FreeCAD will
-display the splash screen</translation>
+      <translation>Екран, що спливає - це маленьке вікно, яке показується
+при запуску FreeCAD. Якщо ця позначено ця опція відмічена, то FreeCAD буде
+показувати екран, що спливає</translation>
     </message>
     <message>
       <source>Choose which workbench will be activated and shown
 after FreeCAD launches</source>
-      <translation type="unfinished">Choose which workbench will be activated and shown
-after FreeCAD launches</translation>
+      <translation>Оберіть, який робочий стіл буде активовано і показано
+після запуску FreeCAD</translation>
     </message>
     <message>
       <source>Number format:</source>
@@ -1738,7 +1738,7 @@ after FreeCAD launches</translation>
     </message>
     <message>
       <source>TreeView and PropertyView</source>
-      <translation type="unfinished">TreeView and PropertyView</translation>
+      <translation>TreeView та PropertyView</translation>
     </message>
     <message>
       <source>Both</source>

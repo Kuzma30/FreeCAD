@@ -20,7 +20,7 @@
     <name>CmdRaytracingNewLuxProject</name>
     <message>
       <source>Raytracing</source>
-      <translation>Raytracing</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <source>New Luxrender project</source>
@@ -43,7 +43,7 @@
     <name>CmdRaytracingNewPartSegment</name>
     <message>
       <source>Raytracing</source>
-      <translation>Raytracing</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <source>Insert part</source>
@@ -58,7 +58,7 @@
     <name>CmdRaytracingNewPovrayProject</name>
     <message>
       <source>Raytracing</source>
-      <translation>Raytracing</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <source>New POV-Ray project</source>
@@ -81,7 +81,7 @@
     <name>CmdRaytracingRender</name>
     <message>
       <source>Raytracing</source>
-      <translation>Raytracing</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <source>&amp;Render</source>
@@ -96,7 +96,7 @@
     <name>CmdRaytracingResetCamera</name>
     <message>
       <source>Raytracing</source>
-      <translation>Raytracing</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <source>&amp;Reset Camera</source>
@@ -111,7 +111,7 @@
     <name>CmdRaytracingWriteCamera</name>
     <message>
       <source>Raytracing</source>
-      <translation>Raytracing</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <source>Export camera to POV-Ray...</source>
@@ -126,7 +126,7 @@
     <name>CmdRaytracingWritePart</name>
     <message>
       <source>Raytracing</source>
-      <translation>Raytracing</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <source>Export part to POV-Ray...</source>
@@ -151,7 +151,7 @@ Czy chcesz kontynuować?</translation>
     </message>
     <message>
       <source>Raytracing</source>
-      <translation>Raytracing</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <source>Export view to POV-Ray...</source>
@@ -180,7 +180,7 @@ Czy chcesz kontynuować?</translation>
     <name>QObject</name>
     <message>
       <source>POV-Ray</source>
-      <translation>POV-Ray</translation>
+      <translation type="unfinished">POV-Ray</translation>
     </message>
     <message>
       <source>All Files</source>
@@ -216,7 +216,7 @@ Czy chcesz kontynuować?</translation>
     </message>
     <message>
       <source>Luxrender</source>
-      <translation>Luxrender</translation>
+      <translation type="unfinished">Luxrender</translation>
     </message>
     <message>
       <source>POV-Ray not found</source>
@@ -247,8 +247,8 @@ Czy chcesz kontynuować?</translation>
       <translation>Brakuje pliku POV-Ray</translation>
     </message>
     <message>
-      <source>The POV-Ray project file doesn't exist.</source>
-      <translation>Brak pliku projektu POV-Ray.</translation>
+      <source>The POV-Ray project file doesn&apos;t exist.</source>
+      <translation type="unfinished">The POV-Ray project file doesn&apos;t exist.</translation>
     </message>
     <message>
       <source>Rendered image</source>
@@ -259,15 +259,15 @@ Czy chcesz kontynuować?</translation>
       <translation>Brakuje pliku projektu Luxrender</translation>
     </message>
     <message>
-      <source>The Lux project file doesn't exist.</source>
-      <translation>Plik projektu Luxrender nie istnieje.</translation>
+      <source>The Lux project file doesn&apos;t exist.</source>
+      <translation type="unfinished">The Lux project file doesn&apos;t exist.</translation>
     </message>
   </context>
   <context>
     <name>RaytracingGui::DlgSettingsRay</name>
     <message>
       <source>Raytracing</source>
-      <translation>Raytracing</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <source>Mesh export settings</source>
@@ -303,11 +303,11 @@ Czy chcesz kontynuować?</translation>
     </message>
     <message>
       <source>+P +A</source>
-      <translation>+P +A</translation>
+      <translation type="unfinished">+P +A</translation>
     </message>
     <message>
       <source>+W: </source>
-      <translation>+W: </translation>
+      <translation type="unfinished">+W: </translation>
     </message>
     <message>
       <source>The width of the rendered image</source>
@@ -351,11 +351,11 @@ Czy chcesz kontynuować?</translation>
     </message>
     <message>
       <source>TempCamera.inc</source>
-      <translation>TempCamera.inc</translation>
+      <translation type="unfinished">TempCamera.inc</translation>
     </message>
     <message>
       <source>TempPart.inc</source>
-      <translation>TempPart.inc</translation>
+      <translation type="unfinished">TempPart.inc</translation>
     </message>
   </context>
   <context>
@@ -399,7 +399,7 @@ Czy chcesz kontynuować?</translation>
     <name>Workbench</name>
     <message>
       <source>&amp;Raytracing</source>
-      <translation>&amp;Raytracing</translation>
+      <translation type="unfinished">&amp;Raytracing</translation>
     </message>
   </context>
 </TS>

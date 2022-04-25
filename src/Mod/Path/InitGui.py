@@ -269,8 +269,7 @@ class PathWorkbench(Workbench):
 
                 msg = translate(
                     "Path",
-                    f"The currently selected unit schema: \n     '{current_schema}'\n Does not use 'minutes' for velocity values. \n \nCNC machines require feed rate to be expressed in \nunit/minute. To ensure correct gcode: \nSelect a minute-based schema in preferences.\nFor example:\n    'Metric, Small Parts & CNC'\n    'US Customary'\n    'Imperial Decimal'",
-                )
+                    "The currently selected unit schema: \n     '{current_schema}'\n Does not use 'minutes' for velocity values. \n \nCNC machines require feed rate to be expressed in \nunit/minute. To ensure correct gcode: \nSelect a minute-based schema in preferences.\nFor example:\n    'Metric, Small Parts & CNC'\n    'US Customary'\n    'Imperial Decimal'")
                 header = translate("Path", "Warning")
                 msgbox = QtGui.QMessageBox(QtGui.QMessageBox.Warning, header, msg)
 

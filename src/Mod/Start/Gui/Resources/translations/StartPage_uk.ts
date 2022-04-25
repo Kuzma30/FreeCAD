@@ -85,8 +85,8 @@
     </message>
     <message>
       <location filename="TranslationTexts.py" line="58"/>
-      <source>The FreeCAD manual is another, more linear way to present the information contained in this wiki. It is made to be read like a book, and will gently introduce you to many other pages from the hubs above. &lt;a href="https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details"&gt;e-book versions&lt;/a&gt; are also available.</source>
-      <translation>Посібник FreeCAD - це ще один, більш лінійний спосіб представити інформацію, що міститься у цій wiki. Його створено для читання, як книга, і він поверхнево познайомить вас з багатьма іншими сторінками з решітки вище. Також доступні &lt;a href="https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details"&gt; версії електронних книг &lt;/a&gt;.</translation>
+      <source>The FreeCAD manual is another, more linear way to present the information contained in this wiki. It is made to be read like a book, and will gently introduce you to many other pages from the hubs above. &lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;e-book versions&lt;/a&gt; are also available.</source>
+      <translation type="unfinished">The FreeCAD manual is another, more linear way to present the information contained in this wiki. It is made to be read like a book, and will gently introduce you to many other pages from the hubs above. &lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;e-book versions&lt;/a&gt; are also available.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="59"/>
@@ -105,18 +105,18 @@
     </message>
     <message>
       <location filename="TranslationTexts.py" line="62"/>
-      <source>The &lt;a href="http://forum.freecadweb.org"&gt;FreeCAD forum&lt;/a&gt; is a great place to get help from other FreeCAD users and developers. The forum has many sections for different types of issues and discussion subjects. If in doubt, post in the more general &lt;a href="https://forum.freecadweb.org/viewforum.php?f=3"&gt;Help on using FreeCAD&lt;/a&gt; section.</source>
-      <translation>&lt;a href="http://forum.freecadweb.org"&gt;Форум FreeCAD&lt;/a&gt; є чудовим місцем, щоб отримати допомогу від інших користувачів FreeCAD та розробників. Форум має багато розділів з різних питань та тем, що обговорюються. Якщо маєте сумніви, напишіть у більш загальний розділ &lt;a href="https://forum.freecadweb.org /viewforum.php?f=3"&gt;Допомога у використанні FreeCAD&lt;/a&gt;.</translation>
+      <source>The &lt;a href=&quot;http://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt; is a great place to get help from other FreeCAD users and developers. The forum has many sections for different types of issues and discussion subjects. If in doubt, post in the more general &lt;a href=&quot;https://forum.freecadweb.org/viewforum.php?f=3&quot;&gt;Help on using FreeCAD&lt;/a&gt; section.</source>
+      <translation type="unfinished">The &lt;a href=&quot;http://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt; is a great place to get help from other FreeCAD users and developers. The forum has many sections for different types of issues and discussion subjects. If in doubt, post in the more general &lt;a href=&quot;https://forum.freecadweb.org/viewforum.php?f=3&quot;&gt;Help on using FreeCAD&lt;/a&gt; section.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="63"/>
-      <source>If it is the first time you are posting on the forum, be sure to &lt;a href="https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264"&gt;read the guidelines&lt;/a&gt; first!</source>
-      <translation>Якщо це буде ваш перший допис на форумі, спочатку обов'язково &lt;a href="https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264"&gt;прочитайте рекомендації&lt;/a&gt;.</translation>
+      <source>If it is the first time you are posting on the forum, be sure to &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;read the guidelines&lt;/a&gt; first!</source>
+      <translation type="unfinished">If it is the first time you are posting on the forum, be sure to &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;read the guidelines&lt;/a&gt; first!</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="64"/>
-      <source>FreeCAD also maintains a public &lt;a href="https://www.freecadweb.org/tracker"&gt;bug tracker&lt;/a&gt; where anybody can submit bugs and propose new features. To avoid causing extra work and give the best chances to see your bug solved, make sure you read the &lt;a href="https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=5236"&gt;bug submission guide&lt;/a&gt; before posting.</source>
-      <translation>FreeCAD також підтримує загальнодоступний &lt;a href="https://www.freecadweb.org/tracker"&gt; відстежувач помилок &lt;/a&gt;, де кожен може надсилати помилки та пропонувати нові функції. Щоб уникнути зайвої роботи та мати найкращі шанси побачити помилку вирішеною, обов’язково прочитайте &lt;a href="https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=5236"&gt; посібник із поданням помилок &lt;/a&gt; перед публікацією.</translation>
+      <source>FreeCAD also maintains a public &lt;a href=&quot;https://www.freecadweb.org/tracker&quot;&gt;bug tracker&lt;/a&gt; where anybody can submit bugs and propose new features. To avoid causing extra work and give the best chances to see your bug solved, make sure you read the &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=5236&quot;&gt;bug submission guide&lt;/a&gt; before posting.</source>
+      <translation type="unfinished">FreeCAD also maintains a public &lt;a href=&quot;https://www.freecadweb.org/tracker&quot;&gt;bug tracker&lt;/a&gt; where anybody can submit bugs and propose new features. To avoid causing extra work and give the best chances to see your bug solved, make sure you read the &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=5236&quot;&gt;bug submission guide&lt;/a&gt; before posting.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="65"/>
@@ -135,8 +135,8 @@
     </message>
     <message>
       <location filename="TranslationTexts.py" line="68"/>
-      <source>Cannot fetch information from GitHub. &lt;a href="EnableDownload.py"&gt;Authorize FreeCAD to access the internet&lt;/a&gt; and reload the Start page.</source>
-      <translation>Не вдається отримати інформацію з GitHub? &lt;a href="EnableDownload.py"&gt; Авторизуйте FreeCAD з доступом до Інтернету &lt;/a&gt; та перезавантажте початкову сторінку.</translation>
+      <source>Cannot fetch information from GitHub. &lt;a href=&quot;EnableDownload.py&quot;&gt;Authorize FreeCAD to access the internet&lt;/a&gt; and reload the Start page.</source>
+      <translation type="unfinished">Cannot fetch information from GitHub. &lt;a href=&quot;EnableDownload.py&quot;&gt;Authorize FreeCAD to access the internet&lt;/a&gt; and reload the Start page.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="69"/>
@@ -145,8 +145,8 @@
     </message>
     <message>
       <location filename="TranslationTexts.py" line="70"/>
-      <source>Below are the latest changes added to the &lt;a href="http://github.com/FreeCAD/FreeCAD/"&gt;FreeCAD source code&lt;/a&gt;. These changes might not reflect yet in the FreeCAD version that you are currently running. Check the &lt;a href="https://www.freecadweb.org/wiki/Downloads"&gt;available options&lt;/a&gt; if you wish to obtain a development version.</source>
-      <translation>Нижче наведено останні зміни, додані до &lt;a href="http://github.com/FreeCAD/FreeCAD/"&gt; FreeCAD-коду &lt;/a&gt;. Ці зміни можуть поки що не відображатися у версії FreeCAD, яку ви зараз використовуєте. Перевірте &lt;a href="https://www.freecadweb.org/wiki/Downloads"&gt; доступні варіанти &lt;/a&gt;, якщо хочете отримати версію для розробки.</translation>
+      <source>Below are the latest changes added to the &lt;a href=&quot;http://github.com/FreeCAD/FreeCAD/&quot;&gt;FreeCAD source code&lt;/a&gt;. These changes might not reflect yet in the FreeCAD version that you are currently running. Check the &lt;a href=&quot;https://www.freecadweb.org/wiki/Downloads&quot;&gt;available options&lt;/a&gt; if you wish to obtain a development version.</source>
+      <translation type="unfinished">Below are the latest changes added to the &lt;a href=&quot;http://github.com/FreeCAD/FreeCAD/&quot;&gt;FreeCAD source code&lt;/a&gt;. These changes might not reflect yet in the FreeCAD version that you are currently running. Check the &lt;a href=&quot;https://www.freecadweb.org/wiki/Downloads&quot;&gt;available options&lt;/a&gt; if you wish to obtain a development version.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="71"/>
@@ -185,8 +185,8 @@
     </message>
     <message>
       <location filename="TranslationTexts.py" line="78"/>
-      <source>The latest posts on the &lt;a href="https://forum.freecadweb.org"&gt;FreeCAD forum&lt;/a&gt;:</source>
-      <translation>Останні дописи на &lt;a href="https://forum.freecadweb.org"&gt;форумі FreeCAD&lt;/a&gt;:</translation>
+      <source>The latest posts on the &lt;a href=&quot;https://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt;:</source>
+      <translation type="unfinished">The latest posts on the &lt;a href=&quot;https://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt;:</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="79"/>
@@ -290,9 +290,9 @@
     <message>
       <location filename="../../DlgStartPreferences.ui" line="110"/>
       <source>An optional custom folder to be displayed at the bottom of the first page.
-By using ";;" to separate paths, you can add several folders here</source>
+By using &quot;;;&quot; to separate paths, you can add several folders here</source>
       <translation type="unfinished">An optional custom folder to be displayed at the bottom of the first page.
-By using ";;" to separate paths, you can add several folders here</translation>
+By using &quot;;;&quot; to separate paths, you can add several folders here</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="127"/>
@@ -437,7 +437,7 @@ By using ";;" to separate paths, you can add several folders here</translation>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="538"/>
       <source>Arial,Helvetica,sans</source>
-      <translation>Arial,Helvetica,sans</translation>
+      <translation type="unfinished">Arial,Helvetica,sans</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="551"/>
@@ -456,8 +456,8 @@ By using ";;" to separate paths, you can add several folders here</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="579"/>
-      <source>If this is selected, the 'New File' icon shows a gradient icon instead of the normal icon</source>
-      <translation type="unfinished">If this is selected, the 'New File' icon shows a gradient icon instead of the normal icon</translation>
+      <source>If this is selected, the &apos;New File&apos; icon shows a gradient icon instead of the normal icon</source>
+      <translation type="unfinished">If this is selected, the &apos;New File&apos; icon shows a gradient icon instead of the normal icon</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="601"/>

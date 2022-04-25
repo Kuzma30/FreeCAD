@@ -2,6 +2,19 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="pl" sourcelanguage="en">
   <context>
+    <name>Sketcher_ProfilesHexagon1</name>
+    <message>
+      <location filename="Profiles.py" line="53"/>
+      <source>Creates a hexagonal profile</source>
+      <translation>Tworzy profil sześciokątny</translation>
+    </message>
+    <message>
+      <location filename="Profiles.py" line="58"/>
+      <source>Creates a hexagonal profile in the sketch</source>
+      <translation>Tworzy profil sześciokątny na szkicu</translation>
+    </message>
+  </context>
+  <context>
     <name>CmdSketcherBSplineComb</name>
     <message>
       <location filename="../../CommandSketcherBSpline.cpp" line="203"/>
@@ -2530,6 +2543,11 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <translation>Nie można dodać wiązania pomiędzy dwoma geometriami zewnętrznymi.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="163"/>
+      <source>Cannot add a constraint between two fixed geometries. Fixed geometries include external geometry, blocked geometry, and special points such as B-spline knot points.</source>
+      <translation type="unfinished">Cannot add a constraint between two fixed geometries. Fixed geometries include external geometry, blocked geometry, and special points such as B-spline knot points.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="486"/>
       <source>Sketcher Constraint Substitution</source>
       <translation>Zastępowanie wiązania szkicownika</translation>
@@ -2538,6 +2556,18 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <location filename="../../CommandConstraints.cpp" line="492"/>
       <source>Keep notifying me of constraint substitutions</source>
       <translation>Powiadamiaj mnie o zastępowaniu wiązań</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="533"/>
+      <location filename="../../CommandConstraints.cpp" line="544"/>
+      <location filename="../../CommandConstraints.cpp" line="556"/>
+      <source>Only sketch and its support are allowed to be selected.</source>
+      <translation type="unfinished">Only sketch and its support are allowed to be selected.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="565"/>
+      <source>One of the selected has to be on the sketch.</source>
+      <translation type="unfinished">One of the selected has to be on the sketch.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="912"/>
@@ -2566,6 +2596,14 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <location filename="../../CommandSketcherTools.cpp" line="273"/>
       <source>Impossible constraint</source>
       <translation>Wiązanie niemożliwe do ustalenia</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="938"/>
+      <location filename="../../CommandConstraints.cpp" line="1033"/>
+      <location filename="../../CommandConstraints.cpp" line="1176"/>
+      <location filename="../../CommandConstraints.cpp" line="1269"/>
+      <source>The selected edge is not a line segment.</source>
+      <translation type="unfinished">The selected edge is not a line segment.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="946"/>
@@ -2609,40 +2647,15 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <translation type="unfinished">The selected item(s) can&apos;t accept a horizontal constraint!</translation>
     </message>
     <message>
-      <location filename="../../CommandConstraints.cpp" line="1214"/>
-      <source>The selected item(s) can&apos;t accept a vertical constraint!</source>
-      <translation type="unfinished">The selected item(s) can&apos;t accept a vertical constraint!</translation>
-    </message>
-    <message>
       <location filename="../../CommandConstraints.cpp" line="1005"/>
       <location filename="../../CommandConstraints.cpp" line="1240"/>
       <source>There are more than one fixed points selected. Select a maximum of one fixed point!</source>
       <translation>Wybrano więcej niż jeden ustalony punkt. Wybierz maksymalnie jeden ustalony punkt!</translation>
     </message>
     <message>
-      <location filename="../../CommandConstraints.cpp" line="163"/>
-      <source>Cannot add a constraint between two fixed geometries. Fixed geometries include external geometry, blocked geometry, and special points such as B-spline knot points.</source>
-      <translation type="unfinished">Cannot add a constraint between two fixed geometries. Fixed geometries include external geometry, blocked geometry, and special points such as B-spline knot points.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="533"/>
-      <location filename="../../CommandConstraints.cpp" line="544"/>
-      <location filename="../../CommandConstraints.cpp" line="556"/>
-      <source>Only sketch and its support are allowed to be selected.</source>
-      <translation type="unfinished">Only sketch and its support are allowed to be selected.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="565"/>
-      <source>One of the selected has to be on the sketch.</source>
-      <translation type="unfinished">One of the selected has to be on the sketch.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="938"/>
-      <location filename="../../CommandConstraints.cpp" line="1033"/>
-      <location filename="../../CommandConstraints.cpp" line="1176"/>
-      <location filename="../../CommandConstraints.cpp" line="1269"/>
-      <source>The selected edge is not a line segment.</source>
-      <translation type="unfinished">The selected edge is not a line segment.</translation>
+      <location filename="../../CommandConstraints.cpp" line="1214"/>
+      <source>The selected item(s) can&apos;t accept a vertical constraint!</source>
+      <translation type="unfinished">The selected item(s) can&apos;t accept a vertical constraint!</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1387"/>
@@ -2704,6 +2717,12 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <translation>Zaznacz dwa lub więcej punktów ze szkicu.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="1980"/>
+      <location filename="../../CommandConstraints.cpp" line="1990"/>
+      <source>Select two or more vertices from the sketch.</source>
+      <translation type="unfinished">Select two or more vertices from the sketch.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="2147"/>
       <location filename="../../CommandConstraints.cpp" line="2278"/>
       <source>Select exactly one line or one point and one line or two points from the sketch.</source>
@@ -2713,6 +2732,11 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <location filename="../../CommandConstraints.cpp" line="2245"/>
       <source>Cannot add a length constraint on an axis!</source>
       <translation>Nie można dodać ograniczenia długości osi!</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="2370"/>
+      <source>This constraint does not make sense for non-linear curves.</source>
+      <translation type="unfinished">This constraint does not make sense for non-linear curves.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="2487"/>
@@ -2737,50 +2761,6 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <translation>Punkt na krawędzi krzywej złożonej obecnie nie jest obsługiwany.</translation>
     </message>
     <message>
-      <location filename="../../CommandConstraints.cpp" line="2881"/>
-      <location filename="../../CommandConstraints.cpp" line="3130"/>
-      <source>This constraint only makes sense on a line segment or a pair of points.</source>
-      <translation type="unfinished">This constraint only makes sense on a line segment or a pair of points.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="3258"/>
-      <source>Select a valid line.</source>
-      <translation type="unfinished">Select a valid line.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="3274"/>
-      <location filename="../../CommandConstraints.cpp" line="3312"/>
-      <source>The selected edge is not a valid line.</source>
-      <translation type="unfinished">The selected edge is not a valid line.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="3409"/>
-      <source>Wrong number of selected objects!</source>
-      <comment>perpendicular constraint.</comment>
-      <translation type="unfinished">Wrong number of selected objects!</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="5223"/>
-      <source>Select an edge that is not a B-spline weight</source>
-      <translation>Wybierz krawędź, która nie jest wagą krzywej złożonej</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="2583"/>
-      <source>None of the selected points were constrained onto the respective curves, because they are parts of the same element, because they are both external geometry, or because the edge is not eligible.</source>
-      <translation>Żaden z wybranych punktów nie został związany z odpowiednimi krzywymi, ponieważ są one częściami tego samego elementu, ponieważ są geometrią zewnętrzną lub ponieważ krawędź nie kwalifikuje się.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="1980"/>
-      <location filename="../../CommandConstraints.cpp" line="1990"/>
-      <source>Select two or more vertices from the sketch.</source>
-      <translation type="unfinished">Select two or more vertices from the sketch.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="2370"/>
-      <source>This constraint does not make sense for non-linear curves.</source>
-      <translation type="unfinished">This constraint does not make sense for non-linear curves.</translation>
-    </message>
-    <message>
       <location filename="../../CommandConstraints.cpp" line="2561"/>
       <location filename="../../CommandConstraints.cpp" line="2650"/>
       <location filename="../../CommandConstraints.cpp" line="3442"/>
@@ -2800,6 +2780,11 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <location filename="../../CommandConstraints.cpp" line="6863"/>
       <source>Select an edge that is not a B-spline weight.</source>
       <translation type="unfinished">Select an edge that is not a B-spline weight.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="2583"/>
+      <source>None of the selected points were constrained onto the respective curves, because they are parts of the same element, because they are both external geometry, or because the edge is not eligible.</source>
+      <translation>Żaden z wybranych punktów nie został związany z odpowiednimi krzywymi, ponieważ są one częściami tego samego elementu, ponieważ są geometrią zewnętrzną lub ponieważ krawędź nie kwalifikuje się.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="2594"/>
@@ -2830,6 +2815,12 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <translation>Nie można dodać określonego wiązania współrzędnych x w punkcie odniesienia położenia!</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="2881"/>
+      <location filename="../../CommandConstraints.cpp" line="3130"/>
+      <source>This constraint only makes sense on a line segment or a pair of points.</source>
+      <translation type="unfinished">This constraint only makes sense on a line segment or a pair of points.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="3021"/>
       <source>Cannot add a vertical length constraint on an axis!</source>
       <translation>Nie można dodać ograniczenia długości osi w pionie!</translation>
@@ -2851,6 +2842,17 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <translation>Wybierz co najmniej dwie linie ze szkicu.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="3258"/>
+      <source>Select a valid line.</source>
+      <translation type="unfinished">Select a valid line.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="3274"/>
+      <location filename="../../CommandConstraints.cpp" line="3312"/>
+      <source>The selected edge is not a valid line.</source>
+      <translation type="unfinished">The selected edge is not a valid line.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="3376"/>
       <source>There is a number of ways this constraint can be applied.
 
@@ -2865,6 +2867,12 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywej; dwa punkty końco
       <source>Select some geometry from the sketch.</source>
       <comment>perpendicular constraint</comment>
       <translation>Wybierz dowolną geometrię ze szkicu.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="3409"/>
+      <source>Wrong number of selected objects!</source>
+      <comment>perpendicular constraint.</comment>
+      <translation type="unfinished">Wrong number of selected objects!</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="3486"/>
@@ -2962,6 +2970,11 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
       <translation>Wiązanie dotyczy tylko łuków lub okręgów.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="5223"/>
+      <source>Select an edge that is not a B-spline weight</source>
+      <translation>Wybierz krawędź, która nie jest wagą krzywej złożonej</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="5788"/>
       <location filename="../../CommandConstraints.cpp" line="6033"/>
       <source>Select one or two lines from the sketch. Or select two edges and a point.</source>
@@ -3001,21 +3014,16 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
       <translation type="unfinished">Sketch axes cannot be used in equality constraints.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="6343"/>
+      <source>Equality for B-spline edge currently unsupported.</source>
+      <translation>Równość pomiędzy krawędziami krzywej złożonej obecnie nie jest obsługiwana.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="6373"/>
       <location filename="../../CommandConstraints.cpp" line="6388"/>
       <location filename="../../CommandConstraints.cpp" line="6440"/>
       <source>Select two or more edges of similar type.</source>
       <translation type="unfinished">Select two or more edges of similar type.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="6999"/>
-      <source>Sketch axes cannot be used in internal alignment constraint.</source>
-      <translation type="unfinished">Sketch axes cannot be used in internal alignment constraint.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="6343"/>
-      <source>Equality for B-spline edge currently unsupported.</source>
-      <translation>Równość pomiędzy krawędziami krzywej złożonej obecnie nie jest obsługiwana.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="6522"/>
@@ -3074,6 +3082,11 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
       <location filename="../../CommandConstraints.cpp" line="6978"/>
       <source>Select at least one ellipse and one edge from the sketch.</source>
       <translation>Wybierz co najmniej jedną elipsę i jedną krawędź ze szkicu.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="6999"/>
+      <source>Sketch axes cannot be used in internal alignment constraint.</source>
+      <translation type="unfinished">Sketch axes cannot be used in internal alignment constraint.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="7044"/>
@@ -4027,9 +4040,9 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Kolory robocze</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="80"/>
-      <source>Coordinate text</source>
-      <translation>Tekst współrzędnej</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="34"/>
+      <source>Creating line</source>
+      <translation>Tworzenie linii</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="41"/>
@@ -4037,16 +4050,9 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Kolor używany podczas tworzenia nowych elementów szkicu</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="114"/>
-      <source>Color of crosshair cursor.
-(The one you get when creating a new sketch element.)</source>
-      <translation>Kolor kursora krzyżykowego.
-(który pojawia się podczas tworzenia nowego elementu rysunku.)</translation>
-    </message>
-    <message>
-      <location filename="../../SketcherSettingsColors.ui" line="34"/>
-      <source>Creating line</source>
-      <translation>Tworzenie linii</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="80"/>
+      <source>Coordinate text</source>
+      <translation>Tekst współrzędnej</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="87"/>
@@ -4059,24 +4065,26 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Krzyżyk kursora</translation>
     </message>
     <message>
+      <location filename="../../SketcherSettingsColors.ui" line="114"/>
+      <source>Color of crosshair cursor.
+(The one you get when creating a new sketch element.)</source>
+      <translation>Kolor kursora krzyżykowego.
+(który pojawia się podczas tworzenia nowego elementu rysunku.)</translation>
+    </message>
+    <message>
       <location filename="../../SketcherSettingsColors.ui" line="140"/>
       <source>Geometric element colors</source>
       <translation>Barwy elementów geometrycznych</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="370"/>
-      <source>Internal alignment edge</source>
-      <translation>Wewnętrzna krawędź wyrównania</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="154"/>
+      <source>Constrained</source>
+      <translation>Związany</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="167"/>
       <source>Unconstrained</source>
       <translation>Bez wiązań</translation>
-    </message>
-    <message>
-      <location filename="../../SketcherSettingsColors.ui" line="226"/>
-      <source>Color of edges being edited</source>
-      <translation>Kolor krawędzi w trakcie edycji</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="187"/>
@@ -4085,9 +4093,14 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Krawędź</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="285"/>
-      <source>Color of vertices being edited</source>
-      <translation>Kolor edytowanych wierzchołków</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="200"/>
+      <source>Color of fully constrained edge color in edit mode</source>
+      <translation>Kolor w pełni związanej krawędzi w trybie edycji</translation>
+    </message>
+    <message>
+      <location filename="../../SketcherSettingsColors.ui" line="226"/>
+      <source>Color of edges being edited</source>
+      <translation>Kolor krawędzi w trakcie edycji</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="246"/>
@@ -4096,9 +4109,14 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Wierzchołek</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="318"/>
-      <source>Color of fully constrained construction edge color in edit mode</source>
-      <translation>Kolor w pełni związanej krawędzi konstrukcyjnej w trybie edycji</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="259"/>
+      <source>Color of fully constrained vertex color in edit mode</source>
+      <translation>Kolor w pełni związanego wierzchołka w trybie edycji</translation>
+    </message>
+    <message>
+      <location filename="../../SketcherSettingsColors.ui" line="285"/>
+      <source>Color of vertices being edited</source>
+      <translation>Kolor edytowanych wierzchołków</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="305"/>
@@ -4106,9 +4124,9 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Geometria konstrukcyjna</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="409"/>
-      <source>Color of edges of internal alignment geometry</source>
-      <translation>Kolor krawędzi geometrii wyrównania wewnętrznego</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="318"/>
+      <source>Color of fully constrained construction edge color in edit mode</source>
+      <translation>Kolor w pełni związanej krawędzi konstrukcyjnej w trybie edycji</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="344"/>
@@ -4116,9 +4134,9 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Kolor geometrii konstrukcji w trybie edycji</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="200"/>
-      <source>Color of fully constrained edge color in edit mode</source>
-      <translation>Kolor w pełni związanej krawędzi w trybie edycji</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="370"/>
+      <source>Internal alignment edge</source>
+      <translation>Wewnętrzna krawędź wyrównania</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="383"/>
@@ -4126,9 +4144,9 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Kolor w pełni związanej krawędzi konstrukcyjnej w trybie edycji</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="442"/>
-      <source>Color of external geometry in edit mode</source>
-      <translation>Kolor geometrii zewnętrznej w trybie edycji</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="409"/>
+      <source>Color of edges of internal alignment geometry</source>
+      <translation>Kolor krawędzi geometrii wyrównania wewnętrznego</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="429"/>
@@ -4136,19 +4154,9 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Geometria zewnętrzna</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="259"/>
-      <source>Color of fully constrained vertex color in edit mode</source>
-      <translation>Kolor w pełni związanego wierzchołka w trybie edycji</translation>
-    </message>
-    <message>
-      <location filename="../../SketcherSettingsColors.ui" line="154"/>
-      <source>Constrained</source>
-      <translation>Związany</translation>
-    </message>
-    <message>
-      <location filename="../../SketcherSettingsColors.ui" line="518"/>
-      <source>Invalid Sketch</source>
-      <translation>Nieprawidłowy szkic</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="442"/>
+      <source>Color of external geometry in edit mode</source>
+      <translation>Kolor geometrii zewnętrznej w trybie edycji</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="472"/>
@@ -4159,6 +4167,11 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <location filename="../../SketcherSettingsColors.ui" line="485"/>
       <source>Color of fully constrained geometry in edit mode</source>
       <translation>Kolor w pełni związanej geometrii w trybie edycji</translation>
+    </message>
+    <message>
+      <location filename="../../SketcherSettingsColors.ui" line="518"/>
+      <source>Invalid Sketch</source>
+      <translation>Nieprawidłowy szkic</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="531"/>
@@ -4226,14 +4239,14 @@ Wymaga ponownego przejścia do trybu edycji, aby mógł być skuteczny.</transla
       <translation>Kolory poza szkicownikiem</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="784"/>
-      <source>Color of vertices</source>
-      <translation>Kolor wierzchołków</translation>
-    </message>
-    <message>
       <location filename="../../SketcherSettingsColors.ui" line="744"/>
       <source>Color of edges</source>
       <translation>Kolor krawędzi</translation>
+    </message>
+    <message>
+      <location filename="../../SketcherSettingsColors.ui" line="784"/>
+      <source>Color of vertices</source>
+      <translation>Kolor wierzchołków</translation>
     </message>
   </context>
   <context>
@@ -5784,19 +5797,6 @@ Wybierz metodę, aby dołączyć ten szkic do wybranych obiektów.</translation>
       <location filename="../../Command.cpp" line="182"/>
       <source>Select the method to attach this sketch to selected object</source>
       <translation>Wybierz metodę, aby dołączyć ten szkic do wybranego obiektu</translation>
-    </message>
-  </context>
-  <context>
-    <name>Sketcher_ProfilesHexagon1</name>
-    <message>
-      <location filename="../../../Profiles.py" line="53"/>
-      <source>Creates a hexagonal profile</source>
-      <translation>Tworzy profil sześciokątny</translation>
-    </message>
-    <message>
-      <location filename="../../../Profiles.py" line="56"/>
-      <source>Creates a hexagonal profile in the sketch</source>
-      <translation>Tworzy profil sześciokątny na szkicu</translation>
     </message>
   </context>
   <context>

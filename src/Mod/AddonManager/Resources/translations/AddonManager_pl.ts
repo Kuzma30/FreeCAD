@@ -607,7 +607,7 @@
     <message>
       <location filename="package_list.py" line="766"/>
       <source>Status:</source>
-      <translation type="unfinished">Status:</translation>
+      <translation>Aktualny status:</translation>
     </message>
     <message>
       <location filename="package_list.py" line="769"/>
@@ -664,7 +664,7 @@
     <message>
       <location filename="../../compact_view.ui" line="59"/>
       <source>Icon</source>
-      <translation type="unfinished">Icon</translation>
+      <translation>Ikonka</translation>
     </message>
     <message>
       <location filename="../../compact_view.ui" line="66"/>
@@ -674,7 +674,7 @@
     <message>
       <location filename="../../compact_view.ui" line="73"/>
       <source>Version</source>
-      <translation type="unfinished">Version</translation>
+      <translation>Wersja</translation>
     </message>
     <message>
       <location filename="../../compact_view.ui" line="86"/>

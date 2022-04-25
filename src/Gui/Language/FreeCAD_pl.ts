@@ -9,15 +9,15 @@
     </message>
     <message>
       <source>A:</source>
-      <translation type="unfinished">A:</translation>
+      <translation>A:</translation>
     </message>
     <message>
       <source>B:</source>
-      <translation type="unfinished">B:</translation>
+      <translation>B:</translation>
     </message>
     <message>
       <source>C:</source>
-      <translation type="unfinished">C:</translation>
+      <translation>C:</translation>
     </message>
     <message>
       <source>Angle Snap</source>
@@ -45,15 +45,15 @@
     </message>
     <message>
       <source>45 °</source>
-      <translation type="unfinished">45 °</translation>
+      <translation>45 °</translation>
     </message>
     <message>
       <source>90 °</source>
-      <translation type="unfinished">90 °</translation>
+      <translation>90 °</translation>
     </message>
     <message>
       <source>180 °</source>
-      <translation type="unfinished">180 °</translation>
+      <translation>180 °</translation>
     </message>
   </context>
   <context>
@@ -120,7 +120,7 @@
     </message>
     <message>
       <source>Import</source>
-      <translation type="unfinished">Import</translation>
+      <translation>Importuj</translation>
     </message>
     <message>
       <source>Delete</source>
@@ -188,62 +188,62 @@
     </message>
     <message>
       <source>Toggle array elements</source>
-      <translation type="unfinished">Toggle array elements</translation>
+      <translation>Przełącz elementy szyku</translation>
     </message>
   </context>
   <context>
     <name>CommandGroup</name>
     <message>
       <source>File</source>
-      <translation type="unfinished">File</translation>
+      <translation>Plik</translation>
     </message>
     <message>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Edycja</translation>
     </message>
     <message>
       <source>Help</source>
-      <translation type="unfinished">Help</translation>
+      <translation>Pomoc</translation>
     </message>
     <message>
       <source>Link</source>
-      <translation type="unfinished">Link</translation>
+      <translation>Odnośnik</translation>
     </message>
     <message>
       <source>Tools</source>
-      <translation type="unfinished">Tools</translation>
+      <translation>Przybory</translation>
     </message>
     <message>
       <source>View</source>
-      <translation type="unfinished">View</translation>
+      <translation>Widok</translation>
     </message>
     <message>
       <source>Window</source>
-      <translation type="unfinished">Window</translation>
+      <translation>Okno</translation>
     </message>
     <message>
       <source>Standard</source>
-      <translation type="unfinished">Standard</translation>
+      <translation>Standardowy</translation>
     </message>
     <message>
       <source>Macros</source>
-      <translation type="unfinished">Macros</translation>
+      <translation>Makrodefinicje</translation>
     </message>
     <message>
       <source>Macro</source>
-      <translation type="unfinished">Macro</translation>
+      <translation>Makrodefinicje</translation>
     </message>
     <message>
       <source>Structure</source>
-      <translation type="unfinished">Structure</translation>
+      <translation>Konstrukcja</translation>
     </message>
     <message>
       <source>Standard-Test</source>
-      <translation type="unfinished">Standard-Test</translation>
+      <translation>Test standardowy</translation>
     </message>
     <message>
       <source>Standard-View</source>
-      <translation type="unfinished">Standard-View</translation>
+      <translation>Widok standardowy</translation>
     </message>
     <message>
       <source>TreeView</source>
@@ -928,7 +928,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Pixmap</source>
@@ -1072,7 +1072,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Alt+A</source>
-      <translation type="unfinished">Alt+A</translation>
+      <translation>ALT + A</translation>
     </message>
     <message>
       <source>&amp;Reset</source>
@@ -2000,7 +2000,7 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Record</source>
@@ -2062,7 +2062,7 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
     </message>
     <message>
       <source>%</source>
-      <translation type="unfinished">%</translation>
+      <translation>%</translation>
     </message>
     <message>
       <source>Ambient color:</source>
@@ -2123,7 +2123,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Alt+C</source>
-      <translation type="unfinished">Alt+C</translation>
+      <translation>Alt + C</translation>
     </message>
     <message>
       <source>&amp;Close</source>
@@ -2450,7 +2450,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Reset</source>
-      <translation type="unfinished">Reset</translation>
+      <translation>Reset</translation>
     </message>
     <message>
       <source>Clear</source>
@@ -2654,7 +2654,7 @@ z konsoli Python do panelu Widoku Raportu</translation>
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Accept changes</source>
@@ -2926,7 +2926,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>%</source>
-      <translation type="unfinished">%</translation>
+      <translation>%</translation>
     </message>
   </context>
   <context>

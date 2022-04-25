@@ -701,7 +701,7 @@
     </message>
     <message>
       <source>Segment</source>
-      <translation>Segment</translation>
+      <translation type="unfinished">Segment</translation>
     </message>
     <message>
       <source>Delete</source>
@@ -990,7 +990,7 @@ Najpierw uruchom polecenie do naprawy zagięć</translation>
     </message>
     <message>
       <source>Alt+C</source>
-      <translation>Alt+C</translation>
+      <translation type="unfinished">Alt+C</translation>
     </message>
     <message>
       <source>Cl&amp;ose</source>
@@ -1026,7 +1026,7 @@ Najpierw uruchom polecenie do naprawy zagięć</translation>
     </message>
     <message>
       <source>Torus</source>
-      <translation>Torus</translation>
+      <translation type="unfinished">Torus</translation>
     </message>
     <message>
       <source>Height:</source>
@@ -1095,8 +1095,8 @@ Najpierw uruchom polecenie do naprawy zagięć</translation>
       <translation>Odchylenie teselacji od rzeczywistej powierzchni</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"&gt;&lt;span style=" font-weight:400;"&gt;Defines the maximum deviation of the tessellated mesh to the surface. The smaller the value is the slower the render speed which results in increased detail/resolution.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;Teselacja&lt;/span&gt;&lt;/p&gt;&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"&gt;&lt;span style=" font-weight:400;"&gt;Określa maksymalne odchylenie teselowanej siatki od powierzchni. Im mniejsza wartość, tym wolniejsza jest prędkość renderowania, co skutkuje zwiększeniem szczegółowości/rozdzielczości.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Defines the maximum deviation of the tessellated mesh to the surface. The smaller the value is the slower the render speed which results in increased detail/resolution.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Defines the maximum deviation of the tessellated mesh to the surface. The smaller the value is the slower the render speed which results in increased detail/resolution.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Maximum mesh deviation</source>
@@ -1149,7 +1149,7 @@ jest używana przy zapisywaniu pliku w formacie AMF</translation>
     </message>
     <message>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
     <message>
       <source>Default mesh color</source>
@@ -1169,13 +1169,13 @@ jest używana przy zapisywaniu pliku w formacie AMF</translation>
     </message>
     <message>
       <source>The bottom side of surface will be rendered the same way than top side.
-If not checked, it depends on the option "Enable backlight color"
+If not checked, it depends on the option &quot;Enable backlight color&quot;
 (preferences section Display -&gt; 3D View). Either the backlight color
 will be used or black.</source>
-      <translation>Spód powierzchni będzie wyglądać w taki sam sposób jak góra powierzchni.
-Jeśli nie zaznaczono opcji, zależy to od opcji "Włącz kolor podświetlenia"
-(sekcja Wyświetl -&gt; Widok 3D). Zostanie zastosowany kolor podświetlenia
-lub czarny.</translation>
+      <translation type="unfinished">The bottom side of surface will be rendered the same way than top side.
+If not checked, it depends on the option &quot;Enable backlight color&quot;
+(preferences section Display -&gt; 3D View). Either the backlight color
+will be used or black.</translation>
     </message>
     <message>
       <source>Two-side rendering</source>
@@ -1194,8 +1194,8 @@ lub czarny.</translation>
       <translation>Wygładzanie</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;Jest to najmniejszy kąt między dwiema powierzchniami, pod którym oblicza się wartości wektorów normalnych w celu uzyskania cieniowania płaskiego.&lt;/p&gt;&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;Jeśli kąt między wektorami normalnych dwóch sąsiednich powierzchni jest mniejszy niż kąt załamania, powierzchnie te zostaną wygładzone wokół ich wspólnej krawędzi.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Crease angle</source>
@@ -1233,11 +1233,11 @@ do gładszego wyglądu.
     </message>
     <message>
       <source> °</source>
-      <translation> °</translation>
+      <translation type="unfinished"> °</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;&lt;span style=" font-weight:600;"&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;Defining the normals per vertex is also called &lt;span style=" font-style:italic;"&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;"&gt;&lt;span style=" font-style:normal;"&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=" font-style:normal;"&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;&lt;span style=" font-weight:600;"&gt;Podpowiedź&lt;/span&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;Definiowanie normalnych poprzez wierzchołek jest również nazywane &lt;span style=" font-style:italic;"&gt;cieniowanie Phong&lt;/span&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;"&gt;&lt;span style=" font-style:normal;"&gt;podczas definiowania wektorów normalnych dla każdej powierzchni nazywamy &lt;/span&gt;Cieniowanie płaskie&lt;span style=" font-style:normal;"&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;Defining the normals per vertex is also called &lt;span style=&quot; font-style:italic;&quot;&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;Defining the normals per vertex is also called &lt;span style=&quot; font-style:italic;&quot;&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
   </context>
   <context>
@@ -1252,11 +1252,11 @@ do gładszego wyglądu.
     </message>
     <message>
       <source>Taubin</source>
-      <translation>Taubin</translation>
+      <translation type="unfinished">Taubin</translation>
     </message>
     <message>
       <source>Laplace</source>
-      <translation>Laplace</translation>
+      <translation type="unfinished">Laplace</translation>
     </message>
     <message>
       <source>Parameter</source>
@@ -1268,11 +1268,11 @@ do gładszego wyglądu.
     </message>
     <message>
       <source>Lambda:</source>
-      <translation>Lambda:</translation>
+      <translation type="unfinished">Lambda:</translation>
     </message>
     <message>
       <source>Mu:</source>
-      <translation>Mu:</translation>
+      <translation type="unfinished">Mu:</translation>
     </message>
     <message>
       <source>Only selection</source>
@@ -1386,10 +1386,6 @@ do gładszego wyglądu.
   <context>
     <name>MeshGui::RemeshGmsh</name>
     <message>
-      <source>Remesh by gmsh</source>
-      <translation>Ponów tworzenie siatki przez Gmsh</translation>
-    </message>
-    <message>
       <source>Remeshing Parameter</source>
       <translation>Parametr ponownego tworzenia siatki</translation>
     </message>
@@ -1411,7 +1407,7 @@ do gładszego wyglądu.
     </message>
     <message>
       <source>Gmsh</source>
-      <translation>Gmsh</translation>
+      <translation type="unfinished">Gmsh</translation>
     </message>
     <message>
       <source>Path</source>
@@ -1428,6 +1424,10 @@ do gładszego wyglądu.
     <message>
       <source>Clear</source>
       <translation>Wyczyść</translation>
+    </message>
+    <message>
+      <source>Remesh by Gmsh</source>
+      <translation type="unfinished">Remesh by Gmsh</translation>
     </message>
   </context>
   <context>
@@ -1648,7 +1648,7 @@ do gładszego wyglądu.
     <name>Mesh_Union</name>
     <message>
       <source>OpenSCAD</source>
-      <translation>OpenSCAD</translation>
+      <translation type="unfinished">OpenSCAD</translation>
     </message>
     <message>
       <source>Unknown error occurred while running OpenSCAD.</source>
@@ -1684,7 +1684,7 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
     </message>
     <message>
       <source>ASCII STL</source>
-      <translation>ASCII STL</translation>
+      <translation type="unfinished">ASCII STL</translation>
     </message>
     <message>
       <source>Binary Mesh</source>
@@ -1708,7 +1708,7 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
     </message>
     <message>
       <source>NASTRAN</source>
-      <translation>NASTRAN</translation>
+      <translation type="unfinished">NASTRAN</translation>
     </message>
     <message>
       <source>All Files</source>
@@ -1736,11 +1736,11 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
     </message>
     <message>
       <source>WebGL/X3D</source>
-      <translation>WebGL/X3D</translation>
+      <translation type="unfinished">WebGL/X3D</translation>
     </message>
     <message>
       <source>VRML V2.0</source>
-      <translation>VRML V2.0</translation>
+      <translation type="unfinished">VRML V2.0</translation>
     </message>
     <message>
       <source>Compressed VRML 2.0</source>
@@ -1748,7 +1748,7 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
     </message>
     <message>
       <source>Nastran</source>
-      <translation>Nastran</translation>
+      <translation type="unfinished">Nastran</translation>
     </message>
     <message>
       <source>Python module def</source>
@@ -1771,12 +1771,12 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
       <translation>Wprowadź tolerancję dla geometrii siatki:</translation>
     </message>
     <message>
-      <source>The mesh '%1' is not a solid.</source>
-      <translation>Siatka '%1' nie jest ciągła.</translation>
+      <source>The mesh &apos;%1&apos; is not a solid.</source>
+      <translation type="unfinished">The mesh &apos;%1&apos; is not a solid.</translation>
     </message>
     <message>
-      <source>The mesh '%1' is a solid.</source>
-      <translation>Siatka '%1' jest ciągła.</translation>
+      <source>The mesh &apos;%1&apos; is a solid.</source>
+      <translation type="unfinished">The mesh &apos;%1&apos; is a solid.</translation>
     </message>
     <message>
       <source>Solid Mesh</source>
@@ -1842,6 +1842,10 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
       <source>Annotation</source>
       <translation>Adnotacja</translation>
     </message>
+    <message>
+      <source>3D Manufacturing Format</source>
+      <translation type="unfinished">3D Manufacturing Format</translation>
+    </message>
   </context>
   <context>
     <name>Workbench</name>
@@ -1860,6 +1864,10 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
     <message>
       <source>Mesh tools</source>
       <translation>Narzędzia siatki</translation>
+    </message>
+    <message>
+      <source>Cutting</source>
+      <translation type="unfinished">Cutting</translation>
     </message>
   </context>
 </TS>

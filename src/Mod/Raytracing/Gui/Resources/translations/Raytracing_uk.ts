@@ -180,7 +180,7 @@ Do you want to continue?</source>
     <name>QObject</name>
     <message>
       <source>POV-Ray</source>
-      <translation>POV-Ray</translation>
+      <translation type="unfinished">POV-Ray</translation>
     </message>
     <message>
       <source>All Files</source>
@@ -216,7 +216,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Luxrender</source>
-      <translation>Luxrender</translation>
+      <translation type="unfinished">Luxrender</translation>
     </message>
     <message>
       <source>POV-Ray not found</source>
@@ -247,8 +247,8 @@ Do you want to continue?</source>
       <translation>Відсутній POV-Ray файл</translation>
     </message>
     <message>
-      <source>The POV-Ray project file doesn't exist.</source>
-      <translation>Файл проекту POV-Ray відсутній.</translation>
+      <source>The POV-Ray project file doesn&apos;t exist.</source>
+      <translation type="unfinished">The POV-Ray project file doesn&apos;t exist.</translation>
     </message>
     <message>
       <source>Rendered image</source>
@@ -259,8 +259,8 @@ Do you want to continue?</source>
       <translation>Файл проекту Lux відсутній</translation>
     </message>
     <message>
-      <source>The Lux project file doesn't exist.</source>
-      <translation>Файл проекту Lux відсутній.</translation>
+      <source>The Lux project file doesn&apos;t exist.</source>
+      <translation type="unfinished">The Lux project file doesn&apos;t exist.</translation>
     </message>
   </context>
   <context>
@@ -303,11 +303,11 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>+P +A</source>
-      <translation>+P +A</translation>
+      <translation type="unfinished">+P +A</translation>
     </message>
     <message>
       <source>+W: </source>
-      <translation>+W: </translation>
+      <translation type="unfinished">+W: </translation>
     </message>
     <message>
       <source>The width of the rendered image</source>
@@ -315,7 +315,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source> +H : </source>
-      <translation> +H : </translation>
+      <translation type="unfinished"> +H : </translation>
     </message>
     <message>
       <source>The height of the rendered image</source>
@@ -351,11 +351,11 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>TempCamera.inc</source>
-      <translation>TempCamera.inc</translation>
+      <translation type="unfinished">TempCamera.inc</translation>
     </message>
     <message>
       <source>TempPart.inc</source>
-      <translation>TempPart.inc</translation>
+      <translation type="unfinished">TempPart.inc</translation>
     </message>
   </context>
   <context>

@@ -9,15 +9,15 @@
     </message>
     <message>
       <source>A:</source>
-      <translation>A:</translation>
+      <translation type="unfinished">A:</translation>
     </message>
     <message>
       <source>B:</source>
-      <translation>B:</translation>
+      <translation type="unfinished">B:</translation>
     </message>
     <message>
       <source>C:</source>
-      <translation>C:</translation>
+      <translation type="unfinished">C:</translation>
     </message>
     <message>
       <source>Angle Snap</source>
@@ -45,15 +45,15 @@
     </message>
     <message>
       <source>45 °</source>
-      <translation>45 °</translation>
+      <translation type="unfinished">45 °</translation>
     </message>
     <message>
       <source>90 °</source>
-      <translation>90 °</translation>
+      <translation type="unfinished">90 °</translation>
     </message>
     <message>
       <source>180 °</source>
-      <translation>180 °</translation>
+      <translation type="unfinished">180 °</translation>
     </message>
   </context>
   <context>
@@ -86,13 +86,13 @@
       <source>Base</source>
       <translation>Baza</translation>
     </message>
+    <message>
+      <source>Enum</source>
+      <translation type="unfinished">Enum</translation>
+    </message>
   </context>
   <context>
     <name>CmdTestConsoleOutput</name>
-    <message>
-      <source>Standard-Test</source>
-      <translation>Test standardowy</translation>
-    </message>
     <message>
       <source>Test console output</source>
       <translation>Testowanie wyjścia konsoli</translation>
@@ -101,20 +101,12 @@
   <context>
     <name>CmdViewMeasureClearAll</name>
     <message>
-      <source>Measure</source>
-      <translation>Wymiarowanie</translation>
-    </message>
-    <message>
       <source>Clear measurement</source>
       <translation>Wyczyść wymiary</translation>
     </message>
   </context>
   <context>
     <name>CmdViewMeasureToggleAll</name>
-    <message>
-      <source>Measure</source>
-      <translation>Wymiarowanie</translation>
-    </message>
     <message>
       <source>Toggle measurement</source>
       <translation>Przełącz wymiarowanie</translation>
@@ -128,7 +120,7 @@
     </message>
     <message>
       <source>Import</source>
-      <translation>Import</translation>
+      <translation type="unfinished">Import</translation>
     </message>
     <message>
       <source>Delete</source>
@@ -193,6 +185,73 @@
     <message>
       <source>Measure distance</source>
       <translation>Pomiar odległości</translation>
+    </message>
+    <message>
+      <source>Toggle array elements</source>
+      <translation type="unfinished">Toggle array elements</translation>
+    </message>
+  </context>
+  <context>
+    <name>CommandGroup</name>
+    <message>
+      <source>File</source>
+      <translation type="unfinished">File</translation>
+    </message>
+    <message>
+      <source>Edit</source>
+      <translation type="unfinished">Edit</translation>
+    </message>
+    <message>
+      <source>Help</source>
+      <translation type="unfinished">Help</translation>
+    </message>
+    <message>
+      <source>Link</source>
+      <translation type="unfinished">Link</translation>
+    </message>
+    <message>
+      <source>Tools</source>
+      <translation type="unfinished">Tools</translation>
+    </message>
+    <message>
+      <source>View</source>
+      <translation type="unfinished">View</translation>
+    </message>
+    <message>
+      <source>Window</source>
+      <translation type="unfinished">Window</translation>
+    </message>
+    <message>
+      <source>Standard</source>
+      <translation type="unfinished">Standard</translation>
+    </message>
+    <message>
+      <source>Macros</source>
+      <translation type="unfinished">Macros</translation>
+    </message>
+    <message>
+      <source>Macro</source>
+      <translation type="unfinished">Macro</translation>
+    </message>
+    <message>
+      <source>Structure</source>
+      <translation type="unfinished">Structure</translation>
+    </message>
+    <message>
+      <source>Standard-Test</source>
+      <translation type="unfinished">Standard-Test</translation>
+    </message>
+    <message>
+      <source>Standard-View</source>
+      <translation type="unfinished">Standard-View</translation>
+    </message>
+    <message>
+      <source>TreeView</source>
+      <translation type="unfinished">TreeView</translation>
+    </message>
+    <message>
+      <source>Measure</source>
+      <translation type="unfinished">Measure</translation>
     </message>
   </context>
   <context>
@@ -312,6 +371,10 @@
       <source>none</source>
       <translation>brak</translation>
     </message>
+    <message>
+      <source>Press a keyboard shortcut</source>
+      <translation type="unfinished">Press a keyboard shortcut</translation>
+    </message>
   </context>
   <context>
     <name>Gui::ActionSelector</name>
@@ -414,17 +477,10 @@ podczas kliknięcia lewym lub prawym przyciskiem myszki i przesuwaj kursor w gó
     </message>
   </context>
   <context>
-    <name>Gui::Command</name>
-    <message>
-      <source>Standard</source>
-      <translation>Standardowy</translation>
-    </message>
-  </context>
-  <context>
     <name>Gui::ContainerDialog</name>
     <message>
       <source>&amp;OK</source>
-      <translation>&amp;OK</translation>
+      <translation type="unfinished">&amp;OK</translation>
     </message>
     <message>
       <source>&amp;Cancel</source>
@@ -473,11 +529,11 @@ podczas kliknięcia lewym lub prawym przyciskiem myszki i przesuwaj kursor w gó
     </message>
     <message>
       <source>OK</source>
-      <translation>OK</translation>
+      <translation type="unfinished">OK</translation>
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Release date</source>
@@ -539,6 +595,25 @@ podczas kliknięcia lewym lub prawym przyciskiem myszki i przesuwaj kursor w gó
     </message>
   </context>
   <context>
+    <name>Gui::Dialog::ApplicationCache</name>
+    <message>
+      <source>Cache directory</source>
+      <translation type="unfinished">Cache directory</translation>
+    </message>
+    <message>
+      <source>The cache directory %1 exceeds the size of %2.</source>
+      <translation type="unfinished">The cache directory %1 exceeds the size of %2.</translation>
+    </message>
+    <message>
+      <source>Do you want to clear it now?</source>
+      <translation type="unfinished">Do you want to clear it now?</translation>
+    </message>
+    <message>
+      <source>Warning: Please make sure that this is the only running %1 instance and that no documents are opened as this may result into data loss!</source>
+      <translation type="unfinished">Warning: Please make sure that this is the only running %1 instance and that no documents are opened as this may result into data loss!</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::Dialog::ButtonModel</name>
     <message>
       <source>Button %1</source>
@@ -549,12 +624,12 @@ podczas kliknięcia lewym lub prawym przyciskiem myszki i przesuwaj kursor w gó
       <translation>Poza zakresem</translation>
     </message>
     <message>
-      <source> "</source>
-      <translation> "</translation>
+      <source> &quot;</source>
+      <translation type="unfinished"> &quot;</translation>
     </message>
     <message>
-      <source>"</source>
-      <translation>"</translation>
+      <source>&quot;</source>
+      <translation type="unfinished">&quot;</translation>
     </message>
   </context>
   <context>
@@ -569,19 +644,19 @@ podczas kliknięcia lewym lub prawym przyciskiem myszki i przesuwaj kursor w gó
     </message>
     <message>
       <source>Q0</source>
-      <translation>Q0</translation>
+      <translation type="unfinished">Q0</translation>
     </message>
     <message>
       <source>Q1</source>
-      <translation>Q1</translation>
+      <translation type="unfinished">Q1</translation>
     </message>
     <message>
       <source>Q2</source>
-      <translation>Q2</translation>
+      <translation type="unfinished">Q2</translation>
     </message>
     <message>
       <source>Q3</source>
-      <translation>Q3</translation>
+      <translation type="unfinished">Q3</translation>
     </message>
     <message>
       <source>Current view</source>
@@ -666,7 +741,7 @@ podczas kliknięcia lewym lub prawym przyciskiem myszki i przesuwaj kursor w gó
     </message>
     <message>
       <source> s</source>
-      <translation> s</translation>
+      <translation type="unfinished"> s</translation>
     </message>
     <message>
       <source>Angle</source>
@@ -674,11 +749,11 @@ podczas kliknięcia lewym lub prawym przyciskiem myszki i przesuwaj kursor w gó
     </message>
     <message>
       <source>90°</source>
-      <translation>90°</translation>
+      <translation type="unfinished">90°</translation>
     </message>
     <message>
       <source>-90°</source>
-      <translation>-90°</translation>
+      <translation type="unfinished">-90°</translation>
     </message>
     <message>
       <source>Play</source>
@@ -705,7 +780,7 @@ podczas kliknięcia lewym lub prawym przyciskiem myszki i przesuwaj kursor w gó
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -742,16 +817,16 @@ podczas kliknięcia lewym lub prawym przyciskiem myszki i przesuwaj kursor w gó
       <translation>Dokumentacja</translation>
     </message>
     <message>
-      <source>Prefix the property name with the group name in the form 'Group_Name' to avoid conflicts with an existing property.
+      <source>Prefix the property name with the group name in the form &apos;Group_Name&apos; to avoid conflicts with an existing property.
 In this case the prefix will be automatically trimmed when shown in the property editor.
-However, the property is still used in a script with the full name, like 'obj.Group_Name'.
+However, the property is still used in a script with the full name, like &apos;obj.Group_Name&apos;.
 
-If this is not ticked, then the property must be uniquely named, and it is accessed like 'obj.Name'.</source>
-      <translation>Przedrostek nazwy własności z nazwą grupy w formie "Group_Name", aby uniknąć konfliktów z istniejącą właściwością.
-W tym przypadku przedrostek zostanie automatycznie obcięty podczas wyświetlania w edytorze właściwości.
-Jednak właściwość jest nadal używana w skrypcie z pełną nazwą, na przykład "obj.Group_Name".
+If this is not ticked, then the property must be uniquely named, and it is accessed like &apos;obj.Name&apos;.</source>
+      <translation type="unfinished">Prefix the property name with the group name in the form &apos;Group_Name&apos; to avoid conflicts with an existing property.
+In this case the prefix will be automatically trimmed when shown in the property editor.
+However, the property is still used in a script with the full name, like &apos;obj.Group_Name&apos;.
 
-Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazwana i jest dostępna jako "obj.Name".</translation>
+If this is not ticked, then the property must be uniquely named, and it is accessed like &apos;obj.Name&apos;.</translation>
     </message>
     <message>
       <source>Prefix group name</source>
@@ -770,7 +845,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Username:</source>
@@ -812,6 +887,32 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
   </context>
   <context>
+    <name>Gui::Dialog::DlgCreateNewPreferencePack</name>
+    <message>
+      <source>Create New Preference Pack</source>
+      <translation type="unfinished">Create New Preference Pack</translation>
+    </message>
+    <message>
+      <source>Name</source>
+      <translation type="unfinished">Name</translation>
+    </message>
+    <message>
+      <source>Property group templates</source>
+      <translation type="unfinished">Property group templates</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::Dialog::DlgCreateNewPreferencePackImp</name>
+    <message>
+      <source>Pack already exists</source>
+      <translation type="unfinished">Pack already exists</translation>
+    </message>
+    <message>
+      <source>A preference pack with that name already exists. Do you want to overwrite it?</source>
+      <translation type="unfinished">A preference pack with that name already exists. Do you want to overwrite it?</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::Dialog::DlgCustomActions</name>
     <message>
       <source>Macros</source>
@@ -827,7 +928,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Pixmap</source>
@@ -838,8 +939,8 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
       <translation>Skrót klawiszowy:</translation>
     </message>
     <message>
-      <source>What's this:</source>
-      <translation>Co to jest:</translation>
+      <source>What&apos;s this:</source>
+      <translation type="unfinished">What&apos;s this:</translation>
     </message>
     <message>
       <source>Status text:</source>
@@ -877,20 +978,12 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
       <translation>Makrodefinicje</translation>
     </message>
     <message>
-      <source>No macro</source>
-      <translation>Brak makrodefinicji</translation>
-    </message>
-    <message>
-      <source>No macros found.</source>
-      <translation>Makra nie znalezione.</translation>
-    </message>
-    <message>
       <source>Macro not found</source>
       <translation>Nie znaleziono makrodefinicji</translation>
     </message>
     <message>
-      <source>Sorry, couldn't find macro file '%1'.</source>
-      <translation>Przepraszam, nie odnaleziono pliku makra '%1'.</translation>
+      <source>Sorry, couldn&apos;t find macro file &apos;%1&apos;.</source>
+      <translation type="unfinished">Sorry, couldn&apos;t find macro file &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>Empty macro</source>
@@ -925,7 +1018,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -979,7 +1072,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source>Alt+A</source>
-      <translation>Alt+A</translation>
+      <translation type="unfinished">Alt+A</translation>
     </message>
     <message>
       <source>&amp;Reset</source>
@@ -987,7 +1080,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source>Alt+R</source>
-      <translation>Alt+R</translation>
+      <translation type="unfinished">Alt+R</translation>
     </message>
     <message>
       <source>Re&amp;set All</source>
@@ -995,11 +1088,11 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source>Alt+S</source>
-      <translation>Alt+S</translation>
+      <translation type="unfinished">Alt+S</translation>
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Clear</source>
@@ -1029,12 +1122,12 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
       <translation>Skrót już jest zdefiniowany</translation>
     </message>
     <message>
-      <source>The shortcut '%1' is defined more than once. This could result in unexpected behaviour.</source>
-      <translation>Skrót '%1' jest zdefiniowany więcej niż jeden raz. Może to spowodować nieoczekiwane zachowanie.</translation>
+      <source>The shortcut &apos;%1&apos; is defined more than once. This could result in unexpected behaviour.</source>
+      <translation type="unfinished">The shortcut &apos;%1&apos; is defined more than once. This could result in unexpected behaviour.</translation>
     </message>
     <message>
-      <source>The shortcut '%1' is already assigned to '%2'.</source>
-      <translation>Skrót '%1' jest już przypisany do '%2 '.</translation>
+      <source>The shortcut &apos;%1&apos; is already assigned to &apos;%2&apos;.</source>
+      <translation type="unfinished">The shortcut &apos;%1&apos; is already assigned to &apos;%2&apos;.</translation>
     </message>
     <message>
       <source>Do you want to override it?</source>
@@ -1055,8 +1148,8 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
       <translation>Paski narzędzi</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;&lt;span style=" font-weight:600;"&gt;Note:&lt;/span&gt; The changes become active the next time you load the appropriate workbench&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt; &lt;span style=" font-weight:600;"&gt;Uwaga:&lt;/span&gt; Zmiany te stają się aktywne przy następnym załadowaniu odpowiedniego Środowiska pracy. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; The changes become active the next time you load the appropriate workbench&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; The changes become active the next time you load the appropriate workbench&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Move right</source>
@@ -1112,7 +1205,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source>&lt;Separator&gt;</source>
-      <translation>&lt;Separator&gt;</translation>
+      <translation type="unfinished">&lt;Separator&gt;</translation>
     </message>
     <message>
       <source>New toolbar</source>
@@ -1127,8 +1220,8 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
       <translation>Powielona nazwa</translation>
     </message>
     <message>
-      <source>The toolbar name '%1' is already used</source>
-      <translation>Nazwa paska narzędzi '%1' jest już używana</translation>
+      <source>The toolbar name &apos;%1&apos; is already used</source>
+      <translation type="unfinished">The toolbar name &apos;%1&apos; is already used</translation>
     </message>
     <message>
       <source>Rename toolbar</source>
@@ -1136,7 +1229,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Global</source>
@@ -1193,7 +1286,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source>Reset</source>
-      <translation>Reset</translation>
+      <translation type="unfinished">Reset</translation>
     </message>
   </context>
   <context>
@@ -1224,7 +1317,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Viewing mode</source>
@@ -1236,7 +1329,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Line transparency:</source>
@@ -1267,7 +1360,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source>Aluminium</source>
-      <translation>Aluminium</translation>
+      <translation type="unfinished">Aluminium</translation>
     </message>
     <message>
       <source>Brass</source>
@@ -1303,11 +1396,11 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source>Neon GNC</source>
-      <translation>Neon GNC</translation>
+      <translation type="unfinished">Neon GNC</translation>
     </message>
     <message>
       <source>Neon PHC</source>
-      <translation>Neon PHC</translation>
+      <translation type="unfinished">Neon PHC</translation>
     </message>
     <message>
       <source>Obsidian</source>
@@ -1402,7 +1495,7 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Pressing &lt;Tab&gt; will insert amount of defined indent size</source>
@@ -1443,6 +1536,14 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
     <message>
       <source>Code lines will be numbered</source>
       <translation>Wiersze kodu będą ponumerowane</translation>
+    </message>
+    <message>
+      <source>The cursor shape will be a block</source>
+      <translation type="unfinished">The cursor shape will be a block</translation>
+    </message>
+    <message>
+      <source>Enable block cursor</source>
+      <translation type="unfinished">Enable block cursor</translation>
     </message>
   </context>
   <context>
@@ -1492,16 +1593,8 @@ Jeśli ta opcja nie jest zaznaczona, właściwość musi być jednoznacznie nazw
       <translation>Styl arkusza:</translation>
     </message>
     <message>
-      <source>Python console</source>
-      <translation>Konsola Python</translation>
-    </message>
-    <message>
-      <source>Enable word wrap</source>
-      <translation>Włącz zawijanie tekstu</translation>
-    </message>
-    <message>
-      <source>Language of the application's user interface</source>
-      <translation>Język interfejsu użytkownika dla aplikacji</translation>
+      <source>Language of the application&apos;s user interface</source>
+      <translation type="unfinished">Language of the application&apos;s user interface</translation>
     </message>
     <message>
       <source>How many files should be listed in recent files list</source>
@@ -1530,14 +1623,14 @@ w zależności od wielkości ekranu lub swoich upodobań</translation>
     <message>
       <source>Customize how tree view is shown in the panel (restart required).
 
-'ComboView': combine tree view and property view into one panel.
-'TreeView and PropertyView': split tree view and property view into separate panel.
-'Both': keep all three panels, and you can have two sets of tree view and property view.</source>
-      <translation>Dostosuj widok drzewa w panelu (wymagany restart).
+&apos;ComboView&apos;: combine tree view and property view into one panel.
+&apos;TreeView and PropertyView&apos;: split tree view and property view into separate panel.
+&apos;Both&apos;: keep all three panels, and you can have two sets of tree view and property view.</source>
+      <translation type="unfinished">Customize how tree view is shown in the panel (restart required).
 
-„Widok połączony”: połącz widok drzewa i widok właściwości w jednym panelu.
-„Widok drzewa i Widok właściwości”: rozdziel widok drzewa i widok właściwości na oddzielny panel.
-„Obydwa”: zachowaj wszystkie panele, możesz mieć dwa zestawy widoku drzewa i widoku właściwości.</translation>
+&apos;ComboView&apos;: combine tree view and property view into one panel.
+&apos;TreeView and PropertyView&apos;: split tree view and property view into separate panel.
+&apos;Both&apos;: keep all three panels, and you can have two sets of tree view and property view.</translation>
     </message>
     <message>
       <source>A Splash screen is a small loading window that is shown
@@ -1554,10 +1647,64 @@ after FreeCAD launches</source>
 po uruchomieniu FreeCAD</translation>
     </message>
     <message>
-      <source>Words will be wrapped when they exceed available
-horizontal space in Python console</source>
-      <translation>Słowa będą zawijane, gdy przekroczą dostępny
-rozmiar wiersza w konsoli Pythona</translation>
+      <source>Number format:</source>
+      <translation type="unfinished">Number format:</translation>
+    </message>
+    <message>
+      <source>Operating system</source>
+      <translation type="unfinished">Operating system</translation>
+    </message>
+    <message>
+      <source>Selected language</source>
+      <translation type="unfinished">Selected language</translation>
+    </message>
+    <message>
+      <source>C/POSIX</source>
+      <translation type="unfinished">C/POSIX</translation>
+    </message>
+    <message>
+      <source>If enabled, numerical keypad decimal separator will be substituted with locale separator</source>
+      <translation type="unfinished">If enabled, numerical keypad decimal separator will be substituted with locale separator</translation>
+    </message>
+    <message>
+      <source>Substitute decimal separator (needs restart)</source>
+      <translation type="unfinished">Substitute decimal separator (needs restart)</translation>
+    </message>
+    <message>
+      <source>Preference packs</source>
+      <translation type="unfinished">Preference packs</translation>
+    </message>
+    <message>
+      <source>Name</source>
+      <translation type="unfinished">Name</translation>
+    </message>
+    <message>
+      <source>Type</source>
+      <translation type="unfinished">Type</translation>
+    </message>
+    <message>
+      <source>Load</source>
+      <translation type="unfinished">Load</translation>
+    </message>
+    <message>
+      <source>Save new...</source>
+      <translation type="unfinished">Save new...</translation>
+    </message>
+    <message>
+      <source>Manage...</source>
+      <translation type="unfinished">Manage...</translation>
+    </message>
+    <message>
+      <source>Revert...</source>
+      <translation type="unfinished">Revert...</translation>
+    </message>
+    <message>
+      <source>The text cursor will be blinking</source>
+      <translation type="unfinished">The text cursor will be blinking</translation>
+    </message>
+    <message>
+      <source>Enable cursor blinking</source>
+      <translation type="unfinished">Enable cursor blinking</translation>
     </message>
   </context>
   <context>
@@ -1598,6 +1745,26 @@ rozmiar wiersza w konsoli Pythona</translation>
       <source>Both</source>
       <translation>Obydwa</translation>
     </message>
+    <message>
+      <source>Manage preference packs</source>
+      <translation type="unfinished">Manage preference packs</translation>
+    </message>
+    <message>
+      <source>Preference Pack Name</source>
+      <translation type="unfinished">Preference Pack Name</translation>
+    </message>
+    <message>
+      <source>Tags</source>
+      <translation type="unfinished">Tags</translation>
+    </message>
+    <message>
+      <source>Apply</source>
+      <translation type="unfinished">Apply</translation>
+    </message>
+    <message>
+      <source>Apply the %1 preference pack</source>
+      <translation type="unfinished">Apply the %1 preference pack</translation>
+    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgInputDialog</name>
@@ -1607,7 +1774,7 @@ rozmiar wiersza w konsoli Pythona</translation>
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -1668,12 +1835,20 @@ rozmiar wiersza w konsoli Pythona</translation>
       <translation>Duplikuj</translation>
     </message>
     <message>
-      <source>Addons...</source>
-      <translation>Dodatki...</translation>
-    </message>
-    <message>
       <source>Toolbar</source>
       <translation>Pasek narzędzi</translation>
+    </message>
+    <message>
+      <source>Launch a guide on how to set up a macro in a custom global toolbar.</source>
+      <translation type="unfinished">Launch a guide on how to set up a macro in a custom global toolbar.</translation>
+    </message>
+    <message>
+      <source>Open Addon Manager where macros created by the community and other addons can be downloaded.</source>
+      <translation type="unfinished">Open Addon Manager where macros created by the community and other addons can be downloaded.</translation>
+    </message>
+    <message>
+      <source>Download</source>
+      <translation type="unfinished">Download</translation>
     </message>
   </context>
   <context>
@@ -1695,25 +1870,26 @@ rozmiar wiersza w konsoli Pythona</translation>
       <translation>Plik już istnieje</translation>
     </message>
     <message>
-      <source>'%1'.
+      <source>&apos;%1&apos;.
 This file already exists.</source>
-      <translation>'%1'. Ten plik już istnieje.</translation>
+      <translation type="unfinished">&apos;%1&apos;.
+This file already exists.</translation>
     </message>
     <message>
       <source>Delete macro</source>
       <translation>Usuń makrodefinicję</translation>
     </message>
     <message>
-      <source>Do you really want to delete the macro '%1'?</source>
-      <translation>Czy na pewno chcesz usunąć makro '%1'?</translation>
+      <source>Do you really want to delete the macro &apos;%1&apos;?</source>
+      <translation type="unfinished">Do you really want to delete the macro &apos;%1&apos;?</translation>
     </message>
     <message>
       <source>Cannot create file</source>
       <translation>Nie można utworzyć pliku</translation>
     </message>
     <message>
-      <source>Creation of file '%1' failed.</source>
-      <translation>Tworzenie pliku %1 nie powiodło się.</translation>
+      <source>Creation of file &apos;%1&apos; failed.</source>
+      <translation type="unfinished">Creation of file &apos;%1&apos; failed.</translation>
     </message>
     <message>
       <source>Read-only</source>
@@ -1728,20 +1904,20 @@ This file already exists.</source>
       <translation>Wprowadź nową nazwę:</translation>
     </message>
     <message>
-      <source>'%1'
+      <source>&apos;%1&apos;
  already exists.</source>
-      <translation>'%1'
- już istnieje.</translation>
+      <translation type="unfinished">&apos;%1&apos;
+ already exists.</translation>
     </message>
     <message>
       <source>Rename Failed</source>
       <translation>Zmiana nazwy nie powiodła się</translation>
     </message>
     <message>
-      <source>Failed to rename to '%1'.
+      <source>Failed to rename to &apos;%1&apos;.
 Perhaps a file permission error?</source>
-      <translation>Nie udało się zmienić nazwy na '%1'.
-Być może odmowa dostępu do pliku?</translation>
+      <translation type="unfinished">Failed to rename to &apos;%1&apos;.
+Perhaps a file permission error?</translation>
     </message>
     <message>
       <source>Duplicate Macro</source>
@@ -1752,10 +1928,10 @@ Być może odmowa dostępu do pliku?</translation>
       <translation>Błąd duplikowania</translation>
     </message>
     <message>
-      <source>Failed to duplicate to '%1'.
+      <source>Failed to duplicate to &apos;%1&apos;.
 Perhaps a file permission error?</source>
-      <translation>Nie można powielić do '%1'.
-Możliwy błąd dostępu do pliku?</translation>
+      <translation type="unfinished">Failed to duplicate to &apos;%1&apos;.
+Perhaps a file permission error?</translation>
     </message>
     <message>
       <source>Do not show again</source>
@@ -1824,7 +2000,7 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Record</source>
@@ -1846,12 +2022,12 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
       <translation>Makrodefinicja już istnieje</translation>
     </message>
     <message>
-      <source>The macro '%1' already exists. Do you want to overwrite?</source>
-      <translation>Makro '%1' już istnieje. Czy chcesz nadpisać?</translation>
+      <source>The macro &apos;%1&apos; already exists. Do you want to overwrite?</source>
+      <translation type="unfinished">The macro &apos;%1&apos; already exists. Do you want to overwrite?</translation>
     </message>
     <message>
-      <source>The macro directory doesn't exist. Please, choose another one.</source>
-      <translation>Folder z makrodefinicjami nie istnieje. Proszę wybrać inny.</translation>
+      <source>The macro directory doesn&apos;t exist. Please, choose another one.</source>
+      <translation type="unfinished">The macro directory doesn&apos;t exist. Please, choose another one.</translation>
     </message>
     <message>
       <source>Choose macro directory</source>
@@ -1886,7 +2062,7 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
     </message>
     <message>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
     <message>
       <source>Ambient color:</source>
@@ -1894,7 +2070,7 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Emissive color:</source>
@@ -1923,12 +2099,12 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
       <translation>Brak dostępu</translation>
     </message>
     <message>
-      <source>Access denied to '%1'
+      <source>Access denied to &apos;%1&apos;
 
 Specify another directory, please.</source>
-      <translation>Odmowa dostępu do '%1'
+      <translation type="unfinished">Access denied to &apos;%1&apos;
 
-Proszę podać inny katalog.</translation>
+Specify another directory, please.</translation>
     </message>
     <message>
       <source>HTML files</source>
@@ -1947,7 +2123,7 @@ Proszę podać inny katalog.</translation>
     </message>
     <message>
       <source>Alt+C</source>
-      <translation>Alt+C</translation>
+      <translation type="unfinished">Alt+C</translation>
     </message>
     <message>
       <source>&amp;Close</source>
@@ -2013,8 +2189,8 @@ Proszę podać inny katalog.</translation>
       <translation>Nie znaleziono</translation>
     </message>
     <message>
-      <source>Can't find the text: %1</source>
-      <translation>Nie można znaleźć tekstu: %1</translation>
+      <source>Can&apos;t find the text: %1</source>
+      <translation type="unfinished">Can&apos;t find the text: %1</translation>
     </message>
   </context>
   <context>
@@ -2044,8 +2220,8 @@ Proszę podać inny katalog.</translation>
       <translation>Niepoprawne dane wejściowe</translation>
     </message>
     <message>
-      <source>Invalid key name '%1'</source>
-      <translation>Nieprawidłowa nazwa klucza '%1'</translation>
+      <source>Invalid key name &apos;%1&apos;</source>
+      <translation type="unfinished">Invalid key name &apos;%1&apos;</translation>
     </message>
     <message>
       <source>System parameter</source>
@@ -2057,6 +2233,48 @@ Proszę podać inny katalog.</translation>
     </message>
   </context>
   <context>
+    <name>Gui::Dialog::DlgPreferencePackManagement</name>
+    <message>
+      <source>Manage Preference Packs</source>
+      <translation type="unfinished">Manage Preference Packs</translation>
+    </message>
+    <message>
+      <source>Open Addon Manager...</source>
+      <translation type="unfinished">Open Addon Manager...</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::Dialog::DlgPreferencePackManagementImp</name>
+    <message>
+      <source>User-Saved Preference Packs</source>
+      <translation type="unfinished">User-Saved Preference Packs</translation>
+    </message>
+    <message>
+      <source>Built-In Preference Packs</source>
+      <translation type="unfinished">Built-In Preference Packs</translation>
+    </message>
+    <message>
+      <source>Toggle visibility of built-in preference pack &apos;%1&apos;</source>
+      <translation type="unfinished">Toggle visibility of built-in preference pack &apos;%1&apos;</translation>
+    </message>
+    <message>
+      <source>Delete user-saved preference pack &apos;%1&apos;</source>
+      <translation type="unfinished">Delete user-saved preference pack &apos;%1&apos;</translation>
+    </message>
+    <message>
+      <source>Toggle visibility of Addon preference pack &apos;%1&apos; (use Addon Manager to permanently remove)</source>
+      <translation type="unfinished">Toggle visibility of Addon preference pack &apos;%1&apos; (use Addon Manager to permanently remove)</translation>
+    </message>
+    <message>
+      <source>Delete saved preference pack?</source>
+      <translation type="unfinished">Delete saved preference pack?</translation>
+    </message>
+    <message>
+      <source>Are you sure you want to delete the preference pack named &apos;%1&apos;? This cannot be undone.</source>
+      <translation type="unfinished">Are you sure you want to delete the preference pack named &apos;%1&apos;? This cannot be undone.</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::Dialog::DlgPreferences</name>
     <message>
       <source>Preferences</source>
@@ -2064,7 +2282,7 @@ Proszę podać inny katalog.</translation>
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -2130,7 +2348,7 @@ Proszę podać inny katalog.</translation>
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>UUID:</source>
@@ -2232,7 +2450,7 @@ Proszę podać inny katalog.</translation>
     </message>
     <message>
       <source>Reset</source>
-      <translation>Reset</translation>
+      <translation type="unfinished">Reset</translation>
     </message>
     <message>
       <source>Clear</source>
@@ -2287,7 +2505,7 @@ Proszę podać inny katalog.</translation>
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Redirect internal Python errors to report view</source>
@@ -2399,6 +2617,28 @@ z konsoli Python do panelu Widoku Raportu</translation>
     </message>
   </context>
   <context>
+    <name>Gui::Dialog::DlgRevertToBackupConfig</name>
+    <message>
+      <source>Revert to Backup Config</source>
+      <translation type="unfinished">Revert to Backup Config</translation>
+    </message>
+    <message>
+      <source>WARNING: this process will undo any preference changes made since the specified date, and will also reset your Recent files and Macros to their state on that date.</source>
+      <translation type="unfinished">WARNING: this process will undo any preference changes made since the specified date, and will also reset your Recent files and Macros to their state on that date.</translation>
+    </message>
+    <message>
+      <source>Available backup files:</source>
+      <translation type="unfinished">Available backup files:</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::Dialog::DlgRevertToBackupConfigImp</name>
+    <message>
+      <source>No selection in dialog, cannot load backup file</source>
+      <translation type="unfinished">No selection in dialog, cannot load backup file</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::Dialog::DlgRunExternal</name>
     <message>
       <source>Running external program</source>
@@ -2414,7 +2654,7 @@ z konsoli Python do panelu Widoku Raportu</translation>
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Accept changes</source>
@@ -2457,7 +2697,7 @@ z konsoli Python do panelu Widoku Raportu</translation>
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Anti-Aliasing</source>
@@ -2554,20 +2794,20 @@ zgłoszeniu aktywacji tej nastawy podczas szukania wsparcia na forum FreeCAD</tr
       <translation>Pamięć podręczna dla renderowania</translation>
     </message>
     <message>
-      <source>'Render Caching' is another way to say 'Rendering Acceleration'.
+      <source>&apos;Render Caching&apos; is another way to say &apos;Rendering Acceleration&apos;.
 There are 3 options available to achieve this: 
-1) 'Auto' (default), let Coin3D decide where to cache.
-2) 'Distributed', manually turn on cache for all view provider root node.
-3) 'Centralized', manually turn off cache in all nodes of all view provider, and
+1) &apos;Auto&apos; (default), let Coin3D decide where to cache.
+2) &apos;Distributed&apos;, manually turn on cache for all view provider root node.
+3) &apos;Centralized&apos;, manually turn off cache in all nodes of all view provider, and
 only cache at the scene graph root node. This offers the fastest rendering speed
 but slower response to any scene changes.</source>
-      <translation>„Buforowanie renderowania" to inny sposób na „przyspieszania renderowania”.
-Dostępne są 3 opcje: 
-1) „Automatycznie" (domyślnie), niech Coin3D zdecyduje gdzie buforować.
-2) „Rozproszone", ręcznie włącz buforowanie dla wszystkich węzłów głównego dostawcy widoku.
-3) „Scentralizowane", ręcznie wyłącz cache we wszystkich węzłach wszystkich dostawców widoków, oraz
-tylko cache w głównym węźle graficznym obrazu. Oferuje to najszybszą prędkość renderowania
-ale wolniej reaguje na każdą zmianę ujęcia.</translation>
+      <translation type="unfinished">&apos;Render Caching&apos; is another way to say &apos;Rendering Acceleration&apos;.
+There are 3 options available to achieve this: 
+1) &apos;Auto&apos; (default), let Coin3D decide where to cache.
+2) &apos;Distributed&apos;, manually turn on cache for all view provider root node.
+3) &apos;Centralized&apos;, manually turn off cache in all nodes of all view provider, and
+only cache at the scene graph root node. This offers the fastest rendering speed
+but slower response to any scene changes.</translation>
     </message>
     <message>
       <source>Auto</source>
@@ -2674,6 +2914,20 @@ bounding box size of the 3D object that is currently displayed.</source>
 Podana wartość jest współczynnikiem, który zostanie pomnożony przez
 rozmiar ramki otaczającej obiekt 3D, który jest aktualnie wyświetlany.</translation>
     </message>
+    <message>
+      <source>Relative size :   </source>
+      <translation type="unfinished">Relative size :   </translation>
+    </message>
+    <message>
+      <source>Size of main coordinate system representation
+in the corner -- in % of height/width of viewport</source>
+      <translation type="unfinished">Size of main coordinate system representation
+in the corner -- in % of height/width of viewport</translation>
+    </message>
+    <message>
+      <source>%</source>
+      <translation type="unfinished">%</translation>
+    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgSettings3DViewImp</name>
@@ -2687,27 +2941,90 @@ rozmiar ramki otaczającej obiekt 3D, który jest aktualnie wyświetlany.</trans
     </message>
     <message>
       <source>5px</source>
-      <translation>5px</translation>
+      <translation type="unfinished">5px</translation>
     </message>
     <message>
       <source>7px</source>
-      <translation>7px</translation>
+      <translation type="unfinished">7px</translation>
     </message>
     <message>
       <source>9px</source>
-      <translation>9px</translation>
+      <translation type="unfinished">9px</translation>
     </message>
     <message>
       <source>11px</source>
-      <translation>11px</translation>
+      <translation type="unfinished">11px</translation>
     </message>
     <message>
       <source>13px</source>
-      <translation>13px</translation>
+      <translation type="unfinished">13px</translation>
     </message>
     <message>
       <source>15px</source>
-      <translation>15px</translation>
+      <translation type="unfinished">15px</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::Dialog::DlgSettingsCacheDirectory</name>
+    <message>
+      <source>Cache</source>
+      <translation type="unfinished">Cache</translation>
+    </message>
+    <message>
+      <source>Cache directory</source>
+      <translation type="unfinished">Cache directory</translation>
+    </message>
+    <message>
+      <source>Location:</source>
+      <translation type="unfinished">Location:</translation>
+    </message>
+    <message>
+      <source>Check periodically at program start:</source>
+      <translation type="unfinished">Check periodically at program start:</translation>
+    </message>
+    <message>
+      <source>Always</source>
+      <translation type="unfinished">Always</translation>
+    </message>
+    <message>
+      <source>Daily</source>
+      <translation type="unfinished">Daily</translation>
+    </message>
+    <message>
+      <source>Weekly</source>
+      <translation type="unfinished">Weekly</translation>
+    </message>
+    <message>
+      <source>Monthly</source>
+      <translation type="unfinished">Monthly</translation>
+    </message>
+    <message>
+      <source>Yearly</source>
+      <translation type="unfinished">Yearly</translation>
+    </message>
+    <message>
+      <source>Never</source>
+      <translation type="unfinished">Never</translation>
+    </message>
+    <message>
+      <source>Cache size limit:</source>
+      <translation type="unfinished">Cache size limit:</translation>
+    </message>
+    <message>
+      <source>Check now...</source>
+      <translation type="unfinished">Check now...</translation>
+    </message>
+    <message>
+      <source>Notify the user if the cache size exceeds the specified limit</source>
+      <translation type="unfinished">Notify the user if the cache size exceeds the specified limit</translation>
+    </message>
+    <message>
+      <source>Unknown</source>
+      <translation type="unfinished">Unknown</translation>
+    </message>
+    <message>
+      <source>Current cache size: %1</source>
+      <translation type="unfinished">Current cache size: %1</translation>
     </message>
   </context>
   <context>
@@ -2718,7 +3035,7 @@ rozmiar ramki otaczającej obiekt 3D, który jest aktualnie wyświetlany.</trans
     </message>
     <message>
       <source>&amp;Gradient:</source>
-      <translation>&amp;Gradient:</translation>
+      <translation type="unfinished">&amp;Gradient:</translation>
     </message>
     <message>
       <source>red-yellow-green-cyan-blue</source>
@@ -2746,11 +3063,7 @@ rozmiar ramki otaczającej obiekt 3D, który jest aktualnie wyświetlany.</trans
     </message>
     <message>
       <source>Alt+R</source>
-      <translation>Alt+R</translation>
-    </message>
-    <message>
-      <source>Out &amp;invisible</source>
-      <translation>Uczyń n&amp;iewidocznym</translation>
+      <translation type="unfinished">Alt+R</translation>
     </message>
     <message>
       <source>Alt+I</source>
@@ -2762,11 +3075,11 @@ rozmiar ramki otaczającej obiekt 3D, który jest aktualnie wyświetlany.</trans
     </message>
     <message>
       <source>&amp;Zero</source>
-      <translation>&amp;Zero</translation>
+      <translation type="unfinished">&amp;Zero</translation>
     </message>
     <message>
       <source>Alt+Z</source>
-      <translation>Alt+Z</translation>
+      <translation type="unfinished">Alt+Z</translation>
     </message>
     <message>
       <source>&amp;Flow</source>
@@ -2774,7 +3087,7 @@ rozmiar ramki otaczającej obiekt 3D, który jest aktualnie wyświetlany.</trans
     </message>
     <message>
       <source>Alt+F</source>
-      <translation>Alt+F</translation>
+      <translation type="unfinished">Alt+F</translation>
     </message>
     <message>
       <source>Parameter range</source>
@@ -2782,7 +3095,7 @@ rozmiar ramki otaczającej obiekt 3D, który jest aktualnie wyświetlany.</trans
     </message>
     <message>
       <source>Mi&amp;nimum:</source>
-      <translation>Mi&amp;nimum:</translation>
+      <translation type="unfinished">Mi&amp;nimum:</translation>
     </message>
     <message>
       <source>Ma&amp;ximum:</source>
@@ -2798,11 +3111,45 @@ rozmiar ramki otaczającej obiekt 3D, który jest aktualnie wyświetlany.</trans
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
     <message>
       <source>Color-gradient settings</source>
       <translation>Ustawienia kolorów gradientu</translation>
+    </message>
+    <message>
+      <source>Color gradient is used with its full color range</source>
+      <translation type="unfinished">Color gradient is used with its full color range</translation>
+    </message>
+    <message>
+      <source>Color gradient starts from the zero value</source>
+      <translation type="unfinished">Color gradient starts from the zero value</translation>
+    </message>
+    <message>
+      <source>Data outside the specified min-max range
+will be displayed in gray</source>
+      <translation type="unfinished">Data outside the specified min-max range
+will be displayed in gray</translation>
+    </message>
+    <message>
+      <source>Data outside the specified min-max range
+will be displayed with transparency</source>
+      <translation type="unfinished">Data outside the specified min-max range
+will be displayed with transparency</translation>
+    </message>
+    <message>
+      <source>Out &amp;transparent</source>
+      <translation type="unfinished">Out &amp;transparent</translation>
+    </message>
+    <message>
+      <source>Number of labels besides the color bar</source>
+      <translation type="unfinished">Number of labels besides the color bar</translation>
+    </message>
+    <message>
+      <source>Number of decimals for labels
+besides the color bar</source>
+      <translation type="unfinished">Number of decimals for labels
+besides the color bar</translation>
     </message>
   </context>
   <context>
@@ -2982,9 +3329,10 @@ Typowe rozmiary to 128, 256 i 512</translation>
       <translation>Ile plików kopii zapasowej będzie przechowywanych podczas zapisywania dokumentu</translation>
     </message>
     <message>
-      <source>Backup files will get extension '.FCbak' and file names
+      <source>Backup files will get extension &apos;.FCbak&apos; and file names
 get date suffix according to the specified format</source>
-      <translation>Pliki kopii zapasowych otrzymają rozszerzenie ".FCbak" a nazwy plików przyrostek daty zgodnie z określonym formatem</translation>
+      <translation type="unfinished">Backup files will get extension &apos;.FCbak&apos; and file names
+get date suffix according to the specified format</translation>
     </message>
     <message>
       <source>Use date and FCBak extension</source>
@@ -3023,8 +3371,8 @@ Pozostaw puste miejsce dla zachowania anonimowości.
 Możesz również skorzystać z formatki: John Doe &lt;john@doe.com&gt;</translation>
     </message>
     <message>
-      <source>The field 'Last modified by' will be set to specified author when saving the file</source>
-      <translation>Podczas zapisywania pliku pole 'Ostatnio zmodyfikowany przez' zostanie uzupełnione nazwą określonego autora</translation>
+      <source>The field &apos;Last modified by&apos; will be set to specified author when saving the file</source>
+      <translation type="unfinished">The field &apos;Last modified by&apos; will be set to specified author when saving the file</translation>
     </message>
     <message>
       <source>Default company name to use for new files</source>
@@ -3075,7 +3423,7 @@ Możesz również skorzystać z formatki: John Doe &lt;john@doe.com&gt;</transla
     </message>
     <message>
       <source>Format</source>
-      <translation>Format</translation>
+      <translation type="unfinished">Format</translation>
     </message>
   </context>
   <context>
@@ -3126,7 +3474,7 @@ Możesz również skorzystać z formatki: John Doe &lt;john@doe.com&gt;</transla
     </message>
     <message>
       <source>Operator</source>
-      <translation>Operator</translation>
+      <translation type="unfinished">Operator</translation>
     </message>
     <message>
       <source>Python output</source>
@@ -3217,31 +3565,31 @@ Możesz również skorzystać z formatki: John Doe &lt;john@doe.com&gt;</transla
     </message>
     <message>
       <source>Alt+S</source>
-      <translation>Alt+S</translation>
+      <translation type="unfinished">Alt+S</translation>
     </message>
     <message>
       <source>&amp;4:3</source>
-      <translation>&amp;4:3</translation>
+      <translation type="unfinished">&amp;4:3</translation>
     </message>
     <message>
       <source>Alt+4</source>
-      <translation>Alt+4</translation>
+      <translation type="unfinished">Alt+4</translation>
     </message>
     <message>
       <source>1&amp;6:9</source>
-      <translation>1&amp;6:9</translation>
+      <translation type="unfinished">1&amp;6:9</translation>
     </message>
     <message>
       <source>Alt+6</source>
-      <translation>Alt+6</translation>
+      <translation type="unfinished">Alt+6</translation>
     </message>
     <message>
       <source>&amp;1:1</source>
-      <translation>&amp;1:1</translation>
+      <translation type="unfinished">&amp;1:1</translation>
     </message>
     <message>
       <source>Alt+1</source>
-      <translation>Alt+1</translation>
+      <translation type="unfinished">Alt+1</translation>
     </message>
     <message>
       <source>Image comment</source>
@@ -3365,7 +3713,7 @@ Możesz również skorzystać z formatki: John Doe &lt;john@doe.com&gt;</transla
     </message>
     <message>
       <source>FullScript.FCScript</source>
-      <translation>FullScript.FCScript</translation>
+      <translation type="unfinished">FullScript.FCScript</translation>
     </message>
     <message>
       <source>Gui commands</source>
@@ -3514,15 +3862,11 @@ Turntable: część będzie obracana wokół osi z.</translation>
     </message>
     <message>
       <source>Turntable</source>
-      <translation>Turntable</translation>
+      <translation type="unfinished">Turntable</translation>
     </message>
     <message>
       <source>Trackball</source>
-      <translation>Trackball</translation>
-    </message>
-    <message>
-      <source>New document scale</source>
-      <translation>Skala dla nowego dokumentu</translation>
+      <translation type="unfinished">Trackball</translation>
     </message>
     <message>
       <source>Sets camera zoom for new documents.
@@ -3532,7 +3876,7 @@ Wartością jest średnica kuli, która ma zmieścić się na ekranie.</translat
     </message>
     <message>
       <source>mm</source>
-      <translation>mm</translation>
+      <translation type="unfinished">mm</translation>
     </message>
     <message>
       <source>Enable animated rotations</source>
@@ -3660,9 +4004,50 @@ Obracanie przy pomocy myszki nie jest blokowane.</translation>
     </message>
     <message>
       <source>How much will be zoomed.
-Zoom step of '1' means a factor of 7.5 for every zoom step.</source>
-      <translation>Określa krok powiększenia
-Stopień powiększenia "1" oznacza współczynnik 7,5 dla każdego kolejnego kroku powiększenia.</translation>
+Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</source>
+      <translation type="unfinished">How much will be zoomed.
+Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</translation>
+    </message>
+    <message>
+      <source>Camera zoom</source>
+      <translation type="unfinished">Camera zoom</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::Dialog::DlgSettingsPythonConsole</name>
+    <message>
+      <source>Python console</source>
+      <translation type="unfinished">Python console</translation>
+    </message>
+    <message>
+      <source>Settings</source>
+      <translation type="unfinished">Settings</translation>
+    </message>
+    <message>
+      <source>Words will be wrapped when they exceed available
+horizontal space in Python console</source>
+      <translation type="unfinished">Words will be wrapped when they exceed available
+horizontal space in Python console</translation>
+    </message>
+    <message>
+      <source>Enable word wrap</source>
+      <translation type="unfinished">Enable word wrap</translation>
+    </message>
+    <message>
+      <source>The cursor shape will be a block</source>
+      <translation type="unfinished">The cursor shape will be a block</translation>
+    </message>
+    <message>
+      <source>Enable block cursor</source>
+      <translation type="unfinished">Enable block cursor</translation>
+    </message>
+    <message>
+      <source>Saves Python history across sessions</source>
+      <translation type="unfinished">Saves Python history across sessions</translation>
+    </message>
+    <message>
+      <source>Save history</source>
+      <translation type="unfinished">Save history</translation>
     </message>
   </context>
   <context>
@@ -3743,32 +4128,32 @@ Stopień powiększenia "1" oznacza współczynnik 7,5 dla każdego kolejnego kro
       <translation>Najmniejszy ułamek cala:</translation>
     </message>
     <message>
-      <source>1/2"</source>
-      <translation>1/2"</translation>
+      <source>1/2&quot;</source>
+      <translation type="unfinished">1/2&quot;</translation>
     </message>
     <message>
-      <source>1/4"</source>
-      <translation>1/4"</translation>
+      <source>1/4&quot;</source>
+      <translation type="unfinished">1/4&quot;</translation>
     </message>
     <message>
-      <source>1/8"</source>
-      <translation>1/8"</translation>
+      <source>1/8&quot;</source>
+      <translation type="unfinished">1/8&quot;</translation>
     </message>
     <message>
-      <source>1/16"</source>
-      <translation>1/16"</translation>
+      <source>1/16&quot;</source>
+      <translation type="unfinished">1/16&quot;</translation>
     </message>
     <message>
-      <source>1/32"</source>
-      <translation>1/32"</translation>
+      <source>1/32&quot;</source>
+      <translation type="unfinished">1/32&quot;</translation>
     </message>
     <message>
-      <source>1/64"</source>
-      <translation>1/64"</translation>
+      <source>1/64&quot;</source>
+      <translation type="unfinished">1/64&quot;</translation>
     </message>
     <message>
-      <source>1/128"</source>
-      <translation>1/128"</translation>
+      <source>1/128&quot;</source>
+      <translation type="unfinished">1/128&quot;</translation>
     </message>
     <message>
       <source>Unit system:</source>
@@ -3890,7 +4275,7 @@ Stopień powiększenia "1" oznacza współczynnik 7,5 dla każdego kolejnego kro
     <name>Gui::Dialog::DlgTipOfTheDay</name>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -3905,7 +4290,7 @@ Stopień powiększenia "1" oznacza współczynnik 7,5 dla każdego kolejnego kro
     </message>
     <message>
       <source>=&gt;</source>
-      <translation>=&gt;</translation>
+      <translation type="unfinished">=&gt;</translation>
     </message>
     <message>
       <source>Quantity:</source>
@@ -3930,12 +4315,6 @@ Stopień powiększenia "1" oznacza współczynnik 7,5 dla każdego kolejnego kro
     <message>
       <source>Result</source>
       <translation>Wynik</translation>
-    </message>
-    <message>
-      <source>List of last used calculations 
-To add a calculation press Return in the value input field</source>
-      <translation>Lista ostatnio używanych obliczeń 
-Aby dodać obliczenie naciśnij klawisz Entern w polu wprowadzania wartości</translation>
     </message>
     <message>
       <source>Quantity</source>
@@ -3971,6 +4350,12 @@ System preferencji to ten, który jest ustawiony w preferencjach ogólnych.</tra
       <source>Copy the result into the clipboard</source>
       <translation>Skopiuj wynik do schowka</translation>
     </message>
+    <message>
+      <source>List of last used calculations.
+To add a calculation press Return in the value input field</source>
+      <translation type="unfinished">List of last used calculations.
+To add a calculation press Return in the value input field</translation>
+    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgUnitsCalculator</name>
@@ -4003,24 +4388,24 @@ System preferencji to ten, który jest ustawiony w preferencjach ogólnych.</tra
       <translation>Przenieś w dół</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Move the selected item down.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved down&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Przesuń wybrany element w dół.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Element zostanie przesunięty w dół&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item down.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved down&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item down.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved down&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Move left</source>
       <translation>Przesuń w lewo</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Remove the selected workbench from enabled workbenches&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Usuń wybrane środowisko pracy z listy włączonych&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Remove the selected workbench from enabled workbenches&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Remove the selected workbench from enabled workbenches&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Move right</source>
       <translation>Przesuń w prawo</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Move the selected workbench to enabled workbenches.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Przenieś wybrane środowisko pracy do listy włączonych&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected workbench to enabled workbenches.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected workbench to enabled workbenches.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Sort enabled workbenches</source>
@@ -4031,8 +4416,8 @@ System preferencji to ten, który jest ustawiony w preferencjach ogólnych.</tra
       <translation>Przenieś wyżej</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Move the selected item up.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved up.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Przesuń wybrany element w górę.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Element zostanie przesunięty w górę&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item up.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved up.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item up.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved up.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Add all to enabled workbenches</source>
@@ -4043,8 +4428,8 @@ System preferencji to ten, który jest ustawiony w preferencjach ogólnych.</tra
       <translation>&lt;p&gt;Sortuj włączone Środowiska pracy&lt;/p&gt;</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;"&gt;Note:&lt;/span&gt;&lt;span style=" font-family:'MS Shell Dlg 2'; font-size:8pt;"&gt; The changes become active the next time you start the application&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-family:'MS Shell Dlg 2'; font-size:8pt; font-weight:600;"&gt;Uwaga:&lt;/span&gt;&lt;span style=" font-family:'MS Shell Dlg 2'; font-size:8pt;"&gt;Zmiany zostaną wprowadzone przy następnym uruchomieniu programu</translation>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Note:&lt;/span&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt; The changes become active the next time you start the application&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Note:&lt;/span&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt; The changes become active the next time you start the application&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
   </context>
   <context>
@@ -4113,32 +4498,32 @@ System preferencji to ten, który jest ustawiony w preferencjach ogólnych.</tra
       <translation>Czy na pewno chcesz usunąć wybrane katalogi przejściowe?</translation>
     </message>
     <message>
-      <source>When deleting the selected transient directory you won't be able to recover any files afterwards.</source>
-      <translation>Po usunięciu wybranego katalogu przejściowego nie będziesz w stanie odzyskać żadnych plików.</translation>
+      <source>When deleting the selected transient directory you won&apos;t be able to recover any files afterwards.</source>
+      <translation type="unfinished">When deleting the selected transient directory you won&apos;t be able to recover any files afterwards.</translation>
     </message>
     <message>
       <source>Are you sure you want to delete all transient directories?</source>
       <translation>Czy na pewno chcesz usunąć wszystkie katalogi przejściowe?</translation>
     </message>
     <message>
-      <source>Finished</source>
-      <translation>Zakończono</translation>
-    </message>
-    <message>
       <source>Transient directories deleted.</source>
       <translation>Katalogi przejściowe usunięto.</translation>
     </message>
     <message>
-      <source>Press 'Start Recovery' to start the recovery process of the document listed below.
+      <source>Press &apos;Start Recovery&apos; to start the recovery process of the document listed below.
 
-The 'Status' column shows whether the document could be recovered.</source>
-      <translation>Naciśnij przycisk "Rozpoczęcie odzyskiwania", aby rozpocząć proces przywracania dokumentu wymienionego poniżej. 
+The &apos;Status&apos; column shows whether the document could be recovered.</source>
+      <translation type="unfinished">Press &apos;Start Recovery&apos; to start the recovery process of the document listed below.
 
-Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translation>
+The &apos;Status&apos; column shows whether the document could be recovered.</translation>
     </message>
     <message>
-      <source>When deleting all transient directories you won't be able to recover any files afterwards.</source>
-      <translation>Po usunięciu wybranych katalogów przejściowych nie będziesz w stanie odzyskać żadnych plików.</translation>
+      <source>When deleting all transient directories you won&apos;t be able to recover any files afterwards.</source>
+      <translation type="unfinished">When deleting all transient directories you won&apos;t be able to recover any files afterwards.</translation>
+    </message>
+    <message>
+      <source>Transient deleted</source>
+      <translation type="unfinished">Transient deleted</translation>
     </message>
   </context>
   <context>
@@ -4185,7 +4570,7 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
     </message>
     <message>
       <source>?</source>
-      <translation>?</translation>
+      <translation type="unfinished">?</translation>
     </message>
     <message>
       <source>%1 of %2 - Stopped</source>
@@ -4197,7 +4582,7 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
     </message>
     <message>
       <source>kB</source>
-      <translation>kB</translation>
+      <translation type="unfinished">kB</translation>
     </message>
     <message>
       <source>MB</source>
@@ -4269,15 +4654,15 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
     </message>
     <message>
       <source>Z:</source>
-      <translation>Z:</translation>
+      <translation type="unfinished">Z:</translation>
     </message>
     <message>
       <source>Y:</source>
-      <translation>Y:</translation>
+      <translation type="unfinished">Y:</translation>
     </message>
     <message>
       <source>X:</source>
-      <translation>X:</translation>
+      <translation type="unfinished">X:</translation>
     </message>
   </context>
   <context>
@@ -4342,8 +4727,8 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
       <translation>Istniejąca grupa podrzędna</translation>
     </message>
     <message>
-      <source>The sub-group '%1' already exists.</source>
-      <translation>Grupa podrzędna '%1' już istnieje.</translation>
+      <source>The sub-group &apos;%1&apos; already exists.</source>
+      <translation type="unfinished">The sub-group &apos;%1&apos; already exists.</translation>
     </message>
     <message>
       <source>Export parameter to file</source>
@@ -4358,8 +4743,8 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
       <translation>Błąd importu</translation>
     </message>
     <message>
-      <source>Reading from '%1' failed.</source>
-      <translation>Odczyt z '%1' nie powiódł się.</translation>
+      <source>Reading from &apos;%1&apos; failed.</source>
+      <translation type="unfinished">Reading from &apos;%1&apos; failed.</translation>
     </message>
     <message>
       <source>Do you really want to remove this parameter group?</source>
@@ -4409,8 +4794,8 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
       <translation>Istniejący element</translation>
     </message>
     <message>
-      <source>The item '%1' already exists.</source>
-      <translation>Element '%1' już istnieje.</translation>
+      <source>The item &apos;%1&apos; already exists.</source>
+      <translation type="unfinished">The item &apos;%1&apos; already exists.</translation>
     </message>
   </context>
   <context>
@@ -4421,7 +4806,7 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
     </message>
     <message>
       <source>OK</source>
-      <translation>OK</translation>
+      <translation type="unfinished">OK</translation>
     </message>
     <message>
       <source>Translation:</source>
@@ -4429,15 +4814,15 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
     </message>
     <message>
       <source>Z:</source>
-      <translation>Z:</translation>
+      <translation type="unfinished">Z:</translation>
     </message>
     <message>
       <source>Y:</source>
-      <translation>Y:</translation>
+      <translation type="unfinished">Y:</translation>
     </message>
     <message>
       <source>X:</source>
-      <translation>X:</translation>
+      <translation type="unfinished">X:</translation>
     </message>
     <message>
       <source>Rotation:</source>
@@ -4465,7 +4850,7 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
     </message>
     <message>
       <source>Reset</source>
-      <translation>Reset</translation>
+      <translation type="unfinished">Reset</translation>
     </message>
     <message>
       <source>Close</source>
@@ -4532,8 +4917,8 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
       <translation>Obrót (wokół osi x)</translation>
     </message>
     <message>
-      <source>Euler angles (zy'x'')</source>
-      <translation>Kąty Eulera (zy'x')</translation>
+      <source>Euler angles (zy&apos;x&apos;&apos;)</source>
+      <translation type="unfinished">Euler angles (zy&apos;x&apos;&apos;)</translation>
     </message>
   </context>
   <context>
@@ -4571,7 +4956,7 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
     </message>
     <message>
       <source>Port:</source>
-      <translation>Port:</translation>
+      <translation type="unfinished">Port:</translation>
     </message>
     <message>
       <source>Redirect output</source>
@@ -4669,32 +5054,12 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
       <translation>Wybrane obiekty zawierają inne zależności. Proszę wybrać obiekty do eksportu. Wszystkie zależności są domyślnie wybrane.</translation>
     </message>
     <message>
-      <source>Dependency</source>
-      <translation>Zależność</translation>
-    </message>
-    <message>
       <source>Document</source>
       <translation>Dokument</translation>
     </message>
     <message>
       <source>Name</source>
       <translation>Nazwa</translation>
-    </message>
-    <message>
-      <source>State</source>
-      <translation>Stan</translation>
-    </message>
-    <message>
-      <source>Hierarchy</source>
-      <translation>Hierarchia</translation>
-    </message>
-    <message>
-      <source>Selected</source>
-      <translation>Wybrane</translation>
-    </message>
-    <message>
-      <source>Partial</source>
-      <translation>Częściowo</translation>
     </message>
     <message>
       <source>&amp;Use Original Selections</source>
@@ -4705,6 +5070,26 @@ Kolumna "Aktualny status" pokazuje, czy dokument może być odzyskany.</translat
 originally selected prior to opening this dialog</source>
       <translation>Ignoruj zależności i kontynuuj z obiektami
 wstępnie wybranymi przed otwarciem tego okna</translation>
+    </message>
+    <message>
+      <source>Auto select depending objects</source>
+      <translation type="unfinished">Auto select depending objects</translation>
+    </message>
+    <message>
+      <source>Depending on</source>
+      <translation type="unfinished">Depending on</translation>
+    </message>
+    <message>
+      <source>Depended by</source>
+      <translation type="unfinished">Depended by</translation>
+    </message>
+    <message>
+      <source>Selections</source>
+      <translation type="unfinished">Selections</translation>
+    </message>
+    <message>
+      <source>All</source>
+      <translation type="unfinished">All</translation>
     </message>
   </context>
   <context>
@@ -4719,7 +5104,7 @@ wstępnie wybranymi przed otwarciem tego okna</translation>
     </message>
     <message>
       <source/>
-      <translation>[empty string]</translation>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -4730,7 +5115,7 @@ wstępnie wybranymi przed otwarciem tego okna</translation>
     </message>
     <message>
       <source>Model</source>
-      <translation>Model</translation>
+      <translation type="unfinished">Model</translation>
     </message>
     <message>
       <source>Tasks</source>
@@ -4799,8 +5184,8 @@ wstępnie wybranymi przed otwarciem tego okna</translation>
       <translation>Błędy</translation>
     </message>
     <message>
-      <source>Show report view on</source>
-      <translation>Pokaż widok raportu na</translation>
+      <source>Show output window on</source>
+      <translation type="unfinished">Show output window on</translation>
     </message>
   </context>
   <context>
@@ -5088,16 +5473,16 @@ Do you want to save your changes?</source>
       <translation>Graphviz - nie znaleziono</translation>
     </message>
     <message>
-      <source>Graphviz couldn't be found on your system.</source>
-      <translation>Nie można znaleźć Graphviz w Twoim systemie.</translation>
+      <source>Graphviz couldn&apos;t be found on your system.</source>
+      <translation type="unfinished">Graphviz couldn&apos;t be found on your system.</translation>
     </message>
     <message>
       <source>Read more about it here.</source>
       <translation>Przeczytaj więcej o tym tutaj.</translation>
     </message>
     <message>
-      <source>Do you want to specify its installation path if it's already installed?</source>
-      <translation>Czy chcesz określić ścieżkę dla instalacji, jeśli już jest zainstalowany?</translation>
+      <source>Do you want to specify its installation path if it&apos;s already installed?</source>
+      <translation type="unfinished">Do you want to specify its installation path if it&apos;s already installed?</translation>
     </message>
     <message>
       <source>Graphviz installation path</source>
@@ -5161,15 +5546,15 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>X</source>
-      <translation>X</translation>
+      <translation type="unfinished">X</translation>
     </message>
     <message>
       <source>Y</source>
-      <translation>Y</translation>
+      <translation type="unfinished">Y</translation>
     </message>
     <message>
       <source>Z</source>
-      <translation>Z</translation>
+      <translation type="unfinished">Z</translation>
     </message>
     <message>
       <source>User defined...</source>
@@ -5180,15 +5565,15 @@ Do you want to save your changes?</source>
     <name>Gui::LocationWidget</name>
     <message>
       <source>X:</source>
-      <translation>X:</translation>
+      <translation type="unfinished">X:</translation>
     </message>
     <message>
       <source>Y:</source>
-      <translation>Y:</translation>
+      <translation type="unfinished">Y:</translation>
     </message>
     <message>
       <source>Z:</source>
-      <translation>Z:</translation>
+      <translation type="unfinished">Z:</translation>
     </message>
     <message>
       <source>Direction:</source>
@@ -5202,12 +5587,12 @@ Do you want to save your changes?</source>
       <translation>Makropolecenie</translation>
     </message>
     <message>
-      <source>Macro file doesn't exist</source>
-      <translation>Plik makrodefinicji nie istnieje</translation>
+      <source>Macro file doesn&apos;t exist</source>
+      <translation type="unfinished">Macro file doesn&apos;t exist</translation>
     </message>
     <message>
-      <source>No such macro file: '%1'</source>
-      <translation>Nie ma takiego pliku makroinstrukcji: '%1'</translation>
+      <source>No such macro file: &apos;%1&apos;</source>
+      <translation type="unfinished">No such macro file: &apos;%1&apos;</translation>
     </message>
   </context>
   <context>
@@ -5245,6 +5630,18 @@ Do you want to save your changes?</source>
 Do you want to save the document now?</source>
       <translation>Aby powiązać z obiektami zewnętrznymi, dokument musi być zapisany co najmniej raz.
 Czy chcesz zapisać dokument teraz?</translation>
+    </message>
+    <message>
+      <source>Help addon needed!</source>
+      <translation type="unfinished">Help addon needed!</translation>
+    </message>
+    <message>
+      <source>The Help system of %1 is now handled by the &quot;Help&quot; addon. It can easily be installed via the Addons Manager</source>
+      <translation type="unfinished">The Help system of %1 is now handled by the &quot;Help&quot; addon. It can easily be installed via the Addons Manager</translation>
+    </message>
+    <message>
+      <source>Open Addon Manager</source>
+      <translation type="unfinished">Open Addon Manager</translation>
     </message>
   </context>
   <context>
@@ -5356,6 +5753,13 @@ Jak chcesz kontynuować?</translation>
     </message>
   </context>
   <context>
+    <name>Gui::ModifierLineEdit</name>
+    <message>
+      <source>Press modifier keys</source>
+      <translation type="unfinished">Press modifier keys</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::NetworkRetriever</name>
     <message>
       <source>Download started...</source>
@@ -5379,6 +5783,25 @@ Jak chcesz kontynuować?</translation>
     <message>
       <source>Press CTRL and left mouse button</source>
       <translation>Naciśnij klawisz CTRL i lewy przycisk myszki</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::OpenSCADNavigationStyle</name>
+    <message>
+      <source>Press left mouse button</source>
+      <translation type="unfinished">Press left mouse button</translation>
+    </message>
+    <message>
+      <source>Press right mouse button and move mouse</source>
+      <translation type="unfinished">Press right mouse button and move mouse</translation>
+    </message>
+    <message>
+      <source>Press left mouse button and move mouse</source>
+      <translation type="unfinished">Press left mouse button and move mouse</translation>
+    </message>
+    <message>
+      <source>Press middle mouse button or SHIFT and right mouse button</source>
+      <translation type="unfinished">Press middle mouse button or SHIFT and right mouse button</translation>
     </message>
   </context>
   <context>
@@ -5473,6 +5896,14 @@ Jak chcesz kontynuować?</translation>
     <message>
       <source>Auto expand</source>
       <translation>Rozwijaj automatycznie</translation>
+    </message>
+    <message>
+      <source>Rename property group</source>
+      <translation type="unfinished">Rename property group</translation>
+    </message>
+    <message>
+      <source>Group name:</source>
+      <translation type="unfinished">Group name:</translation>
     </message>
   </context>
   <context>
@@ -5611,8 +6042,8 @@ Do you want to exit without saving your data?</source>
       <translation>Nie znaleziono pliku</translation>
     </message>
     <message>
-      <source>The file '%1' cannot be opened.</source>
-      <translation>Plik '%1' nie może być otwarty.</translation>
+      <source>The file &apos;%1&apos; cannot be opened.</source>
+      <translation type="unfinished">The file &apos;%1&apos; cannot be opened.</translation>
     </message>
   </context>
   <context>
@@ -5626,8 +6057,12 @@ Do you want to exit without saving your data?</source>
       <translation>Nie znaleziono pliku</translation>
     </message>
     <message>
-      <source>The file '%1' cannot be opened.</source>
-      <translation>Plik '%1' nie może być otwarty.</translation>
+      <source>The file &apos;%1&apos; cannot be opened.</source>
+      <translation type="unfinished">The file &apos;%1&apos; cannot be opened.</translation>
+    </message>
+    <message>
+      <source>none</source>
+      <translation type="unfinished">none</translation>
     </message>
   </context>
   <context>
@@ -5650,6 +6085,25 @@ Do you want to exit without saving your data?</source>
     </message>
   </context>
   <context>
+    <name>Gui::SearchBar</name>
+    <message>
+      <source>Previous</source>
+      <translation type="unfinished">Previous</translation>
+    </message>
+    <message>
+      <source>Next</source>
+      <translation type="unfinished">Next</translation>
+    </message>
+    <message>
+      <source>Case sensitive</source>
+      <translation type="unfinished">Case sensitive</translation>
+    </message>
+    <message>
+      <source>Whole words</source>
+      <translation type="unfinished">Whole words</translation>
+    </message>
+  </context>
+  <context>
     <name>Gui::SelectModule</name>
     <message>
       <source>Select module</source>
@@ -5667,10 +6121,6 @@ Do you want to exit without saving your data?</source>
   <context>
     <name>Gui::StdCmdDescription</name>
     <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
-    <message>
       <source>Des&amp;cription</source>
       <translation>&amp;Opis</translation>
     </message>
@@ -5682,36 +6132,36 @@ Do you want to exit without saving your data?</source>
   <context>
     <name>Gui::StdCmdDownloadOnlineHelp</name>
     <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
-    <message>
       <source>Download online help</source>
       <translation>Pobierz pomoc online</translation>
     </message>
     <message>
-      <source>Download %1's online help</source>
-      <translation>Pobierz %1 z pomocy online</translation>
+      <source>Download %1&apos;s online help</source>
+      <translation type="unfinished">Download %1&apos;s online help</translation>
     </message>
     <message>
       <source>Non-existing directory</source>
       <translation>Katalog nie istnieje</translation>
     </message>
     <message>
-      <source>The directory '%1' does not exist.
+      <source>The directory &apos;%1&apos; does not exist.
 
 Do you want to specify an existing directory?</source>
-      <translation>Katalog '%1' nie istnieje.Chcesz wybrać istniejący katalog?</translation>
+      <translation type="unfinished">The directory &apos;%1&apos; does not exist.
+
+Do you want to specify an existing directory?</translation>
     </message>
     <message>
       <source>Missing permission</source>
       <translation>Brak uprawnień</translation>
     </message>
     <message>
-      <source>You don't have write permission to '%1'
+      <source>You don&apos;t have write permission to &apos;%1&apos;
 
 Do you want to specify another directory?</source>
-      <translation>Nie masz uprawnienie do zapisu w '%1' Czy chcesz określić inny katalog?</translation>
+      <translation type="unfinished">You don&apos;t have write permission to &apos;%1&apos;
+
+Do you want to specify another directory?</translation>
     </message>
     <message>
       <source>Stop downloading</source>
@@ -5720,10 +6170,6 @@ Do you want to specify another directory?</source>
   </context>
   <context>
     <name>Gui::StdCmdPythonHelp</name>
-    <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
     <message>
       <source>Automatic python modules documentation</source>
       <translation>Dokumentacja automatyczna modułów Python</translation>
@@ -5850,7 +6296,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>edit selection</source>
@@ -5880,12 +6326,31 @@ Do you want to specify another directory?</source>
       <translation>Czy chcesz zapisać zmiany przed zamknięciem?</translation>
     </message>
     <message>
-      <source>If you don't save, your changes will be lost.</source>
-      <translation>Jeśli nie zapiszesz dokumentu, zmiany zostaną utracone.</translation>
+      <source>If you don&apos;t save, your changes will be lost.</source>
+      <translation type="unfinished">If you don&apos;t save, your changes will be lost.</translation>
     </message>
     <message>
       <source>Edit text</source>
       <translation>Edytuj tekst</translation>
+    </message>
+  </context>
+  <context>
+    <name>Gui::TinkerCADNavigationStyle</name>
+    <message>
+      <source>Press left mouse button</source>
+      <translation type="unfinished">Press left mouse button</translation>
+    </message>
+    <message>
+      <source>Press middle mouse button</source>
+      <translation type="unfinished">Press middle mouse button</translation>
+    </message>
+    <message>
+      <source>Press right mouse button</source>
+      <translation type="unfinished">Press right mouse button</translation>
+    </message>
+    <message>
+      <source>Scroll middle mouse button</source>
+      <translation type="unfinished">Scroll middle mouse button</translation>
     </message>
   </context>
   <context>
@@ -6065,6 +6530,10 @@ Do you want to specify another directory?</source>
       <source>Spanish, Argentina</source>
       <translation>Hiszpański, Argentyna</translation>
     </message>
+    <message>
+      <source>Georgian</source>
+      <translation type="unfinished">Georgian</translation>
+    </message>
   </context>
   <context>
     <name>Gui::TreeDockWidget</name>
@@ -6195,8 +6664,8 @@ Do you want to specify another directory?</source>
       <translation>Zezwalaj na częściowe przeliczanie</translation>
     </message>
     <message>
-      <source>Enable or disable recomputating editing object when 'skip recomputation' is enabled</source>
-      <translation>Włącz lub wyłącz przeliczanie edytowanego obiektu gdy 'pomijanie przeliczania' jest aktywne</translation>
+      <source>Enable or disable recomputating editing object when &apos;skip recomputation&apos; is enabled</source>
+      <translation type="unfinished">Enable or disable recomputating editing object when &apos;skip recomputation&apos; is enabled</translation>
     </message>
     <message>
       <source>Recompute object</source>
@@ -6209,6 +6678,14 @@ Do you want to specify another directory?</source>
     <message>
       <source> (but must be executed)</source>
       <translation> (ale musi zostać wykonany)</translation>
+    </message>
+    <message>
+      <source>Add dependent objects to selection</source>
+      <translation type="unfinished">Add dependent objects to selection</translation>
+    </message>
+    <message>
+      <source>Adds all dependent objects to the selection</source>
+      <translation type="unfinished">Adds all dependent objects to the selection</translation>
     </message>
   </context>
   <context>
@@ -6223,7 +6700,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
   </context>
   <context>
@@ -6241,15 +6718,15 @@ Do you want to specify another directory?</source>
       <translation>Otwarcie pliku nie powiodło się</translation>
     </message>
     <message>
-      <source>Can't open file '%1' for writing.</source>
-      <translation>Nie można otworzyć pliku "%1" do zapisu.</translation>
+      <source>Can&apos;t open file &apos;%1&apos; for writing.</source>
+      <translation type="unfinished">Can&apos;t open file &apos;%1&apos; for writing.</translation>
     </message>
   </context>
   <context>
     <name>Gui::WorkbenchGroup</name>
     <message>
-      <source>Select the '%1' workbench</source>
-      <translation>Wybierz Środowisko pracy '%1'</translation>
+      <source>Select the &apos;%1&apos; workbench</source>
+      <translation type="unfinished">Select the &apos;%1&apos; workbench</translation>
     </message>
   </context>
   <context>
@@ -6286,12 +6763,12 @@ Do you want to specify another directory?</source>
   <context>
     <name>NetworkAccessManager</name>
     <message>
-      <source>&lt;qt&gt;Enter username and password for "%1" at %2&lt;/qt&gt;</source>
-      <translation>&lt;qt&gt;Wprowadź nazwę użytkownika i hasło dla "%1" na %2&lt;/qt&gt;</translation>
+      <source>&lt;qt&gt;Enter username and password for &quot;%1&quot; at %2&lt;/qt&gt;</source>
+      <translation type="unfinished">&lt;qt&gt;Enter username and password for &quot;%1&quot; at %2&lt;/qt&gt;</translation>
     </message>
     <message>
-      <source>&lt;qt&gt;Connect to proxy "%1" using:&lt;/qt&gt;</source>
-      <translation>&lt;qt&gt;Połączyć się z serwerem proxy "%1" za pomocą:&lt;/qt&gt;</translation>
+      <source>&lt;qt&gt;Connect to proxy &quot;%1&quot; using:&lt;/qt&gt;</source>
+      <translation type="unfinished">&lt;qt&gt;Connect to proxy &quot;%1&quot; using:&lt;/qt&gt;</translation>
     </message>
   </context>
   <context>
@@ -6302,15 +6779,15 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>X:</source>
-      <translation>X:</translation>
+      <translation type="unfinished">X:</translation>
     </message>
     <message>
       <source>Y:</source>
-      <translation>Y:</translation>
+      <translation type="unfinished">Y:</translation>
     </message>
     <message>
       <source>Z:</source>
-      <translation>Z:</translation>
+      <translation type="unfinished">Z:</translation>
     </message>
     <message>
       <source>0.1 mm</source>
@@ -6322,51 +6799,51 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>1 mm</source>
-      <translation>1 mm</translation>
+      <translation type="unfinished">1 mm</translation>
     </message>
     <message>
       <source>2 mm</source>
-      <translation>2 mm</translation>
+      <translation type="unfinished">2 mm</translation>
     </message>
     <message>
       <source>5 mm</source>
-      <translation>5 mm</translation>
+      <translation type="unfinished">5 mm</translation>
     </message>
     <message>
       <source>10 mm</source>
-      <translation>10 mm</translation>
+      <translation type="unfinished">10 mm</translation>
     </message>
     <message>
       <source>20 mm</source>
-      <translation>20 mm</translation>
+      <translation type="unfinished">20 mm</translation>
     </message>
     <message>
       <source>50 mm</source>
-      <translation>50 mm</translation>
+      <translation type="unfinished">50 mm</translation>
     </message>
     <message>
       <source>100 mm</source>
-      <translation>100 mm</translation>
+      <translation type="unfinished">100 mm</translation>
     </message>
     <message>
       <source>200 mm</source>
-      <translation>200 mm</translation>
+      <translation type="unfinished">200 mm</translation>
     </message>
     <message>
       <source>500 mm</source>
-      <translation>500 mm</translation>
+      <translation type="unfinished">500 mm</translation>
     </message>
     <message>
       <source>1 m</source>
-      <translation>1 m</translation>
+      <translation type="unfinished">1 m</translation>
     </message>
     <message>
       <source>2 m</source>
-      <translation>2 m</translation>
+      <translation type="unfinished">2 m</translation>
     </message>
     <message>
       <source>5 m </source>
-      <translation>5 m </translation>
+      <translation type="unfinished">5 m </translation>
     </message>
     <message>
       <source>Grid Snap in</source>
@@ -6451,7 +6928,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>%1</source>
-      <translation>%1</translation>
+      <translation type="unfinished">%1</translation>
     </message>
     <message>
       <source>Exception</source>
@@ -6519,8 +6996,8 @@ Do you want to continue?</source>
       <translation>Przywróć zamrożone widoki</translation>
     </message>
     <message>
-      <source>Cannot open file '%1'.</source>
-      <translation>Nie można otworzyć pliku '%1'.</translation>
+      <source>Cannot open file &apos;%1&apos;.</source>
+      <translation type="unfinished">Cannot open file &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>files</source>
@@ -6575,16 +7052,16 @@ Do you want to continue?</source>
       <translation>Zmień nazwę grupy</translation>
     </message>
     <message>
-      <source>The group '%1' cannot be renamed.</source>
-      <translation>Nie można zmienić nazwy grupy %1.</translation>
+      <source>The group &apos;%1&apos; cannot be renamed.</source>
+      <translation type="unfinished">The group &apos;%1&apos; cannot be renamed.</translation>
     </message>
     <message>
       <source>Existing group</source>
       <translation>Istniejąca grupa</translation>
     </message>
     <message>
-      <source>The group '%1' already exists.</source>
-      <translation>Grupa '%1' już istnieje.</translation>
+      <source>The group &apos;%1&apos; already exists.</source>
+      <translation type="unfinished">The group &apos;%1&apos; already exists.</translation>
     </message>
     <message>
       <source>Change value</source>
@@ -6687,24 +7164,6 @@ Proszę otworzyć okno przeglądarki i wpisać: http://localhost:%1.</translatio
       <translation>Nie można zamknąć dokumentu w tym momencie.</translation>
     </message>
     <message>
-      <source>No OpenGL</source>
-      <translation>Brak OpenGL</translation>
-    </message>
-    <message>
-      <source>This system does not support OpenGL</source>
-      <translation>Ten system nie obsługuje OpenGL</translation>
-    </message>
-    <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
-    <message>
-      <source>Unable to load documentation.
-In order to load it Qt 4.4 or higher is required.</source>
-      <translation>Nie można załadować dokumentacji.
-Wymagana jest biblioteka Qt 4.4 lub nowsza.</translation>
-    </message>
-    <message>
       <source>Exporting PDF...</source>
       <translation>Eksportuj do PDF...</translation>
     </message>
@@ -6744,12 +7203,12 @@ Be aware the point where you click matters.</source>
       <translation>Czy chcesz zamknąć to okno dialogowe?</translation>
     </message>
     <message>
-      <source>Do you want to save your changes to document '%1' before closing?</source>
-      <translation>Czy chcesz zapisać zmiany do dokumentu "%1" przed zamknięciem?</translation>
+      <source>Do you want to save your changes to document &apos;%1&apos; before closing?</source>
+      <translation type="unfinished">Do you want to save your changes to document &apos;%1&apos; before closing?</translation>
     </message>
     <message>
-      <source>If you don't save, your changes will be lost.</source>
-      <translation>Jeśli nie zapiszesz dokumentu, zmiany zostaną utracone.</translation>
+      <source>If you don&apos;t save, your changes will be lost.</source>
+      <translation type="unfinished">If you don&apos;t save, your changes will be lost.</translation>
     </message>
     <message>
       <source>Save a copy of the document under new filename...</source>
@@ -6904,16 +7363,16 @@ underscore, and must not start with a digit.</source>
 podkreślenie i nie może zaczynać się od cyfry.</translation>
     </message>
     <message>
-      <source>The property '%1' already exists in '%2'</source>
-      <translation>Właściwość '%1' już istnieje w '%2'</translation>
+      <source>The property &apos;%1&apos; already exists in &apos;%2&apos;</source>
+      <translation type="unfinished">The property &apos;%1&apos; already exists in &apos;%2&apos;</translation>
     </message>
     <message>
       <source>Add property</source>
       <translation>Dodaj właściwość</translation>
     </message>
     <message>
-      <source>Failed to add property to '%1': %2</source>
-      <translation>Nie udało się dodać właściwości do '%1': %2</translation>
+      <source>Failed to add property to &apos;%1&apos;: %2</source>
+      <translation type="unfinished">Failed to add property to &apos;%1&apos;: %2</translation>
     </message>
     <message>
       <source>Save dependent files</source>
@@ -6944,12 +7403,12 @@ podkreślenie i nie może zaczynać się od cyfry.</translation>
       <translation>W następujących dokumentach zgrupowane są operacje z innymi poprzedzającymi je operacjami</translation>
     </message>
     <message>
-      <source>Choose 'Yes' to roll back all preceding transactions.
-Choose 'No' to roll back in the active document only.
-Choose 'Abort' to abort</source>
-      <translation>Wybierz 'Tak', aby cofnąć wszystkie poprzednie transakcje.
-Wybierz 'Nie', aby cofnąć się tylko do aktywnego dokumentu.
-Wybierz 'Przerwij', aby zrezygnować</translation>
+      <source>Choose &apos;Yes&apos; to roll back all preceding transactions.
+Choose &apos;No&apos; to roll back in the active document only.
+Choose &apos;Abort&apos; to abort</source>
+      <translation type="unfinished">Choose &apos;Yes&apos; to roll back all preceding transactions.
+Choose &apos;No&apos; to roll back in the active document only.
+Choose &apos;Abort&apos; to abort</translation>
     </message>
     <message>
       <source>Do you want to save your changes to document before closing?</source>
@@ -6980,26 +7439,6 @@ Wybierz 'Przerwij', aby zrezygnować</translation>
       <translation>Czy na pewno chcesz kontynuować?</translation>
     </message>
     <message>
-      <source>
-
-Please check report view for more...</source>
-      <translation>
-
-Proszę sprawdź widok raportu, aby uzyskać więcej informacji...</translation>
-    </message>
-    <message>
-      <source>
-Document: </source>
-      <translation>
-Dokument: </translation>
-    </message>
-    <message>
-      <source>
-  Path: </source>
-      <translation>
-  Ścieżka: </translation>
-    </message>
-    <message>
       <source>Identical physical path</source>
       <translation>Identyczna fizyczna ścieżka</translation>
     </message>
@@ -7021,28 +7460,20 @@ Dokument: </translation>
     pracy</translation>
     </message>
     <message>
-      <source>
-
-Physical path: </source>
-      <translation>
-
-Ścieżka fizyczna: </translation>
-    </message>
-    <message>
       <source>Could not save document</source>
       <translation>Nie udało się zapisać dokumentu</translation>
     </message>
     <message>
       <source>There was an issue trying to save the file. This may be because some of the parent folders do not exist, or you do not have sufficient permissions, or for other reasons. Error details:
 
-"%1"
+&quot;%1&quot;
 
 Would you like to save the file with a different name?</source>
-      <translation>Wystąpił błąd podczas próby zapisania pliku. Może tak być dlatego, że niektóre foldery nadrzędne nie istnieją, nie masz wystarczających uprawnień lub z innych powodów. Szczegóły błędu:
+      <translation type="unfinished">There was an issue trying to save the file. This may be because some of the parent folders do not exist, or you do not have sufficient permissions, or for other reasons. Error details:
 
-"%1"
+&quot;%1&quot;
 
-Czy chcesz zapisać plik pod inną nazwą?</translation>
+Would you like to save the file with a different name?</translation>
     </message>
     <message>
       <source>Document not saved</source>
@@ -7060,6 +7491,102 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
       <source>Some documents could not be saved. Do you want to cancel closing?</source>
       <translation>Niektóre dokumenty nie mogły zostać zapisane. Czy chcesz przerwać zamykanie dokumentów?</translation>
     </message>
+    <message>
+      <source>Please check report view for more...</source>
+      <translation type="unfinished">Please check report view for more...</translation>
+    </message>
+    <message>
+      <source>Physical path:</source>
+      <translation type="unfinished">Physical path:</translation>
+    </message>
+    <message>
+      <source>Document:</source>
+      <translation type="unfinished">Document:</translation>
+    </message>
+    <message>
+      <source>Path:</source>
+      <translation type="unfinished">Path:</translation>
+    </message>
+    <message>
+      <source>Edit %1</source>
+      <translation type="unfinished">Edit %1</translation>
+    </message>
+    <message>
+      <source>Setup configurable object</source>
+      <translation type="unfinished">Setup configurable object</translation>
+    </message>
+    <message>
+      <source>Select which object to copy or exclude when configuration changes.All external linked object are excluded by default.</source>
+      <translation type="unfinished">Select which object to copy or exclude when configuration changes.All external linked object are excluded by default.</translation>
+    </message>
+    <message>
+      <source>Please select which objects to copy when the configuration is changed</source>
+      <translation type="unfinished">Please select which objects to copy when the configuration is changed</translation>
+    </message>
+    <message>
+      <source>Apply to all</source>
+      <translation type="unfinished">Apply to all</translation>
+    </message>
+    <message>
+      <source>Apply the setting to all links. Or, uncheck this
+option to apply only to this link.</source>
+      <translation type="unfinished">Apply the setting to all links. Or, uncheck this
+option to apply only to this link.</translation>
+    </message>
+    <message>
+      <source>Copy on change</source>
+      <translation type="unfinished">Copy on change</translation>
+    </message>
+    <message>
+      <source>Enable</source>
+      <translation type="unfinished">Enable</translation>
+    </message>
+    <message>
+      <source>Enable auto copy of linked object when its configuration is changed</source>
+      <translation type="unfinished">Enable auto copy of linked object when its configuration is changed</translation>
+    </message>
+    <message>
+      <source>Tracking</source>
+      <translation type="unfinished">Tracking</translation>
+    </message>
+    <message>
+      <source>Copy the linked object when its configuration is changed.
+Also auto redo the copy if the original linked object is changed.
+</source>
+      <translation type="unfinished">Copy the linked object when its configuration is changed.
+Also auto redo the copy if the original linked object is changed.
+</translation>
+    </message>
+    <message>
+      <source>Disable copy on change</source>
+      <translation type="unfinished">Disable copy on change</translation>
+    </message>
+    <message>
+      <source>Rerefresh configurable object</source>
+      <translation type="unfinished">Rerefresh configurable object</translation>
+    </message>
+    <message>
+      <source>Synchronize the original configurable source object by
+creating a new deep copy. Note that any changes made to
+the current copy will be lost.
+</source>
+      <translation type="unfinished">Synchronize the original configurable source object by
+creating a new deep copy. Note that any changes made to
+the current copy will be lost.
+</translation>
+    </message>
+    <message>
+      <source>Toggle array elements</source>
+      <translation type="unfinished">Toggle array elements</translation>
+    </message>
+    <message>
+      <source>Change whether show each link array element as individual objects</source>
+      <translation type="unfinished">Change whether show each link array element as individual objects</translation>
+    </message>
+    <message>
+      <source>Transform at the origin of the placement</source>
+      <translation type="unfinished">Transform at the origin of the placement</translation>
+    </message>
   </context>
   <context>
     <name>SelectionFilter</name>
@@ -7075,10 +7602,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdBoxElementSelection</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Box element selection</source>
       <translation>Wybór elementów ramką zaznaczenia</translation>
     </message>
@@ -7086,20 +7609,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdBoxSelection</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Box selection</source>
       <translation>Zaznacz obszar</translation>
     </message>
   </context>
   <context>
     <name>StdCmdAbout</name>
-    <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
     <message>
       <source>&amp;About %1</source>
       <translation>Inform&amp;acje o %1</translation>
@@ -7112,10 +7627,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdAboutQt</name>
     <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
-    <message>
       <source>About &amp;Qt</source>
       <translation>Informacje o &amp;Qt</translation>
     </message>
@@ -7126,10 +7637,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdActivateNextWindow</name>
-    <message>
-      <source>Window</source>
-      <translation>Okno</translation>
-    </message>
     <message>
       <source>Ne&amp;xt</source>
       <translation>&amp;Następne</translation>
@@ -7142,10 +7649,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdActivatePrevWindow</name>
     <message>
-      <source>Window</source>
-      <translation>Okno</translation>
-    </message>
-    <message>
       <source>Pre&amp;vious</source>
       <translation>Pop&amp;rzednie</translation>
     </message>
@@ -7156,10 +7659,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdAlignment</name>
-    <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
     <message>
       <source>Alignment...</source>
       <translation>Wyrównanie...</translation>
@@ -7172,10 +7671,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdArrangeIcons</name>
     <message>
-      <source>Window</source>
-      <translation>Okno</translation>
-    </message>
-    <message>
       <source>Arrange &amp;Icons</source>
       <translation>Rozmieszczanie &amp;Ikon</translation>
     </message>
@@ -7187,20 +7682,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdAxisCross</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Toggle axis cross</source>
       <translation>Przełącz krzyż osi</translation>
     </message>
   </context>
   <context>
     <name>StdCmdCascadeWindows</name>
-    <message>
-      <source>Window</source>
-      <translation>Okno</translation>
-    </message>
     <message>
       <source>&amp;Cascade</source>
       <translation>&amp;Kaskadowo</translation>
@@ -7213,10 +7700,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdCloseActiveWindow</name>
     <message>
-      <source>Window</source>
-      <translation>Okno</translation>
-    </message>
-    <message>
       <source>Cl&amp;ose</source>
       <translation>Za&amp;mknij</translation>
     </message>
@@ -7227,10 +7710,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdCloseAllWindows</name>
-    <message>
-      <source>Window</source>
-      <translation>Okno</translation>
-    </message>
     <message>
       <source>Close Al&amp;l</source>
       <translation>Z&amp;amknij wszystkie</translation>
@@ -7243,10 +7722,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdCommandLine</name>
     <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
-    <message>
       <source>Start command &amp;line...</source>
       <translation>&amp;Linia poleceń...</translation>
     </message>
@@ -7257,10 +7732,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdCopy</name>
-    <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
     <message>
       <source>C&amp;opy</source>
       <translation>K&amp;opiuj</translation>
@@ -7273,10 +7744,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdCut</name>
     <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
-    <message>
       <source>&amp;Cut</source>
       <translation>&amp;Wytnij</translation>
     </message>
@@ -7287,10 +7754,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdDelete</name>
-    <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
     <message>
       <source>&amp;Delete</source>
       <translation>&amp;Usuń</translation>
@@ -7303,10 +7766,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdDemoMode</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>View turntable...</source>
       <translation>Widok obrotowy...</translation>
     </message>
@@ -7318,10 +7777,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdDependencyGraph</name>
     <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
-    <message>
       <source>Dependency graph...</source>
       <translation>Wykres zależności...</translation>
     </message>
@@ -7332,10 +7787,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdDlgCustomize</name>
-    <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
     <message>
       <source>Cu&amp;stomize...</source>
       <translation>Do&amp;stosuj...</translation>
@@ -7355,17 +7806,9 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
       <source>Opens a dialog to let you execute a recorded macro</source>
       <translation>Otwiera okno dialogowe umożliwiające uruchomienie nagranego makra</translation>
     </message>
-    <message>
-      <source>Macro</source>
-      <translation>Makropolecenia</translation>
-    </message>
   </context>
   <context>
     <name>StdCmdDlgMacroExecuteDirect</name>
-    <message>
-      <source>Macro</source>
-      <translation>Makrodefinicje</translation>
-    </message>
     <message>
       <source>Execute macro</source>
       <translation>Wykonaj makro</translation>
@@ -7385,17 +7828,9 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
       <source>Opens a dialog to record a macro</source>
       <translation>Otwiera okno dialogowe do nagrywania makroinstrukcji</translation>
     </message>
-    <message>
-      <source>Macro</source>
-      <translation>Makrodefinicje</translation>
-    </message>
   </context>
   <context>
     <name>StdCmdDlgParameter</name>
-    <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
     <message>
       <source>E&amp;dit parameters ...</source>
       <translation>E&amp;dycja parametrów ...</translation>
@@ -7408,10 +7843,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdDlgPreferences</name>
     <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
-    <message>
       <source>&amp;Preferences ...</source>
       <translation>&amp;Preferencje ...</translation>
     </message>
@@ -7422,10 +7853,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdDockViewMenu</name>
-    <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
     <message>
       <source>Panels</source>
       <translation>Panele</translation>
@@ -7438,10 +7865,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdDrawStyle</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Draw style</source>
       <translation>Styl kreślenia</translation>
     </message>
@@ -7452,10 +7875,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdDuplicateSelection</name>
-    <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
     <message>
       <source>Duplicate selection</source>
       <translation>Powiel zaznaczone</translation>
@@ -7468,28 +7887,20 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdEdit</name>
     <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
-    <message>
       <source>Toggle &amp;Edit mode</source>
       <translation>Przełącz tryb &amp;Edycji</translation>
     </message>
     <message>
-      <source>Toggles the selected object's edit mode</source>
-      <translation>Przełącza tryb edycji wybranego obiektu</translation>
+      <source>Toggles the selected object&apos;s edit mode</source>
+      <translation type="unfinished">Toggles the selected object&apos;s edit mode</translation>
     </message>
     <message>
-      <source>Activates or Deactivates the selected object's edit mode</source>
-      <translation>Aktywuje lub wyłącza tryb edycji dla zaznaczonych obiektów</translation>
+      <source>Activates or Deactivates the selected object&apos;s edit mode</source>
+      <translation type="unfinished">Activates or Deactivates the selected object&apos;s edit mode</translation>
     </message>
   </context>
   <context>
     <name>StdCmdExport</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>&amp;Export...</source>
       <translation>&amp;Eksportuj...</translation>
@@ -7510,20 +7921,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdExpression</name>
     <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
-    <message>
       <source>Expression actions</source>
       <translation>Akcje z wyrażeniami</translation>
     </message>
   </context>
   <context>
     <name>StdCmdFeatRecompute</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>&amp;Recompute</source>
       <translation>P&amp;rzelicz</translation>
@@ -7536,10 +7939,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdFreeCADDonation</name>
     <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
-    <message>
       <source>Donate</source>
       <translation>Przekaż darowiznę</translation>
     </message>
@@ -7550,10 +7949,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdFreeCADFAQ</name>
-    <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
     <message>
       <source>FreeCAD FAQ</source>
       <translation>Często zadawane pytania dotyczące FreeCAD</translation>
@@ -7570,10 +7965,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdFreeCADForum</name>
     <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
-    <message>
       <source>FreeCAD Forum</source>
       <translation>Forum FreeCAD</translation>
     </message>
@@ -7588,10 +7979,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdFreeCADPowerUserHub</name>
-    <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
     <message>
       <source>Python scripting documentation</source>
       <translation>Dokumentacja skryptów środowiska Python</translation>
@@ -7608,10 +7995,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdFreeCADUserHub</name>
     <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
-    <message>
       <source>Users documentation</source>
       <translation>Dokumentacja użytkowników</translation>
     </message>
@@ -7622,10 +8005,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdFreeCADWebsite</name>
-    <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
     <message>
       <source>FreeCAD Website</source>
       <translation>Witryna FreeCAD</translation>
@@ -7638,10 +8017,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdFreezeViews</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Freeze display</source>
       <translation>Zamroź widok</translation>
     </message>
@@ -7652,10 +8027,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdGroup</name>
-    <message>
-      <source>Structure</source>
-      <translation>Konstrukcja</translation>
-    </message>
     <message>
       <source>Create group</source>
       <translation>Utwórz grupę</translation>
@@ -7668,10 +8039,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdHideObjects</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Hide all objects</source>
       <translation>Ukryj wszystkie obiekty</translation>
     </message>
@@ -7683,10 +8050,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdHideSelection</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Hide selection</source>
       <translation>Ukryj zaznaczone</translation>
     </message>
@@ -7697,10 +8060,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdImport</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>&amp;Import...</source>
       <translation>&amp;Importuj ...</translation>
@@ -7721,20 +8080,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdLinkActions</name>
     <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
-    <message>
       <source>Link actions</source>
       <translation>Akcje z łączami</translation>
     </message>
   </context>
   <context>
     <name>StdCmdLinkImport</name>
-    <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
     <message>
       <source>Import links</source>
       <translation>Importuj łącza</translation>
@@ -7747,10 +8098,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdLinkImportAll</name>
     <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
-    <message>
       <source>Import all links</source>
       <translation>Importuj wszystkie łącza</translation>
     </message>
@@ -7761,10 +8108,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdLinkMake</name>
-    <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
     <message>
       <source>Make link</source>
       <translation>Utwórz łącze</translation>
@@ -7777,10 +8120,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdLinkMakeGroup</name>
     <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
-    <message>
       <source>Make link group</source>
       <translation>Stwórz grupę łączy</translation>
     </message>
@@ -7791,10 +8130,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdLinkMakeRelative</name>
-    <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
     <message>
       <source>Make sub-link</source>
       <translation>Utwórz łącze względne</translation>
@@ -7807,10 +8142,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdLinkReplace</name>
     <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
-    <message>
       <source>Replace with link</source>
       <translation>Zastąp przez łącze</translation>
     </message>
@@ -7821,10 +8152,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdLinkSelectActions</name>
-    <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
     <message>
       <source>Link navigation</source>
       <translation>Nawigacja przy użyciu odnośników</translation>
@@ -7837,10 +8164,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdLinkSelectAllLinks</name>
     <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
-    <message>
       <source>Select all links</source>
       <translation>Zaznacz wszystkie łącza</translation>
     </message>
@@ -7851,10 +8174,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdLinkSelectLinked</name>
-    <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
     <message>
       <source>Go to linked object</source>
       <translation>Przejdź do połączonego obiektu</translation>
@@ -7867,10 +8186,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdLinkSelectLinkedFinal</name>
     <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
-    <message>
       <source>Go to the deepest linked object</source>
       <translation>Przejdź do najgłębiej połączonego obiektu</translation>
     </message>
@@ -7881,10 +8196,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdLinkUnlink</name>
-    <message>
-      <source>Link</source>
-      <translation>Łącze</translation>
-    </message>
     <message>
       <source>Unlink</source>
       <translation>Usuń powiązanie</translation>
@@ -7897,10 +8208,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdMacroAttachDebugger</name>
     <message>
-      <source>Macro</source>
-      <translation>Makrodefinicje</translation>
-    </message>
-    <message>
       <source>Attach to remote debugger...</source>
       <translation>Przełącz na debuger zewnętrzny...</translation>
     </message>
@@ -7911,10 +8218,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdMacroStartDebug</name>
-    <message>
-      <source>Macro</source>
-      <translation>Makrodefinicje</translation>
-    </message>
     <message>
       <source>Debug macro</source>
       <translation>Debugowanie makrodefinicji</translation>
@@ -7927,10 +8230,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdMacroStepInto</name>
     <message>
-      <source>Macro</source>
-      <translation>Makrodefinicje</translation>
-    </message>
-    <message>
       <source>Step into</source>
       <translation>Wejdź do</translation>
     </message>
@@ -7938,20 +8237,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdMacroStepOver</name>
     <message>
-      <source>Macro</source>
-      <translation>Makrodefinicje</translation>
-    </message>
-    <message>
       <source>Step over</source>
       <translation>Krok dalej</translation>
     </message>
   </context>
   <context>
     <name>StdCmdMacroStopDebug</name>
-    <message>
-      <source>Macro</source>
-      <translation>Makrodefinicje</translation>
-    </message>
     <message>
       <source>Stop debugging</source>
       <translation>Zatrzymaj debugowanie</translation>
@@ -7964,10 +8255,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdMacroStopRecord</name>
     <message>
-      <source>Macro</source>
-      <translation>Makrodefinicje</translation>
-    </message>
-    <message>
       <source>S&amp;top macro recording</source>
       <translation>Za&amp;trzymaj nagrywanie makra</translation>
     </message>
@@ -7979,20 +8266,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdMeasureDistance</name>
     <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
-    <message>
       <source>Measure distance</source>
       <translation>Wymiarowanie odległości</translation>
     </message>
   </context>
   <context>
     <name>StdCmdMeasurementSimple</name>
-    <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
     <message>
       <source>Measures distance between two selected objects</source>
       <translation>Zwymiaruj odległość między dwoma wybranymi obiektami</translation>
@@ -8004,10 +8283,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdMergeProjects</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>Merge project...</source>
       <translation>Scal projekt...</translation>
@@ -8027,10 +8302,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdNew</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>&amp;New</source>
       <translation>&amp;Nowy</translation>
@@ -8058,10 +8329,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdOnlineHelpWebsite</name>
     <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
-    <message>
       <source>Help Website</source>
       <translation>Witryna pomocy</translation>
     </message>
@@ -8072,10 +8339,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdOpen</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>&amp;Open...</source>
       <translation>&amp;Otwórz ...</translation>
@@ -8104,10 +8367,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdPart</name>
     <message>
-      <source>Structure</source>
-      <translation>Konstrukcja</translation>
-    </message>
-    <message>
       <source>Create part</source>
       <translation>Utwórz część</translation>
     </message>
@@ -8118,10 +8377,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdPaste</name>
-    <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
     <message>
       <source>&amp;Paste</source>
       <translation>&amp;Wklej</translation>
@@ -8134,10 +8389,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdPlacement</name>
     <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
-    <message>
       <source>Placement...</source>
       <translation>Umiejscowienie ...</translation>
     </message>
@@ -8148,10 +8399,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdPrint</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>&amp;Print...</source>
       <translation>&amp;Drukuj ...</translation>
@@ -8164,10 +8411,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdPrintPdf</name>
     <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
-    <message>
       <source>&amp;Export PDF...</source>
       <translation>Eksportuj do PD&amp;F ...</translation>
     </message>
@@ -8178,10 +8421,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdPrintPreview</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>&amp;Print preview...</source>
       <translation>&amp;Podgląd wydruku...</translation>
@@ -8198,10 +8437,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdProjectInfo</name>
     <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
-    <message>
       <source>Project i&amp;nformation...</source>
       <translation>I&amp;nformacja o projekcie...</translation>
     </message>
@@ -8212,10 +8447,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdProjectUtil</name>
-    <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
     <message>
       <source>Project utility...</source>
       <translation>Narzędzia projektu...</translation>
@@ -8228,10 +8459,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdPythonWebsite</name>
     <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
-    </message>
-    <message>
       <source>Python Website</source>
       <translation>Witryna środowiska Python</translation>
     </message>
@@ -8242,10 +8469,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdQuit</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>E&amp;xit</source>
       <translation>&amp;Zakończ</translation>
@@ -8258,20 +8481,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdRandomColor</name>
     <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
-    <message>
       <source>Random color</source>
       <translation>Nadaj kolor losowo</translation>
     </message>
   </context>
   <context>
     <name>StdCmdRecentFiles</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>Recent files</source>
       <translation>Ostatnio używane pliki</translation>
@@ -8284,10 +8499,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdRecentMacros</name>
     <message>
-      <source>Macro</source>
-      <translation>Makrodefinicje</translation>
-    </message>
-    <message>
       <source>Recent macros</source>
       <translation>Ostatnio użyte makrodefinicje</translation>
     </message>
@@ -8298,10 +8509,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdRedo</name>
-    <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
     <message>
       <source>&amp;Redo</source>
       <translation>&amp;Ponów</translation>
@@ -8314,10 +8521,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdRefresh</name>
     <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
-    <message>
       <source>&amp;Refresh</source>
       <translation>&amp;Odśwież</translation>
     </message>
@@ -8327,11 +8530,18 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
     </message>
   </context>
   <context>
-    <name>StdCmdRevert</name>
+    <name>StdCmdReportBug</name>
     <message>
-      <source>File</source>
-      <translation>Plik</translation>
+      <source>Report a bug</source>
+      <translation type="unfinished">Report a bug</translation>
     </message>
+    <message>
+      <source>Report a bug or suggest a feature</source>
+      <translation type="unfinished">Report a bug or suggest a feature</translation>
+    </message>
+  </context>
+  <context>
+    <name>StdCmdRevert</name>
     <message>
       <source>Revert</source>
       <translation>Przywróć</translation>
@@ -8344,10 +8554,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdSave</name>
     <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
-    <message>
       <source>&amp;Save</source>
       <translation>Zapi&amp;sz</translation>
     </message>
@@ -8358,10 +8564,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdSaveAll</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>Save All</source>
       <translation>Zapisz wszystkie</translation>
@@ -8374,10 +8576,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdSaveAs</name>
     <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
-    <message>
       <source>Save &amp;As...</source>
       <translation>Zapisz &amp;jako ...</translation>
     </message>
@@ -8388,10 +8586,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdSaveCopy</name>
-    <message>
-      <source>File</source>
-      <translation>Plik</translation>
-    </message>
     <message>
       <source>Save a &amp;Copy...</source>
       <translation>Zapisz jako &amp;kopię ...</translation>
@@ -8404,10 +8598,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdSceneInspector</name>
     <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
-    <message>
       <source>Scene inspector...</source>
       <translation>Inspektor sceny...</translation>
     </message>
@@ -8418,10 +8608,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdSelBack</name>
-    <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
     <message>
       <source>&amp;Back</source>
       <translation>&amp;Wstecz</translation>
@@ -8434,10 +8620,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdSelBoundingBox</name>
     <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
-    <message>
       <source>&amp;Bounding box</source>
       <translation>&amp;Ramka otaczająca</translation>
     </message>
@@ -8448,10 +8630,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdSelForward</name>
-    <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
     <message>
       <source>&amp;Forward</source>
       <translation>&amp;Do przodu</translation>
@@ -8464,10 +8642,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdSelectAll</name>
     <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
-    <message>
       <source>Select &amp;All</source>
       <translation>Zaznacz &amp;Wszystko</translation>
     </message>
@@ -8478,10 +8652,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdSelectVisibleObjects</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Select visible objects</source>
       <translation>Wybierz widoczne obiekty</translation>
@@ -8494,10 +8664,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdSendToPythonConsole</name>
     <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
-    <message>
       <source>&amp;Send to Python Console</source>
       <translation>&amp;Wyślij do konsoli Python</translation>
     </message>
@@ -8508,10 +8674,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdSetAppearance</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Appearance...</source>
       <translation>Wygląd zewnętrzny...</translation>
@@ -8524,10 +8686,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdShowObjects</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Show all objects</source>
       <translation>Wyświetl wszystkie obiekty</translation>
     </message>
@@ -8538,10 +8696,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdShowSelection</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Show selection</source>
       <translation>Pokaż zaznaczone</translation>
@@ -8554,10 +8708,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdStatusBar</name>
     <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
-    <message>
       <source>Status bar</source>
       <translation>Pasek stanu</translation>
     </message>
@@ -8568,10 +8718,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdTextDocument</name>
-    <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
     <message>
       <source>Add text document</source>
       <translation>Dodaj dokument tekstowy</translation>
@@ -8584,10 +8730,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdTextureMapping</name>
     <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
-    <message>
       <source>Texture mapping...</source>
       <translation>Odwzorowanie tekstury ...</translation>
     </message>
@@ -8598,10 +8740,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdTileWindows</name>
-    <message>
-      <source>Window</source>
-      <translation>Okno</translation>
-    </message>
     <message>
       <source>&amp;Tile</source>
       <translation>&amp;Sąsiadująco</translation>
@@ -8614,20 +8752,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdToggleBreakpoint</name>
     <message>
-      <source>Macro</source>
-      <translation>Makropolecenia</translation>
-    </message>
-    <message>
       <source>Toggle breakpoint</source>
       <translation>Przełącz punkt przerwania</translation>
     </message>
   </context>
   <context>
     <name>StdCmdToggleClipPlane</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Clipping plane</source>
       <translation>Płaszczyzna tnąca</translation>
@@ -8640,10 +8770,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdToggleNavigation</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Toggle navigation/Edit mode</source>
       <translation>Przełącz tryb nawigacji/edycji</translation>
     </message>
@@ -8654,10 +8780,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdToggleObjects</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Toggle all objects</source>
       <translation>Przełącz widoczność wszystkich obiektów</translation>
@@ -8670,10 +8792,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdToggleSelectability</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Toggle selectability</source>
       <translation>Przełącznik wyboru</translation>
     </message>
@@ -8684,10 +8802,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdToggleVisibility</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Toggle visibility</source>
       <translation>Przełącz widoczność</translation>
@@ -8700,10 +8814,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdToolBarMenu</name>
     <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
-    <message>
       <source>Tool&amp;bars</source>
       <translation>Paski &amp;narzędzi</translation>
     </message>
@@ -8714,10 +8824,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdTransform</name>
-    <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
     <message>
       <source>Transform...</source>
       <translation>Przemieszczenie ...</translation>
@@ -8730,10 +8836,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdTransformManip</name>
     <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
-    <message>
       <source>Transform</source>
       <translation>Przemieszczenie</translation>
     </message>
@@ -8744,10 +8846,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdTreeCollapse</name>
-    <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
     <message>
       <source>Collapse selected item</source>
       <translation>Zwiń zaznaczony element</translation>
@@ -8760,10 +8858,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdTreeExpand</name>
     <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
-    <message>
       <source>Expand selected item</source>
       <translation>Rozwiń zaznaczony element</translation>
     </message>
@@ -8774,10 +8868,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdTreeSelectAllInstances</name>
-    <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
     <message>
       <source>Select all instances</source>
       <translation>Wybierz wszystkie wystąpienia</translation>
@@ -8790,10 +8880,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdTreeViewActions</name>
     <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
-    <message>
       <source>TreeView actions</source>
       <translation>Akcje widoku drzewa</translation>
     </message>
@@ -8805,10 +8891,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdUndo</name>
     <message>
-      <source>Edit</source>
-      <translation>Edycja</translation>
-    </message>
-    <message>
       <source>&amp;Undo</source>
       <translation>&amp;Cofnij</translation>
     </message>
@@ -8819,10 +8901,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdUnitsCalculator</name>
-    <message>
-      <source>Tools</source>
-      <translation>Przybory</translation>
-    </message>
     <message>
       <source>&amp;Units calculator...</source>
       <translation>Kalk&amp;ulator jednostek...</translation>
@@ -8846,10 +8924,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdUserInterface</name>
     <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
-    <message>
       <source>Dock views</source>
       <translation>Widoki doku</translation>
     </message>
@@ -8860,10 +8934,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewBottom</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Bottom</source>
       <translation>Od dołu</translation>
@@ -8876,10 +8946,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewCreate</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Create new view</source>
       <translation>Utwórz nowy widok</translation>
     </message>
@@ -8890,10 +8956,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewDimetric</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Dimetric</source>
       <translation>Dimetryczny</translation>
@@ -8906,10 +8968,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewExample1</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Inventor example #1</source>
       <translation>Przykład Inventor #1</translation>
     </message>
@@ -8920,10 +8978,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewExample2</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Inventor example #2</source>
       <translation>Przykład Inventor #2</translation>
@@ -8936,10 +8990,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewExample3</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Inventor example #3</source>
       <translation>Przykład Inventor #3</translation>
     </message>
@@ -8950,10 +9000,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewFitAll</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Fit all</source>
       <translation>Dopasuj wszystko</translation>
@@ -8966,10 +9012,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewFitSelection</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Fit selection</source>
       <translation>Dopasuj do wyboru</translation>
     </message>
@@ -8980,10 +9022,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewFront</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Front</source>
       <translation>Od przodu</translation>
@@ -8996,10 +9034,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewHome</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Home</source>
       <translation>Strona główna</translation>
     </message>
@@ -9010,10 +9044,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewIsometric</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Isometric</source>
       <translation>Izometryczny</translation>
@@ -9026,10 +9056,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewIvIssueCamPos</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Issue camera position</source>
       <translation>Problem z pozycją ujęcia widoku</translation>
     </message>
@@ -9040,10 +9066,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewIvStereoInterleavedColumns</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Stereo Interleaved Columns</source>
       <translation>Widok z przeplotem kolumn</translation>
@@ -9056,10 +9078,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewIvStereoInterleavedRows</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Stereo Interleaved Rows</source>
       <translation>Widok z przeplotem wierszy</translation>
     </message>
@@ -9070,10 +9088,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewIvStereoOff</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Stereo Off</source>
       <translation>Wyłącz widok trójwymiarowy</translation>
@@ -9086,10 +9100,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewIvStereoQuadBuff</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Stereo quad buffer</source>
       <translation>Poczwórny bufor stereo</translation>
     </message>
@@ -9100,10 +9110,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewIvStereoRedGreen</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Stereo red/cyan</source>
       <translation>Stereo czerwony/cyjan</translation>
@@ -9116,10 +9122,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewLeft</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Left</source>
       <translation>Od lewej</translation>
     </message>
@@ -9130,10 +9132,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewRear</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Rear</source>
       <translation>Od tył</translation>
@@ -9146,10 +9144,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewRestoreCamera</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Restore saved camera</source>
       <translation>Przywróć zapisane ujęcie widoku</translation>
     </message>
@@ -9160,10 +9154,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewRight</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Right</source>
       <translation>Od prawej</translation>
@@ -9176,10 +9166,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewRotateLeft</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Rotate Left</source>
       <translation>Obrócić w lewo</translation>
     </message>
@@ -9190,10 +9176,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewRotateRight</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Rotate Right</source>
       <translation>Obróć w prawo</translation>
@@ -9206,10 +9188,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewSaveCamera</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Save current camera</source>
       <translation>Zapisz aktualne ujęcie widoku</translation>
     </message>
@@ -9220,10 +9198,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdCmdViewTop</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Top</source>
       <translation>Od góry</translation>
@@ -9236,10 +9210,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewTrimetric</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Trimetric</source>
       <translation>Trymetryczny</translation>
     </message>
@@ -9251,12 +9221,8 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdViewVR</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>FreeCAD-VR</source>
-      <translation>FreeCAD-VR</translation>
+      <translation type="unfinished">FreeCAD-VR</translation>
     </message>
     <message>
       <source>Extend the FreeCAD 3D Window to a Oculus Rift</source>
@@ -9266,24 +9232,16 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdWhatsThis</name>
     <message>
-      <source>Help</source>
-      <translation>Pomoc</translation>
+      <source>&amp;What&apos;s This?</source>
+      <translation type="unfinished">&amp;What&apos;s This?</translation>
     </message>
     <message>
-      <source>&amp;What's This?</source>
-      <translation>&amp;Co to jest?</translation>
-    </message>
-    <message>
-      <source>What's This</source>
-      <translation>Co to jest</translation>
+      <source>What&apos;s This</source>
+      <translation type="unfinished">What&apos;s This</translation>
     </message>
   </context>
   <context>
     <name>StdCmdWindows</name>
-    <message>
-      <source>Window</source>
-      <translation>Okno</translation>
-    </message>
     <message>
       <source>&amp;Windows...</source>
       <translation>&amp;Okna...</translation>
@@ -9296,20 +9254,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdCmdWindowsMenu</name>
     <message>
-      <source>Window</source>
-      <translation>Okno</translation>
-    </message>
-    <message>
       <source>Activates this window</source>
       <translation>Aktywuje to okno</translation>
     </message>
   </context>
   <context>
     <name>StdCmdWorkbench</name>
-    <message>
-      <source>View</source>
-      <translation>Widok</translation>
-    </message>
     <message>
       <source>Workbench</source>
       <translation>Środowiska pracy</translation>
@@ -9322,10 +9272,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdMainFullscreen</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Fullscreen</source>
       <translation>Pełny ekran</translation>
     </message>
@@ -9337,10 +9283,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdOrthographicCamera</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Orthographic view</source>
       <translation>Widok ortogonalny</translation>
     </message>
@@ -9351,10 +9293,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdPerspectiveCamera</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Perspective view</source>
       <translation>Widok perspektywy</translation>
@@ -9374,17 +9312,9 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
       <source>Expand active document and collapse all others</source>
       <translation>Wyświetl aktywny dokument i schowaj pozostałe</translation>
     </message>
-    <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
   </context>
   <context>
     <name>StdTreeDrag</name>
-    <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
     <message>
       <source>Initiate dragging</source>
       <translation>Rozpocznij przeciąganie</translation>
@@ -9401,20 +9331,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
       <translation>Wyświetl wszystkie dokumenty w widoku drzewa</translation>
     </message>
     <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
-    <message>
       <source>Multi document</source>
       <translation>Wiele dokumentów</translation>
     </message>
   </context>
   <context>
     <name>StdTreePreSelection</name>
-    <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
     <message>
       <source>Pre-selection</source>
       <translation>Wybór wstępny</translation>
@@ -9427,10 +9349,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdTreeRecordSelection</name>
     <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
-    <message>
       <source>Record selection</source>
       <translation>Zapisz zaznaczenie</translation>
     </message>
@@ -9441,10 +9359,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdTreeSelection</name>
-    <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
     <message>
       <source>Go to selection</source>
       <translation>Przejdź do zaznaczenia</translation>
@@ -9461,20 +9375,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
       <translation>Wyświetl tylko aktywne dokumenty w widoku drzewa</translation>
     </message>
     <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
-    <message>
       <source>Single document</source>
       <translation>Pojedynczy dokument</translation>
     </message>
   </context>
   <context>
     <name>StdTreeSyncPlacement</name>
-    <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
     <message>
       <source>Sync placement</source>
       <translation>Synchronizuj położenie</translation>
@@ -9487,10 +9393,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdTreeSyncSelection</name>
     <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
-    <message>
       <source>Sync selection</source>
       <translation>Synchronizuj wybrane</translation>
     </message>
@@ -9501,10 +9403,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdTreeSyncView</name>
-    <message>
-      <source>TreeView</source>
-      <translation>Widok drzewa</translation>
-    </message>
     <message>
       <source>Sync view</source>
       <translation>Synchronizuj widok</translation>
@@ -9517,20 +9415,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdViewBoxZoom</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Box zoom</source>
       <translation>Powiększ obszar</translation>
     </message>
   </context>
   <context>
     <name>StdViewDock</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Docked</source>
       <translation>Zadokowany</translation>
@@ -9543,10 +9433,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdViewDockUndockFullscreen</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Document window</source>
       <translation>Okno dokumentu</translation>
     </message>
@@ -9557,10 +9443,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdViewFullscreen</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Fullscreen</source>
       <translation>Pełny ekran</translation>
@@ -9573,10 +9455,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdViewScreenShot</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Save picture...</source>
       <translation>Zapisz obrazek...</translation>
     </message>
@@ -9587,10 +9465,6 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   </context>
   <context>
     <name>StdViewUndock</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Undocked</source>
       <translation>Niezadokowany</translation>
@@ -9603,20 +9477,12 @@ Czy chcesz zapisać plik pod inną nazwą?</translation>
   <context>
     <name>StdViewZoomIn</name>
     <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
-    <message>
       <source>Zoom In</source>
       <translation>Przybliż</translation>
     </message>
   </context>
   <context>
     <name>StdViewZoomOut</name>
-    <message>
-      <source>Standard-View</source>
-      <translation>Widok standardowy</translation>
-    </message>
     <message>
       <source>Zoom Out</source>
       <translation>Oddal</translation>
@@ -9871,42 +9737,9 @@ Czy nadal chcesz kontynuować?</translation>
       <source>Axonometric</source>
       <translation>Aksonometryczny</translation>
     </message>
-  </context>
-  <context>
-    <name>testClass</name>
     <message>
-      <source>test</source>
-      <translation>test</translation>
-    </message>
-    <message>
-      <source>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
-&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;&lt;span style=" font-size:20pt; font-weight:600;"&gt;iisTaskPanel&lt;/span&gt;&lt;/p&gt;
-&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20pt; font-weight:600;"&gt;&lt;/p&gt;
-&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20pt; font-weight:600;"&gt;&lt;span style=" font-size:12pt;"&gt;Created for Qt 4.3.x&lt;/span&gt;&lt;/p&gt;
-&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;"&gt;&lt;/p&gt;
-&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;"&gt;www.ii-system.com&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;style type="text/css"&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;"&gt;
-&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;&lt;span style=" font-size:20pt; font-weight:600;"&gt;iisTaskPanel&lt;/span&gt;&lt;/p&gt;
-&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20pt; font-weight:600;"&gt;&lt;/p&gt;
-&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:20pt; font-weight:600;"&gt;&lt;span style=" font-size:12pt;"&gt;Stworzone dlaQt 4.3.x&lt;/span&gt;&lt;/p&gt;
-&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;"&gt;&lt;/p&gt;
-&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;"&gt;www.ii-system.com&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-      <source>Choose the style of the Task Panel</source>
-      <translation>Wybierz styl panelu zadań</translation>
-    </message>
-    <message>
-      <source>Default</source>
-      <translation>Domyślny</translation>
-    </message>
-    <message>
-      <source>Windows XP</source>
-      <translation>Windows XP</translation>
+      <source>Link actions</source>
+      <translation type="unfinished">Link actions</translation>
     </message>
   </context>
 </TS>

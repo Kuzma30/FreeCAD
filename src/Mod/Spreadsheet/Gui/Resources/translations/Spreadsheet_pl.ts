@@ -2,6 +2,103 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="pl" sourcelanguage="en">
   <context>
+    <name>Spreadsheet</name>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="739"/>
+      <source>Spreadsheet</source>
+      <translation>Arkusz kalkulacyjny</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="874"/>
+      <source>Cell</source>
+      <translation>Komórka</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="751"/>
+      <source>Apply</source>
+      <translation>Zastosuj</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="753"/>
+      <source>Apply the changes to the current cell</source>
+      <translation>Zastosuj zmiany do bieżącej komórki</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="755"/>
+      <source>Delete</source>
+      <translation>Usuń</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="757"/>
+      <source>Deletes the contents of the current cell</source>
+      <translation>Usuwa zawartość bieżącej komórki</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="759"/>
+      <source>Compute</source>
+      <translation>Oblicz</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="761"/>
+      <source>Updates the values handled by controllers</source>
+      <translation>Aktualizuje wartości obsługiwane przez formuły</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="907"/>
+      <source>Create Spreadsheet</source>
+      <translation>Utwórz Arkusz kalkulacyjny</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="933"/>
+      <source>Add controller</source>
+      <translation>Dodaj formułę</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="973"/>
+      <source>Add property controller</source>
+      <translation>Dodaj formułę właściwości</translation>
+    </message>
+  </context>
+  <context>
+    <name>Spreadsheet_Controller</name>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="919"/>
+      <source>Add controller</source>
+      <translation>Dodaj formułę</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="922"/>
+      <source>Adds a cell controller to a selected spreadsheet</source>
+      <translation>Do wybranego arkusza kalkulacyjnego dodaje formułę komórki</translation>
+    </message>
+  </context>
+  <context>
+    <name>Spreadsheet_Create</name>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="902"/>
+      <source>Spreadsheet</source>
+      <translation>Arkusz kalkulacyjny</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="905"/>
+      <source>Adds a spreadsheet object to the active document</source>
+      <translation>Dodaje do aktywnego dokumentu obiekt arkusza kalkulacyjnego</translation>
+    </message>
+  </context>
+  <context>
+    <name>Spreadsheet_PropertyController</name>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="944"/>
+      <source>Add property controller</source>
+      <translation>Dodaj formułę właściwości</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="947"/>
+      <source>Adds a property controller to a selected spreadsheet</source>
+      <translation>Do wybranego arkusza kalkulacyjnego dodaje formułę własności</translation>
+    </message>
+  </context>
+  <context>
     <name>CmdCreateSpreadsheet</name>
     <message>
       <location filename="../../Command.cpp" line="892"/>
@@ -861,66 +958,6 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
     </message>
   </context>
   <context>
-    <name>Spreadsheet</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="739"/>
-      <source>Spreadsheet</source>
-      <translation>Arkusz kalkulacyjny</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="748"/>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="874"/>
-      <source>Cell</source>
-      <translation>Komórka</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="751"/>
-      <source>Apply</source>
-      <translation>Zastosuj</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="753"/>
-      <source>Apply the changes to the current cell</source>
-      <translation>Zastosuj zmiany do bieżącej komórki</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="755"/>
-      <source>Delete</source>
-      <translation>Usuń</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="757"/>
-      <source>Deletes the contents of the current cell</source>
-      <translation>Usuwa zawartość bieżącej komórki</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="759"/>
-      <source>Compute</source>
-      <translation>Oblicz</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="761"/>
-      <source>Updates the values handled by controllers</source>
-      <translation>Aktualizuje wartości obsługiwane przez formuły</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="907"/>
-      <source>Create Spreadsheet</source>
-      <translation>Utwórz Arkusz kalkulacyjny</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="933"/>
-      <source>Add controller</source>
-      <translation>Dodaj formułę</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="959"/>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="973"/>
-      <source>Add property controller</source>
-      <translation>Dodaj formułę właściwości</translation>
-    </message>
-  </context>
-  <context>
     <name>SpreadsheetGui::DlgBindSheet</name>
     <message>
       <location filename="../../DlgBindSheet.cpp" line="180"/>
@@ -946,34 +983,9 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
       <translation>Ustawienia importu / eksportu</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="105"/>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-      <location filename="../../DlgSettings.ui" line="111"/>
-      <source>&quot;</source>
-      <translation type="unfinished">&quot;</translation>
-    </message>
-    <message>
       <location filename="../../DlgSettings.ui" line="38"/>
       <source>Delimiter Character: </source>
       <translation>Znak separatora: </translation>
-    </message>
-    <message>
-      <location filename="../../DlgSettings.ui" line="137"/>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Znak "escape", zwykle backslash (\), używany do wskazywania specjalnych niedrukowalnych znaków, np. \t = tabulator. Musi to być pojedynczy znak.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-      <location filename="../../DlgSettings.ui" line="140"/>
-      <source>\</source>
-      <translation type="unfinished">\</translation>
-    </message>
-    <message>
-      <location filename="../../DlgSettings.ui" line="130"/>
-      <source>Escape Character: </source>
-      <translation>Znak "Escape": </translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="58"/>
@@ -1000,6 +1012,31 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
       <source>Quote Character: </source>
       <translation>Znak cytatu: </translation>
     </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="105"/>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="111"/>
+      <source>&quot;</source>
+      <translation type="unfinished">&quot;</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="130"/>
+      <source>Escape Character: </source>
+      <translation>Znak "Escape": </translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="137"/>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Znak "escape", zwykle backslash (\), używany do wskazywania specjalnych niedrukowalnych znaków, np. \t = tabulator. Musi to być pojedynczy znak.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="140"/>
+      <source>\</source>
+      <translation type="unfinished">\</translation>
+    </message>
   </context>
   <context>
     <name>SpreadsheetGui::DlgSheetConf</name>
@@ -1024,11 +1061,6 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
   </context>
   <context>
     <name>SpreadsheetGui::SheetTableView</name>
-    <message>
-      <location filename="../../SheetTableView.cpp" line="170"/>
-      <source>Properties...</source>
-      <translation>Właściwości...</translation>
-    </message>
     <message numerus="yes">
       <location filename="../../SheetTableView.cpp" line="129"/>
       <source>Insert %n row(s) above</source>
@@ -1110,6 +1142,11 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
       </translation>
     </message>
     <message>
+      <location filename="../../SheetTableView.cpp" line="170"/>
+      <source>Properties...</source>
+      <translation>Właściwości...</translation>
+    </message>
+    <message>
       <location filename="../../SheetTableView.cpp" line="182"/>
       <source>Recompute</source>
       <translation type="unfinished">Recompute</translation>
@@ -1166,45 +1203,6 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
       <location filename="../../SpreadsheetView.cpp" line="263"/>
       <source>PDF file</source>
       <translation type="unfinished">PDF file</translation>
-    </message>
-  </context>
-  <context>
-    <name>Spreadsheet_Controller</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="919"/>
-      <source>Add controller</source>
-      <translation>Dodaj formułę</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="920"/>
-      <source>Adds a cell controller to a selected spreadsheet</source>
-      <translation>Do wybranego arkusza kalkulacyjnego dodaje formułę komórki</translation>
-    </message>
-  </context>
-  <context>
-    <name>Spreadsheet_Create</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="902"/>
-      <source>Spreadsheet</source>
-      <translation>Arkusz kalkulacyjny</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="903"/>
-      <source>Adds a spreadsheet object to the active document</source>
-      <translation>Dodaje do aktywnego dokumentu obiekt arkusza kalkulacyjnego</translation>
-    </message>
-  </context>
-  <context>
-    <name>Spreadsheet_PropertyController</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="944"/>
-      <source>Add property controller</source>
-      <translation>Dodaj formułę właściwości</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="945"/>
-      <source>Adds a property controller to a selected spreadsheet</source>
-      <translation>Do wybranego arkusza kalkulacyjnego dodaje formułę własności</translation>
     </message>
   </context>
   <context>

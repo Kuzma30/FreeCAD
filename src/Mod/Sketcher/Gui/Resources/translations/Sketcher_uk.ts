@@ -2,6 +2,19 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="uk" sourcelanguage="en">
   <context>
+    <name>Sketcher_ProfilesHexagon1</name>
+    <message>
+      <location filename="Profiles.py" line="53"/>
+      <source>Creates a hexagonal profile</source>
+      <translation>Створює шестикутний профіль</translation>
+    </message>
+    <message>
+      <location filename="Profiles.py" line="58"/>
+      <source>Creates a hexagonal profile in the sketch</source>
+      <translation>Створює шестикутний профіль на ескізі</translation>
+    </message>
+  </context>
+  <context>
     <name>CmdSketcherBSplineComb</name>
     <message>
       <location filename="../../CommandSketcherBSpline.cpp" line="203"/>
@@ -2528,6 +2541,11 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Неможливо додати обмеження між двома зовнішніми геометріями.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="163"/>
+      <source>Cannot add a constraint between two fixed geometries. Fixed geometries include external geometry, blocked geometry, and special points such as B-spline knot points.</source>
+      <translation type="unfinished">Cannot add a constraint between two fixed geometries. Fixed geometries include external geometry, blocked geometry, and special points such as B-spline knot points.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="486"/>
       <source>Sketcher Constraint Substitution</source>
       <translation>Заміна обмеження ескізу</translation>
@@ -2536,6 +2554,18 @@ invalid constraints, degenerated geometry, etc.</source>
       <location filename="../../CommandConstraints.cpp" line="492"/>
       <source>Keep notifying me of constraint substitutions</source>
       <translation>Продовжуйте сповіщати мене про заміни обмежень</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="533"/>
+      <location filename="../../CommandConstraints.cpp" line="544"/>
+      <location filename="../../CommandConstraints.cpp" line="556"/>
+      <source>Only sketch and its support are allowed to be selected.</source>
+      <translation type="unfinished">Only sketch and its support are allowed to be selected.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="565"/>
+      <source>One of the selected has to be on the sketch.</source>
+      <translation type="unfinished">One of the selected has to be on the sketch.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="912"/>
@@ -2564,6 +2594,14 @@ invalid constraints, degenerated geometry, etc.</source>
       <location filename="../../CommandSketcherTools.cpp" line="273"/>
       <source>Impossible constraint</source>
       <translation>Обмеження неможливе</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="938"/>
+      <location filename="../../CommandConstraints.cpp" line="1033"/>
+      <location filename="../../CommandConstraints.cpp" line="1176"/>
+      <location filename="../../CommandConstraints.cpp" line="1269"/>
+      <source>The selected edge is not a line segment.</source>
+      <translation type="unfinished">The selected edge is not a line segment.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="946"/>
@@ -2607,40 +2645,15 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation type="unfinished">The selected item(s) can&apos;t accept a horizontal constraint!</translation>
     </message>
     <message>
-      <location filename="../../CommandConstraints.cpp" line="1214"/>
-      <source>The selected item(s) can&apos;t accept a vertical constraint!</source>
-      <translation type="unfinished">The selected item(s) can&apos;t accept a vertical constraint!</translation>
-    </message>
-    <message>
       <location filename="../../CommandConstraints.cpp" line="1005"/>
       <location filename="../../CommandConstraints.cpp" line="1240"/>
       <source>There are more than one fixed points selected. Select a maximum of one fixed point!</source>
       <translation>Вибрано декілька фіксованих точок. Виберіть максимум одну фіксовану точку!</translation>
     </message>
     <message>
-      <location filename="../../CommandConstraints.cpp" line="163"/>
-      <source>Cannot add a constraint between two fixed geometries. Fixed geometries include external geometry, blocked geometry, and special points such as B-spline knot points.</source>
-      <translation type="unfinished">Cannot add a constraint between two fixed geometries. Fixed geometries include external geometry, blocked geometry, and special points such as B-spline knot points.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="533"/>
-      <location filename="../../CommandConstraints.cpp" line="544"/>
-      <location filename="../../CommandConstraints.cpp" line="556"/>
-      <source>Only sketch and its support are allowed to be selected.</source>
-      <translation type="unfinished">Only sketch and its support are allowed to be selected.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="565"/>
-      <source>One of the selected has to be on the sketch.</source>
-      <translation type="unfinished">One of the selected has to be on the sketch.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="938"/>
-      <location filename="../../CommandConstraints.cpp" line="1033"/>
-      <location filename="../../CommandConstraints.cpp" line="1176"/>
-      <location filename="../../CommandConstraints.cpp" line="1269"/>
-      <source>The selected edge is not a line segment.</source>
-      <translation type="unfinished">The selected edge is not a line segment.</translation>
+      <location filename="../../CommandConstraints.cpp" line="1214"/>
+      <source>The selected item(s) can&apos;t accept a vertical constraint!</source>
+      <translation type="unfinished">The selected item(s) can&apos;t accept a vertical constraint!</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="1387"/>
@@ -2702,6 +2715,12 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Оберіть на ескізі принаймні дві точки.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="1980"/>
+      <location filename="../../CommandConstraints.cpp" line="1990"/>
+      <source>Select two or more vertices from the sketch.</source>
+      <translation type="unfinished">Select two or more vertices from the sketch.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="2147"/>
       <location filename="../../CommandConstraints.cpp" line="2278"/>
       <source>Select exactly one line or one point and one line or two points from the sketch.</source>
@@ -2711,6 +2730,11 @@ invalid constraints, degenerated geometry, etc.</source>
       <location filename="../../CommandConstraints.cpp" line="2245"/>
       <source>Cannot add a length constraint on an axis!</source>
       <translation>Не можу додати обмеження довжини на вісь!</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="2370"/>
+      <source>This constraint does not make sense for non-linear curves.</source>
+      <translation type="unfinished">This constraint does not make sense for non-linear curves.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="2487"/>
@@ -2735,50 +2759,6 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Точка на ребрі B-сплайна наразі не підтримується.</translation>
     </message>
     <message>
-      <location filename="../../CommandConstraints.cpp" line="2881"/>
-      <location filename="../../CommandConstraints.cpp" line="3130"/>
-      <source>This constraint only makes sense on a line segment or a pair of points.</source>
-      <translation type="unfinished">This constraint only makes sense on a line segment or a pair of points.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="3258"/>
-      <source>Select a valid line.</source>
-      <translation type="unfinished">Select a valid line.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="3274"/>
-      <location filename="../../CommandConstraints.cpp" line="3312"/>
-      <source>The selected edge is not a valid line.</source>
-      <translation type="unfinished">The selected edge is not a valid line.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="3409"/>
-      <source>Wrong number of selected objects!</source>
-      <comment>perpendicular constraint.</comment>
-      <translation type="unfinished">Wrong number of selected objects!</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="5223"/>
-      <source>Select an edge that is not a B-spline weight</source>
-      <translation>Виберіть ребро, яке не є вагою B-сплайну</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="2583"/>
-      <source>None of the selected points were constrained onto the respective curves, because they are parts of the same element, because they are both external geometry, or because the edge is not eligible.</source>
-      <translation>Жодна з вибраних точок не була обмежена відповідними кривими тому, що вони є частинами того ж елементу, або вони є зовнішньою геометрією, або тому, що ребро не підходить.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="1980"/>
-      <location filename="../../CommandConstraints.cpp" line="1990"/>
-      <source>Select two or more vertices from the sketch.</source>
-      <translation type="unfinished">Select two or more vertices from the sketch.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="2370"/>
-      <source>This constraint does not make sense for non-linear curves.</source>
-      <translation type="unfinished">This constraint does not make sense for non-linear curves.</translation>
-    </message>
-    <message>
       <location filename="../../CommandConstraints.cpp" line="2561"/>
       <location filename="../../CommandConstraints.cpp" line="2650"/>
       <location filename="../../CommandConstraints.cpp" line="3442"/>
@@ -2798,6 +2778,11 @@ invalid constraints, degenerated geometry, etc.</source>
       <location filename="../../CommandConstraints.cpp" line="6863"/>
       <source>Select an edge that is not a B-spline weight.</source>
       <translation type="unfinished">Select an edge that is not a B-spline weight.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="2583"/>
+      <source>None of the selected points were constrained onto the respective curves, because they are parts of the same element, because they are both external geometry, or because the edge is not eligible.</source>
+      <translation>Жодна з вибраних точок не була обмежена відповідними кривими тому, що вони є частинами того ж елементу, або вони є зовнішньою геометрією, або тому, що ребро не підходить.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="2594"/>
@@ -2828,6 +2813,12 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Не можна обмежити X-координату точки початку координат!</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="2881"/>
+      <location filename="../../CommandConstraints.cpp" line="3130"/>
+      <source>This constraint only makes sense on a line segment or a pair of points.</source>
+      <translation type="unfinished">This constraint only makes sense on a line segment or a pair of points.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="3021"/>
       <source>Cannot add a vertical length constraint on an axis!</source>
       <translation>Не можу додати вертикального обмеження довжини на вісь!</translation>
@@ -2849,6 +2840,17 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Оберіть на ескізі принаймні дві лінії.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="3258"/>
+      <source>Select a valid line.</source>
+      <translation type="unfinished">Select a valid line.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="3274"/>
+      <location filename="../../CommandConstraints.cpp" line="3312"/>
+      <source>The selected edge is not a valid line.</source>
+      <translation type="unfinished">The selected edge is not a valid line.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="3376"/>
       <source>There is a number of ways this constraint can be applied.
 
@@ -2863,6 +2865,12 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
       <source>Select some geometry from the sketch.</source>
       <comment>perpendicular constraint</comment>
       <translation>Виберіть деяку геометрію ескізу.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="3409"/>
+      <source>Wrong number of selected objects!</source>
+      <comment>perpendicular constraint.</comment>
+      <translation type="unfinished">Wrong number of selected objects!</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="3486"/>
@@ -2958,6 +2966,11 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
       <translation>Обмеження можна застосовувати лише до дуг або кіл.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="5223"/>
+      <source>Select an edge that is not a B-spline weight</source>
+      <translation>Виберіть ребро, яке не є вагою B-сплайну</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="5788"/>
       <location filename="../../CommandConstraints.cpp" line="6033"/>
       <source>Select one or two lines from the sketch. Or select two edges and a point.</source>
@@ -2997,21 +3010,16 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
       <translation type="unfinished">Sketch axes cannot be used in equality constraints.</translation>
     </message>
     <message>
+      <location filename="../../CommandConstraints.cpp" line="6343"/>
+      <source>Equality for B-spline edge currently unsupported.</source>
+      <translation>Рівність до ребра B-сплайну не підтримується.</translation>
+    </message>
+    <message>
       <location filename="../../CommandConstraints.cpp" line="6373"/>
       <location filename="../../CommandConstraints.cpp" line="6388"/>
       <location filename="../../CommandConstraints.cpp" line="6440"/>
       <source>Select two or more edges of similar type.</source>
       <translation type="unfinished">Select two or more edges of similar type.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="6999"/>
-      <source>Sketch axes cannot be used in internal alignment constraint.</source>
-      <translation type="unfinished">Sketch axes cannot be used in internal alignment constraint.</translation>
-    </message>
-    <message>
-      <location filename="../../CommandConstraints.cpp" line="6343"/>
-      <source>Equality for B-spline edge currently unsupported.</source>
-      <translation>Рівність до ребра B-сплайну не підтримується.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="6522"/>
@@ -3070,6 +3078,11 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
       <location filename="../../CommandConstraints.cpp" line="6978"/>
       <source>Select at least one ellipse and one edge from the sketch.</source>
       <translation>Оберіть на ескізі принаймні один еліпс та одне ребро.</translation>
+    </message>
+    <message>
+      <location filename="../../CommandConstraints.cpp" line="6999"/>
+      <source>Sketch axes cannot be used in internal alignment constraint.</source>
+      <translation type="unfinished">Sketch axes cannot be used in internal alignment constraint.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="7044"/>
@@ -4025,9 +4038,9 @@ Requires to re-enter edit mode to take effect.</source>
       <translation>Робочі кольори</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="80"/>
-      <source>Coordinate text</source>
-      <translation>Текст із зазначенням координат</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="34"/>
+      <source>Creating line</source>
+      <translation>Створюваний елемент</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="41"/>
@@ -4035,16 +4048,9 @@ Requires to re-enter edit mode to take effect.</source>
       <translation>Колір, який використовується при створенні нових елементів ескізу</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="114"/>
-      <source>Color of crosshair cursor.
-(The one you get when creating a new sketch element.)</source>
-      <translation>Колір перехрестя курсору.
-(Той, який Ви отримуєте під час створення нового елемента ескізу.)</translation>
-    </message>
-    <message>
-      <location filename="../../SketcherSettingsColors.ui" line="34"/>
-      <source>Creating line</source>
-      <translation>Створюваний елемент</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="80"/>
+      <source>Coordinate text</source>
+      <translation>Текст із зазначенням координат</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="87"/>
@@ -4057,24 +4063,26 @@ Requires to re-enter edit mode to take effect.</source>
       <translation>Перехрестя курсору</translation>
     </message>
     <message>
+      <location filename="../../SketcherSettingsColors.ui" line="114"/>
+      <source>Color of crosshair cursor.
+(The one you get when creating a new sketch element.)</source>
+      <translation>Колір перехрестя курсору.
+(Той, який Ви отримуєте під час створення нового елемента ескізу.)</translation>
+    </message>
+    <message>
       <location filename="../../SketcherSettingsColors.ui" line="140"/>
       <source>Geometric element colors</source>
       <translation>Колір геометричних елементів</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="370"/>
-      <source>Internal alignment edge</source>
-      <translation>Внутрішня межа вирівнювання</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="154"/>
+      <source>Constrained</source>
+      <translation>З обмеженням</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="167"/>
       <source>Unconstrained</source>
       <translation>Без обмеження</translation>
-    </message>
-    <message>
-      <location filename="../../SketcherSettingsColors.ui" line="226"/>
-      <source>Color of edges being edited</source>
-      <translation>Колір ребер у процесі редагування</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="187"/>
@@ -4083,9 +4091,14 @@ Requires to re-enter edit mode to take effect.</source>
       <translation>Ребро</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="285"/>
-      <source>Color of vertices being edited</source>
-      <translation>Колір вершин у процесі редагування</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="200"/>
+      <source>Color of fully constrained edge color in edit mode</source>
+      <translation>Колір повністю обмеженого ребра в режимі редагування</translation>
+    </message>
+    <message>
+      <location filename="../../SketcherSettingsColors.ui" line="226"/>
+      <source>Color of edges being edited</source>
+      <translation>Колір ребер у процесі редагування</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="246"/>
@@ -4094,9 +4107,14 @@ Requires to re-enter edit mode to take effect.</source>
       <translation>Вершина</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="318"/>
-      <source>Color of fully constrained construction edge color in edit mode</source>
-      <translation type="unfinished">Color of fully constrained construction edge color in edit mode</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="259"/>
+      <source>Color of fully constrained vertex color in edit mode</source>
+      <translation type="unfinished">Color of fully constrained vertex color in edit mode</translation>
+    </message>
+    <message>
+      <location filename="../../SketcherSettingsColors.ui" line="285"/>
+      <source>Color of vertices being edited</source>
+      <translation>Колір вершин у процесі редагування</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="305"/>
@@ -4104,9 +4122,9 @@ Requires to re-enter edit mode to take effect.</source>
       <translation>Допоміжна геометрія</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="409"/>
-      <source>Color of edges of internal alignment geometry</source>
-      <translation type="unfinished">Color of edges of internal alignment geometry</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="318"/>
+      <source>Color of fully constrained construction edge color in edit mode</source>
+      <translation type="unfinished">Color of fully constrained construction edge color in edit mode</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="344"/>
@@ -4114,9 +4132,9 @@ Requires to re-enter edit mode to take effect.</source>
       <translation>Колір допоміжної геометрії в режимі редагування</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="200"/>
-      <source>Color of fully constrained edge color in edit mode</source>
-      <translation>Колір повністю обмеженого ребра в режимі редагування</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="370"/>
+      <source>Internal alignment edge</source>
+      <translation>Внутрішня межа вирівнювання</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="383"/>
@@ -4124,9 +4142,9 @@ Requires to re-enter edit mode to take effect.</source>
       <translation type="unfinished">Color of fully constrained internal alignment edge color in edit mode</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="442"/>
-      <source>Color of external geometry in edit mode</source>
-      <translation>Колір зовнішньої геометрії у режимі редагування</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="409"/>
+      <source>Color of edges of internal alignment geometry</source>
+      <translation type="unfinished">Color of edges of internal alignment geometry</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="429"/>
@@ -4134,19 +4152,9 @@ Requires to re-enter edit mode to take effect.</source>
       <translation>Зовнішня геометрія</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="259"/>
-      <source>Color of fully constrained vertex color in edit mode</source>
-      <translation type="unfinished">Color of fully constrained vertex color in edit mode</translation>
-    </message>
-    <message>
-      <location filename="../../SketcherSettingsColors.ui" line="154"/>
-      <source>Constrained</source>
-      <translation>З обмеженням</translation>
-    </message>
-    <message>
-      <location filename="../../SketcherSettingsColors.ui" line="518"/>
-      <source>Invalid Sketch</source>
-      <translation>Неприпустимий ескіз</translation>
+      <location filename="../../SketcherSettingsColors.ui" line="442"/>
+      <source>Color of external geometry in edit mode</source>
+      <translation>Колір зовнішньої геометрії у режимі редагування</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="472"/>
@@ -4157,6 +4165,11 @@ Requires to re-enter edit mode to take effect.</source>
       <location filename="../../SketcherSettingsColors.ui" line="485"/>
       <source>Color of fully constrained geometry in edit mode</source>
       <translation>Колір повністю визначеної геометрії в режимі редагування</translation>
+    </message>
+    <message>
+      <location filename="../../SketcherSettingsColors.ui" line="518"/>
+      <source>Invalid Sketch</source>
+      <translation>Неприпустимий ескіз</translation>
     </message>
     <message>
       <location filename="../../SketcherSettingsColors.ui" line="531"/>
@@ -4224,14 +4237,14 @@ Requires to re-enter edit mode to take effect.</source>
       <translation>Кольори за межами Sketcher</translation>
     </message>
     <message>
-      <location filename="../../SketcherSettingsColors.ui" line="784"/>
-      <source>Color of vertices</source>
-      <translation>Колір вершин</translation>
-    </message>
-    <message>
       <location filename="../../SketcherSettingsColors.ui" line="744"/>
       <source>Color of edges</source>
       <translation>Колір ребер</translation>
+    </message>
+    <message>
+      <location filename="../../SketcherSettingsColors.ui" line="784"/>
+      <source>Color of vertices</source>
+      <translation>Колір вершин</translation>
     </message>
   </context>
   <context>
@@ -5782,19 +5795,6 @@ Select the method to attach this sketch to selected objects.</source>
       <location filename="../../Command.cpp" line="182"/>
       <source>Select the method to attach this sketch to selected object</source>
       <translation>Виберіть спосіб прикріплення ескізу до вибраного об'єкту</translation>
-    </message>
-  </context>
-  <context>
-    <name>Sketcher_ProfilesHexagon1</name>
-    <message>
-      <location filename="../../../Profiles.py" line="53"/>
-      <source>Creates a hexagonal profile</source>
-      <translation>Створює шестикутний профіль</translation>
-    </message>
-    <message>
-      <location filename="../../../Profiles.py" line="56"/>
-      <source>Creates a hexagonal profile in the sketch</source>
-      <translation>Створює шестикутний профіль на ескізі</translation>
     </message>
   </context>
   <context>

@@ -2,6 +2,103 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="uk" sourcelanguage="en">
   <context>
+    <name>Spreadsheet</name>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="739"/>
+      <source>Spreadsheet</source>
+      <translation>Таблиця</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="874"/>
+      <source>Cell</source>
+      <translation>Комірка</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="751"/>
+      <source>Apply</source>
+      <translation>Застосувати</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="753"/>
+      <source>Apply the changes to the current cell</source>
+      <translation>Застосувати зміни до поточної комірки</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="755"/>
+      <source>Delete</source>
+      <translation>Видалити</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="757"/>
+      <source>Deletes the contents of the current cell</source>
+      <translation>Видаляє вміст поточної комірки</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="759"/>
+      <source>Compute</source>
+      <translation>Обчислити</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="761"/>
+      <source>Updates the values handled by controllers</source>
+      <translation>Оновлює значення, які обробляються елементами керування</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="907"/>
+      <source>Create Spreadsheet</source>
+      <translation>Створити таблицю</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="933"/>
+      <source>Add controller</source>
+      <translation>Додати елемент керування</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="973"/>
+      <source>Add property controller</source>
+      <translation>Додати контролер властивостей</translation>
+    </message>
+  </context>
+  <context>
+    <name>Spreadsheet_Controller</name>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="919"/>
+      <source>Add controller</source>
+      <translation>Додати елемент керування</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="922"/>
+      <source>Adds a cell controller to a selected spreadsheet</source>
+      <translation>Додає елемент керування коміркою до вибраної електронної таблиці</translation>
+    </message>
+  </context>
+  <context>
+    <name>Spreadsheet_Create</name>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="902"/>
+      <source>Spreadsheet</source>
+      <translation>Таблиця</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="905"/>
+      <source>Adds a spreadsheet object to the active document</source>
+      <translation>Додає об’єкт електронної таблиці до активного документа</translation>
+    </message>
+  </context>
+  <context>
+    <name>Spreadsheet_PropertyController</name>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="944"/>
+      <source>Add property controller</source>
+      <translation>Додати контролер властивостей</translation>
+    </message>
+    <message>
+      <location filename="Spreadsheet_legacy.py" line="947"/>
+      <source>Adds a property controller to a selected spreadsheet</source>
+      <translation>Додає контролер властивостей до вибраної електронної таблиці</translation>
+    </message>
+  </context>
+  <context>
     <name>CmdCreateSpreadsheet</name>
     <message>
       <location filename="../../Command.cpp" line="892"/>
@@ -859,66 +956,6 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     </message>
   </context>
   <context>
-    <name>Spreadsheet</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="739"/>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="748"/>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="874"/>
-      <source>Cell</source>
-      <translation>Комірка</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="751"/>
-      <source>Apply</source>
-      <translation>Застосувати</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="753"/>
-      <source>Apply the changes to the current cell</source>
-      <translation>Застосувати зміни до поточної комірки</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="755"/>
-      <source>Delete</source>
-      <translation>Видалити</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="757"/>
-      <source>Deletes the contents of the current cell</source>
-      <translation>Видаляє вміст поточної комірки</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="759"/>
-      <source>Compute</source>
-      <translation>Обчислити</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="761"/>
-      <source>Updates the values handled by controllers</source>
-      <translation>Оновлює значення, які обробляються елементами керування</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="907"/>
-      <source>Create Spreadsheet</source>
-      <translation>Створити таблицю</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="933"/>
-      <source>Add controller</source>
-      <translation>Додати елемент керування</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="959"/>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="973"/>
-      <source>Add property controller</source>
-      <translation>Додати контролер властивостей</translation>
-    </message>
-  </context>
-  <context>
     <name>SpreadsheetGui::DlgBindSheet</name>
     <message>
       <location filename="../../DlgBindSheet.cpp" line="180"/>
@@ -944,34 +981,9 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
       <translation>Параметри Імпорту/Експорту</translation>
     </message>
     <message>
-      <location filename="../../DlgSettings.ui" line="105"/>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ, що використовується для розділення рядків, зазвичай це одинарні лапки (&amp;apos;) або подвійні лапки (&amp;quot;). Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-      <location filename="../../DlgSettings.ui" line="111"/>
-      <source>&quot;</source>
-      <translation type="unfinished">&quot;</translation>
-    </message>
-    <message>
       <location filename="../../DlgSettings.ui" line="38"/>
       <source>Delimiter Character: </source>
       <translation>Символ розділювача: </translation>
-    </message>
-    <message>
-      <location filename="../../DlgSettings.ui" line="137"/>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ &quot;Escape&quot;, як правило, зворотний слеш (\), який використовується для позначення спеціальних символів, які не друкуються, напр. \t = вкладка. Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-      <location filename="../../DlgSettings.ui" line="140"/>
-      <source>\</source>
-      <translation type="unfinished">\</translation>
-    </message>
-    <message>
-      <location filename="../../DlgSettings.ui" line="130"/>
-      <source>Escape Character: </source>
-      <translation>Символ &quot;Escape&quot;: </translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="58"/>
@@ -998,6 +1010,31 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
       <source>Quote Character: </source>
       <translation>Символ лапок: </translation>
     </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="105"/>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Character used to delimit strings, typically is single quote (&apos;) or double quote (&amp;quot;). Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ, що використовується для розділення рядків, зазвичай це одинарні лапки (&amp;apos;) або подвійні лапки (&amp;quot;). Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="111"/>
+      <source>&quot;</source>
+      <translation type="unfinished">&quot;</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="130"/>
+      <source>Escape Character: </source>
+      <translation>Символ &quot;Escape&quot;: </translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="137"/>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Escape character, typically the backslash (\), used to indicate special unprintable characters, e.g. \t = tab. Must be a single character.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Символ &quot;Escape&quot;, як правило, зворотний слеш (\), який використовується для позначення спеціальних символів, які не друкуються, напр. \t = вкладка. Має бути один символ.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+      <location filename="../../DlgSettings.ui" line="140"/>
+      <source>\</source>
+      <translation type="unfinished">\</translation>
+    </message>
   </context>
   <context>
     <name>SpreadsheetGui::DlgSheetConf</name>
@@ -1022,11 +1059,6 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
   </context>
   <context>
     <name>SpreadsheetGui::SheetTableView</name>
-    <message>
-      <location filename="../../SheetTableView.cpp" line="170"/>
-      <source>Properties...</source>
-      <translation>Властивості...</translation>
-    </message>
     <message numerus="yes">
       <location filename="../../SheetTableView.cpp" line="129"/>
       <source>Insert %n row(s) above</source>
@@ -1108,6 +1140,11 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
       </translation>
     </message>
     <message>
+      <location filename="../../SheetTableView.cpp" line="170"/>
+      <source>Properties...</source>
+      <translation>Властивості...</translation>
+    </message>
+    <message>
       <location filename="../../SheetTableView.cpp" line="182"/>
       <source>Recompute</source>
       <translation>Переобчислити</translation>
@@ -1164,45 +1201,6 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
       <location filename="../../SpreadsheetView.cpp" line="263"/>
       <source>PDF file</source>
       <translation>PDF файл</translation>
-    </message>
-  </context>
-  <context>
-    <name>Spreadsheet_Controller</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="919"/>
-      <source>Add controller</source>
-      <translation>Додати елемент керування</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="920"/>
-      <source>Adds a cell controller to a selected spreadsheet</source>
-      <translation>Додає елемент керування коміркою до вибраної електронної таблиці</translation>
-    </message>
-  </context>
-  <context>
-    <name>Spreadsheet_Create</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="902"/>
-      <source>Spreadsheet</source>
-      <translation>Таблиця</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="903"/>
-      <source>Adds a spreadsheet object to the active document</source>
-      <translation>Додає об’єкт електронної таблиці до активного документа</translation>
-    </message>
-  </context>
-  <context>
-    <name>Spreadsheet_PropertyController</name>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="944"/>
-      <source>Add property controller</source>
-      <translation>Додати контролер властивостей</translation>
-    </message>
-    <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="945"/>
-      <source>Adds a property controller to a selected spreadsheet</source>
-      <translation>Додає контролер властивостей до вибраної електронної таблиці</translation>
     </message>
   </context>
   <context>

@@ -98,17 +98,17 @@
       <location filename="change_branch.py" line="179"/>
       <source>Tag</source>
       <comment>git terminology</comment>
-      <translation type="unfinished">Tag</translation>
+      <translation>Тег</translation>
     </message>
     <message numerus="yes">
       <location filename="change_branch.py" line="262"/>
       <source>Kind</source>
       <comment>Table header for git ref type (e.g. either Tag or Branch)</comment>
-      <translation type="unfinished">
+      <translation>
         <numerusform>Тип</numerusform>
-        <numerusform>Типу</numerusform>
         <numerusform>Типів</numerusform>
-        <numerusform>Kind</numerusform>
+        <numerusform>Типів</numerusform>
+        <numerusform>Типів</numerusform>
       </translation>
     </message>
     <message>
@@ -121,33 +121,33 @@
       <location filename="change_branch.py" line="272"/>
       <source>Tracking</source>
       <comment>Table header for git remote tracking branch name name</comment>
-      <translation type="unfinished">
+      <translation>
         <numerusform>Відстеження</numerusform>
         <numerusform>Відстеження</numerusform>
         <numerusform>Відстежень</numerusform>
-        <numerusform>Tracking</numerusform>
+        <numerusform>Відстеження</numerusform>
       </translation>
     </message>
     <message numerus="yes">
       <location filename="change_branch.py" line="278"/>
       <source>Local updated</source>
       <comment>Table header for git update time of local branch</comment>
-      <translation type="unfinished">
-        <numerusform>Локальні оновлення</numerusform>
-        <numerusform>Локальні оновлення</numerusform>
+      <translation>
+        <numerusform>Локальне оновлення</numerusform>
         <numerusform>Локальних оновлень</numerusform>
-        <numerusform>Local updated</numerusform>
+        <numerusform>Локальних оновлень</numerusform>
+        <numerusform>Локальні оновлення</numerusform>
       </translation>
     </message>
     <message numerus="yes">
       <location filename="change_branch.py" line="284"/>
       <source>Remote updated</source>
       <comment>Table header for git update time of remote branch</comment>
-      <translation type="unfinished">
-        <numerusform>Віддалене оновлення</numerusform>
+      <translation>
         <numerusform>Віддалене оновлення</numerusform>
         <numerusform>Віддалених оновлень</numerusform>
-        <numerusform>Remote updated</numerusform>
+        <numerusform>Віддалених оновлень</numerusform>
+        <numerusform>Віддалених оновлень</numerusform>
       </translation>
     </message>
     <message>
@@ -338,7 +338,7 @@
     <message>
       <location filename="AddonManager.py" line="356"/>
       <source>Loading addon information</source>
-      <translation type="unfinished">Loading addon information</translation>
+      <translation>Завантаження інформації про додаток</translation>
     </message>
     <message>
       <location filename="AddonManager.py" line="513"/>
@@ -385,7 +385,7 @@
     <message>
       <location filename="AddonManager.py" line="838"/>
       <source>No updates available</source>
-      <translation type="unfinished">No updates available</translation>
+      <translation>Оновлень немає</translation>
     </message>
     <message>
       <location filename="AddonManager.py" line="1031"/>
@@ -430,17 +430,17 @@
     <message>
       <location filename="AddonManager.py" line="1315"/>
       <source>Installation of macro failed</source>
-      <translation type="unfinished">Installation of macro failed</translation>
+      <translation>Помилка встановлення макросу</translation>
     </message>
     <message numerus="yes">
       <location filename="AddonManager.py" line="1371"/>
       <source>{} total, see Report view for list</source>
       <comment>Describes the number of updates that were completed (&apos;{}&apos; is replaced by the number of updates)</comment>
-      <translation type="unfinished">
-        <numerusform>{} всього, дивитись вид звіту для списку</numerusform>
-        <numerusform>{} всього, дивитись вид звіту для списку</numerusform>
-        <numerusform>{} total, see Report view for list</numerusform>
-        <numerusform>{} total, see Report view for list</numerusform>
+      <translation>
+        <numerusform>{} всього, дивись список у Вікні Звіту</numerusform>
+        <numerusform>{} всього, дивись список у Вікні Звіту</numerusform>
+        <numerusform>{} всього, дивись список у Вікні Звіту</numerusform>
+        <numerusform>{} всього, дивись список у Вікні Звіту</numerusform>
       </translation>
     </message>
     <message>
@@ -461,17 +461,17 @@
     <message>
       <location filename="AddonManager.py" line="1430"/>
       <source>Update report</source>
-      <translation type="unfinished">Update report</translation>
+      <translation>Оновити звіт</translation>
     </message>
     <message>
       <location filename="AddonManager.py" line="1489"/>
       <source>Installation succeeded</source>
-      <translation type="unfinished">Installation succeeded</translation>
+      <translation>Установку завершено</translation>
     </message>
     <message>
       <location filename="AddonManager.py" line="1510"/>
       <source>Installation failed</source>
-      <translation type="unfinished">Installation failed</translation>
+      <translation>Помилка встановлення</translation>
     </message>
     <message>
       <location filename="AddonManager.py" line="1554"/>
@@ -486,17 +486,17 @@
     <message>
       <location filename="AddonManager.py" line="1634"/>
       <source>Successfully uninstalled {}</source>
-      <translation type="unfinished">Successfully uninstalled {}</translation>
+      <translation>Успішно видалено {}</translation>
     </message>
     <message>
       <location filename="package_list.py" line="151"/>
       <source>Filter is valid</source>
-      <translation type="unfinished">Filter is valid</translation>
+      <translation>Фільтр дійсний</translation>
     </message>
     <message>
       <location filename="package_list.py" line="157"/>
       <source>Filter regular expression is invalid</source>
-      <translation type="unfinished">Filter regular expression is invalid</translation>
+      <translation>Невірний фільтр регулярних виразів</translation>
     </message>
     <message>
       <location filename="package_list.py" line="212"/>
@@ -516,12 +516,12 @@
     <message>
       <location filename="package_list.py" line="355"/>
       <source>Maintainer</source>
-      <translation type="unfinished">Maintainer</translation>
+      <translation>Розробник</translation>
     </message>
     <message>
       <location filename="package_list.py" line="362"/>
       <source>Maintainers:</source>
-      <translation type="unfinished">Maintainers:</translation>
+      <translation>Розробники:</translation>
     </message>
     <message>
       <location filename="package_list.py" line="370"/>
@@ -541,7 +541,7 @@
     <message>
       <location filename="package_list.py" line="481"/>
       <source>Up-to-date</source>
-      <translation type="unfinished">Up-to-date</translation>
+      <translation>Актуальний</translation>
     </message>
     <message>
       <location filename="package_list.py" line="780"/>
@@ -551,37 +551,37 @@
     <message>
       <location filename="package_list.py" line="491"/>
       <source>Pending restart</source>
-      <translation type="unfinished">Pending restart</translation>
+      <translation>Очікує перезавантаження</translation>
     </message>
     <message>
       <location filename="package_list.py" line="498"/>
       <source>DISABLED</source>
-      <translation type="unfinished">DISABLED</translation>
+      <translation>ВИМКНЕНО</translation>
     </message>
     <message>
       <location filename="package_list.py" line="449"/>
       <source>Installed version</source>
-      <translation type="unfinished">Installed version</translation>
+      <translation>Встановлена версія</translation>
     </message>
     <message>
       <location filename="package_list.py" line="457"/>
       <source>Unknown version</source>
-      <translation type="unfinished">Unknown version</translation>
+      <translation>Невідома версія</translation>
     </message>
     <message>
       <location filename="package_list.py" line="460"/>
       <source>Installed on</source>
-      <translation type="unfinished">Installed on</translation>
+      <translation>Встановлено на</translation>
     </message>
     <message>
       <location filename="package_list.py" line="471"/>
       <source>Available version</source>
-      <translation type="unfinished">Available version</translation>
+      <translation>Доступна версія</translation>
     </message>
     <message>
       <location filename="package_list.py" line="751"/>
       <source>Show Addons containing:</source>
-      <translation type="unfinished">Show Addons containing:</translation>
+      <translation>Показати додатки, що містять:</translation>
     </message>
     <message>
       <location filename="package_list.py" line="754"/>
@@ -601,7 +601,7 @@
     <message>
       <location filename="package_list.py" line="763"/>
       <source>Preference Packs</source>
-      <translation type="unfinished">Preference Packs</translation>
+      <translation>Пакети параметрів</translation>
     </message>
     <message>
       <location filename="package_list.py" line="766"/>
@@ -738,7 +738,7 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
     <message>
       <location filename="../../AddonManager.ui" line="89"/>
       <source>labelStatusInfo</source>
-      <translation type="unfinished">labelStatusInfo</translation>
+      <translation>labelStatusInfo</translation>
     </message>
     <message>
       <location filename="../../AddonManager.ui" line="103"/>
@@ -888,7 +888,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="44"/>
       <source>DownloadMacros</source>
-      <translation type="unfinished">DownloadMacros</translation>
+      <translation>DownloadMacros</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="47"/>
@@ -897,7 +897,7 @@ installed addons will be checked for available updates
       <location filename="../../AddonManagerOptions.ui" line="134"/>
       <location filename="../../AddonManagerOptions.ui" line="308"/>
       <source>Addons</source>
-      <translation type="unfinished">Addons</translation>
+      <translation>Додатки</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="56"/>
@@ -927,7 +927,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="102"/>
       <source>HidePy2</source>
-      <translation type="unfinished">HidePy2</translation>
+      <translation>HidePy2</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="112"/>
@@ -937,7 +937,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="118"/>
       <source>HideObsolete</source>
-      <translation type="unfinished">HideObsolete</translation>
+      <translation>HideObsolete</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="128"/>
@@ -947,7 +947,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="137"/>
       <source>HideNewerFreeCADRequired</source>
-      <translation type="unfinished">HideNewerFreeCADRequired</translation>
+      <translation>HideNewerFreeCADRequired</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="144"/>
@@ -1006,7 +1006,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../AddonManagerOptions.ui" line="305"/>
       <source>ShowBranchSwitcher</source>
-      <translation type="unfinished">ShowBranchSwitcher</translation>
+      <translation>ShowBranchSwitcher</translation>
     </message>
   </context>
   <context>
@@ -1019,7 +1019,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../package_details.ui" line="29"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../../package_details.ui" line="49"/>
@@ -1118,12 +1118,12 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../proxy_authentication.ui" line="49"/>
       <source>Realm:</source>
-      <translation type="unfinished">Realm:</translation>
+      <translation>Місце:</translation>
     </message>
     <message>
       <location filename="../../proxy_authentication.ui" line="56"/>
       <source>Placeholder for proxy realm</source>
-      <translation type="unfinished">Placeholder for proxy realm</translation>
+      <translation>Місце для проксі-сервера</translation>
     </message>
     <message>
       <location filename="../../proxy_authentication.ui" line="67"/>
@@ -1133,7 +1133,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../proxy_authentication.ui" line="77"/>
       <source>Password</source>
-      <translation type="unfinished">Password</translation>
+      <translation>Пароль</translation>
     </message>
   </context>
   <context>

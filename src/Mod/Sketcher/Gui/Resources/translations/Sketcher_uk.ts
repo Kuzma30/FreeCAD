@@ -1401,7 +1401,7 @@ This will clear the &apos;Support&apos; property, if any.</source>
     <message>
       <location filename="../../CommandSketcherTools.cpp" line="305"/>
       <source>Select associated constraints</source>
-      <translation>Вибрати пов&apos;язані обмеження</translation>
+      <translation>Вибрати пов'язані обмеження</translation>
     </message>
     <message>
       <location filename="../../CommandSketcherTools.cpp" line="306"/>
@@ -1414,7 +1414,7 @@ This will clear the &apos;Support&apos; property, if any.</source>
     <message>
       <location filename="../../CommandSketcherTools.cpp" line="739"/>
       <source>Select associated geometry</source>
-      <translation>Вибрати пов&apos;язану геометрію</translation>
+      <translation>Вибрати пов'язану геометрію</translation>
     </message>
     <message>
       <location filename="../../CommandSketcherTools.cpp" line="740"/>
@@ -1810,7 +1810,7 @@ invalid constraints, degenerated geometry, etc.</source>
     <message>
       <location filename="../../CommandConstraints.cpp" line="4049"/>
       <source>Swap PointOnObject+tangency with point to curve tangency</source>
-      <translation>Перетворіть обмеження «Точка на об&apos;єкті» + дотик на обмеження «Дотик до кривої»</translation>
+      <translation>Перетворіть обмеження «Точка на об'єкті» + дотик на обмеження «Дотик до кривої»</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="4144"/>
@@ -2750,7 +2750,7 @@ invalid constraints, degenerated geometry, etc.</source>
       <location filename="../../CommandConstraints.cpp" line="5317"/>
       <location filename="../../CommandConstraints.cpp" line="5776"/>
       <source>Select the right things from the sketch.</source>
-      <translation>Виділіть потрібні об&apos;єкти на ескізі.</translation>
+      <translation>Виділіть потрібні об'єкти на ескізі.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="2555"/>
@@ -3053,12 +3053,12 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
       <location filename="../../CommandConstraints.cpp" line="6808"/>
       <source>Selected objects are not just geometry from one sketch.</source>
-      <translation>Виділені об&apos;єкти з різних ескізів.</translation>
+      <translation>Виділені об'єкти з різних ескізів.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="6818"/>
       <source>Number of selected objects is not 3 (is %1).</source>
-      <translation>Кількість виділених об&apos;єктів не 3, а %1.</translation>
+      <translation>Кількість виділених об'єктів не 3, а %1.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="6840"/>
@@ -5763,7 +5763,7 @@ Select the method to attach this sketch to selected objects.</source>
     <message>
       <location filename="../../Command.cpp" line="621"/>
       <source>Select the method to attach this sketch to selected objects.</source>
-      <translation>Виберіть спосіб прикріплення ескізу до вибраного об&apos;єкта.</translation>
+      <translation>Виберіть спосіб прикріплення ескізу до виділених об'єктів.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="660"/>
@@ -5797,7 +5797,7 @@ Select the method to attach this sketch to selected objects.</source>
     <message>
       <location filename="../../Command.cpp" line="182"/>
       <source>Select the method to attach this sketch to selected object</source>
-      <translation>Виберіть спосіб прикріплення ескізу до вибраного об&apos;єкту</translation>
+      <translation>Виберіть спосіб прикріплення ескізу до виділеного об'єкту</translation>
     </message>
   </context>
   <context>
@@ -5811,8 +5811,8 @@ Select the method to attach this sketch to selected objects.</source>
       <location filename="../../Command.cpp" line="398"/>
       <source>Sketch with a support face cannot be reoriented.
 Do you want to detach it from the support?</source>
-      <translation>Ескіз з опорною поверхнею не може бути переорієнтованим.
-Бажаєте від&apos;єднати його від опори?</translation>
+      <translation>Ескіз з базовою гранню не може бути переорієнтованим.
+Бажаєте від'єднати його від бази?</translation>
     </message>
   </context>
   <context>
@@ -6071,7 +6071,7 @@ Eigen Dense QR — щільна матриця QR з повним поворот
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="425"/>
       <source>Same as &apos;Maximum iterations&apos;, but for redundant solving</source>
-      <translation>Те саме, що і &quot;Максимальна кількість ітерації&quot;, але для визначення надлишкових обмежень</translation>
+      <translation>Те саме, що і &apos;Максимальна кількість ітерації&apos;, але для визначення надлишкових обмежень</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="451"/>
@@ -6161,7 +6161,7 @@ Eigen Dense QR — щільна матриця QR з повним поворот
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="641"/>
       <source>Resets all solver values to their default values</source>
-      <translation>Скидає всі значення розв&apos;язувача на значення за замовчуванням</translation>
+      <translation>Скидає всі значення вирішувача на значення за замовчуванням</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherSolverAdvanced.ui" line="644"/>

@@ -546,7 +546,6 @@
     <message>
         <location filename="../../CommandConstraints.cpp" line="6946"/>
         <source>Constrain internal alignment</source>
-        <translatorcomment>перевірити</translatorcomment>
         <translation>Обмеження внутрішнього вирівнювання</translation>
     </message>
     <message>
@@ -1156,7 +1155,7 @@ with respect to a line or a third point</source>
     <message>
         <location filename="../../Command.cpp" line="269"/>
         <source>Edit the selected sketch.</source>
-        <translation>Редагує вибраний ескіз.</translation>
+        <translation>Редагує виділений ескіз.</translation>
     </message>
 </context>
 <context>
@@ -1250,7 +1249,7 @@ with respect to a line or a third point</source>
 First select the supporting geometry, for example, a face or an edge of a solid object,
 then call this command, then choose the desired sketch.</source>
         <translation>Встановлює «Базу» для ескізу.
-Спочатку виберіть допоміжну геометрію, наприклад, грань або ребро 
+Спочатку виділіть допоміжну геометрію, наприклад, грань або ребро 
 твердого об’єкта, потім викличте цю команду, а потім виберіть потрібний ескіз.</translation>
     </message>
     <message>
@@ -1300,12 +1299,12 @@ as mirroring reference.</source>
     <message>
         <location filename="../../Command.cpp" line="779"/>
         <source>Wrong selection</source>
-        <translation>Невірний вибір</translation>
+        <translation>Невірне виділення</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="780"/>
         <source>Select one or more sketches.</source>
-        <translation>Виберіть один або кілька ескізів.</translation>
+        <translation>Виділіть один або кілька ескізів.</translation>
     </message>
 </context>
 <context>
@@ -1372,7 +1371,7 @@ as mirroring reference.</source>
         <source>Place the selected sketch on one of the global coordinate planes.
 This will clear the &apos;Support&apos; property, if any.</source>
         <translation>Розміщує виділений ескіз на одній із глобальних координатних площин. 
-Це очищує існуючу властивість &quot;База&quot;.</translation>
+Це очищує наявну властивість &apos;База&apos;.</translation>
     </message>
 </context>
 <context>
@@ -1477,7 +1476,7 @@ This will clear the &apos;Support&apos; property, if any.</source>
         <location filename="../../CommandSketcherTools.cpp" line="628"/>
         <location filename="../../CommandSketcherTools.cpp" line="629"/>
         <source>Select partially redundant constraints</source>
-        <translation>Виберіть частково надлишкові обмеження</translation>
+        <translation>Виділіть частково надлишкові обмеження</translation>
     </message>
 </context>
 <context>
@@ -1624,12 +1623,12 @@ invalid constraints, degenerated geometry, etc.</source>
     <message>
         <location filename="../../Command.cpp" line="740"/>
         <source>Wrong selection</source>
-        <translation>Невірний вибір</translation>
+        <translation>Невірне виділення</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="741"/>
         <source>Select only one sketch.</source>
-        <translation>Виберіть лише один ескіз.</translation>
+        <translation>Виділіть лише один ескіз.</translation>
     </message>
 </context>
 <context>
@@ -1840,7 +1839,6 @@ invalid constraints, degenerated geometry, etc.</source>
         <location filename="../../CommandConstraints.cpp" line="4528"/>
         <location filename="../../CommandConstraints.cpp" line="4554"/>
         <source>Add tangent constraint point</source>
-        <translatorcomment>перевірити</translatorcomment>
         <translation>Додати обмеження дотику до точки</translation>
     </message>
     <message>
@@ -1951,7 +1949,6 @@ invalid constraints, degenerated geometry, etc.</source>
     <message>
         <location filename="../../CommandAlterGeometry.cpp" line="138"/>
         <source>Toggle draft from/to draft</source>
-        <translatorcomment>Перевірити</translatorcomment>
         <translation>Перемкнути чернетку з/до чернетки</translation>
     </message>
     <message>
@@ -2521,7 +2518,7 @@ invalid constraints, degenerated geometry, etc.</source>
         <location filename="../../CommandAlterGeometry.cpp" line="125"/>
         <location filename="../../CommandAlterGeometry.cpp" line="133"/>
         <source>Select edge(s) from the sketch.</source>
-        <translation>Обрати ребро(-а) з ескізу.</translation>
+        <translation>Виділіть ребро(-а) на ескізі.</translation>
     </message>
     <message>
         <location filename="../../EditDatumDialog.cpp" line="80"/>
@@ -2574,7 +2571,7 @@ invalid constraints, degenerated geometry, etc.</source>
         <location filename="../../CommandConstraints.cpp" line="912"/>
         <location filename="../../CommandConstraints.cpp" line="1150"/>
         <source>Select an edge from the sketch.</source>
-        <translation>Виберіть ребро на ескізі.</translation>
+        <translation>Виділіть ребро на ескізі.</translation>
     </message>
     <message>
         <location filename="../../CommandConstraints.cpp" line="937"/>
@@ -2785,7 +2782,7 @@ invalid constraints, degenerated geometry, etc.</source>
     <message>
         <location filename="../../CommandConstraints.cpp" line="2583"/>
         <source>None of the selected points were constrained onto the respective curves, because they are parts of the same element, because they are both external geometry, or because the edge is not eligible.</source>
-        <translation>Жодна з вибраних точок не була обмежена відповідними кривими тому, що вони є частинами того ж елементу; вони є зовнішньою геометрією або тому, що ребро не підходить.</translation>
+        <translation>Жодна з виділених точок не була обмежена відповідними кривими тому, що вони є частинами того ж елементу; вони є зовнішньою геометрією або тому, що ребро не підходить.</translation>
     </message>
     <message>
         <location filename="../../CommandConstraints.cpp" line="2594"/>
@@ -2795,7 +2792,7 @@ invalid constraints, degenerated geometry, etc.</source>
     <message>
         <location filename="../../CommandConstraints.cpp" line="2672"/>
         <source>None of the selected points were constrained onto the respective curves, either because they are parts of the same element, or because they are both external geometry.</source>
-        <translation>Жодна з вибраних точок не була обмежена відповідними кривими тому, що вони є частинами того ж елементу або вони є зовнішньою геометрією.</translation>
+        <translation>Жодна з виділених точок не була обмежена відповідними кривими тому, що вони є частинами того ж елементу або вони є зовнішньою геометрією.</translation>
     </message>
     <message>
         <location filename="../../CommandConstraints.cpp" line="2744"/>
@@ -2955,13 +2952,13 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../CommandConstraints.cpp" line="5328"/>
         <location filename="../../CommandConstraints.cpp" line="5383"/>
         <source>Select one or more arcs or circles from the sketch.</source>
-        <translation>Виберіть одну або кілька дуг чи кіл на ескізі.</translation>
+        <translation>Виділіть одну або кілька дуг чи кіл на ескізі.</translation>
     </message>
     <message>
         <location filename="../../CommandConstraints.cpp" line="4821"/>
         <location filename="../../CommandConstraints.cpp" line="5389"/>
         <source>Select either only one or more B-Spline poles or only one or more arcs or circles from the sketch, but not mixed.</source>
-        <translation>Виберіть на ескізі лише один чи декілька полюсів B-сплайну або лише одну чи декілька дуг чи кіл, але не змішуйте сплайни та дуги.</translation>
+        <translation>Виділіть на ескізі лише один чи декілька полюсів B-сплайну або лише одну чи декілька дуг чи кіл, але не змішуйте сплайни та дуги.</translation>
     </message>
     <message>
         <location filename="../../CommandConstraints.cpp" line="4940"/>
@@ -3051,7 +3048,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../CommandConstraints.cpp" line="6792"/>
         <source>Select two endpoints of lines to act as rays, and an edge representing a boundary. The first selected point corresponds to index n1, second to n2, and datum value sets the ratio n2/n1.</source>
         <comment>Constraint_SnellsLaw</comment>
-        <translation>Виберіть два кінці ліній, які будуть виконувати роль променів, і ребро, що представляє межу розподілу середовищ. Перша обрана точка відповідає індексу n1, друга n2, а опорне значення визначається співвідношенням n2 / n1.</translation>
+        <translation>Виділіть два кінці ліній, які будуть виконувати роль променів, і ребро, що представляє межу розподілу середовищ. Перша обрана точка відповідає індексу n1, друга n2, а опорне значення визначається співвідношенням n2 / n1.</translation>
     </message>
     <message>
         <location filename="../../CommandConstraints.cpp" line="6808"/>
@@ -3116,7 +3113,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
         <location filename="../../CommandConstraints.cpp" line="7097"/>
         <location filename="../../CommandConstraints.cpp" line="7275"/>
         <source>Currently all internal geometrical elements of the ellipse are already exposed.</source>
-        <translatorcomment>перевірити</translatorcomment>
         <translation>Зараз всі внутрішні геометричні елементи еліпса вже відкриті.</translation>
     </message>
     <message>
@@ -3355,7 +3351,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../CommandCreateGeo.cpp" line="6917"/>
         <source>This object belongs to another part.</source>
-        <translatorcomment>Перевірити</translatorcomment>
         <translation>Цей об&apos;єкт належить іншій частині.</translation>
     </message>
     <message>
@@ -3399,7 +3394,6 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../ConstraintMultiFilterDialog.ui" line="62"/>
         <source>Datums</source>
-        <translatorcomment>Перевірити</translatorcomment>
         <translation>Величини</translation>
     </message>
     <message>
@@ -3410,7 +3404,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../ConstraintMultiFilterDialog.ui" line="72"/>
         <source>Reference</source>
-        <translation>Довідкові</translation>
+        <translation>Посилання</translation>
     </message>
     <message>
         <location filename="../../ConstraintMultiFilterDialog.ui" line="77"/>
@@ -3480,7 +3474,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../ConstraintMultiFilterDialog.ui" line="142"/>
         <source>Radius</source>
-        <translation>Радіуса</translation>
+        <translation>Радіусу</translation>
     </message>
     <message>
         <location filename="../../ConstraintMultiFilterDialog.ui" line="147"/>
@@ -3505,7 +3499,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
         <location filename="../../ConstraintMultiFilterDialog.ui" line="167"/>
         <source>Internal Alignment</source>
-        <translation>Внутрішне вирівнювання</translation>
+        <translation>Внутрішнього вирівнювання</translation>
     </message>
     <message>
         <location filename="../../ConstraintMultiFilterDialog.ui" line="186"/>
@@ -4147,13 +4141,11 @@ Requires to re-enter edit mode to take effect.</source>
     <message>
         <location filename="../../SketcherSettingsColors.ui" line="383"/>
         <source>Color of fully constrained internal alignment edge color in edit mode</source>
-        <translatorcomment>перевірити</translatorcomment>
         <translation>Колір повністю обмеженого внутрішнього вирівнювання ребра в режимі редагування</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsColors.ui" line="409"/>
         <source>Color of edges of internal alignment geometry</source>
-        <translatorcomment>перевірити</translatorcomment>
         <translation>Колір ребер внутрішньої геометрії вирівнювання</translation>
     </message>
     <message>
@@ -4282,12 +4274,12 @@ Requires to re-enter edit mode to take effect.</source>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="45"/>
         <source>px</source>
-        <translation>пікс.</translation>
+        <translation>пікс</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="73"/>
         <source>View scale ratio</source>
-        <translation>Показати коефіцієнт масштабу</translation>
+        <translation>Масштаб перегляду</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="83"/>
@@ -4297,12 +4289,12 @@ Requires to re-enter edit mode to take effect.</source>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="114"/>
         <source>Grid line pattern</source>
-        <translation>Стиль лінії сітки</translation>
+        <translation>Шаблон ліній сітки</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="124"/>
         <source>Line pattern used for grid lines.</source>
-        <translation>Шаблон ліній сітки.</translation>
+        <translation>Шаблон ліній для зображення сітки.</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="134"/>
@@ -4317,7 +4309,7 @@ Requires to re-enter edit mode to take effect.</source>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="163"/>
         <source>A dialog will pop up to input a value for new dimensional constraints.</source>
-        <translation>Діалог з&apos;явиться для введення значення нових розмірних обмежень.</translation>
+        <translation>При створенні нових розмірних обмежень з&apos;явиться діалог для введення значення.</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="166"/>
@@ -4332,7 +4324,7 @@ Requires to re-enter edit mode to take effect.</source>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="185"/>
         <source>Geometry creation &quot;Continue Mode&quot;</source>
-        <translation type="unfinished">Geometry creation &quot;Continue Mode&quot;</translation>
+        <translation>Створеня геометрії в &quot;Послідовному режимі&quot;</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="201"/>
@@ -4342,19 +4334,19 @@ Requires to re-enter edit mode to take effect.</source>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="204"/>
         <source>Constraint creation &quot;Continue Mode&quot;</source>
-        <translation type="unfinished">Constraint creation &quot;Continue Mode&quot;</translation>
+        <translation>Створеня обмежень в &quot;Послідовному режимі&quot;</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="220"/>
         <source>Base length units will not be displayed in constraints.
 Supports all unit systems except &apos;US customary&apos; and &apos;Building US/Euro&apos;.</source>
-        <translation type="unfinished">Base length units will not be displayed in constraints.
-Supports all unit systems except &apos;US customary&apos; and &apos;Building US/Euro&apos;.</translation>
+        <translation>Базові одиниці довжини не відображатимуться в обмеженнях.
+Підтримується всі системи одиниць, окрім &apos;US customary&apos; та &apos;Building US/Euro&apos;.</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="224"/>
         <source>Hide base length units for supported unit systems</source>
-        <translation>Приховати базові одиниці довжини для підтримуваних систем одиниць вимірювання</translation>
+        <translation>Приховати базові одиниці довжини для підтримуваних SI</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="237"/>
@@ -4369,7 +4361,7 @@ Supports all unit systems except &apos;US customary&apos; and &apos;Building US/
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="256"/>
         <source>%N = %V</source>
-        <translation type="unfinished">%N = %V</translation>
+        <translation>%N = %V</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="259"/>
@@ -4387,7 +4379,7 @@ Defaults to: %N = %V
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="266"/>
         <source>DimensionalStringFormat</source>
-        <translation>Формат розмірної строки</translation>
+        <translation>DimensionalStringFormat</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="306"/>
@@ -4397,27 +4389,27 @@ Defaults to: %N = %V
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="312"/>
         <source>When opening a sketch, hide all features that depend on it.</source>
-        <translation>При відкритті ескізу приховати всі функції, що від нього залежать.</translation>
+        <translation>При відкритті ескізу приховує всі об&apos;єкти, що від нього залежать.</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="315"/>
         <source>Hide all objects that depend on the sketch</source>
-        <translation>Приховати всі об&apos;єкти, які залежать від ескізу</translation>
+        <translation>Приховати всі об&apos;єкти залежні від ескізу</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="331"/>
         <source>When opening a sketch, show sources for external geometry links.</source>
-        <translation>При відкритті ескізу, показувати джерела зовнішніх геометричних посилань.</translation>
+        <translation>При відкритті ескізу показує джерела зовнішніх геометричних посилань.</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="334"/>
         <source>Show objects used for external geometry</source>
-        <translation>Показати об&apos;єкти, які використовуються для зовнішньої геометрії</translation>
+        <translation>Показати об&apos;єкти для зовнішньої геометрії</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="350"/>
         <source>When opening a sketch, show objects the sketch is attached to.</source>
-        <translation>При відкритті ескізу показувати об’єкти, до яких приєднаний ескіз.</translation>
+        <translation>При відкритті ескізу показує об’єкти, до яких приєднаний ескіз.</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="353"/>
@@ -4427,7 +4419,7 @@ Defaults to: %N = %V
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="369"/>
         <source>When closing a sketch, move camera back to where it was before the sketch was opened.</source>
-        <translation>При закритті ескізу, поверніть камеру на місце, де був відкритий ескіз.</translation>
+        <translation>При закритті ескізу, повертає камеру на місце, де був відкритий ескіз.</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="372"/>
@@ -4438,19 +4430,19 @@ Defaults to: %N = %V
         <location filename="../../SketcherSettingsDisplay.ui" line="388"/>
         <source>When entering edit mode, force orthographic view of camera.
 Works only when &quot;Restore camera position after editing&quot; is enabled.</source>
-        <translation type="unfinished">When entering edit mode, force orthographic view of camera.
-Works only when &quot;Restore camera position after editing&quot; is enabled.</translation>
+        <translation>Увійшовши в режим редагування, примусово встановлює ортографічний вид камери.
+Працює лише тоді, коли ввімкнено «Відновити позицію камери після редагування».</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="392"/>
         <source>Force orthographic camera when entering edit</source>
-        <translation>Примусово вмикати ортографічний вид камери при активації режиму редагування</translation>
+        <translation>Вмикати ортографічний вид камери в режимі редагування</translation>
     </message>
     <message>
         <location filename="../../SketcherSettingsDisplay.ui" line="408"/>
         <source>Open a sketch in Section View mode by default.
 Then objects are only visible behind the sketch plane.</source>
-        <translation>Відкрийте ескіз у режимі перегляду розрізу за замовчуванням.
+        <translation>Відкриває ескіз у режимі перегляду перезізу за замовчуванням.
 Тоді об’єкти видно лише за площиною ескізу.</translation>
     </message>
     <message>
@@ -4481,7 +4473,7 @@ Then objects are only visible behind the sketch plane.</source>
     <message>
         <location filename="../../SketcherSettings.cpp" line="235"/>
         <source>Sketcher</source>
-        <translation>Створювач ескізів</translation>
+        <translation>Редактор Ескізів</translation>
     </message>
 </context>
 <context>
@@ -4504,7 +4496,7 @@ Then objects are only visible behind the sketch plane.</source>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="149"/>
         <source>%1 missing coincidences found</source>
-        <translation>Відсутніх обмежень коінцидентності: %1</translation>
+        <translation>Відсутніх обмежень збігу: %1</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="194"/>
@@ -4541,20 +4533,20 @@ Then objects are only visible behind the sketch plane.</source>
 %2 constraints are linking to the endpoints. The constraints have been listed in Report view (menu View -&gt; Panels -&gt; Report view).
 
 Click &quot;Swap endpoints in constraints&quot; button to reassign endpoints. Do this only once to sketches created in FreeCAD older than v0.15</source>
-        <translation type="unfinished">%1 reversed external-geometry arcs were found. Their endpoints are encircled in 3d view.
+        <translation>Знайдено %1 перевернутих дуг зовнішньої геометрії. Їхні кінцеві точки обведені в 3D-виді.
 
-%2 constraints are linking to the endpoints. The constraints have been listed in Report view (menu View -&gt; Panels -&gt; Report view).
+%2 обмеження зв’язуються з кінцевими точками. Обмеження наведенні в Перегляді звіту (меню Перегляд -&gt; Панелі -&gt; Перегляд звіту).
 
-Click &quot;Swap endpoints in constraints&quot; button to reassign endpoints. Do this only once to sketches created in FreeCAD older than v0.15</translation>
+Натисніть кнопку «Поміняти кінцеві точки в обмеженнях», щоб перепризначити кінцеві точки. Зробіть це лише один раз для ескізів, створених у FreeCAD старше версії 0.15</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="249"/>
         <source>%1 reversed external-geometry arcs were found. Their endpoints are encircled in 3d view.
 
 However, no constraints linking to the endpoints were found.</source>
-        <translation type="unfinished">%1 reversed external-geometry arcs were found. Their endpoints are encircled in 3d view.
+        <translation>Знайдено %1 перевернутих дуг зовнішньої геометрії. Їхні кінцеві точки обведені в 3D-виді.
 
-However, no constraints linking to the endpoints were found.</translation>
+Проте жодних обмежень, пов’язаних із кінцевими точками, не виявлено.</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="256"/>
@@ -4564,23 +4556,23 @@ However, no constraints linking to the endpoints were found.</translation>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="270"/>
         <source>%1 changes were made to constraints linking to endpoints of reversed arcs.</source>
-        <translation type="unfinished">%1 changes were made to constraints linking to endpoints of reversed arcs.</translation>
+        <translation>%1 змін було внесено до обмежень, пов’язаних із кінцевими точками перевернутих дуг.</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="286"/>
         <location filename="../../TaskSketcherValidation.cpp" line="303"/>
         <source>Constraint orientation locking</source>
-        <translation>Фіксація орієнтації обмеження</translation>
+        <translation>Обмеження блокування орієнтації</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="287"/>
         <source>Orientation locking was enabled and recomputed for %1 constraints. The constraints have been listed in Report view (menu View -&gt; Panels -&gt; Report view).</source>
-        <translation>Блокування орієнтації було увімкнено та перераховано для %1 обмежень. Ці обмеження наведено у вікні перегляду звіту (меню Вигляд -&gt; Види -&gt; Перегляд звіту).</translation>
+        <translation>Блокування орієнтації було увімкнено та перераховано для %1 обмежень. Ці обмеження наведено у вікні перегляду звіту (меню Перегляд -&gt; Види -&gt; Перегляд звіту).</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="304"/>
         <source>Orientation locking was disabled for %1 constraints. The constraints have been listed in Report view (menu View -&gt; Panels -&gt; Report view). Note that for all future constraints, the locking still defaults to ON.</source>
-        <translation>Блокування орієнтації було вимкнено для %1 обмежень. Ці обмеження наведено у вікні перегляду звіту (меню Вигляд -&gt; Види -&gt; Перегляд звіту). Зверніть увагу, що для всіх нових обмежень блокування включиться за замовчуванням.</translation>
+        <translation>Блокування орієнтації було вимкнено для %1 обмежень. Ці обмеження наведено у вікні перегляду звіту (меню Перегляд -&gt; Види -&gt; Перегляд звіту). Зверніть увагу, що для всіх нових обмежень блокування включиться за замовчуванням.</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="319"/>
@@ -4601,22 +4593,22 @@ However, no constraints linking to the endpoints were found.</translation>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="397"/>
         <source>No degenerated geometry</source>
-        <translation>Немає геометрії, що вироджується</translation>
+        <translation>Немає виродженної геометрії</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="398"/>
         <source>No degenerated geometry found</source>
-        <translation>Не знайдено геометрії, що вироджується</translation>
+        <translation>Не знайдено виродженної геометрії</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="402"/>
         <source>Degenerated geometry</source>
-        <translation>Геометрія, що вироджується</translation>
+        <translation>Вироджена геометрія</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.cpp" line="403"/>
         <source>%1 degenerated geometry found</source>
-        <translation>%1 знайдено геометрію, що вироджується</translation>
+        <translation>Знайдено %1 вироджену(их) геометрію(ій)</translation>
     </message>
 </context>
 <context>
@@ -4624,197 +4616,197 @@ However, no constraints linking to the endpoints were found.</translation>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="26"/>
         <source>Form</source>
-        <translation type="unfinished">Form</translation>
+        <translation>Форма</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="40"/>
         <source>Filter:</source>
-        <translation type="unfinished">Filter:</translation>
+        <translation>Фільтр:</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="57"/>
         <source>All</source>
-        <translation type="unfinished">All</translation>
+        <translation>Всі</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="62"/>
         <source>Geometric</source>
-        <translation type="unfinished">Geometric</translation>
+        <translation>Геометричні</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="67"/>
         <source>Datums</source>
-        <translation type="unfinished">Datums</translation>
+        <translation>Величини</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="72"/>
         <source>Named</source>
-        <translation type="unfinished">Named</translation>
+        <translation>З іменами</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="77"/>
         <source>Reference</source>
-        <translation type="unfinished">Reference</translation>
+        <translation>Посилання</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="82"/>
         <source>Coincident</source>
-        <translation type="unfinished">Coincident</translation>
+        <translation>Збіг</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="87"/>
         <source>Point on Object</source>
-        <translation type="unfinished">Point on Object</translation>
+        <translation>Точка на об&apos;єкті</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="92"/>
         <source>Vertical</source>
-        <translation type="unfinished">Vertical</translation>
+        <translation>Вертикальні</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="97"/>
         <source>Horizontal</source>
-        <translation type="unfinished">Horizontal</translation>
+        <translation>Горизонтальні</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="102"/>
         <source>Parallel</source>
-        <translation type="unfinished">Parallel</translation>
+        <translation>Паралельні</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="107"/>
         <source>Perpendicular</source>
-        <translation type="unfinished">Perpendicular</translation>
+        <translation>Перпендикулярні</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="112"/>
         <source>Tangent</source>
-        <translation type="unfinished">Tangent</translation>
+        <translation>Дотичні</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="117"/>
         <source>Equality</source>
-        <translation type="unfinished">Equality</translation>
+        <translation>Рівність</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="122"/>
         <source>Symmetric</source>
-        <translation type="unfinished">Symmetric</translation>
+        <translation>Симетричні</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="127"/>
         <source>Block</source>
-        <translation type="unfinished">Block</translation>
+        <translation>Обмеження переміщення</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="132"/>
         <source>Horizontal Distance</source>
-        <translation type="unfinished">Horizontal Distance</translation>
+        <translation>Відстані по горизонталі</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="137"/>
         <source>Vertical Distance</source>
-        <translation type="unfinished">Vertical Distance</translation>
+        <translation>Відстані по вертикалі</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="142"/>
         <source>Distance</source>
-        <translation type="unfinished">Distance</translation>
+        <translation>Відстані</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="147"/>
         <source>Radius</source>
-        <translation type="unfinished">Radius</translation>
+        <translation>Радіусу</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="152"/>
         <source>Weight</source>
-        <translation type="unfinished">Weight</translation>
+        <translation>Ваги</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="157"/>
         <source>Diameter</source>
-        <translation type="unfinished">Diameter</translation>
+        <translation>Діаметру</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="162"/>
         <source>Angle</source>
-        <translation type="unfinished">Angle</translation>
+        <translation>Кута</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="167"/>
         <source>Snell&apos;s Law</source>
-        <translation type="unfinished">Snell&apos;s Law</translation>
+        <translation>Закону заломлення</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="172"/>
         <source>Internal Alignment</source>
-        <translation type="unfinished">Internal Alignment</translation>
+        <translation>Внутрішнього вирівнювання</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="177"/>
         <source>Multiple Filters</source>
-        <translation type="unfinished">Multiple Filters</translation>
+        <translation>Декілька Фільтрів</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="182"/>
         <source>Selection Filter</source>
-        <translation type="unfinished">Selection Filter</translation>
+        <translation>Фільт Виділення</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="187"/>
         <source>Associated Constraint Filter</source>
-        <translation type="unfinished">Associated Constraint Filter</translation>
+        <translation>Фільт пов&apos;язаних обмежень</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="207"/>
         <source>Click to select multiple filters</source>
-        <translation type="unfinished">Click to select multiple filters</translation>
+        <translation>Клацніть, щоб вибрати декілька фільтрів</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="210"/>
         <source>Select Multiple</source>
-        <translation type="unfinished">Select Multiple</translation>
+        <translation>Виберіть декілька</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="223"/>
         <source>Settings</source>
-        <translation type="unfinished">Settings</translation>
+        <translation>Налаштування</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="247"/>
         <source>Shows all the constraints in the list</source>
-        <translation type="unfinished">Shows all the constraints in the list</translation>
+        <translation>Показати всі обмеження в списку</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="250"/>
         <source>Show Listed</source>
-        <translation type="unfinished">Show Listed</translation>
+        <translation>Показати за списком</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="263"/>
         <source>Hides all the constraints in the list</source>
-        <translation type="unfinished">Hides all the constraints in the list</translation>
+        <translation>Приховати всі обмеження в списку</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="266"/>
         <source>Hide Listed</source>
-        <translation type="unfinished">Hide Listed</translation>
+        <translation>Приховати за список</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="279"/>
         <source>Restricts 3D visibility to the listed elements</source>
-        <translation type="unfinished">Restricts 3D visibility to the listed elements</translation>
+        <translation>Обмежує 3D видимість елементами в списку</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.ui" line="282"/>
         <source>Restrict Visibility</source>
-        <translation type="unfinished">Restrict Visibility</translation>
+        <translation>Обмеження Видимості</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.cpp" line="640"/>
         <source>Constraints</source>
-        <translation type="unfinished">Constraints</translation>
+        <translation>Обмеження</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherConstraints.cpp" line="920"/>
@@ -4822,7 +4814,7 @@ However, no constraints linking to the endpoints were found.</translation>
         <location filename="../../TaskSketcherConstraints.cpp" line="1233"/>
         <location filename="../../TaskSketcherConstraints.cpp" line="1289"/>
         <source>Error</source>
-        <translation type="unfinished">Error</translation>
+        <translation>Помилка</translation>
     </message>
 </context>
 <context>
@@ -4895,7 +4887,7 @@ However, no constraints linking to the endpoints were found.</translation>
     <message>
         <location filename="../../TaskSketcherElements.ui" line="139"/>
         <source>Extended naming containing info about element mode</source>
-        <translation>Розширене найменування, що містить інформацію про режим елемента</translation>
+        <translation>Показує додаткову інформацію про режим елемента</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherElements.ui" line="142"/>
@@ -4905,12 +4897,12 @@ However, no constraints linking to the endpoints were found.</translation>
     <message>
         <location filename="../../TaskSketcherElements.ui" line="152"/>
         <source>Only the type &apos;Edge&apos; will be available for the list</source>
-        <translation type="unfinished">Only the type &apos;Edge&apos; will be available for the list</translation>
+        <translation>Обмежує список лише типом &apos;Ребра&apos;</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherElements.ui" line="155"/>
         <source>Auto-switch to Edge</source>
-        <translation>Автоматично перемикатися на ребра</translation>
+        <translation>Показувати лише ребра</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherElements.cpp" line="261"/>
@@ -5013,7 +5005,7 @@ However, no constraints linking to the endpoints were found.</translation>
     <message>
         <location filename="../../TaskSketcherGeneral.ui" line="23"/>
         <source>A grid will be shown</source>
-        <translation>Сітка буде показана</translation>
+        <translation>Буде показана сітка</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherGeneral.ui" line="26"/>
@@ -5035,7 +5027,7 @@ However, no constraints linking to the endpoints were found.</translation>
         <source>New points will snap to the nearest grid line.
 Points must be set closer than a fifth of the grid size to a grid line to snap.</source>
         <translation>Нові точки прив&apos;язуються до найближчої лінії сітки.
-Точки повинні бути ближчими до п&apos;ятого розміру сітки для прив&apos;язки до сітки.</translation>
+Для прив&apos;язки до сітки точки повинні бути ближче ніж 20% розміру сітки .</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherGeneral.ui" line="91"/>
@@ -5045,7 +5037,7 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
         <location filename="../../TaskSketcherGeneral.ui" line="107"/>
         <source>Sketcher proposes automatically sensible constraints.</source>
-        <translation>Sketcher автоматично пропонує розумні обмеження.</translation>
+        <translation>Редактор Ескізів автоматично пропонує розумні обмеження.</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherGeneral.ui" line="110"/>
@@ -5055,12 +5047,12 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
         <location filename="../../TaskSketcherGeneral.ui" line="126"/>
         <source>Sketcher tries not to propose redundant auto constraints</source>
-        <translation>Sketcher намагається не пропонувати надлишкові автоматичні обмеження</translation>
+        <translation>Редактор Ескізів намагається не пропонувати надлишкові автоматичні обмеження</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherGeneral.ui" line="129"/>
         <source>Avoid redundant auto constraints</source>
-        <translation>Уникати надлишкових автоматичних обмежень</translation>
+        <translation>Уникати надлишкових авто-обмежень</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherGeneral.ui" line="145"/>
@@ -5070,7 +5062,7 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
         <location filename="../../TaskSketcherGeneral.ui" line="164"/>
         <source>To change, drag and drop a geometry type to top or bottom</source>
-        <translation>Щоб змінити, перетягніть тип геометрії вгору або вниз</translation>
+        <translation>Щоб змінити порядок, перетягніть тип геометрії вгору або вниз</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherGeneral.cpp" line="193"/>
@@ -5083,7 +5075,7 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
         <location filename="../../TaskSketcherMessages.cpp" line="51"/>
         <source>Solver messages</source>
-        <translation>Повідомлення розв’язувача</translation>
+        <translation>Повідомлення вирішувача</translation>
     </message>
 </context>
 <context>
@@ -5104,24 +5096,24 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="20"/>
         <source>Open and non-manifold vertexes</source>
-        <translation type="unfinished">Open and non-manifold vertexes</translation>
+        <translation>Відкриті та одноманітні ребра</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="38"/>
         <source>Highlights open and non-manifold vertexes that could lead to error if sketch is used to generate solids
 This is purely based on topological shape of the sketch and not on its geometry/constrain set.</source>
-        <translation type="unfinished">Highlights open and non-manifold vertexes that could lead to error if sketch is used to generate solids
-This is purely based on topological shape of the sketch and not on its geometry/constrain set.</translation>
+        <translation>Виділяє відкриті та одноманітні вершини, які можуть призвести до помилки, якщо ескіз використовується для створення твердих тіл
+Це ґрунтується виключно на топологічній формі ескізу, а не на його геометрії/наборі обмежень.</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="42"/>
         <source>Highlight troublesome vertexes</source>
-        <translation type="unfinished">Highlight troublesome vertexes</translation>
+        <translation>Виділіти проблемні вершини</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="52"/>
         <source>Fixes found missing coincidences by adding extra coincident constrains</source>
-        <translation type="unfinished">Fixes found missing coincidences by adding extra coincident constrains</translation>
+        <translation>Виправляє виявлені відсутні збіги, додаючи додаткові обмеження збігів</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="55"/>
@@ -5136,12 +5128,12 @@ This is purely based on topological shape of the sketch and not on its geometry/
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="68"/>
         <source>Defines the X/Y tolerance inside which missing coincidences are searched.</source>
-        <translation type="unfinished">Defines the X/Y tolerance inside which missing coincidences are searched.</translation>
+        <translation>Визначає допуск X/Y, всередині якого здійснюється пошук відсутніх збігів.</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="75"/>
         <source>If checked, construction geometries are ignored in the search</source>
-        <translation type="unfinished">If checked, construction geometries are ignored in the search</translation>
+        <translation>Якщо вибрано, ігнорує допоміжну геометрії під час пошуку</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="78"/>
@@ -5152,8 +5144,8 @@ This is purely based on topological shape of the sketch and not on its geometry/
         <location filename="../../TaskSketcherValidation.ui" line="88"/>
         <source>Finds and displays missing coincidences found in the sketch
 This is done by analyzing the sketch geometries and constraints</source>
-        <translation type="unfinished">Finds and displays missing coincidences found in the sketch
-This is done by analyzing the sketch geometries and constraints</translation>
+        <translation>Знаходить і відображає відсутні збіги, знайдені в ескізі
+Це робиться шляхом аналізу геометрії та обмежень ескізу</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="92"/>
@@ -5178,17 +5170,17 @@ This is done by analyzing the sketch geometries and constraints</translation>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="115"/>
         <source>Finds invalid/malformed constrains in the sketch</source>
-        <translation type="unfinished">Finds invalid/malformed constrains in the sketch</translation>
+        <translation>Шукає недійсні/неправильні обмеження на ескізі</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="125"/>
         <source>Tries to fix found invalid constraints</source>
-        <translation type="unfinished">Tries to fix found invalid constraints</translation>
+        <translation>Намагається виправити знайдені недійсні обмеження</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="135"/>
         <source>Deletes constraints referring to external geometry</source>
-        <translation type="unfinished">Deletes constraints referring to external geometry</translation>
+        <translation>Видаляє обмеження, що стосуються зовнішньої геометрії</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="138"/>
@@ -5239,7 +5231,7 @@ This is done by analyzing the sketch geometries and constraints</translation>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="212"/>
         <source>Enables/updates constraint orientation locking</source>
-        <translation>Вмикає/оновлює блокування орієнтації обмеження</translation>
+        <translation>Вмикає/оновлює фіксацію орієнтації обмеження</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="215"/>
@@ -5249,7 +5241,7 @@ This is done by analyzing the sketch geometries and constraints</translation>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="222"/>
         <source>Disables constraint orientation locking</source>
-        <translation>Вимикає блокування орієнтації обмеження</translation>
+        <translation>Вимикає фіксацію орієнтації обмеження</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherValidation.ui" line="225"/>
@@ -5765,13 +5757,13 @@ This is done by analyzing the sketch geometries and constraints</translation>
         <location filename="../../Command.cpp" line="617"/>
         <source>Current attachment mode is incompatible with the new selection.
 Select the method to attach this sketch to selected objects.</source>
-        <translation>Поточний режим вкладення несумісний із новим вибором.
-Виберіть спосіб приєднання цього ескізу до вибраних об&apos;єктів.</translation>
+        <translation>Поточний режим вкладення несумісний із новим виділенням.
+Виберіть спосіб приєднання цього ескізу до виділених об&apos;єктів.</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="621"/>
         <source>Select the method to attach this sketch to selected objects.</source>
-        <translation>Виберіть спосіб прикріплення ескізу до вибраного об&apos;єкта.</translation>
+        <translation>Виберіть спосіб приєднання ескізу до виділених об&apos;єктів.</translation>
     </message>
     <message>
         <location filename="../../Command.cpp" line="660"/>
@@ -5805,7 +5797,7 @@ Select the method to attach this sketch to selected objects.</source>
     <message>
         <location filename="../../Command.cpp" line="182"/>
         <source>Select the method to attach this sketch to selected object</source>
-        <translation>Виберіть спосіб прикріплення ескізу до вибраного об&apos;єкту</translation>
+        <translation>Виберіть спосіб приєднання ескізу до виділеного об&apos;єкту</translation>
     </message>
 </context>
 <context>
@@ -5819,8 +5811,8 @@ Select the method to attach this sketch to selected objects.</source>
         <location filename="../../Command.cpp" line="398"/>
         <source>Sketch with a support face cannot be reoriented.
 Do you want to detach it from the support?</source>
-        <translation>Ескіз з опорною поверхнею не може бути переорієнтованим.
-Бажаєте від&apos;єднати його від опори?</translation>
+        <translation>Ескіз з базовою гранню не може бути переорієнтованим.
+Бажаєте від&apos;єднати його від бази?</translation>
     </message>
 </context>
 <context>
@@ -5983,14 +5975,14 @@ LevenbergMarquardt та DogLeg - алгоритми оптимізації ре�
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="192"/>
         <source>Convergence:</source>
-        <translation>Конвергенція:</translation>
+        <translation>Сходження:</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="199"/>
         <source>Threshold for squared error that is used
 to determine whether a solution converges or not</source>
-        <translation>Порогове значення квадратної помилки, яке використовується
-щоб визначити, збігається рішення чи ні</translation>
+        <translation>Порогове значення квадрату помилки, яке використовується
+щоб визначити сходження рішення</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="226"/>
@@ -6059,7 +6051,7 @@ Eigen Dense QR — щільна матриця QR з повним поворот
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="373"/>
         <source>Redundant solver:</source>
-        <translation>Вирішувач надлишковості:</translation>
+        <translation>Надлишковий Вирішувач:</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="380"/>
@@ -6079,7 +6071,7 @@ Eigen Dense QR — щільна матриця QR з повним поворот
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="425"/>
         <source>Same as &apos;Maximum iterations&apos;, but for redundant solving</source>
-        <translation>Те саме, що і &quot;Максимальна кількість ітерації&quot;, але для визначення надлишкових обмежень</translation>
+        <translation>Те саме, що і &apos;Максимальна кількість ітерації&apos;, але для визначення надлишкових обмежень</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="451"/>
@@ -6094,22 +6086,22 @@ Eigen Dense QR — щільна матриця QR з повним поворот
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="461"/>
         <source>Same as &apos;Sketch size multiplier&apos;, but for redundant solving</source>
-        <translation type="unfinished">Same as &apos;Sketch size multiplier&apos;, but for redundant solving</translation>
+        <translation>Те саме, що і «Множник розміру ескізу», але для вирішення надлишкових обмежень</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="484"/>
         <source>Error threshold under which convergence is reached for the solving of redundant constraints</source>
-        <translation>Поріг помилки, за якого досягається збіжність вирішення надлишкових обмежень</translation>
+        <translation>Поріг помилки, за якого досягається сходження вирішення надлишкових обмежень</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="487"/>
         <source>Redundant convergence</source>
-        <translation>Надлишкова конвергенція</translation>
+        <translation>Сходження надлишкових</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="494"/>
         <source>Same as &apos;Convergence&apos;, but for redundant solving</source>
-        <translation type="unfinished">Same as &apos;Convergence&apos;, but for redundant solving</translation>
+        <translation>Те саме, що і &quot;Сходження&quot;, але для вирішення надлишкових обмежень</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="497"/>
@@ -6169,7 +6161,7 @@ Eigen Dense QR — щільна матриця QR з повним поворот
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="641"/>
         <source>Resets all solver values to their default values</source>
-        <translation>Скидає всі значення розв&apos;язувача на значення за замовчуванням</translation>
+        <translation>Скидає всі значення вирішувача на значення за замовчуванням</translation>
     </message>
     <message>
         <location filename="../../TaskSketcherSolverAdvanced.ui" line="644"/>

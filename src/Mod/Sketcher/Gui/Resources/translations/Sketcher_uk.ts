@@ -197,7 +197,7 @@
     <message>
       <location filename="../../CommandCreateGeo.cpp" line="2353"/>
       <source>Create arc</source>
-      <translation>Створення дуги</translation>
+      <translation>Створити дугу</translation>
     </message>
     <message>
       <location filename="../../CommandCreateGeo.cpp" line="2354"/>

@@ -167,7 +167,7 @@
     <message>
       <location filename="../../Command.cpp" line="297"/>
       <source>Left-align contents of selected cells</source>
-      <translation>Вирівняти ліворуч вміст виділених комірок</translation>
+      <translation>Вирівнює ліворуч вміст виділених комірок</translation>
     </message>
   </context>
   <context>
@@ -185,7 +185,7 @@
     <message>
       <location filename="../../Command.cpp" line="401"/>
       <source>Right-align contents of selected cells</source>
-      <translation>Вирівняти праворуч вміст виділених комірок</translation>
+      <translation>Вирівнює праворуч вміст виділених комірок</translation>
     </message>
   </context>
   <context>

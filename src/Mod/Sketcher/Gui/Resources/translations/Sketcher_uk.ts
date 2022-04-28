@@ -421,7 +421,7 @@
     <message>
       <location filename="../../CommandSketcherTools.cpp" line="219"/>
       <source>Tie the end point of the element with next element&apos;s starting point</source>
-      <translation>З&apos;єднує кінцеву точку елемента з початковою точкою наступного</translation>
+      <translation>З'єднує кінцеву точку елемента з початковою точкою наступного</translation>
     </message>
   </context>
   <context>
@@ -1371,7 +1371,7 @@ as mirroring reference.</source>
       <source>Place the selected sketch on one of the global coordinate planes.
 This will clear the &apos;Support&apos; property, if any.</source>
       <translation>Розміщує виділений ескіз на одній із глобальних координатних площин. 
-Це очищує існуючу властивість &quot;База&quot;.</translation>
+Це очищує наявну властивість &apos;База&apos;.</translation>
     </message>
   </context>
   <context>
@@ -2338,7 +2338,7 @@ invalid constraints, degenerated geometry, etc.</source>
     <message>
       <location filename="../../Command.cpp" line="166"/>
       <source>Can&apos;t map the sketch to selected object. %1.</source>
-      <translation>Неможливо відобразити ескіз для вибраного об&apos;єкта. %1.</translation>
+      <translation>Неможливо відобразити ескіз для вибраного об'єкта. %1.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="173"/>

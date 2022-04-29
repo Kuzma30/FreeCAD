@@ -3308,7 +3308,7 @@ Aborting op creation</translation>
     <message>
       <location filename="PathToolController.py" line="134"/>
       <source>Forward</source>
-      <translation>Вперед</translation>
+      <translation type="unfinished">Forward</translation>
     </message>
     <message>
       <location filename="PathToolController.py" line="135"/>
@@ -4690,7 +4690,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="255"/>
       <source>Stop</source>
-      <translation>Стоп</translation>
+      <translation type="unfinished">Stop</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="131"/>
@@ -5597,7 +5597,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="113"/>
       <source>Pitch</source>
-      <translation>Крок</translation>
+      <translation type="unfinished">Pitch</translation>
     </message>
     <message>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="134"/>
@@ -6672,7 +6672,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="70"/>
       <source>add</source>
-      <translation>додати</translation>
+      <translation type="unfinished">add</translation>
     </message>
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="77"/>
@@ -6880,7 +6880,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="278"/>
       <source>Job:</source>
-      <translation>Завдання:</translation>
+      <translation type="unfinished">Job:</translation>
     </message>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="300"/>
@@ -6973,7 +6973,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="155"/>
       <source>0 mm</source>
-      <translation>0 мм</translation>
+      <translation type="unfinished">0 mm</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="158"/>
@@ -7001,12 +7001,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="28"/>
       <source>Import...</source>
-      <translation>Імпорт...</translation>
+      <translation type="unfinished">Import...</translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="35"/>
       <source>Export...</source>
-      <translation>Експорт...</translation>
+      <translation type="unfinished">Export...</translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="71"/>

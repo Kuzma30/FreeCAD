@@ -6,7 +6,7 @@
     <message>
       <location filename="TranslationTexts.py" line="42"/>
       <source>Start</source>
-      <translation type="unfinished">Start</translation>
+      <translation>Uruchom</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="43"/>
@@ -227,7 +227,7 @@
     <message>
       <location filename="../../Command.cpp" line="45"/>
       <source>Start</source>
-      <translation type="unfinished">Start</translation>
+      <translation>Uruchom</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="46"/>

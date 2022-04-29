@@ -4691,7 +4691,7 @@ Przerwanie procesu tworzenia</translation>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="255"/>
       <source>Stop</source>
-      <translation type="unfinished">Stop</translation>
+      <translation>Zatrzymaj</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="131"/>

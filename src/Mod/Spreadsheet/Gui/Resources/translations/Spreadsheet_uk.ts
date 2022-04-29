@@ -167,7 +167,7 @@
     <message>
       <location filename="../../Command.cpp" line="297"/>
       <source>Left-align contents of selected cells</source>
-      <translation>Вирівняти ліворуч вміст виділених комірок</translation>
+      <translation>Вирівнює ліворуч вміст виділених комірок</translation>
     </message>
   </context>
   <context>
@@ -185,7 +185,7 @@
     <message>
       <location filename="../../Command.cpp" line="401"/>
       <source>Right-align contents of selected cells</source>
-      <translation>Вирівняти праворуч вміст виділених комірок</translation>
+      <translation>Вирівнює праворуч вміст виділених комірок</translation>
     </message>
   </context>
   <context>
@@ -998,12 +998,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="79"/>
       <source>;</source>
-      <translation type="unfinished">;</translation>
+      <translation>;</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="84"/>
       <source>,</source>
-      <translation type="unfinished">,</translation>
+      <translation>,</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="98"/>
@@ -1018,7 +1018,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="111"/>
       <source>&quot;</source>
-      <translation type="unfinished">&quot;</translation>
+      <translation>&quot;</translation>
     </message>
     <message>
       <location filename="../../DlgSettings.ui" line="130"/>
@@ -1033,7 +1033,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgSettings.ui" line="140"/>
       <source>\</source>
-      <translation type="unfinished">\</translation>
+      <translation>\</translation>
     </message>
   </context>
   <context>

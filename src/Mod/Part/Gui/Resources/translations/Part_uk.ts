@@ -5150,14 +5150,14 @@ the sketch plane&apos;s normal vector will be used</translation>
       <location filename="../../SectionCutting.ui" line="118"/>
       <location filename="../../SectionCutting.ui" line="186"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation type="unfinished">Offset</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="71"/>
       <location filename="../../SectionCutting.ui" line="145"/>
       <location filename="../../SectionCutting.ui" line="213"/>
       <source>Flip</source>
-      <translation>Перевернути</translation>
+      <translation type="unfinished">Flip</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="106"/>
@@ -5182,7 +5182,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../SectionCutting.ui" line="257"/>
       <source>Color</source>
-      <translation>Колір</translation>
+      <translation type="unfinished">Color</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="302"/>
@@ -5196,7 +5196,7 @@ Works only if all objects have the same values.</translation>
     <message>
       <location filename="../../SectionCutting.ui" line="307"/>
       <source>Auto</source>
-      <translation>Автоматично</translation>
+      <translation type="unfinished">Auto</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="329"/>
@@ -5206,7 +5206,7 @@ Works only if all objects have the same values.</translation>
     <message>
       <location filename="../../SectionCutting.ui" line="332"/>
       <source>Transparency</source>
-      <translation>Прозорість</translation>
+      <translation type="unfinished">Transparency</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="342"/>
@@ -5355,7 +5355,7 @@ only created cuts will be visible</translation>
     <message>
       <location filename="../../TaskSweep.cpp" line="338"/>
       <source>Invalid selection</source>
-      <translation>Невірний вибір</translation>
+      <translation type="unfinished">Invalid selection</translation>
     </message>
     <message>
       <location filename="../../TaskSweep.cpp" line="338"/>

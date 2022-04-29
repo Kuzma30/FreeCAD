@@ -3386,7 +3386,7 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="52"/>
       <source>All</source>
-      <translation type="unfinished">All</translation>
+      <translation>Wszystkie</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="57"/>
@@ -3431,12 +3431,12 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="97"/>
       <source>Parallel</source>
-      <translation type="unfinished">Parallel</translation>
+      <translation>Równolegle</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="102"/>
       <source>Perpendicular</source>
-      <translation type="unfinished">Perpendicular</translation>
+      <translation>Prostopadle</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="107"/>
@@ -3471,12 +3471,12 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="137"/>
       <source>Distance</source>
-      <translation type="unfinished">Distance</translation>
+      <translation>Odległość</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="142"/>
       <source>Radius</source>
-      <translation type="unfinished">Radius</translation>
+      <translation>Promień</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="147"/>
@@ -3486,12 +3486,12 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="152"/>
       <source>Diameter</source>
-      <translation type="unfinished">Diameter</translation>
+      <translation>Średnica</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="157"/>
       <source>Angle</source>
-      <translation type="unfinished">Angle</translation>
+      <translation>Kąt</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="162"/>
@@ -4616,7 +4616,7 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="26"/>
       <source>Form</source>
-      <translation type="unfinished">Form</translation>
+      <translation>Kreskowanie</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="40"/>
@@ -4626,7 +4626,7 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="57"/>
       <source>All</source>
-      <translation type="unfinished">All</translation>
+      <translation>Wszystkie</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="62"/>
@@ -4671,12 +4671,12 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="102"/>
       <source>Parallel</source>
-      <translation type="unfinished">Parallel</translation>
+      <translation>Równolegle</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="107"/>
       <source>Perpendicular</source>
-      <translation type="unfinished">Perpendicular</translation>
+      <translation>Prostopadle</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="112"/>
@@ -4711,12 +4711,12 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="142"/>
       <source>Distance</source>
-      <translation type="unfinished">Distance</translation>
+      <translation>Odległość</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="147"/>
       <source>Radius</source>
-      <translation type="unfinished">Radius</translation>
+      <translation>Promień</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="152"/>
@@ -4726,12 +4726,12 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="157"/>
       <source>Diameter</source>
-      <translation type="unfinished">Diameter</translation>
+      <translation>Średnica</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="162"/>
       <source>Angle</source>
-      <translation type="unfinished">Angle</translation>
+      <translation>Kąt</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="167"/>
@@ -4806,7 +4806,7 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.cpp" line="640"/>
       <source>Constraints</source>
-      <translation type="unfinished">Constraints</translation>
+      <translation>Wiązania</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.cpp" line="920"/>
@@ -5829,7 +5829,7 @@ Chcesz odłączyć go od odniesienia?</translation>
     <message>
       <location filename="../../TaskSketcherMessages.ui" line="29"/>
       <source>Link</source>
-      <translation type="unfinished">Link</translation>
+      <translation>Odnośnik</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherMessages.ui" line="51"/>

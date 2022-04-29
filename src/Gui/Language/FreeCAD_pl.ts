@@ -9,15 +9,15 @@
     </message>
     <message>
       <source>A:</source>
-      <translation>A:</translation>
+      <translation type="unfinished">A:</translation>
     </message>
     <message>
       <source>B:</source>
-      <translation>B:</translation>
+      <translation type="unfinished">B:</translation>
     </message>
     <message>
       <source>C:</source>
-      <translation>C:</translation>
+      <translation type="unfinished">C:</translation>
     </message>
     <message>
       <source>Angle Snap</source>
@@ -45,15 +45,15 @@
     </message>
     <message>
       <source>45 °</source>
-      <translation>45 °</translation>
+      <translation type="unfinished">45 °</translation>
     </message>
     <message>
       <source>90 °</source>
-      <translation>90 °</translation>
+      <translation type="unfinished">90 °</translation>
     </message>
     <message>
       <source>180 °</source>
-      <translation>180 °</translation>
+      <translation type="unfinished">180 °</translation>
     </message>
   </context>
   <context>
@@ -928,7 +928,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Pixmap</source>
@@ -2000,7 +2000,7 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Record</source>
@@ -2062,7 +2062,7 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
     </message>
     <message>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
     <message>
       <source>Ambient color:</source>
@@ -2450,7 +2450,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Reset</source>
-      <translation>Reset</translation>
+      <translation type="unfinished">Reset</translation>
     </message>
     <message>
       <source>Clear</source>
@@ -2654,7 +2654,7 @@ z konsoli Python do panelu Widoku Raportu</translation>
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Accept changes</source>
@@ -2926,7 +2926,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
   </context>
   <context>
@@ -5089,7 +5089,7 @@ wstępnie wybranymi przed otwarciem tego okna</translation>
     </message>
     <message>
       <source>All</source>
-      <translation type="unfinished">All</translation>
+      <translation>Wszystkie</translation>
     </message>
   </context>
   <context>
@@ -7539,7 +7539,7 @@ option to apply only to this link.</translation>
     </message>
     <message>
       <source>Enable</source>
-      <translation type="unfinished">Enable</translation>
+      <translation>Włącz</translation>
     </message>
     <message>
       <source>Enable auto copy of linked object when its configuration is changed</source>
@@ -7547,7 +7547,7 @@ option to apply only to this link.</translation>
     </message>
     <message>
       <source>Tracking</source>
-      <translation type="unfinished">Tracking</translation>
+      <translation>Śledzenie</translation>
     </message>
     <message>
       <source>Copy the linked object when its configuration is changed.

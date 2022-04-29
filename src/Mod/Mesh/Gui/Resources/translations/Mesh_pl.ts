@@ -1867,7 +1867,7 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
     </message>
     <message>
       <source>Cutting</source>
-      <translation type="unfinished">Cutting</translation>
+      <translation>Cięcie</translation>
     </message>
   </context>
 </TS>

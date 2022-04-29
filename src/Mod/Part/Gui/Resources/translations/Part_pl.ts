@@ -5150,7 +5150,7 @@ the sketch plane&apos;s normal vector will be used</translation>
       <location filename="../../SectionCutting.ui" line="118"/>
       <location filename="../../SectionCutting.ui" line="186"/>
       <source>Offset</source>
-      <translation type="unfinished">Offset</translation>
+      <translation>Odsunięcie</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="71"/>
@@ -5182,7 +5182,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../SectionCutting.ui" line="257"/>
       <source>Color</source>
-      <translation type="unfinished">Color</translation>
+      <translation>Kolor</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="302"/>
@@ -5206,7 +5206,7 @@ Works only if all objects have the same values.</translation>
     <message>
       <location filename="../../SectionCutting.ui" line="332"/>
       <source>Transparency</source>
-      <translation type="unfinished">Transparency</translation>
+      <translation>Przezroczystość</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="342"/>

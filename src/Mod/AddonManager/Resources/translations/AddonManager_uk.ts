@@ -738,7 +738,7 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
     <message>
       <location filename="../../AddonManager.ui" line="89"/>
       <source>labelStatusInfo</source>
-      <translation type="unfinished">labelStatusInfo</translation>
+      <translation>labelStatusInfo</translation>
     </message>
     <message>
       <location filename="../../AddonManager.ui" line="103"/>
@@ -888,7 +888,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="44"/>
       <source>DownloadMacros</source>
-      <translation type="unfinished">DownloadMacros</translation>
+      <translation>DownloadMacros</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="47"/>
@@ -927,7 +927,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="102"/>
       <source>HidePy2</source>
-      <translation type="unfinished">HidePy2</translation>
+      <translation>HidePy2</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="112"/>
@@ -937,7 +937,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="118"/>
       <source>HideObsolete</source>
-      <translation type="unfinished">HideObsolete</translation>
+      <translation>HideObsolete</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="128"/>
@@ -947,7 +947,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="137"/>
       <source>HideNewerFreeCADRequired</source>
-      <translation type="unfinished">HideNewerFreeCADRequired</translation>
+      <translation>HideNewerFreeCADRequired</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="144"/>
@@ -1006,7 +1006,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../AddonManagerOptions.ui" line="305"/>
       <source>ShowBranchSwitcher</source>
-      <translation type="unfinished">ShowBranchSwitcher</translation>
+      <translation>ShowBranchSwitcher</translation>
     </message>
   </context>
   <context>
@@ -1019,7 +1019,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../package_details.ui" line="29"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../../package_details.ui" line="49"/>

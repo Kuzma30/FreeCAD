@@ -1688,7 +1688,7 @@
     <message>
       <location filename="../../Command.cpp" line="1478"/>
       <source>Project shape...</source>
-      <translation type="unfinished">Project shape...</translation>
+      <translation>Rzutowanie kształtów ...</translation>
     </message>
   </context>
   <context>
@@ -4024,7 +4024,7 @@ przy kreskowanie ściany jest ze wzorem PAT</translation>
     <message>
       <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="625"/>
       <source>Line</source>
-      <translation type="unfinished">Line</translation>
+      <translation>Linia</translation>
     </message>
     <message>
       <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="642"/>
@@ -4630,7 +4630,7 @@ dla grup projektowych</translation>
     <message>
       <location filename="../../DlgPrefsTechDrawGeneral.ui" line="792"/>
       <source>Grid</source>
-      <translation type="unfinished">Grid</translation>
+      <translation>Siatka</translation>
     </message>
     <message>
       <location filename="../../DlgPrefsTechDrawGeneral.ui" line="805"/>
@@ -5068,7 +5068,7 @@ Czy chcesz kontynuować?</translation>
     <message>
       <location filename="../../TaskBalloon.ui" line="169"/>
       <source>Line</source>
-      <translation type="unfinished">Line</translation>
+      <translation>Linia</translation>
     </message>
     <message>
       <location filename="../../TaskBalloon.ui" line="181"/>
@@ -5506,7 +5506,7 @@ Czy chcesz kontynuować?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="156"/>
       <source>Position</source>
-      <translation type="unfinished">Position</translation>
+      <translation>Pozycja</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="159"/>
@@ -5526,7 +5526,7 @@ Czy chcesz kontynuować?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="176"/>
       <source>Symmetry</source>
-      <translation type="unfinished">Symmetry</translation>
+      <translation>Odbicie lustrzane</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="179"/>
@@ -5686,7 +5686,7 @@ Czy chcesz kontynuować?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="418"/>
       <source>Radius</source>
-      <translation type="unfinished">Radius</translation>
+      <translation>Promień</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="421"/>
@@ -5696,7 +5696,7 @@ Czy chcesz kontynuować?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="428"/>
       <source>Diameter</source>
-      <translation type="unfinished">Diameter</translation>
+      <translation>Średnica</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="431"/>
@@ -5781,7 +5781,7 @@ Czy chcesz kontynuować?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="521"/>
       <source>Other</source>
-      <translation type="unfinished">Other</translation>
+      <translation>Inne</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="533"/>
@@ -5796,7 +5796,7 @@ Czy chcesz kontynuować?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="543"/>
       <source>Slope</source>
-      <translation type="unfinished">Slope</translation>
+      <translation>Nachylenie</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="546"/>
@@ -5956,7 +5956,7 @@ Czy chcesz kontynuować?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="718"/>
       <source>Preview:</source>
-      <translation type="unfinished">Preview:</translation>
+      <translation>Podgląd:</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.cpp" line="111"/>
@@ -6889,77 +6889,77 @@ przy użyciu podanego odstępu X/Y</translation>
     <message>
       <location filename="../../TaskProjection.ui" line="14"/>
       <source>Project shapes</source>
-      <translation type="unfinished">Project shapes</translation>
+      <translation>Rzutowanie kształtów</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="22"/>
       <source>Visible sharp edges</source>
-      <translation type="unfinished">Visible sharp edges</translation>
+      <translation>Widoczne ostre krawędzie</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="32"/>
       <source>Visible smooth edges</source>
-      <translation type="unfinished">Visible smooth edges</translation>
+      <translation>Widoczne gładkie krawędzie</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="42"/>
       <source>Visible sewn edges</source>
-      <translation type="unfinished">Visible sewn edges</translation>
+      <translation>Widoczne krawędzie szwu</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="52"/>
       <source>Visible outline edges</source>
-      <translation type="unfinished">Visible outline edges</translation>
+      <translation>Widoczne krawędzie konturu</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="62"/>
       <source>Visible isoparameters</source>
-      <translation type="unfinished">Visible isoparameters</translation>
+      <translation>Widoczne izoparametry</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="72"/>
       <source>Hidden sharp edges</source>
-      <translation type="unfinished">Hidden sharp edges</translation>
+      <translation>Ukryte ostre krawędzie</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="79"/>
       <source>Hidden smooth edges</source>
-      <translation type="unfinished">Hidden smooth edges</translation>
+      <translation>Ukryte gładkie krawędzie</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="86"/>
       <source>Hidden sewn edges</source>
-      <translation type="unfinished">Hidden sewn edges</translation>
+      <translation>Ukryte krawędzie szwu</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="93"/>
       <source>Hidden outline edges</source>
-      <translation type="unfinished">Hidden outline edges</translation>
+      <translation>Ukryte krawędzie konturu</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="100"/>
       <source>Hidden isoparameters</source>
-      <translation type="unfinished">Hidden isoparameters</translation>
+      <translation>Ukryte krzywe isoparametryczne</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.cpp" line="69"/>
       <source>No active document</source>
-      <translation type="unfinished">No active document</translation>
+      <translation>Brak aktywnego dokumentu</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.cpp" line="70"/>
       <source>There is currently no active document to complete the operation</source>
-      <translation type="unfinished">There is currently no active document to complete the operation</translation>
+      <translation>Obecnie nie ma aktywnego dokumentu do zakończenia operacji</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.cpp" line="75"/>
       <source>No active view</source>
-      <translation type="unfinished">No active view</translation>
+      <translation>Brak aktywnego widoku</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.cpp" line="76"/>
       <source>There is currently no active view to complete the operation</source>
-      <translation type="unfinished">There is currently no active view to complete the operation</translation>
+      <translation>Obecnie nie ma aktywnego widoku do zakończenia operacji</translation>
     </message>
   </context>
   <context>
@@ -7131,17 +7131,17 @@ przy użyciu podanego odstępu X/Y</translation>
     <message>
       <location filename="../../TaskSectionView.ui" line="98"/>
       <source>Page</source>
-      <translation type="unfinished">Page</translation>
+      <translation>Strona</translation>
     </message>
     <message>
       <location filename="../../TaskSectionView.ui" line="103"/>
       <source>Automatic</source>
-      <translation type="unfinished">Automatic</translation>
+      <translation>Automatyczna</translation>
     </message>
     <message>
       <location filename="../../TaskSectionView.ui" line="108"/>
       <source>Custom</source>
-      <translation type="unfinished">Custom</translation>
+      <translation>Niestandardowe</translation>
     </message>
     <message>
       <location filename="../../TaskSectionView.ui" line="116"/>
@@ -7224,7 +7224,7 @@ przy użyciu podanego odstępu X/Y</translation>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="34"/>
       <source>Line style:</source>
-      <translation type="unfinished">Line style:</translation>
+      <translation>Styl linii:</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="41"/>
@@ -7234,27 +7234,27 @@ przy użyciu podanego odstępu X/Y</translation>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="44"/>
       <source>Solid</source>
-      <translation type="unfinished">Solid</translation>
+      <translation>Ciągła</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="57"/>
       <source>Dashed</source>
-      <translation type="unfinished">Dashed</translation>
+      <translation>Kreskowana</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="70"/>
       <source>Dotted</source>
-      <translation type="unfinished">Dotted</translation>
+      <translation>Kropkowana</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="83"/>
       <source>Dashdot</source>
-      <translation type="unfinished">Dashdot</translation>
+      <translation>Kreska - kropka</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="103"/>
       <source>Line width:</source>
-      <translation type="unfinished">Line width:</translation>
+      <translation>Szerokość linii:</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="110"/>
@@ -7274,12 +7274,12 @@ przy użyciu podanego odstępu X/Y</translation>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="156"/>
       <source>Line color:</source>
-      <translation type="unfinished">Line color:</translation>
+      <translation>Kolor linii:</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="163"/>
       <source>Black</source>
-      <translation type="unfinished">Black</translation>
+      <translation>Czarne</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="179"/>

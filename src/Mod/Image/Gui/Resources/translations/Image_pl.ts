@@ -152,7 +152,7 @@
     <message>
       <location filename="../../ImageView.cpp" line="124"/>
       <source>Standard</source>
-      <translation type="unfinished">Standard</translation>
+      <translation>Standardowy</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="142"/>

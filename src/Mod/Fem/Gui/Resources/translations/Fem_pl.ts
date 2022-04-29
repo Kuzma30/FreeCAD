@@ -1530,12 +1530,12 @@
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="260"/>
       <source>Check Mesh</source>
-      <translation type="unfinished">Check Mesh</translation>
+      <translation>Sprawdź siatkę</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="269"/>
       <source>Buckling</source>
-      <translation type="unfinished">Buckling</translation>
+      <translation>Wyboczenie</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="286"/>
@@ -1724,7 +1724,7 @@
     <message>
       <location filename="../../DlgSettingsFemExportAbaqus.ui" line="20"/>
       <source>Export</source>
-      <translation type="unfinished">Export</translation>
+      <translation>Eksportuj</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemExportAbaqus.ui" line="28"/>
@@ -1906,7 +1906,7 @@ constraint or material is applied.</source>
     <message>
       <location filename="../../DlgSettingsFemInOutVtk.ui" line="23"/>
       <source>Import</source>
-      <translation type="unfinished">Import</translation>
+      <translation>Importuj</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemInOutVtk.ui" line="31"/>
@@ -3951,17 +3951,17 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="110"/>
       <source>Nodes</source>
-      <translation type="unfinished">Nodes</translation>
+      <translation>Węzły</translation>
     </message>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="111"/>
       <source>Edges</source>
-      <translation type="unfinished">Edges</translation>
+      <translation>Krawędzie</translation>
     </message>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="112"/>
       <source>Faces</source>
-      <translation type="unfinished">Faces</translation>
+      <translation>Ściany</translation>
     </message>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="113"/>
@@ -3981,7 +3981,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="116"/>
       <source>Groups</source>
-      <translation type="unfinished">Groups</translation>
+      <translation>Grupy</translation>
     </message>
     <message>
       <location filename="../../ViewProviderAnalysis.cpp" line="227"/>
@@ -3989,7 +3989,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../ViewProviderFemPostObject.cpp" line="681"/>
       <location filename="../../ViewProviderSolver.cpp" line="71"/>
       <source>Are you sure you want to continue?</source>
-      <translation type="unfinished">Are you sure you want to continue?</translation>
+      <translation>Czy na pewno chcesz kontynuować?</translation>
     </message>
   </context>
   <context>
@@ -4309,7 +4309,7 @@ following referencing objects might be lost:</translation>
       <location filename="../../ViewProviderFemPostObject.cpp" line="684"/>
       <location filename="../../ViewProviderSolver.cpp" line="74"/>
       <source>Object dependencies</source>
-      <translation type="unfinished">Object dependencies</translation>
+      <translation>Zależności obiektów</translation>
     </message>
     <message>
       <location filename="../../ViewProviderFemPostFunction.cpp" line="145"/>

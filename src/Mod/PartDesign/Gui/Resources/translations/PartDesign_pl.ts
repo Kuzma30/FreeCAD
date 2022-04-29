@@ -2004,7 +2004,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
     <message>
       <location filename="../../TaskHelixParameters.ui" line="22"/>
       <source>Status:</source>
-      <translation type="unfinished">Status:</translation>
+      <translation>Aktualny status:</translation>
     </message>
     <message>
       <location filename="../../TaskHelixParameters.ui" line="29"/>
@@ -2512,7 +2512,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="22"/>
       <source>Type</source>
-      <translation type="unfinished">Type</translation>
+      <translation>Typ</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="30"/>
@@ -2522,7 +2522,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="38"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Odstęp</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="58"/>
@@ -4698,7 +4698,7 @@ powyżej 90°: większy promień otworu u dołu</translation>
     <message>
       <location filename="../../Workbench.cpp" line="59"/>
       <source>Refresh</source>
-      <translation type="unfinished">Refresh</translation>
+      <translation>Odśwież</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="60"/>

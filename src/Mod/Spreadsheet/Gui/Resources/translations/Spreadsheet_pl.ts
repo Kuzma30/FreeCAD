@@ -619,7 +619,7 @@ by that property.
     <message>
       <location filename="../../DlgSheetConf.ui" line="57"/>
       <source>Property:</source>
-      <translation type="unfinished">Property:</translation>
+      <translation>Własność:</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="64"/>
@@ -631,7 +631,7 @@ switch the design configuration. The property will be created if not exist.</tra
     <message>
       <location filename="../../DlgSheetConf.ui" line="72"/>
       <source>Group:</source>
-      <translation type="unfinished">Group:</translation>
+      <translation>Grupa:</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="79"/>
@@ -1164,7 +1164,7 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="198"/>
       <source>Merge cells</source>
-      <translation type="unfinished">Merge cells</translation>
+      <translation>Scal komórki</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="200"/>
@@ -1174,7 +1174,7 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="204"/>
       <source>Cut</source>
-      <translation type="unfinished">Cut</translation>
+      <translation>Wytnij</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="206"/>
@@ -1184,7 +1184,7 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="208"/>
       <source>Paste</source>
-      <translation type="unfinished">Paste</translation>
+      <translation>Wklej</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="210"/>
@@ -1215,12 +1215,12 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
     <message>
       <location filename="../../Workbench.cpp" line="50"/>
       <source>&amp;Spreadsheet</source>
-      <translation type="unfinished">&amp;Spreadsheet</translation>
+      <translation>&amp;Arkusz kalkulacyjny</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="51"/>
       <source>&amp;Alignment</source>
-      <translation type="unfinished">&amp;Alignment</translation>
+      <translation>&amp;Wyrównanie</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="52"/>

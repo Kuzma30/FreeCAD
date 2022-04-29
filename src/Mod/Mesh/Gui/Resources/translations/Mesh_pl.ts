@@ -990,7 +990,7 @@ Najpierw uruchom polecenie do naprawy zagięć</translation>
     </message>
     <message>
       <source>Alt+C</source>
-      <translation type="unfinished">Alt+C</translation>
+      <translation>Alt + C</translation>
     </message>
     <message>
       <source>Cl&amp;ose</source>

@@ -5,1201 +5,1201 @@
     <name>CmdMeshAddFacet</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Add triangle</source>
-      <translation>Добавить треугольник</translation>
+      <translation type="unfinished">Add triangle</translation>
     </message>
     <message>
       <source>Add triangle manually to a mesh</source>
-      <translation>Добавить треугольник в полигональную сетку вручную</translation>
+      <translation type="unfinished">Add triangle manually to a mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshBoundingBox</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Boundings info...</source>
-      <translation>Информация о структуре...</translation>
+      <translation type="unfinished">Boundings info...</translation>
     </message>
     <message>
       <source>Shows the boundings of the selected mesh</source>
-      <translation>Показывает структуру выбранной полигональной сетки</translation>
+      <translation type="unfinished">Shows the boundings of the selected mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshBuildRegularSolid</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Regular solid...</source>
-      <translation>Правильное геометрическое тело...</translation>
+      <translation type="unfinished">Regular solid...</translation>
     </message>
     <message>
       <source>Builds a regular solid</source>
-      <translation>Построение правильного твердого тела</translation>
+      <translation type="unfinished">Builds a regular solid</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshCrossSections</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Cross-sections...</source>
-      <translation>Поперечные сечения...</translation>
+      <translation type="unfinished">Cross-sections...</translation>
     </message>
     <message>
       <source>Cross-sections</source>
-      <translation>Поперечные сечения</translation>
+      <translation type="unfinished">Cross-sections</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshDecimating</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Decimation...</source>
-      <translation>Упрощение...</translation>
+      <translation type="unfinished">Decimation...</translation>
     </message>
     <message>
       <source>Decimates a mesh</source>
-      <translation>Уменьшает количество граней сетки</translation>
+      <translation type="unfinished">Decimates a mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshDemolding</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Interactive demolding direction</source>
-      <translation>Интерактивное извлечения направлении из формы</translation>
+      <translation type="unfinished">Interactive demolding direction</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshDifference</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Difference</source>
-      <translation>Разность</translation>
+      <translation type="unfinished">Difference</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshEvaluateFacet</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Face info</source>
-      <translation>Информация о поверхности</translation>
+      <translation type="unfinished">Face info</translation>
     </message>
     <message>
       <source>Information about face</source>
-      <translation>Информация о поверхности</translation>
+      <translation type="unfinished">Information about face</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshEvaluateSolid</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Check solid mesh</source>
-      <translation>Проверить полигональную сетку на твердотельность</translation>
+      <translation type="unfinished">Check solid mesh</translation>
     </message>
     <message>
       <source>Checks whether the mesh is a solid</source>
-      <translation>Проверяет, является ли полигональная сетка твердотельным объектом</translation>
+      <translation type="unfinished">Checks whether the mesh is a solid</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshEvaluation</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Evaluate and repair mesh...</source>
-      <translation>Оценить и восстановить полигональную сетку...</translation>
+      <translation type="unfinished">Evaluate and repair mesh...</translation>
     </message>
     <message>
       <source>Opens a dialog to analyze and repair a mesh</source>
-      <translation>Открывает диалог для анализа и ремонта полигональной сетки</translation>
+      <translation type="unfinished">Opens a dialog to analyze and repair a mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshExport</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Export mesh...</source>
-      <translation>Экспорт полигональной сетки...</translation>
+      <translation type="unfinished">Export mesh...</translation>
     </message>
     <message>
       <source>Exports a mesh to file</source>
-      <translation>Экспорт полигональной сетки в файл</translation>
+      <translation type="unfinished">Exports a mesh to file</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshFillInteractiveHole</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Close hole</source>
-      <translation>Закрыть отверстие</translation>
+      <translation type="unfinished">Close hole</translation>
     </message>
     <message>
       <source>Close holes interactively</source>
-      <translation>Закрыть отверстия интерактивно</translation>
+      <translation type="unfinished">Close holes interactively</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshFillupHoles</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Fill holes...</source>
-      <translation>Заполнить отверстия ...</translation>
+      <translation type="unfinished">Fill holes...</translation>
     </message>
     <message>
       <source>Fill holes of the mesh</source>
-      <translation>Заполнить дырки полигональной сетки</translation>
+      <translation type="unfinished">Fill holes of the mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshFlipNormals</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Flip normals</source>
-      <translation>Развернуть направление нормалей</translation>
+      <translation type="unfinished">Flip normals</translation>
     </message>
     <message>
       <source>Flips the normals of the mesh</source>
-      <translation>Меняет направление нормалей полигональной сетки на противоположное</translation>
+      <translation type="unfinished">Flips the normals of the mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshFromGeometry</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Create mesh from geometry...</source>
-      <translation>Создать полигональную сетку по геометрии...</translation>
+      <translation type="unfinished">Create mesh from geometry...</translation>
     </message>
     <message>
       <source>Create mesh from the selected geometry</source>
-      <translation>Создание полигональной сетки из выбранной геометрии</translation>
+      <translation type="unfinished">Create mesh from the selected geometry</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshFromPartShape</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Create mesh from shape...</source>
-      <translation>Создать полигональную сетку из фигуры...</translation>
+      <translation type="unfinished">Create mesh from shape...</translation>
     </message>
     <message>
       <source>Tessellate shape</source>
-      <translation>Мозаика из фигуры</translation>
+      <translation type="unfinished">Tessellate shape</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshHarmonizeNormals</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Harmonize normals</source>
-      <translation>Согласовать нормали</translation>
+      <translation type="unfinished">Harmonize normals</translation>
     </message>
     <message>
       <source>Harmonizes the normals of the mesh</source>
-      <translation>Согласует нормали полигональной сетки</translation>
+      <translation type="unfinished">Harmonizes the normals of the mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshImport</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Import mesh...</source>
-      <translation>Импортировать полигональную сетку...</translation>
+      <translation type="unfinished">Import mesh...</translation>
     </message>
     <message>
       <source>Imports a mesh from file</source>
-      <translation>Импорт полигональной сетки из файла</translation>
+      <translation type="unfinished">Imports a mesh from file</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshIntersection</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Intersection</source>
-      <translation>Пересечение</translation>
+      <translation type="unfinished">Intersection</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshMerge</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Merge</source>
-      <translation>Объединить</translation>
+      <translation type="unfinished">Merge</translation>
     </message>
     <message>
       <source>Merges selected meshes into one</source>
-      <translation>Объединить выбранные полигональные сетки в одну</translation>
+      <translation type="unfinished">Merges selected meshes into one</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshPolyCut</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Cut mesh</source>
-      <translation>Обрезать полигональную сетку</translation>
+      <translation type="unfinished">Cut mesh</translation>
     </message>
     <message>
       <source>Cuts a mesh with a picked polygon</source>
-      <translation>Обрезать полигональную сетку выбранным многоугольником</translation>
+      <translation type="unfinished">Cuts a mesh with a picked polygon</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshPolySegm</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Make segment</source>
-      <translation>Создать сегмент</translation>
+      <translation type="unfinished">Make segment</translation>
     </message>
     <message>
       <source>Creates a mesh segment</source>
-      <translation>Создает сегмент полигональной сетки</translation>
+      <translation type="unfinished">Creates a mesh segment</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshPolySelect</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Select mesh</source>
-      <translation>Выбрать полигональную сетку</translation>
+      <translation type="unfinished">Select mesh</translation>
     </message>
     <message>
       <source>Select an area of the mesh</source>
-      <translation>Выбрать область полигональной сетки</translation>
+      <translation type="unfinished">Select an area of the mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshPolySplit</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Split mesh</source>
-      <translation>Разделить полигональную сетку</translation>
+      <translation type="unfinished">Split mesh</translation>
     </message>
     <message>
       <source>Splits a mesh into two meshes</source>
-      <translation>Разделяет полигональную сетку на две полигональные сетки</translation>
+      <translation type="unfinished">Splits a mesh into two meshes</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshPolyTrim</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Trim mesh</source>
-      <translation>Подрезать полигональную сетку</translation>
+      <translation type="unfinished">Trim mesh</translation>
     </message>
     <message>
       <source>Trims a mesh with a picked polygon</source>
-      <translation>Подрезает полигональную сетку выбранным многоугольником</translation>
+      <translation type="unfinished">Trims a mesh with a picked polygon</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshRemeshGmsh</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Refinement...</source>
-      <translation>Улучшение...</translation>
+      <translation type="unfinished">Refinement...</translation>
     </message>
     <message>
       <source>Refine existing mesh</source>
-      <translation>Улучшить существующую сетку</translation>
+      <translation type="unfinished">Refine existing mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshRemoveCompByHand</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Remove components by hand...</source>
-      <translation>Удалить компоненты вручную ...</translation>
+      <translation type="unfinished">Remove components by hand...</translation>
     </message>
     <message>
       <source>Mark a component to remove it from the mesh</source>
-      <translation>Пометить компонент для удаления из полигональной сетки</translation>
+      <translation type="unfinished">Mark a component to remove it from the mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshRemoveComponents</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Remove components...</source>
-      <translation>Удалить компоненты...</translation>
+      <translation type="unfinished">Remove components...</translation>
     </message>
     <message>
       <source>Remove topologic independent components from the mesh</source>
-      <translation>Удалить топологически-независимые компоненты из полигональной сетки</translation>
+      <translation type="unfinished">Remove topologic independent components from the mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshScale</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Scale...</source>
-      <translation>Масштаб...</translation>
+      <translation type="unfinished">Scale...</translation>
     </message>
     <message>
       <source>Scale selected meshes</source>
-      <translation>Масштабирование выбранных полигональных сеток</translation>
+      <translation type="unfinished">Scale selected meshes</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshSectionByPlane</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Create section from mesh and plane</source>
-      <translation>Создать секцию из полигональной сетки и плоскости</translation>
+      <translation type="unfinished">Create section from mesh and plane</translation>
     </message>
     <message>
       <source>Section from mesh and plane</source>
-      <translation>Секция из полигональной сетки и плоскости</translation>
+      <translation type="unfinished">Section from mesh and plane</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshSegmentation</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Create mesh segments...</source>
-      <translation>Создать сегменты полигональной сетки...</translation>
+      <translation type="unfinished">Create mesh segments...</translation>
     </message>
     <message>
       <source>Create mesh segments</source>
-      <translation>Создать сегменты полигональной сетки</translation>
+      <translation type="unfinished">Create mesh segments</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshSegmentationBestFit</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Create mesh segments from best-fit surfaces...</source>
-      <translation>Создать сегменты полигональной сетка из наилучшего соответствия поверхностям...</translation>
+      <translation type="unfinished">Create mesh segments from best-fit surfaces...</translation>
     </message>
     <message>
       <source>Create mesh segments from best-fit surfaces</source>
-      <translation>Создать сегменты полигональной сетка из наилучшего соответствия поверхностям</translation>
+      <translation type="unfinished">Create mesh segments from best-fit surfaces</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshSmoothing</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Smooth...</source>
-      <translation>Сгладить ...</translation>
+      <translation type="unfinished">Smooth...</translation>
     </message>
     <message>
       <source>Smooth the selected meshes</source>
-      <translation>Сгладить, выбранные полигональные сетки</translation>
+      <translation type="unfinished">Smooth the selected meshes</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshSplitComponents</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Split by components</source>
-      <translation>Разделить по компонентам</translation>
+      <translation type="unfinished">Split by components</translation>
     </message>
     <message>
       <source>Split selected mesh into its components</source>
-      <translation>Разделяет выбранную сетку на её компоненты</translation>
+      <translation type="unfinished">Split selected mesh into its components</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshToolMesh</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Segment by tool mesh</source>
-      <translation>Часть инструмента сетки</translation>
+      <translation type="unfinished">Segment by tool mesh</translation>
     </message>
     <message>
       <source>Creates a segment from a given tool mesh</source>
-      <translation>Создает сегмент данным инструментом построения полигональной сетки</translation>
+      <translation type="unfinished">Creates a segment from a given tool mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshTransform</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Transform mesh</source>
-      <translation>Преобразование полигональной сетки</translation>
+      <translation type="unfinished">Transform mesh</translation>
     </message>
     <message>
       <source>Rotate or move a mesh</source>
-      <translation>Поворот или перемещение полигональной сетки</translation>
+      <translation type="unfinished">Rotate or move a mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshTrimByPlane</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Trim mesh with a plane</source>
-      <translation>Подрезать полигональную сетку плоскостью</translation>
+      <translation type="unfinished">Trim mesh with a plane</translation>
     </message>
     <message>
       <source>Trims a mesh with a plane</source>
-      <translation>Подрезает полигональную сетку выбранной плоскостью</translation>
+      <translation type="unfinished">Trims a mesh with a plane</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshUnion</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Union</source>
-      <translation>Объединение</translation>
+      <translation type="unfinished">Union</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshVertexCurvature</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Curvature plot</source>
-      <translation>График кривизны</translation>
+      <translation type="unfinished">Curvature plot</translation>
     </message>
     <message>
       <source>Calculates the curvature of the vertices of a mesh</source>
-      <translation>Вычисляет кривизну вершин полигональной сетки</translation>
+      <translation type="unfinished">Calculates the curvature of the vertices of a mesh</translation>
     </message>
   </context>
   <context>
     <name>CmdMeshVertexCurvatureInfo</name>
     <message>
       <source>Mesh</source>
-      <translation>Сеть</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <source>Curvature info</source>
-      <translation>Данные о кривизне</translation>
+      <translation type="unfinished">Curvature info</translation>
     </message>
     <message>
       <source>Information about curvature</source>
-      <translation>Информация о кривизне</translation>
+      <translation type="unfinished">Information about curvature</translation>
     </message>
   </context>
   <context>
     <name>Command</name>
     <message>
       <source>Mesh Create</source>
-      <translation>Создание сетки</translation>
+      <translation type="unfinished">Mesh Create</translation>
     </message>
     <message>
       <source>Segment by tool mesh</source>
-      <translation>Часть инструмента сетки</translation>
+      <translation type="unfinished">Segment by tool mesh</translation>
     </message>
     <message>
       <source>Mesh union</source>
-      <translation>Объединение сеток</translation>
+      <translation type="unfinished">Mesh union</translation>
     </message>
     <message>
       <source>Mesh difference</source>
-      <translation>Разница Сеток</translation>
+      <translation type="unfinished">Mesh difference</translation>
     </message>
     <message>
       <source>Mesh intersection</source>
-      <translation>Пересечение сеток</translation>
+      <translation type="unfinished">Mesh intersection</translation>
     </message>
     <message>
       <source>Import Mesh</source>
-      <translation>Импорт Сетки</translation>
+      <translation type="unfinished">Import Mesh</translation>
     </message>
     <message>
       <source>Mesh VertexCurvature</source>
-      <translation>Определение кривизны вершин сетки</translation>
+      <translation type="unfinished">Mesh VertexCurvature</translation>
     </message>
     <message>
       <source>Mesh Smoothing</source>
-      <translation>Сглаживание сетки</translation>
+      <translation type="unfinished">Mesh Smoothing</translation>
     </message>
     <message>
       <source>Harmonize mesh normals</source>
-      <translation>Согласование нормалей сетки</translation>
+      <translation type="unfinished">Harmonize mesh normals</translation>
     </message>
     <message>
       <source>Flip mesh normals</source>
-      <translation>Отражение нормалей сетки</translation>
+      <translation type="unfinished">Flip mesh normals</translation>
     </message>
     <message>
       <source>Fill up holes</source>
-      <translation>Заполнение отверстий</translation>
+      <translation type="unfinished">Fill up holes</translation>
     </message>
     <message>
       <source>Mesh merge</source>
-      <translation>Слияние сеток</translation>
+      <translation type="unfinished">Mesh merge</translation>
     </message>
     <message>
       <source>Mesh split</source>
-      <translation>Разделение сетки</translation>
+      <translation type="unfinished">Mesh split</translation>
     </message>
     <message>
       <source>Mesh scale</source>
-      <translation>Масштабирование сетки</translation>
+      <translation type="unfinished">Mesh scale</translation>
     </message>
     <message>
       <source>Mesh Decimating</source>
-      <translation>Упрощение сетки</translation>
+      <translation type="unfinished">Mesh Decimating</translation>
     </message>
     <message>
       <source>Harmonize normals</source>
-      <translation>Согласовать нормали</translation>
+      <translation type="unfinished">Harmonize normals</translation>
     </message>
     <message>
       <source>Remove non-manifolds</source>
-      <translation>Удаление неоднообразных</translation>
+      <translation type="unfinished">Remove non-manifolds</translation>
     </message>
     <message>
       <source>Fix indices</source>
-      <translation>Исправление индексов</translation>
+      <translation type="unfinished">Fix indices</translation>
     </message>
     <message>
       <source>Remove degenerated faces</source>
-      <translation>Удаление поврежденных поверхностей</translation>
+      <translation type="unfinished">Remove degenerated faces</translation>
     </message>
     <message>
       <source>Remove duplicated faces</source>
-      <translation>Удалить дублированные грани</translation>
+      <translation type="unfinished">Remove duplicated faces</translation>
     </message>
     <message>
       <source>Remove duplicated points</source>
-      <translation>Удалить дублированные точки</translation>
+      <translation type="unfinished">Remove duplicated points</translation>
     </message>
     <message>
       <source>Fix self-intersections</source>
-      <translation>Исправление авто-пересечений</translation>
+      <translation type="unfinished">Fix self-intersections</translation>
     </message>
     <message>
       <source>Remove folds</source>
-      <translation>Удаление складок</translation>
+      <translation type="unfinished">Remove folds</translation>
     </message>
     <message>
       <source>Repair mesh</source>
-      <translation>Ремонт сетки</translation>
+      <translation type="unfinished">Repair mesh</translation>
     </message>
     <message>
       <source>Delete selection</source>
-      <translation>Удалить выделение</translation>
+      <translation type="unfinished">Delete selection</translation>
     </message>
     <message>
       <source>Cut</source>
-      <translation>Обрезать</translation>
+      <translation type="unfinished">Cut</translation>
     </message>
     <message>
       <source>Trim</source>
-      <translation>Подгонка</translation>
+      <translation type="unfinished">Trim</translation>
     </message>
     <message>
       <source>Split</source>
-      <translation>Разделить</translation>
+      <translation type="unfinished">Split</translation>
     </message>
     <message>
       <source>Segment</source>
-      <translation>Сегмент</translation>
+      <translation type="unfinished">Segment</translation>
     </message>
     <message>
       <source>Delete</source>
-      <translation>Удалить</translation>
+      <translation type="unfinished">Delete</translation>
     </message>
     <message>
       <source>Fill hole</source>
-      <translation>Заполнить отверстие</translation>
+      <translation type="unfinished">Fill hole</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::DlgDecimating</name>
     <message>
       <source>Decimating</source>
-      <translation>Упрощение</translation>
+      <translation type="unfinished">Decimating</translation>
     </message>
     <message>
       <source>Reduction</source>
-      <translation>Сокращение</translation>
+      <translation type="unfinished">Reduction</translation>
     </message>
     <message>
       <source>None</source>
-      <translation>Ничего</translation>
+      <translation type="unfinished">None</translation>
     </message>
     <message>
       <source>Full</source>
-      <translation>Полностью</translation>
+      <translation type="unfinished">Full</translation>
     </message>
     <message>
       <source>Absolute number</source>
-      <translation>Абсолютный номер</translation>
+      <translation type="unfinished">Absolute number</translation>
     </message>
     <message>
       <source>Tolerance</source>
-      <translation>Точность</translation>
+      <translation type="unfinished">Tolerance</translation>
     </message>
     <message>
       <source>Absolute number (Maximum: %1)</source>
-      <translation>Абсолютный номер (Максимум: %1)</translation>
+      <translation type="unfinished">Absolute number (Maximum: %1)</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::DlgEvaluateMesh</name>
     <message>
       <source>Evaluate &amp; Repair Mesh</source>
-      <translation>Оценить и восстановить полигональную сетку</translation>
+      <translation type="unfinished">Evaluate &amp; Repair Mesh</translation>
     </message>
     <message>
       <source>Mesh information</source>
-      <translation>Информация о полигональной сетке</translation>
+      <translation type="unfinished">Mesh information</translation>
     </message>
     <message>
       <source>Number of points:</source>
-      <translation>Количество точек:</translation>
+      <translation type="unfinished">Number of points:</translation>
     </message>
     <message>
       <source>No information</source>
-      <translation>Информация отсутствует</translation>
+      <translation type="unfinished">No information</translation>
     </message>
     <message>
       <source>Number of faces:</source>
-      <translation>Количество граней:</translation>
+      <translation type="unfinished">Number of faces:</translation>
     </message>
     <message>
       <source>Number of edges:</source>
-      <translation>Количество ребер:</translation>
+      <translation type="unfinished">Number of edges:</translation>
     </message>
     <message>
       <source>Refresh</source>
-      <translation>Обновить</translation>
+      <translation type="unfinished">Refresh</translation>
     </message>
     <message>
       <source>Orientation</source>
-      <translation>Ориентация</translation>
+      <translation type="unfinished">Orientation</translation>
     </message>
     <message>
       <source>Analyze</source>
-      <translation>Анализ</translation>
+      <translation type="unfinished">Analyze</translation>
     </message>
     <message>
       <source>Repair</source>
-      <translation>Восстановить</translation>
+      <translation type="unfinished">Repair</translation>
     </message>
     <message>
       <source>Duplicated faces</source>
-      <translation>Повторяющиеся грани</translation>
+      <translation type="unfinished">Duplicated faces</translation>
     </message>
     <message>
       <source>Duplicated points</source>
-      <translation>Повторяющиеся точки</translation>
+      <translation type="unfinished">Duplicated points</translation>
     </message>
     <message>
       <source>Non-manifolds</source>
-      <translation>Однообразная</translation>
+      <translation type="unfinished">Non-manifolds</translation>
     </message>
     <message>
       <source>Degenerated faces</source>
-      <translation>Ухудшившиеся грани</translation>
+      <translation type="unfinished">Degenerated faces</translation>
     </message>
     <message>
       <source>Face indices</source>
-      <translation>Индексы граней</translation>
+      <translation type="unfinished">Face indices</translation>
     </message>
     <message>
       <source>Self-intersections</source>
-      <translation>Самопересечения</translation>
+      <translation type="unfinished">Self-intersections</translation>
     </message>
     <message>
       <source>Folds on surface</source>
-      <translation>Складки на поверхности</translation>
+      <translation type="unfinished">Folds on surface</translation>
     </message>
     <message>
       <source>All above tests together</source>
-      <translation>Использовать все указанные выше тесты</translation>
+      <translation type="unfinished">All above tests together</translation>
     </message>
     <message>
       <source>Repetitive repair</source>
-      <translation>Повторное восстановление</translation>
+      <translation type="unfinished">Repetitive repair</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::DlgEvaluateMeshImp</name>
     <message>
       <source>Settings...</source>
-      <translation>Настройки...</translation>
+      <translation type="unfinished">Settings...</translation>
     </message>
     <message>
       <source>No selection</source>
-      <translation>Нет выбора</translation>
+      <translation type="unfinished">No selection</translation>
     </message>
     <message>
       <source>No information</source>
-      <translation>Информация отсутствует</translation>
+      <translation type="unfinished">No information</translation>
     </message>
     <message>
       <source>Flipped normals found</source>
-      <translation>Найдены перевёрнутые нормали</translation>
+      <translation type="unfinished">Flipped normals found</translation>
     </message>
     <message>
       <source>Orientation</source>
-      <translation>Ориентация</translation>
+      <translation type="unfinished">Orientation</translation>
     </message>
     <message>
       <source>Check failed due to folds on the surface.
 Please run the command to repair folds first</source>
-      <translation>Не удалось проверить из-за складок на поверхности. Сначала запустите команду для поправки складок</translation>
+      <translation type="unfinished">Check failed due to folds on the surface.
+Please run the command to repair folds first</translation>
     </message>
     <message>
       <source>No flipped normals</source>
-      <translation>Нет перевернутых нормалей</translation>
+      <translation type="unfinished">No flipped normals</translation>
     </message>
     <message>
       <source>%1 flipped normals</source>
-      <translation>%1 перевернутых нормалей</translation>
+      <translation type="unfinished">%1 flipped normals</translation>
     </message>
     <message>
       <source>No non-manifolds</source>
-      <translation>Нет однообразий</translation>
+      <translation type="unfinished">No non-manifolds</translation>
     </message>
     <message>
       <source>%1 non-manifolds</source>
-      <translation>%1 однообразий</translation>
+      <translation type="unfinished">%1 non-manifolds</translation>
     </message>
     <message>
       <source>Non-manifolds</source>
-      <translation>Однообразная</translation>
+      <translation type="unfinished">Non-manifolds</translation>
     </message>
     <message>
       <source>Cannot remove non-manifolds</source>
-      <translation>Не могу удалить однообразие</translation>
+      <translation type="unfinished">Cannot remove non-manifolds</translation>
     </message>
     <message>
       <source>Invalid face indices</source>
-      <translation>Индексы неверных граней</translation>
+      <translation type="unfinished">Invalid face indices</translation>
     </message>
     <message>
       <source>Invalid point indices</source>
-      <translation>Индексы неверных точек</translation>
+      <translation type="unfinished">Invalid point indices</translation>
     </message>
     <message>
       <source>Multiple point indices</source>
-      <translation>Индексы множественных точек</translation>
+      <translation type="unfinished">Multiple point indices</translation>
     </message>
     <message>
       <source>Invalid neighbour indices</source>
-      <translation>Индексы неверных соседних элементов</translation>
+      <translation type="unfinished">Invalid neighbour indices</translation>
     </message>
     <message>
       <source>No invalid indices</source>
-      <translation>Нет ошибочных индексов</translation>
+      <translation type="unfinished">No invalid indices</translation>
     </message>
     <message>
       <source>Indices</source>
-      <translation>Индексы</translation>
+      <translation type="unfinished">Indices</translation>
     </message>
     <message>
       <source>No degenerations</source>
-      <translation>Нет повреждений</translation>
+      <translation type="unfinished">No degenerations</translation>
     </message>
     <message>
       <source>%1 degenerated faces</source>
-      <translation>%1 поврежденных граней</translation>
+      <translation type="unfinished">%1 degenerated faces</translation>
     </message>
     <message>
       <source>Degenerations</source>
-      <translation>Повреждения</translation>
+      <translation type="unfinished">Degenerations</translation>
     </message>
     <message>
       <source>No duplicated faces</source>
-      <translation>Нет повторяющихся граней</translation>
+      <translation type="unfinished">No duplicated faces</translation>
     </message>
     <message>
       <source>%1 duplicated faces</source>
-      <translation>повторяющихся граней: %1</translation>
+      <translation type="unfinished">%1 duplicated faces</translation>
     </message>
     <message>
       <source>Duplicated faces</source>
-      <translation>Повторяющиеся грани</translation>
+      <translation type="unfinished">Duplicated faces</translation>
     </message>
     <message>
       <source>No duplicated points</source>
-      <translation>Нет повторяющихся точек</translation>
+      <translation type="unfinished">No duplicated points</translation>
     </message>
     <message>
       <source>Duplicated points</source>
-      <translation>Повторяющиеся точки</translation>
+      <translation type="unfinished">Duplicated points</translation>
     </message>
     <message>
       <source>No self-intersections</source>
-      <translation>Нет самопересечений</translation>
+      <translation type="unfinished">No self-intersections</translation>
     </message>
     <message>
       <source>Self-intersections</source>
-      <translation>Самопересечения</translation>
+      <translation type="unfinished">Self-intersections</translation>
     </message>
     <message>
       <source>No folds on surface</source>
-      <translation>Нет складок на поверхности</translation>
+      <translation type="unfinished">No folds on surface</translation>
     </message>
     <message>
       <source>%1 folds on surface</source>
-      <translation>%1 складок на поверхности</translation>
+      <translation type="unfinished">%1 folds on surface</translation>
     </message>
     <message>
       <source>Folds</source>
-      <translation>Складки</translation>
+      <translation type="unfinished">Folds</translation>
     </message>
     <message>
       <source>Mesh repair</source>
-      <translation>Восстановление полигональной сетки</translation>
+      <translation type="unfinished">Mesh repair</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::DlgEvaluateSettings</name>
     <message>
       <source>Evaluation settings</source>
-      <translation>Параметры вычислений</translation>
+      <translation type="unfinished">Evaluation settings</translation>
     </message>
     <message>
       <source>Settings</source>
-      <translation>Настройки</translation>
+      <translation type="unfinished">Settings</translation>
     </message>
     <message>
       <source>Check for non-manifold points</source>
-      <translation>Проверить на наличие точкек неоднородностей</translation>
+      <translation type="unfinished">Check for non-manifold points</translation>
     </message>
     <message>
       <source>Enable check for folds on surface</source>
-      <translation>Включить проверку складок на поверхности</translation>
+      <translation type="unfinished">Enable check for folds on surface</translation>
     </message>
     <message>
       <source>Only consider zero area faces as degenerated</source>
-      <translation>Считать поврежденными только грани с нулевой площадью</translation>
+      <translation type="unfinished">Only consider zero area faces as degenerated</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::DlgRegularSolid</name>
     <message>
       <source>Regular Solid</source>
-      <translation>Обычное геометрическое тело</translation>
+      <translation type="unfinished">Regular Solid</translation>
     </message>
     <message>
       <source>&amp;Create</source>
-      <translation>&amp;Создать</translation>
+      <translation type="unfinished">&amp;Create</translation>
     </message>
     <message>
       <source>Alt+C</source>
-      <translation>Alt+C</translation>
+      <translation type="unfinished">Alt+C</translation>
     </message>
     <message>
       <source>Cl&amp;ose</source>
-      <translation>Закрыть</translation>
+      <translation type="unfinished">Cl&amp;ose</translation>
     </message>
     <message>
       <source>Alt+O</source>
-      <translation>Alt+O</translation>
+      <translation type="unfinished">Alt+O</translation>
     </message>
     <message>
       <source>Solid:</source>
-      <translation>Твердое тело:</translation>
+      <translation type="unfinished">Solid:</translation>
     </message>
     <message>
       <source>Cube</source>
-      <translation>Куб</translation>
+      <translation type="unfinished">Cube</translation>
     </message>
     <message>
       <source>Cylinder</source>
-      <translation>Цилиндр</translation>
+      <translation type="unfinished">Cylinder</translation>
     </message>
     <message>
       <source>Cone</source>
-      <translation>Конус</translation>
+      <translation type="unfinished">Cone</translation>
     </message>
     <message>
       <source>Sphere</source>
-      <translation>Сфера</translation>
+      <translation type="unfinished">Sphere</translation>
     </message>
     <message>
       <source>Ellipsoid</source>
-      <translation>Эллипсоид</translation>
+      <translation type="unfinished">Ellipsoid</translation>
     </message>
     <message>
       <source>Torus</source>
-      <translation>Тор</translation>
+      <translation type="unfinished">Torus</translation>
     </message>
     <message>
       <source>Height:</source>
-      <translation>Высота:</translation>
+      <translation type="unfinished">Height:</translation>
     </message>
     <message>
       <source>Length:</source>
-      <translation>Длина:</translation>
+      <translation type="unfinished">Length:</translation>
     </message>
     <message>
       <source>Width:</source>
-      <translation>Ширина:</translation>
+      <translation type="unfinished">Width:</translation>
     </message>
     <message>
       <source>Radius:</source>
-      <translation>Радиус:</translation>
+      <translation type="unfinished">Radius:</translation>
     </message>
     <message>
       <source>Closed</source>
-      <translation>Закрыто</translation>
+      <translation type="unfinished">Closed</translation>
     </message>
     <message>
       <source>Sampling:</source>
-      <translation>Дискретизация:</translation>
+      <translation type="unfinished">Sampling:</translation>
     </message>
     <message>
       <source>Edge length:</source>
-      <translation>Длина ребра:</translation>
+      <translation type="unfinished">Edge length:</translation>
     </message>
     <message>
       <source>Radius 1:</source>
-      <translation>Радиус 1:</translation>
+      <translation type="unfinished">Radius 1:</translation>
     </message>
     <message>
       <source>Radius 2:</source>
-      <translation>Радиус 2:</translation>
+      <translation type="unfinished">Radius 2:</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::DlgRegularSolidImp</name>
     <message>
       <source>Create %1</source>
-      <translation>Создать %1</translation>
+      <translation type="unfinished">Create %1</translation>
     </message>
     <message>
       <source>No active document</source>
-      <translation>Нет активного документа</translation>
+      <translation type="unfinished">No active document</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::DlgSettingsImportExport</name>
     <message>
       <source>Mesh Formats</source>
-      <translation>Форматы сетки</translation>
+      <translation type="unfinished">Mesh Formats</translation>
     </message>
     <message>
       <source>Export</source>
-      <translation>Экспорт</translation>
+      <translation type="unfinished">Export</translation>
     </message>
     <message>
       <source>Maximal deviation between mesh and object</source>
-      <translation>Максимальное отклонение между сеткой и объектом</translation>
+      <translation type="unfinished">Maximal deviation between mesh and object</translation>
     </message>
     <message>
       <source>Deviation of tessellation to the actual surface</source>
-      <translation>Отклонение тесселяции от фактической поверхности</translation>
+      <translation type="unfinished">Deviation of tessellation to the actual surface</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"&gt;&lt;span style=" font-weight:400;"&gt;Defines the maximum deviation of the tessellated mesh to the surface. The smaller the value is the slower the render speed which results in increased detail/resolution.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"&gt;&lt;span style=" font-weight:600;"&gt;Тесселяция&lt;/span&gt;&lt;/p&gt;&lt;p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"&gt;&lt;span style=" font-weight:400;"&gt;Определяет максимальное отклонение тесселлированной сетки от поверхности. Чем меньше значение, тем медленнее скорость отрисовки, но выше точность/разрешение.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Defines the maximum deviation of the tessellated mesh to the surface. The smaller the value is the slower the render speed which results in increased detail/resolution.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Tessellation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;span style=&quot; font-weight:400;&quot;&gt;Defines the maximum deviation of the tessellated mesh to the surface. The smaller the value is the slower the render speed which results in increased detail/resolution.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Maximum mesh deviation</source>
-      <translation>Максимальное отклонение полигональной сетки</translation>
+      <translation type="unfinished">Maximum mesh deviation</translation>
     </message>
     <message>
       <source>ZIP compression is used when writing a mesh file in AMF format</source>
-      <translation>При записи сетки файла в формате AMF используется сжатие формата ZIP</translation>
+      <translation type="unfinished">ZIP compression is used when writing a mesh file in AMF format</translation>
     </message>
     <message>
       <source>Export AMF files using compression</source>
-      <translation>Экспорт AMF файлов со сжатием</translation>
+      <translation type="unfinished">Export AMF files using compression</translation>
     </message>
     <message>
       <source>Width:</source>
-      <translation>Ширина:</translation>
+      <translation type="unfinished">Width:</translation>
     </message>
     <message>
       <source>Height:</source>
-      <translation>Высота:</translation>
+      <translation type="unfinished">Height:</translation>
     </message>
     <message>
       <source>This parameter indicates whether ZIP compression
 is used when writing a file in AMF format</source>
-      <translation>Этот параметр указывает на использование ZIP сжатия во время записи в AMF формат</translation>
+      <translation type="unfinished">This parameter indicates whether ZIP compression
+is used when writing a file in AMF format</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::DlgSettingsMeshView</name>
     <message>
       <source>Mesh view</source>
-      <translation>Просмотр в виде полигональной сетки</translation>
+      <translation type="unfinished">Mesh view</translation>
     </message>
     <message>
       <source>Default appearance for new meshes</source>
-      <translation>Внешний вид новых полигональных сеток по умолчанию</translation>
+      <translation type="unfinished">Default appearance for new meshes</translation>
     </message>
     <message>
       <source>Default line color</source>
-      <translation>Цвет линии по умолчанию</translation>
+      <translation type="unfinished">Default line color</translation>
     </message>
     <message>
       <source>Mesh transparency</source>
-      <translation>Прозрачность полигональной сетки</translation>
+      <translation type="unfinished">Mesh transparency</translation>
     </message>
     <message>
       <source>Default color for new meshes</source>
-      <translation>Цвет по умолчанию для новых сеток</translation>
+      <translation type="unfinished">Default color for new meshes</translation>
     </message>
     <message>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
     <message>
       <source>Default mesh color</source>
-      <translation>Цвет полигональной сетки по умолчанию</translation>
+      <translation type="unfinished">Default mesh color</translation>
     </message>
     <message>
       <source>A bounding box will be displayed</source>
-      <translation>Будут отображены габариты</translation>
+      <translation type="unfinished">A bounding box will be displayed</translation>
     </message>
     <message>
       <source>Show bounding-box for highlighted or selected meshes</source>
-      <translation>Показать ограничивающий прямоугольник для подсвеченных или выбранных полигональных сеток</translation>
+      <translation type="unfinished">Show bounding-box for highlighted or selected meshes</translation>
     </message>
     <message>
       <source>Default line color for new meshes</source>
-      <translation>Цвет линии по умолчанию для новых сеток</translation>
+      <translation type="unfinished">Default line color for new meshes</translation>
     </message>
     <message>
       <source>The bottom side of surface will be rendered the same way than top side.
-If not checked, it depends on the option "Enable backlight color"
+If not checked, it depends on the option &quot;Enable backlight color&quot;
 (preferences section Display -&gt; 3D View). Either the backlight color
 will be used or black.</source>
-      <translation>Нижняя сторона поверхности будет отрисована таким же образом, как и верхняя сторона.
-Если галочка не установлена, то это зависит от опции "Включить цвет подсветки"
-(настройки раздела Отображение -&gt; 3D вид). Будет использован цвет подсветки
- или чёрный.</translation>
+      <translation type="unfinished">The bottom side of surface will be rendered the same way than top side.
+If not checked, it depends on the option &quot;Enable backlight color&quot;
+(preferences section Display -&gt; 3D View). Either the backlight color
+will be used or black.</translation>
     </message>
     <message>
       <source>Two-side rendering</source>
-      <translation>Двустороннее отображение</translation>
+      <translation type="unfinished">Two-side rendering</translation>
     </message>
     <message>
       <source>Line transparency</source>
-      <translation>Прозрачность линии</translation>
+      <translation type="unfinished">Line transparency</translation>
     </message>
     <message>
       <source>Backface color</source>
-      <translation>Цвет оборотной стороны</translation>
+      <translation type="unfinished">Backface color</translation>
     </message>
     <message>
       <source>Smoothing</source>
-      <translation>Сглаживание</translation>
+      <translation type="unfinished">Smoothing</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;
-Это наименьший угол между двумя гранями, где нормали рассчитываются для сглаживания плоскостей.&lt;/p&gt;&lt;p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;
-Если угол между нормалями двух соседних граней меньше угла сгиба, грани будут сглажены вокруг их общего края.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;This is the smallest angle between two faces where normals get calculated to do flat shading.&lt;/p&gt;&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;If the angle between the normals of two neighbouring faces is less than the crease angle, the faces will be smoothshaded around their common edge.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Crease angle</source>
-      <translation>Пороговый угол</translation>
+      <translation type="unfinished">Crease angle</translation>
     </message>
     <message>
       <source>If this option is set Phong shading is used, otherwise flat shading.
@@ -1209,653 +1209,665 @@ With flat shading the surface normals are not defined per vertex that leads
 to a unreal appearance for curved surfaces while using Phong shading leads
 to a smoother appearance.
 </source>
-      <translation>Если эта опция активирована, будет использоваться затенение Фонга, иначе - плоское затенение.
-С использованием плоского затенения нормали поверхностей не будут определены по вершинам, что ведет к неестественному отображению искривленных поверхностей, в то время как затенение Фонга сможет это обеспечить.
+      <translation type="unfinished">If this option is set Phong shading is used, otherwise flat shading.
+Shading defines the appearance of surfaces.
+
+With flat shading the surface normals are not defined per vertex that leads
+to a unreal appearance for curved surfaces while using Phong shading leads
+to a smoother appearance.
 </translation>
     </message>
     <message>
       <source>Define normal per vertex</source>
-      <translation>Задать нормаль для каждой вершины</translation>
+      <translation type="unfinished">Define normal per vertex</translation>
     </message>
     <message>
       <source>Crease angle is a threshold angle between two faces.
 
  If face angle ≥ crease angle, facet shading is used
  If face angle &lt; crease angle, smooth shading is used</source>
-      <translation>Угол срабатывания представляет собой пороговый угол между двумя сторонами.
+      <translation type="unfinished">Crease angle is a threshold angle between two faces.
 
- Если лицевой угол ≥ угол складки, используется затенение лица
- Если лицевой угол &lt; угла складки, используется гладкое затенение</translation>
+ If face angle ≥ crease angle, facet shading is used
+ If face angle &lt; crease angle, smooth shading is used</translation>
     </message>
     <message>
       <source> °</source>
-      <translation>°</translation>
+      <translation type="unfinished"> °</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;&lt;span style=" font-weight:600;"&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;Defining the normals per vertex is also called &lt;span style=" font-style:italic;"&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;"&gt;&lt;span style=" font-style:normal;"&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=" font-style:normal;"&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name="qrichtext" content="1" /&gt;&lt;/head&gt;&lt;body style=" white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;"&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;&lt;span style=" font-weight:600;"&gt;Термины&lt;/span&gt;&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;"&gt;&lt;span style=" font-style:italic;"&gt;Затенение по Фонгу&lt;/span&gt; - расчёт освещения производимый для каждой нормали вершины.&lt;/p&gt;&lt;p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;"&gt;&lt;span style=" font-style:normal;"&gt;&lt;/span&gt;Плоское затенение&lt;span style=" font-style:normal;"&gt; - расчёт освещения производимый для каждой нормали грани.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;Defining the normals per vertex is also called &lt;span style=&quot; font-style:italic;&quot;&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Hint&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;Defining the normals per vertex is also called &lt;span style=&quot; font-style:italic;&quot;&gt;Phong shading&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; font-style:italic;&quot;&gt;&lt;span style=&quot; font-style:normal;&quot;&gt;while defining the normals per face is called &lt;/span&gt;Flat shading&lt;span style=&quot; font-style:normal;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::DlgSmoothing</name>
     <message>
       <source>Smoothing</source>
-      <translation>Сглаживание</translation>
+      <translation type="unfinished">Smoothing</translation>
     </message>
     <message>
       <source>Method</source>
-      <translation>Метод</translation>
+      <translation type="unfinished">Method</translation>
     </message>
     <message>
       <source>Taubin</source>
-      <translation>Таубина</translation>
+      <translation type="unfinished">Taubin</translation>
     </message>
     <message>
       <source>Laplace</source>
-      <translation>Лапласа</translation>
+      <translation type="unfinished">Laplace</translation>
     </message>
     <message>
       <source>Parameter</source>
-      <translation>Параметр</translation>
+      <translation type="unfinished">Parameter</translation>
     </message>
     <message>
       <source>Iterations:</source>
-      <translation>Итерации:</translation>
+      <translation type="unfinished">Iterations:</translation>
     </message>
     <message>
       <source>Lambda:</source>
-      <translation>Лямбда:</translation>
+      <translation type="unfinished">Lambda:</translation>
     </message>
     <message>
       <source>Mu:</source>
-      <translation>Мю:</translation>
+      <translation type="unfinished">Mu:</translation>
     </message>
     <message>
       <source>Only selection</source>
-      <translation>Только выделение</translation>
+      <translation type="unfinished">Only selection</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::GmshWidget</name>
     <message>
       <source>Automatic</source>
-      <translation>Автоматически</translation>
+      <translation type="unfinished">Automatic</translation>
     </message>
     <message>
       <source>Adaptive</source>
-      <translation>Адаптивный</translation>
+      <translation type="unfinished">Adaptive</translation>
     </message>
     <message>
       <source>Frontal</source>
-      <translation>Фронтальный</translation>
+      <translation type="unfinished">Frontal</translation>
     </message>
     <message>
       <source>Frontal Quad</source>
-      <translation>Передний квадрат</translation>
+      <translation type="unfinished">Frontal Quad</translation>
     </message>
     <message>
       <source>Parallelograms</source>
-      <translation>Параллелограммы</translation>
+      <translation type="unfinished">Parallelograms</translation>
     </message>
     <message>
       <source>Time:</source>
-      <translation>Время:</translation>
+      <translation type="unfinished">Time:</translation>
     </message>
     <message>
       <source>Running gmsh...</source>
-      <translation>Запуск gmsh...</translation>
+      <translation type="unfinished">Running gmsh...</translation>
     </message>
     <message>
       <source>Failed to start</source>
-      <translation>Не удалось запустить</translation>
+      <translation type="unfinished">Failed to start</translation>
     </message>
     <message>
       <source>Error</source>
-      <translation>Ошибки</translation>
+      <translation type="unfinished">Error</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::MeshFaceAddition</name>
     <message>
       <source>Add triangle</source>
-      <translation>Добавить треугольник</translation>
+      <translation type="unfinished">Add triangle</translation>
     </message>
     <message>
       <source>Flip normal</source>
-      <translation>Направить нормаль в противоположную сторону</translation>
+      <translation type="unfinished">Flip normal</translation>
     </message>
     <message>
       <source>Clear</source>
-      <translation>Очистить</translation>
+      <translation type="unfinished">Clear</translation>
     </message>
     <message>
       <source>Finish</source>
-      <translation>Завершить</translation>
+      <translation type="unfinished">Finish</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::MeshFillHole</name>
     <message>
       <source>Finish</source>
-      <translation>Завершить</translation>
+      <translation type="unfinished">Finish</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::ParametersDialog</name>
     <message>
       <source>Surface fit</source>
-      <translation>Соответствие поверхности</translation>
+      <translation type="unfinished">Surface fit</translation>
     </message>
     <message>
       <source>Parameters</source>
-      <translation>Параметры</translation>
+      <translation type="unfinished">Parameters</translation>
     </message>
     <message>
       <source>Selection</source>
-      <translation>Выделение</translation>
+      <translation type="unfinished">Selection</translation>
     </message>
     <message>
       <source>Region</source>
-      <translation>Область</translation>
+      <translation type="unfinished">Region</translation>
     </message>
     <message>
       <source>Triangle</source>
-      <translation>Треугольник</translation>
+      <translation type="unfinished">Triangle</translation>
     </message>
     <message>
       <source>Clear</source>
-      <translation>Очистить</translation>
+      <translation type="unfinished">Clear</translation>
     </message>
     <message>
       <source>Compute</source>
-      <translation>Вычислить</translation>
+      <translation type="unfinished">Compute</translation>
     </message>
     <message>
       <source>No selection</source>
-      <translation>Ничего не выбрано</translation>
+      <translation type="unfinished">No selection</translation>
     </message>
     <message>
       <source>Before fitting the surface select an area.</source>
-      <translation>Перед градуированием поверхности выберите область.</translation>
+      <translation type="unfinished">Before fitting the surface select an area.</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::RemeshGmsh</name>
     <message>
-      <source>Remesh by gmsh</source>
-      <translation>Изменить сетку с помощью gmsh</translation>
-    </message>
-    <message>
       <source>Remeshing Parameter</source>
-      <translation>Параметр перестроения сетки</translation>
+      <translation type="unfinished">Remeshing Parameter</translation>
     </message>
     <message>
       <source>Meshing:</source>
-      <translation>Построение сетки:</translation>
+      <translation type="unfinished">Meshing:</translation>
     </message>
     <message>
       <source>Max element size (0.0 = Auto):</source>
-      <translation>Максимальный размер элемента (0.0 = Авто):</translation>
+      <translation type="unfinished">Max element size (0.0 = Auto):</translation>
     </message>
     <message>
       <source>Min element size (0.0 = Auto):</source>
-      <translation>Минимальный размер элемента (0.0 = Авто):</translation>
+      <translation type="unfinished">Min element size (0.0 = Auto):</translation>
     </message>
     <message>
       <source>Angle:</source>
-      <translation>Угол:</translation>
+      <translation type="unfinished">Angle:</translation>
     </message>
     <message>
       <source>Gmsh</source>
-      <translation>Gmsh</translation>
+      <translation type="unfinished">Gmsh</translation>
     </message>
     <message>
       <source>Path</source>
-      <translation>Траектория</translation>
+      <translation type="unfinished">Path</translation>
     </message>
     <message>
       <source>Kill</source>
-      <translation>Завершить принудительно</translation>
+      <translation type="unfinished">Kill</translation>
     </message>
     <message>
       <source>Time:</source>
-      <translation>Время:</translation>
+      <translation type="unfinished">Time:</translation>
     </message>
     <message>
       <source>Clear</source>
-      <translation>Очистить</translation>
+      <translation type="unfinished">Clear</translation>
+    </message>
+    <message>
+      <source>Remesh by Gmsh</source>
+      <translation type="unfinished">Remesh by Gmsh</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::RemoveComponents</name>
     <message>
       <source>Remove components</source>
-      <translation>Удалить компоненты</translation>
+      <translation type="unfinished">Remove components</translation>
     </message>
     <message>
       <source>Select</source>
-      <translation>Выбрать</translation>
+      <translation type="unfinished">Select</translation>
     </message>
     <message>
       <source>Select whole component</source>
-      <translation>Выбрать весь компонент</translation>
+      <translation type="unfinished">Select whole component</translation>
     </message>
     <message>
       <source>Pick triangle</source>
-      <translation>Выбрать треугольник</translation>
+      <translation type="unfinished">Pick triangle</translation>
     </message>
     <message>
       <source>&lt; faces than</source>
-      <translation>&lt; граней</translation>
+      <translation type="unfinished">&lt; faces than</translation>
     </message>
     <message>
       <source>Region</source>
-      <translation>Область</translation>
+      <translation type="unfinished">Region</translation>
     </message>
     <message>
       <source>Components</source>
-      <translation>Компоненты</translation>
+      <translation type="unfinished">Components</translation>
     </message>
     <message>
       <source>All</source>
-      <translation>Все</translation>
+      <translation type="unfinished">All</translation>
     </message>
     <message>
       <source>Deselect</source>
-      <translation>Снять выделение</translation>
+      <translation type="unfinished">Deselect</translation>
     </message>
     <message>
       <source>Deselect whole component</source>
-      <translation>Снять выделение со всего компонента</translation>
+      <translation type="unfinished">Deselect whole component</translation>
     </message>
     <message>
       <source>&gt; faces than</source>
-      <translation>&gt; граней</translation>
+      <translation type="unfinished">&gt; faces than</translation>
     </message>
     <message>
       <source>Region options</source>
-      <translation>Параметры области</translation>
+      <translation type="unfinished">Region options</translation>
     </message>
     <message>
       <source>Respect only visible triangles</source>
-      <translation>Предпочитать только видимые треугольники</translation>
+      <translation type="unfinished">Respect only visible triangles</translation>
     </message>
     <message>
       <source>Respect only triangles with normals facing screen</source>
-      <translation>Предпочитать только треугольники повернутые нормалями к экрану</translation>
+      <translation type="unfinished">Respect only triangles with normals facing screen</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::Segmentation</name>
     <message>
       <source>Mesh segmentation</source>
-      <translation>Сегментация полигональной сетки</translation>
+      <translation type="unfinished">Mesh segmentation</translation>
     </message>
     <message>
       <source>Smooth mesh</source>
-      <translation>Сгладить полигональную сетку</translation>
+      <translation type="unfinished">Smooth mesh</translation>
     </message>
     <message>
       <source>Plane</source>
-      <translation>Плоскость</translation>
+      <translation type="unfinished">Plane</translation>
     </message>
     <message>
       <source>Tolerance</source>
-      <translation>Точность</translation>
+      <translation type="unfinished">Tolerance</translation>
     </message>
     <message>
       <source>Minimum number of faces</source>
-      <translation>Минимальное количество граней</translation>
+      <translation type="unfinished">Minimum number of faces</translation>
     </message>
     <message>
       <source>Cylinder</source>
-      <translation>Цилиндр</translation>
+      <translation type="unfinished">Cylinder</translation>
     </message>
     <message>
       <source>Curvature</source>
-      <translation>Кривизна</translation>
+      <translation type="unfinished">Curvature</translation>
     </message>
     <message>
       <source>Tolerance (Flat)</source>
-      <translation>Допуск (плоскости)</translation>
+      <translation type="unfinished">Tolerance (Flat)</translation>
     </message>
     <message>
       <source>Tolerance (Curved)</source>
-      <translation>Допуск (кривой)</translation>
+      <translation type="unfinished">Tolerance (Curved)</translation>
     </message>
     <message>
       <source>Sphere</source>
-      <translation>Сфера</translation>
+      <translation type="unfinished">Sphere</translation>
     </message>
     <message>
       <source>Freeform</source>
-      <translation>Произвольной формы</translation>
+      <translation type="unfinished">Freeform</translation>
     </message>
     <message>
       <source>Max. Curvature</source>
-      <translation>Макс. Кривизна</translation>
+      <translation type="unfinished">Max. Curvature</translation>
     </message>
     <message>
       <source>Min. Curvature</source>
-      <translation>Мин. Кривизна</translation>
+      <translation type="unfinished">Min. Curvature</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::SegmentationBestFit</name>
     <message>
       <source>Mesh segmentation</source>
-      <translation>Сегментация полигональной сетки</translation>
+      <translation type="unfinished">Mesh segmentation</translation>
     </message>
     <message>
       <source>Sphere</source>
-      <translation>Сфера</translation>
+      <translation type="unfinished">Sphere</translation>
     </message>
     <message>
       <source>Tolerance</source>
-      <translation>Точность</translation>
+      <translation type="unfinished">Tolerance</translation>
     </message>
     <message>
       <source>Minimum number of faces</source>
-      <translation>Минимальное количество граней</translation>
+      <translation type="unfinished">Minimum number of faces</translation>
     </message>
     <message>
       <source>Parameters...</source>
-      <translation>Параметры...</translation>
+      <translation type="unfinished">Parameters...</translation>
     </message>
     <message>
       <source>Plane</source>
-      <translation>Плоскость</translation>
+      <translation type="unfinished">Plane</translation>
     </message>
     <message>
       <source>Cylinder</source>
-      <translation>Цилиндр</translation>
+      <translation type="unfinished">Cylinder</translation>
     </message>
     <message>
       <source>Base</source>
-      <translation>Основание</translation>
+      <translation type="unfinished">Base</translation>
     </message>
     <message>
       <source>Normal</source>
-      <translation>Обычные</translation>
+      <translation type="unfinished">Normal</translation>
     </message>
     <message>
       <source>Axis</source>
-      <translation>Ось</translation>
+      <translation type="unfinished">Axis</translation>
     </message>
     <message>
       <source>Radius</source>
-      <translation>Радиус</translation>
+      <translation type="unfinished">Radius</translation>
     </message>
     <message>
       <source>Center</source>
-      <translation>Центр</translation>
+      <translation type="unfinished">Center</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::Selection</name>
     <message>
       <source>Selection</source>
-      <translation>Выделение</translation>
+      <translation type="unfinished">Selection</translation>
     </message>
     <message>
       <source>Add</source>
-      <translation>Добавить</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <source>Clear</source>
-      <translation>Очистить</translation>
+      <translation type="unfinished">Clear</translation>
     </message>
     <message>
       <source>Respect only visible triangles</source>
-      <translation>Предпочитать только видимые треугольники</translation>
+      <translation type="unfinished">Respect only visible triangles</translation>
     </message>
     <message>
       <source>Respect only triangles with normals facing screen</source>
-      <translation>Предпочитать только треугольники повернутые нормалями к экрану</translation>
+      <translation type="unfinished">Respect only triangles with normals facing screen</translation>
     </message>
     <message>
       <source>Use a brush tool to select the area</source>
-      <translation>Использовать инструмент «кисть» для выбора области</translation>
+      <translation type="unfinished">Use a brush tool to select the area</translation>
     </message>
     <message>
       <source>Clears completely the selected area</source>
-      <translation>Полностью очистить выделенную область</translation>
+      <translation type="unfinished">Clears completely the selected area</translation>
     </message>
   </context>
   <context>
     <name>MeshGui::TaskRemoveComponents</name>
     <message>
       <source>Delete</source>
-      <translation>Удалить</translation>
+      <translation type="unfinished">Delete</translation>
     </message>
     <message>
       <source>Invert</source>
-      <translation>Инвертировать</translation>
+      <translation type="unfinished">Invert</translation>
     </message>
   </context>
   <context>
     <name>Mesh_BoundingBox</name>
     <message>
       <source>Boundings of %1:</source>
-      <translation>Привязка %1:</translation>
+      <translation type="unfinished">Boundings of %1:</translation>
     </message>
   </context>
   <context>
     <name>Mesh_Union</name>
     <message>
       <source>OpenSCAD</source>
-      <translation>OpenSCAD</translation>
+      <translation type="unfinished">OpenSCAD</translation>
     </message>
     <message>
       <source>Unknown error occurred while running OpenSCAD.</source>
-      <translation>Произошла неизвестная ошибка при выполнении OpenSCAD.</translation>
+      <translation type="unfinished">Unknown error occurred while running OpenSCAD.</translation>
     </message>
     <message>
       <source>OpenSCAD cannot be found on your system.
 Please visit http://www.openscad.org/index.html to install it.</source>
-      <translation>Приложение OpenSCAD не обнаружено в системе.
-Скачайте его на сайте http://www.openscad.org и установите.</translation>
+      <translation type="unfinished">OpenSCAD cannot be found on your system.
+Please visit http://www.openscad.org/index.html to install it.</translation>
     </message>
   </context>
   <context>
     <name>QDockWidget</name>
     <message>
       <source>Evaluate &amp; Repair Mesh</source>
-      <translation>Оценить и восстановить полигональную сетку</translation>
+      <translation type="unfinished">Evaluate &amp; Repair Mesh</translation>
     </message>
   </context>
   <context>
     <name>QObject</name>
     <message>
       <source>Import-Export</source>
-      <translation>Импорт/экспорт</translation>
+      <translation type="unfinished">Import-Export</translation>
     </message>
     <message>
       <source>All Mesh Files</source>
-      <translation>Все файлы полигональных сеток</translation>
+      <translation type="unfinished">All Mesh Files</translation>
     </message>
     <message>
       <source>Binary STL</source>
-      <translation>Двоичный STL</translation>
+      <translation type="unfinished">Binary STL</translation>
     </message>
     <message>
       <source>ASCII STL</source>
-      <translation>ASCII STL</translation>
+      <translation type="unfinished">ASCII STL</translation>
     </message>
     <message>
       <source>Binary Mesh</source>
-      <translation>Двоичная полигональная сетка</translation>
+      <translation type="unfinished">Binary Mesh</translation>
     </message>
     <message>
       <source>Alias Mesh</source>
-      <translation>Псевдоним сетки</translation>
+      <translation type="unfinished">Alias Mesh</translation>
     </message>
     <message>
       <source>Object File Format</source>
-      <translation>Формат файла Object</translation>
+      <translation type="unfinished">Object File Format</translation>
     </message>
     <message>
       <source>Inventor V2.1 ASCII</source>
-      <translation>Inventor V2.1 ASCII</translation>
+      <translation type="unfinished">Inventor V2.1 ASCII</translation>
     </message>
     <message>
       <source>Stanford Polygon</source>
-      <translation>Stanford Polygon</translation>
+      <translation type="unfinished">Stanford Polygon</translation>
     </message>
     <message>
       <source>NASTRAN</source>
-      <translation>NASTRAN</translation>
+      <translation type="unfinished">NASTRAN</translation>
     </message>
     <message>
       <source>All Files</source>
-      <translation>Все файлы</translation>
+      <translation type="unfinished">All Files</translation>
     </message>
     <message>
       <source>Import mesh</source>
-      <translation>Импортировать полигональную сетку</translation>
+      <translation type="unfinished">Import mesh</translation>
     </message>
     <message>
       <source>Simple Model Format</source>
-      <translation>Простой формат модели</translation>
+      <translation type="unfinished">Simple Model Format</translation>
     </message>
     <message>
       <source>Inventor V2.1 ascii</source>
-      <translation>Inventor V2.1 ascii</translation>
+      <translation type="unfinished">Inventor V2.1 ascii</translation>
     </message>
     <message>
       <source>X3D Extensible 3D</source>
-      <translation>X3D Extensible 3D (*. x3d</translation>
+      <translation type="unfinished">X3D Extensible 3D</translation>
     </message>
     <message>
       <source>Compressed X3D</source>
-      <translation>Сжатый X3D</translation>
+      <translation type="unfinished">Compressed X3D</translation>
     </message>
     <message>
       <source>WebGL/X3D</source>
-      <translation>WebGL/X3D</translation>
+      <translation type="unfinished">WebGL/X3D</translation>
     </message>
     <message>
       <source>VRML V2.0</source>
-      <translation>VRML V2.0</translation>
+      <translation type="unfinished">VRML V2.0</translation>
     </message>
     <message>
       <source>Compressed VRML 2.0</source>
-      <translation>Сжатый VRML 2.0</translation>
+      <translation type="unfinished">Compressed VRML 2.0</translation>
     </message>
     <message>
       <source>Nastran</source>
-      <translation>Nastran</translation>
+      <translation type="unfinished">Nastran</translation>
     </message>
     <message>
       <source>Python module def</source>
-      <translation>Python модуль</translation>
+      <translation type="unfinished">Python module def</translation>
     </message>
     <message>
       <source>Asymptote Format</source>
-      <translation>Формат Асимптоты</translation>
+      <translation type="unfinished">Asymptote Format</translation>
     </message>
     <message>
       <source>Export mesh</source>
-      <translation>Экспортировать полигональную сетку</translation>
+      <translation type="unfinished">Export mesh</translation>
     </message>
     <message>
       <source>Meshing Tolerance</source>
-      <translation>Возможное отклонение полигональной сетки</translation>
+      <translation type="unfinished">Meshing Tolerance</translation>
     </message>
     <message>
       <source>Enter tolerance for meshing geometry:</source>
-      <translation>Введите возможное отклонение создаваемой полигональной сетки для геометрии:</translation>
+      <translation type="unfinished">Enter tolerance for meshing geometry:</translation>
     </message>
     <message>
-      <source>The mesh '%1' is not a solid.</source>
-      <translation>Полигональная сетка '%1' не является твердым телом.</translation>
+      <source>The mesh &apos;%1&apos; is not a solid.</source>
+      <translation type="unfinished">The mesh &apos;%1&apos; is not a solid.</translation>
     </message>
     <message>
-      <source>The mesh '%1' is a solid.</source>
-      <translation>Полигональная сетка '%1' является твердым телом.</translation>
+      <source>The mesh &apos;%1&apos; is a solid.</source>
+      <translation type="unfinished">The mesh &apos;%1&apos; is a solid.</translation>
     </message>
     <message>
       <source>Solid Mesh</source>
-      <translation>Полигональная сетка объемного тела</translation>
+      <translation type="unfinished">Solid Mesh</translation>
     </message>
     <message>
       <source>Boundings</source>
-      <translation>Ограничения</translation>
+      <translation type="unfinished">Boundings</translation>
     </message>
     <message>
       <source>Fill holes</source>
-      <translation>Заполнить отверстия</translation>
+      <translation type="unfinished">Fill holes</translation>
     </message>
     <message>
       <source>Fill holes with maximum number of edges:</source>
-      <translation>Заполнить отверстия максимальным числом ребер:</translation>
+      <translation type="unfinished">Fill holes with maximum number of edges:</translation>
     </message>
     <message>
       <source>Scaling</source>
-      <translation>Масштабирование</translation>
+      <translation type="unfinished">Scaling</translation>
     </message>
     <message>
       <source>Enter scaling factor:</source>
-      <translation>Введите коэффициент масштабирования:</translation>
+      <translation type="unfinished">Enter scaling factor:</translation>
     </message>
     <message>
       <source>[Points: %1, Edges: %2, Faces: %3]</source>
-      <translation>[Точек: %1, рёбер: %2, граней: %3]</translation>
+      <translation type="unfinished">[Points: %1, Edges: %2, Faces: %3]</translation>
     </message>
     <message>
       <source>Display components</source>
-      <translation>Показать компоненты</translation>
+      <translation type="unfinished">Display components</translation>
     </message>
     <message>
       <source>Display segments</source>
-      <translation>Отобразить сегменты</translation>
+      <translation type="unfinished">Display segments</translation>
     </message>
     <message>
       <source>Leave info mode</source>
-      <translation>Выйти из информационного режима</translation>
+      <translation type="unfinished">Leave info mode</translation>
     </message>
     <message>
       <source>Index: %1</source>
-      <translation>Индекс: %1</translation>
+      <translation type="unfinished">Index: %1</translation>
     </message>
     <message>
       <source>Leave hole-filling mode</source>
-      <translation>Выйти из режима заполнения отверстий</translation>
+      <translation type="unfinished">Leave hole-filling mode</translation>
     </message>
     <message>
       <source>Leave removal mode</source>
-      <translation>Выйти из режима удаления</translation>
+      <translation type="unfinished">Leave removal mode</translation>
     </message>
     <message>
       <source>Delete selected faces</source>
-      <translation>Удалить выбранные грани</translation>
+      <translation type="unfinished">Delete selected faces</translation>
     </message>
     <message>
       <source>Clear selected faces</source>
-      <translation>Снять выделение выбранных граней</translation>
+      <translation type="unfinished">Clear selected faces</translation>
     </message>
     <message>
       <source>Annotation</source>
-      <translation>Заметка</translation>
+      <translation type="unfinished">Annotation</translation>
+    </message>
+    <message>
+      <source>3D Manufacturing Format</source>
+      <translation type="unfinished">3D Manufacturing Format</translation>
     </message>
   </context>
   <context>
     <name>Workbench</name>
     <message>
       <source>Analyze</source>
-      <translation>Анализ</translation>
+      <translation type="unfinished">Analyze</translation>
     </message>
     <message>
       <source>Boolean</source>
-      <translation>Булевы операции</translation>
+      <translation type="unfinished">Boolean</translation>
     </message>
     <message>
       <source>&amp;Meshes</source>
-      <translation>&amp;Полигональные Сетки</translation>
+      <translation type="unfinished">&amp;Meshes</translation>
     </message>
     <message>
       <source>Mesh tools</source>
-      <translation>Инструменты полигональной сетки</translation>
+      <translation type="unfinished">Mesh tools</translation>
+    </message>
+    <message>
+      <source>Cutting</source>
+      <translation type="unfinished">Cutting</translation>
     </message>
   </context>
 </TS>

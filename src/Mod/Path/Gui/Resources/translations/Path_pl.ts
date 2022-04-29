@@ -1798,7 +1798,7 @@ Przerwanie procesu tworzenia</translation>
     <message>
       <location filename="../panels/DressUpLeadInOutEdit.ui" line="44"/>
       <source>Dressup</source>
-      <translation type="unfinished">Dressup</translation>
+      <translation>Ulepszenie</translation>
     </message>
     <message>
       <location filename="../panels/DressUpLeadInOutEdit.ui" line="82"/>
@@ -3847,7 +3847,7 @@ Przerwanie procesu tworzenia</translation>
     <message>
       <location filename="../panels/DlgJobTemplateExport.ui" line="236"/>
       <source>Export</source>
-      <translation type="unfinished">Export</translation>
+      <translation>Eksportuj</translation>
     </message>
     <message>
       <location filename="../panels/DlgSelectPostProcessor.ui" line="14"/>
@@ -4271,7 +4271,7 @@ Przerwanie procesu tworzenia</translation>
     <message>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="43"/>
       <source>Import</source>
-      <translation type="unfinished">Import</translation>
+      <translation>Importuj</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="59"/>
@@ -4691,7 +4691,7 @@ Przerwanie procesu tworzenia</translation>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="255"/>
       <source>Stop</source>
-      <translation type="unfinished">Stop</translation>
+      <translation>Zatrzymaj</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="131"/>

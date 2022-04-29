@@ -1817,7 +1817,7 @@ click again to end selection</source>
       <location filename="../../TaskExtrudeParameters.cpp" line="156"/>
       <location filename="../../TaskExtrudeParameters.cpp" line="737"/>
       <source>Face</source>
-      <translation type="unfinished">Face</translation>
+      <translation>Грань</translation>
     </message>
     <message>
       <location filename="../../TaskExtrudeParameters.cpp" line="360"/>
@@ -1832,7 +1832,7 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskExtrudeParameters.cpp" line="365"/>
       <source>Select reference...</source>
-      <translation type="unfinished">Select reference...</translation>
+      <translation>Виберіть посилання...</translation>
     </message>
     <message>
       <location filename="../../TaskExtrudeParameters.cpp" line="369"/>
@@ -2052,7 +2052,7 @@ click again to end selection</source>
       <location filename="../../TaskHelixParameters.ui" line="73"/>
       <location filename="../../TaskHelixParameters.cpp" line="213"/>
       <source>Normal sketch axis</source>
-      <translation type="unfinished">Normal sketch axis</translation>
+      <translation>Нормаль до осі ескізу</translation>
     </message>
     <message>
       <location filename="../../TaskHelixParameters.ui" line="78"/>
@@ -2138,7 +2138,7 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskHelixParameters.cpp" line="217"/>
       <source>Construction line %1</source>
-      <translation type="unfinished">Construction line %1</translation>
+      <translation>Допоміжна лінія %1</translation>
     </message>
     <message>
       <location filename="../../TaskHelixParameters.cpp" line="333"/>
@@ -2239,7 +2239,7 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskLinearPatternParameters.ui" line="68"/>
       <source>Reverse direction</source>
-      <translation type="unfinished">Reverse direction</translation>
+      <translation>Зворотний напрямок</translation>
     </message>
     <message>
       <location filename="../../TaskLinearPatternParameters.ui" line="77"/>
@@ -2509,22 +2509,22 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="14"/>
       <source>Form</source>
-      <translation type="unfinished">Form</translation>
+      <translation>Форма</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="22"/>
       <source>Type</source>
-      <translation type="unfinished">Type</translation>
+      <translation>Тип</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="30"/>
       <source>Dimension</source>
-      <translation type="unfinished">Dimension</translation>
+      <translation>Розмір</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="38"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Довжина</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="58"/>
@@ -2534,7 +2534,7 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="77"/>
       <source>Direction</source>
-      <translation type="unfinished">Direction</translation>
+      <translation>Напрямок</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="85"/>
@@ -2556,7 +2556,7 @@ from the model as reference</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="102"/>
       <source>Select reference...</source>
-      <translation type="unfinished">Select reference...</translation>
+      <translation>Виберіть посилання...</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="107"/>
@@ -2583,7 +2583,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="147"/>
       <source>x-component of direction vector</source>
-      <translation type="unfinished">x-component of direction vector</translation>
+      <translation>х-компонент вектора напрямку</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="169"/>
@@ -2593,7 +2593,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="176"/>
       <source>y-component of direction vector</source>
-      <translation type="unfinished">y-component of direction vector</translation>
+      <translation>y-компонент вектора напрямку</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="198"/>
@@ -2603,7 +2603,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="205"/>
       <source>z-component of direction vector</source>
-      <translation type="unfinished">z-component of direction vector</translation>
+      <translation>z-компонент вектора напрямку</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="236"/>
@@ -2625,12 +2625,12 @@ measured along the specified direction</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="256"/>
       <source>Symmetric to plane</source>
-      <translation type="unfinished">Symmetric to plane</translation>
+      <translation>Симетрично до площини</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="263"/>
       <source>Reversed</source>
-      <translation type="unfinished">Reversed</translation>
+      <translation>Зворотній</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="272"/>
@@ -2656,12 +2656,12 @@ measured along the specified direction</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="341"/>
       <source>Face</source>
-      <translation type="unfinished">Face</translation>
+      <translation>Грань</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="360"/>
       <source>Update view</source>
-      <translation type="unfinished">Update view</translation>
+      <translation>Оновити вигляд</translation>
     </message>
   </context>
   <context>
@@ -2867,7 +2867,7 @@ measured along the specified direction</translation>
     <message>
       <location filename="../../TaskPipeScaling.ui" line="102"/>
       <source>List can be reordered by dragging</source>
-      <translation type="unfinished">List can be reordered by dragging</translation>
+      <translation>Список можна змінити шляхом перетягування</translation>
     </message>
     <message>
       <location filename="../../TaskPipeParameters.cpp" line="809"/>
@@ -2953,7 +2953,7 @@ measured along the specified direction</translation>
     <message>
       <location filename="../../TaskPolarPatternParameters.ui" line="68"/>
       <source>Reverse direction</source>
-      <translation type="unfinished">Reverse direction</translation>
+      <translation>Зворотний напрямок</translation>
     </message>
     <message>
       <location filename="../../TaskPolarPatternParameters.ui" line="77"/>
@@ -4700,7 +4700,7 @@ over 90: larger hole radius at the bottom</source>
     <message>
       <location filename="../../Workbench.cpp" line="59"/>
       <source>Refresh</source>
-      <translation type="unfinished">Refresh</translation>
+      <translation>Оновити</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="60"/>

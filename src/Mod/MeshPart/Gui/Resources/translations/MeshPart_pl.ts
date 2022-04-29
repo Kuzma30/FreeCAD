@@ -285,7 +285,7 @@ This command only works with a &apos;mesh&apos; object, not a regular face or su
     <message>
       <location filename="../../TaskCurveOnMesh.ui" line="153"/>
       <source>Start</source>
-      <translation type="unfinished">Start</translation>
+      <translation>Uruchom</translation>
     </message>
   </context>
   <context>

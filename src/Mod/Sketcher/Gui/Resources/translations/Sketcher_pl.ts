@@ -2185,7 +2185,7 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
     <message>
       <location filename="../../Workbench.cpp" line="37"/>
       <source>Sketcher</source>
-      <translation type="unfinished">Sketcher</translation>
+      <translation>Szkicownik</translation>
     </message>
   </context>
   <context>
@@ -2779,7 +2779,7 @@ nieprawidłowych wiązań, zdegenerowanej geometrii itp.</translation>
       <location filename="../../CommandConstraints.cpp" line="6173"/>
       <location filename="../../CommandConstraints.cpp" line="6863"/>
       <source>Select an edge that is not a B-spline weight.</source>
-      <translation type="unfinished">Select an edge that is not a B-spline weight.</translation>
+      <translation>Wybierz krawędź, która nie jest wagą krzywej złożonej.</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="2583"/>
@@ -2872,7 +2872,7 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywej; dwa punkty końco
       <location filename="../../CommandConstraints.cpp" line="3409"/>
       <source>Wrong number of selected objects!</source>
       <comment>perpendicular constraint.</comment>
-      <translation type="unfinished">Wrong number of selected objects!</translation>
+      <translation>Niewłaściwa liczba wybranych obiektów!</translation>
     </message>
     <message>
       <location filename="../../CommandConstraints.cpp" line="3486"/>
@@ -3231,7 +3231,7 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../CommandSketcherBSpline.cpp" line="1202"/>
       <source>Selection is empty</source>
-      <translation type="unfinished">Selection is empty</translation>
+      <translation>Obszar zaznaczenia nie zawiera obiektów</translation>
     </message>
     <message>
       <location filename="../../CommandSketcherBSpline.cpp" line="1203"/>
@@ -3386,7 +3386,7 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="52"/>
       <source>All</source>
-      <translation type="unfinished">All</translation>
+      <translation>Wszystkie</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="57"/>
@@ -3406,7 +3406,7 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="72"/>
       <source>Reference</source>
-      <translation type="unfinished">Reference</translation>
+      <translation>Odniesienie</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="77"/>
@@ -3421,27 +3421,27 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="87"/>
       <source>Vertical</source>
-      <translation type="unfinished">Vertical</translation>
+      <translation>Pionowo</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="92"/>
       <source>Horizontal</source>
-      <translation type="unfinished">Horizontal</translation>
+      <translation>Poziomo</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="97"/>
       <source>Parallel</source>
-      <translation type="unfinished">Parallel</translation>
+      <translation>Równolegle</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="102"/>
       <source>Perpendicular</source>
-      <translation type="unfinished">Perpendicular</translation>
+      <translation>Prostopadle</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="107"/>
       <source>Tangent</source>
-      <translation type="unfinished">Tangent</translation>
+      <translation>Stycznie</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="112"/>
@@ -3451,7 +3451,7 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="117"/>
       <source>Symmetric</source>
-      <translation type="unfinished">Symmetric</translation>
+      <translation>Symetrycznie</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="122"/>
@@ -3471,27 +3471,27 @@ Akceptowane kombinacje: dwie krzywe; punkt końcowy i krzywa; dwa punkty końcow
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="137"/>
       <source>Distance</source>
-      <translation type="unfinished">Distance</translation>
+      <translation>Odległość</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="142"/>
       <source>Radius</source>
-      <translation type="unfinished">Radius</translation>
+      <translation>Promień</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="147"/>
       <source>Weight</source>
-      <translation type="unfinished">Weight</translation>
+      <translation>Grubość</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="152"/>
       <source>Diameter</source>
-      <translation type="unfinished">Diameter</translation>
+      <translation>Średnica</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="157"/>
       <source>Angle</source>
-      <translation type="unfinished">Angle</translation>
+      <translation>Kąt</translation>
     </message>
     <message>
       <location filename="../../ConstraintMultiFilterDialog.ui" line="162"/>
@@ -4616,17 +4616,17 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="26"/>
       <source>Form</source>
-      <translation type="unfinished">Form</translation>
+      <translation>Kreskowanie</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="40"/>
       <source>Filter:</source>
-      <translation type="unfinished">Filter:</translation>
+      <translation>Filtr:</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="57"/>
       <source>All</source>
-      <translation type="unfinished">All</translation>
+      <translation>Wszystkie</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="62"/>
@@ -4646,7 +4646,7 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="77"/>
       <source>Reference</source>
-      <translation type="unfinished">Reference</translation>
+      <translation>Odniesienie</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="82"/>
@@ -4661,27 +4661,27 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="92"/>
       <source>Vertical</source>
-      <translation type="unfinished">Vertical</translation>
+      <translation>Pionowo</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="97"/>
       <source>Horizontal</source>
-      <translation type="unfinished">Horizontal</translation>
+      <translation>Poziomo</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="102"/>
       <source>Parallel</source>
-      <translation type="unfinished">Parallel</translation>
+      <translation>Równolegle</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="107"/>
       <source>Perpendicular</source>
-      <translation type="unfinished">Perpendicular</translation>
+      <translation>Prostopadle</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="112"/>
       <source>Tangent</source>
-      <translation type="unfinished">Tangent</translation>
+      <translation>Stycznie</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="117"/>
@@ -4691,7 +4691,7 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="122"/>
       <source>Symmetric</source>
-      <translation type="unfinished">Symmetric</translation>
+      <translation>Symetrycznie</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="127"/>
@@ -4711,27 +4711,27 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="142"/>
       <source>Distance</source>
-      <translation type="unfinished">Distance</translation>
+      <translation>Odległość</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="147"/>
       <source>Radius</source>
-      <translation type="unfinished">Radius</translation>
+      <translation>Promień</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="152"/>
       <source>Weight</source>
-      <translation type="unfinished">Weight</translation>
+      <translation>Grubość</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="157"/>
       <source>Diameter</source>
-      <translation type="unfinished">Diameter</translation>
+      <translation>Średnica</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="162"/>
       <source>Angle</source>
-      <translation type="unfinished">Angle</translation>
+      <translation>Kąt</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="167"/>
@@ -4771,7 +4771,7 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="223"/>
       <source>Settings</source>
-      <translation type="unfinished">Settings</translation>
+      <translation>Ustawienia</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.ui" line="247"/>
@@ -4806,7 +4806,7 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
     <message>
       <location filename="../../TaskSketcherConstraints.cpp" line="640"/>
       <source>Constraints</source>
-      <translation type="unfinished">Constraints</translation>
+      <translation>Wiązania</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherConstraints.cpp" line="920"/>
@@ -4814,7 +4814,7 @@ Nie znaleziono jednak żadnych wiązań z punktami końcowymi.</translation>
       <location filename="../../TaskSketcherConstraints.cpp" line="1233"/>
       <location filename="../../TaskSketcherConstraints.cpp" line="1289"/>
       <source>Error</source>
-      <translation type="unfinished">Error</translation>
+      <translation>Błąd</translation>
     </message>
   </context>
   <context>
@@ -5829,7 +5829,7 @@ Chcesz odłączyć go od odniesienia?</translation>
     <message>
       <location filename="../../TaskSketcherMessages.ui" line="29"/>
       <source>Link</source>
-      <translation type="unfinished">Link</translation>
+      <translation>Odnośnik</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherMessages.ui" line="51"/>

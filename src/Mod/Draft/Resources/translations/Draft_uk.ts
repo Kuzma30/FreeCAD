@@ -7707,7 +7707,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="51"/>
       <source>Automatic</source>
-      <translation type="unfinished">Automatic</translation>
+      <translation>Автоматичний</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="56"/>

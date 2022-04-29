@@ -1815,7 +1815,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
       <location filename="../../TaskExtrudeParameters.cpp" line="156"/>
       <location filename="../../TaskExtrudeParameters.cpp" line="737"/>
       <source>Face</source>
-      <translation type="unfinished">Face</translation>
+      <translation>Ściana</translation>
     </message>
     <message>
       <location filename="../../TaskExtrudeParameters.cpp" line="360"/>
@@ -1830,13 +1830,13 @@ kliknij ponownie, aby zakończyć wybór</translation>
     <message>
       <location filename="../../TaskExtrudeParameters.cpp" line="365"/>
       <source>Select reference...</source>
-      <translation type="unfinished">Select reference...</translation>
+      <translation>Wybierz odniesienie...</translation>
     </message>
     <message>
       <location filename="../../TaskExtrudeParameters.cpp" line="369"/>
       <location filename="../../TaskExtrudeParameters.cpp" line="371"/>
       <source>Custom direction</source>
-      <translation type="unfinished">Custom direction</translation>
+      <translation>Kierunek niestandardowy</translation>
     </message>
   </context>
   <context>
@@ -2004,7 +2004,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
     <message>
       <location filename="../../TaskHelixParameters.ui" line="22"/>
       <source>Status:</source>
-      <translation type="unfinished">Status:</translation>
+      <translation>Aktualny status:</translation>
     </message>
     <message>
       <location filename="../../TaskHelixParameters.ui" line="29"/>
@@ -2050,7 +2050,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
       <location filename="../../TaskHelixParameters.ui" line="73"/>
       <location filename="../../TaskHelixParameters.cpp" line="213"/>
       <source>Normal sketch axis</source>
-      <translation type="unfinished">Normal sketch axis</translation>
+      <translation>Oś normalna do szkicu</translation>
     </message>
     <message>
       <location filename="../../TaskHelixParameters.ui" line="78"/>
@@ -2136,7 +2136,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
     <message>
       <location filename="../../TaskHelixParameters.cpp" line="217"/>
       <source>Construction line %1</source>
-      <translation type="unfinished">Construction line %1</translation>
+      <translation>Linia konstrukcyjna %1</translation>
     </message>
     <message>
       <location filename="../../TaskHelixParameters.cpp" line="333"/>
@@ -2507,22 +2507,22 @@ kliknij ponownie, aby zakończyć wybór</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="14"/>
       <source>Form</source>
-      <translation type="unfinished">Form</translation>
+      <translation>Formularz</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="22"/>
       <source>Type</source>
-      <translation type="unfinished">Type</translation>
+      <translation>Typ</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="30"/>
       <source>Dimension</source>
-      <translation type="unfinished">Dimension</translation>
+      <translation>Wymiar</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="38"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Odstęp</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="58"/>
@@ -2532,7 +2532,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="77"/>
       <source>Direction</source>
-      <translation type="unfinished">Direction</translation>
+      <translation>Kierunek</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="85"/>
@@ -2554,12 +2554,12 @@ from the model as reference</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="102"/>
       <source>Select reference...</source>
-      <translation type="unfinished">Select reference...</translation>
+      <translation>Wybierz odniesienie...</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="107"/>
       <source>Custom direction</source>
-      <translation type="unfinished">Custom direction</translation>
+      <translation>Kierunek niestandardowy</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="117"/>
@@ -2581,7 +2581,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="147"/>
       <source>x-component of direction vector</source>
-      <translation type="unfinished">x-component of direction vector</translation>
+      <translation>składowa X wektora kierunku</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="169"/>
@@ -2591,7 +2591,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="176"/>
       <source>y-component of direction vector</source>
-      <translation type="unfinished">y-component of direction vector</translation>
+      <translation>składowa Y wektora kierunku</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="198"/>
@@ -2601,7 +2601,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="205"/>
       <source>z-component of direction vector</source>
-      <translation type="unfinished">z-component of direction vector</translation>
+      <translation>składowa Z wektora kierunku</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="236"/>
@@ -2623,12 +2623,12 @@ measured along the specified direction</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="256"/>
       <source>Symmetric to plane</source>
-      <translation type="unfinished">Symmetric to plane</translation>
+      <translation>Symetrycznie do płaszczyzny</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="263"/>
       <source>Reversed</source>
-      <translation type="unfinished">Reversed</translation>
+      <translation>Odwrócony</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="272"/>
@@ -2654,12 +2654,12 @@ measured along the specified direction</translation>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="341"/>
       <source>Face</source>
-      <translation type="unfinished">Face</translation>
+      <translation>Ściana</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="360"/>
       <source>Update view</source>
-      <translation type="unfinished">Update view</translation>
+      <translation>Aktualizuj widok</translation>
     </message>
   </context>
   <context>
@@ -2865,7 +2865,7 @@ measured along the specified direction</translation>
     <message>
       <location filename="../../TaskPipeScaling.ui" line="102"/>
       <source>List can be reordered by dragging</source>
-      <translation type="unfinished">List can be reordered by dragging</translation>
+      <translation>Lista może zostać uporządkowana poprzez przeciąganie</translation>
     </message>
     <message>
       <location filename="../../TaskPipeParameters.cpp" line="809"/>
@@ -4698,12 +4698,12 @@ powyżej 90°: większy promień otworu u dołu</translation>
     <message>
       <location filename="../../Workbench.cpp" line="59"/>
       <source>Refresh</source>
-      <translation type="unfinished">Refresh</translation>
+      <translation>Odśwież</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="60"/>
       <source>Toggle 3D</source>
-      <translation type="unfinished">Toggle 3D</translation>
+      <translation>Przełącz widok 3D</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="61"/>

@@ -554,7 +554,7 @@ The expression must evaluates to a string of some cell address.</translation>
     <message>
       <location filename="../../DlgBindSheet.ui" line="98"/>
       <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+      <translation>Anuluj</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="105"/>
@@ -619,7 +619,7 @@ by that property.
     <message>
       <location filename="../../DlgSheetConf.ui" line="57"/>
       <source>Property:</source>
-      <translation type="unfinished">Property:</translation>
+      <translation>Własność:</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="64"/>
@@ -631,7 +631,7 @@ switch the design configuration. The property will be created if not exist.</tra
     <message>
       <location filename="../../DlgSheetConf.ui" line="72"/>
       <source>Group:</source>
-      <translation type="unfinished">Group:</translation>
+      <translation>Grupa:</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="79"/>
@@ -646,7 +646,7 @@ switch the design configuration. The property will be created if not exist.</tra
     <message>
       <location filename="../../DlgSheetConf.ui" line="95"/>
       <source>Cancel</source>
-      <translation type="unfinished">Cancel</translation>
+      <translation>Anuluj</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="102"/>
@@ -1164,7 +1164,7 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="198"/>
       <source>Merge cells</source>
-      <translation type="unfinished">Merge cells</translation>
+      <translation>Scal komórki</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="200"/>
@@ -1174,22 +1174,22 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="204"/>
       <source>Cut</source>
-      <translation type="unfinished">Cut</translation>
+      <translation>Wytnij</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="206"/>
       <source>Copy</source>
-      <translation type="unfinished">Copy</translation>
+      <translation>Kopiuj</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="208"/>
       <source>Paste</source>
-      <translation type="unfinished">Paste</translation>
+      <translation>Wklej</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="210"/>
       <source>Delete</source>
-      <translation type="unfinished">Delete</translation>
+      <translation>Usuń</translation>
     </message>
   </context>
   <context>
@@ -1197,12 +1197,12 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
     <message>
       <location filename="../../SpreadsheetView.cpp" line="262"/>
       <source>Export PDF</source>
-      <translation type="unfinished">Export PDF</translation>
+      <translation>Eksport PDF</translation>
     </message>
     <message>
       <location filename="../../SpreadsheetView.cpp" line="263"/>
       <source>PDF file</source>
-      <translation type="unfinished">PDF file</translation>
+      <translation>Plik PDF</translation>
     </message>
   </context>
   <context>
@@ -1215,12 +1215,12 @@ Arkusz.mój_alias zamiast Arkusz.B1</translation>
     <message>
       <location filename="../../Workbench.cpp" line="50"/>
       <source>&amp;Spreadsheet</source>
-      <translation type="unfinished">&amp;Spreadsheet</translation>
+      <translation>&amp;Arkusz kalkulacyjny</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="51"/>
       <source>&amp;Alignment</source>
-      <translation type="unfinished">&amp;Alignment</translation>
+      <translation>&amp;Wyrównanie</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="52"/>

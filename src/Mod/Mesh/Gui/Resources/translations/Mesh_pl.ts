@@ -990,7 +990,7 @@ Najpierw uruchom polecenie do naprawy zagięć</translation>
     </message>
     <message>
       <source>Alt+C</source>
-      <translation type="unfinished">Alt+C</translation>
+      <translation>Alt + C</translation>
     </message>
     <message>
       <source>Cl&amp;ose</source>
@@ -1867,7 +1867,7 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
     </message>
     <message>
       <source>Cutting</source>
-      <translation type="unfinished">Cutting</translation>
+      <translation>Cięcie</translation>
     </message>
   </context>
 </TS>

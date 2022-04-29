@@ -627,7 +627,7 @@
     <message>
       <location filename="package_list.py" line="787"/>
       <source>OK</source>
-      <translation>OK</translation>
+      <translation type="unfinished">OK</translation>
     </message>
     <message>
       <location filename="install_to_toolbar.py" line="94"/>
@@ -659,7 +659,7 @@
     <message>
       <location filename="../../compact_view.ui" line="20"/>
       <source>Form</source>
-      <translation type="unfinished">Form</translation>
+      <translation>Formularz</translation>
     </message>
     <message>
       <location filename="../../compact_view.ui" line="59"/>
@@ -679,7 +679,7 @@
     <message>
       <location filename="../../compact_view.ui" line="86"/>
       <source>Description</source>
-      <translation type="unfinished">Description</translation>
+      <translation>Opis</translation>
     </message>
     <message>
       <location filename="../../compact_view.ui" line="102"/>
@@ -744,7 +744,7 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
     <message>
       <location filename="../../AddonManager.ui" line="103"/>
       <source>Refresh local cache</source>
-      <translation type="unfinished">Refresh local cache</translation>
+      <translation>Odśwież pamięć podręczną</translation>
     </message>
     <message>
       <location filename="../../AddonManager.ui" line="110"/>
@@ -822,12 +822,12 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
     <message>
       <location filename="../../expanded_view.ui" line="20"/>
       <source>Form</source>
-      <translation type="unfinished">Form</translation>
+      <translation>Formularz</translation>
     </message>
     <message>
       <location filename="../../expanded_view.ui" line="68"/>
       <source>Icon</source>
-      <translation type="unfinished">Icon</translation>
+      <translation>Ikonka</translation>
     </message>
     <message>
       <location filename="../../expanded_view.ui" line="101"/>
@@ -837,7 +837,7 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
     <message>
       <location filename="../../expanded_view.ui" line="114"/>
       <source>Version</source>
-      <translation type="unfinished">Version</translation>
+      <translation>Wersja</translation>
     </message>
     <message>
       <location filename="../../expanded_view.ui" line="121"/>
@@ -847,12 +847,12 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
     <message>
       <location filename="../../expanded_view.ui" line="149"/>
       <source>Description</source>
-      <translation type="unfinished">Description</translation>
+      <translation>Opis</translation>
     </message>
     <message>
       <location filename="../../expanded_view.ui" line="171"/>
       <source>Maintainer</source>
-      <translation type="unfinished">Maintainer</translation>
+      <translation>Opiekun</translation>
     </message>
     <message>
       <location filename="../../expanded_view.ui" line="186"/>
@@ -972,7 +972,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</tra
     <message>
       <location filename="../../AddonManagerOptions.ui" line="190"/>
       <source>No proxy</source>
-      <translation type="unfinished">No proxy</translation>
+      <translation>Bez serwera pośredniczącego</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="206"/>
@@ -1015,7 +1015,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</tra
     <message>
       <location filename="../../package_details.ui" line="14"/>
       <source>Form</source>
-      <translation type="unfinished">Form</translation>
+      <translation>Formularz</translation>
     </message>
     <message>
       <location filename="../../package_details.ui" line="29"/>
@@ -1030,22 +1030,22 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</tra
     <message>
       <location filename="../../package_details.ui" line="52"/>
       <source>Install</source>
-      <translation type="unfinished">Install</translation>
+      <translation>Zainstaluj</translation>
     </message>
     <message>
       <location filename="../../package_details.ui" line="59"/>
       <source>Uninstall</source>
-      <translation type="unfinished">Uninstall</translation>
+      <translation>Odinstaluj</translation>
     </message>
     <message>
       <location filename="../../package_details.ui" line="66"/>
       <source>Update</source>
-      <translation type="unfinished">Update</translation>
+      <translation>Aktualizuj</translation>
     </message>
     <message>
       <location filename="../../package_details.ui" line="73"/>
       <source>Run Macro</source>
-      <translation type="unfinished">Run Macro</translation>
+      <translation>Uruchom makrodefinicję</translation>
     </message>
     <message>
       <location filename="../../package_details.ui" line="80"/>
@@ -1086,7 +1086,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</tra
     <message>
       <location filename="../../change_branch.ui" line="14"/>
       <source>Change Branch</source>
-      <translation type="unfinished">Change Branch</translation>
+      <translation>Zmień gałąź</translation>
     </message>
     <message>
       <location filename="../../change_branch.ui" line="23"/>
@@ -1129,12 +1129,12 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</tra
     <message>
       <location filename="../../proxy_authentication.ui" line="67"/>
       <source>Username</source>
-      <translation type="unfinished">Username</translation>
+      <translation>Nazwa użytkownika</translation>
     </message>
     <message>
       <location filename="../../proxy_authentication.ui" line="77"/>
       <source>Password</source>
-      <translation type="unfinished">Password</translation>
+      <translation>Hasło</translation>
     </message>
   </context>
   <context>

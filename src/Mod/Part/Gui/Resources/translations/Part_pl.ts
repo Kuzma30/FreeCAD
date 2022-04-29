@@ -3661,7 +3661,7 @@ Zaznacz najpierw jedną lub więcej krawędzi.</translation>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="20"/>
       <source>Export</source>
-      <translation type="unfinished">Export</translation>
+      <translation>Eksportuj</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="26"/>
@@ -3711,7 +3711,7 @@ Zaznacz najpierw jedną lub więcej krawędzi.</translation>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="100"/>
       <source>Import</source>
-      <translation type="unfinished">Import</translation>
+      <translation>Importuj</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="106"/>
@@ -3759,7 +3759,7 @@ Zaznacz najpierw jedną lub więcej krawędzi.</translation>
     <message>
       <location filename="../../DlgImportExportStep.ui" line="20"/>
       <source>Export</source>
-      <translation type="unfinished">Export</translation>
+      <translation>Eksportuj</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportStep.ui" line="26"/>
@@ -3825,7 +3825,7 @@ wewnątrz właściwości Umiejscowienie.</translation>
     <message>
       <location filename="../../DlgImportExportStep.ui" line="161"/>
       <source>Import</source>
-      <translation type="unfinished">Import</translation>
+      <translation>Importuj</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportStep.ui" line="167"/>
@@ -5150,14 +5150,14 @@ the sketch plane&apos;s normal vector will be used</translation>
       <location filename="../../SectionCutting.ui" line="118"/>
       <location filename="../../SectionCutting.ui" line="186"/>
       <source>Offset</source>
-      <translation type="unfinished">Offset</translation>
+      <translation>Odsunięcie</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="71"/>
       <location filename="../../SectionCutting.ui" line="145"/>
       <location filename="../../SectionCutting.ui" line="213"/>
       <source>Flip</source>
-      <translation type="unfinished">Flip</translation>
+      <translation>Odwróć</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="106"/>
@@ -5182,7 +5182,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../SectionCutting.ui" line="257"/>
       <source>Color</source>
-      <translation type="unfinished">Color</translation>
+      <translation>Kolor</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="302"/>
@@ -5196,7 +5196,7 @@ Works only if all objects have the same values.</translation>
     <message>
       <location filename="../../SectionCutting.ui" line="307"/>
       <source>Auto</source>
-      <translation type="unfinished">Auto</translation>
+      <translation>Automatycznie</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="329"/>
@@ -5206,7 +5206,7 @@ Works only if all objects have the same values.</translation>
     <message>
       <location filename="../../SectionCutting.ui" line="332"/>
       <source>Transparency</source>
-      <translation type="unfinished">Transparency</translation>
+      <translation>Przezroczystość</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="342"/>
@@ -5355,7 +5355,7 @@ only created cuts will be visible</translation>
     <message>
       <location filename="../../TaskSweep.cpp" line="338"/>
       <source>Invalid selection</source>
-      <translation type="unfinished">Invalid selection</translation>
+      <translation>Nieprawidłowy wybór</translation>
     </message>
     <message>
       <location filename="../../TaskSweep.cpp" line="338"/>

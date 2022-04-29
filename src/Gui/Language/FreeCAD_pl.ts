@@ -9,15 +9,15 @@
     </message>
     <message>
       <source>A:</source>
-      <translation>A:</translation>
+      <translation type="unfinished">A:</translation>
     </message>
     <message>
       <source>B:</source>
-      <translation>B:</translation>
+      <translation type="unfinished">B:</translation>
     </message>
     <message>
       <source>C:</source>
-      <translation>C:</translation>
+      <translation type="unfinished">C:</translation>
     </message>
     <message>
       <source>Angle Snap</source>
@@ -45,15 +45,15 @@
     </message>
     <message>
       <source>45 °</source>
-      <translation>45 °</translation>
+      <translation type="unfinished">45 °</translation>
     </message>
     <message>
       <source>90 °</source>
-      <translation>90 °</translation>
+      <translation type="unfinished">90 °</translation>
     </message>
     <message>
       <source>180 °</source>
-      <translation>180 °</translation>
+      <translation type="unfinished">180 °</translation>
     </message>
   </context>
   <context>
@@ -251,7 +251,7 @@
     </message>
     <message>
       <source>Measure</source>
-      <translation type="unfinished">Measure</translation>
+      <translation>Wymiarowanie</translation>
     </message>
   </context>
   <context>
@@ -894,7 +894,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Name</source>
-      <translation type="unfinished">Name</translation>
+      <translation>Nazwa</translation>
     </message>
     <message>
       <source>Property group templates</source>
@@ -928,7 +928,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Pixmap</source>
@@ -1088,7 +1088,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Alt+S</source>
-      <translation type="unfinished">Alt+S</translation>
+      <translation>Alt + S</translation>
     </message>
     <message>
       <source/>
@@ -1652,7 +1652,7 @@ po uruchomieniu FreeCAD</translation>
     </message>
     <message>
       <source>Operating system</source>
-      <translation type="unfinished">Operating system</translation>
+      <translation>System operacyjny</translation>
     </message>
     <message>
       <source>Selected language</source>
@@ -1676,15 +1676,15 @@ po uruchomieniu FreeCAD</translation>
     </message>
     <message>
       <source>Name</source>
-      <translation type="unfinished">Name</translation>
+      <translation>Nazwa</translation>
     </message>
     <message>
       <source>Type</source>
-      <translation type="unfinished">Type</translation>
+      <translation>Typ</translation>
     </message>
     <message>
       <source>Load</source>
-      <translation type="unfinished">Load</translation>
+      <translation>Wczytaj</translation>
     </message>
     <message>
       <source>Save new...</source>
@@ -1755,11 +1755,11 @@ po uruchomieniu FreeCAD</translation>
     </message>
     <message>
       <source>Tags</source>
-      <translation type="unfinished">Tags</translation>
+      <translation>Znaczniki</translation>
     </message>
     <message>
       <source>Apply</source>
-      <translation type="unfinished">Apply</translation>
+      <translation>Zastosuj</translation>
     </message>
     <message>
       <source>Apply the %1 preference pack</source>
@@ -1848,7 +1848,7 @@ po uruchomieniu FreeCAD</translation>
     </message>
     <message>
       <source>Download</source>
-      <translation type="unfinished">Download</translation>
+      <translation>Pobierz</translation>
     </message>
   </context>
   <context>
@@ -2000,7 +2000,7 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Record</source>
@@ -2062,7 +2062,7 @@ Uwaga: Twoje zmiany zostaną zastosowane przy następnym przełączeniu środowi
     </message>
     <message>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
     <message>
       <source>Ambient color:</source>
@@ -2450,7 +2450,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Reset</source>
-      <translation>Reset</translation>
+      <translation type="unfinished">Reset</translation>
     </message>
     <message>
       <source>Clear</source>
@@ -2654,7 +2654,7 @@ z konsoli Python do panelu Widoku Raportu</translation>
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Accept changes</source>
@@ -2926,7 +2926,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
   </context>
   <context>
@@ -3020,7 +3020,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Unknown</source>
-      <translation type="unfinished">Unknown</translation>
+      <translation>Nieznany</translation>
     </message>
     <message>
       <source>Current cache size: %1</source>
@@ -3565,7 +3565,7 @@ Możesz również skorzystać z formatki: John Doe &lt;john@doe.com&gt;</transla
     </message>
     <message>
       <source>Alt+S</source>
-      <translation type="unfinished">Alt+S</translation>
+      <translation>Alt + S</translation>
     </message>
     <message>
       <source>&amp;4:3</source>
@@ -4017,11 +4017,11 @@ Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</translati
     <name>Gui::Dialog::DlgSettingsPythonConsole</name>
     <message>
       <source>Python console</source>
-      <translation type="unfinished">Python console</translation>
+      <translation>Konsola Python</translation>
     </message>
     <message>
       <source>Settings</source>
-      <translation type="unfinished">Settings</translation>
+      <translation>Ustawienia</translation>
     </message>
     <message>
       <source>Words will be wrapped when they exceed available
@@ -4047,7 +4047,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Save history</source>
-      <translation type="unfinished">Save history</translation>
+      <translation>Zapisz dziennik działań</translation>
     </message>
   </context>
   <context>
@@ -5085,11 +5085,11 @@ wstępnie wybranymi przed otwarciem tego okna</translation>
     </message>
     <message>
       <source>Selections</source>
-      <translation type="unfinished">Selections</translation>
+      <translation>Zaznaczenia</translation>
     </message>
     <message>
       <source>All</source>
-      <translation type="unfinished">All</translation>
+      <translation>Wszystkie</translation>
     </message>
   </context>
   <context>
@@ -5789,7 +5789,7 @@ Jak chcesz kontynuować?</translation>
     <name>Gui::OpenSCADNavigationStyle</name>
     <message>
       <source>Press left mouse button</source>
-      <translation type="unfinished">Press left mouse button</translation>
+      <translation>Wciśnij lewy przycisk myszki</translation>
     </message>
     <message>
       <source>Press right mouse button and move mouse</source>
@@ -5903,7 +5903,7 @@ Jak chcesz kontynuować?</translation>
     </message>
     <message>
       <source>Group name:</source>
-      <translation type="unfinished">Group name:</translation>
+      <translation>Nazwa grupy:</translation>
     </message>
   </context>
   <context>
@@ -6062,7 +6062,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>none</source>
-      <translation type="unfinished">none</translation>
+      <translation>brak</translation>
     </message>
   </context>
   <context>
@@ -6088,7 +6088,7 @@ Do you want to exit without saving your data?</source>
     <name>Gui::SearchBar</name>
     <message>
       <source>Previous</source>
-      <translation type="unfinished">Previous</translation>
+      <translation>Poprzedni</translation>
     </message>
     <message>
       <source>Next</source>
@@ -6338,11 +6338,11 @@ Do you want to specify another directory?</translation>
     <name>Gui::TinkerCADNavigationStyle</name>
     <message>
       <source>Press left mouse button</source>
-      <translation type="unfinished">Press left mouse button</translation>
+      <translation>Wciśnij lewy przycisk myszki</translation>
     </message>
     <message>
       <source>Press middle mouse button</source>
-      <translation type="unfinished">Press middle mouse button</translation>
+      <translation>Wciśnij środkowy przycisk myszki</translation>
     </message>
     <message>
       <source>Press right mouse button</source>
@@ -6350,7 +6350,7 @@ Do you want to specify another directory?</translation>
     </message>
     <message>
       <source>Scroll middle mouse button</source>
-      <translation type="unfinished">Scroll middle mouse button</translation>
+      <translation>Przewiń środkowym przyciskiem myszki</translation>
     </message>
   </context>
   <context>
@@ -7501,15 +7501,15 @@ Would you like to save the file with a different name?</translation>
     </message>
     <message>
       <source>Document:</source>
-      <translation type="unfinished">Document:</translation>
+      <translation>Dokument:</translation>
     </message>
     <message>
       <source>Path:</source>
-      <translation type="unfinished">Path:</translation>
+      <translation>Ścieżka:</translation>
     </message>
     <message>
       <source>Edit %1</source>
-      <translation type="unfinished">Edit %1</translation>
+      <translation>Edytuj %1</translation>
     </message>
     <message>
       <source>Setup configurable object</source>
@@ -7539,7 +7539,7 @@ option to apply only to this link.</translation>
     </message>
     <message>
       <source>Enable</source>
-      <translation type="unfinished">Enable</translation>
+      <translation>Włącz</translation>
     </message>
     <message>
       <source>Enable auto copy of linked object when its configuration is changed</source>
@@ -7547,7 +7547,7 @@ option to apply only to this link.</translation>
     </message>
     <message>
       <source>Tracking</source>
-      <translation type="unfinished">Tracking</translation>
+      <translation>Śledzenie</translation>
     </message>
     <message>
       <source>Copy the linked object when its configuration is changed.
@@ -7577,7 +7577,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Toggle array elements</source>
-      <translation type="unfinished">Toggle array elements</translation>
+      <translation>Przełącz elementy szyku</translation>
     </message>
     <message>
       <source>Change whether show each link array element as individual objects</source>
@@ -9739,7 +9739,7 @@ Czy nadal chcesz kontynuować?</translation>
     </message>
     <message>
       <source>Link actions</source>
-      <translation type="unfinished">Link actions</translation>
+      <translation>Akcje z łączami</translation>
     </message>
   </context>
 </TS>

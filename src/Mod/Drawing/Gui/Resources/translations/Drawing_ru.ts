@@ -5,585 +5,585 @@
     <name>CmdDrawingAnnotation</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>&amp;Annotation</source>
-      <translation>&amp;Заметка</translation>
+      <translation type="unfinished">&amp;Annotation</translation>
     </message>
     <message>
       <source>Inserts an Annotation view in the active drawing</source>
-      <translation>Вставить заметку в активный чертёж</translation>
+      <translation type="unfinished">Inserts an Annotation view in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingClip</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>&amp;Clip</source>
-      <translation>&amp;Срез</translation>
+      <translation type="unfinished">&amp;Clip</translation>
     </message>
     <message>
       <source>Inserts a clip group in the active drawing</source>
-      <translation>Вставить группу срезов в активный чертёж</translation>
+      <translation type="unfinished">Inserts a clip group in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingDraftView</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>&amp;Draft View</source>
-      <translation>&amp;Эскизный вид</translation>
+      <translation type="unfinished">&amp;Draft View</translation>
     </message>
     <message>
       <source>Inserts a Draft view of the selected object(s) in the active drawing</source>
-      <translation>Вставить эскиз выбранного объекта(ов) в активный чертёж</translation>
+      <translation type="unfinished">Inserts a Draft view of the selected object(s) in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingExportPage</name>
     <message>
       <source>File</source>
-      <translation>Файл</translation>
+      <translation type="unfinished">File</translation>
     </message>
     <message>
       <source>&amp;Export page...</source>
-      <translation>&amp;Экспортировать страницу...</translation>
+      <translation type="unfinished">&amp;Export page...</translation>
     </message>
     <message>
       <source>Export a page to an SVG file</source>
-      <translation>Экспорт страницы в файл SVG</translation>
+      <translation type="unfinished">Export a page to an SVG file</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingNewA3Landscape</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>Insert new A3 landscape drawing</source>
-      <translation>Вставить новый фоновый чертеж А3</translation>
+      <translation type="unfinished">Insert new A3 landscape drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingNewPage</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>Insert new drawing</source>
-      <translation>Вставить новый чертёж</translation>
+      <translation type="unfinished">Insert new drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingNewView</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>Insert view in drawing</source>
-      <translation>Вставить вид в чертёж</translation>
+      <translation type="unfinished">Insert view in drawing</translation>
     </message>
     <message>
       <source>Insert a new View of a Part in the active drawing</source>
-      <translation>Вставить новый вид детали в текущий чертёж</translation>
+      <translation type="unfinished">Insert a new View of a Part in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingOpen</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>Open SVG...</source>
-      <translation>Открыть SVG...</translation>
+      <translation type="unfinished">Open SVG...</translation>
     </message>
     <message>
       <source>Open a scalable vector graphic</source>
-      <translation>Открыть масштабируемую векторную графику (svg)</translation>
+      <translation type="unfinished">Open a scalable vector graphic</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingOpenBrowserView</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>Open &amp;browser view</source>
-      <translation>Открыть в &amp;обозревателе</translation>
+      <translation type="unfinished">Open &amp;browser view</translation>
     </message>
     <message>
       <source>Opens the selected page in a browser view</source>
-      <translation>Открыть выбранную страницу для просмотра во встроенном обозревателе</translation>
+      <translation type="unfinished">Opens the selected page in a browser view</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingOrthoViews</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>Insert orthographic views</source>
-      <translation>Вставить ортографические виды</translation>
+      <translation type="unfinished">Insert orthographic views</translation>
     </message>
     <message>
       <source>Insert an orthographic projection of a part in the active drawing</source>
-      <translation>Вставить ортографическую проекцию детали в активный чертёж</translation>
+      <translation type="unfinished">Insert an orthographic projection of a part in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingProjectShape</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>Project shape...</source>
-      <translation>Проекция фигуры...</translation>
+      <translation type="unfinished">Project shape...</translation>
     </message>
     <message>
       <source>Project shape onto a user-defined plane</source>
-      <translation>Проекция фигуры на заданную плоскость</translation>
+      <translation type="unfinished">Project shape onto a user-defined plane</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingSpreadsheetView</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>&amp;Spreadsheet View</source>
-      <translation>&amp;Вставка таблицы</translation>
+      <translation type="unfinished">&amp;Spreadsheet View</translation>
     </message>
     <message>
       <source>Inserts a view of a selected spreadsheet in the active drawing</source>
-      <translation>Вставить выбранную таблицу в активный чертёж</translation>
+      <translation type="unfinished">Inserts a view of a selected spreadsheet in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingSymbol</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
       <source>&amp;Symbol</source>
-      <translation>&amp;Символ</translation>
+      <translation type="unfinished">&amp;Symbol</translation>
     </message>
     <message>
       <source>Inserts a symbol from a svg file in the active drawing</source>
-      <translation>Вставить символ из файла svg в активный чертёж</translation>
+      <translation type="unfinished">Inserts a symbol from a svg file in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>DrawingGui::DrawingView</name>
     <message>
       <source>&amp;Background</source>
-      <translation>&amp;Фон</translation>
+      <translation type="unfinished">&amp;Background</translation>
     </message>
     <message>
       <source>&amp;Outline</source>
-      <translation>&amp;Контур</translation>
+      <translation type="unfinished">&amp;Outline</translation>
     </message>
     <message>
       <source>&amp;Native</source>
-      <translation>&amp;Встроенный</translation>
+      <translation type="unfinished">&amp;Native</translation>
     </message>
     <message>
       <source>&amp;OpenGL</source>
-      <translation>&amp;OpenGL</translation>
+      <translation type="unfinished">&amp;OpenGL</translation>
     </message>
     <message>
       <source>&amp;Image</source>
-      <translation>&amp;Изображение</translation>
+      <translation type="unfinished">&amp;Image</translation>
     </message>
     <message>
       <source>&amp;High Quality Antialiasing</source>
-      <translation>&amp;Высококачественное сглаживания</translation>
+      <translation type="unfinished">&amp;High Quality Antialiasing</translation>
     </message>
     <message>
       <source>Open SVG File</source>
-      <translation>Открыть файл SVG </translation>
+      <translation type="unfinished">Open SVG File</translation>
     </message>
     <message>
-      <source>Could not open file '%1'.</source>
-      <translation>Не удалось открыть файл '%1'.</translation>
+      <source>Could not open file &apos;%1&apos;.</source>
+      <translation type="unfinished">Could not open file &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>&amp;Renderer</source>
-      <translation>Отрисовщик</translation>
+      <translation type="unfinished">&amp;Renderer</translation>
     </message>
     <message>
       <source>Export PDF</source>
-      <translation>Экспорт в PDF</translation>
+      <translation type="unfinished">Export PDF</translation>
     </message>
     <message>
       <source>PDF file</source>
-      <translation>Файл PDF</translation>
+      <translation type="unfinished">PDF file</translation>
     </message>
     <message>
       <source>Page sizes</source>
-      <translation>Размеры страницы</translation>
+      <translation type="unfinished">Page sizes</translation>
     </message>
     <message>
       <source>A0</source>
-      <translation>А0</translation>
+      <translation type="unfinished">A0</translation>
     </message>
     <message>
       <source>A1</source>
-      <translation>А1</translation>
+      <translation type="unfinished">A1</translation>
     </message>
     <message>
       <source>A2</source>
-      <translation>А2</translation>
+      <translation type="unfinished">A2</translation>
     </message>
     <message>
       <source>A3</source>
-      <translation>А3</translation>
+      <translation type="unfinished">A3</translation>
     </message>
     <message>
       <source>A4</source>
-      <translation>А4</translation>
+      <translation type="unfinished">A4</translation>
     </message>
     <message>
       <source>A5</source>
-      <translation>А5</translation>
+      <translation type="unfinished">A5</translation>
     </message>
     <message>
       <source>Different orientation</source>
-      <translation>Отличающаяся ориентация</translation>
+      <translation type="unfinished">Different orientation</translation>
     </message>
     <message>
       <source>The printer uses a different orientation than the drawing.
 Do you want to continue?</source>
-      <translation>Принтер использует отличающуюся от чертежа ориентацию бумаги.
-Хотите продолжить?</translation>
+      <translation type="unfinished">The printer uses a different orientation than the drawing.
+Do you want to continue?</translation>
     </message>
     <message>
       <source>Different paper size</source>
-      <translation>Отличающийся формат листа</translation>
+      <translation type="unfinished">Different paper size</translation>
     </message>
     <message>
       <source>The printer uses a different paper size than the drawing.
 Do you want to continue?</source>
-      <translation>Принтер использует отличающийся от чертежа формат листа.
-Хотите продолжить?</translation>
+      <translation type="unfinished">The printer uses a different paper size than the drawing.
+Do you want to continue?</translation>
     </message>
     <message>
       <source>Opening file failed</source>
-      <translation>Ошибка при открытии файла</translation>
+      <translation type="unfinished">Opening file failed</translation>
     </message>
     <message>
-      <source>Can't open file '%1' for writing.</source>
-      <translation>Не удается записать в файл '%1'.</translation>
+      <source>Can&apos;t open file &apos;%1&apos; for writing.</source>
+      <translation type="unfinished">Can&apos;t open file &apos;%1&apos; for writing.</translation>
     </message>
   </context>
   <context>
     <name>DrawingGui::TaskOrthoViews</name>
     <message>
       <source>Orthographic Projection</source>
-      <translation>Ортографическая проекция</translation>
+      <translation type="unfinished">Orthographic Projection</translation>
     </message>
     <message>
       <source>Right click for axonometric settings</source>
-      <translation>Правый щелчок мыши для настроек аксонометрии</translation>
+      <translation type="unfinished">Right click for axonometric settings</translation>
     </message>
     <message>
       <source>Primary view</source>
-      <translation>Главный вид</translation>
+      <translation type="unfinished">Primary view</translation>
     </message>
     <message>
       <source>Secondary Views</source>
-      <translation>Дополнительные виды</translation>
+      <translation type="unfinished">Secondary Views</translation>
     </message>
     <message>
       <source>General</source>
-      <translation>Основные</translation>
+      <translation type="unfinished">General</translation>
     </message>
     <message>
       <source>Auto scale / position</source>
-      <translation>Автоматический масштаб / положение</translation>
+      <translation type="unfinished">Auto scale / position</translation>
     </message>
     <message>
       <source>Scale</source>
-      <translation>Масштаб</translation>
+      <translation type="unfinished">Scale</translation>
     </message>
     <message>
       <source>Top left x / y</source>
-      <translation>Cлева x / Сверху y</translation>
+      <translation type="unfinished">Top left x / y</translation>
     </message>
     <message>
       <source>Spacing dx / dy</source>
-      <translation>Смещение dx / dy</translation>
+      <translation type="unfinished">Spacing dx / dy</translation>
     </message>
     <message>
       <source>Show hidden lines</source>
-      <translation>Показать скрытые линии</translation>
+      <translation type="unfinished">Show hidden lines</translation>
     </message>
     <message>
       <source>Show smooth lines</source>
-      <translation>Показать сглаженные линии</translation>
+      <translation type="unfinished">Show smooth lines</translation>
     </message>
     <message>
       <source>Axonometric</source>
-      <translation>Аксонометрия</translation>
+      <translation type="unfinished">Axonometric</translation>
     </message>
     <message>
       <source>Axis out and right</source>
-      <translation>Ось вне и справа</translation>
+      <translation type="unfinished">Axis out and right</translation>
     </message>
     <message>
       <source>Vertical tilt</source>
-      <translation>Вертикальный наклон</translation>
+      <translation type="unfinished">Vertical tilt</translation>
     </message>
     <message>
       <source>X +ve</source>
-      <translation>X +ve</translation>
+      <translation type="unfinished">X +ve</translation>
     </message>
     <message>
       <source>Y +ve</source>
-      <translation>Y +ve</translation>
+      <translation type="unfinished">Y +ve</translation>
     </message>
     <message>
       <source>Z +ve</source>
-      <translation>Z +ve</translation>
+      <translation type="unfinished">Z +ve</translation>
     </message>
     <message>
       <source>X -ve</source>
-      <translation>X -ve</translation>
+      <translation type="unfinished">X -ve</translation>
     </message>
     <message>
       <source>Y -ve</source>
-      <translation>Y -ve</translation>
+      <translation type="unfinished">Y -ve</translation>
     </message>
     <message>
       <source>Z -ve</source>
-      <translation>Z -ve</translation>
+      <translation type="unfinished">Z -ve</translation>
     </message>
     <message>
       <source>Isometric</source>
-      <translation>Изометрическая</translation>
+      <translation type="unfinished">Isometric</translation>
     </message>
     <message>
       <source>Dimetric</source>
-      <translation>Диметрическая</translation>
+      <translation type="unfinished">Dimetric</translation>
     </message>
     <message>
       <source>Trimetric</source>
-      <translation>Триметрическая</translation>
+      <translation type="unfinished">Trimetric</translation>
     </message>
     <message>
       <source> Scale</source>
-      <translation> Масштаб</translation>
+      <translation type="unfinished"> Scale</translation>
     </message>
     <message>
       <source>View projection</source>
-      <translation>Тип аксонометрии</translation>
+      <translation type="unfinished">View projection</translation>
     </message>
     <message>
       <source> Axis aligned up</source>
-      <translation> Ось выравнивания вверх</translation>
+      <translation type="unfinished"> Axis aligned up</translation>
     </message>
     <message>
       <source>Flip</source>
-      <translation>Разворот</translation>
+      <translation type="unfinished">Flip</translation>
     </message>
     <message>
       <source> Trimetric</source>
-      <translation> Триметрическая</translation>
+      <translation type="unfinished"> Trimetric</translation>
     </message>
     <message>
       <source>Projection</source>
-      <translation>Проекция</translation>
+      <translation type="unfinished">Projection</translation>
     </message>
     <message>
       <source>Third Angle</source>
-      <translation>Третий угол</translation>
+      <translation type="unfinished">Third Angle</translation>
     </message>
     <message>
       <source>First Angle</source>
-      <translation>Первый угол</translation>
+      <translation type="unfinished">First Angle</translation>
     </message>
     <message>
       <source>View from:</source>
-      <translation>Вид с:</translation>
+      <translation type="unfinished">View from:</translation>
     </message>
     <message>
       <source>Axis aligned right:</source>
-      <translation>Ось выровнена вправо:</translation>
+      <translation type="unfinished">Axis aligned right:</translation>
     </message>
   </context>
   <context>
     <name>DrawingGui::TaskProjection</name>
     <message>
       <source>Visible sharp edges</source>
-      <translation>Видимые острые края</translation>
+      <translation type="unfinished">Visible sharp edges</translation>
     </message>
     <message>
       <source>Visible smooth edges</source>
-      <translation>Видимые сглаженные края</translation>
+      <translation type="unfinished">Visible smooth edges</translation>
     </message>
     <message>
       <source>Visible sewn edges</source>
-      <translation>Видимые сшитые края</translation>
+      <translation type="unfinished">Visible sewn edges</translation>
     </message>
     <message>
       <source>Visible outline edges</source>
-      <translation>Видимые края контура</translation>
+      <translation type="unfinished">Visible outline edges</translation>
     </message>
     <message>
       <source>Visible isoparameters</source>
-      <translation>Параметры отображения изометрии</translation>
+      <translation type="unfinished">Visible isoparameters</translation>
     </message>
     <message>
       <source>Hidden sharp edges</source>
-      <translation>Скрытые острые края</translation>
+      <translation type="unfinished">Hidden sharp edges</translation>
     </message>
     <message>
       <source>Hidden smooth edges</source>
-      <translation>Скрытые сглаженные края</translation>
+      <translation type="unfinished">Hidden smooth edges</translation>
     </message>
     <message>
       <source>Hidden sewn edges</source>
-      <translation>Скрытые cшитые края</translation>
+      <translation type="unfinished">Hidden sewn edges</translation>
     </message>
     <message>
       <source>Hidden outline edges</source>
-      <translation>Скрытые края контура</translation>
+      <translation type="unfinished">Hidden outline edges</translation>
     </message>
     <message>
       <source>Hidden isoparameters</source>
-      <translation>Параметры скрытия изометрии</translation>
+      <translation type="unfinished">Hidden isoparameters</translation>
     </message>
     <message>
       <source>Project shapes</source>
-      <translation>Настройка проекции фигур</translation>
+      <translation type="unfinished">Project shapes</translation>
     </message>
     <message>
       <source>No active document</source>
-      <translation>Нет активного документа</translation>
+      <translation type="unfinished">No active document</translation>
     </message>
     <message>
       <source>There is currently no active document to complete the operation</source>
-      <translation>В настоящее время нет активного документа для выполнения этой операции</translation>
+      <translation type="unfinished">There is currently no active document to complete the operation</translation>
     </message>
     <message>
       <source>No active view</source>
-      <translation>Нет активного вида</translation>
+      <translation type="unfinished">No active view</translation>
     </message>
     <message>
       <source>There is currently no active view to complete the operation</source>
-      <translation>В настоящее время нет активного вида для выполнения этой операции</translation>
+      <translation type="unfinished">There is currently no active view to complete the operation</translation>
     </message>
   </context>
   <context>
     <name>Drawing_NewPage</name>
     <message>
       <source>Landscape</source>
-      <translation>Альбомный</translation>
+      <translation type="unfinished">Landscape</translation>
     </message>
     <message>
       <source>Portrait</source>
-      <translation>Портретный</translation>
+      <translation type="unfinished">Portrait</translation>
     </message>
     <message>
       <source>%1%2 %3</source>
-      <translation>%1%2 %3</translation>
+      <translation type="unfinished">%1%2 %3</translation>
     </message>
     <message>
       <source>Insert new %1%2 %3 drawing</source>
-      <translation>Вставить новый чертёж %1 %2%3</translation>
+      <translation type="unfinished">Insert new %1%2 %3 drawing</translation>
     </message>
     <message>
       <source>%1%2 %3 (%4)</source>
-      <translation>%1%2 %3 (%4)</translation>
+      <translation type="unfinished">%1%2 %3 (%4)</translation>
     </message>
     <message>
       <source>Insert new %1%2 %3 (%4) drawing</source>
-      <translation>Вставить новый чертёж %1%2 %3 (%4)</translation>
+      <translation type="unfinished">Insert new %1%2 %3 (%4) drawing</translation>
     </message>
   </context>
   <context>
     <name>QObject</name>
     <message>
       <source>Choose an SVG file to open</source>
-      <translation>Выберите файл SVG для открытия</translation>
+      <translation type="unfinished">Choose an SVG file to open</translation>
     </message>
     <message>
       <source>Scalable Vector Graphic</source>
-      <translation>Масштабируемая векторная графика</translation>
+      <translation type="unfinished">Scalable Vector Graphic</translation>
     </message>
     <message>
       <source>Wrong selection</source>
-      <translation>Неправильный выбор</translation>
+      <translation type="unfinished">Wrong selection</translation>
     </message>
     <message>
       <source>Select a Part object.</source>
-      <translation>Выберите объект типа Деталь.</translation>
+      <translation type="unfinished">Select a Part object.</translation>
     </message>
     <message>
       <source>No page found</source>
-      <translation>Страниц не найдено</translation>
+      <translation type="unfinished">No page found</translation>
     </message>
     <message>
       <source>Create a page first.</source>
-      <translation>Сначала создайте страницу.</translation>
+      <translation type="unfinished">Create a page first.</translation>
     </message>
     <message>
       <source>Select exactly one Part object.</source>
-      <translation>Выберите ровно один объект Детали.</translation>
+      <translation type="unfinished">Select exactly one Part object.</translation>
     </message>
     <message>
       <source>Select one Page object.</source>
-      <translation>Выберите один объект типа Страница.</translation>
+      <translation type="unfinished">Select one Page object.</translation>
     </message>
     <message>
       <source>All Files</source>
-      <translation>Все файлы</translation>
+      <translation type="unfinished">All Files</translation>
     </message>
     <message>
       <source>Export page</source>
-      <translation>Экспортировать страницу</translation>
+      <translation type="unfinished">Export page</translation>
     </message>
     <message>
       <source>Select exactly one Spreadsheet object.</source>
-      <translation>Выберите только один объект типа Таблица.</translation>
+      <translation type="unfinished">Select exactly one Spreadsheet object.</translation>
     </message>
     <message>
       <source>Make axonometric...</source>
-      <translation>Сделать аксонометрическим...</translation>
+      <translation type="unfinished">Make axonometric...</translation>
     </message>
     <message>
       <source>Edit axonometric settings...</source>
-      <translation>Изменить настройки аксонометрии...</translation>
+      <translation type="unfinished">Edit axonometric settings...</translation>
     </message>
     <message>
       <source>Make orthographic</source>
-      <translation>Сделать ортографическим</translation>
+      <translation type="unfinished">Make orthographic</translation>
     </message>
     <message>
       <source>Show drawing</source>
-      <translation>Показать чертёж</translation>
+      <translation type="unfinished">Show drawing</translation>
     </message>
   </context>
   <context>
     <name>Workbench</name>
     <message>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
   </context>
 </TS>

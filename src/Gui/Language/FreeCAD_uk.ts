@@ -195,47 +195,47 @@
     <name>CommandGroup</name>
     <message>
       <source>File</source>
-      <translation>Файл</translation>
+      <translation type="unfinished">File</translation>
     </message>
     <message>
       <source>Edit</source>
-      <translation>Правка</translation>
+      <translation type="unfinished">Edit</translation>
     </message>
     <message>
       <source>Help</source>
-      <translation>Допомога</translation>
+      <translation type="unfinished">Help</translation>
     </message>
     <message>
       <source>Link</source>
-      <translation>Посилання</translation>
+      <translation type="unfinished">Link</translation>
     </message>
     <message>
       <source>Tools</source>
-      <translation>Інструменти</translation>
+      <translation type="unfinished">Tools</translation>
     </message>
     <message>
       <source>View</source>
-      <translation>Вигляд</translation>
+      <translation type="unfinished">View</translation>
     </message>
     <message>
       <source>Window</source>
-      <translation>Вікно</translation>
+      <translation type="unfinished">Window</translation>
     </message>
     <message>
       <source>Standard</source>
-      <translation>Стандартно</translation>
+      <translation type="unfinished">Standard</translation>
     </message>
     <message>
       <source>Macros</source>
-      <translation>Макроси</translation>
+      <translation type="unfinished">Macros</translation>
     </message>
     <message>
       <source>Macro</source>
-      <translation>Макрос</translation>
+      <translation type="unfinished">Macro</translation>
     </message>
     <message>
       <source>Structure</source>
-      <translation>Структура</translation>
+      <translation type="unfinished">Structure</translation>
     </message>
     <message>
       <source>Standard-Test</source>
@@ -251,7 +251,7 @@
     </message>
     <message>
       <source>Measure</source>
-      <translation>Вимірювання</translation>
+      <translation type="unfinished">Measure</translation>
     </message>
   </context>
   <context>
@@ -740,7 +740,7 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source> s</source>
-      <translation> с</translation>
+      <translation type="unfinished"> s</translation>
     </message>
     <message>
       <source>Angle</source>
@@ -893,7 +893,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Name</source>
-      <translation>Назва</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <source>Property group templates</source>
@@ -1651,7 +1651,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Operating system</source>
-      <translation>Операційна система</translation>
+      <translation type="unfinished">Operating system</translation>
     </message>
     <message>
       <source>Selected language</source>
@@ -1675,15 +1675,15 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Name</source>
-      <translation>Назва</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <source>Type</source>
-      <translation>Тип</translation>
+      <translation type="unfinished">Type</translation>
     </message>
     <message>
       <source>Load</source>
-      <translation>Завантажити</translation>
+      <translation type="unfinished">Load</translation>
     </message>
     <message>
       <source>Save new...</source>
@@ -1754,11 +1754,11 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Tags</source>
-      <translation>Мітки</translation>
+      <translation type="unfinished">Tags</translation>
     </message>
     <message>
       <source>Apply</source>
-      <translation>Застосувати</translation>
+      <translation type="unfinished">Apply</translation>
     </message>
     <message>
       <source>Apply the %1 preference pack</source>
@@ -1847,7 +1847,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Download</source>
-      <translation>Завантажити</translation>
+      <translation type="unfinished">Download</translation>
     </message>
   </context>
   <context>
@@ -2987,11 +2987,11 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Daily</source>
-      <translation>Щоденно</translation>
+      <translation type="unfinished">Daily</translation>
     </message>
     <message>
       <source>Weekly</source>
-      <translation>Щотиждня</translation>
+      <translation type="unfinished">Weekly</translation>
     </message>
     <message>
       <source>Monthly</source>
@@ -3003,7 +3003,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Never</source>
-      <translation>Ні (Не питати більше)</translation>
+      <translation type="unfinished">Never</translation>
     </message>
     <message>
       <source>Cache size limit:</source>
@@ -3019,7 +3019,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Unknown</source>
-      <translation>Невідомо</translation>
+      <translation type="unfinished">Unknown</translation>
     </message>
     <message>
       <source>Current cache size: %1</source>
@@ -4017,11 +4017,11 @@ Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</translati
     <name>Gui::Dialog::DlgSettingsPythonConsole</name>
     <message>
       <source>Python console</source>
-      <translation>Консоль python</translation>
+      <translation type="unfinished">Python console</translation>
     </message>
     <message>
       <source>Settings</source>
-      <translation>Параметри</translation>
+      <translation type="unfinished">Settings</translation>
     </message>
     <message>
       <source>Words will be wrapped when they exceed available
@@ -4047,7 +4047,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Save history</source>
-      <translation>Зберегти історію</translation>
+      <translation type="unfinished">Save history</translation>
     </message>
   </context>
   <context>
@@ -5084,11 +5084,11 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Selections</source>
-      <translation>Виділення</translation>
+      <translation type="unfinished">Selections</translation>
     </message>
     <message>
       <source>All</source>
-      <translation>Вся</translation>
+      <translation type="unfinished">All</translation>
     </message>
   </context>
   <context>
@@ -5786,7 +5786,7 @@ How do you want to proceed?</source>
     <name>Gui::OpenSCADNavigationStyle</name>
     <message>
       <source>Press left mouse button</source>
-      <translation>Натиснути ліву кнопку миші</translation>
+      <translation type="unfinished">Press left mouse button</translation>
     </message>
     <message>
       <source>Press right mouse button and move mouse</source>
@@ -5900,7 +5900,7 @@ How do you want to proceed?</source>
     </message>
     <message>
       <source>Group name:</source>
-      <translation>Назва групи:</translation>
+      <translation type="unfinished">Group name:</translation>
     </message>
   </context>
   <context>
@@ -6060,7 +6060,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>none</source>
-      <translation>немає</translation>
+      <translation type="unfinished">none</translation>
     </message>
   </context>
   <context>
@@ -6086,7 +6086,7 @@ Do you want to exit without saving your data?</source>
     <name>Gui::SearchBar</name>
     <message>
       <source>Previous</source>
-      <translation>Попередня</translation>
+      <translation type="unfinished">Previous</translation>
     </message>
     <message>
       <source>Next</source>
@@ -6336,11 +6336,11 @@ Do you want to specify another directory?</translation>
     <name>Gui::TinkerCADNavigationStyle</name>
     <message>
       <source>Press left mouse button</source>
-      <translation>Натиснути ліву кнопку миші</translation>
+      <translation type="unfinished">Press left mouse button</translation>
     </message>
     <message>
       <source>Press middle mouse button</source>
-      <translation>Натиснути середню кнопку миші</translation>
+      <translation type="unfinished">Press middle mouse button</translation>
     </message>
     <message>
       <source>Press right mouse button</source>
@@ -6348,7 +6348,7 @@ Do you want to specify another directory?</translation>
     </message>
     <message>
       <source>Scroll middle mouse button</source>
-      <translation>Прокручування середньою кнопкою миші</translation>
+      <translation type="unfinished">Scroll middle mouse button</translation>
     </message>
   </context>
   <context>
@@ -7294,7 +7294,7 @@ Be aware the point where you click matters.</source>
     </message>
     <message>
       <source>Paste</source>
-      <translation>Вставити</translation>
+      <translation type="unfinished">Paste</translation>
     </message>
     <message>
       <source>Expression error</source>
@@ -7390,7 +7390,7 @@ underscore, and must not start with a digit.</translation>
     </message>
     <message>
       <source>Undo</source>
-      <translation>Скасувати</translation>
+      <translation type="unfinished">Undo</translation>
     </message>
     <message>
       <source>Redo</source>
@@ -7498,15 +7498,15 @@ Would you like to save the file with a different name?</translation>
     </message>
     <message>
       <source>Document:</source>
-      <translation>Документ:</translation>
+      <translation type="unfinished">Document:</translation>
     </message>
     <message>
       <source>Path:</source>
-      <translation>Шлях:</translation>
+      <translation type="unfinished">Path:</translation>
     </message>
     <message>
       <source>Edit %1</source>
-      <translation>Редагувати %1</translation>
+      <translation type="unfinished">Edit %1</translation>
     </message>
     <message>
       <source>Setup configurable object</source>
@@ -7536,7 +7536,7 @@ option to apply only to this link.</translation>
     </message>
     <message>
       <source>Enable</source>
-      <translation>Увімкнути</translation>
+      <translation type="unfinished">Enable</translation>
     </message>
     <message>
       <source>Enable auto copy of linked object when its configuration is changed</source>
@@ -7544,7 +7544,7 @@ option to apply only to this link.</translation>
     </message>
     <message>
       <source>Tracking</source>
-      <translation>Відстеження</translation>
+      <translation type="unfinished">Tracking</translation>
     </message>
     <message>
       <source>Copy the linked object when its configuration is changed.

@@ -463,7 +463,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1641"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1642"/>
@@ -481,7 +481,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1744"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1745"/>
@@ -499,7 +499,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1060"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1061"/>
@@ -517,7 +517,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="886"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="887"/>
@@ -537,7 +537,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1024"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1025"/>
@@ -557,7 +557,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="951"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="952"/>
@@ -577,7 +577,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="2030"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="2031"/>
@@ -595,7 +595,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="745"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="746"/>
@@ -633,7 +633,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="273"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="274"/>
@@ -651,7 +651,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1407"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1408"/>
@@ -669,7 +669,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1769"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1770"/>
@@ -687,7 +687,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1214"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1215"/>
@@ -707,7 +707,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1928"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1929"/>
@@ -727,7 +727,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1560"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1561"/>
@@ -747,7 +747,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="2130"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="2131"/>
@@ -765,7 +765,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1373"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1374"/>
@@ -785,7 +785,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1733"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1734"/>
@@ -805,7 +805,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1281"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1282"/>
@@ -825,7 +825,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1997"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1998"/>
@@ -845,7 +845,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1634"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="1635"/>
@@ -865,7 +865,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="2208"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="2209"/>
@@ -883,7 +883,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="421"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="422"/>
@@ -903,7 +903,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1055"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1056"/>
@@ -921,7 +921,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="894"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="895"/>
@@ -941,7 +941,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="955"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="956"/>
@@ -961,7 +961,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1020"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1021"/>
@@ -985,7 +985,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1571"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1572"/>
@@ -1005,7 +1005,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="165"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="166"/>
@@ -1025,7 +1025,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="388"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="389"/>
@@ -1045,7 +1045,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="454"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="455"/>
@@ -1063,7 +1063,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="125"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="126"/>
@@ -1083,7 +1083,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="247"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="248"/>
@@ -1101,7 +1101,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="158"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="159"/>
@@ -1121,7 +1121,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1287"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1288"/>
@@ -1139,7 +1139,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1219"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1220"/>
@@ -1159,7 +1159,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1253"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1254"/>
@@ -1179,7 +1179,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1390"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1391"/>
@@ -1197,7 +1197,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="739"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="740"/>
@@ -1215,7 +1215,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="579"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="580"/>
@@ -1235,7 +1235,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="704"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="705"/>
@@ -1255,7 +1255,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="639"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="640"/>
@@ -1275,7 +1275,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1433"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1434"/>
@@ -1293,7 +1293,7 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="214"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="215"/>
@@ -1311,7 +1311,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="711"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="712"/>
@@ -1329,7 +1329,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1606"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="1607"/>
@@ -1429,7 +1429,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="578"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="579"/>
@@ -1447,7 +1447,7 @@
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="804"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionPack.cpp" line="805"/>
@@ -1683,12 +1683,12 @@
     <message>
       <location filename="../../Command.cpp" line="1477"/>
       <source>TechDraw</source>
-      <translation type="unfinished">TechDraw</translation>
+      <translation>ТехМалюнок</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1478"/>
       <source>Project shape...</source>
-      <translation type="unfinished">Project shape...</translation>
+      <translation>Проект форми...</translation>
     </message>
   </context>
   <context>
@@ -2276,12 +2276,12 @@
     <message>
       <location filename="../../mrichtextedit.ui" line="96"/>
       <source>Undo (CTRL+Z)</source>
-      <translation type="unfinished">Undo (CTRL+Z)</translation>
+      <translation>Скасувати (CTRL+Z)</translation>
     </message>
     <message>
       <location filename="../../mrichtextedit.ui" line="99"/>
       <source>Undo</source>
-      <translation type="unfinished">Undo</translation>
+      <translation>Скасувати</translation>
     </message>
     <message>
       <location filename="../../mrichtextedit.ui" line="122"/>
@@ -2317,7 +2317,7 @@
     <message>
       <location filename="../../mrichtextedit.ui" line="194"/>
       <source>Paste</source>
-      <translation type="unfinished">Paste</translation>
+      <translation>Вставити</translation>
     </message>
     <message>
       <location filename="../../mrichtextedit.ui" line="221"/>
@@ -2922,7 +2922,7 @@
     <message>
       <location filename="../../CommandAnnotate.cpp" line="1052"/>
       <source>Selection is empty.</source>
-      <translation type="unfinished">Selection is empty.</translation>
+      <translation>Виділення пусте.</translation>
     </message>
     <message>
       <location filename="../../CommandAnnotate.cpp" line="1066"/>
@@ -3230,7 +3230,7 @@
       <location filename="../../CommandExtensionPack.cpp" line="1451"/>
       <location filename="../../CommandExtensionPack.cpp" line="1908"/>
       <source>Selection is empty</source>
-      <translation type="unfinished">Selection is empty</translation>
+      <translation>Виділення пусте</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="2269"/>
@@ -3454,7 +3454,7 @@ the top and left view border</translation>
     <message>
       <location filename="../../TaskActiveView.ui" line="242"/>
       <source>Bounding box</source>
-      <translation type="unfinished">Bounding box</translation>
+      <translation>Обмежувальна рамка</translation>
     </message>
   </context>
   <context>
@@ -3462,7 +3462,7 @@ the top and left view border</translation>
     <message>
       <location filename="../../TaskMoveView.ui" line="14"/>
       <source>Move View</source>
-      <translation type="unfinished">Move View</translation>
+      <translation>Перемістити вид</translation>
     </message>
     <message>
       <location filename="../../TaskMoveView.ui" line="22"/>
@@ -3517,7 +3517,7 @@ Preparation depth, (weld size)</translation>
       <location filename="../../TaskWeldingSymbol.ui" line="82"/>
       <location filename="../../TaskWeldingSymbol.ui" line="132"/>
       <source>Symbol</source>
-      <translation type="unfinished">Symbol</translation>
+      <translation>Символ</translation>
     </message>
     <message>
       <location filename="../../TaskWeldingSymbol.ui" line="92"/>
@@ -4023,7 +4023,7 @@ when hatching a face with a PAT pattern</translation>
     <message>
       <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="625"/>
       <source>Line</source>
-      <translation type="unfinished">Line</translation>
+      <translation>Лінія</translation>
     </message>
     <message>
       <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="642"/>
@@ -4629,7 +4629,7 @@ for ProjectionGroups</translation>
     <message>
       <location filename="../../DlgPrefsTechDrawGeneral.ui" line="792"/>
       <source>Grid</source>
-      <translation type="unfinished">Grid</translation>
+      <translation>Сітка</translation>
     </message>
     <message>
       <location filename="../../DlgPrefsTechDrawGeneral.ui" line="805"/>
@@ -4991,7 +4991,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskBalloon.ui" line="22"/>
       <source>Text:</source>
-      <translation type="unfinished">Text:</translation>
+      <translation>Текст:</translation>
     </message>
     <message>
       <location filename="../../TaskBalloon.ui" line="29"/>
@@ -5066,7 +5066,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskBalloon.ui" line="169"/>
       <source>Line</source>
-      <translation type="unfinished">Line</translation>
+      <translation>Лінія</translation>
     </message>
     <message>
       <location filename="../../TaskBalloon.ui" line="181"/>
@@ -5250,7 +5250,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCenterLine.ui" line="296"/>
       <source>Weight</source>
-      <translation type="unfinished">Weight</translation>
+      <translation>Ваги</translation>
     </message>
     <message>
       <location filename="../../TaskCenterLine.ui" line="316"/>
@@ -5504,7 +5504,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="156"/>
       <source>Position</source>
-      <translation type="unfinished">Position</translation>
+      <translation>Позиція</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="159"/>
@@ -5524,7 +5524,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="176"/>
       <source>Symmetry</source>
-      <translation type="unfinished">Symmetry</translation>
+      <translation>Симетрія</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="179"/>
@@ -5684,7 +5684,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="418"/>
       <source>Radius</source>
-      <translation type="unfinished">Radius</translation>
+      <translation>Радіусу</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="421"/>
@@ -5694,7 +5694,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="428"/>
       <source>Diameter</source>
-      <translation type="unfinished">Diameter</translation>
+      <translation>Діаметр</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="431"/>
@@ -5724,7 +5724,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="458"/>
       <source>Square</source>
-      <translation type="unfinished">Square</translation>
+      <translation>Квадрат</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="461"/>
@@ -5739,7 +5739,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="479"/>
       <source>Degree</source>
-      <translation type="unfinished">Degree</translation>
+      <translation>Кут</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="482"/>
@@ -5779,7 +5779,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="521"/>
       <source>Other</source>
-      <translation type="unfinished">Other</translation>
+      <translation>Інші</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="533"/>
@@ -5794,7 +5794,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="543"/>
       <source>Slope</source>
-      <translation type="unfinished">Slope</translation>
+      <translation>Нахил</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="546"/>
@@ -5804,7 +5804,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="553"/>
       <source>Counterbore</source>
-      <translation type="unfinished">Counterbore</translation>
+      <translation>Цековка</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="556"/>
@@ -5814,7 +5814,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="563"/>
       <source>Countersink</source>
-      <translation type="unfinished">Countersink</translation>
+      <translation>Зенківка</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="566"/>
@@ -5949,12 +5949,12 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="708"/>
       <source>Format:</source>
-      <translation type="unfinished">Format:</translation>
+      <translation>Формат:</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="718"/>
       <source>Preview:</source>
-      <translation type="unfinished">Preview:</translation>
+      <translation>Попередній перегляд:</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.cpp" line="111"/>
@@ -6248,7 +6248,7 @@ be used instead if the dimension value</translation>
     <message>
       <location filename="../../TaskDimension.ui" line="311"/>
       <source>Lines</source>
-      <translation type="unfinished">Lines</translation>
+      <translation>Ліній</translation>
     </message>
     <message>
       <location filename="../../TaskDimension.ui" line="319"/>
@@ -6570,7 +6570,7 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskLineDecor.ui" line="57"/>
       <source>Lines</source>
-      <translation type="unfinished">Lines</translation>
+      <translation>Ліній</translation>
     </message>
     <message>
       <location filename="../../TaskLineDecor.ui" line="78"/>
@@ -6610,7 +6610,7 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskLineDecor.ui" line="151"/>
       <source>Weight</source>
-      <translation type="unfinished">Weight</translation>
+      <translation>Ваги</translation>
     </message>
     <message>
       <location filename="../../TaskLineDecor.ui" line="158"/>
@@ -6887,77 +6887,77 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskProjection.ui" line="14"/>
       <source>Project shapes</source>
-      <translation type="unfinished">Project shapes</translation>
+      <translation>Проект форм</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="22"/>
       <source>Visible sharp edges</source>
-      <translation type="unfinished">Visible sharp edges</translation>
+      <translation>Видимі гострі ребра</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="32"/>
       <source>Visible smooth edges</source>
-      <translation type="unfinished">Visible smooth edges</translation>
+      <translation>Видимі згладжені ребра</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="42"/>
       <source>Visible sewn edges</source>
-      <translation type="unfinished">Visible sewn edges</translation>
+      <translation>Видимі зшиті ребра</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="52"/>
       <source>Visible outline edges</source>
-      <translation type="unfinished">Visible outline edges</translation>
+      <translation>Видимі контурні ребра</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="62"/>
       <source>Visible isoparameters</source>
-      <translation type="unfinished">Visible isoparameters</translation>
+      <translation>Видимі ізопараметри</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="72"/>
       <source>Hidden sharp edges</source>
-      <translation type="unfinished">Hidden sharp edges</translation>
+      <translation>Приховані гострі ребра</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="79"/>
       <source>Hidden smooth edges</source>
-      <translation type="unfinished">Hidden smooth edges</translation>
+      <translation>Приховані згладжені ребра</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="86"/>
       <source>Hidden sewn edges</source>
-      <translation type="unfinished">Hidden sewn edges</translation>
+      <translation>Приховані зшиті ребра</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="93"/>
       <source>Hidden outline edges</source>
-      <translation type="unfinished">Hidden outline edges</translation>
+      <translation>Приховані контурні ребра</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.ui" line="100"/>
       <source>Hidden isoparameters</source>
-      <translation type="unfinished">Hidden isoparameters</translation>
+      <translation>Приховані ізопараметри</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.cpp" line="69"/>
       <source>No active document</source>
-      <translation type="unfinished">No active document</translation>
+      <translation>Немає активного документу</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.cpp" line="70"/>
       <source>There is currently no active document to complete the operation</source>
-      <translation type="unfinished">There is currently no active document to complete the operation</translation>
+      <translation>В даний час немає активного документа до завершення операції</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.cpp" line="75"/>
       <source>No active view</source>
-      <translation type="unfinished">No active view</translation>
+      <translation>Немає активного виду</translation>
     </message>
     <message>
       <location filename="../../TaskProjection.cpp" line="76"/>
       <source>There is currently no active view to complete the operation</source>
-      <translation type="unfinished">There is currently no active view to complete the operation</translation>
+      <translation>В даний час немає активного виду для завершення операції</translation>
     </message>
   </context>
   <context>
@@ -7129,17 +7129,17 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskSectionView.ui" line="98"/>
       <source>Page</source>
-      <translation type="unfinished">Page</translation>
+      <translation>Сторінка</translation>
     </message>
     <message>
       <location filename="../../TaskSectionView.ui" line="103"/>
       <source>Automatic</source>
-      <translation type="unfinished">Automatic</translation>
+      <translation>Автоматичний</translation>
     </message>
     <message>
       <location filename="../../TaskSectionView.ui" line="108"/>
       <source>Custom</source>
-      <translation type="unfinished">Custom</translation>
+      <translation>Підлаштувати</translation>
     </message>
     <message>
       <location filename="../../TaskSectionView.ui" line="116"/>
@@ -7222,7 +7222,7 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="34"/>
       <source>Line style:</source>
-      <translation type="unfinished">Line style:</translation>
+      <translation>Стиль лінії:</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="41"/>
@@ -7232,27 +7232,27 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="44"/>
       <source>Solid</source>
-      <translation type="unfinished">Solid</translation>
+      <translation>Суцільне тіло</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="57"/>
       <source>Dashed</source>
-      <translation type="unfinished">Dashed</translation>
+      <translation>Пунктирна</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="70"/>
       <source>Dotted</source>
-      <translation type="unfinished">Dotted</translation>
+      <translation>В крапку</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="83"/>
       <source>Dashdot</source>
-      <translation type="unfinished">Dashdot</translation>
+      <translation>Тире крапка</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="103"/>
       <source>Line width:</source>
-      <translation type="unfinished">Line width:</translation>
+      <translation>Ширина лінії:</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="110"/>
@@ -7272,17 +7272,17 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="156"/>
       <source>Line color:</source>
-      <translation type="unfinished">Line color:</translation>
+      <translation>Колір лінії:</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="163"/>
       <source>Black</source>
-      <translation type="unfinished">Black</translation>
+      <translation>Чорний</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="179"/>
       <source>Blue</source>
-      <translation type="unfinished">Blue</translation>
+      <translation>Синій</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="192"/>
@@ -7292,27 +7292,27 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="205"/>
       <source>Magenta</source>
-      <translation type="unfinished">Magenta</translation>
+      <translation>Пурпуровий</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="218"/>
       <source>Red</source>
-      <translation type="unfinished">Red</translation>
+      <translation>Червоний</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="231"/>
       <source>Cyan</source>
-      <translation type="unfinished">Cyan</translation>
+      <translation>Блакитний</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="244"/>
       <source>Green</source>
-      <translation type="unfinished">Green</translation>
+      <translation>Зелений</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="257"/>
       <source>Yellow</source>
-      <translation type="unfinished">Yellow</translation>
+      <translation>Жовтий</translation>
     </message>
     <message>
       <location filename="../../TaskSelectLineAttributes.ui" line="283"/>
@@ -7338,21 +7338,21 @@ using the given X/Y Spacing</translation>
       <location filename="../../TaskWeldingSymbol.cpp" line="326"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="338"/>
       <source>Symbol</source>
-      <translation type="unfinished">Symbol</translation>
+      <translation>Символ</translation>
     </message>
     <message>
       <location filename="../../TaskWeldingSymbol.cpp" line="277"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="287"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="427"/>
       <source>arrow</source>
-      <translation type="unfinished">arrow</translation>
+      <translation>стрілка</translation>
     </message>
     <message>
       <location filename="../../TaskWeldingSymbol.cpp" line="300"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="310"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="428"/>
       <source>other</source>
-      <translation type="unfinished">other</translation>
+      <translation>інші</translation>
     </message>
   </context>
   <context>

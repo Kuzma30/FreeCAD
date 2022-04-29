@@ -5,261 +5,261 @@
     <name>CmdPointsConvert</name>
     <message>
       <source>Points</source>
-      <translation>Точки</translation>
+      <translation type="unfinished">Points</translation>
     </message>
     <message>
       <source>Convert to points...</source>
-      <translation>Преобразовать в точки...</translation>
+      <translation type="unfinished">Convert to points...</translation>
     </message>
     <message>
       <source>Convert to points</source>
-      <translation>Преобразовать в точки</translation>
+      <translation type="unfinished">Convert to points</translation>
     </message>
   </context>
   <context>
     <name>CmdPointsExport</name>
     <message>
       <source>Points</source>
-      <translation>Точки</translation>
+      <translation type="unfinished">Points</translation>
     </message>
     <message>
       <source>Export points...</source>
-      <translation>Экспорт точек...</translation>
+      <translation type="unfinished">Export points...</translation>
     </message>
     <message>
       <source>Exports a point cloud</source>
-      <translation>Экспорт облака точек</translation>
+      <translation type="unfinished">Exports a point cloud</translation>
     </message>
   </context>
   <context>
     <name>CmdPointsImport</name>
     <message>
       <source>Points</source>
-      <translation>Точки</translation>
+      <translation type="unfinished">Points</translation>
     </message>
     <message>
       <source>Import points...</source>
-      <translation>Импорт точек...</translation>
+      <translation type="unfinished">Import points...</translation>
     </message>
     <message>
       <source>Imports a point cloud</source>
-      <translation>Импорт облака точек</translation>
+      <translation type="unfinished">Imports a point cloud</translation>
     </message>
   </context>
   <context>
     <name>CmdPointsMerge</name>
     <message>
       <source>Points</source>
-      <translation>Точки</translation>
+      <translation type="unfinished">Points</translation>
     </message>
     <message>
       <source>Merge point clouds</source>
-      <translation>Слияние облаков точек</translation>
+      <translation type="unfinished">Merge point clouds</translation>
     </message>
     <message>
       <source>Merge several point clouds into one</source>
-      <translation>Объединить несколько облаков точек в одно</translation>
+      <translation type="unfinished">Merge several point clouds into one</translation>
     </message>
   </context>
   <context>
     <name>CmdPointsPolyCut</name>
     <message>
       <source>Points</source>
-      <translation>Точки</translation>
+      <translation type="unfinished">Points</translation>
     </message>
     <message>
       <source>Cut point cloud</source>
-      <translation>Вырезать облако точек</translation>
+      <translation type="unfinished">Cut point cloud</translation>
     </message>
     <message>
       <source>Cuts a point cloud with a picked polygon</source>
-      <translation>Вырезать облако точек, ограниченное отмеченным полигоном</translation>
+      <translation type="unfinished">Cuts a point cloud with a picked polygon</translation>
     </message>
   </context>
   <context>
     <name>CmdPointsStructure</name>
     <message>
       <source>Points</source>
-      <translation>Точки</translation>
+      <translation type="unfinished">Points</translation>
     </message>
     <message>
       <source>Structured point cloud</source>
-      <translation>Облако структурированных точек</translation>
+      <translation type="unfinished">Structured point cloud</translation>
     </message>
     <message>
       <source>Convert points to structured point cloud</source>
-      <translation>Преобразование точек в облако структурированных точек</translation>
+      <translation type="unfinished">Convert points to structured point cloud</translation>
     </message>
   </context>
   <context>
     <name>CmdPointsTransform</name>
     <message>
       <source>Points</source>
-      <translation>Точки</translation>
+      <translation type="unfinished">Points</translation>
     </message>
     <message>
       <source>Transform Points</source>
-      <translation>Преобразование точек</translation>
+      <translation type="unfinished">Transform Points</translation>
     </message>
     <message>
       <source>Test to transform a point cloud</source>
-      <translation>Тест для преобразования облака точек</translation>
+      <translation type="unfinished">Test to transform a point cloud</translation>
     </message>
   </context>
   <context>
     <name>Command</name>
     <message>
       <source>Import points</source>
-      <translation>Импортировать точки</translation>
+      <translation type="unfinished">Import points</translation>
     </message>
     <message>
       <source>Transform points</source>
-      <translation>Преобразовать точки</translation>
+      <translation type="unfinished">Transform points</translation>
     </message>
     <message>
       <source>Convert to points</source>
-      <translation>Преобразовать в точки</translation>
+      <translation type="unfinished">Convert to points</translation>
     </message>
     <message>
       <source>Cut points</source>
-      <translation>Вырезать точки</translation>
+      <translation type="unfinished">Cut points</translation>
     </message>
   </context>
   <context>
     <name>PointsGui::DlgPointsRead</name>
     <message>
       <source>ASCII points import</source>
-      <translation>Импорт точек ASCII</translation>
+      <translation type="unfinished">ASCII points import</translation>
     </message>
     <message>
       <source>Template:</source>
-      <translation>Шаблон:</translation>
+      <translation type="unfinished">Template:</translation>
     </message>
     <message>
       <source>Special lines</source>
-      <translation>Специальные линии</translation>
+      <translation type="unfinished">Special lines</translation>
     </message>
     <message>
       <source>Ignore lines starting with:</source>
-      <translation>Игнорировать строки, начинающиеся с:</translation>
+      <translation type="unfinished">Ignore lines starting with:</translation>
     </message>
     <message>
       <source>Cluster by lines starting with:</source>
-      <translation>Кластер по линии, начиная с:</translation>
+      <translation type="unfinished">Cluster by lines starting with:</translation>
     </message>
     <message>
       <source>First line:</source>
-      <translation>Первая линия:</translation>
+      <translation type="unfinished">First line:</translation>
     </message>
     <message>
       <source>Ignore</source>
-      <translation>Игнорировать</translation>
+      <translation type="unfinished">Ignore</translation>
     </message>
     <message>
       <source>Number of points</source>
-      <translation>Количество точек</translation>
+      <translation type="unfinished">Number of points</translation>
     </message>
     <message>
       <source>Point format</source>
-      <translation>Формат точек</translation>
+      <translation type="unfinished">Point format</translation>
     </message>
     <message>
       <source>none</source>
-      <translation>Отсутствует</translation>
+      <translation type="unfinished">none</translation>
     </message>
     <message>
       <source>I,J,K (normal vector)</source>
-      <translation>I, J, K (вектор нормали)</translation>
+      <translation type="unfinished">I,J,K (normal vector)</translation>
     </message>
     <message>
       <source>I,K (normal vector 2D)</source>
-      <translation>I, K (вектор нормали 2D)</translation>
+      <translation type="unfinished">I,K (normal vector 2D)</translation>
     </message>
     <message>
       <source>R,G,B (color)</source>
-      <translation>R, G, B (цвет)</translation>
+      <translation type="unfinished">R,G,B (color)</translation>
     </message>
     <message>
       <source>I (Gray value)</source>
-      <translation>I (значение серого)</translation>
+      <translation type="unfinished">I (Gray value)</translation>
     </message>
     <message>
       <source>Number separator:</source>
-      <translation>Числовой разделитель:</translation>
+      <translation type="unfinished">Number separator:</translation>
     </message>
     <message>
       <source>Next block:</source>
-      <translation>Следующий блок:</translation>
+      <translation type="unfinished">Next block:</translation>
     </message>
     <message>
       <source>,</source>
-      <translation>,</translation>
+      <translation type="unfinished">,</translation>
     </message>
     <message>
       <source>;</source>
-      <translation>;</translation>
+      <translation type="unfinished">;</translation>
     </message>
     <message>
       <source>\t</source>
-      <translation>\t</translation>
+      <translation type="unfinished">\t</translation>
     </message>
     <message>
       <source>\w</source>
-      <translation>\w</translation>
+      <translation type="unfinished">\w</translation>
     </message>
     <message>
       <source>X,Y,Z</source>
-      <translation>X, Y, Z</translation>
+      <translation type="unfinished">X,Y,Z</translation>
     </message>
     <message>
       <source>X,Y</source>
-      <translation>X, Y</translation>
+      <translation type="unfinished">X,Y</translation>
     </message>
     <message>
       <source>Points format:</source>
-      <translation>Формат точек:</translation>
+      <translation type="unfinished">Points format:</translation>
     </message>
     <message>
       <source>Preview</source>
-      <translation>Предварительный просмотр</translation>
+      <translation type="unfinished">Preview</translation>
     </message>
     <message>
       <source>Number of previewed lines:</source>
-      <translation>Количество предварительно просматриваемых строк:</translation>
+      <translation type="unfinished">Number of previewed lines:</translation>
     </message>
     <message>
       <source>100</source>
-      <translation>100</translation>
+      <translation type="unfinished">100</translation>
     </message>
   </context>
   <context>
     <name>QObject</name>
     <message>
       <source>Point formats</source>
-      <translation>Форматы точек</translation>
+      <translation type="unfinished">Point formats</translation>
     </message>
     <message>
       <source>All Files</source>
-      <translation>Все файлы</translation>
+      <translation type="unfinished">All Files</translation>
     </message>
     <message>
       <source>Distance</source>
-      <translation>Расстояние</translation>
+      <translation type="unfinished">Distance</translation>
     </message>
     <message>
       <source>Enter maximum distance:</source>
-      <translation>Введите максимальное расстояние:</translation>
+      <translation type="unfinished">Enter maximum distance:</translation>
     </message>
   </context>
   <context>
     <name>Workbench</name>
     <message>
       <source>Points tools</source>
-      <translation>Инструменты для точек</translation>
+      <translation type="unfinished">Points tools</translation>
     </message>
     <message>
       <source>&amp;Points</source>
-      <translation>&amp;Точки</translation>
+      <translation type="unfinished">&amp;Points</translation>
     </message>
   </context>
 </TS>

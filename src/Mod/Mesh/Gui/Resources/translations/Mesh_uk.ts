@@ -1864,7 +1864,7 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     </message>
     <message>
       <source>Cutting</source>
-      <translation>Перерізання</translation>
+      <translation type="unfinished">Cutting</translation>
     </message>
   </context>
 </TS>

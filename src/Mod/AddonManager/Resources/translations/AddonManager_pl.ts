@@ -627,7 +627,7 @@
     <message>
       <location filename="package_list.py" line="787"/>
       <source>OK</source>
-      <translation>OK</translation>
+      <translation type="unfinished">OK</translation>
     </message>
     <message>
       <location filename="install_to_toolbar.py" line="94"/>

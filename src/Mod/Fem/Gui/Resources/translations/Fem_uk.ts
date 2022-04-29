@@ -3486,7 +3486,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MeshBoundaryLayer.ui" line="50"/>
       <location filename="../ui/MeshRegion.ui" line="56"/>
       <source>0 mm</source>
-      <translation>0 мм</translation>
+      <translation type="unfinished">0 mm</translation>
     </message>
     <message>
       <location filename="../ui/ConstraintTie.ui" line="77"/>
@@ -3627,7 +3627,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/ElementGeometry1D.ui" line="225"/>
       <location filename="../ui/ElementGeometry1D.ui" line="243"/>
       <source>Diameter:   </source>
-      <translation>Діаметр:   </translation>
+      <translation type="unfinished">Diameter:   </translation>
     </message>
     <message>
       <location filename="../ui/ElementGeometry1D.ui" line="287"/>
@@ -3769,7 +3769,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MeshGmsh.ui" line="66"/>
       <location filename="../ui/MeshGmsh.ui" line="110"/>
       <source>0 mm</source>
-      <translation>0 мм</translation>
+      <translation type="unfinished">0 mm</translation>
     </message>
     <message>
       <location filename="../ui/MeshGmsh.ui" line="91"/>
@@ -3961,17 +3961,17 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="110"/>
       <source>Nodes</source>
-      <translation>Вузли</translation>
+      <translation type="unfinished">Nodes</translation>
     </message>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="111"/>
       <source>Edges</source>
-      <translation>Ребра</translation>
+      <translation type="unfinished">Edges</translation>
     </message>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="112"/>
       <source>Faces</source>
-      <translation>Грані</translation>
+      <translation type="unfinished">Faces</translation>
     </message>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="113"/>
@@ -3991,7 +3991,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="116"/>
       <source>Groups</source>
-      <translation>Групи</translation>
+      <translation type="unfinished">Groups</translation>
     </message>
     <message>
       <location filename="../../ViewProviderAnalysis.cpp" line="227"/>
@@ -3999,7 +3999,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../ViewProviderFemPostObject.cpp" line="681"/>
       <location filename="../../ViewProviderSolver.cpp" line="71"/>
       <source>Are you sure you want to continue?</source>
-      <translation>Ви впевнені, що бажаєте продовжити?</translation>
+      <translation type="unfinished">Are you sure you want to continue?</translation>
     </message>
   </context>
   <context>
@@ -4072,7 +4072,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/ResultShow.ui" line="150"/>
       <source>Temperature</source>
-      <translation>Температура</translation>
+      <translation type="unfinished">Temperature</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="157"/>
@@ -4319,7 +4319,7 @@ following referencing objects might be lost:</translation>
       <location filename="../../ViewProviderFemPostObject.cpp" line="684"/>
       <location filename="../../ViewProviderSolver.cpp" line="74"/>
       <source>Object dependencies</source>
-      <translation>Залежності об'єктів</translation>
+      <translation type="unfinished">Object dependencies</translation>
     </message>
     <message>
       <location filename="../../ViewProviderFemPostFunction.cpp" line="145"/>
@@ -4467,7 +4467,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="149"/>
       <source>Reverse direction</source>
-      <translation>Зворотний напрямок</translation>
+      <translation type="unfinished">Reverse direction</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="158"/>
@@ -4749,7 +4749,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="230"/>
       <source>Direction </source>
-      <translation>Напрямок </translation>
+      <translation type="unfinished">Direction </translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="261"/>
@@ -4761,7 +4761,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="286"/>
       <source>Reverse direction</source>
-      <translation>Зворотний напрямок</translation>
+      <translation type="unfinished">Reverse direction</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="294"/>
@@ -4781,7 +4781,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="345"/>
       <source>Length [m]</source>
-      <translation>Довжина [m]</translation>
+      <translation type="unfinished">Length [m]</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="371"/>
@@ -4791,7 +4791,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="382"/>
       <source> Type </source>
-      <translation> Тип </translation>
+      <translation type="unfinished"> Type </translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="399"/>
@@ -4856,7 +4856,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="119"/>
       <source>Reverse direction</source>
-      <translation>Зворотний напрямок</translation>
+      <translation type="unfinished">Reverse direction</translation>
     </message>
   </context>
   <context>
@@ -5061,7 +5061,7 @@ normal vector of the face is used as direction</translation>
       <location filename="../../TaskFemConstraintTemperature.ui" line="56"/>
       <location filename="../../TaskFemConstraintTemperature.ui" line="80"/>
       <source>Temperature</source>
-      <translation>Температура</translation>
+      <translation type="unfinished">Temperature</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTemperature.ui" line="69"/>
@@ -5259,7 +5259,7 @@ normal vector of the face is used as direction</translation>
       <location filename="../../TaskPostDisplay.ui" line="42"/>
       <location filename="../../TaskPostDisplay.ui" line="93"/>
       <source>Outline</source>
-      <translation>Контур</translation>
+      <translation type="unfinished">Outline</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="47"/>
@@ -5340,7 +5340,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostScalarClip.ui" line="42"/>
       <source>Outline</source>
-      <translation>Контур</translation>
+      <translation type="unfinished">Outline</translation>
     </message>
     <message>
       <location filename="../../TaskPostScalarClip.ui" line="47"/>
@@ -5539,7 +5539,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../Workbench.cpp" line="44"/>
       <source>&amp;Materials</source>
-      <translation>&amp;Матеріали</translation>
+      <translation type="unfinished">&amp;Materials</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="45"/>
@@ -5639,7 +5639,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../Workbench.cpp" line="66"/>
       <source>&amp;Solve</source>
-      <translation>&amp;Розв’язати</translation>
+      <translation type="unfinished">&amp;Solve</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="68"/>

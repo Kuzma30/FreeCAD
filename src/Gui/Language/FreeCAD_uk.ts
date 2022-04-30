@@ -251,7 +251,7 @@
     </message>
     <message>
       <source>Measure</source>
-      <translation type="unfinished">Measure</translation>
+      <translation>Вимірювання</translation>
     </message>
   </context>
   <context>
@@ -3697,7 +3697,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Macro recording settings</source>
-      <translation>Установки запису макросів</translation>
+      <translation>Налаштування запису макросів</translation>
     </message>
     <message>
       <source>Logging Commands</source>
@@ -7786,7 +7786,7 @@ the current copy will be lost.
     <name>StdCmdDlgCustomize</name>
     <message>
       <source>Cu&amp;stomize...</source>
-      <translation>Власні установки...</translation>
+      <translation>Власні налаштування...</translation>
     </message>
     <message>
       <source>Customize toolbars and command bars</source>
@@ -7841,7 +7841,7 @@ the current copy will be lost.
     <name>StdCmdDlgPreferences</name>
     <message>
       <source>&amp;Preferences ...</source>
-      <translation>&amp;Установки ...</translation>
+      <translation>&amp;Налаштування ...</translation>
     </message>
     <message>
       <source>Opens a Dialog to edit the preferences</source>

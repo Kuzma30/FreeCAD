@@ -7202,7 +7202,7 @@ Be aware the point where you click matters.</source>
     </message>
     <message>
       <source>Do you want to save your changes to document &apos;%1&apos; before closing?</source>
-      <translation type="unfinished">Do you want to save your changes to document &apos;%1&apos; before closing?</translation>
+      <translation>Бажаєте зберегти внесені зміни в документ &apos;%1&apos; перед його закриттям?</translation>
     </message>
     <message>
       <source>If you don&apos;t save, your changes will be lost.</source>
@@ -7378,7 +7378,7 @@ underscore, and must not start with a digit.</translation>
     </message>
     <message>
       <source>The file contains external dependencies. Do you want to save the dependent files, too?</source>
-      <translation type="unfinished">The file contains external dependencies. Do you want to save the dependent files, too?</translation>
+      <translation>Файл містить зовнішні залежності. Бажаєте також зберегти залежні файли?</translation>
     </message>
     <message>
       <source>Failed to save document</source>
@@ -7386,7 +7386,7 @@ underscore, and must not start with a digit.</translation>
     </message>
     <message>
       <source>Documents contains cyclic dependencies. Do you still want to save them?</source>
-      <translation type="unfinished">Documents contains cyclic dependencies. Do you still want to save them?</translation>
+      <translation>Документи містять циклічні залежності. Ви все ще хочете їх зберегти?</translation>
     </message>
     <message>
       <source>Undo</source>
@@ -7410,7 +7410,7 @@ Choose &apos;Abort&apos; to abort</translation>
     </message>
     <message>
       <source>Do you want to save your changes to document before closing?</source>
-      <translation type="unfinished">Do you want to save your changes to document before closing?</translation>
+      <translation>Бажаєте зберегти зміни, які були внесені до документа перед його закриттям?</translation>
     </message>
     <message>
       <source>Apply answer to all</source>
@@ -7478,7 +7478,7 @@ Would you like to save the file with a different name?</translation>
     </message>
     <message>
       <source>The document%1 could not be saved. Do you want to cancel closing it?</source>
-      <translation type="unfinished">The document%1 could not be saved. Do you want to cancel closing it?</translation>
+      <translation>Документ%1 не вдалося зберегти. Бажаєте скасувати закриття?</translation>
     </message>
     <message>
       <source>%1 Document(s) not saved</source>

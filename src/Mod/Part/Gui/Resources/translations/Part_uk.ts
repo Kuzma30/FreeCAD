@@ -1835,7 +1835,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../Command.cpp" line="2288"/>
       <source>Measure the angle between two edges.</source>
-      <translation type="unfinished">Measure the angle between two edges.</translation>
+      <translation>Виміряти кут між двома ребрами.</translation>
     </message>
   </context>
   <context>
@@ -1943,7 +1943,7 @@ direct, orthogonal, and angular.</translation>
     <message>
       <location filename="../../Command.cpp" line="2442"/>
       <source>Part</source>
-      <translation>Частина</translation>
+      <translation>Деталь</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="2443"/>
@@ -5552,7 +5552,7 @@ of object being attached.</translation>
     <message>
       <location filename="../../TaskAttacher.cpp" line="332"/>
       <source>Attached with mode %1</source>
-      <translation type="unfinished">Attached with mode %1</translation>
+      <translation>Режим приєднання: %1</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.cpp" line="336"/>

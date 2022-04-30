@@ -94,7 +94,7 @@
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="14"/>
       <source>Choose orientation</source>
-      <translation>Оберіть орієнтацію</translation>
+      <translation type="unfinished">Choose orientation</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="20"/>
@@ -109,17 +109,17 @@
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="36"/>
       <source>XZ-Plane</source>
-      <translation>Площина XZ</translation>
+      <translation type="unfinished">XZ-Plane</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="43"/>
       <source>YZ-Plane</source>
-      <translation>Площина YZ</translation>
+      <translation type="unfinished">YZ-Plane</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="72"/>
       <source>Reverse direction</source>
-      <translation>Зворотний напрямок</translation>
+      <translation type="unfinished">Reverse direction</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="81"/>

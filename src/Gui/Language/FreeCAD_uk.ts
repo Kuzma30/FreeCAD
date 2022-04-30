@@ -882,7 +882,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Icon folders...</source>
-      <translation>Папки з піктограмами...</translation>
+      <translation>Теки з піктограмами...</translation>
     </message>
   </context>
   <context>
@@ -4537,7 +4537,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Open containing folder</source>
-      <translation>Відкрити папку</translation>
+      <translation>Відкрити теку</translation>
     </message>
     <message>
       <source>Error opening saved file: %1</source>
@@ -4619,26 +4619,26 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     <name>Gui::Dialog::IconDialog</name>
     <message>
       <source>Icon folders</source>
-      <translation>Папки з піктограмами</translation>
+      <translation>Теки з піктограмами</translation>
     </message>
     <message>
       <source>Add icon folder</source>
-      <translation>Додати папку з піктограмами</translation>
+      <translation>Додати теку з піктограмами</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::IconFolders</name>
     <message>
       <source>Add or remove custom icon folders</source>
-      <translation>Додати або видалити папку піктограм користувача</translation>
+      <translation>Додати або видалити теку піктограм користувача</translation>
     </message>
     <message>
       <source>Remove folder</source>
-      <translation>Видалити папку</translation>
+      <translation>Видалити теку</translation>
     </message>
     <message>
       <source>Removing a folder only takes effect after an application restart.</source>
-      <translation>Видалення папки відбудется лише після перезапуску програми.</translation>
+      <translation>Видалення теки відбудеться лише після перезапуску програми.</translation>
     </message>
   </context>
   <context>
@@ -7466,11 +7466,11 @@ Choose &apos;Abort&apos; to abort</translation>
 &quot;%1&quot;
 
 Would you like to save the file with a different name?</source>
-      <translation type="unfinished">There was an issue trying to save the file. This may be because some of the parent folders do not exist, or you do not have sufficient permissions, or for other reasons. Error details:
+      <translation>При спробі зберегти файл виникла проблема. Це може бути пов'язано з тим, що відсутні деякі батьківські теки, або у вас немає достатніх прав доступу, або з інших причин. Подробиці помилки:
 
 &quot;%1&quot;
 
-Would you like to save the file with a different name?</translation>
+Хочете зберегти файл з іншим ім'ям?</translation>
     </message>
     <message>
       <source>Document not saved</source>
@@ -7834,7 +7834,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Opens a Dialog to edit the parameters</source>
-      <translation>Відкриває діалогове вікно для зміни параметрів</translation>
+      <translation>Відкриває діалогове вікно для редагування параметрів</translation>
     </message>
   </context>
   <context>

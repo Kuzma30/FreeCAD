@@ -5005,7 +5005,7 @@ However, no constraints linking to the endpoints were found.</source>
     <message>
       <location filename="../../TaskSketcherGeneral.ui" line="23"/>
       <source>A grid will be shown</source>
-      <translation>Буде показана сітка</translation>
+      <translation>Показує сітку</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherGeneral.ui" line="26"/>
@@ -5067,7 +5067,7 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
       <location filename="../../TaskSketcherGeneral.cpp" line="193"/>
       <source>Edit controls</source>
-      <translation>Редагувати управління</translation>
+      <translation>Редагування елементів керування</translation>
     </message>
   </context>
   <context>

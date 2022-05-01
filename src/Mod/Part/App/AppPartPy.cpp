@@ -110,7 +110,7 @@
 #include "TopoShapeSolidPy.h"
 #include "TopoShapeWirePy.h"
 #include "TopoShapeVertexPy.h"
-
+#include <QObject>
 #ifdef FCUseFreeType
 #  include "FT2FC.h"
 #endif
@@ -637,7 +637,8 @@ private:
 
         if (file.hasExtension("stp") || file.hasExtension("step")) {
             // create new document and add Import feature
-            App::Document *pcDoc = App::GetApplication().newDocument("Unnamed");
+            QString newDocumentName = QObject::tr("Unnamed");
+            App::Document *pcDoc = App::GetApplication().newDocument(qUtf8Printable(newDocumentName));
 #if 1
             ImportStepParts(pcDoc,EncodedName.c_str());
 #else
@@ -648,7 +649,8 @@ private:
         }
 #if 1
         else if (file.hasExtension("igs") || file.hasExtension("iges")) {
-            App::Document *pcDoc = App::GetApplication().newDocument("Unnamed");
+            QString newDocumentName = QObject::tr("Unnamed");
+            App::Document *pcDoc = App::GetApplication().newDocument(qUtf8Printable(newDocumentName));
             ImportIgesParts(pcDoc,EncodedName.c_str());
             pcDoc->recompute();
         }

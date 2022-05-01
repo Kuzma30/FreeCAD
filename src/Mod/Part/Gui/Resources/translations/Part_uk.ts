@@ -622,6 +622,12 @@ Do you want to continue?</source>
       <source>Attachment editor</source>
       <translation>Редактор вкладень</translation>
     </message>
+    <message>
+      <location filename="../../../App/AppPartPy.cpp" line="640"/>
+      <location filename="../../../App/AppPartPy.cpp" line="652"/>
+      <source>Unnamed</source>
+      <translation>Без назви</translation>
+    </message>
   </context>
   <context>
     <name>Attacher</name>
@@ -5808,7 +5814,7 @@ Individual BOP Checks:</translation>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="402"/>
       <source>Check is running...</source>
-      <translation type="unfinished">Check is running...</translation>
+      <translation>Перевірка...</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="426"/>

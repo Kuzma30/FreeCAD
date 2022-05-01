@@ -1653,14 +1653,6 @@ kliknij ponownie, aby zakończyć wybór</translation>
     </message>
   </context>
   <context>
-    <name>PartDesignGui::TaskDatumParameters</name>
-    <message>
-      <location filename="../../TaskDatumParameters.cpp" line="56"/>
-      <source> parameters</source>
-      <translation> parametry</translation>
-    </message>
-  </context>
-  <context>
     <name>PartDesignGui::TaskDlgBooleanParameters</name>
     <message>
       <location filename="../../TaskBooleanParameters.cpp" line="352"/>
@@ -3519,7 +3511,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
       <location filename="../../Command.cpp" line="2225"/>
       <location filename="../../ViewProvider.cpp" line="98"/>
       <location filename="../../ViewProviderBoolean.cpp" line="80"/>
-      <location filename="../../ViewProviderDatum.cpp" line="242"/>
+      <location filename="../../ViewProviderDatum.cpp" line="246"/>
       <location filename="../../ViewProviderHole.cpp" line="79"/>
       <location filename="../../ViewProviderPrimitive.cpp" line="73"/>
       <location filename="../../ViewProviderShapeBinder.cpp" line="98"/>
@@ -3532,7 +3524,7 @@ kliknij ponownie, aby zakończyć wybór</translation>
       <location filename="../../Command.cpp" line="2226"/>
       <location filename="../../ViewProvider.cpp" line="99"/>
       <location filename="../../ViewProviderBoolean.cpp" line="81"/>
-      <location filename="../../ViewProviderDatum.cpp" line="243"/>
+      <location filename="../../ViewProviderDatum.cpp" line="247"/>
       <location filename="../../ViewProviderHole.cpp" line="80"/>
       <location filename="../../ViewProviderPrimitive.cpp" line="74"/>
       <location filename="../../ViewProviderShapeBinder.cpp" line="99"/>
@@ -3891,29 +3883,49 @@ Jeśli masz starszy dokument z obiektami Projektu części bez obiektu Zawartoś
     </message>
     <message>
       <location filename="../../ViewProviderDatum.cpp" line="110"/>
-      <location filename="../../ViewProviderDatum.cpp" line="200"/>
+      <location filename="../../ViewProviderDatum.cpp" line="204"/>
       <source>Plane</source>
       <translation>Płaszczyzna</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderDatum.cpp" line="114"/>
-      <location filename="../../ViewProviderDatum.cpp" line="196"/>
+      <location filename="../../ViewProviderDatum.cpp" line="111"/>
+      <source>Datum Plane parameters</source>
+      <translation type="unfinished">Datum Plane parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="115"/>
+      <location filename="../../ViewProviderDatum.cpp" line="200"/>
       <source>Line</source>
       <translation>Linia</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderDatum.cpp" line="118"/>
-      <location filename="../../ViewProviderDatum.cpp" line="204"/>
+      <location filename="../../ViewProviderDatum.cpp" line="116"/>
+      <source>Datum Line parameters</source>
+      <translation type="unfinished">Datum Line parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="120"/>
+      <location filename="../../ViewProviderDatum.cpp" line="208"/>
       <source>Point</source>
       <translation>Punkt</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderDatum.cpp" line="122"/>
+      <location filename="../../ViewProviderDatum.cpp" line="121"/>
+      <source>Datum Point parameters</source>
+      <translation type="unfinished">Datum Point parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="125"/>
       <source>Coordinate System</source>
       <translation>Układ współrzędnych</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderDatum.cpp" line="221"/>
+      <location filename="../../ViewProviderDatum.cpp" line="126"/>
+      <source>Local Coordinate System parameters</source>
+      <translation type="unfinished">Local Coordinate System parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="225"/>
       <source>Edit datum</source>
       <translation>Edytuj odniesienie</translation>
     </message>
@@ -4037,6 +4049,51 @@ Although you will be able to migrate any moment later with &apos;Part Design -&g
       <location filename="../../ViewProviderHelix.cpp" line="55"/>
       <source>Edit helix</source>
       <translation>Edytuj helisę</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderChamfer.h" line="40"/>
+      <source>Chamfer parameters</source>
+      <translation type="unfinished">Chamfer parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDraft.h" line="41"/>
+      <source>Draft parameters</source>
+      <translation type="unfinished">Draft parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderFillet.h" line="40"/>
+      <source>Fillet parrameters</source>
+      <translation type="unfinished">Fillet parrameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderLinearPattern.h" line="37"/>
+      <source>LinearPattern parameters</source>
+      <translation type="unfinished">LinearPattern parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderMirrored.h" line="37"/>
+      <source>Mirrored parameters</source>
+      <translation type="unfinished">Mirrored parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderMultiTransform.h" line="37"/>
+      <source>MultiTransform parameters</source>
+      <translation type="unfinished">MultiTransform parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderPolarPattern.h" line="37"/>
+      <source>PolarPattern parameters</source>
+      <translation type="unfinished">PolarPattern parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderScaled.h" line="37"/>
+      <source>Scaled parameters</source>
+      <translation type="unfinished">Scaled parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderThickness.h" line="40"/>
+      <source>Thickness parameters</source>
+      <translation type="unfinished">Thickness parameters</translation>
     </message>
   </context>
   <context>

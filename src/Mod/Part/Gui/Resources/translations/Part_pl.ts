@@ -622,6 +622,12 @@ Do you want to continue?</source>
       <source>Attachment editor</source>
       <translation>Edytor dołączania</translation>
     </message>
+    <message>
+      <location filename="../../../App/AppPartPy.cpp" line="640"/>
+      <location filename="../../../App/AppPartPy.cpp" line="652"/>
+      <source>Unnamed</source>
+      <translation type="unfinished">Unnamed</translation>
+    </message>
   </context>
   <context>
     <name>Attacher</name>

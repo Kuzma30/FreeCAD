@@ -637,8 +637,8 @@ private:
 
         if (file.hasExtension("stp") || file.hasExtension("step")) {
             // create new document and add Import feature
-            QString newDocumentName = QObject::tr("Unnamed");
-            App::Document *pcDoc = App::GetApplication().newDocument(qUtf8Printable(newDocumentName));
+            QString newStepDocumentName = QObject::tr("UnnamedStp");
+            App::Document *pcDoc = App::GetApplication().newDocument(qUtf8Printable(newStepDocumentName));
 #if 1
             ImportStepParts(pcDoc,EncodedName.c_str());
 #else
@@ -649,8 +649,8 @@ private:
         }
 #if 1
         else if (file.hasExtension("igs") || file.hasExtension("iges")) {
-            QString newDocumentName = QObject::tr("Unnamed");
-            App::Document *pcDoc = App::GetApplication().newDocument(qUtf8Printable(newDocumentName));
+            QString newIGESDocumentName = QObject::tr("UnnamedIges");
+            App::Document *pcDoc = App::GetApplication().newDocument(qUtf8Printable(newIGESDocumentName));
             ImportIgesParts(pcDoc,EncodedName.c_str());
             pcDoc->recompute();
         }

@@ -625,12 +625,12 @@ Do you want to continue?</source>
     <message>
       <location filename="../../../App/AppPartPy.cpp" line="640"/>
       <source>UnnamedStp</source>
-      <translation type="unfinished">UnnamedStp</translation>
+      <translation>Без назви</translation>
     </message>
     <message>
       <location filename="../../../App/AppPartPy.cpp" line="652"/>
       <source>UnnamedIges</source>
-      <translation type="unfinished">UnnamedIges</translation>
+      <translation>Без назви</translation>
     </message>
   </context>
   <context>

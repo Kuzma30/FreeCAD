@@ -1846,6 +1846,10 @@ Odwiedź http://www.openscad.org/index.html żeby go zainstalować.</translation
       <source>3D Manufacturing Format</source>
       <translation type="unfinished">3D Manufacturing Format</translation>
     </message>
+    <message>
+      <source>Unnamed</source>
+      <translation type="unfinished">Unnamed</translation>
+    </message>
   </context>
   <context>
     <name>Workbench</name>

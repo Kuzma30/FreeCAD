@@ -251,7 +251,7 @@
     </message>
     <message>
       <source>Measure</source>
-      <translation type="unfinished">Measure</translation>
+      <translation>Вимірювання</translation>
     </message>
   </context>
   <context>
@@ -882,7 +882,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Icon folders...</source>
-      <translation>Папки з піктограмами...</translation>
+      <translation>Теки з піктограмами...</translation>
     </message>
   </context>
   <context>
@@ -3697,7 +3697,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Macro recording settings</source>
-      <translation>Установки запису макросів</translation>
+      <translation>Налаштування запису макросів</translation>
     </message>
     <message>
       <source>Logging Commands</source>
@@ -4537,7 +4537,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Open containing folder</source>
-      <translation>Відкрити папку</translation>
+      <translation>Відкрити теку</translation>
     </message>
     <message>
       <source>Error opening saved file: %1</source>
@@ -4619,26 +4619,26 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     <name>Gui::Dialog::IconDialog</name>
     <message>
       <source>Icon folders</source>
-      <translation>Папки з піктограмами</translation>
+      <translation>Теки з піктограмами</translation>
     </message>
     <message>
       <source>Add icon folder</source>
-      <translation>Додати папку з піктограмами</translation>
+      <translation>Додати теку з піктограмами</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::IconFolders</name>
     <message>
       <source>Add or remove custom icon folders</source>
-      <translation>Додати або видалити папку піктограм користувача</translation>
+      <translation>Додати або видалити теку піктограм користувача</translation>
     </message>
     <message>
       <source>Remove folder</source>
-      <translation>Видалити папку</translation>
+      <translation>Видалити теку</translation>
     </message>
     <message>
       <source>Removing a folder only takes effect after an application restart.</source>
-      <translation>Видалення папки відбудется лише після перезапуску програми.</translation>
+      <translation>Видалення теки відбудеться лише після перезапуску програми.</translation>
     </message>
   </context>
   <context>
@@ -7202,7 +7202,7 @@ Be aware the point where you click matters.</source>
     </message>
     <message>
       <source>Do you want to save your changes to document &apos;%1&apos; before closing?</source>
-      <translation type="unfinished">Do you want to save your changes to document &apos;%1&apos; before closing?</translation>
+      <translation>Бажаєте зберегти внесені зміни в документ &apos;%1&apos; перед його закриттям?</translation>
     </message>
     <message>
       <source>If you don&apos;t save, your changes will be lost.</source>
@@ -7378,7 +7378,7 @@ underscore, and must not start with a digit.</translation>
     </message>
     <message>
       <source>The file contains external dependencies. Do you want to save the dependent files, too?</source>
-      <translation type="unfinished">The file contains external dependencies. Do you want to save the dependent files, too?</translation>
+      <translation>Файл містить зовнішні залежності. Бажаєте також зберегти залежні файли?</translation>
     </message>
     <message>
       <source>Failed to save document</source>
@@ -7386,7 +7386,7 @@ underscore, and must not start with a digit.</translation>
     </message>
     <message>
       <source>Documents contains cyclic dependencies. Do you still want to save them?</source>
-      <translation type="unfinished">Documents contains cyclic dependencies. Do you still want to save them?</translation>
+      <translation>Документи містять циклічні залежності. Ви все ще хочете їх зберегти?</translation>
     </message>
     <message>
       <source>Undo</source>
@@ -7410,7 +7410,7 @@ Choose &apos;Abort&apos; to abort</translation>
     </message>
     <message>
       <source>Do you want to save your changes to document before closing?</source>
-      <translation type="unfinished">Do you want to save your changes to document before closing?</translation>
+      <translation>Бажаєте зберегти зміни, які були внесені до документа перед його закриттям?</translation>
     </message>
     <message>
       <source>Apply answer to all</source>
@@ -7466,11 +7466,11 @@ Choose &apos;Abort&apos; to abort</translation>
 &quot;%1&quot;
 
 Would you like to save the file with a different name?</source>
-      <translation type="unfinished">There was an issue trying to save the file. This may be because some of the parent folders do not exist, or you do not have sufficient permissions, or for other reasons. Error details:
+      <translation>При спробі зберегти файл виникла проблема. Це може бути пов'язано з тим, що відсутні деякі батьківські теки, або у вас немає достатніх прав доступу, або з інших причин. Подробиці помилки:
 
 &quot;%1&quot;
 
-Would you like to save the file with a different name?</translation>
+Хочете зберегти файл з іншим ім'ям?</translation>
     </message>
     <message>
       <source>Document not saved</source>
@@ -7478,7 +7478,7 @@ Would you like to save the file with a different name?</translation>
     </message>
     <message>
       <source>The document%1 could not be saved. Do you want to cancel closing it?</source>
-      <translation type="unfinished">The document%1 could not be saved. Do you want to cancel closing it?</translation>
+      <translation>Документ%1 не вдалося зберегти. Бажаєте скасувати закриття?</translation>
     </message>
     <message>
       <source>%1 Document(s) not saved</source>
@@ -7786,7 +7786,7 @@ the current copy will be lost.
     <name>StdCmdDlgCustomize</name>
     <message>
       <source>Cu&amp;stomize...</source>
-      <translation>Власні установки...</translation>
+      <translation>Власні налаштування...</translation>
     </message>
     <message>
       <source>Customize toolbars and command bars</source>
@@ -7834,14 +7834,14 @@ the current copy will be lost.
     </message>
     <message>
       <source>Opens a Dialog to edit the parameters</source>
-      <translation>Відкриває діалогове вікно для зміни параметрів</translation>
+      <translation>Відкриває діалогове вікно для редагування параметрів</translation>
     </message>
   </context>
   <context>
     <name>StdCmdDlgPreferences</name>
     <message>
       <source>&amp;Preferences ...</source>
-      <translation>&amp;Установки ...</translation>
+      <translation>&amp;Налаштування ...</translation>
     </message>
     <message>
       <source>Opens a Dialog to edit the preferences</source>

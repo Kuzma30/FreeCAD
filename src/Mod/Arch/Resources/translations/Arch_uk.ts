@@ -2439,7 +2439,7 @@
     <message>
       <location filename="importSHP.py" line="139"/>
       <source>The shapefile python library was not found on your system. Would you like to download it now from &lt;a href=&quot;https://github.com/GeospatialPython/pyshp&quot;&gt;https://github.com/GeospatialPython/pyshp&lt;/a&gt;? It will be placed in your macros folder.</source>
-      <translation type="unfinished">The shapefile python library was not found on your system. Would you like to download it now from &lt;a href=&quot;https://github.com/GeospatialPython/pyshp&quot;&gt;https://github.com/GeospatialPython/pyshp&lt;/a&gt;? It will be placed in your macros folder.</translation>
+      <translation>Бібліотека shapefile python не була знайдена у вашій системі. Ви хочете зараз завантажити її з сайту &lt;a href=&quot;https://github.com/GeospatialPython/pyshp&quot;&gt;https://github.com/GeospatialPython/pyshp&lt;/a&gt;? Вона буде поміщена в теку macros.</translation>
     </message>
     <message>
       <location filename="importSHP.py" line="145"/>
@@ -2464,7 +2464,7 @@
     <message>
       <location filename="importSHP.py" line="164"/>
       <source>The shapefile library can be downloaded from the following URL and installed in your macros folder:</source>
-      <translation>Бібліотеку Шейпфайлів можна завантажити за вказаною нижче URL-адресою та встановити у папці макросів:</translation>
+      <translation>Бібліотеку shapefile можна завантажити за вказаною нижче URL-адресою та встановити у теці макросів:</translation>
     </message>
     <message>
       <location filename="ArchStructure.py" line="77"/>

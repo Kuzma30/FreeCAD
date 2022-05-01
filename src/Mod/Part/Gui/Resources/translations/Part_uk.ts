@@ -1835,7 +1835,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../Command.cpp" line="2288"/>
       <source>Measure the angle between two edges.</source>
-      <translation type="unfinished">Measure the angle between two edges.</translation>
+      <translation>Виміряти кут між двома ребрами.</translation>
     </message>
   </context>
   <context>
@@ -1943,7 +1943,7 @@ direct, orthogonal, and angular.</translation>
     <message>
       <location filename="../../Command.cpp" line="2442"/>
       <source>Part</source>
-      <translation>Частина</translation>
+      <translation>Деталь</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="2443"/>
@@ -1995,7 +1995,7 @@ into its X, Y, and Z components.</translation>
     <message>
       <location filename="../../CommandParametric.cpp" line="108"/>
       <source>Create a cube solid</source>
-      <translation>Створити суцільний куб</translation>
+      <translation>Створює суцільний куб</translation>
     </message>
   </context>
   <context>
@@ -2013,7 +2013,7 @@ into its X, Y, and Z components.</translation>
     <message>
       <location filename="../../Command.cpp" line="132"/>
       <source>Create a box solid without dialog</source>
-      <translation>Створити суцільний паралелепіпед без діалогу</translation>
+      <translation>Створює суцільний паралелепіпед без вводу параметрів</translation>
     </message>
   </context>
   <context>
@@ -5552,7 +5552,7 @@ of object being attached.</translation>
     <message>
       <location filename="../../TaskAttacher.cpp" line="332"/>
       <source>Attached with mode %1</source>
-      <translation type="unfinished">Attached with mode %1</translation>
+      <translation>Режим приєднання: %1</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.cpp" line="336"/>
@@ -6052,7 +6052,7 @@ in the 3D view for the sweep path.</translation>
     <message>
       <location filename="../../../BasicShapes/TaskTube.ui" line="14"/>
       <source>Tube</source>
-      <translation type="unfinished">Tube</translation>
+      <translation>Труба</translation>
     </message>
     <message>
       <location filename="../../../BasicShapes/TaskTube.ui" line="23"/>
@@ -6062,12 +6062,12 @@ in the 3D view for the sweep path.</translation>
     <message>
       <location filename="../../../BasicShapes/TaskTube.ui" line="46"/>
       <source>Outer radius</source>
-      <translation type="unfinished">Outer radius</translation>
+      <translation>Зовнішній радіус</translation>
     </message>
     <message>
       <location filename="../../../BasicShapes/TaskTube.ui" line="69"/>
       <source>Inner radius</source>
-      <translation type="unfinished">Inner radius</translation>
+      <translation>Внутрішній радіус</translation>
     </message>
     <message>
       <location filename="../../../BasicShapes/TaskTube.ui" line="92"/>

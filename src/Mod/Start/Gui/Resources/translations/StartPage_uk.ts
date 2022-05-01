@@ -156,7 +156,7 @@
     <message>
       <location filename="TranslationTexts.py" line="72"/>
       <source>You can configure a custom folder to display here in menu Edit -&gt; Preferences -&gt; Start -&gt; Show additional folder</source>
-      <translation>Ви можете налаштувати папку на замовлення, яка відображатиметься у меню Редагувати -&gt; Налаштування -&gt; Пуск -&gt; Показати додаткову папку</translation>
+      <translation>Ви можете настроїти показ теки користувача в меню Редагувати -&gt; Налаштування -&gt; Пуск -&gt; Показати додаткову теку</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="73"/>
@@ -291,8 +291,8 @@
       <location filename="../../DlgStartPreferences.ui" line="110"/>
       <source>An optional custom folder to be displayed at the bottom of the first page.
 By using &quot;;;&quot; to separate paths, you can add several folders here</source>
-      <translation type="unfinished">An optional custom folder to be displayed at the bottom of the first page.
-By using &quot;;;&quot; to separate paths, you can add several folders here</translation>
+      <translation>Необов'язкова тека користувача, яка буде зображатися внизу першої сторінки.
+Використовуючи &quot;;;&quot; для розділення шляхів, ви можете додати сюди кілька тек</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="127"/>

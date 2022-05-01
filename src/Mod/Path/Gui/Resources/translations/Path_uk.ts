@@ -6341,7 +6341,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../AppPathGuiPy.cpp" line="106"/>
       <source>Unnamed</source>
-      <translation type="unfinished">Unnamed</translation>
+      <translation>Без назви</translation>
     </message>
   </context>
   <context>

@@ -250,6 +250,10 @@
       <source>Enter maximum distance:</source>
       <translation>Введіть максимальну відстань:</translation>
     </message>
+    <message>
+      <source>Unnamed</source>
+      <translation type="unfinished">Unnamed</translation>
+    </message>
   </context>
   <context>
     <name>Workbench</name>

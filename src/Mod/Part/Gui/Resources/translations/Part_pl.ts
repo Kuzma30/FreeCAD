@@ -624,9 +624,13 @@ Do you want to continue?</source>
     </message>
     <message>
       <location filename="../../../App/AppPartPy.cpp" line="640"/>
+      <source>UnnamedStp</source>
+      <translation type="unfinished">UnnamedStp</translation>
+    </message>
+    <message>
       <location filename="../../../App/AppPartPy.cpp" line="652"/>
-      <source>Unnamed</source>
-      <translation type="unfinished">Unnamed</translation>
+      <source>UnnamedIges</source>
+      <translation type="unfinished">UnnamedIges</translation>
     </message>
   </context>
   <context>

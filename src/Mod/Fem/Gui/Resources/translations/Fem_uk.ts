@@ -4004,7 +4004,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../../App/AppFemPy.cpp" line="126"/>
       <source>Unnamed</source>
-      <translation type="unfinished">Unnamed</translation>
+      <translation>Без назви</translation>
     </message>
   </context>
   <context>

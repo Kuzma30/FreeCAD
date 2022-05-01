@@ -1843,6 +1843,10 @@ Please visit http://www.openscad.org/index.html to install it.</source>
       <source>3D Manufacturing Format</source>
       <translation type="unfinished">3D Manufacturing Format</translation>
     </message>
+    <message>
+      <source>Unnamed</source>
+      <translation>Без назви</translation>
+    </message>
   </context>
   <context>
     <name>Workbench</name>

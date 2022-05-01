@@ -6338,6 +6338,14 @@ p, li { white-space: pre-wrap; }
     </message>
   </context>
   <context>
+    <name>QObject</name>
+    <message>
+      <location filename="../../AppPathGuiPy.cpp" line="106"/>
+      <source>Unnamed</source>
+      <translation type="unfinished">Unnamed</translation>
+    </message>
+  </context>
+  <context>
     <name>TaskDlgPathCompound</name>
     <message>
       <location filename="../../TaskDlgPathCompound.ui" line="14"/>

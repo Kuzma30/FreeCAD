@@ -623,13 +623,8 @@ Do you want to continue?</source>
       <translation>Редактор вкладень</translation>
     </message>
     <message>
-      <location filename="../../../App/AppPartPy.cpp" line="640"/>
-      <source>UnnamedStp</source>
-      <translation>Без назви</translation>
-    </message>
-    <message>
-      <location filename="../../../App/AppPartPy.cpp" line="652"/>
-      <source>UnnamedIges</source>
+      <location filename="../../../App/AppPartPy.cpp" line="633"/>
+      <source>Unnamed</source>
       <translation>Без назви</translation>
     </message>
   </context>

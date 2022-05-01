@@ -912,42 +912,17 @@
   <context>
     <name>Path</name>
     <message>
-      <location filename="InitGui.py" line="273"/>
-      <source>The currently selected unit schema: 
-     &apos;{current_schema}&apos;
- Does not use &apos;minutes&apos; for velocity values. 
- 
-CNC machines require feed rate to be expressed in 
-unit/minute. To ensure correct gcode: 
-Select a minute-based schema in preferences.
-For example:
-    &apos;Metric, Small Parts &amp; CNC&apos;
-    &apos;US Customary&apos;
-    &apos;Imperial Decimal&apos;</source>
-      <translation type="unfinished">The currently selected unit schema: 
-     &apos;{current_schema}&apos;
- Does not use &apos;minutes&apos; for velocity values. 
- 
-CNC machines require feed rate to be expressed in 
-unit/minute. To ensure correct gcode: 
-Select a minute-based schema in preferences.
-For example:
-    &apos;Metric, Small Parts &amp; CNC&apos;
-    &apos;US Customary&apos;
-    &apos;Imperial Decimal&apos;</translation>
-    </message>
-    <message>
-      <location filename="InitGui.py" line="274"/>
+      <location filename="InitGui.py" line="276"/>
       <source>Warning</source>
       <translation>Ostrzeżenie</translation>
     </message>
     <message>
-      <location filename="InitGui.py" line="276"/>
+      <location filename="InitGui.py" line="278"/>
       <source>Ok</source>
       <translation>OK</translation>
     </message>
     <message>
-      <location filename="InitGui.py" line="278"/>
+      <location filename="InitGui.py" line="280"/>
       <source>Don&apos;t Show This Anymore</source>
       <translation type="unfinished">Don&apos;t Show This Anymore</translation>
     </message>

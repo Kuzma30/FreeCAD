@@ -625,7 +625,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../../App/AppPartPy.cpp" line="633"/>
       <source>Unnamed</source>
-      <translation type="unfinished">Unnamed</translation>
+      <translation>Без назви</translation>
     </message>
   </context>
   <context>

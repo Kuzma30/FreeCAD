@@ -207,7 +207,7 @@
     </message>
     <message>
       <source>Link</source>
-      <translation type="unfinished">Link</translation>
+      <translation>Посилання</translation>
     </message>
     <message>
       <source>Tools</source>
@@ -6145,9 +6145,9 @@ Do you want to exit without saving your data?</source>
       <source>The directory &apos;%1&apos; does not exist.
 
 Do you want to specify an existing directory?</source>
-      <translation type="unfinished">The directory &apos;%1&apos; does not exist.
+      <translation>Тека &apos;%1&apos; не існує.
 
-Do you want to specify an existing directory?</translation>
+Хочете вказати іншу теку?</translation>
     </message>
     <message>
       <source>Missing permission</source>
@@ -6157,9 +6157,9 @@ Do you want to specify an existing directory?</translation>
       <source>You don&apos;t have write permission to &apos;%1&apos;
 
 Do you want to specify another directory?</source>
-      <translation type="unfinished">You don&apos;t have write permission to &apos;%1&apos;
+      <translation>Ви не маєте дозвіл на запис в &apos;%1&apos;
 
-Do you want to specify another directory?</translation>
+Хочете вказати іншу теку?</translation>
     </message>
     <message>
       <source>Stop downloading</source>
@@ -6325,7 +6325,7 @@ Do you want to specify another directory?</translation>
     </message>
     <message>
       <source>If you don&apos;t save, your changes will be lost.</source>
-      <translation type="unfinished">If you don&apos;t save, your changes will be lost.</translation>
+      <translation>Якщо ви не збережете, зміни будуть втрачено.</translation>
     </message>
     <message>
       <source>Edit text</source>
@@ -7206,7 +7206,7 @@ Be aware the point where you click matters.</source>
     </message>
     <message>
       <source>If you don&apos;t save, your changes will be lost.</source>
-      <translation type="unfinished">If you don&apos;t save, your changes will be lost.</translation>
+      <translation>Якщо ви не збережете, зміни будуть втрачено.</translation>
     </message>
     <message>
       <source>Save a copy of the document under new filename...</source>
@@ -7294,7 +7294,7 @@ Be aware the point where you click matters.</source>
     </message>
     <message>
       <source>Paste</source>
-      <translation type="unfinished">Paste</translation>
+      <translation>Вставити</translation>
     </message>
     <message>
       <source>Expression error</source>
@@ -7316,11 +7316,11 @@ Please check the Report View for more details.</source>
     </message>
     <message>
       <source>Group with links</source>
-      <translation type="unfinished">Group with links</translation>
+      <translation>Групу с посиланнями</translation>
     </message>
     <message>
       <source>Group with transform links</source>
-      <translation type="unfinished">Group with transform links</translation>
+      <translation>Група з посиланнями перетворення</translation>
     </message>
     <message>
       <source>Create link group failed</source>
@@ -7344,11 +7344,11 @@ Please check the Report View for more details.</source>
     </message>
     <message>
       <source>Failed to import links</source>
-      <translation type="unfinished">Failed to import links</translation>
+      <translation>Не вдалось імпортувати посилання</translation>
     </message>
     <message>
       <source>Failed to import all links</source>
-      <translation type="unfinished">Failed to import all links</translation>
+      <translation>Не вдалось імпортувати всі посилання</translation>
     </message>
     <message>
       <source>Invalid name</source>
@@ -7919,7 +7919,7 @@ the current copy will be lost.
     <name>StdCmdExpression</name>
     <message>
       <source>Expression actions</source>
-      <translation type="unfinished">Expression actions</translation>
+      <translation>Дії з виразом</translation>
     </message>
   </context>
   <context>
@@ -8078,7 +8078,7 @@ the current copy will be lost.
     <name>StdCmdLinkActions</name>
     <message>
       <source>Link actions</source>
-      <translation type="unfinished">Link actions</translation>
+      <translation>Дії з посиланням</translation>
     </message>
   </context>
   <context>
@@ -8100,7 +8100,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Import all links of the active document</source>
-      <translation type="unfinished">Import all links of the active document</translation>
+      <translation>Импортує всі посилання активного документа</translation>
     </message>
   </context>
   <context>
@@ -8111,7 +8111,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Create a link to the selected object(s)</source>
-      <translation type="unfinished">Create a link to the selected object(s)</translation>
+      <translation>Створює посилання на виділений об'єкт(и)</translation>
     </message>
   </context>
   <context>
@@ -8133,29 +8133,29 @@ the current copy will be lost.
     </message>
     <message>
       <source>Create a sub-object or sub-element link</source>
-      <translation type="unfinished">Create a sub-object or sub-element link</translation>
+      <translation>Створює посилання на підоб’єкт або піделемент</translation>
     </message>
   </context>
   <context>
     <name>StdCmdLinkReplace</name>
     <message>
       <source>Replace with link</source>
-      <translation type="unfinished">Replace with link</translation>
+      <translation>Замінити посиланням</translation>
     </message>
     <message>
       <source>Replace the selected object(s) with link</source>
-      <translation type="unfinished">Replace the selected object(s) with link</translation>
+      <translation>Замінює посиланням виділений об'єкт(и)</translation>
     </message>
   </context>
   <context>
     <name>StdCmdLinkSelectActions</name>
     <message>
       <source>Link navigation</source>
-      <translation type="unfinished">Link navigation</translation>
+      <translation>Навігація за допомогою посилань</translation>
     </message>
     <message>
       <source>Link navigation actions</source>
-      <translation type="unfinished">Link navigation actions</translation>
+      <translation>Діяльність, пов’язана з навігацією за допомогою посилань</translation>
     </message>
   </context>
   <context>

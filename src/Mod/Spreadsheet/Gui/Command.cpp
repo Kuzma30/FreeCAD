@@ -51,7 +51,7 @@
 #include <App/Range.h>
 #include "ViewProviderSpreadsheet.h"
 #include "PropertiesDialog.h"
-
+#include <QObject>
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 using namespace SpreadsheetGui;
@@ -900,7 +900,8 @@ CmdCreateSpreadsheet::CmdCreateSpreadsheet()
 void CmdCreateSpreadsheet::activated(int iMsg)
 {
     Q_UNUSED(iMsg);
-    std::string FeatName = getUniqueObjectName("Spreadsheet");
+    QString NewSpreadsheetName = QObject::tr("Spreadsheet");
+    std::string FeatName = getUniqueObjectName(qUtf8Printable(NewSpreadsheetName));
 
     openCommand(QT_TRANSLATE_NOOP("Command", "Create Spreadsheet"));
     doCommand(Doc,"App.activeDocument().addObject('Spreadsheet::Sheet','%s\')",FeatName.c_str());

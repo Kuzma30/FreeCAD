@@ -14,7 +14,7 @@ App.setActiveDocument("Unnamed")
 App.ActiveDocument=App.getDocument("Unnamed")
 Gui.ActiveDocument=Gui.getDocument("Unnamed")
 
-App.activeDocument().addObject('Spreadsheet::Sheet','Spreadsheet')
+App.activeDocument().addObject('Spreadsheet::Sheet','SpreadSheet')
 App.ActiveDocument.Spreadsheet.setColumnWidth('B', 159)
 App.ActiveDocument.Spreadsheet.set('A1', 'Expression')
 App.ActiveDocument.Spreadsheet.set('B1', 'Expected result')

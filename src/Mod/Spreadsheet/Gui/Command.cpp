@@ -900,7 +900,7 @@ CmdCreateSpreadsheet::CmdCreateSpreadsheet()
 void CmdCreateSpreadsheet::activated(int iMsg)
 {
     Q_UNUSED(iMsg);
-    QString newSpreadsheetName = QObject::tr("SpreadSheet");
+    QString newSpreadsheetName = QObject::tr("Spreadsheet");
     std::string FeatName = getUniqueObjectName(qUtf8Printable(newSpreadsheetName));
     openCommand(QT_TRANSLATE_NOOP("Command", "Create Spreadsheet"));
     doCommand(Doc,"App.activeDocument().addObject('Spreadsheet::Sheet','%s\')",FeatName.c_str());

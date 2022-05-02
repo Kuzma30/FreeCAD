@@ -12,6 +12,7 @@
 *.o
 *.orig
 qrc_*.cpp
+*.qm
 BuildLog.htm
 cmake_install.cmake
 *~

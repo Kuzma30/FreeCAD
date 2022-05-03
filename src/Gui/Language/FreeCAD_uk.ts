@@ -4936,7 +4936,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     <name>Gui::Dialog::RemoteDebugger</name>
     <message>
       <source>Attach to remote debugger</source>
-      <translation type="unfinished">Attach to remote debugger</translation>
+      <translation>Прикріпити до віддаленого налагоджувача</translation>
     </message>
     <message>
       <source>winpdb</source>
@@ -7905,7 +7905,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Export an object in the active document</source>
-      <translation>Експорт об&apos;єкта в активний документ</translation>
+      <translation>Експортує об'єкт в активному документі</translation>
     </message>
     <message>
       <source>No selection</source>
@@ -8064,7 +8064,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Import a file in the active document</source>
-      <translation>Імпорт файлу в активний документ</translation>
+      <translation>Імпортує файл в активний документ</translation>
     </message>
     <message>
       <source>Supported formats</source>
@@ -8207,11 +8207,11 @@ the current copy will be lost.
     <name>StdCmdMacroAttachDebugger</name>
     <message>
       <source>Attach to remote debugger...</source>
-      <translation type="unfinished">Attach to remote debugger...</translation>
+      <translation>Прикріпити до віддаленого налагоджувача...</translation>
     </message>
     <message>
       <source>Attach to a remotely running debugger</source>
-      <translation type="unfinished">Attach to a remotely running debugger</translation>
+      <translation>Запускає макрос через віддалений налагоджувач</translation>
     </message>
   </context>
   <context>
@@ -8247,7 +8247,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Stop debugging of macro</source>
-      <translation>Зупинити відлагодження макросу</translation>
+      <translation>Зупиняє налагодження макросу</translation>
     </message>
   </context>
   <context>
@@ -8429,7 +8429,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Print preview</source>
-      <translation>Попередній перегляд</translation>
+      <translation>Дозволяє попередньо переглянути результат перед друком</translation>
     </message>
   </context>
   <context>
@@ -8894,7 +8894,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Undo exactly one action</source>
-      <translation>Скасувати рівно одну дію</translation>
+      <translation>Скасовує рівно одну дію</translation>
     </message>
   </context>
   <context>

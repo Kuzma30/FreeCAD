@@ -479,7 +479,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="659"/>
       <source>Move object to other body</source>
-      <translation>Переміщення об&apos;єкта до іншого тіла</translation>
+      <translation>Перемістити об'єкт до іншого тіла</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="660"/>
@@ -497,7 +497,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="826"/>
       <source>Move object after other object</source>
-      <translation>Переміщення об'єкта слідом за іншим об'єктом</translation>
+      <translation>Перемістити об'єкт слідом за іншим об'єктом</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="827"/>
@@ -3419,7 +3419,7 @@ click again to end selection</source>
     <message>
       <location filename="../../CommandBody.cpp" line="882"/>
       <source>Select a feature from the list</source>
-      <translation>Оберіть функцію зі списку</translation>
+      <translation>Оберіть елемент зі списку</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="953"/>

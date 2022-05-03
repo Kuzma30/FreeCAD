@@ -598,19 +598,19 @@ while doing a left or right click and move the mouse up or down</source>
     <name>Gui::Dialog::ApplicationCache</name>
     <message>
       <source>Cache directory</source>
-      <translation type="unfinished">Cache directory</translation>
+      <translation>Тека кэш-файлів</translation>
     </message>
     <message>
       <source>The cache directory %1 exceeds the size of %2.</source>
-      <translation type="unfinished">The cache directory %1 exceeds the size of %2.</translation>
+      <translation>Тека кешу %1 перевищує розмір %2.</translation>
     </message>
     <message>
       <source>Do you want to clear it now?</source>
-      <translation type="unfinished">Do you want to clear it now?</translation>
+      <translation>Бажаєте очистити її зараз?</translation>
     </message>
     <message>
       <source>Warning: Please make sure that this is the only running %1 instance and that no documents are opened as this may result into data loss!</source>
-      <translation type="unfinished">Warning: Please make sure that this is the only running %1 instance and that no documents are opened as this may result into data loss!</translation>
+      <translation>Увага: Переконайтесь, що це єдиний запущений %1 екземпляр і що не відкрито документів, оскільки це може призвести до втрати даних!</translation>
     </message>
   </context>
   <context>
@@ -625,11 +625,11 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source> &quot;</source>
-      <translation type="unfinished"> &quot;</translation>
+      <translation> &quot;</translation>
     </message>
     <message>
       <source>&quot;</source>
-      <translation type="unfinished">&quot;</translation>
+      <translation>&quot;</translation>
     </message>
   </context>
   <context>
@@ -741,7 +741,7 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source> s</source>
-      <translation type="unfinished"> s</translation>
+      <translation> с</translation>
     </message>
     <message>
       <source>Angle</source>
@@ -894,18 +894,18 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Name</source>
-      <translation type="unfinished">Name</translation>
+      <translation>Назва</translation>
     </message>
     <message>
       <source>Property group templates</source>
-      <translation type="unfinished">Property group templates</translation>
+      <translation>Шаблони груп параметрів</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgCreateNewPreferencePackImp</name>
     <message>
       <source>Pack already exists</source>
-      <translation type="unfinished">Pack already exists</translation>
+      <translation>Пакет вже існує</translation>
     </message>
     <message>
       <source>A preference pack with that name already exists. Do you want to overwrite it?</source>
@@ -1072,7 +1072,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Alt+A</source>
-      <translation type="unfinished">Alt+A</translation>
+      <translation>Alt+A</translation>
     </message>
     <message>
       <source>&amp;Reset</source>
@@ -1080,7 +1080,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Alt+R</source>
-      <translation type="unfinished">Alt+R</translation>
+      <translation>Alt+R</translation>
     </message>
     <message>
       <source>Re&amp;set All</source>
@@ -1088,7 +1088,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Alt+S</source>
-      <translation type="unfinished">Alt+S</translation>
+      <translation>Alt+S</translation>
     </message>
     <message>
       <source/>
@@ -1317,7 +1317,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Viewing mode</source>
@@ -1503,7 +1503,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Tabulator raster (how many spaces)</source>
-      <translation type="unfinished">Tabulator raster (how many spaces)</translation>
+      <translation>Розмір табулятора (скільки пробілів)</translation>
     </message>
     <message>
       <source>How many spaces will be inserted when pressing &lt;Tab&gt;</source>
@@ -1539,11 +1539,11 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>The cursor shape will be a block</source>
-      <translation type="unfinished">The cursor shape will be a block</translation>
+      <translation>Форма курсору буде блоком</translation>
     </message>
     <message>
       <source>Enable block cursor</source>
-      <translation type="unfinished">Enable block cursor</translation>
+      <translation>Увімкнути курсор у вигляді блоку</translation>
     </message>
   </context>
   <context>
@@ -4870,7 +4870,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Axial:</source>
-      <translation>Осевий:</translation>
+      <translation>Осьове:</translation>
     </message>
     <message>
       <source>Apply axial</source>
@@ -4886,7 +4886,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Apply incremental changes</source>
-      <translation>Застосувати доповнюючі зміни</translation>
+      <translation>Застосувати покрокові зміни</translation>
     </message>
     <message>
       <source>Please select 1, 2, or 3 points before clicking this button.  A point may be on a vertex, face, or edge.  If on a face or edge the point used will be the point at the mouse position along face or edge.  If 1 point is selected it will be used as the center of rotation.  If 2 points are selected the midpoint between them will be the center of rotation and a new custom axis will be created, if needed.  If 3 points are selected the first point becomes the center of rotation and lies on the vector that is normal to the plane defined by the 3 points.  Some distance and angle information is provided in the report view, which can be useful when aligning objects.  For your convenience when Shift + click is used the appropriate distance or angle is copied to the clipboard.</source>
@@ -4918,7 +4918,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Euler angles (zy&apos;x&apos;&apos;)</source>
-      <translation type="unfinished">Euler angles (zy&apos;x&apos;&apos;)</translation>
+      <translation>Кути Ейлера (zy&apos;x&apos;&apos;)</translation>
     </message>
   </context>
   <context>
@@ -7601,14 +7601,14 @@ the current copy will be lost.
     <name>StdBoxElementSelection</name>
     <message>
       <source>Box element selection</source>
-      <translation type="unfinished">Box element selection</translation>
+      <translation>Область виділення елементів</translation>
     </message>
   </context>
   <context>
     <name>StdBoxSelection</name>
     <message>
       <source>Box selection</source>
-      <translation>Прямокутник виділення</translation>
+      <translation>Виділити область</translation>
     </message>
   </context>
   <context>
@@ -8623,7 +8623,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Show selection bounding box</source>
-      <translation type="unfinished">Show selection bounding box</translation>
+      <translation>Показати обмежувальну рамку для виділення</translation>
     </message>
   </context>
   <context>
@@ -8663,11 +8663,11 @@ the current copy will be lost.
     <name>StdCmdSendToPythonConsole</name>
     <message>
       <source>&amp;Send to Python Console</source>
-      <translation type="unfinished">&amp;Send to Python Console</translation>
+      <translation>&amp;Надіслати в консоль Python</translation>
     </message>
     <message>
       <source>Sends the selected object to the Python console</source>
-      <translation type="unfinished">Sends the selected object to the Python console</translation>
+      <translation>Надсилає виділений об'єкт в консоль Python</translation>
     </message>
   </context>
   <context>

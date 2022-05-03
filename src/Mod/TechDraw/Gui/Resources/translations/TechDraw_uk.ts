@@ -1834,7 +1834,7 @@
       <location filename="../../CommandDecorate.cpp" line="331"/>
       <location filename="../../CommandDecorate.cpp" line="332"/>
       <source>Turn View Frames On/Off</source>
-      <translation type="unfinished">Turn View Frames On/Off</translation>
+      <translation>Перемикач частоти кадрів вкл/викл</translation>
     </message>
   </context>
   <context>

@@ -1786,7 +1786,7 @@ Do you want to continue?</source>
       <location filename="../../Command.cpp" line="2476"/>
       <location filename="../../Command.cpp" line="2478"/>
       <source>Box selection</source>
-      <translation>Прямокутник виділення</translation>
+      <translation>Виділити область</translation>
     </message>
   </context>
   <context>
@@ -1840,7 +1840,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../Command.cpp" line="2288"/>
       <source>Measure the angle between two edges.</source>
-      <translation>Виміряти кут між двома ребрами.</translation>
+      <translation>Виміряє кут між двома ребрами.</translation>
     </message>
   </context>
   <context>
@@ -1952,14 +1952,14 @@ direct, orthogonal, and angular.</source>
     <message>
       <location filename="../../Command.cpp" line="2443"/>
       <source>Toggle Delta</source>
-      <translation type="unfinished">Toggle Delta</translation>
+      <translation>Перемкнути Режим Дельти</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="2444"/>
       <source>Toggle on and off all orthogonal dimensions,
 meaning that a direct dimension will be decomposed
 into its X, Y, and Z components.</source>
-      <translation>Показує чи та вимикає всі ортогональні розміри, 
+      <translation>Показує чи приховує всі ортогональні розміри, 
 тобто пряме вимірювання буде розбите на 
 компоненти X, Y та Z.</translation>
     </message>
@@ -5103,7 +5103,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../Mirroring.cpp" line="126"/>
       <source>Select a shape for mirroring, first.</source>
-      <translation>Спочатку виберіть форму для дзеркального відображення.</translation>
+      <translation>Спочатку виберіть форму для створення дзеркального зображення.</translation>
     </message>
     <message>
       <location filename="../../Mirroring.cpp" line="133"/>
@@ -5839,7 +5839,7 @@ Individual BOP Checks:</translation>
     <message>
       <location filename="../../TaskFaceColors.ui" line="20"/>
       <source>Click on the faces in the 3D view to select them</source>
-      <translation type="unfinished">Click on the faces in the 3D view to select them</translation>
+      <translation>Клацніть на грані у 3D-виді, щоб виділити їх</translation>
     </message>
     <message>
       <location filename="../../TaskFaceColors.ui" line="39"/>
@@ -5866,7 +5866,7 @@ by dragging a selection rectangle in the 3D view</translation>
     <message>
       <location filename="../../TaskFaceColors.ui" line="101"/>
       <source>Box selection</source>
-      <translation>Прямокутник виділення</translation>
+      <translation>Виділити область</translation>
     </message>
   </context>
   <context>

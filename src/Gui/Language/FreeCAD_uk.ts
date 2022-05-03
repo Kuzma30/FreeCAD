@@ -4894,27 +4894,27 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Pitch (around y-axis):</source>
-      <translation type="unfinished">Pitch (around y-axis):</translation>
+      <translation>Нахил (про вісь y):</translation>
     </message>
     <message>
       <source>Roll (around x-axis):</source>
-      <translation type="unfinished">Roll (around x-axis):</translation>
+      <translation>Обертання (навколо осі x):</translation>
     </message>
     <message>
       <source>Yaw (around z-axis):</source>
-      <translation type="unfinished">Yaw (around z-axis):</translation>
+      <translation>Відхилення (вісь z):</translation>
     </message>
     <message>
       <source>Yaw (around z-axis)</source>
-      <translation type="unfinished">Yaw (around z-axis)</translation>
+      <translation>Відхилення (вісь z)</translation>
     </message>
     <message>
       <source>Pitch (around y-axis)</source>
-      <translation type="unfinished">Pitch (around y-axis)</translation>
+      <translation>Нахил (про вісь y)</translation>
     </message>
     <message>
       <source>Roll (around the x-axis)</source>
-      <translation type="unfinished">Roll (around the x-axis)</translation>
+      <translation>Обертання (навколо осі x)</translation>
     </message>
     <message>
       <source>Euler angles (zy&apos;x&apos;&apos;)</source>
@@ -6196,7 +6196,7 @@ Do you want to specify another directory?</source>
     <name>Gui::TaskCSysDragger</name>
     <message>
       <source>Increments</source>
-      <translation>Прирощення</translation>
+      <translation>Приріст</translation>
     </message>
     <message>
       <source>Translation Increment:</source>
@@ -7886,7 +7886,7 @@ the current copy will be lost.
     <name>StdCmdEdit</name>
     <message>
       <source>Toggle &amp;Edit mode</source>
-      <translation>Переключити режим &amp;Редагувати</translation>
+      <translation>Перемкнути режим &amp;Правка</translation>
     </message>
     <message>
       <source>Toggles the selected object&apos;s edit mode</source>

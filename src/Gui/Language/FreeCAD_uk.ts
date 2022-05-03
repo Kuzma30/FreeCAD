@@ -21,7 +21,7 @@
     </message>
     <message>
       <source>Angle Snap</source>
-      <translation>Прив&apos;язка по куту</translation>
+      <translation>Прив'язка по куту</translation>
     </message>
     <message>
       <source>1 °</source>
@@ -332,7 +332,7 @@
     </message>
     <message>
       <source>Filename</source>
-      <translation>Ім&apos;я файлу</translation>
+      <translation>Ім'я файлу</translation>
     </message>
   </context>
   <context>
@@ -407,11 +407,11 @@
     <name>Gui::AlignmentView</name>
     <message>
       <source>Movable object</source>
-      <translation>Рухомий об&apos;єкт</translation>
+      <translation>Рухомий об'єкт</translation>
     </message>
     <message>
       <source>Fixed object</source>
-      <translation>Зафіксований об&apos;єкт</translation>
+      <translation>Зафіксований об'єкт</translation>
     </message>
   </context>
   <context>
@@ -502,7 +502,7 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>Rename object</source>
-      <translation>Перейменовує об&apos;єкт</translation>
+      <translation>Перейменовує об'єкт</translation>
     </message>
     <message>
       <source>Finish editing</source>
@@ -510,7 +510,7 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>Finish editing object</source>
-      <translation>Завершує редагування об&apos;єкту</translation>
+      <translation>Завершує редагування об'єкту</translation>
     </message>
   </context>
   <context>
@@ -849,7 +849,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Username:</source>
-      <translation>ім&apos;я користувача:</translation>
+      <translation>Ім'я користувача:</translation>
     </message>
     <message>
       <source>Site:</source>
@@ -1408,7 +1408,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Pewter</source>
-      <translation>П&apos;ютер</translation>
+      <translation>Сплав олова</translation>
     </message>
     <message>
       <source>Plaster</source>
@@ -1863,7 +1863,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Enter a file name, please:</source>
-      <translation>Будь ласка, введіть ім&apos;я файлу:</translation>
+      <translation>Будь ласка, введіть ім'я файлу:</translation>
     </message>
     <message>
       <source>Existing file</source>
@@ -1901,7 +1901,7 @@ This file already exists.</translation>
     </message>
     <message>
       <source>Enter new name:</source>
-      <translation>Введіть нове ім&apos;я:</translation>
+      <translation>Введіть нове ім'я:</translation>
     </message>
     <message>
       <source>&apos;%1&apos;
@@ -2752,11 +2752,11 @@ will be shown at the lower left corner in opened files</source>
     </message>
     <message>
       <source>If checked, application will remember which workbench is active for each tab of the viewport</source>
-      <translation>Якщо встановлено, то додаток буде пам&apos;ятати, який верстак буде активним для кожної вкладки viewport</translation>
+      <translation>Якщо встановлено, то додаток запам'ятає яке робоче середовище було активним для кожної вкладки viewport</translation>
     </message>
     <message>
       <source>Remember active workbench by tab</source>
-      <translation>Запам&apos;ятати активний верстак вкладкою</translation>
+      <translation>Запам'ятати активне робоче середовище в закладці</translation>
     </message>
     <message>
       <source>Rendering</source>
@@ -2822,11 +2822,11 @@ but slower response to any scene changes.</translation>
     </message>
     <message>
       <source>Transparent objects:</source>
-      <translation>Прозорі об&apos;єкти:</translation>
+      <translation>Прозорі об'єкти:</translation>
     </message>
     <message>
       <source>Render types of transparent objects</source>
-      <translation>Типи візуалізації прозорих об&apos;єктів</translation>
+      <translation>Типи візуалізації прозорих об'єктів</translation>
     </message>
     <message>
       <source>One pass</source>
@@ -3205,11 +3205,11 @@ besides the color bar</translation>
     </message>
     <message>
       <source>Document objects</source>
-      <translation>Об&apos;єкти документу</translation>
+      <translation>Об'єкти документу</translation>
     </message>
     <message>
       <source>Allow duplicate object labels in one document</source>
-      <translation>Дозволити дублювання підписів для об&apos;єктів в одному документі</translation>
+      <translation>Дозволити дублювання міток об'єктів в одному документі</translation>
     </message>
     <message>
       <source>Maximum Undo/Redo steps</source>
@@ -3225,7 +3225,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>Author name</source>
-      <translation>Ім&apos;я автора</translation>
+      <translation>Ім'я автора</translation>
     </message>
     <message>
       <source>Set on save</source>
@@ -3367,7 +3367,7 @@ icon in the tree view to fully reload it.</translation>
       <source>All documents that will be created will get the specified author name.
 Keep blank for anonymous.
 You can also use the form: John Doe &lt;john@doe.com&gt;</source>
-      <translation>Всі документи, які будуть створені, отримають зазначене ім&apos;я автора.
+      <translation>Всі документи, які будуть створені, отримають зазначене ім'я автора.
 Залиште порожнім для анонімності.
 Також можна використати цю форму: Джон До &lt;john@doe.com&gt;</translation>
     </message>
@@ -3985,7 +3985,7 @@ Mouse tilting is not disabled by this setting.</translation>
     </message>
     <message>
       <source>Object center</source>
-      <translation>Центр об&apos;єкта</translation>
+      <translation>Центр об'єкта</translation>
     </message>
     <message>
       <source>Rotates to nearest possible state when clicking a cube face</source>
@@ -4221,7 +4221,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Object being edited</source>
-      <translation>Об&apos;єкт редагувався</translation>
+      <translation>Об'єкт редагувався</translation>
     </message>
     <message>
       <source>Active container</source>
@@ -4890,7 +4890,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Please select 1, 2, or 3 points before clicking this button.  A point may be on a vertex, face, or edge.  If on a face or edge the point used will be the point at the mouse position along face or edge.  If 1 point is selected it will be used as the center of rotation.  If 2 points are selected the midpoint between them will be the center of rotation and a new custom axis will be created, if needed.  If 3 points are selected the first point becomes the center of rotation and lies on the vector that is normal to the plane defined by the 3 points.  Some distance and angle information is provided in the report view, which can be useful when aligning objects.  For your convenience when Shift + click is used the appropriate distance or angle is copied to the clipboard.</source>
-      <translation>Будь ласка, виберіть 1, 2 або 3 точки перед натисканням на цю кнопку. Точка може бути на вершині, поверхні або на ребрі. Якщо вибрати на поверхні або на ребрі, то обраною буде точка найближча до курсора, що належить поверхні або ребру. Якщо вибрано 1 точку, вона буде використовуватися як центр обертання. При виборі двох точок, центром обертання буде середина між ними, а також при потребі буде додано нову вісь обертання. При виборі 3 точок, перша точка стає центром обертання і лежить на векторі, що буде нормаллю до площини утвореної трьома вибраними точками. У додатвовій інформації також надаються дані про відстань та кут. Це може бути корисним для вирівнювання об&apos;єктів. Для вашої зручності при кліку з натисненим Shift відповідна відстань або кут буде скопійовано в буфер обміну.</translation>
+      <translation>Будь ласка, виберіть 1, 2 або 3 точки перед натисканням на цю кнопку. Точка може бути на вершині, грані або на ребрі. Якщо вибрати на грані або на ребрі, то обраною буде точка найближча до курсора, що належить грані або ребру. Якщо вибрано 1 точку, вона буде використовуватися як центр обертання. При виборі двох точок, центром обертання буде середина між ними, а також при потребі буде додано нову вісь обертання. При виборі 3 точок, перша точка стає центром обертання і лежить на векторі, що буде нормаллю до площини утвореної трьома вибраними точками. У додатвовій інформації також надаються дані про відстань та кут. Це може бути корисним для вирівнювання об'єктів. Для вашої зручності при кліку з натисненим Shift відповідна відстань або кут буде скопійовано в буфер обміну.</translation>
     </message>
     <message>
       <source>Pitch (around y-axis):</source>
@@ -5047,11 +5047,11 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     <name>Gui::DlgObjectSelection</name>
     <message>
       <source>Object selection</source>
-      <translation>Вибір об&apos;єкта</translation>
+      <translation>Виділення об'єкту</translation>
     </message>
     <message>
       <source>The selected objects contain other dependencies. Please select which objects to export. All dependencies are auto selected by default.</source>
-      <translation>Вибрані об&apos;єкти містять інші залежності. Будь ласка, виберіть, які об&apos;єкти експортувати. Всі залежності вибираються автоматично за замовчуванням.</translation>
+      <translation>Виділені об'єкти містять інші залежності. Будь ласка, виберіть, які об'єкти експортувати. Всі залежності вибираються автоматично за замовчуванням.</translation>
     </message>
     <message>
       <source>Document</source>
@@ -5207,7 +5207,7 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Searches object labels</source>
-      <translation>Пошук за мітками об&apos;єкту</translation>
+      <translation>Пошук за мітками об'єкту</translation>
     </message>
     <message>
       <source>Clears the search field</source>
@@ -5219,7 +5219,7 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Selects only this object</source>
-      <translation>Виділіть лише цей об&apos;єкт</translation>
+      <translation>Виділіть лише цей об'єкт</translation>
     </message>
     <message>
       <source>Deselect</source>
@@ -5227,7 +5227,7 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Deselects this object</source>
-      <translation>Зняти виділення з цього об&apos;єкта</translation>
+      <translation>Зніміть виділення з цього об'єкта</translation>
     </message>
     <message>
       <source>Zoom fit</source>
@@ -5235,7 +5235,7 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Selects and fits this object in the 3D window</source>
-      <translation>Виділити та повністю вмістити об&apos;єкт у 3D-вікні</translation>
+      <translation>Виділити та повністю вмістити об'єкт у 3D-вікні</translation>
     </message>
     <message>
       <source>Go to selection</source>
@@ -5243,7 +5243,7 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Selects and locates this object in the tree view</source>
-      <translation>Виділити об&apos;єкт та позначити його у дереві моделі</translation>
+      <translation>Виділити об'єкт та знайти його у ієрархії документа</translation>
     </message>
     <message>
       <source>To python console</source>
@@ -5251,7 +5251,7 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Reveals this object and its subelements in the python console.</source>
-      <translation>Показати цей об&apos;єкт і його піделементи в консолі Python.</translation>
+      <translation>Показати цей об'єкт і його піделементи в консолі Python.</translation>
     </message>
     <message>
       <source>Mark to recompute</source>
@@ -5259,7 +5259,7 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Mark this object to be recomputed</source>
-      <translation>Позначити цей об&apos;єкт для переобчислення</translation>
+      <translation>Позначити цей об'єкт для переобчислення</translation>
     </message>
     <message>
       <source>Selection View</source>
@@ -5279,7 +5279,7 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Picked object list</source>
-      <translation>Список вибраних об&apos;єктів</translation>
+      <translation>Список вибраних об'єктів</translation>
     </message>
   </context>
   <context>
@@ -5624,12 +5624,12 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
-      <translation>Експортований об&apos;єкт містить зовнішні посилання. Збережіть документ хоча б раз перед експортом.</translation>
+      <translation>Експортований об'єкт містить зовнішні посилання. Збережіть документ хоча б раз перед експортом.</translation>
     </message>
     <message>
       <source>To link to external objects, the document must be saved at least once.
 Do you want to save the document now?</source>
-      <translation>Щоб прив&apos;язати зовнішні об&apos;єкти, документ повинен бути збережений хоча б один раз.
+      <translation>Щоб прив'язати зовнішні об'єкти, документ повинен бути збережений хоча б один раз.
 Зберегти документ зараз?</translation>
     </message>
     <message>
@@ -5851,7 +5851,7 @@ How do you want to proceed?</source>
     <name>Gui::PropertyEditor::LinkLabel</name>
     <message>
       <source>Change the linked object</source>
-      <translation>Змінення зв&apos;язаного об&apos;єкта</translation>
+      <translation>Заміна зв'язаного об'єкта</translation>
     </message>
   </context>
   <context>
@@ -5862,7 +5862,7 @@ How do you want to proceed?</source>
     </message>
     <message>
       <source>Object not found</source>
-      <translation>Об&apos;єкт не знайдено</translation>
+      <translation>Об'єкт не знайдено</translation>
     </message>
   </context>
   <context>
@@ -5968,7 +5968,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>Insert file name...</source>
-      <translation>Введіть ім&apos;я файлу ...</translation>
+      <translation>Введіть ім'я файлу ...</translation>
     </message>
     <message>
       <source>Save History</source>
@@ -5976,7 +5976,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>Insert file name</source>
-      <translation>Введіть ім&apos;я файлу</translation>
+      <translation>Введіть ім'я файлу</translation>
     </message>
     <message>
       <source>Unhandled std C++ exception.</source>
@@ -6310,7 +6310,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>The text of the underlying object has changed. Discard changes and reload the text from the object?</source>
-      <translation>Текст основного об&apos;єкта змінився. Відхилити зміни та перезавантажити текст з об&apos;єкта?</translation>
+      <translation>Текст основного об'єкта змінився. Відхилити зміни та перезавантажити текст з об'єкта?</translation>
     </message>
     <message>
       <source>Yes, reload.</source>
@@ -6568,7 +6568,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Rename object</source>
-      <translation>Перейменувати об&apos;єкт</translation>
+      <translation>Перейменувати об'єкт</translation>
     </message>
     <message>
       <source>Labels &amp; Attributes</source>
@@ -6584,7 +6584,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Finish editing object</source>
-      <translation>Завершити редагування об&apos;єкту</translation>
+      <translation>Завершити редагування об'єкту</translation>
     </message>
     <message>
       <source>Activate document</source>
@@ -6608,11 +6608,11 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Mark this object to be recomputed</source>
-      <translation>Позначити цей об&apos;єкт для переобчислення</translation>
+      <translation>Позначити цей об'єкт для переобчислення</translation>
     </message>
     <message>
       <source>%1, Internal name: %2</source>
-      <translation>%1, внутрішнє ім&apos;я: %2</translation>
+      <translation>%1, внутрішнє ім'я: %2</translation>
     </message>
     <message>
       <source>Search...</source>
@@ -6620,7 +6620,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Search for objects</source>
-      <translation>Пошук об&apos;єктів</translation>
+      <translation>Пошук об'єктів</translation>
     </message>
     <message>
       <source>Description</source>
@@ -6668,7 +6668,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Recompute object</source>
-      <translation>Переобчислити об&apos;єкт</translation>
+      <translation>Переобчислити об'єкт</translation>
     </message>
     <message>
       <source>Recompute the selected object</source>

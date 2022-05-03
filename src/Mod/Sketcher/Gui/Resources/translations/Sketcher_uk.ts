@@ -1241,7 +1241,7 @@ with respect to a line or a third point</source>
     <message>
       <location filename="../../Command.cpp" line="510"/>
       <source>Map sketch to face...</source>
-      <translation>Відобразити ескіз на поверхню...</translation>
+      <translation>Відобразити ескіз на грань...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="511"/>

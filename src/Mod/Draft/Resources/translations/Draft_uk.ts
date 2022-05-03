@@ -5457,7 +5457,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="291"/>
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="301"/>
       <source>Specify a valid length unit like mm, m, in, ft, to force displaying the dimension value in this unit</source>
-      <translation>Вкажіть припустиму одиницю довжини, як mm, in, ft, щоб примусово відобразити значення розміру в цих одиницях</translation>
+      <translation>Вкажіть одиницю довжини, як мм, дюйм, фут, щоб примусово відобразити значення розміру в цих одиницях</translation>
     </message>
     <message>
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="294"/>

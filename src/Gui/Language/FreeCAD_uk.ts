@@ -1848,7 +1848,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Download</source>
-      <translation type="unfinished">Download</translation>
+      <translation>Завантажити</translation>
     </message>
   </context>
   <context>
@@ -3825,11 +3825,11 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Bottom left</source>
-      <translation>Внизу ліворуч</translation>
+      <translation>Знизу ліворуч</translation>
     </message>
     <message>
       <source>Bottom right</source>
-      <translation>Внизу праворуч</translation>
+      <translation>Знизу праворуч</translation>
     </message>
     <message>
       <source>3D Navigation</source>
@@ -3953,11 +3953,11 @@ Mouse tilting is not disabled by this setting.</translation>
     </message>
     <message>
       <source>Rear</source>
-      <translation>Тил</translation>
+      <translation>Ззаду</translation>
     </message>
     <message>
       <source>Bottom</source>
-      <translation>Внизу</translation>
+      <translation>Знизу</translation>
     </message>
     <message>
       <source>Custom</source>
@@ -4249,7 +4249,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Bottom color</source>
-      <translation>Колір внизу</translation>
+      <translation>Колір знизу</translation>
     </message>
     <message>
       <source>Background will have selected color gradient</source>
@@ -5405,7 +5405,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>Bottom left</source>
-      <translation>Внизу ліворуч</translation>
+      <translation>Знизу ліворуч</translation>
     </message>
     <message>
       <source>Top right</source>
@@ -5413,7 +5413,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>Bottom right</source>
-      <translation>Внизу праворуч</translation>
+      <translation>Знизу праворуч</translation>
     </message>
     <message>
       <source>Remove</source>
@@ -7637,7 +7637,7 @@ the current copy will be lost.
     <name>StdCmdActivateNextWindow</name>
     <message>
       <source>Ne&amp;xt</source>
-      <translation>Далі</translation>
+      <translation>Наступне</translation>
     </message>
     <message>
       <source>Activate next window</source>
@@ -7648,7 +7648,7 @@ the current copy will be lost.
     <name>StdCmdActivatePrevWindow</name>
     <message>
       <source>Pre&amp;vious</source>
-      <translation>Назад</translation>
+      <translation>&amp;Попереднє</translation>
     </message>
     <message>
       <source>Activate previous window</source>
@@ -7670,11 +7670,11 @@ the current copy will be lost.
     <name>StdCmdArrangeIcons</name>
     <message>
       <source>Arrange &amp;Icons</source>
-      <translation>Організувати &amp;Ікони</translation>
+      <translation>Впорядкувати &amp;Іконки</translation>
     </message>
     <message>
       <source>Arrange Icons</source>
-      <translation>Організувати Ікони</translation>
+      <translation>Впорядковує Іконки</translation>
     </message>
   </context>
   <context>
@@ -8229,14 +8229,14 @@ the current copy will be lost.
     <name>StdCmdMacroStepInto</name>
     <message>
       <source>Step into</source>
-      <translation>Крок у</translation>
+      <translation>Перейти до</translation>
     </message>
   </context>
   <context>
     <name>StdCmdMacroStepOver</name>
     <message>
       <source>Step over</source>
-      <translation>Переступити</translation>
+      <translation>Крок за кроком</translation>
     </message>
   </context>
   <context>
@@ -8258,7 +8258,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Stop the macro recording session</source>
-      <translation>Зупинка запису макросу</translation>
+      <translation>Зупиняє запис макросу</translation>
     </message>
   </context>
   <context>
@@ -8531,11 +8531,11 @@ the current copy will be lost.
     <name>StdCmdReportBug</name>
     <message>
       <source>Report a bug</source>
-      <translation type="unfinished">Report a bug</translation>
+      <translation>Повідомити про помилку</translation>
     </message>
     <message>
       <source>Report a bug or suggest a feature</source>
-      <translation type="unfinished">Report a bug or suggest a feature</translation>
+      <translation>Дозволяє повідомити про помилку, або запропонувати нову функцію</translation>
     </message>
   </context>
   <context>
@@ -8740,7 +8740,7 @@ the current copy will be lost.
     <name>StdCmdTileWindows</name>
     <message>
       <source>&amp;Tile</source>
-      <translation>Плитка</translation>
+      <translation>&amp;Плиткою</translation>
     </message>
     <message>
       <source>Tile the windows</source>
@@ -8934,7 +8934,7 @@ the current copy will be lost.
     <name>StdCmdViewBottom</name>
     <message>
       <source>Bottom</source>
-      <translation>Внизу</translation>
+      <translation>Знизу</translation>
     </message>
     <message>
       <source>Set to bottom view</source>
@@ -9132,7 +9132,7 @@ the current copy will be lost.
     <name>StdCmdViewRear</name>
     <message>
       <source>Rear</source>
-      <translation>Тил</translation>
+      <translation>Ззаду</translation>
     </message>
     <message>
       <source>Set to rear view</source>

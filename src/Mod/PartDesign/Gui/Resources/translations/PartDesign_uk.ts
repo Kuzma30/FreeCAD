@@ -443,12 +443,12 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="309"/>
       <source>Migrate</source>
-      <translation>Перенесення</translation>
+      <translation>Мігрувати</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="310"/>
       <source>Migrate document to the modern PartDesign workflow</source>
-      <translation>Переносить документ на новий робочий процес PartDesign</translation>
+      <translation>Мігрує документ на новий робочий процес ДизайнуДеталі</translation>
     </message>
   </context>
   <context>
@@ -954,7 +954,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="426"/>
       <source>Migrate legacy part design features to Bodies</source>
-      <translation>Конвертувати застарілі функції PartDesign у Тіла</translation>
+      <translation>Мігрувати застарілі функції ДизайнуДеталі у Тіло</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="571"/>
@@ -964,7 +964,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="616"/>
       <source>Duplicate a PartDesign object</source>
-      <translation>Дублювати PartDesign об'єкт</translation>
+      <translation>Дублювати об'єкт ДизайнуДеталі</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="739"/>
@@ -1152,7 +1152,7 @@ so that self intersection is avoided.</source>
       <source>To create a new PartDesign object, there must be an active Body object in the document.
 
 Please select a body from below, or create a new body.</source>
-      <translation>Щоб створити новий об’єкт PartDesign, у документі має бути активнє Тіло.
+      <translation>Щоб створити новий об’єкт ДизійнуДеталі, у документі має бути активнє Тіло.
 
 Виберіть тіло нижче або створіть нове тіло.</translation>
     </message>
@@ -3647,7 +3647,7 @@ click again to end selection</source>
     <message>
       <location filename="../../CommandBody.cpp" line="116"/>
       <source>Body can&apos;t be based on a PartDesign feature.</source>
-      <translation>Тіло не може бути створене на функціїї PartDesign.</translation>
+      <translation>Тіло не може бути створене на функціїї ДизайнуДеталі.</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="121"/>
@@ -3705,7 +3705,7 @@ This may lead to unexpected results.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="340"/>
       <source>No PartDesign features found that don&apos;t belong to a body. Nothing to migrate.</source>
-      <translation>Не знайдено жодної функції PartDesign, яка не належить тілу. Мігрувати нема чого.</translation>
+      <translation>Не знайдено жодної функції ДизайнуДеталі, яка не належить тілу. Мігрувати нема чого.</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="488"/>
@@ -3729,7 +3729,7 @@ This may lead to unexpected results.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="552"/>
       <source>Select exactly one PartDesign feature or a body.</source>
-      <translation>Виділіть один елемент PartDesign або тіло.</translation>
+      <translation>Виділіть один елемент ДизайнуДеталі або тіло.</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="556"/>
@@ -3829,9 +3829,9 @@ This may lead to unexpected results.</source>
       <source>In order to use PartDesign you need an active Body object in the document. Please make one active (double click) or create one.
 
 If you have a legacy document with PartDesign objects without Body, use the migrate function in PartDesign to put them into a Body.</source>
-      <translation>Для використання PartDesign в документі вам потрібен активний об'єкт Тіла. Зробіть один з об'єктів активним (подвійний клік) або створіть новий.
+      <translation>Для використання ДизайнуДеталі в документі вам потрібен активний об'єкт Тіло. Зробіть один з об'єктів активним (подвійний клац) або створіть новий.
 
-Якщо у вас є застарілий документ з об'єктами PartDesign без Тіла, використайте функцію міграції PartDesign для введення їх в Body.</translation>
+Якщо у вас є застарілий документ з об'єктами ДизайнуДеталі без Тіла, використайте функцію міграції ДизайнуДеталі для введення їх в Тіло.</translation>
     </message>
     <message>
       <location filename="../../Utils.cpp" line="169"/>
@@ -3841,7 +3841,7 @@ If you have a legacy document with PartDesign objects without Body, use the migr
     <message>
       <location filename="../../Utils.cpp" line="170"/>
       <source>To create a new PartDesign object, there must be an active Body object in the document. Please make one active (double click) or create a new Body.</source>
-      <translation>Щоб створити новий об’єкт PartDesign, у документі має бути активний об’єкт Тіла. Активуйте (подвійник клік) або створіть нове Тіло.</translation>
+      <translation>Щоб створити новий об’єкт ДизайнуДеталі, у документі має бути активний об’єкт Тіло. Активуйте (подвійник клац) або створіть нове Тіло.</translation>
     </message>
     <message>
       <location filename="../../Utils.cpp" line="205"/>
@@ -4015,17 +4015,17 @@ This feature is broken and can&apos;t be edited.</source>
     <message>
       <location filename="../../WorkflowManager.cpp" line="138"/>
       <source>The document &quot;%1&quot; you are editing was designed with an old version of PartDesign workbench.</source>
-      <translation>Редагований документ &quot;%1&quot; був створений за допомогою старої версії робочого середовища PartDesign.</translation>
+      <translation>Редагований документ &quot;%1&quot; був створений за допомогою старої версії робочого середовища ДизайнуДеталі.</translation>
     </message>
     <message>
       <location filename="../../WorkflowManager.cpp" line="141"/>
       <source>Do you want to migrate in order to use modern PartDesign features?</source>
-      <translation>Ви бажаєте здійснити міграцію для того, щоб почати використовувати сучасні можливості робочого середовища PartDesign?</translation>
+      <translation>Ви бажаєте здійснити міграцію для того, щоб почати використовувати сучасні можливості робочого середовища ДизайнуДеталі?</translation>
     </message>
     <message>
       <location filename="../../WorkflowManager.cpp" line="144"/>
       <source>The document &quot;%1&quot; seems to be either in the middle of the migration process from legacy PartDesign or have a slightly broken structure.</source>
-      <translation>Схоже, що документ &quot;%1&quot; або знаходиться в середині процесу міграції зі застарілого PartDesign, або має трохи порушену структуру.</translation>
+      <translation>Схоже, що документ &quot;%1&quot; або знаходиться в середині процесу міграції зі застарілого ДизайнуДеталі, або має трохи порушену структуру.</translation>
     </message>
     <message>
       <location filename="../../WorkflowManager.cpp" line="148"/>
@@ -4038,8 +4038,8 @@ This feature is broken and can&apos;t be edited.</source>
 If you refuse to migrate you won&apos;t be able to use new PartDesign features like Bodies and Parts. As a result you also won&apos;t be able to use your parts in the assembly workbench.
 Although you will be able to migrate any moment later with &apos;Part Design -&gt; Migrate&apos;.</source>
       <translation>Примітка: Якщо ви оберете міграцію, ви не зможете редагувати файл у старій версії FreeCAD.
-Якщо ви відмовитеся від міграції, ви не зможете використовувати нові функції PartDesign, такі як Тіла та Деталі. В результаті ви також не зможете використовувати свої деталі у складальному робочому середовищі.
-Хоча ви зможете мігрувати будь-якої миті пізніше за допомогою &apos;Part Design -&gt; Мігрувати&apos;.</translation>
+Якщо ви відмовитеся від міграції, ви не зможете використовувати нові функції ДизайнуДеталі, такі як Тіла та Деталі. В результаті ви також не зможете використовувати свої деталі у складальному робочому середовищі.
+Хоча ви зможете мігрувати будь-якої миті пізніше за допомогою &apos;Дизайн Деталі -&gt; Мігрувати&apos;.</translation>
     </message>
     <message>
       <location filename="../../WorkflowManager.cpp" line="159"/>
@@ -4726,12 +4726,12 @@ over 90: larger hole radius at the bottom</source>
     <message>
       <location filename="../../Workbench.cpp" line="49"/>
       <source>Apply a pattern</source>
-      <translation>Застосувати шаблон</translation>
+      <translation>Операції з шаблоном</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="50"/>
       <source>Apply a dress-up feature</source>
-      <translation>Застосувати функцію накладання шаблону</translation>
+      <translation>Застосувати функції фінальної обробки</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="51"/>

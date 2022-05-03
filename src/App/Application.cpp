@@ -435,7 +435,7 @@ void Application::renameDocument(const char *OldName, const char *NewName)
 
 Document* Application::newDocument(const char * Name, const char * UserName, bool createView, bool tempDoc)
 {
-    QString L10nName = QObject::tr("UnnamedDoc");
+    QString L10nName = QObject::tr("Unnamed");
     // get a valid name anyway!
     if (!Name || Name[0] == '\0')
         Name = qUtf8Printable(L10nName);

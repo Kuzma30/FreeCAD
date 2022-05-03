@@ -6680,11 +6680,11 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Add dependent objects to selection</source>
-      <translation type="unfinished">Add dependent objects to selection</translation>
+      <translation>Додати залежні об'єкти до виділення</translation>
     </message>
     <message>
       <source>Adds all dependent objects to the selection</source>
-      <translation type="unfinished">Adds all dependent objects to the selection</translation>
+      <translation>Додає всі залежні об'єкти до виділеного</translation>
     </message>
   </context>
   <context>
@@ -8916,7 +8916,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Defines behavior when editing an object from tree</source>
-      <translation type="unfinished">Defines behavior when editing an object from tree</translation>
+      <translation>Визначає поведінку під час редагування об'єкту їєрархії</translation>
     </message>
   </context>
   <context>

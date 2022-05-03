@@ -6,7 +6,7 @@
     <message>
       <location filename="TranslationTexts.py" line="42"/>
       <source>Start</source>
-      <translation>Початок</translation>
+      <translation>Пуск</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="43"/>
@@ -36,7 +36,7 @@
     <message>
       <location filename="TranslationTexts.py" line="48"/>
       <source>Adjust the number of recent files to be shown here in menu Edit -&gt; Preferences -&gt; General -&gt; Size of recent file list</source>
-      <translation>Налаштувати кількість останніх файлів, які будуть показані тут, можна в меню Редагування -&gt; Налаштування -&gt; Загальні -&gt; Розмір списку останніх файлів</translation>
+      <translation>Налаштувати кількість останніх файлів, які будуть показані тут, можна в меню Правка -&gt; Налаштування -&gt; Загальне -&gt; Розмір списку останніх файлів</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="49"/>
@@ -156,7 +156,7 @@
     <message>
       <location filename="TranslationTexts.py" line="72"/>
       <source>You can configure a custom folder to display here in menu Edit -&gt; Preferences -&gt; Start -&gt; Show additional folder</source>
-      <translation>Ви можете настроїти показ теки користувача в меню Редагувати -&gt; Налаштування -&gt; Пуск -&gt; Показати додаткову теку</translation>
+      <translation>Ви можете настроїти показ теки користувача в меню Правка -&gt; Налаштування -&gt; Пуск -&gt; Показати додаткову теку</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="73"/>
@@ -227,7 +227,7 @@
     <message>
       <location filename="../../Command.cpp" line="45"/>
       <source>Start</source>
-      <translation>Початок</translation>
+      <translation>Пуск</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="46"/>

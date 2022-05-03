@@ -3295,7 +3295,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/ElementFluid1D.ui" line="568"/>
       <location filename="../ui/ElementFluid1D.ui" line="724"/>
       <source>0 mm^2</source>
-      <translation type="unfinished">0 mm^2</translation>
+      <translation>0 мм^2</translation>
     </message>
     <message>
       <location filename="../ui/ElementFluid1D.ui" line="85"/>
@@ -3486,7 +3486,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MeshBoundaryLayer.ui" line="50"/>
       <location filename="../ui/MeshRegion.ui" line="56"/>
       <source>0 mm</source>
-      <translation type="unfinished">0 mm</translation>
+      <translation>0 мм</translation>
     </message>
     <message>
       <location filename="../ui/ConstraintTie.ui" line="77"/>
@@ -3769,7 +3769,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MeshGmsh.ui" line="66"/>
       <location filename="../ui/MeshGmsh.ui" line="110"/>
       <source>0 mm</source>
-      <translation type="unfinished">0 mm</translation>
+      <translation>0 мм</translation>
     </message>
     <message>
       <location filename="../ui/MeshGmsh.ui" line="91"/>

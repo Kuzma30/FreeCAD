@@ -5392,7 +5392,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="215"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="159"/>
       <source>Step over</source>
-      <translation>Переступити</translation>
+      <translation>Крок за кроком</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="235"/>
@@ -6956,7 +6956,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="155"/>
       <source>0 mm</source>
-      <translation type="unfinished">0 mm</translation>
+      <translation>0 мм</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="158"/>

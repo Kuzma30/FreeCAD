@@ -5067,7 +5067,7 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
     <message>
       <location filename="../../TaskSketcherGeneral.cpp" line="193"/>
       <source>Edit controls</source>
-      <translation>Редагування елементів керування</translation>
+      <translation>Налаштування елементів керування</translation>
     </message>
   </context>
   <context>

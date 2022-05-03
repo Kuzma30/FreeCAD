@@ -1858,7 +1858,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../Command.cpp" line="2347"/>
       <source>Clear all dimensions from the screen.</source>
-      <translation type="unfinished">Clear all dimensions from the screen.</translation>
+      <translation>Очищує всі розміри на екрані.</translation>
     </message>
   </context>
   <context>
@@ -1878,9 +1878,9 @@ Do you want to continue?</source>
       <source>Measure the linear distance between two points;
 if edges or faces are picked, it will measure
 between two vertices of them.</source>
-      <translation type="unfinished">Measure the linear distance between two points;
-if edges or faces are picked, it will measure
-between two vertices of them.</translation>
+      <translation>Вимірює лінійну відстань між двома точками;
+якщо виділені ребра або грані, то вимірює 
+відстань між двома їх вершинами.</translation>
     </message>
   </context>
   <context>
@@ -1899,8 +1899,7 @@ between two vertices of them.</translation>
       <location filename="../../Command.cpp" line="2317"/>
       <source>Recalculate the dimensions
 if the measured points have moved.</source>
-      <translation type="unfinished">Recalculate the dimensions
-if the measured points have moved.</translation>
+      <translation>Перераховує розміри, якщо точки вимірювання перемістилися.</translation>
     </message>
   </context>
   <context>

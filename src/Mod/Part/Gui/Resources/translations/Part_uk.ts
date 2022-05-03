@@ -1912,14 +1912,14 @@ if the measured points have moved.</source>
     <message>
       <location filename="../../Command.cpp" line="2412"/>
       <source>Toggle 3D</source>
-      <translation type="unfinished">Toggle 3D</translation>
+      <translation>Перемкнути 3D виміри</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="2413"/>
       <source>Toggle on and off all direct dimensions,
 including angular.</source>
-      <translation type="unfinished">Toggle on and off all direct dimensions,
-including angular.</translation>
+      <translation>Показує чи приховує всі прямі розміри,
+в тому числі кутові.</translation>
     </message>
   </context>
   <context>
@@ -1938,8 +1938,8 @@ including angular.</translation>
       <location filename="../../Command.cpp" line="2376"/>
       <source>Toggle on and off all currently visible dimensions,
 direct, orthogonal, and angular.</source>
-      <translation type="unfinished">Toggle on and off all currently visible dimensions,
-direct, orthogonal, and angular.</translation>
+      <translation>Показує чи приховує всі видимі на цей момент розміри,
+включно з прямими, ортогональними та кутовими.</translation>
     </message>
   </context>
   <context>
@@ -1959,9 +1959,9 @@ direct, orthogonal, and angular.</translation>
       <source>Toggle on and off all orthogonal dimensions,
 meaning that a direct dimension will be decomposed
 into its X, Y, and Z components.</source>
-      <translation type="unfinished">Toggle on and off all orthogonal dimensions,
-meaning that a direct dimension will be decomposed
-into its X, Y, and Z components.</translation>
+      <translation>Показує чи та вимикає всі ортогональні розміри, 
+тобто пряме вимірювання буде розбите на 
+компоненти X, Y та Z.</translation>
     </message>
   </context>
   <context>

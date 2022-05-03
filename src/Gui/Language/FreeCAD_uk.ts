@@ -84,7 +84,7 @@
     </message>
     <message>
       <source>Base</source>
-      <translation>Основа</translation>
+      <translation>Основні</translation>
     </message>
     <message>
       <source>Enum</source>
@@ -8156,7 +8156,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Link navigation actions</source>
-      <translation>Діяльність, пов’язана з навігацією за допомогою посилань</translation>
+      <translation>Дії, пов’язані з навігацією за допомогою посилань</translation>
     </message>
   </context>
   <context>
@@ -9737,7 +9737,7 @@ Do you still want to proceed?</source>
     </message>
     <message>
       <source>Link actions</source>
-      <translation type="unfinished">Link actions</translation>
+      <translation>Дії з посиланням</translation>
     </message>
   </context>
 </TS>

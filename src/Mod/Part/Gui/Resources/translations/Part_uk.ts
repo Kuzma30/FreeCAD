@@ -181,7 +181,7 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
       <location filename="../../AppPartGui.cpp" line="212"/>
       <location filename="../../AppPartGui.cpp" line="213"/>
       <source>Part design</source>
-      <translation>Дизайн частини</translation>
+      <translation>ДизайнДеталі</translation>
     </message>
     <message>
       <location filename="../../AppPartGui.cpp" line="214"/>

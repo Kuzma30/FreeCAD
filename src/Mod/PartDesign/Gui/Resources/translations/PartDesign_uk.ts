@@ -497,7 +497,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="826"/>
       <source>Move object after other object</source>
-      <translation>Перемістити об'єкт слідом за іншим об'єктом</translation>
+      <translation>Перемістити об'єкт за іншим об'єктом</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="827"/>

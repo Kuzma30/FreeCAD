@@ -3011,11 +3011,11 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Check now...</source>
-      <translation type="unfinished">Check now...</translation>
+      <translation>Перевірка...</translation>
     </message>
     <message>
       <source>Notify the user if the cache size exceeds the specified limit</source>
-      <translation type="unfinished">Notify the user if the cache size exceeds the specified limit</translation>
+      <translation>Сповіщає користувача, якщо розмір кешу перевищив зазначений ліміт</translation>
     </message>
     <message>
       <source>Unknown</source>
@@ -3023,7 +3023,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Current cache size: %1</source>
-      <translation type="unfinished">Current cache size: %1</translation>
+      <translation>Поточний розмір кешу: %1</translation>
     </message>
   </context>
   <context>
@@ -3062,11 +3062,11 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Alt+R</source>
-      <translation type="unfinished">Alt+R</translation>
+      <translation>Alt+R</translation>
     </message>
     <message>
       <source>Alt+I</source>
-      <translation type="unfinished">Alt+I</translation>
+      <translation>Alt+I</translation>
     </message>
     <message>
       <source>Style</source>
@@ -3078,7 +3078,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Alt+Z</source>
-      <translation type="unfinished">Alt+Z</translation>
+      <translation>Alt+Z</translation>
     </message>
     <message>
       <source>&amp;Flow</source>
@@ -3086,7 +3086,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Alt+F</source>
-      <translation type="unfinished">Alt+F</translation>
+      <translation>Alt+F</translation>
     </message>
     <message>
       <source>Parameter range</source>
@@ -3127,14 +3127,14 @@ in the corner -- in % of height/width of viewport</translation>
     <message>
       <source>Data outside the specified min-max range
 will be displayed in gray</source>
-      <translation type="unfinished">Data outside the specified min-max range
-will be displayed in gray</translation>
+      <translation>Дані за межами вказаного мін-макс діапазону
+будуть зображатися сірим</translation>
     </message>
     <message>
       <source>Data outside the specified min-max range
 will be displayed with transparency</source>
-      <translation type="unfinished">Data outside the specified min-max range
-will be displayed with transparency</translation>
+      <translation>Дані за межами вказаного мін-макс діапазону
+будуть зображатися прозорими</translation>
     </message>
     <message>
       <source>Out &amp;transparent</source>
@@ -3304,11 +3304,11 @@ automatically run a file recovery when it is started.</source>
     </message>
     <message>
       <source>How often a recovery file is written</source>
-      <translation type="unfinished">How often a recovery file is written</translation>
+      <translation>Частота запису файлу відновлення</translation>
     </message>
     <message>
       <source>A thumbnail will be stored when document is saved</source>
-      <translation type="unfinished">A thumbnail will be stored when document is saved</translation>
+      <translation>Мініатюра буде зберігатися під час збереження документу</translation>
     </message>
     <message>
       <source>Size</source>
@@ -3317,8 +3317,8 @@ automatically run a file recovery when it is started.</source>
     <message>
       <source>Sets the size of the thumbnail that is stored in the document.
 Common sizes are 128, 256 and 512</source>
-      <translation type="unfinished">Sets the size of the thumbnail that is stored in the document.
-Common sizes are 128, 256 and 512</translation>
+      <translation>Встановлює розмір мініатюри, що зберігається у документі.
+Звичайні розміри 128, 256 і 512</translation>
     </message>
     <message>
       <source>The program logo will be added to the thumbnail</source>
@@ -3380,7 +3380,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Default license for new documents</source>
-      <translation type="unfinished">Default license for new documents</translation>
+      <translation>Типова Ліцензія для нових документів</translation>
     </message>
     <message>
       <source>Creative Commons Attribution</source>
@@ -3565,31 +3565,31 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Alt+S</source>
-      <translation type="unfinished">Alt+S</translation>
+      <translation>Alt+S</translation>
     </message>
     <message>
       <source>&amp;4:3</source>
-      <translation type="unfinished">&amp;4:3</translation>
+      <translation>&amp;4:3</translation>
     </message>
     <message>
       <source>Alt+4</source>
-      <translation type="unfinished">Alt+4</translation>
+      <translation>Alt+4</translation>
     </message>
     <message>
       <source>1&amp;6:9</source>
-      <translation type="unfinished">1&amp;6:9</translation>
+      <translation>1&amp;6:9</translation>
     </message>
     <message>
       <source>Alt+6</source>
-      <translation type="unfinished">Alt+6</translation>
+      <translation>Alt+6</translation>
     </message>
     <message>
       <source>&amp;1:1</source>
-      <translation type="unfinished">&amp;1:1</translation>
+      <translation>&amp;1:1</translation>
     </message>
     <message>
       <source>Alt+1</source>
-      <translation type="unfinished">Alt+1</translation>
+      <translation>Alt+1</translation>
     </message>
     <message>
       <source>Image comment</source>
@@ -3655,7 +3655,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Available Workbenches</source>
-      <translation type="unfinished">Available Workbenches</translation>
+      <translation>Доступні Робочі Середовища</translation>
     </message>
   </context>
   <context>
@@ -3713,7 +3713,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>FullScript.FCScript</source>
-      <translation type="unfinished">FullScript.FCScript</translation>
+      <translation>FullScript.FCScript</translation>
     </message>
     <message>
       <source>Gui commands</source>
@@ -3741,15 +3741,15 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Variables defined by macros are created as local variables</source>
-      <translation type="unfinished">Variables defined by macros are created as local variables</translation>
+      <translation>Змінні, визначені у макросі, створюються як локальні змінні</translation>
     </message>
     <message>
       <source>Commands executed by macro scripts are shown in Python console</source>
-      <translation type="unfinished">Commands executed by macro scripts are shown in Python console</translation>
+      <translation>Команди, виконані скриптами макросів, показує в консолі Python</translation>
     </message>
     <message>
       <source>Recorded macros will also contain user interface commands</source>
-      <translation type="unfinished">Recorded macros will also contain user interface commands</translation>
+      <translation>Записані макроси також будуть містити команди інтерфейсу користувача</translation>
     </message>
     <message>
       <source>Recorded macros will also contain user interface commands as comments</source>
@@ -4047,7 +4047,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Save history</source>
-      <translation type="unfinished">Save history</translation>
+      <translation>Зберегти історію</translation>
     </message>
   </context>
   <context>
@@ -4058,19 +4058,19 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Auto switch to the 3D view containing the selected item</source>
-      <translation type="unfinished">Auto switch to the 3D view containing the selected item</translation>
+      <translation>Автопереключення до 3D-виду, що містить виділений елемент</translation>
     </message>
     <message>
       <source>Auto expand tree item when the corresponding object is selected in 3D view</source>
-      <translation type="unfinished">Auto expand tree item when the corresponding object is selected in 3D view</translation>
+      <translation>Автоматично відкриває елемент в ієрархії при виділенні відповідного об'єкта в 3D-виді</translation>
     </message>
     <message>
       <source>Preselect the object in 3D view when mouse over the tree item</source>
-      <translation type="unfinished">Preselect the object in 3D view when mouse over the tree item</translation>
+      <translation>Підсвічувати об'єкт в 3D-виді при наведенні мишки на елемент в ієрархії</translation>
     </message>
     <message>
       <source>Record selection in tree view in order to go back/forward using navigation button</source>
-      <translation type="unfinished">Record selection in tree view in order to go back/forward using navigation button</translation>
+      <translation>Записує виділення в ієрархії до історії команд для повернення назад/вперед за допомогою кнопки навігації</translation>
     </message>
     <message>
       <source>Add checkboxes for selection in document tree</source>
@@ -4129,31 +4129,31 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>1/2&quot;</source>
-      <translation type="unfinished">1/2&quot;</translation>
+      <translation>1/2&quot;</translation>
     </message>
     <message>
       <source>1/4&quot;</source>
-      <translation type="unfinished">1/4&quot;</translation>
+      <translation>1/4&quot;</translation>
     </message>
     <message>
       <source>1/8&quot;</source>
-      <translation type="unfinished">1/8&quot;</translation>
+      <translation>1/8&quot;</translation>
     </message>
     <message>
       <source>1/16&quot;</source>
-      <translation type="unfinished">1/16&quot;</translation>
+      <translation>1/16&quot;</translation>
     </message>
     <message>
       <source>1/32&quot;</source>
-      <translation type="unfinished">1/32&quot;</translation>
+      <translation>1/32&quot;</translation>
     </message>
     <message>
       <source>1/64&quot;</source>
-      <translation type="unfinished">1/64&quot;</translation>
+      <translation>1/64&quot;</translation>
     </message>
     <message>
       <source>1/128&quot;</source>
-      <translation type="unfinished">1/128&quot;</translation>
+      <translation>1/128&quot;</translation>
     </message>
     <message>
       <source>Unit system:</source>

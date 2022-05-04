@@ -1647,15 +1647,15 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Number format:</source>
-      <translation type="unfinished">Number format:</translation>
+      <translation>Формат цифр:</translation>
     </message>
     <message>
       <source>Operating system</source>
-      <translation type="unfinished">Operating system</translation>
+      <translation>Формат ОС</translation>
     </message>
     <message>
       <source>Selected language</source>
-      <translation type="unfinished">Selected language</translation>
+      <translation>З налаштувань локалі</translation>
     </message>
     <message>
       <source>C/POSIX</source>
@@ -1663,11 +1663,11 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>If enabled, numerical keypad decimal separator will be substituted with locale separator</source>
-      <translation type="unfinished">If enabled, numerical keypad decimal separator will be substituted with locale separator</translation>
+      <translation>Якщо увімкнено, десятковий роздільник цифрової клавіатури буде замінено роздільником локалі</translation>
     </message>
     <message>
       <source>Substitute decimal separator (needs restart)</source>
-      <translation>Заміняти роздільник коми (потребує перезавантаження)</translation>
+      <translation>Заміняти десятковий роздільник (потребує перезавантаження)</translation>
     </message>
     <message>
       <source>Preference packs</source>
@@ -1687,15 +1687,15 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Save new...</source>
-      <translation type="unfinished">Save new...</translation>
+      <translation>Зберегти новий...</translation>
     </message>
     <message>
       <source>Manage...</source>
-      <translation type="unfinished">Manage...</translation>
+      <translation>Керувати...</translation>
     </message>
     <message>
       <source>Revert...</source>
-      <translation type="unfinished">Revert...</translation>
+      <translation>Відновити...</translation>
     </message>
     <message>
       <source>The text cursor will be blinking</source>
@@ -1714,23 +1714,23 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Small (%1px)</source>
-      <translation>Малий (%1px)</translation>
+      <translation>Малий (%1пікс)</translation>
     </message>
     <message>
       <source>Medium (%1px)</source>
-      <translation>Середній (%1px)</translation>
+      <translation>Середній (%1пікс)</translation>
     </message>
     <message>
       <source>Large (%1px)</source>
-      <translation>Великий (%1px)</translation>
+      <translation>Великий (%1пікс)</translation>
     </message>
     <message>
       <source>Extra large (%1px)</source>
-      <translation>Дуже великий (%1px)</translation>
+      <translation>Дуже великий (%1пікс)</translation>
     </message>
     <message>
       <source>Custom (%1px)</source>
-      <translation>Настроюваний (%1px)</translation>
+      <translation>Власний (%1пікс)</translation>
     </message>
     <message>
       <source>Combo View</source>
@@ -1754,7 +1754,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Tags</source>
-      <translation type="unfinished">Tags</translation>
+      <translation>Теги</translation>
     </message>
     <message>
       <source>Apply</source>
@@ -2618,22 +2618,22 @@ from Python console to Report view panel</source>
     <name>Gui::Dialog::DlgRevertToBackupConfig</name>
     <message>
       <source>Revert to Backup Config</source>
-      <translation type="unfinished">Revert to Backup Config</translation>
+      <translation>Відновити з резервної копії конфігурації</translation>
     </message>
     <message>
       <source>WARNING: this process will undo any preference changes made since the specified date, and will also reset your Recent files and Macros to their state on that date.</source>
-      <translation type="unfinished">WARNING: this process will undo any preference changes made since the specified date, and will also reset your Recent files and Macros to their state on that date.</translation>
+      <translation>УВАГА: цей процес скасує всі зміни налаштувань, зроблені з зазначеної дати, а також поверне ваші Останні файли та Макроси до стану на цю дату.</translation>
     </message>
     <message>
       <source>Available backup files:</source>
-      <translation type="unfinished">Available backup files:</translation>
+      <translation>Доступні резервні копії:</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgRevertToBackupConfigImp</name>
     <message>
       <source>No selection in dialog, cannot load backup file</source>
-      <translation type="unfinished">No selection in dialog, cannot load backup file</translation>
+      <translation>Нічого не виділено у діалоговому вікні, неможливо завантажити файл резервної копії</translation>
     </message>
   </context>
   <context>
@@ -2879,7 +2879,7 @@ opening or creation</translation>
     </message>
     <message>
       <source>Pick radius (px):</source>
-      <translation>Вибрати радіус (px):</translation>
+      <translation>Вибрати радіус (пікс):</translation>
     </message>
     <message>
       <source>Area for picking elements in 3D view.
@@ -3180,7 +3180,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>Create new document at start up</source>
-      <translation>Створення нового документа при запуску</translation>
+      <translation>Створити новий документ при запуску</translation>
     </message>
     <message>
       <source>Storage</source>
@@ -3216,7 +3216,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>Using Undo/Redo on documents</source>
-      <translation>Використання скасування/повторення дій у документах</translation>
+      <translation>Використати режим Скасувати/Повторити у документах</translation>
     </message>
     <message>
       <source>Authoring and License</source>
@@ -3272,15 +3272,15 @@ besides the color bar</translation>
     </message>
     <message>
       <source>The application will create a new document when started</source>
-      <translation type="unfinished">The application will create a new document when started</translation>
+      <translation>Буде створено новий документ після запуску програми</translation>
     </message>
     <message>
       <source>Compression level for FCStd files</source>
-      <translation type="unfinished">Compression level for FCStd files</translation>
+      <translation>Встановлює рівень стиснення для файлів FCStd</translation>
     </message>
     <message>
       <source>All changes in documents are stored so that they can be undone/redone</source>
-      <translation type="unfinished">All changes in documents are stored so that they can be undone/redone</translation>
+      <translation>Всі зміни в документах зберігаються таким чином, щоб їх можна було Скасувати/Повторити</translation>
     </message>
     <message>
       <source>How many Undo/Redo steps should be recorded</source>
@@ -3289,12 +3289,12 @@ besides the color bar</translation>
     <message>
       <source>Allow user aborting document recomputation by pressing ESC.
 This feature may slightly increase recomputation time.</source>
-      <translation type="unfinished">Allow user aborting document recomputation by pressing ESC.
-This feature may slightly increase recomputation time.</translation>
+      <translation>Дозволяє користувачу зупинити переобчислення документа натисканням ESC.
+Це може призвести до збільшення часу переобчислення.</translation>
     </message>
     <message>
       <source>Allow aborting recomputation</source>
-      <translation type="unfinished">Allow aborting recomputation</translation>
+      <translation>Дозволити зупинку переобчислення</translation>
     </message>
     <message>
       <source>If there is a recovery file available the application will
@@ -3344,7 +3344,7 @@ get date suffix according to the specified format</translation>
     </message>
     <message>
       <source>Allow objects to have same label/name</source>
-      <translation type="unfinished">Allow objects to have same label/name</translation>
+      <translation>Дозволити об'єктам мати однакову мітку/назву</translation>
     </message>
     <message>
       <source>Enable partial loading of external linked documents.
@@ -6659,7 +6659,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Allow partial recomputes</source>
-      <translation type="unfinished">Allow partial recomputes</translation>
+      <translation>Дозволити часткові переобчислення</translation>
     </message>
     <message>
       <source>Enable or disable recomputating editing object when &apos;skip recomputation&apos; is enabled</source>
@@ -7589,11 +7589,11 @@ the current copy will be lost.
     <name>SelectionFilter</name>
     <message>
       <source>Not allowed:</source>
-      <translation>Не допускається:</translation>
+      <translation>Заборонено:</translation>
     </message>
     <message>
       <source>Selection not allowed by filter</source>
-      <translation>Вибір не дозволено фільтром</translation>
+      <translation>Вибір забороненого за допомогою фільтра</translation>
     </message>
   </context>
   <context>

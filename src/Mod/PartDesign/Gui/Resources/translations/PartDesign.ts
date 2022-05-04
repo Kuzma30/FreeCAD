@@ -3283,6 +3283,29 @@ click again to end selection</source>
     </message>
 </context>
 <context>
+    <name>PartDesignGui::ViewProviderDatum</name>
+    <message>
+        <location filename="../../ViewProviderDatum.cpp" line="111"/>
+        <source>Datum Plane parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderDatum.cpp" line="116"/>
+        <source>Datum Line parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderDatum.cpp" line="121"/>
+        <source>Datum Point parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderDatum.cpp" line="126"/>
+        <source>Local Coordinate System parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PartDesign_CompPrimitiveAdditive</name>
     <message>
         <location filename="../../CommandPrimitive.cpp" line="200"/>
@@ -3853,19 +3876,9 @@ If you have a legacy document with PartDesign objects without Body, use the migr
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ViewProviderDatum.cpp" line="111"/>
-        <source>Datum Plane parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../ViewProviderDatum.cpp" line="115"/>
         <location filename="../../ViewProviderDatum.cpp" line="200"/>
         <source>Line</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderDatum.cpp" line="116"/>
-        <source>Datum Line parameters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3875,18 +3888,8 @@ If you have a legacy document with PartDesign objects without Body, use the migr
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ViewProviderDatum.cpp" line="121"/>
-        <source>Datum Point parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../ViewProviderDatum.cpp" line="125"/>
         <source>Coordinate System</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderDatum.cpp" line="126"/>
-        <source>Local Coordinate System parameters</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

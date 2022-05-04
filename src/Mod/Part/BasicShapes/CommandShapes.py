@@ -50,7 +50,8 @@ class CommandTube:
     def Activated(self):
         text = FreeCAD.Qt.translate("QObject", "Create tube")
         FreeCAD.ActiveDocument.openTransaction(text)
-        tube = FreeCAD.ActiveDocument.addObject("Part::FeaturePython","Tube")
+        newObjectName = FreeCAD.Qt.translate("QObject", "Tube")
+        tube = FreeCAD.ActiveDocument.addObject("Part::FeaturePython",newObjectName)
         Shapes.TubeFeature(tube)
         vp = ViewProviderShapes.ViewProviderTube(tube.ViewObject)
         activePart = FreeCADGui.activeView().getActiveObject('part')

@@ -822,11 +822,11 @@ In this case the prefix will be automatically trimmed when shown in the property
 However, the property is still used in a script with the full name, like &apos;obj.Group_Name&apos;.
 
 If this is not ticked, then the property must be uniquely named, and it is accessed like &apos;obj.Name&apos;.</source>
-      <translation type="unfinished">Prefix the property name with the group name in the form &apos;Group_Name&apos; to avoid conflicts with an existing property.
-In this case the prefix will be automatically trimmed when shown in the property editor.
-However, the property is still used in a script with the full name, like &apos;obj.Group_Name&apos;.
+      <translation>Префіксувати назву властивості із назвою групи у вигляді &apos;Group_Name&apos; для уникнення конфліктів з наявною властивістю.
+У цьому випадку префікс буде автоматично обрізаний у редакторі властивостей.
+Однак властивість все ще використовується в скрипті з повним іменем, наприклад, &apos;obj.Group_Name&apos;.
 
-If this is not ticked, then the property must be uniquely named, and it is accessed like &apos;obj.Name&apos;.</translation>
+Якщо цей параметр не відмічено, то властивість повинна бути унікальною і доступна як &apos;obj.Name&apos;.</translation>
     </message>
     <message>
       <source>Prefix group name</source>
@@ -928,7 +928,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Pixmap</source>
@@ -940,7 +940,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>What&apos;s this:</source>
-      <translation type="unfinished">What&apos;s this:</translation>
+      <translation>Що це?:</translation>
     </message>
     <message>
       <source>Status text:</source>
@@ -983,7 +983,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Sorry, couldn&apos;t find macro file &apos;%1&apos;.</source>
-      <translation type="unfinished">Sorry, couldn&apos;t find macro file &apos;%1&apos;.</translation>
+      <translation>Вибачте, не вдалося знайти файл макросу &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>Empty macro</source>
@@ -1123,11 +1123,11 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>The shortcut &apos;%1&apos; is defined more than once. This could result in unexpected behaviour.</source>
-      <translation type="unfinished">The shortcut &apos;%1&apos; is defined more than once. This could result in unexpected behaviour.</translation>
+      <translation>Комбінація клавіш &apos;%1&apos; визначена більше одного разу. Це може призвести до несподіваної поведінки.</translation>
     </message>
     <message>
       <source>The shortcut &apos;%1&apos; is already assigned to &apos;%2&apos;.</source>
-      <translation type="unfinished">The shortcut &apos;%1&apos; is already assigned to &apos;%2&apos;.</translation>
+      <translation>Комбінація клавіш &apos;%1&apos; вже призначена для &apos;%2&apos;.</translation>
     </message>
     <message>
       <source>Do you want to override it?</source>
@@ -1149,7 +1149,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; The changes become active the next time you load the appropriate workbench&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; The changes become active the next time you load the appropriate workbench&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Примітка:&lt;/span&gt; Зміни будуть активовані при наступному завантаженні відповідного робочого середовища&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Move right</source>
@@ -1221,7 +1221,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>The toolbar name &apos;%1&apos; is already used</source>
-      <translation type="unfinished">The toolbar name &apos;%1&apos; is already used</translation>
+      <translation>Назва панелі інструментів &apos;%1&apos; вже використовується</translation>
     </message>
     <message>
       <source>Rename toolbar</source>
@@ -1479,7 +1479,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Keep tabs</source>
-      <translation>Зберегти вкладки</translation>
+      <translation>Залишати табулятори</translation>
     </message>
     <message>
       <source>Family:</source>
@@ -1594,7 +1594,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Language of the application&apos;s user interface</source>
-      <translation type="unfinished">Language of the application&apos;s user interface</translation>
+      <translation>Мова інтерфейсу користувача програми</translation>
     </message>
     <message>
       <source>How many files should be listed in recent files list</source>
@@ -1659,7 +1659,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>C/POSIX</source>
-      <translation type="unfinished">C/POSIX</translation>
+      <translation>C/POSIX</translation>
     </message>
     <message>
       <source>If enabled, numerical keypad decimal separator will be substituted with locale separator</source>
@@ -1667,7 +1667,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Substitute decimal separator (needs restart)</source>
-      <translation>Заміняти десятковий роздільник (потребує перезавантаження)</translation>
+      <translation>Замінити десятковий роздільник (потребує перезапуску)</translation>
     </message>
     <message>
       <source>Preference packs</source>
@@ -1675,15 +1675,15 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Name</source>
-      <translation type="unfinished">Name</translation>
+      <translation>Назва</translation>
     </message>
     <message>
       <source>Type</source>
-      <translation type="unfinished">Type</translation>
+      <translation>Тип</translation>
     </message>
     <message>
       <source>Load</source>
-      <translation type="unfinished">Load</translation>
+      <translation>Завантажити</translation>
     </message>
     <message>
       <source>Save new...</source>
@@ -1699,7 +1699,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>The text cursor will be blinking</source>
-      <translation type="unfinished">The text cursor will be blinking</translation>
+      <translation>Текстовий курсор буде миготіти</translation>
     </message>
     <message>
       <source>Enable cursor blinking</source>
@@ -1758,7 +1758,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Apply</source>
-      <translation type="unfinished">Apply</translation>
+      <translation>Застосувати</translation>
     </message>
     <message>
       <source>Apply the %1 preference pack</source>
@@ -1839,11 +1839,11 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Launch a guide on how to set up a macro in a custom global toolbar.</source>
-      <translation type="unfinished">Launch a guide on how to set up a macro in a custom global toolbar.</translation>
+      <translation>Запускає помічника з налаштування макросу в користувацькій глобальній панелі інструментів.</translation>
     </message>
     <message>
       <source>Open Addon Manager where macros created by the community and other addons can be downloaded.</source>
-      <translation type="unfinished">Open Addon Manager where macros created by the community and other addons can be downloaded.</translation>
+      <translation>Відкриває Менеджер Додатків, де можна завантажити макроси створені спільнотою та інші додатки.</translation>
     </message>
     <message>
       <source>Download</source>
@@ -1871,8 +1871,8 @@ after FreeCAD launches</source>
     <message>
       <source>&apos;%1&apos;.
 This file already exists.</source>
-      <translation type="unfinished">&apos;%1&apos;.
-This file already exists.</translation>
+      <translation>&apos;%1&apos;.
+Цей файл вже існує.</translation>
     </message>
     <message>
       <source>Delete macro</source>
@@ -2189,7 +2189,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Can&apos;t find the text: %1</source>
-      <translation type="unfinished">Can&apos;t find the text: %1</translation>
+      <translation>Не вдається знайти текст: %1</translation>
     </message>
   </context>
   <context>
@@ -3212,7 +3212,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>Maximum Undo/Redo steps</source>
-      <translation>Максимальна кількість кроків скасування/повторення дій</translation>
+      <translation>Максимальна кількість кроків Скасувати/Повторити</translation>
     </message>
     <message>
       <source>Using Undo/Redo on documents</source>
@@ -3284,7 +3284,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>How many Undo/Redo steps should be recorded</source>
-      <translation type="unfinished">How many Undo/Redo steps should be recorded</translation>
+      <translation>Визначає кількість дій Скасувати/Повторити</translation>
     </message>
     <message>
       <source>Allow user aborting document recomputation by pressing ESC.
@@ -3299,8 +3299,8 @@ This feature may slightly increase recomputation time.</source>
     <message>
       <source>If there is a recovery file available the application will
 automatically run a file recovery when it is started.</source>
-      <translation type="unfinished">If there is a recovery file available the application will
-automatically run a file recovery when it is started.</translation>
+      <translation>Якщо доступний файл відновлення, то програма
+автоматично запустить його відновлення після запуску.</translation>
     </message>
     <message>
       <source>How often a recovery file is written</source>
@@ -3326,7 +3326,7 @@ Common sizes are 128, 256 and 512</translation>
     </message>
     <message>
       <source>How many backup files will be kept when saving document</source>
-      <translation type="unfinished">How many backup files will be kept when saving document</translation>
+      <translation>Визначає кількість резервних копій при збереженні документа</translation>
     </message>
     <message>
       <source>Backup files will get extension &apos;.FCbak&apos; and file names

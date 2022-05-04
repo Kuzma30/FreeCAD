@@ -1880,7 +1880,7 @@ This file already exists.</source>
     </message>
     <message>
       <source>Do you really want to delete the macro &apos;%1&apos;?</source>
-      <translation type="unfinished">Do you really want to delete the macro &apos;%1&apos;?</translation>
+      <translation>Ви дійсно бажаєте видалити макрос &apos;%1&apos;?</translation>
     </message>
     <message>
       <source>Cannot create file</source>
@@ -1888,7 +1888,7 @@ This file already exists.</source>
     </message>
     <message>
       <source>Creation of file &apos;%1&apos; failed.</source>
-      <translation type="unfinished">Creation of file &apos;%1&apos; failed.</translation>
+      <translation>Помилка створення файлу &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>Read-only</source>
@@ -1905,8 +1905,8 @@ This file already exists.</source>
     <message>
       <source>&apos;%1&apos;
  already exists.</source>
-      <translation type="unfinished">&apos;%1&apos;
- already exists.</translation>
+      <translation>&apos;%1&apos;
+ вже існує.</translation>
     </message>
     <message>
       <source>Rename Failed</source>
@@ -1915,8 +1915,8 @@ This file already exists.</source>
     <message>
       <source>Failed to rename to &apos;%1&apos;.
 Perhaps a file permission error?</source>
-      <translation type="unfinished">Failed to rename to &apos;%1&apos;.
-Perhaps a file permission error?</translation>
+      <translation>Помилка перейменування &apos;%1&apos;.
+Можливо помилка доступу до файлу?</translation>
     </message>
     <message>
       <source>Duplicate Macro</source>
@@ -1929,8 +1929,8 @@ Perhaps a file permission error?</translation>
     <message>
       <source>Failed to duplicate to &apos;%1&apos;.
 Perhaps a file permission error?</source>
-      <translation type="unfinished">Failed to duplicate to &apos;%1&apos;.
-Perhaps a file permission error?</translation>
+      <translation>Помилка дублювання &apos;%1&apos;.
+Можливо помилка доступу до файлу?</translation>
     </message>
     <message>
       <source>Do not show again</source>
@@ -1945,34 +1945,34 @@ Perhaps a file permission error?</translation>
 
 Note: your changes will be applied when you next switch workbenches
 </source>
-      <translation type="unfinished">This will guide you in setting up this macro in a custom global toolbar.  Instructions will be in red text inside the dialog.
+      <translation>Ви отримаєте інструкцію з налаштування цього макросу у Вашій глобальній панелі інструментів. Інструкції будуть виділені червоним текстом у вікні діалогу.
 
-Note: your changes will be applied when you next switch workbenches
+Примітка: ваші зміни будуть застосовані під час наступної зміни робочого середовища
 </translation>
     </message>
     <message>
       <source>Walkthrough, dialog 1 of 2</source>
-      <translation type="unfinished">Walkthrough, dialog 1 of 2</translation>
+      <translation>Покрокова Інструкція. Діалог 1 із 2</translation>
     </message>
     <message>
       <source>Walkthrough instructions: Fill in missing fields (optional) then click Add, then Close</source>
-      <translation type="unfinished">Walkthrough instructions: Fill in missing fields (optional) then click Add, then Close</translation>
+      <translation>Покрокова Інструкція: Заповніть відсутні поля (опціонально) потім натисніть кнопку Додати, потім Закрити</translation>
     </message>
     <message>
       <source>Walkthrough, dialog 1 of 1</source>
-      <translation type="unfinished">Walkthrough, dialog 1 of 1</translation>
+      <translation>Покрокова Інструкція. Діалог 1 із 1</translation>
     </message>
     <message>
       <source>Walkthrough, dialog 2 of 2</source>
-      <translation type="unfinished">Walkthrough, dialog 2 of 2</translation>
+      <translation>Покрокова Інструкція. Діалог 2 із 2</translation>
     </message>
     <message>
       <source>Walkthrough instructions: Click right arrow button (-&gt;), then Close.</source>
-      <translation type="unfinished">Walkthrough instructions: Click right arrow button (-&gt;), then Close.</translation>
+      <translation>Покрокова Інструкція: натисніть праву кнопку зі стрілкою (-&gt;), потім Закрити.</translation>
     </message>
     <message>
       <source>Walkthrough instructions: Click New, then right arrow (-&gt;) button, then Close.</source>
-      <translation type="unfinished">Walkthrough instructions: Click New, then right arrow (-&gt;) button, then Close.</translation>
+      <translation>Покрокова Інструкція; Натисніть Новий, потім праву кнопку зі стрілкою (&gt;), потім Закрити.</translation>
     </message>
   </context>
   <context>
@@ -1999,7 +1999,7 @@ Note: your changes will be applied when you next switch workbenches
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Record</source>
@@ -2022,11 +2022,11 @@ Note: your changes will be applied when you next switch workbenches
     </message>
     <message>
       <source>The macro &apos;%1&apos; already exists. Do you want to overwrite?</source>
-      <translation type="unfinished">The macro &apos;%1&apos; already exists. Do you want to overwrite?</translation>
+      <translation>Макрос &apos;%1&apos; вже існує. Бажаєте перезаписати?</translation>
     </message>
     <message>
       <source>The macro directory doesn&apos;t exist. Please, choose another one.</source>
-      <translation type="unfinished">The macro directory doesn&apos;t exist. Please, choose another one.</translation>
+      <translation>Тека макросів &apos; не існує. Виберіть іншу.</translation>
     </message>
     <message>
       <source>Choose macro directory</source>
@@ -2061,7 +2061,7 @@ Note: your changes will be applied when you next switch workbenches
     </message>
     <message>
       <source>%</source>
-      <translation type="unfinished">%</translation>
+      <translation>%</translation>
     </message>
     <message>
       <source>Ambient color:</source>
@@ -2101,9 +2101,9 @@ Note: your changes will be applied when you next switch workbenches
       <source>Access denied to &apos;%1&apos;
 
 Specify another directory, please.</source>
-      <translation type="unfinished">Access denied to &apos;%1&apos;
+      <translation>Немає доступу до &apos;%1&apos;
 
-Specify another directory, please.</translation>
+Будь ласка, вкажіть іншу теку.</translation>
     </message>
     <message>
       <source>HTML files</source>
@@ -2122,7 +2122,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Alt+C</source>
-      <translation type="unfinished">Alt+C</translation>
+      <translation>Alt+C</translation>
     </message>
     <message>
       <source>&amp;Close</source>
@@ -2220,7 +2220,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Invalid key name &apos;%1&apos;</source>
-      <translation type="unfinished">Invalid key name &apos;%1&apos;</translation>
+      <translation>Невірне ім'я ключа &apos;%1&apos;</translation>
     </message>
     <message>
       <source>System parameter</source>
@@ -2457,7 +2457,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>If enabled, then 3D view selection will be synchronized with full object hierarchy.</source>
-      <translation type="unfinished">If enabled, then 3D view selection will be synchronized with full object hierarchy.</translation>
+      <translation>Якщо ввімкнено, то виділення в 3D виді буде синхронізоване з повною ієрархією об'єктів.</translation>
     </message>
   </context>
   <context>
@@ -2542,8 +2542,8 @@ on-screen while displaying the error</source>
     <message>
       <source>When a warning has occurred, the Report View dialog becomes visible
 on-screen while displaying the warning</source>
-      <translation type="unfinished">When a warning has occurred, the Report View dialog becomes visible
-on-screen while displaying the warning</translation>
+      <translation>При виникненні попередження, діалогове вікно Перегляд звіту стає 
+видимим на екрані для показу попередження</translation>
     </message>
     <message>
       <source>Show report view on warning</source>
@@ -2552,12 +2552,12 @@ on-screen while displaying the warning</translation>
     <message>
       <source>When a normal message has occurred, the Report View dialog becomes visible
 on-screen while displaying the message</source>
-      <translation type="unfinished">When a normal message has occurred, the Report View dialog becomes visible
-on-screen while displaying the message</translation>
+      <translation>При виникненні звичайного повідомлення, діалогове вікно Перегляд звіту стає 
+видимим на екрані для показу повідомлення</translation>
     </message>
     <message>
       <source>Show report view on normal message</source>
-      <translation type="unfinished">Show report view on normal message</translation>
+      <translation>Показати Перегляд Звіту для звичайних повідомлень</translation>
     </message>
     <message>
       <source>When a log message has occurred, the Report View dialog becomes visible
@@ -3007,7 +3007,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Cache size limit:</source>
-      <translation type="unfinished">Cache size limit:</translation>
+      <translation>Обмеження розміру кешу:</translation>
     </message>
     <message>
       <source>Check now...</source>

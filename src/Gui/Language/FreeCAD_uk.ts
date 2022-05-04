@@ -1636,9 +1636,8 @@ this according to your screen size or personal taste</source>
       <source>A Splash screen is a small loading window that is shown
 when FreeCAD is launching. If this option is checked, FreeCAD will
 display the splash screen</source>
-      <translation>Екран, що спливає - це маленьке вікно, яке показується
-при запуску FreeCAD. Якщо ця позначено ця опція відмічена, то FreeCAD буде
-показувати екран, що спливає</translation>
+      <translation>Заставка - це маленьке вікно завантаження, яке показується при запуску FreeCAD. 
+Якщо ця опція відмічена, то FreeCAD буде показувати заставку</translation>
     </message>
     <message>
       <source>Choose which workbench will be activated and shown
@@ -1704,7 +1703,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Enable cursor blinking</source>
-      <translation type="unfinished">Enable cursor blinking</translation>
+      <translation>Дозволити миготіння курсору</translation>
     </message>
   </context>
   <context>
@@ -7736,7 +7735,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Copy operation</source>
-      <translation>Операції копіювання</translation>
+      <translation>Копіює виділений об'єкт до буфера обміну</translation>
     </message>
   </context>
   <context>
@@ -7747,7 +7746,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Cut out</source>
-      <translation>Вирізати</translation>
+      <translation>Вирізає виділений об'єкт</translation>
     </message>
   </context>
   <context>
@@ -7875,18 +7874,18 @@ the current copy will be lost.
     <name>StdCmdDuplicateSelection</name>
     <message>
       <source>Duplicate selection</source>
-      <translation>Дублювання виділеного</translation>
+      <translation>Дублювати виділене</translation>
     </message>
     <message>
       <source>Put duplicates of the selected objects to the active document</source>
-      <translation>Вставити дублікати обраних об&apos;єктів у активний документ</translation>
+      <translation>Вставляє дублікати виділених об'єктів у активний документ</translation>
     </message>
   </context>
   <context>
     <name>StdCmdEdit</name>
     <message>
       <source>Toggle &amp;Edit mode</source>
-      <translation>Перемкнути режим &amp;Правка</translation>
+      <translation>Перемкнути режим &amp;Редагування</translation>
     </message>
     <message>
       <source>Toggles the selected object&apos;s edit mode</source>
@@ -7894,7 +7893,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Activates or Deactivates the selected object&apos;s edit mode</source>
-      <translation type="unfinished">Activates or Deactivates the selected object&apos;s edit mode</translation>
+      <translation>Активує або деактивує для виділених об'єктів режим редагування</translation>
     </message>
   </context>
   <context>
@@ -8381,7 +8380,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Paste operation</source>
-      <translation>Операція вставки</translation>
+      <translation>Вставляє вміст буферу обміну</translation>
     </message>
   </context>
   <context>
@@ -8641,11 +8640,11 @@ the current copy will be lost.
     <name>StdCmdSelectAll</name>
     <message>
       <source>Select &amp;All</source>
-      <translation>Вибрати усе</translation>
+      <translation>Виділити все</translation>
     </message>
     <message>
       <source>Select all</source>
-      <translation>Виділити все</translation>
+      <translation>Виділяє всі об'єкти</translation>
     </message>
   </context>
   <context>

@@ -890,7 +890,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <name>Gui::Dialog::DlgCreateNewPreferencePack</name>
     <message>
       <source>Create New Preference Pack</source>
-      <translation type="unfinished">Create New Preference Pack</translation>
+      <translation>Створити новий Набір Налаштувань</translation>
     </message>
     <message>
       <source>Name</source>
@@ -909,7 +909,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>A preference pack with that name already exists. Do you want to overwrite it?</source>
-      <translation type="unfinished">A preference pack with that name already exists. Do you want to overwrite it?</translation>
+      <translation>Набір налаштувань з таким ім'ям вже існує. Бажаєте перезаписати його?</translation>
     </message>
   </context>
   <context>
@@ -1667,11 +1667,11 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Substitute decimal separator (needs restart)</source>
-      <translation type="unfinished">Substitute decimal separator (needs restart)</translation>
+      <translation>Заміняти роздільник коми (потребує перезавантаження)</translation>
     </message>
     <message>
       <source>Preference packs</source>
-      <translation type="unfinished">Preference packs</translation>
+      <translation>Набори Налаштувань</translation>
     </message>
     <message>
       <source>Name</source>
@@ -1746,11 +1746,11 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Manage preference packs</source>
-      <translation type="unfinished">Manage preference packs</translation>
+      <translation>Керування наборами налаштувань</translation>
     </message>
     <message>
       <source>Preference Pack Name</source>
-      <translation type="unfinished">Preference Pack Name</translation>
+      <translation>Ім'я Набору Налаштувань</translation>
     </message>
     <message>
       <source>Tags</source>
@@ -1762,7 +1762,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Apply the %1 preference pack</source>
-      <translation type="unfinished">Apply the %1 preference pack</translation>
+      <translation>Застосувати набір налаштувань %1</translation>
     </message>
   </context>
   <context>
@@ -2235,42 +2235,42 @@ Specify another directory, please.</translation>
     <name>Gui::Dialog::DlgPreferencePackManagement</name>
     <message>
       <source>Manage Preference Packs</source>
-      <translation type="unfinished">Manage Preference Packs</translation>
+      <translation>Керування Наборами Налаштувань</translation>
     </message>
     <message>
       <source>Open Addon Manager...</source>
-      <translation type="unfinished">Open Addon Manager...</translation>
+      <translation>Відкрити менеджер додатків...</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgPreferencePackManagementImp</name>
     <message>
       <source>User-Saved Preference Packs</source>
-      <translation type="unfinished">User-Saved Preference Packs</translation>
+      <translation>Наборами Налаштувань Користувача</translation>
     </message>
     <message>
       <source>Built-In Preference Packs</source>
-      <translation type="unfinished">Built-In Preference Packs</translation>
+      <translation>Вбудовані Набори Налаштувань</translation>
     </message>
     <message>
       <source>Toggle visibility of built-in preference pack &apos;%1&apos;</source>
-      <translation type="unfinished">Toggle visibility of built-in preference pack &apos;%1&apos;</translation>
+      <translation>Перемкнути видимість вбудованого пакета налаштувань &apos;%1&apos;</translation>
     </message>
     <message>
       <source>Delete user-saved preference pack &apos;%1&apos;</source>
-      <translation type="unfinished">Delete user-saved preference pack &apos;%1&apos;</translation>
+      <translation>Видалити набір налаштувань користувача &apos;%1&apos;</translation>
     </message>
     <message>
       <source>Toggle visibility of Addon preference pack &apos;%1&apos; (use Addon Manager to permanently remove)</source>
-      <translation type="unfinished">Toggle visibility of Addon preference pack &apos;%1&apos; (use Addon Manager to permanently remove)</translation>
+      <translation>Перемкнути видимість Набору Налаштувань Додатку &apos;%1&apos; (використовуйте Менеджер Додатків для остаточного видалення)</translation>
     </message>
     <message>
       <source>Delete saved preference pack?</source>
-      <translation type="unfinished">Delete saved preference pack?</translation>
+      <translation>Видалити збережений пакет налаштувань?</translation>
     </message>
     <message>
       <source>Are you sure you want to delete the preference pack named &apos;%1&apos;? This cannot be undone.</source>
-      <translation type="unfinished">Are you sure you want to delete the preference pack named &apos;%1&apos;? This cannot be undone.</translation>
+      <translation>Ви впевнені, що бажаєте видалити Набір Налаштувань з назвою &apos;%1&apos;? Цю дію неможливо скасувати.</translation>
     </message>
   </context>
   <context>

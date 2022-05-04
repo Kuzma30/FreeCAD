@@ -890,7 +890,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <name>Gui::Dialog::DlgCreateNewPreferencePack</name>
     <message>
       <source>Create New Preference Pack</source>
-      <translation type="unfinished">Create New Preference Pack</translation>
+      <translation>Створити новий Набір Налаштувань</translation>
     </message>
     <message>
       <source>Name</source>
@@ -909,7 +909,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>A preference pack with that name already exists. Do you want to overwrite it?</source>
-      <translation type="unfinished">A preference pack with that name already exists. Do you want to overwrite it?</translation>
+      <translation>Набір налаштувань з таким ім'ям вже існує. Бажаєте перезаписати його?</translation>
     </message>
   </context>
   <context>
@@ -1636,9 +1636,8 @@ this according to your screen size or personal taste</source>
       <source>A Splash screen is a small loading window that is shown
 when FreeCAD is launching. If this option is checked, FreeCAD will
 display the splash screen</source>
-      <translation>Екран, що спливає - це маленьке вікно, яке показується
-при запуску FreeCAD. Якщо ця позначено ця опція відмічена, то FreeCAD буде
-показувати екран, що спливає</translation>
+      <translation>Заставка - це маленьке вікно завантаження, яке показується при запуску FreeCAD. 
+Якщо ця опція відмічена, то FreeCAD буде показувати заставку</translation>
     </message>
     <message>
       <source>Choose which workbench will be activated and shown
@@ -1648,15 +1647,15 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Number format:</source>
-      <translation type="unfinished">Number format:</translation>
+      <translation>Формат цифр:</translation>
     </message>
     <message>
       <source>Operating system</source>
-      <translation type="unfinished">Operating system</translation>
+      <translation>Формат ОС</translation>
     </message>
     <message>
       <source>Selected language</source>
-      <translation type="unfinished">Selected language</translation>
+      <translation>З налаштувань локалі</translation>
     </message>
     <message>
       <source>C/POSIX</source>
@@ -1664,15 +1663,15 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>If enabled, numerical keypad decimal separator will be substituted with locale separator</source>
-      <translation type="unfinished">If enabled, numerical keypad decimal separator will be substituted with locale separator</translation>
+      <translation>Якщо увімкнено, десятковий роздільник цифрової клавіатури буде замінено роздільником локалі</translation>
     </message>
     <message>
       <source>Substitute decimal separator (needs restart)</source>
-      <translation type="unfinished">Substitute decimal separator (needs restart)</translation>
+      <translation>Заміняти десятковий роздільник (потребує перезавантаження)</translation>
     </message>
     <message>
       <source>Preference packs</source>
-      <translation type="unfinished">Preference packs</translation>
+      <translation>Набори Налаштувань</translation>
     </message>
     <message>
       <source>Name</source>
@@ -1688,15 +1687,15 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Save new...</source>
-      <translation type="unfinished">Save new...</translation>
+      <translation>Зберегти новий...</translation>
     </message>
     <message>
       <source>Manage...</source>
-      <translation type="unfinished">Manage...</translation>
+      <translation>Керувати...</translation>
     </message>
     <message>
       <source>Revert...</source>
-      <translation type="unfinished">Revert...</translation>
+      <translation>Відновити...</translation>
     </message>
     <message>
       <source>The text cursor will be blinking</source>
@@ -1704,7 +1703,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Enable cursor blinking</source>
-      <translation type="unfinished">Enable cursor blinking</translation>
+      <translation>Дозволити миготіння курсору</translation>
     </message>
   </context>
   <context>
@@ -1715,23 +1714,23 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Small (%1px)</source>
-      <translation>Малий (%1px)</translation>
+      <translation>Малий (%1пікс)</translation>
     </message>
     <message>
       <source>Medium (%1px)</source>
-      <translation>Середній (%1px)</translation>
+      <translation>Середній (%1пікс)</translation>
     </message>
     <message>
       <source>Large (%1px)</source>
-      <translation>Великий (%1px)</translation>
+      <translation>Великий (%1пікс)</translation>
     </message>
     <message>
       <source>Extra large (%1px)</source>
-      <translation>Дуже великий (%1px)</translation>
+      <translation>Дуже великий (%1пікс)</translation>
     </message>
     <message>
       <source>Custom (%1px)</source>
-      <translation>Настроюваний (%1px)</translation>
+      <translation>Власний (%1пікс)</translation>
     </message>
     <message>
       <source>Combo View</source>
@@ -1747,15 +1746,15 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Manage preference packs</source>
-      <translation type="unfinished">Manage preference packs</translation>
+      <translation>Керування наборами налаштувань</translation>
     </message>
     <message>
       <source>Preference Pack Name</source>
-      <translation type="unfinished">Preference Pack Name</translation>
+      <translation>Ім'я Набору Налаштувань</translation>
     </message>
     <message>
       <source>Tags</source>
-      <translation type="unfinished">Tags</translation>
+      <translation>Теги</translation>
     </message>
     <message>
       <source>Apply</source>
@@ -1763,7 +1762,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Apply the %1 preference pack</source>
-      <translation type="unfinished">Apply the %1 preference pack</translation>
+      <translation>Застосувати набір налаштувань %1</translation>
     </message>
   </context>
   <context>
@@ -2236,42 +2235,42 @@ Specify another directory, please.</translation>
     <name>Gui::Dialog::DlgPreferencePackManagement</name>
     <message>
       <source>Manage Preference Packs</source>
-      <translation type="unfinished">Manage Preference Packs</translation>
+      <translation>Керування Наборами Налаштувань</translation>
     </message>
     <message>
       <source>Open Addon Manager...</source>
-      <translation type="unfinished">Open Addon Manager...</translation>
+      <translation>Відкрити менеджер додатків...</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgPreferencePackManagementImp</name>
     <message>
       <source>User-Saved Preference Packs</source>
-      <translation type="unfinished">User-Saved Preference Packs</translation>
+      <translation>Наборами Налаштувань Користувача</translation>
     </message>
     <message>
       <source>Built-In Preference Packs</source>
-      <translation type="unfinished">Built-In Preference Packs</translation>
+      <translation>Вбудовані Набори Налаштувань</translation>
     </message>
     <message>
       <source>Toggle visibility of built-in preference pack &apos;%1&apos;</source>
-      <translation type="unfinished">Toggle visibility of built-in preference pack &apos;%1&apos;</translation>
+      <translation>Перемкнути видимість вбудованого пакета налаштувань &apos;%1&apos;</translation>
     </message>
     <message>
       <source>Delete user-saved preference pack &apos;%1&apos;</source>
-      <translation type="unfinished">Delete user-saved preference pack &apos;%1&apos;</translation>
+      <translation>Видалити набір налаштувань користувача &apos;%1&apos;</translation>
     </message>
     <message>
       <source>Toggle visibility of Addon preference pack &apos;%1&apos; (use Addon Manager to permanently remove)</source>
-      <translation type="unfinished">Toggle visibility of Addon preference pack &apos;%1&apos; (use Addon Manager to permanently remove)</translation>
+      <translation>Перемкнути видимість Набору Налаштувань Додатку &apos;%1&apos; (використовуйте Менеджер Додатків для остаточного видалення)</translation>
     </message>
     <message>
       <source>Delete saved preference pack?</source>
-      <translation type="unfinished">Delete saved preference pack?</translation>
+      <translation>Видалити збережений пакет налаштувань?</translation>
     </message>
     <message>
       <source>Are you sure you want to delete the preference pack named &apos;%1&apos;? This cannot be undone.</source>
-      <translation type="unfinished">Are you sure you want to delete the preference pack named &apos;%1&apos;? This cannot be undone.</translation>
+      <translation>Ви впевнені, що бажаєте видалити Набір Налаштувань з назвою &apos;%1&apos;? Цю дію неможливо скасувати.</translation>
     </message>
   </context>
   <context>
@@ -2619,22 +2618,22 @@ from Python console to Report view panel</source>
     <name>Gui::Dialog::DlgRevertToBackupConfig</name>
     <message>
       <source>Revert to Backup Config</source>
-      <translation type="unfinished">Revert to Backup Config</translation>
+      <translation>Відновити з резервної копії конфігурації</translation>
     </message>
     <message>
       <source>WARNING: this process will undo any preference changes made since the specified date, and will also reset your Recent files and Macros to their state on that date.</source>
-      <translation type="unfinished">WARNING: this process will undo any preference changes made since the specified date, and will also reset your Recent files and Macros to their state on that date.</translation>
+      <translation>УВАГА: цей процес скасує всі зміни налаштувань, зроблені з зазначеної дати, а також поверне ваші Останні файли та Макроси до стану на цю дату.</translation>
     </message>
     <message>
       <source>Available backup files:</source>
-      <translation type="unfinished">Available backup files:</translation>
+      <translation>Доступні резервні копії:</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgRevertToBackupConfigImp</name>
     <message>
       <source>No selection in dialog, cannot load backup file</source>
-      <translation type="unfinished">No selection in dialog, cannot load backup file</translation>
+      <translation>Нічого не виділено у діалоговому вікні, неможливо завантажити файл резервної копії</translation>
     </message>
   </context>
   <context>
@@ -2880,7 +2879,7 @@ opening or creation</translation>
     </message>
     <message>
       <source>Pick radius (px):</source>
-      <translation>Вибрати радіус (px):</translation>
+      <translation>Вибрати радіус (пікс):</translation>
     </message>
     <message>
       <source>Area for picking elements in 3D view.
@@ -3181,7 +3180,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>Create new document at start up</source>
-      <translation>Створення нового документа при запуску</translation>
+      <translation>Створити новий документ при запуску</translation>
     </message>
     <message>
       <source>Storage</source>
@@ -3217,7 +3216,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>Using Undo/Redo on documents</source>
-      <translation>Використання скасування/повторення дій у документах</translation>
+      <translation>Використати режим Скасувати/Повторити у документах</translation>
     </message>
     <message>
       <source>Authoring and License</source>
@@ -3273,15 +3272,15 @@ besides the color bar</translation>
     </message>
     <message>
       <source>The application will create a new document when started</source>
-      <translation type="unfinished">The application will create a new document when started</translation>
+      <translation>Буде створено новий документ після запуску програми</translation>
     </message>
     <message>
       <source>Compression level for FCStd files</source>
-      <translation type="unfinished">Compression level for FCStd files</translation>
+      <translation>Встановлює рівень стиснення для файлів FCStd</translation>
     </message>
     <message>
       <source>All changes in documents are stored so that they can be undone/redone</source>
-      <translation type="unfinished">All changes in documents are stored so that they can be undone/redone</translation>
+      <translation>Всі зміни в документах зберігаються таким чином, щоб їх можна було Скасувати/Повторити</translation>
     </message>
     <message>
       <source>How many Undo/Redo steps should be recorded</source>
@@ -3290,12 +3289,12 @@ besides the color bar</translation>
     <message>
       <source>Allow user aborting document recomputation by pressing ESC.
 This feature may slightly increase recomputation time.</source>
-      <translation type="unfinished">Allow user aborting document recomputation by pressing ESC.
-This feature may slightly increase recomputation time.</translation>
+      <translation>Дозволяє користувачу зупинити переобчислення документа натисканням ESC.
+Це може призвести до збільшення часу переобчислення.</translation>
     </message>
     <message>
       <source>Allow aborting recomputation</source>
-      <translation type="unfinished">Allow aborting recomputation</translation>
+      <translation>Дозволити зупинку переобчислення</translation>
     </message>
     <message>
       <source>If there is a recovery file available the application will
@@ -3345,7 +3344,7 @@ get date suffix according to the specified format</translation>
     </message>
     <message>
       <source>Allow objects to have same label/name</source>
-      <translation type="unfinished">Allow objects to have same label/name</translation>
+      <translation>Дозволити об'єктам мати однакову мітку/назву</translation>
     </message>
     <message>
       <source>Enable partial loading of external linked documents.
@@ -6660,7 +6659,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Allow partial recomputes</source>
-      <translation type="unfinished">Allow partial recomputes</translation>
+      <translation>Дозволити часткові переобчислення</translation>
     </message>
     <message>
       <source>Enable or disable recomputating editing object when &apos;skip recomputation&apos; is enabled</source>
@@ -7590,11 +7589,11 @@ the current copy will be lost.
     <name>SelectionFilter</name>
     <message>
       <source>Not allowed:</source>
-      <translation>Не допускається:</translation>
+      <translation>Заборонено:</translation>
     </message>
     <message>
       <source>Selection not allowed by filter</source>
-      <translation>Вибір не дозволено фільтром</translation>
+      <translation>Вибір забороненого за допомогою фільтра</translation>
     </message>
   </context>
   <context>
@@ -7736,7 +7735,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Copy operation</source>
-      <translation>Операції копіювання</translation>
+      <translation>Копіює виділений об'єкт до буфера обміну</translation>
     </message>
   </context>
   <context>
@@ -7747,7 +7746,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Cut out</source>
-      <translation>Вирізати</translation>
+      <translation>Вирізає виділений об'єкт</translation>
     </message>
   </context>
   <context>
@@ -7875,18 +7874,18 @@ the current copy will be lost.
     <name>StdCmdDuplicateSelection</name>
     <message>
       <source>Duplicate selection</source>
-      <translation>Дублювання виділеного</translation>
+      <translation>Дублювати виділене</translation>
     </message>
     <message>
       <source>Put duplicates of the selected objects to the active document</source>
-      <translation>Вставити дублікати обраних об&apos;єктів у активний документ</translation>
+      <translation>Вставляє дублікати виділених об'єктів у активний документ</translation>
     </message>
   </context>
   <context>
     <name>StdCmdEdit</name>
     <message>
       <source>Toggle &amp;Edit mode</source>
-      <translation>Перемкнути режим &amp;Правка</translation>
+      <translation>Перемкнути режим &amp;Редагування</translation>
     </message>
     <message>
       <source>Toggles the selected object&apos;s edit mode</source>
@@ -7894,7 +7893,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Activates or Deactivates the selected object&apos;s edit mode</source>
-      <translation type="unfinished">Activates or Deactivates the selected object&apos;s edit mode</translation>
+      <translation>Активує або деактивує для виділених об'єктів режим редагування</translation>
     </message>
   </context>
   <context>
@@ -8381,7 +8380,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Paste operation</source>
-      <translation>Операція вставки</translation>
+      <translation>Вставляє вміст буферу обміну</translation>
     </message>
   </context>
   <context>
@@ -8641,11 +8640,11 @@ the current copy will be lost.
     <name>StdCmdSelectAll</name>
     <message>
       <source>Select &amp;All</source>
-      <translation>Вибрати усе</translation>
+      <translation>Виділити все</translation>
     </message>
     <message>
       <source>Select all</source>
-      <translation>Виділити все</translation>
+      <translation>Виділяє всі об'єкти</translation>
     </message>
   </context>
   <context>

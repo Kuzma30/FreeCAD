@@ -3310,6 +3310,29 @@ kliknij ponownie, aby zakończyć wybór</translation>
     </message>
   </context>
   <context>
+    <name>PartDesignGui::ViewProviderDatum</name>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="111"/>
+      <source>Datum Plane parameters</source>
+      <translation type="unfinished">Datum Plane parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="116"/>
+      <source>Datum Line parameters</source>
+      <translation type="unfinished">Datum Line parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="121"/>
+      <source>Datum Point parameters</source>
+      <translation type="unfinished">Datum Point parameters</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="126"/>
+      <source>Local Coordinate System parameters</source>
+      <translation type="unfinished">Local Coordinate System parameters</translation>
+    </message>
+  </context>
+  <context>
     <name>PartDesign_CompPrimitiveAdditive</name>
     <message>
       <location filename="../../CommandPrimitive.cpp" line="200"/>
@@ -3888,20 +3911,10 @@ Jeśli masz starszy dokument z obiektami Projektu części bez obiektu Zawartoś
       <translation>Płaszczyzna</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderDatum.cpp" line="111"/>
-      <source>Datum Plane parameters</source>
-      <translation type="unfinished">Datum Plane parameters</translation>
-    </message>
-    <message>
       <location filename="../../ViewProviderDatum.cpp" line="115"/>
       <location filename="../../ViewProviderDatum.cpp" line="200"/>
       <source>Line</source>
       <translation>Linia</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderDatum.cpp" line="116"/>
-      <source>Datum Line parameters</source>
-      <translation type="unfinished">Datum Line parameters</translation>
     </message>
     <message>
       <location filename="../../ViewProviderDatum.cpp" line="120"/>
@@ -3910,19 +3923,9 @@ Jeśli masz starszy dokument z obiektami Projektu części bez obiektu Zawartoś
       <translation>Punkt</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderDatum.cpp" line="121"/>
-      <source>Datum Point parameters</source>
-      <translation type="unfinished">Datum Point parameters</translation>
-    </message>
-    <message>
       <location filename="../../ViewProviderDatum.cpp" line="125"/>
       <source>Coordinate System</source>
       <translation>Układ współrzędnych</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderDatum.cpp" line="126"/>
-      <source>Local Coordinate System parameters</source>
-      <translation type="unfinished">Local Coordinate System parameters</translation>
     </message>
     <message>
       <location filename="../../ViewProviderDatum.cpp" line="225"/>

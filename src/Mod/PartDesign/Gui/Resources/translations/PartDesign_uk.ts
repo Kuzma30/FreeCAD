@@ -2833,7 +2833,7 @@ measured along the specified direction</source>
     <message>
       <location filename="../../TaskPipeScaling.ui" line="22"/>
       <source>Transform mode</source>
-      <translation>Режим трансформації</translation>
+      <translation>Режим перетворення</translation>
     </message>
     <message>
       <location filename="../../TaskPipeScaling.ui" line="36"/>
@@ -3308,6 +3308,29 @@ click again to end selection</source>
       <location filename="../../ViewProviderBody.cpp" line="133"/>
       <source>Toggle active body</source>
       <translation>Зробити тіло активним/неактивним</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGui::ViewProviderDatum</name>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="111"/>
+      <source>Datum Plane parameters</source>
+      <translation>Параметри Базисної Поверхні</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="116"/>
+      <source>Datum Line parameters</source>
+      <translation>Параметри Базисної Лінії</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="121"/>
+      <source>Datum Point parameters</source>
+      <translation>Параметри Базисної Точки</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderDatum.cpp" line="126"/>
+      <source>Local Coordinate System parameters</source>
+      <translation>Параметри Локальної Системи Координат</translation>
     </message>
   </context>
   <context>
@@ -3889,20 +3912,10 @@ If you have a legacy document with PartDesign objects without Body, use the migr
       <translation>Площини</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderDatum.cpp" line="111"/>
-      <source>Datum Plane parameters</source>
-      <translation>Параметри Базисної Поверхні</translation>
-    </message>
-    <message>
       <location filename="../../ViewProviderDatum.cpp" line="115"/>
       <location filename="../../ViewProviderDatum.cpp" line="200"/>
       <source>Line</source>
       <translation>Лінія</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderDatum.cpp" line="116"/>
-      <source>Datum Line parameters</source>
-      <translation>Параметри Базисної Лінії</translation>
     </message>
     <message>
       <location filename="../../ViewProviderDatum.cpp" line="120"/>
@@ -3911,19 +3924,9 @@ If you have a legacy document with PartDesign objects without Body, use the migr
       <translation>Точка</translation>
     </message>
     <message>
-      <location filename="../../ViewProviderDatum.cpp" line="121"/>
-      <source>Datum Point parameters</source>
-      <translation>Параметри Базисної Точки</translation>
-    </message>
-    <message>
       <location filename="../../ViewProviderDatum.cpp" line="125"/>
       <source>Coordinate System</source>
       <translation>Система координат</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderDatum.cpp" line="126"/>
-      <source>Local Coordinate System parameters</source>
-      <translation>Параметри Локальної Системи Координат</translation>
     </message>
     <message>
       <location filename="../../ViewProviderDatum.cpp" line="225"/>

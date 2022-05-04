@@ -2833,7 +2833,7 @@ measured along the specified direction</source>
     <message>
       <location filename="../../TaskPipeScaling.ui" line="22"/>
       <source>Transform mode</source>
-      <translation>Режим трансформації</translation>
+      <translation>Режим перетворення</translation>
     </message>
     <message>
       <location filename="../../TaskPipeScaling.ui" line="36"/>

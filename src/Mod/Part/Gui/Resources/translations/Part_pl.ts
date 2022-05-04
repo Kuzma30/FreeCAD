@@ -177,6 +177,11 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
       <translation>Utwórz rurę</translation>
     </message>
     <message>
+      <location filename="CommandShapes.py" line="54"/>
+      <source>Tube</source>
+      <translation type="unfinished">Tube</translation>
+    </message>
+    <message>
       <location filename="../../AppPartGui.cpp" line="211"/>
       <location filename="../../AppPartGui.cpp" line="212"/>
       <location filename="../../AppPartGui.cpp" line="213"/>

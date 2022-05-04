@@ -2308,7 +2308,7 @@ Specify another directory, please.</translation>
     <name>Gui::Dialog::DlgProjectInformation</name>
     <message>
       <source>Project information</source>
-      <translation>Інформація про проект</translation>
+      <translation>Інформація про проєкт</translation>
     </message>
     <message>
       <source>Information</source>
@@ -2375,11 +2375,11 @@ Specify another directory, please.</translation>
     <name>Gui::Dialog::DlgProjectUtility</name>
     <message>
       <source>Project utility</source>
-      <translation>Утиліта проекту</translation>
+      <translation>Утиліта проєкту</translation>
     </message>
     <message>
       <source>Extract project</source>
-      <translation>Видобути проект</translation>
+      <translation>Видобути проєкт</translation>
     </message>
     <message>
       <source>Source</source>
@@ -2395,7 +2395,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Create project</source>
-      <translation>Створити проект</translation>
+      <translation>Створити проєкт</translation>
     </message>
     <message>
       <source>Create</source>
@@ -2403,7 +2403,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Load project file after creation</source>
-      <translation>Завантажити файл проекту після створення</translation>
+      <translation>Завантажити файл проєкту після створення</translation>
     </message>
     <message>
       <source>Empty source</source>
@@ -2423,7 +2423,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Project file</source>
-      <translation>Файл проекту</translation>
+      <translation>Файл проєкту</translation>
     </message>
   </context>
   <context>
@@ -3197,7 +3197,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>Save thumbnail into project file when saving document</source>
-      <translation>Зберегти мініатюру у файл проекту при збереженні документа</translation>
+      <translation>Зберегти мініатюру у файл проєкту при збереженні документа</translation>
     </message>
     <message>
       <source>Maximum number of backup files to keep when resaving document</source>
@@ -4936,7 +4936,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     <name>Gui::Dialog::RemoteDebugger</name>
     <message>
       <source>Attach to remote debugger</source>
-      <translation type="unfinished">Attach to remote debugger</translation>
+      <translation>Запустити через віддалений налагоджувач</translation>
     </message>
     <message>
       <source>winpdb</source>
@@ -7271,7 +7271,7 @@ Be aware the point where you click matters.</source>
     </message>
     <message>
       <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
-      <translation>Експортований об&apos;єкт містить зовнішні посилання. Збережіть документ хоча б раз перед експортом.</translation>
+      <translation>Експортований об'єкт містить зовнішні посилання. Збережіть документ хоча б раз перед експортом.</translation>
     </message>
     <message>
       <source>Delete failed</source>
@@ -7703,7 +7703,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Close active window</source>
-      <translation>Закрити активне вікно</translation>
+      <translation>Закриває активне вікно</translation>
     </message>
   </context>
   <context>
@@ -7714,7 +7714,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Close all windows</source>
-      <translation>Закрити всі вікна</translation>
+      <translation>Закриває всі вікна</translation>
     </message>
   </context>
   <context>
@@ -7905,7 +7905,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Export an object in the active document</source>
-      <translation>Експорт об&apos;єкта в активний документ</translation>
+      <translation>Експортує об'єкт в активному документі</translation>
     </message>
     <message>
       <source>No selection</source>
@@ -8064,7 +8064,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Import a file in the active document</source>
-      <translation>Імпорт файлу в активний документ</translation>
+      <translation>Імпортує файл в активний документ</translation>
     </message>
     <message>
       <source>Supported formats</source>
@@ -8207,11 +8207,11 @@ the current copy will be lost.
     <name>StdCmdMacroAttachDebugger</name>
     <message>
       <source>Attach to remote debugger...</source>
-      <translation type="unfinished">Attach to remote debugger...</translation>
+      <translation>Запустити через віддалений налагоджувач...</translation>
     </message>
     <message>
       <source>Attach to a remotely running debugger</source>
-      <translation type="unfinished">Attach to a remotely running debugger</translation>
+      <translation>Запускає макрос через віддалений налагоджувач</translation>
     </message>
   </context>
   <context>
@@ -8247,7 +8247,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Stop debugging of macro</source>
-      <translation>Зупинити відлагодження макросу</translation>
+      <translation>Зупиняє налагодження макросу</translation>
     </message>
   </context>
   <context>
@@ -8283,15 +8283,15 @@ the current copy will be lost.
     <name>StdCmdMergeProjects</name>
     <message>
       <source>Merge project...</source>
-      <translation>Злиття проекту ...</translation>
+      <translation>Об'єднати проєкт...</translation>
     </message>
     <message>
       <source>Merge project</source>
-      <translation>Злиття проекту</translation>
+      <translation>Об'єднує проєкт</translation>
     </message>
     <message>
       <source>Cannot merge project with itself.</source>
-      <translation>Неможливо злити проекту з самим собою.</translation>
+      <translation>Неможливо злити проєкт з самим собою.</translation>
     </message>
     <message>
       <source>%1 document (*.FCStd)</source>
@@ -8306,7 +8306,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Create a new empty document</source>
-      <translation>Створити новий порожній документ</translation>
+      <translation>Створює новий порожній документ</translation>
     </message>
     <message>
       <source>Unnamed</source>
@@ -8343,7 +8343,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Open a document or import files</source>
-      <translation>Відкрити документ або імпортувати файли</translation>
+      <translation>Відкриває документ або імпортує файли</translation>
     </message>
     <message>
       <source>Supported formats</source>
@@ -8403,7 +8403,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Print the document</source>
-      <translation>Друк документа</translation>
+      <translation>Друкує документ</translation>
     </message>
   </context>
   <context>
@@ -8414,7 +8414,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Export the document as PDF</source>
-      <translation>Експорт документа в PDF</translation>
+      <translation>Експортує документ в PDF</translation>
     </message>
   </context>
   <context>
@@ -8429,29 +8429,29 @@ the current copy will be lost.
     </message>
     <message>
       <source>Print preview</source>
-      <translation>Попередній перегляд</translation>
+      <translation>Дозволяє попередньо переглянути результат перед друком</translation>
     </message>
   </context>
   <context>
     <name>StdCmdProjectInfo</name>
     <message>
       <source>Project i&amp;nformation...</source>
-      <translation>Інформація про проект...</translation>
+      <translation>Інформація про проєкт...</translation>
     </message>
     <message>
       <source>Show details of the currently active project</source>
-      <translation>Показати подробиці про поточний проект</translation>
+      <translation>Показує подробиці про активний проєкт</translation>
     </message>
   </context>
   <context>
     <name>StdCmdProjectUtil</name>
     <message>
       <source>Project utility...</source>
-      <translation>Утиліта проекту...</translation>
+      <translation>Утиліта проєкту...</translation>
     </message>
     <message>
       <source>Utility to extract or create project files</source>
-      <translation>Утиліта для видобування або створення файлів проекту</translation>
+      <translation>Утиліта для видобування або створення файлів проєкту</translation>
     </message>
   </context>
   <context>
@@ -8473,7 +8473,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Quits the application</source>
-      <translation>Вихід з програми</translation>
+      <translation>Завершує роботу з програмою</translation>
     </message>
   </context>
   <context>
@@ -8546,7 +8546,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Reverts to the saved version of this file</source>
-      <translation>Повернутися до збереженої версії цього файлу</translation>
+      <translation>Повертається до збереженої версії цього файлу</translation>
     </message>
   </context>
   <context>
@@ -8557,7 +8557,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Save the active document</source>
-      <translation>Зберегти активний документ</translation>
+      <translation>Зберігає активний документ</translation>
     </message>
   </context>
   <context>
@@ -8568,7 +8568,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Save all opened document</source>
-      <translation>Зберегти всі відкриті документи</translation>
+      <translation>Зберігає всі відкриті документи</translation>
     </message>
   </context>
   <context>
@@ -8579,7 +8579,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Save the active document under a new file name</source>
-      <translation>Зберегти поточний документ під новим ім&apos;ям</translation>
+      <translation>Зберігає активний документ під новим ім'ям</translation>
     </message>
   </context>
   <context>
@@ -8590,7 +8590,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Save a copy of the active document under a new file name</source>
-      <translation>Зберегти копію активного документа з новим іменем файлу</translation>
+      <translation>Зберігає копію активного документа з новим іменем файлу</translation>
     </message>
   </context>
   <context>
@@ -8894,7 +8894,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Undo exactly one action</source>
-      <translation>Скасувати рівно одну дію</translation>
+      <translation>Скасовує рівно одну дію</translation>
     </message>
   </context>
   <context>

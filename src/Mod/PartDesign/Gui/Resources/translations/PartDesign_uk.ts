@@ -461,7 +461,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../Command.cpp" line="2275"/>
       <source>Mirrored</source>
-      <translation>Дзеркально відобразити</translation>
+      <translation>Дзеркальне зображення</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="2276"/>
@@ -979,7 +979,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../TaskMultiTransformParameters.cpp" line="292"/>
       <source>Mirrored</source>
-      <translation>Дзеркально відобразити</translation>
+      <translation>Дзеркальне зображення</translation>
     </message>
     <message>
       <location filename="../../TaskMultiTransformParameters.cpp" line="320"/>
@@ -4074,7 +4074,7 @@ Although you will be able to migrate any moment later with &apos;Part Design -&g
     <message>
       <location filename="../../ViewProviderMirrored.h" line="37"/>
       <source>Mirrored parameters</source>
-      <translation>Параметри Дзеркального Відображення</translation>
+      <translation>Параметри Дзеркального Зображення</translation>
     </message>
     <message>
       <location filename="../../ViewProviderMultiTransform.h" line="37"/>

@@ -3363,7 +3363,7 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
     <message>
       <location filename="gui_mirror.py" line="73"/>
       <source>Select an object to mirror</source>
-      <translation>Оберіть об'єкт для дзеркального відображення</translation>
+      <translation>Оберіть об'єкт для створення дзеркального зображення</translation>
     </message>
     <message>
       <location filename="gui_mirror.py" line="92"/>

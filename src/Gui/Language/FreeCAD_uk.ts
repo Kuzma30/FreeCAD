@@ -2914,13 +2914,13 @@ bounding box size of the 3D object that is currently displayed.</translation>
     </message>
     <message>
       <source>Relative size :   </source>
-      <translation type="unfinished">Relative size :   </translation>
+      <translation>Відносний розмір:   </translation>
     </message>
     <message>
       <source>Size of main coordinate system representation
 in the corner -- in % of height/width of viewport</source>
-      <translation type="unfinished">Size of main coordinate system representation
-in the corner -- in % of height/width of viewport</translation>
+      <translation>Визначає розмір представлення головної системи координат
+у куті - у % висоти / ширини вікна перегляду</translation>
     </message>
     <message>
       <source>%</source>
@@ -3117,11 +3117,11 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Color gradient is used with its full color range</source>
-      <translation type="unfinished">Color gradient is used with its full color range</translation>
+      <translation>Градієнт кольору використовується для повного діапазону кольору</translation>
     </message>
     <message>
       <source>Color gradient starts from the zero value</source>
-      <translation type="unfinished">Color gradient starts from the zero value</translation>
+      <translation>Градієнт кольору починається з нульового значення</translation>
     </message>
     <message>
       <source>Data outside the specified min-max range
@@ -3146,8 +3146,8 @@ will be displayed with transparency</source>
     <message>
       <source>Number of decimals for labels
 besides the color bar</source>
-      <translation type="unfinished">Number of decimals for labels
-besides the color bar</translation>
+      <translation>Кількість десяткових знаків для міток
+крім кольорових панелей</translation>
     </message>
   </context>
   <context>
@@ -3330,8 +3330,8 @@ Common sizes are 128, 256 and 512</source>
     <message>
       <source>Backup files will get extension &apos;.FCbak&apos; and file names
 get date suffix according to the specified format</source>
-      <translation type="unfinished">Backup files will get extension &apos;.FCbak&apos; and file names
-get date suffix according to the specified format</translation>
+      <translation>Файли резервних копій отримають розширення &apos;.FCbak&apos; 
+і суфікс з датою відповідно до вказаного формату</translation>
     </message>
     <message>
       <source>Use date and FCBak extension</source>

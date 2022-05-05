@@ -1550,7 +1550,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <name>Gui::Dialog::DlgGeneral</name>
     <message>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <source>Start up</source>
@@ -2735,7 +2735,7 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <source>Main coordinate system will always be shown in
@@ -3169,7 +3169,7 @@ besides the color bar</source>
     </message>
     <message>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <source>Document save compression level
@@ -6898,7 +6898,7 @@ Do you want to specify another directory?</source>
     <name>QObject</name>
     <message>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <source>Display</source>

@@ -4050,7 +4050,7 @@ horizontal space in Python console</translation>
     <name>Gui::Dialog::DlgSettingsSelection</name>
     <message>
       <source>Selection</source>
-      <translation>Вибір</translation>
+      <translation>Виділення</translation>
     </message>
     <message>
       <source>Auto switch to the 3D view containing the selected item</source>

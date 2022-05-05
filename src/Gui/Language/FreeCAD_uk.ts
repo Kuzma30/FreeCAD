@@ -644,19 +644,19 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>Q0</source>
-      <translation type="unfinished">Q0</translation>
+      <translation>Q0</translation>
     </message>
     <message>
       <source>Q1</source>
-      <translation type="unfinished">Q1</translation>
+      <translation>Q1</translation>
     </message>
     <message>
       <source>Q2</source>
-      <translation type="unfinished">Q2</translation>
+      <translation>Q2</translation>
     </message>
     <message>
       <source>Q3</source>
-      <translation type="unfinished">Q3</translation>
+      <translation>Q3</translation>
     </message>
     <message>
       <source>Current view</source>
@@ -749,11 +749,11 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>90°</source>
-      <translation type="unfinished">90°</translation>
+      <translation>90°</translation>
     </message>
     <message>
       <source>-90°</source>
-      <translation type="unfinished">-90°</translation>
+      <translation>-90°</translation>
     </message>
     <message>
       <source>Play</source>
@@ -1626,11 +1626,11 @@ this according to your screen size or personal taste</source>
 &apos;ComboView&apos;: combine tree view and property view into one panel.
 &apos;TreeView and PropertyView&apos;: split tree view and property view into separate panel.
 &apos;Both&apos;: keep all three panels, and you can have two sets of tree view and property view.</source>
-      <translation type="unfinished">Customize how tree view is shown in the panel (restart required).
+      <translation>Налаштовує, як ієрархія документа буде зображатись в панелі (вимагає перезапуску).
 
-&apos;ComboView&apos;: combine tree view and property view into one panel.
-&apos;TreeView and PropertyView&apos;: split tree view and property view into separate panel.
-&apos;Both&apos;: keep all three panels, and you can have two sets of tree view and property view.</translation>
+&apos;Комбінований&apos;: комбінує Вид Ієрархії та Вид Властивостей в одній панелі.
+&apos;Вид Ієрархіі та Властивостейapos;: розділення Виду Ієрархії та Виду Властивостей на окремі панелі.
+&apos;Перше та Друге&apos;: показує всі три панелі. Ви отримаєте два набори Ієрархії та Вид Властивостей.</translation>
     </message>
     <message>
       <source>A Splash screen is a small loading window that is shown
@@ -2562,12 +2562,12 @@ on-screen while displaying the message</source>
     <message>
       <source>When a log message has occurred, the Report View dialog becomes visible
 on-screen while displaying the log message</source>
-      <translation type="unfinished">When a log message has occurred, the Report View dialog becomes visible
-on-screen while displaying the log message</translation>
+      <translation>При виникненні повідомлення журналу, діалогове вікно Перегляд звіту стає 
+видимим на екрані для показу повідомлення журналу</translation>
     </message>
     <message>
       <source>Show report view on log message</source>
-      <translation type="unfinished">Show report view on log message</translation>
+      <translation>Показати Перегляд Звіту для повідомлень журналу</translation>
     </message>
     <message>
       <source>Font color for normal messages in Report view panel</source>
@@ -2599,11 +2599,11 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>Include a timecode for each report</source>
-      <translation type="unfinished">Include a timecode for each report</translation>
+      <translation>Додати мітку часу до кожного звіту</translation>
     </message>
     <message>
       <source>Include a timecode for each entry</source>
-      <translation type="unfinished">Include a timecode for each entry</translation>
+      <translation>Додати мітку часу до кожного запису</translation>
     </message>
     <message>
       <source>Normal messages will be recorded</source>
@@ -2652,7 +2652,7 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Accept changes</source>
@@ -2711,15 +2711,15 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>MSAA 2x</source>
-      <translation type="unfinished">MSAA 2x</translation>
+      <translation>MSAA 2x</translation>
     </message>
     <message>
       <source>MSAA 4x</source>
-      <translation type="unfinished">MSAA 4x</translation>
+      <translation>MSAA 4x</translation>
     </message>
     <message>
       <source>MSAA 8x</source>
-      <translation type="unfinished">MSAA 8x</translation>
+      <translation>MSAA 8x</translation>
     </message>
     <message>
       <source>Or&amp;thographic rendering</source>
@@ -2799,13 +2799,13 @@ There are 3 options available to achieve this:
 3) &apos;Centralized&apos;, manually turn off cache in all nodes of all view provider, and
 only cache at the scene graph root node. This offers the fastest rendering speed
 but slower response to any scene changes.</source>
-      <translation type="unfinished">&apos;Render Caching&apos; is another way to say &apos;Rendering Acceleration&apos;.
-There are 3 options available to achieve this: 
-1) &apos;Auto&apos; (default), let Coin3D decide where to cache.
-2) &apos;Distributed&apos;, manually turn on cache for all view provider root node.
-3) &apos;Centralized&apos;, manually turn off cache in all nodes of all view provider, and
-only cache at the scene graph root node. This offers the fastest rendering speed
-but slower response to any scene changes.</translation>
+      <translation>&apos;Кешування рендерингу&apos; - це ще один спосіб сказати &apos;Прискорення рендерингу&apos;.
+Існує 3 варіанти досягнення цієї мети:
+1) &apos;Авто&apos; (за замовчуванням), нехай Coin3D сам вирішує, де кешувати.
+2) &apos;Розподілений&apos;, вручну включити кеш для всіх кореневих вузлів провайдера перегляду.
+3) &apos;Централізований&apos;, вручну відключити кеш у всіх вузлах всіх провайдерів перегляду, і 
+кешувати тільки в кореневому вузлі графа сцени. Це забезпечує найвищу швидкість рендерингу, 
+але повільніший відгук на будь-які зміни сцени.</translation>
     </message>
     <message>
       <source>Auto</source>
@@ -2925,7 +2925,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>%</source>
-      <translation type="unfinished">%</translation>
+      <translation>%</translation>
     </message>
   </context>
   <context>
@@ -2940,70 +2940,70 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>5px</source>
-      <translation type="unfinished">5px</translation>
+      <translation>5пікс</translation>
     </message>
     <message>
       <source>7px</source>
-      <translation type="unfinished">7px</translation>
+      <translation>7пікс</translation>
     </message>
     <message>
       <source>9px</source>
-      <translation type="unfinished">9px</translation>
+      <translation>9пікс</translation>
     </message>
     <message>
       <source>11px</source>
-      <translation type="unfinished">11px</translation>
+      <translation>11пікс</translation>
     </message>
     <message>
       <source>13px</source>
-      <translation type="unfinished">13px</translation>
+      <translation>13пікс</translation>
     </message>
     <message>
       <source>15px</source>
-      <translation type="unfinished">15px</translation>
+      <translation>15пікс</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgSettingsCacheDirectory</name>
     <message>
       <source>Cache</source>
-      <translation type="unfinished">Cache</translation>
+      <translation>Кеш</translation>
     </message>
     <message>
       <source>Cache directory</source>
-      <translation type="unfinished">Cache directory</translation>
+      <translation>Тека кэш-файлів</translation>
     </message>
     <message>
       <source>Location:</source>
-      <translation type="unfinished">Location:</translation>
+      <translation>Розташування:</translation>
     </message>
     <message>
       <source>Check periodically at program start:</source>
-      <translation type="unfinished">Check periodically at program start:</translation>
+      <translation>Періодична перевірка при запуску програми:</translation>
     </message>
     <message>
       <source>Always</source>
-      <translation type="unfinished">Always</translation>
+      <translation>Завжди</translation>
     </message>
     <message>
       <source>Daily</source>
-      <translation type="unfinished">Daily</translation>
+      <translation>Щоденно</translation>
     </message>
     <message>
       <source>Weekly</source>
-      <translation type="unfinished">Weekly</translation>
+      <translation>Щотиждня</translation>
     </message>
     <message>
       <source>Monthly</source>
-      <translation type="unfinished">Monthly</translation>
+      <translation>Щомісяця</translation>
     </message>
     <message>
       <source>Yearly</source>
-      <translation type="unfinished">Yearly</translation>
+      <translation>Щорічно</translation>
     </message>
     <message>
       <source>Never</source>
-      <translation type="unfinished">Never</translation>
+      <translation>Ніколи</translation>
     </message>
     <message>
       <source>Cache size limit:</source>

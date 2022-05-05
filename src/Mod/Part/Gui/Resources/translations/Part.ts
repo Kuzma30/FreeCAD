@@ -554,6 +554,11 @@ Do you want to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../TaskDimension.cpp" line="1398"/>
+        <source>Selection </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../TaskDimension.cpp" line="1482"/>
         <source>Reset selection</source>
         <translation type="unfinished"></translation>

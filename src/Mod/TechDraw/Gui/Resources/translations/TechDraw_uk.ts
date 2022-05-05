@@ -4,42 +4,42 @@
   <context>
     <name>MoveView</name>
     <message>
-      <location filename="CommandMoveView.py" line="47"/>
+      <location filename="../../../TechDrawTools/CommandMoveView.py" line="47"/>
       <source>Move View</source>
       <translation>Перемістити вид</translation>
     </message>
     <message>
-      <location filename="CommandMoveView.py" line="50"/>
+      <location filename="../../../TechDrawTools/CommandMoveView.py" line="48"/>
       <source>Move a View to a new Page</source>
       <translation>Скопіювати Вигляд на другу сторінку</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="47"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="47"/>
       <source>Move View to a different Page</source>
       <translation>Перемістити Вид на іншу сторінку</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="74"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="74"/>
       <source>Select View to move from list.</source>
       <translation>Виберіть вид для переміщення зі списку.</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="75"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="75"/>
       <source>Select View</source>
       <translation>Виберіть вид</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="93"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="93"/>
       <source>Select From Page.</source>
       <translation>Оберіть із Сторінки.</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="113"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="113"/>
       <source>Select Page</source>
       <translation>Вибрати сторінку</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="112"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="112"/>
       <source>Select To Page.</source>
       <translation>Оберіть із Сторінки.</translation>
     </message>
@@ -47,47 +47,47 @@
   <context>
     <name>ShareView</name>
     <message>
-      <location filename="TaskShareView.py" line="46"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="46"/>
       <source>Share View with another Page</source>
       <translation>Поділитися Виглядом з іншою сторінкою</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="47"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="47"/>
       <source>View to share</source>
       <translation>Переглянути щоб поділитися</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="74"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="74"/>
       <source>Select View to share from list.</source>
       <translation>Виберіть Перегляд, щоб поділитись зі списку.</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="75"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="75"/>
       <source>Select View</source>
       <translation>Виберіть вид</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="93"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="93"/>
       <source>Select From Page.</source>
       <translation>Оберіть із Сторінки.</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="113"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="113"/>
       <source>Select Page</source>
       <translation>Вибрати сторінку</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="112"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="112"/>
       <source>Select To Page.</source>
       <translation>Оберіть із Сторінки.</translation>
     </message>
     <message>
-      <location filename="CommandShareView.py" line="47"/>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="47"/>
       <source>Share View</source>
       <translation>Поділитися Виглядом</translation>
     </message>
     <message>
-      <location filename="CommandShareView.py" line="50"/>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="48"/>
       <source>Share a View on a second Page</source>
       <translation>Поділитися Виглядом на другій сторінці</translation>
     </message>

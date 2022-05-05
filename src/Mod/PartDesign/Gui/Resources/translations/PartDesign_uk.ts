@@ -3311,6 +3311,14 @@ click again to end selection</source>
     </message>
   </context>
   <context>
+    <name>PartDesignGui::ViewProviderChamfer</name>
+    <message>
+      <location filename="../../ViewProviderChamfer.h" line="41"/>
+      <source>Chamfer parameters</source>
+      <translation>Параметри Фаски</translation>
+    </message>
+  </context>
+  <context>
     <name>PartDesignGui::ViewProviderDatum</name>
     <message>
       <location filename="../../ViewProviderDatum.cpp" line="111"/>
@@ -3331,6 +3339,70 @@ click again to end selection</source>
       <location filename="../../ViewProviderDatum.cpp" line="126"/>
       <source>Local Coordinate System parameters</source>
       <translation>Параметри Локальної Системи Координат</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGui::ViewProviderDraft</name>
+    <message>
+      <location filename="../../ViewProviderDraft.h" line="42"/>
+      <source>Draft parameters</source>
+      <translation>Параметри Ухилу</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGui::ViewProviderFillet</name>
+    <message>
+      <location filename="../../ViewProviderFillet.h" line="41"/>
+      <source>Fillet parrameters</source>
+      <translation>Параметри заокруглення</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGui::ViewProviderLinearPattern</name>
+    <message>
+      <location filename="../../ViewProviderLinearPattern.h" line="38"/>
+      <source>LinearPattern parameters</source>
+      <translation>Параметри Лінійного Масиву</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGui::ViewProviderMultiTransform</name>
+    <message>
+      <location filename="../../ViewProviderMultiTransform.h" line="38"/>
+      <source>MultiTransform parameters</source>
+      <translation>Параметри Множинного Перетворення</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGui::ViewProviderPolarPattern</name>
+    <message>
+      <location filename="../../ViewProviderPolarPattern.h" line="38"/>
+      <source>PolarPattern parameters</source>
+      <translation>Параметри Кругового Масиву</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGui::ViewProviderScaled</name>
+    <message>
+      <location filename="../../ViewProviderScaled.h" line="38"/>
+      <source>Scaled parameters</source>
+      <translation>Параметри Масштабування</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGui::ViewProviderThickness</name>
+    <message>
+      <location filename="../../ViewProviderThickness.h" line="41"/>
+      <source>Thickness parameters</source>
+      <translation>Параметри Створення Порожнини</translation>
+    </message>
+  </context>
+  <context>
+    <name>PartDesignGuii::ViewProviderMirrored</name>
+    <message>
+      <location filename="../../ViewProviderMirrored.h" line="38"/>
+      <source>Mirrored parameters</source>
+      <translation>Параметри Дзеркального Зображення</translation>
     </message>
   </context>
   <context>
@@ -4054,51 +4126,6 @@ Although you will be able to migrate any moment later with &apos;Part Design -&g
       <source>Edit helix</source>
       <translation>Редагувати спіраль</translation>
     </message>
-    <message>
-      <location filename="../../ViewProviderChamfer.h" line="40"/>
-      <source>Chamfer parameters</source>
-      <translation>Параметри Фаски</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderDraft.h" line="41"/>
-      <source>Draft parameters</source>
-      <translation>Параметри Ухилу</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderFillet.h" line="40"/>
-      <source>Fillet parrameters</source>
-      <translation>Параметри заокруглення</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderLinearPattern.h" line="37"/>
-      <source>LinearPattern parameters</source>
-      <translation>Параметри Лінійного Масиву</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderMirrored.h" line="37"/>
-      <source>Mirrored parameters</source>
-      <translation>Параметри Дзеркального Зображення</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderMultiTransform.h" line="37"/>
-      <source>MultiTransform parameters</source>
-      <translation>Параметри Множинного Перетворення</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderPolarPattern.h" line="37"/>
-      <source>PolarPattern parameters</source>
-      <translation>Параметри Кругового Масиву</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderScaled.h" line="37"/>
-      <source>Scaled parameters</source>
-      <translation>Параметри Масштабування</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderThickness.h" line="40"/>
-      <source>Thickness parameters</source>
-      <translation>Параметри Створення Порожнини</translation>
-    </message>
   </context>
   <context>
     <name>SprocketParameter</name>
@@ -4709,7 +4736,7 @@ over 90: larger hole radius at the bottom</source>
     <message>
       <location filename="../../Workbench.cpp" line="45"/>
       <source>&amp;Part Design</source>
-      <translation type="unfinished">&amp;Part Design</translation>
+      <translation>&amp;ДизайнДеталі</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="46"/>

@@ -644,19 +644,19 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>Q0</source>
-      <translation type="unfinished">Q0</translation>
+      <translation>Q0</translation>
     </message>
     <message>
       <source>Q1</source>
-      <translation type="unfinished">Q1</translation>
+      <translation>Q1</translation>
     </message>
     <message>
       <source>Q2</source>
-      <translation type="unfinished">Q2</translation>
+      <translation>Q2</translation>
     </message>
     <message>
       <source>Q3</source>
-      <translation type="unfinished">Q3</translation>
+      <translation>Q3</translation>
     </message>
     <message>
       <source>Current view</source>
@@ -749,11 +749,11 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>90°</source>
-      <translation type="unfinished">90°</translation>
+      <translation>90°</translation>
     </message>
     <message>
       <source>-90°</source>
-      <translation type="unfinished">-90°</translation>
+      <translation>-90°</translation>
     </message>
     <message>
       <source>Play</source>
@@ -1626,11 +1626,11 @@ this according to your screen size or personal taste</source>
 &apos;ComboView&apos;: combine tree view and property view into one panel.
 &apos;TreeView and PropertyView&apos;: split tree view and property view into separate panel.
 &apos;Both&apos;: keep all three panels, and you can have two sets of tree view and property view.</source>
-      <translation type="unfinished">Customize how tree view is shown in the panel (restart required).
+      <translation>Налаштовує, як ієрархія документа буде зображатись в панелі (вимагає перезапуску).
 
-&apos;ComboView&apos;: combine tree view and property view into one panel.
-&apos;TreeView and PropertyView&apos;: split tree view and property view into separate panel.
-&apos;Both&apos;: keep all three panels, and you can have two sets of tree view and property view.</translation>
+&apos;Комбінований&apos;: комбінує Вид Ієрархії та Вид Властивостей в одній панелі.
+&apos;Вид Ієрархіі та Властивостейapos;: розділення Виду Ієрархії та Виду Властивостей на окремі панелі.
+&apos;Перше та Друге&apos;: показує всі три панелі. Ви отримаєте два набори Ієрархії та Вид Властивостей.</translation>
     </message>
     <message>
       <source>A Splash screen is a small loading window that is shown
@@ -2562,12 +2562,12 @@ on-screen while displaying the message</source>
     <message>
       <source>When a log message has occurred, the Report View dialog becomes visible
 on-screen while displaying the log message</source>
-      <translation type="unfinished">When a log message has occurred, the Report View dialog becomes visible
-on-screen while displaying the log message</translation>
+      <translation>При виникненні повідомлення журналу, діалогове вікно Перегляд звіту стає 
+видимим на екрані для показу повідомлення журналу</translation>
     </message>
     <message>
       <source>Show report view on log message</source>
-      <translation type="unfinished">Show report view on log message</translation>
+      <translation>Показати Перегляд Звіту для повідомлень журналу</translation>
     </message>
     <message>
       <source>Font color for normal messages in Report view panel</source>
@@ -2599,11 +2599,11 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>Include a timecode for each report</source>
-      <translation type="unfinished">Include a timecode for each report</translation>
+      <translation>Додати мітку часу до кожного звіту</translation>
     </message>
     <message>
       <source>Include a timecode for each entry</source>
-      <translation type="unfinished">Include a timecode for each entry</translation>
+      <translation>Додати мітку часу до кожного запису</translation>
     </message>
     <message>
       <source>Normal messages will be recorded</source>
@@ -2652,7 +2652,7 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Accept changes</source>
@@ -2711,15 +2711,15 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>MSAA 2x</source>
-      <translation type="unfinished">MSAA 2x</translation>
+      <translation>MSAA 2x</translation>
     </message>
     <message>
       <source>MSAA 4x</source>
-      <translation type="unfinished">MSAA 4x</translation>
+      <translation>MSAA 4x</translation>
     </message>
     <message>
       <source>MSAA 8x</source>
-      <translation type="unfinished">MSAA 8x</translation>
+      <translation>MSAA 8x</translation>
     </message>
     <message>
       <source>Or&amp;thographic rendering</source>
@@ -2799,13 +2799,13 @@ There are 3 options available to achieve this:
 3) &apos;Centralized&apos;, manually turn off cache in all nodes of all view provider, and
 only cache at the scene graph root node. This offers the fastest rendering speed
 but slower response to any scene changes.</source>
-      <translation type="unfinished">&apos;Render Caching&apos; is another way to say &apos;Rendering Acceleration&apos;.
-There are 3 options available to achieve this: 
-1) &apos;Auto&apos; (default), let Coin3D decide where to cache.
-2) &apos;Distributed&apos;, manually turn on cache for all view provider root node.
-3) &apos;Centralized&apos;, manually turn off cache in all nodes of all view provider, and
-only cache at the scene graph root node. This offers the fastest rendering speed
-but slower response to any scene changes.</translation>
+      <translation>&apos;Кешування рендерингу&apos; - це ще один спосіб сказати &apos;Прискорення рендерингу&apos;.
+Існує 3 варіанти досягнення цієї мети:
+1) &apos;Авто&apos; (за замовчуванням), нехай Coin3D сам вирішує, де кешувати.
+2) &apos;Розподілений&apos;, вручну включити кеш для всіх кореневих вузлів провайдера перегляду.
+3) &apos;Централізований&apos;, вручну відключити кеш у всіх вузлах всіх провайдерів перегляду, і 
+кешувати тільки в кореневому вузлі графа сцени. Це забезпечує найвищу швидкість рендерингу, 
+але повільніший відгук на будь-які зміни сцени.</translation>
     </message>
     <message>
       <source>Auto</source>
@@ -2837,15 +2837,15 @@ but slower response to any scene changes.</translation>
     </message>
     <message>
       <source>Size of vertices in the Sketcher workbench</source>
-      <translation type="unfinished">Size of vertices in the Sketcher workbench</translation>
+      <translation>Розмір вершин в Редакторі ескізів</translation>
     </message>
     <message>
       <source>Eye to eye distance for stereo modes</source>
-      <translation type="unfinished">Eye to eye distance for stereo modes</translation>
+      <translation>Відстань між очима для стереорежимів</translation>
     </message>
     <message>
       <source>Backlight is enabled with the defined color</source>
-      <translation type="unfinished">Backlight is enabled with the defined color</translation>
+      <translation>Підсвічування увімкнено із заданим кольором</translation>
     </message>
     <message>
       <source>Backlight color</source>
@@ -2861,17 +2861,16 @@ but slower response to any scene changes.</translation>
     </message>
     <message>
       <source>Objects will be projected in orthographic projection</source>
-      <translation type="unfinished">Objects will be projected in orthographic projection</translation>
+      <translation>Об'єкти будуть проєктуватися в ортографічній проєкція</translation>
     </message>
     <message>
       <source>Objects will appear in a perspective projection</source>
-      <translation type="unfinished">Objects will appear in a perspective projection</translation>
+      <translation>Об'єкти будуть зображатися у перспективній проєкція</translation>
     </message>
     <message>
       <source>Axis cross will be shown by default at file
 opening or creation</source>
-      <translation type="unfinished">Axis cross will be shown by default at file
-opening or creation</translation>
+      <translation>Під час відкриття або створення файлу за замовчуванням буде зображатися перетин осей</translation>
     </message>
     <message>
       <source>Show axis cross by default</source>
@@ -2925,7 +2924,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>%</source>
-      <translation type="unfinished">%</translation>
+      <translation>%</translation>
     </message>
   </context>
   <context>
@@ -2940,70 +2939,70 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>5px</source>
-      <translation type="unfinished">5px</translation>
+      <translation>5пікс</translation>
     </message>
     <message>
       <source>7px</source>
-      <translation type="unfinished">7px</translation>
+      <translation>7пікс</translation>
     </message>
     <message>
       <source>9px</source>
-      <translation type="unfinished">9px</translation>
+      <translation>9пікс</translation>
     </message>
     <message>
       <source>11px</source>
-      <translation type="unfinished">11px</translation>
+      <translation>11пікс</translation>
     </message>
     <message>
       <source>13px</source>
-      <translation type="unfinished">13px</translation>
+      <translation>13пікс</translation>
     </message>
     <message>
       <source>15px</source>
-      <translation type="unfinished">15px</translation>
+      <translation>15пікс</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgSettingsCacheDirectory</name>
     <message>
       <source>Cache</source>
-      <translation type="unfinished">Cache</translation>
+      <translation>Кеш</translation>
     </message>
     <message>
       <source>Cache directory</source>
-      <translation type="unfinished">Cache directory</translation>
+      <translation>Тека кэш-файлів</translation>
     </message>
     <message>
       <source>Location:</source>
-      <translation type="unfinished">Location:</translation>
+      <translation>Розташування:</translation>
     </message>
     <message>
       <source>Check periodically at program start:</source>
-      <translation type="unfinished">Check periodically at program start:</translation>
+      <translation>Періодична перевірка при запуску програми:</translation>
     </message>
     <message>
       <source>Always</source>
-      <translation type="unfinished">Always</translation>
+      <translation>Завжди</translation>
     </message>
     <message>
       <source>Daily</source>
-      <translation type="unfinished">Daily</translation>
+      <translation>Щоденно</translation>
     </message>
     <message>
       <source>Weekly</source>
-      <translation type="unfinished">Weekly</translation>
+      <translation>Щотиждня</translation>
     </message>
     <message>
       <source>Monthly</source>
-      <translation type="unfinished">Monthly</translation>
+      <translation>Щомісяця</translation>
     </message>
     <message>
       <source>Yearly</source>
-      <translation type="unfinished">Yearly</translation>
+      <translation>Щорічно</translation>
     </message>
     <message>
       <source>Never</source>
-      <translation type="unfinished">Never</translation>
+      <translation>Ніколи</translation>
     </message>
     <message>
       <source>Cache size limit:</source>
@@ -3888,7 +3887,7 @@ The value is the diameter of the sphere to fit on the screen.</translation>
     </message>
     <message>
       <source>Zoom operations will be performed at position of mouse pointer</source>
-      <translation type="unfinished">Zoom operations will be performed at position of mouse pointer</translation>
+      <translation>Операції масштабування буде виконано на позиції вказівника миші</translation>
     </message>
     <message>
       <source>Zoom at cursor</source>
@@ -3900,7 +3899,7 @@ The value is the diameter of the sphere to fit on the screen.</translation>
     </message>
     <message>
       <source>Direction of zoom operations will be inverted</source>
-      <translation type="unfinished">Direction of zoom operations will be inverted</translation>
+      <translation>Напрямок масштабування операцій буде інвертований</translation>
     </message>
     <message>
       <source>Invert zoom</source>
@@ -3920,7 +3919,7 @@ Mouse tilting is not disabled by this setting.</translation>
     </message>
     <message>
       <source>Rotations in 3D will use current cursor position as center for rotation</source>
-      <translation type="unfinished">Rotations in 3D will use current cursor position as center for rotation</translation>
+      <translation>Обертання в 3D буде використовувати поточне положення курсору як центр обертання</translation>
     </message>
     <message>
       <source>Isometric</source>
@@ -3988,40 +3987,40 @@ Mouse tilting is not disabled by this setting.</translation>
     </message>
     <message>
       <source>Rotates to nearest possible state when clicking a cube face</source>
-      <translation type="unfinished">Rotates to nearest possible state when clicking a cube face</translation>
+      <translation>Повертає до найближчого можливого стану при натисканні на грань куба</translation>
     </message>
     <message>
       <source>Rotate to nearest</source>
-      <translation type="unfinished">Rotate to nearest</translation>
+      <translation>Повернути до найближчого</translation>
     </message>
     <message>
       <source>Cube size</source>
-      <translation type="unfinished">Cube size</translation>
+      <translation>Розмір куба</translation>
     </message>
     <message>
       <source>Size of the navigation cube</source>
-      <translation type="unfinished">Size of the navigation cube</translation>
+      <translation>Визначає розмір навігаційного куба</translation>
     </message>
     <message>
       <source>How much will be zoomed.
 Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</source>
-      <translation type="unfinished">How much will be zoomed.
-Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</translation>
+      <translation>Визначає коефіцієнт збільшення.
+Крок масштабу &apos;1&apos; дорівнює коефіцієнту збільшення 7,5.</translation>
     </message>
     <message>
       <source>Camera zoom</source>
-      <translation type="unfinished">Camera zoom</translation>
+      <translation>Масштабування камери</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgSettingsPythonConsole</name>
     <message>
       <source>Python console</source>
-      <translation type="unfinished">Python console</translation>
+      <translation>Консоль Python</translation>
     </message>
     <message>
       <source>Settings</source>
-      <translation type="unfinished">Settings</translation>
+      <translation>Налаштування</translation>
     </message>
     <message>
       <source>Words will be wrapped when they exceed available
@@ -4035,15 +4034,15 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>The cursor shape will be a block</source>
-      <translation type="unfinished">The cursor shape will be a block</translation>
+      <translation>Форма курсору буде блоком</translation>
     </message>
     <message>
       <source>Enable block cursor</source>
-      <translation type="unfinished">Enable block cursor</translation>
+      <translation>Увімкнути курсор у вигляді блоку</translation>
     </message>
     <message>
       <source>Saves Python history across sessions</source>
-      <translation type="unfinished">Saves Python history across sessions</translation>
+      <translation>Зберігати історію Python між сесіями</translation>
     </message>
     <message>
       <source>Save history</source>
@@ -4074,7 +4073,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Add checkboxes for selection in document tree</source>
-      <translation type="unfinished">Add checkboxes for selection in document tree</translation>
+      <translation>Додати чекбокси для виділення в ієрархії документів</translation>
     </message>
   </context>
   <context>
@@ -4161,15 +4160,15 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Number of decimals that should be shown for numbers and dimensions</source>
-      <translation type="unfinished">Number of decimals that should be shown for numbers and dimensions</translation>
+      <translation>Визначає кількість десяткових знаків для чисел і розмірів</translation>
     </message>
     <message>
       <source>Unit system that should be used for all parts the application</source>
-      <translation type="unfinished">Unit system that should be used for all parts the application</translation>
+      <translation>Система одиниць вимірювання для всіх частин програми</translation>
     </message>
     <message>
       <source>Minimum fractional inch to be displayed</source>
-      <translation type="unfinished">Minimum fractional inch to be displayed</translation>
+      <translation>Мінімальна частина дюйма для показу</translation>
     </message>
     <message>
       <source>Building US (ft-in/sqft/cft)</source>
@@ -4228,23 +4227,23 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Enable preselection and highlight by specified color</source>
-      <translation type="unfinished">Enable preselection and highlight by specified color</translation>
+      <translation>Ввімкнути попередній вибір та виділення заданим кольором</translation>
     </message>
     <message>
       <source>Enable selection highlighting and use specified color</source>
-      <translation type="unfinished">Enable selection highlighting and use specified color</translation>
+      <translation>Ввімкнути підсвічування виділення та використовувати вказаний колір</translation>
     </message>
     <message>
       <source>Background color for the model view</source>
-      <translation type="unfinished">Background color for the model view</translation>
+      <translation>Колір тла моделі</translation>
     </message>
     <message>
       <source>Background will have selected color</source>
-      <translation type="unfinished">Background will have selected color</translation>
+      <translation>Встановлює вибраний колір для тла</translation>
     </message>
     <message>
       <source>Color gradient will get selected color as middle color</source>
-      <translation type="unfinished">Color gradient will get selected color as middle color</translation>
+      <translation>Градієнт кольору використовує виділений колір як середній</translation>
     </message>
     <message>
       <source>Bottom color</source>
@@ -4252,7 +4251,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Background will have selected color gradient</source>
-      <translation type="unfinished">Background will have selected color gradient</translation>
+      <translation>Тло буде мати градієнт виділеного кольору</translation>
     </message>
     <message>
       <source>Top color</source>
@@ -4264,11 +4263,11 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Background color for objects in tree view that are currently edited</source>
-      <translation type="unfinished">Background color for objects in tree view that are currently edited</translation>
+      <translation>Колір тла для об'єктів в ієрархії документа під час редагування</translation>
     </message>
     <message>
       <source>Background color for active containers in tree view</source>
-      <translation type="unfinished">Background color for active containers in tree view</translation>
+      <translation>Колір тла для активних контейнерів ієрархії документа</translation>
     </message>
   </context>
   <context>
@@ -4290,7 +4289,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>=&gt;</source>
-      <translation type="unfinished">=&gt;</translation>
+      <translation>=&gt;</translation>
     </message>
     <message>
       <source>Quantity:</source>
@@ -4569,7 +4568,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>?</source>
-      <translation type="unfinished">?</translation>
+      <translation>?</translation>
     </message>
     <message>
       <source>%1 of %2 - Stopped</source>
@@ -4653,15 +4652,15 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Z:</source>
-      <translation type="unfinished">Z:</translation>
+      <translation>Z:</translation>
     </message>
     <message>
       <source>Y:</source>
-      <translation type="unfinished">Y:</translation>
+      <translation>Y:</translation>
     </message>
     <message>
       <source>X:</source>
-      <translation type="unfinished">X:</translation>
+      <translation>X:</translation>
     </message>
   </context>
   <context>
@@ -4813,15 +4812,15 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Z:</source>
-      <translation type="unfinished">Z:</translation>
+      <translation>Z:</translation>
     </message>
     <message>
       <source>Y:</source>
-      <translation type="unfinished">Y:</translation>
+      <translation>Y:</translation>
     </message>
     <message>
       <source>X:</source>
-      <translation type="unfinished">X:</translation>
+      <translation>X:</translation>
     </message>
     <message>
       <source>Rotation:</source>
@@ -5546,15 +5545,15 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
     <message>
       <source>Z</source>
-      <translation type="unfinished">Z</translation>
+      <translation>Z</translation>
     </message>
     <message>
       <source>User defined...</source>
@@ -5565,15 +5564,15 @@ Do you want to save your changes?</source>
     <name>Gui::LocationWidget</name>
     <message>
       <source>X:</source>
-      <translation type="unfinished">X:</translation>
+      <translation>X:</translation>
     </message>
     <message>
       <source>Y:</source>
-      <translation type="unfinished">Y:</translation>
+      <translation>Y:</translation>
     </message>
     <message>
       <source>Z:</source>
-      <translation type="unfinished">Z:</translation>
+      <translation>Z:</translation>
     </message>
     <message>
       <source>Direction:</source>
@@ -5588,11 +5587,11 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>Macro file doesn&apos;t exist</source>
-      <translation type="unfinished">Macro file doesn&apos;t exist</translation>
+      <translation>Файл макросу не існує</translation>
     </message>
     <message>
       <source>No such macro file: &apos;%1&apos;</source>
-      <translation type="unfinished">No such macro file: &apos;%1&apos;</translation>
+      <translation>Немає такого макросу: &apos;%1&apos;</translation>
     </message>
   </context>
   <context>
@@ -6490,7 +6489,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Kabyle</source>
-      <translation type="unfinished">Kabyle</translation>
+      <translation>Кабільська</translation>
     </message>
     <message>
       <source>Filipino</source>
@@ -6518,7 +6517,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Bulgarian</source>
-      <translation type="unfinished">Bulgarian</translation>
+      <translation>Болгарська</translation>
     </message>
     <message>
       <source>Greek</source>
@@ -6526,11 +6525,11 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Spanish, Argentina</source>
-      <translation type="unfinished">Spanish, Argentina</translation>
+      <translation>Іспанська (Аргентина)</translation>
     </message>
     <message>
       <source>Georgian</source>
-      <translation type="unfinished">Georgian</translation>
+      <translation>Грузинська</translation>
     </message>
   </context>
   <context>
@@ -6698,7 +6697,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
   </context>
   <context>
@@ -6777,15 +6776,15 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>X:</source>
-      <translation type="unfinished">X:</translation>
+      <translation>X:</translation>
     </message>
     <message>
       <source>Y:</source>
-      <translation type="unfinished">Y:</translation>
+      <translation>Y:</translation>
     </message>
     <message>
       <source>Z:</source>
-      <translation type="unfinished">Z:</translation>
+      <translation>Z:</translation>
     </message>
     <message>
       <source>0.1 mm</source>
@@ -6926,7 +6925,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>%1</source>
-      <translation type="unfinished">%1</translation>
+      <translation>%1</translation>
     </message>
     <message>
       <source>Exception</source>
@@ -7390,11 +7389,11 @@ underscore, and must not start with a digit.</translation>
     </message>
     <message>
       <source>Undo</source>
-      <translation type="unfinished">Undo</translation>
+      <translation>Скасувати</translation>
     </message>
     <message>
       <source>Redo</source>
-      <translation type="unfinished">Redo</translation>
+      <translation>Повторити</translation>
     </message>
     <message>
       <source>There are grouped transactions in the following documents with other preceding transactions</source>
@@ -7474,7 +7473,7 @@ Would you like to save the file with a different name?</source>
     </message>
     <message>
       <source>Document not saved</source>
-      <translation type="unfinished">Document not saved</translation>
+      <translation>Документ не збережено</translation>
     </message>
     <message>
       <source>The document%1 could not be saved. Do you want to cancel closing it?</source>
@@ -7482,7 +7481,7 @@ Would you like to save the file with a different name?</source>
     </message>
     <message>
       <source>%1 Document(s) not saved</source>
-      <translation type="unfinished">%1 Document(s) not saved</translation>
+      <translation>%1 Документ(и/ів) не збережено</translation>
     </message>
     <message>
       <source>Some documents could not be saved. Do you want to cancel closing?</source>

@@ -1395,9 +1395,9 @@ PartGui::SteppedSelection::SteppedSelection(const uint& buttonCountIn, QWidget* 
   for (uint index = 0; index < buttonCountIn; ++index)
   {
     ButtonIconPairType tempPair;
-
+    QString text = QObject::tr("Selection ");
     std::ostringstream stream;
-    stream << "Selection " << ((index < 10) ? "0" : "") <<  index + 1;
+    stream << text.toStdString() << ((index < 10) ? "0" : "") <<  index + 1;
     QString buttonText = QObject::tr(stream.str().c_str());
     QPushButton *button = new QPushButton(buttonText, this);
     button->setCheckable(true);

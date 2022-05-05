@@ -211,7 +211,7 @@
     <message>
       <location filename="TranslationTexts.py" line="83"/>
       <source>Open start page preferences</source>
-      <translation type="unfinished">Open start page preferences</translation>
+      <translation>Відкрити налаштування стартової сторінки</translation>
     </message>
   </context>
   <context>
@@ -352,7 +352,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="299"/>
       <source>Link color</source>
-      <translation type="unfinished">Link color</translation>
+      <translation>Колір посилання</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="306"/>

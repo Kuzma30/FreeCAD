@@ -4,12 +4,12 @@
   <context>
     <name>PartDesign_InvoluteGear</name>
     <message>
-      <location filename="InvoluteGearFeature.py" line="57"/>
+      <location filename="../../../InvoluteGearFeature.py" line="57"/>
       <source>Involute gear...</source>
       <translation>Przekładnia ewolwentowa ...</translation>
     </message>
     <message>
-      <location filename="InvoluteGearFeature.py" line="61"/>
+      <location filename="../../../InvoluteGearFeature.py" line="59"/>
       <source>Creates or edit the involute gear definition.</source>
       <translation>Tworzy lub edytuje definicję przekładni ewolwentowej.</translation>
     </message>
@@ -17,12 +17,12 @@
   <context>
     <name>PartDesign_Sprocket</name>
     <message>
-      <location filename="SprocketFeature.py" line="62"/>
+      <location filename="../../../SprocketFeature.py" line="62"/>
       <source>Sprocket...</source>
       <translation>Koło łańcuchowe ...</translation>
     </message>
     <message>
-      <location filename="SprocketFeature.py" line="66"/>
+      <location filename="../../../SprocketFeature.py" line="64"/>
       <source>Creates or edit the sprocket definition.</source>
       <translation>Tworzy lub edytuje koło łańcuchowe.</translation>
     </message>
@@ -30,12 +30,12 @@
   <context>
     <name>WizardShaft</name>
     <message>
-      <location filename="WizardShaft.py" line="211"/>
+      <location filename="../../../WizardShaft/WizardShaft.py" line="210"/>
       <source>Shaft design wizard...</source>
       <translation>Kreator projektowania wału ...</translation>
     </message>
     <message>
-      <location filename="WizardShaft.py" line="212"/>
+      <location filename="../../../WizardShaft/WizardShaft.py" line="211"/>
       <source>Start the shaft design wizard</source>
       <translation>Uruchom kreatora projektowania wału</translation>
     </message>
@@ -43,42 +43,42 @@
   <context>
     <name>WizardShaftTable</name>
     <message>
-      <location filename="WizardShaftTable.py" line="43"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="43"/>
       <source>Length [mm]</source>
       <translation>Długość [mm]</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="44"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="44"/>
       <source>Diameter [mm]</source>
       <translation>Średnica [mm]</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="45"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="45"/>
       <source>Inner diameter [mm]</source>
       <translation>Średnica wewnętrzna [mm]</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="46"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="46"/>
       <source>Constraint type</source>
       <translation>Typ wiązania</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="47"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="47"/>
       <source>Start edge type</source>
       <translation>Typ krawędzi początkowej</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="48"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="48"/>
       <source>Start edge size</source>
       <translation>Rozmiar krawędzi początkowej</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="49"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="49"/>
       <source>End edge type</source>
       <translation>Typ krawędzi końcowej</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="53"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="50"/>
       <source>End edge size</source>
       <translation>Rozmiar krawędzi końcowej</translation>
     </message>

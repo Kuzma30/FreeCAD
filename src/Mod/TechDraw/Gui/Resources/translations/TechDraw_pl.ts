@@ -4,42 +4,42 @@
   <context>
     <name>MoveView</name>
     <message>
-      <location filename="CommandMoveView.py" line="47"/>
+      <location filename="../../../TechDrawTools/CommandMoveView.py" line="47"/>
       <source>Move View</source>
       <translation>Przesuń widok</translation>
     </message>
     <message>
-      <location filename="CommandMoveView.py" line="50"/>
+      <location filename="../../../TechDrawTools/CommandMoveView.py" line="48"/>
       <source>Move a View to a new Page</source>
       <translation>Przenieś widok na nową stronę</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="47"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="47"/>
       <source>Move View to a different Page</source>
       <translation>Przenieś widok na inną stronę</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="74"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="74"/>
       <source>Select View to move from list.</source>
       <translation>Wybierz widok aby przenieść z listy.</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="75"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="75"/>
       <source>Select View</source>
       <translation>Wybierz widok</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="93"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="93"/>
       <source>Select From Page.</source>
       <translation>Wybierz ze strony.</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="113"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="113"/>
       <source>Select Page</source>
       <translation>Wybierz stronę</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="112"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="112"/>
       <source>Select To Page.</source>
       <translation>Wybierz na stronę.</translation>
     </message>
@@ -47,47 +47,47 @@
   <context>
     <name>ShareView</name>
     <message>
-      <location filename="TaskShareView.py" line="46"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="46"/>
       <source>Share View with another Page</source>
       <translation>Udostępnij widok na innej stronie</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="47"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="47"/>
       <source>View to share</source>
       <translation>Widok do udostępnienia</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="74"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="74"/>
       <source>Select View to share from list.</source>
       <translation>Wybierz widok z listy do udostępnienia.</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="75"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="75"/>
       <source>Select View</source>
       <translation>Wybierz widok</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="93"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="93"/>
       <source>Select From Page.</source>
       <translation>Wybierz ze strony.</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="113"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="113"/>
       <source>Select Page</source>
       <translation>Wybierz stronę</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="112"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="112"/>
       <source>Select To Page.</source>
       <translation>Wybierz na stronę.</translation>
     </message>
     <message>
-      <location filename="CommandShareView.py" line="47"/>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="47"/>
       <source>Share View</source>
       <translation>Udostępnij widok</translation>
     </message>
     <message>
-      <location filename="CommandShareView.py" line="50"/>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="48"/>
       <source>Share a View on a second Page</source>
       <translation>Udostępnij widok z drugiej strony</translation>
     </message>

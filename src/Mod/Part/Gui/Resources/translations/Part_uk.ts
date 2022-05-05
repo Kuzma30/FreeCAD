@@ -4,12 +4,112 @@
   <context>
     <name>AttachmentEditor</name>
     <message>
-      <location filename="Commands.py" line="79"/>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="93"/>
+      <source>No object named {name}</source>
+      <translation type="unfinished">No object named {name}</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="97"/>
+      <source>Failed to parse link (more than one colon encountered)</source>
+      <translation type="unfinished">Failed to parse link (more than one colon encountered)</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="209"/>
+      <source>Object {name} is neither movable nor attachable, can&apos;t edit attachment</source>
+      <translation type="unfinished">Object {name} is neither movable nor attachable, can&apos;t edit attachment</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="217"/>
+      <source>{obj} is not attachable. You can still use attachment editor dialog to align the object, but the attachment won&apos;t be parametric.</source>
+      <translation type="unfinished">{obj} is not attachable. You can still use attachment editor dialog to align the object, but the attachment won&apos;t be parametric.</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="234"/>
+      <source>Attachment</source>
+      <translation type="unfinished">Attachment</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="223"/>
+      <source>Continue</source>
+      <translation type="unfinished">Continue</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="323"/>
+      <source>Edit attachment of {feat}</source>
+      <translation type="unfinished">Edit attachment of {feat}</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="368"/>
+      <source>Ignored. Can&apos;t attach object to itself!</source>
+      <translation type="unfinished">Ignored. Can&apos;t attach object to itself!</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="371"/>
+      <source>{obj1} depends on object being attached, can&apos;t use it for attachment</source>
+      <translation type="unfinished">{obj1} depends on object being attached, can&apos;t use it for attachment</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="511"/>
+      <source>{mode} (add {morerefs})</source>
+      <translation type="unfinished">{mode} (add {morerefs})</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="514"/>
+      <source>{mode} (add more references)</source>
+      <translation type="unfinished">{mode} (add more references)</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="544"/>
+      <source>Reference combinations:</source>
+      <translation type="unfinished">Reference combinations:</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="560"/>
+      <source>Reference{i}</source>
+      <translation type="unfinished">Reference{i}</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="565"/>
+      <source>Selecting...</source>
+      <translation type="unfinished">Selecting...</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="589"/>
+      <source>Failed to resolve links. {err}</source>
+      <translation type="unfinished">Failed to resolve links. {err}</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="597"/>
+      <source>Not attached</source>
+      <translation type="unfinished">Not attached</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="599"/>
+      <source>Attached with mode {mode}</source>
+      <translation type="unfinished">Attached with mode {mode}</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="606"/>
+      <source>Error: {err}</source>
+      <translation type="unfinished">Error: {err}</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="609"/>
+      <source>Attachment Offset (in local coordinates):</source>
+      <translation type="unfinished">Attachment Offset (in local coordinates):</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="612"/>
+      <source>Attachment Offset (inactive - not attached):</source>
+      <translation type="unfinished">Attachment Offset (inactive - not attached):</translation>
+    </message>
+    <message>
+      <location filename="../../../AttachmentEditor/Commands.py" line="79"/>
       <source>Attachment...</source>
       <translation>Вкладення...</translation>
     </message>
     <message>
-      <location filename="Commands.py" line="83"/>
+      <location filename="../../../AttachmentEditor/Commands.py" line="81"/>
       <source>Edit attachment of selected object.</source>
       <translation>Редагувати приєднання вибраного об'єкта.</translation>
     </message>
@@ -17,12 +117,12 @@
   <context>
     <name>Part_CompoundFilter</name>
     <message>
-      <location filename="_CommandCompoundFilter.py" line="57"/>
+      <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="57"/>
       <source>Compound Filter</source>
       <translation>Фільтр з'єднань</translation>
     </message>
     <message>
-      <location filename="_CommandCompoundFilter.py" line="67"/>
+      <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="59"/>
       <source>Filter out objects from a selected compound by characteristics like volume,
 area, or length, or by choosing specific items.
 If a second object is selected, it will be used as reference, for example,
@@ -32,31 +132,64 @@ for collision or distance filtering.</source>
 Якщо вибрано другий об’єкт, він буде використовуватися як посилання, наприклад,
 для фільтрації перетину або відстані.</translation>
     </message>
+    <message>
+      <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="73"/>
+      <source>First select a shape that is a compound. If a second object is selected (optional) it will be treated as a stencil.</source>
+      <translation type="unfinished">First select a shape that is a compound. If a second object is selected (optional) it will be treated as a stencil.</translation>
+    </message>
+    <message>
+      <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="117"/>
+      <source>Bad selection</source>
+      <translation type="unfinished">Bad selection</translation>
+    </message>
+    <message>
+      <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="115"/>
+      <source>Computing the result failed with an error: 
+
+{errstr}
+
+Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to cancel.</source>
+      <translation type="unfinished">Computing the result failed with an error: 
+
+{errstr}
+
+Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to cancel.</translation>
+    </message>
   </context>
   <context>
     <name>Part_ExplodeCompound</name>
     <message>
-      <location filename="_CommandExplodeCompound.py" line="56"/>
+      <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="56"/>
       <source>Explode compound</source>
       <translation>Відкрити об'єднане</translation>
     </message>
     <message>
-      <location filename="_CommandExplodeCompound.py" line="62"/>
+      <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="58"/>
       <source>Split up a compound of shapes into separate objects.
 It will create a &apos;Compound Filter&apos; for each shape.</source>
       <translation type="unfinished">Split up a compound of shapes into separate objects.
 It will create a &apos;Compound Filter&apos; for each shape.</translation>
     </message>
+    <message>
+      <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="68"/>
+      <source>First select a shape that is a compound.</source>
+      <translation type="unfinished">First select a shape that is a compound.</translation>
+    </message>
+    <message>
+      <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="69"/>
+      <source>Bad selection</source>
+      <translation type="unfinished">Bad selection</translation>
+    </message>
   </context>
   <context>
     <name>Part_JoinConnect</name>
     <message>
-      <location filename="JoinFeatures.py" line="197"/>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="197"/>
       <source>Connect objects</source>
       <translation>Зʼєднати обʼєкти</translation>
     </message>
     <message>
-      <location filename="JoinFeatures.py" line="202"/>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="199"/>
       <source>Fuses objects, taking care to preserve voids.</source>
       <translation>З'єднує об'екти, піклуючись про те, щоб зберегти порожнини.</translation>
     </message>
@@ -64,12 +197,12 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
   <context>
     <name>Part_JoinCutout</name>
     <message>
-      <location filename="JoinFeatures.py" line="388"/>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="388"/>
       <source>Cutout for object</source>
       <translation>Виріз об'єкту</translation>
     </message>
     <message>
-      <location filename="JoinFeatures.py" line="393"/>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="390"/>
       <source>Makes a cutout in one object to fit another object.</source>
       <translation>Робить виріз в одному об'єкті, що відповідає іншому об'єкту.</translation>
     </message>
@@ -77,25 +210,89 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
   <context>
     <name>Part_JoinEmbed</name>
     <message>
-      <location filename="JoinFeatures.py" line="293"/>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="293"/>
       <source>Embed object</source>
       <translation>Вбудувати об'єкт</translation>
     </message>
     <message>
-      <location filename="JoinFeatures.py" line="298"/>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="295"/>
       <source>Fuses one object into another, taking care to preserve voids.</source>
       <translation>Обʼєднати один обʼєкт з іншим, зберігаючи пустоти.</translation>
     </message>
   </context>
   <context>
+    <name>Part_JoinFeatures</name>
+    <message>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="86"/>
+      <source>Computing the result failed with an error:
+
+{err}
+
+Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to cancel.</source>
+      <translation type="unfinished">Computing the result failed with an error:
+
+{err}
+
+Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to cancel.</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="403"/>
+      <source>Bad selection</source>
+      <translation type="unfinished">Bad selection</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="93"/>
+      <source>Continue</source>
+      <translation type="unfinished">Continue</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="208"/>
+      <source>Select at least two objects, or one or more compounds</source>
+      <translation type="unfinished">Select at least two objects, or one or more compounds</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="304"/>
+      <source>Select base object, then the object to embed, and then invoke this tool.</source>
+      <translation type="unfinished">Select base object, then the object to embed, and then invoke this tool.</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/JoinFeatures.py" line="399"/>
+      <source>Select the object to make a cutout in, then the object that should fit into the cutout, and then invoke this tool.</source>
+      <translation type="unfinished">Select the object to make a cutout in, then the object that should fit into the cutout, and then invoke this tool.</translation>
+    </message>
+  </context>
+  <context>
     <name>Part_SplitFeatures</name>
     <message>
-      <location filename="SplitFeatures.py" line="188"/>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="508"/>
+      <source>Continue</source>
+      <translation type="unfinished">Continue</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="501"/>
+      <source>Computing the result failed with an error:
+
+{err}
+
+Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to cancel.</source>
+      <translation type="unfinished">Computing the result failed with an error:
+
+{err}
+
+Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to cancel.</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="547"/>
+      <source>Bad selection</source>
+      <translation type="unfinished">Bad selection</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="188"/>
       <source>Boolean fragments</source>
       <translation>Логічні фрагменти</translation>
     </message>
     <message>
-      <location filename="SplitFeatures.py" line="197"/>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="190"/>
       <source>Create a &apos;Boolean Fragments&apos; object from two or more selected objects,
 or from the shapes inside a compound.
 This is a boolean union which is then sliced at the intersections
@@ -108,12 +305,17 @@ of the original shapes.
 A &apos;Compound Filter&apos; can be used to extract the individual slices.</translation>
     </message>
     <message>
-      <location filename="SplitFeatures.py" line="347"/>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="543"/>
+      <source>Select at least two objects, or one or more compounds. If only one compound is selected, the compounded shapes will be intersected between each other (otherwise, compounds with self-intersections are invalid).</source>
+      <translation type="unfinished">Select at least two objects, or one or more compounds. If only one compound is selected, the compounded shapes will be intersected between each other (otherwise, compounds with self-intersections are invalid).</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="347"/>
       <source>Slice to compound</source>
       <translation>Нарізка на складні форми</translation>
     </message>
     <message>
-      <location filename="SplitFeatures.py" line="354"/>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="349"/>
       <source>Slice a selected object by using other objects as cutting tools.
 The resulting pieces will be stored in a compound.
 A &apos;Compound Filter&apos; can be used to extract the individual slices.</source>
@@ -122,24 +324,29 @@ The resulting pieces will be stored in a compound.
 A &apos;Compound Filter&apos; can be used to extract the individual slices.</translation>
     </message>
     <message>
-      <location filename="SplitFeatures.py" line="379"/>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="391"/>
+      <source>Select at least two objects. The first one is the object to be sliced; the rest are objects to slice with.</source>
+      <translation type="unfinished">Select at least two objects. The first one is the object to be sliced; the rest are objects to slice with.</translation>
+    </message>
+    <message>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="379"/>
       <source>Slice apart</source>
       <translation>Розрізати на частини</translation>
     </message>
     <message>
-      <location filename="SplitFeatures.py" line="385"/>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="381"/>
       <source>Slice a selected object by other objects, and split it apart.
 It will create a &apos;Compound Filter&apos; for each slice.</source>
       <translation type="unfinished">Slice a selected object by other objects, and split it apart.
 It will create a &apos;Compound Filter&apos; for each slice.</translation>
     </message>
     <message>
-      <location filename="SplitFeatures.py" line="529"/>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="529"/>
       <source>Boolean XOR</source>
       <translation>Логічний XOR</translation>
     </message>
     <message>
-      <location filename="SplitFeatures.py" line="537"/>
+      <location filename="../../../BOPTools/SplitFeatures.py" line="531"/>
       <source>Perform an &apos;exclusive OR&apos; boolean operation with two or more selected objects,
 or with the shapes inside a compound.
 This means the overlapping volumes of the shapes will be removed.
@@ -153,12 +360,12 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
   <context>
     <name>Part_Tube</name>
     <message>
-      <location filename="CommandShapes.py" line="44"/>
+      <location filename="../../../BasicShapes/CommandShapes.py" line="44"/>
       <source>Create tube</source>
       <translation>Створити трубу</translation>
     </message>
     <message>
-      <location filename="CommandShapes.py" line="50"/>
+      <location filename="../../../BasicShapes/CommandShapes.py" line="48"/>
       <source>Creates a tube</source>
       <translation>Створює трубу</translation>
     </message>
@@ -172,12 +379,12 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
       <translation>Редагувати %1</translation>
     </message>
     <message>
-      <location filename="CommandShapes.py" line="52"/>
+      <location filename="../../../BasicShapes/CommandShapes.py" line="51"/>
       <source>Create tube</source>
       <translation>Створити трубу</translation>
     </message>
     <message>
-      <location filename="CommandShapes.py" line="54"/>
+      <location filename="../../../BasicShapes/CommandShapes.py" line="53"/>
       <source>Tube</source>
       <translation>Труба</translation>
     </message>
@@ -4835,12 +5042,12 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="61"/>
       <source>Use random color instead</source>
-      <translation type="unfinished">Use random color instead</translation>
+      <translation>Використовує випадковий колір</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="64"/>
       <source>Random</source>
-      <translation type="unfinished">Random</translation>
+      <translation>Випадковий</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="83"/>

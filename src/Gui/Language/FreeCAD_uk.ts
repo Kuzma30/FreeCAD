@@ -1550,7 +1550,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <name>Gui::Dialog::DlgGeneral</name>
     <message>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <source>Start up</source>
@@ -2735,7 +2735,7 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <source>Main coordinate system will always be shown in
@@ -2908,19 +2908,19 @@ Changing this option requires a restart of the application.</source>
       <source>Eye-to-eye distance used for stereo projections.
 The specified value is a factor that will be multiplied with the
 bounding box size of the 3D object that is currently displayed.</source>
-      <translation type="unfinished">Eye-to-eye distance used for stereo projections.
-The specified value is a factor that will be multiplied with the
-bounding box size of the 3D object that is currently displayed.</translation>
+      <translation>Задає відстань між очима, яка використовується для стереопроєкції.
+Вказане значення є коефіцієнтом, який буде помножено на розмір 
+граничного поля 3D-об'єкта, який зараз показується.</translation>
     </message>
     <message>
       <source>Relative size :   </source>
-      <translation type="unfinished">Relative size :   </translation>
+      <translation>Відносний розмір:   </translation>
     </message>
     <message>
       <source>Size of main coordinate system representation
 in the corner -- in % of height/width of viewport</source>
-      <translation type="unfinished">Size of main coordinate system representation
-in the corner -- in % of height/width of viewport</translation>
+      <translation>Визначає розмір представлення головної системи координат
+у куті - у % висоти / ширини вікна перегляду</translation>
     </message>
     <message>
       <source>%</source>
@@ -3018,7 +3018,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Unknown</source>
-      <translation type="unfinished">Unknown</translation>
+      <translation>Невідомо</translation>
     </message>
     <message>
       <source>Current cache size: %1</source>
@@ -3117,11 +3117,11 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Color gradient is used with its full color range</source>
-      <translation type="unfinished">Color gradient is used with its full color range</translation>
+      <translation>Градієнт кольору використовується для повного діапазону кольору</translation>
     </message>
     <message>
       <source>Color gradient starts from the zero value</source>
-      <translation type="unfinished">Color gradient starts from the zero value</translation>
+      <translation>Градієнт кольору починається з нульового значення</translation>
     </message>
     <message>
       <source>Data outside the specified min-max range
@@ -3146,8 +3146,8 @@ will be displayed with transparency</source>
     <message>
       <source>Number of decimals for labels
 besides the color bar</source>
-      <translation type="unfinished">Number of decimals for labels
-besides the color bar</translation>
+      <translation>Кількість десяткових знаків для міток
+крім кольорових панелей</translation>
     </message>
   </context>
   <context>
@@ -3169,7 +3169,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <source>Document save compression level
@@ -3330,12 +3330,12 @@ Common sizes are 128, 256 and 512</source>
     <message>
       <source>Backup files will get extension &apos;.FCbak&apos; and file names
 get date suffix according to the specified format</source>
-      <translation type="unfinished">Backup files will get extension &apos;.FCbak&apos; and file names
-get date suffix according to the specified format</translation>
+      <translation>Файли резервних копій отримають розширення &apos;.FCbak&apos; 
+і суфікс з датою відповідно до вказаного формату</translation>
     </message>
     <message>
       <source>Use date and FCBak extension</source>
-      <translation type="unfinished">Use date and FCBak extension</translation>
+      <translation>Використати дату та FCBak розширення</translation>
     </message>
     <message>
       <source>Date format</source>
@@ -3351,15 +3351,12 @@ Then only referenced objects and their dependencies will be loaded
 when a linked document is auto-opened together with the main document.
 A partially loaded document cannot be edited. Double click the document
 icon in the tree view to fully reload it.</source>
-      <translation type="unfinished">Enable partial loading of external linked documents.
-Then only referenced objects and their dependencies will be loaded
-when a linked document is auto-opened together with the main document.
-A partially loaded document cannot be edited. Double click the document
-icon in the tree view to fully reload it.</translation>
+      <translation>Вмикає часткове завантаження зовнішніх пов'язаних документів. 
+При відкритті основного документу автоматично завантажятся об'єкти пов'язаного документа з посиланнями та їх залежності. Частково завантажений документ не можна редагувати. Двічі клацніть документ у ієрархіїї документа, щоб повністю перезавантажити його.</translation>
     </message>
     <message>
       <source>Disable partial loading of external linked objects</source>
-      <translation type="unfinished">Disable partial loading of external linked objects</translation>
+      <translation>Вимкнути часткове завантаження зовнішніх пов'язаних об'єктів</translation>
     </message>
     <message>
       <source>All documents that will be created will get the specified author name.
@@ -3371,11 +3368,11 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>The field &apos;Last modified by&apos; will be set to specified author when saving the file</source>
-      <translation type="unfinished">The field &apos;Last modified by&apos; will be set to specified author when saving the file</translation>
+      <translation>Під час збереження файлу поле &apos;Востаннє модифіковано&apos; буде заповнене зазначеним автором</translation>
     </message>
     <message>
       <source>Default company name to use for new files</source>
-      <translation type="unfinished">Default company name to use for new files</translation>
+      <translation>Назва Компанії за замовчуванням для нових файлів</translation>
     </message>
     <message>
       <source>Default license for new documents</source>
@@ -3383,27 +3380,27 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Creative Commons Attribution</source>
-      <translation type="unfinished">Creative Commons Attribution</translation>
+      <translation>Creative Commons Attribution</translation>
     </message>
     <message>
       <source>Creative Commons Attribution-ShareAlike</source>
-      <translation type="unfinished">Creative Commons Attribution-ShareAlike</translation>
+      <translation>Creative Commons Attribution-ShareAlike</translation>
     </message>
     <message>
       <source>Creative Commons Attribution-NoDerivatives</source>
-      <translation type="unfinished">Creative Commons Attribution-NoDerivatives</translation>
+      <translation>Creative Commons Attribution-NoDerivatives</translation>
     </message>
     <message>
       <source>Creative Commons Attribution-NonCommercial</source>
-      <translation type="unfinished">Creative Commons Attribution-NonCommercial</translation>
+      <translation>Creative Commons Attribution-NonCommercial</translation>
     </message>
     <message>
       <source>Creative Commons Attribution-NonCommercial-ShareAlike</source>
-      <translation type="unfinished">Creative Commons Attribution-NonCommercial-ShareAlike</translation>
+      <translation>Creative Commons Attribution-NonCommercial-ShareAlike</translation>
     </message>
     <message>
       <source>Creative Commons Attribution-NonCommercial-NoDerivatives</source>
-      <translation type="unfinished">Creative Commons Attribution-NonCommercial-NoDerivatives</translation>
+      <translation>Creative Commons Attribution-NonCommercial-NoDerivatives</translation>
     </message>
     <message>
       <source>URL describing more about the license</source>
@@ -3619,19 +3616,19 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     <name>Gui::Dialog::DlgSettingsImageImp</name>
     <message>
       <source>Offscreen (New)</source>
-      <translation type="unfinished">Offscreen (New)</translation>
+      <translation>Без екрана (Новий)</translation>
     </message>
     <message>
       <source>Offscreen (Old)</source>
-      <translation type="unfinished">Offscreen (Old)</translation>
+      <translation>Без екрана (Старий)</translation>
     </message>
     <message>
       <source>Framebuffer (custom)</source>
-      <translation type="unfinished">Framebuffer (custom)</translation>
+      <translation>Фреймбуфер (налаштований)</translation>
     </message>
     <message>
       <source>Framebuffer (as is)</source>
-      <translation type="unfinished">Framebuffer (as is)</translation>
+      <translation>Фреймбуфер (як є)</translation>
     </message>
   </context>
   <context>
@@ -3650,7 +3647,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To preserve resources, FreeCAD does not load workbenches until they are used. Loading them may provide access to additional preferences related to their functionality.&lt;/p&gt;&lt;p&gt;The following workbenches are available in your installation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To preserve resources, FreeCAD does not load workbenches until they are used. Loading them may provide access to additional preferences related to their functionality.&lt;/p&gt;&lt;p&gt;The following workbenches are available in your installation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для збереження ресурсів FreeCAD не завантажує робочі середовища, поки вони не почнуть використовуватися. Їх завантаження може відкрити доступ до додаткових налаштувань, пов'язаних з їх функціональністю.&lt;/p&gt;&lt;p&gt;Для вашої системи доступні наступні робочі середовища:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Available Workbenches</source>
@@ -3752,11 +3749,11 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Recorded macros will also contain user interface commands as comments</source>
-      <translation type="unfinished">Recorded macros will also contain user interface commands as comments</translation>
+      <translation>Записані макроси також будуть містити команди інтерфейсу користувача, записані як коментарі</translation>
     </message>
     <message>
       <source>The directory in which the application will search for macros</source>
-      <translation type="unfinished">The directory in which the application will search for macros</translation>
+      <translation>Тека, в якій програма буде шукати макрос</translation>
     </message>
     <message>
       <source>Recent macros menu</source>
@@ -3776,7 +3773,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>How many recent macros should have shortcuts</source>
-      <translation type="unfinished">How many recent macros should have shortcuts</translation>
+      <translation>Визначає скільки останніх макросів повинні мати ярлики</translation>
     </message>
     <message>
       <source>Keyboard Modifiers</source>
@@ -3784,7 +3781,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Keyboard modifiers, default = Ctrl+Shift+</source>
-      <translation type="unfinished">Keyboard modifiers, default = Ctrl+Shift+</translation>
+      <translation>Модифікатори клавіатури, за замовчуванням = Ctrl+Shift+</translation>
     </message>
   </context>
   <context>
@@ -3811,7 +3808,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Corner where navigation cube is shown</source>
-      <translation type="unfinished">Corner where navigation cube is shown</translation>
+      <translation>Визначає кут екрану з навігаційним кубом</translation>
     </message>
     <message>
       <source>Top left</source>
@@ -3836,8 +3833,8 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     <message>
       <source>List the mouse button configs for each chosen navigation setting.
 Select a set and then press the button to view said configurations.</source>
-      <translation type="unfinished">List the mouse button configs for each chosen navigation setting.
-Select a set and then press the button to view said configurations.</translation>
+      <translation>Перелік налаштувань кнопок миші для кожного обраного параметра навігації.
+Виберіть набір, а потім натисніть кнопку для перегляду конфігурацій.</translation>
     </message>
     <message>
       <source>Mouse...</source>
@@ -3845,7 +3842,7 @@ Select a set and then press the button to view said configurations.</translation
     </message>
     <message>
       <source>Navigation settings set</source>
-      <translation type="unfinished">Navigation settings set</translation>
+      <translation>Набір налаштувань навігації</translation>
     </message>
     <message>
       <source>Orbit style</source>
@@ -3855,9 +3852,9 @@ Select a set and then press the button to view said configurations.</translation
       <source>Rotation orbit style.
 Trackball: moving the mouse horizontally will rotate the part around the y-axis
 Turntable: the part will be rotated around the z-axis.</source>
-      <translation type="unfinished">Rotation orbit style.
-Trackball: moving the mouse horizontally will rotate the part around the y-axis
-Turntable: the part will be rotated around the z-axis.</translation>
+      <translation>Стиль обертання орбіти.
+Трекбол: при переміщенні миші по горизонталі деталь обертатиметься навколо осі y.
+Поворотний стіл: деталь обертатиметься навколо осі z.</translation>
     </message>
     <message>
       <source>Turntable</source>
@@ -3870,8 +3867,8 @@ Turntable: the part will be rotated around the z-axis.</translation>
     <message>
       <source>Sets camera zoom for new documents.
 The value is the diameter of the sphere to fit on the screen.</source>
-      <translation type="unfinished">Sets camera zoom for new documents.
-The value is the diameter of the sphere to fit on the screen.</translation>
+      <translation>Встановлює масштабування камери для нових документів.
+Значення це діаметр сфери, яка поміститься на екрані.</translation>
     </message>
     <message>
       <source>mm</source>
@@ -4053,7 +4050,7 @@ horizontal space in Python console</translation>
     <name>Gui::Dialog::DlgSettingsSelection</name>
     <message>
       <source>Selection</source>
-      <translation>Вибір</translation>
+      <translation>Виділення</translation>
     </message>
     <message>
       <source>Auto switch to the 3D view containing the selected item</source>
@@ -5071,23 +5068,23 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Auto select depending objects</source>
-      <translation type="unfinished">Auto select depending objects</translation>
+      <translation>Автоматично виділяти залежні об’єкти</translation>
     </message>
     <message>
       <source>Depending on</source>
-      <translation type="unfinished">Depending on</translation>
+      <translation>В залежності від</translation>
     </message>
     <message>
       <source>Depended by</source>
-      <translation type="unfinished">Depended by</translation>
+      <translation>Залежить від</translation>
     </message>
     <message>
       <source>Selections</source>
-      <translation type="unfinished">Selections</translation>
+      <translation>Виділення</translation>
     </message>
     <message>
       <source>All</source>
-      <translation type="unfinished">All</translation>
+      <translation>Всі</translation>
     </message>
   </context>
   <context>
@@ -5183,7 +5180,7 @@ originally selected prior to opening this dialog</translation>
     </message>
     <message>
       <source>Show output window on</source>
-      <translation type="unfinished">Show output window on</translation>
+      <translation>Показати вікно виводу на</translation>
     </message>
   </context>
   <context>
@@ -5473,7 +5470,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>Graphviz couldn&apos;t be found on your system.</source>
-      <translation type="unfinished">Graphviz couldn&apos;t be found on your system.</translation>
+      <translation>Пакет Graphviz не знайдено у вашій системі.</translation>
     </message>
     <message>
       <source>Read more about it here.</source>
@@ -5481,7 +5478,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>Do you want to specify its installation path if it&apos;s already installed?</source>
-      <translation type="unfinished">Do you want to specify its installation path if it&apos;s already installed?</translation>
+      <translation>Бажаєте вказати шлях до його інсталяції, якщо його вже інстальовано?</translation>
     </message>
     <message>
       <source>Graphviz installation path</source>
@@ -5899,7 +5896,7 @@ How do you want to proceed?</source>
     </message>
     <message>
       <source>Group name:</source>
-      <translation type="unfinished">Group name:</translation>
+      <translation>Назва Групи:</translation>
     </message>
   </context>
   <context>
@@ -6040,7 +6037,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>The file &apos;%1&apos; cannot be opened.</source>
-      <translation type="unfinished">The file &apos;%1&apos; cannot be opened.</translation>
+      <translation>Файл &apos;%1&apos; не вдалося відкрити.</translation>
     </message>
   </context>
   <context>
@@ -6055,7 +6052,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>The file &apos;%1&apos; cannot be opened.</source>
-      <translation type="unfinished">The file &apos;%1&apos; cannot be opened.</translation>
+      <translation>Файл &apos;%1&apos; не вдалося відкрити.</translation>
     </message>
     <message>
       <source>none</source>
@@ -6085,19 +6082,19 @@ Do you want to exit without saving your data?</source>
     <name>Gui::SearchBar</name>
     <message>
       <source>Previous</source>
-      <translation type="unfinished">Previous</translation>
+      <translation>Попередній</translation>
     </message>
     <message>
       <source>Next</source>
-      <translation type="unfinished">Next</translation>
+      <translation>Наступний</translation>
     </message>
     <message>
       <source>Case sensitive</source>
-      <translation type="unfinished">Case sensitive</translation>
+      <translation>З урахуванням регістру</translation>
     </message>
     <message>
       <source>Whole words</source>
-      <translation type="unfinished">Whole words</translation>
+      <translation>Слова повністю</translation>
     </message>
   </context>
   <context>
@@ -6134,7 +6131,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>Download %1&apos;s online help</source>
-      <translation type="unfinished">Download %1&apos;s online help</translation>
+      <translation>Завантажити онлайн допомогу %1&apos;</translation>
     </message>
     <message>
       <source>Non-existing directory</source>
@@ -6293,7 +6290,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>edit selection</source>
@@ -6335,19 +6332,19 @@ Do you want to specify another directory?</source>
     <name>Gui::TinkerCADNavigationStyle</name>
     <message>
       <source>Press left mouse button</source>
-      <translation type="unfinished">Press left mouse button</translation>
+      <translation>Натисніть ліву кнопку миші</translation>
     </message>
     <message>
       <source>Press middle mouse button</source>
-      <translation type="unfinished">Press middle mouse button</translation>
+      <translation>Натисніть середню кнопку миші</translation>
     </message>
     <message>
       <source>Press right mouse button</source>
-      <translation type="unfinished">Press right mouse button</translation>
+      <translation>Натисніть праву кнопку миші</translation>
     </message>
     <message>
       <source>Scroll middle mouse button</source>
-      <translation type="unfinished">Scroll middle mouse button</translation>
+      <translation>Прокрутіть середньою кнопкою миші</translation>
     </message>
   </context>
   <context>
@@ -6662,7 +6659,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Enable or disable recomputating editing object when &apos;skip recomputation&apos; is enabled</source>
-      <translation type="unfinished">Enable or disable recomputating editing object when &apos;skip recomputation&apos; is enabled</translation>
+      <translation>Ввімкнути або вимкнути переобчислення об'єктів, коли &apos;пропустити переобчислення&apos; активовано</translation>
     </message>
     <message>
       <source>Recompute object</source>
@@ -6716,14 +6713,14 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Can&apos;t open file &apos;%1&apos; for writing.</source>
-      <translation type="unfinished">Can&apos;t open file &apos;%1&apos; for writing.</translation>
+      <translation>Не можу відкрити файл &apos;%1&apos; для запису.</translation>
     </message>
   </context>
   <context>
     <name>Gui::WorkbenchGroup</name>
     <message>
       <source>Select the &apos;%1&apos; workbench</source>
-      <translation type="unfinished">Select the &apos;%1&apos; workbench</translation>
+      <translation>Оберіть робоче середовище &apos;%1&apos;</translation>
     </message>
   </context>
   <context>
@@ -6761,11 +6758,11 @@ Do you want to specify another directory?</source>
     <name>NetworkAccessManager</name>
     <message>
       <source>&lt;qt&gt;Enter username and password for &quot;%1&quot; at %2&lt;/qt&gt;</source>
-      <translation type="unfinished">&lt;qt&gt;Enter username and password for &quot;%1&quot; at %2&lt;/qt&gt;</translation>
+      <translation>&lt;qt&gt;Введіть ім'я користувача та пароль для &quot;%1&quot; на %2&lt;/qt&gt;</translation>
     </message>
     <message>
       <source>&lt;qt&gt;Connect to proxy &quot;%1&quot; using:&lt;/qt&gt;</source>
-      <translation type="unfinished">&lt;qt&gt;Connect to proxy &quot;%1&quot; using:&lt;/qt&gt;</translation>
+      <translation>&lt;qt&gt;Під'єднатися до проксі-сервера &quot;%1&quot; використовуючи:&lt;/qt&gt;</translation>
     </message>
   </context>
   <context>
@@ -6901,7 +6898,7 @@ Do you want to specify another directory?</source>
     <name>QObject</name>
     <message>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <source>Display</source>
@@ -6995,7 +6992,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Cannot open file &apos;%1&apos;.</source>
-      <translation type="unfinished">Cannot open file &apos;%1&apos;.</translation>
+      <translation>Не вдалося відкрити файл &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>files</source>
@@ -7051,7 +7048,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>The group &apos;%1&apos; cannot be renamed.</source>
-      <translation type="unfinished">The group &apos;%1&apos; cannot be renamed.</translation>
+      <translation>Не можна перейменувати групу &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>Existing group</source>
@@ -7059,7 +7056,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>The group &apos;%1&apos; already exists.</source>
-      <translation type="unfinished">The group &apos;%1&apos; already exists.</translation>
+      <translation>Група &apos;%1&apos; вже існує.</translation>
     </message>
     <message>
       <source>Change value</source>
@@ -7323,7 +7320,7 @@ Please check the Report View for more details.</source>
     </message>
     <message>
       <source>Create link group failed</source>
-      <translation type="unfinished">Create link group failed</translation>
+      <translation>Не вдалося створити групу посилань</translation>
     </message>
     <message>
       <source>Create link failed</source>
@@ -7339,7 +7336,7 @@ Please check the Report View for more details.</source>
     </message>
     <message>
       <source>Replace link failed</source>
-      <translation type="unfinished">Replace link failed</translation>
+      <translation>Не вдалося замінити посилання</translation>
     </message>
     <message>
       <source>Failed to import links</source>
@@ -7493,15 +7490,15 @@ Would you like to save the file with a different name?</source>
     </message>
     <message>
       <source>Physical path:</source>
-      <translation type="unfinished">Physical path:</translation>
+      <translation>Фізичний шлях:</translation>
     </message>
     <message>
       <source>Document:</source>
-      <translation type="unfinished">Document:</translation>
+      <translation>Документ:</translation>
     </message>
     <message>
       <source>Path:</source>
-      <translation type="unfinished">Path:</translation>
+      <translation>Шлях:</translation>
     </message>
     <message>
       <source>Edit %1</source>
@@ -7521,7 +7518,7 @@ Would you like to save the file with a different name?</source>
     </message>
     <message>
       <source>Apply to all</source>
-      <translation type="unfinished">Apply to all</translation>
+      <translation>Застосувати до всіх</translation>
     </message>
     <message>
       <source>Apply the setting to all links. Or, uncheck this
@@ -7535,7 +7532,7 @@ option to apply only to this link.</translation>
     </message>
     <message>
       <source>Enable</source>
-      <translation type="unfinished">Enable</translation>
+      <translation>Увімкнути</translation>
     </message>
     <message>
       <source>Enable auto copy of linked object when its configuration is changed</source>
@@ -8877,7 +8874,7 @@ the current copy will be lost.
     <name>StdCmdTreeViewActions</name>
     <message>
       <source>TreeView actions</source>
-      <translation type="unfinished">TreeView actions</translation>
+      <translation>Дії з Ієрархію Документа</translation>
     </message>
     <message>
       <source>TreeView behavior options and actions</source>
@@ -9379,33 +9376,33 @@ the current copy will be lost.
     <name>StdTreeSyncPlacement</name>
     <message>
       <source>Sync placement</source>
-      <translation type="unfinished">Sync placement</translation>
+      <translation>Синхронізувати розміщення</translation>
     </message>
     <message>
       <source>Auto adjust placement on drag and drop objects across coordinate systems</source>
-      <translation type="unfinished">Auto adjust placement on drag and drop objects across coordinate systems</translation>
+      <translation>Автоматичне налаштування розміщення при перетягуванні об’єктів через системи координат</translation>
     </message>
   </context>
   <context>
     <name>StdTreeSyncSelection</name>
     <message>
       <source>Sync selection</source>
-      <translation type="unfinished">Sync selection</translation>
+      <translation>Синхронізувати виділення</translation>
     </message>
     <message>
       <source>Auto expand tree item when the corresponding object is selected in 3D view</source>
-      <translation type="unfinished">Auto expand tree item when the corresponding object is selected in 3D view</translation>
+      <translation>Автоматично відкриває елемент в ієрархії при виділенні відповідного об'єкта в 3D-виді</translation>
     </message>
   </context>
   <context>
     <name>StdTreeSyncView</name>
     <message>
       <source>Sync view</source>
-      <translation type="unfinished">Sync view</translation>
+      <translation>Синхронізувати вид</translation>
     </message>
     <message>
       <source>Auto switch to the 3D view containing the selected item</source>
-      <translation type="unfinished">Auto switch to the 3D view containing the selected item</translation>
+      <translation>Автопереключення до 3D-виду, що містить виділений елемент</translation>
     </message>
   </context>
   <context>
@@ -9491,9 +9488,9 @@ the current copy will be lost.
 
 Are you sure you want to continue?
 </source>
-      <translation type="unfinished">The following referencing objects might break.
+      <translation>Наступні посилання на об'єкти можуть бути зламані.
 
-Are you sure you want to continue?
+Ви впевнені, що хочете продовжити?
 </translation>
     </message>
     <message>
@@ -9502,7 +9499,7 @@ Are you sure you want to continue?
     </message>
     <message>
       <source>These items are selected for deletion, but are not in the active document.</source>
-      <translation type="unfinished">These items are selected for deletion, but are not in the active document.</translation>
+      <translation>Ці елементи виділені для видалення, але вони знаходяться не в активному документі.</translation>
     </message>
   </context>
   <context>

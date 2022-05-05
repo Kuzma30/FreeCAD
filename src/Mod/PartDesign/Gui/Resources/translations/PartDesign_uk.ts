@@ -3315,7 +3315,7 @@ click again to end selection</source>
     <message>
       <location filename="../../ViewProviderChamfer.h" line="41"/>
       <source>Chamfer parameters</source>
-      <translation type="unfinished">Chamfer parameters</translation>
+      <translation>Параметри Фаски</translation>
     </message>
   </context>
   <context>
@@ -3346,7 +3346,7 @@ click again to end selection</source>
     <message>
       <location filename="../../ViewProviderDraft.h" line="42"/>
       <source>Draft parameters</source>
-      <translation type="unfinished">Draft parameters</translation>
+      <translation>Параметри Ухилу</translation>
     </message>
   </context>
   <context>
@@ -3354,7 +3354,7 @@ click again to end selection</source>
     <message>
       <location filename="../../ViewProviderFillet.h" line="41"/>
       <source>Fillet parrameters</source>
-      <translation type="unfinished">Fillet parrameters</translation>
+      <translation>Параметри заокруглення</translation>
     </message>
   </context>
   <context>
@@ -3362,7 +3362,7 @@ click again to end selection</source>
     <message>
       <location filename="../../ViewProviderLinearPattern.h" line="38"/>
       <source>LinearPattern parameters</source>
-      <translation type="unfinished">LinearPattern parameters</translation>
+      <translation>Параметри Лінійного Масиву</translation>
     </message>
   </context>
   <context>
@@ -3370,7 +3370,7 @@ click again to end selection</source>
     <message>
       <location filename="../../ViewProviderMultiTransform.h" line="38"/>
       <source>MultiTransform parameters</source>
-      <translation type="unfinished">MultiTransform parameters</translation>
+      <translation>Параметри Множинного Перетворення</translation>
     </message>
   </context>
   <context>
@@ -3378,7 +3378,7 @@ click again to end selection</source>
     <message>
       <location filename="../../ViewProviderPolarPattern.h" line="38"/>
       <source>PolarPattern parameters</source>
-      <translation type="unfinished">PolarPattern parameters</translation>
+      <translation>Параметри Кругового Масиву</translation>
     </message>
   </context>
   <context>
@@ -3386,7 +3386,7 @@ click again to end selection</source>
     <message>
       <location filename="../../ViewProviderScaled.h" line="38"/>
       <source>Scaled parameters</source>
-      <translation type="unfinished">Scaled parameters</translation>
+      <translation>Параметри Масштабування</translation>
     </message>
   </context>
   <context>
@@ -3394,7 +3394,7 @@ click again to end selection</source>
     <message>
       <location filename="../../ViewProviderThickness.h" line="41"/>
       <source>Thickness parameters</source>
-      <translation type="unfinished">Thickness parameters</translation>
+      <translation>Параметри Створення Порожнини</translation>
     </message>
   </context>
   <context>
@@ -3402,7 +3402,7 @@ click again to end selection</source>
     <message>
       <location filename="../../ViewProviderMirrored.h" line="38"/>
       <source>Mirrored parameters</source>
-      <translation type="unfinished">Mirrored parameters</translation>
+      <translation>Параметри Дзеркального Зображення</translation>
     </message>
   </context>
   <context>
@@ -4736,7 +4736,7 @@ over 90: larger hole radius at the bottom</source>
     <message>
       <location filename="../../Workbench.cpp" line="45"/>
       <source>&amp;Part Design</source>
-      <translation type="unfinished">&amp;Part Design</translation>
+      <translation>&amp;ДизайнДеталі</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="46"/>

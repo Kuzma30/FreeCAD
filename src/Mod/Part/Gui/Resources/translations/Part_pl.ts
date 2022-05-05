@@ -568,6 +568,11 @@ Do you want to continue?</source>
       <translation>Kontrola</translation>
     </message>
     <message>
+      <location filename="../../TaskDimension.cpp" line="1398"/>
+      <source>Selection </source>
+      <translation type="unfinished">Selection </translation>
+    </message>
+    <message>
       <location filename="../../TaskDimension.cpp" line="1482"/>
       <source>Reset selection</source>
       <translation>Resetuj wybór</translation>

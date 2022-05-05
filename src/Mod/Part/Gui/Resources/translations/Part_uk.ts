@@ -570,7 +570,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskDimension.cpp" line="1398"/>
       <source>Selection </source>
-      <translation type="unfinished">Selection </translation>
+      <translation>Виділення </translation>
     </message>
     <message>
       <location filename="../../TaskDimension.cpp" line="1482"/>

@@ -4,12 +4,12 @@
   <context>
     <name>PartDesign_InvoluteGear</name>
     <message>
-      <location filename="InvoluteGearFeature.py" line="57"/>
+      <location filename="../../../InvoluteGearFeature.py" line="57"/>
       <source>Involute gear...</source>
       <translation>Евольвентна шестерня...</translation>
     </message>
     <message>
-      <location filename="InvoluteGearFeature.py" line="61"/>
+      <location filename="../../../InvoluteGearFeature.py" line="59"/>
       <source>Creates or edit the involute gear definition.</source>
       <translation>Створює або редагує параметри евольвентної шестерні.</translation>
     </message>
@@ -17,12 +17,12 @@
   <context>
     <name>PartDesign_Sprocket</name>
     <message>
-      <location filename="SprocketFeature.py" line="62"/>
+      <location filename="../../../SprocketFeature.py" line="62"/>
       <source>Sprocket...</source>
       <translation>Зірочка...</translation>
     </message>
     <message>
-      <location filename="SprocketFeature.py" line="66"/>
+      <location filename="../../../SprocketFeature.py" line="64"/>
       <source>Creates or edit the sprocket definition.</source>
       <translation>Створює або редагує зірочку ланцюгової передачі.</translation>
     </message>
@@ -30,12 +30,12 @@
   <context>
     <name>WizardShaft</name>
     <message>
-      <location filename="WizardShaft.py" line="211"/>
+      <location filename="../../../WizardShaft/WizardShaft.py" line="210"/>
       <source>Shaft design wizard...</source>
       <translation>Майстер конструювання валів ...</translation>
     </message>
     <message>
-      <location filename="WizardShaft.py" line="212"/>
+      <location filename="../../../WizardShaft/WizardShaft.py" line="211"/>
       <source>Start the shaft design wizard</source>
       <translation>Запусткає майстер конструювання валів</translation>
     </message>
@@ -43,42 +43,42 @@
   <context>
     <name>WizardShaftTable</name>
     <message>
-      <location filename="WizardShaftTable.py" line="43"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="43"/>
       <source>Length [mm]</source>
       <translation>Довжина [мм]</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="44"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="44"/>
       <source>Diameter [mm]</source>
       <translation>Діаметр [мм]</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="45"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="45"/>
       <source>Inner diameter [mm]</source>
       <translation>Внутрішній діаметр [мм]</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="46"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="46"/>
       <source>Constraint type</source>
       <translation>Тип Обмеження</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="47"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="47"/>
       <source>Start edge type</source>
       <translation>Тип початкового ребра</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="48"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="48"/>
       <source>Start edge size</source>
       <translation>Розмір початкового ребра</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="49"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="49"/>
       <source>End edge type</source>
       <translation>Тип кінцевого ребра</translation>
     </message>
     <message>
-      <location filename="WizardShaftTable.py" line="53"/>
+      <location filename="../../../WizardShaft/WizardShaftTable.py" line="50"/>
       <source>End edge size</source>
       <translation>Розмір кінцевого ребра</translation>
     </message>

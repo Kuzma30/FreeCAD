@@ -3283,6 +3283,14 @@ click again to end selection</source>
     </message>
 </context>
 <context>
+    <name>PartDesignGui::ViewProviderChamfer</name>
+    <message>
+        <location filename="../../ViewProviderChamfer.h" line="41"/>
+        <source>Chamfer parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PartDesignGui::ViewProviderDatum</name>
     <message>
         <location filename="../../ViewProviderDatum.cpp" line="111"/>
@@ -3302,6 +3310,70 @@ click again to end selection</source>
     <message>
         <location filename="../../ViewProviderDatum.cpp" line="126"/>
         <source>Local Coordinate System parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderDraft</name>
+    <message>
+        <location filename="../../ViewProviderDraft.h" line="42"/>
+        <source>Draft parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderFillet</name>
+    <message>
+        <location filename="../../ViewProviderFillet.h" line="41"/>
+        <source>Fillet parrameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderLinearPattern</name>
+    <message>
+        <location filename="../../ViewProviderLinearPattern.h" line="38"/>
+        <source>LinearPattern parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderMultiTransform</name>
+    <message>
+        <location filename="../../ViewProviderMultiTransform.h" line="38"/>
+        <source>MultiTransform parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderPolarPattern</name>
+    <message>
+        <location filename="../../ViewProviderPolarPattern.h" line="38"/>
+        <source>PolarPattern parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderScaled</name>
+    <message>
+        <location filename="../../ViewProviderScaled.h" line="38"/>
+        <source>Scaled parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderThickness</name>
+    <message>
+        <location filename="../../ViewProviderThickness.h" line="41"/>
+        <source>Thickness parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGuii::ViewProviderMirrored</name>
+    <message>
+        <location filename="../../ViewProviderMirrored.h" line="38"/>
+        <source>Mirrored parameters</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -4013,51 +4085,6 @@ Although you will be able to migrate any moment later with &apos;Part Design -&g
     <message>
         <location filename="../../ViewProviderHelix.cpp" line="55"/>
         <source>Edit helix</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderChamfer.h" line="40"/>
-        <source>Chamfer parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderDraft.h" line="41"/>
-        <source>Draft parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderFillet.h" line="40"/>
-        <source>Fillet parrameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderLinearPattern.h" line="37"/>
-        <source>LinearPattern parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderMirrored.h" line="37"/>
-        <source>Mirrored parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderMultiTransform.h" line="37"/>
-        <source>MultiTransform parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderPolarPattern.h" line="37"/>
-        <source>PolarPattern parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderScaled.h" line="37"/>
-        <source>Scaled parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderThickness.h" line="40"/>
-        <source>Thickness parameters</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -3247,7 +3247,7 @@ besides the color bar</source>
     </message>
     <message>
       <source>FreeArt</source>
-      <translation type="unfinished">FreeArt</translation>
+      <translation>FreeArt</translation>
     </message>
     <message>
       <source>Other</source>
@@ -3906,9 +3906,9 @@ The value is the diameter of the sphere to fit on the screen.</source>
       <source>Prevents view tilting when pinch-zooming.
 Affects only gesture navigation style.
 Mouse tilting is not disabled by this setting.</source>
-      <translation type="unfinished">Prevents view tilting when pinch-zooming.
-Affects only gesture navigation style.
-Mouse tilting is not disabled by this setting.</translation>
+      <translation>Запобігає відхиленню виду при масштабуванні.
+Впливає лише на стиль навігації жестами.
+Нахил миші не вимикається цим параметром.</translation>
     </message>
     <message>
       <source>Disable touchscreen tilt gesture</source>
@@ -4173,7 +4173,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Imperial for Civil Eng (ft, ft/sec)</source>
-      <translation type="unfinished">Imperial for Civil Eng (ft, ft/sec)</translation>
+      <translation>Британська система мір для Цивільного корпусу (фут, фут/с)</translation>
     </message>
     <message>
       <source>FEM (mm, N, sec)</source>
@@ -4302,11 +4302,11 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Input the source value and unit</source>
-      <translation type="unfinished">Input the source value and unit</translation>
+      <translation>Введіть вихідне значення та одиницю вимірювання</translation>
     </message>
     <message>
       <source>Input here the unit for the result</source>
-      <translation type="unfinished">Input here the unit for the result</translation>
+      <translation>Введіть тут одиниці вимірювання результату</translation>
     </message>
     <message>
       <source>Result</source>

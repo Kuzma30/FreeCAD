@@ -822,11 +822,11 @@ In this case the prefix will be automatically trimmed when shown in the property
 However, the property is still used in a script with the full name, like &apos;obj.Group_Name&apos;.
 
 If this is not ticked, then the property must be uniquely named, and it is accessed like &apos;obj.Name&apos;.</source>
-      <translation type="unfinished">Prefix the property name with the group name in the form &apos;Group_Name&apos; to avoid conflicts with an existing property.
-In this case the prefix will be automatically trimmed when shown in the property editor.
-However, the property is still used in a script with the full name, like &apos;obj.Group_Name&apos;.
+      <translation>Префіксувати назву властивості із назвою групи у вигляді &apos;Group_Name&apos; для уникнення конфліктів з наявною властивістю.
+У цьому випадку префікс буде автоматично обрізаний у редакторі властивостей.
+Однак властивість все ще використовується в скрипті з повним іменем, наприклад, &apos;obj.Group_Name&apos;.
 
-If this is not ticked, then the property must be uniquely named, and it is accessed like &apos;obj.Name&apos;.</translation>
+Якщо цей параметр не відмічено, то властивість повинна бути унікальною і доступна як &apos;obj.Name&apos;.</translation>
     </message>
     <message>
       <source>Prefix group name</source>
@@ -928,7 +928,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Pixmap</source>
@@ -940,7 +940,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>What&apos;s this:</source>
-      <translation type="unfinished">What&apos;s this:</translation>
+      <translation>Що це?:</translation>
     </message>
     <message>
       <source>Status text:</source>
@@ -983,7 +983,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Sorry, couldn&apos;t find macro file &apos;%1&apos;.</source>
-      <translation type="unfinished">Sorry, couldn&apos;t find macro file &apos;%1&apos;.</translation>
+      <translation>Вибачте, не вдалося знайти файл макросу &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>Empty macro</source>
@@ -1123,11 +1123,11 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>The shortcut &apos;%1&apos; is defined more than once. This could result in unexpected behaviour.</source>
-      <translation type="unfinished">The shortcut &apos;%1&apos; is defined more than once. This could result in unexpected behaviour.</translation>
+      <translation>Комбінація клавіш &apos;%1&apos; визначена більше одного разу. Це може призвести до несподіваної поведінки.</translation>
     </message>
     <message>
       <source>The shortcut &apos;%1&apos; is already assigned to &apos;%2&apos;.</source>
-      <translation type="unfinished">The shortcut &apos;%1&apos; is already assigned to &apos;%2&apos;.</translation>
+      <translation>Комбінація клавіш &apos;%1&apos; вже призначена для &apos;%2&apos;.</translation>
     </message>
     <message>
       <source>Do you want to override it?</source>
@@ -1149,7 +1149,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; The changes become active the next time you load the appropriate workbench&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; The changes become active the next time you load the appropriate workbench&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Примітка:&lt;/span&gt; Зміни будуть активовані при наступному завантаженні відповідного робочого середовища&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Move right</source>
@@ -1221,7 +1221,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>The toolbar name &apos;%1&apos; is already used</source>
-      <translation type="unfinished">The toolbar name &apos;%1&apos; is already used</translation>
+      <translation>Назва панелі інструментів &apos;%1&apos; вже використовується</translation>
     </message>
     <message>
       <source>Rename toolbar</source>
@@ -1479,7 +1479,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Keep tabs</source>
-      <translation>Зберегти вкладки</translation>
+      <translation>Залишати табулятори</translation>
     </message>
     <message>
       <source>Family:</source>
@@ -1594,7 +1594,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Language of the application&apos;s user interface</source>
-      <translation type="unfinished">Language of the application&apos;s user interface</translation>
+      <translation>Мова інтерфейсу користувача програми</translation>
     </message>
     <message>
       <source>How many files should be listed in recent files list</source>
@@ -1659,7 +1659,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>C/POSIX</source>
-      <translation type="unfinished">C/POSIX</translation>
+      <translation>C/POSIX</translation>
     </message>
     <message>
       <source>If enabled, numerical keypad decimal separator will be substituted with locale separator</source>
@@ -1667,7 +1667,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Substitute decimal separator (needs restart)</source>
-      <translation>Заміняти десятковий роздільник (потребує перезавантаження)</translation>
+      <translation>Замінити десятковий роздільник (потребує перезапуску)</translation>
     </message>
     <message>
       <source>Preference packs</source>
@@ -1675,15 +1675,15 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Name</source>
-      <translation type="unfinished">Name</translation>
+      <translation>Назва</translation>
     </message>
     <message>
       <source>Type</source>
-      <translation type="unfinished">Type</translation>
+      <translation>Тип</translation>
     </message>
     <message>
       <source>Load</source>
-      <translation type="unfinished">Load</translation>
+      <translation>Завантажити</translation>
     </message>
     <message>
       <source>Save new...</source>
@@ -1699,7 +1699,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>The text cursor will be blinking</source>
-      <translation type="unfinished">The text cursor will be blinking</translation>
+      <translation>Текстовий курсор буде миготіти</translation>
     </message>
     <message>
       <source>Enable cursor blinking</source>
@@ -1758,7 +1758,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Apply</source>
-      <translation type="unfinished">Apply</translation>
+      <translation>Застосувати</translation>
     </message>
     <message>
       <source>Apply the %1 preference pack</source>
@@ -1839,11 +1839,11 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Launch a guide on how to set up a macro in a custom global toolbar.</source>
-      <translation type="unfinished">Launch a guide on how to set up a macro in a custom global toolbar.</translation>
+      <translation>Запускає помічника з налаштування макросу в користувацькій глобальній панелі інструментів.</translation>
     </message>
     <message>
       <source>Open Addon Manager where macros created by the community and other addons can be downloaded.</source>
-      <translation type="unfinished">Open Addon Manager where macros created by the community and other addons can be downloaded.</translation>
+      <translation>Відкриває Менеджер Додатків, де можна завантажити макроси створені спільнотою та інші додатки.</translation>
     </message>
     <message>
       <source>Download</source>
@@ -1871,8 +1871,8 @@ after FreeCAD launches</source>
     <message>
       <source>&apos;%1&apos;.
 This file already exists.</source>
-      <translation type="unfinished">&apos;%1&apos;.
-This file already exists.</translation>
+      <translation>&apos;%1&apos;.
+Цей файл вже існує.</translation>
     </message>
     <message>
       <source>Delete macro</source>
@@ -1880,7 +1880,7 @@ This file already exists.</translation>
     </message>
     <message>
       <source>Do you really want to delete the macro &apos;%1&apos;?</source>
-      <translation type="unfinished">Do you really want to delete the macro &apos;%1&apos;?</translation>
+      <translation>Ви дійсно бажаєте видалити макрос &apos;%1&apos;?</translation>
     </message>
     <message>
       <source>Cannot create file</source>
@@ -1888,7 +1888,7 @@ This file already exists.</translation>
     </message>
     <message>
       <source>Creation of file &apos;%1&apos; failed.</source>
-      <translation type="unfinished">Creation of file &apos;%1&apos; failed.</translation>
+      <translation>Помилка створення файлу &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>Read-only</source>
@@ -1905,8 +1905,8 @@ This file already exists.</translation>
     <message>
       <source>&apos;%1&apos;
  already exists.</source>
-      <translation type="unfinished">&apos;%1&apos;
- already exists.</translation>
+      <translation>&apos;%1&apos;
+ вже існує.</translation>
     </message>
     <message>
       <source>Rename Failed</source>
@@ -1915,8 +1915,8 @@ This file already exists.</translation>
     <message>
       <source>Failed to rename to &apos;%1&apos;.
 Perhaps a file permission error?</source>
-      <translation type="unfinished">Failed to rename to &apos;%1&apos;.
-Perhaps a file permission error?</translation>
+      <translation>Помилка перейменування &apos;%1&apos;.
+Можливо помилка доступу до файлу?</translation>
     </message>
     <message>
       <source>Duplicate Macro</source>
@@ -1929,8 +1929,8 @@ Perhaps a file permission error?</translation>
     <message>
       <source>Failed to duplicate to &apos;%1&apos;.
 Perhaps a file permission error?</source>
-      <translation type="unfinished">Failed to duplicate to &apos;%1&apos;.
-Perhaps a file permission error?</translation>
+      <translation>Помилка дублювання &apos;%1&apos;.
+Можливо помилка доступу до файлу?</translation>
     </message>
     <message>
       <source>Do not show again</source>
@@ -1945,34 +1945,34 @@ Perhaps a file permission error?</translation>
 
 Note: your changes will be applied when you next switch workbenches
 </source>
-      <translation type="unfinished">This will guide you in setting up this macro in a custom global toolbar.  Instructions will be in red text inside the dialog.
+      <translation>Ви отримаєте інструкцію з налаштування цього макросу у Вашій глобальній панелі інструментів. Інструкції будуть виділені червоним текстом у вікні діалогу.
 
-Note: your changes will be applied when you next switch workbenches
+Примітка: ваші зміни будуть застосовані під час наступної зміни робочого середовища
 </translation>
     </message>
     <message>
       <source>Walkthrough, dialog 1 of 2</source>
-      <translation type="unfinished">Walkthrough, dialog 1 of 2</translation>
+      <translation>Покрокова Інструкція. Діалог 1 із 2</translation>
     </message>
     <message>
       <source>Walkthrough instructions: Fill in missing fields (optional) then click Add, then Close</source>
-      <translation type="unfinished">Walkthrough instructions: Fill in missing fields (optional) then click Add, then Close</translation>
+      <translation>Покрокова Інструкція: Заповніть відсутні поля (опціонально) потім натисніть кнопку Додати, потім Закрити</translation>
     </message>
     <message>
       <source>Walkthrough, dialog 1 of 1</source>
-      <translation type="unfinished">Walkthrough, dialog 1 of 1</translation>
+      <translation>Покрокова Інструкція. Діалог 1 із 1</translation>
     </message>
     <message>
       <source>Walkthrough, dialog 2 of 2</source>
-      <translation type="unfinished">Walkthrough, dialog 2 of 2</translation>
+      <translation>Покрокова Інструкція. Діалог 2 із 2</translation>
     </message>
     <message>
       <source>Walkthrough instructions: Click right arrow button (-&gt;), then Close.</source>
-      <translation type="unfinished">Walkthrough instructions: Click right arrow button (-&gt;), then Close.</translation>
+      <translation>Покрокова Інструкція: натисніть праву кнопку зі стрілкою (-&gt;), потім Закрити.</translation>
     </message>
     <message>
       <source>Walkthrough instructions: Click New, then right arrow (-&gt;) button, then Close.</source>
-      <translation type="unfinished">Walkthrough instructions: Click New, then right arrow (-&gt;) button, then Close.</translation>
+      <translation>Покрокова Інструкція; Натисніть Новий, потім праву кнопку зі стрілкою (&gt;), потім Закрити.</translation>
     </message>
   </context>
   <context>
@@ -1999,7 +1999,7 @@ Note: your changes will be applied when you next switch workbenches
     </message>
     <message>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <source>Record</source>
@@ -2022,11 +2022,11 @@ Note: your changes will be applied when you next switch workbenches
     </message>
     <message>
       <source>The macro &apos;%1&apos; already exists. Do you want to overwrite?</source>
-      <translation type="unfinished">The macro &apos;%1&apos; already exists. Do you want to overwrite?</translation>
+      <translation>Макрос &apos;%1&apos; вже існує. Бажаєте перезаписати?</translation>
     </message>
     <message>
       <source>The macro directory doesn&apos;t exist. Please, choose another one.</source>
-      <translation type="unfinished">The macro directory doesn&apos;t exist. Please, choose another one.</translation>
+      <translation>Тека макросів &apos; не існує. Виберіть іншу.</translation>
     </message>
     <message>
       <source>Choose macro directory</source>
@@ -2061,7 +2061,7 @@ Note: your changes will be applied when you next switch workbenches
     </message>
     <message>
       <source>%</source>
-      <translation type="unfinished">%</translation>
+      <translation>%</translation>
     </message>
     <message>
       <source>Ambient color:</source>
@@ -2101,9 +2101,9 @@ Note: your changes will be applied when you next switch workbenches
       <source>Access denied to &apos;%1&apos;
 
 Specify another directory, please.</source>
-      <translation type="unfinished">Access denied to &apos;%1&apos;
+      <translation>Немає доступу до &apos;%1&apos;
 
-Specify another directory, please.</translation>
+Будь ласка, вкажіть іншу теку.</translation>
     </message>
     <message>
       <source>HTML files</source>
@@ -2122,7 +2122,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Alt+C</source>
-      <translation type="unfinished">Alt+C</translation>
+      <translation>Alt+C</translation>
     </message>
     <message>
       <source>&amp;Close</source>
@@ -2189,7 +2189,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Can&apos;t find the text: %1</source>
-      <translation type="unfinished">Can&apos;t find the text: %1</translation>
+      <translation>Не вдається знайти текст: %1</translation>
     </message>
   </context>
   <context>
@@ -2220,7 +2220,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>Invalid key name &apos;%1&apos;</source>
-      <translation type="unfinished">Invalid key name &apos;%1&apos;</translation>
+      <translation>Невірне ім'я ключа &apos;%1&apos;</translation>
     </message>
     <message>
       <source>System parameter</source>
@@ -2457,7 +2457,7 @@ Specify another directory, please.</translation>
     </message>
     <message>
       <source>If enabled, then 3D view selection will be synchronized with full object hierarchy.</source>
-      <translation type="unfinished">If enabled, then 3D view selection will be synchronized with full object hierarchy.</translation>
+      <translation>Якщо ввімкнено, то виділення в 3D виді буде синхронізоване з повною ієрархією об'єктів.</translation>
     </message>
   </context>
   <context>
@@ -2542,8 +2542,8 @@ on-screen while displaying the error</source>
     <message>
       <source>When a warning has occurred, the Report View dialog becomes visible
 on-screen while displaying the warning</source>
-      <translation type="unfinished">When a warning has occurred, the Report View dialog becomes visible
-on-screen while displaying the warning</translation>
+      <translation>При виникненні попередження, діалогове вікно Перегляд звіту стає 
+видимим на екрані для показу попередження</translation>
     </message>
     <message>
       <source>Show report view on warning</source>
@@ -2552,12 +2552,12 @@ on-screen while displaying the warning</translation>
     <message>
       <source>When a normal message has occurred, the Report View dialog becomes visible
 on-screen while displaying the message</source>
-      <translation type="unfinished">When a normal message has occurred, the Report View dialog becomes visible
-on-screen while displaying the message</translation>
+      <translation>При виникненні звичайного повідомлення, діалогове вікно Перегляд звіту стає 
+видимим на екрані для показу повідомлення</translation>
     </message>
     <message>
       <source>Show report view on normal message</source>
-      <translation type="unfinished">Show report view on normal message</translation>
+      <translation>Показати Перегляд Звіту для звичайних повідомлень</translation>
     </message>
     <message>
       <source>When a log message has occurred, the Report View dialog becomes visible
@@ -3007,15 +3007,15 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Cache size limit:</source>
-      <translation type="unfinished">Cache size limit:</translation>
+      <translation>Обмеження розміру кешу:</translation>
     </message>
     <message>
       <source>Check now...</source>
-      <translation type="unfinished">Check now...</translation>
+      <translation>Перевірка...</translation>
     </message>
     <message>
       <source>Notify the user if the cache size exceeds the specified limit</source>
-      <translation type="unfinished">Notify the user if the cache size exceeds the specified limit</translation>
+      <translation>Сповіщає користувача, якщо розмір кешу перевищив зазначений ліміт</translation>
     </message>
     <message>
       <source>Unknown</source>
@@ -3023,7 +3023,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Current cache size: %1</source>
-      <translation type="unfinished">Current cache size: %1</translation>
+      <translation>Поточний розмір кешу: %1</translation>
     </message>
   </context>
   <context>
@@ -3062,11 +3062,11 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Alt+R</source>
-      <translation type="unfinished">Alt+R</translation>
+      <translation>Alt+R</translation>
     </message>
     <message>
       <source>Alt+I</source>
-      <translation type="unfinished">Alt+I</translation>
+      <translation>Alt+I</translation>
     </message>
     <message>
       <source>Style</source>
@@ -3078,7 +3078,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Alt+Z</source>
-      <translation type="unfinished">Alt+Z</translation>
+      <translation>Alt+Z</translation>
     </message>
     <message>
       <source>&amp;Flow</source>
@@ -3086,7 +3086,7 @@ in the corner -- in % of height/width of viewport</translation>
     </message>
     <message>
       <source>Alt+F</source>
-      <translation type="unfinished">Alt+F</translation>
+      <translation>Alt+F</translation>
     </message>
     <message>
       <source>Parameter range</source>
@@ -3127,14 +3127,14 @@ in the corner -- in % of height/width of viewport</translation>
     <message>
       <source>Data outside the specified min-max range
 will be displayed in gray</source>
-      <translation type="unfinished">Data outside the specified min-max range
-will be displayed in gray</translation>
+      <translation>Дані за межами вказаного мін-макс діапазону
+будуть зображатися сірим</translation>
     </message>
     <message>
       <source>Data outside the specified min-max range
 will be displayed with transparency</source>
-      <translation type="unfinished">Data outside the specified min-max range
-will be displayed with transparency</translation>
+      <translation>Дані за межами вказаного мін-макс діапазону
+будуть зображатися прозорими</translation>
     </message>
     <message>
       <source>Out &amp;transparent</source>
@@ -3212,7 +3212,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>Maximum Undo/Redo steps</source>
-      <translation>Максимальна кількість кроків скасування/повторення дій</translation>
+      <translation>Максимальна кількість кроків Скасувати/Повторити</translation>
     </message>
     <message>
       <source>Using Undo/Redo on documents</source>
@@ -3284,7 +3284,7 @@ besides the color bar</translation>
     </message>
     <message>
       <source>How many Undo/Redo steps should be recorded</source>
-      <translation type="unfinished">How many Undo/Redo steps should be recorded</translation>
+      <translation>Визначає кількість дій Скасувати/Повторити</translation>
     </message>
     <message>
       <source>Allow user aborting document recomputation by pressing ESC.
@@ -3299,16 +3299,16 @@ This feature may slightly increase recomputation time.</source>
     <message>
       <source>If there is a recovery file available the application will
 automatically run a file recovery when it is started.</source>
-      <translation type="unfinished">If there is a recovery file available the application will
-automatically run a file recovery when it is started.</translation>
+      <translation>Якщо доступний файл відновлення, то програма
+автоматично запустить його відновлення після запуску.</translation>
     </message>
     <message>
       <source>How often a recovery file is written</source>
-      <translation type="unfinished">How often a recovery file is written</translation>
+      <translation>Частота запису файлу відновлення</translation>
     </message>
     <message>
       <source>A thumbnail will be stored when document is saved</source>
-      <translation type="unfinished">A thumbnail will be stored when document is saved</translation>
+      <translation>Мініатюра буде зберігатися під час збереження документу</translation>
     </message>
     <message>
       <source>Size</source>
@@ -3317,8 +3317,8 @@ automatically run a file recovery when it is started.</translation>
     <message>
       <source>Sets the size of the thumbnail that is stored in the document.
 Common sizes are 128, 256 and 512</source>
-      <translation type="unfinished">Sets the size of the thumbnail that is stored in the document.
-Common sizes are 128, 256 and 512</translation>
+      <translation>Встановлює розмір мініатюри, що зберігається у документі.
+Звичайні розміри 128, 256 і 512</translation>
     </message>
     <message>
       <source>The program logo will be added to the thumbnail</source>
@@ -3326,7 +3326,7 @@ Common sizes are 128, 256 and 512</translation>
     </message>
     <message>
       <source>How many backup files will be kept when saving document</source>
-      <translation type="unfinished">How many backup files will be kept when saving document</translation>
+      <translation>Визначає кількість резервних копій при збереженні документа</translation>
     </message>
     <message>
       <source>Backup files will get extension &apos;.FCbak&apos; and file names
@@ -3380,7 +3380,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Default license for new documents</source>
-      <translation type="unfinished">Default license for new documents</translation>
+      <translation>Типова Ліцензія для нових документів</translation>
     </message>
     <message>
       <source>Creative Commons Attribution</source>
@@ -3565,31 +3565,31 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Alt+S</source>
-      <translation type="unfinished">Alt+S</translation>
+      <translation>Alt+S</translation>
     </message>
     <message>
       <source>&amp;4:3</source>
-      <translation type="unfinished">&amp;4:3</translation>
+      <translation>&amp;4:3</translation>
     </message>
     <message>
       <source>Alt+4</source>
-      <translation type="unfinished">Alt+4</translation>
+      <translation>Alt+4</translation>
     </message>
     <message>
       <source>1&amp;6:9</source>
-      <translation type="unfinished">1&amp;6:9</translation>
+      <translation>1&amp;6:9</translation>
     </message>
     <message>
       <source>Alt+6</source>
-      <translation type="unfinished">Alt+6</translation>
+      <translation>Alt+6</translation>
     </message>
     <message>
       <source>&amp;1:1</source>
-      <translation type="unfinished">&amp;1:1</translation>
+      <translation>&amp;1:1</translation>
     </message>
     <message>
       <source>Alt+1</source>
-      <translation type="unfinished">Alt+1</translation>
+      <translation>Alt+1</translation>
     </message>
     <message>
       <source>Image comment</source>
@@ -3655,7 +3655,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Available Workbenches</source>
-      <translation type="unfinished">Available Workbenches</translation>
+      <translation>Доступні Робочі Середовища</translation>
     </message>
   </context>
   <context>
@@ -3713,7 +3713,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>FullScript.FCScript</source>
-      <translation type="unfinished">FullScript.FCScript</translation>
+      <translation>FullScript.FCScript</translation>
     </message>
     <message>
       <source>Gui commands</source>
@@ -3741,15 +3741,15 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Variables defined by macros are created as local variables</source>
-      <translation type="unfinished">Variables defined by macros are created as local variables</translation>
+      <translation>Змінні, визначені у макросі, створюються як локальні змінні</translation>
     </message>
     <message>
       <source>Commands executed by macro scripts are shown in Python console</source>
-      <translation type="unfinished">Commands executed by macro scripts are shown in Python console</translation>
+      <translation>Команди, виконані скриптами макросів, показує в консолі Python</translation>
     </message>
     <message>
       <source>Recorded macros will also contain user interface commands</source>
-      <translation type="unfinished">Recorded macros will also contain user interface commands</translation>
+      <translation>Записані макроси також будуть містити команди інтерфейсу користувача</translation>
     </message>
     <message>
       <source>Recorded macros will also contain user interface commands as comments</source>
@@ -4047,7 +4047,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Save history</source>
-      <translation type="unfinished">Save history</translation>
+      <translation>Зберегти історію</translation>
     </message>
   </context>
   <context>
@@ -4058,19 +4058,19 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Auto switch to the 3D view containing the selected item</source>
-      <translation type="unfinished">Auto switch to the 3D view containing the selected item</translation>
+      <translation>Автопереключення до 3D-виду, що містить виділений елемент</translation>
     </message>
     <message>
       <source>Auto expand tree item when the corresponding object is selected in 3D view</source>
-      <translation type="unfinished">Auto expand tree item when the corresponding object is selected in 3D view</translation>
+      <translation>Автоматично відкриває елемент в ієрархії при виділенні відповідного об'єкта в 3D-виді</translation>
     </message>
     <message>
       <source>Preselect the object in 3D view when mouse over the tree item</source>
-      <translation type="unfinished">Preselect the object in 3D view when mouse over the tree item</translation>
+      <translation>Підсвічувати об'єкт в 3D-виді при наведенні мишки на елемент в ієрархії</translation>
     </message>
     <message>
       <source>Record selection in tree view in order to go back/forward using navigation button</source>
-      <translation type="unfinished">Record selection in tree view in order to go back/forward using navigation button</translation>
+      <translation>Записує виділення в ієрархії до історії команд для повернення назад/вперед за допомогою кнопки навігації</translation>
     </message>
     <message>
       <source>Add checkboxes for selection in document tree</source>
@@ -4129,31 +4129,31 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>1/2&quot;</source>
-      <translation type="unfinished">1/2&quot;</translation>
+      <translation>1/2&quot;</translation>
     </message>
     <message>
       <source>1/4&quot;</source>
-      <translation type="unfinished">1/4&quot;</translation>
+      <translation>1/4&quot;</translation>
     </message>
     <message>
       <source>1/8&quot;</source>
-      <translation type="unfinished">1/8&quot;</translation>
+      <translation>1/8&quot;</translation>
     </message>
     <message>
       <source>1/16&quot;</source>
-      <translation type="unfinished">1/16&quot;</translation>
+      <translation>1/16&quot;</translation>
     </message>
     <message>
       <source>1/32&quot;</source>
-      <translation type="unfinished">1/32&quot;</translation>
+      <translation>1/32&quot;</translation>
     </message>
     <message>
       <source>1/64&quot;</source>
-      <translation type="unfinished">1/64&quot;</translation>
+      <translation>1/64&quot;</translation>
     </message>
     <message>
       <source>1/128&quot;</source>
-      <translation type="unfinished">1/128&quot;</translation>
+      <translation>1/128&quot;</translation>
     </message>
     <message>
       <source>Unit system:</source>

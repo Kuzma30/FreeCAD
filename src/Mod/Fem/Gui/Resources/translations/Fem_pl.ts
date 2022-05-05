@@ -4,12 +4,12 @@
   <context>
     <name>BoundarySelector</name>
     <message>
-      <location filename="selection_widgets.py" line="132"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="132"/>
       <source>Select Faces/Edges/Vertexes</source>
       <translation>Wybierz ściany / krawędzie / wierzchołki</translation>
     </message>
     <message>
-      <location filename="selection_widgets.py" line="136"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="133"/>
       <source>To add references: select them in the 3D view  and click &quot;Add&quot;.</source>
       <translation type="unfinished">To add references: select them in the 3D view  and click &quot;Add&quot;.</translation>
     </message>
@@ -17,47 +17,47 @@
   <context>
     <name>ControlWidget</name>
     <message>
-      <location filename="solver_taskpanel.py" line="215"/>
+      <location filename="../../../femsolver/solver_taskpanel.py" line="215"/>
       <source>Solver Control</source>
       <translation>Kontrola solvera</translation>
     </message>
     <message>
-      <location filename="solver_taskpanel.py" line="226"/>
+      <location filename="../../../femsolver/solver_taskpanel.py" line="226"/>
       <source>Working Directory</source>
       <translation>Katalog roboczy</translation>
     </message>
     <message>
-      <location filename="solver_taskpanel.py" line="303"/>
+      <location filename="../../../femsolver/solver_taskpanel.py" line="303"/>
       <source>Write</source>
       <translation>Zapisz</translation>
     </message>
     <message>
-      <location filename="solver_taskpanel.py" line="312"/>
+      <location filename="../../../femsolver/solver_taskpanel.py" line="312"/>
       <source>Edit</source>
       <translation>Edycja</translation>
     </message>
     <message>
-      <location filename="solver_taskpanel.py" line="245"/>
+      <location filename="../../../femsolver/solver_taskpanel.py" line="245"/>
       <source>Elapsed Time:</source>
       <translation>Upływający czas:</translation>
     </message>
     <message>
-      <location filename="solver_taskpanel.py" line="309"/>
+      <location filename="../../../femsolver/solver_taskpanel.py" line="309"/>
       <source>Run</source>
       <translation>Uruchom</translation>
     </message>
     <message>
-      <location filename="solver_taskpanel.py" line="311"/>
+      <location filename="../../../femsolver/solver_taskpanel.py" line="311"/>
       <source>Re-write</source>
       <translation>Przepisz</translation>
     </message>
     <message>
-      <location filename="solver_taskpanel.py" line="313"/>
+      <location filename="../../../femsolver/solver_taskpanel.py" line="313"/>
       <source>Re-run</source>
       <translation>Uruchom ponownie</translation>
     </message>
     <message>
-      <location filename="solver_taskpanel.py" line="315"/>
+      <location filename="../../../femsolver/solver_taskpanel.py" line="315"/>
       <source>Abort</source>
       <translation>Przerwij</translation>
     </message>
@@ -65,12 +65,12 @@
   <context>
     <name>FEM_Analysis</name>
     <message>
-      <location filename="commands.py" line="57"/>
+      <location filename="../../../femcommands/commands.py" line="56"/>
       <source>Analysis container</source>
       <translation>Kontroler analizy</translation>
     </message>
     <message>
-      <location filename="commands.py" line="62"/>
+      <location filename="../../../femcommands/commands.py" line="58"/>
       <source>Creates an analysis container with standard solver CalculiX</source>
       <translation>Tworzy kontroler analiz ze standardowym solverem CalculiX</translation>
     </message>
@@ -78,12 +78,12 @@
   <context>
     <name>FEM_ClippingPlaneAdd</name>
     <message>
-      <location filename="commands.py" line="85"/>
+      <location filename="../../../femcommands/commands.py" line="84"/>
       <source>Clipping plane on face</source>
       <translation>Dodaj płaszczyznę cięcia na powierzchni</translation>
     </message>
     <message>
-      <location filename="commands.py" line="89"/>
+      <location filename="../../../femcommands/commands.py" line="85"/>
       <source>Add a clipping plane on a selected face</source>
       <translation>Dodaj płaszczyznę cięcia na wybranej powierzchni</translation>
     </message>
@@ -91,7 +91,7 @@
   <context>
     <name>FEM_ClippingPlaneRemoveAll</name>
     <message>
-      <location filename="commands.py" line="144"/>
+      <location filename="../../../femcommands/commands.py" line="140"/>
       <source>Remove all clipping planes</source>
       <translation>Usuń wszystkie płaszczyzny cięcia</translation>
     </message>
@@ -99,12 +99,12 @@
   <context>
     <name>FEM_ConstantVacuumPermittivity</name>
     <message>
-      <location filename="commands.py" line="166"/>
+      <location filename="../../../femcommands/commands.py" line="162"/>
       <source>Constant vacuum permittivity</source>
       <translation>Przenikalność elektryczna próżni</translation>
     </message>
     <message>
-      <location filename="commands.py" line="170"/>
+      <location filename="../../../femcommands/commands.py" line="166"/>
       <source>Creates a FEM constant vacuum permittivity to overwrite standard value</source>
       <translation>Dodaje przenikalność elektryczną próżni nadpisując standardową wartość</translation>
     </message>
@@ -112,12 +112,12 @@
   <context>
     <name>FEM_ConstraintBodyHeatSource</name>
     <message>
-      <location filename="commands.py" line="185"/>
+      <location filename="../../../femcommands/commands.py" line="181"/>
       <source>Constraint body heat source</source>
       <translation>Zdefiniuj źródła ciepła ciała</translation>
     </message>
     <message>
-      <location filename="commands.py" line="189"/>
+      <location filename="../../../femcommands/commands.py" line="185"/>
       <source>Creates a FEM constraint body heat source</source>
       <translation>Tworzy wewnętrzne źródło ciepła</translation>
     </message>
@@ -125,12 +125,12 @@
   <context>
     <name>FEM_ConstraintCentrif</name>
     <message>
-      <location filename="commands.py" line="202"/>
+      <location filename="../../../femcommands/commands.py" line="198"/>
       <source>Constraint centrif</source>
       <translation>Obciążenie siłą odśrodkową</translation>
     </message>
     <message>
-      <location filename="commands.py" line="206"/>
+      <location filename="../../../femcommands/commands.py" line="202"/>
       <source>Creates a FEM constraint centrif</source>
       <translation>Dodaje obciążenie siłą odśrodkową</translation>
     </message>
@@ -138,12 +138,12 @@
   <context>
     <name>FEM_ConstraintElectrostaticPotential</name>
     <message>
-      <location filename="commands.py" line="219"/>
+      <location filename="../../../femcommands/commands.py" line="215"/>
       <source>Constraint electrostatic potential</source>
       <translation>Zdefiniuj potencjał elektrostatyczny</translation>
     </message>
     <message>
-      <location filename="commands.py" line="223"/>
+      <location filename="../../../femcommands/commands.py" line="219"/>
       <source>Creates a FEM constraint electrostatic potential</source>
       <translation>Tworzy warunek brzegowy potencjału elektrostatycznego</translation>
     </message>
@@ -151,12 +151,12 @@
   <context>
     <name>FEM_ConstraintFlowVelocity</name>
     <message>
-      <location filename="commands.py" line="236"/>
+      <location filename="../../../femcommands/commands.py" line="232"/>
       <source>Constraint flow velocity</source>
       <translation>Zdefiniuj prędkość przepływu</translation>
     </message>
     <message>
-      <location filename="commands.py" line="240"/>
+      <location filename="../../../femcommands/commands.py" line="236"/>
       <source>Creates a FEM constraint flow velocity</source>
       <translation>Tworzy wiązanie MES dla prędkości przepływu</translation>
     </message>
@@ -164,12 +164,12 @@
   <context>
     <name>FEM_ConstraintInitialFlowVelocity</name>
     <message>
-      <location filename="commands.py" line="253"/>
+      <location filename="../../../femcommands/commands.py" line="249"/>
       <source>Constraint initial flow velocity</source>
       <translation>Warunek początkowy prędkości przepływu</translation>
     </message>
     <message>
-      <location filename="commands.py" line="257"/>
+      <location filename="../../../femcommands/commands.py" line="253"/>
       <source>Creates a FEM constraint initial flow velocity</source>
       <translation>Tworzy wiązanie MES dla początkowej prędkości przepływu</translation>
     </message>
@@ -177,12 +177,12 @@
   <context>
     <name>FEM_ConstraintSectionPrint</name>
     <message>
-      <location filename="commands.py" line="270"/>
+      <location filename="../../../femcommands/commands.py" line="266"/>
       <source>Constraint sectionprint</source>
       <translation>Zapis wyników z przekroju</translation>
     </message>
     <message>
-      <location filename="commands.py" line="274"/>
+      <location filename="../../../femcommands/commands.py" line="270"/>
       <source>Creates a FEM constraint sectionprint</source>
       <translation>Dodaje zapis wyników z przekroju</translation>
     </message>
@@ -190,12 +190,12 @@
   <context>
     <name>FEM_ConstraintSelfWeight</name>
     <message>
-      <location filename="commands.py" line="287"/>
+      <location filename="../../../femcommands/commands.py" line="283"/>
       <source>Constraint self weight</source>
       <translation>Zdefiniuj obciążenie ciężarem własnym</translation>
     </message>
     <message>
-      <location filename="commands.py" line="291"/>
+      <location filename="../../../femcommands/commands.py" line="287"/>
       <source>Creates a FEM constraint self weight</source>
       <translation>Tworzy obciążenie ciężarem własnym</translation>
     </message>
@@ -203,12 +203,12 @@
   <context>
     <name>FEM_ConstraintTie</name>
     <message>
-      <location filename="commands.py" line="304"/>
+      <location filename="../../../femcommands/commands.py" line="300"/>
       <source>Constraint tie</source>
       <translation>Kontakt wiązany</translation>
     </message>
     <message>
-      <location filename="commands.py" line="308"/>
+      <location filename="../../../femcommands/commands.py" line="304"/>
       <source>Creates a FEM constraint tie</source>
       <translation>Dodaje kontakt wiązany</translation>
     </message>
@@ -216,12 +216,12 @@
   <context>
     <name>FEM_ElementFluid1D</name>
     <message>
-      <location filename="commands.py" line="321"/>
+      <location filename="../../../femcommands/commands.py" line="317"/>
       <source>Fluid section for 1D flow</source>
       <translation>Sekcja płynu dla przepływu 1D</translation>
     </message>
     <message>
-      <location filename="commands.py" line="325"/>
+      <location filename="../../../femcommands/commands.py" line="321"/>
       <source>Creates a FEM fluid section for 1D flow</source>
       <translation>Dodaje sekcję płynu dla przepływu 1D</translation>
     </message>
@@ -229,12 +229,12 @@
   <context>
     <name>FEM_ElementGeometry1D</name>
     <message>
-      <location filename="commands.py" line="338"/>
+      <location filename="../../../femcommands/commands.py" line="334"/>
       <source>Beam cross section</source>
       <translation>Przekrój poprzeczny belki</translation>
     </message>
     <message>
-      <location filename="commands.py" line="342"/>
+      <location filename="../../../femcommands/commands.py" line="338"/>
       <source>Creates a FEM beam cross section</source>
       <translation>Tworzy przekrój poprzeczny belki MES</translation>
     </message>
@@ -242,12 +242,12 @@
   <context>
     <name>FEM_ElementGeometry2D</name>
     <message>
-      <location filename="commands.py" line="355"/>
+      <location filename="../../../femcommands/commands.py" line="351"/>
       <source>Shell plate thickness</source>
       <translation>Grubość powłoki</translation>
     </message>
     <message>
-      <location filename="commands.py" line="359"/>
+      <location filename="../../../femcommands/commands.py" line="355"/>
       <source>Creates a FEM shell plate thickness</source>
       <translation>Tworzy grubość powłoki MES</translation>
     </message>
@@ -255,12 +255,12 @@
   <context>
     <name>FEM_ElementRotation1D</name>
     <message>
-      <location filename="commands.py" line="372"/>
+      <location filename="../../../femcommands/commands.py" line="368"/>
       <source>Beam rotation</source>
       <translation>Obrót belki</translation>
     </message>
     <message>
-      <location filename="commands.py" line="376"/>
+      <location filename="../../../femcommands/commands.py" line="372"/>
       <source>Creates a FEM beam rotation</source>
       <translation>Tworzy obrót belki MES</translation>
     </message>
@@ -268,12 +268,12 @@
   <context>
     <name>FEM_EquationElasticity</name>
     <message>
-      <location filename="commands.py" line="406"/>
+      <location filename="../../../femcommands/commands.py" line="402"/>
       <source>Elasticity equation</source>
       <translation>Równanie elastyczności</translation>
     </message>
     <message>
-      <location filename="commands.py" line="410"/>
+      <location filename="../../../femcommands/commands.py" line="406"/>
       <source>Creates a FEM equation for elasticity</source>
       <translation>Tworzy równanie MES dla elastyczności</translation>
     </message>
@@ -281,12 +281,12 @@
   <context>
     <name>FEM_EquationElectricforce</name>
     <message>
-      <location filename="commands.py" line="457"/>
+      <location filename="../../../femcommands/commands.py" line="453"/>
       <source>Electricforce equation</source>
       <translation>Równanie siły elektrostatycznej</translation>
     </message>
     <message>
-      <location filename="commands.py" line="461"/>
+      <location filename="../../../femcommands/commands.py" line="457"/>
       <source>Creates a FEM equation for electric forces</source>
       <translation>Dodaje równanie dla sił elektrostatycznych</translation>
     </message>
@@ -294,12 +294,12 @@
   <context>
     <name>FEM_EquationElectrostatic</name>
     <message>
-      <location filename="commands.py" line="389"/>
+      <location filename="../../../femcommands/commands.py" line="385"/>
       <source>Electrostatic equation</source>
       <translation>Równanie elektrostatyczne</translation>
     </message>
     <message>
-      <location filename="commands.py" line="393"/>
+      <location filename="../../../femcommands/commands.py" line="389"/>
       <source>Creates a FEM equation for electrostatic</source>
       <translation>Tworzy równanie MES dla elektrostatyki</translation>
     </message>
@@ -307,12 +307,12 @@
   <context>
     <name>FEM_EquationFlow</name>
     <message>
-      <location filename="commands.py" line="423"/>
+      <location filename="../../../femcommands/commands.py" line="419"/>
       <source>Flow equation</source>
       <translation>Równania przepływu</translation>
     </message>
     <message>
-      <location filename="commands.py" line="427"/>
+      <location filename="../../../femcommands/commands.py" line="423"/>
       <source>Creates a FEM equation for flow</source>
       <translation>Tworzy równanie MES dla przepływu</translation>
     </message>
@@ -320,12 +320,12 @@
   <context>
     <name>FEM_EquationFlux</name>
     <message>
-      <location filename="commands.py" line="440"/>
+      <location filename="../../../femcommands/commands.py" line="436"/>
       <source>Flux equation</source>
       <translation>Równanie strumienia</translation>
     </message>
     <message>
-      <location filename="commands.py" line="444"/>
+      <location filename="../../../femcommands/commands.py" line="440"/>
       <source>Creates a FEM equation for flux</source>
       <translation>Dodaje równanie dla strumienia</translation>
     </message>
@@ -333,12 +333,12 @@
   <context>
     <name>FEM_EquationHeat</name>
     <message>
-      <location filename="commands.py" line="474"/>
+      <location filename="../../../femcommands/commands.py" line="470"/>
       <source>Heat equation</source>
       <translation>Równanie ciepła</translation>
     </message>
     <message>
-      <location filename="commands.py" line="478"/>
+      <location filename="../../../femcommands/commands.py" line="474"/>
       <source>Creates a FEM equation for heat</source>
       <translation>Dodaje równanie dla ciepła</translation>
     </message>
@@ -346,7 +346,7 @@
   <context>
     <name>FEM_Examples</name>
     <message>
-      <location filename="commands.py" line="496"/>
+      <location filename="../../../femcommands/commands.py" line="492"/>
       <source>Open FEM examples</source>
       <translation>Otwórz przykłady MES</translation>
     </message>
@@ -354,12 +354,12 @@
   <context>
     <name>FEM_FEMMesh2Mesh</name>
     <message>
-      <location filename="commands.py" line="655"/>
+      <location filename="../../../femcommands/commands.py" line="651"/>
       <source>FEM mesh to mesh</source>
       <translation>Siatka MES do siatki</translation>
     </message>
     <message>
-      <location filename="commands.py" line="659"/>
+      <location filename="../../../femcommands/commands.py" line="655"/>
       <source>Convert the surface of a FEM mesh to a mesh</source>
       <translation>Przekształć powierzchnię siatki MES do siatki</translation>
     </message>
@@ -367,12 +367,12 @@
   <context>
     <name>FEM_MaterialEditor</name>
     <message>
-      <location filename="commands.py" line="513"/>
+      <location filename="../../../femcommands/commands.py" line="509"/>
       <source>Material editor</source>
       <translation>Edytor materiału</translation>
     </message>
     <message>
-      <location filename="commands.py" line="517"/>
+      <location filename="../../../femcommands/commands.py" line="513"/>
       <source>Opens the FreeCAD material editor</source>
       <translation>Otwiera edytor materiałów FreeCAD</translation>
     </message>
@@ -380,12 +380,12 @@
   <context>
     <name>FEM_MaterialFluid</name>
     <message>
-      <location filename="commands.py" line="533"/>
+      <location filename="../../../femcommands/commands.py" line="529"/>
       <source>Material for fluid</source>
       <translation>Materiał dla cieczy</translation>
     </message>
     <message>
-      <location filename="commands.py" line="537"/>
+      <location filename="../../../femcommands/commands.py" line="533"/>
       <source>Creates a FEM material for fluid</source>
       <translation>Dodaje materiał dla płynu</translation>
     </message>
@@ -393,12 +393,12 @@
   <context>
     <name>FEM_MaterialMechanicalNonlinear</name>
     <message>
-      <location filename="commands.py" line="550"/>
+      <location filename="../../../femcommands/commands.py" line="546"/>
       <source>Nonlinear mechanical material</source>
       <translation>Nieliniowy materiał mechaniczny</translation>
     </message>
     <message>
-      <location filename="commands.py" line="554"/>
+      <location filename="../../../femcommands/commands.py" line="550"/>
       <source>Creates a nonlinear mechanical material</source>
       <translation>Tworzy nieliniowy model mechaniczny materiału</translation>
     </message>
@@ -406,12 +406,12 @@
   <context>
     <name>FEM_MaterialReinforced</name>
     <message>
-      <location filename="commands.py" line="620"/>
+      <location filename="../../../femcommands/commands.py" line="616"/>
       <source>Reinforced material (concrete)</source>
       <translation>Materiał zbrojony (beton)</translation>
     </message>
     <message>
-      <location filename="commands.py" line="624"/>
+      <location filename="../../../femcommands/commands.py" line="620"/>
       <source>Creates a material for reinforced matrix material such as concrete</source>
       <translation>Dodaje materiał ze wzmocnioną matrycą taki jak beton</translation>
     </message>
@@ -419,12 +419,12 @@
   <context>
     <name>FEM_MaterialSolid</name>
     <message>
-      <location filename="commands.py" line="637"/>
+      <location filename="../../../femcommands/commands.py" line="633"/>
       <source>Material for solid</source>
       <translation>Materiał dla bryły</translation>
     </message>
     <message>
-      <location filename="commands.py" line="642"/>
+      <location filename="../../../femcommands/commands.py" line="638"/>
       <source>Creates a FEM material for solid</source>
       <translation>Dodaje materiał dla ciała stałego</translation>
     </message>
@@ -432,12 +432,12 @@
   <context>
     <name>FEM_MeshBoundaryLayer</name>
     <message>
-      <location filename="commands.py" line="702"/>
+      <location filename="../../../femcommands/commands.py" line="698"/>
       <source>FEM mesh boundary layer</source>
       <translation>Warstwa graniczna siatki MES</translation>
     </message>
     <message>
-      <location filename="commands.py" line="706"/>
+      <location filename="../../../femcommands/commands.py" line="702"/>
       <source>Creates a FEM mesh boundary layer</source>
       <translation>Tworzy warstwę graniczną siatki MES</translation>
     </message>
@@ -445,12 +445,12 @@
   <context>
     <name>FEM_MeshClear</name>
     <message>
-      <location filename="commands.py" line="719"/>
+      <location filename="../../../femcommands/commands.py" line="715"/>
       <source>Clear FEM mesh</source>
       <translation>Wyczyść siatkę MES</translation>
     </message>
     <message>
-      <location filename="commands.py" line="723"/>
+      <location filename="../../../femcommands/commands.py" line="719"/>
       <source>Clear the Mesh of a FEM mesh object</source>
       <translation>Wyczyść Siatkę obiektu siatki MES</translation>
     </message>
@@ -458,7 +458,7 @@
   <context>
     <name>FEM_MeshDisplayInfo</name>
     <message>
-      <location filename="commands.py" line="748"/>
+      <location filename="../../../femcommands/commands.py" line="744"/>
       <source>Display FEM mesh info</source>
       <translation>Wyświetl informacje o siatce MES</translation>
     </message>
@@ -466,12 +466,12 @@
   <context>
     <name>FEM_MeshGmshFromShape</name>
     <message>
-      <location filename="commands.py" line="773"/>
+      <location filename="../../../femcommands/commands.py" line="769"/>
       <source>FEM mesh from shape by Gmsh</source>
       <translation>Siatka MES z kształtu przy pomocy generatora Gmsh</translation>
     </message>
     <message>
-      <location filename="commands.py" line="777"/>
+      <location filename="../../../femcommands/commands.py" line="773"/>
       <source>Create a FEM mesh from a shape by Gmsh mesher</source>
       <translation>Tworzy siatkę MES z kształtu przez generator siatki Gmsh</translation>
     </message>
@@ -479,12 +479,12 @@
   <context>
     <name>FEM_MeshGroup</name>
     <message>
-      <location filename="commands.py" line="818"/>
+      <location filename="../../../femcommands/commands.py" line="814"/>
       <source>FEM mesh group</source>
       <translation>Grupa siatki MES</translation>
     </message>
     <message>
-      <location filename="commands.py" line="822"/>
+      <location filename="../../../femcommands/commands.py" line="818"/>
       <source>Creates a FEM mesh group</source>
       <translation>Tworzy grupę siatki MES</translation>
     </message>
@@ -492,12 +492,12 @@
   <context>
     <name>FEM_MeshNetgenFromShape</name>
     <message>
-      <location filename="commands.py" line="835"/>
+      <location filename="../../../femcommands/commands.py" line="831"/>
       <source>FEM mesh from shape by Netgen</source>
       <translation>Siatka MES z kształtu przy pomocy generatora Netgen</translation>
     </message>
     <message>
-      <location filename="commands.py" line="839"/>
+      <location filename="../../../femcommands/commands.py" line="835"/>
       <source>Create a FEM mesh from a solid or face shape by Netgen internal mesher</source>
       <translation>Tworzy siatkę MES na bazie bryły lub powierzchni przy pomocy generatora Netgen</translation>
     </message>
@@ -505,12 +505,12 @@
   <context>
     <name>FEM_MeshRegion</name>
     <message>
-      <location filename="commands.py" line="880"/>
+      <location filename="../../../femcommands/commands.py" line="876"/>
       <source>FEM mesh region</source>
       <translation>Obszar siatki MES</translation>
     </message>
     <message>
-      <location filename="commands.py" line="884"/>
+      <location filename="../../../femcommands/commands.py" line="880"/>
       <source>Creates a FEM mesh region</source>
       <translation>Tworzy obszar siatki MES</translation>
     </message>
@@ -518,12 +518,12 @@
   <context>
     <name>FEM_ResultShow</name>
     <message>
-      <location filename="commands.py" line="897"/>
+      <location filename="../../../femcommands/commands.py" line="893"/>
       <source>Show result</source>
       <translation>Pokaż wynik</translation>
     </message>
     <message>
-      <location filename="commands.py" line="902"/>
+      <location filename="../../../femcommands/commands.py" line="898"/>
       <source>Shows and visualizes selected result data</source>
       <translation>Pokazuje i wizualizuje wybrany wynik</translation>
     </message>
@@ -531,12 +531,12 @@
   <context>
     <name>FEM_ResultsPurge</name>
     <message>
-      <location filename="commands.py" line="917"/>
+      <location filename="../../../femcommands/commands.py" line="913"/>
       <source>Purge results</source>
       <translation>Usuń wyniki</translation>
     </message>
     <message>
-      <location filename="commands.py" line="922"/>
+      <location filename="../../../femcommands/commands.py" line="918"/>
       <source>Purges all results from active analysis</source>
       <translation>Usuwa wyniki z aktywnej analizy</translation>
     </message>
@@ -544,12 +544,12 @@
   <context>
     <name>FEM_SolverCalculix</name>
     <message>
-      <location filename="commands.py" line="980"/>
+      <location filename="../../../femcommands/commands.py" line="976"/>
       <source>Solver CalculiX (new framework)</source>
       <translation>Solver CalculiX (nowa struktura)</translation>
     </message>
     <message>
-      <location filename="commands.py" line="985"/>
+      <location filename="../../../femcommands/commands.py" line="981"/>
       <source>Creates a FEM solver CalculiX new framework (less result error handling)</source>
       <translation>Dodaje solver CalculiX z nową strukturą (mniejsza obsługa błędów wyników)</translation>
     </message>
@@ -557,12 +557,12 @@
   <context>
     <name>FEM_SolverCalculixCxxtools</name>
     <message>
-      <location filename="commands.py" line="939"/>
+      <location filename="../../../femcommands/commands.py" line="935"/>
       <source>Solver CalculiX Standard</source>
       <translation>Standardowy solver CalculiX</translation>
     </message>
     <message>
-      <location filename="commands.py" line="944"/>
+      <location filename="../../../femcommands/commands.py" line="940"/>
       <source>Creates a standard FEM solver CalculiX with ccx tools</source>
       <translation>Tworzy standardowy solver MES CalculiX korzystając z narzędzi ccx</translation>
     </message>
@@ -570,12 +570,12 @@
   <context>
     <name>FEM_SolverControl</name>
     <message>
-      <location filename="commands.py" line="999"/>
+      <location filename="../../../femcommands/commands.py" line="995"/>
       <source>Solver job control</source>
       <translation>Uruchom kontrolę pracy solvera</translation>
     </message>
     <message>
-      <location filename="commands.py" line="1004"/>
+      <location filename="../../../femcommands/commands.py" line="1000"/>
       <source>Changes solver attributes and runs the calculations for the selected solver</source>
       <translation>Zmienia atrybuty solvera i uruchamia obliczenia dla wybranego solvera</translation>
     </message>
@@ -583,12 +583,12 @@
   <context>
     <name>FEM_SolverElmer</name>
     <message>
-      <location filename="commands.py" line="1016"/>
+      <location filename="../../../femcommands/commands.py" line="1015"/>
       <source>Solver Elmer</source>
       <translation type="unfinished">Solver Elmer</translation>
     </message>
     <message>
-      <location filename="commands.py" line="1021"/>
+      <location filename="../../../femcommands/commands.py" line="1017"/>
       <source>Creates a FEM solver Elmer</source>
       <translation>Dodaje solver MES Elmer</translation>
     </message>
@@ -596,12 +596,12 @@
   <context>
     <name>FEM_SolverMystran</name>
     <message>
-      <location filename="commands.py" line="1032"/>
+      <location filename="../../../femcommands/commands.py" line="1031"/>
       <source>Solver Mystran</source>
       <translation type="unfinished">Solver Mystran</translation>
     </message>
     <message>
-      <location filename="commands.py" line="1034"/>
+      <location filename="../../../femcommands/commands.py" line="1033"/>
       <source>Creates a FEM solver Mystran</source>
       <translation>Dodaje solver MES Mystran</translation>
     </message>
@@ -609,12 +609,12 @@
   <context>
     <name>FEM_SolverRun</name>
     <message>
-      <location filename="commands.py" line="1044"/>
+      <location filename="../../../femcommands/commands.py" line="1043"/>
       <source>Run solver calculations</source>
       <translation>Uruchom obliczenia solvera</translation>
     </message>
     <message>
-      <location filename="commands.py" line="1049"/>
+      <location filename="../../../femcommands/commands.py" line="1045"/>
       <source>Runs the calculations for the selected solver</source>
       <translation>Uruchamia obliczenia dla wybranego solvera</translation>
     </message>
@@ -622,12 +622,12 @@
   <context>
     <name>FEM_SolverZ88</name>
     <message>
-      <location filename="commands.py" line="1064"/>
+      <location filename="../../../femcommands/commands.py" line="1063"/>
       <source>Solver Z88</source>
       <translation type="unfinished">Solver Z88</translation>
     </message>
     <message>
-      <location filename="commands.py" line="1066"/>
+      <location filename="../../../femcommands/commands.py" line="1065"/>
       <source>Creates a FEM solver Z88</source>
       <translation>Tworzy analizę MES w CalculiX</translation>
     </message>
@@ -635,32 +635,32 @@
   <context>
     <name>GeometryElementsSelection</name>
     <message>
-      <location filename="selection_widgets.py" line="273"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="272"/>
       <source>Geometry reference selector for a</source>
       <translation>Określenie odniesienia do geometrii dla</translation>
     </message>
     <message>
-      <location filename="selection_widgets.py" line="276"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="276"/>
       <source>Add</source>
       <translation>Dodaj</translation>
     </message>
     <message>
-      <location filename="selection_widgets.py" line="283"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="280"/>
       <source>Click on &quot;Add&quot; and select geometric elements to add them to the list.{}The following geometry elements are allowed to select: {}{}{}</source>
       <translation type="unfinished">Click on &quot;Add&quot; and select geometric elements to add them to the list.{}The following geometry elements are allowed to select: {}{}{}</translation>
     </message>
     <message>
-      <location filename="selection_widgets.py" line="286"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="285"/>
       <source>{}If no geometry is added to the list, all remaining ones are used.</source>
       <translation>{}Jeśli żadna geometria nie zostanie dodana do listy, wszystkie pozostałe zostaną użyte.</translation>
     </message>
     <message>
-      <location filename="selection_widgets.py" line="300"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="300"/>
       <source>Selection mode</source>
       <translation>Tryb zaznaczania</translation>
     </message>
     <message>
-      <location filename="selection_widgets.py" line="302"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="302"/>
       <source>Solid</source>
       <translation>Bryła</translation>
     </message>
@@ -668,12 +668,12 @@
   <context>
     <name>SolidSelector</name>
     <message>
-      <location filename="selection_widgets.py" line="151"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="151"/>
       <source>Select Solids</source>
       <translation>Wybierz bryły</translation>
     </message>
     <message>
-      <location filename="selection_widgets.py" line="155"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="152"/>
       <source>Select elements part of the solid that shall be added to the list. To add the solid click &quot;Add&quot;.</source>
       <translation type="unfinished">Select elements part of the solid that shall be added to the list. To add the solid click &quot;Add&quot;.</translation>
     </message>
@@ -681,12 +681,12 @@
   <context>
     <name>_Selector</name>
     <message>
-      <location filename="selection_widgets.py" line="52"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="52"/>
       <source>Add</source>
       <translation>Dodaj</translation>
     </message>
     <message>
-      <location filename="selection_widgets.py" line="53"/>
+      <location filename="../../../femguiutils/selection_widgets.py" line="53"/>
       <source>Remove</source>
       <translation>Skasuj</translation>
     </message>

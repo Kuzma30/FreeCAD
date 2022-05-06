@@ -3674,7 +3674,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>This is the current startup module, and must be autoloaded. See Preferences/General/Autoload to change.</source>
-      <translation>Це поточний модуль запуску, який потрібно завантажити автоматично. Див. Параметри/Загальні/Автозавантаження, щоб змінити.</translation>
+      <translation>Це поточний модуль запуску, який потрібно завантажити автоматично. Для зміни див. Налаштування/Загальні/Автозавантаження.</translation>
     </message>
     <message>
       <source>Loaded</source>

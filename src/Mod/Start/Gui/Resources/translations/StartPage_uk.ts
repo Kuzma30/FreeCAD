@@ -36,7 +36,7 @@
     <message>
       <location filename="TranslationTexts.py" line="48"/>
       <source>Adjust the number of recent files to be shown here in menu Edit -&gt; Preferences -&gt; General -&gt; Size of recent file list</source>
-      <translation>Налаштувати кількість останніх файлів, які будуть показані тут, можна в меню Правка -&gt; Налаштування -&gt; Загальне -&gt; Розмір списку останніх файлів</translation>
+      <translation>Налаштувати кількість останніх файлів, які будуть показані тут, можна в меню Правка -&gt; Налаштування -&gt; Загальні -&gt; Розмір списку останніх файлів</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="49"/>
@@ -56,7 +56,7 @@
     <message>
       <location filename="TranslationTexts.py" line="52"/>
       <source>This section contains documentation useful for FreeCAD users in general: a list of all the workbenches, detailed instructions on how to install and use the FreeCAD application, tutorials, and all you need to get started.</source>
-      <translation>Цей розділ містить документацію, корисну для користувачів FreeCAD загалом: перелік усіх робочих столів, детальні інструкції для встановлення та використання додатку FreeCAD, навчальні посібники та все, що вам потрібно для початку.</translation>
+      <translation>Цей розділ містить документацію, корисну для користувачів FreeCAD загалом: перелік усіх робочих середовищ, детальні інструкції для встановлення та використання додатку FreeCAD, навчальні посібники та все, що вам потрібно для початку.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="53"/>
@@ -81,17 +81,17 @@
     <message>
       <location filename="TranslationTexts.py" line="57"/>
       <source>Manual</source>
-      <translation>Керівництво</translation>
+      <translation>Посібник</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="58"/>
       <source>The FreeCAD manual is another, more linear way to present the information contained in this wiki. It is made to be read like a book, and will gently introduce you to many other pages from the hubs above. &lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;e-book versions&lt;/a&gt; are also available.</source>
-      <translation type="unfinished">The FreeCAD manual is another, more linear way to present the information contained in this wiki. It is made to be read like a book, and will gently introduce you to many other pages from the hubs above. &lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;e-book versions&lt;/a&gt; are also available.</translation>
+      <translation>Посібник із FreeCAD - це інший, більш лінійний спосіб представлення інформації з вікі. Він створений для читання як книга, та поступово познайомить вас з багатьма іншими сторінками з вищезгаданих вузлів. Також доступний у форматі &lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;електронної книги&lt;/a&gt;.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="59"/>
       <source>Workbenches documentation</source>
-      <translation>Документація робочих просторів</translation>
+      <translation>Документація робочих середовищ</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="60"/>

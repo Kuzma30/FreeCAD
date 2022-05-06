@@ -5515,7 +5515,7 @@ This is done by analyzing the sketch geometries and constraints</source>
       <location filename="../../CommandCreateGeo.cpp" line="5509"/>
       <location filename="../../CommandCreateGeo.cpp" line="5510"/>
       <source>Create a circle by 3 rim points</source>
-      <translation>Створити коло за трьома точками</translation>
+      <translation>Створює коло за трьома точками</translation>
     </message>
   </context>
   <context>

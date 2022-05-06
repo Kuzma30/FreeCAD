@@ -7864,7 +7864,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Change the draw style of the objects</source>
-      <translation type="unfinished">Change the draw style of the objects</translation>
+      <translation>Змінити стиль малювання об'єктів</translation>
     </message>
   </context>
   <context>
@@ -7886,7 +7886,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Toggles the selected object&apos;s edit mode</source>
-      <translation type="unfinished">Toggles the selected object&apos;s edit mode</translation>
+      <translation>Змінити режим редагування виділеного об'єкта</translation>
     </message>
     <message>
       <source>Activates or Deactivates the selected object&apos;s edit mode</source>
@@ -7909,7 +7909,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select the objects to export before choosing Export.</source>
-      <translation type="unfinished">Select the objects to export before choosing Export.</translation>
+      <translation>Спочатку виберіть об'єкти для Експорту.</translation>
     </message>
   </context>
   <context>

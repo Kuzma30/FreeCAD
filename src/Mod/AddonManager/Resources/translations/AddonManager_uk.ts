@@ -61,7 +61,7 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="1206"/>
       <source>Download complete. Unzipping file...</source>
-      <translation type="unfinished">Download complete. Unzipping file...</translation>
+      <translation>Завантаження завершено. Розпакування файлу...</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1483"/>
@@ -331,11 +331,11 @@
     <message numerus="yes">
       <location filename="../../AddonManager.py" line="826"/>
       <source>Apply {} update(s)</source>
-      <translation type="unfinished">
-        <numerusform>Apply {} update(s)</numerusform>
-        <numerusform>Apply {} update(s)</numerusform>
-        <numerusform>Apply {} update(s)</numerusform>
-        <numerusform>Apply {} update(s)</numerusform>
+      <translation>
+        <numerusform>Застосувати {} оновлення</numerusform>
+        <numerusform>Застосувати {} оновлення</numerusform>
+        <numerusform>Застосувати {} оновлень</numerusform>
+        <numerusform>Застосувати {} оновлення</numerusform>
       </translation>
     </message>
     <message>
@@ -466,11 +466,11 @@
     <message numerus="yes">
       <location filename="../../package_list.py" line="359"/>
       <source>Maintainers:</source>
-      <translation type="unfinished">
-        <numerusform>Maintainers:</numerusform>
-        <numerusform>Maintainers:</numerusform>
-        <numerusform>Maintainers:</numerusform>
-        <numerusform>Maintainers:</numerusform>
+      <translation>
+        <numerusform>Розробник:</numerusform>
+        <numerusform>Розробників:</numerusform>
+        <numerusform>Розробників:</numerusform>
+        <numerusform>Розробники:</numerusform>
       </translation>
     </message>
     <message>

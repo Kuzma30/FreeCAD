@@ -2833,7 +2833,7 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Backface pass</source>
-      <translation type="unfinished">Backface pass</translation>
+      <translation>Тіньовий прохід</translation>
     </message>
     <message>
       <source>Size of vertices in the Sketcher workbench</source>
@@ -3141,7 +3141,7 @@ will be displayed with transparency</source>
     </message>
     <message>
       <source>Number of labels besides the color bar</source>
-      <translation type="unfinished">Number of labels besides the color bar</translation>
+      <translation>Кількість міток окрім кольорової полоси</translation>
     </message>
     <message>
       <source>Number of decimals for labels
@@ -4022,12 +4022,12 @@ Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</source>
     <message>
       <source>Words will be wrapped when they exceed available
 horizontal space in Python console</source>
-      <translation type="unfinished">Words will be wrapped when they exceed available
-horizontal space in Python console</translation>
+      <translation>Слова будуть перенесені при перевищенні максимального розміру
+строки в консолі Python</translation>
     </message>
     <message>
       <source>Enable word wrap</source>
-      <translation type="unfinished">Enable word wrap</translation>
+      <translation>Ввімкнути перенесення слів</translation>
     </message>
     <message>
       <source>The cursor shape will be a block</source>
@@ -7393,15 +7393,15 @@ underscore, and must not start with a digit.</source>
     </message>
     <message>
       <source>There are grouped transactions in the following documents with other preceding transactions</source>
-      <translation type="unfinished">There are grouped transactions in the following documents with other preceding transactions</translation>
+      <translation>В наступних документах відбувається групування операцій з іншими попередніми операціями</translation>
     </message>
     <message>
       <source>Choose &apos;Yes&apos; to roll back all preceding transactions.
 Choose &apos;No&apos; to roll back in the active document only.
 Choose &apos;Abort&apos; to abort</source>
-      <translation type="unfinished">Choose &apos;Yes&apos; to roll back all preceding transactions.
-Choose &apos;No&apos; to roll back in the active document only.
-Choose &apos;Abort&apos; to abort</translation>
+      <translation>Виберіть &apos;Так&apos; для повернення всіх попередніх транзакцій.
+Виберіть &apos;Ні&apos; щоб повернути транзакції тільки в активному документі.
+Виберіть &apos;Скасувати&apos; для скасування</translation>
     </message>
     <message>
       <source>Do you want to save your changes to document before closing?</source>
@@ -7509,11 +7509,11 @@ Would you like to save the file with a different name?</source>
     </message>
     <message>
       <source>Select which object to copy or exclude when configuration changes.All external linked object are excluded by default.</source>
-      <translation type="unfinished">Select which object to copy or exclude when configuration changes.All external linked object are excluded by default.</translation>
+      <translation>Виберіть, який об’єкт копіювати чи пропустити при зміні конфігурації. Усі зовнішні зв’язані об’єкти пропускаються за замовчуванням.</translation>
     </message>
     <message>
       <source>Please select which objects to copy when the configuration is changed</source>
-      <translation type="unfinished">Please select which objects to copy when the configuration is changed</translation>
+      <translation>Будь ласка, виберіть, які об'єкти слід скопіювати при зміні конфігурації</translation>
     </message>
     <message>
       <source>Apply to all</source>
@@ -7522,8 +7522,9 @@ Would you like to save the file with a different name?</source>
     <message>
       <source>Apply the setting to all links. Or, uncheck this
 option to apply only to this link.</source>
-      <translation type="unfinished">Apply the setting to all links. Or, uncheck this
-option to apply only to this link.</translation>
+      <translation>Застосувати налаштування до всіх посилань. 
+Або зніміть прапорець, щоб застосувати лише 
+до цього посилання.</translation>
     </message>
     <message>
       <source>Copy on change</source>
@@ -7578,7 +7579,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Transform at the origin of the placement</source>
-      <translation type="unfinished">Transform at the origin of the placement</translation>
+      <translation>Перетворити в місці розташування</translation>
     </message>
   </context>
   <context>

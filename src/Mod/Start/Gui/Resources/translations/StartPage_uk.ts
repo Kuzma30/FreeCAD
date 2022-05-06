@@ -96,7 +96,7 @@
     <message>
       <location filename="TranslationTexts.py" line="60"/>
       <source>These are the help pages of all the workbenches currently installed on this computer.</source>
-      <translation>Це довідкові сторінки всіх верстатів, встановлених на цьому комп’ютері.</translation>
+      <translation>Це сторінки допомоги всіх робочих середовищ, встановлених на цьому комп’ютері.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="61"/>
@@ -106,17 +106,17 @@
     <message>
       <location filename="TranslationTexts.py" line="62"/>
       <source>The &lt;a href=&quot;http://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt; is a great place to get help from other FreeCAD users and developers. The forum has many sections for different types of issues and discussion subjects. If in doubt, post in the more general &lt;a href=&quot;https://forum.freecadweb.org/viewforum.php?f=3&quot;&gt;Help on using FreeCAD&lt;/a&gt; section.</source>
-      <translation type="unfinished">The &lt;a href=&quot;http://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt; is a great place to get help from other FreeCAD users and developers. The forum has many sections for different types of issues and discussion subjects. If in doubt, post in the more general &lt;a href=&quot;https://forum.freecadweb.org/viewforum.php?f=3&quot;&gt;Help on using FreeCAD&lt;/a&gt; section.</translation>
+      <translation>&lt;a href=&quot;http://forum.freecadweb.org&quot;&gt;Форум FreeCAD&lt;/a&gt; є чудовим місцем, щоб отримати допомогу від інших користувачів FreeCAD та розробників. Форум має багато розділів з різних питань та тем, що обговорюються. Якщо маєте сумніви, напишіть у більш загальний розділ &lt;a href=&quot;https://forum.freecadweb.org/viewforum.php?f=3&quot;&gt;Допомога у використанні FreeCAD&lt;/a&gt;.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="63"/>
       <source>If it is the first time you are posting on the forum, be sure to &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;read the guidelines&lt;/a&gt; first!</source>
-      <translation type="unfinished">If it is the first time you are posting on the forum, be sure to &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;read the guidelines&lt;/a&gt; first!</translation>
+      <translation>Якщо це буде ваш перший допис на форумі, спочатку обов'язково &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;прочитайте рекомендації&lt;/a&gt;.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="64"/>
       <source>FreeCAD also maintains a public &lt;a href=&quot;https://www.freecadweb.org/tracker&quot;&gt;bug tracker&lt;/a&gt; where anybody can submit bugs and propose new features. To avoid causing extra work and give the best chances to see your bug solved, make sure you read the &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=5236&quot;&gt;bug submission guide&lt;/a&gt; before posting.</source>
-      <translation type="unfinished">FreeCAD also maintains a public &lt;a href=&quot;https://www.freecadweb.org/tracker&quot;&gt;bug tracker&lt;/a&gt; where anybody can submit bugs and propose new features. To avoid causing extra work and give the best chances to see your bug solved, make sure you read the &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=5236&quot;&gt;bug submission guide&lt;/a&gt; before posting.</translation>
+      <translation>FreeCAD також підтримує публічний &lt;a href=&quot;https://www.freecadweb.org/tracker&quot;&gt; відстежувач помилок&lt;/a&gt;, де будь-кто може надсилати помилки та пропонувати нові функції. Щоб уникнути зайвої роботи та мати найкращі шанси побачити помилку вирішеною, обов’язково прочитайте &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=5236&quot;&gt;посібник з усунення помилок&lt;/a&gt; перед публікацією.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="65"/>
@@ -131,27 +131,27 @@
     <message>
       <location filename="TranslationTexts.py" line="67"/>
       <source>If not bundled with your FreeCAD version, install the FreeCAD documentation package to get documentation hubs, workbench help and individual command documentation without an internet connection.</source>
-      <translation>Якщо не сходиться з вашою версією FreeCAD, встановіть пакет документації FreeCAD, щоб отримати центри документації, довідку по робочих питаннях та окрему командну документацію без підключення до Інтернету.</translation>
+      <translation>Встановіть пакет документації FreeCAD (якщо він не входить до комплекту постачання вашої версії FreeCAD), щоб отримати пакети документації, довідку з робочих середовищ та документацію за окремими командами без підключення до Інтернету.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="68"/>
       <source>Cannot fetch information from GitHub. &lt;a href=&quot;EnableDownload.py&quot;&gt;Authorize FreeCAD to access the internet&lt;/a&gt; and reload the Start page.</source>
-      <translation type="unfinished">Cannot fetch information from GitHub. &lt;a href=&quot;EnableDownload.py&quot;&gt;Authorize FreeCAD to access the internet&lt;/a&gt; and reload the Start page.</translation>
+      <translation>Не вдається отримати інформацію з GitHub. &lt;a href=&quot;EnableDownload.py&quot;&gt; Авторизуйте FreeCAD з доступом до Інтернету &lt;/a&gt;та перезавантажте стартову сторінку.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="69"/>
       <source>Recent commits</source>
-      <translation>Останні коміти</translation>
+      <translation>Останні комміти</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="70"/>
       <source>Below are the latest changes added to the &lt;a href=&quot;http://github.com/FreeCAD/FreeCAD/&quot;&gt;FreeCAD source code&lt;/a&gt;. These changes might not reflect yet in the FreeCAD version that you are currently running. Check the &lt;a href=&quot;https://www.freecadweb.org/wiki/Downloads&quot;&gt;available options&lt;/a&gt; if you wish to obtain a development version.</source>
-      <translation type="unfinished">Below are the latest changes added to the &lt;a href=&quot;http://github.com/FreeCAD/FreeCAD/&quot;&gt;FreeCAD source code&lt;/a&gt;. These changes might not reflect yet in the FreeCAD version that you are currently running. Check the &lt;a href=&quot;https://www.freecadweb.org/wiki/Downloads&quot;&gt;available options&lt;/a&gt; if you wish to obtain a development version.</translation>
+      <translation>Нижче наведено останні зміни, додані до &lt;a href=&quot;http://github.com/FreeCAD/FreeCAD/&quot;&gt; FreeCAD-коду&lt;/a&gt;. Ці зміни можуть поки що не відображатися у версії FreeCAD, яку ви зараз використовуєте. Перевірте &lt;a href=&quot;https://www.freecadweb.org/wiki/Downloads&quot;&gt;доступні варіанти&lt;/a&gt;, якщо хочете отримати версію для розробки.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="71"/>
       <source>See all commits on github</source>
-      <translation>Прегляд комітів на GitHub</translation>
+      <translation>Переглянути всі комміти на GitHub</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="72"/>
@@ -186,7 +186,7 @@
     <message>
       <location filename="TranslationTexts.py" line="78"/>
       <source>The latest posts on the &lt;a href=&quot;https://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt;:</source>
-      <translation type="unfinished">The latest posts on the &lt;a href=&quot;https://forum.freecadweb.org&quot;&gt;FreeCAD forum&lt;/a&gt;:</translation>
+      <translation>Останні дописи на &lt;a href=&quot;https://forum.freecadweb.org&quot;&gt;форумі FreeCAD&lt;/a&gt;:</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="79"/>
@@ -237,7 +237,7 @@
     <message>
       <location filename="../../Command.cpp" line="47"/>
       <source>Displays the start page in a browser view</source>
-      <translation type="unfinished">Displays the start page in a browser view</translation>
+      <translation>Показ початкової сторінки у виді браузера</translation>
     </message>
   </context>
   <context>
@@ -285,7 +285,7 @@
     <message>
       <location filename="../../DlgStartPreferences.ui" line="91"/>
       <source>If this is checked, the latest posts from the FreeCAD forum will be displayed on the Activity tab</source>
-      <translation type="unfinished">If this is checked, the latest posts from the FreeCAD forum will be displayed on the Activity tab</translation>
+      <translation>Якщо позначено цей пункт, останні повідомлення з форуму FreeCAD будуть показані на вкладці Активність</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="110"/>
@@ -297,22 +297,22 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="127"/>
       <source>Show notepad</source>
-      <translation type="unfinished">Show notepad</translation>
+      <translation>Показати нотатник</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="134"/>
       <source>Shows a notepad next to the file thumbnails, where you can keep notes across sessions</source>
-      <translation type="unfinished">Shows a notepad next to the file thumbnails, where you can keep notes across sessions</translation>
+      <translation>Показує нотатки біля мініатюр файлів, що дозволяє зберігати нотатки в різних сеансах</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="153"/>
       <source>Show tips</source>
-      <translation type="unfinished">Show tips</translation>
+      <translation>Показати Підказки</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="163"/>
       <source>Displays help tips in the Start workbench Documents tab</source>
-      <translation type="unfinished">Displays help tips in the Start workbench Documents tab</translation>
+      <translation>Показує підказки на вкладці Документи робочого середовища Start</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="185"/>
@@ -322,7 +322,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="197"/>
       <source>The background of the main start page area</source>
-      <translation type="unfinished">The background of the main start page area</translation>
+      <translation>Тло головної області стартової сторінки</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="217"/>
@@ -482,17 +482,17 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="640"/>
       <source>Close start page after loading</source>
-      <translation type="unfinished">Close start page after loading</translation>
+      <translation>Закрити стартову сторінку після завантаження</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="647"/>
       <source>Close and switch on opening file</source>
-      <translation type="unfinished">Close and switch on opening file</translation>
+      <translation>Закрити та перейти до відкриття файлу</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="654"/>
       <source>If application is started by opening a file, apply the two settings above</source>
-      <translation type="unfinished">If application is started by opening a file, apply the two settings above</translation>
+      <translation>Якщо програма запускається відкриттям файлу, застосуйте два налаштування вище</translation>
     </message>
   </context>
 </TS>

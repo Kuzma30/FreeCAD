@@ -347,7 +347,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="279"/>
       <source>The color of the version text</source>
-      <translation type="unfinished">The color of the version text</translation>
+      <translation>Колір тексту назви версії</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="299"/>
@@ -357,12 +357,12 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="306"/>
       <source>An optional image to display as background</source>
-      <translation type="unfinished">An optional image to display as background</translation>
+      <translation>Необов'язкове зображення для показу як фон</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="319"/>
       <source>If this is checked and a style sheet is specified in General preferences, it will be used and override the colors below</source>
-      <translation type="unfinished">If this is checked and a style sheet is specified in General preferences, it will be used and override the colors below</translation>
+      <translation>Якщо цей прапорець встановлений і таблиця стилів вказана у загальних налаштуваннях, вона буде використана та скасує кольори, наведені нижче</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="338"/>
@@ -372,7 +372,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="351"/>
       <source>The color of the text on the main pages</source>
-      <translation type="unfinished">The color of the text on the main pages</translation>
+      <translation>Колір тексту на основних сторінках</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="371"/>
@@ -392,17 +392,17 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="417"/>
       <source>The background color of the boxes inside the pages</source>
-      <translation type="unfinished">The background color of the boxes inside the pages</translation>
+      <translation>Колір тла блоків на сторінках</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="437"/>
       <source>Box background color</source>
-      <translation type="unfinished">Box background color</translation>
+      <translation>Колір тла блоків</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="450"/>
       <source>The background color behind the panels</source>
-      <translation type="unfinished">The background color behind the panels</translation>
+      <translation>Колір тла позаду панелей</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="479"/>
@@ -432,17 +432,17 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="532"/>
       <source>The font family to use on the start page. Can be a font name or a comma-separated series of fallback fonts</source>
-      <translation type="unfinished">The font family to use on the start page. Can be a font name or a comma-separated series of fallback fonts</translation>
+      <translation>Сімейство шрифтів, яке використовується на стартовій сторінці. Може бути ім'ям шрифту або переліком запасних шрифтів, розділених комами</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="538"/>
       <source>Arial,Helvetica,sans</source>
-      <translation type="unfinished">Arial,Helvetica,sans</translation>
+      <translation>Arial,Helvetica,sans</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="551"/>
       <source>The base font size to use for all texts of the Start page</source>
-      <translation type="unfinished">The base font size to use for all texts of the Start page</translation>
+      <translation>Базовий розмір шрифту для всіх текстів Стартової сторінки</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="554"/>
@@ -452,12 +452,12 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="572"/>
       <source>Use gradient for New File icon</source>
-      <translation type="unfinished">Use gradient for New File icon</translation>
+      <translation>Використовувати градієнт для значка нового файлу</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="579"/>
       <source>If this is selected, the &apos;New File&apos; icon shows a gradient icon instead of the normal icon</source>
-      <translation type="unfinished">If this is selected, the &apos;New File&apos; icon shows a gradient icon instead of the normal icon</translation>
+      <translation>Якщо ця опція вибрана, значок &apos;Новий Файл&apos; показує градієнт замість звичайної піктограми</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="601"/>
@@ -467,17 +467,17 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="607"/>
       <source>Choose which workbench to switch to after the program launches</source>
-      <translation type="unfinished">Choose which workbench to switch to after the program launches</translation>
+      <translation>Дозволяє обрати робоче середовище, яке буде активоване після запуску програми</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="614"/>
       <source>If checked, will automatically close the Start page when FreeCAD launches</source>
-      <translation type="unfinished">If checked, will automatically close the Start page when FreeCAD launches</translation>
+      <translation>Якщо прапорець встановлений, при запуску FreeCAD автоматично закриє Стартову сторінку</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="633"/>
       <source>Switch workbench after loading</source>
-      <translation type="unfinished">Switch workbench after loading</translation>
+      <translation>Запустити робоче середовище після завантаження</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="640"/>

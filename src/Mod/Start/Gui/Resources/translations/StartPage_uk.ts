@@ -342,7 +342,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="266"/>
       <source>Background color down gradient</source>
-      <translation type="unfinished">Background color down gradient</translation>
+      <translation>Градієнт вниз кольору тла</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="279"/>
@@ -407,7 +407,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="479"/>
       <source>The down gradient for the background color (currently unsupported)</source>
-      <translation type="unfinished">The down gradient for the background color (currently unsupported)</translation>
+      <translation>Встановлює градієнт вниз для кольору тла (нині не підтримується)</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="502"/>

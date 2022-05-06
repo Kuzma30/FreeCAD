@@ -223,7 +223,7 @@
     </message>
     <message>
       <source>Standard</source>
-      <translation type="unfinished">Standard</translation>
+      <translation>Стандартний</translation>
     </message>
     <message>
       <source>Macros</source>
@@ -239,15 +239,15 @@
     </message>
     <message>
       <source>Standard-Test</source>
-      <translation type="unfinished">Standard-Test</translation>
+      <translation>Стандартний-Тест</translation>
     </message>
     <message>
       <source>Standard-View</source>
-      <translation type="unfinished">Standard-View</translation>
+      <translation>Стандартний-Вид</translation>
     </message>
     <message>
       <source>TreeView</source>
-      <translation type="unfinished">TreeView</translation>
+      <translation>Ієрархія</translation>
     </message>
     <message>
       <source>Measure</source>
@@ -1396,11 +1396,11 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Neon GNC</source>
-      <translation type="unfinished">Neon GNC</translation>
+      <translation>Neon GNC</translation>
     </message>
     <message>
       <source>Neon PHC</source>
-      <translation type="unfinished">Neon PHC</translation>
+      <translation>Neon PHC</translation>
     </message>
     <message>
       <source>Obsidian</source>
@@ -2351,7 +2351,7 @@ Specify another directory, please.</source>
     </message>
     <message>
       <source>UUID:</source>
-      <translation type="unfinished">UUID:</translation>
+      <translation>UUID:</translation>
     </message>
     <message>
       <source>License information:</source>
@@ -2833,7 +2833,7 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Backface pass</source>
-      <translation type="unfinished">Backface pass</translation>
+      <translation>Тіньовий прохід</translation>
     </message>
     <message>
       <source>Size of vertices in the Sketcher workbench</source>
@@ -3141,7 +3141,7 @@ will be displayed with transparency</source>
     </message>
     <message>
       <source>Number of labels besides the color bar</source>
-      <translation type="unfinished">Number of labels besides the color bar</translation>
+      <translation>Кількість міток окрім кольорової полоси</translation>
     </message>
     <message>
       <source>Number of decimals for labels
@@ -3247,7 +3247,7 @@ besides the color bar</source>
     </message>
     <message>
       <source>FreeArt</source>
-      <translation type="unfinished">FreeArt</translation>
+      <translation>FreeArt</translation>
     </message>
     <message>
       <source>Other</source>
@@ -3906,9 +3906,9 @@ The value is the diameter of the sphere to fit on the screen.</source>
       <source>Prevents view tilting when pinch-zooming.
 Affects only gesture navigation style.
 Mouse tilting is not disabled by this setting.</source>
-      <translation type="unfinished">Prevents view tilting when pinch-zooming.
-Affects only gesture navigation style.
-Mouse tilting is not disabled by this setting.</translation>
+      <translation>Запобігає відхиленню виду при масштабуванні.
+Впливає лише на стиль навігації жестами.
+Нахил миші не вимикається цим параметром.</translation>
     </message>
     <message>
       <source>Disable touchscreen tilt gesture</source>
@@ -4022,12 +4022,12 @@ Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</source>
     <message>
       <source>Words will be wrapped when they exceed available
 horizontal space in Python console</source>
-      <translation type="unfinished">Words will be wrapped when they exceed available
-horizontal space in Python console</translation>
+      <translation>Слова будуть перенесені при перевищенні максимального розміру
+строки в консолі Python</translation>
     </message>
     <message>
       <source>Enable word wrap</source>
-      <translation type="unfinished">Enable word wrap</translation>
+      <translation>Ввімкнути перенесення слів</translation>
     </message>
     <message>
       <source>The cursor shape will be a block</source>
@@ -4173,7 +4173,7 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Imperial for Civil Eng (ft, ft/sec)</source>
-      <translation type="unfinished">Imperial for Civil Eng (ft, ft/sec)</translation>
+      <translation>Британська система мір для Цивільного корпусу (фут, фут/с)</translation>
     </message>
     <message>
       <source>FEM (mm, N, sec)</source>
@@ -4302,11 +4302,11 @@ horizontal space in Python console</translation>
     </message>
     <message>
       <source>Input the source value and unit</source>
-      <translation type="unfinished">Input the source value and unit</translation>
+      <translation>Введіть вихідне значення та одиницю вимірювання</translation>
     </message>
     <message>
       <source>Input here the unit for the result</source>
-      <translation type="unfinished">Input here the unit for the result</translation>
+      <translation>Введіть тут одиниці вимірювання результату</translation>
     </message>
     <message>
       <source>Result</source>
@@ -4323,8 +4323,8 @@ horizontal space in Python console</translation>
     <message>
       <source>Unit system to be used for the Quantity
 The preference system is the one set in the general preferences.</source>
-      <translation type="unfinished">Unit system to be used for the Quantity
-The preference system is the one set in the general preferences.</translation>
+      <translation>Система одиниць вимірювання, яка використовується для кількості
+Система налаштувань - та, яка встановлена ​​у загальних налаштуваннях.</translation>
     </message>
     <message>
       <source>Decimals:</source>
@@ -4332,7 +4332,7 @@ The preference system is the one set in the general preferences.</translation>
     </message>
     <message>
       <source>Decimals for the Quantity</source>
-      <translation type="unfinished">Decimals for the Quantity</translation>
+      <translation>Десяткові числа для Кількості</translation>
     </message>
     <message>
       <source>Unit category:</source>
@@ -4340,7 +4340,7 @@ The preference system is the one set in the general preferences.</translation>
     </message>
     <message>
       <source>Unit category for the Quantity</source>
-      <translation type="unfinished">Unit category for the Quantity</translation>
+      <translation>Категорія одиниць вимірювання для Кількості</translation>
     </message>
     <message>
       <source>Copy the result into the clipboard</source>
@@ -4349,8 +4349,8 @@ The preference system is the one set in the general preferences.</translation>
     <message>
       <source>List of last used calculations.
 To add a calculation press Return in the value input field</source>
-      <translation type="unfinished">List of last used calculations.
-To add a calculation press Return in the value input field</translation>
+      <translation>Список останніх використаних розрахунків.
+Щоб додати розрахунок, натисніть Return у полі введення значення</translation>
     </message>
   </context>
   <context>
@@ -4361,7 +4361,7 @@ To add a calculation press Return in the value input field</translation>
     </message>
     <message>
       <source>unknown unit:</source>
-      <translation type="unfinished">unknown unit:</translation>
+      <translation>невідома одиниця вимірювання:</translation>
     </message>
   </context>
   <context>
@@ -4384,7 +4384,7 @@ To add a calculation press Return in the value input field</translation>
     </message>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item down.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved down&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item down.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved down&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Перемістіть виділений елемент вниз.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Елемент буде переміщено вниз&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Move left</source>
@@ -4392,7 +4392,7 @@ To add a calculation press Return in the value input field</translation>
     </message>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Remove the selected workbench from enabled workbenches&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Remove the selected workbench from enabled workbenches&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Видалити виділене робоче середовище зі списку активованих&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Move right</source>
@@ -4400,7 +4400,7 @@ To add a calculation press Return in the value input field</translation>
     </message>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected workbench to enabled workbenches.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected workbench to enabled workbenches.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Додати виділене робоче середовище до списку активованих&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Sort enabled workbenches</source>
@@ -4412,7 +4412,7 @@ To add a calculation press Return in the value input field</translation>
     </message>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item up.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved up.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item up.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved up.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Перемістіть виділений елемент вгору.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Елемент буде переміщено вгору&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Add all to enabled workbenches</source>
@@ -4424,7 +4424,7 @@ To add a calculation press Return in the value input field</translation>
     </message>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Note:&lt;/span&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt; The changes become active the next time you start the application&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Note:&lt;/span&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt; The changes become active the next time you start the application&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Примітка:&lt;/span&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt; Зміни будуть активовані при наступному запуску&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
   </context>
   <context>
@@ -4494,7 +4494,7 @@ To add a calculation press Return in the value input field</translation>
     </message>
     <message>
       <source>When deleting the selected transient directory you won&apos;t be able to recover any files afterwards.</source>
-      <translation type="unfinished">When deleting the selected transient directory you won&apos;t be able to recover any files afterwards.</translation>
+      <translation>При видаленні виділених тимчасових тек, ви не зможете відновити після цього будь-які файли.</translation>
     </message>
     <message>
       <source>Are you sure you want to delete all transient directories?</source>
@@ -4508,17 +4508,17 @@ To add a calculation press Return in the value input field</translation>
       <source>Press &apos;Start Recovery&apos; to start the recovery process of the document listed below.
 
 The &apos;Status&apos; column shows whether the document could be recovered.</source>
-      <translation type="unfinished">Press &apos;Start Recovery&apos; to start the recovery process of the document listed below.
+      <translation>Натисніть 'Почати відновлення' щоб почати процес відновлення документів, що перелічені нижче.
 
-The &apos;Status&apos; column shows whether the document could be recovered.</translation>
+Колонка 'Статус' показує чи можливе відновлення документів.</translation>
     </message>
     <message>
       <source>When deleting all transient directories you won&apos;t be able to recover any files afterwards.</source>
-      <translation type="unfinished">When deleting all transient directories you won&apos;t be able to recover any files afterwards.</translation>
+      <translation>При видаленні всіх тимчасових тек, ви не зможете відновити після цього будь-які файли.</translation>
     </message>
     <message>
       <source>Transient deleted</source>
-      <translation type="unfinished">Transient deleted</translation>
+      <translation>Проміжні видалені</translation>
     </message>
   </context>
   <context>
@@ -4723,7 +4723,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>The sub-group &apos;%1&apos; already exists.</source>
-      <translation type="unfinished">The sub-group &apos;%1&apos; already exists.</translation>
+      <translation>Підгрупа &apos;%1&apos; вже існує.</translation>
     </message>
     <message>
       <source>Export parameter to file</source>
@@ -4739,7 +4739,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>Reading from &apos;%1&apos; failed.</source>
-      <translation type="unfinished">Reading from &apos;%1&apos; failed.</translation>
+      <translation>Не вдалося прочитати з &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>Do you really want to remove this parameter group?</source>
@@ -4790,7 +4790,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>The item &apos;%1&apos; already exists.</source>
-      <translation type="unfinished">The item &apos;%1&apos; already exists.</translation>
+      <translation>Елемент &apos;%1&apos; вже існує.</translation>
     </message>
   </context>
   <context>
@@ -4935,7 +4935,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>winpdb</source>
-      <translation type="unfinished">winpdb</translation>
+      <translation>winpdb</translation>
     </message>
     <message>
       <source>Password:</source>
@@ -4943,7 +4943,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>VS Code</source>
-      <translation type="unfinished">VS Code</translation>
+      <translation>VS Code</translation>
     </message>
     <message>
       <source>Address:</source>
@@ -5058,13 +5058,13 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     </message>
     <message>
       <source>&amp;Use Original Selections</source>
-      <translation type="unfinished">&amp;Use Original Selections</translation>
+      <translation>&amp;Використовувати початкові виділення</translation>
     </message>
     <message>
       <source>Ignore dependencies and proceed with objects
 originally selected prior to opening this dialog</source>
-      <translation type="unfinished">Ignore dependencies and proceed with objects
-originally selected prior to opening this dialog</translation>
+      <translation>Ігнорувати залежності та продовжити роботу з початково
+виділеними об'єктами (до відкриття діалогу)</translation>
     </message>
     <message>
       <source>Auto select depending objects</source>
@@ -5431,7 +5431,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>Pinch (place two fingers on the screen &amp;&amp; drag them apart from || towards each other) OR scroll middle mouse button OR PgUp/PgDown on keyboard.</source>
-      <translation type="unfinished">Pinch (place two fingers on the screen &amp;&amp; drag them apart from || towards each other) OR scroll middle mouse button OR PgUp/PgDown on keyboard.</translation>
+      <translation>Pinch (помістіть два пальці на екран і перетягніть їх у сторони || у напрямку один до одного) АБО прокрутіть середню кнопку миші АБО PgUp/PgDown на клавіатурі.</translation>
     </message>
   </context>
   <context>
@@ -5629,15 +5629,15 @@ Do you want to save the document now?</source>
     </message>
     <message>
       <source>Help addon needed!</source>
-      <translation type="unfinished">Help addon needed!</translation>
+      <translation>Потрібен Додаток Допомога!</translation>
     </message>
     <message>
       <source>The Help system of %1 is now handled by the &quot;Help&quot; addon. It can easily be installed via the Addons Manager</source>
-      <translation type="unfinished">The Help system of %1 is now handled by the &quot;Help&quot; addon. It can easily be installed via the Addons Manager</translation>
+      <translation>Система Допомоги %1 тепер обробляється додатком &quot;Допомога&quot;. Її можна легко встановити через Менеджер доповнень</translation>
     </message>
     <message>
       <source>Open Addon Manager</source>
-      <translation type="unfinished">Open Addon Manager</translation>
+      <translation>Відкрити менеджер додатків</translation>
     </message>
   </context>
   <context>
@@ -5742,14 +5742,14 @@ How do you want to proceed?</source>
     </message>
     <message>
       <source>Pinch (place two fingers on the screen and drag them apart from or towards each other) OR scroll middle mouse button OR press ALT + right mouse button OR PgUp/PgDown on keyboard.</source>
-      <translation type="unfinished">Pinch (place two fingers on the screen and drag them apart from or towards each other) OR scroll middle mouse button OR press ALT + right mouse button OR PgUp/PgDown on keyboard.</translation>
+      <translation>Pinch (помістіть два пальці на екран і перетягніть їх один від одного або назустріч один одному) АБО прокрутіть середню кнопку миші АБО натисніть ALT + праву кнопку миші АБО PgUp/PgDown на клавіатурі.</translation>
     </message>
   </context>
   <context>
     <name>Gui::ModifierLineEdit</name>
     <message>
       <source>Press modifier keys</source>
-      <translation type="unfinished">Press modifier keys</translation>
+      <translation>Натисніть клавіші модифікаторів</translation>
     </message>
   </context>
   <context>
@@ -5782,19 +5782,19 @@ How do you want to proceed?</source>
     <name>Gui::OpenSCADNavigationStyle</name>
     <message>
       <source>Press left mouse button</source>
-      <translation type="unfinished">Press left mouse button</translation>
+      <translation>Натисніть ліву кнопку миші</translation>
     </message>
     <message>
       <source>Press right mouse button and move mouse</source>
-      <translation type="unfinished">Press right mouse button and move mouse</translation>
+      <translation>Натисніть праву кнопку миші та перемістіть курсор миші</translation>
     </message>
     <message>
       <source>Press left mouse button and move mouse</source>
-      <translation type="unfinished">Press left mouse button and move mouse</translation>
+      <translation>Натисніть ліву кнопку миші та перемістіть курсор миші</translation>
     </message>
     <message>
       <source>Press middle mouse button or SHIFT and right mouse button</source>
-      <translation type="unfinished">Press middle mouse button or SHIFT and right mouse button</translation>
+      <translation>Натисніть середню кнопку миші або кнопку SHIFT та праву кнопку миші</translation>
     </message>
   </context>
   <context>
@@ -5892,7 +5892,7 @@ How do you want to proceed?</source>
     </message>
     <message>
       <source>Rename property group</source>
-      <translation type="unfinished">Rename property group</translation>
+      <translation>Перейменувати групу властивостей</translation>
     </message>
     <message>
       <source>Group name:</source>
@@ -6056,7 +6056,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>none</source>
-      <translation type="unfinished">none</translation>
+      <translation>нічого</translation>
     </message>
   </context>
   <context>
@@ -7353,12 +7353,11 @@ Please check the Report View for more details.</source>
     <message>
       <source>The property name or group name must only contain alpha numericals,
 underscore, and must not start with a digit.</source>
-      <translation type="unfinished">The property name or group name must only contain alpha numericals,
-underscore, and must not start with a digit.</translation>
+      <translation>Назва властивості або групи повинна містити лише буквено-цифрові символи, підкреслення, і не повинна починатися з цифри.</translation>
     </message>
     <message>
       <source>The property &apos;%1&apos; already exists in &apos;%2&apos;</source>
-      <translation type="unfinished">The property &apos;%1&apos; already exists in &apos;%2&apos;</translation>
+      <translation>Властивість &apos;%1&apos; вже існує в &apos;%2&apos;</translation>
     </message>
     <message>
       <source>Add property</source>
@@ -7366,11 +7365,11 @@ underscore, and must not start with a digit.</translation>
     </message>
     <message>
       <source>Failed to add property to &apos;%1&apos;: %2</source>
-      <translation type="unfinished">Failed to add property to &apos;%1&apos;: %2</translation>
+      <translation>Не вдалося додати властивість до &apos;%1&apos;: %2</translation>
     </message>
     <message>
       <source>Save dependent files</source>
-      <translation type="unfinished">Save dependent files</translation>
+      <translation>Зберегти залежні файли</translation>
     </message>
     <message>
       <source>The file contains external dependencies. Do you want to save the dependent files, too?</source>
@@ -7378,7 +7377,7 @@ underscore, and must not start with a digit.</translation>
     </message>
     <message>
       <source>Failed to save document</source>
-      <translation type="unfinished">Failed to save document</translation>
+      <translation>Не вдалося зберегти документ</translation>
     </message>
     <message>
       <source>Documents contains cyclic dependencies. Do you still want to save them?</source>
@@ -7394,15 +7393,15 @@ underscore, and must not start with a digit.</translation>
     </message>
     <message>
       <source>There are grouped transactions in the following documents with other preceding transactions</source>
-      <translation type="unfinished">There are grouped transactions in the following documents with other preceding transactions</translation>
+      <translation>В наступних документах відбувається групування операцій з іншими попередніми операціями</translation>
     </message>
     <message>
       <source>Choose &apos;Yes&apos; to roll back all preceding transactions.
 Choose &apos;No&apos; to roll back in the active document only.
 Choose &apos;Abort&apos; to abort</source>
-      <translation type="unfinished">Choose &apos;Yes&apos; to roll back all preceding transactions.
-Choose &apos;No&apos; to roll back in the active document only.
-Choose &apos;Abort&apos; to abort</translation>
+      <translation>Виберіть &apos;Так&apos; для повернення всіх попередніх транзакцій.
+Виберіть &apos;Ні&apos; щоб повернути транзакції тільки в активному документі.
+Виберіть &apos;Скасувати&apos; для скасування</translation>
     </message>
     <message>
       <source>Do you want to save your changes to document before closing?</source>
@@ -7410,7 +7409,7 @@ Choose &apos;Abort&apos; to abort</translation>
     </message>
     <message>
       <source>Apply answer to all</source>
-      <translation type="unfinished">Apply answer to all</translation>
+      <translation>Застосувати відповідь до наступних питань</translation>
     </message>
     <message>
       <source>Drag &amp; drop failed</source>
@@ -7418,13 +7417,13 @@ Choose &apos;Abort&apos; to abort</translation>
     </message>
     <message>
       <source>Override colors...</source>
-      <translation type="unfinished">Override colors...</translation>
+      <translation>Змінити кольори...</translation>
     </message>
     <message>
       <source>Identical physical path detected. It may cause unwanted overwrite of existing document!
 
 </source>
-      <translation type="unfinished">Identical physical path detected. It may cause unwanted overwrite of existing document!
+      <translation>Виявлено ідентичний фізичний шлях. Це може призвести до перезапису наявного документа!
 
 </translation>
     </message>
@@ -7434,7 +7433,7 @@ Choose &apos;Abort&apos; to abort</translation>
     </message>
     <message>
       <source>Identical physical path</source>
-      <translation type="unfinished">Identical physical path</translation>
+      <translation>Ідентичний фізичний шлях</translation>
     </message>
     <message>
       <source>Error</source>
@@ -7446,7 +7445,7 @@ Choose &apos;Abort&apos; to abort</translation>
     </message>
     <message>
       <source>There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</source>
-      <translation type="unfinished">There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</translation>
+      <translation>При завантаженні файлу сталася серйозна помилка. Можливо, деякі дані були змінені або взагалі не відновлені. Збереження проєкту швидше за все, призведе до втрати даних.</translation>
     </message>
     <message>
       <source>Workbenches</source>
@@ -7454,7 +7453,7 @@ Choose &apos;Abort&apos; to abort</translation>
     </message>
     <message>
       <source>Could not save document</source>
-      <translation type="unfinished">Could not save document</translation>
+      <translation>Не вдалося зберегти документ</translation>
     </message>
     <message>
       <source>There was an issue trying to save the file. This may be because some of the parent folders do not exist, or you do not have sufficient permissions, or for other reasons. Error details:
@@ -7482,11 +7481,11 @@ Would you like to save the file with a different name?</source>
     </message>
     <message>
       <source>Some documents could not be saved. Do you want to cancel closing?</source>
-      <translation type="unfinished">Some documents could not be saved. Do you want to cancel closing?</translation>
+      <translation>Деякі документи не вдалося зберегти. Бажаєте скасувати закриття?</translation>
     </message>
     <message>
       <source>Please check report view for more...</source>
-      <translation type="unfinished">Please check report view for more...</translation>
+      <translation>Будь ласка, перегляньте Вид Звіту...</translation>
     </message>
     <message>
       <source>Physical path:</source>
@@ -7506,15 +7505,15 @@ Would you like to save the file with a different name?</source>
     </message>
     <message>
       <source>Setup configurable object</source>
-      <translation type="unfinished">Setup configurable object</translation>
+      <translation>Налаштування конфігураційного об'єкта</translation>
     </message>
     <message>
       <source>Select which object to copy or exclude when configuration changes.All external linked object are excluded by default.</source>
-      <translation type="unfinished">Select which object to copy or exclude when configuration changes.All external linked object are excluded by default.</translation>
+      <translation>Виберіть, який об’єкт копіювати чи пропустити при зміні конфігурації. Усі зовнішні зв’язані об’єкти пропускаються за замовчуванням.</translation>
     </message>
     <message>
       <source>Please select which objects to copy when the configuration is changed</source>
-      <translation type="unfinished">Please select which objects to copy when the configuration is changed</translation>
+      <translation>Будь ласка, виберіть, які об'єкти слід скопіювати при зміні конфігурації</translation>
     </message>
     <message>
       <source>Apply to all</source>
@@ -7523,12 +7522,13 @@ Would you like to save the file with a different name?</source>
     <message>
       <source>Apply the setting to all links. Or, uncheck this
 option to apply only to this link.</source>
-      <translation type="unfinished">Apply the setting to all links. Or, uncheck this
-option to apply only to this link.</translation>
+      <translation>Застосувати налаштування до всіх посилань. 
+Або зніміть прапорець, щоб застосувати лише 
+до цього посилання.</translation>
     </message>
     <message>
       <source>Copy on change</source>
-      <translation type="unfinished">Copy on change</translation>
+      <translation>Копіювання при зміні</translation>
     </message>
     <message>
       <source>Enable</source>
@@ -7536,49 +7536,50 @@ option to apply only to this link.</translation>
     </message>
     <message>
       <source>Enable auto copy of linked object when its configuration is changed</source>
-      <translation type="unfinished">Enable auto copy of linked object when its configuration is changed</translation>
+      <translation>Ввімкнути автоматичне копіювання зв'язаного об'єкта, коли його налаштування змінюється</translation>
     </message>
     <message>
       <source>Tracking</source>
-      <translation type="unfinished">Tracking</translation>
+      <translation>Відстеження</translation>
     </message>
     <message>
       <source>Copy the linked object when its configuration is changed.
 Also auto redo the copy if the original linked object is changed.
 </source>
-      <translation type="unfinished">Copy the linked object when its configuration is changed.
-Also auto redo the copy if the original linked object is changed.
+      <translation>Копіювання пов'язаного об'єкта за зміни його конфігурації.
+Також виконується автоматичне повторне копіювання під 
+час зміни початкового зв'язаного об'єкта.
 </translation>
     </message>
     <message>
       <source>Disable copy on change</source>
-      <translation type="unfinished">Disable copy on change</translation>
+      <translation>Вимкнути копіювання при зміні</translation>
     </message>
     <message>
       <source>Rerefresh configurable object</source>
-      <translation type="unfinished">Rerefresh configurable object</translation>
+      <translation>Оновлення конфігурованого об'єкта</translation>
     </message>
     <message>
       <source>Synchronize the original configurable source object by
 creating a new deep copy. Note that any changes made to
 the current copy will be lost.
 </source>
-      <translation type="unfinished">Synchronize the original configurable source object by
-creating a new deep copy. Note that any changes made to
-the current copy will be lost.
+      <translation>Синхронізуйте початковий сконфігурований об'єкт-джерело,
+створивши нову глибоку копію. Зверніть увагу, що всі зміни, 
+внесені до поточної копії, будуть втрачені.
 </translation>
     </message>
     <message>
       <source>Toggle array elements</source>
-      <translation type="unfinished">Toggle array elements</translation>
+      <translation>Перемикання елементів масиву</translation>
     </message>
     <message>
       <source>Change whether show each link array element as individual objects</source>
-      <translation type="unfinished">Change whether show each link array element as individual objects</translation>
+      <translation>Змінює, чи показувати кожен елемент масиву посилань окремими об'єктами</translation>
     </message>
     <message>
       <source>Transform at the origin of the placement</source>
-      <translation type="unfinished">Transform at the origin of the placement</translation>
+      <translation>Перетворити в місці розташування</translation>
     </message>
   </context>
   <context>
@@ -7863,7 +7864,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Change the draw style of the objects</source>
-      <translation type="unfinished">Change the draw style of the objects</translation>
+      <translation>Змінити стиль малювання об'єктів</translation>
     </message>
   </context>
   <context>
@@ -7885,7 +7886,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Toggles the selected object&apos;s edit mode</source>
-      <translation type="unfinished">Toggles the selected object&apos;s edit mode</translation>
+      <translation>Змінити режим редагування виділеного об'єкта</translation>
     </message>
     <message>
       <source>Activates or Deactivates the selected object&apos;s edit mode</source>
@@ -7908,7 +7909,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select the objects to export before choosing Export.</source>
-      <translation type="unfinished">Select the objects to export before choosing Export.</translation>
+      <translation>Спочатку виберіть об'єкти для Експорту.</translation>
     </message>
   </context>
   <context>
@@ -7937,7 +7938,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Donate to FreeCAD development</source>
-      <translation type="unfinished">Donate to FreeCAD development</translation>
+      <translation>Пожертвувати на розробку FreeCAD</translation>
     </message>
   </context>
   <context>
@@ -8085,7 +8086,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Import selected external link(s)</source>
-      <translation type="unfinished">Import selected external link(s)</translation>
+      <translation>Імпортувати вибрані зовнішні посилання</translation>
     </message>
   </context>
   <context>
@@ -8173,18 +8174,18 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select the linked object and switch to its owner document</source>
-      <translation type="unfinished">Select the linked object and switch to its owner document</translation>
+      <translation>Виберіть зв'язаний об'єкт і перейдіть до документа власника</translation>
     </message>
   </context>
   <context>
     <name>StdCmdLinkSelectLinkedFinal</name>
     <message>
       <source>Go to the deepest linked object</source>
-      <translation type="unfinished">Go to the deepest linked object</translation>
+      <translation>Перейти до найглибшого зв'язаного об'єкта</translation>
     </message>
     <message>
       <source>Select the deepest linked object and switch to its owner document</source>
-      <translation type="unfinished">Select the deepest linked object and switch to its owner document</translation>
+      <translation>Оберіть найбільш зв'язаний об'єкт та перемкніться до його власника документа</translation>
     </message>
   </context>
   <context>
@@ -8195,7 +8196,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Strip on level of link</source>
-      <translation type="unfinished">Strip on level of link</translation>
+      <translation>Поділ за рівнем зв'язку</translation>
     </message>
   </context>
   <context>
@@ -8629,7 +8630,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Repeat the backed selection</source>
-      <translation type="unfinished">Repeat the backed selection</translation>
+      <translation>Повторіть вибір резервної копії</translation>
     </message>
   </context>
   <context>
@@ -8841,22 +8842,22 @@ the current copy will be lost.
     <name>StdCmdTreeCollapse</name>
     <message>
       <source>Collapse selected item</source>
-      <translation type="unfinished">Collapse selected item</translation>
+      <translation>Згорнути виділений елемент</translation>
     </message>
     <message>
       <source>Collapse currently selected tree items</source>
-      <translation type="unfinished">Collapse currently selected tree items</translation>
+      <translation>Згортає виділені елементи ієрархії документа</translation>
     </message>
   </context>
   <context>
     <name>StdCmdTreeExpand</name>
     <message>
       <source>Expand selected item</source>
-      <translation type="unfinished">Expand selected item</translation>
+      <translation>Розгорнути виділений елемент</translation>
     </message>
     <message>
       <source>Expand currently selected tree items</source>
-      <translation type="unfinished">Expand currently selected tree items</translation>
+      <translation>Розгортає виділені елементи ієрархії документа</translation>
     </message>
   </context>
   <context>
@@ -8867,7 +8868,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select all instances of the current selected object</source>
-      <translation type="unfinished">Select all instances of the current selected object</translation>
+      <translation>Виберіть усі екземпляри виділеного об'єкта</translation>
     </message>
   </context>
   <context>
@@ -8878,7 +8879,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>TreeView behavior options and actions</source>
-      <translation type="unfinished">TreeView behavior options and actions</translation>
+      <translation>Параметри та дії Ієрархії Документа</translation>
     </message>
   </context>
   <context>
@@ -9032,7 +9033,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Set to default home view</source>
-      <translation type="unfinished">Set to default home view</translation>
+      <translation>Встановити стандартний вигляд</translation>
     </message>
   </context>
   <context>
@@ -9164,7 +9165,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Rotate the view by 90° counter-clockwise</source>
-      <translation type="unfinished">Rotate the view by 90° counter-clockwise</translation>
+      <translation>Повернути на 90° проти годинникової стрілки</translation>
     </message>
   </context>
   <context>
@@ -9215,7 +9216,7 @@ the current copy will be lost.
     <name>StdCmdViewVR</name>
     <message>
       <source>FreeCAD-VR</source>
-      <translation type="unfinished">FreeCAD-VR</translation>
+      <translation>FreeCAD-VR</translation>
     </message>
     <message>
       <source>Extend the FreeCAD 3D Window to a Oculus Rift</source>
@@ -9226,11 +9227,11 @@ the current copy will be lost.
     <name>StdCmdWhatsThis</name>
     <message>
       <source>&amp;What&apos;s This?</source>
-      <translation type="unfinished">&amp;What&apos;s This?</translation>
+      <translation>&amp;Що це?</translation>
     </message>
     <message>
       <source>What&apos;s This</source>
-      <translation type="unfinished">What&apos;s This</translation>
+      <translation>Що Це</translation>
     </message>
   </context>
   <context>
@@ -9310,11 +9311,11 @@ the current copy will be lost.
     <name>StdTreeDrag</name>
     <message>
       <source>Initiate dragging</source>
-      <translation type="unfinished">Initiate dragging</translation>
+      <translation>Розпочати перетягування</translation>
     </message>
     <message>
       <source>Initiate dragging of current selected tree items</source>
-      <translation type="unfinished">Initiate dragging of current selected tree items</translation>
+      <translation>Розпочати перетягування поточних виділених елементів ієрархії</translation>
     </message>
   </context>
   <context>
@@ -9336,7 +9337,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Preselect the object in 3D view when mouse over the tree item</source>
-      <translation type="unfinished">Preselect the object in 3D view when mouse over the tree item</translation>
+      <translation>Підсвічувати об'єкт в 3D-виді при наведенні мишки на елемент в ієрархії</translation>
     </message>
   </context>
   <context>
@@ -9347,7 +9348,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Record selection in tree view in order to go back/forward using navigation button</source>
-      <translation type="unfinished">Record selection in tree view in order to go back/forward using navigation button</translation>
+      <translation>Записує виділення в ієрархії до історії команд для повернення назад/вперед за допомогою кнопки навігації</translation>
     </message>
   </context>
   <context>

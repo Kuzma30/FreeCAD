@@ -13,7 +13,7 @@
     </message>
     <message>
       <source>Go back to the previous page</source>
-      <translation>Повернутися на попередню сторінку</translation>
+      <translation>Повертається на попередню сторінку</translation>
     </message>
   </context>
   <context>
@@ -28,7 +28,7 @@
     </message>
     <message>
       <source>Go to the next page</source>
-      <translation>Перейти на наступну сторінку</translation>
+      <translation>Переходить на наступну сторінку</translation>
     </message>
   </context>
   <context>

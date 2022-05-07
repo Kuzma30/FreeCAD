@@ -6,7 +6,7 @@
     <message>
       <location filename="../../../PathScripts/PathDressupTag.py" line="121"/>
       <source>The base path to modify</source>
-      <translation type="unfinished">The base path to modify</translation>
+      <translation>Базова траєкторія для зміни</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupDragknife.py" line="70"/>
@@ -21,7 +21,7 @@
     <message>
       <location filename="../../../PathScripts/PathVcarve.py" line="210"/>
       <source>Additional base objects to be engraved</source>
-      <translation type="unfinished">Additional base objects to be engraved</translation>
+      <translation>Додаткові базові об'єкти для гравіювання</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathEngrave.py" line="88"/>
@@ -31,47 +31,47 @@
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="271"/>
       <source>Set thread orientation</source>
-      <translation type="unfinished">Set thread orientation</translation>
+      <translation>Встановити напрямок різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="278"/>
       <source>Currently only internal</source>
-      <translation type="unfinished">Currently only internal</translation>
+      <translation>На цю мить тільки внутрішня</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="285"/>
       <source>Defines which standard thread was chosen</source>
-      <translation type="unfinished">Defines which standard thread was chosen</translation>
+      <translation>Визначає яку стандартну різьбу обрано</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="293"/>
       <source>Set thread&apos;s major diameter</source>
-      <translation type="unfinished">Set thread&apos;s major diameter</translation>
+      <translation>Встановіть зовнішній діаметр різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="299"/>
       <source>Set thread&apos;s minor diameter</source>
-      <translation type="unfinished">Set thread&apos;s minor diameter</translation>
+      <translation>Встановіть діаметр западин різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="305"/>
       <source>Set thread&apos;s pitch - used for metric threads</source>
-      <translation type="unfinished">Set thread&apos;s pitch - used for metric threads</translation>
+      <translation>Встановіть крок різьби - використовується для метричних різьб</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="330"/>
       <source>Set how many passes are used to cut the thread</source>
-      <translation type="unfinished">Set how many passes are used to cut the thread</translation>
+      <translation>Встановіть кількість проходів для вирізання різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="338"/>
       <source>Direction of thread cutting operation</source>
-      <translation type="unfinished">Direction of thread cutting operation</translation>
+      <translation>Напрямок операції вирізання різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="353"/>
       <source>Operation to clear the inside of the thread</source>
-      <translation type="unfinished">Operation to clear the inside of the thread</translation>
+      <translation>Чистовий прохід різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="188"/>
@@ -126,17 +126,17 @@
     <message>
       <location filename="../../../PathScripts/PathHelix.py" line="113"/>
       <source>Start cutting from the inside or outside</source>
-      <translation type="unfinished">Start cutting from the inside or outside</translation>
+      <translation>Почати вирізання зсередини або зовні</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="144"/>
       <source>Percent of cutter diameter to step over on each pass</source>
-      <translation type="unfinished">Percent of cutter diameter to step over on each pass</translation>
+      <translation>Відсоток діаметру вирізання для кожного проходу</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathHelix.py" line="152"/>
       <source>Starting Radius</source>
-      <translation type="unfinished">Starting Radius</translation>
+      <translation>Початковий радіус</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPlane.py" line="34"/>
@@ -146,7 +146,7 @@
     <message>
       <location filename="../../../PathScripts/PathFixture.py" line="58"/>
       <source>Make False, to prevent operation from generating code</source>
-      <translation type="unfinished">Make False, to prevent operation from generating code</translation>
+      <translation>Зробіть False, щоб уникнути операції з генерації коду</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathComment.py" line="37"/>
@@ -156,7 +156,7 @@
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="61"/>
       <source>Angle of ramp.</source>
-      <translation type="unfinished">Angle of ramp.</translation>
+      <translation>Кут нарощування.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="67"/>
@@ -166,12 +166,12 @@
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="73"/>
       <source>Which feed rate to use for ramping</source>
-      <translation type="unfinished">Which feed rate to use for ramping</translation>
+      <translation>Визначає робочу подачу для нарощування</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="79"/>
       <source>Custom feed rate</source>
-      <translation type="unfinished">Custom feed rate</translation>
+      <translation>Індивідуальна швидкість подачі</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupDogbone.py" line="429"/>
@@ -231,7 +231,7 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="176"/>
       <source>An optional comment for this Operation</source>
-      <translation type="unfinished">An optional comment for this Operation</translation>
+      <translation>Необов'язковий коментар до цієї Операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="184"/>
@@ -251,22 +251,22 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="224"/>
       <source>Coolant mode for this operation</source>
-      <translation type="unfinished">Coolant mode for this operation</translation>
+      <translation>Режим охолодження для цієї операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="232"/>
       <source>Starting Depth of Tool- first cut depth in Z</source>
-      <translation type="unfinished">Starting Depth of Tool- first cut depth in Z</translation>
+      <translation>Початкова глибина інструменту - перша глибина різу по Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="240"/>
       <source>Final Depth of Tool- lowest value in Z</source>
-      <translation type="unfinished">Final Depth of Tool- lowest value in Z</translation>
+      <translation>Фінальна глибина інструменту - найнижче значення по Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="267"/>
       <source>Incremental Step Down of Tool</source>
-      <translation type="unfinished">Incremental Step Down of Tool</translation>
+      <translation>Крок заглиблення Інструменту</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="275"/>
@@ -296,7 +296,7 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="439"/>
       <source>Coolant option for this operation</source>
-      <translation type="unfinished">Coolant option for this operation</translation>
+      <translation>Налаштування охолодження для цієї операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathFeatureExtensions.py" line="478"/>
@@ -311,7 +311,7 @@
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="122"/>
       <source>The desired width of the chamfer</source>
-      <translation type="unfinished">The desired width of the chamfer</translation>
+      <translation>Бажана ширина фаски</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="128"/>
@@ -326,12 +326,12 @@
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="142"/>
       <source>Direction of Operation</source>
-      <translation type="unfinished">Direction of Operation</translation>
+      <translation>Напрямок Операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="149"/>
       <source>Side of Operation</source>
-      <translation type="unfinished">Side of Operation</translation>
+      <translation>Сторона операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="157"/>
@@ -466,32 +466,32 @@
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="47"/>
       <source>Pattern method</source>
-      <translation type="unfinished">Pattern method</translation>
+      <translation>Метод шаблона</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="62"/>
       <source>The number of copies in X direction in Linear pattern</source>
-      <translation type="unfinished">The number of copies in X direction in Linear pattern</translation>
+      <translation>Кількість копій по осі X для Лінійного Масиву</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="70"/>
       <source>The number of copies in Y direction in Linear pattern</source>
-      <translation type="unfinished">The number of copies in Y direction in Linear pattern</translation>
+      <translation>Кількість копій по осі Y для Лінійного Масиву</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="78"/>
       <source>Total angle in Polar pattern</source>
-      <translation type="unfinished">Total angle in Polar pattern</translation>
+      <translation>Загальний кут в Полярному масиві</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="84"/>
       <source>The number of copies in Linear 1D and Polar pattern</source>
-      <translation type="unfinished">The number of copies in Linear 1D and Polar pattern</translation>
+      <translation>Кількість копій для Лінійного 1D та Полярного масиву</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="92"/>
       <source>The centre of rotation in Polar pattern</source>
-      <translation type="unfinished">The centre of rotation in Polar pattern</translation>
+      <translation>Центр обертання в Полярному масиві</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="109"/>
@@ -551,12 +551,12 @@
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="155"/>
       <source>The file of the tool</source>
-      <translation type="unfinished">The file of the tool</translation>
+      <translation>Файл інструменту</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="161"/>
       <source>The name of the shape file</source>
-      <translation type="unfinished">The name of the shape file</translation>
+      <translation>Ім'я файлу форми</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="205"/>
@@ -586,7 +586,7 @@
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="74"/>
       <source>The speed of the cutting spindle in RPM</source>
-      <translation type="unfinished">The speed of the cutting spindle in RPM</translation>
+      <translation>Швидкість обертання шпинделя в об/хв</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="82"/>
@@ -596,22 +596,22 @@
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="88"/>
       <source>Feed rate for vertical moves in Z</source>
-      <translation type="unfinished">Feed rate for vertical moves in Z</translation>
+      <translation>Швидкість вертикальної подачі по осі Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="94"/>
       <source>Feed rate for horizontal moves</source>
-      <translation type="unfinished">Feed rate for horizontal moves</translation>
+      <translation>Швидкість горизонтальної подачі</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="100"/>
       <source>Rapid rate for vertical moves in Z</source>
-      <translation type="unfinished">Rapid rate for vertical moves in Z</translation>
+      <translation>Швидкість прискореної вертикальної подачі по осі Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="106"/>
       <source>Rapid rate for horizontal moves</source>
-      <translation type="unfinished">Rapid rate for horizontal moves</translation>
+      <translation>Швидкість прискореної горизонтальної подачі</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="324"/>

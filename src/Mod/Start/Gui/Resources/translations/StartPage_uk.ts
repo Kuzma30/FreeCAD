@@ -86,7 +86,7 @@
     <message>
       <location filename="TranslationTexts.py" line="58"/>
       <source>The FreeCAD manual is another, more linear way to present the information contained in this wiki. It is made to be read like a book, and will gently introduce you to many other pages from the hubs above. &lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;e-book versions&lt;/a&gt; are also available.</source>
-      <translation>Посібник із FreeCAD - це інший, більш лінійний спосіб представлення інформації з вікі. Він створений для читання як книга, та поступово познайомить вас з багатьма іншими сторінками з вищезгаданих вузлів. Також доступний у форматі &lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;електронної книги&lt;/a&gt;.</translation>
+      <translation>Посібник із FreeCAD - це інший, більш лінійний спосіб представлення інформації з вікі. Він створений для читання як книга, та поступово познайомить вас з багатьма іншими сторінками з вищезгаданих розділів. Також доступний у форматі &lt;a href=&quot;https://www.gitbook.com/book/yorikvanhavre/a-freecad-manual/details&quot;&gt;електронної книги&lt;/a&gt;.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="59"/>
@@ -126,7 +126,7 @@
     <message>
       <location filename="TranslationTexts.py" line="66"/>
       <source>Below is a list of available extra workbenches that can be added to your FreeCAD installation. Browse and install them from menu Tools -&gt; Addons manager. You can learn more about any of them by clicking the links below.</source>
-      <translation>Нижче наведено список доступних додаткових робочих місць, які можна додати до інсталяції FreeCAD. Перегляньте та встановіть їх з меню Інструменти -&gt; Менеджер доповнень. Ви можете дізнатись більше про будь-який з них, натиснувши посилання нижче.</translation>
+      <translation>Нижче наведено список доступних додаткових робочих середовищ, які можна додати до інсталяції FreeCAD. Перегляньте та встановіть їх з меню Інструменти -&gt; Менеджер додатків. Ви можете дізнатись більше про будь-яке з них, натиснувши посилання нижче.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="67"/>
@@ -237,7 +237,7 @@
     <message>
       <location filename="../../Command.cpp" line="47"/>
       <source>Displays the start page in a browser view</source>
-      <translation>Показ початкової сторінки у виді браузера</translation>
+      <translation>Показує початкову сторінку у виді браузера</translation>
     </message>
   </context>
   <context>
@@ -327,7 +327,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="217"/>
       <source>Background color</source>
-      <translation>Колір фону</translation>
+      <translation>Колір тла</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="229"/>
@@ -357,7 +357,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="306"/>
       <source>An optional image to display as background</source>
-      <translation>Необов'язкове зображення для показу як фон</translation>
+      <translation>Необов'язкове зображення для показу як тло</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="319"/>
@@ -367,7 +367,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="338"/>
       <source>Page background color</source>
-      <translation>Колір фону сторінки</translation>
+      <translation>Колір тла сторінки</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="351"/>
@@ -377,7 +377,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="371"/>
       <source>Background image</source>
-      <translation>Фонове зображення</translation>
+      <translation>Зображення тла</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="378"/>
@@ -417,7 +417,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="509"/>
       <source>Background text color</source>
-      <translation>Колір фону текста</translation>
+      <translation>Колір тла тексту</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="516"/>

@@ -270,11 +270,11 @@
     </message>
     <message>
       <source>Enable Translations</source>
-      <translation>Увімкнути переміщення</translation>
+      <translation>Ввімкнути переміщення</translation>
     </message>
     <message>
       <source>Enable Rotations</source>
-      <translation>Увімкнути обертання</translation>
+      <translation>Ввімкнути обертання</translation>
     </message>
     <message>
       <source>Calibrate</source>
@@ -286,7 +286,7 @@
     </message>
     <message>
       <source>Enable</source>
-      <translation>Увімкнути</translation>
+      <translation>Ввімкнути</translation>
     </message>
     <message>
       <source>Reverse</source>
@@ -737,7 +737,7 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>Enable timer</source>
-      <translation>Увімкнути таймер</translation>
+      <translation>Ввімкнути таймер</translation>
     </message>
     <message>
       <source> s</source>
@@ -1297,7 +1297,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Display</source>
-      <translation>Відображення</translation>
+      <translation>Показ</translation>
     </message>
     <message>
       <source>Transparency:</source>
@@ -1455,11 +1455,11 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Enable line numbers</source>
-      <translation>Показувати нумерацію рядків</translation>
+      <translation>Показати нумерацію рядків</translation>
     </message>
     <message>
       <source>Enable folding</source>
-      <translation>Увімкнути складання</translation>
+      <translation>Ввімкнути складання</translation>
     </message>
     <message>
       <source>Indentation</source>
@@ -1543,7 +1543,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Enable block cursor</source>
-      <translation>Увімкнути курсор у вигляді блоку</translation>
+      <translation>Ввімкнути курсор у вигляді блоку</translation>
     </message>
   </context>
   <context>
@@ -1558,11 +1558,11 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Enable splash screen at start up</source>
-      <translation>Увімкнути заставку при запуску</translation>
+      <translation>Ввімкнути заставку при запуску</translation>
     </message>
     <message>
       <source>Auto load module after start up:</source>
-      <translation>Автоматичне завантаження модуля після запуску:</translation>
+      <translation>Автоматичне завантаження робочого середовища після запуску:</translation>
     </message>
     <message>
       <source>Language</source>
@@ -1586,7 +1586,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Enable tiled background</source>
-      <translation>Увімкнути мозаїчний фон</translation>
+      <translation>Ввімкнути плитки на тлі</translation>
     </message>
     <message>
       <source>Style sheet:</source>
@@ -1598,13 +1598,13 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>How many files should be listed in recent files list</source>
-      <translation>Скільки файлів має бути перераховано у списку нещодавніх файлів</translation>
+      <translation>Скільки файлів має бути у списку останніх файлів</translation>
     </message>
     <message>
       <source>Background of the main window will consist of tiles of a special image.
 See the FreeCAD Wiki for details about the image.</source>
-      <translation>Фон головного вікна складатиметься з плиток спеціального зображення.
-Для деталей зображення див. у FreeCAD Wiki про зображення.</translation>
+      <translation>Тло головного вікна складатиметься з плиток спеціального зображення.
+Для деталей щодо зображень див. у FreeCAD Wiki.</translation>
     </message>
     <message>
       <source>Style sheet how user interface will look like</source>
@@ -1618,7 +1618,7 @@ this according to your screen size or personal taste</source>
     </message>
     <message>
       <source>Tree view mode:</source>
-      <translation>Режим перегляду &quot;дерево&quot;:</translation>
+      <translation>Режим показу ієрархії документа:</translation>
     </message>
     <message>
       <source>Customize how tree view is shown in the panel (restart required).
@@ -1629,7 +1629,7 @@ this according to your screen size or personal taste</source>
       <translation>Налаштовує, як ієрархія документа буде зображатись в панелі (вимагає перезапуску).
 
 &apos;Комбінований&apos;: комбінує Вид Ієрархії та Вид Властивостей в одній панелі.
-&apos;Вид Ієрархіі та Властивостейapos;: розділення Виду Ієрархії та Виду Властивостей на окремі панелі.
+&apos;Вид Ієрархіі та Властивостей&apos;: розділення Виду Ієрархії та Виду Властивостей на окремі панелі.
 &apos;Перше та Друге&apos;: показує всі три панелі. Ви отримаєте два набори Ієрархії та Вид Властивостей.</translation>
     </message>
     <message>
@@ -1738,7 +1738,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>TreeView and PropertyView</source>
-      <translation>TreeView та PropertyView</translation>
+      <translation>Вид Ієрархії та Властивостей</translation>
     </message>
     <message>
       <source>Both</source>
@@ -2512,7 +2512,7 @@ Specify another directory, please.</source>
     </message>
     <message>
       <source>Redirect internal Python output to report view</source>
-      <translation>Перенаправити внутрішній вивод Python до звіту</translation>
+      <translation>Перенаправити внутрішній вивод Python до Виду Звіту</translation>
     </message>
     <message>
       <source>Python interpreter</source>
@@ -2533,7 +2533,7 @@ Specify another directory, please.</source>
     <message>
       <source>When an error has occurred, the Report View dialog becomes visible
 on-screen while displaying the error</source>
-      <translation>При виникненні помилки, діалогове вікно Перегляд звіту стає видимим на екрані при відображенні помилки</translation>
+      <translation>При виникненні помилки, діалогове вікно Вид Звіту стає видимим на екрані для показу помилки</translation>
     </message>
     <message>
       <source>Show report view on error</source>
@@ -2542,7 +2542,7 @@ on-screen while displaying the error</source>
     <message>
       <source>When a warning has occurred, the Report View dialog becomes visible
 on-screen while displaying the warning</source>
-      <translation>При виникненні попередження, діалогове вікно Перегляд звіту стає 
+      <translation>При виникненні попередження, діалогове вікно Вид Звіту стає 
 видимим на екрані для показу попередження</translation>
     </message>
     <message>
@@ -2552,50 +2552,50 @@ on-screen while displaying the warning</source>
     <message>
       <source>When a normal message has occurred, the Report View dialog becomes visible
 on-screen while displaying the message</source>
-      <translation>При виникненні звичайного повідомлення, діалогове вікно Перегляд звіту стає 
+      <translation>При виникненні звичайного повідомлення, діалогове вікно Вид Звіту стає 
 видимим на екрані для показу повідомлення</translation>
     </message>
     <message>
       <source>Show report view on normal message</source>
-      <translation>Показати Перегляд Звіту для звичайних повідомлень</translation>
+      <translation>Показати Вид Звіту для звичайних повідомлень</translation>
     </message>
     <message>
       <source>When a log message has occurred, the Report View dialog becomes visible
 on-screen while displaying the log message</source>
-      <translation>При виникненні повідомлення журналу, діалогове вікно Перегляд звіту стає 
+      <translation>При виникненні повідомлення журналу, діалогове вікно Вид Звіту стає 
 видимим на екрані для показу повідомлення журналу</translation>
     </message>
     <message>
       <source>Show report view on log message</source>
-      <translation>Показати Перегляд Звіту для повідомлень журналу</translation>
+      <translation>Показати Вид Звіту для повідомлень журналу</translation>
     </message>
     <message>
       <source>Font color for normal messages in Report view panel</source>
-      <translation>Колір шрифту для звичайних повідомлень у Панелі перегляду звіту</translation>
+      <translation>Колір шрифту для звичайних повідомлень у панелі Вид Звіту</translation>
     </message>
     <message>
       <source>Font color for log messages in Report view panel</source>
-      <translation>Колір шрифту для повідомлень журналу у Панелі перегляду звіту</translation>
+      <translation>Колір шрифту для повідомлень журналу у панелі Вид Звіту</translation>
     </message>
     <message>
       <source>Font color for warning messages in Report view panel</source>
-      <translation>Колір шрифту для попереджень у Панелі перегляду звіту</translation>
+      <translation>Колір шрифту для попереджень у панелі Вид Звіту</translation>
     </message>
     <message>
       <source>Font color for error messages in Report view panel</source>
-      <translation>Колір шрифту для повідомлень про помилки у Панелі перегляду звіту</translation>
+      <translation>Колір шрифту для повідомлень про помилки у панелі Вид Звіту</translation>
     </message>
     <message>
       <source>Internal Python output will be redirected
 from Python console to Report view panel</source>
       <translation>Внутрішнє повідомлення Python буде перенаправлено
-з консолі Python на Панель перегляду звіту</translation>
+з консолі Python на панель Вид Звіту</translation>
     </message>
     <message>
       <source>Internal Python error messages will be redirected
 from Python console to Report view panel</source>
       <translation>Внутрішні повідомлення про помилки Python буде перенаправлено
-з консолі Python на Панель перегляду звіту</translation>
+з консолі Python на панель Вид Звіту</translation>
     </message>
     <message>
       <source>Include a timecode for each report</source>
@@ -2611,7 +2611,7 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>Record normal messages</source>
-      <translation>Запис нормальних повідомлень</translation>
+      <translation>Запис звичайних повідомлень</translation>
     </message>
   </context>
   <context>
@@ -2683,11 +2683,11 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>Show coordinate system in the corner</source>
-      <translation>Показувати систему координат в кутку</translation>
+      <translation>Показати систему координат в кутку</translation>
     </message>
     <message>
       <source>Show counter of frames per second</source>
-      <translation>Показувати кількість кадрів в секунду</translation>
+      <translation>Показати кількість кадрів в секунду</translation>
     </message>
     <message>
       <source>Camera type</source>
@@ -3195,7 +3195,7 @@ besides the color bar</source>
     </message>
     <message>
       <source>Save thumbnail into project file when saving document</source>
-      <translation>Зберегти мініатюру у файл проєкту при збереженні документа</translation>
+      <translation>Зберігати мініатюру у файл проєкту при збереженні документа</translation>
     </message>
     <message>
       <source>Maximum number of backup files to keep when resaving document</source>
@@ -3239,11 +3239,11 @@ besides the color bar</source>
     </message>
     <message>
       <source>All rights reserved</source>
-      <translation>Усі права захищені</translation>
+      <translation>All rights reserved</translation>
     </message>
     <message>
       <source>Public Domain</source>
-      <translation>Суспільне надбання</translation>
+      <translation>Public Domain</translation>
     </message>
     <message>
       <source>FreeArt</source>
@@ -3259,7 +3259,7 @@ besides the color bar</source>
     </message>
     <message>
       <source>Run AutoRecovery at startup</source>
-      <translation>Запустити автовідновлення при завантаженні</translation>
+      <translation>Запускати автовідновлення при завантаженні</translation>
     </message>
     <message>
       <source>Save AutoRecovery information every</source>
@@ -3701,7 +3701,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Show script commands in python console</source>
-      <translation>Показувати команди сценарію в консолі Python</translation>
+      <translation>Показати команди скриптів в консолі Python</translation>
     </message>
     <message>
       <source>Log all commands issued by menus to file:</source>
@@ -3757,7 +3757,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Recent macros menu</source>
-      <translation>Меню нещодавніх макросів</translation>
+      <translation>Меню останніх макросів</translation>
     </message>
     <message>
       <source>Size of recent macro list</source>
@@ -3765,7 +3765,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>How many macros should be listed in recent macros list</source>
-      <translation>Скільки макросів показувати в списку недавніх макросів</translation>
+      <translation>Встановлює кількість макросів в списку недавніх макросів</translation>
     </message>
     <message>
       <source>Shortcut count</source>
@@ -3876,11 +3876,11 @@ The value is the diameter of the sphere to fit on the screen.</source>
     </message>
     <message>
       <source>Enable animated rotations</source>
-      <translation>Увімкнути анімовані обертання</translation>
+      <translation>Ввімкнути анімовані обертання</translation>
     </message>
     <message>
       <source>Enable animation</source>
-      <translation>Увімкнути анімацію</translation>
+      <translation>Ввімкнути анімацію</translation>
     </message>
     <message>
       <source>Zoom operations will be performed at position of mouse pointer</source>
@@ -3892,7 +3892,7 @@ The value is the diameter of the sphere to fit on the screen.</source>
     </message>
     <message>
       <source>Zoom step</source>
-      <translation>Крок масштабування</translation>
+      <translation>Крок масшт.</translation>
     </message>
     <message>
       <source>Direction of zoom operations will be inverted</source>
@@ -3988,7 +3988,7 @@ Mouse tilting is not disabled by this setting.</source>
     </message>
     <message>
       <source>Rotate to nearest</source>
-      <translation>Повернути до найближчого</translation>
+      <translation>Повертати до найближчого</translation>
     </message>
     <message>
       <source>Cube size</source>
@@ -4002,7 +4002,7 @@ Mouse tilting is not disabled by this setting.</source>
       <source>How much will be zoomed.
 Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</source>
       <translation>Визначає коефіцієнт збільшення.
-Крок масштабу &apos;1&apos; дорівнює коефіцієнту збільшення 7,5.</translation>
+Крок масштабування &apos;1&apos; дорівнює коефіцієнту збільшення 7,5.</translation>
     </message>
     <message>
       <source>Camera zoom</source>
@@ -4035,7 +4035,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Enable block cursor</source>
-      <translation>Увімкнути курсор у вигляді блоку</translation>
+      <translation>Ввімкнути курсор у вигляді блоку</translation>
     </message>
     <message>
       <source>Saves Python history across sessions</source>
@@ -4058,7 +4058,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Auto expand tree item when the corresponding object is selected in 3D view</source>
-      <translation>Автоматично відкриває елемент в ієрархії при виділенні відповідного об'єкта в 3D-виді</translation>
+      <translation>Автоматично відкривати елемент в ієрархії при виділенні відповідного об'єкта в 3D-виді</translation>
     </message>
     <message>
       <source>Preselect the object in 3D view when mouse over the tree item</source>
@@ -4066,7 +4066,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Record selection in tree view in order to go back/forward using navigation button</source>
-      <translation>Записує виділення в ієрархії до історії команд для повернення назад/вперед за допомогою кнопки навігації</translation>
+      <translation>Записати виділення в ієрархії до історії команд для повернення назад/вперед за допомогою кнопки навігації</translation>
     </message>
     <message>
       <source>Add checkboxes for selection in document tree</source>
@@ -4192,11 +4192,11 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Enable selection highlighting</source>
-      <translation>Увімкнути підсвічування виділеного</translation>
+      <translation>Ввімкнути підсвічування виділеного</translation>
     </message>
     <message>
       <source>Enable preselection highlighting</source>
-      <translation>Увімкнути підсвічування виділеного</translation>
+      <translation>Ввімкнути підсвічування попереднього виділення</translation>
     </message>
     <message>
       <source>Background color</source>
@@ -4228,7 +4228,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Enable selection highlighting and use specified color</source>
-      <translation>Ввімкнути підсвічування виділення та використовувати вказаний колір</translation>
+      <translation>Вмикає підсвічування виділення та використовує вказаний колір</translation>
     </message>
     <message>
       <source>Background color for the model view</source>
@@ -6595,7 +6595,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Enable or disable recomputations of document</source>
-      <translation>Увімкнути або вимкнути перерахунки документа</translation>
+      <translation>Ввімкнути або вимкнути перерахунки документа</translation>
     </message>
     <message>
       <source>Mark to recompute</source>
@@ -6871,7 +6871,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Report view</source>
-      <translation>Вид Звіт</translation>
+      <translation>Вид Звіту</translation>
     </message>
     <message>
       <source>Combo View</source>
@@ -7532,7 +7532,7 @@ option to apply only to this link.</source>
     </message>
     <message>
       <source>Enable</source>
-      <translation>Увімкнути</translation>
+      <translation>Ввімкнути</translation>
     </message>
     <message>
       <source>Enable auto copy of linked object when its configuration is changed</source>

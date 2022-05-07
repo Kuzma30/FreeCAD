@@ -912,17 +912,17 @@
   <context>
     <name>Path</name>
     <message>
-      <location filename="../../../InitGui.py" line="270"/>
+      <location filename="../../../InitGui.py" line="276"/>
       <source>Warning</source>
       <translation>Увага</translation>
     </message>
     <message>
-      <location filename="../../../InitGui.py" line="270"/>
+      <location filename="../../../InitGui.py" line="279"/>
       <source>Ok</source>
       <translation>Гаразд</translation>
     </message>
     <message>
-      <location filename="../../../InitGui.py" line="270"/>
+      <location filename="../../../InitGui.py" line="280"/>
       <source>Don&apos;t Show This Anymore</source>
       <translation type="unfinished">Don&apos;t Show This Anymore</translation>
     </message>
@@ -6339,7 +6339,7 @@ p, li { white-space: pre-wrap; }
   <context>
     <name>QObject</name>
     <message>
-      <location filename="../../AppPathGuiPy.cpp" line="106"/>
+      <location filename="../../AppPathGuiPy.cpp" line="107"/>
       <source>Unnamed</source>
       <translation>Без назви</translation>
     </message>

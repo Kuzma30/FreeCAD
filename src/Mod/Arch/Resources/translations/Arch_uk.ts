@@ -5872,7 +5872,7 @@ instead of the FreeCAD web workbench</translation>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="41"/>
       <source>Show this dialog when importing</source>
-      <translation>Показувати цей діалог під час імпортування</translation>
+      <translation>Показати це діалогове вікно під час імпорту</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="54"/>
@@ -5896,7 +5896,7 @@ One object is the base object, the others are clones.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="75"/>
       <source>Create clones when objects have shared geometry</source>
-      <translation>Створення клонів, коли об'єкти мають спільну геометрію</translation>
+      <translation>Створити клонів, коли об'єкти мають спільну геометрію</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="99"/>
@@ -6042,8 +6042,8 @@ Note that this might slow things down.</source>
       <location filename="../ui/preferences-ifc.ui" line="350"/>
       <source>If several materials with the same name and color are found in the IFC file,
 they will be treated as one.</source>
-      <translation>Якщо у файлі IФС знайдено кілька матеріалів з такою ж назвою і кольором,
-до них ставиться як до одного.</translation>
+      <translation>Якщо у файлі IFC знайдено декілька матеріалів з такою ж назвою і кольором,
+їх вважатимуть одним.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="354"/>
@@ -6078,19 +6078,19 @@ they will be treated as one.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="408"/>
       <source>Comma-separated list of IFC entities to be excluded from imports</source>
-      <translation>Список товарів, через кому, які будуть виключені з імпорту</translation>
+      <translation>Список структур IFC, які буде виключено з імпорту, розділений комами</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="429"/>
       <source>Fit view during import on the imported objects.
 This will slow down the import, but one can watch the import.</source>
-      <translation>Пристосувати вигляд під час імпортування імпортованих об’єктів.
+      <translation>Підганяє вид під час імпортування до імпортованих об’єктів.
 Це уповільнить імпорт, але за цим можна спостерігати.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="433"/>
       <source>Fit view while importing</source>
-      <translation>Весь вигляд час імпортування</translation>
+      <translation>Підігнати вид під час імпорту</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="446"/>
@@ -6102,7 +6102,7 @@ FreeCAD object properties</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="450"/>
       <source>Import full FreeCAD parametric definitions if available</source>
-      <translation>Імпорт повних параметрів FreeCAD визначень, якщо доступно</translation>
+      <translation>Імпортувати повні параметричні визначення FreeCAD, якщо вони доступні</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="463"/>
@@ -6118,7 +6118,7 @@ are placed in a &apos;Group&apos; instead.
     <message>
       <location filename="../ui/preferences-ifc.ui" line="469"/>
       <source>Replace &apos;Project&apos;, &apos;Site&apos;, &apos;Building&apos;, and &apos;Storey&apos; with &apos;Group&apos;</source>
-      <translation type="unfinished">Replace &apos;Project&apos;, &apos;Site&apos;, &apos;Building&apos;, and &apos;Storey&apos; with &apos;Group&apos;</translation>
+      <translation>Замінити &apos;Проєкт&apos;&apos; &apos;Сайт&apos; &apos;Будівля&apos;і &apos;Магазин&apos; &apos;Групою&apos;</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dae.ui" line="14"/>
@@ -6266,7 +6266,7 @@ The gradient of the local mesh size h(x) is bound by |Δh(x)| ≤ 1/value.</sour
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="41"/>
       <source>Show this dialog when exporting</source>
-      <translation>Показувати це діалогове вікно при експорті</translation>
+      <translation>Показати це діалогове вікно при експорті</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="65"/>

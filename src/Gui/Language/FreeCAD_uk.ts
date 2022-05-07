@@ -2508,7 +2508,7 @@ Specify another directory, please.</source>
     </message>
     <message>
       <source>Redirect internal Python errors to report view</source>
-      <translation>Переспрямувати внутрішні помилки Python у вид повідомлень</translation>
+      <translation>Перенаправити внутрішні помилки Python у Вид Звіту</translation>
     </message>
     <message>
       <source>Redirect internal Python output to report view</source>
@@ -2547,7 +2547,7 @@ on-screen while displaying the warning</source>
     </message>
     <message>
       <source>Show report view on warning</source>
-      <translation>Відображати попередження у виді Звіт</translation>
+      <translation>Показати Вид Звіту для попередження</translation>
     </message>
     <message>
       <source>When a normal message has occurred, the Report View dialog becomes visible
@@ -2845,7 +2845,7 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Backlight is enabled with the defined color</source>
-      <translation>Підсвічування увімкнено із заданим кольором</translation>
+      <translation>Підсвічування увімкнено із вказаним кольором</translation>
     </message>
     <message>
       <source>Backlight color</source>
@@ -2861,11 +2861,11 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Objects will be projected in orthographic projection</source>
-      <translation>Об'єкти будуть проєктуватися в ортографічній проєкція</translation>
+      <translation>Об'єкти будуть зображатися в ортографічній проєкції</translation>
     </message>
     <message>
       <source>Objects will appear in a perspective projection</source>
-      <translation>Об'єкти будуть зображатися у перспективній проєкція</translation>
+      <translation>Об'єкти будуть зображатися у перспективній проєкції</translation>
     </message>
     <message>
       <source>Axis cross will be shown by default at file
@@ -2892,13 +2892,13 @@ Larger value eases to pick things, but can make small features impossible to sel
       <source>This option is useful for troubleshooting graphics card and driver problems.
 
 Changing this option requires a restart of the application.</source>
-      <translation>Цей параметр є корисним для усунення неполадок графічних карт та драйверів.
+      <translation>Цей параметр є корисним для усунення проблем графічних карт та драйверів.
 
 Зміна цього параметра вимагає перезапуску програми.</translation>
     </message>
     <message>
       <source>Use software OpenGL</source>
-      <translation>Використання програмного забезпечення OpenGL</translation>
+      <translation>Використати "програмний" OpenGL</translation>
     </message>
     <message>
       <source>What kind of multisample anti-aliasing is used</source>
@@ -3647,7 +3647,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To preserve resources, FreeCAD does not load workbenches until they are used. Loading them may provide access to additional preferences related to their functionality.&lt;/p&gt;&lt;p&gt;The following workbenches are available in your installation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для збереження ресурсів FreeCAD не завантажує робочі середовища, поки вони не почнуть використовуватися. Їх завантаження може відкрити доступ до додаткових налаштувань, пов'язаних з їх функціональністю.&lt;/p&gt;&lt;p&gt;Для вашої системи доступні наступні робочі середовища:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для збереження ресурсів FreeCAD не завантажує робочі середовища, поки вони не почнуть використовуватися. Їх завантаження може відкрити доступ до додаткових налаштувань, пов'язаних з їх роботою.&lt;/p&gt;&lt;p&gt;Для вашої системи доступні наступні робочі середовища:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Available Workbenches</source>
@@ -3729,7 +3729,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Run macros in local environment</source>
-      <translation>Запуск макросів у локальному середовищі</translation>
+      <translation>Запускати макроси у локальному середовищі</translation>
     </message>
     <message>
       <source>Record GUI commands</source>
@@ -4224,7 +4224,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Enable preselection and highlight by specified color</source>
-      <translation>Ввімкнути попередній вибір та виділення заданим кольором</translation>
+      <translation>Вмикає попереднє виділення та виділення вказаним кольором</translation>
     </message>
     <message>
       <source>Enable selection highlighting and use specified color</source>
@@ -4236,7 +4236,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Background will have selected color</source>
-      <translation>Встановлює вибраний колір для тла</translation>
+      <translation>Встановлює обраний колір для тла</translation>
     </message>
     <message>
       <source>Color gradient will get selected color as middle color</source>
@@ -4955,7 +4955,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
     </message>
     <message>
       <source>Redirect output</source>
-      <translation>Перенаправлення виводу</translation>
+      <translation>Перенаправити вивід</translation>
     </message>
   </context>
   <context>
@@ -5148,11 +5148,11 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Redirect Python output</source>
-      <translation>Переспрямувати вивід Python</translation>
+      <translation>Перенаправити вивід Python</translation>
     </message>
     <message>
       <source>Redirect Python errors</source>
-      <translation>Перенаправлення помилок Python</translation>
+      <translation>Перенаправити помилки Python</translation>
     </message>
     <message>
       <source>Plain Text Files</source>
@@ -6902,7 +6902,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Display</source>
-      <translation>Відображення</translation>
+      <translation>Показ</translation>
     </message>
     <message>
       <source>Unknown filetype</source>
@@ -9322,7 +9322,7 @@ the current copy will be lost.
     <name>StdTreeMultiDocument</name>
     <message>
       <source>Display all documents in the tree view</source>
-      <translation>Відображення усіх документів у вигляді ієрархії</translation>
+      <translation>Показ усіх документів у вигляді ієрархії</translation>
     </message>
     <message>
       <source>Multi document</source>

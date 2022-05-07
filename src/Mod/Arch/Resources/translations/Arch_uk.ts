@@ -5879,7 +5879,7 @@ instead of the FreeCAD web workbench</translation>
       <source>Shows verbose debug messages during import and export
 of IFC files in the Report view panel</source>
       <translation>Показує детальні повідомлення налагодження під час імпорту та експорту
-файлів IFC в панелі перегляду Звіту</translation>
+файлів IFC в панелі Вид Звіту</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="58"/>
@@ -5909,19 +5909,20 @@ for example, 3 if you have a 4-core CPU.
 
 Set it to 1 to use multicore mode in single-core mode; this is safer
 if you start getting crashes when you set multiple cores.</source>
-      <translation>EXPERIMENTAL
-Кількість ядер для використання в режимі multicor.
-Залиште 0, щоб вимкнути багатокорний режим.
+      <translation>Експериментально!
+Кількість ядер для використання в багатоядерному режимі.
+Залиште 0, щоб вимкнути багатоядерний режим.
 Максимальне значення має бути вашою кількістю ядер мінус 1,
-наприклад, якщо у вас є 4-ядерний процесор.
+наприклад 3, якщо у вас є 4-ядерний процесор.
 
-Встановіть значення 1, щоб використовувати режим multicore в одноядерному режимі; це безпечніше
-якщо почати аварійне завершення роботи при встановленні декількох ядер.</translation>
+Встановіть значення 1, щоб використовувати багатоядерний режим 
+в одноядерному режимі; це безпечніше, якщо ви почали отримувати 
+аварійні завершення роботи при встановленні декількох ядер.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="129"/>
       <source>Number of cores to use (experimental)</source>
-      <translation>Кількість ядер для використання (експериментальна)</translation>
+      <translation>Кількість ядер для використання (експериментально)</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="157"/>
@@ -5997,19 +5998,19 @@ Keep the element IfcProduct to import all building elements.</source>
       <location filename="../ui/preferences-ifc.ui" line="284"/>
       <source>Openings will be imported as subtractions, otherwise wall shapes
 will already have their openings subtracted</source>
-      <translation>Відкриття буде імпортовано як віднімання, в іншому випадку форми стін
-вже будуть відняті частини</translation>
+      <translation>Отвори будуть імпортовані як віднімання, 
+інакше форми стін вже буде містити отвори</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="288"/>
       <source>Separate openings</source>
-      <translation>Окремі відкривання</translation>
+      <translation>Окремі отвори</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="301"/>
       <source>The importer will try to detect extrusions.
 Note that this might slow things down.</source>
-      <translation>Імпорт буде намагатися виявити видавлювання.
+      <translation>Програма Імпорту буде намагатися виявити видавлювання.
 Зверніть увагу, що це може уповільнити процес.</translation>
     </message>
     <message>
@@ -6020,7 +6021,7 @@ Note that this might slow things down.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="318"/>
       <source>Split walls made of multiple layers</source>
-      <translation>Розділити стіни з декількох шарів</translation>
+      <translation>Розділяє стіни з декількох шарів</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="321"/>

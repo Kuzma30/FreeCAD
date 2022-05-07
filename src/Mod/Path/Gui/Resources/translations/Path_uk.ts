@@ -371,7 +371,7 @@
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="152"/>
       <source>Angle of the zigzag pattern</source>
-      <translation type="unfinished">Angle of the zigzag pattern</translation>
+      <translation>Кут зигзаг шаблону</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="158"/>

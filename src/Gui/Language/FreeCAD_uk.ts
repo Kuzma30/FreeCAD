@@ -2114,7 +2114,7 @@ Specify another directory, please.</source>
     <name>Gui::Dialog::DlgParameter</name>
     <message>
       <source>Parameter Editor</source>
-      <translation>Параметри редактора</translation>
+      <translation>Редактор Параметрів</translation>
     </message>
     <message>
       <source>Save to disk</source>
@@ -3658,7 +3658,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     <name>Gui::Dialog::DlgSettingsLazyLoadedImp</name>
     <message>
       <source>Workbench</source>
-      <translation>Робочий простір</translation>
+      <translation>Робочі середовища</translation>
     </message>
     <message>
       <source>Autoload</source>
@@ -4278,7 +4278,7 @@ horizontal space in Python console</source>
     <name>Gui::Dialog::DlgUnitCalculator</name>
     <message>
       <source>Units calculator</source>
-      <translation>Конвертор розмірностей</translation>
+      <translation>Калькулятор одиниць</translation>
     </message>
     <message>
       <source>as:</source>
@@ -7637,7 +7637,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Activate next window</source>
-      <translation>Активувати наступне вікно</translation>
+      <translation>Активує наступне вікно</translation>
     </message>
   </context>
   <context>
@@ -7648,7 +7648,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Activate previous window</source>
-      <translation>Активувати попереднє вікно</translation>
+      <translation>Активує попереднє вікно</translation>
     </message>
   </context>
   <context>
@@ -7688,7 +7688,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Tile pragmatic</source>
-      <translation>Прагматична плитка</translation>
+      <translation>Розміщує вікна каскадом</translation>
     </message>
   </context>
   <context>
@@ -7772,7 +7772,7 @@ the current copy will be lost.
     <name>StdCmdDependencyGraph</name>
     <message>
       <source>Dependency graph...</source>
-      <translation>Графік залежності...</translation>
+      <translation>Граф залежності...</translation>
     </message>
     <message>
       <source>Show the dependency graph of the objects in the active document</source>
@@ -7783,7 +7783,7 @@ the current copy will be lost.
     <name>StdCmdDlgCustomize</name>
     <message>
       <source>Cu&amp;stomize...</source>
-      <translation>Власні налаштування...</translation>
+      <translation>Налаштувати...</translation>
     </message>
     <message>
       <source>Customize toolbars and command bars</source>
@@ -8045,7 +8045,7 @@ the current copy will be lost.
     <name>StdCmdHideSelection</name>
     <message>
       <source>Hide selection</source>
-      <translation>Сховати вибране</translation>
+      <translation>Сховати виділене</translation>
     </message>
     <message>
       <source>Hide all selected objects</source>
@@ -8725,7 +8725,7 @@ the current copy will be lost.
     <name>StdCmdTextureMapping</name>
     <message>
       <source>Texture mapping...</source>
-      <translation>Відображення текстури...</translation>
+      <translation>Нанесення текстури...</translation>
     </message>
     <message>
       <source>Texture mapping</source>
@@ -8740,7 +8740,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Tile the windows</source>
-      <translation>Вікна плиткою</translation>
+      <translation>Розміщує вікна плиткою</translation>
     </message>
   </context>
   <context>
@@ -9256,7 +9256,7 @@ the current copy will be lost.
     <name>StdCmdWorkbench</name>
     <message>
       <source>Workbench</source>
-      <translation>Робочий простір</translation>
+      <translation>Робочі середовища</translation>
     </message>
     <message>
       <source>Switch between workbenches</source>
@@ -9507,7 +9507,7 @@ Are you sure you want to continue?
     <name>Std_DependencyGraph</name>
     <message>
       <source>Dependency graph</source>
-      <translation>Графік залежності</translation>
+      <translation>Граф залежності</translation>
     </message>
   </context>
   <context>

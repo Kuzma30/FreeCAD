@@ -218,12 +218,12 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="1483"/>
       <source>Downloaded package.xml for {}</source>
-      <translation>Завантажений package.xml для {}</translation>
+      <translation>Завантаження package.xml для {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1513"/>
       <source>Downloaded metadata.txt for {}</source>
-      <translation>Завантажений metadata.txt для {}</translation>
+      <translation>Завантаження metadata.txt для {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1561"/>

@@ -900,7 +900,7 @@ class Ui_PackageDetails(object):
                 "<h3>"
                 + QCoreApplication.translate(
                     "AddonsInstaller",
-                    "QtWebEngine Python bindings not installed -- using fallback README display. See Report View for details and installation instructions."
+                    "QtWebEngine Python bindings not installed -- using fallback README display. See Report View for details and installation instructions.",
                     None,
                 )
                 + "</h3>"

@@ -924,7 +924,7 @@ For example:
     &apos;Metric, Small Parts &amp; CNC&apos;
     &apos;US Customary&apos;
     &apos;Imperial Decimal&apos;</source>
-      <translation type="unfinished">The currently selected unit schema: 
+      <translation>Зараз діє наступна схем: 
      &apos;{}&apos;
  Does not use &apos;minutes&apos; for velocity values. 
  

@@ -4567,12 +4567,12 @@ However, no constraints linking to the endpoints were found.</source>
     <message>
       <location filename="../../TaskSketcherValidation.cpp" line="287"/>
       <source>Orientation locking was enabled and recomputed for %1 constraints. The constraints have been listed in Report view (menu View -&gt; Panels -&gt; Report view).</source>
-      <translation>Блокування орієнтації було увімкнено та перераховано для %1 обмежень. Ці обмеження наведено у вікні перегляду звіту (меню Перегляд -&gt; Види -&gt; Перегляд звіту).</translation>
+      <translation>Блокування орієнтації було увімкнено та перераховано для %1 обмежень. Ці обмеження наведено у вікні Виду Звіту (меню Вид -&gt; Панелі -&gt; Вид звіту).</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherValidation.cpp" line="304"/>
       <source>Orientation locking was disabled for %1 constraints. The constraints have been listed in Report view (menu View -&gt; Panels -&gt; Report view). Note that for all future constraints, the locking still defaults to ON.</source>
-      <translation>Блокування орієнтації було вимкнено для %1 обмежень. Ці обмеження наведено у вікні перегляду звіту (меню Перегляд -&gt; Види -&gt; Перегляд звіту). Зверніть увагу, що для всіх нових обмежень блокування включиться за замовчуванням.</translation>
+      <translation>Блокування орієнтації було вимкнено для %1 обмежень. Ці обмеження наведено у вікні Вид Звіту (меню Вид -&gt; Панелі -&gt; Вид Звіту). Зверніть увагу, що для всіх нових обмежень блокування вмикається за замовчуванням.</translation>
     </message>
     <message>
       <location filename="../../TaskSketcherValidation.cpp" line="319"/>

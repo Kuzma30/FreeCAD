@@ -76,33 +76,33 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="752"/>
       <source>Addon Manager: a worker process failed to halt ({name})</source>
-      <translation type="unfinished">Addon Manager: a worker process failed to halt ({name})</translation>
+      <translation>Менеджер Додатків: робочому процесу не вдалося зупинити ({name})</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="771"/>
       <source>Addon Manager: a worker process failed to complete while fetching {name}</source>
-      <translation type="unfinished">Addon Manager: a worker process failed to complete while fetching {name}</translation>
+      <translation>Менеджер Додатків: робочий процес не завершився при отриманні {name}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="786"/>
       <source>Out of {num_macros} macros, {num_failed} timed out while processing</source>
-      <translation type="unfinished">Out of {num_macros} macros, {num_failed} timed out while processing</translation>
+      <translation>Вичерпано час обробки для {num_macros} макросів, тайм-аут для {num_failed}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="817"/>
       <source>Getting metadata from macro {}</source>
-      <translation type="unfinished">Getting metadata from macro {}</translation>
+      <translation>Отримання метаданих з макросу {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="830"/>
       <source>Timeout while fetching metadata for macro {}</source>
-      <translation type="unfinished">Timeout while fetching metadata for macro {}</translation>
+      <translation>Тайм-аут при отриманні метаданих для макросу {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="841"/>
       <source>Failed to kill process for macro {}!
 </source>
-      <translation type="unfinished">Failed to kill process for macro {}!
+      <translation>Не вдалося завершити процес для макросу {}!
 </translation>
     </message>
     <message>
@@ -123,32 +123,32 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="921"/>
       <source>GitPython not found. Using ZIP file download instead.</source>
-      <translation type="unfinished">GitPython not found. Using ZIP file download instead.</translation>
+      <translation>GitPython не знайдено. Будуть завантажуватись ZIP-файлу.</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="929"/>
       <source>Your version of Python doesn&apos;t appear to support ZIP files. Unable to proceed.</source>
-      <translation type="unfinished">Your version of Python doesn&apos;t appear to support ZIP files. Unable to proceed.</translation>
+      <translation>У вашій версії Python здається, не підтримуються ZIP-файли. Не вдалося продовжити.</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="966"/>
       <source>No Git Python installed, skipping git operations</source>
-      <translation type="unfinished">No Git Python installed, skipping git operations</translation>
+      <translation>Модуль GitPython не встановлено, пропускаю git операції</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1032"/>
       <source>You are installing a Python 2 workbench on a system running Python 3 - </source>
-      <translation type="unfinished">You are installing a Python 2 workbench on a system running Python 3 - </translation>
+      <translation>Ви встановлюєте Python 2 сумісне робоче середовище на системі з Python 3 - </translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1000"/>
       <source>Workbench successfully updated. Please restart FreeCAD to apply the changes.</source>
-      <translation type="unfinished">Workbench successfully updated. Please restart FreeCAD to apply the changes.</translation>
+      <translation>Робоче середовище успішно оновлено. Будь ласка, перезавантажте FreeCAD для застосування змін.</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1005"/>
       <source>Workbench successfully updated.</source>
-      <translation type="unfinished">Workbench successfully updated.</translation>
+      <translation>Робоче середовище успішно оновлено.</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1010"/>
@@ -163,17 +163,17 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="1080"/>
       <source>Workbench successfully installed. Please restart FreeCAD to apply the changes.</source>
-      <translation type="unfinished">Workbench successfully installed. Please restart FreeCAD to apply the changes.</translation>
+      <translation>Робоче середовище успішно встановлено. Будь ласка, перезавантажте FreeCAD для застосування змін.</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1085"/>
       <source>Addon successfully installed.</source>
-      <translation type="unfinished">Addon successfully installed.</translation>
+      <translation>Додаток успішно встановлено.</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1110"/>
       <source>A macro has been installed and is available under Macro -&gt; Macros menu</source>
-      <translation type="unfinished">A macro has been installed and is available under Macro -&gt; Macros menu</translation>
+      <translation>Макрос був встановлений і доступний в меню Макрос -&gt; Макроси...</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1130"/>
@@ -183,22 +183,22 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="1157"/>
       <source>Downloading: {mbytes_str}MB of {mbytes_total_str}MB ({percent}%)</source>
-      <translation type="unfinished">Downloading: {mbytes_str}MB of {mbytes_total_str}MB ({percent}%)</translation>
+      <translation>Завантаження: {mbytes_str}МБ з {mbytes_total_str}МБ ({percent}%)</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1172"/>
       <source>Downloading: {bytes_str} of {bytes_total_str} bytes ({percent}%)</source>
-      <translation type="unfinished">Downloading: {bytes_str} of {bytes_total_str} bytes ({percent}%)</translation>
+      <translation>Завантаження: {bytes_str} з {bytes_total_str} байт ({percent}%)</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1185"/>
       <source>Downloading: {bytes_str}MB of unknown total</source>
-      <translation type="unfinished">Downloading: {bytes_str}MB of unknown total</translation>
+      <translation>Завантаження: {bytes_str}MБ від невідомої загальної кількості</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1195"/>
       <source>Error: Error while downloading ZIP file for {}</source>
-      <translation type="unfinished">Error: Error while downloading ZIP file for {}</translation>
+      <translation>Помилка: Помилка завантаження ZIP файлу для {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1206"/>
@@ -208,12 +208,12 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="1220"/>
       <source>Successfully installed {} from ZIP file</source>
-      <translation type="unfinished">Successfully installed {} from ZIP file</translation>
+      <translation>Успішно встановлено {} з ZIP-файлу</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1363"/>
       <source>Installation of Python package {} failed</source>
-      <translation type="unfinished">Installation of Python package {} failed</translation>
+      <translation>Встановлення Python пакету {} не вдалося</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1483"/>
@@ -228,7 +228,7 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="1561"/>
       <source>Downloaded requirements.txt for {}</source>
-      <translation type="unfinished">Downloaded requirements.txt for {}</translation>
+      <translation>Завантаження requirements.txt для {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1587"/>
@@ -238,12 +238,12 @@
     <message>
       <location filename="../../Addon.py" line="331"/>
       <source>Addon Developer Warning: Repository URL set in package.xml file for addon {} ({}) does not match the URL it was fetched from ({})</source>
-      <translation type="unfinished">Addon Developer Warning: Repository URL set in package.xml file for addon {} ({}) does not match the URL it was fetched from ({})</translation>
+      <translation>Попередження Розробника додатка: URL репозиторію, заданий у файлі package.xml для додатка {} ({}), не збігається з URL, з якого його було взято ({})</translation>
     </message>
     <message>
       <location filename="../../Addon.py" line="339"/>
       <source>Addon Developer Warning: Repository branch set in package.xml file for addon {} ({}) does not match the branch it was fetched from ({})</source>
-      <translation type="unfinished">Addon Developer Warning: Repository branch set in package.xml file for addon {} ({}) does not match the branch it was fetched from ({})</translation>
+      <translation>Попередження Розробника додатка: Вітка репозиторію, задана у файлі package.xml для додатка {} ({}), не збігається з завантаженою ({})</translation>
     </message>
     <message>
       <location filename="../../addonmanager_macro.py" line="171"/>
@@ -258,17 +258,17 @@
     <message>
       <location filename="../../addonmanager_macro.py" line="216"/>
       <source>Syntax error while reading {} from macro {}</source>
-      <translation type="unfinished">Syntax error while reading {} from macro {}</translation>
+      <translation>Синтаксична помилка під час читання {} з macro {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_macro.py" line="243"/>
       <source>Unable to open macro wiki page at {}</source>
-      <translation type="unfinished">Unable to open macro wiki page at {}</translation>
+      <translation>Не вдалося відкрити wiki сторінку макросу за адресою {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_macro.py" line="260"/>
       <source>Unable to open macro code URL {rawcodeurl}</source>
-      <translation type="unfinished">Unable to open macro code URL {rawcodeurl}</translation>
+      <translation>Не вдалося відкрити URL-адресу макросу {rawcodeurl}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_macro.py" line="279"/>
@@ -278,7 +278,7 @@
     <message>
       <location filename="../../addonmanager_macro.py" line="293"/>
       <source>Unable to retrieve a description from the wiki for macro {}</source>
-      <translation type="unfinished">Unable to retrieve a description from the wiki for macro {}</translation>
+      <translation>Не вдається отримати опис з Wiki для макросу {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_macro.py" line="420"/>

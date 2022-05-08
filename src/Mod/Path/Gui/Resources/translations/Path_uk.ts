@@ -21,7 +21,7 @@
     <message>
       <location filename="../../../PathScripts/PathVcarve.py" line="210"/>
       <source>Additional base objects to be engraved</source>
-      <translation>Додаткові базові об'єкти для гравіювання</translation>
+      <translation>Додаткові базові об&apos;єкти для гравіювання</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathEngrave.py" line="88"/>
@@ -231,7 +231,7 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="176"/>
       <source>An optional comment for this Operation</source>
-      <translation>Необов'язковий коментар до цієї Операції</translation>
+      <translation>Необов&apos;язковий коментар до цієї Операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="184"/>
@@ -556,7 +556,7 @@
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="161"/>
       <source>The name of the shape file</source>
-      <translation>Ім'я файлу форми</translation>
+      <translation>Ім&apos;я файлу форми</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="205"/>
@@ -851,7 +851,7 @@
     <message>
       <location filename="../../../PathScripts/PathStock.py" line="166"/>
       <source>A material for this object</source>
-      <translation>Матеріал для цього об'єкту</translation>
+      <translation>Матеріал для цього об&apos;єкту</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathStock.py" line="238"/>
@@ -5868,12 +5868,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="14"/>
       <source>Job Preferences</source>
-      <translation type="unfinished">Job Preferences</translation>
+      <translation>Налаштування для Завдань</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="32"/>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="38"/>
@@ -5883,12 +5883,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="44"/>
       <source>Path</source>
-      <translation>Траєкторія</translation>
+      <translation>Шлях</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="51"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Path to look for templates, post processors, tool tables and other external files.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty the macro directory is used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Path to look for templates, post processors, tool tables and other external files.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty the macro directory is used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Шлях для пошуку шаблонів, постпроцесорів, таблиць інструментів та інших зовнішніх файлів.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Якщо залишити порожнім, буде використовуватись каталог макросів.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="58"/>
@@ -5905,98 +5905,98 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="72"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default template to be selected when creating a new Job. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;This can be helpful when almost all jobs will be processed by the same machine with a similar setup.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty no template will be preselected.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default template to be selected when creating a new Job. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;This can be helpful when almost all jobs will be processed by the same machine with a similar setup.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty no template will be preselected.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Шаблон за замовчуванням, який вибирається під час створення нового завдання. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Це може бути корисно, коли майже всі завдання оброблятимуться на одному комп’ютері з подібними налаштуваннями.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Якщо залишити пустим, шаблон не буде попередньо вибрано.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="89"/>
       <source>Geometry</source>
-      <translation type="unfinished">Geometry</translation>
+      <translation>Геометрії</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="98"/>
       <source>Default Geometry Tolerance</source>
-      <translation type="unfinished">Default Geometry Tolerance</translation>
+      <translation>Допуск геометрії за замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="105"/>
       <source>Default value for new Jobs, used for computing Paths.  Smaller increases accuracy, but slows down computation</source>
-      <translation type="unfinished">Default value for new Jobs, used for computing Paths.  Smaller increases accuracy, but slows down computation</translation>
+      <translation>Стандартне значення для нових завдань, яке використовується для обчислення Траєкторій. Менше значення збільшує точність, але уповільнює обчислення</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="112"/>
       <source>Default Curve Accuracy</source>
-      <translation type="unfinished">Default Curve Accuracy</translation>
+      <translation>Допуск кривих за замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="150"/>
       <location filename="../preferences/PathJob.ui" line="265"/>
       <source>Post Processor</source>
-      <translation type="unfinished">Post Processor</translation>
+      <translation>Пост-процесор</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="162"/>
       <source>Output File</source>
-      <translation type="unfinished">Output File</translation>
+      <translation>Вихідний файл</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="174"/>
       <source>Default Path</source>
-      <translation type="unfinished">Default Path</translation>
+      <translation>Шлях за замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="193"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть шлях і назву файлу (за бажанням) (дивіться нижче), які будуть використовуватися за замовчуванням для роботи постпроцесора.&lt;/p&gt;&lt;p&gt;Наведені нижче заміни виконуються перед початком експорту. ім&apos;я визначається під час постобробки:&lt;/p&gt;&lt;p&gt;%D ... тека активного документа&lt;br/&gt;%d ... ім&apos;я активного документа (з розширенням)&lt;br/&gt; %M ... тека макросу користувача&lt;br/&gt;%j ... ім&apos;я активного об&apos;єкта Завдання&lt;/p&gt;&lt;p&gt;У наведеному нижче прикладі всі файли з тими ж іменами, що й у документі, зберігаються у каталог /home/freecad ( будь ласка, видаліть лапки):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;Перегляньте політику збереження файлів нижче, щоб дізнатися, як боротися з конфліктами імен.&lt;/p&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="213"/>
       <source>File Save Policy</source>
-      <translation type="unfinished">File Save Policy</translation>
+      <translation>Політика Збереження Файлу</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="232"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Choose how to deal with potential file name conflicts. Always open a dialog, only open a dialog if the output file already exists, overwrite any existing file or add a unique (3 digit) sequential ID to the file name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Choose how to deal with potential file name conflicts. Always open a dialog, only open a dialog if the output file already exists, overwrite any existing file or add a unique (3 digit) sequential ID to the file name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Дозволяє вибрати, як чинити з потенційними конфліктами імен файлів. Завжди відкривати діалог, відкривати діалог, лише якщо вихідний файл вже існує, перезаписати будь-який існуючий файл або додати унікальний (3-значний) послідовний ідентифікатор до імені файлу.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="236"/>
       <source>Open File Dialog</source>
-      <translation type="unfinished">Open File Dialog</translation>
+      <translation>Відкрити Діалог Файл</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="241"/>
       <source>Open File Dialog on conflict</source>
-      <translation type="unfinished">Open File Dialog on conflict</translation>
+      <translation>Відкрити Діалог Файл при конфлікті</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="246"/>
       <source>Overwrite existing file</source>
-      <translation type="unfinished">Overwrite existing file</translation>
+      <translation>Перезаписати існуючий файл</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="251"/>
       <source>Append Unique ID on conflict</source>
-      <translation type="unfinished">Append Unique ID on conflict</translation>
+      <translation>Додати унікальний ID при конфлікті</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="274"/>
       <source>Post Processors Selection </source>
-      <translation type="unfinished">Post Processors Selection </translation>
+      <translation>Вибір Пост Процесорів </translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="284"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;It doesn&apos;t seem there are any post processor scripts installed. Please add some into your macro directory and make sure the file name ends with &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;It doesn&apos;t seem there are any post processor scripts installed. Please add some into your macro directory and make sure the file name ends with &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Схоже, що у вас не встановлені скрипти постпроцесора. Будь ласка, додайте кілька до каталогу макросів і переконайтеся, що ім&apos;я файлу закінчується на &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="291"/>
       <source>Default Post Processor</source>
-      <translation type="unfinished">Default Post Processor</translation>
+      <translation>Пост Процесор за замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="298"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select one of the post processors as the default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select one of the post processors as the default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Дозволяє вибрати один із постпроцесорів як за замовчуванням.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="301"/>
@@ -6011,7 +6011,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="311"/>
       <source>Default Arguments</source>
-      <translation type="unfinished">Default Arguments</translation>
+      <translation>Аргументи За Замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="318"/>
@@ -6795,7 +6795,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="47"/>
       <source>File Name</source>
-      <translation>Ім'я файлу</translation>
+      <translation>Ім&apos;я файлу</translation>
     </message>
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="54"/>

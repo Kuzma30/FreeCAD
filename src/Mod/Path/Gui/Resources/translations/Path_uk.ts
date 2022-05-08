@@ -912,17 +912,42 @@
   <context>
     <name>Path</name>
     <message>
-      <location filename="../../../InitGui.py" line="276"/>
+      <location filename="../../../InitGui.py" line="270"/>
+      <source>The currently selected unit schema: 
+     &apos;{}&apos;
+ Does not use &apos;minutes&apos; for velocity values. 
+ 
+CNC machines require feed rate to be expressed in 
+unit/minute. To ensure correct gcode: 
+Select a minute-based schema in preferences.
+For example:
+    &apos;Metric, Small Parts &amp; CNC&apos;
+    &apos;US Customary&apos;
+    &apos;Imperial Decimal&apos;</source>
+      <translation>Зараз діє наступна схем: 
+     &apos;{}&apos;
+ Does not use &apos;minutes&apos; for velocity values. 
+ 
+CNC machines require feed rate to be expressed in 
+unit/minute. To ensure correct gcode: 
+Select a minute-based schema in preferences.
+For example:
+    &apos;Metric, Small Parts &amp; CNC&apos;
+    &apos;US Customary&apos;
+    &apos;Imperial Decimal&apos;</translation>
+    </message>
+    <message>
+      <location filename="../../../InitGui.py" line="274"/>
       <source>Warning</source>
       <translation>Увага</translation>
     </message>
     <message>
-      <location filename="../../../InitGui.py" line="279"/>
+      <location filename="../../../InitGui.py" line="277"/>
       <source>Ok</source>
       <translation>Гаразд</translation>
     </message>
     <message>
-      <location filename="../../../InitGui.py" line="280"/>
+      <location filename="../../../InitGui.py" line="278"/>
       <source>Don&apos;t Show This Anymore</source>
       <translation type="unfinished">Don&apos;t Show This Anymore</translation>
     </message>

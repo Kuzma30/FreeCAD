@@ -21,7 +21,7 @@
     <message>
       <location filename="../../../PathScripts/PathVcarve.py" line="210"/>
       <source>Additional base objects to be engraved</source>
-      <translation>Додаткові базові об&apos;єкти для гравіювання</translation>
+      <translation>Додаткові базові об'єкти для гравіювання</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathEngrave.py" line="88"/>
@@ -231,7 +231,7 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="176"/>
       <source>An optional comment for this Operation</source>
-      <translation>Необов&apos;язковий коментар до цієї Операції</translation>
+      <translation>Необов'язковий коментар до цієї Операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="184"/>
@@ -556,7 +556,7 @@
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="161"/>
       <source>The name of the shape file</source>
-      <translation>Ім&apos;я файлу форми</translation>
+      <translation>Ім'я файлу форми</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="205"/>
@@ -851,7 +851,7 @@
     <message>
       <location filename="../../../PathScripts/PathStock.py" line="166"/>
       <source>A material for this object</source>
-      <translation>Матеріал для цього об&apos;єкту</translation>
+      <translation>Матеріал для цього об'єкту</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathStock.py" line="238"/>
@@ -5920,7 +5920,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="105"/>
       <source>Default value for new Jobs, used for computing Paths.  Smaller increases accuracy, but slows down computation</source>
-      <translation>Стандартне значення для нових завдань, яке використовується для обчислення Траєкторій. Менше значення збільшує точність, але уповільнює обчислення</translation>
+      <translation>Значення за замовчуванням для нових Завдань, яке використовується для обчислення Траєкторій. Менше значення збільшує точність, але уповільнює обчислення</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="112"/>

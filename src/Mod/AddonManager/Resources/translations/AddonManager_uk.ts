@@ -6,12 +6,12 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="124"/>
       <source>Unable to read data from GitHub: check your internet connection and proxy settings and try again.</source>
-      <translation type="unfinished">Unable to read data from GitHub: check your internet connection and proxy settings and try again.</translation>
+      <translation>Неможливо прочитати дані з GitHub: Перевірте підключення до Інтернету та налаштування проксі-сервера і спробуйте ще раз.</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="201"/>
       <source>Failed to connect to GitHub. Check your connection and proxy settings.</source>
-      <translation type="unfinished">Failed to connect to GitHub. Check your connection and proxy settings.</translation>
+      <translation>Не вдалося під'єднатися до GitHub. Перевірте з'єднання та параметри проксі-сервера.</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="303"/>
@@ -21,7 +21,7 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="451"/>
       <source>Unable to fetch git updates for workbench {}</source>
-      <translation type="unfinished">Unable to fetch git updates for workbench {}</translation>
+      <translation>Не вдається отримати git оновлення для робочого середовища {}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="468"/>
@@ -31,22 +31,22 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="508"/>
       <source>Failed to read metadata from {name}</source>
-      <translation type="unfinished">Failed to read metadata from {name}</translation>
+      <translation>Помилка читання метаданих з {name}</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="531"/>
       <source>Failed to fetch code for macro &apos;{name}&apos;</source>
-      <translation type="unfinished">Failed to fetch code for macro &apos;{name}&apos;</translation>
+      <translation>Не вдалося отримати код для макросу &apos;{name}&apos;</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="588"/>
       <source>Retrieving macros from FreeCAD/FreeCAD-Macros Git repository</source>
-      <translation type="unfinished">Retrieving macros from FreeCAD/FreeCAD-Macros Git repository</translation>
+      <translation>Отримання макросів з Git репозиторію FreeCAD/FreeCAD-Macros</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="597"/>
       <source>Retrieving macros from FreeCAD wiki</source>
-      <translation type="unfinished">Retrieving macros from FreeCAD wiki</translation>
+      <translation>Отримання макросів з FreeCAD Wiki</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="608"/>
@@ -56,7 +56,7 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="620"/>
       <source>Failed to execute Git Python command: check installation of GitPython and/or git</source>
-      <translation type="unfinished">Failed to execute Git Python command: check installation of GitPython and/or git</translation>
+      <translation>Не вдалося виконати команду Git Python: перевірте встановлення GitPython і/або git</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="641"/>
@@ -66,7 +66,7 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="681"/>
       <source>Error connecting to the Wiki, FreeCAD cannot retrieve the Wiki macro list at this time</source>
-      <translation type="unfinished">Error connecting to the Wiki, FreeCAD cannot retrieve the Wiki macro list at this time</translation>
+      <translation>Помилка підключення до Wiki, FreeCAD зараз не може отримати список макросів Wiki</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="732"/>

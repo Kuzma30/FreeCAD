@@ -106,12 +106,12 @@
     <message>
       <location filename="../../../AttachmentEditor/Commands.py" line="79"/>
       <source>Attachment...</source>
-      <translation>Вкладення...</translation>
+      <translation>Приєднання...</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/Commands.py" line="81"/>
       <source>Edit attachment of selected object.</source>
-      <translation>Редагувати приєднання вибраного об&apos;єкта.</translation>
+      <translation>Редагувати приєднання вибраного об'єкта.</translation>
     </message>
   </context>
   <context>
@@ -119,7 +119,7 @@
     <message>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="57"/>
       <source>Compound Filter</source>
-      <translation>Фільтр з&apos;єднань</translation>
+      <translation>Фільтр з'єднань</translation>
     </message>
     <message>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="59"/>
@@ -161,7 +161,7 @@ Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to
     <message>
       <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="56"/>
       <source>Explode compound</source>
-      <translation>Відкрити об&apos;єднане</translation>
+      <translation>Відкрити об'єднане</translation>
     </message>
     <message>
       <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="58"/>
@@ -191,7 +191,7 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="199"/>
       <source>Fuses objects, taking care to preserve voids.</source>
-      <translation>З&apos;єднує об&apos;екти, піклуючись про те, щоб зберегти порожнини.</translation>
+      <translation>З'єднує об'екти, піклуючись про те, щоб зберегти порожнини.</translation>
     </message>
   </context>
   <context>
@@ -199,12 +199,12 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="388"/>
       <source>Cutout for object</source>
-      <translation>Виріз об&apos;єкту</translation>
+      <translation>Виріз об'єкту</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="390"/>
       <source>Makes a cutout in one object to fit another object.</source>
-      <translation>Робить виріз в одному об&apos;єкті, що відповідає іншому об&apos;єкту.</translation>
+      <translation>Робить виріз в одному об'єкті, що відповідає іншому об'єкту.</translation>
     </message>
   </context>
   <context>
@@ -212,7 +212,7 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="293"/>
       <source>Embed object</source>
-      <translation>Вбудувати об&apos;єкт</translation>
+      <translation>Вбудувати об'єкт</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="295"/>
@@ -422,7 +422,7 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
       <location filename="../../Command.cpp" line="422"/>
       <location filename="../../Command.cpp" line="522"/>
       <source>Non-solids selected</source>
-      <translation>Обрано несуцільні об&apos;єкти</translation>
+      <translation>Обрано несуцільні об'єкти</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="323"/>
@@ -430,17 +430,17 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
       <location filename="../../Command.cpp" line="523"/>
       <source>The use of non-solids for boolean operations may lead to unexpected results.
 Do you want to continue?</source>
-      <translation>Застосування логічних операцій до несуцільних об&apos;єктів може призвести до неочікуваних результатів. Ви хочете продовжити?</translation>
+      <translation>Застосування логічних операцій до несуцільних об'єктів може призвести до неочікуваних результатів. Ви хочете продовжити?</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="408"/>
       <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to compute common between.</source>
-      <translation>Будь ласка, виберіть дві або більше фігур. Або виберіть з&apos;єднання, яке також містить дві або більше фігур, для обчислення перетину між ними.</translation>
+      <translation>Будь ласка, виберіть дві або більше фігур. Або виберіть з'єднання, яке також містить дві або більше фігур, для обчислення перетину між ними.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="508"/>
       <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to be fused.</source>
-      <translation>Будь ласка, виберіть дві або більше фігур. Або виберіть з&apos;єднання, що містить дві або більше фігур, для операції злиття.</translation>
+      <translation>Будь ласка, виберіть дві або більше фігур. Або виберіть з'єднання, що містить дві або більше фігур, для операції злиття.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="927"/>
@@ -589,7 +589,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="119"/>
       <source>Invalid MultiConnexity</source>
-      <translation>Неприпустима багатозв&apos;язність</translation>
+      <translation>Неприпустима багатозв'язність</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="120"/>
@@ -659,7 +659,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="133"/>
       <source>Not Connected</source>
-      <translation>Не з&apos;єднано</translation>
+      <translation>Не з'єднано</translation>
     </message>
     <message>
       <location filename="../../TaskCheckGeometry.cpp" line="134"/>
@@ -953,7 +953,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="331"/>
       <source>Object</source>
       <comment>Attacher reference type</comment>
-      <translation>Об&apos;єкт</translation>
+      <translation>Об'єкт</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="332"/>
@@ -1028,7 +1028,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="281"/>
       <source>Point is put on edge, MapPathParameter controls where. Additionally, vertex can be linked in for making a projection.</source>
       <comment>AttachmentPoint mode tooltip</comment>
-      <translation>Точка ставиться на ребро, MapPathParameter контролює де. Крім того, вершина може бути пов&apos;язана для створення проекції.</translation>
+      <translation>Точка ставиться на ребро, MapPathParameter контролює де. Крім того, вершина може бути пов'язана для створення проекції.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="283"/>
@@ -1040,7 +1040,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="284"/>
       <source>Center of osculating circle of an edge. Optional vertex link defines where.</source>
       <comment>AttachmentPoint mode tooltip</comment>
-      <translation>Центр кола дотичного до ребра. Необов&apos;язкова вершинна ланка визначає де.</translation>
+      <translation>Центр кола дотичного до ребра. Необов'язкова вершинна ланка визначає де.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="286"/>
@@ -1128,7 +1128,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="209"/>
       <source>Line is aligned along local X axis of object. Works on objects with placements, and ellipse/parabola/hyperbola edges.</source>
       <comment>AttachmentLine mode tooltip</comment>
-      <translation>Лінія вирівнюється вздовж локальної осі X об&apos;єкта. Працює на об&apos;єктах з розміщеннями, а також на еліптичних/параболічних/гіперболічних ребрах.</translation>
+      <translation>Лінія вирівнюється вздовж локальної осі X об'єкта. Працює на об'єктах з розміщеннями, а також на еліптичних/параболічних/гіперболічних ребрах.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="205"/>
@@ -1140,7 +1140,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="206"/>
       <source>Line is aligned along local Y axis of object. Works on objects with placements, and ellipse/parabola/hyperbola edges.</source>
       <comment>AttachmentLine mode tooltip</comment>
-      <translation>Лінія вирівнюється вздовж локальної осі Y об&apos;єкта. Працює на об&apos;єктах з розміщеннями, а також на еліптичних/параболічних/гіперболічних ребрах.</translation>
+      <translation>Лінія вирівнюється вздовж локальної осі Y об'єкта. Працює на об'єктах з розміщеннями, а також на еліптичних/параболічних/гіперболічних ребрах.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="208"/>
@@ -1158,7 +1158,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="212"/>
       <source>Line that is an axis of osculating circle of curved edge. Optional vertex defines where.</source>
       <comment>AttachmentLine mode tooltip</comment>
-      <translation>Лінія, яка є віссю кола, дотичного до криволінійного краю. Необов&apos;язкова вершина визначає, де.</translation>
+      <translation>Лінія, яка є віссю кола, дотичного до криволінійного краю. Необов'язкова вершина визначає, де.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="214"/>
@@ -1360,7 +1360,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="125"/>
       <source>Attachment is disabled. Object can be moved by editing Placement property.</source>
       <comment>AttachmentPlane mode tooltip</comment>
-      <translation>Приєднання вимкнено. Об&apos;єкт може бути переміщений редагуванням властивості Placement.</translation>
+      <translation>Приєднання вимкнено. Об'єкт може бути переміщений редагуванням властивості Placement.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="127"/>
@@ -1384,7 +1384,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="131"/>
       <source>Plane is aligned to XY local plane of linked object.</source>
       <comment>AttachmentPlane mode tooltip</comment>
-      <translation>Площина, вирівнена до локальної площини XY пов&apos;язаного об&apos;єкта.</translation>
+      <translation>Площина, вирівнена до локальної площини XY пов'язаного об'єкта.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="133"/>
@@ -1396,7 +1396,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="134"/>
       <source>Plane is aligned to XZ local plane of linked object.</source>
       <comment>AttachmentPlane mode tooltip</comment>
-      <translation>Площина, вирівнена до локальної площини XZ пов&apos;язаного об&apos;єкта.</translation>
+      <translation>Площина, вирівнена до локальної площини XZ пов'язаного об'єкта.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="136"/>
@@ -1408,7 +1408,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="137"/>
       <source>Plane is aligned to YZ local plane of linked object.</source>
       <comment>AttachmentPlane mode tooltip</comment>
-      <translation>Площина, вирівнена до локальної площини YZ пов&apos;язаного об&apos;єкта.</translation>
+      <translation>Площина, вирівнена до локальної площини YZ пов'язаного об'єкта.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="139"/>
@@ -1557,7 +1557,7 @@ Do you want to continue?</source>
       <location filename="../../AttacherTexts.cpp" line="50"/>
       <source>Attachment is disabled. Object can be moved by editing Placement property.</source>
       <comment>Attachment3D mode tooltip</comment>
-      <translation>Приєднання вимкнено. Об&apos;єкт може бути переміщений редагуванням властивості Placement.</translation>
+      <translation>Приєднання вимкнено. Об'єкт може бути переміщений редагуванням властивості Placement.</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="52"/>
@@ -2039,7 +2039,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../Command.cpp" line="2218"/>
       <source>Set the color of each individual face of the selected object.</source>
-      <translation>Встановлює колір кожної окремої грані виділеного об&apos;єкту.</translation>
+      <translation>Встановлює колір кожної окремої грані виділеного об'єкту.</translation>
     </message>
   </context>
   <context>
@@ -2337,12 +2337,12 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../Command.cpp" line="578"/>
       <source>Join objects...</source>
-      <translation>З&apos;єднати об&apos;єкти...</translation>
+      <translation>З'єднати об'єкти...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="579"/>
       <source>Join walled objects</source>
-      <translation>Об’єднує огороджені об&apos;єкти</translation>
+      <translation>Об’єднує огороджені об’єкти</translation>
     </message>
   </context>
   <context>
@@ -2575,12 +2575,12 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../Command.cpp" line="477"/>
       <source>Union</source>
-      <translation>Об&apos;єднання</translation>
+      <translation>Об'єднання</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="478"/>
       <source>Make a union of several shapes</source>
-      <translation>Об&apos;єднує декількох фігур</translation>
+      <translation>Об’єднує декілька фігур</translation>
     </message>
   </context>
   <context>
@@ -2755,12 +2755,12 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../CommandSimple.cpp" line="132"/>
       <source>Create points object from mesh</source>
-      <translation>Створити точковий об&apos;єкт із сітки</translation>
+      <translation>Створити точковий об’єкт із сітки</translation>
     </message>
     <message>
       <location filename="../../CommandSimple.cpp" line="133"/>
       <source>Create selectable points object from selected mesh object</source>
-      <translation>Створює об&apos;єкт з точками з виділеного об&apos;єкта сітки</translation>
+      <translation>Створює об’єкт з точками з виділеного об’єкта сітки</translation>
     </message>
   </context>
   <context>
@@ -2799,7 +2799,7 @@ into its X, Y, and Z components.</source>
 onto a face of another object.
 The camera view determines the direction
 of projection.</source>
-      <translation>Створює проекцію ребер, ліній або граней одного об&apos;єкта на грань іншого об&apos;єкта. Вид камери визначає напрямок проекції.</translation>
+      <translation>Створює проєкцію ребер, ліній або граней одного об’єкта на грань іншого. Вид камери визначає напрямок проєкції.</translation>
     </message>
   </context>
   <context>
@@ -3387,7 +3387,7 @@ Note: The placement is expressed in local space of object being attached.</trans
     <message>
       <location filename="../../DlgBooleanOperation.ui" line="32"/>
       <source>Union</source>
-      <translation>Об&apos;єднання</translation>
+      <translation>Об’єднання</translation>
     </message>
     <message>
       <location filename="../../DlgBooleanOperation.ui" line="42"/>
@@ -3471,7 +3471,7 @@ Note: The placement is expressed in local space of object being attached.</trans
     <message>
       <location filename="../../DlgBooleanOperation.cpp" line="419"/>
       <source>Performing union on non-solids is not possible</source>
-      <translation>Неможливо виконати об&apos;єднання фігур, які не є суцільними тілами</translation>
+      <translation>Неможливо виконати об’єднання фігур, які не є суцільними тілами</translation>
     </message>
     <message>
       <location filename="../../DlgBooleanOperation.cpp" line="428"/>
@@ -3668,7 +3668,7 @@ If both lengths are zero, magnitude of direction is used.</translation>
     <message>
       <location filename="../../DlgExtrusion.cpp" line="549"/>
       <source>Object not found: %1</source>
-      <translation>Об&apos;єкт не знайдено: %1</translation>
+      <translation>Об'єкт не знайдено: %1</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.cpp" line="611"/>
@@ -3939,7 +3939,7 @@ Please check one or more edge entities first.</source>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="109"/>
       <source>Skip blank entities</source>
-      <translation>Пропустити пусті об&apos;єкти</translation>
+      <translation>Пропустити пусті об'єкти</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportIges.ui" line="119"/>
@@ -4075,7 +4075,7 @@ during file reading (slower but higher details).</translation>
     <message>
       <location filename="../../DlgImportExportStep.ui" line="206"/>
       <source>Import invisible objects</source>
-      <translation>Імпортувати невидимі об&apos;єкти</translation>
+      <translation>Імпортувати невидимі об'єкти</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportStep.ui" line="219"/>
@@ -4289,7 +4289,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgPartImportIges.ui" line="20"/>
       <source>File Name</source>
-      <translation>Ім&apos;я файлу</translation>
+      <translation>Ім'я файлу</translation>
     </message>
     <message>
       <location filename="../../DlgPartImportIges.ui" line="54"/>
@@ -4320,7 +4320,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgPartImportStep.ui" line="20"/>
       <source>File Name</source>
-      <translation>Ім&apos;я файлу</translation>
+      <translation>Ім'я файлу</translation>
     </message>
     <message>
       <location filename="../../DlgPartImportStep.ui" line="54"/>
@@ -4879,7 +4879,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgRevolution.cpp" line="177"/>
       <source>Object not found: %1</source>
-      <translation>Об&apos;єкт не знайдено: %1</translation>
+      <translation>Об'єкт не знайдено: %1</translation>
     </message>
     <message>
       <location filename="../../DlgRevolution.cpp" line="258"/>
@@ -5006,12 +5006,12 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsGeneral.ui" line="68"/>
       <source>Object naming</source>
-      <translation>Найменування об&apos;єктів</translation>
+      <translation>Найменування об'єктів</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsGeneral.ui" line="77"/>
       <source>Add name of base object</source>
-      <translation>Додати назву основного об&apos;єкта</translation>
+      <translation>Додати назву основного об'єкта</translation>
     </message>
   </context>
   <context>
@@ -5497,7 +5497,7 @@ only created cuts will be visible</translation>
     <message>
       <location filename="../../TaskShapeBuilder.cpp" line="465"/>
       <source>Select only one part object</source>
-      <translation>Виберіть лише одну частину об&apos;єкта</translation>
+      <translation>Виберіть лише одну частину об'єкта</translation>
     </message>
     <message>
       <location filename="../../TaskShapeBuilder.cpp" line="517"/>
@@ -5765,7 +5765,7 @@ of object being attached.</translation>
     <message>
       <location filename="../../TaskAttacher.cpp" line="328"/>
       <source>Not attached</source>
-      <translation>Прив&apos;язка відсутня</translation>
+      <translation>Прив'язка відсутня</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.cpp" line="332"/>
@@ -6137,7 +6137,7 @@ by dragging a selection rectangle in the 3D view</translation>
     <message>
       <location filename="../../TaskOffset.ui" line="60"/>
       <source>Join type</source>
-      <translation>Тип з&apos;єднання</translation>
+      <translation>Тип з'єднання</translation>
     </message>
     <message>
       <location filename="../../TaskOffset.ui" line="68"/>
@@ -6401,7 +6401,7 @@ in the 3D view for the sweep path.</translation>
     <message>
       <location filename="../../Workbench.cpp" line="40"/>
       <source>Join</source>
-      <translation>З&apos;єднати</translation>
+      <translation>З'єднати</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="41"/>

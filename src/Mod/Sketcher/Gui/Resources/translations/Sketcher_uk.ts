@@ -6187,7 +6187,7 @@ Eigen Dense QR — щільна матриця QR з повним поворот
     <message>
       <location filename="../../Workbench.cpp" line="39"/>
       <source>Sketcher geometries</source>
-      <translation>Геометрія ескіза</translation>
+      <translation>Геометрії ескізу</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="40"/>
@@ -6197,12 +6197,12 @@ Eigen Dense QR — щільна матриця QR з повним поворот
     <message>
       <location filename="../../Workbench.cpp" line="41"/>
       <source>Sketcher tools</source>
-      <translation>Інструменти ескіза</translation>
+      <translation>Інструменти ескізу</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="42"/>
       <source>Sketcher B-spline tools</source>
-      <translation>Інструменти B-сплайна ескіза</translation>
+      <translation>Інструменти B-сплайна ескізу</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="43"/>

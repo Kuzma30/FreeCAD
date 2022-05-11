@@ -3137,7 +3137,7 @@ will be displayed with transparency</source>
     </message>
     <message>
       <source>Out &amp;transparent</source>
-      <translation type="unfinished">Out &amp;transparent</translation>
+      <translation>Зовнішній та прозорий</translation>
     </message>
     <message>
       <source>Number of labels besides the color bar</source>
@@ -6170,7 +6170,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Opens a browser to show the Python modules documentation</source>
-      <translation>Відкриється веб-переглядач для відображення документації модулів Python</translation>
+      <translation>Відкриває вебпереглядач для показу документації Python модулів</translation>
     </message>
   </context>
   <context>

@@ -6310,7 +6310,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/Advanced.ui" line="67"/>
       <source>Suppress Velocity warning</source>
-      <translation type="unfinished">Suppress Velocity warning</translation>
+      <translation>Попереджати про перевищення швидкості</translation>
     </message>
     <message>
       <location filename="../preferences/Advanced.ui" line="86"/>

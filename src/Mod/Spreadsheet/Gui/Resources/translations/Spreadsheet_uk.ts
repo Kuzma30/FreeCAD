@@ -82,7 +82,7 @@
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="903"/>
       <source>Adds a spreadsheet object to the active document</source>
-      <translation>Додає об’єкт електронної таблиці до активного документа</translation>
+      <translation>Додає обʼєкт електронної таблиці до активного документа</translation>
     </message>
   </context>
   <context>
@@ -270,12 +270,12 @@
     <message>
       <location filename="../../Command.cpp" line="71"/>
       <source>Merge cells</source>
-      <translation>Об’єднати комірки</translation>
+      <translation>Обʼєднати комірки</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="72"/>
       <source>Merge selected cells</source>
-      <translation>Об’єднує виділені комірки</translation>
+      <translation>Обʼєднує виділені комірки</translation>
     </message>
   </context>
   <context>
@@ -306,12 +306,12 @@
     <message>
       <location filename="../../Command.cpp" line="126"/>
       <source>Split cell</source>
-      <translation>Роз’єднати комірку</translation>
+      <translation>Розʼєднати комірку</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="127"/>
       <source>Split previously merged cells</source>
-      <translation>Роз’єднує раніше обʼєднані комірки</translation>
+      <translation>Розʼєднує раніше обʼєднані комірки</translation>
     </message>
   </context>
   <context>
@@ -381,12 +381,12 @@
     <message>
       <location filename="../../Command.cpp" line="91"/>
       <source>Merge cells</source>
-      <translation>Об’єднати комірки</translation>
+      <translation>Обʼєднати комірки</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="146"/>
       <source>Split cell</source>
-      <translation>Роз’єднати комірку</translation>
+      <translation>Розʼєднати комірку</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="317"/>
@@ -488,7 +488,7 @@
     <message>
       <location filename="../../DlgBindSheet.ui" line="14"/>
       <source>Bind Spreadsheet Cells</source>
-      <translation>Зв’язування комірок таблиці</translation>
+      <translation>Звʼязування комірок таблиці</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="20"/>
@@ -498,13 +498,13 @@
     <message>
       <location filename="../../DlgBindSheet.ui" line="27"/>
       <source>Binding cell range start</source>
-      <translation>Початковий діапазон зв’язування комірок</translation>
+      <translation>Початковий діапазон звʼязування комірок</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="34"/>
       <source>Binding cell range end
 </source>
-      <translation>Кінцевий діапазон зв’язування комірок
+      <translation>Кінцевий діапазон звʼязування комірок
 </translation>
     </message>
     <message>
@@ -516,15 +516,15 @@
       <location filename="../../DlgBindSheet.ui" line="49"/>
       <source>Starting cell address to bind to. Type &apos;=&apos; if you want to use expression.
 The expression must evaluates to a string of some cell address.</source>
-      <translation>Початковий діапазон для зв’язування комірок. Наберіть &apos;=&apos; якщо хочете використати вираз.
-Вираз має бути строкою з використанням адреси комірки.</translation>
+      <translation>Початковий діапазон для звʼязування комірок. Наберіть &apos;=&apos; якщо хочете використати вираз.
+Вираз має бути рядковою зміною з використанням адреси комірки.</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="57"/>
       <source>Ending cell address to bind to. Type &apos;=&apos; if you want to use expression.
 The expression must evaluates to a string of some cell address.</source>
-      <translation>Кінцевий діапазон для зв’язування комірок. Наберіть &apos;=&apos; якщо хочете використати вираз.
-Вираз має бути строкою з використанням адреси комірки.</translation>
+      <translation>Кінцевий діапазон для звʼязування комірок. Наберіть &apos;=&apos; якщо хочете використати вираз.
+Вираз має бути рядковою зміною з використанням адреси комірки.</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="65"/>
@@ -534,12 +534,12 @@ The expression must evaluates to a string of some cell address.</source>
     <message>
       <location filename="../../DlgBindSheet.ui" line="72"/>
       <source>Select which spread sheet to bind to.</source>
-      <translation>Виберіть таблицю для зв’язування.</translation>
+      <translation>Виберіть таблицю для звʼязування.</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="79"/>
       <source>Use hidden reference not avoid creating a depdenecy with the referenced object. Use with caution!</source>
-      <translation>Використання прихованого посилання дозволяє уникнути створення залежності з об’єктом, на який посилаються. Використовуйте з обережністю!</translation>
+      <translation>Використання прихованого посилання дозволяє уникнути створення залежності з обʼєктом, на який посилаються. Використовуйте з обережністю!</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="82"/>
@@ -549,17 +549,17 @@ The expression must evaluates to a string of some cell address.</source>
     <message>
       <location filename="../../DlgBindSheet.ui" line="91"/>
       <source>Unbind</source>
-      <translation>Відв’язати</translation>
+      <translation>Відвʼязати</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="98"/>
       <source>Cancel</source>
-      <translation>Відмінити</translation>
+      <translation>Скасувати</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.ui" line="105"/>
       <source>OK</source>
-      <translation>Зв’язати</translation>
+      <translation>Звʼязати</translation>
     </message>
   </context>
   <context>
@@ -588,11 +588,12 @@ by that property.
       <translation>Початкова адреса комірки.
 
 Передбачається, що перший стовпець діапазону містить список імен конфігурації,
-які будуть використовуватися для створення списку рядків та прив’язки до цієї 
+які будуть використовуватися для створення списку рядків та привʼязки до цієї 
 властивості, щоб користувач міг динамічно перемикати конфігурації.
 
-Перший рядок діапазону буде прив’язаний до будь-якого рядка (непрямо), 
-обраного за допомогою цієї властивості.</translation>
+Перший рядок діапазону буде привʼязаний до будь-якого рядка (непрямо), 
+обраного за допомогою цієї властивості.
+</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="42"/>
@@ -608,11 +609,12 @@ by that property.
       <translation>Кінцева адреса комірки.
 
 Передбачається, що перший стовпець діапазону містить список імен конфігурації,
-які будуть використовуватися для створення списку рядків та прив’язки до цієї 
+які будуть використовуватися для створення списку рядків та привʼязки до цієї 
 властивості, щоб користувач міг динамічно перемикати конфігурації.
 
-Перший рядок діапазону буде прив’язаний до будь-якого рядка (непрямо), 
-обраного за допомогою цієї властивості.</translation>
+Перший рядок діапазону буде привʼязаний до будь-якого рядка (непрямо), 
+обраного за допомогою цієї властивості.
+</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="57"/>
@@ -623,8 +625,8 @@ by that property.
       <location filename="../../DlgSheetConf.ui" line="64"/>
       <source>Type in an expression to specify the object and property name to dynamically
 switch the design configuration. The property will be created if not exist.</source>
-      <translation>Введіть вираз, щоб вказати назву об’єкта та властивості, щоб динамічно 
-змінювати конфігурацію проекту. Якщо властивість не існує, вона буде створена.</translation>
+      <translation>Введіть вираз, щоб вказати назву обʼєкта та властивості, щоб динамічно 
+змінювати конфігурацію проєкту. Якщо властивість не існує, вона буде створена.</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="72"/>
@@ -634,7 +636,7 @@ switch the design configuration. The property will be created if not exist.</sou
     <message>
       <location filename="../../DlgSheetConf.ui" line="79"/>
       <source>Optional property group name.</source>
-      <translation>Не обов’язкова назва групи властивостей.</translation>
+      <translation>Не обовʼязкова назва групи властивостей.</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="88"/>
@@ -644,7 +646,7 @@ switch the design configuration. The property will be created if not exist.</sou
     <message>
       <location filename="../../DlgSheetConf.ui" line="95"/>
       <source>Cancel</source>
-      <translation>Відмінити</translation>
+      <translation>Скасувати</translation>
     </message>
     <message>
       <location filename="../../DlgSheetConf.ui" line="102"/>
@@ -804,7 +806,7 @@ switch the design configuration. The property will be created if not exist.</sou
     <message>
       <location filename="../../SheetTableView.cpp" line="696"/>
       <source>Copy &amp; Paste failed</source>
-      <translation>Копіювання і вставлення провалено</translation>
+      <translation>Копіювання і вставка завершилась невдачею</translation>
     </message>
     <message>
       <location filename="../../SpreadsheetView.cpp" line="434"/>
@@ -960,12 +962,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../DlgBindSheet.cpp" line="180"/>
       <source>Bind cells</source>
-      <translation>Зв’язати комірки</translation>
+      <translation>Звʼязати комірки</translation>
     </message>
     <message>
       <location filename="../../DlgBindSheet.cpp" line="197"/>
       <source>Unbind cells</source>
-      <translation>Відв’язати комірки</translation>
+      <translation>Відвʼязати комірки</translation>
     </message>
   </context>
   <context>
@@ -1152,7 +1154,7 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="186"/>
       <source>Bind...</source>
-      <translation>Прив’язати...</translation>
+      <translation>Привʼязати...</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="190"/>
@@ -1162,12 +1164,12 @@ Spreadsheet.my_alias_name замість Spreadsheet.B1</translation>
     <message>
       <location filename="../../SheetTableView.cpp" line="198"/>
       <source>Merge cells</source>
-      <translation>Об’єднати комірки</translation>
+      <translation>Обʼєднати комірки</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="200"/>
       <source>Split cells</source>
-      <translation>Роз’єднати комірки</translation>
+      <translation>Розʼєднати комірки</translation>
     </message>
     <message>
       <location filename="../../SheetTableView.cpp" line="204"/>

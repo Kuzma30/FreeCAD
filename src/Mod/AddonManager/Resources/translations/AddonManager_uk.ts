@@ -11,7 +11,7 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="201"/>
       <source>Failed to connect to GitHub. Check your connection and proxy settings.</source>
-      <translation>Не вдалося під'єднатися до GitHub. Перевірте з'єднання та параметри проксі-сервера.</translation>
+      <translation>Не вдалося підʼєднатися до GitHub. Перевірте зʼєднання та параметри проксі-сервера.</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="303"/>
@@ -71,7 +71,7 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="732"/>
       <source>Caching macro code...</source>
-      <translation>Кешування макрокоду ...</translation>
+      <translation>Кешування макрокоду...</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="752"/>
@@ -153,7 +153,7 @@
     <message>
       <location filename="../../addonmanager_workers.py" line="1010"/>
       <source>Error updating module</source>
-      <translation>Помилка оновленя модуля</translation>
+      <translation>Помилка оновлення модуля</translation>
     </message>
     <message>
       <location filename="../../addonmanager_workers.py" line="1010"/>
@@ -327,7 +327,7 @@
       <location filename="../../change_branch.py" line="263"/>
       <source>Local name</source>
       <comment>Table header for git ref name</comment>
-      <translation>Локальне ім&apos;я</translation>
+      <translation>Локальне імʼя</translation>
     </message>
     <message>
       <location filename="../../change_branch.py" line="267"/>
@@ -390,7 +390,7 @@
     <message>
       <location filename="../../NetworkManager.py" line="452"/>
       <source>Error with encrypted connection</source>
-      <translation>Помилка з зашифрованим з&apos;єднанням</translation>
+      <translation>Помилка з зашифрованим зʼєднанням</translation>
     </message>
     <message>
       <location filename="../../package_details.py" line="61"/>
@@ -425,7 +425,7 @@
     <message>
       <location filename="../../package_details.py" line="212"/>
       <source>Update available to version</source>
-      <translation>Доступне оновленя до версії</translation>
+      <translation>Доступне оновлення до версії</translation>
     </message>
     <message>
       <location filename="../../package_details.py" line="220"/>
@@ -455,7 +455,7 @@
     <message>
       <location filename="../../package_details.py" line="271"/>
       <source>Automatic update checks disabled</source>
-      <translation>Автоматичне перевірка оновлення вимкнене</translation>
+      <translation>Автоматична перевірка оновлення вимкнена</translation>
     </message>
     <message>
       <location filename="../../package_details.py" line="293"/>
@@ -520,7 +520,7 @@
     <message>
       <location filename="../../package_details.py" line="725"/>
       <source>Page JavaScript reported</source>
-      <translation>Сторінка JavaScript дозвілена</translation>
+      <translation>Сторінка JavaScript дозволена</translation>
     </message>
     <message>
       <location filename="../../package_details.py" line="869"/>
@@ -580,7 +580,7 @@
     <message>
       <location filename="../../AddonManager.py" line="218"/>
       <source>Checking connection</source>
-      <translation>Перевірка підключення...</translation>
+      <translation>Перевірка підключення</translation>
     </message>
     <message>
       <location filename="../../AddonManager.py" line="218"/>
@@ -590,7 +590,7 @@
     <message>
       <location filename="../../AddonManager.py" line="242"/>
       <source>Connection failed</source>
-      <translation>Не вдалося встановити з&apos;єднання</translation>
+      <translation>Не вдалося встановити зʼєднання</translation>
     </message>
     <message>
       <location filename="../../AddonManager.py" line="246"/>
@@ -605,7 +605,7 @@
     <message>
       <location filename="../../AddonManager.py" line="319"/>
       <source>Starting up...</source>
-      <translation>Запускається…</translation>
+      <translation>Запускається...</translation>
     </message>
     <message>
       <location filename="../../AddonManager.py" line="356"/>
@@ -661,7 +661,7 @@
     <message>
       <location filename="../../AddonManager.py" line="725"/>
       <source>Updating cache...</source>
-      <translation>Оновлення кешу…</translation>
+      <translation>Оновлення кешу...</translation>
     </message>
     <message>
       <location filename="../../AddonManager.py" line="766"/>
@@ -729,7 +729,7 @@
       <location filename="../../AddonManager.py" line="1130"/>
       <source>Optional dependency on {} ignored because it is not in the allow-list
 </source>
-      <translation>Необов'язкова залежність для {} ігнорована, оскільки її немає в переліку дозволених пакетів
+      <translation>Необовʼязкова залежність для {} ігнорована, оскільки її немає в переліку дозволених пакетів
 </translation>
     </message>
     <message>
@@ -775,7 +775,7 @@
     <message>
       <location filename="../../AddonManager.py" line="1244"/>
       <source>See Report View for detailed failure log.</source>
-      <translation>Перегляньте Звіт про детальний журнал помилок.</translation>
+      <translation>Перегляньте Вид Звіту про детальний журнал помилок.</translation>
     </message>
     <message>
       <location filename="../../AddonManager.py" line="1308"/>
@@ -1140,7 +1140,7 @@
       <source>This Addon has the following required and optional dependencies. You must install them before this Addon can be used.
 
 Do you want the Addon Manager to install them automatically? Choose &quot;Ignore&quot; to install the Addon without installing the dependencies.</source>
-      <translation>Додаток має наступні обов’язкові та необов’язкові залежності. Необхідно встановити їх, перш ніж користуватись додатком.
+      <translation>Додаток має наступні обовʼязкові та необовʼязкові залежності. Необхідно встановити їх, перш ніж користуватись додатком.
 
 Хочете, щоб менеджер додатків встановив їх автоматично? Виберіть «Ігнорувати», щоб встановити додаток без залежностей.</translation>
     </message>
@@ -1235,7 +1235,7 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
     <message>
       <location filename="../../first_run.ui" line="60"/>
       <source>Download Macro metadata (approximately 10MB)</source>
-      <translation>Завантажити метадані макросів (приблизно 10 МБ)</translation>
+      <translation>Завантажити метадані Макросів (приблизно 10 Мб)</translation>
     </message>
     <message>
       <location filename="../../first_run.ui" line="70"/>
@@ -1282,7 +1282,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="41"/>
       <source>Download Macro metadata (approximately 10MB)</source>
-      <translation>Завантажити метадані макросів (приблизно 10 МБ)</translation>
+      <translation>Завантажити метадані Макросів (приблизно 10 Мб)</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="44"/>
@@ -1461,7 +1461,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../add_toolbar_button_dialog.ui" line="20"/>
       <source>Add a toolbar button for this macro?</source>
-      <translation>Додати кнопку на панель для запуску цього макроса?</translation>
+      <translation>Додати кнопку на панель для запуску цього макросу?</translation>
     </message>
     <message>
       <location filename="../../add_toolbar_button_dialog.ui" line="32"/>
@@ -1527,7 +1527,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../proxy_authentication.ui" line="67"/>
       <source>Username</source>
-      <translation>Ім&apos;я користувача</translation>
+      <translation>Імʼя користувача</translation>
     </message>
     <message>
       <location filename="../../proxy_authentication.ui" line="77"/>

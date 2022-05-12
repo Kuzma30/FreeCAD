@@ -3101,7 +3101,7 @@ in the corner -- in % of height/width of viewport</source>
     </message>
     <message>
       <source>&amp;Labels:</source>
-      <translation>&amp;Позначки:</translation>
+      <translation>&amp;Мітки:</translation>
     </message>
     <message>
       <source>&amp;Decimals:</source>
@@ -5285,7 +5285,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Labels &amp; Attributes</source>
-      <translation>Етикетки та атрибути</translation>
+      <translation>Мітки та Атрибути</translation>
     </message>
   </context>
   <context>
@@ -6567,7 +6567,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Labels &amp; Attributes</source>
-      <translation>Етикетки та атрибути</translation>
+      <translation>Мітки та Атрибути</translation>
     </message>
     <message>
       <source>Application</source>
@@ -9697,7 +9697,7 @@ Do you still want to proceed?</source>
     </message>
     <message>
       <source>&amp;Macro</source>
-      <translation>Макрос</translation>
+      <translation>&amp;Макрос</translation>
     </message>
     <message>
       <source>&amp;Windows</source>

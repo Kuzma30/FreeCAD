@@ -4224,7 +4224,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Enable preselection and highlight by specified color</source>
-      <translation>Вмикає попереднє виділення та виділення вказаним кольором</translation>
+      <translation>Вмикає попереднє виділення та підсвічування вказаним кольором</translation>
     </message>
     <message>
       <source>Enable selection highlighting and use specified color</source>
@@ -5258,7 +5258,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Selection View</source>
-      <translation>Виберіть вид</translation>
+      <translation>Вид Виділення</translation>
     </message>
     <message>
       <source>The number of selected items</source>
@@ -6867,7 +6867,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Selection view</source>
-      <translation>Вид Вибір</translation>
+      <translation>Вид Виділення</translation>
     </message>
     <message>
       <source>Report view</source>
@@ -8696,7 +8696,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Show all selected objects</source>
-      <translation>Показати всі виділені об&apos;єкти</translation>
+      <translation>Показує всі виділені обʼєкти</translation>
     </message>
   </context>
   <context>
@@ -8707,7 +8707,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Toggles the status bar</source>
-      <translation>Перемикнути рядок стану</translation>
+      <translation>Перемикає рядок стану</translation>
     </message>
   </context>
   <context>
@@ -9304,7 +9304,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Expand active document and collapse all others</source>
-      <translation>Разгорнути активный документ та згорнути усі інші</translation>
+      <translation>Розгортає активний документ та згортає усі інші</translation>
     </message>
   </context>
   <context>
@@ -9315,14 +9315,14 @@ the current copy will be lost.
     </message>
     <message>
       <source>Initiate dragging of current selected tree items</source>
-      <translation>Розпочати перетягування поточних виділених елементів ієрархії</translation>
+      <translation>Починає перетягування виділених елементів ієрархії</translation>
     </message>
   </context>
   <context>
     <name>StdTreeMultiDocument</name>
     <message>
       <source>Display all documents in the tree view</source>
-      <translation>Показ усіх документів у вигляді ієрархії</translation>
+      <translation>Показує всі документи ієрархії документа</translation>
     </message>
     <message>
       <source>Multi document</source>
@@ -9337,7 +9337,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Preselect the object in 3D view when mouse over the tree item</source>
-      <translation>Підсвічувати об'єкт в 3D-виді при наведенні мишки на елемент в ієрархії</translation>
+      <translation>Підсвічує обʼєкт в 3D-виді при наведенні мишки на елемент в ієрархії</translation>
     </message>
   </context>
   <context>
@@ -9359,14 +9359,14 @@ the current copy will be lost.
     </message>
     <message>
       <source>Scroll to first selected item</source>
-      <translation>Прокрутити до першого виділеного елемента</translation>
+      <translation>Прокручує до першого виділеного елемента</translation>
     </message>
   </context>
   <context>
     <name>StdTreeSingleDocument</name>
     <message>
       <source>Only display the active document in the tree view</source>
-      <translation>Відображати тільки активний документ з дерева перегляду</translation>
+      <translation>Показує тільки активний документ в ієрархії документа</translation>
     </message>
     <message>
       <source>Single document</source>

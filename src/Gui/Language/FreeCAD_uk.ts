@@ -5063,7 +5063,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
     <message>
       <source>Ignore dependencies and proceed with objects
 originally selected prior to opening this dialog</source>
-      <translation>Ігнорувати залежності та продовжити роботу з початково
+      <translation>Ігнорує залежності та продовжує роботу з початково
 виділеними об'єктами (до відкриття діалогу)</translation>
     </message>
     <message>
@@ -6635,7 +6635,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Hide the item in tree</source>
-      <translation>Сховати елемент у дереві</translation>
+      <translation>Приховати елемент в ієрархії</translation>
     </message>
     <message>
       <source>Close document</source>
@@ -8034,22 +8034,22 @@ the current copy will be lost.
     <name>StdCmdHideObjects</name>
     <message>
       <source>Hide all objects</source>
-      <translation>Сховати всі об&apos;єкти</translation>
+      <translation>Приховати всі об'єкти</translation>
     </message>
     <message>
       <source>Hide all objects in the document</source>
-      <translation>Сховати всі об&apos;єкти в документі</translation>
+      <translation>Приховує всі об'єкти в документі</translation>
     </message>
   </context>
   <context>
     <name>StdCmdHideSelection</name>
     <message>
       <source>Hide selection</source>
-      <translation>Сховати виділене</translation>
+      <translation>Приховати виділене</translation>
     </message>
     <message>
       <source>Hide all selected objects</source>
-      <translation>Приховати всі вибрані об&apos;єкти</translation>
+      <translation>Приховує всі виділені обʼєкти</translation>
     </message>
   </context>
   <context>
@@ -8652,7 +8652,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select visible objects in the active document</source>
-      <translation>Виберіть видимі об&apos;єкти в активному документі</translation>
+      <translation>Виділяє видимі об'єкти в активному документі</translation>
     </message>
   </context>
   <context>
@@ -8685,7 +8685,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Show all objects in the document</source>
-      <translation>Показати всі об&apos;єкти в документі</translation>
+      <translation>Показує всі об'єкти в документі</translation>
     </message>
   </context>
   <context>

@@ -8791,7 +8791,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Toggles the property of the objects to get selected in the 3D-View</source>
-      <translation>Перемикає можливість обирати об&apos;єкти у 3D-режимі</translation>
+      <translation>Перемикає можливість виділяти об'єкти у 3D-Виді</translation>
     </message>
   </context>
   <context>
@@ -8956,7 +8956,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Set to dimetric view</source>
-      <translation>Встановити диметричний вид</translation>
+      <translation>Встановлює диметричний вид</translation>
     </message>
   </context>
   <context>
@@ -9000,7 +9000,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Fits the whole content on the screen</source>
-      <translation>Вмістити весь вміст на екрані</translation>
+      <translation>Вміщує весь вміст на екрані</translation>
     </message>
   </context>
   <context>
@@ -9011,7 +9011,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Fits the selected content on the screen</source>
-      <translation>Вмістити вибране на екрані</translation>
+      <translation>Вміщує виділені обʼєкти на екрані</translation>
     </message>
   </context>
   <context>
@@ -9271,7 +9271,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Display the main window in fullscreen mode</source>
-      <translation>Відобразити головне вікно в повноекранному режимі</translation>
+      <translation>Показує головне вікно в повноекранному режимі</translation>
     </message>
   </context>
   <context>
@@ -9282,7 +9282,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Switches to orthographic view mode</source>
-      <translation>Перемикає до Ортогонального виду</translation>
+      <translation>Встановлює ортогональний вид</translation>
     </message>
   </context>
   <context>
@@ -9293,7 +9293,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Switches to perspective view mode</source>
-      <translation>Переключення в режим перегляду перспективи</translation>
+      <translation>Встановлює вид перспективи</translation>
     </message>
   </context>
   <context>

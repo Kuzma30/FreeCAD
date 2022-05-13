@@ -8388,7 +8388,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Place the selected objects</source>
-      <translation>Розміщення вибраних об&apos;єктів</translation>
+      <translation>Задає розташування виділених об'єктів</translation>
     </message>
   </context>
   <context>
@@ -8934,7 +8934,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Set to bottom view</source>
-      <translation>Встановити вид знизу</translation>
+      <translation>Встановлює вид знизу</translation>
     </message>
   </context>
   <context>
@@ -9033,7 +9033,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Set to default home view</source>
-      <translation>Встановити стандартний вигляд</translation>
+      <translation>Встановлює стандартний вид</translation>
     </message>
   </context>
   <context>
@@ -9121,7 +9121,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Set to left view</source>
-      <translation>Встановити вид зліва</translation>
+      <translation>Встановлює вид ліворуч</translation>
     </message>
   </context>
   <context>
@@ -9132,7 +9132,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Set to rear view</source>
-      <translation>Встановити вид ззаду</translation>
+      <translation>Встановлює вид ззаду</translation>
     </message>
   </context>
   <context>
@@ -9377,11 +9377,11 @@ the current copy will be lost.
     <name>StdTreeSyncPlacement</name>
     <message>
       <source>Sync placement</source>
-      <translation>Синхронізувати розміщення</translation>
+      <translation>Синхронізувати розташування</translation>
     </message>
     <message>
       <source>Auto adjust placement on drag and drop objects across coordinate systems</source>
-      <translation>Автоматичне налаштування розміщення при перетягуванні об’єктів через системи координат</translation>
+      <translation>Автоматичне налаштування розташування при перетягуванні об’єктів через системи координат</translation>
     </message>
   </context>
   <context>

@@ -4319,7 +4319,7 @@ following referencing objects might be lost:</translation>
       <location filename="../../ViewProviderFemPostObject.cpp" line="684"/>
       <location filename="../../ViewProviderSolver.cpp" line="74"/>
       <source>Object dependencies</source>
-      <translation>Залежності об&apos;єктів</translation>
+      <translation>Залежності обʼєктів</translation>
     </message>
     <message>
       <location filename="../../ViewProviderFemPostFunction.cpp" line="145"/>

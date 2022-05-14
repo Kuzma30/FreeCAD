@@ -47,16 +47,6 @@
   <context>
     <name>ShareView</name>
     <message>
-      <location filename="../../../TechDrawTools/CommandShareView.py" line="47"/>
-      <source>Share View</source>
-      <translation>Поділитися Виглядом</translation>
-    </message>
-    <message>
-      <location filename="../../../TechDrawTools/CommandShareView.py" line="48"/>
-      <source>Share a View on a second Page</source>
-      <translation>Поділитися Виглядом на другій сторінці</translation>
-    </message>
-    <message>
       <location filename="../../../TechDrawTools/TaskShareView.py" line="46"/>
       <source>Share View with another Page</source>
       <translation>Поділитися Виглядом з іншою сторінкою</translation>
@@ -90,6 +80,16 @@
       <location filename="../../../TechDrawTools/TaskShareView.py" line="112"/>
       <source>Select To Page.</source>
       <translation>Оберіть із Сторінки.</translation>
+    </message>
+    <message>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="47"/>
+      <source>Share View</source>
+      <translation>Поділитися Виглядом</translation>
+    </message>
+    <message>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="48"/>
+      <source>Share a View on a second Page</source>
+      <translation>Поділитися Виглядом на другій сторінці</translation>
     </message>
   </context>
   <context>
@@ -1106,14 +1106,14 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="159"/>
       <location filename="../../CommandExtensionDims.cpp" line="329"/>
-      <source>Insert &apos;〼&apos; Prefix</source>
-      <translation type="unfinished">Insert &apos;〼&apos; Prefix</translation>
+      <source>Insert &apos;□&apos; Prefix</source>
+      <translation type="unfinished">Insert &apos;□&apos; Prefix</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="160"/>
       <location filename="../../CommandExtensionDims.cpp" line="330"/>
-      <source>Insert a &apos;〼&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-      <translation type="unfinished">Insert a &apos;〼&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</translation>
+      <source>Insert a &apos;□&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
+      <translation type="unfinished">Insert a &apos;□&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</translation>
     </message>
   </context>
   <context>
@@ -3029,7 +3029,7 @@
     <message>
       <location filename="../../MDIViewPage.cpp" line="676"/>
       <source>PDF (*.pdf)</source>
-      <translation>PDF (*.pdf)</translation>
+      <translation type="unfinished">PDF (*.pdf)</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="677"/>
@@ -3045,7 +3045,7 @@
     <message>
       <location filename="../../MDIViewPage.cpp" line="876"/>
       <source>SVG (*.svg)</source>
-      <translation>SVG (*.svg)</translation>
+      <translation type="unfinished">SVG (*.svg)</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="878"/>
@@ -3474,7 +3474,7 @@ the top and left view border</translation>
       <location filename="../../TaskMoveView.ui" line="57"/>
       <location filename="../../TaskMoveView.ui" line="78"/>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <location filename="../../TaskMoveView.ui" line="43"/>
@@ -5313,12 +5313,12 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCosVertex.ui" line="118"/>
       <source>X</source>
-      <translation>X</translation>
+      <translation type="unfinished">X</translation>
     </message>
     <message>
       <location filename="../../TaskCosVertex.ui" line="154"/>
       <source>Y</source>
-      <translation>Y</translation>
+      <translation type="unfinished">Y</translation>
     </message>
     <message>
       <location filename="../../TaskCosVertex.cpp" line="194"/>
@@ -5364,19 +5364,19 @@ Do you want to continue?</source>
       <location filename="../../TaskCosmeticLine.ui" line="88"/>
       <location filename="../../TaskCosmeticLine.ui" line="161"/>
       <source>X:</source>
-      <translation>X:</translation>
+      <translation type="unfinished">X:</translation>
     </message>
     <message>
       <location filename="../../TaskCosmeticLine.ui" line="102"/>
       <location filename="../../TaskCosmeticLine.ui" line="175"/>
       <source>Y:</source>
-      <translation>Y:</translation>
+      <translation type="unfinished">Y:</translation>
     </message>
     <message>
       <location filename="../../TaskCosmeticLine.ui" line="116"/>
       <location filename="../../TaskCosmeticLine.ui" line="189"/>
       <source>Z:</source>
-      <translation>Z:</translation>
+      <translation type="unfinished">Z:</translation>
     </message>
   </context>
   <context>
@@ -5387,7 +5387,7 @@ Do you want to continue?</source>
       <translation type="unfinished">Format Symbols</translation>
     </message>
     <message>
-      <location filename="../../TaskCustomizeFormat.ui" line="34"/>
+      <location filename="../../TaskCustomizeFormat.ui" line="32"/>
       <source>GD&amp;T</source>
       <translation type="unfinished">GD&amp;T</translation>
     </message>
@@ -5689,7 +5689,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="421"/>
       <source>R</source>
-      <translation>R</translation>
+      <translation type="unfinished">R</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="428"/>
@@ -5744,7 +5744,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="482"/>
       <source>°</source>
-      <translation>°</translation>
+      <translation type="unfinished">°</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="489"/>
@@ -5992,7 +5992,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskDetail.ui" line="126"/>
       <source>X</source>
-      <translation>X</translation>
+      <translation type="unfinished">X</translation>
     </message>
     <message>
       <location filename="../../TaskDetail.ui" line="146"/>
@@ -6002,7 +6002,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskDetail.ui" line="165"/>
       <source>Y</source>
-      <translation>Y</translation>
+      <translation type="unfinished">Y</translation>
     </message>
     <message>
       <location filename="../../TaskDetail.ui" line="172"/>
@@ -6747,7 +6747,7 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskProjGroup.ui" line="136"/>
       <source>:</source>
-      <translation>:</translation>
+      <translation type="unfinished">:</translation>
     </message>
     <message>
       <location filename="../../TaskProjGroup.ui" line="143"/>
@@ -7189,17 +7189,17 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskSectionView.ui" line="341"/>
       <source>X</source>
-      <translation>X</translation>
+      <translation type="unfinished">X</translation>
     </message>
     <message>
       <location filename="../../TaskSectionView.ui" line="395"/>
       <source>Y</source>
-      <translation>Y</translation>
+      <translation type="unfinished">Y</translation>
     </message>
     <message>
       <location filename="../../TaskSectionView.ui" line="436"/>
       <source>Z</source>
-      <translation>Z</translation>
+      <translation type="unfinished">Z</translation>
     </message>
     <message>
       <location filename="../../TaskSectionView.cpp" line="359"/>

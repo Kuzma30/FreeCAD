@@ -6,17 +6,17 @@
     <message>
       <location filename="../../ArchFloor.py" line="209"/>
       <source>The placement of this object</source>
-      <translation>Розміщення цього об'єкта</translation>
+      <translation>Розміщення цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="348"/>
       <source>The shape of this object</source>
-      <translation>Форма цього об'єкта</translation>
+      <translation>Форма цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="919"/>
       <source>The objects that must be considered by this section plane. Empty means the whole document.</source>
-      <translation>Об'єкти, які необхідно враховувати за допомогою цієї площини перерізу. Порожній означає весь документ.</translation>
+      <translation>Обʼєкти, які необхідно враховувати за допомогою цієї площини перерізу. Порожній означає весь документ.</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="921"/>
@@ -56,12 +56,12 @@
     <message>
       <location filename="../../ArchSectionPlane.py" line="1008"/>
       <source>The transparency of this object</source>
-      <translation>Прозорість цього об'єкта</translation>
+      <translation>Прозорість цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="554"/>
       <source>The line width of this object</source>
-      <translation>Товщина лінії цього об'єкту</translation>
+      <translation>Товщина лінії цього обʼєкту</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1019"/>
@@ -71,7 +71,7 @@
     <message>
       <location filename="../../ArchSectionPlane.py" line="1016"/>
       <source>The color of this object</source>
-      <translation>Колір цього об'єкта</translation>
+      <translation>Колір цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1021"/>
@@ -96,7 +96,7 @@
     <message>
       <location filename="../../ArchPanel.py" line="941"/>
       <source>The linked object</source>
-      <translation>Пов'язаний об'єкт</translation>
+      <translation>Повʼязаний обʼєкт</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1266"/>
@@ -116,22 +116,22 @@
     <message>
       <location filename="../../ArchPanel.py" line="841"/>
       <source>The line width of the rendered objects</source>
-      <translation>Товщина лінії відтворюваних об'єктів</translation>
+      <translation>Товщина лінії відтворюваних обʼєктів</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1277"/>
       <source>The size of the texts inside this object</source>
-      <translation>Розмір тексту всередині цього об'єкта</translation>
+      <translation>Розмір тексту всередині цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1280"/>
       <source>If checked, source objects are displayed regardless of being visible in the 3D model</source>
-      <translation>Якщо відмічено, то вихідні об'єкти відображаються, незалежно від того, чи вони видимі в 3D моделі</translation>
+      <translation>Якщо відмічено, то вихідні обʼєкти відображаються, незалежно від того, чи вони видимі в 3D моделі</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1282"/>
       <source>The line color of the projected objects</source>
-      <translation>Колір ліній проектованих об'єктів</translation>
+      <translation>Колір ліній проектованих обʼєктів</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1284"/>
@@ -161,7 +161,7 @@
     <message>
       <location filename="../../ArchFrame.py" line="120"/>
       <source>An optional additional placement to add to the profile before extruding it</source>
-      <translation>Необов'язкове додаткове розміщення для додавання до профілю перед його видавлюванням</translation>
+      <translation>Необовʼязкове додаткове розміщення для додавання до профілю перед його видавлюванням</translation>
     </message>
     <message>
       <location filename="../../ArchFrame.py" line="122"/>
@@ -181,7 +181,7 @@
     <message>
       <location filename="../../ArchWindow.py" line="587"/>
       <source>The objects that host this window</source>
-      <translation>Об'єкти, що розміщують це вікно</translation>
+      <translation>Обʼєкти, що розміщують це вікно</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="589"/>
@@ -331,7 +331,7 @@
     <message>
       <location filename="../../ArchWall.py" line="737"/>
       <source>The normal extrusion direction of this object (keep (0,0,0) for automatic normal)</source>
-      <translation>Нормальний напрямок видавлювання для цього об'єкта (залишити (0,0,0) для завдання автоматичної нормалі)</translation>
+      <translation>Нормальний напрямок видавлювання для цього обʼєкта (залишити (0,0,0) для завдання автоматичної нормалі)</translation>
     </message>
     <message>
       <location filename="../../ArchPrecast.py" line="68"/>
@@ -351,7 +351,7 @@
     <message>
       <location filename="../../ArchPanel.py" line="430"/>
       <source>The facemaker type to use to build the profile of this object</source>
-      <translation>Тип генератора поверхні, який слід використовувати для створення профілю цього об'єкта</translation>
+      <translation>Тип генератора поверхні, який слід використовувати для створення профілю цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="1012"/>
@@ -491,7 +491,7 @@
     <message>
       <location filename="../../ArchPanel.py" line="1240"/>
       <source>If True, the object is rendered as a face, if possible.</source>
-      <translation>Якщо увімкнено, об'єкт представляється як поверхня, якщо це можливо.</translation>
+      <translation>Якщо увімкнено, обʼєкт представляється як поверхня, якщо це можливо.</translation>
     </message>
     <message>
       <location filename="../../ArchPanel.py" line="958"/>
@@ -516,7 +516,7 @@
     <message>
       <location filename="../../ArchPanel.py" line="1217"/>
       <source>The linked Panel cuts</source>
-      <translation>Пов'язана панель розрізів</translation>
+      <translation>Повʼязана панель розрізів</translation>
     </message>
     <message>
       <location filename="../../ArchPanel.py" line="1219"/>
@@ -611,12 +611,12 @@
     <message>
       <location filename="../../ArchSite.py" line="635"/>
       <source>The type of this object</source>
-      <translation>Тип цього об'єкта</translation>
+      <translation>Тип цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchIFC.py" line="73"/>
       <source>IFC properties of this object</source>
-      <translation>IFC властивості  цього об'єкта</translation>
+      <translation>IFC властивості  цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchIFC.py" line="293"/>
@@ -906,7 +906,7 @@
     <message>
       <location filename="../../ArchSpace.py" line="270"/>
       <source>The objects that make the boundaries of this space object</source>
-      <translation>Об'єкти, що утворюють кордон заданого просторового об'єкта</translation>
+      <translation>Обʼєкти, що утворюють кордон заданого просторового обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchSpace.py" line="272"/>
@@ -931,7 +931,7 @@
     <message>
       <location filename="../../ArchSpace.py" line="280"/>
       <source>Objects that are included inside this space, such as furniture</source>
-      <translation>Об'єкти, які знаходяться всередині цього простору, такі як меблі</translation>
+      <translation>Обʼєкти, які знаходяться всередині цього простору, такі як меблі</translation>
     </message>
     <message>
       <location filename="../../ArchSpace.py" line="282"/>
@@ -1051,17 +1051,17 @@
     <message>
       <location filename="../../ArchPipe.py" line="356"/>
       <source>The curvature radius of this connector</source>
-      <translation>Радіус викривлення з'єднувача</translation>
+      <translation>Радіус викривлення зʼєднувача</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="358"/>
       <source>The pipes linked by this connector</source>
-      <translation>Труби, пов'язані з цим з'єднувачем</translation>
+      <translation>Труби, повʼязані з цим зʼєднувачем</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="360"/>
       <source>The type of this connector</source>
-      <translation>Тип з'єднувача</translation>
+      <translation>Тип зʼєднувача</translation>
     </message>
     <message>
       <location filename="../../ArchAxis.py" line="120"/>
@@ -1181,7 +1181,7 @@
     <message>
       <location filename="../../ArchRoof.py" line="290"/>
       <source>The face number of the base object used to build the roof</source>
-      <translation>Кількість поверхонь базового об'єкта, що використовуються в конструкції цього даху</translation>
+      <translation>Кількість поверхонь базового обʼєкта, що використовуються в конструкції цього даху</translation>
     </message>
     <message>
       <location filename="../../ArchRoof.py" line="295"/>
@@ -1201,7 +1201,7 @@
     <message>
       <location filename="../../ArchBuildingPart.py" line="335"/>
       <source>The height of this object</source>
-      <translation>Висота цього об'єкта</translation>
+      <translation>Висота цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="342"/>
@@ -1256,7 +1256,7 @@
     <message>
       <location filename="../../ArchRebar.py" line="194"/>
       <source>The structure object that hosts this rebar</source>
-      <translation>Об'єкт структури, що містить цю арматуру</translation>
+      <translation>Обʼєкт структури, що містить цю арматуру</translation>
     </message>
     <message>
       <location filename="../../ArchRebar.py" line="196"/>
@@ -1406,7 +1406,7 @@
     <message>
       <location filename="../../ArchWall.py" line="717"/>
       <source>The length of this wall. Not used if this wall is based on an underlying object</source>
-      <translation>Довжина цієї стіни. Не використовується, якщо стіна базується на об'єкті, який розташований під нею</translation>
+      <translation>Довжина цієї стіни. Не використовується, якщо стіна базується на обʼєкті, який розташований під нею</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="719"/>
@@ -1436,12 +1436,12 @@
     <message>
       <location filename="../../ArchWall.py" line="734"/>
       <source>The alignment of this wall on its base object, if applicable</source>
-      <translation>Вирівнювання стіни на базовому об'єкті, якщо можливо</translation>
+      <translation>Вирівнювання стіни на базовому обʼєкті, якщо можливо</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="739"/>
       <source>The face number of the base object used to build this wall</source>
-      <translation>Номер поверхні базового об'єкту, що використовується для створення цієї стіни</translation>
+      <translation>Номер поверхні базового обʼєкту, що використовується для створення цієї стіни</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="741"/>
@@ -1476,7 +1476,7 @@
     <message>
       <location filename="../../ArchWall.py" line="760"/>
       <source>The size of the joints between each block</source>
-      <translation>Розмір з'єднання між кожним блоком</translation>
+      <translation>Розмір зʼєднання між кожним блоком</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="762"/>
@@ -1501,7 +1501,7 @@
     <message>
       <location filename="../../ArchEquipment.py" line="313"/>
       <source>Additional snap points for this equipment</source>
-      <translation>Додаткові точки прив'язки для даного обладнання</translation>
+      <translation>Додаткові точки привʼязки для даного обладнання</translation>
     </message>
     <message>
       <location filename="../../ArchEquipment.py" line="315"/>
@@ -1526,7 +1526,7 @@
     <message>
       <location filename="../../ArchSchedule.py" line="102"/>
       <source>The objects column</source>
-      <translation>Об'єкти стовпця</translation>
+      <translation>Обʼєкти стовпця</translation>
     </message>
     <message>
       <location filename="../../ArchSchedule.py" line="104"/>
@@ -1546,37 +1546,37 @@
     <message>
       <location filename="../../ArchSchedule.py" line="110"/>
       <source>If True, additional lines with each individual object are added to the results</source>
-      <translation>Якщо  True, до результатів додаються додаткові лінії з кожним окремим об'єктом</translation>
+      <translation>Якщо  True, до результатів додаються додаткові лінії з кожним окремим обʼєктом</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="192"/>
       <source>The base object this component is built upon</source>
-      <translation>Базовий об'єкт для будування цього компоненту</translation>
+      <translation>Базовий обʼєкт для будування цього компоненту</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="194"/>
       <source>The object this component is cloning</source>
-      <translation>Об'єкт цього компоненту на клонуванні</translation>
+      <translation>Обʼєкт цього компоненту на клонуванні</translation>
     </message>
     <message>
       <location filename="../../ArchSite.py" line="614"/>
       <source>Other shapes that are appended to this object</source>
-      <translation>Інші фігури, приєднані до цього об'єкта</translation>
+      <translation>Інші фігури, приєднані до цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchSite.py" line="616"/>
       <source>Other shapes that are subtracted from this object</source>
-      <translation>Інші фігури, які віднімаються від цього об'єкта</translation>
+      <translation>Інші фігури, які віднімаються від цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="344"/>
       <source>An optional description for this component</source>
-      <translation>Необов'язковий опис для цього компонента</translation>
+      <translation>Необовʼязковий опис для цього компонента</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="346"/>
       <source>An optional tag for this component</source>
-      <translation>Необов'язковий тег для цього компонента</translation>
+      <translation>Необовʼязковий тег для цього компонента</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="204"/>
@@ -1586,7 +1586,7 @@
     <message>
       <location filename="../../ArchComponent.py" line="206"/>
       <source>A material for this object</source>
-      <translation>Матеріал для цього об'єкту</translation>
+      <translation>Матеріал для цього обʼєкту</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="212"/>
@@ -1596,17 +1596,17 @@
     <message>
       <location filename="../../ArchComponent.py" line="215"/>
       <source>Specifies if this object must move together when its host is moved</source>
-      <translation>Вказує, чи повинен цей об'єкт рухатися разом із господарем</translation>
+      <translation>Вказує, чи повинен цей обʼєкт рухатися разом із господарем</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="218"/>
       <source>The area of all vertical faces of this object</source>
-      <translation>Площа всіх вертикальних граней цього об'єкта</translation>
+      <translation>Площа всіх вертикальних граней цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchSite.py" line="618"/>
       <source>The area of the projection of this object onto the XY plane</source>
-      <translation>Площа проекції цього об'єкта на площину XY</translation>
+      <translation>Площа проекції цього обʼєкта на площину XY</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="224"/>
@@ -1616,12 +1616,12 @@
     <message>
       <location filename="../../ArchComponent.py" line="227"/>
       <source>An optional higher-resolution mesh or shape for this object</source>
-      <translation>Необов'язкова сітка з більшою роздільною здатністю або фігура для цього об'єкта</translation>
+      <translation>Необовʼязкова сітка з більшою роздільною здатністю або фігура для цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="229"/>
       <source>An optional axis or axis system on which this object should be duplicated</source>
-      <translation>Додаткові осі, або ж осі, вздовж яких має дублюватись об'єкт</translation>
+      <translation>Додаткові осі, або ж осі, вздовж яких має дублюватись обʼєкт</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="1162"/>
@@ -1646,22 +1646,22 @@
     <message>
       <location filename="../../ArchReference.py" line="106"/>
       <source>Fuse objects of same material</source>
-      <translation>Злити об'єкти одного матеріалу</translation>
+      <translation>Злити обʼєкти одного матеріалу</translation>
     </message>
     <message>
       <location filename="../../ArchReference.py" line="385"/>
       <source>The latest time stamp of the linked file</source>
-      <translation>Остання часова мітка зв'язаного файлу</translation>
+      <translation>Остання часова мітка звʼязаного файлу</translation>
     </message>
     <message>
       <location filename="../../ArchReference.py" line="388"/>
       <source>If true, the colors from the linked file will be kept updated</source>
-      <translation>Якщо увімкнено, кольори з зв'язаного файлу будуть оновлюватися</translation>
+      <translation>Якщо увімкнено, кольори з звʼязаного файлу будуть оновлюватися</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="337"/>
       <source>If true, the height value propagates to contained objects</source>
-      <translation>Якщо значення true, значення висоти поширюється на вміщені об'єкти</translation>
+      <translation>Якщо значення true, значення висоти поширюється на вміщені обʼєкти</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="340"/>
@@ -1681,7 +1681,7 @@
     <message>
       <location filename="../../ArchBuildingPart.py" line="356"/>
       <source>A MaterialName:SolidIndexesList map that relates material names with solid indexes to be used when referencing this object from other files</source>
-      <translation>Назва MaterialName: Карта SolidIndexesList що пов'язує імена матеріалів з суцільними індексами для посилань на цей об'єкт з інших файлів</translation>
+      <translation>Назва MaterialName: Карта SolidIndexesList що повʼязує імена матеріалів з суцільними індексами для посилань на цей обʼєкт з інших файлів</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="557"/>
@@ -1741,27 +1741,27 @@
     <message>
       <location filename="../../ArchBuildingPart.py" line="587"/>
       <source>Camera position data associated with this object</source>
-      <translation>Положення камери пов'язані з цим об'єктом</translation>
+      <translation>Положення камери повʼязані з цим обʼєктом</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="590"/>
       <source>If set, the view stored in this object will be restored on double-click</source>
-      <translation>Якщо вказано, вид збережений в цьому об'єкті буде відновлений подвійним натисканням</translation>
+      <translation>Якщо вказано, вид збережений в цьому обʼєкті буде відновлений подвійним натисканням</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="592"/>
       <source>If True, double-clicking this object in the tree activates it</source>
-      <translation>Якщо Правда, двічі клацніть на цей об'єкт в дереві активує його</translation>
+      <translation>Якщо Правда, двічі клацніть на цей обʼєкт в дереві активує його</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="596"/>
       <source>If this is enabled, the inventor representation of this object will be saved in the FreeCAD file, allowing to reference it in other files in lightweight mode.</source>
-      <translation>Якщо це увімкнено, то винахідник буде зберегти представництво цього об'єкта у файлі FreeCAD, дозволяє посилатись на нього в інших файлах в режимі легкої ваги.</translation>
+      <translation>Якщо це увімкнено, то винахідник буде зберегти представництво цього обʼєкта у файлі FreeCAD, дозволяє посилатись на нього в інших файлах в режимі легкої ваги.</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="598"/>
       <source>A slot to save the inventor representation of this object, if enabled</source>
-      <translation>Слот, щоб зберегти винахідник представлення цього об'єкта, якщо це увімкнено</translation>
+      <translation>Слот, щоб зберегти винахідник представлення цього обʼєкта, якщо це увімкнено</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="603"/>
@@ -1771,22 +1771,22 @@
     <message>
       <location filename="../../ArchBuildingPart.py" line="605"/>
       <source>The line width of child objects</source>
-      <translation>Ширина лінії дочірніх об'єктів</translation>
+      <translation>Ширина лінії дочірніх обʼєктів</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="608"/>
       <source>The line color of child objects</source>
-      <translation>Колір лінії дочірнього об'єкту</translation>
+      <translation>Колір лінії дочірнього обʼєкту</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="612"/>
       <source>The shape color of child objects</source>
-      <translation>Колір лінії форми дочірнього об'єкту</translation>
+      <translation>Колір лінії форми дочірнього обʼєкту</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="616"/>
       <source>The transparency of child objects</source>
-      <translation>Прозорість дитячих об'єктів</translation>
+      <translation>Прозорість дочірних обʼєктів</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="620"/>
@@ -1806,7 +1806,7 @@
     <message>
       <location filename="../../ArchBuildingPart.py" line="629"/>
       <source>The capture box for newly created objects expressed as [XMin,YMin,ZMin,XMax,YMax,ZMax]</source>
-      <translation>Коробка зйомки для новостворених об'єктів, виражених як [XMin,YMin,ZMin,XMax,YMax,ZMax]</translation>
+      <translation>Коробка зйомки для новостворених обʼєктів, виражених як [XMin,YMin,ZMin,XMax,YMax,ZMax]</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="631"/>
@@ -1956,7 +1956,7 @@
     <message>
       <location filename="../../ArchStairs.py" line="1098"/>
       <source>The overlap of the stringers above the bottom of the treads</source>
-      <translation>Перекриття шнурів над нижної частиною проступей з'єднань</translation>
+      <translation>Перекриття шнурів над нижної частиною проступей зʼєднань</translation>
     </message>
     <message>
       <location filename="../../ArchStairs.py" line="412"/>
@@ -1976,7 +1976,7 @@
     <message>
       <location filename="../../ArchStairs.py" line="419"/>
       <source>The type of connection between the end of the stairs and the upper floor slab</source>
-      <translation>Тип зв'язку між кінцем сходів і верхньою підлогою плити</translation>
+      <translation>Тип звʼязку між кінцем сходів і верхньою підлогою плити</translation>
     </message>
     <message>
       <location filename="../../ArchSite.py" line="589"/>
@@ -2149,7 +2149,7 @@
     <message>
       <location filename="../../ArchSectionPlane.py" line="1503"/>
       <source>Remove highlighted objects from the list above</source>
-      <translation>Видаліть виділені об'єкти зі списку вище</translation>
+      <translation>Видаліть виділені обʼєкти зі списку вище</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1504"/>
@@ -2159,12 +2159,12 @@
     <message>
       <location filename="../../ArchSectionPlane.py" line="1505"/>
       <source>Add selected object(s) to the scope of this section plane</source>
-      <translation>Додати вибраний об'єкт(и) до діапазону цієї площини перерізу</translation>
+      <translation>Додати вибраний обʼєкт(и) до діапазону цієї площини перерізу</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1506"/>
       <source>Objects seen by this section plane:</source>
-      <translation>Видимі об'єкти на площині перетину:</translation>
+      <translation>Видимі обʼєкти на площині перетину:</translation>
     </message>
     <message>
       <location filename="../../ArchSectionPlane.py" line="1507"/>
@@ -2249,7 +2249,7 @@
     <message>
       <location filename="../../ArchWindow.py" line="238"/>
       <source>Choose a face on an existing object or select a preset</source>
-      <translation>Виберіть грань на існуючому об'єкті або виберіть заготовку</translation>
+      <translation>Виберіть грань на існуючому обʼєкті або виберіть заготовку</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="290"/>
@@ -2274,7 +2274,7 @@
     <message>
       <location filename="../../ArchWindow.py" line="363"/>
       <source>Auto include in host object</source>
-      <translation>Автоматично включати в об'єкт хоста</translation>
+      <translation>Автоматично включати в обʼєкт хоста</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="369"/>
@@ -2314,7 +2314,7 @@
     <message>
       <location filename="../../ArchWindow.py" line="1725"/>
       <source>The number of the wire that defines a hole in the host object. A value of zero will automatically adopt the largest wire</source>
-      <translation>Щільність сітки, що визначає отвір у хост-об'єкті. Значення нуля автоматично приймає найбільшу сітку</translation>
+      <translation>Щільність сітки, що визначає отвір у хост-обʼєкті. Значення нуля автоматично приймає найбільшу сітку</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="1726"/>
@@ -2490,7 +2490,7 @@
     <message>
       <location filename="../../ArchStructure.py" line="222"/>
       <source>Please select the base object first and then the edges to use as extrusion paths</source>
-      <translation>Будь ласка, спочатку оберіть основний об'єкт, а потім краї, які використовуються як шляхи екструзії</translation>
+      <translation>Будь ласка, спочатку оберіть основний обʼєкт, а потім краї, які використовуються як шляхи екструзії</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="245"/>
@@ -2500,7 +2500,7 @@
     <message>
       <location filename="../../ArchStructure.py" line="256"/>
       <source>Please select at least an axis object</source>
-      <translation>Будь ласка оберіть принаймні осі об'єктів</translation>
+      <translation>Будь ласка оберіть принаймні осі обʼєктів</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="345"/>
@@ -2610,7 +2610,7 @@
     <message>
       <location filename="../../ArchStructure.py" line="1173"/>
       <source>Connect nodes</source>
-      <translation>Об'єднати вузли</translation>
+      <translation>Обʼєднати вузли</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="1174"/>
@@ -2640,27 +2640,27 @@
     <message>
       <location filename="../../ArchStructure.py" line="1192"/>
       <source>Select object or edges to be used as a Tool (extrusion path)</source>
-      <translation>Оберіть об'єкт або ребра для використання в якості Інструмент (шлях екструзії)</translation>
+      <translation>Оберіть обʼєкт або ребра для використання в якості Інструмент (шлях екструзії)</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="1247"/>
       <source>Choose another Structure object:</source>
-      <translation>Виберіть інший Конструктивний об'єкт:</translation>
+      <translation>Виберіть інший Конструктивний обʼєкт:</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="1252"/>
       <source>The chosen object is not a Structure</source>
-      <translation>Обраний об'єкт не є структурою</translation>
+      <translation>Обраний обʼєкт не є структурою</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="1255"/>
       <source>The chosen object has no structural nodes</source>
-      <translation>Вибраний об'єкт не має структурних вузлів</translation>
+      <translation>Вибраний обʼєкт не має структурних вузлів</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="1258"/>
       <source>One of these objects has more than 2 nodes</source>
-      <translation>Один з цих об'єктів має більше 2 вузлів</translation>
+      <translation>Один з цих обʼєктів має більше 2 вузлів</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="1265"/>
@@ -2727,7 +2727,7 @@
     <message>
       <location filename="../../ArchPanel.py" line="1589"/>
       <source>This object has no face</source>
-      <translation>У цього об'єкта відсутня поверхня</translation>
+      <translation>У цього обʼєкта відсутня поверхня</translation>
     </message>
     <message>
       <location filename="../../importDAE.py" line="126"/>
@@ -2772,7 +2772,7 @@
     <message>
       <location filename="../../ArchTruss.py" line="94"/>
       <source>Please select only one base object or none</source>
-      <translation>Будь ласка, виберіть лише один базовий об'єкт або жодного</translation>
+      <translation>Будь ласка, виберіть лише один базовий обʼєкт або жодного</translation>
     </message>
     <message>
       <location filename="../../ArchCurtainWall.py" line="144"/>
@@ -2832,12 +2832,12 @@
     <message>
       <location filename="../../ArchTruss.py" line="64"/>
       <source>Truss</source>
-      <translation>В'язка</translation>
+      <translation>Вʼязка</translation>
     </message>
     <message>
       <location filename="../../ArchTruss.py" line="125"/>
       <source>Create Truss</source>
-      <translation>Створити В'язку</translation>
+      <translation>Створити Вʼязку</translation>
     </message>
     <message>
       <location filename="../../importOBJ.py" line="94"/>
@@ -2882,7 +2882,7 @@
     <message>
       <location filename="../../ArchComponent.py" line="1656"/>
       <source>Please select a base object</source>
-      <translation>Будь ласка, виберіть базовий об'єкт</translation>
+      <translation>Будь ласка, виберіть базовий обʼєкт</translation>
     </message>
     <message>
       <location filename="../../ArchSpace.py" line="773"/>
@@ -2905,9 +2905,9 @@
 Building object is not allowed to accept Site and Building objects.
 Site and Building objects will be removed from the selection.
 You can change that in the preferences.</source>
-      <translation>Ви можете помістити все, крім ділянок та будівель, в об'єкт будівлі.
-Об’єкт будівлі не може приймати ділянки та об'єкти будівель.
-Ділянки та об'єкти будівель буде вилучено з виділеного.
+      <translation>Ви можете помістити все, крім ділянок та будівель, в обʼєкт будівлі.
+Об’єкт будівлі не може приймати ділянки та обʼєкти будівель.
+Ділянки та обʼєкти будівель буде вилучено з виділеного.
 Ви можете змінити це в налаштуваннях.</translation>
     </message>
     <message>
@@ -2930,7 +2930,7 @@ Building creation aborted.</source>
     <message>
       <location filename="../../ArchPipe.py" line="158"/>
       <source>Please select exactly 2 or 3 Pipe objects</source>
-      <translation>Будь ласка, виберіть точно 2 або 3 об'єкти труби</translation>
+      <translation>Будь ласка, виберіть точно 2 або 3 обʼєкти труби</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="163"/>
@@ -2940,7 +2940,7 @@ Building creation aborted.</source>
     <message>
       <location filename="../../ArchPipe.py" line="167"/>
       <source>Create Connector</source>
-      <translation>Створити З'єднувач</translation>
+      <translation>Створити Зʼєднувач</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="221"/>
@@ -2960,7 +2960,7 @@ Building creation aborted.</source>
     <message>
       <location filename="../../ArchPipe.py" line="288"/>
       <source>The base object is not a Part</source>
-      <translation>Базовий об'єкт не є частиною</translation>
+      <translation>Базовий обʼєкт не є частиною</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="291"/>
@@ -3143,7 +3143,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchRebar.py" line="154"/>
       <source>Please select a base face on a structural object</source>
-      <translation>Будь ласка, виберіть базову грань на структурному об'єкті</translation>
+      <translation>Будь ласка, виберіть базову грань на структурному обʼєкті</translation>
     </message>
     <message>
       <location filename="../../ArchGrid.py" line="74"/>
@@ -3393,7 +3393,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchWall.py" line="118"/>
       <source>Walls can only be based on Part or Mesh objects</source>
-      <translation>Стіни можуть бути засновані тільки на об'єкти деталі, або сітки</translation>
+      <translation>Стіни можуть бути засновані тільки на обʼєкти деталі, або сітки</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="605"/>
@@ -3443,12 +3443,12 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchWall.py" line="662"/>
       <source>Merge Wall</source>
-      <translation>Об'єднати стіни</translation>
+      <translation>Обʼєднати стіни</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="668"/>
       <source>The selected wall contains no subwall to merge</source>
-      <translation>Виділена стіна не містить вкладених стін для об'єднання</translation>
+      <translation>Виділена стіна не містить вкладених стін для обʼєднання</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="675"/>
@@ -3458,7 +3458,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchWall.py" line="677"/>
       <source>Merge Walls</source>
-      <translation>Об'єднати стіни</translation>
+      <translation>Обʼєднати стіни</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="933"/>
@@ -3468,7 +3468,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchWall.py" line="1043"/>
       <source>Error: Unable to modify the base object of this wall</source>
-      <translation>Помилка: Неможливо змінити основний об'єкт цієї стіни</translation>
+      <translation>Помилка: Неможливо змінити основний обʼєкт цієї стіни</translation>
     </message>
     <message>
       <location filename="../../ArchEquipment.py" line="180"/>
@@ -3483,7 +3483,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchEquipment.py" line="235"/>
       <source>You must select exactly one base object</source>
-      <translation>Необхідно вибрати лише один базовий об'єкт</translation>
+      <translation>Необхідно вибрати лише один базовий обʼєкт</translation>
     </message>
     <message>
       <location filename="../../ArchEquipment.py" line="239"/>
@@ -3553,7 +3553,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchComponent.py" line="915"/>
       <source>Error computing the shape of this object</source>
-      <translation>Помилка обробки форма цього об'єкту</translation>
+      <translation>Помилка обробки форма цього обʼєкту</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="936"/>
@@ -3588,7 +3588,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchComponent.py" line="1943"/>
       <source>Components of this object</source>
-      <translation>Компоненти цього об'єкта</translation>
+      <translation>Компоненти цього обʼєкта</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="1944"/>
@@ -3608,7 +3608,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchComponent.py" line="1947"/>
       <source>Objects</source>
-      <translation>Об'єкти</translation>
+      <translation>Обʼєкти</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="1950"/>
@@ -3833,7 +3833,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../importGBXML.py" line="49"/>
       <source>This exporter can currently only export one site object</source>
-      <translation>Цей експортер наразі може експортувати лише один об'єкт частини</translation>
+      <translation>Цей експортер наразі може експортувати лише один обʼєкт частини</translation>
     </message>
     <message>
       <location filename="../../importGBXML.py" line="91"/>
@@ -3879,7 +3879,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchEquipment.py" line="225"/>
       <source>Creates 3 views (top, front, side) from a mesh-based object</source>
-      <translation>Створює 3 види (зверху, на передній біч) з об'єкта, що базується на сітці</translation>
+      <translation>Створює 3 види (зверху, на передній біч) з обʼєкта, що базується на сітці</translation>
     </message>
   </context>
   <context>
@@ -3965,7 +3965,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchCommands.py" line="1540"/>
       <source>Checks the selected objects for problems</source>
-      <translation>Перевірити виділені об'єкти на наявність проблем</translation>
+      <translation>Перевірити виділені обʼєкти на наявність проблем</translation>
     </message>
   </context>
   <context>
@@ -3978,7 +3978,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchCommands.py" line="1617"/>
       <source>Clones an object as an undefined architectural component</source>
-      <translation>Клонує об'єкт як невизначений архітектурний компонент</translation>
+      <translation>Клонує обʼєкт як невизначений архітектурний компонент</translation>
     </message>
   </context>
   <context>
@@ -4043,7 +4043,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchCutPlane.py" line="102"/>
       <source>Cut an object with a plane</source>
-      <translation>Вирізати об'єкт з площиною</translation>
+      <translation>Вирізати обʼєкт з площиною</translation>
     </message>
   </context>
   <context>
@@ -4056,7 +4056,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchEquipment.py" line="170"/>
       <source>Creates an equipment object from a selected object (Part or Mesh)</source>
-      <translation>Створює об'єкт спорядження з обраного об'єкту (частина або Сітка)</translation>
+      <translation>Створює обʼєкт спорядження з обраного обʼєкту (частина або Сітка)</translation>
     </message>
   </context>
   <context>
@@ -4069,7 +4069,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchFence.py" line="389"/>
       <source>Creates a fence object from a selected section, post and path</source>
-      <translation>Створює об'єкт огорожі з вибраного розділу, посту і шляху</translation>
+      <translation>Створює обʼєкт огорожі з вибраного розділу, посту і шляху</translation>
     </message>
   </context>
   <context>
@@ -4082,7 +4082,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchFloor.py" line="114"/>
       <source>Creates a Building Part object that represents a level, including selected objects</source>
-      <translation>Створює об'єкт з будівельною частиною, який представляє рівень, включаючи обрані об'єкти</translation>
+      <translation>Створює обʼєкт з будівельною частиною, який представляє рівень, включаючи обрані обʼєкти</translation>
     </message>
   </context>
   <context>
@@ -4095,7 +4095,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchFrame.py" line="79"/>
       <source>Creates a frame object from a planar 2D object (the extrusion path(s)) and a profile. Make sure objects are selected in that order.</source>
-      <translation>Створює каркасний об'кт з плаского 2D об’єкту (траєкторія видавлювання) та профілю. Переконайтесь, що об’єкти вибрані в такому порядку.</translation>
+      <translation>Створює каркасний обʼкт з плаского 2D об’єкту (траєкторія видавлювання) та профілю. Переконайтесь, що об’єкти вибрані в такому порядку.</translation>
     </message>
   </context>
   <context>
@@ -4108,7 +4108,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchGrid.py" line="70"/>
       <source>Creates a customizable grid object</source>
-      <translation>Створює настроювану сітку об'єкту</translation>
+      <translation>Створює настроювану сітку обʼєкту</translation>
     </message>
     <message>
       <location filename="../../ArchGrid.py" line="98"/>
@@ -4133,12 +4133,12 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchGrid.py" line="106"/>
       <source>The span ranges of cells that are merged together</source>
-      <translation>Масштабні межі клітин, які об'єднані разом</translation>
+      <translation>Масштабні межі клітин, які обʼєднані разом</translation>
     </message>
     <message>
       <location filename="../../ArchGrid.py" line="108"/>
       <source>The type of 3D points produced by this grid object</source>
-      <translation>Тип тривимірних точок, утворених цим об'єктом сітки</translation>
+      <translation>Тип тривимірних точок, утворених цим обʼєктом сітки</translation>
     </message>
     <message>
       <location filename="../../ArchGrid.py" line="111"/>
@@ -4181,7 +4181,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchCommands.py" line="1667"/>
       <source>Creates a spreadsheet to store IFC properties of an object.</source>
-      <translation>Створює таблицю для зберігання властивостей IFC об'єкта.</translation>
+      <translation>Створює таблицю для зберігання властивостей IFC обʼєкта.</translation>
     </message>
   </context>
   <context>
@@ -4194,7 +4194,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchMaterial.py" line="118"/>
       <source>Creates or edits the material definition of a selected object.</source>
-      <translation>Створює або редагує визначення матеріалу, для обраного об'єкту.</translation>
+      <translation>Створює або редагує визначення матеріалу, для обраного обʼєкту.</translation>
     </message>
   </context>
   <context>
@@ -4210,7 +4210,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchWall.py" line="631"/>
       <source>Merge Walls</source>
-      <translation>Об'єднати стіни</translation>
+      <translation>Обʼєднати стіни</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="632"/>
@@ -4228,7 +4228,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchCommands.py" line="1444"/>
       <source>Turns selected meshes into Part Shape objects</source>
-      <translation>Перетворює вибрані полігональні сітки у об'єкти фігур</translation>
+      <translation>Перетворює вибрані полігональні сітки у обʼєкти фігур</translation>
     </message>
   </context>
   <context>
@@ -4267,7 +4267,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchPanel.py" line="150"/>
       <source>Creates a panel object from scratch or from a selected object (sketch, wire, face or solid)</source>
-      <translation>Створює об'єкт панелі з нуля або з вибраного об'єкта (ескіз, дрот, поверхні або суцільний)</translation>
+      <translation>Створює обʼєкт панелі з нуля або з вибраного обʼєкта (ескіз, дрот, поверхні або суцільний)</translation>
     </message>
   </context>
   <context>
@@ -4314,7 +4314,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchPipe.py" line="108"/>
       <source>Creates a pipe object from a given Wire or Line</source>
-      <translation>Створює трубковий об'єкт з даної ламаної або лінії</translation>
+      <translation>Створює трубковий обʼєкт з даної ламаної або лінії</translation>
     </message>
   </context>
   <context>
@@ -4322,12 +4322,12 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchPipe.py" line="145"/>
       <source>Connector</source>
-      <translation>З'єднувач</translation>
+      <translation>Зʼєднувач</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="147"/>
       <source>Creates a connector between 2 or 3 selected pipes</source>
-      <translation>Створює з'єднувач між 2 або 3 вибраними трубами</translation>
+      <translation>Створює зʼєднувач між 2 або 3 вибраними трубами</translation>
     </message>
   </context>
   <context>
@@ -4348,7 +4348,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchProfile.py" line="120"/>
       <source>Creates a profile object</source>
-      <translation>Створює об'єкт профілю</translation>
+      <translation>Створює обʼєкт профілю</translation>
     </message>
   </context>
   <context>
@@ -4361,7 +4361,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchProject.py" line="98"/>
       <source>Creates a project entity aggregating the selected sites.</source>
-      <translation>Створює об'єкт, який поєднує обрані ділянки.</translation>
+      <translation>Створює обʼєкт, який поєднує обрані ділянки.</translation>
     </message>
   </context>
   <context>
@@ -4374,7 +4374,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchRebar.py" line="108"/>
       <source>Creates a Reinforcement bar from the selected face of solid object and/or a sketch</source>
-      <translation>Створює арматурний стрижень із вибраної грані твердого об'єкта та/або ескізу</translation>
+      <translation>Створює арматурний стрижень із вибраної грані твердого обʼєкта та/або ескізу</translation>
     </message>
   </context>
   <context>
@@ -4400,7 +4400,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchReference.py" line="739"/>
       <source>Creates an external reference object</source>
-      <translation>Створює зовнішній еталонний об'єкт</translation>
+      <translation>Створює зовнішній еталонний обʼєкт</translation>
     </message>
   </context>
   <context>
@@ -4465,7 +4465,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchSectionPlane.py" line="879"/>
       <source>Creates a section plane object, including the selected objects</source>
-      <translation>Створює об'єкт площини розділу, включаючи обрані об'єкти</translation>
+      <translation>Створює обʼєкт площини розділу, включаючи обрані обʼєкти</translation>
     </message>
   </context>
   <context>
@@ -4504,12 +4504,12 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchSpace.py" line="228"/>
       <source>Creates a space object from selected boundary objects</source>
-      <translation>Створює пропусковий об'єкт з обраних граничних об'єктів</translation>
+      <translation>Створює пропусковий обʼєкт з обраних граничних обʼєктів</translation>
     </message>
     <message>
       <location filename="../../ArchStairs.py" line="218"/>
       <source>Creates a stairs object</source>
-      <translation>Створює сходові об'єкти</translation>
+      <translation>Створює сходові обʼєкти</translation>
     </message>
   </context>
   <context>
@@ -4543,7 +4543,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchStructure.py" line="234"/>
       <source>Create a structural system object from a selected structure and axis</source>
-      <translation>Створити об'єкт структурної системи з вибраної структури та осі</translation>
+      <translation>Створити обʼєкт структурної системи з вибраної структури та осі</translation>
     </message>
   </context>
   <context>
@@ -4577,7 +4577,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchStructure.py" line="197"/>
       <source>Create multiple Arch Structure objects from a selected base, using each selected edge as an extrusion path</source>
-      <translation>Створення кількох об'єктів Арочних структурних об'єктів із вибраної бази, використовуючи кожен вибраний край як шлях до видавлювання</translation>
+      <translation>Створення кількох обʼєктів Арочних структурних обʼєктів із вибраної бази, використовуючи кожен вибраний край як шлях до видавлювання</translation>
     </message>
   </context>
   <context>
@@ -4603,7 +4603,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchCommands.py" line="1576"/>
       <source>Force an object to be exported as Brep or not</source>
-      <translation>Примусово експортувати об'єкт як Brep чи ні</translation>
+      <translation>Примусово експортувати обʼєкт як Brep чи ні</translation>
     </message>
   </context>
   <context>
@@ -4624,12 +4624,12 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchTruss.py" line="82"/>
       <source>Truss</source>
-      <translation>В'язка</translation>
+      <translation>Вʼязка</translation>
     </message>
     <message>
       <location filename="../../ArchTruss.py" line="84"/>
       <source>Creates a truss object from selected line or from scratch</source>
-      <translation>Створює об'єкт трасування з вибраної лінії чи з нуля</translation>
+      <translation>Створює обʼєкт трасування з вибраної лінії чи з нуля</translation>
     </message>
   </context>
   <context>
@@ -4655,7 +4655,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../ArchWindow.py" line="158"/>
       <source>Creates a window object from a selected object (wire, rectangle or sketch)</source>
-      <translation>Створює віконний об'єкт з обраного об'єкта (дрот, прямокутник або ескіз)</translation>
+      <translation>Створює віконний обʼєкт з обраного обʼєкта (дрот, прямокутник або ескіз)</translation>
     </message>
   </context>
   <context>
@@ -4804,7 +4804,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../ui/ArchMaterial.ui" line="101"/>
       <source>An optional description for this material</source>
-      <translation>Необов'язковий опис для цього матеріалу</translation>
+      <translation>Необовʼязковий опис для цього матеріалу</translation>
     </message>
     <message>
       <location filename="../ui/ArchMaterial.ui" line="112"/>
@@ -4938,7 +4938,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../ui/BimServerTaskPanel.ui" line="164"/>
       <source>Root object:</source>
-      <translation>Кореневий об'єкт:</translation>
+      <translation>Кореневий обʼєкт:</translation>
     </message>
     <message>
       <location filename="../ui/BimServerTaskPanel.ui" line="178"/>
@@ -5002,7 +5002,7 @@ a certain property.</translation>
     <message>
       <location filename="../ui/ArchSchedule.ui" line="87"/>
       <source>Objects</source>
-      <translation>Об'єкти</translation>
+      <translation>Обʼєкти</translation>
     </message>
     <message>
       <location filename="../ui/ArchSchedule.ui" line="90"/>
@@ -5013,7 +5013,7 @@ Leave blank to use all objects from the document</source>
       <translation>Необов’язковий розділений крапкою з комою (;) список назв об’єктів
 (внутрішні імена, а не мітки), які слід враховувати під час цієї операції.
 Якщо список містить групи, діти будуть додані.
-Залиште порожнім, щоб використовувати всі об'єкти з документа</translation>
+Залиште порожнім, щоб використовувати всі обʼєкти з документа</translation>
     </message>
     <message>
       <location filename="../ui/ArchSchedule.ui" line="98"/>
@@ -5028,12 +5028,12 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/ArchSchedule.ui" line="111"/>
       <source>If this is enabled, an associated spreadsheet containing the results will be maintained together with this schedule object</source>
-      <translation>Якщо цей параметр увімкнено, то асоційована таблиця з якою будуть зберігатися разом з цим об'єктом операцій</translation>
+      <translation>Якщо цей параметр увімкнено, то асоційована таблиця з якою будуть зберігатися разом з цим обʼєктом операцій</translation>
     </message>
     <message>
       <location filename="../ui/ArchSchedule.ui" line="114"/>
       <source>Associate spreadsheet</source>
-      <translation>Пов'язати таблицю</translation>
+      <translation>Повʼязати таблицю</translation>
     </message>
     <message>
       <location filename="../ui/ArchSchedule.ui" line="121"/>
@@ -5128,7 +5128,7 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/DialogBimServerLogin.ui" line="62"/>
       <source>Keep me logged in across FreeCAD sessions</source>
-      <translation>Запам'ятати мене для входу через сеанси FreeCAD</translation>
+      <translation>Запамʼятати мене для входу через сеанси FreeCAD</translation>
     </message>
     <message>
       <location filename="../ui/DialogDisplayText.ui" line="14"/>
@@ -5153,7 +5153,7 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/DialogIfcProperties.ui" line="38"/>
       <source>List of IFC properties for this object. Double-click to edit, drag and drop to reorganize</source>
-      <translation>Список властивостей IFC для цього об'єкта. Двічі клацніть, перетягніть для редагування</translation>
+      <translation>Список властивостей IFC для цього обʼєкта. Двічі клацніть, перетягніть для редагування</translation>
     </message>
     <message>
       <location filename="../ui/DialogIfcProperties.ui" line="63"/>
@@ -5395,27 +5395,27 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/preferences-arch.ui" line="26"/>
       <source>Object creation</source>
-      <translation>Створення об'єкта</translation>
+      <translation>Створення обʼєкта</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="32"/>
       <source>Auto-join walls</source>
-      <translation>Авто-з'єднання стін</translation>
+      <translation>Авто-зʼєднання стін</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="48"/>
       <source>If this is checked, when 2 similar walls are being connected, their underlying sketches will be joined into one, and the two walls will become one</source>
-      <translation>Якщо позначено цей пункт, коли 2 подібні стіни будуть підключені, їхні основні ескізи будуть об'єднані в одну, а обидві стіни стануть одним</translation>
+      <translation>Якщо позначено цей пункт, коли 2 подібні стіни будуть підключені, їхні основні ескізи будуть обʼєднані в одну, а обидві стіни стануть одним</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="51"/>
       <source>Join walls base sketches when possible</source>
-      <translation>По можливості з'єднайте основи ескізів стін</translation>
+      <translation>По можливості зʼєднайте основи ескізів стін</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="64"/>
       <source>Two possible strategies to avoid circular dependencies: Create one more object (unchecked) or remove external geometry of base sketch (checked)</source>
-      <translation>Дві можливі стратегії для уникнення циклічних залежностей: Створіть ще один об'єкт (безконтрольно) або видаліть зовнішню геометрію основи ескізу (перевірено)</translation>
+      <translation>Дві можливі стратегії для уникнення циклічних залежностей: Створіть ще один обʼєкт (безконтрольно) або видаліть зовнішню геометрію основи ескізу (перевірено)</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="67"/>
@@ -5425,7 +5425,7 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/preferences-arch.ui" line="80"/>
       <source>If this is checked, when an object becomes Subtraction or Addition of an Arch object, it will receive the Draft Construction color.</source>
-      <translation>Якщо позначено цей пункт, коли об'єкт Віднімається або Додається до Арки об'єкта, він отримає колір Чернетки креслення.</translation>
+      <translation>Якщо позначено цей пункт, коли обʼєкт Віднімається або Додається до Арки обʼєкта, він отримає колір Чернетки креслення.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="83"/>
@@ -5435,7 +5435,7 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/preferences-arch.ui" line="114"/>
       <source>Do not compute areas for object with more than:</source>
-      <translation>Не обчислюйте області для об'єкту більше, ніж:</translation>
+      <translation>Не обчислюйте області для обʼєкту більше, ніж:</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="121"/>
@@ -5470,7 +5470,7 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/preferences-arch.ui" line="223"/>
       <source>If this is checked, when an Arch object has a material, the object will take the color of the material. This can be overridden for each object.</source>
-      <translation>Якщо позначено цей пункт, коли величина має матеріал, об'єкт буде приймати колір матеріалу. Це може бути перевизначено для кожного об'єкта.</translation>
+      <translation>Якщо позначено цей пункт, коли величина має матеріал, обʼєкт буде приймати колір матеріалу. Це може бути перевизначено для кожного обʼєкта.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="226"/>
@@ -5582,7 +5582,7 @@ Leave blank to use all objects from the document</source>
       <source>This is the SVG stroke-dasharray property to apply
 to projections of hidden objects.</source>
       <translation>Це властивість SVG штрихпунктирних ліній щоб застосувати
-до проекцій прихованих об'єктів.</translation>
+до проекцій прихованих обʼєктів.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="589"/>
@@ -5598,7 +5598,7 @@ to projections of hidden objects.</source>
       <location filename="../ui/preferences-arch.ui" line="645"/>
       <source>Scaling factor for patterns used by object that have
 a Footprint display mode</source>
-      <translation>Масштабуючий коефіцієнт для шаблонів, що використовуються для об'єкту
+      <translation>Масштабуючий коефіцієнт для шаблонів, що використовуються для обʼєкту
 в режимі режимі відображення відбиток</translation>
     </message>
     <message>
@@ -5711,7 +5711,7 @@ instead of the FreeCAD web workbench</translation>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="139"/>
       <source>This is the default color for new Wall objects</source>
-      <translation>Це колір за замовчуванням для нових об'єктів Стіна</translation>
+      <translation>Це колір за замовчуванням для нових обʼєктів Стіна</translation>
     </message>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="164"/>
@@ -5728,7 +5728,7 @@ instead of the FreeCAD web workbench</translation>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="300"/>
       <source>This is the default color for new Structure objects</source>
-      <translation>Це колір за замовчуванням для нових об'єктів Структура</translation>
+      <translation>Це колір за замовчуванням для нових обʼєктів Структура</translation>
     </message>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="325"/>
@@ -5890,13 +5890,13 @@ of IFC files in the Report view panel</source>
       <location filename="../ui/preferences-ifc.ui" line="71"/>
       <source>Clones are used when objects have shared geometry
 One object is the base object, the others are clones.</source>
-      <translation>Клони використовуються, коли об'єкти мають спільну геометрію
-Один об'єкт це базовий об'єкт, інші клони.</translation>
+      <translation>Клони використовуються, коли обʼєкти мають спільну геометрію
+Один обʼєкт це базовий обʼєкт, інші клони.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="75"/>
       <source>Create clones when objects have shared geometry</source>
-      <translation>Створити клонів, коли об'єкти мають спільну геометрію</translation>
+      <translation>Створити клонів, коли обʼєкти мають спільну геометрію</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="99"/>
@@ -5932,24 +5932,24 @@ if you start getting crashes when you set multiple cores.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="165"/>
       <source>Import arch IFC objects as</source>
-      <translation>Імпортувати об'єкти arch IFC як</translation>
+      <translation>Імпортувати обʼєкти arch IFC як</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="172"/>
       <location filename="../ui/preferences-ifc.ui" line="221"/>
       <source>Specifies what kind of objects will be created in FreeCAD</source>
-      <translation>Вказує які об'єкти будуть створені в FreeCAD</translation>
+      <translation>Вказує які обʼєкти будуть створені в FreeCAD</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="182"/>
       <source>Parametric Arch objects</source>
-      <translation>Параметричні об'єкти Arch</translation>
+      <translation>Параметричні обʼєкти Arch</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="187"/>
       <location filename="../ui/preferences-ifc.ui" line="231"/>
       <source>Non-parametric Arch objects</source>
-      <translation>Непараметричні об'єкти Arch</translation>
+      <translation>Непараметричні обʼєкти Arch</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="192"/>
@@ -5970,7 +5970,7 @@ if you start getting crashes when you set multiple cores.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="214"/>
       <source>Import struct IFC objects as</source>
-      <translation>Імпорт будівельних об'єктів IFC як</translation>
+      <translation>Імпорт будівельних обʼєктів IFC як</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="241"/>
@@ -5980,7 +5980,7 @@ if you start getting crashes when you set multiple cores.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="246"/>
       <source>Do not import structural objects</source>
-      <translation>Не імпортувати структурні об'єкти</translation>
+      <translation>Не імпортувати структурні обʼєкти</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="258"/>
@@ -6031,7 +6031,7 @@ Note that this might slow things down.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="334"/>
       <source>Object names will be prefixed with the IFC ID number</source>
-      <translation>Назви об'єктів будуть попередньо заповнені номером IFC ID</translation>
+      <translation>Назви обʼєктів будуть попередньо заповнені номером IFC ID</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="337"/>
@@ -6048,12 +6048,12 @@ they will be treated as one.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="354"/>
       <source>Merge materials with same name and same color</source>
-      <translation>Об'єднати матеріали з таким ім'ям і тим самим кольором</translation>
+      <translation>Обʼєднати матеріали з таким імʼям і тим самим кольором</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="367"/>
       <source>Each object will have their IFC properties stored in a spreadsheet object</source>
-      <translation>Кожен об'єкт матиме свої властивості IFC, які зберігатимуться в простому об'єкті</translation>
+      <translation>Кожен обʼєкт матиме свої властивості IFC, які зберігатимуться в простому обʼєкті</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="370"/>
@@ -6097,7 +6097,7 @@ This will slow down the import, but one can watch the import.</source>
       <source>Creates a full parametric model on import using stored
 FreeCAD object properties</source>
       <translation>Створює повну параметричну модель при імпорті з використанням збережених
-властивостей об'єкта FreeCAD</translation>
+властивостей обʼєкта FreeCAD</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="450"/>
@@ -6200,7 +6200,7 @@ This value describes how fast the mesh size decreases.
 The gradient of the local mesh size h(x) is bound by |Δh(x)| ≤ 1/value.</source>
       <translation>Класичне значення для сітки за допомогою Netgen.
 Це значення описує наскільки швидко зменшиться розмір сітки.
-Градієнт локальної сітки h(x) зв'язаний з |÷ h(x)| ≤ 1/value.</translation>
+Градієнт локальної сітки h(x) звʼязаний з |÷ h(x)| ≤ 1/value.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dae.ui" line="187"/>
@@ -6341,14 +6341,14 @@ If this is checked, an additional calculation is done to join coplanar facets.</
       <source>When exporting objects without unique ID (UID), the generated UID
 will be stored inside the FreeCAD object for reuse next time that object
 is exported. This leads to smaller differences between file versions.</source>
-      <translation>При експорті об'єктів без унікального ID (UID), згенерований UID
-буде зберігатися в об'єкті FreeCAD для повторного використання наступного разу, коли об’єкт
+      <translation>При експорті обʼєктів без унікального ID (UID), згенерований UID
+буде зберігатися в обʼєкті FreeCAD для повторного використання наступного разу, коли об’єкт
 експортується. Це призводить до меншої різниці між версіями файла.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="167"/>
       <source>Store IFC unique ID in FreeCAD objects</source>
-      <translation>Зберігати унікальний ідентифікатор IFC у об'єктах FreeCAD</translation>
+      <translation>Зберігати унікальний ідентифікатор IFC у обʼєктах FreeCAD</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="183"/>
@@ -6369,7 +6369,7 @@ Note: The serializer is still an experimental feature!</source>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="202"/>
       <source>2D objects will be exported as IfcAnnotation</source>
-      <translation>2D об'єкти буде експортовано як IfcAnnotation</translation>
+      <translation>2D обʼєкти буде експортовано як IfcAnnotation</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="205"/>
@@ -6392,13 +6392,13 @@ allowing to recreate a full parametric model on reimport.</source>
       <location filename="../ui/preferences-ifc-export.ui" line="238"/>
       <source>When possible, similar entities will be used only once in the file if possible.
 This can reduce the file size a lot, but will make it less easily readable.</source>
-      <translation>Коли це можливо, подібні об'єкти будуть використані лише один раз у файлі, якщо це можливо.
+      <translation>Коли це можливо, подібні обʼєкти будуть використані лише один раз у файлі, якщо це можливо.
 Це може зменшити розмір файлу, але зробить його менш зручним.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="242"/>
       <source>Reuse similar entities</source>
-      <translation>Повторно використовувати подібні об'єкти</translation>
+      <translation>Повторно використовувати подібні обʼєкти</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="258"/>
@@ -6408,7 +6408,7 @@ However, some other applications might have problems importing that entity.
 If this is your case, you can disable this and then all profiles will be exported as IfcArbitraryClosedProfileDef.</source>
       <translation>Коли це можливо, об’єкти IFC, виділені прямокутники
 експортуватимуться як IfcRectangleProfileDef.
-Однак, деякі інші програми можуть виникнути проблеми при імпорті цього об'єкту.
+Однак, деякі інші програми можуть виникнути проблеми при імпорті цього обʼєкту.
 Якщо це ваш випадок, ви можете відключити це, а потім усі профілі будуть експортовані як IfcArbitraryClosedProfileDef.</translation>
     </message>
     <message>
@@ -6424,7 +6424,7 @@ If this option is turned on, FreeCAD will automatically export such objects
 as standard cases when the necessary conditions are met.</source>
       <translation>Деякі типи IFC типу IfcWall або IfcBeam мають спеціальні стандартні версії
 , такі як IfcWallStandardCase або IfcBeamStandardCase.
-Якщо ця опція активована, FreeCAD буде автоматично експортувати такі об'єкти
+Якщо ця опція активована, FreeCAD буде автоматично експортувати такі обʼєкти
 як стандартні випадки при виконанні необхідних умов.</translation>
     </message>
     <message>
@@ -6437,7 +6437,7 @@ as standard cases when the necessary conditions are met.</source>
       <source>If no site is found in the FreeCAD document, a default one will be added.
 A site is not mandatory but a common practice is to have at least one in the file.</source>
       <translation>Якщо сайт не знайдено у документі FreeCAD, додаватиметься за замовчуванням.
-Сайт не є обов'язковим, але загальна практика - мати принаймні один у файлі.</translation>
+Сайт не є обовʼязковим, але загальна практика - мати принаймні один у файлі.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="300"/>
@@ -6451,7 +6451,7 @@ Warning: The IFC standard asks for at least one building in each file. By turnin
 However, at FreeCAD, we believe having a building should not be mandatory, and this option is there to have a chance to demonstrate our point of view.</source>
       <translation>Якщо в документі FreeCAD не знайдено жодної будівлі, буде додано за замовчуванням.
 Увага: стандарт IFC запитує принаймні одну будівлю в кожному файлі. Вимкнувши цю опцію, ви створите нестандартний файл IF.
-Однак, за допомогою FreeCAD, ми вважаємо, що будівля не повинна бути обов'язковою, і ця опція для того, щоб показати нашу точку зору.</translation>
+Однак, за допомогою FreeCAD, ми вважаємо, що будівля не повинна бути обовʼязковою, і ця опція для того, щоб показати нашу точку зору.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="318"/>

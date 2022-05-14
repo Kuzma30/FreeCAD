@@ -335,12 +335,12 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="603"/>
       <source>Duplicate selected object</source>
-      <translation>Дублювати виділений об'єкт</translation>
+      <translation>Дублювати виділений обʼєкт</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="604"/>
       <source>Duplicates the selected object and adds it to the active body</source>
-      <translation>Дублює виділений об'єкт і додає його до активного тіла</translation>
+      <translation>Дублює виділений обʼєкт і додає його до активного тіла</translation>
     </message>
   </context>
   <context>
@@ -466,7 +466,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../Command.cpp" line="2276"/>
       <source>Create a mirrored feature</source>
-      <translation>Створює дзеркальне зображення об'єкта</translation>
+      <translation>Створює дзеркальне зображення обʼєкта</translation>
     </message>
   </context>
   <context>
@@ -479,12 +479,12 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="659"/>
       <source>Move object to other body</source>
-      <translation>Перемістити об'єкт до іншого тіла</translation>
+      <translation>Перемістити обʼєкт до іншого тіла</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="660"/>
       <source>Moves the selected object to another body</source>
-      <translation>Переміщує виділений об'єкт до іншого тіла</translation>
+      <translation>Переміщує виділений обʼєкт до іншого тіла</translation>
     </message>
   </context>
   <context>
@@ -497,12 +497,12 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="826"/>
       <source>Move object after other object</source>
-      <translation>Перемістити об'єкт за іншим об'єктом</translation>
+      <translation>Перемістити обʼєкт за іншим обʼєктом</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="827"/>
       <source>Moves the selected object and insert it after another object</source>
-      <translation>Переміщує виділений об'єкт та вставляє його слідом за іншим об'єктом</translation>
+      <translation>Переміщує виділений обʼєкт та вставляє його слідом за іншим обʼєктом</translation>
     </message>
   </context>
   <context>
@@ -714,7 +714,7 @@ so that self intersection is avoided.</source>
       <location filename="../../Command.cpp" line="344"/>
       <location filename="../../Command.cpp" line="345"/>
       <source>Create a sub-object(s) shape binder</source>
-      <translation>Створити сполучну форму для підоб'єкта</translation>
+      <translation>Створити сполучну форму для підобʼєкта</translation>
     </message>
   </context>
   <context>
@@ -912,7 +912,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../Command.cpp" line="390"/>
       <source>Create SubShapeBinder</source>
-      <translation>Створити Сполучну Форму для Підоб'єкта</translation>
+      <translation>Створити Сполучну Форму для Підобʼєкта</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="445"/>
@@ -964,7 +964,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="616"/>
       <source>Duplicate a PartDesign object</source>
-      <translation>Дублювати об'єкт ДизайнуДеталі</translation>
+      <translation>Дублювати обʼєкт ДизайнуДеталі</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="739"/>
@@ -1682,7 +1682,7 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskDatumParameters.cpp" line="105"/>
       <source>There is no attachment mode that fits the current set of references. If you choose to continue, the feature will remain where it is now, and will not be moved as the references change. Continue?</source>
-      <translation>Немає режиму прив'язки, який би відповідав поточному набору орієнтирів. Якщо ви вирішите продовжити, елемент залишиться на поточному місці та не буде переміщений при зміні орієнтиру. Продовжити?</translation>
+      <translation>Немає режиму привʼязки, який би відповідав поточному набору орієнтирів. Якщо ви вирішите продовжити, елемент залишиться на поточному місці та не буде переміщений при зміні орієнтиру. Продовжити?</translation>
     </message>
   </context>
   <context>
@@ -3554,12 +3554,12 @@ click again to end selection</source>
     <message>
       <location filename="../../Command.cpp" line="144"/>
       <source>There is no active body. Please make a body active before inserting a datum entity.</source>
-      <translation>Нема активного тіла. Будь ласка, створіть нове тіло або зробіть наявне активним, перш ніж вставляти опорний об'єкт.</translation>
+      <translation>Нема активного тіла. Будь ласка, створіть нове тіло або зробіть наявне активним, перш ніж вставляти опорний обʼєкт.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="408"/>
       <source>Sub-Shape Binder</source>
-      <translation>Сполучна Форма для Підоб'єкта</translation>
+      <translation>Сполучна Форма для Підобʼєкта</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="590"/>
@@ -3924,9 +3924,9 @@ This may lead to unexpected results.</source>
       <source>In order to use PartDesign you need an active Body object in the document. Please make one active (double click) or create one.
 
 If you have a legacy document with PartDesign objects without Body, use the migrate function in PartDesign to put them into a Body.</source>
-      <translation>Для використання ДизайнуДеталі в документі вам потрібен активний об'єкт Тіло. Зробіть один з об'єктів активним (подвійний клац) або створіть новий.
+      <translation>Для використання ДизайнуДеталі в документі вам потрібен активний обʼєкт Тіло. Зробіть один з обʼєктів активним (подвійний клац) або створіть новий.
 
-Якщо у вас є застарілий документ з об'єктами ДизайнуДеталі без Тіла, використайте функцію міграції ДизайнуДеталі для введення їх в Тіло.</translation>
+Якщо у вас є застарілий документ з обʼєктами ДизайнуДеталі без Тіла, використайте функцію міграції ДизайнуДеталі для введення їх в Тіло.</translation>
     </message>
     <message>
       <location filename="../../Utils.cpp" line="169"/>
@@ -3946,7 +3946,7 @@ If you have a legacy document with PartDesign objects without Body, use the migr
     <message>
       <location filename="../../Utils.cpp" line="206"/>
       <source>In order to use this feature it needs to belong to a body object in the document.</source>
-      <translation>Щоб використовувати цей елемент, він повинен належати об'єкту Тіло в документі.</translation>
+      <translation>Щоб використовувати цей елемент, він повинен належати обʼєкту Тіло в документі.</translation>
     </message>
     <message>
       <location filename="../../Utils.cpp" line="238"/>
@@ -4070,7 +4070,7 @@ This feature is broken and can&apos;t be edited.</source>
     <message>
       <location filename="../../ViewProviderShapeBinder.cpp" line="310"/>
       <source>Select bound object</source>
-      <translation>Виберіть пов'язаний об'єкт</translation>
+      <translation>Виберіть повʼязаний обʼєкт</translation>
     </message>
     <message>
       <location filename="../../ViewProviderTransformed.cpp" line="169"/>

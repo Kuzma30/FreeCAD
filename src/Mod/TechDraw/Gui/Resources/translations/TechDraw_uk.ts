@@ -2554,13 +2554,13 @@
       <location filename="../../Command.cpp" line="783"/>
       <location filename="../../CommandCreateDims.cpp" line="1440"/>
       <source>Select an object first</source>
-      <translation>Оберіть об'єкт для початку</translation>
+      <translation>Оберіть обʼєкт для початку</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="790"/>
       <location filename="../../CommandCreateDims.cpp" line="1447"/>
       <source>Too many objects selected</source>
-      <translation>Обрано забагато об'єктів</translation>
+      <translation>Обрано забагато обʼєктів</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="797"/>
@@ -2622,7 +2622,7 @@
     <message>
       <location filename="../../Command.cpp" line="1197"/>
       <source>Select at least one object.</source>
-      <translation>Оберіть принаймні один об'єкт.</translation>
+      <translation>Оберіть принаймні один обʼєкт.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1222"/>
@@ -2642,7 +2642,7 @@
     <message>
       <location filename="../../Command.cpp" line="1320"/>
       <source>Select exactly one Spreadsheet object.</source>
-      <translation>Виберіть саме один об'єкт електронної таблиці.</translation>
+      <translation>Виберіть саме один обʼєкт електронної таблиці.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1390"/>
@@ -2729,7 +2729,7 @@
     <message>
       <location filename="../../CommandCreateDims.cpp" line="1022"/>
       <source>There is no 3D object in your selection</source>
-      <translation>Ви не обрали 3D об'єкт</translation>
+      <translation>Ви не обрали 3D обʼєкт</translation>
     </message>
     <message>
       <location filename="../../CommandCreateDims.cpp" line="1028"/>
@@ -3293,7 +3293,7 @@ it has a weld symbol that would become broken.</translation>
       <location filename="../../ViewProviderViewPart.cpp" line="364"/>
       <location filename="../../ViewProviderWeld.cpp" line="187"/>
       <source>Object dependencies</source>
-      <translation>Залежності об'єктів</translation>
+      <translation>Залежності обʼєктів</translation>
     </message>
     <message>
       <location filename="../../ViewProviderProjGroupItem.cpp" line="163"/>
@@ -3323,7 +3323,7 @@ it has a weld symbol that would become broken.</translation>
       <source>The page is not empty, therefore the
 following referencing objects might be lost:</source>
       <translation>Сторінка не порожня, тому
-такі посилання на об'єкти можуть бути втрачені:</translation>
+такі посилання на обʼєкти можуть бути втрачені:</translation>
     </message>
     <message>
       <location filename="../../ViewProviderProjGroup.cpp" line="182"/>

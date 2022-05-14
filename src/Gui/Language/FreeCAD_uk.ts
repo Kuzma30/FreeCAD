@@ -502,7 +502,7 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>Rename object</source>
-      <translation>Перейменовує об'єкт</translation>
+      <translation>Перейменовує обʼєкт</translation>
     </message>
     <message>
       <source>Finish editing</source>
@@ -510,7 +510,7 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>Finish editing object</source>
-      <translation>Завершує редагування об'єкту</translation>
+      <translation>Завершує редагування обʼєкту</translation>
     </message>
   </context>
   <context>
@@ -849,7 +849,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Username:</source>
-      <translation>Ім'я користувача:</translation>
+      <translation>Імʼя користувача:</translation>
     </message>
     <message>
       <source>Site:</source>
@@ -909,7 +909,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>A preference pack with that name already exists. Do you want to overwrite it?</source>
-      <translation>Набір налаштувань з таким ім'ям вже існує. Бажаєте перезаписати його?</translation>
+      <translation>Набір налаштувань з таким імʼям вже існує. Бажаєте перезаписати його?</translation>
     </message>
   </context>
   <context>
@@ -1750,7 +1750,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Preference Pack Name</source>
-      <translation>Ім'я Набору Налаштувань</translation>
+      <translation>Імʼя Набору Налаштувань</translation>
     </message>
     <message>
       <source>Tags</source>
@@ -2220,7 +2220,7 @@ Specify another directory, please.</source>
     </message>
     <message>
       <source>Invalid key name &apos;%1&apos;</source>
-      <translation>Невірне ім'я ключа &apos;%1&apos;</translation>
+      <translation>Невірне імʼя ключа &apos;%1&apos;</translation>
     </message>
     <message>
       <source>System parameter</source>
@@ -2457,7 +2457,7 @@ Specify another directory, please.</source>
     </message>
     <message>
       <source>If enabled, then 3D view selection will be synchronized with full object hierarchy.</source>
-      <translation>Якщо ввімкнено, то виділення в 3D виді буде синхронізоване з повною ієрархією об'єктів.</translation>
+      <translation>Якщо ввімкнено, то виділення в 3D виді буде синхронізоване з повною ієрархією обʼєктів.</translation>
     </message>
   </context>
   <context>
@@ -2752,11 +2752,11 @@ will be shown at the lower left corner in opened files</source>
     </message>
     <message>
       <source>If checked, application will remember which workbench is active for each tab of the viewport</source>
-      <translation>Якщо встановлено, то додаток запам'ятає яке робоче середовище було активним для кожної вкладки viewport</translation>
+      <translation>Якщо встановлено, то додаток запамʼятає яке робоче середовище було активним для кожної вкладки viewport</translation>
     </message>
     <message>
       <source>Remember active workbench by tab</source>
-      <translation>Запам'ятати активне робоче середовище в закладці</translation>
+      <translation>Запамʼятати активне робоче середовище в закладці</translation>
     </message>
     <message>
       <source>Rendering</source>
@@ -2777,7 +2777,7 @@ report this setting as enabled when seeking support on the FreeCAD forums</sourc
 VBO є функцією OpenGL, яка забезпечує методи завантаження даних про 
 вершини (позиція, вектор нормалі, колір тощо) у графічну карту. VBO 
 забезпечує значне підвищення продуктивності через те що дані розміщуються
-в графічній, а не в системній пам'яті, і таким чином можуть бути візуалізовані
+в графічній, а не в системній памʼяті, і таким чином можуть бути візуалізовані
 безпосередньо через GPU. 
 
 Примітка: Іноді ця функція може призвести до різноманітних проблем від графічних 
@@ -2826,7 +2826,7 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Render types of transparent objects</source>
-      <translation>Типи візуалізації прозорих обʼєктів</translation>
+      <translation>Визначає тип візуалізації прозорих обʼєктів</translation>
     </message>
     <message>
       <source>One pass</source>
@@ -2838,7 +2838,7 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Size of vertices in the Sketcher workbench</source>
-      <translation>Розмір вершин в Редакторі ескізів</translation>
+      <translation>Визначає розмір вершин в Редакторі ескізів</translation>
     </message>
     <message>
       <source>Eye to eye distance for stereo modes</source>
@@ -2862,11 +2862,11 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Objects will be projected in orthographic projection</source>
-      <translation>Об'єкти будуть зображатися в ортографічній проєкції</translation>
+      <translation>Встановлює ортографічну проєкцію для показу обʼєктів</translation>
     </message>
     <message>
       <source>Objects will appear in a perspective projection</source>
-      <translation>Об'єкти будуть зображатися у перспективній проєкції</translation>
+      <translation>Встановлює перспективу проєкцію для показу обʼєктів</translation>
     </message>
     <message>
       <source>Axis cross will be shown by default at file
@@ -2879,14 +2879,14 @@ opening or creation</source>
     </message>
     <message>
       <source>Pick radius (px):</source>
-      <translation>Вибрати радіус (пікс):</translation>
+      <translation>Радіус виділення (пікс):</translation>
     </message>
     <message>
       <source>Area for picking elements in 3D view.
 Larger value eases to pick things, but can make small features impossible to select.
                </source>
-      <translation>Область для обирання елементів у 3D виді.
-Великі значення полегшують вибір речей, але можуть зробити неможливим виділення дрібних елементів.
+      <translation>Визначає область для виділення елементів у 3D виді.
+Великі значення полегшують вибір елементів, але можуть зробити неможливим виділення дрібних деталей.
                </translation>
     </message>
     <message>
@@ -2911,7 +2911,7 @@ The specified value is a factor that will be multiplied with the
 bounding box size of the 3D object that is currently displayed.</source>
       <translation>Задає відстань між очима, яка використовується для стереопроєкції.
 Вказане значення є коефіцієнтом, який буде помножено на розмір 
-граничного поля 3D-об'єкта, який зараз показується.</translation>
+граничного поля 3D-обʼєкта, який зараз показується.</translation>
     </message>
     <message>
       <source>Relative size :   </source>
@@ -3208,7 +3208,7 @@ besides the color bar</source>
     </message>
     <message>
       <source>Allow duplicate object labels in one document</source>
-      <translation>Дозволити дублювання міток об'єктів в одному документі</translation>
+      <translation>Дозволити дублювання міток обʼєктів в одному документі</translation>
     </message>
     <message>
       <source>Maximum Undo/Redo steps</source>
@@ -3344,7 +3344,7 @@ get date suffix according to the specified format</source>
     </message>
     <message>
       <source>Allow objects to have same label/name</source>
-      <translation>Дозволити об'єктам мати однакову мітку/назву</translation>
+      <translation>Дозволити обʼєктам мати однакову мітку/назву</translation>
     </message>
     <message>
       <source>Enable partial loading of external linked documents.
@@ -3352,12 +3352,12 @@ Then only referenced objects and their dependencies will be loaded
 when a linked document is auto-opened together with the main document.
 A partially loaded document cannot be edited. Double click the document
 icon in the tree view to fully reload it.</source>
-      <translation>Вмикає часткове завантаження зовнішніх пов'язаних документів. 
-При відкритті основного документу автоматично завантажятся об'єкти пов'язаного документа з посиланнями та їх залежності. Частково завантажений документ не можна редагувати. Двічі клацніть документ у ієрархіїї документа, щоб повністю перезавантажити його.</translation>
+      <translation>Вмикає часткове завантаження зовнішніх повʼязаних документів. 
+При відкритті основного документу автоматично завантажятся обʼєкти повʼязаного документа з посиланнями та їх залежності. Частково завантажений документ не можна редагувати. Двічі клацніть документ у ієрархіїї документа, щоб повністю перезавантажити його.</translation>
     </message>
     <message>
       <source>Disable partial loading of external linked objects</source>
-      <translation>Вимкнути часткове завантаження зовнішніх пов'язаних об'єктів</translation>
+      <translation>Вимкнути часткове завантаження зовнішніх повʼязаних обʼєктів</translation>
     </message>
     <message>
       <source>All documents that will be created will get the specified author name.
@@ -3648,7 +3648,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To preserve resources, FreeCAD does not load workbenches until they are used. Loading them may provide access to additional preferences related to their functionality.&lt;/p&gt;&lt;p&gt;The following workbenches are available in your installation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для збереження ресурсів FreeCAD не завантажує робочі середовища, поки вони не почнуть використовуватися. Їх завантаження може відкрити доступ до додаткових налаштувань, пов'язаних з їх роботою.&lt;/p&gt;&lt;p&gt;Для вашої системи доступні наступні робочі середовища:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для збереження ресурсів FreeCAD не завантажує робочі середовища, поки вони не почнуть використовуватися. Їх завантаження може відкрити доступ до додаткових налаштувань, повʼязаних з їх роботою.&lt;/p&gt;&lt;p&gt;Для вашої системи доступні наступні робочі середовища:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>Available Workbenches</source>
@@ -3853,13 +3853,13 @@ Select a set and then press the button to view said configurations.</source>
       <source>Rotation orbit style.
 Trackball: moving the mouse horizontally will rotate the part around the y-axis
 Turntable: the part will be rotated around the z-axis.</source>
-      <translation>Стиль обертання орбіти.
+      <translation>Визначає стиль обертання орбіти.
 Трекбол: при переміщенні миші по горизонталі деталь обертатиметься навколо осі y.
-Поворотний стіл: деталь обертатиметься навколо осі z.</translation>
+Поворотна: деталь обертатиметься навколо осі z.</translation>
     </message>
     <message>
       <source>Turntable</source>
-      <translation>Поворотний</translation>
+      <translation>Поворотна</translation>
     </message>
     <message>
       <source>Trackball</source>
@@ -3961,7 +3961,7 @@ Mouse tilting is not disabled by this setting.</source>
     </message>
     <message>
       <source>Default camera orientation when creating a new document or selecting the home view</source>
-      <translation>Типова орієнтація камери під час створення нового документа або вибору домашнього перегляду</translation>
+      <translation>Визначає типову орієнтацію камери під час створення нового документа або вибору стандартного виду</translation>
     </message>
     <message>
       <source>Rotation mode</source>
@@ -4059,11 +4059,11 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Auto expand tree item when the corresponding object is selected in 3D view</source>
-      <translation>Автоматично відкривати елемент в ієрархії при виділенні відповідного об'єкта в 3D-виді</translation>
+      <translation>Автоматично відкривати елемент в ієрархії при виділенні відповідного обʼєкта в 3D-виді</translation>
     </message>
     <message>
       <source>Preselect the object in 3D view when mouse over the tree item</source>
-      <translation>Підсвічувати об'єкт в 3D-виді при наведенні мишки на елемент в ієрархії</translation>
+      <translation>Підсвічувати обʼєкт в 3D-виді при наведенні мишки на елемент в ієрархії</translation>
     </message>
     <message>
       <source>Record selection in tree view in order to go back/forward using navigation button</source>
@@ -4261,7 +4261,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Background color for objects in tree view that are currently edited</source>
-      <translation>Колір тла для об'єктів в ієрархії документа під час редагування</translation>
+      <translation>Колір тла для обʼєктів в ієрархії документа під час редагування</translation>
     </message>
     <message>
       <source>Background color for active containers in tree view</source>
@@ -4509,9 +4509,9 @@ To add a calculation press Return in the value input field</source>
       <source>Press &apos;Start Recovery&apos; to start the recovery process of the document listed below.
 
 The &apos;Status&apos; column shows whether the document could be recovered.</source>
-      <translation>Натисніть 'Почати відновлення' щоб почати процес відновлення документів, що перелічені нижче.
+      <translation>Натисніть ʼПочати відновленняʼ щоб почати процес відновлення документів, що перелічені нижче.
 
-Колонка 'Статус' показує чи можливе відновлення документів.</translation>
+Колонка ʼСтатусʼ показує чи можливе відновлення документів.</translation>
     </message>
     <message>
       <source>When deleting all transient directories you won&apos;t be able to recover any files afterwards.</source>
@@ -4886,7 +4886,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
     </message>
     <message>
       <source>Please select 1, 2, or 3 points before clicking this button.  A point may be on a vertex, face, or edge.  If on a face or edge the point used will be the point at the mouse position along face or edge.  If 1 point is selected it will be used as the center of rotation.  If 2 points are selected the midpoint between them will be the center of rotation and a new custom axis will be created, if needed.  If 3 points are selected the first point becomes the center of rotation and lies on the vector that is normal to the plane defined by the 3 points.  Some distance and angle information is provided in the report view, which can be useful when aligning objects.  For your convenience when Shift + click is used the appropriate distance or angle is copied to the clipboard.</source>
-      <translation>Будь ласка, виберіть 1, 2 або 3 точки перед натисканням на цю кнопку. Точка може бути на вершині, грані або на ребрі. Якщо вибрати на грані або на ребрі, то обраною буде точка найближча до курсора, що належить грані або ребру. Якщо вибрано 1 точку, вона буде використовуватися як центр обертання. При виборі двох точок, центром обертання буде середина між ними, а також при потребі буде додано нову вісь обертання. При виборі 3 точок, перша точка стає центром обертання і лежить на векторі, що буде нормаллю до площини утвореної трьома вибраними точками. У додатвовій інформації також надаються дані про відстань та кут. Це може бути корисним для вирівнювання об'єктів. Для вашої зручності при кліку з натисненим Shift відповідна відстань або кут буде скопійовано в буфер обміну.</translation>
+      <translation>Будь ласка, виберіть 1, 2 або 3 точки перед натисканням на цю кнопку. Точка може бути на вершині, грані або на ребрі. Якщо вибрати на грані або на ребрі, то обраною буде точка найближча до курсора, що належить грані або ребру. Якщо вибрано 1 точку, вона буде використовуватися як центр обертання. При виборі двох точок, центром обертання буде середина між ними, а також при потребі буде додано нову вісь обертання. При виборі 3 точок, перша точка стає центром обертання і лежить на векторі, що буде нормаллю до площини утвореної трьома вибраними точками. У додатвовій інформації також надаються дані про відстань та кут. Це може бути корисним для вирівнювання обʼєктів. Для вашої зручності при кліку з натисненим Shift відповідна відстань або кут буде скопійовано в буфер обміну.</translation>
     </message>
     <message>
       <source>Pitch (around y-axis):</source>
@@ -5043,11 +5043,11 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
     <name>Gui::DlgObjectSelection</name>
     <message>
       <source>Object selection</source>
-      <translation>Виділення об'єкту</translation>
+      <translation>Виділення обʼєкту</translation>
     </message>
     <message>
       <source>The selected objects contain other dependencies. Please select which objects to export. All dependencies are auto selected by default.</source>
-      <translation>Виділені об'єкти містять інші залежності. Будь ласка, виберіть, які об'єкти експортувати. Всі залежності вибираються автоматично за замовчуванням.</translation>
+      <translation>Виділені обʼєкти містять інші залежності. Будь ласка, виберіть, які обʼєкти експортувати. Всі залежності вибираються автоматично за замовчуванням.</translation>
     </message>
     <message>
       <source>Document</source>
@@ -5065,7 +5065,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
       <source>Ignore dependencies and proceed with objects
 originally selected prior to opening this dialog</source>
       <translation>Ігнорує залежності та продовжує роботу з початково
-виділеними об'єктами (до відкриття діалогу)</translation>
+виділеними обʼєктами (до відкриття діалогу)</translation>
     </message>
     <message>
       <source>Auto select depending objects</source>
@@ -5223,7 +5223,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Deselects this object</source>
-      <translation>Зніміть виділення з цього об'єкта</translation>
+      <translation>Зніміть виділення з цього обʼєкта</translation>
     </message>
     <message>
       <source>Zoom fit</source>
@@ -5239,7 +5239,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Selects and locates this object in the tree view</source>
-      <translation>Виділити об'єкт та знайти його у ієрархії документа</translation>
+      <translation>Виділити обʼєкт та знайти його у ієрархії документа</translation>
     </message>
     <message>
       <source>To python console</source>
@@ -5847,7 +5847,7 @@ How do you want to proceed?</source>
     <name>Gui::PropertyEditor::LinkLabel</name>
     <message>
       <source>Change the linked object</source>
-      <translation>Заміна зв'язаного об'єкта</translation>
+      <translation>Заміна звʼязаного обʼєкта</translation>
     </message>
   </context>
   <context>
@@ -6660,7 +6660,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Enable or disable recomputating editing object when &apos;skip recomputation&apos; is enabled</source>
-      <translation>Ввімкнути або вимкнути переобчислення об'єктів, коли &apos;пропустити переобчислення&apos; активовано</translation>
+      <translation>Ввімкнути або вимкнути переобчислення обʼєктів, коли &apos;пропустити переобчислення&apos; активовано</translation>
     </message>
     <message>
       <source>Recompute object</source>
@@ -6676,11 +6676,11 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Add dependent objects to selection</source>
-      <translation>Додати залежні об'єкти до виділення</translation>
+      <translation>Додати залежні обʼєкти до виділення</translation>
     </message>
     <message>
       <source>Adds all dependent objects to the selection</source>
-      <translation>Додає всі залежні об'єкти до виділеного</translation>
+      <translation>Додає всі залежні обʼєкти до виділеного</translation>
     </message>
   </context>
   <context>
@@ -6759,11 +6759,11 @@ Do you want to specify another directory?</source>
     <name>NetworkAccessManager</name>
     <message>
       <source>&lt;qt&gt;Enter username and password for &quot;%1&quot; at %2&lt;/qt&gt;</source>
-      <translation>&lt;qt&gt;Введіть ім'я користувача та пароль для &quot;%1&quot; на %2&lt;/qt&gt;</translation>
+      <translation>&lt;qt&gt;Введіть імʼя користувача та пароль для &quot;%1&quot; на %2&lt;/qt&gt;</translation>
     </message>
     <message>
       <source>&lt;qt&gt;Connect to proxy &quot;%1&quot; using:&lt;/qt&gt;</source>
-      <translation>&lt;qt&gt;Під'єднатися до проксі-сервера &quot;%1&quot; використовуючи:&lt;/qt&gt;</translation>
+      <translation>&lt;qt&gt;Підʼєднатися до проксі-сервера &quot;%1&quot; використовуючи:&lt;/qt&gt;</translation>
     </message>
   </context>
   <context>
@@ -7508,11 +7508,11 @@ Would you like to save the file with a different name?</source>
     </message>
     <message>
       <source>Setup configurable object</source>
-      <translation>Налаштування конфігураційного об'єкта</translation>
+      <translation>Налаштування конфігураційного обʼєкта</translation>
     </message>
     <message>
       <source>Please select which objects to copy when the configuration is changed</source>
-      <translation>Будь ласка, виберіть, які об'єкти слід скопіювати при зміні конфігурації</translation>
+      <translation>Будь ласка, виберіть, які обʼєкти слід скопіювати при зміні конфігурації</translation>
     </message>
     <message>
       <source>Apply to all</source>
@@ -7535,7 +7535,7 @@ option to apply only to this link.</source>
     </message>
     <message>
       <source>Enable auto copy of linked object when its configuration is changed</source>
-      <translation>Ввімкнути автоматичне копіювання зв'язаного об'єкта, коли його налаштування змінюється</translation>
+      <translation>Ввімкнути автоматичне копіювання звʼязаного обʼєкта, коли його налаштування змінюється</translation>
     </message>
     <message>
       <source>Tracking</source>
@@ -7545,9 +7545,9 @@ option to apply only to this link.</source>
       <source>Copy the linked object when its configuration is changed.
 Also auto redo the copy if the original linked object is changed.
 </source>
-      <translation>Копіювання пов'язаного об'єкта за зміни його конфігурації.
+      <translation>Копіювання повʼязаного обʼєкта за зміни його конфігурації.
 Також виконується автоматичне повторне копіювання під 
-час зміни початкового зв'язаного об'єкта.
+час зміни початкового звʼязаного обʼєкта.
 </translation>
     </message>
     <message>
@@ -7556,14 +7556,14 @@ Also auto redo the copy if the original linked object is changed.
     </message>
     <message>
       <source>Rerefresh configurable object</source>
-      <translation>Оновлення конфігурованого об'єкта</translation>
+      <translation>Оновлення конфігурованого обʼєкта</translation>
     </message>
     <message>
       <source>Synchronize the original configurable source object by
 creating a new deep copy. Note that any changes made to
 the current copy will be lost.
 </source>
-      <translation>Синхронізуйте початковий сконфігурований об'єкт-джерело,
+      <translation>Синхронізуйте початковий сконфігурований обʼєкт-джерело,
 створивши нову глибоку копію. Зверніть увагу, що всі зміни, 
 внесені до поточної копії, будуть втрачені.
 </translation>
@@ -7574,7 +7574,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Change whether show each link array element as individual objects</source>
-      <translation>Змінює, чи показувати кожен елемент масиву посилань окремими об'єктами</translation>
+      <translation>Змінює, чи показувати кожен елемент масиву посилань окремими обʼєктами</translation>
     </message>
     <message>
       <source>Transform at the origin of the placement</source>
@@ -7735,7 +7735,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Copy operation</source>
-      <translation>Копіює виділений об'єкт до буфера обміну</translation>
+      <translation>Копіює виділений обʼєкт до буфера обміну</translation>
     </message>
   </context>
   <context>
@@ -7746,7 +7746,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Cut out</source>
-      <translation>Вирізає виділений об'єкт</translation>
+      <translation>Вирізає виділений обʼєкт</translation>
     </message>
   </context>
   <context>
@@ -7867,7 +7867,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Change the draw style of the objects</source>
-      <translation>Змінити стиль малювання об'єктів</translation>
+      <translation>Змінити стиль малювання обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -7878,7 +7878,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Put duplicates of the selected objects to the active document</source>
-      <translation>Вставляє дублікати виділених об'єктів у активний документ</translation>
+      <translation>Вставляє дублікати виділених обʼєктів у активний документ</translation>
     </message>
   </context>
   <context>
@@ -7889,11 +7889,11 @@ the current copy will be lost.
     </message>
     <message>
       <source>Toggles the selected object&apos;s edit mode</source>
-      <translation>Змінити режим редагування виділеного об'єкта</translation>
+      <translation>Змінити режим редагування виділеного обʼєкта</translation>
     </message>
     <message>
       <source>Activates or Deactivates the selected object&apos;s edit mode</source>
-      <translation>Активує або деактивує для виділених об'єктів режим редагування</translation>
+      <translation>Активує або деактивує для виділених обʼєктів режим редагування</translation>
     </message>
   </context>
   <context>
@@ -7904,7 +7904,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Export an object in the active document</source>
-      <translation>Експортує об'єкт в активному документі</translation>
+      <translation>Експортує обʼєкт в активному документі</translation>
     </message>
     <message>
       <source>No selection</source>
@@ -7912,7 +7912,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select the objects to export before choosing Export.</source>
-      <translation>Спочатку виберіть об'єкти для Експорту.</translation>
+      <translation>Спочатку виберіть обʼєкти для Експорту.</translation>
     </message>
   </context>
   <context>
@@ -8037,11 +8037,11 @@ the current copy will be lost.
     <name>StdCmdHideObjects</name>
     <message>
       <source>Hide all objects</source>
-      <translation>Приховати всі об'єкти</translation>
+      <translation>Приховати всі обʼєкти</translation>
     </message>
     <message>
       <source>Hide all objects in the document</source>
-      <translation>Приховує всі об'єкти в документі</translation>
+      <translation>Приховує всі обʼєкти в документі</translation>
     </message>
   </context>
   <context>
@@ -8111,7 +8111,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Create a link to the selected object(s)</source>
-      <translation>Створює посилання на виділений об'єкт(и)</translation>
+      <translation>Створює посилання на виділений обʼєкт(и)</translation>
     </message>
   </context>
   <context>
@@ -8144,7 +8144,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Replace the selected object(s) with link</source>
-      <translation>Замінює посиланням виділений об'єкт(и)</translation>
+      <translation>Замінює посиланням виділений обʼєкт(и)</translation>
     </message>
   </context>
   <context>
@@ -8177,18 +8177,18 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select the linked object and switch to its owner document</source>
-      <translation>Виберіть зв'язаний об'єкт і перейдіть до документа власника</translation>
+      <translation>Виберіть звʼязаний обʼєкт і перейдіть до документа власника</translation>
     </message>
   </context>
   <context>
     <name>StdCmdLinkSelectLinkedFinal</name>
     <message>
       <source>Go to the deepest linked object</source>
-      <translation>Перейти до найглибшого зв'язаного об'єкта</translation>
+      <translation>Перейти до найглибшого звʼязаного обʼєкта</translation>
     </message>
     <message>
       <source>Select the deepest linked object and switch to its owner document</source>
-      <translation>Оберіть найбільш зв'язаний об'єкт та перемкніться до його власника документа</translation>
+      <translation>Оберіть найбільш звʼязаний обʼєкт та перемкніться до його власника документа</translation>
     </message>
   </context>
   <context>
@@ -8199,7 +8199,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Strip on level of link</source>
-      <translation>Поділ за рівнем зв'язку</translation>
+      <translation>Поділ за рівнем звʼязку</translation>
     </message>
   </context>
   <context>
@@ -8282,11 +8282,11 @@ the current copy will be lost.
     <name>StdCmdMergeProjects</name>
     <message>
       <source>Merge project...</source>
-      <translation>Об'єднати проєкт...</translation>
+      <translation>Обʼєднати проєкт...</translation>
     </message>
     <message>
       <source>Merge project</source>
-      <translation>Об'єднує проєкт</translation>
+      <translation>Обʼєднує проєкт</translation>
     </message>
     <message>
       <source>Cannot merge project with itself.</source>
@@ -8391,7 +8391,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Place the selected objects</source>
-      <translation>Задає розташування виділених об'єктів</translation>
+      <translation>Задає розташування виділених обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -8578,7 +8578,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Save the active document under a new file name</source>
-      <translation>Зберігає активний документ під новим ім'ям</translation>
+      <translation>Зберігає активний документ під новим імʼям</translation>
     </message>
   </context>
   <context>
@@ -8644,7 +8644,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select all</source>
-      <translation>Виділяє всі об'єкти</translation>
+      <translation>Виділяє всі обʼєкти</translation>
     </message>
   </context>
   <context>
@@ -8655,7 +8655,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select visible objects in the active document</source>
-      <translation>Виділяє видимі об'єкти в активному документі</translation>
+      <translation>Виділяє видимі обʼєкти в активному документі</translation>
     </message>
   </context>
   <context>
@@ -8666,7 +8666,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Sends the selected object to the Python console</source>
-      <translation>Надсилає виділений об'єкт в консоль Python</translation>
+      <translation>Надсилає виділений обʼєкт в консоль Python</translation>
     </message>
   </context>
   <context>
@@ -8688,7 +8688,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Show all objects in the document</source>
-      <translation>Показує всі об'єкти в документі</translation>
+      <translation>Показує всі обʼєкти в документі</translation>
     </message>
   </context>
   <context>
@@ -8794,7 +8794,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Toggles the property of the objects to get selected in the 3D-View</source>
-      <translation>Перемикає можливість виділяти об'єкти у 3D-Виді</translation>
+      <translation>Перемикає можливість виділяти обʼєкти у 3D-Виді</translation>
     </message>
   </context>
   <context>
@@ -8871,7 +8871,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select all instances of the current selected object</source>
-      <translation>Виберіть усі екземпляри виділеного об'єкта</translation>
+      <translation>Виберіть усі екземпляри виділеного обʼєкта</translation>
     </message>
   </context>
   <context>
@@ -8915,7 +8915,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Defines behavior when editing an object from tree</source>
-      <translation>Визначає поведінку під час редагування об'єкту їєрархії</translation>
+      <translation>Визначає поведінку під час редагування обʼєкту їєрархії</translation>
     </message>
   </context>
   <context>
@@ -9395,7 +9395,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Auto expand tree item when the corresponding object is selected in 3D view</source>
-      <translation>Автоматично відкриває елемент в ієрархії при виділенні відповідного об'єкта в 3D-виді</translation>
+      <translation>Автоматично відкриває елемент в ієрархії при виділенні відповідного обʼєкта в 3D-виді</translation>
     </message>
   </context>
   <context>
@@ -9492,7 +9492,7 @@ the current copy will be lost.
 
 Are you sure you want to continue?
 </source>
-      <translation>Наступні посилання на об'єкти можуть бути зламані.
+      <translation>Наступні посилання на обʼєкти можуть бути зламані.
 
 Ви впевнені, що хочете продовжити?
 </translation>

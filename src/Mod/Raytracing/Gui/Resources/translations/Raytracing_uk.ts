@@ -196,7 +196,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Select a Part object.</source>
-      <translation>Виберіть частину об'єкта.</translation>
+      <translation>Виберіть частину обʼєкта.</translation>
     </message>
     <message>
       <source>No Raytracing project to insert</source>
@@ -212,7 +212,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Select one Raytracing project object.</source>
-      <translation>Виберіть об'єкт трасування променів.</translation>
+      <translation>Виберіть обʼєкт трасування променів.</translation>
     </message>
     <message>
       <source>Luxrender</source>
@@ -335,11 +335,11 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Part file name:</source>
-      <translation>Ім'я файлу деталі:</translation>
+      <translation>Імʼя файлу деталі:</translation>
     </message>
     <message>
       <source>Camera file name:</source>
-      <translation>Ім'я файлу камери:</translation>
+      <translation>Імʼя файлу камери:</translation>
     </message>
     <message>
       <source>Used by utility tools</source>

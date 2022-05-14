@@ -111,7 +111,7 @@
     <message>
       <location filename="TranslationTexts.py" line="63"/>
       <source>If it is the first time you are posting on the forum, be sure to &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;read the guidelines&lt;/a&gt; first!</source>
-      <translation>Якщо це буде ваш перший допис на форумі, спочатку обов'язково &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;прочитайте рекомендації&lt;/a&gt;.</translation>
+      <translation>Якщо це буде ваш перший допис на форумі, спочатку обовʼязково &lt;a href=&quot;https://forum.freecadweb.org/viewtopic.php?f=3&amp;t=2264&quot;&gt;прочитайте рекомендації&lt;/a&gt;.</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="64"/>
@@ -291,7 +291,7 @@
       <location filename="../../DlgStartPreferences.ui" line="110"/>
       <source>An optional custom folder to be displayed at the bottom of the first page.
 By using &quot;;;&quot; to separate paths, you can add several folders here</source>
-      <translation>Необов'язкова тека користувача, яка буде зображатися внизу першої сторінки.
+      <translation>Необовʼязкова тека користувача, яка буде зображатися внизу першої сторінки.
 Використовуючи &quot;;;&quot; для розділення шляхів, ви можете додати сюди кілька тек</translation>
     </message>
     <message>
@@ -357,7 +357,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="306"/>
       <source>An optional image to display as background</source>
-      <translation>Необов'язкове зображення для показу як тло</translation>
+      <translation>Необовʼязкове зображення для показу як тло</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="319"/>
@@ -432,7 +432,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="532"/>
       <source>The font family to use on the start page. Can be a font name or a comma-separated series of fallback fonts</source>
-      <translation>Сімейство шрифтів, яке використовується на стартовій сторінці. Може бути ім'ям шрифту або переліком запасних шрифтів, розділених комами</translation>
+      <translation>Сімейство шрифтів, яке використовується на стартовій сторінці. Може бути імʼям шрифту або переліком запасних шрифтів, розділених комами</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="538"/>

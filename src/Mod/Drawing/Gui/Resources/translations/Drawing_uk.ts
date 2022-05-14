@@ -43,7 +43,7 @@
     </message>
     <message>
       <source>Inserts a Draft view of the selected object(s) in the active drawing</source>
-      <translation>Вставити чернетку обраного об'єкта(ів) у поточне креслення</translation>
+      <translation>Вставити чернетку обраного обʼєкта(ів) у поточне креслення</translation>
     </message>
   </context>
   <context>
@@ -531,7 +531,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Select a Part object.</source>
-      <translation>Виберіть частину об'єкта.</translation>
+      <translation>Виберіть частину обʼєкта.</translation>
     </message>
     <message>
       <source>No page found</source>
@@ -547,7 +547,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Select one Page object.</source>
-      <translation>Оберіть один об'єкт сторінки.</translation>
+      <translation>Оберіть один обʼєкт сторінки.</translation>
     </message>
     <message>
       <source>All Files</source>
@@ -559,7 +559,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Select exactly one Spreadsheet object.</source>
-      <translation>Виберіть саме один об'єкт електронної таблиці.</translation>
+      <translation>Виберіть саме один обʼєкт електронної таблиці.</translation>
     </message>
     <message>
       <source>Make axonometric...</source>

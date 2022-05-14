@@ -54,11 +54,11 @@
     </message>
     <message>
       <source>Merge point clouds</source>
-      <translation>Об'єднання хмарки точок</translation>
+      <translation>Обʼєднання хмарки точок</translation>
     </message>
     <message>
       <source>Merge several point clouds into one</source>
-      <translation>Об'єднати декілька груп точок в одну</translation>
+      <translation>Обʼєднати декілька груп точок в одну</translation>
     </message>
   </context>
   <context>

@@ -21,7 +21,7 @@
     <message>
       <location filename="../../../PathScripts/PathVcarve.py" line="210"/>
       <source>Additional base objects to be engraved</source>
-      <translation>Додаткові базові об'єкти для гравіювання</translation>
+      <translation>Додаткові базові обʼєкти для гравіювання</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathEngrave.py" line="88"/>
@@ -231,7 +231,7 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="176"/>
       <source>An optional comment for this Operation</source>
-      <translation>Необов'язковий коментар до цієї Операції</translation>
+      <translation>Необовʼязковий коментар до цієї Операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="184"/>
@@ -556,7 +556,7 @@
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="161"/>
       <source>The name of the shape file</source>
-      <translation>Ім'я файлу форми</translation>
+      <translation>Імʼя файлу форми</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="205"/>
@@ -851,7 +851,7 @@
     <message>
       <location filename="../../../PathScripts/PathStock.py" line="166"/>
       <source>A material for this object</source>
-      <translation>Матеріал для цього об'єкту</translation>
+      <translation>Матеріал для цього обʼєкту</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathStock.py" line="238"/>

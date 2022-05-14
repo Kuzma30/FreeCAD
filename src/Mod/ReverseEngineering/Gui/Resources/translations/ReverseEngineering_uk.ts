@@ -280,7 +280,7 @@
     </message>
     <message>
       <source>Please select a single placement object to get local orientation.</source>
-      <translation>Будь ласка, виберіть один об'єкт розміщення для отримання локальної орієнтації.</translation>
+      <translation>Будь ласка, виберіть один обʼєкт розміщення для отримання локальної орієнтації.</translation>
     </message>
   </context>
   <context>

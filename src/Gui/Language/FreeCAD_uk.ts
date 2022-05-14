@@ -2773,15 +2773,15 @@ can be rendered directly by GPU.
 Note: Sometimes this feature may lead to a host of different
 issues ranging from graphical anomalies to GPU crash bugs. Remember to
 report this setting as enabled when seeking support on the FreeCAD forums</source>
-      <translation>Якщо вибрано, будуть використовуватися Vertex Buffer Object (VBO).
-VBO є функцією OpenGL, яка забезпечує методи завантаження
-даних про вершини (позиція, вектор нормалі, колір тощо) на графічну карту.
-VBO пропонують значне підвищення продуктивності через те що дані розміщуються
-в графічній, а не в системній пам&apos;яті, і таким чином
-можуть бути візуалізовані безпосередньо через GPU. 
+      <translation>Якщо вибрано, буде використовуватися Vertex Buffer Object (VBO).
+VBO є функцією OpenGL, яка забезпечує методи завантаження даних про 
+вершини (позиція, вектор нормалі, колір тощо) у графічну карту. VBO 
+забезпечує значне підвищення продуктивності через те що дані розміщуються
+в графічній, а не в системній пам'яті, і таким чином можуть бути візуалізовані
+безпосередньо через GPU. 
 
-Примітка: Іноді ця функція може призвести до різноманітних
-проблем від графічних аномалій до помилок GPU через аварії. Не забувайте
+Примітка: Іноді ця функція може призвести до різноманітних проблем від графічних 
+аномалій до помилок GPU через аварії. Не забувайте
 повідомляти про це налаштування як ввімкнене, коли шукаєте підтримку на форумах FreeCAD</translation>
     </message>
     <message>
@@ -3774,7 +3774,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>How many recent macros should have shortcuts</source>
-      <translation>Визначає скільки останніх макросів повинні мати ярлики</translation>
+      <translation>Встановлює кількість останніх макросів з ярликами</translation>
     </message>
     <message>
       <source>Keyboard Modifiers</source>
@@ -3782,7 +3782,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Keyboard modifiers, default = Ctrl+Shift+</source>
-      <translation>Модифікатори клавіатури, за замовчуванням = Ctrl+Shift+</translation>
+      <translation>Встановлює модифікатор клавіатури, за замовчуванням = Ctrl+Shift+</translation>
     </message>
   </context>
   <context>
@@ -4166,7 +4166,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Minimum fractional inch to be displayed</source>
-      <translation>Мінімальна частина дюйма для показу</translation>
+      <translation>Визначає мінімальну частину дюйма для показу</translation>
     </message>
     <message>
       <source>Building US (ft-in/sqft/cft)</source>
@@ -6963,7 +6963,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Freeze view</source>
-      <translation>Заморозити вид</translation>
+      <translation>Зафіксувати вид</translation>
     </message>
     <message>
       <source>Clear views</source>
@@ -8013,7 +8013,7 @@ the current copy will be lost.
     <name>StdCmdFreezeViews</name>
     <message>
       <source>Freeze display</source>
-      <translation>Замороження дисплею</translation>
+      <translation>Фіксація виду</translation>
     </message>
     <message>
       <source>Freezes the current view position</source>
@@ -9166,7 +9166,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Rotate the view by 90° counter-clockwise</source>
-      <translation>Повернути на 90° проти годинникової стрілки</translation>
+      <translation>Повертає вид на 90° проти годинникової стрілки</translation>
     </message>
   </context>
   <context>
@@ -9177,7 +9177,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Rotate the view by 90° clockwise</source>
-      <translation>Повернути на 90° за годинниковою стрілкою</translation>
+      <translation>Повертає вид на 90° за годинниковою стрілкою</translation>
     </message>
   </context>
   <context>
@@ -9563,7 +9563,7 @@ Are you sure you want to continue?
     </message>
     <message>
       <source>No shading</source>
-      <translation>Відсутнє затінення</translation>
+      <translation>Без затінення</translation>
     </message>
     <message>
       <source>No shading mode</source>

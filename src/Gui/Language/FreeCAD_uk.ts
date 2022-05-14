@@ -2520,24 +2520,25 @@ Specify another directory, please.</source>
     </message>
     <message>
       <source>Log messages will be recorded</source>
-      <translation>Повідомлення журналу буде записано</translation>
+      <translation>Записує повідомлення журналу</translation>
     </message>
     <message>
       <source>Warnings will be recorded</source>
-      <translation>Попередження будуть записані</translation>
+      <translation>Записує Попередження</translation>
     </message>
     <message>
       <source>Error messages will be recorded</source>
-      <translation>Повідомлення про помилки буде записано</translation>
+      <translation>Записує повідомлення про помилки</translation>
     </message>
     <message>
       <source>When an error has occurred, the Report View dialog becomes visible
 on-screen while displaying the error</source>
-      <translation>При виникненні помилки, діалогове вікно Вид Звіту стає видимим на екрані для показу помилки</translation>
+      <translation>При виникненні помилки, діалогове вікно Вид Звіту
+стає видимим на екрані для показу помилки</translation>
     </message>
     <message>
       <source>Show report view on error</source>
-      <translation>Показати звіт у випадку помилки</translation>
+      <translation>Показати Вид звіту для помилок</translation>
     </message>
     <message>
       <source>When a warning has occurred, the Report View dialog becomes visible
@@ -2571,35 +2572,35 @@ on-screen while displaying the log message</source>
     </message>
     <message>
       <source>Font color for normal messages in Report view panel</source>
-      <translation>Колір шрифту для звичайних повідомлень у панелі Вид Звіту</translation>
+      <translation>Встановлює колір шрифту для звичайних повідомлень у панелі Вид Звіту</translation>
     </message>
     <message>
       <source>Font color for log messages in Report view panel</source>
-      <translation>Колір шрифту для повідомлень журналу у панелі Вид Звіту</translation>
+      <translation>Встановлює колір шрифту для повідомлень журналу у панелі Вид Звіту</translation>
     </message>
     <message>
       <source>Font color for warning messages in Report view panel</source>
-      <translation>Колір шрифту для попереджень у панелі Вид Звіту</translation>
+      <translation>Встановлює колір шрифту для попереджень у панелі Вид Звіту</translation>
     </message>
     <message>
       <source>Font color for error messages in Report view panel</source>
-      <translation>Колір шрифту для повідомлень про помилки у панелі Вид Звіту</translation>
+      <translation>Встановлює колір шрифту для повідомлень про помилки у панелі Вид Звіту</translation>
     </message>
     <message>
       <source>Internal Python output will be redirected
 from Python console to Report view panel</source>
-      <translation>Внутрішнє повідомлення Python буде перенаправлено
+      <translation>Перенаправляє внутрішні повідомлення Python 
 з консолі Python на панель Вид Звіту</translation>
     </message>
     <message>
       <source>Internal Python error messages will be redirected
 from Python console to Report view panel</source>
-      <translation>Внутрішні повідомлення про помилки Python буде перенаправлено
+      <translation>Перенаправляє внутрішні повідомлення про помилки Python
 з консолі Python на панель Вид Звіту</translation>
     </message>
     <message>
       <source>Include a timecode for each report</source>
-      <translation>Додати мітку часу до кожного звіту</translation>
+      <translation>Додає мітку часу до кожного повідомлення</translation>
     </message>
     <message>
       <source>Include a timecode for each entry</source>
@@ -2607,7 +2608,7 @@ from Python console to Report view panel</source>
     </message>
     <message>
       <source>Normal messages will be recorded</source>
-      <translation>Нормальні повідомлення будуть записані</translation>
+      <translation>Записує звичайні повідомлення</translation>
     </message>
     <message>
       <source>Record normal messages</source>
@@ -3737,7 +3738,7 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Variables defined by macros are created as local variables</source>
-      <translation>Змінні, визначені у макросі, створюються як локальні змінні</translation>
+      <translation>Створює змінні, визначені у макросі як локальні</translation>
     </message>
     <message>
       <source>Commands executed by macro scripts are shown in Python console</source>
@@ -3745,11 +3746,11 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     </message>
     <message>
       <source>Recorded macros will also contain user interface commands</source>
-      <translation>Записані макроси також будуть містити команди інтерфейсу користувача</translation>
+      <translation>Додає до записаних макросів команди інтерфейсу користувача</translation>
     </message>
     <message>
       <source>Recorded macros will also contain user interface commands as comments</source>
-      <translation>Записані макроси також будуть містити команди інтерфейсу користувача, записані як коментарі</translation>
+      <translation>Додає до записаних макросів команди інтерфейсу користувача, записані як коментарі</translation>
     </message>
     <message>
       <source>The directory in which the application will search for macros</source>

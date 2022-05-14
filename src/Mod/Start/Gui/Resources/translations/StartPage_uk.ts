@@ -156,7 +156,7 @@
     <message>
       <location filename="TranslationTexts.py" line="72"/>
       <source>You can configure a custom folder to display here in menu Edit -&gt; Preferences -&gt; Start -&gt; Show additional folder</source>
-      <translation>Ви можете настроїти показ теки користувача в меню Правка -&gt; Налаштування -&gt; Пуск -&gt; Показати додаткову теку</translation>
+      <translation>Ви можете налаштувати показ теки користувача в меню Правка -&gt; Налаштування -&gt; Пуск -&gt; Показати додаткову теку</translation>
     </message>
     <message>
       <location filename="TranslationTexts.py" line="73"/>

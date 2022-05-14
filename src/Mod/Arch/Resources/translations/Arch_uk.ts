@@ -2439,7 +2439,7 @@
     <message>
       <location filename="../../importSHP.py" line="137"/>
       <source>The shapefile python library was not found on your system. Would you like to download it now from &lt;a href=&quot;https://github.com/GeospatialPython/pyshp&quot;&gt;https://github.com/GeospatialPython/pyshp&lt;/a&gt;? It will be placed in your macros folder.</source>
-      <translation>Бібліотека shapefile python не була знайдена у вашій системі. Ви хочете зараз завантажити її з сайту &lt;a href=&quot;https://github.com/GeospatialPython/pyshp&quot;&gt;https://github.com/GeospatialPython/pyshp&lt;/a&gt;? Вона буде поміщена в теку macros.</translation>
+      <translation>Бібліотека shapefile python не була знайдена у вашій системі. Бажаєте зараз завантажити її з сайту &lt;a href=&quot;https://github.com/GeospatialPython/pyshp&quot;&gt;https://github.com/GeospatialPython/pyshp&lt;/a&gt;? Вона буде поміщена в теку macros.</translation>
     </message>
     <message>
       <location filename="../../importSHP.py" line="145"/>

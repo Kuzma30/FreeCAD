@@ -989,7 +989,7 @@ Please run the command to repair folds first</source>
     </message>
     <message>
       <source>Alt+C</source>
-      <translation type="unfinished">Alt+C</translation>
+      <translation>Alt+C</translation>
     </message>
     <message>
       <source>Cl&amp;ose</source>
@@ -1148,7 +1148,7 @@ is used when writing a file in AMF format</source>
     </message>
     <message>
       <source>%</source>
-      <translation type="unfinished">%</translation>
+      <translation>%</translation>
     </message>
     <message>
       <source>Default mesh color</source>
@@ -1880,7 +1880,7 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     </message>
     <message>
       <source>Mesh segmentation</source>
-      <translation type="unfinished">Mesh segmentation</translation>
+      <translation>Сегментація сітки</translation>
     </message>
     <message>
       <source>Mesh analyze</source>

@@ -190,7 +190,7 @@
     </message>
     <message>
       <source>Placement</source>
-      <translation>Розташування</translation>
+      <translation>Розташувати</translation>
     </message>
     <message>
       <source>Fit B-Spline</source>
@@ -399,7 +399,7 @@
     </message>
     <message>
       <source>All</source>
-      <translation>Всі</translation>
+      <translation>Вся</translation>
     </message>
     <message>
       <source>Clear</source>

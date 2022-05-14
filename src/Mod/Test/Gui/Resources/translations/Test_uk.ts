@@ -29,7 +29,7 @@
     </message>
     <message>
       <source>F1</source>
-      <translation>F1</translation>
+      <translation type="unfinished">F1</translation>
     </message>
     <message>
       <source>&amp;About</source>
@@ -88,13 +88,13 @@
     </message>
     <message>
       <source>Enter the name of a callable object which, when called, will return a TestCase.
-Click 'start', and the test thus produced will be run.
+Click &apos;start&apos;, and the test thus produced will be run.
 
 Double click on an error in the tree view to see more information about it, including the stack trace.</source>
-      <translation>Введіть ім'я викликається об'єкта при виклику якого, буде повертатися TestCase.
-Клацніть 'Запуск' і, тест буде запущений.
+      <translation type="unfinished">Enter the name of a callable object which, when called, will return a TestCase.
+Click &apos;start&apos;, and the test thus produced will be run.
 
-Зробіть подвійне клацання на помилку в деревовидному списку для додаткової інформації про неї, включаючи стек викликів.</translation>
+Double click on an error in the tree view to see more information about it, including the stack trace.</translation>
     </message>
     <message>
       <source>About FreeCAD UnitTest</source>

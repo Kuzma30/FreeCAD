@@ -4,25 +4,393 @@
   <context>
     <name>App::Property</name>
     <message>
-      <location filename="../../draftobjects/fillet.py" line="46"/>
-      <source>The start point of this line.</source>
+      <location filename="../../draftobjects/block.py" line="41"/>
+      <source>The components of this block</source>
+      <translation>Складові цього блоку</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/facebinder.py" line="42"/>
+      <source>Linked faces</source>
+      <translation>Пов'язані грані</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/facebinder.py" line="45"/>
+      <source>Specifies if splitter lines must be removed</source>
+      <translation>Вказує, чи потрібно видаляти роздільні лінії</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/facebinder.py" line="48"/>
+      <source>An optional extrusion value to be applied to all faces</source>
+      <translation>Необов’язкове значення видавлювання, яке застосовується до всіх граней</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/facebinder.py" line="51"/>
+      <source>An optional offset value to be applied to all faces</source>
+      <translation>Необов’язкове значення видавлювання, яке застосовується до всіх граней</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/facebinder.py" line="54"/>
+      <source>This specifies if the shapes sew</source>
+      <translation>Це визначає, чи фігури зшиті</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/facebinder.py" line="57"/>
+      <source>The area of the faces of this Facebinder</source>
+      <translation>Площа граней цього Facebinder</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/ellipse.py" line="44"/>
+      <source>Start angle of the elliptical arc</source>
+      <translation>Початковий кут еліптичної дуги</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/ellipse.py" line="47"/>
+      <source>End angle of the elliptical arc 
+                (for a full circle, give it same value as First Angle)</source>
+      <translation type="unfinished">End angle of the elliptical arc 
+                (for a full circle, give it same value as First Angle)</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/ellipse.py" line="51"/>
+      <source>Minor radius of the ellipse</source>
+      <translation>Малий радіус еліпса</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/ellipse.py" line="54"/>
+      <source>Major radius of the ellipse</source>
+      <translation>Більший радіус еліпса</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/rectangle.py" line="57"/>
+      <source>Create a face</source>
+      <translation>Створіть грань</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/ellipse.py" line="60"/>
+      <source>Area of this object</source>
+      <translation>Площа цього об'єкту</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/wpproxy.py" line="41"/>
+      <source>The placement of this object</source>
+      <translation>Розміщення цього об'єкта</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/drawingview.py" line="64"/>
+      <source>The linked object</source>
+      <translation>Пов'язаний об'єкт</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/drawingview.py" line="71"/>
+      <source>Projection direction</source>
+      <translation>Напрямок проекції</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/drawingview.py" line="78"/>
+      <source>The width of the lines inside this object</source>
+      <translation>Ширина ліній всередині цього об'єкта</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/drawingview.py" line="86"/>
+      <source>The size of the texts inside this object</source>
+      <translation>Розмір тексту всередині цього об'єкта</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/drawingview.py" line="94"/>
+      <source>The spacing between lines of text</source>
+      <translation>Інтервал між лініями тексту</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/drawingview.py" line="101"/>
+      <source>The color of the projected objects</source>
+      <translation>Колір проектованих об'єктів</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/drawingview.py" line="108"/>
+      <source>Shape Fill Style</source>
+      <translation>Тип заливки фігури</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/drawingview.py" line="116"/>
+      <source>Line Style</source>
+      <translation>Стиль лінії</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/drawingview.py" line="124"/>
+      <source>If checked, source objects are displayed regardless of being visible in the 3D model</source>
+      <translation>Якщо відмічено, то вихідні об'єкти відображаються, незалежно від того, чи вони видимі в 3D моделі</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bspline.py" line="44"/>
+      <source>The points of the B-spline</source>
+      <translation>Точки B-сплайну</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bspline.py" line="48"/>
+      <source>If the B-spline is closed or not</source>
+      <translation>Якщо B-сплайн замкнений або ні</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bspline.py" line="52"/>
+      <source>Create a face if this spline is closed</source>
+      <translation>Створити грань, якщо сплайн замкнутий</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/rectangle.py" line="66"/>
+      <source>The area of this object</source>
+      <translation>Форма цього об’єкта</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bspline.py" line="66"/>
+      <source>Parameterization factor</source>
+      <translation>Фактор параметризації</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/circle.py" line="44"/>
+      <source>Start angle of the arc</source>
+      <translation>Початковий кут дуги</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/circle.py" line="48"/>
+      <source>End angle of the arc (for a full circle,                 give it same value as First Angle)</source>
+      <translation>Кінцевий кут дуги (для повного кола,надайте йому таке ж значення, як і перший кут)</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/circle.py" line="53"/>
+      <source>Radius of the circle</source>
+      <translation>Радіус кола</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/wire.py" line="47"/>
+      <source>The vertices of the wire</source>
+      <translation>Вершини каркасу</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/wire.py" line="51"/>
+      <source>If the wire is closed or not</source>
+      <translation>Якщо каркас закритий чи ні</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/wire.py" line="55"/>
+      <source>The base object is the wire, it&apos;s formed from 2 objects</source>
+      <translation type="unfinished">The base object is the wire, it&apos;s formed from 2 objects</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/wire.py" line="59"/>
+      <source>The tool object is the wire, it&apos;s formed from 2 objects</source>
+      <translation type="unfinished">The tool object is the wire, it&apos;s formed from 2 objects</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/wire.py" line="63"/>
+      <source>The start point of this line</source>
       <translation>Початкова точка цієї лінії</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/fillet.py" line="54"/>
-      <source>The end point of this line.</source>
-      <translation>Кінцева точка цієї лінії.</translation>
+      <location filename="../../draftobjects/wire.py" line="67"/>
+      <source>The end point of this line</source>
+      <translation>Кінцева точка цієї лінії</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/fillet.py" line="62"/>
-      <source>The length of this line.</source>
-      <translation>Довжина цієї лінії
-</translation>
+      <location filename="../../draftobjects/wire.py" line="71"/>
+      <source>The length of this line</source>
+      <translation>Довжина цієї лінії</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/fillet.py" line="70"/>
-      <source>Radius to use to fillet the corner.</source>
-      <translation>Радіус скруглення кута.</translation>
+      <location filename="../../draftobjects/rectangle.py" line="51"/>
+      <source>Radius to use to fillet the corners</source>
+      <translation>Радіус для заокруглення кутів</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/rectangle.py" line="54"/>
+      <source>Size of the chamfer to give to the corners</source>
+      <translation>Розмір фаски для кутів</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/wire.py" line="83"/>
+      <source>Create a face if this object is closed</source>
+      <translation>Створити грань, якщо об'єкт замкнений</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/wire.py" line="87"/>
+      <source>The number of subdivisions of each edge</source>
+      <translation>Кількість ділень кожного ребра</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/polygon.py" line="46"/>
+      <source>Number of faces</source>
+      <translation>Кількість граней</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/polygon.py" line="50"/>
+      <source>Radius of the control circle</source>
+      <translation>Радіус контрольного кола</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/polygon.py" line="54"/>
+      <source>How the polygon must be drawn from the control circle</source>
+      <translation>Як потрібно креслити багатокутник із контрольного кола</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/label.py" line="60"/>
+      <source>The position of the tip of the leader line.
+This point can be decorated with an arrow or another symbol.</source>
+      <translation>Положення кінчика лінійки лідера.
+Цю точку можна прикрасити стрілкою або іншим символом.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/label.py" line="72"/>
+      <source>Object, and optionally subelement, whose properties will be displayed
+as &apos;Text&apos;, depending on &apos;Label Type&apos;.
+
+&apos;Target&apos; won&apos;t be used if &apos;Label Type&apos; is set to &apos;Custom&apos;.</source>
+      <translation type="unfinished">Object, and optionally subelement, whose properties will be displayed
+as &apos;Text&apos;, depending on &apos;Label Type&apos;.
+
+&apos;Target&apos; won&apos;t be used if &apos;Label Type&apos; is set to &apos;Custom&apos;.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/label.py" line="90"/>
+      <source>The list of points defining the leader line; normally a list of three points.
+
+The first point should be the position of the text, that is, the &apos;Placement&apos;,
+and the last point should be the tip of the line, that is, the &apos;Target Point&apos;.
+The middle point is calculated automatically depending on the chosen
+&apos;Straight Direction&apos; and the &apos;Straight Distance&apos; value and sign.
+
+If &apos;Straight Direction&apos; is set to &apos;Custom&apos;, the &apos;Points&apos; property
+can be set as a list of arbitrary points.</source>
+      <translation type="unfinished">The list of points defining the leader line; normally a list of three points.
+
+The first point should be the position of the text, that is, the &apos;Placement&apos;,
+and the last point should be the tip of the line, that is, the &apos;Target Point&apos;.
+The middle point is calculated automatically depending on the chosen
+&apos;Straight Direction&apos; and the &apos;Straight Distance&apos; value and sign.
+
+If &apos;Straight Direction&apos; is set to &apos;Custom&apos;, the &apos;Points&apos; property
+can be set as a list of arbitrary points.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/label.py" line="116"/>
+      <source>The direction of the straight segment of the leader line.
+
+If &apos;Custom&apos; is chosen, the points of the leader can be specified by
+assigning a custom list to the &apos;Points&apos; attribute.</source>
+      <translation type="unfinished">The direction of the straight segment of the leader line.
+
+If &apos;Custom&apos; is chosen, the points of the leader can be specified by
+assigning a custom list to the &apos;Points&apos; attribute.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/label.py" line="131"/>
+      <source>The length of the straight segment of the leader line.
+
+This is an oriented distance; if it is negative, the line will be drawn
+to the left or below the &apos;Text&apos;, otherwise to the right or above it,
+depending on the value of &apos;Straight Direction&apos;.</source>
+      <translation type="unfinished">The length of the straight segment of the leader line.
+
+This is an oriented distance; if it is negative, the line will be drawn
+to the left or below the &apos;Text&apos;, otherwise to the right or above it,
+depending on the value of &apos;Straight Direction&apos;.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/label.py" line="153"/>
+      <source>The placement of the &apos;Text&apos; element in 3D space</source>
+      <translation type="unfinished">The placement of the &apos;Text&apos; element in 3D space</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/label.py" line="163"/>
+      <source>The text to display when &apos;Label Type&apos; is set to &apos;Custom&apos;</source>
+      <translation type="unfinished">The text to display when &apos;Label Type&apos; is set to &apos;Custom&apos;</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/label.py" line="173"/>
+      <source>The text displayed by this label.
+
+This property is read-only, as the final text depends on &apos;Label Type&apos;,
+and the object defined in &apos;Target&apos;.
+The &apos;Custom Text&apos; is displayed only if &apos;Label Type&apos; is set to &apos;Custom&apos;.</source>
+      <translation type="unfinished">The text displayed by this label.
+
+This property is read-only, as the final text depends on &apos;Label Type&apos;,
+and the object defined in &apos;Target&apos;.
+The &apos;Custom Text&apos; is displayed only if &apos;Label Type&apos; is set to &apos;Custom&apos;.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/label.py" line="197"/>
+      <source>The type of information displayed by this label.
+
+If &apos;Custom&apos; is chosen, the contents of &apos;Custom Text&apos; will be used.
+For other types, the string will be calculated automatically from the object defined in &apos;Target&apos;.
+&apos;Tag&apos; and &apos;Material&apos; only work for objects that have these properties, like Arch objects.
+
+For &apos;Position&apos;, &apos;Length&apos;, and &apos;Area&apos; these properties will be extracted from the main object in &apos;Target&apos;,
+or from the subelement &apos;VertexN&apos;, &apos;EdgeN&apos;, or &apos;FaceN&apos;, respectively, if it is specified.</source>
+      <translation type="unfinished">The type of information displayed by this label.
+
+If &apos;Custom&apos; is chosen, the contents of &apos;Custom Text&apos; will be used.
+For other types, the string will be calculated automatically from the object defined in &apos;Target&apos;.
+&apos;Tag&apos; and &apos;Material&apos; only work for objects that have these properties, like Arch objects.
+
+For &apos;Position&apos;, &apos;Length&apos;, and &apos;Area&apos; these properties will be extracted from the main object in &apos;Target&apos;,
+or from the subelement &apos;VertexN&apos;, &apos;EdgeN&apos;, or &apos;FaceN&apos;, respectively, if it is specified.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/clone.py" line="44"/>
+      <source>The objects included in this clone</source>
+      <translation>Об'єкти, що входять в цей клон</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/clone.py" line="49"/>
+      <source>The scale factor of this clone</source>
+      <translation>Масштабний коефіцієнт цього клону</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/clone.py" line="54"/>
+      <source>If Clones includes several objects,
+set True for fusion or False for compound</source>
+      <translation>Якщо "Клони" містять кілька об'єктів,
+встановіть "Так" для сплавляння або "Ні" для поєднання.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/hatch.py" line="45"/>
+      <source>The base object used by this object</source>
+      <translation>Базовий об'єкт використовується цим об’єктом</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/hatch.py" line="48"/>
+      <source>The PAT file used by this object</source>
+      <translation>Файл PAT, який використовується цим об’єктом</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/hatch.py" line="51"/>
+      <source>The pattern name used by this object</source>
+      <translation>Назва шаблону, що використовується цим об'єктом</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/hatch.py" line="54"/>
+      <source>The pattern scale used by this object</source>
+      <translation>Масштабований паттерн (повторюване зображення), який використовується цим об'єктом</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/hatch.py" line="57"/>
+      <source>The pattern rotation used by this object</source>
+      <translation>Масштабований паттерн (повторюване зображення), який використовується цим об'єктом</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/hatch.py" line="60"/>
+      <source>If set to False, hatch is applied as is to the faces, without translation (this might give wrong results for non-XY faces)</source>
+      <translation>Якщо встановлено False, штрихування застосовується до граней без перетворення (це може призвести до неправильних результатів для граней, розміщених не на осі XY)</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/draftlink.py" line="97"/>
+      <source>Force sync pattern placements even when array elements are expanded</source>
+      <translation>Примусова синхронізація різних розмірів навіть при розширенні елементів масиву</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/draftlink.py" line="110"/>
+      <source>Show the individual array elements</source>
+      <translation>Показати окремі елементи масиву</translation>
     </message>
     <message>
       <location filename="../../draftobjects/patharray.py" line="168"/>
@@ -83,17 +451,18 @@
     <message>
       <location filename="../../draftobjects/array.py" line="192"/>
       <source>Center point for polar and circular arrays.
-The 'Axis' passes through this point.</source>
-      <translation>Центральна точка для полярних та кругових масивів.</translation>
+The &apos;Axis&apos; passes through this point.</source>
+      <translation type="unfinished">Center point for polar and circular arrays.
+The &apos;Axis&apos; passes through this point.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="205"/>
-      <source>The axis object that overrides the value of 'Axis' and 'Center', for example, a datum line.
+      <source>The axis object that overrides the value of &apos;Axis&apos; and &apos;Center&apos;, for example, a datum line.
 Its placement, position and rotation, will be used when creating polar and circular arrays.
-Leave this property empty to be able to set 'Axis' and 'Center' manually.</source>
-      <translation>Об'єкт осі, який замінює значення "Вісь" та "Центр", наприклад, лінія відліку.
-Його розміщення, положення та обертання будуть використовуватися при створенні полярних та кругових масивів.
-Залиште цю властивість порожньою, щоб мати можливість вручну встановити "Осі" та "Центр".</translation>
+Leave this property empty to be able to set &apos;Axis&apos; and &apos;Center&apos; manually.</source>
+      <translation type="unfinished">The axis object that overrides the value of &apos;Axis&apos; and &apos;Center&apos;, for example, a datum line.
+Its placement, position and rotation, will be used when creating polar and circular arrays.
+Leave this property empty to be able to set &apos;Axis&apos; and &apos;Center&apos; manually.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="226"/>
@@ -102,8 +471,8 @@ Leave this property empty to be able to set 'Axis' and 'Center' manually.</sourc
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="235"/>
-      <source>Distance and orientation of intervals in 'Axis' direction</source>
-      <translation>Відстань та орієнтація інтервалів у напрямку "Вісь"</translation>
+      <source>Distance and orientation of intervals in &apos;Axis&apos; direction</source>
+      <translation type="unfinished">Distance and orientation of intervals in &apos;Axis&apos; direction</translation>
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="245"/>
@@ -122,8 +491,8 @@ Leave this property empty to be able to set 'Axis' and 'Center' manually.</sourc
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="277"/>
-      <source>Number of circular layers. The 'Base' object counts as one layer.</source>
-      <translation>Кількість кругових шарів. Об'єкт 'Base' є одним шаром.</translation>
+      <source>Number of circular layers. The &apos;Base&apos; object counts as one layer.</source>
+      <translation type="unfinished">Number of circular layers. The &apos;Base&apos; object counts as one layer.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="287"/>
@@ -143,14 +512,302 @@ This property is read-only, as the number depends on the parameters of the array
       <translation>Показати окремі елементи масиву (лише для поєднаних масивів)</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/block.py" line="41"/>
-      <source>The components of this block</source>
-      <translation>Складові цього блоку</translation>
+      <location filename="../../draftobjects/shapestring.py" line="45"/>
+      <source>Text string</source>
+      <translation>Текстовий рядок</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/wpproxy.py" line="41"/>
-      <source>The placement of this object</source>
-      <translation>Розміщення цього об'єкта</translation>
+      <location filename="../../draftobjects/shapestring.py" line="48"/>
+      <source>Font file name</source>
+      <translation>Ім'я файлу зі шрифтом</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shapestring.py" line="51"/>
+      <source>Height of text</source>
+      <translation>Висота тексту</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shapestring.py" line="54"/>
+      <source>Inter-character spacing</source>
+      <translation>Міжсимвольна відстань</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shapestring.py" line="57"/>
+      <source>Fill letters with faces</source>
+      <translation>Заповніть літери гранями</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/fillet.py" line="46"/>
+      <source>The start point of this line.</source>
+      <translation>Початкова точка цієї лінії</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/fillet.py" line="54"/>
+      <source>The end point of this line.</source>
+      <translation>Кінцева точка цієї лінії.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/fillet.py" line="62"/>
+      <source>The length of this line.</source>
+      <translation>Довжина цієї лінії
+</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/fillet.py" line="70"/>
+      <source>Radius to use to fillet the corner.</source>
+      <translation>Радіус скруглення кута.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/pointarray.py" line="78"/>
+      <source>Base object that will be duplicated</source>
+      <translation>Базовий об'єкт, який буде продубльований</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/pointarray.py" line="86"/>
+      <source>Object containing points used to distribute the base object, for example, a sketch or a Part compound.
+The sketch or compound must contain at least one explicit point or vertex object.</source>
+      <translation>Об'єкт, що містить точки, що використовуються для розподілу базового об'єкта, наприклад, ескіз або складова частина.
+Ескізний або складний повинен містити принаймні одну явну точку або об'єкт вершини.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/pointarray.py" line="94"/>
+      <source>Total number of elements in the array.
+This property is read-only, as the number depends on the points contained within &apos;Point Object&apos;.</source>
+      <translation type="unfinished">Total number of elements in the array.
+This property is read-only, as the number depends on the points contained within &apos;Point Object&apos;.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/pointarray.py" line="139"/>
+      <source>Additional placement, shift and rotation, that will be applied to each copy</source>
+      <translation>Додаткове розміщення, зміщення та обертання, які застосовуватимуться до кожної копії</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_draft_annotation.py" line="76"/>
+      <source>General scaling factor that affects the annotation consistently
+because it scales the text, and the line decorations, if any,
+in the same proportion.</source>
+      <translation>Загальний коефіцієнт масштабування, який впливає на анотацію послідовно
+тому що він масштабує текст і прикраси ліній, якщо такі є,
+в тій же пропорції.</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_draft_annotation.py" line="91"/>
+      <source>Annotation style to apply to this object.
+When using a saved style some of the view properties will become read-only;
+they will only be editable by changing the style through the &apos;Annotation style editor&apos; tool.</source>
+      <translation type="unfinished">Annotation style to apply to this object.
+When using a saved style some of the view properties will become read-only;
+they will only be editable by changing the style through the &apos;Annotation style editor&apos; tool.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/pathtwistedarray.py" line="83"/>
+      <source>The base object that will be duplicated.</source>
+      <translation>Базовий об'єкт, який буде продубльований.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="176"/>
+      <source>The object along which the copies will be distributed. It must contain &apos;Edges&apos;.</source>
+      <translation type="unfinished">The object along which the copies will be distributed. It must contain &apos;Edges&apos;.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/pathtwistedarray.py" line="97"/>
+      <source>Number of copies to create.</source>
+      <translation>Кількість копій для створення.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/pathtwistedarray.py" line="104"/>
+      <source>Rotation factor of the twisted array.</source>
+      <translation>Коефіцієнт обертання крученого масиву.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="191"/>
+      <source>List of connected edges in the &apos;Path Object&apos;.
+If these are present, the copies will be created along these subelements only.
+Leave this property empty to create copies along the entire &apos;Path Object&apos;.</source>
+      <translation type="unfinished">List of connected edges in the &apos;Path Object&apos;.
+If these are present, the copies will be created along these subelements only.
+Leave this property empty to create copies along the entire &apos;Path Object&apos;.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="199"/>
+      <source>Number of copies to create</source>
+      <translation>Кількість копій для створення</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="218"/>
+      <source>Additional translation that will be applied to each copy.
+This is useful to adjust for the difference between shape centre and shape reference point.</source>
+      <translation>Додатковий переклад, який буде застосовано до кожної копії.
+Це корисно для регулювання різниці між центром форми та форми орієнтира.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="226"/>
+      <source>Alignment vector for &apos;Tangent&apos; mode</source>
+      <translation type="unfinished">Alignment vector for &apos;Tangent&apos; mode</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="234"/>
+      <source>Force use of &apos;Vertical Vector&apos; as local Z direction when using &apos;Original&apos; or &apos;Tangent&apos; alignment mode</source>
+      <translation type="unfinished">Force use of &apos;Vertical Vector&apos; as local Z direction when using &apos;Original&apos; or &apos;Tangent&apos; alignment mode</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="242"/>
+      <source>Direction of the local Z axis when &apos;Force Vertical&apos; is true</source>
+      <translation type="unfinished">Direction of the local Z axis when &apos;Force Vertical&apos; is true</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="250"/>
+      <source>Method to orient the copies along the path.
+- Original: X is curve tangent, Y is normal, and Z is the cross product.
+- Frenet: aligns the object following the local coordinate system along the path.
+- Tangent: similar to &apos;Original&apos; but the local X axis is pre-aligned to &apos;Tangent Vector&apos;.
+
+To get better results with &apos;Original&apos; or &apos;Tangent&apos; you may have to set &apos;Force Vertical&apos; to true.</source>
+      <translation type="unfinished">Method to orient the copies along the path.
+- Original: X is curve tangent, Y is normal, and Z is the cross product.
+- Frenet: aligns the object following the local coordinate system along the path.
+- Tangent: similar to &apos;Original&apos; but the local X axis is pre-aligned to &apos;Tangent Vector&apos;.
+
+To get better results with &apos;Original&apos; or &apos;Tangent&apos; you may have to set &apos;Force Vertical&apos; to true.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="261"/>
+      <source>Orient the copies along the path depending on the &apos;Align Mode&apos;.
+Otherwise the copies will have the same orientation as the original Base object.</source>
+      <translation type="unfinished">Orient the copies along the path depending on the &apos;Align Mode&apos;.
+Otherwise the copies will have the same orientation as the original Base object.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/point.py" line="44"/>
+      <source>X Location</source>
+      <translation>Розташування по осі X</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/point.py" line="47"/>
+      <source>Y Location</source>
+      <translation>Розташування по осі Y</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/point.py" line="50"/>
+      <source>Z Location</source>
+      <translation>Розташування по осі Z</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/text.py" line="51"/>
+      <source>The placement of the base point of the first line</source>
+      <translation>Розміщення базової точки першої лінії</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/text.py" line="61"/>
+      <source>The text displayed by this object.
+It is a list of strings; each element in the list will be displayed in its own line.</source>
+      <translation>Текст, що відображається цим об’єктом.
+Це список рядків; кожен елемент у списку відображатиметься у своєму рядку.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bezcurve.py" line="44"/>
+      <source>The points of the Bezier curve</source>
+      <translation>Точки кривої Безьє</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bezcurve.py" line="48"/>
+      <source>The degree of the Bezier function</source>
+      <translation>Ступінь функції Безьє</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bezcurve.py" line="52"/>
+      <source>Continuity</source>
+      <translation>Неперервність</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bezcurve.py" line="56"/>
+      <source>If the Bezier curve should be closed or not</source>
+      <translation>Якщо крива Безьє має бути замкнута або ні</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bezcurve.py" line="60"/>
+      <source>Create a face if this curve is closed</source>
+      <translation>Створіть грань, якщо ця крива замкнута</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/bezcurve.py" line="64"/>
+      <source>The length of this object</source>
+      <translation>Довжина цього об'єкта</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="55"/>
+      <source>The base object this 2D view must represent</source>
+      <translation>Базовий об’єкт, який повинен представляти цей 2D-вигляд</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="60"/>
+      <source>The projection vector of this object</source>
+      <translation>Вектор проекції цього об'єкту</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="66"/>
+      <source>The way the viewed object must be projected</source>
+      <translation>Спосіб, яким об'єкт, що розглядається, має бути спроектованим</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="73"/>
+      <source>The indices of the faces to be projected in Individual Faces mode</source>
+      <translation>Індекси граней для проєкції в режимі Individual Faces (Окремі Грані)</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="78"/>
+      <source>Show hidden lines</source>
+      <translation>Відобразити приховані рядки</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="84"/>
+      <source>Fuse wall and structure objects of same type and material</source>
+      <translation>Запобіжники стін і структури об'єктів одного типу і матеріалу</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="89"/>
+      <source>Tessellate Ellipses and B-splines into line segments</source>
+      <translation>Поділ еліпсів та B-сплайнів на лінійні відрізки</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="95"/>
+      <source>For Cutlines and Cutfaces modes,                     this leaves the faces at the cut location</source>
+      <translation type="unfinished">For Cutlines and Cutfaces modes,                     this leaves the faces at the cut location</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="102"/>
+      <source>Length of line segments if tessellating Ellipses or B-splines                     into line segments</source>
+      <translation type="unfinished">Length of line segments if tessellating Ellipses or B-splines                     into line segments</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="109"/>
+      <source>If this is True, this object will include only visible objects</source>
+      <translation>Якщо це Обрано цей об'єкт буде включати лише видимі об'єкти</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="115"/>
+      <source>A list of exclusion points. Any edge touching any of those points will not be drawn.</source>
+      <translation>Список виняткових точок. Будь-яке ребра, торкаючись будь-якого з цих точок, не буде намальовано.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="120"/>
+      <source>If this is True, only solid geometry is handled. This overrides the base object&apos;s Only Solids property</source>
+      <translation type="unfinished">If this is True, only solid geometry is handled. This overrides the base object&apos;s Only Solids property</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="125"/>
+      <source>If this is True, the contents are clipped to the borders of the section plane, if applicable. This overrides the base object&apos;s Clip property</source>
+      <translation type="unfinished">If this is True, the contents are clipped to the borders of the section plane, if applicable. This overrides the base object&apos;s Clip property</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shape2dview.py" line="130"/>
+      <source>This object will be recomputed only if this is True.</source>
+      <translation>Цей об'єкт буде переобчислено лише за умови Обрано.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/layer.py" line="57"/>
+      <source>The objects that are part of this layer</source>
+      <translation>Об'єкти, що входять до складу цього шару</translation>
     </message>
     <message>
       <location filename="../../draftobjects/rectangle.py" line="45"/>
@@ -163,21 +820,6 @@ This property is read-only, as the number depends on the parameters of the array
       <translation>Висота прямокутника</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/wire.py" line="75"/>
-      <source>Radius to use to fillet the corners</source>
-      <translation>Радіус для заокруглення кутів</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="79"/>
-      <source>Size of the chamfer to give to the corners</source>
-      <translation>Розмір фаски для кутів</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/ellipse.py" line="57"/>
-      <source>Create a face</source>
-      <translation>Створіть грань</translation>
-    </message>
-    <message>
       <location filename="../../draftobjects/rectangle.py" line="60"/>
       <source>Horizontal subdivisions of this rectangle</source>
       <translation>Горизонтальні поділ цього прямокутника</translation>
@@ -186,31 +828,6 @@ This property is read-only, as the number depends on the parameters of the array
       <location filename="../../draftobjects/rectangle.py" line="63"/>
       <source>Vertical subdivisions of this rectangle</source>
       <translation>Вертикальні поділ цього прямокутника</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="91"/>
-      <source>The area of this object</source>
-      <translation>Форма цього об’єкта</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/pathtwistedarray.py" line="83"/>
-      <source>The base object that will be duplicated.</source>
-      <translation>Базовий об'єкт, який буде продубльований.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="176"/>
-      <source>The object along which the copies will be distributed. It must contain 'Edges'.</source>
-      <translation>Об'єкт, уздовж якого будуть розповсюджуватися копії. Він повинен містити "Edges".</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/pathtwistedarray.py" line="97"/>
-      <source>Number of copies to create.</source>
-      <translation>Кількість копій для створення.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/pathtwistedarray.py" line="104"/>
-      <source>Rotation factor of the twisted array.</source>
-      <translation>Коефіцієнт обертання крученого масиву.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/dimension.py" line="134"/>
@@ -283,26 +900,26 @@ it will be a point that lies on the arc.</source>
     <message>
       <location filename="../../draftobjects/dimension.py" line="254"/>
       <source>The direction of the dimension line.
-If this remains '(0,0,0)', the direction will be calculated automatically.</source>
-      <translation>Напрямок розмірної лінії.
-Якщо це значення залишається '(0,0,0)', напрямок буде обчислюватися автоматично.</translation>
+If this remains &apos;(0,0,0)&apos;, the direction will be calculated automatically.</source>
+      <translation type="unfinished">The direction of the dimension line.
+If this remains &apos;(0,0,0)&apos;, the direction will be calculated automatically.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/dimension.py" line="265"/>
       <source>The value of the measurement.
 
 This property is read-only because the value is calculated
-from the 'Start' and 'End' properties.
+from the &apos;Start&apos; and &apos;End&apos; properties.
 
-If the 'Linked Geometry' is an arc or circle, this 'Distance'
-is the radius or diameter, depending on the 'Diameter' property.</source>
-      <translation>Значення вимірювання.
+If the &apos;Linked Geometry&apos; is an arc or circle, this &apos;Distance&apos;
+is the radius or diameter, depending on the &apos;Diameter&apos; property.</source>
+      <translation type="unfinished">The value of the measurement.
 
-Ця властивість доступна лише для читання, оскільки обчислюється значення
-із властивостей «Початок» і «Кінець».
+This property is read-only because the value is calculated
+from the &apos;Start&apos; and &apos;End&apos; properties.
 
-Якщо "Зв'язана геометрія" є дугою або колом, ця "Відстань"
-– радіус або діаметр, залежно від властивості «Діаметр».</translation>
+If the &apos;Linked Geometry&apos; is an arc or circle, this &apos;Distance&apos;
+is the radius or diameter, depending on the &apos;Diameter&apos; property.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/dimension.py" line="283"/>
@@ -330,730 +947,32 @@ The arc is drawn counter-clockwise.</source>
       <source>The center point of the dimension line, which is a circular arc.
 
 This is normally the point where two line segments, or their extensions
-intersect, resulting in the measured 'Angle' between them.</source>
-      <translation>Центральна точка розмірної лінії, яка є круговою дугою.
+intersect, resulting in the measured &apos;Angle&apos; between them.</source>
+      <translation type="unfinished">The center point of the dimension line, which is a circular arc.
 
-Зазвичай це точка, де знаходяться два відрізки або їх розширення
-перетинаються, в результаті чого вимірюється "кут'' між ними.</translation>
+This is normally the point where two line segments, or their extensions
+intersect, resulting in the measured &apos;Angle&apos; between them.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/dimension.py" line="540"/>
       <source>The value of the measurement.
 
 This property is read-only because the value is calculated from
-the 'First Angle' and 'Last Angle' properties.</source>
-      <translation>Значення вимірювання.
+the &apos;First Angle&apos; and &apos;Last Angle&apos; properties.</source>
+      <translation type="unfinished">The value of the measurement.
 
-Ця властивість доступна лише для читання, оскільки значення обчислюється з
-властивості "Перший кут" та "Останній кут".</translation>
+This property is read-only because the value is calculated from
+the &apos;First Angle&apos; and &apos;Last Angle&apos; properties.</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/text.py" line="51"/>
-      <source>The placement of the base point of the first line</source>
-      <translation>Розміщення базової точки першої лінії</translation>
+      <location filename="../../draftviewproviders/view_label.py" line="175"/>
+      <source>Line width</source>
+      <translation>Ширина лінії</translation>
     </message>
     <message>
-      <location filename="../../draftobjects/text.py" line="61"/>
-      <source>The text displayed by this object.
-It is a list of strings; each element in the list will be displayed in its own line.</source>
-      <translation>Текст, що відображається цим об’єктом.
-Це список рядків; кожен елемент у списку відображатиметься у своєму рядку.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/circle.py" line="44"/>
-      <source>Start angle of the arc</source>
-      <translation>Початковий кут дуги</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/circle.py" line="48"/>
-      <source>End angle of the arc (for a full circle,                 give it same value as First Angle)</source>
-      <translation type="unfinished">End angle of the arc (for a full circle,                 give it same value as First Angle)</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/circle.py" line="53"/>
-      <source>Radius of the circle</source>
-      <translation>Радіус кола</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/polygon.py" line="46"/>
-      <source>Number of faces</source>
-      <translation>Кількість граней</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/polygon.py" line="50"/>
-      <source>Radius of the control circle</source>
-      <translation>Радіус контрольного кола</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/polygon.py" line="54"/>
-      <source>How the polygon must be drawn from the control circle</source>
-      <translation>Як потрібно креслити багатокутник із контрольного кола</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/point.py" line="44"/>
-      <source>X Location</source>
-      <translation>Розташування по осі X</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/point.py" line="47"/>
-      <source>Y Location</source>
-      <translation>Розташування по осі Y</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/point.py" line="50"/>
-      <source>Z Location</source>
-      <translation>Розташування по осі Z</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/layer.py" line="57"/>
-      <source>The objects that are part of this layer</source>
-      <translation>Об'єкти, що входять до складу цього шару</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/label.py" line="60"/>
-      <source>The position of the tip of the leader line.
-This point can be decorated with an arrow or another symbol.</source>
-      <translation>Положення кінчика лінійки лідера.
-Цю точку можна прикрасити стрілкою або іншим символом.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/label.py" line="72"/>
-      <source>Object, and optionally subelement, whose properties will be displayed
-as 'Text', depending on 'Label Type'.
-
-'Target' won't be used if 'Label Type' is set to 'Custom'.</source>
-      <translation>Об'єкт і, за бажанням, піделемент, властивості якого відображатимуться
-як "Текст", залежно від "Тип мітки".
-
-"Ціль" не використовуватиметься, якщо для "Тип мітки" встановлено значення "Замовити"</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/label.py" line="90"/>
-      <source>The list of points defining the leader line; normally a list of three points.
-
-The first point should be the position of the text, that is, the 'Placement',
-and the last point should be the tip of the line, that is, the 'Target Point'.
-The middle point is calculated automatically depending on the chosen
-'Straight Direction' and the 'Straight Distance' value and sign.
-
-If 'Straight Direction' is set to 'Custom', the 'Points' property
-can be set as a list of arbitrary points.</source>
-      <translation>Перелік пунктів, що визначають лінію лідера; зазвичай список із трьох пунктів.
-
-Першим пунктом має бути положення тексту, тобто "Розміщення",
-і остання точка повинна бути кінчиком рядка, тобто "Цільовою точкою".
-Середня точка обчислюється автоматично залежно від обраної
-'Прямий напрямок' та значення та знак 'Пряма відстань'.
-
-Якщо для параметра "Прямий напрямок" встановлено значення "Назамовлення", властивість "Окуляри"
-може бути встановлений як список довільних точок.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/label.py" line="116"/>
-      <source>The direction of the straight segment of the leader line.
-
-If 'Custom' is chosen, the points of the leader can be specified by
-assigning a custom list to the 'Points' attribute.</source>
-      <translation>Напрямок прямого відрізка виносної лінії.
-
-Якщо вибрано "Назамовлення", лінійні точки можуть бути вказані
-присвоєнням спеціального списку атрибуту "Точки".</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/label.py" line="131"/>
-      <source>The length of the straight segment of the leader line.
-
-This is an oriented distance; if it is negative, the line will be drawn
-to the left or below the 'Text', otherwise to the right or above it,
-depending on the value of 'Straight Direction'.</source>
-      <translation>Довжина прямого відрізка виносної лінії.
-
-Це орієнтована відстань; якщо воно від’ємне, буде проведена лінія
-ліворуч або нижче "Тексту", інакше праворуч або над ним,
-залежно від значення "Прямий напрямок".</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/label.py" line="153"/>
-      <source>The placement of the 'Text' element in 3D space</source>
-      <translation>Розміщення елемента "Текст" у тривимірному просторі</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/label.py" line="163"/>
-      <source>The text to display when 'Label Type' is set to 'Custom'</source>
-      <translation>Текст, який відображатиметься, коли для параметра «Тип мітки» встановлено значення «Назамволення»</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/label.py" line="173"/>
-      <source>The text displayed by this label.
-
-This property is read-only, as the final text depends on 'Label Type',
-and the object defined in 'Target'.
-The 'Custom Text' is displayed only if 'Label Type' is set to 'Custom'.</source>
-      <translation>Текст, що відображається цією міткою.
-
-Ця властивість доступна лише для читання, оскільки остаточний текст залежить від "Тип мітки",
-і об'єкт, визначений у "Ціль".
-"Замовний текст" відображається лише в тому випадку, якщо для параметра "Тип мітки" встановлено значення "На замовлення".</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/label.py" line="197"/>
-      <source>The type of information displayed by this label.
-
-If 'Custom' is chosen, the contents of 'Custom Text' will be used.
-For other types, the string will be calculated automatically from the object defined in 'Target'.
-'Tag' and 'Material' only work for objects that have these properties, like Arch objects.
-
-For 'Position', 'Length', and 'Area' these properties will be extracted from the main object in 'Target',
-or from the subelement 'VertexN', 'EdgeN', or 'FaceN', respectively, if it is specified.</source>
-      <translation>Тип інформації, що відображається цим ярликом.
-
-Якщо вибрано "На замовлення", буде використаний вміст "Замовний текст".
-Для інших типів рядок буде обчислюватися автоматично з об'єкта, визначеного в "Ціль".
-'Тег' та 'Матеріал' працюють лише для об'єктів, що мають ці властивості, наприклад об'єктів Arch.
-
-Для "Позиція", "Довжина" і "Площа" ці властивості будуть вилучені з основного об'єкта в "Ціль",
-або з піделементу 'VertexN', 'EdgeN' або 'FaceN' відповідно, якщо це вказано.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shapestring.py" line="45"/>
-      <source>Text string</source>
-      <translation>Текстовий рядок</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shapestring.py" line="48"/>
-      <source>Font file name</source>
-      <translation>Ім'я файлу зі шрифтом</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shapestring.py" line="51"/>
-      <source>Height of text</source>
-      <translation>Висота тексту</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shapestring.py" line="54"/>
-      <source>Inter-character spacing</source>
-      <translation>Міжсимвольна відстань</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shapestring.py" line="57"/>
-      <source>Fill letters with faces</source>
-      <translation>Заповніть літери гранями</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/draftlink.py" line="97"/>
-      <source>Force sync pattern placements even when array elements are expanded</source>
-      <translation>Примусова синхронізація різних розмірів навіть при розширенні елементів масиву</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/draftlink.py" line="110"/>
-      <source>Show the individual array elements</source>
-      <translation>Показати окремі елементи масиву</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/pointarray.py" line="78"/>
-      <source>Base object that will be duplicated</source>
-      <translation>Базовий об'єкт, який буде продубльований</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/pointarray.py" line="86"/>
-      <source>Object containing points used to distribute the base object, for example, a sketch or a Part compound.
-The sketch or compound must contain at least one explicit point or vertex object.</source>
-      <translation>Об'єкт, що містить точки, що використовуються для розподілу базового об'єкта, наприклад, ескіз або складова частина.
-Ескізний або складний повинен містити принаймні одну явну точку або об'єкт вершини.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/pointarray.py" line="94"/>
-      <source>Total number of elements in the array.
-This property is read-only, as the number depends on the points contained within 'Point Object'.</source>
-      <translation>Загальна кількість елементів у масиві.
-Ця властивість доступна лише для читання, оскільки кількість залежить від точок, що містяться в "Point Object".</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/pointarray.py" line="139"/>
-      <source>Additional placement, shift and rotation, that will be applied to each copy</source>
-      <translation>Додаткове розміщення, зміщення та обертання, які застосовуватимуться до кожної копії</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bspline.py" line="44"/>
-      <source>The points of the B-spline</source>
-      <translation>Точки B-сплайну</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bspline.py" line="48"/>
-      <source>If the B-spline is closed or not</source>
-      <translation>Якщо B-сплайн замкнений або ні</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bspline.py" line="52"/>
-      <source>Create a face if this spline is closed</source>
-      <translation>Створити грань, якщо сплайн замкнутий</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bspline.py" line="66"/>
-      <source>Parameterization factor</source>
-      <translation>Фактор параметризації</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="55"/>
-      <source>The base object this 2D view must represent</source>
-      <translation>Базовий об’єкт, який повинен представляти цей 2D-вигляд</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="60"/>
-      <source>The projection vector of this object</source>
-      <translation>Вектор проекції цього об'єкту</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="66"/>
-      <source>The way the viewed object must be projected</source>
-      <translation>Спосіб, яким об'єкт, що розглядається, має бути спроектованим</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="73"/>
-      <source>The indices of the faces to be projected in Individual Faces mode</source>
-      <translation>Індекси граней для проєкції в режимі Individual Faces (Окремі Грані)</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="78"/>
-      <source>Show hidden lines</source>
-      <translation>Відобразити приховані рядки</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="84"/>
-      <source>Fuse wall and structure objects of same type and material</source>
-      <translation>Запобіжники стін і структури об'єктів одного типу і матеріалу</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="89"/>
-      <source>Tessellate Ellipses and B-splines into line segments</source>
-      <translation>Поділ еліпсів та B-сплайнів на лінійні відрізки</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="95"/>
-      <source>For Cutlines and Cutfaces modes,                     this leaves the faces at the cut location</source>
-      <translation type="unfinished">For Cutlines and Cutfaces modes,                     this leaves the faces at the cut location</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="102"/>
-      <source>Length of line segments if tessellating Ellipses or B-splines                     into line segments</source>
-      <translation type="unfinished">Length of line segments if tessellating Ellipses or B-splines                     into line segments</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="109"/>
-      <source>If this is True, this object will include only visible objects</source>
-      <translation>Якщо це Обрано цей об'єкт буде включати лише видимі об'єкти</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="115"/>
-      <source>A list of exclusion points. Any edge touching any of those points will not be drawn.</source>
-      <translation>Список виняткових точок. Будь-яке ребра, торкаючись будь-якого з цих точок, не буде намальовано.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="120"/>
-      <source>If this is True, only solid geometry is handled. This overrides the base object's Only Solids property</source>
-      <translation>Якщо це Істина, обробляється лише суцільна геометрія. Це замінює властивість Тільки твердих тіл базового об'єкта</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="125"/>
-      <source>If this is True, the contents are clipped to the borders of the section plane, if applicable. This overrides the base object's Clip property</source>
-      <translation>Якщо це Істина, вміст відсікається до меж площини перерізу, якщо це можливо. Це замінює властивість Обрізки базового об'єкта</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shape2dview.py" line="130"/>
-      <source>This object will be recomputed only if this is True.</source>
-      <translation>Цей об'єкт буде переобчислено лише за умови Обрано.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/ellipse.py" line="44"/>
-      <source>Start angle of the elliptical arc</source>
-      <translation>Початковий кут еліптичної дуги</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/ellipse.py" line="47"/>
-      <source>End angle of the elliptical arc 
-                (for a full circle, give it same value as First Angle)</source>
-      <translation type="unfinished">End angle of the elliptical arc 
-                (for a full circle, give it same value as First Angle)</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/ellipse.py" line="51"/>
-      <source>Minor radius of the ellipse</source>
-      <translation>Малий радіус еліпса</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/ellipse.py" line="54"/>
-      <source>Major radius of the ellipse</source>
-      <translation>Більший радіус еліпса</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/ellipse.py" line="60"/>
-      <source>Area of this object</source>
-      <translation>Площа цього об'єкту</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/hatch.py" line="45"/>
-      <source>The base object used by this object</source>
-      <translation>Базовий об'єкт використовується цим об’єктом</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/hatch.py" line="48"/>
-      <source>The PAT file used by this object</source>
-      <translation>Файл PAT, який використовується цим об’єктом</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/hatch.py" line="51"/>
-      <source>The pattern name used by this object</source>
-      <translation>Назва шаблону, що використовується цим об'єктом</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/hatch.py" line="54"/>
-      <source>The pattern scale used by this object</source>
-      <translation>Масштабований паттерн (повторюване зображення), який використовується цим об'єктом</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/hatch.py" line="57"/>
-      <source>The pattern rotation used by this object</source>
-      <translation>Масштабований паттерн (повторюване зображення), який використовується цим об'єктом</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/hatch.py" line="60"/>
-      <source>If set to False, hatch is applied as is to the faces, without translation (this might give wrong results for non-XY faces)</source>
-      <translation>Якщо встановлено False, штрихування застосовується до граней без перетворення (це може призвести до неправильних результатів для граней, розміщених не на осі XY)</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bezcurve.py" line="44"/>
-      <source>The points of the Bezier curve</source>
-      <translation>Точки кривої Безьє</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bezcurve.py" line="48"/>
-      <source>The degree of the Bezier function</source>
-      <translation>Ступінь функції Безьє</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bezcurve.py" line="52"/>
-      <source>Continuity</source>
-      <translation>Неперервність</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bezcurve.py" line="56"/>
-      <source>If the Bezier curve should be closed or not</source>
-      <translation>Якщо крива Безьє має бути замкнута або ні</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bezcurve.py" line="60"/>
-      <source>Create a face if this curve is closed</source>
-      <translation>Створіть грань, якщо ця крива замкнута</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/bezcurve.py" line="64"/>
-      <source>The length of this object</source>
-      <translation>Довжина цього об'єкта</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="191"/>
-      <source>List of connected edges in the 'Path Object'.
-If these are present, the copies will be created along these subelements only.
-Leave this property empty to create copies along the entire 'Path Object'.</source>
-      <translation>Список поєднаних ребер у 'Траєкторія Об'єкту'.
-Якщо вони є, копії будуть створені лише за цими підлементами.
-Залиште цю властивість порожньою, щоб створювати копії по всьому об'єкту 'Шлях'.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="199"/>
-      <source>Number of copies to create</source>
-      <translation>Кількість копій для створення</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="218"/>
-      <source>Additional translation that will be applied to each copy.
-This is useful to adjust for the difference between shape centre and shape reference point.</source>
-      <translation>Додатковий переклад, який буде застосовано до кожної копії.
-Це корисно для регулювання різниці між центром форми та форми орієнтира.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="226"/>
-      <source>Alignment vector for 'Tangent' mode</source>
-      <translation>Вирівнювання вектора для 'Tangent' режиму</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="234"/>
-      <source>Force use of 'Vertical Vector' as local Z direction when using 'Original' or 'Tangent' alignment mode</source>
-      <translation>Примусово використовувати "Вертикальний вектор" в якості локального напряму Z при використанні 'Оригінального' або 'Дотичного режиму вирівнювання</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="242"/>
-      <source>Direction of the local Z axis when 'Force Vertical' is true</source>
-      <translation>Напрямок локальної осі Z, коли 'Force Vertical' правда</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="250"/>
-      <source>Method to orient the copies along the path.
-- Original: X is curve tangent, Y is normal, and Z is the cross product.
-- Frenet: aligns the object following the local coordinate system along the path.
-- Tangent: similar to 'Original' but the local X axis is pre-aligned to 'Tangent Vector'.
-
-To get better results with 'Original' or 'Tangent' you may have to set 'Force Vertical' to true.</source>
-      <translation>Метод для орієнтації копій вздовж шляху.
-- Оригінал: X є дотичною кривою, Y є перпендикулярний, а Z - поперечний продукт.
-- Френе: вирівнює об’єкт за допомогою локальної системи координат уздовж шляху.
-- Дотичні: подібно до "Оригінал", але локальна вісь X попередньо вирівнюється у "Дотичний вектор".
-
-Щоб отримати кращі результати з 'Оригінал' або 'Дотичний' вам може доведеться встановити "Примусова вертикальна" увімкненим.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="261"/>
-      <source>Orient the copies along the path depending on the 'Align Mode'.
-Otherwise the copies will have the same orientation as the original Base object.</source>
-      <translation>Розташуйте копії по контуру залежно від 'Режиму вирівнювання'.
-В іншому випадку копії матимуть однакову орієнтацію, як оригінальний базовий об'єкт.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/drawingview.py" line="64"/>
-      <source>The linked object</source>
-      <translation>Пов'язаний об'єкт</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/drawingview.py" line="71"/>
-      <source>Projection direction</source>
-      <translation>Напрямок проекції</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/drawingview.py" line="78"/>
-      <source>The width of the lines inside this object</source>
-      <translation>Ширина ліній всередині цього об'єкта</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/drawingview.py" line="86"/>
-      <source>The size of the texts inside this object</source>
-      <translation>Розмір тексту всередині цього об'єкта</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/drawingview.py" line="94"/>
-      <source>The spacing between lines of text</source>
-      <translation>Інтервал між лініями тексту</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/drawingview.py" line="101"/>
-      <source>The color of the projected objects</source>
-      <translation>Колір проектованих об'єктів</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/drawingview.py" line="108"/>
-      <source>Shape Fill Style</source>
-      <translation>Тип заливки фігури</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/drawingview.py" line="116"/>
-      <source>Line Style</source>
-      <translation>Стиль лінії</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/drawingview.py" line="124"/>
-      <source>If checked, source objects are displayed regardless of being visible in the 3D model</source>
-      <translation>Якщо відмічено, то вихідні об'єкти відображаються, незалежно від того, чи вони видимі в 3D моделі</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/facebinder.py" line="42"/>
-      <source>Linked faces</source>
-      <translation>Пов'язані грані</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/facebinder.py" line="45"/>
-      <source>Specifies if splitter lines must be removed</source>
-      <translation>Вказує, чи потрібно видаляти роздільні лінії</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/facebinder.py" line="48"/>
-      <source>An optional extrusion value to be applied to all faces</source>
-      <translation>Необов’язкове значення видавлювання, яке застосовується до всіх граней</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/facebinder.py" line="51"/>
-      <source>An optional offset value to be applied to all faces</source>
-      <translation>Необов’язкове значення видавлювання, яке застосовується до всіх граней</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/facebinder.py" line="54"/>
-      <source>This specifies if the shapes sew</source>
-      <translation>Це визначає, чи фігури зшиті</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/facebinder.py" line="57"/>
-      <source>The area of the faces of this Facebinder</source>
-      <translation>Площа граней цього Facebinder</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/clone.py" line="44"/>
-      <source>The objects included in this clone</source>
-      <translation>Об'єкти, що входять в цей клон</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/clone.py" line="49"/>
-      <source>The scale factor of this clone</source>
-      <translation>Масштабний коефіцієнт цього клону</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/clone.py" line="54"/>
-      <source>If Clones includes several objects,
-set True for fusion or False for compound</source>
-      <translation>Якщо "Клони" містять кілька об'єктів,
-встановіть "Так" для сплавляння або "Ні" для поєднання.</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_draft_annotation.py" line="76"/>
-      <source>General scaling factor that affects the annotation consistently
-because it scales the text, and the line decorations, if any,
-in the same proportion.</source>
-      <translation>Загальний коефіцієнт масштабування, який впливає на анотацію послідовно
-тому що він масштабує текст і прикраси ліній, якщо такі є,
-в тій же пропорції.</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_draft_annotation.py" line="91"/>
-      <source>Annotation style to apply to this object.
-When using a saved style some of the view properties will become read-only;
-they will only be editable by changing the style through the 'Annotation style editor' tool.</source>
-      <translation>Стиль анотації, який застосовуватиметься до цього об’єкта.
-При використанні збереженого стилю деякі властивості перегляду стануть лише для читання;
-їх можна редагувати лише шляхом зміни стилю за допомогою інструмента "Редактор стилів анотацій".</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="47"/>
-      <source>The vertices of the wire</source>
-      <translation>Вершини каркасу</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="51"/>
-      <source>If the wire is closed or not</source>
-      <translation>Якщо каркас закритий чи ні</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="55"/>
-      <source>The base object is the wire, it's formed from 2 objects</source>
-      <translation>Базовий об'єкт є каркас, він утворений з 2 об’єктів</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="59"/>
-      <source>The tool object is the wire, it's formed from 2 objects</source>
-      <translation>Базовий об'єкт є каркас, він утворений з 2 об’єктів</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="63"/>
-      <source>The start point of this line</source>
-      <translation>Початкова точка цієї лінії</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="67"/>
-      <source>The end point of this line</source>
-      <translation>Кінцева точка цієї лінії</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="71"/>
-      <source>The length of this line</source>
-      <translation>Довжина цієї лінії</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="83"/>
-      <source>Create a face if this object is closed</source>
-      <translation>Створити грань, якщо об'єкт замкнений</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/wire.py" line="87"/>
-      <source>The number of subdivisions of each edge</source>
-      <translation>Кількість ділень кожного ребра</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="135"/>
-      <source>Font name</source>
-      <translation>Назва шрифту</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="144"/>
-      <source>Font size</source>
-      <translation>Розмір шрифту</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="153"/>
-      <source>Spacing between text and dimension line</source>
-      <translation>Інтервал між текстом та розмірною лінією</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="162"/>
-      <source>Rotate the dimension text 180 degrees</source>
-      <translation>Поворот тексту з розміром на 180 градусів</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="171"/>
-      <source>Text Position.
-Leave '(0,0,0)' for automatic position</source>
-      <translation>Розташування тексту.
-Залиште '(0,0,0)' для автоматичного розташування</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="181"/>
-      <source>Text override.
-Write '$dim' so that it is replaced by the dimension length.</source>
-      <translation>Перевизначення тексту.
-Напишіть '$dim' так, щоб вона змінила розмірність.</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="194"/>
-      <source>The number of decimals to show</source>
-      <translation>Показати кількість десяткових знаків</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="203"/>
-      <source>Show the unit suffix</source>
-      <translation>Показати суфікс одиниці</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="212"/>
-      <source>A unit to express the measurement.
-Leave blank for system default.
-Use 'arch' to force US arch notation</source>
-      <translation>Одиниця виміру.
-Залиште пустим  для системи за замовчуванням.
-Використовуйте 'арку', щоб змусити позначення арки США</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="228"/>
-      <source>Arrow size</source>
-      <translation>Розмір стрілки</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="237"/>
-      <source>Arrow type</source>
-      <translation>Тип стрілки</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="247"/>
-      <source>Rotate the dimension arrows 180 degrees</source>
-      <translation>Поверніть розмірні стрілки на 180 градусів</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="256"/>
-      <source>The distance the dimension line is extended
-past the extension lines</source>
-      <translation>Відстань розмірної лінії продовжено
-за лініями розширення</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="267"/>
-      <source>Length of the extension lines</source>
-      <translation>Довжина виносних ліній</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="276"/>
-      <source>Length of the extension line
-beyond the dimension line</source>
-      <translation>Довжина виносної лінії
-поза розмірної лінії</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_dimension.py" line="286"/>
-      <source>Shows the dimension line and arrows</source>
-      <translation>Показує розмірну лінію та стрілки</translation>
+      <location filename="../../draftviewproviders/view_label.py" line="184"/>
+      <source>Line color</source>
+      <translation>Колір лінії</translation>
     </message>
     <message>
       <location filename="../../draftviewproviders/view_layer.py" line="63"/>
@@ -1099,26 +1018,6 @@ beyond the dimension line</source>
       <location filename="../../draftviewproviders/view_layer.py" line="161"/>
       <source>The line color of the objects contained within this layer, when used on a TechDraw page</source>
       <translation>Колір лінії об'єктів, що міститься в цьому шарі, при використанні сторінки TechDraw</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_label.py" line="175"/>
-      <source>Line width</source>
-      <translation>Ширина лінії</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_label.py" line="184"/>
-      <source>Line color</source>
-      <translation>Колір лінії</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_base.py" line="102"/>
-      <source>Defines an SVG pattern.</source>
-      <translation>Визначає шаблон SVG.</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_base.py" line="112"/>
-      <source>Defines the size of the SVG pattern.</source>
-      <translation>Визначає розмір шаблону SVG.</translation>
     </message>
     <message>
       <location filename="../../draftviewproviders/view_label.py" line="72"/>
@@ -1170,13 +1069,174 @@ beyond the dimension line</source>
       <source>Display a leader line or not</source>
       <translation>Показати виносну лінію чи ні</translation>
     </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="135"/>
+      <source>Font name</source>
+      <translation>Назва шрифту</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="144"/>
+      <source>Font size</source>
+      <translation>Розмір шрифту</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="153"/>
+      <source>Spacing between text and dimension line</source>
+      <translation>Інтервал між текстом та розмірною лінією</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="162"/>
+      <source>Rotate the dimension text 180 degrees</source>
+      <translation>Поворот тексту з розміром на 180 градусів</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="171"/>
+      <source>Text Position.
+Leave &apos;(0,0,0)&apos; for automatic position</source>
+      <translation type="unfinished">Text Position.
+Leave &apos;(0,0,0)&apos; for automatic position</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="181"/>
+      <source>Text override.
+Write &apos;$dim&apos; so that it is replaced by the dimension length.</source>
+      <translation type="unfinished">Text override.
+Write &apos;$dim&apos; so that it is replaced by the dimension length.</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="194"/>
+      <source>The number of decimals to show</source>
+      <translation>Показати кількість десяткових знаків</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="203"/>
+      <source>Show the unit suffix</source>
+      <translation>Показати суфікс одиниці</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="212"/>
+      <source>A unit to express the measurement.
+Leave blank for system default.
+Use &apos;arch&apos; to force US arch notation</source>
+      <translation type="unfinished">A unit to express the measurement.
+Leave blank for system default.
+Use &apos;arch&apos; to force US arch notation</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="228"/>
+      <source>Arrow size</source>
+      <translation>Розмір стрілки</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="237"/>
+      <source>Arrow type</source>
+      <translation>Тип стрілки</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="247"/>
+      <source>Rotate the dimension arrows 180 degrees</source>
+      <translation>Поверніть розмірні стрілки на 180 градусів</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="256"/>
+      <source>The distance the dimension line is extended
+past the extension lines</source>
+      <translation>Відстань розмірної лінії продовжено
+за лініями розширення</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="267"/>
+      <source>Length of the extension lines</source>
+      <translation>Довжина виносних ліній</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="276"/>
+      <source>Length of the extension line
+beyond the dimension line</source>
+      <translation>Довжина виносної лінії
+поза розмірної лінії</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_dimension.py" line="286"/>
+      <source>Shows the dimension line and arrows</source>
+      <translation>Показує розмірну лінію та стрілки</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_base.py" line="102"/>
+      <source>Defines an SVG pattern.</source>
+      <translation>Визначає шаблон SVG.</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_base.py" line="112"/>
+      <source>Defines the size of the SVG pattern.</source>
+      <translation>Визначає розмір шаблону SVG.</translation>
+    </message>
   </context>
   <context>
     <name>Draft</name>
     <message>
-      <location filename="../../draftobjects/pointarray.py" line="304"/>
-      <source>Point object doesn't have a discrete point, it cannot be used for an array.</source>
-      <translation>Об’єкт точки не має перервану точку, його не можна використати для масиву.</translation>
+      <location filename="../../importDXF.py" line="126"/>
+      <source>Download of dxf libraries failed.
+Please install the dxf Library addon manually
+from menu Tools -&gt; Addon Manager</source>
+      <translation>Помилка завантаження бібліотек dxf
+Будь ласка, встановіть бібліотеку dxf вручну
+з меню Інструменти -&gt; Менеджер додатків</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_hatch.py" line="49"/>
+      <source>You must choose a base object before using this command</source>
+      <translation>Вам слід вибрати базовий об'єкт перед використанням цієї команди</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_clone.py" line="91"/>
+      <source>Clone</source>
+      <translation>Клонувати</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_lineslope.py" line="91"/>
+      <source>Slope</source>
+      <translation>Нахил</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_offset.py" line="328"/>
+      <source>Offset direction is not defined. Please move the mouse on either side of the object first to indicate a direction</source>
+      <translation>Напрямок зміщення не визначено. Будь ласка, перемістіть курсор миші на обидві сторони об'єкта спочатку для вказівки напрямку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="88"/>
+      <source>Delete original objects</source>
+      <translation>Видалити початкові об'єкти</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="94"/>
+      <source>Create chamfer</source>
+      <translation>Створити фаску</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_setstyle.py" line="273"/>
+      <source>Save style</source>
+      <translation>Зберегти стиль</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_setstyle.py" line="273"/>
+      <source>Name of this new style:</source>
+      <translation>Назва нового стилю:</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_setstyle.py" line="281"/>
+      <source>Warning</source>
+      <translation>Увага</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_setstyle.py" line="281"/>
+      <source>Name exists. Overwrite?</source>
+      <translation>Назва вже існує. Перезаписати?</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_setstyle.py" line="318"/>
+      <source>Error: json module not found. Unable to save style</source>
+      <translation>Помилка: модуль json не знайдено. Неможливо зберегти стиль</translation>
     </message>
     <message>
       <location filename="../../draftobjects/bspline.py" line="104"/>
@@ -1184,24 +1244,9 @@ beyond the dimension line</source>
       <translation>_BSpline.createGeometry: Закрита з тією ж першою/останньою точкою. Геометрія не оновилася.</translation>
     </message>
     <message>
-      <location filename="../../draftviewproviders/view_wpproxy.py" line="102"/>
-      <source>Writing camera position</source>
-      <translation>Запис положення камери</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_wpproxy.py" line="119"/>
-      <source>Writing objects shown/hidden state</source>
-      <translation>Запис  об’єктів показати/приховати стан</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="137"/>
-      <source>Draft</source>
-      <translation>Креслення</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="180"/>
-      <source>Import-Export</source>
-      <translation>Імпорт-експорт</translation>
+      <location filename="../../draftobjects/pointarray.py" line="304"/>
+      <source>Point object doesn&apos;t have a discrete point, it cannot be used for an array.</source>
+      <translation type="unfinished">Point object doesn&apos;t have a discrete point, it cannot be used for an array.</translation>
     </message>
     <message>
       <location filename="../../draftutils/init_draft_statusbar.py" line="248"/>
@@ -1229,12 +1274,32 @@ beyond the dimension line</source>
       <translation>Перемикає обмеження в робочій площині Вкл/Викл</translation>
     </message>
     <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="156"/>
+      <location filename="../../InitGui.py" line="137"/>
+      <source>Draft</source>
+      <translation>Креслення</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="182"/>
+      <source>Import-Export</source>
+      <translation>Імпорт-експорт</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_wpproxy.py" line="102"/>
+      <source>Writing camera position</source>
+      <translation>Запис положення камери</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_wpproxy.py" line="119"/>
+      <source>Writing objects shown/hidden state</source>
+      <translation>Запис  об’єктів показати/приховати стан</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="143"/>
       <source>True</source>
       <translation>Так</translation>
     </message>
     <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="157"/>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="144"/>
       <source>False</source>
       <translation>Ні</translation>
     </message>
@@ -1288,70 +1353,6 @@ beyond the dimension line</source>
       <source>Create a clone</source>
       <translation>Клонувати</translation>
     </message>
-    <message>
-      <location filename="../../importDXF.py" line="126"/>
-      <source>Download of dxf libraries failed.
-Please install the dxf Library addon manually
-from menu Tools -&gt; Addon Manager</source>
-      <translation>Помилка завантаження бібліотек dxf
-Будь ласка, встановіть бібліотеку dxf вручну
-з меню Інструменти -&gt; Менеджер додатків</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_clone.py" line="91"/>
-      <source>Clone</source>
-      <translation>Клонувати</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_lineslope.py" line="91"/>
-      <source>Slope</source>
-      <translation>Нахил</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_setstyle.py" line="273"/>
-      <source>Save style</source>
-      <translation>Зберегти стиль</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_setstyle.py" line="273"/>
-      <source>Name of this new style:</source>
-      <translation>Назва нового стилю:</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_setstyle.py" line="281"/>
-      <source>Warning</source>
-      <translation>Увага</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_setstyle.py" line="281"/>
-      <source>Name exists. Overwrite?</source>
-      <translation>Назва вже існує. Перезаписати?</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_setstyle.py" line="318"/>
-      <source>Error: json module not found. Unable to save style</source>
-      <translation>Помилка: модуль json не знайдено. Неможливо зберегти стиль</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_hatch.py" line="49"/>
-      <source>You must choose a base object before using this command</source>
-      <translation>Вам слід вибрати базовий об'єкт перед використанням цієї команди</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="88"/>
-      <source>Delete original objects</source>
-      <translation>Видалити початкові об'єкти</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="94"/>
-      <source>Create chamfer</source>
-      <translation>Створити фаску</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_offset.py" line="328"/>
-      <source>Offset direction is not defined. Please move the mouse on either side of the object first to indicate a direction</source>
-      <translation>Напрямок зміщення не визначено. Будь ласка, перемістіть курсор миші на обидві сторони об'єкта спочатку для вказівки напрямку</translation>
-    </message>
   </context>
   <context>
     <name>Draft_AddConstruction</name>
@@ -1364,10 +1365,10 @@ from menu Tools -&gt; Addon Manager</source>
       <location filename="../../draftguitools/gui_groups.py" line="310"/>
       <source>Adds the selected objects to the construction group,
 and changes their appearance to the construction style.
-It creates a construction group if it doesn't exist.</source>
-      <translation>Додає вибрані об'єкти до групи будівництва,
-і змінює їх зовнішній вигляд на стиль будівництва.
-Він створює будівельну групу, якщо її не існує.</translation>
+It creates a construction group if it doesn&apos;t exist.</source>
+      <translation type="unfinished">Adds the selected objects to the construction group,
+and changes their appearance to the construction style.
+It creates a construction group if it doesn&apos;t exist.</translation>
     </message>
   </context>
   <context>
@@ -1664,20 +1665,20 @@ CTRL to snap, SHIFT to constrain, ALT to select an edge or arc.
 
 You may select a single line or single circular arc before launching this command
 to create the corresponding linked dimension.
-You may also select an 'App::MeasureDistance' object before launching this command
-to turn it into a 'Draft Dimension' object.</source>
-      <translation>Створює вимір,
+You may also select an &apos;App::MeasureDistance&apos; object before launching this command
+to turn it into a &apos;Draft Dimension&apos; object.</source>
+      <translation type="unfinished">Creates a dimension.
 
-- Вибрати 3 точки, щоб створити простий лінійний вимір.
-- Вибрати пряму лінію для створення лінійного виміру, що пов'язана з цією лінією.
-- Вибрати дугу або коло, щоб створити радіус або розмір діаметру, пов'язаний з цією дугою.
-- Вибрати дві прямі лінії, щоб створити кутовий вимір між ними.
-CTRL для прив'язки, SHIFT до обмеження, ALT для вибору краю або дуги.
+- Pick three points to create a simple linear dimension.
+- Select a straight line to create a linear dimension linked to that line.
+- Select an arc or circle to create a radius or diameter dimension linked to that arc.
+- Select two straight lines to create an angular dimension between them.
+CTRL to snap, SHIFT to constrain, ALT to select an edge or arc.
 
-Ви можете обрати один рядок, або один круговий дуга перед початком цієї команди
-для створення відповідного пов'язаного виміру.
-Ви також можете вибрати об'єкт 'Програма:MeasureDistance' перед запуском цієї команди
-щоб перетворити її в об'єкт 'Встановіть величину креслення'.</translation>
+You may select a single line or single circular arc before launching this command
+to create the corresponding linked dimension.
+You may also select an &apos;App::MeasureDistance&apos; object before launching this command
+to turn it into a &apos;Draft Dimension&apos; object.</translation>
     </message>
   </context>
   <context>
@@ -1779,7 +1780,7 @@ on supported nodes and on supported objects.</source>
     <message>
       <location filename="../../draftguitools/gui_fillets.py" line="64"/>
       <source>Fillet</source>
-      <translation>Заокруглення</translation>
+      <translation>Скруглення</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_fillets.py" line="65"/>
@@ -1913,10 +1914,10 @@ Objects added to this layer can share the same visual properties such as line co
     </message>
     <message>
       <location filename="../../draftguitools/gui_array_simple.py" line="120"/>
-      <source>Like the Array tool, but creates a 'Link array' instead.
-A 'Link array' is more efficient when handling many copies but the 'Fuse' option cannot be used.</source>
-      <translation>Як і інструмент масиву, але натомість створює масив посилань.
-При обробці багатьох копій «посилання більш ефективний, але не вдалося використати параметр «Fuse».</translation>
+      <source>Like the Array tool, but creates a &apos;Link array&apos; instead.
+A &apos;Link array&apos; is more efficient when handling many copies but the &apos;Fuse&apos; option cannot be used.</source>
+      <translation type="unfinished">Like the Array tool, but creates a &apos;Link array&apos; instead.
+A &apos;Link array&apos; is more efficient when handling many copies but the &apos;Fuse&apos; option cannot be used.</translation>
     </message>
   </context>
   <context>
@@ -1942,11 +1943,11 @@ A 'Link array' is more efficient when handling many copies but the 'Fuse' option
     <message>
       <location filename="../../draftguitools/gui_move.py" line="64"/>
       <source>Moves the selected objects from one base point to another point.
-If the "copy" option is active, it will create displaced copies.
+If the &quot;copy&quot; option is active, it will create displaced copies.
 CTRL to snap, SHIFT to constrain.</source>
-      <translation>Переміщує вибрані об'єкти з однієї точки до іншої точки.
-Якщо опція "копіювання" активна, вона створить переміщені копії.
-CTRL для прив'язки, SHIFT для обмеження.</translation>
+      <translation type="unfinished">Moves the selected objects from one base point to another point.
+If the &quot;copy&quot; option is active, it will create displaced copies.
+CTRL to snap, SHIFT to constrain.</translation>
     </message>
   </context>
   <context>
@@ -2011,10 +2012,10 @@ The path can be a polyline, B-spline, Bezier curve, or even edges from other obj
     </message>
     <message>
       <location filename="../../draftguitools/gui_patharray.py" line="164"/>
-      <source>Like the PathArray tool, but creates a 'Link array' instead.
-A 'Link array' is more efficient when handling many copies but the 'Fuse' option cannot be used.</source>
-      <translation>Як і інструмент PathArray (PathArray але замість нього створює масив Link.
-При обробці багатьох копій «посилання більш ефективний, але  параметр «Fuse» недоступний.</translation>
+      <source>Like the PathArray tool, but creates a &apos;Link array&apos; instead.
+A &apos;Link array&apos; is more efficient when handling many copies but the &apos;Fuse&apos; option cannot be used.</source>
+      <translation type="unfinished">Like the PathArray tool, but creates a &apos;Link array&apos; instead.
+A &apos;Link array&apos; is more efficient when handling many copies but the &apos;Fuse&apos; option cannot be used.</translation>
     </message>
   </context>
   <context>
@@ -2043,10 +2044,10 @@ The path can be a polyline, B-spline, Bezier curve, or even edges from other obj
     </message>
     <message>
       <location filename="../../draftguitools/gui_pathtwistedarray.py" line="122"/>
-      <source>Like the PathTwistedArray tool, but creates a 'Link array' instead.
-A 'Link array' is more efficient when handling many copies but the 'Fuse' option cannot be used.</source>
-      <translation>Як і інструмент PathTwistedArray але замість нього створює масив посилань.
-При обробці багатьох копій «посилання більш ефективний, але не вдалося використати параметр «Fuse».</translation>
+      <source>Like the PathTwistedArray tool, but creates a &apos;Link array&apos; instead.
+A &apos;Link array&apos; is more efficient when handling many copies but the &apos;Fuse&apos; option cannot be used.</source>
+      <translation type="unfinished">Like the PathTwistedArray tool, but creates a &apos;Link array&apos; instead.
+A &apos;Link array&apos; is more efficient when handling many copies but the &apos;Fuse&apos; option cannot be used.</translation>
     </message>
   </context>
   <context>
@@ -2075,16 +2076,16 @@ A 'Link array' is more efficient when handling many copies but the 'Fuse' option
 
 The points need to be grouped under a compound of points before using this tool.
 To create this compound, select various points and then use the Part Compound tool,
-or use the Draft Upgrade tool to create a 'Block', or create a Sketch and add simple points to it.
+or use the Draft Upgrade tool to create a &apos;Block&apos;, or create a Sketch and add simple points to it.
 
 Select the base object, and then select the compound or the sketch to create the point array.</source>
-      <translation>Створює копії вибраного об'єкту та розміщує копії на позиції різних точок.
+      <translation type="unfinished">Creates copies of the selected object, and places the copies at the position of various points.
 
-Точки мають бути згруповані під накопиченням точок перед цим інструментом.
-Щоб створити цей компас, виберіть різні точки, а потім скористайтеся інструментом частини - сполученого,
-або скористайтеся інструментом Покращення Draft для створення 'Block', або створення ескізу і додавання простих балів до нього.
+The points need to be grouped under a compound of points before using this tool.
+To create this compound, select various points and then use the Part Compound tool,
+or use the Draft Upgrade tool to create a &apos;Block&apos;, or create a Sketch and add simple points to it.
 
-Виберіть основний об'єкт, а потім виберіть склад або ескіз, щоб створити масив точок.</translation>
+Select the base object, and then select the compound or the sketch to create the point array.</translation>
     </message>
   </context>
   <context>
@@ -2096,10 +2097,10 @@ Select the base object, and then select the compound or the sketch to create the
     </message>
     <message>
       <location filename="../../draftguitools/gui_pointarray.py" line="142"/>
-      <source>Like the PointArray tool, but creates a 'Point link array' instead.
-A 'Point link array' is more efficient when handling many copies.</source>
-      <translation>Як і інструмент PointArray, але замість цього створює 'масив посилань на точки'.
-'Масив посилань на точки' є більш ефективним при обробці багатьох копій.</translation>
+      <source>Like the PointArray tool, but creates a &apos;Point link array&apos; instead.
+A &apos;Point link array&apos; is more efficient when handling many copies.</source>
+      <translation type="unfinished">Like the PointArray tool, but creates a &apos;Point link array&apos; instead.
+A &apos;Point link array&apos; is more efficient when handling many copies.</translation>
     </message>
   </context>
   <context>
@@ -2159,11 +2160,11 @@ CTRL для прив'язки, SHIFT для обмеження</translation>
     <message>
       <location filename="../../draftguitools/gui_rotate.py" line="63"/>
       <source>Rotates the selected objects. Choose the center of rotation, then the initial angle, and then the final angle.
-If the "copy" option is active, it will create rotated copies.
+If the &quot;copy&quot; option is active, it will create rotated copies.
 CTRL to snap, SHIFT to constrain. Hold ALT and click to create a copy with each click.</source>
-      <translation>Обертає позначені об'єкти. Виберіть центр обертання, потім початковий кут, а потім кінцевий кут.
-Якщо опція "копіювання" активна - вона створить обернені копії.
-CTRL для створення знімків, SHIFT для обмеження. Утримуйте ALT та натисніть, щоб створити копію з кожним кліком.</translation>
+      <translation type="unfinished">Rotates the selected objects. Choose the center of rotation, then the initial angle, and then the final angle.
+If the &quot;copy&quot; option is active, it will create rotated copies.
+CTRL to snap, SHIFT to constrain. Hold ALT and click to create a copy with each click.</translation>
     </message>
   </context>
   <context>
@@ -2282,12 +2283,12 @@ The closed shapes can be used for extrusions and boolean operations.</source>
 If a polyline is selected, it will apply the slope transformation to each of its segments.
 
 The slope will always change the Z value, therefore this command only works well for
-straight Draft lines that are drawn in the XY plane. Selected objects that aren't single lines will be ignored.</source>
-      <translation>Встановлює нахил позначеної лінії, змінивши значення Z значення однієї з її точок.
-При виборі полілінії він застосовуватиме нахил трансформацію до кожного з його сегментів.
+straight Draft lines that are drawn in the XY plane. Selected objects that aren&apos;t single lines will be ignored.</source>
+      <translation type="unfinished">Sets the slope of the selected line by changing the value of the Z value of one of its points.
+If a polyline is selected, it will apply the slope transformation to each of its segments.
 
-Нахил завжди змінюватиме значення Z, тому ця команда працює добре на
-прямих рядків креслення, які зображені в площині XY. Вибрані об'єкти, які не є окремими рядками, будуть проігноровані.</translation>
+The slope will always change the Z value, therefore this command only works well for
+straight Draft lines that are drawn in the XY plane. Selected objects that aren&apos;t single lines will be ignored.</translation>
     </message>
   </context>
   <context>
@@ -2483,9 +2484,10 @@ straight Draft lines that are drawn in the XY plane. Selected objects that aren'
       <location filename="../../draftguitools/gui_snaps.py" line="560"/>
       <source>Restricts snapping to a point in the current working plane.
 If you select a point outside the working plane, for example, by using other snapping methods,
-it will snap to that point's projection in the current working plane.</source>
-      <translation>Обмежує прив’язування до точки в поточній робочій площині.
-Якщо ви виберете точку поза робочою площиною, наприклад, за допомогою інших методів прив’язки, він буде прив'язатися до проекції цієї точки в поточній робочій площині.</translation>
+it will snap to that point&apos;s projection in the current working plane.</source>
+      <translation type="unfinished">Restricts snapping to a point in the current working plane.
+If you select a point outside the working plane, for example, by using other snapping methods,
+it will snap to that point&apos;s projection in the current working plane.</translation>
     </message>
   </context>
   <context>
@@ -2589,10 +2591,10 @@ This can be used to draw several objects one after the other in succession.</sou
       <location filename="../../draftguitools/gui_togglemodes.py" line="167"/>
       <source>Switches the display mode of selected objects from flatlines to wireframe and back.
 This is helpful to quickly visualize objects that are hidden by other objects.
-This is intended to be used with closed shapes and solids, and doesn't affect open wires.</source>
-      <translation>Перемикає режим відображення обраних об'єктів від пласкої поверхні на каркас та назад.
-Це корисно для швидкої візуалізації об'єктів, які приховуються іншими об'єктами.
-Він призначений для використання з закритими формами та суцільними тілами і не впливає на відкриті сітки.</translation>
+This is intended to be used with closed shapes and solids, and doesn&apos;t affect open wires.</source>
+      <translation type="unfinished">Switches the display mode of selected objects from flatlines to wireframe and back.
+This is helpful to quickly visualize objects that are hidden by other objects.
+This is intended to be used with closed shapes and solids, and doesn&apos;t affect open wires.</translation>
     </message>
   </context>
   <context>
@@ -2678,11 +2680,11 @@ convert closed edges into filled faces and parametric polygons, and merge faces 
     <message>
       <location filename="../../draftguitools/gui_planeproxy.py" line="51"/>
       <source>Creates a proxy object from the current working plane.
-Once the object is created double click it in the tree view to restore the camera position and objects' visibilities.
-Then you can use it to save a different camera position and objects' states any time you need.</source>
-      <translation>Створює проксі-об'єкт з поточного робочої площини.
-Після створення об'єкта клацніть його двічі на екрані дерева щоб відновити положення камери та об'єктів.
-Потім ви можете використовувати його, щоб зберегти іншу позицію камери і об'єкти в будь-який час, коли вам це потрібно.</translation>
+Once the object is created double click it in the tree view to restore the camera position and objects&apos; visibilities.
+Then you can use it to save a different camera position and objects&apos; states any time you need.</source>
+      <translation type="unfinished">Creates a proxy object from the current working plane.
+Once the object is created double click it in the tree view to restore the camera position and objects&apos; visibilities.
+Then you can use it to save a different camera position and objects&apos; states any time you need.</translation>
     </message>
   </context>
   <context>
@@ -2708,6 +2710,26 @@ Then you can use it to save a different camera position and objects' states any 
   </context>
   <context>
     <name>Workbench</name>
+    <message>
+      <location filename="../../draftguitools/gui_snapper.py" line="1477"/>
+      <source>Draft Snap</source>
+      <translation>Прив'язка креслення</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="50"/>
+      <source>Arc tools</source>
+      <translation>Інструменти дуги</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="58"/>
+      <source>Bézier tools</source>
+      <translation type="unfinished">Bézier tools</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="89"/>
+      <source>Array tools</source>
+      <translation>Інструменти масиву</translation>
+    </message>
     <message>
       <location filename="../../InitGui.py" line="103"/>
       <source>Draft creation tools</source>
@@ -2748,29 +2770,1076 @@ Then you can use it to save a different camera position and objects' states any 
       <source>&amp;Utilities</source>
       <translation>&amp;Утиліти</translation>
     </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="50"/>
-      <source>Arc tools</source>
-      <translation>Інструменти дуги</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="58"/>
-      <source>Bézier tools</source>
-      <translation type="unfinished">Bézier tools</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="89"/>
-      <source>Array tools</source>
-      <translation>Інструменти масиву</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snapper.py" line="1477"/>
-      <source>Draft Snap</source>
-      <translation>Прив'язка креслення</translation>
-    </message>
   </context>
   <context>
     <name>draft</name>
+    <message>
+      <location filename="../../importDXF.py" line="138"/>
+      <source>The DXF import/export libraries needed by FreeCAD to handle
+the DXF format were not found on this system.
+Please either enable FreeCAD to download these libraries:
+  1 - Load Draft workbench
+  2 - Menu Edit &gt; Preferences &gt; Import-Export &gt; DXF &gt; Enable downloads
+Or download these libraries manually, as explained on
+https://github.com/yorikvanhavre/Draft-dxf-importer
+To enabled FreeCAD to download these libraries, answer Yes.</source>
+      <translation>DXF імпорт/експорт бібліотек, необхідних FreeCAD для обробки
+Формат DXF не знайдено в цій системі.
+Будь ласка, або увімкніть FreeCAD, щоб завантажити ці бібліотеки:
+  1 - Завантажити робочий стіл Draft
+  2 - Меню Редагування &gt; Налаштування &gt; Імпорт &gt; DXF &gt; Увімкнути завантаження
+Або завантажити ці бібліотеки вручну, завантажити як описано на
+https://github. om/yorikvanhavre/Draft-dxf-імпортер
+Щоб увімкнути FreeCAD завантажити ці бібліотеки, відповісти на "Так".</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_drawing.py" line="81"/>
+      <source>Select an object to project</source>
+      <translation>Оберіть об'єкт для проектування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_shape2dview.py" line="109"/>
+      <source>Create 2D view</source>
+      <translation>Створити 2D вигляд</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_styles.py" line="75"/>
+      <source>Change Style</source>
+      <translation>Змінити стиль</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_join.py" line="76"/>
+      <source>Select an object to join</source>
+      <translation>Оберіть обʼєкт для зʼєднання</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_join.py" line="99"/>
+      <source>Join lines</source>
+      <translation>Об'єднати рядки</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_join.py" line="110"/>
+      <source>Selection:</source>
+      <translation>Вибір:</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="65"/>
+      <source>Add to group</source>
+      <translation>Додати до групи</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="66"/>
+      <source>Ungroup</source>
+      <translation>Розгрупувати</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="68"/>
+      <source>Add new group</source>
+      <translation>Додати нову групу</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="159"/>
+      <source>Select group</source>
+      <translation>Вибрати групу</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="192"/>
+      <source>No new selection. You must select non-empty groups or objects inside groups.</source>
+      <translation>Немає нового вибору. Ви повинні вибрати не порожні групи або об'єкти всередині груп.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="203"/>
+      <source>Autogroup</source>
+      <translation>Автогрупування</translation>
+    </message>
+    <message>
+      <location filename="../../DraftGui.py" line="2062"/>
+      <source>None</source>
+      <translation>Немає</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="250"/>
+      <source>Add new Layer</source>
+      <translation>Додати новий шар</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="304"/>
+      <source>Add to construction group</source>
+      <translation>Додати до групи конструкцій</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="355"/>
+      <source>Add a new group with a given name</source>
+      <translation>Додати нову групу із заданим ім'ям</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="383"/>
+      <source>Add group</source>
+      <translation>Додати групу</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="385"/>
+      <source>Group name</source>
+      <translation>Назва групи</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_groups.py" line="392"/>
+      <source>Group</source>
+      <translation>Група</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_downgrade.py" line="67"/>
+      <source>Select an object to upgrade</source>
+      <translation>Оберіть об'єкт для покращення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_upgrade.py" line="85"/>
+      <source>Upgrade</source>
+      <translation>Оновити</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_array_simple.py" line="77"/>
+      <source>Select an object to array</source>
+      <translation>Оберіть об'єкт для створення масиву</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_array_simple.py" line="101"/>
+      <source>Array</source>
+      <translation>Масив</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_scale.py" line="87"/>
+      <source>Select an object to scale</source>
+      <translation>Оберіть об'єкт для масштабування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_scale.py" line="108"/>
+      <source>Pick base point</source>
+      <translation>Вкажіть базову точку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_scale.py" line="135"/>
+      <source>Pick reference distance from base point</source>
+      <translation>Вкажіть відносну відстань від базової точки</translation>
+    </message>
+    <message>
+      <location filename="../../DraftGui.py" line="801"/>
+      <source>Copy</source>
+      <translation>Копіювати</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_scale.py" line="357"/>
+      <source>Scale</source>
+      <translation>Масштабування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_scale.py" line="209"/>
+      <source>Some subelements could not be scaled.</source>
+      <translation>Деякі піделементи не можуть масштабуватися.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_scale.py" line="338"/>
+      <source>Unable to scale object:</source>
+      <translation>Неможливо масштабувати об'єкт:</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_scale.py" line="342"/>
+      <source>Unable to scale objects:</source>
+      <translation>Неможливо масштабувати об'єкт:</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_scale.py" line="345"/>
+      <source>This object type cannot be scaled directly. Please use the clone method.</source>
+      <translation>Цей тип об'єкта не можна масштабувати безпосередньо. Будь ласка, використовуйте метод клонування.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_scale.py" line="407"/>
+      <source>Pick new distance from base point</source>
+      <translation>Вкажіть нову відстань від базовоої точки</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_pointarray.py" line="104"/>
+      <source>Please select exactly two objects, the base object and the point object, before calling this command.</source>
+      <translation>Будь ласка, оберіть лише два об’єкти, базовий об'єкт та об'єкт точки перед виконанням цієї команди.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_pointarray.py" line="122"/>
+      <source>Point array</source>
+      <translation>Масив точок</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_labels.py" line="80"/>
+      <source>Pick target point</source>
+      <translation>Вкажіть цільову точку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_labels.py" line="157"/>
+      <source>Create Label</source>
+      <translation>Створити мітку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_labels.py" line="218"/>
+      <source>Pick endpoint of leader line</source>
+      <translation>Вкажіть кінцеву точку виносної лінії </translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_labels.py" line="228"/>
+      <source>Pick text position</source>
+      <translation>Вказати положення тексту</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_move.py" line="81"/>
+      <source>Select an object to move</source>
+      <translation>Оберіть об'єкт для переміщення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_move.py" line="103"/>
+      <source>Pick start point</source>
+      <translation>Вкажіть початкову точку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_move.py" line="308"/>
+      <source>Pick end point</source>
+      <translation>Вкажіть кінцеву точку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_move.py" line="210"/>
+      <source>Move</source>
+      <translation>Переміщення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rotate.py" line="289"/>
+      <source>Some subelements could not be moved.</source>
+      <translation>Деякі піделементи не можуть рухатися.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_draft2sketch.py" line="66"/>
+      <source>Select an object to convert.</source>
+      <translation>Оберіть об'єкт для перетворення.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_draft2sketch.py" line="99"/>
+      <source>Convert to Sketch</source>
+      <translation>Перетворити на ескіз</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_draft2sketch.py" line="114"/>
+      <source>Convert to Draft</source>
+      <translation>Перетворити на чернетки</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_draft2sketch.py" line="143"/>
+      <source>Convert Draft/Sketch</source>
+      <translation>Перетворення Чернетки/ескіз</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_layer.py" line="160"/>
+      <source>Layer</source>
+      <translation>Шар</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_edit_sketcher_objects.py" line="61"/>
+      <source>Sketch is too complex to edit: it is suggested to use sketcher default editor</source>
+      <translation>Ескіз занадто складний для редагування: рекомендується використовувати редактор ескізів за замовчуванням</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_shapestrings.py" line="98"/>
+      <source>Pick ShapeString location point</source>
+      <translation>Вкажіть точку розташування ShapeString</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_shapestring.py" line="176"/>
+      <source>Create ShapeString</source>
+      <translation>Створити ShapeString</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_beziers.py" line="331"/>
+      <source>Bézier curve has been closed</source>
+      <translation type="unfinished">Bézier curve has been closed</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_splines.py" line="131"/>
+      <source>Last point has been removed</source>
+      <translation>Останню точку було видалено</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_splines.py" line="140"/>
+      <source>Pick next point</source>
+      <translation>Вкажіть наступну точку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_splines.py" line="145"/>
+      <source>Pick next point, or finish (A) or close (O)</source>
+      <translation>Виберіть наступну точку або завершити (А) або закрити (O)</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_beziers.py" line="451"/>
+      <source>Create BezCurve</source>
+      <translation>Створити криву Безьє</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_beziers.py" line="376"/>
+      <source>Click and drag to define next knot</source>
+      <translation>Клацніть та перетягніть, щоб визначити наступне вузол</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_beziers.py" line="380"/>
+      <source>Click and drag to define next knot, or finish (A) or close (O)</source>
+      <translation>Клік та перетягніть, щоб визначити наступне кно, або завершити (А) або закрити (O)</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_dimension_ops.py" line="55"/>
+      <source>Flip dimension</source>
+      <translation>Перевернути розмірність</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_subelements.py" line="108"/>
+      <source>Select an object to edit</source>
+      <translation>Оберіть обʼєкт для редагування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="88"/>
+      <source>Pick center point</source>
+      <translation>Вкажіть точку центру</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="410"/>
+      <source>Pick radius</source>
+      <translation>Вибрати радіус</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_polygons.py" line="224"/>
+      <source>Create Polygon (Part)</source>
+      <translation>Створити багатокутник (Частина)</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_polygons.py" line="243"/>
+      <source>Create Polygon</source>
+      <translation>Створити новий полігон</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_points.py" line="147"/>
+      <source>Create Point</source>
+      <translation>Створити точку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rectangles.py" line="69"/>
+      <source>Pick first point</source>
+      <translation>Вкажіть першу точку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_dimensions.py" line="294"/>
+      <source>Create Dimension</source>
+      <translation>Створити розмір</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_dimensions.py" line="309"/>
+      <source>Create Dimension (radial)</source>
+      <translation>Створити розмірність (радіал)</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_dimensions.py" line="508"/>
+      <source>Edge too short!</source>
+      <translation>Ребро занадто коротке!</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_dimensions.py" line="518"/>
+      <source>Edges don&apos;t intersect!</source>
+      <translation type="unfinished">Edges don&apos;t intersect!</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_facebinders.py" line="71"/>
+      <source>Select faces from existing objects</source>
+      <translation>Оберіть грані серед наявних об'єктів</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_pathtwistedarray.py" line="79"/>
+      <source>Please select exactly two objects, the base object and the path object, before calling this command.</source>
+      <translation>Будь ласка, виберіть саме два об’єкти, основний об'єкт і шлях до запуску цієї команди.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_patharray.py" line="143"/>
+      <source>Path array</source>
+      <translation>Шлях масиву</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_texts.py" line="77"/>
+      <source>Pick location point</source>
+      <translation>Вкажіть точку розташування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_texts.py" line="121"/>
+      <source>Create Text</source>
+      <translation>Створити текст</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_ellipses.py" line="138"/>
+      <source>Create Ellipse</source>
+      <translation>Створити еліпс</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rectangles.py" line="202"/>
+      <source>Pick opposite point</source>
+      <translation>Вкажіть протилежну точку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="94"/>
+      <source>Select objects to trim or extend</source>
+      <translation>Оберіть об'єкти, щоб обрізати або розширити</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_offset.py" line="143"/>
+      <source>Pick distance</source>
+      <translation>Вибрати відстань</translation>
+    </message>
+    <message>
+      <location filename="../../DraftGui.py" line="1100"/>
+      <source>Distance</source>
+      <translation>Відстань</translation>
+    </message>
+    <message>
+      <location filename="../../DraftGui.py" line="1101"/>
+      <source>Offset distance</source>
+      <translation>Відстань зміщення</translation>
+    </message>
+    <message>
+      <location filename="../../DraftGui.py" line="741"/>
+      <source>Angle</source>
+      <translation>Кут</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="221"/>
+      <source>Offset angle</source>
+      <translation>Кут зміщення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="481"/>
+      <source>Unable to trim these objects, only Draft wires and arcs are supported.</source>
+      <translation>Підрізати можливо лише каркаси креслення та дуги.
+</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="486"/>
+      <source>Unable to trim these objects, too many wires</source>
+      <translation>Неможливо обрізати ці об'єкти, занадто багато ліній</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="505"/>
+      <source>These objects don&apos;t intersect.</source>
+      <translation type="unfinished">These objects don&apos;t intersect.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_trimex.py" line="508"/>
+      <source>Too many intersection points.</source>
+      <translation>Забагато точок перетину.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_stretch.py" line="75"/>
+      <source>Select an object to stretch</source>
+      <translation>Оберіть об'єкт для розтягування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_stretch.py" line="127"/>
+      <source>Pick first point of selection rectangle</source>
+      <translation>Вкажіть першу точку прямокутника вибору</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_stretch.py" line="163"/>
+      <source>Pick opposite point of selection rectangle</source>
+      <translation>Вкажіть протилежну точку прямокутника вибору</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_stretch.py" line="173"/>
+      <source>Pick start point of displacement</source>
+      <translation>Вкажіть початкову точку зміщення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_stretch.py" line="236"/>
+      <source>Pick end point of displacement</source>
+      <translation>Вкажіть кінцеву точку зміщення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_stretch.py" line="448"/>
+      <source>Turning one Rectangle into a Wire</source>
+      <translation>Перетворення  одного Прямокутника в Сітку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_stretch.py" line="477"/>
+      <source>Stretch</source>
+      <translation>Розтягнути</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_clone.py" line="79"/>
+      <source>Select an object to clone</source>
+      <translation>Оберіть об'єкт для клонування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_lineslope.py" line="64"/>
+      <source>Change slope</source>
+      <translation>Змінити нахил</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_heal.py" line="51"/>
+      <source>Heal</source>
+      <translation>Зцілення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_lines.py" line="163"/>
+      <source>Create Line</source>
+      <translation>Створити лінію</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_lines.py" line="185"/>
+      <source>Create Wire</source>
+      <translation>Створити каркас</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_lines.py" line="328"/>
+      <source>Unable to create a Wire from selected objects</source>
+      <translation>Не вдалося створити Сітку із вибраних об'єктів</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_lines.py" line="351"/>
+      <source>Convert to Wire</source>
+      <translation>Конвертувати в Сітку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_togglemodes.py" line="73"/>
+      <source>No active Draft Toolbar.</source>
+      <translation>Не активний інструмент креслення.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_togglemodes.py" line="93"/>
+      <source>Construction mode</source>
+      <translation>Режим Будівництва</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_togglemodes.py" line="125"/>
+      <source>Continue mode</source>
+      <translation>Режим Продовження</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_togglemodes.py" line="159"/>
+      <source>Toggle display mode</source>
+      <translation>Перемкнути режим відображення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_edit.py" line="303"/>
+      <source>Select a Draft object to edit</source>
+      <translation>Оберіть креслення для редагування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_edit.py" line="557"/>
+      <source>No edit point found for selected object</source>
+      <translation>Не знайдено точки редагування для вибраного об'єкту</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_edit.py" line="810"/>
+      <source>Too many objects selected, max number set to:</source>
+      <translation>Забагато об'єктів обрано. Максимальне число встановлено на:</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_edit.py" line="818"/>
+      <source>: this object is not editable</source>
+      <translation>: цей об'єкт не редагується</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rectangles.py" line="125"/>
+      <source>Create Plane</source>
+      <translation>Створити площину</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rectangles.py" line="142"/>
+      <source>Create Rectangle</source>
+      <translation>Створити прямокутник</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_mirror.py" line="73"/>
+      <source>Select an object to mirror</source>
+      <translation>Оберіть об'єкт для створення дзеркального зображення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_mirror.py" line="92"/>
+      <source>Pick start point of mirror line</source>
+      <translation>Вкажіть початкову точку лінії віддзеркалення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_mirror.py" line="122"/>
+      <source>Mirror</source>
+      <translation>Віддзеркалити</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_mirror.py" line="203"/>
+      <source>Pick end point of mirror line</source>
+      <translation>Вкажіть кінцеву точку лінії віддзеркалення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_downgrade.py" line="85"/>
+      <source>Downgrade</source>
+      <translation>Зниження</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_drawing.py" line="77"/>
+      <source>The Drawing Workbench is obsolete since 0.17, consider using the TechDraw Workbench instead.</source>
+      <translation>Малювання Workbench є застарілим з 0.17, натомість розгляньте можливість використання Workbench TechDraw</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="447"/>
+      <source>Start angle</source>
+      <translation>Початковий кут:</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="452"/>
+      <source>Pick start angle</source>
+      <translation>Вибрати початковий кут</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="455"/>
+      <source>Aperture angle</source>
+      <translation>Кут щілини</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="291"/>
+      <source>Pick aperture</source>
+      <translation>Обрати шпарину</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="317"/>
+      <source>Create Circle (Part)</source>
+      <translation>Створити коло (частина)</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="335"/>
+      <source>Create Circle</source>
+      <translation>Створити коло</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="369"/>
+      <source>Create Arc (Part)</source>
+      <translation>Створити дугу (частина)</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="389"/>
+      <source>Create Arc</source>
+      <translation>Створити дугу</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="466"/>
+      <source>Pick aperture angle</source>
+      <translation>Виберіть кут апертури</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_arcs.py" line="551"/>
+      <source>Arc by 3 points</source>
+      <translation>Дуга за 3 точками</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snapper.py" line="1543"/>
+      <source>(ON)</source>
+      <translation>Вкл</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snapper.py" line="1546"/>
+      <source>(OFF)</source>
+      <translation>Викл</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_annotationstyleeditor.py" line="68"/>
+      <source>Annotation style editor</source>
+      <translation>Редактор стилів анотацій</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_annotationstyleeditor.py" line="288"/>
+      <source>Open styles file</source>
+      <translation>Відкрити файл стилів</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_annotationstyleeditor.py" line="310"/>
+      <source>JSON file (*.json)</source>
+      <translation>JSON файл (*.json)</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_annotationstyleeditor.py" line="310"/>
+      <source>Save styles file</source>
+      <translation>Зберегти файл стилів</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rotate.py" line="79"/>
+      <source>Select an object to rotate</source>
+      <translation>Оберіть об'єкт для обертання</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rotate.py" line="99"/>
+      <source>Pick rotation center</source>
+      <translation>Вибрати центр обертання</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rotate.py" line="396"/>
+      <source>Base angle</source>
+      <translation>Базовий кут</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rotate.py" line="397"/>
+      <source>The base angle you wish to start the rotation from</source>
+      <translation>Базовий кут, з якого ви хочете розпочати обертання</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rotate.py" line="400"/>
+      <source>Pick base angle</source>
+      <translation>Оберіть базовий кут</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rotate.py" line="409"/>
+      <source>Rotation</source>
+      <translation>Поворот</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rotate.py" line="410"/>
+      <source>The amount of rotation you wish to perform.
+The final angle will be the base angle plus this amount.</source>
+      <translation>Кількість обертання, яке бажаєте виконати.
+Остаточний кут буде базовим кутом плюс це сума.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_rotate.py" line="418"/>
+      <source>Pick rotation angle</source>
+      <translation>Кут повороту</translation>
+    </message>
+    <message>
+      <location filename="../../DraftGui.py" line="986"/>
+      <source>Rotate</source>
+      <translation>Обертання</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="126"/>
+      <source>Main toggle snap</source>
+      <translation>Основний перемикач прив'язки</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="157"/>
+      <source>Midpoint snap</source>
+      <translation>середина при'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="187"/>
+      <source>Perpendicular snap</source>
+      <translation>Перпендикулярне прив'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="217"/>
+      <source>Grid snap</source>
+      <translation>Прив'язка до сітки</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="247"/>
+      <source>Intersection snap</source>
+      <translation>Прив'язування перетину</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="277"/>
+      <source>Parallel snap</source>
+      <translation>Паралельне прив'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="307"/>
+      <source>Endpoint snap</source>
+      <translation>Кінцеве прив'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="338"/>
+      <source>Angle snap (30 and 45 degrees)</source>
+      <translation>Кути прив'язування (30 і 45 градусів)</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="368"/>
+      <source>Arc center snap</source>
+      <translation>Центр дуги прив'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="398"/>
+      <source>Edge extension snap</source>
+      <translation>Ребро розширення прив'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="428"/>
+      <source>Near snap</source>
+      <translation>близьке прив'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="459"/>
+      <source>Orthogonal snap</source>
+      <translation>Ортогональне прив'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="489"/>
+      <source>Special point snap</source>
+      <translation>Спеціальна точка прив'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="520"/>
+      <source>Dimension display</source>
+      <translation>Відображення розмірів</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="553"/>
+      <source>Working plane snap</source>
+      <translation>Робоча плода прив'язування</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_snaps.py" line="583"/>
+      <source>Show snap toolbar</source>
+      <translation>Показувати панель інструментів прив'язки</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_selectplane.py" line="145"/>
+      <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
+      <translation>Виберіть поверхню, 3 вершини або WP проксі для визначення рисуючої площини</translation>
+    </message>
+    <message>
+      <location filename="../../DraftGui.py" line="836"/>
+      <source>Current working plane</source>
+      <translation>Поточна робоча площина</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_selectplane.py" line="270"/>
+      <source>Working plane aligned to global placement of</source>
+      <translation>Робоча площина вирівнений до глобального розташування</translation>
+    </message>
+    <message>
+      <location filename="../../WorkingPlane.py" line="821"/>
+      <source>Top</source>
+      <translation>Згори</translation>
+    </message>
+    <message>
+      <location filename="../../WorkingPlane.py" line="832"/>
+      <source>Front</source>
+      <translation>Фронт</translation>
+    </message>
+    <message>
+      <location filename="../../WorkingPlane.py" line="843"/>
+      <source>Side</source>
+      <translation>Сторона</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_selectplane.py" line="520"/>
+      <source>Dir</source>
+      <translation>Директорія</translation>
+    </message>
+    <message>
+      <location filename="../../DraftGui.py" line="1036"/>
+      <source>Offset</source>
+      <translation>Зміщення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_selectplane.py" line="536"/>
+      <source>Custom</source>
+      <translation>Підлаштувати</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_offset.py" line="76"/>
+      <source>Select an object to offset</source>
+      <translation>Оберіть об'єкт для зміщення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_offset.py" line="81"/>
+      <source>Offset only works on one object at a time.</source>
+      <translation>Зміщення працює лише на одному об'єкті одночасно.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_offset.py" line="92"/>
+      <source>Cannot offset this object type</source>
+      <translation>Неможливо змістити цей тип об'єкта</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_offset.py" line="122"/>
+      <source>Offset of Bezier curves is currently not supported</source>
+      <translation>Зміщення кривих Безьє в даний час не підтримується</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_splines.py" line="119"/>
+      <source>Spline has been closed</source>
+      <translation>Сплайн було замкнено</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_splines.py" line="183"/>
+      <source>Create B-spline</source>
+      <translation>Створити B-сплайн</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_edit_draft_objects.py" line="567"/>
+      <source>This object does not support possible coincident points, please try again.</source>
+      <translation>Цей об'єкт не підтримує можливі випадкові точки, будь ласка, спробуйте ще раз.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_edit_draft_objects.py" line="607"/>
+      <source>Active object must have more than two points/nodes</source>
+      <translation>Активний об'єкт повинен мати більше двох точок/вузлів</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_edit_draft_objects.py" line="720"/>
+      <source>Selection is not a Knot</source>
+      <translation>Виділений елемент не є вузлом</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_edit_draft_objects.py" line="747"/>
+      <source>Endpoint of BezCurve can&apos;t be smoothed</source>
+      <translation type="unfinished">Endpoint of BezCurve can&apos;t be smoothed</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_grid.py" line="51"/>
+      <source>Toggle grid</source>
+      <translation>Показати або приховати сітку</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="75"/>
+      <source>Fillet radius</source>
+      <translation>Скруглення радіус</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="76"/>
+      <source>Radius of fillet</source>
+      <translation>Радіус скруглення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="112"/>
+      <source>Enter radius.</source>
+      <translation>Введіть радіус.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="131"/>
+      <source>Delete original objects:</source>
+      <translation>Видалити оригінальні об’єкти:</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="136"/>
+      <source>Chamfer mode:</source>
+      <translation>Режим Фаски:</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="153"/>
+      <source>Two elements needed.</source>
+      <translation>Потрібно два елемента.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="159"/>
+      <source>Test object</source>
+      <translation>Тестовий об'єкт</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="160"/>
+      <source>Test object removed</source>
+      <translation>Тестовий об'єкт видалено</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="161"/>
+      <source>Fillet cannot be created</source>
+      <translation>Скруглення не може бути створено</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_fillets.py" line="193"/>
+      <source>Create fillet</source>
+      <translation>Створити заокруглення</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_pathtwistedarray.py" line="101"/>
+      <source>Path twisted array</source>
+      <translation>Траєкторія скручування масиву</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_split.py" line="64"/>
+      <source>Click anywhere on a line to split it.</source>
+      <translation>Клацніть будь-де на лінії, щоб розділити її.</translation>
+    </message>
+    <message>
+      <location filename="../../draftguitools/gui_split.py" line="106"/>
+      <source>Split line</source>
+      <translation>Розділити лінію</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/shapestring.py" line="69"/>
+      <source>ShapeString: string has no wires</source>
+      <translation>ShapeString: рядок не має каркасів</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/pointarray.py" line="161"/>
+      <source>added property &apos;ExtraPlacement&apos;</source>
+      <translation type="unfinished">added property &apos;ExtraPlacement&apos;</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/draft_annotation.py" line="105"/>
+      <source>added view property &apos;ScaleMultiplier&apos;</source>
+      <translation type="unfinished">added view property &apos;ScaleMultiplier&apos;</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/draft_annotation.py" line="130"/>
+      <source>migrated &apos;DraftText&apos; type to &apos;Text&apos;</source>
+      <translation type="unfinished">migrated &apos;DraftText&apos; type to &apos;Text&apos;</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="283"/>
+      <source>, path object doesn&apos;t have &apos;Edges&apos;.</source>
+      <translation type="unfinished">, path object doesn&apos;t have &apos;Edges&apos;.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="407"/>
+      <source>&apos;PathObj&apos; property will be migrated to &apos;PathObject&apos;</source>
+      <translation type="unfinished">&apos;PathObj&apos; property will be migrated to &apos;PathObject&apos;</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="525"/>
+      <source>Cannot calculate path tangent. Copy not aligned.</source>
+      <translation>Не вдалося обчислити дотичний контур. Копія не вирівнюється.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="541"/>
+      <source>Tangent and normal are parallel. Copy not aligned.</source>
+      <translation>Дотична і нормаль паралельні. Копія не вирівняна.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="558"/>
+      <source>Cannot calculate path normal, using default.</source>
+      <translation>Неможливо обчислити шлях нормалі, за замовчуванням.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="565"/>
+      <source>Cannot calculate path binormal. Copy not aligned.</source>
+      <translation>Не вдалося обчислити бінарний шлях. Копія не вирівнюється.</translation>
+    </message>
+    <message>
+      <location filename="../../draftobjects/patharray.py" line="571"/>
+      <source>AlignMode {} is not implemented</source>
+      <translation>AlignMode {} не реалізовано</translation>
+    </message>
+    <message>
+      <location filename="../../importDWG.py" line="281"/>
+      <source>LibreDWG error</source>
+      <translation>Помилка LibreDWG</translation>
+    </message>
+    <message>
+      <location filename="../../importDWG.py" line="290"/>
+      <source>Converting:</source>
+      <translation>Перетворення:</translation>
+    </message>
+    <message>
+      <location filename="../../importDWG.py" line="223"/>
+      <source>Conversion successful</source>
+      <translation>Перетворення виконано успішно</translation>
+    </message>
+    <message>
+      <location filename="../../importDWG.py" line="226"/>
+      <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
+      <translation>Помилка при перетворенні DWG. Спробуйте перемістити DWG файл в шлях до каталогу без пробілів і неанглійських символів, або спробуйте зберегти до більш низької версії DWG.</translation>
+    </message>
+    <message>
+      <location filename="../../importDWG.py" line="296"/>
+      <source>ODA File Converter not found</source>
+      <translation>Конвертер файлу ODA не знайдено</translation>
+    </message>
+    <message>
+      <location filename="../../importDWG.py" line="306"/>
+      <source>QCAD error</source>
+      <translation>Помилка QCAD</translation>
+    </message>
     <message>
       <location filename="../../DraftGui.py" line="750"/>
       <source>Relative</source>
@@ -2790,11 +3859,6 @@ Then you can use it to save a different camera position and objects' states any 
       <location filename="../../DraftGui.py" line="790"/>
       <source>Close</source>
       <translation>Закрити</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="283"/>
-      <source>Copy</source>
-      <translation>Копіювати</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="81"/>
@@ -2882,29 +3946,9 @@ Then you can use it to save a different camera position and objects' states any 
       <translation>Панель команд креслення</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_selectplane.py" line="371"/>
-      <source>Top</source>
-      <translation>Згори</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_selectplane.py" line="383"/>
-      <source>Front</source>
-      <translation>Фронт</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_selectplane.py" line="395"/>
-      <source>Side</source>
-      <translation>Сторона</translation>
-    </message>
-    <message>
       <location filename="../../DraftGui.py" line="665"/>
       <source>Auto</source>
       <translation>Автоматично</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="243"/>
-      <source>None</source>
-      <translation>Немає</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="728"/>
@@ -2962,11 +4006,6 @@ Then you can use it to save a different camera position and objects' states any 
       <translation>Довжина</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="220"/>
-      <source>Angle</source>
-      <translation>Кут</translation>
-    </message>
-    <message>
       <location filename="../../DraftGui.py" line="742"/>
       <source>Length of current segment</source>
       <translation>Довжина поточного сегменту</translation>
@@ -3013,9 +4052,9 @@ Uncheck to use working plane coordinate system</source>
     <message>
       <location filename="../../DraftGui.py" line="762"/>
       <source>Check this if the object should appear as filled, otherwise it will appear as wireframe.
-Not available if Draft preference option 'Use Part Primitives' is enabled</source>
-      <translation>Поставте прапорець, якщо об’єкт має виглядати заповненим, інакше він відображатиметься як каркас.
-Недоступно, якщо увімкнено параметр «Використовувати примітивні елементи чернетки» в налаштуваннях Чернетки.</translation>
+Not available if Draft preference option &apos;Use Part Primitives&apos; is enabled</source>
+      <translation type="unfinished">Check this if the object should appear as filled, otherwise it will appear as wireframe.
+Not available if Draft preference option &apos;Use Part Primitives&apos; is enabled</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="766"/>
@@ -3145,17 +4184,12 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
     <message>
       <location filename="../../DraftGui.py" line="813"/>
       <source>Create text</source>
-      <translation>Створити текст</translation>
+      <translation>Створення тексту</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="814"/>
       <source>Press this button to create the text object, or finish your text with two blank lines</source>
       <translation>Натисніть цю кнопку, щоб створити текстовий об’єкт, або закінчити текст двома пустими рядками</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_selectplane.py" line="537"/>
-      <source>Current working plane</source>
-      <translation>Поточна робоча площина</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="837"/>
@@ -3180,7 +4214,7 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
     <message>
       <location filename="../../DraftGui.py" line="958"/>
       <source>DWire</source>
-      <translation>DWire</translation>
+      <translation type="unfinished">DWire</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="976"/>
@@ -3193,11 +4227,6 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
       <translation>Дуга</translation>
     </message>
     <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="286"/>
-      <source>Rotate</source>
-      <translation>Обертання</translation>
-    </message>
-    <message>
       <location filename="../../DraftGui.py" line="990"/>
       <source>Point</source>
       <translation>Точка</translation>
@@ -3206,21 +4235,6 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
       <location filename="../../DraftGui.py" line="1018"/>
       <source>Label</source>
       <translation>Позначка</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_offset.py" line="324"/>
-      <source>Offset</source>
-      <translation>Зміщення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="215"/>
-      <source>Distance</source>
-      <translation>Відстань</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="216"/>
-      <source>Offset distance</source>
-      <translation>Відстань зміщення</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="1097"/>
@@ -3330,7 +4344,7 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
     <message>
       <location filename="../../DraftGui.py" line="2394"/>
       <source>Faces</source>
-      <translation>Грані</translation>
+      <translation>Поверхні</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="2395"/>
@@ -3348,49 +4362,244 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
       <translation>Елементи поверхонь</translation>
     </message>
     <message>
-      <location filename="../../importDWG.py" line="281"/>
-      <source>LibreDWG error</source>
-      <translation>Помилка LibreDWG</translation>
+      <location filename="../../draftutils/utils.py" line="650"/>
+      <source>Solids:</source>
+      <translation>Суцільні тіла:</translation>
     </message>
     <message>
-      <location filename="../../importDWG.py" line="290"/>
-      <source>Converting:</source>
-      <translation>Перетворення:</translation>
+      <location filename="../../draftutils/utils.py" line="651"/>
+      <source>Faces:</source>
+      <translation>Грані:</translation>
     </message>
     <message>
-      <location filename="../../importDWG.py" line="223"/>
-      <source>Conversion successful</source>
-      <translation>Перетворення виконано успішно</translation>
+      <location filename="../../draftutils/utils.py" line="652"/>
+      <source>Wires:</source>
+      <translation>Каркас:</translation>
     </message>
     <message>
-      <location filename="../../importDWG.py" line="226"/>
-      <source>Error during DWG conversion. Try moving the DWG file to a directory path without spaces and non-english characters, or try saving to a lower DWG version.</source>
-      <translation>Помилка при перетворенні DWG. Спробуйте перемістити DWG файл в шлях до каталогу без пробілів і неанглійських символів, або спробуйте зберегти до більш низької версії DWG.</translation>
+      <location filename="../../draftutils/utils.py" line="653"/>
+      <source>Edges:</source>
+      <translation>Ребра:</translation>
     </message>
     <message>
-      <location filename="../../importDWG.py" line="296"/>
-      <source>ODA File Converter not found</source>
-      <translation>Конвертер файлу ODA не знайдено</translation>
+      <location filename="../../draftutils/utils.py" line="654"/>
+      <source>Vertices:</source>
+      <translation>Вершини:</translation>
     </message>
     <message>
-      <location filename="../../importDWG.py" line="306"/>
-      <source>QCAD error</source>
-      <translation>Помилка QCAD</translation>
+      <location filename="../../draftutils/utils.py" line="658"/>
+      <source>Face</source>
+      <translation>Грань</translation>
     </message>
     <message>
-      <location filename="../../draftmake/make_sketch.py" line="138"/>
-      <source>All Shapes must be coplanar</source>
-      <translation>Усі Фігури мають бути компланарними</translation>
+      <location filename="../../draftutils/utils.py" line="663"/>
+      <source>Wire</source>
+      <translation>Каркас</translation>
     </message>
     <message>
-      <location filename="../../WorkingPlane.py" line="720"/>
-      <source>Selected Shapes must define a plane</source>
-      <translation>Обрані форми повинні визначити площину</translation>
+      <location filename="../../draftutils/utils.py" line="697"/>
+      <source>different types</source>
+      <translation>різні типи</translation>
     </message>
     <message>
-      <location filename="../../draftutils/gui_utils.py" line="720"/>
+      <location filename="../../draftutils/utils.py" line="707"/>
+      <source>Objects have different placements. Distance between the two base points: </source>
+      <translation>Об'єкти мають різні розташування. Відстань між двома базовими точками: </translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/utils.py" line="712"/>
+      <source>has a different value</source>
+      <translation>має інше значення</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/utils.py" line="714"/>
+      <source>doesn&apos;t exist in one of the objects</source>
+      <translation type="unfinished">doesn&apos;t exist in one of the objects</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/utils.py" line="827"/>
+      <source>%s shares a base with %d other objects. Please check if you want to modify this.</source>
+      <translation>%s поділяє базу з %d іншими об’єктами. Будь ласка, перевірте, чи ви хочете це змінити.</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/utils.py" line="833"/>
+      <source>%s cannot be modified because its placement is readonly.</source>
+      <translation>%s не можна змінювати, оскільки його розміщення тільки для читання.</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/utils.py" line="977"/>
+      <source>Wrong input: unknown document.</source>
+      <translation>Неправильне введення: невідомий документ.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_layer.py" line="149"/>
       <source>No active document. Aborting.</source>
       <translation>Немає активного документа. Відмінити.</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/utils.py" line="1054"/>
+      <source>This function will be deprecated in </source>
+      <translation>Ця функція буде застаріла в </translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/utils.py" line="1058"/>
+      <source>Please use </source>
+      <translation>Будь ласка, використовуйте </translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/utils.py" line="1058"/>
+      <source>This function will be deprecated. </source>
+      <translation>Ця функція буде застаріла. </translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_draft_statusbar.py" line="153"/>
+      <source>custom</source>
+      <translation>На замовлення</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_draft_statusbar.py" line="138"/>
+      <source>Unable to convert input into a  scale factor</source>
+      <translation>Неможливо перетворити вхідні дані в коефіцієнт масштабування</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_draft_statusbar.py" line="154"/>
+      <source>Set custom scale</source>
+      <translation>Встановити довільний масштаб</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_draft_statusbar.py" line="155"/>
+      <source>Set custom annotation scale in format x:x, x=x</source>
+      <translation>Встановити спеціальний масштаб анотації у форматі x:x, x=x</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_draft_statusbar.py" line="213"/>
+      <source>Set the scale used by draft annotation tools</source>
+      <translation>Встановіть масштаб, який використовується в проекті анотації</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="169"/>
+      <source>Snap Lock</source>
+      <translation>Прив'язування встановити</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="170"/>
+      <source>Snap Endpoint</source>
+      <translation>Прив'язка кінцевої точки</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="171"/>
+      <source>Snap Midpoint</source>
+      <translation>Прив'язка середньої точки</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="172"/>
+      <source>Snap Center</source>
+      <translation>Прив'язка центру</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="173"/>
+      <source>Snap Angle</source>
+      <translation>Кут прив'язки:</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="174"/>
+      <source>Snap Intersection</source>
+      <translation>Перетин прив'язки</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="175"/>
+      <source>Snap Perpendicular</source>
+      <translation>Прив'язка перпендикулярна</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="176"/>
+      <source>Snap Extension</source>
+      <translation>Розширення прив'язки</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="177"/>
+      <source>Snap Parallel</source>
+      <translation>Паралельна прив’язка</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="178"/>
+      <source>Snap Special</source>
+      <translation>Особливі прив'язки</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="179"/>
+      <source>Snap Near</source>
+      <translation>Прив'язка поруч</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="180"/>
+      <source>Snap Ortho</source>
+      <translation>Притягування перпендикулярних</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="181"/>
+      <source>Snap Grid</source>
+      <translation>Прив'язка до сітки</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="182"/>
+      <source>Snap WorkingPlane</source>
+      <translation>Прив'язувати робочу площину</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="183"/>
+      <source>Snap Dimensions</source>
+      <translation>Прив'язка розмірів</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/init_tools.py" line="184"/>
+      <source>Toggle Draft Grid</source>
+      <translation>Увімкнути / вимкнути сітку чернетки</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_dimension.py" line="447"/>
+      <source>Wrong input: object not in document.</source>
+      <translation>Неправильне введення: об'єкт не в документі.</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/gui_utils.py" line="81"/>
+      <source>No graphical interface</source>
+      <translation>Немає графічного інтерфейсу</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/gui_utils.py" line="158"/>
+      <source>Unable to insert new object into a scaled part</source>
+      <translation>Не вдалося вставити новий об'єкт в масштабовану частину</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/gui_utils.py" line="267"/>
+      <source>Symbol not implemented. Using a default symbol.</source>
+      <translation>Символ не реалізується. Використання символу за замовчуванням.</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/gui_utils.py" line="333"/>
+      <source>Visibility off; removed from list: </source>
+      <translation>Видимість вимкнуто; видалено зі списку: </translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/gui_utils.py" line="603"/>
+      <source>image is Null</source>
+      <translation>зображення невидиме</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/gui_utils.py" line="606"/>
+      <source>filename does not exist on the system or in the resource file</source>
+      <translation>ім'я файлу не існує в системі або у файлі ресурсу</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/gui_utils.py" line="668"/>
+      <source>unable to load texture</source>
+      <translation>неможливо завантажити текстуру</translation>
+    </message>
+    <message>
+      <location filename="../../draftutils/gui_utils.py" line="738"/>
+      <source>Does not have &apos;ViewObject.RootNode&apos;.</source>
+      <translation type="unfinished">Does not have &apos;ViewObject.RootNode&apos;.</translation>
     </message>
     <message>
       <location filename="../../draftfunctions/upgrade.py" line="151"/>
@@ -3548,17 +4757,252 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
       <translation>Більше неможливе зниження рівня</translation>
     </message>
     <message>
-      <location filename="../../draftutils/gui_utils.py" line="729"/>
-      <source>Wrong input: object not in document.</source>
-      <translation>Неправильне введення: об'єкт не в документі.</translation>
+      <location filename="../../InitGui.py" line="45"/>
+      <source>Draft</source>
+      <translation>Креслення</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_sketch.py" line="138"/>
+      <source>All Shapes must be coplanar</source>
+      <translation>Усі Фігури мають бути компланарними</translation>
+    </message>
+    <message>
+      <location filename="../../WorkingPlane.py" line="720"/>
+      <source>Selected Shapes must define a plane</source>
+      <translation>Обрані форми повинні визначити площину</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_layer.py" line="360"/>
+      <source>Activate this layer</source>
+      <translation>Активувати цей шар</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_layer.py" line="366"/>
+      <source>Select layer contents</source>
+      <translation>Оберіть вміст шару</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_layer.py" line="421"/>
+      <source>Merge layer duplicates</source>
+      <translation>Об'єднати дублікати шарів</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_layer.py" line="469"/>
+      <source>Add new layer</source>
+      <translation>Додати новий шар</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_layer.py" line="453"/>
+      <source>Relabeling layer:</source>
+      <translation>Перемаркування шару:</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_layer.py" line="458"/>
+      <source>Merging layer:</source>
+      <translation>Об'єднання шару:</translation>
+    </message>
+    <message>
+      <location filename="../../draftviewproviders/view_base.py" line="401"/>
+      <source>Please load the Draft Workbench to enable editing this object</source>
+      <translation>Будь ласка, завантажте робочий стіл Draft щоб увімкнути редагування цього об'єкту</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_shapestring.py" line="56"/>
+      <source>ShapeString</source>
+      <translation>РядФорми</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_shapestring.py" line="69"/>
+      <source>Default</source>
+      <translation>За замовчуванням</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="83"/>
+      <source>Task panel:</source>
+      <translation>Панель завдань:</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_circulararray.py" line="122"/>
+      <source>Circular array</source>
+      <translation>Круговий масив</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="187"/>
+      <source>At least one element must be selected.</source>
+      <translation>Потрібно вибрати хоча б один елемент.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_circulararray.py" line="212"/>
+      <source>Number of layers must be at least 2.</source>
+      <translation>Кількість шарів має бути не менше 2.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="194"/>
+      <source>Selection is not suitable for array.</source>
+      <translation>Виділення не підходить для масиву.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="327"/>
+      <source>Object:</source>
+      <translation>Об'єкт:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_circulararray.py" line="224"/>
+      <source>Radial distance is zero. Resulting array may not look correct.</source>
+      <translation>Радіальна відстань дорівнює нулю. Результат може виглядати неправильно.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_circulararray.py" line="226"/>
+      <source>Radial distance is negative. It is made positive to proceed.</source>
+      <translation>Радикальна відстань негативна. Достатньо позитивно продовжити.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_circulararray.py" line="230"/>
+      <source>Tangential distance cannot be zero.</source>
+      <translation>Дотична відстань не може бути нульовою.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_circulararray.py" line="233"/>
+      <source>Tangential distance is negative. It is made positive to proceed.</source>
+      <translation>Тангенціальна відстань від'ємна. Це робиться позитивним для продовження.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="285"/>
+      <source>Center reset:</source>
+      <translation>Скинути центр:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="296"/>
+      <source>Fuse:</source>
+      <translation>Злиття:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="310"/>
+      <source>Create Link array:</source>
+      <translation>Створити масив посилання:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_circulararray.py" line="373"/>
+      <source>Radial distance:</source>
+      <translation>Радіальна відстань:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_circulararray.py" line="374"/>
+      <source>Tangential distance:</source>
+      <translation>Дотична відстань:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_circulararray.py" line="375"/>
+      <source>Number of circular layers:</source>
+      <translation>Кількість циклічних шарів:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_circulararray.py" line="376"/>
+      <source>Symmetry parameter:</source>
+      <translation>Параметр симетрії:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="330"/>
+      <source>Center of rotation:</source>
+      <translation>Центр обертання:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="434"/>
+      <source>Aborted:</source>
+      <translation>Перервано:</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_orthoarray.py" line="275"/>
+      <source>Orthogonal array</source>
+      <translation>Ортогональний масив</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="205"/>
+      <source>Number of elements must be at least 1.</source>
+      <translation>Кількість елементів має бути принаймні 1.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="315"/>
+      <source>Interval X reset:</source>
+      <translation>Інтервал X скинуто:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="324"/>
+      <source>Interval Y reset:</source>
+      <translation>Інтервал X скинуто:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="333"/>
+      <source>Interval Z reset:</source>
+      <translation>Інтервал X скинуто:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="376"/>
+      <source>Number of X elements:</source>
+      <translation>Кількість елементів X:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="377"/>
+      <source>Interval X:</source>
+      <translation>Інтервал X:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="381"/>
+      <source>Number of Y elements:</source>
+      <translation>Кількість елементів Y:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="382"/>
+      <source>Interval Y:</source>
+      <translation>Інтервал Y:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="386"/>
+      <source>Number of Z elements:</source>
+      <translation>Кількість Z елементів:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_orthoarray.py" line="387"/>
+      <source>Interval Z:</source>
+      <translation>Інтервал Z:</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_polararray.py" line="94"/>
+      <source>Polar array</source>
+      <translation>Полярний масив</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="199"/>
+      <source>Number of elements must be at least 2.</source>
+      <translation>Кількість елементів має бути принаймні 2.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="203"/>
+      <source>The angle is above 360 degrees. It is set to this value to proceed.</source>
+      <translation>Кут вище 360 градусів. Для продовження встановлено це значення.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="206"/>
+      <source>The angle is below -360 degrees. It is set to this value to proceed.</source>
+      <translation>Кут вище 360 градусів. Для продовження встановлено це значення.</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="328"/>
+      <source>Number of elements:</source>
+      <translation>Кількість елементів:</translation>
+    </message>
+    <message>
+      <location filename="../../drafttaskpanels/task_polararray.py" line="329"/>
+      <source>Polar angle:</source>
+      <translation>Полярний кут:</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_pointarray.py" line="135"/>
-      <source>Wrong input: point object doesn't have 'Geometry', 'Links', or 'Components'.</source>
-      <translation>Неправильний вхідний параметр: об'єкт не має "Геометрія", "Links" або "Components".</translation>
+      <source>Wrong input: point object doesn&apos;t have &apos;Geometry&apos;, &apos;Links&apos;, or &apos;Components&apos;.</source>
+      <translation type="unfinished">Wrong input: point object doesn&apos;t have &apos;Geometry&apos;, &apos;Links&apos;, or &apos;Components&apos;.</translation>
     </message>
     <message>
-      <location filename="../../draftmake/make_label.py" line="215"/>
+      <location filename="../../draftmake/make_text.py" line="107"/>
       <source>Wrong input: must be a placement, a vector, or a rotation.</source>
       <translation>Невірне введення: має бути розміщення, вектор або обертання.</translation>
     </message>
@@ -3628,6 +5072,126 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
       <translation>Режим карти:</translation>
     </message>
     <message>
+      <location filename="../../draftmake/make_sketch.py" line="103"/>
+      <source>No shape found</source>
+      <translation>Форму не знайдено</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_sketch.py" line="110"/>
+      <source>All Shapes must be planar</source>
+      <translation>Усі Фігури мають бути пласкими</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_dimension.py" line="607"/>
+      <source>Wrong input: must be a vector.</source>
+      <translation>Неправильне введення: має бути вектор.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_dimension.py" line="316"/>
+      <source>Wrong input: object must not be a list.</source>
+      <translation>Неправильне введення: об'єкт не повинен бути списком.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_patharray.py" line="213"/>
+      <source>Wrong input: must be a list or tuple of strings, or a single string.</source>
+      <translation>Неправильне введення: має бути списком або кортежем рядків, або єдиним рядком.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_label.py" line="263"/>
+      <source>Wrong input: subelement not in object.</source>
+      <translation>Невірне введення: піделемент  не в об’єкті.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_label.py" line="272"/>
+      <source>Wrong input: label_type must be a string.</source>
+      <translation>Неправильне введення: тип етикетки має бути рядком.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_label.py" line="277"/>
+      <source>Wrong input: label_type must be one of the following: </source>
+      <translation>Неправильне введення: тип етикетки повинен бути одним з наступних: </translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_text.py" line="96"/>
+      <source>Wrong input: must be a list of strings or a single string.</source>
+      <translation>Неправильне введення: повинен бути списком рядків або одного рядка.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_label.py" line="304"/>
+      <source>Wrong input: must be a string, &apos;Horizontal&apos;, &apos;Vertical&apos;, or &apos;Custom&apos;.</source>
+      <translation type="unfinished">Wrong input: must be a string, &apos;Horizontal&apos;, &apos;Vertical&apos;, or &apos;Custom&apos;.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_layer.py" line="201"/>
+      <source>Wrong input: must be a number.</source>
+      <translation>Неправильне введення: має бути число.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_label.py" line="319"/>
+      <source>Wrong input: must be a list of at least two vectors.</source>
+      <translation>Неправильний вхідний параметр: має бути списком щонайменше двох векторів.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_label.py" line="353"/>
+      <source>Direction is not &apos;Custom&apos;; points won&apos;t be used.</source>
+      <translation type="unfinished">Direction is not &apos;Custom&apos;; points won&apos;t be used.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_label.py" line="380"/>
+      <source>Wrong input: must be a list of two elements. For example, [object, &apos;Edge1&apos;].</source>
+      <translation type="unfinished">Wrong input: must be a list of two elements. For example, [object, &apos;Edge1&apos;].</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_orthoarray.py" line="60"/>
+      <source>Internal orthogonal array</source>
+      <translation>Внутрішній ортогональний масив</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_orthoarray.py" line="87"/>
+      <source>Wrong input: must be a number or vector.</source>
+      <translation>Введено неправильні дані: має бути число або вектор.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_orthoarray.py" line="98"/>
+      <source>Input: single value expanded to vector.</source>
+      <translation>Введення: одне значення розширене до вектора.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_polararray.py" line="112"/>
+      <source>Wrong input: must be an integer number.</source>
+      <translation>Введено неправильні дані: це ціле число.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_orthoarray.py" line="129"/>
+      <source>Input: number of elements must be at least 1. It is set to 1.</source>
+      <translation>Введення: кількість елементів має бути принаймні 1.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_orthoarray.py" line="350"/>
+      <source>Orthogonal array 2D</source>
+      <translation>Ортогональний масив 2D</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_orthoarray.py" line="424"/>
+      <source>Rectangular array</source>
+      <translation>Прямокутний масив</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_orthoarray.py" line="501"/>
+      <source>Rectangular array 2D</source>
+      <translation>Прямокутний масив 2D</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_patharray.py" line="246"/>
+      <source>Wrong input: must be &apos;Original&apos;, &apos;Frenet&apos;, or &apos;Tangent&apos;.</source>
+      <translation type="unfinished">Wrong input: must be &apos;Original&apos;, &apos;Frenet&apos;, or &apos;Tangent&apos;.</translation>
+    </message>
+    <message>
+      <location filename="../../draftmake/make_circulararray.py" line="144"/>
+      <source>Wrong input: must be a number or quantity.</source>
+      <translation>Неправильне введення: повинно бути числом або кількістю.</translation>
+    </message>
+    <message>
       <location filename="../../draftmake/make_fillet.py" line="145"/>
       <source>length:</source>
       <translation>довжина:</translation>
@@ -3653,64 +5217,24 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
       <translation>Видалено оригінальні об’єкти.</translation>
     </message>
     <message>
-      <location filename="../../draftmake/make_label.py" line="291"/>
-      <source>Wrong input: must be a list of strings or a single string.</source>
-      <translation>Неправильне введення: повинен бути списком рядків або одного рядка.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="481"/>
-      <source>Circular array</source>
-      <translation>Круговий масив</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_circulararray.py" line="144"/>
-      <source>Wrong input: must be a number or quantity.</source>
-      <translation>Неправильне введення: повинно бути числом або кількістю.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="119"/>
-      <source>Wrong input: must be an integer number.</source>
-      <translation>Введено неправильні дані: це ціле число.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="204"/>
-      <source>Wrong input: must be a vector.</source>
-      <translation>Неправильне введення: має бути вектор.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_polararray.py" line="434"/>
-      <source>Polar array</source>
-      <translation>Полярний масив</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="313"/>
-      <source>Wrong input: must be a number.</source>
-      <translation>Неправильне введення: має бути число.</translation>
-    </message>
-    <message>
       <location filename="../../draftmake/make_dimension.py" line="173"/>
       <source>This function is deprecated. Do not use this function directly.</source>
       <translation>Ця функція застаріла. Не використовуйте цю функцію безпосередньо.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="174"/>
-      <source>Use one of 'make_linear_dimension', or 'make_linear_dimension_obj'.</source>
-      <translation>Використовуйте один із 'зробити лінійний розмір' або 'зробити лінійний розмір об'єктів'.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="230"/>
-      <source>Wrong input: object must not be a list.</source>
-      <translation>Неправильне введення: об'єкт не повинен бути списком.</translation>
+      <source>Use one of &apos;make_linear_dimension&apos;, or &apos;make_linear_dimension_obj&apos;.</source>
+      <translation type="unfinished">Use one of &apos;make_linear_dimension&apos;, or &apos;make_linear_dimension_obj&apos;.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="452"/>
-      <source>Wrong input: object doesn't have a 'Shape' to measure.</source>
-      <translation>Неправильне введення: об'єкт немає "Shape" для вимірювання.</translation>
+      <source>Wrong input: object doesn&apos;t have a &apos;Shape&apos; to measure.</source>
+      <translation type="unfinished">Wrong input: object doesn&apos;t have a &apos;Shape&apos; to measure.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="331"/>
-      <source>Wrong input: object doesn't have at least one element in 'Vertexes' to use for measuring.</source>
-      <translation>Неправильний вхідний параметр: об'єкт немає хоча б одного елемента у «Vertex» для вимірювання.</translation>
+      <source>Wrong input: object doesn&apos;t have at least one element in &apos;Vertexes&apos; to use for measuring.</source>
+      <translation type="unfinished">Wrong input: object doesn&apos;t have at least one element in &apos;Vertexes&apos; to use for measuring.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="463"/>
@@ -3734,8 +5258,8 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="456"/>
-      <source>Wrong input: object doesn't have at least one element in 'Edges' to use for measuring.</source>
-      <translation>Неправильне введення: в об'єкті немає принаймні одного елемента в 'Edges' для вимірювання.</translation>
+      <source>Wrong input: object doesn&apos;t have at least one element in &apos;Edges&apos; to use for measuring.</source>
+      <translation type="unfinished">Wrong input: object doesn&apos;t have at least one element in &apos;Edges&apos; to use for measuring.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="468"/>
@@ -3744,18 +5268,18 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="472"/>
-      <source>Wrong input: index doesn't correspond to an edge in the object.</source>
-      <translation>Неправильне введення: індекс не відповідає ребру в об’єкті.</translation>
+      <source>Wrong input: index doesn&apos;t correspond to an edge in the object.</source>
+      <translation type="unfinished">Wrong input: index doesn&apos;t correspond to an edge in the object.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="476"/>
-      <source>Wrong input: index doesn't correspond to a circular edge.</source>
-      <translation>Неправильне введення: індекс не відповідає круговому краю.</translation>
+      <source>Wrong input: index doesn&apos;t correspond to a circular edge.</source>
+      <translation type="unfinished">Wrong input: index doesn&apos;t correspond to a circular edge.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="487"/>
-      <source>Wrong input: must be a string, 'radius' or 'diameter'.</source>
-      <translation>Неправильне введення: має бути рядок, 'радіус' або 'діаметр'.</translation>
+      <source>Wrong input: must be a string, &apos;radius&apos; or &apos;diameter&apos;.</source>
+      <translation type="unfinished">Wrong input: must be a string, &apos;radius&apos; or &apos;diameter&apos;.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_dimension.py" line="586"/>
@@ -3766,11 +5290,6 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
       <location filename="../../draftmake/make_layer.py" line="67"/>
       <source>Layers</source>
       <translation>Шари</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_layers.py" line="47"/>
-      <source>Layer</source>
-      <translation>Шар</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_layer.py" line="157"/>
@@ -3784,1546 +5303,29 @@ Not available if Draft preference option 'Use Part Primitives' is enabled</sourc
     </message>
     <message>
       <location filename="../../draftmake/make_layer.py" line="212"/>
-      <source>Wrong input: must be 'Solid', 'Dashed', 'Dotted', or 'Dashdot'.</source>
-      <translation>Неправильне введення: повинно бути 'Solid', 'Dashed', 'Dotted' або 'Dashdot'.</translation>
+      <source>Wrong input: must be &apos;Solid&apos;, &apos;Dashed&apos;, &apos;Dotted&apos;, or &apos;Dashdot&apos;.</source>
+      <translation type="unfinished">Wrong input: must be &apos;Solid&apos;, &apos;Dashed&apos;, &apos;Dotted&apos;, or &apos;Dashdot&apos;.</translation>
     </message>
     <message>
       <location filename="../../draftmake/make_layer.py" line="220"/>
       <source>Wrong input: must be a number between 0 and 100.</source>
       <translation>Невірне введення: має бути число від 0 до 100.</translation>
     </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="251"/>
-      <source>Wrong input: must be a list or tuple of strings, or a single string.</source>
-      <translation>Неправильне введення: має бути списком або кортежем рядків, або єдиним рядком.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_patharray.py" line="246"/>
-      <source>Wrong input: must be 'Original', 'Frenet', or 'Tangent'.</source>
-      <translation>Неправильне введення: має бути 'Original', 'Frenet' або 'Tangent'.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_sketch.py" line="103"/>
-      <source>No shape found</source>
-      <translation>Форму не знайдено</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_sketch.py" line="110"/>
-      <source>All Shapes must be planar</source>
-      <translation>Усі Фігури мають бути пласкими</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="60"/>
-      <source>Internal orthogonal array</source>
-      <translation>Внутрішній ортогональний масив</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="87"/>
-      <source>Wrong input: must be a number or vector.</source>
-      <translation>Введено неправильні дані: має бути число або вектор.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="98"/>
-      <source>Input: single value expanded to vector.</source>
-      <translation>Введення: одне значення розширене до вектора.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="129"/>
-      <source>Input: number of elements must be at least 1. It is set to 1.</source>
-      <translation>Введення: кількість елементів має бути принаймні 1.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="396"/>
-      <source>Orthogonal array</source>
-      <translation>Ортогональний масив</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="350"/>
-      <source>Orthogonal array 2D</source>
-      <translation>Ортогональний масив 2D</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="424"/>
-      <source>Rectangular array</source>
-      <translation>Прямокутний масив</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_orthoarray.py" line="501"/>
-      <source>Rectangular array 2D</source>
-      <translation>Прямокутний масив 2D</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="263"/>
-      <source>Wrong input: subelement not in object.</source>
-      <translation>Невірне введення: піделемент  не в об’єкті.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="272"/>
-      <source>Wrong input: label_type must be a string.</source>
-      <translation>Неправильне введення: тип етикетки має бути рядком.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="277"/>
-      <source>Wrong input: label_type must be one of the following: </source>
-      <translation>Неправильне введення: тип етикетки повинен бути одним з наступних: </translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="304"/>
-      <source>Wrong input: must be a string, 'Horizontal', 'Vertical', or 'Custom'.</source>
-      <translation>Неправильний вхідний параметр: має бути рядком, «Горизонталь», «Вертикальний» або «Замовлення».</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="319"/>
-      <source>Wrong input: must be a list of at least two vectors.</source>
-      <translation>Неправильний вхідний параметр: має бути списком щонайменше двох векторів.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="353"/>
-      <source>Direction is not 'Custom'; points won't be used.</source>
-      <translation>Напрямок не є 'Замовне' ; точки не використовуються.</translation>
-    </message>
-    <message>
-      <location filename="../../draftmake/make_label.py" line="380"/>
-      <source>Wrong input: must be a list of two elements. For example, [object, 'Edge1'].</source>
-      <translation>Неправильне введення: має бути списком двох елементів. Наприклад, [object, 'Edge1'].</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/shapestring.py" line="69"/>
-      <source>ShapeString: string has no wires</source>
-      <translation>ShapeString: рядок не має каркасів</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/pointarray.py" line="161"/>
-      <source>added property 'ExtraPlacement'</source>
-      <translation>додана властивість 'ExtraPlacement'</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="283"/>
-      <source>, path object doesn't have 'Edges'.</source>
-      <translation>, траєкторія об'єкту не має 'Edges'.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="407"/>
-      <source>'PathObj' property will be migrated to 'PathObject'</source>
-      <translation>Властивість 'PathObj' буде перенесено до 'PathObject'</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="525"/>
-      <source>Cannot calculate path tangent. Copy not aligned.</source>
-      <translation>Не вдалося обчислити дотичний контур. Копія не вирівнюється.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="541"/>
-      <source>Tangent and normal are parallel. Copy not aligned.</source>
-      <translation>Дотична і нормаль паралельні. Копія не вирівняна.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="558"/>
-      <source>Cannot calculate path normal, using default.</source>
-      <translation>Неможливо обчислити шлях нормалі, за замовчуванням.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="565"/>
-      <source>Cannot calculate path binormal. Copy not aligned.</source>
-      <translation>Не вдалося обчислити бінарний шлях. Копія не вирівнюється.</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/patharray.py" line="571"/>
-      <source>AlignMode {} is not implemented</source>
-      <translation>AlignMode {} не реалізовано</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/draft_annotation.py" line="105"/>
-      <source>added view property 'ScaleMultiplier'</source>
-      <translation>додана властивість 'ScaleMultiplier'</translation>
-    </message>
-    <message>
-      <location filename="../../draftobjects/draft_annotation.py" line="130"/>
-      <source>migrated 'DraftText' type to 'Text'</source>
-      <translation>змінено тип 'DraftText' у 'Text'</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_layer.py" line="360"/>
-      <source>Activate this layer</source>
-      <translation>Активувати цей шар</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_layer.py" line="366"/>
-      <source>Select layer contents</source>
-      <translation>Оберіть вміст шару</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_layer.py" line="421"/>
-      <source>Merge layer duplicates</source>
-      <translation>Об'єднати дублікати шарів</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_layer.py" line="469"/>
-      <source>Add new layer</source>
-      <translation>Додати новий шар</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_layer.py" line="453"/>
-      <source>Relabeling layer:</source>
-      <translation>Перемаркування шару:</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_layer.py" line="458"/>
-      <source>Merging layer:</source>
-      <translation>Об'єднання шару:</translation>
-    </message>
-    <message>
-      <location filename="../../draftviewproviders/view_base.py" line="401"/>
-      <source>Please load the Draft Workbench to enable editing this object</source>
-      <translation>Будь ласка, завантажте робочий стіл Draft щоб увімкнути редагування цього об'єкту</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="45"/>
-      <source>Draft</source>
-      <translation>Креслення</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_draft_statusbar.py" line="153"/>
-      <source>custom</source>
-      <translation>На замовлення</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_draft_statusbar.py" line="138"/>
-      <source>Unable to convert input into a  scale factor</source>
-      <translation>Неможливо перетворити вхідні дані в коефіцієнт масштабування</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_draft_statusbar.py" line="154"/>
-      <source>Set custom scale</source>
-      <translation>Встановити довільний масштаб</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_draft_statusbar.py" line="155"/>
-      <source>Set custom annotation scale in format x:x, x=x</source>
-      <translation>Встановити спеціальний масштаб анотації у форматі x:x, x=x</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_draft_statusbar.py" line="213"/>
-      <source>Set the scale used by draft annotation tools</source>
-      <translation>Встановіть масштаб, який використовується в проекті анотації</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="650"/>
-      <source>Solids:</source>
-      <translation>Суцільні тіла:</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="651"/>
-      <source>Faces:</source>
-      <translation>Грані:</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="652"/>
-      <source>Wires:</source>
-      <translation>Каркас:</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="653"/>
-      <source>Edges:</source>
-      <translation>Ребра:</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="654"/>
-      <source>Vertices:</source>
-      <translation>Вершини:</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="658"/>
-      <source>Face</source>
-      <translation>Грань</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="663"/>
-      <source>Wire</source>
-      <translation>Каркас</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="697"/>
-      <source>different types</source>
-      <translation>різні типи</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="707"/>
-      <source>Objects have different placements. Distance between the two base points: </source>
-      <translation>Об'єкти мають різні розташування. Відстань між двома базовими точками: </translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="712"/>
-      <source>has a different value</source>
-      <translation>має інше значення</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="714"/>
-      <source>doesn't exist in one of the objects</source>
-      <translation>не існує в одному з об'єктів</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="827"/>
-      <source>%s shares a base with %d other objects. Please check if you want to modify this.</source>
-      <translation>%s поділяє базу з %d іншими об’єктами. Будь ласка, перевірте, чи ви хочете це змінити.</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="833"/>
-      <source>%s cannot be modified because its placement is readonly.</source>
-      <translation>%s не можна змінювати, оскільки його розміщення тільки для читання.</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="977"/>
-      <source>Wrong input: unknown document.</source>
-      <translation>Неправильне введення: невідомий документ.</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="1054"/>
-      <source>This function will be deprecated in </source>
-      <translation>Ця функція буде застаріла в </translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="1058"/>
-      <source>Please use </source>
-      <translation>Будь ласка, використовуйте </translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/utils.py" line="1058"/>
-      <source>This function will be deprecated. </source>
-      <translation>Ця функція буде застаріла. </translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="169"/>
-      <source>Snap Lock</source>
-      <translation>Прив'язування встановити</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="170"/>
-      <source>Snap Endpoint</source>
-      <translation>Прив'язка кінцевої точки</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="171"/>
-      <source>Snap Midpoint</source>
-      <translation>Прив'язка середньої точки</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="172"/>
-      <source>Snap Center</source>
-      <translation>Прив'язка центру</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="173"/>
-      <source>Snap Angle</source>
-      <translation>Кут прив'язки:</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="174"/>
-      <source>Snap Intersection</source>
-      <translation>Перетин прив'язки</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="175"/>
-      <source>Snap Perpendicular</source>
-      <translation>Прив'язка перпендикулярна</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="176"/>
-      <source>Snap Extension</source>
-      <translation>Розширення прив'язки</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="177"/>
-      <source>Snap Parallel</source>
-      <translation>Паралельна прив’язка</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="178"/>
-      <source>Snap Special</source>
-      <translation>Особливі прив'язки</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="179"/>
-      <source>Snap Near</source>
-      <translation>Прив'язка поруч</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="180"/>
-      <source>Snap Ortho</source>
-      <translation>Притягування перпендикулярних</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="181"/>
-      <source>Snap Grid</source>
-      <translation>Прив'язка до сітки</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="182"/>
-      <source>Snap WorkingPlane</source>
-      <translation>Прив'язувати робочу площину</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="183"/>
-      <source>Snap Dimensions</source>
-      <translation>Прив'язка розмірів</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/init_tools.py" line="184"/>
-      <source>Toggle Draft Grid</source>
-      <translation>Увімкнути / вимкнути сітку чернетки</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/gui_utils.py" line="81"/>
-      <source>No graphical interface</source>
-      <translation>Немає графічного інтерфейсу</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/gui_utils.py" line="158"/>
-      <source>Unable to insert new object into a scaled part</source>
-      <translation>Не вдалося вставити новий об'єкт в масштабовану частину</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/gui_utils.py" line="267"/>
-      <source>Symbol not implemented. Using a default symbol.</source>
-      <translation>Символ не реалізується. Використання символу за замовчуванням.</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/gui_utils.py" line="333"/>
-      <source>Visibility off; removed from list: </source>
-      <translation>Видимість вимкнуто; видалено зі списку: </translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/gui_utils.py" line="603"/>
-      <source>image is Null</source>
-      <translation>зображення невидиме</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/gui_utils.py" line="606"/>
-      <source>filename does not exist on the system or in the resource file</source>
-      <translation>ім'я файлу не існує в системі або у файлі ресурсу</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/gui_utils.py" line="668"/>
-      <source>unable to load texture</source>
-      <translation>неможливо завантажити текстуру</translation>
-    </message>
-    <message>
-      <location filename="../../draftutils/gui_utils.py" line="738"/>
-      <source>Does not have 'ViewObject.RootNode'.</source>
-      <translation>Не має 'ViewObject.RootNode'.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="83"/>
-      <source>Task panel:</source>
-      <translation>Панель завдань:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="201"/>
-      <source>At least one element must be selected.</source>
-      <translation>Потрібно вибрати хоча б один елемент.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="212"/>
-      <source>Selection is not suitable for array.</source>
-      <translation>Виділення не підходить для масиву.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="375"/>
-      <source>Object:</source>
-      <translation>Об'єкт:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_polararray.py" line="199"/>
-      <source>Number of elements must be at least 2.</source>
-      <translation>Кількість елементів має бути принаймні 2.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_polararray.py" line="203"/>
-      <source>The angle is above 360 degrees. It is set to this value to proceed.</source>
-      <translation>Кут вище 360 градусів. Для продовження встановлено це значення.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_polararray.py" line="206"/>
-      <source>The angle is below -360 degrees. It is set to this value to proceed.</source>
-      <translation>Кут вище 360 градусів. Для продовження встановлено це значення.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="330"/>
-      <source>Center reset:</source>
-      <translation>Скинути центр:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="344"/>
-      <source>Fuse:</source>
-      <translation>Злиття:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="358"/>
-      <source>Create Link array:</source>
-      <translation>Створити масив посилання:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_polararray.py" line="328"/>
-      <source>Number of elements:</source>
-      <translation>Кількість елементів:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_polararray.py" line="329"/>
-      <source>Polar angle:</source>
-      <translation>Полярний кут:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="377"/>
-      <source>Center of rotation:</source>
-      <translation>Центр обертання:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="396"/>
-      <source>Aborted:</source>
-      <translation>Перервано:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="212"/>
-      <source>Number of layers must be at least 2.</source>
-      <translation>Кількість шарів має бути не менше 2.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="224"/>
-      <source>Radial distance is zero. Resulting array may not look correct.</source>
-      <translation>Радіальна відстань дорівнює нулю. Результат може виглядати неправильно.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="226"/>
-      <source>Radial distance is negative. It is made positive to proceed.</source>
-      <translation>Радикальна відстань негативна. Достатньо позитивно продовжити.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="230"/>
-      <source>Tangential distance cannot be zero.</source>
-      <translation>Дотична відстань не може бути нульовою.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="233"/>
-      <source>Tangential distance is negative. It is made positive to proceed.</source>
-      <translation>Тангенціальна відстань від'ємна. Це робиться позитивним для продовження.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="373"/>
-      <source>Radial distance:</source>
-      <translation>Радіальна відстань:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="374"/>
-      <source>Tangential distance:</source>
-      <translation>Дотична відстань:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="375"/>
-      <source>Number of circular layers:</source>
-      <translation>Кількість циклічних шарів:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_circulararray.py" line="376"/>
-      <source>Symmetry parameter:</source>
-      <translation>Параметр симетрії:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="205"/>
-      <source>Number of elements must be at least 1.</source>
-      <translation>Кількість елементів має бути принаймні 1.</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="315"/>
-      <source>Interval X reset:</source>
-      <translation>Інтервал X скинуто:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="324"/>
-      <source>Interval Y reset:</source>
-      <translation>Інтервал X скинуто:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="333"/>
-      <source>Interval Z reset:</source>
-      <translation>Інтервал X скинуто:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="376"/>
-      <source>Number of X elements:</source>
-      <translation>Кількість елементів X:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="377"/>
-      <source>Interval X:</source>
-      <translation>Інтервал X:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="381"/>
-      <source>Number of Y elements:</source>
-      <translation>Кількість елементів Y:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="382"/>
-      <source>Interval Y:</source>
-      <translation>Інтервал Y:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="386"/>
-      <source>Number of Z elements:</source>
-      <translation>Кількість Z елементів:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_orthoarray.py" line="387"/>
-      <source>Interval Z:</source>
-      <translation>Інтервал Z:</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_shapestring.py" line="56"/>
-      <source>ShapeString</source>
-      <translation>РядФорми</translation>
-    </message>
-    <message>
-      <location filename="../../drafttaskpanels/task_shapestring.py" line="69"/>
-      <source>Default</source>
-      <translation>За замовчуванням</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_shapestrings.py" line="133"/>
-      <source>Create ShapeString</source>
-      <translation>Створити ShapeString</translation>
-    </message>
-    <message>
-      <location filename="../../importDXF.py" line="138"/>
-      <source>The DXF import/export libraries needed by FreeCAD to handle
-the DXF format were not found on this system.
-Please either enable FreeCAD to download these libraries:
-  1 - Load Draft workbench
-  2 - Menu Edit &gt; Preferences &gt; Import-Export &gt; DXF &gt; Enable downloads
-Or download these libraries manually, as explained on
-https://github.com/yorikvanhavre/Draft-dxf-importer
-To enabled FreeCAD to download these libraries, answer Yes.</source>
-      <translation>DXF імпорт/експорт бібліотек, необхідних FreeCAD для обробки
-Формат DXF не знайдено в цій системі.
-Будь ласка, або увімкніть FreeCAD, щоб завантажити ці бібліотеки:
-  1 - Завантажити робочий стіл Draft
-  2 - Меню Редагування &gt; Налаштування &gt; Імпорт &gt; DXF &gt; Увімкнути завантаження
-Або завантажити ці бібліотеки вручну, завантажити як описано на
-https://github. om/yorikvanhavre/Draft-dxf-імпортер
-Щоб увімкнути FreeCAD завантажити ці бібліотеки, відповісти на "Так".</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_upgrade.py" line="67"/>
-      <source>Select an object to upgrade</source>
-      <translation>Оберіть об'єкт для покращення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_downgrade.py" line="85"/>
-      <source>Downgrade</source>
-      <translation>Зниження</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_clone.py" line="79"/>
-      <source>Select an object to clone</source>
-      <translation>Оберіть об'єкт для клонування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rectangles.py" line="69"/>
-      <source>Pick first point</source>
-      <translation>Вкажіть першу точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_ellipses.py" line="138"/>
-      <source>Create Ellipse</source>
-      <translation>Створити еліпс</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rectangles.py" line="202"/>
-      <source>Pick opposite point</source>
-      <translation>Вкажіть протилежну точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_lines.py" line="163"/>
-      <source>Create Line</source>
-      <translation>Створити лінію</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_lines.py" line="185"/>
-      <source>Create Wire</source>
-      <translation>Створити каркас</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_splines.py" line="140"/>
-      <source>Pick next point</source>
-      <translation>Вкажіть наступну точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_lines.py" line="328"/>
-      <source>Unable to create a Wire from selected objects</source>
-      <translation>Не вдалося створити Сітку із вибраних об'єктів</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_lines.py" line="351"/>
-      <source>Convert to Wire</source>
-      <translation>Конвертувати в Сітку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit_draft_objects.py" line="567"/>
-      <source>This object does not support possible coincident points, please try again.</source>
-      <translation>Цей об'єкт не підтримує можливі випадкові точки, будь ласка, спробуйте ще раз.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit_draft_objects.py" line="607"/>
-      <source>Active object must have more than two points/nodes</source>
-      <translation>Активний об'єкт повинен мати більше двох точок/вузлів</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit_draft_objects.py" line="720"/>
-      <source>Selection is not a Knot</source>
-      <translation>Виділений елемент не є вузлом</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit_draft_objects.py" line="747"/>
-      <source>Endpoint of BezCurve can't be smoothed</source>
-      <translation>Кінцева точка кривої Без'є не може бути згладжена</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit_sketcher_objects.py" line="61"/>
-      <source>Sketch is too complex to edit: it is suggested to use sketcher default editor</source>
-      <translation>Ескіз занадто складний для редагування: рекомендується використовувати редактор ескізів за замовчуванням</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_facebinders.py" line="71"/>
-      <source>Select faces from existing objects</source>
-      <translation>Оберіть грані серед наявних об'єктів</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_lineslope.py" line="64"/>
-      <source>Change slope</source>
-      <translation>Змінити нахил</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_subelements.py" line="108"/>
-      <source>Select an object to edit</source>
-      <translation>Оберіть обʼєкт для редагування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_dimensions.py" line="294"/>
-      <source>Create Dimension</source>
-      <translation>Створити розмір</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_dimensions.py" line="309"/>
-      <source>Create Dimension (radial)</source>
-      <translation>Створити розмірність (радіал)</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_dimensions.py" line="508"/>
-      <source>Edge too short!</source>
-      <translation>Ребро занадто коротке!</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_dimensions.py" line="518"/>
-      <source>Edges don't intersect!</source>
-      <translation>Ребра не перетинаються!</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_drawing.py" line="77"/>
-      <source>The Drawing Workbench is obsolete since 0.17, consider using the TechDraw Workbench instead.</source>
-      <translation>Малювання Workbench є застарілим з 0.17, натомість розгляньте можливість використання Workbench TechDraw</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_shape2dview.py" line="68"/>
-      <source>Select an object to project</source>
-      <translation>Оберіть об'єкт для проектування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_annotationstyleeditor.py" line="68"/>
-      <source>Annotation style editor</source>
-      <translation>Редактор стилів анотацій</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_annotationstyleeditor.py" line="288"/>
-      <source>Open styles file</source>
-      <translation>Відкрити файл стилів</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_annotationstyleeditor.py" line="310"/>
-      <source>JSON file (*.json)</source>
-      <translation>JSON файл (*.json)</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_annotationstyleeditor.py" line="310"/>
-      <source>Save styles file</source>
-      <translation>Зберегти файл стилів</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_upgrade.py" line="85"/>
-      <source>Upgrade</source>
-      <translation>Оновити</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_move.py" line="81"/>
-      <source>Select an object to move</source>
-      <translation>Оберіть об'єкт для переміщення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_move.py" line="103"/>
-      <source>Pick start point</source>
-      <translation>Вкажіть початкову точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_move.py" line="308"/>
-      <source>Pick end point</source>
-      <translation>Вкажіть кінцеву точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_move.py" line="210"/>
-      <source>Move</source>
-      <translation>Переміщення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="289"/>
-      <source>Some subelements could not be moved.</source>
-      <translation>Деякі піделементи не можуть рухатися.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_pointarray.py" line="104"/>
-      <source>Please select exactly two objects, the base object and the point object, before calling this command.</source>
-      <translation>Будь ласка, оберіть лише два об’єкти, базовий об'єкт та об'єкт точки перед виконанням цієї команди.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_pointarray.py" line="122"/>
-      <source>Point array</source>
-      <translation>Масив точок</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_togglemodes.py" line="73"/>
-      <source>No active Draft Toolbar.</source>
-      <translation>Не активний інструмент креслення.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_togglemodes.py" line="93"/>
-      <source>Construction mode</source>
-      <translation>Режим Будівництва</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_togglemodes.py" line="125"/>
-      <source>Continue mode</source>
-      <translation>Режим Продовження</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_togglemodes.py" line="159"/>
-      <source>Toggle display mode</source>
-      <translation>Перемкнути режим відображення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="126"/>
-      <source>Main toggle snap</source>
-      <translation>Основний перемикач прив'язки</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="157"/>
-      <source>Midpoint snap</source>
-      <translation>середина при'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="187"/>
-      <source>Perpendicular snap</source>
-      <translation>Перпендикулярне прив'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="217"/>
-      <source>Grid snap</source>
-      <translation>Прив'язка до сітки</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="247"/>
-      <source>Intersection snap</source>
-      <translation>Прив'язування перетину</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="277"/>
-      <source>Parallel snap</source>
-      <translation>Паралельне прив'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="307"/>
-      <source>Endpoint snap</source>
-      <translation>Кінцеве прив'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="338"/>
-      <source>Angle snap (30 and 45 degrees)</source>
-      <translation>Кути прив'язування (30 і 45 градусів)</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="368"/>
-      <source>Arc center snap</source>
-      <translation>Центр дуги прив'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="398"/>
-      <source>Edge extension snap</source>
-      <translation>Ребро розширення прив'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="428"/>
-      <source>Near snap</source>
-      <translation>близьке прив'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="459"/>
-      <source>Orthogonal snap</source>
-      <translation>Ортогональне прив'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="489"/>
-      <source>Special point snap</source>
-      <translation>Спеціальна точка прив'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="520"/>
-      <source>Dimension display</source>
-      <translation>Відображення розмірів</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="553"/>
-      <source>Working plane snap</source>
-      <translation>Робоча плода прив'язування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snaps.py" line="583"/>
-      <source>Show snap toolbar</source>
-      <translation>Показувати панель інструментів прив'язки</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_array_simple.py" line="77"/>
-      <source>Select an object to array</source>
-      <translation>Оберіть об'єкт для створення масиву</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_array_simple.py" line="101"/>
-      <source>Array</source>
-      <translation>Масив</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="88"/>
-      <source>Pick center point</source>
-      <translation>Вкажіть точку центру</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="410"/>
-      <source>Pick radius</source>
-      <translation>Вибрати радіус</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_polygons.py" line="224"/>
-      <source>Create Polygon (Part)</source>
-      <translation>Створити багатокутник (Частина)</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_polygons.py" line="243"/>
-      <source>Create Polygon</source>
-      <translation>Створити новий полігон</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_mirror.py" line="73"/>
-      <source>Select an object to mirror</source>
-      <translation>Оберіть об'єкт для дзеркального відображення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_mirror.py" line="92"/>
-      <source>Pick start point of mirror line</source>
-      <translation>Вкажіть початкову точку лінії віддзеркалення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_mirror.py" line="122"/>
-      <source>Mirror</source>
-      <translation>Віддзеркалити</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_mirror.py" line="203"/>
-      <source>Pick end point of mirror line</source>
-      <translation>Вкажіть кінцеву точку лінії віддзеркалення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_points.py" line="147"/>
-      <source>Create Point</source>
-      <translation>Створити точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_scale.py" line="87"/>
-      <source>Select an object to scale</source>
-      <translation>Оберіть об'єкт для масштабування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_scale.py" line="108"/>
-      <source>Pick base point</source>
-      <translation>Вкажіть базову точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_scale.py" line="135"/>
-      <source>Pick reference distance from base point</source>
-      <translation>Вкажіть відносну відстань від базової точки</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_scale.py" line="357"/>
-      <source>Scale</source>
-      <translation>Масштабування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_scale.py" line="209"/>
-      <source>Some subelements could not be scaled.</source>
-      <translation>Деякі піделементи не можуть масштабуватися.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_scale.py" line="338"/>
-      <source>Unable to scale object:</source>
-      <translation>Неможливо масштабувати об'єкт:</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_scale.py" line="342"/>
-      <source>Unable to scale objects:</source>
-      <translation>Неможливо масштабувати об'єкт:</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_scale.py" line="345"/>
-      <source>This object type cannot be scaled directly. Please use the clone method.</source>
-      <translation>Цей тип об'єкта не можна масштабувати безпосередньо. Будь ласка, використовуйте метод клонування.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_scale.py" line="407"/>
-      <source>Pick new distance from base point</source>
-      <translation>Вкажіть нову відстань від базовоої точки</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snapper.py" line="1543"/>
-      <source>(ON)</source>
-      <translation>Вкл</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_snapper.py" line="1546"/>
-      <source>(OFF)</source>
-      <translation>Викл</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_shape2dview.py" line="109"/>
-      <source>Create 2D view</source>
-      <translation>Створити 2D вигляд</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_beziers.py" line="331"/>
-      <source>Bézier curve has been closed</source>
-      <translation type="unfinished">Bézier curve has been closed</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_splines.py" line="131"/>
-      <source>Last point has been removed</source>
-      <translation>Останню точку було видалено</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_splines.py" line="145"/>
-      <source>Pick next point, or finish (A) or close (O)</source>
-      <translation>Виберіть наступну точку або завершити (А) або закрити (O)</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_beziers.py" line="451"/>
-      <source>Create BezCurve</source>
-      <translation>Створити криву Безьє</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_beziers.py" line="376"/>
-      <source>Click and drag to define next knot</source>
-      <translation>Клацніть та перетягніть, щоб визначити наступне вузол</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_beziers.py" line="380"/>
-      <source>Click and drag to define next knot, or finish (A) or close (O)</source>
-      <translation>Клік та перетягніть, щоб визначити наступне кно, або завершити (А) або закрити (O)</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_dimension_ops.py" line="55"/>
-      <source>Flip dimension</source>
-      <translation>Перевернути розмірність</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_stretch.py" line="75"/>
-      <source>Select an object to stretch</source>
-      <translation>Оберіть об'єкт для розтягування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_stretch.py" line="127"/>
-      <source>Pick first point of selection rectangle</source>
-      <translation>Вкажіть першу точку прямокутника вибору</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_stretch.py" line="163"/>
-      <source>Pick opposite point of selection rectangle</source>
-      <translation>Вкажіть протилежну точку прямокутника вибору</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_stretch.py" line="173"/>
-      <source>Pick start point of displacement</source>
-      <translation>Вкажіть початкову точку зміщення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_stretch.py" line="236"/>
-      <source>Pick end point of displacement</source>
-      <translation>Вкажіть кінцеву точку зміщення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_stretch.py" line="448"/>
-      <source>Turning one Rectangle into a Wire</source>
-      <translation>Перетворення  одного Прямокутника в Сітку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_stretch.py" line="477"/>
-      <source>Stretch</source>
-      <translation>Розтягнути</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_grid.py" line="51"/>
-      <source>Toggle grid</source>
-      <translation>Показати або приховати сітку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rectangles.py" line="125"/>
-      <source>Create Plane</source>
-      <translation>Створити площину</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rectangles.py" line="142"/>
-      <source>Create Rectangle</source>
-      <translation>Створити прямокутник</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_draft2sketch.py" line="66"/>
-      <source>Select an object to convert.</source>
-      <translation>Оберіть об'єкт для перетворення.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_draft2sketch.py" line="99"/>
-      <source>Convert to Sketch</source>
-      <translation>Перетворити на ескіз</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_draft2sketch.py" line="114"/>
-      <source>Convert to Draft</source>
-      <translation>Перетворити на чернетки</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_draft2sketch.py" line="143"/>
-      <source>Convert Draft/Sketch</source>
-      <translation>Перетворення Чернетки/ескіз</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_heal.py" line="51"/>
-      <source>Heal</source>
-      <translation>Зцілення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_labels.py" line="80"/>
-      <source>Pick target point</source>
-      <translation>Вкажіть цільову точку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_labels.py" line="157"/>
-      <source>Create Label</source>
-      <translation>Створити мітку</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_labels.py" line="218"/>
-      <source>Pick endpoint of leader line</source>
-      <translation>Вкажіть кінцеву точку виносної лінії </translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_labels.py" line="228"/>
-      <source>Pick text position</source>
-      <translation>Вказати положення тексту</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit.py" line="303"/>
-      <source>Select a Draft object to edit</source>
-      <translation>Оберіть креслення для редагування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit.py" line="557"/>
-      <source>No edit point found for selected object</source>
-      <translation>Не знайдено точки редагування для вибраного об'єкту</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit.py" line="810"/>
-      <source>Too many objects selected, max number set to:</source>
-      <translation>Забагато об'єктів обрано. Максимальне число встановлено на:</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_edit.py" line="818"/>
-      <source>: this object is not editable</source>
-      <translation>: цей об'єкт не редагується</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_pathtwistedarray.py" line="79"/>
-      <source>Please select exactly two objects, the base object and the path object, before calling this command.</source>
-      <translation>Будь ласка, виберіть саме два об’єкти, основний об'єкт і шлях до запуску цієї команди.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_patharray.py" line="143"/>
-      <source>Path array</source>
-      <translation>Шлях масиву</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_pathtwistedarray.py" line="101"/>
-      <source>Path twisted array</source>
-      <translation>Траєкторія скручування масиву</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="94"/>
-      <source>Select objects to trim or extend</source>
-      <translation>Оберіть об'єкти, щоб обрізати або розширити</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_offset.py" line="143"/>
-      <source>Pick distance</source>
-      <translation>Вибрати відстань</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="221"/>
-      <source>Offset angle</source>
-      <translation>Кут зміщення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="481"/>
-      <source>Unable to trim these objects, only Draft wires and arcs are supported.</source>
-      <translation>Підрізати можливо лише каркаси креслення та дуги.
-</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="486"/>
-      <source>Unable to trim these objects, too many wires</source>
-      <translation>Неможливо обрізати ці об'єкти, занадто багато ліній</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="505"/>
-      <source>These objects don't intersect.</source>
-      <translation>Ці об'єкти не перетинаються.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_trimex.py" line="508"/>
-      <source>Too many intersection points.</source>
-      <translation>Забагато точок перетину.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_join.py" line="76"/>
-      <source>Select an object to join</source>
-      <translation>Оберіть обʼєкт для зʼєднання</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_join.py" line="99"/>
-      <source>Join lines</source>
-      <translation>Об'єднати рядки</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_join.py" line="110"/>
-      <source>Selection:</source>
-      <translation>Вибір:</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_splines.py" line="119"/>
-      <source>Spline has been closed</source>
-      <translation>Сплайн було замкнено</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_splines.py" line="183"/>
-      <source>Create B-spline</source>
-      <translation>Створити B-сплайн</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_selectplane.py" line="145"/>
-      <source>Pick a face, 3 vertices or a WP Proxy to define the drawing plane</source>
-      <translation>Виберіть поверхню, 3 вершини або WP проксі для визначення рисуючої площини</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_selectplane.py" line="270"/>
-      <source>Working plane aligned to global placement of</source>
-      <translation>Робоча площина вирівнений до глобального розташування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_selectplane.py" line="520"/>
-      <source>Dir</source>
-      <translation>Директорія</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_selectplane.py" line="536"/>
-      <source>Custom</source>
-      <translation>Підлаштувати</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_split.py" line="64"/>
-      <source>Click anywhere on a line to split it.</source>
-      <translation>Клацніть будь-де на лінії, щоб розділити її.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_split.py" line="106"/>
-      <source>Split line</source>
-      <translation>Розділити лінію</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="75"/>
-      <source>Fillet radius</source>
-      <translation>Скруглення радіус</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="76"/>
-      <source>Radius of fillet</source>
-      <translation>Радіус скруглення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="112"/>
-      <source>Enter radius.</source>
-      <translation>Введіть радіус.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="131"/>
-      <source>Delete original objects:</source>
-      <translation>Видалити оригінальні об’єкти:</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="136"/>
-      <source>Chamfer mode:</source>
-      <translation>Режим Фаски:</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="153"/>
-      <source>Two elements needed.</source>
-      <translation>Потрібно два елемента.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="159"/>
-      <source>Test object</source>
-      <translation>Тестовий об'єкт</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="160"/>
-      <source>Test object removed</source>
-      <translation>Тестовий об'єкт видалено</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="161"/>
-      <source>Fillet cannot be created</source>
-      <translation>Скруглення не може бути створено</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_fillets.py" line="193"/>
-      <source>Create fillet</source>
-      <translation>Створити заокруглення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_shapestrings.py" line="98"/>
-      <source>Pick ShapeString location point</source>
-      <translation>Вкажіть точку розташування ShapeString</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_styles.py" line="75"/>
-      <source>Change Style</source>
-      <translation>Змінити стиль</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="65"/>
-      <source>Add to group</source>
-      <translation>Додати до групи</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="66"/>
-      <source>Ungroup</source>
-      <translation>Розгрупувати</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="68"/>
-      <source>Add new group</source>
-      <translation>Додати нову групу</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="159"/>
-      <source>Select group</source>
-      <translation>Вибрати групу</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="192"/>
-      <source>No new selection. You must select non-empty groups or objects inside groups.</source>
-      <translation>Немає нового вибору. Ви повинні вибрати не порожні групи або об'єкти всередині груп.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="203"/>
-      <source>Autogroup</source>
-      <translation>Автогрупування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="250"/>
-      <source>Add new Layer</source>
-      <translation>Додати новий шар</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="304"/>
-      <source>Add to construction group</source>
-      <translation>Додати до групи конструкцій</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="355"/>
-      <source>Add a new group with a given name</source>
-      <translation>Додати нову групу із заданим ім'ям</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="383"/>
-      <source>Add group</source>
-      <translation>Додати групу</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="385"/>
-      <source>Group name</source>
-      <translation>Назва групи</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_groups.py" line="392"/>
-      <source>Group</source>
-      <translation>Група</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_offset.py" line="76"/>
-      <source>Select an object to offset</source>
-      <translation>Оберіть об'єкт для зміщення</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_offset.py" line="81"/>
-      <source>Offset only works on one object at a time.</source>
-      <translation>Зміщення працює лише на одному об'єкті одночасно.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_offset.py" line="92"/>
-      <source>Cannot offset this object type</source>
-      <translation>Неможливо змістити цей тип об'єкта</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_offset.py" line="122"/>
-      <source>Offset of Bezier curves is currently not supported</source>
-      <translation>Зміщення кривих Безьє в даний час не підтримується</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="447"/>
-      <source>Start angle</source>
-      <translation>Початковий кут:</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="452"/>
-      <source>Pick start angle</source>
-      <translation>Вибрати початковий кут</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="455"/>
-      <source>Aperture angle</source>
-      <translation>Кут щілини</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="291"/>
-      <source>Pick aperture</source>
-      <translation>Обрати шпарину</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="317"/>
-      <source>Create Circle (Part)</source>
-      <translation>Створити коло (частина)</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="335"/>
-      <source>Create Circle</source>
-      <translation>Створити коло</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="369"/>
-      <source>Create Arc (Part)</source>
-      <translation>Створити дугу (частина)</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="389"/>
-      <source>Create Arc</source>
-      <translation>Створити дугу</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="466"/>
-      <source>Pick aperture angle</source>
-      <translation>Виберіть кут апертури</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_arcs.py" line="551"/>
-      <source>Arc by 3 points</source>
-      <translation>Дуга за 3 точками</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_texts.py" line="77"/>
-      <source>Pick location point</source>
-      <translation>Вкажіть точку розташування</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_texts.py" line="121"/>
-      <source>Create Text</source>
-      <translation>Створити текст</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="79"/>
-      <source>Select an object to rotate</source>
-      <translation>Оберіть об'єкт для обертання</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="99"/>
-      <source>Pick rotation center</source>
-      <translation>Вибрати центр обертання</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="396"/>
-      <source>Base angle</source>
-      <translation>Базовий кут</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="397"/>
-      <source>The base angle you wish to start the rotation from</source>
-      <translation>Базовий кут, з якого ви хочете розпочати обертання</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="400"/>
-      <source>Pick base angle</source>
-      <translation>Оберіть базовий кут</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="409"/>
-      <source>Rotation</source>
-      <translation>Поворот</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="410"/>
-      <source>The amount of rotation you wish to perform.
-The final angle will be the base angle plus this amount.</source>
-      <translation>Кількість обертання, яке бажаєте виконати.
-Остаточний кут буде базовим кутом плюс це сума.</translation>
-    </message>
-    <message>
-      <location filename="../../draftguitools/gui_rotate.py" line="418"/>
-      <source>Pick rotation angle</source>
-      <translation>Кут повороту</translation>
-    </message>
   </context>
   <context>
     <name>importOCA</name>
     <message>
-      <location filename="../../importOCA.py" line="359"/>
-      <source>OCA error: couldn't determine character encoding</source>
-      <translation>Помилка OCA: Не вдалося визначити кодування символів</translation>
+      <location filename="../../importOCA.py" line="357"/>
+      <source>OCA error: couldn&apos;t determine character encoding</source>
+      <translation type="unfinished">OCA error: couldn&apos;t determine character encoding</translation>
     </message>
     <message>
-      <location filename="../../importOCA.py" line="445"/>
+      <location filename="../../importOCA.py" line="443"/>
       <source>OCA: found no data to export</source>
       <translation>OCA: не знайдено даних для експорту</translation>
     </message>
     <message>
-      <location filename="../../importOCA.py" line="490"/>
+      <location filename="../../importOCA.py" line="488"/>
       <source>successfully exported</source>
       <translation>успішно експортовано</translation>
     </message>
@@ -5448,7 +5450,7 @@ The final angle will be the base angle plus this amount.</source>
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="291"/>
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="301"/>
       <source>Specify a valid length unit like mm, m, in, ft, to force displaying the dimension value in this unit</source>
-      <translation>Вкажіть припустиму одиницю довжини, як mm, in, ft, щоб примусово відобразити значення розміру в цих одиницях</translation>
+      <translation>Вкажіть одиницю довжини, як мм, дюйм, фут, щоб примусово відобразити значення розміру в цих одиницях</translation>
     </message>
     <message>
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="294"/>
@@ -5690,9 +5692,9 @@ Change the direction of the axis itself in the property editor.</source>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="240"/>
       <source>If checked, the resulting objects in the array will be fused if they touch each other.
-This only works if "Link array" is off.</source>
-      <translation>Якщо цей прапорець установлено, то об’єкти, що відображаються у масиві, будуть склеєні при торканні.
-Це працює лише при вимкненому "масиві посилання".</translation>
+This only works if &quot;Link array&quot; is off.</source>
+      <translation type="unfinished">If checked, the resulting objects in the array will be fused if they touch each other.
+This only works if &quot;Link array&quot; is off.</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="244"/>
@@ -5701,10 +5703,10 @@ This only works if "Link array" is off.</source>
     </message>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="251"/>
-      <source>If checked, the resulting object will be a "Link array" instead of a regular array.
+      <source>If checked, the resulting object will be a &quot;Link array&quot; instead of a regular array.
 A Link array is more efficient when creating multiple copies, but it cannot be fused together.</source>
-      <translation>Якщо цей прапорець встановлений, кінцевий об'єкт буде "масив посилання" замість звичайного масиву.
-Масив посилань є більш ефективним при створенні декількох копій, але його не можна об'єднати.</translation>
+      <translation type="unfinished">If checked, the resulting object will be a &quot;Link array&quot; instead of a regular array.
+A Link array is more efficient when creating multiple copies, but it cannot be fused together.</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="255"/>
@@ -5827,9 +5829,9 @@ Negative values will result in copies produced in the negative direction.</sourc
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="394"/>
       <source>If checked, the resulting objects in the array will be fused if they touch each other.
-This only works if "Link array" is off.</source>
-      <translation>Якщо цей прапорець установлено, то об’єкти, що відображаються у масиві, будуть склеєні при торканні.
-Це працює лише при вимкненому "масиві посилання".</translation>
+This only works if &quot;Link array&quot; is off.</source>
+      <translation type="unfinished">If checked, the resulting objects in the array will be fused if they touch each other.
+This only works if &quot;Link array&quot; is off.</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="398"/>
@@ -5838,10 +5840,10 @@ This only works if "Link array" is off.</source>
     </message>
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="405"/>
-      <source>If checked, the resulting object will be a "Link array" instead of a regular array.
+      <source>If checked, the resulting object will be a &quot;Link array&quot; instead of a regular array.
 A Link array is more efficient when creating multiple copies, but it cannot be fused together.</source>
-      <translation>Якщо цей прапорець встановлений, кінцевий об'єкт буде "масив посилання" замість звичайного масиву.
-Масив посилань є більш ефективним при створенні декількох копій, але його не можна об'єднати.</translation>
+      <translation type="unfinished">If checked, the resulting object will be a &quot;Link array&quot; instead of a regular array.
+A Link array is more efficient when creating multiple copies, but it cannot be fused together.</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="409"/>
@@ -5929,9 +5931,9 @@ Change the direction of the axis itself in the property editor.</source>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="202"/>
       <source>If checked, the resulting objects in the array will be fused if they touch each other.
-This only works if "Link array" is off.</source>
-      <translation>Якщо цей прапорець установлено, то об’єкти, що відображаються у масиві, будуть склеєні при торканні.
-Це працює лише при вимкненому "масиві посилання".</translation>
+This only works if &quot;Link array&quot; is off.</source>
+      <translation type="unfinished">If checked, the resulting objects in the array will be fused if they touch each other.
+This only works if &quot;Link array&quot; is off.</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="206"/>
@@ -5940,10 +5942,10 @@ This only works if "Link array" is off.</source>
     </message>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="213"/>
-      <source>If checked, the resulting object will be a "Link array" instead of a regular array.
+      <source>If checked, the resulting object will be a &quot;Link array&quot; instead of a regular array.
 A Link array is more efficient when creating multiple copies, but it cannot be fused together.</source>
-      <translation>Якщо цей прапорець встановлений, кінцевий об'єкт буде "масив посилання" замість звичайного масиву.
-Масив посилань є більш ефективним при створенні декількох копій, але його не можна об'єднати.</translation>
+      <translation type="unfinished">If checked, the resulting object will be a &quot;Link array&quot; instead of a regular array.
+A Link array is more efficient when creating multiple copies, but it cannot be fused together.</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="217"/>
@@ -6328,7 +6330,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
       <location filename="../ui/TaskPanel_SetStyle.ui" line="186"/>
       <source> %</source>
-      <translation> %</translation>
+      <translation type="unfinished"> %</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_SetStyle.ui" line="199"/>
@@ -6498,7 +6500,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
       <location filename="../ui/dialogHatch.ui" line="71"/>
       <source>°</source>
-      <translation>°</translation>
+      <translation type="unfinished">°</translation>
     </message>
   </context>
   <context>
@@ -6601,8 +6603,8 @@ If this option is checked, the base objects will be selected instead.</source>
     </message>
     <message>
       <location filename="../ui/preferences-draft.ui" line="264"/>
-      <source>If this option is set, when creating Draft objects on top of an existing face of another object, the "Support" property of the Draft object will be set to the base object. This was the standard behaviour before FreeCAD 0.19</source>
-      <translation>Якщо ця опція встановлена, під час створення об'єктів Креслення на існуючому обличчі від іншого об'єкта, властивість "Підтримка" об'єкту Креслення буде встановлена в базовий об'єкт. Це була стандартна поведінка до FreeCAD 0.19</translation>
+      <source>If this option is set, when creating Draft objects on top of an existing face of another object, the &quot;Support&quot; property of the Draft object will be set to the base object. This was the standard behaviour before FreeCAD 0.19</source>
+      <translation type="unfinished">If this option is set, when creating Draft objects on top of an existing face of another object, the &quot;Support&quot; property of the Draft object will be set to the base object. This was the standard behaviour before FreeCAD 0.19</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draft.ui" line="267"/>
@@ -6817,7 +6819,7 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="398"/>
       <source>0.09,0.05</source>
-      <translation>0.09,0.05</translation>
+      <translation type="unfinished">0.09,0.05</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="418"/>
@@ -6827,7 +6829,7 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="441"/>
       <source>0.09,0.05,0.02,0.05</source>
-      <translation>0.09,0.05,0.02,0.05</translation>
+      <translation type="unfinished">0.09,0.05,0.02,0.05</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="461"/>
@@ -6837,7 +6839,7 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="484"/>
       <source>0.02,0.02</source>
-      <translation>0.02,0.02</translation>
+      <translation type="unfinished">0.02,0.02</translation>
     </message>
     <message>
       <location filename="../ui/preferences-drafttexts.ui" line="14"/>
@@ -6857,13 +6859,13 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-drafttexts.ui" line="47"/>
       <source>This is the default font name for all Draft texts and dimensions.
-It can be a font name such as "Arial", a default style such as "sans", "serif"
-or "mono", or a family such as "Arial,Helvetica,sans" or a name with a style
-such as "Arial:Bold"</source>
-      <translation>Це стандартний шрифт для малювання тексту та розмірностей.
-Це може бути ім’я шрифту як "Arial", стандартний стиль - як "sans", "serif"
-або "mono", або сімейство шрифтів як "Arial,Helvetica,sans", чи ім’я із
-стилем - як "Arial:Bold"</translation>
+It can be a font name such as &quot;Arial&quot;, a default style such as &quot;sans&quot;, &quot;serif&quot;
+or &quot;mono&quot;, or a family such as &quot;Arial,Helvetica,sans&quot; or a name with a style
+such as &quot;Arial:Bold&quot;</source>
+      <translation type="unfinished">This is the default font name for all Draft texts and dimensions.
+It can be a font name such as &quot;Arial&quot;, a default style such as &quot;sans&quot;, &quot;serif&quot;
+or &quot;mono&quot;, or a family such as &quot;Arial,Helvetica,sans&quot; or a name with a style
+such as &quot;Arial:Bold&quot;</translation>
     </message>
     <message>
       <location filename="../ui/preferences-drafttexts.ui" line="59"/>
@@ -7050,7 +7052,7 @@ such as "Arial:Bold"</source>
     <message>
       <location filename="../ui/preferences-svg.ui" line="14"/>
       <source>SVG</source>
-      <translation>SVG</translation>
+      <translation type="unfinished">SVG</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="40"/>
@@ -7092,7 +7094,7 @@ One unit in the SVG file will translate as one millimeter. </source>
     <message>
       <location filename="../ui/preferences-svg.ui" line="121"/>
       <source>Export style</source>
-      <translation>Експортувати стиль</translation>
+      <translation>Стиль експорту</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="128"/>
@@ -7102,7 +7104,7 @@ One unit in the SVG file will translate as one millimeter. </source>
     <message>
       <location filename="../ui/preferences-svg.ui" line="141"/>
       <source>Translated (for print &amp; display)</source>
-      <translation>Перетворено (для друку та відображення)</translation>
+      <translation>Перетворений (для друку та показу)</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="146"/>
@@ -7126,17 +7128,17 @@ One unit in the SVG file will translate as one millimeter. </source>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="204"/>
-      <source>Versions of Open CASCADE older than version 6.8 don't support arc projection.
+      <source>Versions of Open CASCADE older than version 6.8 don&apos;t support arc projection.
 In this case arcs will be discretized into small line segments.
 This value is the maximum segment length. </source>
-      <translation>Версії Open CASCADE старіші за версію 6.8 не підтримують проект дуги.
-У цьому випадку дуги будуть розріджені у невеликі відрізки.
-Це значення є максимальною довжиною сегмента. </translation>
+      <translation type="unfinished">Versions of Open CASCADE older than version 6.8 don&apos;t support arc projection.
+In this case arcs will be discretized into small line segments.
+This value is the maximum segment length. </translation>
     </message>
     <message>
       <location filename="../ui/preferences-oca.ui" line="14"/>
       <source>OCA</source>
-      <translation>OCA</translation>
+      <translation type="unfinished">OCA</translation>
     </message>
     <message>
       <location filename="../ui/preferences-oca.ui" line="46"/>
@@ -7151,7 +7153,7 @@ This value is the maximum segment length. </source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="14"/>
       <source>DXF</source>
-      <translation>DXF</translation>
+      <translation type="unfinished">DXF</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="35"/>
@@ -7195,11 +7197,11 @@ Note: C++ exporter is faster, but is not as featureful yet</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="96"/>
       <source>Allow FreeCAD to download the Python converter for DXF import and export.
-You can also do this manually by installing the "dxf_library" workbench
+You can also do this manually by installing the &quot;dxf_library&quot; workbench
 from the Addon Manager.</source>
-      <translation>Дозволити FreeCAD завантажувати конвертер Python для імпорту та експорту DXF.
-Ви також можете зробити це вручну встановивши робоче середовище "dxf_library"
-з менеджера Addon.</translation>
+      <translation type="unfinished">Allow FreeCAD to download the Python converter for DXF import and export.
+You can also do this manually by installing the &quot;dxf_library&quot; workbench
+from the Addon Manager.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="101"/>
@@ -7225,8 +7227,8 @@ from the Addon Manager.</source>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="156"/>
-      <source>If unchecked, texts and mtexts won't be imported</source>
-      <translation>Якщо не позначено, то тексти/мультитексти не будуть імпортовані</translation>
+      <source>If unchecked, texts and mtexts won&apos;t be imported</source>
+      <translation type="unfinished">If unchecked, texts and mtexts won&apos;t be imported</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="159"/>
@@ -7235,8 +7237,8 @@ from the Addon Manager.</source>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="172"/>
-      <source>If unchecked, points won't be imported</source>
-      <translation>Якщо вимкнено, точки не імпортуються</translation>
+      <source>If unchecked, points won&apos;t be imported</source>
+      <translation type="unfinished">If unchecked, points won&apos;t be imported</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="175"/>
@@ -7301,7 +7303,7 @@ from the Addon Manager.</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="289"/>
       <source>Scale factor to apply to imported files</source>
-      <translation>Масштабувати коефіцієнт для застосування до імпортованих файлів</translation>
+      <translation>Коефіцієнт масштабування для імпортованих файлів</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="309"/>
@@ -7309,10 +7311,10 @@ from the Addon Manager.</source>
 The factor is the conversion between the unit of your DXF file and millimeters.
 Example: for files in millimeters: 1, in centimeters: 10,
                              in meters: 1000, in inches: 25.4, in feet: 304.8</source>
-      <translation>Масштабувати коефіцієнт застосування до DXF-файлів при імпорті.
-Фактор - це перетворення між одиницею файлу DXF та міліметрами.
+      <translation>Коефіцієнт масштабування для імпортованих DXF-файлів.
+Коефіцієнт - це відношення між одиницею файлу DXF та міліметрами.
 Приклад: для файлів в міліметрах: 1, в сантиметрах: 10,
-                             метрів в метрах: 1000, в дюймах: 25. , у оздоровленні: 304.8</translation>
+                             в метрах: 1000, в дюймах: 25.4, у футах: 304.8</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="338"/>
@@ -7412,9 +7414,9 @@ as closed wires with correct width</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="528"/>
       <source>Maximum length of each of the polyline segments.
-If it is set to '0' the whole spline is treated as a straight segment.</source>
-      <translation>Максимальна довжина кожної ламаної лінії.
-Якщо значення встановлено у «0», весь сплайн розглядається як прямий сегмент.</translation>
+If it is set to &apos;0&apos; the whole spline is treated as a straight segment.</source>
+      <translation type="unfinished">Maximum length of each of the polyline segments.
+If it is set to &apos;0&apos; the whole spline is treated as a straight segment.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="559"/>
@@ -7425,7 +7427,7 @@ If it is set to '0' the whole spline is treated as a straight segment.</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="567"/>
       <source>All objects containing faces will be exported as 3D polyfaces</source>
-      <translation>Всі об'єкти, що містять грані, будуть експортовані як 3D поліотипи</translation>
+      <translation>Всі об'єкти, що містять грані, будуть експортовані як 3D багатогранники</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="570"/>
@@ -7489,21 +7491,21 @@ This might fail for post DXF R12 templates.</source>
       <location filename="../ui/preferences-draftsnap.ui" line="151"/>
       <location filename="../ui/preferences-draftsnap.ui" line="206"/>
       <source>Shift</source>
-      <translation>Shift</translation>
+      <translation type="unfinished">Shift</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="101"/>
       <location filename="../ui/preferences-draftsnap.ui" line="156"/>
       <location filename="../ui/preferences-draftsnap.ui" line="211"/>
       <source>Ctrl</source>
-      <translation>Ctrl</translation>
+      <translation type="unfinished">Ctrl</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="106"/>
       <location filename="../ui/preferences-draftsnap.ui" line="161"/>
       <location filename="../ui/preferences-draftsnap.ui" line="216"/>
       <source>Alt</source>
-      <translation>Alt</translation>
+      <translation type="unfinished">Alt</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="118"/>
@@ -7678,7 +7680,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="14"/>
       <source>DWG</source>
-      <translation>DWG</translation>
+      <translation type="unfinished">DWG</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="26"/>
@@ -7692,8 +7694,8 @@ This might fail for post DXF R12 templates.</source>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="41"/>
-      <source>This is the method FreeCAD will use to convert DWG files to DXF. If "Automatic" is chosen, FreeCAD will try to find one of the following converters in the same order as they are shown here. If FreeCAD is unable to find any, you might need to choose a specific converter and indicate its path here under. Choose the "dwg2dxf" utility if using LibreDWG, "ODAFileConverter" if using the ODA file converter, or the "dwg2dwg" utility if using the pro version of QCAD.</source>
-      <translation type="unfinished">This is the method FreeCAD will use to convert DWG files to DXF. If "Automatic" is chosen, FreeCAD will try to find one of the following converters in the same order as they are shown here. If FreeCAD is unable to find any, you might need to choose a specific converter and indicate its path here under. Choose the "dwg2dxf" utility if using LibreDWG, "ODAFileConverter" if using the ODA file converter, or the "dwg2dwg" utility if using the pro version of QCAD.</translation>
+      <source>This is the method FreeCAD will use to convert DWG files to DXF. If &quot;Automatic&quot; is chosen, FreeCAD will try to find one of the following converters in the same order as they are shown here. If FreeCAD is unable to find any, you might need to choose a specific converter and indicate its path here under. Choose the &quot;dwg2dxf&quot; utility if using LibreDWG, &quot;ODAFileConverter&quot; if using the ODA file converter, or the &quot;dwg2dwg&quot; utility if using the pro version of QCAD.</source>
+      <translation type="unfinished">This is the method FreeCAD will use to convert DWG files to DXF. If &quot;Automatic&quot; is chosen, FreeCAD will try to find one of the following converters in the same order as they are shown here. If FreeCAD is unable to find any, you might need to choose a specific converter and indicate its path here under. Choose the &quot;dwg2dxf&quot; utility if using LibreDWG, &quot;ODAFileConverter&quot; if using the ODA file converter, or the &quot;dwg2dwg&quot; utility if using the pro version of QCAD.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="51"/>
@@ -7727,8 +7729,8 @@ This might fail for post DXF R12 templates.</source>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="100"/>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Note:&lt;/span&gt; DXF options apply to DWG files as well.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=" font-weight:600;"&gt;Примітка:&lt;/span&gt; Параметри для файлів DXF також застосовуються і до файлів DWG.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; DXF options apply to DWG files as well.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; DXF options apply to DWG files as well.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="14"/>
@@ -7748,7 +7750,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="59"/>
       <source>R</source>
-      <translation>R</translation>
+      <translation type="unfinished">R</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="81"/>
@@ -7758,7 +7760,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="103"/>
       <source>T</source>
-      <translation>T</translation>
+      <translation type="unfinished">T</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="125"/>
@@ -7768,7 +7770,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="147"/>
       <source>O</source>
-      <translation>O</translation>
+      <translation type="unfinished">O</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="169"/>
@@ -7778,7 +7780,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="191"/>
       <source>P</source>
-      <translation>P</translation>
+      <translation type="unfinished">P</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="213"/>
@@ -7788,7 +7790,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="235"/>
       <source>D</source>
-      <translation>D</translation>
+      <translation type="unfinished">D</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="257"/>
@@ -7798,7 +7800,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="279"/>
       <source>L</source>
-      <translation>L</translation>
+      <translation type="unfinished">L</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="301"/>
@@ -7808,7 +7810,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="323"/>
       <source>A</source>
-      <translation>A</translation>
+      <translation type="unfinished">A</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="345"/>
@@ -7818,7 +7820,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="367"/>
       <source>E</source>
-      <translation>E</translation>
+      <translation type="unfinished">E</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="389"/>
@@ -7828,7 +7830,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="411"/>
       <source>Q</source>
-      <translation>Q</translation>
+      <translation type="unfinished">Q</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="433"/>
@@ -7838,7 +7840,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="455"/>
       <source>H</source>
-      <translation>H</translation>
+      <translation type="unfinished">H</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="477"/>
@@ -7848,7 +7850,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="499"/>
       <source>W</source>
-      <translation>W</translation>
+      <translation type="unfinished">W</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="521"/>
@@ -7858,7 +7860,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="543"/>
       <source>U</source>
-      <translation>U</translation>
+      <translation type="unfinished">U</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="565"/>
@@ -7868,7 +7870,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="587"/>
       <source>`</source>
-      <translation>`</translation>
+      <translation type="unfinished">`</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="609"/>
@@ -7878,7 +7880,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="631"/>
       <source>G</source>
-      <translation>G</translation>
+      <translation type="unfinished">G</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="653"/>
@@ -7888,7 +7890,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="675"/>
       <source>S</source>
-      <translation>S</translation>
+      <translation type="unfinished">S</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="697"/>
@@ -7898,7 +7900,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="719"/>
       <source>[</source>
-      <translation>[</translation>
+      <translation type="unfinished">[</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="741"/>
@@ -7908,7 +7910,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="763"/>
       <source>]</source>
-      <translation>]</translation>
+      <translation type="unfinished">]</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="785"/>

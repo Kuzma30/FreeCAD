@@ -13,7 +13,7 @@
     </message>
     <message>
       <source>Go back to the previous page</source>
-      <translation>Повернутися на попередню сторінку</translation>
+      <translation>Повертається на попередню сторінку</translation>
     </message>
   </context>
   <context>
@@ -28,7 +28,7 @@
     </message>
     <message>
       <source>Go to the next page</source>
-      <translation>Перейти на наступну сторінку</translation>
+      <translation>Переходить на наступну сторінку</translation>
     </message>
   </context>
   <context>
@@ -124,7 +124,7 @@
     </message>
     <message>
       <source>There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</source>
-      <translation type="unfinished">There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</translation>
+      <translation>При завантаженні файлу сталася серйозна помилка. Можливо, деякі дані були змінені або взагалі не відновлені. Збереження проєкту швидше за все, призведе до втрати даних.</translation>
     </message>
     <message>
       <source>Loading %1...</source>

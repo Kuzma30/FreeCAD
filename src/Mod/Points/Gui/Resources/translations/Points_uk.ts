@@ -193,27 +193,27 @@
     </message>
     <message>
       <source>,</source>
-      <translation>,</translation>
+      <translation type="unfinished">,</translation>
     </message>
     <message>
       <source>;</source>
-      <translation>;</translation>
+      <translation type="unfinished">;</translation>
     </message>
     <message>
       <source>\t</source>
-      <translation>\t</translation>
+      <translation type="unfinished">\t</translation>
     </message>
     <message>
       <source>\w</source>
-      <translation>\w</translation>
+      <translation type="unfinished">\w</translation>
     </message>
     <message>
       <source>X,Y,Z</source>
-      <translation>X,Y,Z</translation>
+      <translation type="unfinished">X,Y,Z</translation>
     </message>
     <message>
       <source>X,Y</source>
-      <translation>X,Y</translation>
+      <translation type="unfinished">X,Y</translation>
     </message>
     <message>
       <source>Points format:</source>
@@ -229,7 +229,7 @@
     </message>
     <message>
       <source>100</source>
-      <translation>100</translation>
+      <translation type="unfinished">100</translation>
     </message>
   </context>
   <context>

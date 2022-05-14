@@ -47,16 +47,6 @@
   <context>
     <name>ShareView</name>
     <message>
-      <location filename="../../../TechDrawTools/CommandShareView.py" line="47"/>
-      <source>Share View</source>
-      <translation>Поділитися Виглядом</translation>
-    </message>
-    <message>
-      <location filename="../../../TechDrawTools/CommandShareView.py" line="48"/>
-      <source>Share a View on a second Page</source>
-      <translation>Поділитися Виглядом на другій сторінці</translation>
-    </message>
-    <message>
       <location filename="../../../TechDrawTools/TaskShareView.py" line="46"/>
       <source>Share View with another Page</source>
       <translation>Поділитися Виглядом з іншою сторінкою</translation>
@@ -90,6 +80,16 @@
       <location filename="../../../TechDrawTools/TaskShareView.py" line="112"/>
       <source>Select To Page.</source>
       <translation>Оберіть із Сторінки.</translation>
+    </message>
+    <message>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="47"/>
+      <source>Share View</source>
+      <translation>Поділитися Виглядом</translation>
+    </message>
+    <message>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="48"/>
+      <source>Share a View on a second Page</source>
+      <translation>Поділитися Виглядом на другій сторінці</translation>
     </message>
   </context>
   <context>
@@ -1106,14 +1106,14 @@
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="159"/>
       <location filename="../../CommandExtensionDims.cpp" line="329"/>
-      <source>Insert &apos;〼&apos; Prefix</source>
-      <translation type="unfinished">Insert &apos;〼&apos; Prefix</translation>
+      <source>Insert &apos;□&apos; Prefix</source>
+      <translation type="unfinished">Insert &apos;□&apos; Prefix</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="160"/>
       <location filename="../../CommandExtensionDims.cpp" line="330"/>
-      <source>Insert a &apos;〼&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
-      <translation type="unfinished">Insert a &apos;〼&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</translation>
+      <source>Insert a &apos;□&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
+      <translation type="unfinished">Insert a &apos;□&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</translation>
     </message>
   </context>
   <context>
@@ -1834,7 +1834,7 @@
       <location filename="../../CommandDecorate.cpp" line="331"/>
       <location filename="../../CommandDecorate.cpp" line="332"/>
       <source>Turn View Frames On/Off</source>
-      <translation type="unfinished">Turn View Frames On/Off</translation>
+      <translation>Перемикач частоти кадрів вкл/викл</translation>
     </message>
   </context>
   <context>
@@ -2276,18 +2276,18 @@
     <message>
       <location filename="../../mrichtextedit.ui" line="96"/>
       <source>Undo (CTRL+Z)</source>
-      <translation type="unfinished">Undo (CTRL+Z)</translation>
+      <translation>Скасувати (CTRL+Z)</translation>
     </message>
     <message>
       <location filename="../../mrichtextedit.ui" line="99"/>
       <source>Undo</source>
-      <translation type="unfinished">Undo</translation>
+      <translation>Скасувати</translation>
     </message>
     <message>
       <location filename="../../mrichtextedit.ui" line="122"/>
       <location filename="../../mrichtextedit.ui" line="125"/>
       <source>Redo</source>
-      <translation type="unfinished">Redo</translation>
+      <translation>Повторити</translation>
     </message>
     <message>
       <location filename="../../mrichtextedit.ui" line="145"/>
@@ -2317,7 +2317,7 @@
     <message>
       <location filename="../../mrichtextedit.ui" line="194"/>
       <source>Paste</source>
-      <translation type="unfinished">Paste</translation>
+      <translation>Вставити</translation>
     </message>
     <message>
       <location filename="../../mrichtextedit.ui" line="221"/>
@@ -2922,7 +2922,7 @@
     <message>
       <location filename="../../CommandAnnotate.cpp" line="1052"/>
       <source>Selection is empty.</source>
-      <translation type="unfinished">Selection is empty.</translation>
+      <translation>Виділення пусте.</translation>
     </message>
     <message>
       <location filename="../../CommandAnnotate.cpp" line="1066"/>
@@ -3029,7 +3029,7 @@
     <message>
       <location filename="../../MDIViewPage.cpp" line="676"/>
       <source>PDF (*.pdf)</source>
-      <translation>PDF (*.pdf)</translation>
+      <translation type="unfinished">PDF (*.pdf)</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="677"/>
@@ -3045,7 +3045,7 @@
     <message>
       <location filename="../../MDIViewPage.cpp" line="876"/>
       <source>SVG (*.svg)</source>
-      <translation>SVG (*.svg)</translation>
+      <translation type="unfinished">SVG (*.svg)</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="878"/>
@@ -3230,7 +3230,7 @@
       <location filename="../../CommandExtensionPack.cpp" line="1451"/>
       <location filename="../../CommandExtensionPack.cpp" line="1908"/>
       <source>Selection is empty</source>
-      <translation type="unfinished">Selection is empty</translation>
+      <translation>Виділення пусте</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="2269"/>
@@ -3454,7 +3454,7 @@ the top and left view border</translation>
     <message>
       <location filename="../../TaskActiveView.ui" line="242"/>
       <source>Bounding box</source>
-      <translation type="unfinished">Bounding box</translation>
+      <translation>Обмежувальна рамка</translation>
     </message>
   </context>
   <context>
@@ -3474,7 +3474,7 @@ the top and left view border</translation>
       <location filename="../../TaskMoveView.ui" line="57"/>
       <location filename="../../TaskMoveView.ui" line="78"/>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <location filename="../../TaskMoveView.ui" line="43"/>
@@ -3517,7 +3517,7 @@ Preparation depth, (weld size)</translation>
       <location filename="../../TaskWeldingSymbol.ui" line="82"/>
       <location filename="../../TaskWeldingSymbol.ui" line="132"/>
       <source>Symbol</source>
-      <translation type="unfinished">Symbol</translation>
+      <translation>Символ</translation>
     </message>
     <message>
       <location filename="../../TaskWeldingSymbol.ui" line="92"/>
@@ -4991,7 +4991,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskBalloon.ui" line="22"/>
       <source>Text:</source>
-      <translation type="unfinished">Text:</translation>
+      <translation>Текст:</translation>
     </message>
     <message>
       <location filename="../../TaskBalloon.ui" line="29"/>
@@ -5250,7 +5250,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCenterLine.ui" line="296"/>
       <source>Weight</source>
-      <translation type="unfinished">Weight</translation>
+      <translation>Ваги</translation>
     </message>
     <message>
       <location filename="../../TaskCenterLine.ui" line="316"/>
@@ -5346,7 +5346,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCosmeticLine.ui" line="34"/>
       <source>View</source>
-      <translation>Перегляд</translation>
+      <translation>Вигляд</translation>
     </message>
     <message>
       <location filename="../../TaskCosmeticLine.ui" line="61"/>
@@ -5387,7 +5387,7 @@ Do you want to continue?</source>
       <translation type="unfinished">Format Symbols</translation>
     </message>
     <message>
-      <location filename="../../TaskCustomizeFormat.ui" line="34"/>
+      <location filename="../../TaskCustomizeFormat.ui" line="32"/>
       <source>GD&amp;T</source>
       <translation type="unfinished">GD&amp;T</translation>
     </message>
@@ -5689,12 +5689,12 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="421"/>
       <source>R</source>
-      <translation>R</translation>
+      <translation type="unfinished">R</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="428"/>
       <source>Diameter</source>
-      <translation>Діаметр</translation>
+      <translation>Діаметру</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="431"/>
@@ -5744,7 +5744,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="482"/>
       <source>°</source>
-      <translation>°</translation>
+      <translation type="unfinished">°</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="489"/>
@@ -5949,7 +5949,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="708"/>
       <source>Format:</source>
-      <translation type="unfinished">Format:</translation>
+      <translation>Формат:</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="718"/>
@@ -6248,7 +6248,7 @@ be used instead if the dimension value</translation>
     <message>
       <location filename="../../TaskDimension.ui" line="311"/>
       <source>Lines</source>
-      <translation type="unfinished">Lines</translation>
+      <translation>Ліній</translation>
     </message>
     <message>
       <location filename="../../TaskDimension.ui" line="319"/>
@@ -6565,12 +6565,12 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskLineDecor.ui" line="34"/>
       <source>View</source>
-      <translation>Перегляд</translation>
+      <translation>Вигляд</translation>
     </message>
     <message>
       <location filename="../../TaskLineDecor.ui" line="57"/>
       <source>Lines</source>
-      <translation type="unfinished">Lines</translation>
+      <translation>Ліній</translation>
     </message>
     <message>
       <location filename="../../TaskLineDecor.ui" line="78"/>
@@ -6610,7 +6610,7 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskLineDecor.ui" line="151"/>
       <source>Weight</source>
-      <translation type="unfinished">Weight</translation>
+      <translation>Ваги</translation>
     </message>
     <message>
       <location filename="../../TaskLineDecor.ui" line="158"/>
@@ -6747,7 +6747,7 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskProjGroup.ui" line="136"/>
       <source>:</source>
-      <translation>:</translation>
+      <translation type="unfinished">:</translation>
     </message>
     <message>
       <location filename="../../TaskProjGroup.ui" line="143"/>
@@ -6970,7 +6970,7 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskRestoreLines.ui" line="22"/>
       <source>All</source>
-      <translation>Всі</translation>
+      <translation>Вся</translation>
     </message>
     <message>
       <location filename="../../TaskRestoreLines.ui" line="29"/>
@@ -6983,7 +6983,7 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskRestoreLines.ui" line="39"/>
       <source>Geometry</source>
-      <translation type="unfinished">Geometry</translation>
+      <translation>Геометрії</translation>
     </message>
     <message>
       <location filename="../../TaskRestoreLines.ui" line="56"/>
@@ -7338,21 +7338,21 @@ using the given X/Y Spacing</translation>
       <location filename="../../TaskWeldingSymbol.cpp" line="326"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="338"/>
       <source>Symbol</source>
-      <translation type="unfinished">Symbol</translation>
+      <translation>Символ</translation>
     </message>
     <message>
       <location filename="../../TaskWeldingSymbol.cpp" line="277"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="287"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="427"/>
       <source>arrow</source>
-      <translation type="unfinished">arrow</translation>
+      <translation>стрілка</translation>
     </message>
     <message>
       <location filename="../../TaskWeldingSymbol.cpp" line="300"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="310"/>
       <location filename="../../TaskWeldingSymbol.cpp" line="428"/>
       <source>other</source>
-      <translation type="unfinished">other</translation>
+      <translation>інші</translation>
     </message>
   </context>
   <context>

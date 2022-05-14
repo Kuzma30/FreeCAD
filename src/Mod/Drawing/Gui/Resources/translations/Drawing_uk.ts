@@ -204,7 +204,7 @@
     </message>
     <message>
       <source>&amp;OpenGL</source>
-      <translation>&amp;OpenGL</translation>
+      <translation type="unfinished">&amp;OpenGL</translation>
     </message>
     <message>
       <source>&amp;Image</source>
@@ -219,8 +219,8 @@
       <translation>Відкрити SVG файл</translation>
     </message>
     <message>
-      <source>Could not open file '%1'.</source>
-      <translation>Не вдається відкрити файл '%1'.</translation>
+      <source>Could not open file &apos;%1&apos;.</source>
+      <translation type="unfinished">Could not open file &apos;%1&apos;.</translation>
     </message>
     <message>
       <source>&amp;Renderer</source>
@@ -240,27 +240,27 @@
     </message>
     <message>
       <source>A0</source>
-      <translation>A0</translation>
+      <translation type="unfinished">A0</translation>
     </message>
     <message>
       <source>A1</source>
-      <translation>A1</translation>
+      <translation type="unfinished">A1</translation>
     </message>
     <message>
       <source>A2</source>
-      <translation>A2</translation>
+      <translation type="unfinished">A2</translation>
     </message>
     <message>
       <source>A3</source>
-      <translation>A3</translation>
+      <translation type="unfinished">A3</translation>
     </message>
     <message>
       <source>A4</source>
-      <translation>A4</translation>
+      <translation type="unfinished">A4</translation>
     </message>
     <message>
       <source>A5</source>
-      <translation>A5</translation>
+      <translation type="unfinished">A5</translation>
     </message>
     <message>
       <source>Different orientation</source>
@@ -286,8 +286,8 @@ Do you want to continue?</source>
       <translation>Відкриття файлу не вдалося</translation>
     </message>
     <message>
-      <source>Can't open file '%1' for writing.</source>
-      <translation>Не вдалося відкрити файл '%1' для запису.</translation>
+      <source>Can&apos;t open file &apos;%1&apos; for writing.</source>
+      <translation>Не можу відкрити файл &apos;%1&apos; для запису.</translation>
     </message>
   </context>
   <context>
@@ -350,27 +350,27 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>X +ve</source>
-      <translation>X +ve</translation>
+      <translation type="unfinished">X +ve</translation>
     </message>
     <message>
       <source>Y +ve</source>
-      <translation>Y +ve</translation>
+      <translation type="unfinished">Y +ve</translation>
     </message>
     <message>
       <source>Z +ve</source>
-      <translation>Z +ve</translation>
+      <translation type="unfinished">Z +ve</translation>
     </message>
     <message>
       <source>X -ve</source>
-      <translation>X -ve</translation>
+      <translation type="unfinished">X -ve</translation>
     </message>
     <message>
       <source>Y -ve</source>
-      <translation>Y -ve</translation>
+      <translation type="unfinished">Y -ve</translation>
     </message>
     <message>
       <source>Z -ve</source>
-      <translation>Z -ve</translation>
+      <translation type="unfinished">Z -ve</translation>
     </message>
     <message>
       <source>Isometric</source>
@@ -508,7 +508,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>%1%2 %3 (%4)</source>
-      <translation>%1%2 %3 (%4)</translation>
+      <translation type="unfinished">%1%2 %3 (%4)</translation>
     </message>
     <message>
       <source>Insert new %1%2 %3 (%4) drawing</source>
@@ -531,7 +531,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Select a Part object.</source>
-      <translation>Виберіть об'єкт деталі.</translation>
+      <translation>Виберіть частину об'єкта.</translation>
     </message>
     <message>
       <source>No page found</source>

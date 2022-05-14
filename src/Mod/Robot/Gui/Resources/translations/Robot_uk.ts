@@ -99,7 +99,7 @@
     </message>
     <message>
       <source>Kuka IR125</source>
-      <translation>Kuka IR125</translation>
+      <translation type="unfinished">Kuka IR125</translation>
     </message>
     <message>
       <source>Insert a Kuka IR125 into the document.</source>
@@ -114,7 +114,7 @@
     </message>
     <message>
       <source>Kuka IR16</source>
-      <translation>Kuka IR16</translation>
+      <translation type="unfinished">Kuka IR16</translation>
     </message>
     <message>
       <source>Insert a Kuka IR16 into the document.</source>
@@ -129,7 +129,7 @@
     </message>
     <message>
       <source>Kuka IR210</source>
-      <translation>Kuka IR210</translation>
+      <translation type="unfinished">Kuka IR210</translation>
     </message>
     <message>
       <source>Insert a Kuka IR210 into the document.</source>
@@ -144,7 +144,7 @@
     </message>
     <message>
       <source>Kuka IR500</source>
-      <translation>Kuka IR500</translation>
+      <translation type="unfinished">Kuka IR500</translation>
     </message>
     <message>
       <source>Insert a Kuka IR500 into the document.</source>
@@ -396,15 +396,15 @@
     </message>
     <message>
       <source>|&lt;</source>
-      <translation>|&lt;</translation>
+      <translation type="unfinished">|&lt;</translation>
     </message>
     <message>
       <source>&lt;</source>
-      <translation>&lt;</translation>
+      <translation type="unfinished">&lt;</translation>
     </message>
     <message>
       <source>||</source>
-      <translation>||</translation>
+      <translation type="unfinished">||</translation>
     </message>
     <message>
       <source>|&gt;</source>
@@ -420,7 +420,7 @@
     </message>
     <message>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
     <message>
       <source>Type</source>
@@ -432,15 +432,15 @@
     </message>
     <message>
       <source>C</source>
-      <translation>C</translation>
+      <translation type="unfinished">C</translation>
     </message>
     <message>
       <source>V</source>
-      <translation>V</translation>
+      <translation type="unfinished">V</translation>
     </message>
     <message>
       <source>A</source>
-      <translation>A</translation>
+      <translation type="unfinished">A</translation>
     </message>
   </context>
   <context>
@@ -458,31 +458,31 @@
     </message>
     <message>
       <source>A1</source>
-      <translation>A1</translation>
+      <translation type="unfinished">A1</translation>
     </message>
     <message>
       <source>A2</source>
-      <translation>A2</translation>
+      <translation type="unfinished">A2</translation>
     </message>
     <message>
       <source>A3</source>
-      <translation>A3</translation>
+      <translation type="unfinished">A3</translation>
     </message>
     <message>
       <source>A4</source>
-      <translation>A4</translation>
+      <translation type="unfinished">A4</translation>
     </message>
     <message>
       <source>A5</source>
-      <translation>A5</translation>
+      <translation type="unfinished">A5</translation>
     </message>
     <message>
       <source>A6</source>
-      <translation>A6</translation>
+      <translation type="unfinished">A6</translation>
     </message>
     <message>
       <source>TCP: (200.23,300.23,400.23,234,343,343)</source>
-      <translation>TCP: (200.23,300.23,400.23,234,343,343)</translation>
+      <translation type="unfinished">TCP: (200.23,300.23,400.23,234,343,343)</translation>
     </message>
     <message>
       <source>Tool: (0,0,400,0,0,0)</source>
@@ -490,7 +490,7 @@
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>TaskRobot6Axis</source>
@@ -519,15 +519,15 @@
     </message>
     <message>
       <source>|&lt;</source>
-      <translation>|&lt;</translation>
+      <translation type="unfinished">|&lt;</translation>
     </message>
     <message>
       <source>&lt;</source>
-      <translation>&lt;</translation>
+      <translation type="unfinished">&lt;</translation>
     </message>
     <message>
       <source>||</source>
-      <translation>||</translation>
+      <translation type="unfinished">||</translation>
     </message>
     <message>
       <source>|&gt;</source>
@@ -543,7 +543,7 @@
     </message>
     <message>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
     <message>
       <source>10 ms</source>
@@ -579,15 +579,15 @@
     </message>
     <message>
       <source>C</source>
-      <translation>C</translation>
+      <translation type="unfinished">C</translation>
     </message>
     <message>
       <source>V</source>
-      <translation>V</translation>
+      <translation type="unfinished">V</translation>
     </message>
     <message>
       <source>A</source>
-      <translation>A</translation>
+      <translation type="unfinished">A</translation>
     </message>
     <message>
       <source>Trajectory</source>
@@ -754,11 +754,11 @@
     </message>
     <message>
       <source>Accel:</source>
-      <translation>Accel:</translation>
+      <translation type="unfinished">Accel:</translation>
     </message>
     <message>
-      <source>Don't change Cont</source>
-      <translation>Не змінюйте Cont</translation>
+      <source>Don&apos;t change Cont</source>
+      <translation type="unfinished">Don&apos;t change Cont</translation>
     </message>
     <message>
       <source>Continues</source>
@@ -774,15 +774,15 @@
     </message>
     <message>
       <source>(0,0,0),(0,0,0)</source>
-      <translation>(0,0,0),(0,0,0)</translation>
+      <translation type="unfinished">(0,0,0),(0,0,0)</translation>
     </message>
     <message>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
-      <source>Don't change Position &amp; Orientation</source>
-      <translation>Не змінювати Позицію та Орієнтацію</translation>
+      <source>Don&apos;t change Position &amp; Orientation</source>
+      <translation type="unfinished">Don&apos;t change Position &amp; Orientation</translation>
     </message>
     <message>
       <source>Use Orientation</source>

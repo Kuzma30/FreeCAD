@@ -457,7 +457,7 @@ By using &quot;;;&quot; to separate paths, you can add several folders here</sou
     <message>
       <location filename="../../DlgStartPreferences.ui" line="579"/>
       <source>If this is selected, the &apos;New File&apos; icon shows a gradient icon instead of the normal icon</source>
-      <translation>Якщо ця опція вибрана, значок &apos;Новий Файл&apos; показує градієнт замість звичайної піктограми</translation>
+      <translation>Якщо ця опція вибрана, значок &apos;Новий Файл&apos; показує градієнтну іконку замість звичайної</translation>
     </message>
     <message>
       <location filename="../../DlgStartPreferences.ui" line="601"/>

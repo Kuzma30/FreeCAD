@@ -786,7 +786,7 @@ so that self intersection is avoided.</source>
     <message>
       <location filename="../../Command.cpp" line="2127"/>
       <source>Make a thick solid</source>
-      <translation>Перетворює тверде тіло на порожнине, із зазначенням товщини граней</translation>
+      <translation>Перетворює суцільне тіло на порожнине, із зазначенням товщини граней</translation>
     </message>
   </context>
   <context>
@@ -1489,7 +1489,7 @@ If zero, it is equal to Radius2</source>
     <message>
       <location filename="../../TaskBooleanParameters.ui" line="48"/>
       <source>Fuse</source>
-      <translation>Об&apos;єднання</translation>
+      <translation>Обʼєднання</translation>
     </message>
     <message>
       <location filename="../../TaskBooleanParameters.ui" line="53"/>
@@ -2289,7 +2289,7 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskLoftParameters.ui" line="42"/>
       <source>Object</source>
-      <translation>Об&apos;єкт</translation>
+      <translation>Обʼєкт</translation>
     </message>
     <message>
       <location filename="../../TaskLoftParameters.ui" line="65"/>
@@ -2705,7 +2705,7 @@ measured along the specified direction</source>
     <message>
       <location filename="../../TaskPipeOrientation.ui" line="91"/>
       <source>Object</source>
-      <translation>Об&apos;єкт</translation>
+      <translation>Обʼєкт</translation>
     </message>
     <message>
       <location filename="../../TaskPipeOrientation.ui" line="125"/>
@@ -2764,7 +2764,7 @@ measured along the specified direction</source>
       <location filename="../../TaskPipeParameters.ui" line="28"/>
       <location filename="../../TaskPipeParameters.ui" line="93"/>
       <source>Object</source>
-      <translation>Об&apos;єкт</translation>
+      <translation>Обʼєкт</translation>
     </message>
     <message>
       <location filename="../../TaskPipeParameters.ui" line="51"/>
@@ -3110,7 +3110,7 @@ measured along the specified direction</source>
     <message>
       <location filename="../../TaskShapeBinder.ui" line="22"/>
       <source>Object</source>
-      <translation>Об&apos;єкт</translation>
+      <translation>Обʼєкт</translation>
     </message>
     <message>
       <location filename="../../TaskShapeBinder.ui" line="48"/>
@@ -3197,7 +3197,7 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskThicknessParameters.ui" line="120"/>
       <source>Join Type</source>
-      <translation>Тип з&apos;єднання</translation>
+      <translation>Тип зʼєднання</translation>
     </message>
     <message>
       <location filename="../../TaskThicknessParameters.ui" line="128"/>
@@ -3542,7 +3542,7 @@ click again to end selection</source>
     <message>
       <location filename="../../Command.cpp" line="138"/>
       <source>There are no attachment modes that fit selected objects. Select something else.</source>
-      <translation>Немає режимів приєднання, які відповідають вибраним об&apos;єктам. Оберіть щось інше.</translation>
+      <translation>Немає режимів приєднання, які відповідають вибраним обʼєктам. Оберіть щось інше.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="144"/>
@@ -3630,7 +3630,7 @@ click again to end selection</source>
     <message>
       <location filename="../../Command.cpp" line="1106"/>
       <source>Cannot use this command as there is no solid to subtract from.</source>
-      <translation>Неможливо використати команду, тому що відсутнє тверде тіло для віднімання.</translation>
+      <translation>Неможливо використати команду, тому що відсутнє суцільне тіло для віднімання.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1107"/>
@@ -3640,7 +3640,7 @@ click again to end selection</source>
     <message>
       <location filename="../../Command.cpp" line="1128"/>
       <source>Cannot use selected object. Selected object must belong to the active body</source>
-      <translation>Неможливо використати вибраний об’єкт. Вибраний об&apos;єкт повинен належати до активного тіла</translation>
+      <translation>Неможливо використати виділений об’єкт. Виділений обʼєкт повинен належати до активного тіла</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1129"/>
@@ -3689,7 +3689,7 @@ click again to end selection</source>
     <message>
       <location filename="../../Command.cpp" line="1910"/>
       <source>Wrong object type</source>
-      <translation>Невірний тип об&apos;єкта</translation>
+      <translation>Невірний тип обʼєкта</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1911"/>
@@ -3729,7 +3729,7 @@ click again to end selection</source>
     <message>
       <location filename="../../CommandBody.cpp" line="68"/>
       <source>Failed to create a part object.</source>
-      <translation>Не вдалося створити об&apos;єкт Деталь.</translation>
+      <translation>Не вдалося створити обʼєкт Деталь.</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="115"/>
@@ -3758,7 +3758,7 @@ click again to end selection</source>
       <location filename="../../CommandBody.cpp" line="158"/>
       <source>The selected shape consists of multiple solids.
 This may lead to unexpected results.</source>
-      <translation>Вибрана форма складається з кількох твердих тіл.
+      <translation>Вибрана форма складається з кількох суцільних тіл.
 Це може призвести до несподіваних результатів.</translation>
     </message>
     <message>
@@ -3779,7 +3779,7 @@ This may lead to unexpected results.</source>
       <location filename="../../CommandBody.cpp" line="170"/>
       <source>The selected shape consists of multiple solids or shells.
 This may lead to unexpected results.</source>
-      <translation>Вибрана форма складається з кількох твердих тіл або оболонок.
+      <translation>Вибрана форма складається з кількох суцільних тіл або оболонок.
 Це може призвести до несподіваних результатів.</translation>
     </message>
     <message>
@@ -3834,7 +3834,7 @@ This may lead to unexpected results.</source>
     <message>
       <location filename="../../CommandBody.cpp" line="561"/>
       <source>Only a solid feature can be the tip of a body.</source>
-      <translation>Тільки елемент твердого тіла може бути кінцевою точкою розрахунку.</translation>
+      <translation>Тільки елемент суцільного тіла може бути кінцевою точкою розрахунку.</translation>
     </message>
     <message>
       <location filename="../../CommandBody.cpp" line="679"/>
@@ -3956,7 +3956,7 @@ If you have a legacy document with PartDesign objects without Body, use the migr
     <message>
       <location filename="../../Utils.cpp" line="239"/>
       <source>In order to use this feature it needs to belong to a part object in the document.</source>
-      <translation>Щоб використовувати цю функцію, вона повина належати об&apos;єкту Деталь в документі.</translation>
+      <translation>Щоб використовувати цю функцію, вона повина належати обʼєкту Деталь в документі.</translation>
     </message>
     <message>
       <location filename="../../ViewProvider.cpp" line="65"/>

@@ -21,7 +21,7 @@
     </message>
     <message>
       <source>Angle Snap</source>
-      <translation>Прив&apos;язка по куту</translation>
+      <translation>Привʼязка по куту</translation>
     </message>
     <message>
       <source>1 °</source>
@@ -332,7 +332,7 @@
     </message>
     <message>
       <source>Filename</source>
-      <translation>Ім&apos;я файлу</translation>
+      <translation>Імʼя файлу</translation>
     </message>
   </context>
   <context>
@@ -407,11 +407,11 @@
     <name>Gui::AlignmentView</name>
     <message>
       <source>Movable object</source>
-      <translation>Рухомий об&apos;єкт</translation>
+      <translation>Рухомий обʼєкт</translation>
     </message>
     <message>
       <source>Fixed object</source>
-      <translation>Зафіксований об&apos;єкт</translation>
+      <translation>Зафіксований обʼєкт</translation>
     </message>
   </context>
   <context>
@@ -1862,7 +1862,7 @@ after FreeCAD launches</source>
     </message>
     <message>
       <source>Enter a file name, please:</source>
-      <translation>Будь ласка, введіть ім&apos;я файлу:</translation>
+      <translation>Будь ласка, введіть імʼя файлу:</translation>
     </message>
     <message>
       <source>Existing file</source>
@@ -1900,7 +1900,7 @@ This file already exists.</source>
     </message>
     <message>
       <source>Enter new name:</source>
-      <translation>Введіть нове ім&apos;я:</translation>
+      <translation>Введіть нове імʼя:</translation>
     </message>
     <message>
       <source>&apos;%1&apos;
@@ -2026,7 +2026,7 @@ Note: your changes will be applied when you next switch workbenches
     </message>
     <message>
       <source>The macro directory doesn&apos;t exist. Please, choose another one.</source>
-      <translation>Тека макросів &apos; не існує. Виберіть іншу.</translation>
+      <translation>Тека макросів не існує. Виберіть іншу.</translation>
     </message>
     <message>
       <source>Choose macro directory</source>
@@ -2822,11 +2822,11 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Transparent objects:</source>
-      <translation>Прозорі об&apos;єкти:</translation>
+      <translation>Прозорі обʼєкти:</translation>
     </message>
     <message>
       <source>Render types of transparent objects</source>
-      <translation>Типи візуалізації прозорих об&apos;єктів</translation>
+      <translation>Типи візуалізації прозорих обʼєктів</translation>
     </message>
     <message>
       <source>One pass</source>
@@ -3204,7 +3204,7 @@ besides the color bar</source>
     </message>
     <message>
       <source>Document objects</source>
-      <translation>Об&apos;єкти документу</translation>
+      <translation>Обʼєкти документу</translation>
     </message>
     <message>
       <source>Allow duplicate object labels in one document</source>
@@ -3224,7 +3224,7 @@ besides the color bar</source>
     </message>
     <message>
       <source>Author name</source>
-      <translation>Ім&apos;я автора</translation>
+      <translation>Імʼя автора</translation>
     </message>
     <message>
       <source>Set on save</source>
@@ -3363,7 +3363,7 @@ icon in the tree view to fully reload it.</source>
       <source>All documents that will be created will get the specified author name.
 Keep blank for anonymous.
 You can also use the form: John Doe &lt;john@doe.com&gt;</source>
-      <translation>Всі документи, які будуть створені, отримають зазначене ім&apos;я автора.
+      <translation>Всі документи, які будуть створені, отримають зазначене імʼя автора.
 Залиште порожнім для анонімності.
 Також можна використати цю форму: Джон До &lt;john@doe.com&gt;</translation>
     </message>
@@ -3977,7 +3977,7 @@ Mouse tilting is not disabled by this setting.</source>
     </message>
     <message>
       <source>Object center</source>
-      <translation>Центр об&apos;єкта</translation>
+      <translation>Центр обʼєкта</translation>
     </message>
     <message>
       <source>Rotates to nearest possible state when clicking a cube face</source>
@@ -4217,7 +4217,7 @@ horizontal space in Python console</source>
     </message>
     <message>
       <source>Object being edited</source>
-      <translation>Об&apos;єкт редагувався</translation>
+      <translation>Обʼєкт редагувався</translation>
     </message>
     <message>
       <source>Active container</source>
@@ -5203,7 +5203,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Searches object labels</source>
-      <translation>Пошук за мітками об&apos;єкту</translation>
+      <translation>Пошук за мітками обʼєкту</translation>
     </message>
     <message>
       <source>Clears the search field</source>
@@ -5215,7 +5215,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Selects only this object</source>
-      <translation>Виділіть лише цей об&apos;єкт</translation>
+      <translation>Виділіть лише цей обʼєкт</translation>
     </message>
     <message>
       <source>Deselect</source>
@@ -5231,7 +5231,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Selects and fits this object in the 3D window</source>
-      <translation>Виділити та повністю вмістити об&apos;єкт у 3D-вікні</translation>
+      <translation>Виділити та повністю вмістити обʼєкт у 3D-вікні</translation>
     </message>
     <message>
       <source>Go to selection</source>
@@ -5247,7 +5247,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Reveals this object and its subelements in the python console.</source>
-      <translation>Показати цей об&apos;єкт і його піделементи в консолі Python.</translation>
+      <translation>Показати цей обʼєкт і його піделементи в консолі Python.</translation>
     </message>
     <message>
       <source>Mark to recompute</source>
@@ -5255,7 +5255,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Mark this object to be recomputed</source>
-      <translation>Позначити цей об&apos;єкт для переобчислення</translation>
+      <translation>Позначити цей обʼєкт для переобчислення</translation>
     </message>
     <message>
       <source>Selection View</source>
@@ -5275,7 +5275,7 @@ originally selected prior to opening this dialog</source>
     </message>
     <message>
       <source>Picked object list</source>
-      <translation>Список вибраних об&apos;єктів</translation>
+      <translation>Список вибраних обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -5620,12 +5620,12 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
-      <translation>Експортований об&apos;єкт містить зовнішні посилання. Збережіть документ хоча б раз перед експортом.</translation>
+      <translation>Експортований обʼєкт містить зовнішні посилання. Збережіть документ хоча б раз перед експортом.</translation>
     </message>
     <message>
       <source>To link to external objects, the document must be saved at least once.
 Do you want to save the document now?</source>
-      <translation>Щоб прив&apos;язати зовнішні об&apos;єкти, документ повинен бути збережений хоча б один раз.
+      <translation>Щоб привʼязати зовнішні обʼєкти, документ повинен бути збережений хоча б один раз.
 Зберегти документ зараз?</translation>
     </message>
     <message>
@@ -5858,7 +5858,7 @@ How do you want to proceed?</source>
     </message>
     <message>
       <source>Object not found</source>
-      <translation>Об&apos;єкт не знайдено</translation>
+      <translation>Обʼєкт не знайдено</translation>
     </message>
   </context>
   <context>
@@ -5964,7 +5964,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>Insert file name...</source>
-      <translation>Введіть ім&apos;я файлу ...</translation>
+      <translation>Введіть імʼя файлу...</translation>
     </message>
     <message>
       <source>Save History</source>
@@ -5972,7 +5972,7 @@ Do you want to exit without saving your data?</source>
     </message>
     <message>
       <source>Insert file name</source>
-      <translation>Введіть ім&apos;я файлу</translation>
+      <translation>Введіть імʼя файлу</translation>
     </message>
     <message>
       <source>Unhandled std C++ exception.</source>
@@ -6306,7 +6306,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>The text of the underlying object has changed. Discard changes and reload the text from the object?</source>
-      <translation>Текст основного об&apos;єкта змінився. Відхилити зміни та перезавантажити текст з об&apos;єкта?</translation>
+      <translation>Текст основного обʼєкта змінився. Відхилити зміни та перезавантажити текст з обʼєкта?</translation>
     </message>
     <message>
       <source>Yes, reload.</source>
@@ -6564,7 +6564,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Rename object</source>
-      <translation>Перейменувати об&apos;єкт</translation>
+      <translation>Перейменувати обʼєкт</translation>
     </message>
     <message>
       <source>Labels &amp; Attributes</source>
@@ -6580,7 +6580,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Finish editing object</source>
-      <translation>Завершити редагування об&apos;єкту</translation>
+      <translation>Завершити редагування обʼєкту</translation>
     </message>
     <message>
       <source>Activate document</source>
@@ -6604,11 +6604,11 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Mark this object to be recomputed</source>
-      <translation>Позначити цей об&apos;єкт для переобчислення</translation>
+      <translation>Позначити цей обʼєкт для переобчислення</translation>
     </message>
     <message>
       <source>%1, Internal name: %2</source>
-      <translation>%1, внутрішнє ім&apos;я: %2</translation>
+      <translation>%1, внутрішнє імʼя: %2</translation>
     </message>
     <message>
       <source>Search...</source>
@@ -6616,7 +6616,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Search for objects</source>
-      <translation>Пошук об&apos;єктів</translation>
+      <translation>Пошук обʼєктів</translation>
     </message>
     <message>
       <source>Description</source>
@@ -6664,11 +6664,11 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Recompute object</source>
-      <translation>Переобчислити об&apos;єкт</translation>
+      <translation>Переобчислити обʼєкт</translation>
     </message>
     <message>
       <source>Recompute the selected object</source>
-      <translation>Переобчислити вибраний об&apos;єкт</translation>
+      <translation>Переобчислити виділений обʼєкт</translation>
     </message>
     <message>
       <source> (but must be executed)</source>
@@ -7065,7 +7065,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Save document under new filename...</source>
-      <translation>Зберегти документ під новим ім&apos;ям ...</translation>
+      <translation>Зберегти документ під новим імʼям...</translation>
     </message>
     <message>
       <source>Saving aborted</source>
@@ -7129,11 +7129,11 @@ Please open a browser window and type in: http://localhost:%1.</source>
     </message>
     <message>
       <source>Out of memory</source>
-      <translation>Не вистачає пам&apos;яті</translation>
+      <translation>Не вистачає памʼяті</translation>
     </message>
     <message>
       <source>Not enough memory available to display the data.</source>
-      <translation>Недостатньо пам&apos;яті для відображення даних.</translation>
+      <translation>Недостатньо памʼяті для показу даних.</translation>
     </message>
     <message>
       <source>Cannot find file %1</source>
@@ -7170,12 +7170,14 @@ Please open a browser window and type in: http://localhost:%1.</source>
     <message>
       <source>Only one object selected. Please select two objects.
 Be aware the point where you click matters.</source>
-      <translation>Обрано лише один об&apos;єкт. Будь ласка, виберіть два об&apos;єкти. Майте на увазі, що має значення місце, де ви робите вибір.</translation>
+      <translation>Обрано лише один обʼєкт. Будь ласка, виберіть два обʼєкти. 
+Майте на увазі, що має значення місце, де ви робите вибір.</translation>
     </message>
     <message>
       <source>Please select two objects.
 Be aware the point where you click matters.</source>
-      <translation>Будь ласка, виберіть два об&apos;єкти. Майте на увазі, що має значення місце, де ви робите вибір.</translation>
+      <translation>Будь ласка, виберіть два обʼєкти. Майте на увазі,
+що має значення місце, де ви робите вибір.</translation>
     </message>
     <message>
       <source>New boolean item</source>
@@ -7349,7 +7351,7 @@ Please check the Report View for more details.</source>
     </message>
     <message>
       <source>Invalid name</source>
-      <translation>Невірне ім&apos;я</translation>
+      <translation>Невірне імʼя</translation>
     </message>
     <message>
       <source>The property name or group name must only contain alpha numericals,
@@ -7442,7 +7444,7 @@ Choose &apos;Abort&apos; to abort</source>
     </message>
     <message>
       <source>There were errors while loading the file. Some data might have been modified or not recovered at all. Look in the report view for more specific information about the objects involved.</source>
-      <translation>Під час завантаження файлу виникли помилки. Деякі дані, можливо, були змінені або взагалі не відновлені. Ознайомтесь зі звітом для більш отримання конкретної інформації щодо таких об&apos;єктів.</translation>
+      <translation>Під час завантаження файлу виникли помилки. Деякі дані, можливо, були змінені або взагалі не відновлені. Ознайомтесь зі звітом для більш отримання конкретної інформації щодо таких обʼєктів.</translation>
     </message>
     <message>
       <source>There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</source>
@@ -7462,11 +7464,11 @@ Choose &apos;Abort&apos; to abort</source>
 &quot;%1&quot;
 
 Would you like to save the file with a different name?</source>
-      <translation>При спробі зберегти файл виникла проблема. Це може бути пов&apos;язано з тим, що відсутні деякі батьківські теки, або у вас немає достатніх прав доступу, або з інших причин. Подробиці помилки:
+      <translation>При спробі зберегти файл виникла проблема. Це може бути повʼязано з тим, що відсутні деякі батьківські теки, або у вас немає достатніх прав доступу, або з інших причин. Подробиці помилки:
 
 &quot;%1&quot;
 
-Хочете зберегти файл з іншим ім&apos;ям?</translation>
+Хочете зберегти файл з іншим імʼям?</translation>
     </message>
     <message>
       <source>Document not saved</source>
@@ -7660,7 +7662,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Align the selected objects</source>
-      <translation>Вирівняти виділені об&apos;єкти</translation>
+      <translation>Вирівняти виділені обʼєкти</translation>
     </message>
   </context>
   <context>
@@ -7755,7 +7757,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Deletes the selected objects</source>
-      <translation>Видаляє вибрані об&apos;єкти</translation>
+      <translation>Видаляє вибрані обʼєкти</translation>
     </message>
   </context>
   <context>
@@ -7777,7 +7779,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Show the dependency graph of the objects in the active document</source>
-      <translation>Показати граф залежностей об&apos;єктів в активному документі</translation>
+      <translation>Показати граф залежностей обʼєктів в активному документі</translation>
     </message>
   </context>
   <context>
@@ -8028,7 +8030,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Create a new group for ordering objects</source>
-      <translation>Створити нову групу для впорядкування об&apos;єктів</translation>
+      <translation>Створити нову групу для впорядкування обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -8164,14 +8166,14 @@ the current copy will be lost.
     </message>
     <message>
       <source>Select all links to the current selected object</source>
-      <translation>Вибрати всі посилання на поточний вибраний об&apos;єкт</translation>
+      <translation>Вибрати всі посилання на поточний вибраний обʼєкт</translation>
     </message>
   </context>
   <context>
     <name>StdCmdLinkSelectLinked</name>
     <message>
       <source>Go to linked object</source>
-      <translation>Перейти до зв&apos;язаного об&apos;єкта</translation>
+      <translation>Перейти до звʼязаного обʼєкта</translation>
     </message>
     <message>
       <source>Select the linked object and switch to its owner document</source>
@@ -8269,7 +8271,7 @@ the current copy will be lost.
     <name>StdCmdMeasurementSimple</name>
     <message>
       <source>Measures distance between two selected objects</source>
-      <translation>Виміряти відстань між двома обраними об&apos;єктами</translation>
+      <translation>Виміряти відстань між двома виділеними обʼєктами</translation>
     </message>
     <message>
       <source>Measure distance</source>
@@ -8649,7 +8651,7 @@ the current copy will be lost.
     <name>StdCmdSelectVisibleObjects</name>
     <message>
       <source>Select visible objects</source>
-      <translation>Виділити видимі об&apos;єкти</translation>
+      <translation>Виділити видимі обʼєкти</translation>
     </message>
     <message>
       <source>Select visible objects in the active document</source>
@@ -8675,14 +8677,14 @@ the current copy will be lost.
     </message>
     <message>
       <source>Sets the display properties of the selected object</source>
-      <translation>Задає вигляд виділеного об&apos;єкта</translation>
+      <translation>Задає вигляд виділеного обʼєкта</translation>
     </message>
   </context>
   <context>
     <name>StdCmdShowObjects</name>
     <message>
       <source>Show all objects</source>
-      <translation>Показати всі об&apos;єкти</translation>
+      <translation>Показати всі обʼєкти</translation>
     </message>
     <message>
       <source>Show all objects in the document</source>
@@ -8777,11 +8779,11 @@ the current copy will be lost.
     <name>StdCmdToggleObjects</name>
     <message>
       <source>Toggle all objects</source>
-      <translation>Перемкнути всі об&apos;єкти</translation>
+      <translation>Перемкнути всі обʼєкти</translation>
     </message>
     <message>
       <source>Toggles visibility of all objects in the active document</source>
-      <translation>Вмикає/вимикає видимість всіх об&apos;єктів в активному документі</translation>
+      <translation>Вмикає/вимикає видимість всіх обʼєктів в активному документі</translation>
     </message>
   </context>
   <context>
@@ -8825,7 +8827,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Transform the geometry of selected objects</source>
-      <translation>Перетворення геометрії вибраних об&apos;єктів</translation>
+      <translation>Перетворення геометрії вибраних обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -8836,7 +8838,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Transform the selected object in the 3d view</source>
-      <translation>Перетворює виділений об&apos;єкт у 3D виді</translation>
+      <translation>Перетворює виділений обʼєкт у 3D виді</translation>
     </message>
   </context>
   <context>
@@ -9497,7 +9499,7 @@ Are you sure you want to continue?
     </message>
     <message>
       <source>Object dependencies</source>
-      <translation>Залежності об&apos;єктів</translation>
+      <translation>Залежності обʼєктів</translation>
     </message>
     <message>
       <source>These items are selected for deletion, but are not in the active document.</source>
@@ -9574,12 +9576,12 @@ Are you sure you want to continue?
     <name>Std_DuplicateSelection</name>
     <message>
       <source>Object dependencies</source>
-      <translation>Залежності об&apos;єктів</translation>
+      <translation>Залежності обʼєктів</translation>
     </message>
     <message>
       <source>To link to external objects, the document must be saved at least once.
 Do you want to save the document now?</source>
-      <translation>Щоб прив&apos;язати зовнішні об&apos;єкти, документ повинен бути збережений хоча б один раз.
+      <translation>Щоб привʼязати зовнішні обʼєкти, документ повинен бути збережений хоча б один раз.
 Зберегти документ зараз?</translation>
     </message>
   </context>

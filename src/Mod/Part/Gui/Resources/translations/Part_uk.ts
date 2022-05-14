@@ -111,7 +111,7 @@
     <message>
       <location filename="../../../AttachmentEditor/Commands.py" line="81"/>
       <source>Edit attachment of selected object.</source>
-      <translation>Редагувати приєднання вибраного об'єкта.</translation>
+      <translation>Редагувати приєднання вибраного обʼєкта.</translation>
     </message>
   </context>
   <context>
@@ -119,7 +119,7 @@
     <message>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="57"/>
       <source>Compound Filter</source>
-      <translation>Фільтр з'єднань</translation>
+      <translation>Фільтр зʼєднань</translation>
     </message>
     <message>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="59"/>
@@ -161,7 +161,7 @@ Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to
     <message>
       <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="56"/>
       <source>Explode compound</source>
-      <translation>Відкрити об'єднане</translation>
+      <translation>Відкрити обʼєднане</translation>
     </message>
     <message>
       <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="58"/>
@@ -191,7 +191,7 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="199"/>
       <source>Fuses objects, taking care to preserve voids.</source>
-      <translation>З'єднує об'екти, піклуючись про те, щоб зберегти порожнини.</translation>
+      <translation>Зʼєднує обʼекти, піклуючись про те, щоб зберегти порожнини.</translation>
     </message>
   </context>
   <context>
@@ -199,12 +199,12 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="388"/>
       <source>Cutout for object</source>
-      <translation>Виріз об'єкту</translation>
+      <translation>Виріз обʼєкту</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="390"/>
       <source>Makes a cutout in one object to fit another object.</source>
-      <translation>Робить виріз в одному об'єкті, що відповідає іншому об'єкту.</translation>
+      <translation>Робить виріз в одному обʼєкті, що відповідає іншому обʼєкту.</translation>
     </message>
   </context>
   <context>
@@ -212,7 +212,7 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="293"/>
       <source>Embed object</source>
-      <translation>Вбудувати об'єкт</translation>
+      <translation>Вбудувати обʼєкт</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="295"/>
@@ -2029,7 +2029,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../Command.cpp" line="2219"/>
       <source>Set the color of each individual face of the selected object.</source>
-      <translation>Встановлює колір кожної окремої грані виділеного об'єкту.</translation>
+      <translation>Встановлює колір кожної окремої грані виділеного обʼєкту.</translation>
     </message>
   </context>
   <context>
@@ -2565,7 +2565,7 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../Command.cpp" line="478"/>
       <source>Union</source>
-      <translation>Об'єднання</translation>
+      <translation>Обʼєднання</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="479"/>

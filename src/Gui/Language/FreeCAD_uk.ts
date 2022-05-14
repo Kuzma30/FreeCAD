@@ -8620,7 +8620,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Show selection bounding box</source>
-      <translation>Показати обмежувальну рамку для виділення</translation>
+      <translation>Показує обмежувальну рамку при виділенні</translation>
     </message>
   </context>
   <context>
@@ -8682,7 +8682,7 @@ the current copy will be lost.
     <name>StdCmdShowObjects</name>
     <message>
       <source>Show all objects</source>
-      <translation>Показати всі об&apos;єкти</translation>
+      <translation>Показати всі об'єкти</translation>
     </message>
     <message>
       <source>Show all objects in the document</source>
@@ -9067,7 +9067,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Switch stereo viewing to Interleaved Columns</source>
-      <translation>Перемкнути вивід стереозображення на спосіб чередування стовпчиків</translation>
+      <translation>Перемикає вивід стереозображення на спосіб чергування стовпчиків</translation>
     </message>
   </context>
   <context>
@@ -9078,7 +9078,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Switch stereo viewing to Interleaved Rows</source>
-      <translation>Перемкнути вивід стереозображення на черезрядковий спосіб</translation>
+      <translation>Перемикає вивід стереозображення на черезрядковий спосіб</translation>
     </message>
   </context>
   <context>
@@ -9100,7 +9100,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Switch stereo viewing to quad buffer</source>
-      <translation>Перемкнути вивід стереозображення на спосіб чотирикратного буферування</translation>
+      <translation>Перемикає вивід стереозображення на спосіб чотирикратного буферування</translation>
     </message>
   </context>
   <context>
@@ -9111,7 +9111,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Switch stereo viewing to red/cyan</source>
-      <translation>Перемкнути перегляд на червоно-блакитне стерео</translation>
+      <translation>Перемикає стерео перегляд на червоно-блакитний</translation>
     </message>
   </context>
   <context>

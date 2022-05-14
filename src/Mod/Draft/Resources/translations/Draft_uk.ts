@@ -153,7 +153,7 @@
     <message>
       <location filename="../../draftobjects/circle.py" line="48"/>
       <source>End angle of the arc (for a full circle,                 give it same value as First Angle)</source>
-      <translation type="unfinished">End angle of the arc (for a full circle,                 give it same value as First Angle)</translation>
+      <translation>Кінцевий кут дуги (для повного кола,надайте йому таке ж значення, як і перший кут)</translation>
     </message>
     <message>
       <location filename="../../draftobjects/circle.py" line="53"/>
@@ -1780,7 +1780,7 @@ on supported nodes and on supported objects.</source>
     <message>
       <location filename="../../draftguitools/gui_fillets.py" line="64"/>
       <source>Fillet</source>
-      <translation>Заокруглення</translation>
+      <translation>Скруглення</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_fillets.py" line="65"/>
@@ -3356,7 +3356,7 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
     <message>
       <location filename="../../draftguitools/gui_mirror.py" line="73"/>
       <source>Select an object to mirror</source>
-      <translation>Оберіть об'єкт для дзеркального відображення</translation>
+      <translation>Оберіть об'єкт для створення дзеркального зображення</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_mirror.py" line="92"/>
@@ -3968,17 +3968,17 @@ The final angle will be the base angle plus this amount.</source>
     <message>
       <location filename="../../DraftGui.py" line="1059"/>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="733"/>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="734"/>
       <source>Z</source>
-      <translation type="unfinished">Z</translation>
+      <translation>Z</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="735"/>
@@ -4184,7 +4184,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
     <message>
       <location filename="../../DraftGui.py" line="813"/>
       <source>Create text</source>
-      <translation>Створити текст</translation>
+      <translation>Створення тексту</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="814"/>
@@ -4344,7 +4344,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
     <message>
       <location filename="../../DraftGui.py" line="2394"/>
       <source>Faces</source>
-      <translation>Грані</translation>
+      <translation>Поверхні</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="2395"/>
@@ -5450,7 +5450,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="291"/>
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="301"/>
       <source>Specify a valid length unit like mm, m, in, ft, to force displaying the dimension value in this unit</source>
-      <translation>Вкажіть припустиму одиницю довжини, як mm, in, ft, щоб примусово відобразити значення розміру в цих одиницях</translation>
+      <translation>Вкажіть одиницю довжини, як мм, дюйм, фут, щоб примусово відобразити значення розміру в цих одиницях</translation>
     </message>
     <message>
       <location filename="../ui/dialog_AnnotationStyleEditor.ui" line="294"/>
@@ -5667,17 +5667,17 @@ Change the direction of the axis itself in the property editor.</source>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="163"/>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="183"/>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="203"/>
       <source>Z</source>
-      <translation type="unfinished">Z</translation>
+      <translation>Z</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="225"/>
@@ -5744,7 +5744,7 @@ The number must be at least 1 in each direction.</source>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="223"/>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="314"/>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="80"/>
@@ -5752,7 +5752,7 @@ The number must be at least 1 in each direction.</source>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="243"/>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="334"/>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="97"/>
@@ -5760,7 +5760,7 @@ The number must be at least 1 in each direction.</source>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="266"/>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="354"/>
       <source>Z</source>
-      <translation type="unfinished">Z</translation>
+      <translation>Z</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="119"/>
@@ -5906,17 +5906,17 @@ Change the direction of the axis itself in the property editor.</source>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="125"/>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="145"/>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="165"/>
       <source>Z</source>
-      <translation type="unfinished">Z</translation>
+      <translation>Z</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="187"/>
@@ -5963,7 +5963,7 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
       <location filename="../ui/TaskShapeString.ui" line="46"/>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <location filename="../ui/TaskShapeString.ui" line="53"/>
@@ -5975,12 +5975,12 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
       <location filename="../ui/TaskShapeString.ui" line="63"/>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
     <message>
       <location filename="../ui/TaskShapeString.ui" line="80"/>
       <source>Z</source>
-      <translation type="unfinished">Z</translation>
+      <translation>Z</translation>
     </message>
     <message>
       <location filename="../ui/TaskShapeString.ui" line="114"/>
@@ -7094,7 +7094,7 @@ One unit in the SVG file will translate as one millimeter. </source>
     <message>
       <location filename="../ui/preferences-svg.ui" line="121"/>
       <source>Export style</source>
-      <translation>Експортувати стиль</translation>
+      <translation>Стиль експорту</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="128"/>
@@ -7104,7 +7104,7 @@ One unit in the SVG file will translate as one millimeter. </source>
     <message>
       <location filename="../ui/preferences-svg.ui" line="141"/>
       <source>Translated (for print &amp; display)</source>
-      <translation>Перетворено (для друку та відображення)</translation>
+      <translation>Перетворений (для друку та показу)</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="146"/>
@@ -7303,7 +7303,7 @@ from the Addon Manager.</translation>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="289"/>
       <source>Scale factor to apply to imported files</source>
-      <translation>Масштабувати коефіцієнт для застосування до імпортованих файлів</translation>
+      <translation>Коефіцієнт масштабування для імпортованих файлів</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="309"/>
@@ -7311,10 +7311,10 @@ from the Addon Manager.</translation>
 The factor is the conversion between the unit of your DXF file and millimeters.
 Example: for files in millimeters: 1, in centimeters: 10,
                              in meters: 1000, in inches: 25.4, in feet: 304.8</source>
-      <translation>Масштабувати коефіцієнт застосування до DXF-файлів при імпорті.
-Фактор - це перетворення між одиницею файлу DXF та міліметрами.
+      <translation>Коефіцієнт масштабування для імпортованих DXF-файлів.
+Коефіцієнт - це відношення між одиницею файлу DXF та міліметрами.
 Приклад: для файлів в міліметрах: 1, в сантиметрах: 10,
-                             метрів в метрах: 1000, в дюймах: 25. , у оздоровленні: 304.8</translation>
+                             в метрах: 1000, в дюймах: 25.4, у футах: 304.8</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="338"/>
@@ -7427,7 +7427,7 @@ If it is set to &apos;0&apos; the whole spline is treated as a straight segment.
     <message>
       <location filename="../ui/preferences-dxf.ui" line="567"/>
       <source>All objects containing faces will be exported as 3D polyfaces</source>
-      <translation>Всі об'єкти, що містять грані, будуть експортовані як 3D поліотипи</translation>
+      <translation>Всі об'єкти, що містять грані, будуть експортовані як 3D багатогранники</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="570"/>
@@ -7920,7 +7920,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="807"/>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="829"/>
@@ -7930,7 +7930,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="851"/>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="873"/>
@@ -7940,7 +7940,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="895"/>
       <source>Z</source>
-      <translation type="unfinished">Z</translation>
+      <translation>Z</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="928"/>

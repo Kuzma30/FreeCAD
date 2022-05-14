@@ -1250,7 +1250,7 @@ First select the supporting geometry, for example, a face or an edge of a solid 
 then call this command, then choose the desired sketch.</source>
       <translation>Встановлює «Базу» для ескізу.
 Спочатку виділіть допоміжну геометрію, наприклад, грань або ребро 
-твердого об’єкта, потім викличте цю команду, а потім виберіть потрібний ескіз.</translation>
+суцільного об’єкта, потім викличте цю команду, а потім виберіть потрібний ескіз.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="563"/>
@@ -5102,7 +5102,7 @@ Points must be set closer than a fifth of the grid size to a grid line to snap.<
       <location filename="../../TaskSketcherValidation.ui" line="38"/>
       <source>Highlights open and non-manifold vertexes that could lead to error if sketch is used to generate solids
 This is purely based on topological shape of the sketch and not on its geometry/constrain set.</source>
-      <translation>Виділяє відкриті та одноманітні вершини, які можуть призвести до помилки, якщо ескіз використовується для створення твердих тіл
+      <translation>Виділяє відкриті та одноманітні вершини, які можуть призвести до помилки, якщо ескіз використовується для створення суцільних тіл
 Це ґрунтується виключно на топологічній формі ескізу, а не на його геометрії/наборі обмежень.</translation>
     </message>
     <message>
@@ -5797,7 +5797,7 @@ Select the method to attach this sketch to selected objects.</source>
     <message>
       <location filename="../../Command.cpp" line="182"/>
       <source>Select the method to attach this sketch to selected object</source>
-      <translation>Виберіть спосіб приєднання ескізу до виділеного об&apos;єкту</translation>
+      <translation>Виберіть спосіб приєднання ескізу до виділеного обʼєкту</translation>
     </message>
   </context>
   <context>

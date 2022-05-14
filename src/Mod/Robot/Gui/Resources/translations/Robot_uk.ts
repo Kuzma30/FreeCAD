@@ -408,15 +408,15 @@
     </message>
     <message>
       <source>|&gt;</source>
-      <translation type="unfinished">|&gt;</translation>
+      <translation>|&gt;</translation>
     </message>
     <message>
       <source>&gt;</source>
-      <translation type="unfinished">&gt;</translation>
+      <translation>&gt;</translation>
     </message>
     <message>
       <source>&gt;|</source>
-      <translation type="unfinished">&gt;|</translation>
+      <translation>&gt;|</translation>
     </message>
     <message>
       <source>%</source>
@@ -531,15 +531,15 @@
     </message>
     <message>
       <source>|&gt;</source>
-      <translation type="unfinished">|&gt;</translation>
+      <translation>|&gt;</translation>
     </message>
     <message>
       <source>&gt;</source>
-      <translation type="unfinished">&gt;</translation>
+      <translation>&gt;</translation>
     </message>
     <message>
       <source>&gt;|</source>
-      <translation type="unfinished">&gt;|</translation>
+      <translation>&gt;|</translation>
     </message>
     <message>
       <source>%</source>
@@ -636,51 +636,51 @@
     </message>
     <message>
       <source>X+</source>
-      <translation type="unfinished">X+</translation>
+      <translation>X+</translation>
     </message>
     <message>
       <source>Y+</source>
-      <translation type="unfinished">Y+</translation>
+      <translation>Y+</translation>
     </message>
     <message>
       <source>Z+</source>
-      <translation type="unfinished">Z+</translation>
+      <translation>Z+</translation>
     </message>
     <message>
       <source>A+</source>
-      <translation type="unfinished">A+</translation>
+      <translation>A+</translation>
     </message>
     <message>
       <source>B+</source>
-      <translation type="unfinished">B+</translation>
+      <translation>B+</translation>
     </message>
     <message>
       <source>C+</source>
-      <translation type="unfinished">C+</translation>
+      <translation>C+</translation>
     </message>
     <message>
       <source>X-</source>
-      <translation type="unfinished">X-</translation>
+      <translation>X-</translation>
     </message>
     <message>
       <source>Y-</source>
-      <translation type="unfinished">Y-</translation>
+      <translation>Y-</translation>
     </message>
     <message>
       <source>Z-</source>
-      <translation type="unfinished">Z-</translation>
+      <translation>Z-</translation>
     </message>
     <message>
       <source>A-</source>
-      <translation type="unfinished">A-</translation>
+      <translation>A-</translation>
     </message>
     <message>
       <source>B-</source>
-      <translation type="unfinished">B-</translation>
+      <translation>B-</translation>
     </message>
     <message>
       <source>C-</source>
-      <translation type="unfinished">C-</translation>
+      <translation>C-</translation>
     </message>
     <message>
       <source>Tool 0</source>

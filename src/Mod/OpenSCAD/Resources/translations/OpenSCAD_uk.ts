@@ -26,7 +26,7 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="308"/>
       <source>Please select 3 objects first</source>
-      <translation>Будь ласка, оберіть спочатку 3 об'єкти</translation>
+      <translation>Будь ласка, оберіть спочатку 3 обʼєкти</translation>
     </message>
     <message>
       <location filename="../../OpenSCADCommands.py" line="363"/>
@@ -180,7 +180,7 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="532"/>
       <source>Export objects as meshes and use OpenSCAD to perform a boolean operation</source>
-      <translation>Експортувати об'єкти у вигляді сітки та задіяти OpenSCAD для виконання логічних операцій</translation>
+      <translation>Експортувати обʼєкти у вигляді сітки та задіяти OpenSCAD для виконання логічних операцій</translation>
     </message>
   </context>
   <context>
@@ -227,12 +227,12 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="323"/>
       <source>Remove Objects and their Children</source>
-      <translation>Видалити об'єкти і їхніх нащадків</translation>
+      <translation>Видалити обʼєкти і їхніх нащадків</translation>
     </message>
     <message>
       <location filename="../../OpenSCADCommands.py" line="324"/>
       <source>Removes the selected objects and all children that are not referenced from other objects</source>
-      <translation>Видалити обраний та всі дочірні об'єкти, на які відсутні посилання з інших об'єктів</translation>
+      <translation>Видалити обраний та всі дочірні обʼєкти, на які відсутні посилання з інших обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -240,12 +240,12 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="311"/>
       <source>Replace Object</source>
-      <translation>Замінити об'єкт</translation>
+      <translation>Замінити обʼєкт</translation>
     </message>
     <message>
       <location filename="../../OpenSCADCommands.py" line="312"/>
       <source>Replace an object in the Feature Tree. Please select old, new, and parent object</source>
-      <translation>Замінити об'єкт у дереві властивостей. Оберіть, будь ласка, старий, новий та породжуючий об'єкт</translation>
+      <translation>Замінити обʼєкт у дереві властивостей. Оберіть, будь ласка, старий, новий та породжуючий обʼєкт</translation>
     </message>
   </context>
   <context>
@@ -335,7 +335,7 @@
     <message>
       <location filename="../ui/openscadprefs-base.ui" line="119"/>
       <source>If this is checked, Multmatrix Object will be Parametric</source>
-      <translation>Якщо буде позначено цей пункт, то об'єкт Мультиматриця буде параметричним</translation>
+      <translation>Якщо буде позначено цей пункт, то обʼєкт Мультиматриця буде параметричним</translation>
     </message>
     <message>
       <location filename="../ui/openscadprefs-base.ui" line="122"/>
@@ -346,7 +346,7 @@
       <location filename="../ui/openscadprefs-base.ui" line="139"/>
       <location filename="../ui/openscadprefs-base.ui" line="162"/>
       <source>The maximum number of faces of a polygon, prism or frustum. If fn is greater than this value the object is considered to be a circular. Set to 0 for no limit</source>
-      <translation>Максимальна кількість граней багатокутника, призми або зрізаний конус. Якщо fn більше, ніж це значення, то об'єкт вважається круговим. Значення 0 для без обмежень</translation>
+      <translation>Максимальна кількість граней багатокутника, призми або зрізаний конус. Якщо fn більше, ніж це значення, то обʼєкт вважається круговим. Значення 0 для без обмежень</translation>
     </message>
     <message>
       <location filename="../ui/openscadprefs-base.ui" line="142"/>

@@ -6,7 +6,7 @@
     <message>
       <location filename="../../../PathScripts/PathDressupTag.py" line="121"/>
       <source>The base path to modify</source>
-      <translation type="unfinished">The base path to modify</translation>
+      <translation>Базова траєкторія для зміни</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupDragknife.py" line="70"/>
@@ -21,7 +21,7 @@
     <message>
       <location filename="../../../PathScripts/PathVcarve.py" line="210"/>
       <source>Additional base objects to be engraved</source>
-      <translation type="unfinished">Additional base objects to be engraved</translation>
+      <translation>Додаткові базові об'єкти для гравіювання</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathEngrave.py" line="88"/>
@@ -31,47 +31,47 @@
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="271"/>
       <source>Set thread orientation</source>
-      <translation type="unfinished">Set thread orientation</translation>
+      <translation>Встановити напрямок різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="278"/>
       <source>Currently only internal</source>
-      <translation type="unfinished">Currently only internal</translation>
+      <translation>На цю мить тільки внутрішня</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="285"/>
       <source>Defines which standard thread was chosen</source>
-      <translation type="unfinished">Defines which standard thread was chosen</translation>
+      <translation>Визначає яку стандартну різьбу обрано</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="293"/>
       <source>Set thread&apos;s major diameter</source>
-      <translation type="unfinished">Set thread&apos;s major diameter</translation>
+      <translation>Встановіть зовнішній діаметр різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="299"/>
       <source>Set thread&apos;s minor diameter</source>
-      <translation type="unfinished">Set thread&apos;s minor diameter</translation>
+      <translation>Встановіть діаметр западин різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="305"/>
       <source>Set thread&apos;s pitch - used for metric threads</source>
-      <translation type="unfinished">Set thread&apos;s pitch - used for metric threads</translation>
+      <translation>Встановіть крок різьби - використовується для метричних різьб</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="330"/>
       <source>Set how many passes are used to cut the thread</source>
-      <translation type="unfinished">Set how many passes are used to cut the thread</translation>
+      <translation>Встановіть кількість проходів для вирізання різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="338"/>
       <source>Direction of thread cutting operation</source>
-      <translation type="unfinished">Direction of thread cutting operation</translation>
+      <translation>Напрямок операції вирізання різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="353"/>
       <source>Operation to clear the inside of the thread</source>
-      <translation type="unfinished">Operation to clear the inside of the thread</translation>
+      <translation>Чистовий прохід різьби</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="188"/>
@@ -126,17 +126,17 @@
     <message>
       <location filename="../../../PathScripts/PathHelix.py" line="113"/>
       <source>Start cutting from the inside or outside</source>
-      <translation type="unfinished">Start cutting from the inside or outside</translation>
+      <translation>Почати вирізання зсередини або зовні</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="144"/>
       <source>Percent of cutter diameter to step over on each pass</source>
-      <translation type="unfinished">Percent of cutter diameter to step over on each pass</translation>
+      <translation>Відсоток діаметру вирізання для кожного проходу</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathHelix.py" line="152"/>
       <source>Starting Radius</source>
-      <translation type="unfinished">Starting Radius</translation>
+      <translation>Початковий радіус</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPlane.py" line="34"/>
@@ -146,7 +146,7 @@
     <message>
       <location filename="../../../PathScripts/PathFixture.py" line="58"/>
       <source>Make False, to prevent operation from generating code</source>
-      <translation type="unfinished">Make False, to prevent operation from generating code</translation>
+      <translation>Зробіть False, щоб уникнути операції з генерації коду</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathComment.py" line="37"/>
@@ -156,7 +156,7 @@
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="61"/>
       <source>Angle of ramp.</source>
-      <translation type="unfinished">Angle of ramp.</translation>
+      <translation>Кут нарощування.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="67"/>
@@ -166,12 +166,12 @@
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="73"/>
       <source>Which feed rate to use for ramping</source>
-      <translation type="unfinished">Which feed rate to use for ramping</translation>
+      <translation>Визначає робочу подачу для нарощування</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="79"/>
       <source>Custom feed rate</source>
-      <translation type="unfinished">Custom feed rate</translation>
+      <translation>Індивідуальна швидкість подачі</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupDogbone.py" line="429"/>
@@ -231,7 +231,7 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="176"/>
       <source>An optional comment for this Operation</source>
-      <translation type="unfinished">An optional comment for this Operation</translation>
+      <translation>Необов'язковий коментар до цієї Операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="184"/>
@@ -251,22 +251,22 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="224"/>
       <source>Coolant mode for this operation</source>
-      <translation type="unfinished">Coolant mode for this operation</translation>
+      <translation>Режим охолодження для цієї операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="232"/>
       <source>Starting Depth of Tool- first cut depth in Z</source>
-      <translation type="unfinished">Starting Depth of Tool- first cut depth in Z</translation>
+      <translation>Початкова глибина інструменту - перша глибина різу по Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="240"/>
       <source>Final Depth of Tool- lowest value in Z</source>
-      <translation type="unfinished">Final Depth of Tool- lowest value in Z</translation>
+      <translation>Фінальна глибина інструменту - найнижче значення по Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="267"/>
       <source>Incremental Step Down of Tool</source>
-      <translation type="unfinished">Incremental Step Down of Tool</translation>
+      <translation>Крок заглиблення Інструменту</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="275"/>
@@ -296,7 +296,7 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="439"/>
       <source>Coolant option for this operation</source>
-      <translation type="unfinished">Coolant option for this operation</translation>
+      <translation>Налаштування охолодження для цієї операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathFeatureExtensions.py" line="478"/>
@@ -311,7 +311,7 @@
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="122"/>
       <source>The desired width of the chamfer</source>
-      <translation type="unfinished">The desired width of the chamfer</translation>
+      <translation>Бажана ширина фаски</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="128"/>
@@ -326,12 +326,12 @@
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="142"/>
       <source>Direction of Operation</source>
-      <translation type="unfinished">Direction of Operation</translation>
+      <translation>Напрямок Операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="149"/>
       <source>Side of Operation</source>
-      <translation type="unfinished">Side of Operation</translation>
+      <translation>Сторона операції</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="157"/>
@@ -371,7 +371,7 @@
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="152"/>
       <source>Angle of the zigzag pattern</source>
-      <translation type="unfinished">Angle of the zigzag pattern</translation>
+      <translation>Кут зигзаг шаблону</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="158"/>
@@ -466,32 +466,32 @@
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="47"/>
       <source>Pattern method</source>
-      <translation type="unfinished">Pattern method</translation>
+      <translation>Метод шаблона</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="62"/>
       <source>The number of copies in X direction in Linear pattern</source>
-      <translation type="unfinished">The number of copies in X direction in Linear pattern</translation>
+      <translation>Кількість копій по осі X для Лінійного Масиву</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="70"/>
       <source>The number of copies in Y direction in Linear pattern</source>
-      <translation type="unfinished">The number of copies in Y direction in Linear pattern</translation>
+      <translation>Кількість копій по осі Y для Лінійного Масиву</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="78"/>
       <source>Total angle in Polar pattern</source>
-      <translation type="unfinished">Total angle in Polar pattern</translation>
+      <translation>Загальний кут в Полярному масиві</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="84"/>
       <source>The number of copies in Linear 1D and Polar pattern</source>
-      <translation type="unfinished">The number of copies in Linear 1D and Polar pattern</translation>
+      <translation>Кількість копій для Лінійного 1D та Полярного масиву</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="92"/>
       <source>The centre of rotation in Polar pattern</source>
-      <translation type="unfinished">The centre of rotation in Polar pattern</translation>
+      <translation>Центр обертання в Полярному масиві</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="109"/>
@@ -551,12 +551,12 @@
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="155"/>
       <source>The file of the tool</source>
-      <translation type="unfinished">The file of the tool</translation>
+      <translation>Файл інструменту</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="161"/>
       <source>The name of the shape file</source>
-      <translation type="unfinished">The name of the shape file</translation>
+      <translation>Ім'я файлу форми</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="205"/>
@@ -586,7 +586,7 @@
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="74"/>
       <source>The speed of the cutting spindle in RPM</source>
-      <translation type="unfinished">The speed of the cutting spindle in RPM</translation>
+      <translation>Швидкість обертання шпинделя в об/хв</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="82"/>
@@ -596,22 +596,22 @@
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="88"/>
       <source>Feed rate for vertical moves in Z</source>
-      <translation type="unfinished">Feed rate for vertical moves in Z</translation>
+      <translation>Швидкість вертикальної подачі по осі Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="94"/>
       <source>Feed rate for horizontal moves</source>
-      <translation type="unfinished">Feed rate for horizontal moves</translation>
+      <translation>Швидкість горизонтальної подачі</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="100"/>
       <source>Rapid rate for vertical moves in Z</source>
-      <translation type="unfinished">Rapid rate for vertical moves in Z</translation>
+      <translation>Швидкість прискореної вертикальної подачі по осі Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="106"/>
       <source>Rapid rate for horizontal moves</source>
-      <translation type="unfinished">Rapid rate for horizontal moves</translation>
+      <translation>Швидкість прискореної горизонтальної подачі</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="324"/>
@@ -924,7 +924,7 @@ For example:
     &apos;Metric, Small Parts &amp; CNC&apos;
     &apos;US Customary&apos;
     &apos;Imperial Decimal&apos;</source>
-      <translation type="unfinished">The currently selected unit schema: 
+      <translation>Зараз діє наступна схем: 
      &apos;{}&apos;
  Does not use &apos;minutes&apos; for velocity values. 
  
@@ -1255,7 +1255,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="199"/>
       <source>Make False, to prevent operation from generating code</source>
-      <translation type="unfinished">Make False, to prevent operation from generating code</translation>
+      <translation>Зробіть False, щоб уникнути операції з генерації коду</translation>
     </message>
   </context>
   <context>
@@ -1281,17 +1281,17 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathFeatureExtensionsGui.py" line="180"/>
       <source>Normal</source>
-      <translation>Звичайна</translation>
+      <translation>Звичайне</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathFeatureExtensionsGui.py" line="181"/>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathFeatureExtensionsGui.py" line="182"/>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
   </context>
   <context>
@@ -3066,12 +3066,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="489"/>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="490"/>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="475"/>
@@ -3308,12 +3308,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="134"/>
       <source>Forward</source>
-      <translation type="unfinished">Forward</translation>
+      <translation>Вперед</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="135"/>
       <source>Reverse</source>
-      <translation>Навпаки</translation>
+      <translation>В зворотньому напрямку</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="136"/>
@@ -3435,7 +3435,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../InitGui.py" line="238"/>
       <source>&amp;Path</source>
-      <translation>&amp;Траєкторія</translation>
+      <translation>&amp;Шлях</translation>
     </message>
     <message>
       <location filename="../../../InitGui.py" line="205"/>
@@ -3851,7 +3851,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DlgSelectPostProcessor.ui" line="14"/>
       <source>Post Processor</source>
-      <translation type="unfinished">Post Processor</translation>
+      <translation>Пост-процесор</translation>
     </message>
     <message>
       <location filename="../panels/DlgSelectPostProcessor.ui" line="42"/>
@@ -4367,12 +4367,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="24"/>
       <source>X</source>
-      <translation type="unfinished">X</translation>
+      <translation>X</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="29"/>
       <source>Y</source>
-      <translation type="unfinished">Y</translation>
+      <translation>Y</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="40"/>
@@ -4424,7 +4424,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageDiametersEdit.ui" line="83"/>
       <location filename="../panels/PageOpProbeEdit.ui" line="155"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../panels/PageDepthsEdit.ui" line="85"/>
@@ -4781,7 +4781,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="79"/>
       <source>Depth</source>
-      <translation>На глибину</translation>
+      <translation>Глибина</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="96"/>
@@ -5066,12 +5066,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="58"/>
       <source>X:</source>
-      <translation type="unfinished">X:</translation>
+      <translation>X:</translation>
     </message>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="75"/>
       <source>Y:</source>
-      <translation type="unfinished">Y:</translation>
+      <translation>Y:</translation>
     </message>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="95"/>
@@ -5096,7 +5096,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="138"/>
       <source>File Name</source>
-      <translation>Ім'я файлу</translation>
+      <translation>Ім&apos;я файлу</translation>
     </message>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="145"/>
@@ -5417,7 +5417,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="215"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="159"/>
       <source>Step over</source>
-      <translation>Переступити</translation>
+      <translation>Крок за кроком</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="235"/>
@@ -5597,7 +5597,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="113"/>
       <source>Pitch</source>
-      <translation type="unfinished">Pitch</translation>
+      <translation>Крок</translation>
     </message>
     <message>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="134"/>
@@ -5764,7 +5764,7 @@ Aborting op creation</translation>
       <location filename="../panels/ToolEditor.ui" line="161"/>
       <location filename="../panels/ToolEditor.ui" line="254"/>
       <source>180°</source>
-      <translation type="unfinished">180°</translation>
+      <translation>180°</translation>
     </message>
     <message>
       <location filename="../panels/ToolEditor.ui" line="164"/>
@@ -5868,12 +5868,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="14"/>
       <source>Job Preferences</source>
-      <translation type="unfinished">Job Preferences</translation>
+      <translation>Налаштування для Завдань</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="32"/>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="38"/>
@@ -5883,12 +5883,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="44"/>
       <source>Path</source>
-      <translation>Траєкторія</translation>
+      <translation>Шлях</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="51"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Path to look for templates, post processors, tool tables and other external files.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty the macro directory is used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Path to look for templates, post processors, tool tables and other external files.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty the macro directory is used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Шлях для пошуку шаблонів, постпроцесорів, таблиць інструментів та інших зовнішніх файлів.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Якщо залишити порожнім, буде використовуватись каталог макросів.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="58"/>
@@ -5905,98 +5905,98 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="72"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default template to be selected when creating a new Job. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;This can be helpful when almost all jobs will be processed by the same machine with a similar setup.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty no template will be preselected.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default template to be selected when creating a new Job. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;This can be helpful when almost all jobs will be processed by the same machine with a similar setup.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty no template will be preselected.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Шаблон за замовчуванням, який вибирається під час створення нового завдання. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Це може бути корисно, коли майже всі завдання оброблятимуться на одному комп’ютері з подібними налаштуваннями.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Якщо залишити пустим, шаблон не буде попередньо вибрано.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="89"/>
       <source>Geometry</source>
-      <translation type="unfinished">Geometry</translation>
+      <translation>Геометрії</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="98"/>
       <source>Default Geometry Tolerance</source>
-      <translation type="unfinished">Default Geometry Tolerance</translation>
+      <translation>Допуск геометрії за замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="105"/>
       <source>Default value for new Jobs, used for computing Paths.  Smaller increases accuracy, but slows down computation</source>
-      <translation type="unfinished">Default value for new Jobs, used for computing Paths.  Smaller increases accuracy, but slows down computation</translation>
+      <translation>Значення за замовчуванням для нових Завдань, яке використовується для обчислення Траєкторій. Менше значення збільшує точність, але уповільнює обчислення</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="112"/>
       <source>Default Curve Accuracy</source>
-      <translation type="unfinished">Default Curve Accuracy</translation>
+      <translation>Допуск кривих за замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="150"/>
       <location filename="../preferences/PathJob.ui" line="265"/>
       <source>Post Processor</source>
-      <translation type="unfinished">Post Processor</translation>
+      <translation>Пост-процесор</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="162"/>
       <source>Output File</source>
-      <translation type="unfinished">Output File</translation>
+      <translation>Вихідний файл</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="174"/>
       <source>Default Path</source>
-      <translation type="unfinished">Default Path</translation>
+      <translation>Шлях за замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="193"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть шлях і назву файлу (за бажанням) (дивіться нижче), які будуть використовуватися за замовчуванням для роботи постпроцесора.&lt;/p&gt;&lt;p&gt;Наведені нижче заміни виконуються перед початком експорту. ім&apos;я визначається під час постобробки:&lt;/p&gt;&lt;p&gt;%D ... тека активного документа&lt;br/&gt;%d ... ім&apos;я активного документа (з розширенням)&lt;br/&gt; %M ... тека макросу користувача&lt;br/&gt;%j ... ім&apos;я активного об&apos;єкта Завдання&lt;/p&gt;&lt;p&gt;У наведеному нижче прикладі всі файли з тими ж іменами, що й у документі, зберігаються у каталог /home/freecad ( будь ласка, видаліть лапки):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;Перегляньте політику збереження файлів нижче, щоб дізнатися, як боротися з конфліктами імен.&lt;/p&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="213"/>
       <source>File Save Policy</source>
-      <translation type="unfinished">File Save Policy</translation>
+      <translation>Політика Збереження Файлу</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="232"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Choose how to deal with potential file name conflicts. Always open a dialog, only open a dialog if the output file already exists, overwrite any existing file or add a unique (3 digit) sequential ID to the file name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Choose how to deal with potential file name conflicts. Always open a dialog, only open a dialog if the output file already exists, overwrite any existing file or add a unique (3 digit) sequential ID to the file name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Дозволяє вибрати, як чинити з потенційними конфліктами імен файлів. Завжди відкривати діалог, відкривати діалог, лише якщо вихідний файл вже існує, перезаписати будь-який існуючий файл або додати унікальний (3-значний) послідовний ідентифікатор до імені файлу.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="236"/>
       <source>Open File Dialog</source>
-      <translation type="unfinished">Open File Dialog</translation>
+      <translation>Відкрити Діалог Файл</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="241"/>
       <source>Open File Dialog on conflict</source>
-      <translation type="unfinished">Open File Dialog on conflict</translation>
+      <translation>Відкрити Діалог Файл при конфлікті</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="246"/>
       <source>Overwrite existing file</source>
-      <translation type="unfinished">Overwrite existing file</translation>
+      <translation>Перезаписати існуючий файл</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="251"/>
       <source>Append Unique ID on conflict</source>
-      <translation type="unfinished">Append Unique ID on conflict</translation>
+      <translation>Додати унікальний ID при конфлікті</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="274"/>
       <source>Post Processors Selection </source>
-      <translation type="unfinished">Post Processors Selection </translation>
+      <translation>Вибір Пост Процесорів </translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="284"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;It doesn&apos;t seem there are any post processor scripts installed. Please add some into your macro directory and make sure the file name ends with &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;It doesn&apos;t seem there are any post processor scripts installed. Please add some into your macro directory and make sure the file name ends with &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Схоже, що у вас не встановлені скрипти постпроцесора. Будь ласка, додайте кілька до каталогу макросів і переконайтеся, що ім&apos;я файлу закінчується на &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="291"/>
       <source>Default Post Processor</source>
-      <translation type="unfinished">Default Post Processor</translation>
+      <translation>Пост Процесор за замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="298"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select one of the post processors as the default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select one of the post processors as the default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Дозволяє вибрати один із постпроцесорів як за замовчуванням.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="301"/>
@@ -6011,7 +6011,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="311"/>
       <source>Default Arguments</source>
-      <translation type="unfinished">Default Arguments</translation>
+      <translation>Аргументи За Замовчуванням</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="318"/>
@@ -6310,7 +6310,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/Advanced.ui" line="67"/>
       <source>Suppress Velocity warning</source>
-      <translation type="unfinished">Suppress Velocity warning</translation>
+      <translation>Попереджати про перевищення швидкості</translation>
     </message>
     <message>
       <location filename="../preferences/Advanced.ui" line="86"/>
@@ -6787,7 +6787,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="47"/>
       <source>File Name</source>
-      <translation>Ім'я файлу</translation>
+      <translation>Ім&apos;я файлу</translation>
     </message>
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="54"/>
@@ -6797,7 +6797,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="64"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
   </context>
   <context>
@@ -6875,7 +6875,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="261"/>
       <source>%</source>
-      <translation type="unfinished">%</translation>
+      <translation>%</translation>
     </message>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="278"/>
@@ -6943,7 +6943,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="109"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="122"/>
@@ -6973,7 +6973,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="155"/>
       <source>0 mm</source>
-      <translation type="unfinished">0 mm</translation>
+      <translation>0 мм</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="158"/>
@@ -7134,19 +7134,19 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="136"/>
       <source>Output File</source>
-      <translation type="unfinished">Output File</translation>
+      <translation>Вихідний файл</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="143"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть шлях і назву файлу (за бажанням) (дивіться нижче), які будуть використовуватися за замовчуванням для роботи постпроцесора.&lt;/p&gt;&lt;p&gt;Наведені нижче заміни виконуються перед початком експорту. ім&apos;я визначається під час постобробки:&lt;/p&gt;&lt;p&gt;%D ... тека активного документа&lt;br/&gt;%d ... ім&apos;я активного документа (з розширенням)&lt;br/&gt; %M ... тека макросу користувача&lt;br/&gt;%j ... ім&apos;я активного об&apos;єкта Завдання&lt;/p&gt;&lt;p&gt;У наведеному нижче прикладі всі файли з тими ж іменами, що й у документі, зберігаються у каталог /home/freecad ( будь ласка, видаліть лапки):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;Перегляньте політику збереження файлів нижче, щоб дізнатися, як боротися з конфліктами імен.&lt;/p&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="150"/>
       <location filename="../panels/PathEdit.ui" line="1417"/>
       <location filename="../panels/PathEdit.ui" line="1428"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="157"/>

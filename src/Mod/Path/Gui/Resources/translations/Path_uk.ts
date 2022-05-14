@@ -5096,7 +5096,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="138"/>
       <source>File Name</source>
-      <translation>Ім&apos;я файлу</translation>
+      <translation>Імʼя файлу</translation>
     </message>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="145"/>
@@ -5946,7 +5946,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="193"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть шлях і назву файлу (за бажанням) (дивіться нижче), які будуть використовуватися за замовчуванням для роботи постпроцесора.&lt;/p&gt;&lt;p&gt;Наведені нижче заміни виконуються перед початком експорту. ім&apos;я визначається під час постобробки:&lt;/p&gt;&lt;p&gt;%D ... тека активного документа&lt;br/&gt;%d ... ім&apos;я активного документа (з розширенням)&lt;br/&gt; %M ... тека макросу користувача&lt;br/&gt;%j ... ім&apos;я активного об&apos;єкта Завдання&lt;/p&gt;&lt;p&gt;У наведеному нижче прикладі всі файли з тими ж іменами, що й у документі, зберігаються у каталог /home/freecad ( будь ласка, видаліть лапки):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;Перегляньте політику збереження файлів нижче, щоб дізнатися, як боротися з конфліктами імен.&lt;/p&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть шлях і назву файлу (за бажанням) (дивіться нижче), які будуть використовуватися за замовчуванням для роботи постпроцесора.&lt;/p&gt;&lt;p&gt;Наведені нижче заміни виконуються перед початком експорту. імʼя визначається під час постобробки:&lt;/p&gt;&lt;p&gt;%D ... тека активного документа&lt;br/&gt;%d ... імʼя активного документа (з розширенням)&lt;br/&gt; %M ... тека макросу користувача&lt;br/&gt;%j ... імʼя активного обʼєкта Завдання&lt;/p&gt;&lt;p&gt;У наведеному нижче прикладі всі файли з тими ж іменами, що й у документі, зберігаються у каталог /home/freecad ( будь ласка, видаліть лапки):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;Перегляньте політику збереження файлів нижче, щоб дізнатися, як боротися з конфліктами імен.&lt;/p&gt;&lt;br&gt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="213"/>
@@ -5986,7 +5986,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="284"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;It doesn&apos;t seem there are any post processor scripts installed. Please add some into your macro directory and make sure the file name ends with &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Схоже, що у вас не встановлені скрипти постпроцесора. Будь ласка, додайте кілька до каталогу макросів і переконайтеся, що ім&apos;я файлу закінчується на &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Схоже, що у вас не встановлені скрипти постпроцесора. Будь ласка, додайте кілька до каталогу макросів і переконайтеся, що імʼя файлу закінчується на &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="291"/>
@@ -6787,7 +6787,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="47"/>
       <source>File Name</source>
-      <translation>Ім&apos;я файлу</translation>
+      <translation>Імʼя файлу</translation>
     </message>
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="54"/>
@@ -7139,7 +7139,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="143"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть шлях і назву файлу (за бажанням) (дивіться нижче), які будуть використовуватися за замовчуванням для роботи постпроцесора.&lt;/p&gt;&lt;p&gt;Наведені нижче заміни виконуються перед початком експорту. ім&apos;я визначається під час постобробки:&lt;/p&gt;&lt;p&gt;%D ... тека активного документа&lt;br/&gt;%d ... ім&apos;я активного документа (з розширенням)&lt;br/&gt; %M ... тека макросу користувача&lt;br/&gt;%j ... ім&apos;я активного об&apos;єкта Завдання&lt;/p&gt;&lt;p&gt;У наведеному нижче прикладі всі файли з тими ж іменами, що й у документі, зберігаються у каталог /home/freecad ( будь ласка, видаліть лапки):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;Перегляньте політику збереження файлів нижче, щоб дізнатися, як боротися з конфліктами імен.&lt;/p&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть шлях та імʼя файлу (за бажанням) (дивіться нижче), які будуть використовуватися за замовчуванням для роботи постпроцесора.&lt;/p&gt;&lt;p&gt;Наведені нижче заміни виконуються перед початком експорту. імʼя визначається під час постобробки:&lt;/p&gt;&lt;p&gt;%D ... тека активного документа&lt;br/&gt;%d ... імʼя активного документа (з розширенням)&lt;br/&gt; %M ... тека макросу користувача&lt;br/&gt;%j ... імʼя активного обʼєкта Завдання&lt;/p&gt;&lt;p&gt;У наведеному нижче прикладі всі файли з тими ж іменами, що й у документі, зберігаються у каталог /home/freecad ( будь ласка, видаліть лапки):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;Перегляньте політику збереження файлів нижче, щоб дізнатися, як боротися з конфліктами імен.&lt;/p&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="150"/>

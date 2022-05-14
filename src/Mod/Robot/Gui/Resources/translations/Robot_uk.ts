@@ -256,7 +256,7 @@
     </message>
     <message>
       <source>Trajectory compound...</source>
-      <translation>Об'єднання траєкторії...</translation>
+      <translation>Обʼєднання траєкторії...</translation>
     </message>
     <message>
       <source>Group and connect some trajectories to one</source>
@@ -275,7 +275,7 @@
     </message>
     <message>
       <source>Create a dress-up object which overrides some aspects of a trajectory</source>
-      <translation>Створити об'єкт, який маскує деякі елементи траєкторії</translation>
+      <translation>Створити обʼєкт, який маскує деякі елементи траєкторії</translation>
     </message>
   </context>
   <context>
@@ -309,7 +309,7 @@
     </message>
     <message>
       <source>Select one Robot and one Trajectory object.</source>
-      <translation>Виберіть один робот і одну траєкторію об'єкта.</translation>
+      <translation>Виберіть один робот і одну траєкторію обʼєкта.</translation>
     </message>
     <message>
       <source>Trajectory not valid</source>
@@ -333,7 +333,7 @@
     </message>
     <message>
       <source>Select one robot and one shape or VRML object.</source>
-      <translation>Виберіть один робот і одну форму або VRML об'єкт.</translation>
+      <translation>Виберіть один робот і одну форму або VRML обʼєкт.</translation>
     </message>
     <message>
       <source>Select one Trajectory object.</source>

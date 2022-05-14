@@ -1606,7 +1606,7 @@
     <message>
       <location filename="../../ArchSite.py" line="618"/>
       <source>The area of the projection of this object onto the XY plane</source>
-      <translation>Площа проєкції цього об'єкта на площину XY</translation>
+      <translation>Площа проекції цього об'єкта на площину XY</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="224"/>
@@ -1621,7 +1621,7 @@
     <message>
       <location filename="../../ArchComponent.py" line="229"/>
       <source>An optional axis or axis system on which this object should be duplicated</source>
-      <translation>Додаткові осі, або ж система осей, вздовж яких має дублюватись цей об'єкт</translation>
+      <translation>Додаткові осі, або ж осі, вздовж яких має дублюватись об'єкт</translation>
     </message>
     <message>
       <location filename="../../ArchComponent.py" line="1162"/>
@@ -1671,7 +1671,7 @@
     <message>
       <location filename="../../ArchBuildingPart.py" line="350"/>
       <source>This property stores an inventor representation for this object</source>
-      <translation>Ця властивість зберігає подання винахідника для цього об’єкта</translation>
+      <translation>Цій властивості зберігається подання винахідника для цього об’єкта</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="353"/>
@@ -2369,7 +2369,7 @@
     <message>
       <location filename="../../ArchMaterial.py" line="845"/>
       <source>Thickness</source>
-      <translation>Товщина</translation>
+      <translation>Порожнина</translation>
     </message>
     <message>
       <location filename="../../ArchPrecast.py" line="1400"/>
@@ -2439,7 +2439,7 @@
     <message>
       <location filename="../../importSHP.py" line="137"/>
       <source>The shapefile python library was not found on your system. Would you like to download it now from &lt;a href=&quot;https://github.com/GeospatialPython/pyshp&quot;&gt;https://github.com/GeospatialPython/pyshp&lt;/a&gt;? It will be placed in your macros folder.</source>
-      <translation type="unfinished">The shapefile python library was not found on your system. Would you like to download it now from &lt;a href=&quot;https://github.com/GeospatialPython/pyshp&quot;&gt;https://github.com/GeospatialPython/pyshp&lt;/a&gt;? It will be placed in your macros folder.</translation>
+      <translation>Бібліотека shapefile python не була знайдена у вашій системі. Ви хочете зараз завантажити її з сайту &lt;a href=&quot;https://github.com/GeospatialPython/pyshp&quot;&gt;https://github.com/GeospatialPython/pyshp&lt;/a&gt;? Вона буде поміщена в теку macros.</translation>
     </message>
     <message>
       <location filename="../../importSHP.py" line="145"/>
@@ -2464,7 +2464,7 @@
     <message>
       <location filename="../../importSHP.py" line="164"/>
       <source>The shapefile library can be downloaded from the following URL and installed in your macros folder:</source>
-      <translation>Бібліотеку Шейпфайлів можна завантажити за вказаною нижче URL-адресою та встановити у папці макросів:</translation>
+      <translation>Бібліотеку shapefile можна завантажити за вказаною нижче URL-адресою та встановити у теці макросів:</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="76"/>
@@ -2905,17 +2905,17 @@
 Building object is not allowed to accept Site and Building objects.
 Site and Building objects will be removed from the selection.
 You can change that in the preferences.</source>
-      <translation type="unfinished">You can put anything but Site and Building objects in a Building object.
-Building object is not allowed to accept Site and Building objects.
-Site and Building objects will be removed from the selection.
-You can change that in the preferences.</translation>
+      <translation>Ви можете помістити все, крім ділянок та будівель, в об'єкт будівлі.
+Об’єкт будівлі не може приймати ділянки та об'єкти будівель.
+Ділянки та об'єкти будівель буде вилучено з виділеного.
+Ви можете змінити це в налаштуваннях.</translation>
     </message>
     <message>
       <location filename="../../ArchBuilding.py" line="245"/>
       <source>There is no valid object in the selection.
 Building creation aborted.</source>
-      <translation type="unfinished">There is no valid object in the selection.
-Building creation aborted.</translation>
+      <translation>У виділенні немає дійсного об’єкта.
+Створення будівлі перервано.</translation>
     </message>
     <message>
       <location filename="../../ArchBuilding.py" line="253"/>
@@ -4663,7 +4663,7 @@ Site creation aborted.</translation>
     <message>
       <location filename="../../InitGui.py" line="209"/>
       <source>Draft</source>
-      <translation>Креслення</translation>
+      <translation>Ухил</translation>
     </message>
     <message>
       <location filename="../../InitGui.py" line="247"/>
@@ -5872,14 +5872,14 @@ instead of the FreeCAD web workbench</translation>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="41"/>
       <source>Show this dialog when importing</source>
-      <translation>Показувати цей діалог під час імпортування</translation>
+      <translation>Показати це діалогове вікно під час імпорту</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="54"/>
       <source>Shows verbose debug messages during import and export
 of IFC files in the Report view panel</source>
       <translation>Показує детальні повідомлення налагодження під час імпорту та експорту
-файлів IFC в панелі перегляду Звіту</translation>
+файлів IFC в панелі Вид Звіту</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="58"/>
@@ -5896,7 +5896,7 @@ One object is the base object, the others are clones.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="75"/>
       <source>Create clones when objects have shared geometry</source>
-      <translation>Створення клонів, коли об'єкти мають спільну геометрію</translation>
+      <translation>Створити клонів, коли об'єкти мають спільну геометрію</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="99"/>
@@ -5909,19 +5909,20 @@ for example, 3 if you have a 4-core CPU.
 
 Set it to 1 to use multicore mode in single-core mode; this is safer
 if you start getting crashes when you set multiple cores.</source>
-      <translation>EXPERIMENTAL
-Кількість ядер для використання в режимі multicor.
-Залиште 0, щоб вимкнути багатокорний режим.
+      <translation>Експериментально!
+Кількість ядер для використання в багатоядерному режимі.
+Залиште 0, щоб вимкнути багатоядерний режим.
 Максимальне значення має бути вашою кількістю ядер мінус 1,
-наприклад, якщо у вас є 4-ядерний процесор.
+наприклад 3, якщо у вас є 4-ядерний процесор.
 
-Встановіть значення 1, щоб використовувати режим multicore в одноядерному режимі; це безпечніше
-якщо почати аварійне завершення роботи при встановленні декількох ядер.</translation>
+Встановіть значення 1, щоб використовувати багатоядерний режим 
+в одноядерному режимі; це безпечніше, якщо ви почали отримувати 
+аварійні завершення роботи при встановленні декількох ядер.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="129"/>
       <source>Number of cores to use (experimental)</source>
-      <translation>Кількість ядер для використання (експериментальна)</translation>
+      <translation>Кількість ядер для використання (експериментально)</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="157"/>
@@ -5997,19 +5998,19 @@ Keep the element IfcProduct to import all building elements.</source>
       <location filename="../ui/preferences-ifc.ui" line="284"/>
       <source>Openings will be imported as subtractions, otherwise wall shapes
 will already have their openings subtracted</source>
-      <translation>Відкриття буде імпортовано як віднімання, в іншому випадку форми стін
-вже будуть відняті частини</translation>
+      <translation>Отвори будуть імпортовані як віднімання, 
+інакше форми стін вже буде містити отвори</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="288"/>
       <source>Separate openings</source>
-      <translation>Окремі відкривання</translation>
+      <translation>Окремі отвори</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="301"/>
       <source>The importer will try to detect extrusions.
 Note that this might slow things down.</source>
-      <translation>Імпорт буде намагатися виявити видавлювання.
+      <translation>Програма Імпорту буде намагатися виявити видавлювання.
 Зверніть увагу, що це може уповільнити процес.</translation>
     </message>
     <message>
@@ -6020,7 +6021,7 @@ Note that this might slow things down.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="318"/>
       <source>Split walls made of multiple layers</source>
-      <translation>Розділити стіни з декількох шарів</translation>
+      <translation>Розділяє стіни з декількох шарів</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="321"/>
@@ -6041,8 +6042,8 @@ Note that this might slow things down.</source>
       <location filename="../ui/preferences-ifc.ui" line="350"/>
       <source>If several materials with the same name and color are found in the IFC file,
 they will be treated as one.</source>
-      <translation>Якщо у файлі IФС знайдено кілька матеріалів з такою ж назвою і кольором,
-до них ставиться як до одного.</translation>
+      <translation>Якщо у файлі IFC знайдено декілька матеріалів з такою ж назвою і кольором,
+їх вважатимуть одним.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="354"/>
@@ -6077,19 +6078,19 @@ they will be treated as one.</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="408"/>
       <source>Comma-separated list of IFC entities to be excluded from imports</source>
-      <translation>Список товарів, через кому, які будуть виключені з імпорту</translation>
+      <translation>Список структур IFC, які буде виключено з імпорту, розділений комами</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="429"/>
       <source>Fit view during import on the imported objects.
 This will slow down the import, but one can watch the import.</source>
-      <translation>Пристосувати вигляд під час імпортування імпортованих об’єктів.
+      <translation>Підганяє вид під час імпортування до імпортованих об’єктів.
 Це уповільнить імпорт, але за цим можна спостерігати.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="433"/>
       <source>Fit view while importing</source>
-      <translation>Весь вигляд час імпортування</translation>
+      <translation>Підігнати вид під час імпорту</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="446"/>
@@ -6101,7 +6102,7 @@ FreeCAD object properties</source>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="450"/>
       <source>Import full FreeCAD parametric definitions if available</source>
-      <translation>Імпорт повних параметрів FreeCAD визначень, якщо доступно</translation>
+      <translation>Імпортувати повні параметричні визначення FreeCAD, якщо вони доступні</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc.ui" line="463"/>
@@ -6117,7 +6118,7 @@ are placed in a &apos;Group&apos; instead.
     <message>
       <location filename="../ui/preferences-ifc.ui" line="469"/>
       <source>Replace &apos;Project&apos;, &apos;Site&apos;, &apos;Building&apos;, and &apos;Storey&apos; with &apos;Group&apos;</source>
-      <translation type="unfinished">Replace &apos;Project&apos;, &apos;Site&apos;, &apos;Building&apos;, and &apos;Storey&apos; with &apos;Group&apos;</translation>
+      <translation>Замінити &apos;Проєкт&apos;&apos; &apos;Сайт&apos; &apos;Будівля&apos;і &apos;Магазин&apos; &apos;Групою&apos;</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dae.ui" line="14"/>
@@ -6265,7 +6266,7 @@ The gradient of the local mesh size h(x) is bound by |Δh(x)| ≤ 1/value.</sour
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="41"/>
       <source>Show this dialog when exporting</source>
-      <translation>Показувати це діалогове вікно при експорті</translation>
+      <translation>Показати це діалогове вікно при експорті</translation>
     </message>
     <message>
       <location filename="../ui/preferences-ifc-export.ui" line="65"/>

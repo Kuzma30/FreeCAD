@@ -282,11 +282,11 @@
     </message>
     <message>
       <source>Merge</source>
-      <translation>Об'єднання</translation>
+      <translation>Обʼєднання</translation>
     </message>
     <message>
       <source>Merges selected meshes into one</source>
-      <translation>Об'єднати вибрані полігональні сітки в одну</translation>
+      <translation>Обʼєднати вибрані полігональні сітки в одну</translation>
     </message>
   </context>
   <context>
@@ -552,7 +552,7 @@
     </message>
     <message>
       <source>Union</source>
-      <translation>Об'єднання</translation>
+      <translation>Обʼєднання</translation>
     </message>
   </context>
   <context>
@@ -597,7 +597,7 @@
     </message>
     <message>
       <source>Mesh union</source>
-      <translation>Об'єднання сіток</translation>
+      <translation>Обʼєднання сіток</translation>
     </message>
     <message>
       <source>Mesh difference</source>
@@ -633,7 +633,7 @@
     </message>
     <message>
       <source>Mesh merge</source>
-      <translation>Об'єднати сітку</translation>
+      <translation>Обʼєднати сітку</translation>
     </message>
     <message>
       <source>Mesh split</source>
@@ -1087,7 +1087,7 @@ Please run the command to repair folds first</source>
     </message>
     <message>
       <source>Maximal deviation between mesh and object</source>
-      <translation>Максимальне відхилення між сіткою і об'єктом</translation>
+      <translation>Максимальне відхилення між сіткою і обʼєктом</translation>
     </message>
     <message>
       <source>Deviation of tessellation to the actual surface</source>
@@ -1639,7 +1639,7 @@ to a smoother appearance.
     <name>Mesh_BoundingBox</name>
     <message>
       <source>Boundings of %1:</source>
-      <translation>Прив'язка %1:</translation>
+      <translation>Привʼязка %1:</translation>
     </message>
   </context>
   <context>
@@ -1689,7 +1689,7 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     </message>
     <message>
       <source>Alias Mesh</source>
-      <translation>Ім'я користувача сітки</translation>
+      <translation>Імʼя користувача сітки</translation>
     </message>
     <message>
       <source>Object File Format</source>
@@ -1781,7 +1781,7 @@ Please visit http://www.openscad.org/index.html to install it.</source>
     </message>
     <message>
       <source>Boundings</source>
-      <translation>Прив'язки</translation>
+      <translation>Привʼязки</translation>
     </message>
     <message>
       <source>Fill holes</source>

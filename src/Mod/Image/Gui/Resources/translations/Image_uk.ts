@@ -20,13 +20,13 @@
     </message>
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="171"/>
-      <source>&lt;font color='red'&gt;Enter distance&lt;/font&gt;</source>
-      <translation type="unfinished">&lt;font color='red'&gt;Enter distance&lt;/font&gt;</translation>
+      <source>&lt;font color=&apos;red&apos;&gt;Enter distance&lt;/font&gt;</source>
+      <translation type="unfinished">&lt;font color=&apos;red&apos;&gt;Enter distance&lt;/font&gt;</translation>
     </message>
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="174"/>
-      <source>&lt;font color='red'&gt;Select ImagePlane&lt;/font&gt;</source>
-      <translation type="unfinished">&lt;font color='red'&gt;Select ImagePlane&lt;/font&gt;</translation>
+      <source>&lt;font color=&apos;red&apos;&gt;Select ImagePlane&lt;/font&gt;</source>
+      <translation type="unfinished">&lt;font color=&apos;red&apos;&gt;Select ImagePlane&lt;/font&gt;</translation>
     </message>
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="199"/>

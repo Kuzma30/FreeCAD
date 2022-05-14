@@ -19,7 +19,7 @@
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="215"/>
       <source>Solver Control</source>
-      <translation>Керування розв'язувачем</translation>
+      <translation>Керування розвʼязувачем</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="226"/>
@@ -453,7 +453,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="719"/>
       <source>Clear the Mesh of a FEM mesh object</source>
-      <translation>Очистити сітку об'єкту МСЕ сітки</translation>
+      <translation>Очистити сітку обʼєкту МСЕ сітки</translation>
     </message>
   </context>
   <context>
@@ -547,12 +547,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="976"/>
       <source>Solver CalculiX (new framework)</source>
-      <translation>Розв'язувач CalculiX (новий фреймворк)</translation>
+      <translation>Розвʼязувач CalculiX (новий фреймворк)</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="981"/>
       <source>Creates a FEM solver CalculiX new framework (less result error handling)</source>
-      <translation>Створює МСЕ-розв'язувач нового фреймворку CalculiX (менше обробки помилок результату)</translation>
+      <translation>Створює МСЕ-розвʼязувач нового фреймворку CalculiX (менше обробки помилок результату)</translation>
     </message>
   </context>
   <context>
@@ -565,7 +565,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="940"/>
       <source>Creates a standard FEM solver CalculiX with ccx tools</source>
-      <translation>Створює стандартний метод FEM для розв'язувача CalculiX з інструментами ccx</translation>
+      <translation>Створює стандартний метод FEM для розвʼязувача CalculiX з інструментами ccx</translation>
     </message>
   </context>
   <context>
@@ -573,7 +573,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="995"/>
       <source>Solver job control</source>
-      <translation>Керування завданнями розв'язувача</translation>
+      <translation>Керування завданнями розвʼязувача</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="1000"/>
@@ -625,12 +625,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="1063"/>
       <source>Solver Z88</source>
-      <translation>Розв'язувач Z88</translation>
+      <translation>Розвʼязувач Z88</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="1065"/>
       <source>Creates a FEM solver Z88</source>
-      <translation>Створює розв'язувач Z88 МСЕ</translation>
+      <translation>Створює розвʼязувач Z88 МСЕ</translation>
     </message>
   </context>
   <context>
@@ -4371,7 +4371,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="27"/>
       <source>Volume</source>
-      <translation>Об'єм</translation>
+      <translation>Обʼєм</translation>
     </message>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="32"/>

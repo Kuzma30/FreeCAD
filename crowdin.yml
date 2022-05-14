@@ -1,0 +1,121 @@
+files:
+  - source: src/Mod/AddonManager/Resources/translations/AddonManager.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /AddonManager.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Arch/Resources/translations/Arch.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Arch.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Draft/Resources/translations/Draft.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Draft.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Drawing/Gui/Resources/translations/Drawing.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Drawing.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Fem/Gui/Resources/translations/Fem.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Fem.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Gui/Language/FreeCAD.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /FreeCAD.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Image/Gui/Resources/translations/Image.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Image.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/MeshPart/Gui/Resources/translations/MeshPart.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /MeshPart.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Mesh/Gui/Resources/translations/Mesh.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Mesh.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/OpenSCAD/Resources/translations/OpenSCAD.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /OpenSCAD.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/PartDesign/Gui/Resources/translations/PartDesign.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /PartDesign.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Part/Gui/Resources/translations/Part.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Part.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Path/Gui/Resources/translations/Path.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Path.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Points/Gui/Resources/translations/Points.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Points.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Raytracing/Gui/Resources/translations/Raytracing.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Raytracing.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/ReverseEngineering/Gui/Resources/translations/ReverseEngineering.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /ReverseEngineering.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Robot/Gui/Resources/translations/Robot.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Robot.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Sketcher/Gui/Resources/translations/Sketcher.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Sketcher.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Spreadsheet/Gui/Resources/translations/Spreadsheet.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Spreadsheet.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Start/Gui/Resources/translations/StartPage.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /StartPage.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/TechDraw/Gui/Resources/translations/TechDraw.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /TechDraw.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Test/Gui/Resources/translations/Test.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Test.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Tux/Resources/translations/Tux.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Tux.ts
+    escape_quotes: 0
+    escape_special_characters: 0
+  - source: src/Mod/Web/Gui/Resources/translations/Web.ts
+    translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%
+    dest: /Web.ts
+    escape_quotes: 0
+    escape_special_characters: 0

@@ -287,7 +287,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Can&apos;t open file &apos;%1&apos; for writing.</source>
-      <translation type="unfinished">Can&apos;t open file &apos;%1&apos; for writing.</translation>
+      <translation>Не можу відкрити файл &apos;%1&apos; для запису.</translation>
     </message>
   </context>
   <context>
@@ -531,7 +531,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Select a Part object.</source>
-      <translation>Виберіть об'єкт деталі.</translation>
+      <translation>Виберіть частину об'єкта.</translation>
     </message>
     <message>
       <source>No page found</source>

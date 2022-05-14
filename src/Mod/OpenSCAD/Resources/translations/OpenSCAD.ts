@@ -14,16 +14,6 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../importCSG.py" line="1385"/>
-        <source>Unsupported Function</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../importCSG.py" line="1385"/>
-        <source>Press OK</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../OpenSCADCommands.py" line="101"/>
         <source>Unable to explode %s</source>
         <translation type="unfinished"></translation>
@@ -81,6 +71,16 @@
     <message>
         <location filename="../../OpenSCADCommands.py" line="473"/>
         <source>Mesh Boolean</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importCSG.py" line="1385"/>
+        <source>Unsupported Function</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../importCSG.py" line="1385"/>
+        <source>Press OK</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -3825,10 +3825,6 @@ The value is the diameter of the sphere to fit on the screen.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Zoom step</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Direction of zoom operations will be inverted</source>
         <translation type="unfinished"></translation>
     </message>
@@ -3937,6 +3933,10 @@ Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</source>
     </message>
     <message>
         <source>Camera zoom</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source> Zoom step</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -7412,10 +7412,6 @@ Would you like to save the file with a different name?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Select which object to copy or exclude when configuration changes.All external linked object are excluded by default.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Please select which objects to copy when the configuration is changed</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7475,6 +7471,10 @@ the current copy will be lost.
     </message>
     <message>
         <source>Transform at the origin of the placement</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select which object to copy or exclude when configuration changes. All external linked objects are excluded by default.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

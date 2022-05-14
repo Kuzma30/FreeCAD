@@ -47,16 +47,6 @@
 <context>
     <name>ShareView</name>
     <message>
-        <location filename="../../../TechDrawTools/CommandShareView.py" line="47"/>
-        <source>Share View</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../TechDrawTools/CommandShareView.py" line="48"/>
-        <source>Share a View on a second Page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../../TechDrawTools/TaskShareView.py" line="46"/>
         <source>Share View with another Page</source>
         <translation type="unfinished"></translation>
@@ -89,6 +79,16 @@
     <message>
         <location filename="../../../TechDrawTools/TaskShareView.py" line="112"/>
         <source>Select To Page.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/CommandShareView.py" line="47"/>
+        <source>Share View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../../TechDrawTools/CommandShareView.py" line="48"/>
+        <source>Share a View on a second Page</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1106,13 +1106,13 @@
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="159"/>
         <location filename="../../CommandExtensionDims.cpp" line="329"/>
-        <source>Insert &apos;〼&apos; Prefix</source>
+        <source>Insert &apos;□&apos; Prefix</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../CommandExtensionDims.cpp" line="160"/>
         <location filename="../../CommandExtensionDims.cpp" line="330"/>
-        <source>Insert a &apos;〼&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
+        <source>Insert a &apos;□&apos; symbol at the beginning of the dimension text:&lt;br&gt;- Select one or more dimensions&lt;br&gt;- Click this tool</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -5354,7 +5354,7 @@ Do you want to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../TaskCustomizeFormat.ui" line="34"/>
+        <location filename="../../TaskCustomizeFormat.ui" line="32"/>
         <source>GD&amp;T</source>
         <translation type="unfinished"></translation>
     </message>

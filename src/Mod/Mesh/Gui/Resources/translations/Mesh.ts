@@ -1854,5 +1854,25 @@ Please visit http://www.openscad.org/index.html to install it.</source>
         <source>Cutting</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Mesh modify</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mesh boolean</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mesh cutting</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mesh segmentation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Mesh analyze</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 </TS>

@@ -1635,14 +1635,6 @@ click again to end selection</source>
     </message>
 </context>
 <context>
-    <name>PartDesignGui::TaskDatumParameters</name>
-    <message>
-        <location filename="../../TaskDatumParameters.cpp" line="56"/>
-        <source> parameters</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>PartDesignGui::TaskDlgBooleanParameters</name>
     <message>
         <location filename="../../TaskBooleanParameters.cpp" line="352"/>
@@ -3291,6 +3283,101 @@ click again to end selection</source>
     </message>
 </context>
 <context>
+    <name>PartDesignGui::ViewProviderChamfer</name>
+    <message>
+        <location filename="../../ViewProviderChamfer.h" line="41"/>
+        <source>Chamfer parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderDatum</name>
+    <message>
+        <location filename="../../ViewProviderDatum.cpp" line="111"/>
+        <source>Datum Plane parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderDatum.cpp" line="116"/>
+        <source>Datum Line parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderDatum.cpp" line="121"/>
+        <source>Datum Point parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderDatum.cpp" line="126"/>
+        <source>Local Coordinate System parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderDraft</name>
+    <message>
+        <location filename="../../ViewProviderDraft.h" line="42"/>
+        <source>Draft parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderFillet</name>
+    <message>
+        <location filename="../../ViewProviderFillet.h" line="41"/>
+        <source>Fillet parrameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderLinearPattern</name>
+    <message>
+        <location filename="../../ViewProviderLinearPattern.h" line="38"/>
+        <source>LinearPattern parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderMultiTransform</name>
+    <message>
+        <location filename="../../ViewProviderMultiTransform.h" line="38"/>
+        <source>MultiTransform parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderPolarPattern</name>
+    <message>
+        <location filename="../../ViewProviderPolarPattern.h" line="38"/>
+        <source>PolarPattern parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderScaled</name>
+    <message>
+        <location filename="../../ViewProviderScaled.h" line="38"/>
+        <source>Scaled parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGui::ViewProviderThickness</name>
+    <message>
+        <location filename="../../ViewProviderThickness.h" line="41"/>
+        <source>Thickness parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PartDesignGuii::ViewProviderMirrored</name>
+    <message>
+        <location filename="../../ViewProviderMirrored.h" line="38"/>
+        <source>Mirrored parameters</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>PartDesign_CompPrimitiveAdditive</name>
     <message>
         <location filename="../../CommandPrimitive.cpp" line="200"/>
@@ -3492,7 +3579,7 @@ click again to end selection</source>
         <location filename="../../Command.cpp" line="2225"/>
         <location filename="../../ViewProvider.cpp" line="98"/>
         <location filename="../../ViewProviderBoolean.cpp" line="80"/>
-        <location filename="../../ViewProviderDatum.cpp" line="242"/>
+        <location filename="../../ViewProviderDatum.cpp" line="246"/>
         <location filename="../../ViewProviderHole.cpp" line="79"/>
         <location filename="../../ViewProviderPrimitive.cpp" line="73"/>
         <location filename="../../ViewProviderShapeBinder.cpp" line="98"/>
@@ -3505,7 +3592,7 @@ click again to end selection</source>
         <location filename="../../Command.cpp" line="2226"/>
         <location filename="../../ViewProvider.cpp" line="99"/>
         <location filename="../../ViewProviderBoolean.cpp" line="81"/>
-        <location filename="../../ViewProviderDatum.cpp" line="243"/>
+        <location filename="../../ViewProviderDatum.cpp" line="247"/>
         <location filename="../../ViewProviderHole.cpp" line="80"/>
         <location filename="../../ViewProviderPrimitive.cpp" line="74"/>
         <location filename="../../ViewProviderShapeBinder.cpp" line="99"/>
@@ -3856,29 +3943,29 @@ If you have a legacy document with PartDesign objects without Body, use the migr
     </message>
     <message>
         <location filename="../../ViewProviderDatum.cpp" line="110"/>
-        <location filename="../../ViewProviderDatum.cpp" line="200"/>
+        <location filename="../../ViewProviderDatum.cpp" line="204"/>
         <source>Plane</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ViewProviderDatum.cpp" line="114"/>
-        <location filename="../../ViewProviderDatum.cpp" line="196"/>
+        <location filename="../../ViewProviderDatum.cpp" line="115"/>
+        <location filename="../../ViewProviderDatum.cpp" line="200"/>
         <source>Line</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ViewProviderDatum.cpp" line="118"/>
-        <location filename="../../ViewProviderDatum.cpp" line="204"/>
+        <location filename="../../ViewProviderDatum.cpp" line="120"/>
+        <location filename="../../ViewProviderDatum.cpp" line="208"/>
         <source>Point</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ViewProviderDatum.cpp" line="122"/>
+        <location filename="../../ViewProviderDatum.cpp" line="125"/>
         <source>Coordinate System</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ViewProviderDatum.cpp" line="221"/>
+        <location filename="../../ViewProviderDatum.cpp" line="225"/>
         <source>Edit datum</source>
         <translation type="unfinished"></translation>
     </message>

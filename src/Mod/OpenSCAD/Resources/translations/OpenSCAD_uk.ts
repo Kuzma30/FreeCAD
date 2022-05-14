@@ -14,16 +14,6 @@
       <translation>Помилка: усі обʼєкти повинні бути або дво-, або тривимірними</translation>
     </message>
     <message>
-      <location filename="../../importCSG.py" line="1385"/>
-      <source>Unsupported Function</source>
-      <translation>Непідтримувані функції</translation>
-    </message>
-    <message>
-      <location filename="../../importCSG.py" line="1385"/>
-      <source>Press OK</source>
-      <translation>Натисніть OK</translation>
-    </message>
-    <message>
       <location filename="../../OpenSCADCommands.py" line="101"/>
       <source>Unable to explode %s</source>
       <translation>Неможливо розбити %s</translation>
@@ -82,6 +72,16 @@
       <location filename="../../OpenSCADCommands.py" line="473"/>
       <source>Mesh Boolean</source>
       <translation>Логічна сітка</translation>
+    </message>
+    <message>
+      <location filename="../../importCSG.py" line="1385"/>
+      <source>Unsupported Function</source>
+      <translation>Непідтримувані функції</translation>
+    </message>
+    <message>
+      <location filename="../../importCSG.py" line="1385"/>
+      <source>Press OK</source>
+      <translation>Натисніть OK</translation>
     </message>
   </context>
   <context>
@@ -412,7 +412,7 @@
     <message>
       <location filename="../ui/openscadprefs-base.ui" line="299"/>
       <source>°</source>
-      <translation>°</translation>
+      <translation type="unfinished">°</translation>
     </message>
     <message>
       <location filename="../ui/openscadprefs-base.ui" line="328"/>

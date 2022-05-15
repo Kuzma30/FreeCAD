@@ -5014,7 +5014,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="20"/>
       <source>Default Shape view properties</source>
-      <translation>Властивості виду фігур за замовчуванням</translation>
+      <translation>Властивості вигляду фігур за замовчуванням</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="34"/>
@@ -5024,7 +5024,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="41"/>
       <source>The default color for new shapes</source>
-      <translation>Колір за замовчанням для нових фігур</translation>
+      <translation>Встановлює колір за замовчанням для нових фігур</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="61"/>
@@ -5044,7 +5044,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="90"/>
       <source>The default line color for new shapes</source>
-      <translation>Колір лінії за замовчанням для нових фігур</translation>
+      <translation>Встановлює колір лінії за замовчанням для нових фігур</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="116"/>
@@ -5070,7 +5070,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="158"/>
       <source>The default color for new vertices</source>
-      <translation type="unfinished">The default color for new vertices</translation>
+      <translation>Встановлює колір за замовчуванням для нових вершин</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="184"/>
@@ -5080,7 +5080,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="191"/>
       <source>The default size for new vertices</source>
-      <translation type="unfinished">The default size for new vertices</translation>
+      <translation>Встановлює розмір нових вершин за замовчуванням</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="219"/>

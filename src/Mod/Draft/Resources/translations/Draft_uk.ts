@@ -2705,7 +2705,7 @@ Then you can use it to save a different camera position and objects&apos; states
     <message>
       <location filename="../../importSVG.py" line="1813"/>
       <source>The export list contains no object with a valid bounding box</source>
-      <translation>Список експорту не містить жодного об’єкта з дійсною обмежувальною рамкою</translation>
+      <translation>Список експорту не містить жодного об’єкта з припустимою обмежувальною рамкою</translation>
     </message>
   </context>
   <context>

@@ -1791,7 +1791,7 @@ constraint or material is applied.</translation>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="14"/>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="31"/>

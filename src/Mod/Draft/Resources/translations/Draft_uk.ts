@@ -6715,7 +6715,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="87"/>
       <source>The default color for snap symbols</source>
-      <translation>Колір за замовчуванням для символів привʼязки</translation>
+      <translation>Встановлює колір за замовчуванням для символів привʼязки</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="111"/>

@@ -3955,7 +3955,7 @@ reflected on copies</source>
       <location filename="../../SketcherSettings.ui" line="14"/>
       <location filename="../../SketcherSettings.ui" line="109"/>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <location filename="../../SketcherSettings.ui" line="20"/>

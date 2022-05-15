@@ -310,7 +310,7 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <source>Auto scale / position</source>

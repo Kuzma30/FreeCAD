@@ -6154,7 +6154,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="42"/>
       <source>The default color for new shapes</source>
-      <translation>Колір за замовчанням для нових фігур</translation>
+      <translation>Встановлює колір за замовчанням для нових фігур</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="68"/>
@@ -6184,7 +6184,7 @@ Aborting op creation</translation>
       <location filename="../../DlgSettingsPathColor.ui" line="259"/>
       <location filename="../../DlgSettingsPathColor.ui" line="292"/>
       <source>The default line color for new shapes</source>
-      <translation>Колір лінії за замовчанням для нових фігур</translation>
+      <translation>Встановлює колір лінії за замовчанням для нових фігур</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="136"/>
@@ -7092,7 +7092,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="21"/>
       <source>General</source>
-      <translation>Загальне</translation>
+      <translation>Загальні</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="39"/>

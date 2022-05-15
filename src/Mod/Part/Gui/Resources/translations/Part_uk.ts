@@ -5054,7 +5054,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="123"/>
       <source>The default line thickness for new shapes</source>
-      <translation>Товщина лінії за замовчанням для нових фігур</translation>
+      <translation>Встановлює товщину лінії за замовчанням для нових фігур</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="126"/>
@@ -5090,7 +5090,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="226"/>
       <source>The color of bounding boxes in the 3D view</source>
-      <translation>Колір обмежувальних рамок у 3D-виді</translation>
+      <translation>Встановлює колір обмежувальних рамок у 3D-виді</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="252"/>

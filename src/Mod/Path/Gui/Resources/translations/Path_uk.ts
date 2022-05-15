@@ -6164,7 +6164,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="75"/>
       <source>The default line thickness for new shapes</source>
-      <translation>Товщина лінії за замовчанням для нових фігур</translation>
+      <translation>Встановлює товщину лінії за замовчанням для нових фігур</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="78"/>

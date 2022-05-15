@@ -81,7 +81,7 @@
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="164"/>
       <source>Additional offset to the selected bounding box</source>
-      <translation>Додаткове зміщення до обраної обмежувальної рамки</translation>
+      <translation>Додаткове зміщення до виділеної обмежувальної рамки</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="172"/>
@@ -1443,7 +1443,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurfaceSupport.py" line="94"/>
       <source>Shape appears to not be horizontal planar.</source>
-      <translation type="unfinished">Shape appears to not be horizontal planar.</translation>
+      <translation>Фігура не має горизонтальної площини.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurfaceSupport.py" line="119"/>
@@ -6209,12 +6209,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="252"/>
       <source>Bounding Box Normal Color</source>
-      <translation type="unfinished">Bounding Box Normal Color</translation>
+      <translation>Звичайний колір обмежувальної рамки</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="285"/>
       <source>Bounding Box Selection Color</source>
-      <translation type="unfinished">Bounding Box Selection Color</translation>
+      <translation>Колір виділеної обмежувальної рамки</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="352"/>
@@ -6239,7 +6239,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="389"/>
       <source>Bounding Box</source>
-      <translation type="unfinished">Bounding Box</translation>
+      <translation>Обмежувальна рамка</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="394"/>

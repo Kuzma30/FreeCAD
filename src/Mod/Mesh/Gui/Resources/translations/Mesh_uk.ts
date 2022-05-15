@@ -1160,7 +1160,7 @@ is used when writing a file in AMF format</source>
     </message>
     <message>
       <source>Show bounding-box for highlighted or selected meshes</source>
-      <translation>Показувати прямокутник обмеження для підсвічених чи обраних сіток</translation>
+      <translation>Показувати обмежувальну рамку для підсвічених чи виділених сіток</translation>
     </message>
     <message>
       <source>Default line color for new meshes</source>
@@ -1171,14 +1171,14 @@ is used when writing a file in AMF format</source>
 If not checked, it depends on the option &quot;Enable backlight color&quot;
 (preferences section Display -&gt; 3D View). Either the backlight color
 will be used or black.</source>
-      <translation type="unfinished">The bottom side of surface will be rendered the same way than top side.
-If not checked, it depends on the option &quot;Enable backlight color&quot;
-(preferences section Display -&gt; 3D View). Either the backlight color
-will be used or black.</translation>
+      <translation>Візуалізує нижню сторону поверхні аналогічно до верхньої.
+Якщо прапорець не встановлений, буде використано колір 
+підсвічування за активної опції &quot;Колір підсвічування&quot; 
+(Налаштування -&gt; Показ -&gt; 3D вид); або чорний.</translation>
     </message>
     <message>
       <source>Two-side rendering</source>
-      <translation>Дво-стороння побудова</translation>
+      <translation>Двостороння візуалізація</translation>
     </message>
     <message>
       <source>Line transparency</source>

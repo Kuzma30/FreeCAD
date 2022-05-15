@@ -1056,7 +1056,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Current shortcut:</source>
-      <translation>Поточні клавіатурні скорочення:</translation>
+      <translation>Поточна комбінація клавіш:</translation>
     </message>
     <message>
       <source>Press &amp;new shortcut:</source>
@@ -1341,7 +1341,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Shape color:</source>
-      <translation>Колір форми:</translation>
+      <translation>Колір фігури:</translation>
     </message>
     <message>
       <source>Color plot:</source>
@@ -2850,7 +2850,7 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Backlight color</source>
-      <translation>Колір підсвітки</translation>
+      <translation>Колір підсвічування</translation>
     </message>
     <message>
       <source>Intensity</source>

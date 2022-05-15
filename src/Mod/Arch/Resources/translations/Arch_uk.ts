@@ -1781,7 +1781,7 @@
     <message>
       <location filename="../../ArchBuildingPart.py" line="612"/>
       <source>The shape color of child objects</source>
-      <translation>Колір лінії форми дочірнього обʼєкту</translation>
+      <translation>Колір фігури дочірніх обʼєктів</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="616"/>
@@ -5475,7 +5475,7 @@ Leave blank to use all objects from the document</source>
     <message>
       <location filename="../ui/preferences-arch.ui" line="226"/>
       <source>Use material color as shape color</source>
-      <translation>Використовувати матеріал як колір форми</translation>
+      <translation>Використовувати колір матеріалу як колір фігури</translation>
     </message>
     <message>
       <location filename="../ui/preferences-arch.ui" line="260"/>
@@ -6150,8 +6150,8 @@ are placed in a &apos;Group&apos; instead.
       <location filename="../ui/preferences-dae.ui" line="74"/>
       <source>Meshing program that should be used.
 If using Netgen, make sure that it is available.</source>
-      <translation>Програму сітки потрібно використати.
-Якщо використовується Netgen, переконайтеся, що вона доступна.</translation>
+      <translation>Вибирає яку програму для створення сітки використати.
+Якщо вибрана Netgen, переконайтеся, що вона доступна.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dae.ui" line="85"/>

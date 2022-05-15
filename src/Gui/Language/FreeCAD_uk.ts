@@ -2850,7 +2850,7 @@ but slower response to any scene changes.</source>
     </message>
     <message>
       <source>Backlight color</source>
-      <translation>Колір підсвітки</translation>
+      <translation>Колір підсвічування</translation>
     </message>
     <message>
       <source>Intensity</source>

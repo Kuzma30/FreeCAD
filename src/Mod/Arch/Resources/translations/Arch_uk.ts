@@ -6150,8 +6150,8 @@ are placed in a &apos;Group&apos; instead.
       <location filename="../ui/preferences-dae.ui" line="74"/>
       <source>Meshing program that should be used.
 If using Netgen, make sure that it is available.</source>
-      <translation>Програму сітки потрібно використати.
-Якщо використовується Netgen, переконайтеся, що вона доступна.</translation>
+      <translation>Вибирає яку програму для створення сітки використати.
+Якщо вибрана Netgen, переконайтеся, що вона доступна.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dae.ui" line="85"/>

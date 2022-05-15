@@ -717,7 +717,7 @@ while doing a left or right click and move the mouse up or down</source>
     <name>Gui::Dialog::DemoMode</name>
     <message>
       <source>View Turntable</source>
-      <translation>Показати програвач</translation>
+      <translation>Поворотний перегляд</translation>
     </message>
     <message>
       <source>Speed</source>
@@ -4978,7 +4978,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
     <name>Gui::Dialog::SceneModel</name>
     <message>
       <source>Inventor Tree</source>
-      <translation>Винахідник дерева</translation>
+      <translation>Дерево конструктора</translation>
     </message>
     <message>
       <source>Nodes</source>
@@ -7764,11 +7764,11 @@ the current copy will be lost.
     <name>StdCmdDemoMode</name>
     <message>
       <source>View turntable...</source>
-      <translation>Відкрити програвач ...</translation>
+      <translation>Поворотний перегляд...</translation>
     </message>
     <message>
       <source>View turntable</source>
-      <translation>Відкрити програвач</translation>
+      <translation>Показує деталь в режимі поворотного перегляду</translation>
     </message>
   </context>
   <context>
@@ -7779,7 +7779,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Show the dependency graph of the objects in the active document</source>
-      <translation>Показати граф залежностей обʼєктів в активному документі</translation>
+      <translation>Показує граф залежностей обʼєктів в активному документі</translation>
     </message>
   </context>
   <context>
@@ -8721,7 +8721,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Add text document to active document</source>
-      <translation>Додати текстовий документ до активного документа</translation>
+      <translation>Додає текстовий документ до активного документа</translation>
     </message>
   </context>
   <context>

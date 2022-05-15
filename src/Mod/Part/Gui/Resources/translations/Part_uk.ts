@@ -5108,15 +5108,15 @@ the size of the resulting STEP file.</translation>
 If not checked, it depends on the option &quot;Backlight color&quot;
 (preferences section Display -&gt; 3D View); either the backlight color
 will be used or black.</source>
-      <translation type="unfinished">Bottom side of surface will be rendered the same way than top.
-If not checked, it depends on the option &quot;Backlight color&quot;
-(preferences section Display -&gt; 3D View); either the backlight color
-will be used or black.</translation>
+      <translation>Візуалізує нижню сторону поверхні аналогічно до верхньої.
+Якщо прапорець не встановлений, буде використано колір 
+підсвічування за активної опції &quot;Колір підсвічування&quot; 
+(Налаштування -&gt; Показ -&gt; 3D вид); або чорний.</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="299"/>
       <source>Two-side rendering</source>
-      <translation>Дво-стороння побудова</translation>
+      <translation>Двостороння візуалізація</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="333"/>

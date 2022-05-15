@@ -997,7 +997,7 @@ the &apos;First Angle&apos; and &apos;Last Angle&apos; properties.</translation>
     <message>
       <location filename="../../draftviewproviders/view_layer.py" line="114"/>
       <source>The shape color of the objects contained within this layer</source>
-      <translation>Колір форми обʼєктів, що міститься в цьому шарі</translation>
+      <translation>Колір фігур обʼєктів, що міститься в цьому шарі</translation>
     </message>
     <message>
       <location filename="../../draftviewproviders/view_layer.py" line="128"/>
@@ -6310,7 +6310,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
       <location filename="../ui/TaskPanel_SetStyle.ui" line="162"/>
       <source>Shape color</source>
-      <translation>Колір форми</translation>
+      <translation>Колір фігури</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_SetStyle.ui" line="169"/>
@@ -7042,7 +7042,7 @@ such as &quot;Arial:Bold&quot;</translation>
     <message>
       <location filename="../ui/preferences-drafttexts.ui" line="521"/>
       <source>Default ShapeString font file</source>
-      <translation>Файл шрифту Контуру рядка за замовчуванням</translation>
+      <translation>Файл шрифту ShapeString за замовчуванням</translation>
     </message>
     <message>
       <location filename="../ui/preferences-drafttexts.ui" line="534"/>
@@ -7158,7 +7158,7 @@ This value is the maximum segment length. </translation>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="35"/>
       <source>This preferences dialog will be shown when importing/ exporting DXF files</source>
-      <translation>Цей діалог налаштувань буде показано при імпорті/експорті DXF файлів</translation>
+      <translation>При імпорті/експорті DXF файлів показує цей діалог налаштувань</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="38"/>
@@ -7169,7 +7169,7 @@ This value is the maximum segment length. </translation>
       <location filename="../ui/preferences-dxf.ui" line="51"/>
       <source>Python importer is used, otherwise the newer C++ is used.
 Note: C++ importer is faster, but is not as featureful yet</source>
-      <translation>імпортер Python використовується, інакше використовуються новіші C++.
+      <translation>Використовує імпортер Python, в іншому випадку - новіший C++.
 Примітка: імпортер C++ швидший, але ще не настільки функціональний</translation>
     </message>
     <message>
@@ -7181,13 +7181,13 @@ Note: C++ importer is faster, but is not as featureful yet</source>
       <location filename="../ui/preferences-dxf.ui" line="71"/>
       <source>Python exporter is used, otherwise the newer C++ is used.
 Note: C++ exporter is faster, but is not as featureful yet</source>
-      <translation>Викор. експортер Python, в іншому випадку використовується новіший С++.
+      <translation>Використовує експортер Python, в іншому випадку - новіший C++.
 Примітка: експортер C++ швидший, але ще не настільки функціональний</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="75"/>
       <source>Use legacy python exporter</source>
-      <translation>Використовувати класичний експортер python</translation>
+      <translation>Використовувати застарілий експортер Python</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="88"/>
@@ -7199,9 +7199,8 @@ Note: C++ exporter is faster, but is not as featureful yet</source>
       <source>Allow FreeCAD to download the Python converter for DXF import and export.
 You can also do this manually by installing the &quot;dxf_library&quot; workbench
 from the Addon Manager.</source>
-      <translation type="unfinished">Allow FreeCAD to download the Python converter for DXF import and export.
-You can also do this manually by installing the &quot;dxf_library&quot; workbench
-from the Addon Manager.</translation>
+      <translation>Дозволяє FreeCAD завантажувати конвертер Python для імпорту та експорту DXF. 
+Ви також можете зробити це вручну, встановивши &quot;dxf_library&quot; в Менеджері Додатків.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="101"/>
@@ -7218,7 +7217,7 @@ from the Addon Manager.</translation>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="140"/>
       <source>Note: Not all the options below are used by the new importer yet</source>
-      <translation>Примітка: Ще не всі варіанти, наведені нижче використовуються новий імпортер</translation>
+      <translation>Примітка: Ще не всі параметри використовуються в новому імпортері</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="149"/>

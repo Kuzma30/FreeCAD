@@ -7163,7 +7163,7 @@ This value is the maximum segment length. </translation>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="38"/>
       <source>Show this dialog when importing and exporting</source>
-      <translation>Показувати цей діалог під час імпортування та експорту</translation>
+      <translation>Показувати цей діалог під час імпорту та експорту</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="51"/>

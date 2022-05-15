@@ -1341,7 +1341,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Shape color:</source>
-      <translation>Колір форми:</translation>
+      <translation>Колір фігури:</translation>
     </message>
     <message>
       <source>Color plot:</source>

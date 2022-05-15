@@ -2378,19 +2378,19 @@ Specify another directory, please.</source>
     </message>
     <message>
       <source>Extract project</source>
-      <translation>Видобути проєкт</translation>
+      <translation>Розпакувати проєкт</translation>
     </message>
     <message>
       <source>Source</source>
-      <translation>Джерело</translation>
+      <translation>Вихідний файл</translation>
     </message>
     <message>
       <source>Destination</source>
-      <translation>Призначення</translation>
+      <translation>Тека Призначення</translation>
     </message>
     <message>
       <source>Extract</source>
-      <translation>Витяг</translation>
+      <translation>Розпакувати</translation>
     </message>
     <message>
       <source>Create project</source>
@@ -2406,7 +2406,7 @@ Specify another directory, please.</source>
     </message>
     <message>
       <source>Empty source</source>
-      <translation>Порожнє джерело</translation>
+      <translation>Порожній вихідний файл</translation>
     </message>
     <message>
       <source>No source is defined.</source>
@@ -2414,11 +2414,11 @@ Specify another directory, please.</source>
     </message>
     <message>
       <source>Empty destination</source>
-      <translation>Призначення порожнє</translation>
+      <translation>Тека Призначення порожня</translation>
     </message>
     <message>
       <source>No destination is defined.</source>
-      <translation>Призначення не визначено.</translation>
+      <translation>Не визначено теки призначення.</translation>
     </message>
     <message>
       <source>Project file</source>
@@ -4279,11 +4279,11 @@ horizontal space in Python console</source>
     <name>Gui::Dialog::DlgUnitCalculator</name>
     <message>
       <source>Units calculator</source>
-      <translation>Калькулятор одиниць</translation>
+      <translation>Конвертор розмірностей</translation>
     </message>
     <message>
       <source>as:</source>
-      <translation>як:</translation>
+      <translation>у:</translation>
     </message>
     <message>
       <source>=&gt;</source>
@@ -5368,7 +5368,7 @@ Do you want to save your changes?</source>
     </message>
     <message>
       <source>Select a directory</source>
-      <translation>Виберіть каталог</translation>
+      <translation>Виберіть теку</translation>
     </message>
   </context>
   <context>
@@ -6919,7 +6919,7 @@ Do you want to specify another directory?</source>
     </message>
     <message>
       <source>Workbench failure</source>
-      <translation>Крах робочої області</translation>
+      <translation>Помилка робочого середовища</translation>
     </message>
     <message>
       <source>%1</source>
@@ -7563,7 +7563,7 @@ Also auto redo the copy if the original linked object is changed.
 creating a new deep copy. Note that any changes made to
 the current copy will be lost.
 </source>
-      <translation>Синхронізуйте початковий сконфігурований обʼєкт-джерело,
+      <translation>Синхронізує початковий сконфігурований обʼєкт-джерело,
 створивши нову глибоку копію. Зверніть увагу, що всі зміни, 
 внесені до поточної копії, будуть втрачені.
 </translation>
@@ -7786,11 +7786,11 @@ the current copy will be lost.
     <name>StdCmdDlgCustomize</name>
     <message>
       <source>Cu&amp;stomize...</source>
-      <translation>Налаштувати...</translation>
+      <translation>Налаштування...</translation>
     </message>
     <message>
       <source>Customize toolbars and command bars</source>
-      <translation>Налаштування панелі інструментів та панелі команд</translation>
+      <translation>Здійснює налаштування панелі інструментів та панелі команд</translation>
     </message>
   </context>
   <context>
@@ -8900,11 +8900,11 @@ the current copy will be lost.
     <name>StdCmdUnitsCalculator</name>
     <message>
       <source>&amp;Units calculator...</source>
-      <translation>Конвертор розмірностей...</translation>
+      <translation>&amp;Конвертор розмірностей...</translation>
     </message>
     <message>
       <source>Start the units calculator</source>
-      <translation>Запустити калькулятор одиниць</translation>
+      <translation>Запускає конвертор розмірностей</translation>
     </message>
   </context>
   <context>
@@ -8966,7 +8966,7 @@ the current copy will be lost.
     <name>StdCmdViewExample1</name>
     <message>
       <source>Inventor example #1</source>
-      <translation>Винахідник Приклад #1</translation>
+      <translation>Приклад Inventor #1</translation>
     </message>
     <message>
       <source>Shows a 3D texture with manipulator</source>
@@ -8977,7 +8977,7 @@ the current copy will be lost.
     <name>StdCmdViewExample2</name>
     <message>
       <source>Inventor example #2</source>
-      <translation>Винахідник Приклад #2</translation>
+      <translation>Приклад Inventor #2</translation>
     </message>
     <message>
       <source>Shows spheres and drag-lights</source>
@@ -8988,7 +8988,7 @@ the current copy will be lost.
     <name>StdCmdViewExample3</name>
     <message>
       <source>Inventor example #3</source>
-      <translation>Винахідник Приклад #3</translation>
+      <translation>Приклад Inventor #3</translation>
     </message>
     <message>
       <source>Shows a animated texture</source>

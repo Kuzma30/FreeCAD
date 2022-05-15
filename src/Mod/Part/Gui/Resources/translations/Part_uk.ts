@@ -4918,7 +4918,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettings3DViewPart.ui" line="14"/>
       <source>Shape view</source>
-      <translation>Перегляд форми</translation>
+      <translation>Вид форми</translation>
     </message>
     <message>
       <location filename="../../DlgSettings3DViewPart.ui" line="26"/>
@@ -4938,7 +4938,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettings3DViewPart.ui" line="52"/>
       <source>Maximum deviation depending on the model bounding box</source>
-      <translation type="unfinished">Maximum deviation depending on the model bounding box</translation>
+      <translation>Максимальне відхилення в залежності від межі моделі</translation>
     </message>
     <message>
       <location filename="../../DlgSettings3DViewPart.ui" line="59"/>
@@ -4986,12 +4986,12 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsGeneral.ui" line="39"/>
       <source>Automatically refine model after boolean operation</source>
-      <translation type="unfinished">Automatically refine model after boolean operation</translation>
+      <translation>Автоматично уточнювати модель після булевої операції</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsGeneral.ui" line="52"/>
       <source>Automatically refine model after sketch-based operation</source>
-      <translation type="unfinished">Automatically refine model after sketch-based operation</translation>
+      <translation>Автоматично уточнювати модель після операції на основі ескізу</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsGeneral.ui" line="68"/>
@@ -5014,12 +5014,12 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="20"/>
       <source>Default Shape view properties</source>
-      <translation type="unfinished">Default Shape view properties</translation>
+      <translation>Властивості виду фігур за замовчуванням</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="34"/>
       <source>Shape color</source>
-      <translation>Колір форми</translation>
+      <translation>Колір фігури</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="41"/>

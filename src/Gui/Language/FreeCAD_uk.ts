@@ -7812,7 +7812,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Execute the macro in the editor</source>
-      <translation>Виконати макрос у редакторі</translation>
+      <translation>Виконує макрос у редакторі</translation>
     </message>
   </context>
   <context>
@@ -8030,7 +8030,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Create a new group for ordering objects</source>
-      <translation>Створити нову групу для впорядкування обʼєктів</translation>
+      <translation>Створює нову групу для впорядкування обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -8369,7 +8369,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Create a new part and make it active</source>
-      <translation>Створити нову частину і зробити її активною</translation>
+      <translation>Створює нову деталь і робить її активною</translation>
     </message>
   </context>
   <context>
@@ -9263,7 +9263,7 @@ the current copy will be lost.
     </message>
     <message>
       <source>Switch between workbenches</source>
-      <translation>Перемикання між робочими областями</translation>
+      <translation>Перемикає робочі середовища</translation>
     </message>
   </context>
   <context>

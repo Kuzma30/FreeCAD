@@ -1125,7 +1125,7 @@
     <message>
       <location filename="../../AddonManager.py" line="130"/>
       <source>Manage external workbenches, macros, and preference packs</source>
-      <translation>Керування зовнішніми робочими середовищами, макросами та Наборами Налаштувань</translation>
+      <translation>Керує зовнішніми Робочими Середовищами, Макросами та Наборами Налаштувань</translation>
     </message>
   </context>
   <context>

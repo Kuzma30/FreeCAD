@@ -1160,7 +1160,7 @@ is used when writing a file in AMF format</source>
     </message>
     <message>
       <source>Show bounding-box for highlighted or selected meshes</source>
-      <translation>Показувати прямокутник обмеження для підсвічених чи обраних сіток</translation>
+      <translation>Показувати обмежувальну рамку для підсвічених чи виділених сіток</translation>
     </message>
     <message>
       <source>Default line color for new meshes</source>

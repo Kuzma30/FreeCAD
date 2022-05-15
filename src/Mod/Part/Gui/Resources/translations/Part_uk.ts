@@ -4981,7 +4981,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsGeneral.ui" line="26"/>
       <source>Automatically check model after boolean operation</source>
-      <translation>Автоматично перевірити модель після булевої операції</translation>
+      <translation>Автоматично перевіряти модель після булевої операції</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsGeneral.ui" line="39"/>
@@ -5009,7 +5009,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="14"/>
       <source>Shape appearance</source>
-      <translation type="unfinished">Shape appearance</translation>
+      <translation>Зовнішній вигляд фігури</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="20"/>
@@ -5065,7 +5065,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="151"/>
       <source>Vertex color</source>
-      <translation type="unfinished">Vertex color</translation>
+      <translation>Колір вершини</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="158"/>
@@ -5075,7 +5075,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="184"/>
       <source>Vertex size</source>
-      <translation type="unfinished">Vertex size</translation>
+      <translation>Розмір вершини</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="191"/>
@@ -5085,22 +5085,22 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="219"/>
       <source>Bounding box color</source>
-      <translation>Колір габаритного паралелепіпеда</translation>
+      <translation>Колір обмежувальної рамки</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="226"/>
       <source>The color of bounding boxes in the 3D view</source>
-      <translation type="unfinished">The color of bounding boxes in the 3D view</translation>
+      <translation>Колір обмежувальних рамок у 3D-виді</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="252"/>
       <source>Bounding box font size</source>
-      <translation type="unfinished">Bounding box font size</translation>
+      <translation>Розмір шрифту обмежувальної рамки</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="259"/>
       <source>The font size of bounding boxes in the 3D view</source>
-      <translation type="unfinished">The font size of bounding boxes in the 3D view</translation>
+      <translation>Встановлює розмір шрифту обмежувальних рамок у 3D виді</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="293"/>
@@ -5121,7 +5121,7 @@ will be used or black.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="333"/>
       <source>Default Annotation color</source>
-      <translation type="unfinished">Default Annotation color</translation>
+      <translation>Колір Анотацій за замовчуванням</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="347"/>
@@ -5131,7 +5131,7 @@ will be used or black.</translation>
     <message>
       <location filename="../../DlgSettingsObjectColor.ui" line="354"/>
       <source>Text color for document annotations</source>
-      <translation type="unfinished">Text color for document annotations</translation>
+      <translation>Встановлює колір тесту для анотацій документа</translation>
     </message>
   </context>
   <context>

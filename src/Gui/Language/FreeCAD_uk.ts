@@ -1056,7 +1056,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     </message>
     <message>
       <source>Current shortcut:</source>
-      <translation>Поточні клавіатурні скорочення:</translation>
+      <translation>Поточна комбінація клавіш:</translation>
     </message>
     <message>
       <source>Press &amp;new shortcut:</source>

@@ -2,6 +2,44 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
+    <name>Dialog</name>
+    <message>
+        <location filename="_CommandImageScaling.py" line="168"/>
+        <source>Scale image plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="_CommandImageScaling.py" line="169"/>
+        <source>Distance [mm]</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="_CommandImageScaling.py" line="170"/>
+        <source>Select first point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="_CommandImageScaling.py" line="197"/>
+        <source>&lt;font color=&apos;red&apos;&gt;Enter distance&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="_CommandImageScaling.py" line="204"/>
+        <source>&lt;font color=&apos;red&apos;&gt;Select ImagePlane&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="_CommandImageScaling.py" line="235"/>
+        <source>Select second point</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="_CommandImageScaling.py" line="250"/>
+        <source>Select Image Plane and type distance</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Image_Scaling</name>
     <message>
         <location filename="_CommandImageScaling.py" line="69"/>

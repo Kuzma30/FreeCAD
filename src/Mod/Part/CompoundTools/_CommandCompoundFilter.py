@@ -26,7 +26,7 @@ __doc__ = "Compound Filter: remove some children from a compound (features)."
 
 
 import FreeCAD
-
+translate = FreeCAD.Qt.translate
 if FreeCAD.GuiUp:
     import FreeCADGui
     from PySide import QtGui
@@ -35,23 +35,23 @@ if FreeCAD.GuiUp:
     # translation-related code
     # (see forum thread "A new Part tool is being born... JoinFeatures!"
     # http://forum.freecadweb.org/viewtopic.php?f=22&t=11112&start=30#p90239 )
-    try:
-        _fromUtf8 = QtCore.QString.fromUtf8
-    except Exception:
+#    try:
+#        _fromUtf8 = QtCore.QString.fromUtf8
+#    except Exception:
 
-        def _fromUtf8(s):
-            return s
+#        def _fromUtf8(s):
+#            return s
 
-    try:
-        _encoding = QtGui.QApplication.UnicodeUTF8
+#    try:
+#        _encoding = QtGui.QApplication.UnicodeUTF8
 
-        def _translate(context, text, disambig):
-            return QtGui.QApplication.translate(context, text, disambig, _encoding)
+#        def _translate(context, text, disambig):
+#            return QtGui.QApplication.translate(context, text, disambig, _encoding)
 
-    except AttributeError:
+#    except AttributeError:
 
-        def _translate(context, text, disambig):
-            return QtGui.QApplication.translate(context, text, disambig)
+#        def _translate(context, text, disambig):
+#            return QtGui.QApplication.translate(context, text, disambig)
 
 
 # command class
@@ -86,7 +86,7 @@ class _CommandCompoundFilter:
             mb = QtGui.QMessageBox()
             mb.setIcon(mb.Icon.Warning)
             mb.setText(
-                _translate(
+                translate(
                     "Part_CompoundFilter",
                     "First select a shape that is a compound. "
                     "If a second object is selected (optional) "
@@ -94,7 +94,7 @@ class _CommandCompoundFilter:
                     None,
                 )
             )
-            mb.setWindowTitle(_translate("Part_CompoundFilter", "Bad selection", None))
+            mb.setWindowTitle(translate("Part_CompoundFilter", "Bad selection", None))
             mb.exec_()
 
     def IsActive(self):
@@ -135,16 +135,16 @@ def cmdCreateCompoundFilter(name):
         mb = QtGui.QMessageBox()
         mb.setIcon(mb.Icon.Warning)
         mb.setText(
-            _translate(
+            translate(
                 "Part_CompoundFilter",
                 "Computing the result failed with an error: \n\n{errstr}\n\nClick 'Continue' to create the feature anyway, or 'Abort' to cancel.",
                 None,
             ).format(errstr=error_string)
         )
-        mb.setWindowTitle(_translate("Part_CompoundFilter", "Bad selection", None))
+        mb.setWindowTitle(translate("Part_CompoundFilter", "Bad selection", None))
         btnAbort = mb.addButton(QtGui.QMessageBox.StandardButton.Abort)
         btnOK = mb.addButton(
-            _translate("Part_SplitFeatures", "Continue", None),
+            translate("Part_SplitFeatures", "Continue", None),
             QtGui.QMessageBox.ButtonRole.ActionRole,
         )
         mb.setDefaultButton(btnOK)

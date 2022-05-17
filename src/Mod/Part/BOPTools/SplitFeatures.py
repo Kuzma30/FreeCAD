@@ -28,31 +28,32 @@ __doc__ = "Shape splitting document objects (features)."
 from . import SplitAPI
 import FreeCAD
 import Part
+translate = FreeCAD.Qt.translate
 
-if FreeCAD.GuiUp:
-    import FreeCADGui
-    from PySide import QtCore, QtGui
+#if FreeCAD.GuiUp:
+#    import FreeCADGui
+#    from PySide import QtCore, QtGui
 
     # -------------------------- translation-related code -------------------------
     # See forum thread "A new Part tool is being born... JoinFeatures!"
     # http://forum.freecadweb.org/viewtopic.php?f=22&t=11112&start=30#p90239
-    try:
-        _fromUtf8 = QtCore.QString.fromUtf8
-    except Exception:
+#    try:
+#        _fromUtf8 = QtCore.QString.fromUtf8
+#    except Exception:
 
-        def _fromUtf8(s):
-            return s
+#        def _fromUtf8(s):
+#            return s
 
-    try:
-        _encoding = QtGui.QApplication.UnicodeUTF8
+#    try:
+#        _encoding = QtGui.QApplication.UnicodeUTF8
 
-        def _translate(context, text, disambig):
-            return QtGui.QApplication.translate(context, text, disambig, _encoding)
+#        def _translate(context, text, disambig):
+#            return QtGui.QApplication.translate(context, text, disambig, _encoding)
 
-    except AttributeError:
+#    except AttributeError:
 
-        def _translate(context, text, disambig):
-            return QtGui.QApplication.translate(context, text, disambig)
+#        def _translate(context, text, disambig):
+#            return QtGui.QApplication.translate(context, text, disambig)
 
 
 # --------------------------/translation-related code --------------------------
@@ -199,7 +200,7 @@ def cmdCreateBooleanFragmentsFeature(name, mode):
         mb = QtGui.QMessageBox()
         mb.setIcon(mb.Icon.Warning)
         mb.setText(
-            _translate(
+            translate(
                 "Part_SplitFeatures",
                 "Computing the result failed with an error:\n\n"
                 "{err}\n\n"
@@ -207,10 +208,10 @@ def cmdCreateBooleanFragmentsFeature(name, mode):
                 None,
             ).format(err=str(err))
         )
-        mb.setWindowTitle(_translate("Part_SplitFeatures", "Bad selection", None))
+        mb.setWindowTitle(translate("Part_SplitFeatures", "Bad selection", None))
         btnAbort = mb.addButton(QtGui.QMessageBox.StandardButton.Abort)
         btnOK = mb.addButton(
-            _translate("Part_SplitFeatures", "Continue", None),
+            translate("Part_SplitFeatures", "Continue", None),
             QtGui.QMessageBox.ButtonRole.ActionRole,
         )
         mb.setDefaultButton(btnOK)
@@ -255,7 +256,7 @@ class CommandBooleanFragments:
             mb = QtGui.QMessageBox()
             mb.setIcon(mb.Icon.Warning)
             mb.setText(
-                _translate(
+                translate(
                     "Part_SplitFeatures",
                     "Select at least two objects, or one or more compounds. "
                     "If only one compound is selected, the compounded shapes will be intersected between each other "
@@ -263,7 +264,7 @@ class CommandBooleanFragments:
                     None,
                 )
             )
-            mb.setWindowTitle(_translate("Part_SplitFeatures", "Bad selection", None))
+            mb.setWindowTitle(translate("Part_SplitFeatures", "Bad selection", None))
             mb.exec_()
 
     def IsActive(self):
@@ -384,7 +385,7 @@ def cmdCreateSliceFeature(name, mode, transaction=True):
         mb = QtGui.QMessageBox()
         mb.setIcon(mb.Icon.Warning)
         mb.setText(
-            _translate(
+            translate(
                 "Part_SplitFeatures",
                 "Computing the result failed with an error:\n\n"
                 "{err}\n\n"
@@ -392,10 +393,10 @@ def cmdCreateSliceFeature(name, mode, transaction=True):
                 None,
             ).format(err=str(err))
         )
-        mb.setWindowTitle(_translate("Part_SplitFeatures", "Bad selection", None))
+        mb.setWindowTitle(translate("Part_SplitFeatures", "Bad selection", None))
         btnAbort = mb.addButton(QtGui.QMessageBox.StandardButton.Abort)
         btnOK = mb.addButton(
-            _translate("Part_SplitFeatures", "Continue", None),
+            translate("Part_SplitFeatures", "Continue", None),
             QtGui.QMessageBox.ButtonRole.ActionRole,
         )
         mb.setDefaultButton(btnOK)
@@ -455,7 +456,7 @@ class CommandSlice:
             mb = QtGui.QMessageBox()
             mb.setIcon(mb.Icon.Warning)
             mb.setText(
-                _translate(
+                translate(
                     "Part_SplitFeatures",
                     "Select at least two objects. "
                     "The first one is the object to be sliced; "
@@ -463,7 +464,7 @@ class CommandSlice:
                     None,
                 )
             )
-            mb.setWindowTitle(_translate("Part_SplitFeatures", "Bad selection", None))
+            mb.setWindowTitle(translate("Part_SplitFeatures", "Bad selection", None))
             mb.exec_()
 
     def IsActive(self):
@@ -495,7 +496,7 @@ class CommandSliceApart:
             mb = QtGui.QMessageBox()
             mb.setIcon(mb.Icon.Warning)
             mb.setText(
-                _translate(
+                translate(
                     "Part_SplitFeatures",
                     "Select at least two objects. "
                     "The first one is the object to be sliced; "
@@ -503,7 +504,7 @@ class CommandSliceApart:
                     None,
                 )
             )
-            mb.setWindowTitle(_translate("Part_SplitFeatures", "Bad selection", None))
+            mb.setWindowTitle(translate("Part_SplitFeatures", "Bad selection", None))
             mb.exec_()
 
     def IsActive(self):
@@ -636,7 +637,7 @@ def cmdCreateXORFeature(name):
         mb = QtGui.QMessageBox()
         mb.setIcon(mb.Icon.Warning)
         mb.setText(
-            _translate(
+            translate(
                 "Part_SplitFeatures",
                 "Computing the result failed with an error:\n\n"
                 "{err}\n\n"
@@ -644,10 +645,10 @@ def cmdCreateXORFeature(name):
                 None,
             ).format(err=str(err))
         )
-        mb.setWindowTitle(_translate("Part_SplitFeatures", "Bad selection", None))
+        mb.setWindowTitle(translate("Part_SplitFeatures", "Bad selection", None))
         btnAbort = mb.addButton(QtGui.QMessageBox.StandardButton.Abort)
         btnOK = mb.addButton(
-            _translate("Part_SplitFeatures", "Continue", None),
+            translate("Part_SplitFeatures", "Continue", None),
             QtGui.QMessageBox.ButtonRole.ActionRole,
         )
         mb.setDefaultButton(btnOK)
@@ -689,7 +690,7 @@ class CommandXOR:
             mb = QtGui.QMessageBox()
             mb.setIcon(mb.Icon.Warning)
             mb.setText(
-                _translate(
+                translate(
                     "Part_SplitFeatures",
                     "Select at least two objects, or one or more compounds. "
                     "If only one compound is selected, the compounded shapes will be intersected between each other "
@@ -697,7 +698,7 @@ class CommandXOR:
                     None,
                 )
             )
-            mb.setWindowTitle(_translate("Part_SplitFeatures", "Bad selection", None))
+            mb.setWindowTitle(translate("Part_SplitFeatures", "Bad selection", None))
             mb.exec_()
 
     def IsActive(self):

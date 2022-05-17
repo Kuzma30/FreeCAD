@@ -24,7 +24,7 @@ from __future__ import absolute_import
 
 import FreeCAD as App
 import Part
-
+translate = FreeCAD.Qt.translate
 mm = App.Units.MilliMetre
 deg = App.Units.Degree
 Q = App.Units.Quantity
@@ -55,24 +55,24 @@ if App.GuiUp:
 # -------------------------- translation-related code ----------------------------------------
 # Thanks, yorik! (see forum thread "A new Part tool is being born... JoinFeatures!"
 # http://forum.freecadweb.org/viewtopic.php?f=22&t=11112&start=30#p90239 )
-try:
-    _fromUtf8 = QtCore.QString.fromUtf8
-except AttributeError:
+#try:
+#    _fromUtf8 = QtCore.QString.fromUtf8
+#except AttributeError:
 
-    def _fromUtf8(s):
-        return s
+#    def _fromUtf8(s):
+#        return s
 
 
-try:
-    _encoding = QtGui.QApplication.UnicodeUTF8
+#try:
+#    _encoding = QtGui.QApplication.UnicodeUTF8
 
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+#    def _translate(context, text, disambig):
+#        return QtGui.QApplication.translate(context, text, disambig, _encoding)
 
-except AttributeError:
+#except AttributeError:
 
-    def _translate(context, text, disambig):
-        return QtGui.QApplication.translate(context, text, disambig)
+#    def _translate(context, text, disambig):
+#        return QtGui.QApplication.translate(context, text, disambig)
 
 
 # --------------------------/translation-related code ----------------------------------------
@@ -110,7 +110,7 @@ def LinkFromStr(strlink, document):
     subname = ""
     if feature is None:
         raise ValueError(
-            _translate("AttachmentEditor", "No object named {name}", None).format(
+            translate("AttachmentEditor", "No object named {name}", None).format(
                 name=pieces[0]
             )
         )
@@ -118,7 +118,7 @@ def LinkFromStr(strlink, document):
         subname = pieces[1]
     elif len(pieces) > 2:
         raise ValueError(
-            _translate(
+            translate(
                 "AttachmentEditor",
                 "Failed to parse link (more than one colon encountered)",
                 None,
@@ -265,7 +265,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
                 if self.callback_Cancel:
                     self.callback_Cancel()
                 raise ValueError(
-                    _translate(
+                    translate(
                         "AttachmentEditor",
                         "Object {name} is neither movable nor attachable, can't edit attachment",
                         None,
@@ -278,16 +278,16 @@ class AttachmentEditorTaskPanel(FrozenClass):
             mb = QtGui.QMessageBox()
             mb.setIcon(mb.Icon.Warning)
             mb.setText(
-                _translate(
+                translate(
                     "AttachmentEditor",
                     "{obj} is not attachable. You can still use attachment editor dialog to align the object, but the attachment won't be parametric.",
                     None,
                 ).format(obj=obj_to_attach.Label)
             )
-            mb.setWindowTitle(_translate("AttachmentEditor", "Attachment", None))
+            mb.setWindowTitle(translate("AttachmentEditor", "Attachment", None))
             btnAbort = mb.addButton(QtGui.QMessageBox.StandardButton.Abort)
             btnOK = mb.addButton(
-                _translate("AttachmentEditor", "Continue", None),
+                translate("AttachmentEditor", "Continue", None),
                 QtGui.QMessageBox.ButtonRole.ActionRole,
             )
             mb.setDefaultButton(btnOK)
@@ -303,7 +303,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
             os.path.dirname(__file__) + os.path.sep + "TaskAttachmentEditor.ui"
         )
         self.form.setWindowIcon(QtGui.QIcon(":/icons/tools/Part_Attachment.svg"))
-        self.form.setWindowTitle(_translate("AttachmentEditor", "Attachment", None))
+        self.form.setWindowTitle(translate("AttachmentEditor", "Attachment", None))
 
         self.form.attachmentOffsetX.setProperty("unit", "mm")
         self.form.attachmentOffsetY.setProperty("unit", "mm")
@@ -384,7 +384,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
 
         if self.create_transaction:
             self.obj.Document.openTransaction(
-                _translate(
+                translate(
                     "AttachmentEditor", "Edit attachment of {feat}", None
                 ).format(feat=self.obj.Name)
             )
@@ -435,7 +435,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
             if self.create_transaction:
                 self.obj.Document.commitTransaction()
                 self.obj.Document.openTransaction(
-                    _translate(
+                    translate(
                         "AttachmentEditor", "Edit attachment of {feat}", None
                     ).format(feat=self.obj.Name)
                 )
@@ -483,7 +483,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
             # assign the selected reference
             if objname == self.obj.Name:
                 self.form.message.setText(
-                    _translate(
+                    translate(
                         "AttachmentEditor",
                         "Ignored. Can't attach object to itself!",
                         None,
@@ -492,7 +492,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
                 return
             if App.getDocument(docname).getObject(objname) in getAllDependent(self.obj):
                 self.form.message.setText(
-                    _translate(
+                    translate(
                         "AttachmentEditor",
                         "{obj1} depends on object being attached, can't use it for attachment",
                         None,
@@ -650,11 +650,11 @@ class AttachmentEditorTaskPanel(FrozenClass):
                         self.attacher.getRefTypeInfo(t)["UserFriendlyName"]
                         for t in listlistrefs[0]
                     ]
-                    txt = _translate(
+                    txt = translate(
                         "AttachmentEditor", "{mode} (add {morerefs})", None
                     ).format(mode=txt, morerefs=u"+".join(listrefs_userfriendly))
                 else:
-                    txt = _translate(
+                    txt = translate(
                         "AttachmentEditor", "{mode} (add more references)", None
                     ).format(mode=txt)
                 item.setText(txt)
@@ -692,7 +692,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
                 tip = mi["BriefDocu"]
                 if m != "Deactivated":
                     tip += u"\n\n"
-                    tip += _translate(
+                    tip += translate(
                         "AttachmentEditor", "Reference combinations:", None
                     ) + u" \n\n".join(cmb)
 
@@ -709,7 +709,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
                 btn = self.refButtons[i]
                 btn.setCheckable(True)
                 btn.setChecked(self.i_active_ref == i)
-                typ = _translate("AttachmentEditor", "Reference{i}", None).format(
+                typ = translate("AttachmentEditor", "Reference{i}", None).format(
                     i=str(i + 1)
                 )
                 if self.last_sugr is not None:
@@ -719,7 +719,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
                             "UserFriendlyName"
                         ]
                 btn.setText(
-                    _translate("AttachmentEditor", "Selecting...", None)
+                    translate("AttachmentEditor", "Selecting...", None)
                     if self.i_active_ref == i
                     else typ
                 )
@@ -749,7 +749,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
             self.last_sugr = self.attacher.suggestModes()
             if self.last_sugr["message"] == "LinkBroken":
                 raise ValueError(
-                    _translate(
+                    translate(
                         "AttachmentEditor", "Failed to resolve links. {err}", None
                     ).format(err=self.last_sugr["error"])
                 )
@@ -761,11 +761,11 @@ class AttachmentEditorTaskPanel(FrozenClass):
             new_plm = self.attacher.calculateAttachedPlacement(self.obj.Placement)
             if new_plm is None:
                 self.form.message.setText(
-                    _translate("AttachmentEditor", "Not attached", None)
+                    translate("AttachmentEditor", "Not attached", None)
                 )
             else:
                 self.form.message.setText(
-                    _translate(
+                    translate(
                         "AttachmentEditor", "Attached with mode {mode}", None
                     ).format(
                         mode=self.attacher.getModeInfo(self.getCurrentMode())[
@@ -779,14 +779,14 @@ class AttachmentEditorTaskPanel(FrozenClass):
                     self.obj.Placement = new_plm
         except Exception as err:
             self.form.message.setText(
-                _translate("AttachmentEditor", "Error: {err}", None).format(
+                translate("AttachmentEditor", "Error: {err}", None).format(
                     err=str(err)
                 )
             )
 
         if new_plm is not None:
             self.form.groupBox_AttachmentOffset.setTitle(
-                _translate(
+                translate(
                     "AttachmentEditor",
                     "Attachment Offset (in local coordinates):",
                     None,
@@ -795,7 +795,7 @@ class AttachmentEditorTaskPanel(FrozenClass):
             self.form.groupBox_AttachmentOffset.setEnabled(True)
         else:
             self.form.groupBox_AttachmentOffset.setTitle(
-                _translate(
+                translate(
                     "AttachmentEditor",
                     "Attachment Offset (inactive - not attached):",
                     None,

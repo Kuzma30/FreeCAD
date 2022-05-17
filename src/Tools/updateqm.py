@@ -46,6 +46,7 @@ from __future__ import print_function
 import os, sys
 
 directories = [
+#        {"tsname":"App", "workingdir":"./src/App/Resources/translations"},
         {"tsname":"FreeCAD", "workingdir":"./src/Gui/Language"},
         {"tsname":"AddonManager", "workingdir":"./src/Mod/AddonManager/Resources/translations"},
         {"tsname":"Arch", "workingdir":"./src/Mod/Arch/Resources/translations"},

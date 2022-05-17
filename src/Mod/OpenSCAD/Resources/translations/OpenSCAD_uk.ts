@@ -4,6 +4,16 @@
   <context>
     <name>OpenSCAD</name>
     <message>
+      <location filename="OpenSCADUtils.py" line="1220"/>
+      <source>OpenSCAD file contains both 2D and 3D shapes. That is not supported in this importer, all shapes must have the same dimensionality.</source>
+      <translation type="unfinished">OpenSCAD file contains both 2D and 3D shapes. That is not supported in this importer, all shapes must have the same dimensionality.</translation>
+    </message>
+    <message>
+      <location filename="OpenSCADUtils.py" line="1237"/>
+      <source>Error all shapes must be either 2D or both must be 3D</source>
+      <translation>Помилка: усі обʼєкти повинні бути або дво-, або тривимірними</translation>
+    </message>
+    <message>
       <location filename="InitGui.py" line="130"/>
       <source>It looks like you may be using a Snap version of OpenSCAD.</source>
       <translation type="unfinished">It looks like you may be using a Snap version of OpenSCAD.</translation>
@@ -87,16 +97,6 @@
       <location filename="importCSG.py" line="1626"/>
       <source>Press OK</source>
       <translation>Натисніть OK</translation>
-    </message>
-    <message>
-      <location filename="OpenSCADUtils.py" line="1220"/>
-      <source>OpenSCAD file contains both 2D and 3D shapes. That is not supported in this importer, all shapes must have the same dimensionality.</source>
-      <translation type="unfinished">OpenSCAD file contains both 2D and 3D shapes. That is not supported in this importer, all shapes must have the same dimensionality.</translation>
-    </message>
-    <message>
-      <location filename="OpenSCADUtils.py" line="1237"/>
-      <source>Error all shapes must be either 2D or both must be 3D</source>
-      <translation>Помилка: усі обʼєкти повинні бути або дво-, або тривимірними</translation>
     </message>
   </context>
   <context>

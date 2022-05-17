@@ -26,8 +26,8 @@ import FreeCAD
 import unittest
 import os
 
-class TestMetadata(unittest.TestCase):
 
+class TestMetadata(unittest.TestCase):
     def setUp(self):
         self.test_dir = os.path.join(FreeCAD.getHomePath(), "Mod", "Test", "TestData")
 
@@ -38,15 +38,24 @@ class TestMetadata(unittest.TestCase):
         except Exception:
             self.fail("Metadata construction from XML file failed")
 
-        with self.assertRaises(FreeCAD.Base.XMLBaseException, msg="Metadata construction from XML file with bad root node did not raise an exception"):
+        with self.assertRaises(
+            FreeCAD.Base.XMLBaseException,
+            msg="Metadata construction from XML file with bad root node did not raise an exception",
+        ):
             filename = os.path.join(self.test_dir, "bad_root_node.xml")
             md = FreeCAD.Metadata(filename)
 
-        with self.assertRaises(FreeCAD.Base.XMLBaseException, msg="Metadata construction from invalid XML file did not raise an exception"):
+        with self.assertRaises(
+            FreeCAD.Base.XMLBaseException,
+            msg="Metadata construction from invalid XML file did not raise an exception",
+        ):
             filename = os.path.join(self.test_dir, "bad_xml.xml")
             md = FreeCAD.Metadata(filename)
 
-        with self.assertRaises(FreeCAD.Base.XMLBaseException, msg="Metadata construction from XML file with invalid version did not raise an exception"):
+        with self.assertRaises(
+            FreeCAD.Base.XMLBaseException,
+            msg="Metadata construction from XML file with invalid version did not raise an exception",
+        ):
             filename = os.path.join(self.test_dir, "bad_version.xml")
             md = FreeCAD.Metadata(filename)
 
@@ -58,13 +67,13 @@ class TestMetadata(unittest.TestCase):
         self.assertEqual(md.Name, "Test Workbench")
         self.assertEqual(md.Description, "A package.xml file for unit testing.")
         self.assertEqual(md.Version, "1.0.1")
-        #self.assertEqual(md.Date, "2022-01-07")
+        # self.assertEqual(md.Date, "2022-01-07")
         self.assertEqual(md.Icon, "Resources/icons/PackageIcon.svg")
 
         # Tags that are lists of elements:
         maintainers = md.Maintainer
         self.assertEqual(len(maintainers), 2)
-        
+
         authors = md.Author
         self.assertEqual(len(authors), 3)
 

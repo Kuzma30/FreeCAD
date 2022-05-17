@@ -44,34 +44,24 @@ class Fillet(base.DraftObject):
         """Set the properties of objects if they don't exist."""
         if not hasattr(obj, "Start"):
             _tip = QT_TRANSLATE_NOOP("App::Property", "The start point of this line.")
-            obj.addProperty("App::PropertyVectorDistance",
-                            "Start",
-                            "Draft",
-                            _tip)
+            obj.addProperty("App::PropertyVectorDistance", "Start", "Draft", _tip)
             obj.Start = App.Vector(0, 0, 0)
 
         if not hasattr(obj, "End"):
             _tip = QT_TRANSLATE_NOOP("App::Property", "The end point of this line.")
-            obj.addProperty("App::PropertyVectorDistance",
-                            "End",
-                            "Draft",
-                            _tip)
+            obj.addProperty("App::PropertyVectorDistance", "End", "Draft", _tip)
             obj.End = App.Vector(0, 0, 0)
 
         if not hasattr(obj, "Length"):
             _tip = QT_TRANSLATE_NOOP("App::Property", "The length of this line.")
-            obj.addProperty("App::PropertyLength",
-                            "Length",
-                            "Draft",
-                            _tip)
+            obj.addProperty("App::PropertyLength", "Length", "Draft", _tip)
             obj.Length = 0
 
         if not hasattr(obj, "FilletRadius"):
-            _tip = QT_TRANSLATE_NOOP("App::Property", "Radius to use to fillet the corner.")
-            obj.addProperty("App::PropertyLength",
-                            "FilletRadius",
-                            "Draft",
-                            _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "Radius to use to fillet the corner."
+            )
+            obj.addProperty("App::PropertyLength", "FilletRadius", "Draft", _tip)
             obj.FilletRadius = 0
 
         # TODO: these two properties should link two straight lines
@@ -110,8 +100,7 @@ class Fillet(base.DraftObject):
             obj.End = obj.Shape.Vertexes[-1].Point
 
     def _update_radius(self, obj, radius):
-        if (hasattr(obj, "Line1") and hasattr(obj, "Line2")
-                and obj.Line1 and obj.Line2):
+        if hasattr(obj, "Line1") and hasattr(obj, "Line2") and obj.Line1 and obj.Line2:
             _msg("Recalculate the radius with objects.")
 
         _msg("Update radius currently not implemented: r={}".format(radius))
@@ -124,5 +113,6 @@ class Fillet(base.DraftObject):
         """
         if prop in "FilletRadius":
             self._update_radius(obj, obj.FilletRadius)
+
 
 ## @}

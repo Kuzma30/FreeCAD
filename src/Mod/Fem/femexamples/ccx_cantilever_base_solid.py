@@ -94,6 +94,7 @@ def setup_cantilever_base_solid(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_canticcx_tetra10 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

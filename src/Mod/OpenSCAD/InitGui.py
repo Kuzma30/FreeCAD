@@ -84,6 +84,7 @@ class OpenSCADWorkbench(Workbench):
             "Part_Revolve",
         ]
         import FreeCAD
+
         translate = FreeCAD.Qt.translate
 
         param = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/OpenSCAD")
@@ -119,7 +120,7 @@ class OpenSCADWorkbench(Workbench):
             FreeCAD.Console.PrintWarning("OpenSCAD executable not found\n")
 
         transferMechanism = param.GetInt("transfermechanism", 0)
-        if openscadfilename and transferMechanism == 0:  
+        if openscadfilename and transferMechanism == 0:
             # We are using the Python temp-directory creation function
             if "snap" in openscadfilename:
                 FreeCAD.Console.PrintMessage(

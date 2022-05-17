@@ -30,7 +30,7 @@ from femtools import geomtools
 
 
 def get_analysis_types():
-    return "all"    # write for all analysis types
+    return "all"  # write for all analysis types
 
 
 def get_sets_name():
@@ -80,16 +80,20 @@ def write_constraint(f, femobj, trans_obj, ccxwriter):
         trans_name = "Cylin"
         trans_type = "C"
         coords = geomtools.get_cylindrical_coords(trans_obj)
-    f.write("*TRANSFORM, NSET={}{}, TYPE={}\n".format(
-        trans_name,
-        trans_obj.Name,
-        trans_type,
-    ))
-    f.write("{:.13G},{:.13G},{:.13G},{:.13G},{:.13G},{:.13G}\n".format(
-        coords[0],
-        coords[1],
-        coords[2],
-        coords[3],
-        coords[4],
-        coords[5],
-    ))
+    f.write(
+        "*TRANSFORM, NSET={}{}, TYPE={}\n".format(
+            trans_name,
+            trans_obj.Name,
+            trans_type,
+        )
+    )
+    f.write(
+        "{:.13G},{:.13G},{:.13G},{:.13G},{:.13G},{:.13G}\n".format(
+            coords[0],
+            coords[1],
+            coords[2],
+            coords[3],
+            coords[4],
+            coords[5],
+        )
+    )

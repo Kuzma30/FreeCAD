@@ -105,7 +105,7 @@ def make_point_array(base_object, point_object, extra=None, use_link=True):
 
     found, doc = utils.find_doc(App.activeDocument())
     if not found:
-        _err(translate("draft","No active document. Aborting."))
+        _err(translate("draft", "No active document. Aborting."))
         return None
 
     if isinstance(base_object, str):
@@ -114,7 +114,7 @@ def make_point_array(base_object, point_object, extra=None, use_link=True):
     found, base_object = utils.find_object(base_object, doc)
     if not found:
         _msg("base_object: {}".format(base_object_str))
-        _err(translate("draft","Wrong input: object not in document."))
+        _err(translate("draft", "Wrong input: object not in document."))
         return None
 
     _msg("base_object: {}".format(base_object.Label))
@@ -125,26 +125,36 @@ def make_point_array(base_object, point_object, extra=None, use_link=True):
     found, point_object = utils.find_object(point_object, doc)
     if not found:
         _msg("point_object: {}".format(point_object_str))
-        _err(translate("draft","Wrong input: object not in document."))
+        _err(translate("draft", "Wrong input: object not in document."))
         return None
 
     _msg("point_object: {}".format(point_object.Label))
-    if (not hasattr(point_object, "Geometry")
-            and not hasattr(point_object, "Links")
-            and not hasattr(point_object, "Components")):
-        _err(translate("draft","Wrong input: point object doesn't have 'Geometry', 'Links', or 'Components'."))
+    if (
+        not hasattr(point_object, "Geometry")
+        and not hasattr(point_object, "Links")
+        and not hasattr(point_object, "Components")
+    ):
+        _err(
+            translate(
+                "draft",
+                "Wrong input: point object doesn't have 'Geometry', 'Links', or 'Components'.",
+            )
+        )
         return None
 
     _msg("extra: {}".format(extra))
     if not extra:
         extra = App.Placement()
     try:
-        utils.type_check([(extra, (App.Placement,
-                                   App.Vector,
-                                   App.Rotation))],
-                         name=_name)
+        utils.type_check(
+            [(extra, (App.Placement, App.Vector, App.Rotation))], name=_name
+        )
     except TypeError:
-        _err(translate("draft","Wrong input: must be a placement, a vector, or a rotation."))
+        _err(
+            translate(
+                "draft", "Wrong input: must be a placement, a vector, or a rotation."
+            )
+        )
         return None
 
     # Convert the vector or rotation to a full placement
@@ -156,8 +166,9 @@ def make_point_array(base_object, point_object, extra=None, use_link=True):
     if use_link:
         # The PointArray class must be called in this special way
         # to make it a LinkArray
-        new_obj = doc.addObject("Part::FeaturePython", "PointArray",
-                                PointArray(None), None, True)
+        new_obj = doc.addObject(
+            "Part::FeaturePython", "PointArray", PointArray(None), None, True
+        )
     else:
         new_obj = doc.addObject("Part::FeaturePython", "PointArray")
         PointArray(new_obj)
@@ -185,8 +196,9 @@ def make_point_array(base_object, point_object, extra=None, use_link=True):
 
 def makePointArray(base, ptlst):
     """Create PointArray. DEPRECATED. Use 'make_point_array'."""
-    utils.use_instead('make_point_array')
+    utils.use_instead("make_point_array")
 
     return make_point_array(base, ptlst)
+
 
 ## @}

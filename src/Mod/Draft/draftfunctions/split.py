@@ -43,12 +43,24 @@ def split(wire, newPoint, edgeIndex):
 def split_closed_wire(wire, edgeIndex):
     wire.Closed = False
     if edgeIndex == len(wire.Points):
-        make_wire.make_wire([wire.Placement.multVec(wire.Points[0]),
-            wire.Placement.multVec(wire.Points[-1])], placement=wire.Placement)
+        make_wire.make_wire(
+            [
+                wire.Placement.multVec(wire.Points[0]),
+                wire.Placement.multVec(wire.Points[-1]),
+            ],
+            placement=wire.Placement,
+        )
     else:
-        make_wire.make_wire([wire.Placement.multVec(wire.Points[edgeIndex-1]),
-            wire.Placement.multVec(wire.Points[edgeIndex])], placement=wire.Placement)
-        wire.Points = list(reversed(wire.Points[0:edgeIndex])) + list(reversed(wire.Points[edgeIndex:]))
+        make_wire.make_wire(
+            [
+                wire.Placement.multVec(wire.Points[edgeIndex - 1]),
+                wire.Placement.multVec(wire.Points[edgeIndex]),
+            ],
+            placement=wire.Placement,
+        )
+        wire.Points = list(reversed(wire.Points[0:edgeIndex])) + list(
+            reversed(wire.Points[edgeIndex:])
+        )
 
 
 splitClosedWire = split_closed_wire

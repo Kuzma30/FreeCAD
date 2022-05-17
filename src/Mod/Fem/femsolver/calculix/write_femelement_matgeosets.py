@@ -33,7 +33,9 @@ def write_femelement_matgeosets(f, ccxwriter):
 
     # write mat_geo_sets to file
     f.write("\n{}\n".format(59 * "*"))
-    f.write("** Element sets for materials and FEM element type (solid, shell, beam, fluid)\n")
+    f.write(
+        "** Element sets for materials and FEM element type (solid, shell, beam, fluid)\n"
+    )
 
     for matgeoset in ccxwriter.mat_geo_sets:
 

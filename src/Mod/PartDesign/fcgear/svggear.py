@@ -18,10 +18,12 @@
 import itertools
 from involute import CreateExternalGear, rotate
 
+
 def makeGear(m, Z, angle):
     w = SVGWireBuilder()
     CreateExternalGear(w, m, Z, angle)
-    return '\n'.join(w.svg)
+    return "\n".join(w.svg)
+
 
 class SVGWireBuilder(object):
     def __init__(self):
@@ -31,17 +33,17 @@ class SVGWireBuilder(object):
 
     def move(self, p):
         p = rotate(p, self.theta)
-        self.svg.append('M %s,%s' % (p[0], p[1]))
+        self.svg.append("M %s,%s" % (p[0], p[1]))
         self.pos = p
 
     def line(self, p):
         p = rotate(p, self.theta)
-        self.svg.append('L %s,%s' % (p[0], p[1]))
+        self.svg.append("L %s,%s" % (p[0], p[1]))
         self.pos = p
 
     def arc(self, p, r, sweep):
         p = rotate(p, self.theta)
-        self.svg.append('A %s,%s 0,0,%s %s,%s' % (r, r, str(sweep), p[0], p[1]))
+        self.svg.append("A %s,%s 0,0,%s %s,%s" % (r, r, str(sweep), p[0], p[1]))
         self.pos = p
 
     def curve(self, *points):
@@ -51,20 +53,20 @@ class SVGWireBuilder(object):
         """
         assert len(points) == 3
         points = [rotate(p, self.theta) for p in points]
-        self.svg.append('C %s,%s %s,%s %s,%s' % tuple(itertools.chain(*points)))
+        self.svg.append("C %s,%s %s,%s %s,%s" % tuple(itertools.chain(*points)))
         self.pos = points[-1]
 
     def close(self):
-        self.svg.append('Z')
+        self.svg.append("Z")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     from optparse import OptionParser
+
     p = OptionParser()
-    p.add_option('-a', '--angle', help='pressure angle',
-                 dest='angle', default=20)
+    p.add_option("-a", "--angle", help="pressure angle", dest="angle", default=20)
     opts, args = p.parse_args()
     if len(args) != 2:
         p.error("Invalid arguments")
     m, Z = [float(v) for v in args]
     print(makeGear(m, int(Z), float(opts.angle)))
-

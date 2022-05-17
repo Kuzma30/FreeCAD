@@ -39,12 +39,14 @@ def get_information():
         "constraints": ["displacement", "force"],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "buckling"
+        "equation": "buckling",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.buckling_platebuckling import setup
@@ -55,6 +57,7 @@ See forum topic post:
 https://forum.freecadweb.org/viewtopic.php?f=18&t=20217&start=110#p509935
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -65,7 +68,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     geom_obj = doc.addObject("Part::Plane", "Plate")
@@ -102,7 +107,7 @@ def setup(doc=None, solvertype="ccxtools"):
     analysis.addObject(solver_obj)
 
     # shell thickness
-    thickness_obj = ObjectsFem.makeElementGeometry2D(doc, 50, 'Thickness')
+    thickness_obj = ObjectsFem.makeElementGeometry2D(doc, 50, "Thickness")
     analysis.addObject(thickness_obj)
 
     # material
@@ -148,6 +153,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_buckling_plate_tria6 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

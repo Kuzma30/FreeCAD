@@ -34,8 +34,7 @@ from ... import equationbase
 
 
 def create(doc, name="Flow"):
-    return femutils.createObject(
-        doc, name, Proxy, ViewProxy)
+    return femutils.createObject(doc, name, Proxy, ViewProxy)
 
 
 class Proxy(nonlinear.Proxy, equationbase.FlowProxy):
@@ -49,5 +48,6 @@ class Proxy(nonlinear.Proxy, equationbase.FlowProxy):
 
 class ViewProxy(nonlinear.ViewProxy, equationbase.FlowViewProxy):
     pass
+
 
 ##  @}

@@ -106,7 +106,7 @@ class GuiCommandSimplest:
         self.doc = App.activeDocument()
         _log("Document: {}".format(self.doc.Label))
         _log("GuiCommand: {}".format(self.command_name))
-        _msg("{}".format(16*"-"))
+        _msg("{}".format(16 * "-"))
         _msg("GuiCommand: {}".format(self.command_name))
 
 
@@ -217,5 +217,6 @@ class GuiCommandBase:
             that will be executed.
         """
         self.commit_list.append((name, func))
+
 
 ## @}

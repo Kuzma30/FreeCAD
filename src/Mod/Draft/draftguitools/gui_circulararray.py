@@ -61,9 +61,14 @@ class CircularArray(gui_base.GuiCommandBase):
 
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'Pixmap': 'Draft_CircularArray',
-               'MenuText': QT_TRANSLATE_NOOP("Draft_CircularArray", "Circular array"),
-               'ToolTip': QT_TRANSLATE_NOOP("Draft_CircularArray", "Creates copies of the selected object, and places the copies in a radial pattern\ncreating various circular layers.\n\nThe array can be turned into an orthogonal or a polar array by changing its type.")}
+        return {
+            "Pixmap": "Draft_CircularArray",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_CircularArray", "Circular array"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_CircularArray",
+                "Creates copies of the selected object, and places the copies in a radial pattern\ncreating various circular layers.\n\nThe array can be turned into an orthogonal or a polar array by changing its type.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called.
@@ -72,16 +77,16 @@ class CircularArray(gui_base.GuiCommandBase):
         the widgets of the task panel.
         """
         _log("GuiCommand: {}".format(self.command_name))
-        #_msg("{}".format(16*"-"))
-        #_msg("GuiCommand: {}".format(self.command_name))
+        # _msg("{}".format(16*"-"))
+        # _msg("GuiCommand: {}".format(self.command_name))
 
         self.location = coin.SoLocation2Event.getClassTypeId()
         self.mouse_event = coin.SoMouseButtonEvent.getClassTypeId()
         self.view = Draft.get3DView()
-        self.callback_move = \
-            self.view.addEventCallbackPivy(self.location, self.move)
-        self.callback_click = \
-            self.view.addEventCallbackPivy(self.mouse_event, self.click)
+        self.callback_move = self.view.addEventCallbackPivy(self.location, self.move)
+        self.callback_click = self.view.addEventCallbackPivy(
+            self.mouse_event, self.click
+        )
 
         self.ui = task_circulararray.TaskPanelCircularArray()
         # The calling class (this one) is saved in the object
@@ -111,8 +116,10 @@ class CircularArray(gui_base.GuiCommandBase):
         """
         if event_cb:
             event = event_cb.getEvent()
-            if (event.getState() != coin.SoMouseButtonEvent.DOWN
-                    or event.getButton() != coin.SoMouseButtonEvent.BUTTON1):
+            if (
+                event.getState() != coin.SoMouseButtonEvent.DOWN
+                or event.getButton() != coin.SoMouseButtonEvent.BUTTON1
+            ):
                 return
         if self.ui and self.point:
             # The accept function of the interface
@@ -126,15 +133,13 @@ class CircularArray(gui_base.GuiCommandBase):
         We should remove the callbacks that were added to the 3D view
         and then close the task panel.
         """
-        self.view.removeEventCallbackPivy(self.location,
-                                          self.callback_move)
-        self.view.removeEventCallbackPivy(self.mouse_event,
-                                          self.callback_click)
+        self.view.removeEventCallbackPivy(self.location, self.callback_move)
+        self.view.removeEventCallbackPivy(self.mouse_event, self.callback_click)
         if Gui.Control.activeDialog():
             Gui.Control.closeDialog()
             super(CircularArray, self).finish()
 
 
-Gui.addCommand('Draft_CircularArray', CircularArray())
+Gui.addCommand("Draft_CircularArray", CircularArray())
 
 ## @}

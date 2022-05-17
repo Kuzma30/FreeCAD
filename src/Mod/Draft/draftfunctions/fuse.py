@@ -38,17 +38,18 @@ if App.GuiUp:
 
 def fuse(object1, object2):
     """fuse(oject1, object2)
-    
-    Returns an object made from the union of the 2 given objects. 
+
+    Returns an object made from the union of the 2 given objects.
     If the objects are coplanar, a special Draft Wire is used, otherwise we use
     a standard Part fuse.
-    
+
     """
     if not App.ActiveDocument:
         App.Console.PrintError("No active document. Aborting\n")
         return
     import Part
     import DraftGeomUtils
+
     # testing if we have holes:
     holes = False
     fshape = object1.Shape.fuse(object2.Shape)
@@ -57,7 +58,7 @@ def fuse(object1, object2):
         if len(f.Wires) > 1:
             holes = True
     if DraftGeomUtils.isCoplanar(object1.Shape.fuse(object2.Shape).Faces) and not holes:
-        obj = App.ActiveDocument.addObject("Part::Part2DObjectPython","Fusion")
+        obj = App.ActiveDocument.addObject("Part::Part2DObjectPython", "Fusion")
         Wire(obj)
         if App.GuiUp:
             ViewProviderWire(obj.ViewObject)
@@ -65,18 +66,19 @@ def fuse(object1, object2):
         obj.Tool = object2
     elif holes:
         # temporary hack, since Part::Fuse objects don't remove splitters
-        obj = App.ActiveDocument.addObject("Part::Feature","Fusion")
+        obj = App.ActiveDocument.addObject("Part::Feature", "Fusion")
         obj.Shape = fshape
     else:
-        obj = App.ActiveDocument.addObject("Part::Fuse","Fusion")
+        obj = App.ActiveDocument.addObject("Part::Fuse", "Fusion")
         obj.Base = object1
         obj.Tool = object2
     if App.GuiUp:
         object1.ViewObject.Visibility = False
         object2.ViewObject.Visibility = False
-        gui_utils.format_object(obj,object1)
+        gui_utils.format_object(obj, object1)
         gui_utils.select(obj)
 
     return obj
+
 
 ## @}

@@ -46,12 +46,12 @@ class ElementRotation1D(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyAngle",
             "Rotation",
             "BeamRotation",
-            "Set the rotation of beam elements"
+            "Set the rotation of beam elements",
         )
 
         obj.addProperty(
             "App::PropertyLinkSubList",
             "References",
             "BeamRotation",
-            "List of beam rotation shapes"
+            "List of beam rotation shapes",
         )

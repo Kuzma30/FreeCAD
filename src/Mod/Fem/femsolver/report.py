@@ -46,10 +46,10 @@ def display(report, title=None, text=None):
 def displayGui(report, title=None, text=None):
     import FreeCADGui as Gui
     from . import reportdialog
+
     if not report.isEmpty():
         mw = Gui.getMainWindow()
-        dialog = reportdialog.ReportDialog(
-            report, title, text, mw)
+        dialog = reportdialog.ReportDialog(report, title, text, mw)
         dialog.exec_()
 
 
@@ -63,7 +63,6 @@ def displayLog(report):
 
 
 class Report(object):
-
     def __init__(self):
         self.infos = []
         self.warnings = []
@@ -94,5 +93,6 @@ class Report(object):
 
     def error(self, msg):
         self.errors.append(msg)
+
 
 ##  @}

@@ -63,7 +63,9 @@ class FemWorkbench(Workbench):
     "Fem workbench object"
 
     def __init__(self):
-        self.__class__.Icon = FreeCAD.getResourceDir() + "Mod/Fem/Resources/icons/FemWorkbench.svg"
+        self.__class__.Icon = (
+            FreeCAD.getResourceDir() + "Mod/Fem/Resources/icons/FemWorkbench.svg"
+        )
         self.__class__.MenuText = "FEM"
         self.__class__.ToolTip = "FEM workbench"
 
@@ -72,6 +74,7 @@ class FemWorkbench(Workbench):
         import Fem
         import FemGui
         import femcommands.commands
+
         # dummy usage to get flake8 and lgtm quiet
         False if Fem.__name__ else True
         False if FemGui.__name__ else True

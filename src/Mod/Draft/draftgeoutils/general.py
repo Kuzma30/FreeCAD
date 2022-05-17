@@ -55,18 +55,22 @@ def precision():
     #      as internal float is not that precise)
     precisionMax = 10
     precisionInt = PARAMGRP.GetInt("precision", 6)
-    precisionInt = (precisionInt if precisionInt <= 10 else precisionMax)
+    precisionInt = precisionInt if precisionInt <= 10 else precisionMax
     return precisionInt  # return PARAMGRP.GetInt("precision", 6)
 
 
-def vec(edge, use_orientation = False):
+def vec(edge, use_orientation=False):
     """Return a vector from an edge or a Part.LineSegment.
 
     If use_orientation is True, it takes into account the edges orientation.
     If edge is not straight, you'll get strange results!
     """
     if isinstance(edge, Part.Shape):
-        if use_orientation and isinstance(edge, Part.Edge) and edge.Orientation == "Reversed":
+        if (
+            use_orientation
+            and isinstance(edge, Part.Edge)
+            and edge.Orientation == "Reversed"
+        ):
             return edge.Vertexes[0].Point.sub(edge.Vertexes[-1].Point)
         else:
             return edge.Vertexes[-1].Point.sub(edge.Vertexes[0].Point)
@@ -114,8 +118,12 @@ def isNull(something):
         else:
             return False
     elif isinstance(something, App.Placement):
-        if (something.Base == App.Vector(0, 0, 0)
-                and something.Rotation.Q == (0, 0, 0, 1)):
+        if something.Base == App.Vector(0, 0, 0) and something.Rotation.Q == (
+            0,
+            0,
+            0,
+            1,
+        ):
             return True
         else:
             return False
@@ -195,12 +203,9 @@ def getQuad(face):
     v2 = vec(face.Edges[1])
     v3 = vec(face.Edges[2])
     v4 = vec(face.Edges[3])
-    angles90 = [round(math.pi*0.5, precision()),
-                round(math.pi*1.5, precision())]
+    angles90 = [round(math.pi * 0.5, precision()), round(math.pi * 1.5, precision())]
 
-    angles180 = [0,
-                 round(math.pi, precision()),
-                 round(math.pi*2, precision())]
+    angles180 = [0, round(math.pi, precision()), round(math.pi * 2, precision())]
     for ov in [v2, v3, v4]:
         if not (round(v1.getAngle(ov), precision()) in angles90 + angles180):
             return None
@@ -258,7 +263,7 @@ def geomType(edge):
             return "Ellipse"
         else:
             return "Unknown"
-    except Exception: # catch all errors, no only TypeError
+    except Exception:  # catch all errors, no only TypeError
         return "Unknown"
 
 
@@ -310,10 +315,10 @@ def getBoundaryAngles(angle, alist):
         negs = False
         for i in range(len(alist)):
             if alist[i] < 0:
-                alist[i] = 2*math.pi + alist[i]
+                alist[i] = 2 * math.pi + alist[i]
                 negs = True
         if angle < 0:
-            angle = 2*math.pi + angle
+            angle = 2 * math.pi + angle
             negs = True
 
     lower = None
@@ -341,11 +346,12 @@ def getBoundaryAngles(angle, alist):
                     higher = a
 
     if higher is None:
-        higher = 2*math.pi
+        higher = 2 * math.pi
         for a in alist:
             if a < higher:
                 higher = a
 
     return lower, higher
+
 
 ## @}

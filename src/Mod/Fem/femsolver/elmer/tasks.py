@@ -44,10 +44,9 @@ from femtools import membertools
 
 
 class Check(run.Check):
-
     def run(self):
         self.pushStatus("Checking analysis...\n")
-        if (self.check_mesh_exists()):
+        if self.check_mesh_exists():
             self.checkMeshType()
         self.check_material_exists()
         self.checkEquations()
@@ -56,8 +55,8 @@ class Check(run.Check):
         mesh = membertools.get_single_member(self.analysis, "Fem::FemMeshObject")
         if not femutils.is_of_type(mesh, "Fem::FemMeshGmsh"):
             self.report.error(
-                "Unsupported type of mesh. "
-                "Mesh must be created with gmsh.")
+                "Unsupported type of mesh. " "Mesh must be created with gmsh."
+            )
             self.fail()
             return False
         return True
@@ -65,14 +64,11 @@ class Check(run.Check):
     def checkEquations(self):
         equations = self.solver.Group
         if not equations:
-            self.report.error(
-                "Solver has no equations. "
-                "Add at least one equation.")
+            self.report.error("Solver has no equations. " "Add at least one equation.")
             self.fail()
 
 
 class Prepare(run.Prepare):
-
     def run(self):
         # TODO print working dir to report console
         self.pushStatus("Preparing input files...\n")
@@ -101,7 +97,6 @@ class Prepare(run.Prepare):
 
 
 class Solve(run.Solve):
-
     def run(self):
         # on rerun the result file will not deleted before starting the solver
         # if the solver fails, the existing result from a former run file will be loaded
@@ -114,17 +109,27 @@ class Solve(run.Solve):
             # http://www.elmerfem.org/forum/viewtopic.php?f=2&t=7119
             # https://stackoverflow.com/questions/1506010/how-to-use-export-with-python-on-linux
             # TODO move retrieving the param to solver settings module
-            elparams = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/Fem/Elmer")
+            elparams = FreeCAD.ParamGet(
+                "User parameter:BaseApp/Preferences/Mod/Fem/Elmer"
+            )
             elmer_env = elparams.GetBool("SetElmerEnvVariables", False)
-            if elmer_env is True and system() == "Linux" and "ELMER_HOME" not in os.environ:
+            if (
+                elmer_env is True
+                and system() == "Linux"
+                and "ELMER_HOME" not in os.environ
+            ):
                 solvpath = os.path.split(binary)[0]
                 if os.path.isdir(solvpath):
                     os.environ["ELMER_HOME"] = solvpath
-                    os.environ["LD_LIBRARY_PATH"] = "$LD_LIBRARY_PATH:{}/modules".format(solvpath)
+                    os.environ[
+                        "LD_LIBRARY_PATH"
+                    ] = "$LD_LIBRARY_PATH:{}/modules".format(solvpath)
             self._process = subprocess.Popen(
-                [binary], cwd=self.directory,
+                [binary],
+                cwd=self.directory,
                 stdout=subprocess.PIPE,
-                stderr=subprocess.PIPE)
+                stderr=subprocess.PIPE,
+            )
             self.signalAbort.add(self._process.terminate)
             output = self._observeSolver(self._process)
             self._process.communicate()
@@ -145,7 +150,8 @@ class Solve(run.Solve):
 
     def _createOutput(self):
         self.solver.ElmerOutput = self.analysis.Document.addObject(
-            "App::TextDocument", self.solver.Name + "Output")
+            "App::TextDocument", self.solver.Name + "Output"
+        )
         self.solver.ElmerOutput.Label = self.solver.Label + "Output"
         # App::TextDocument has no Attribute ReadOnly
         # TODO check if the attribute has been removed from App::TextDocument
@@ -155,7 +161,6 @@ class Solve(run.Solve):
 
 
 class Results(run.Results):
-
     def run(self):
         if self.solver.ElmerResult is None:
             self._createResults()
@@ -167,7 +172,8 @@ class Results(run.Results):
 
     def _createResults(self):
         self.solver.ElmerResult = self.analysis.Document.addObject(
-            "Fem::FemPostPipeline", self.solver.Name + "Result")
+            "Fem::FemPostPipeline", self.solver.Name + "Result"
+        )
         self.solver.ElmerResult.Label = self.solver.Label + "Result"
         self.analysis.addObject(self.solver.ElmerResult)
         # to assure the user sees something, set the default to Surface
@@ -188,5 +194,6 @@ class Results(run.Results):
             self.report.error("Result file not found.")
             self.fail()
         return postPath
+
 
 ##  @}

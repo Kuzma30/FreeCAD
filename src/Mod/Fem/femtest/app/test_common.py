@@ -39,38 +39,30 @@ class TestFemCommon(unittest.TestCase):
     fcc_print("import TestFemCommon")
 
     # ********************************************************************************************
-    def setUp(
-        self
-    ):
+    def setUp(self):
         # setUp is executed before every test
 
         # new document
         self.document = FreeCAD.newDocument(self.__class__.__name__)
 
     # ********************************************************************************************
-    def tearDown(
-        self
-    ):
+    def tearDown(self):
         # tearDown is executed after every test
         FreeCAD.closeDocument(self.document.Name)
 
     # ********************************************************************************************
-    def test_00print(
-        self
-    ):
+    def test_00print(self):
         # since method name starts with 00 this will be run first
         # this test just prints a line with stars
 
-        fcc_print("\n{0}\n{1} run FEM TestFemCommon tests {2}\n{0}".format(
-            100 * "*",
-            10 * "*",
-            61 * "*"
-        ))
+        fcc_print(
+            "\n{0}\n{1} run FEM TestFemCommon tests {2}\n{0}".format(
+                100 * "*", 10 * "*", 61 * "*"
+            )
+        )
 
     # ********************************************************************************************
-    def test_adding_refshaps(
-        self
-    ):
+    def test_adding_refshaps(self):
         doc = self.document
         slab = doc.addObject("Part::Plane", "Face")
         slab.Length = 500.00
@@ -86,15 +78,14 @@ class TestFemCommon(unittest.TestCase):
         doc.recompute()
         expected_reflist = [(slab, ("Edge1", "Edge2", "Edge3", "Edge4"))]
         assert_err_message = (
-            "Adding reference shapes did not result in expected list {} != {}"
-            .format(cf.References, expected_reflist)
+            "Adding reference shapes did not result in expected list {} != {}".format(
+                cf.References, expected_reflist
+            )
         )
         self.assertEqual(cf.References, expected_reflist, assert_err_message)
 
     # ********************************************************************************************
-    def test_pyimport_all_FEM_modules(
-        self
-    ):
+    def test_pyimport_all_FEM_modules(self):
         # we're going to try to import all python modules from FreeCAD FEM
         pymodules = []
 
@@ -126,8 +117,7 @@ class TestFemCommon(unittest.TestCase):
         for mod in pymodules:
             # migrate modules do not import on Python 2
             if (
-                mod == "femtools.migrate_app"
-                or mod == "femguiutils.migrate_gui"
+                mod == "femtools.migrate_app" or mod == "femguiutils.migrate_gui"
             ) and sys.version_info.major < 3:
                 continue
 

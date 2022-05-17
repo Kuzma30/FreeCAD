@@ -45,13 +45,11 @@ ANALYSIS_TYPES = ["static", "frequency", "thermomech", "check", "buckling"]
 
 
 def create(doc, name="SolverCalculiX"):
-    return femutils.createObject(
-        doc, name, Proxy, ViewProxy)
+    return femutils.createObject(doc, name, Proxy, ViewProxy)
 
 
 class Proxy(solverbase.Proxy):
-    """The Fem::FemSolver's Proxy python type, add solver specific properties
-    """
+    """The Fem::FemSolver's Proxy python type, add solver specific properties"""
 
     Type = "Fem::SolverCalculix"
 
@@ -70,12 +68,14 @@ class Proxy(solverbase.Proxy):
 
     def createMachine(self, obj, directory, testmode=False):
         return run.Machine(
-            solver=obj, directory=directory,
+            solver=obj,
+            directory=directory,
             check=tasks.Check(),
             prepare=tasks.Prepare(),
             solve=tasks.Solve(),
             results=tasks.Results(),
-            testmode=testmode)
+            testmode=testmode,
+        )
 
     def editSupported(self):
         return True
@@ -117,8 +117,7 @@ def on_restore_of_document(obj, ccx_prefs):
         obj.AnalysisType = temp_analysis_type
     else:
         FreeCAD.Console.PrintWarning(
-            "Analysis type {} not found. Standard is used.\n"
-            .format(temp_analysis_type)
+            "Analysis type {} not found. Standard is used.\n".format(temp_analysis_type)
         )
         analysis_type = ccx_prefs.GetInt("AnalysisType", 0)
         obj.AnalysisType = ANALYSIS_TYPES[analysis_type]
@@ -133,10 +132,7 @@ def add_attributes(obj, ccx_prefs):
 
     if not hasattr(obj, "AnalysisType"):
         obj.addProperty(
-            "App::PropertyEnumeration",
-            "AnalysisType",
-            "Fem",
-            "Type of the analysis"
+            "App::PropertyEnumeration", "AnalysisType", "Fem", "Type of the analysis"
         )
         obj.AnalysisType = ANALYSIS_TYPES
         analysis_type = ccx_prefs.GetInt("AnalysisType", 0)
@@ -148,7 +144,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyEnumeration",
             "GeometricalNonlinearity",
             "Fem",
-            "Set geometrical nonlinearity"
+            "Set geometrical nonlinearity",
         )
         obj.GeometricalNonlinearity = choices_geom_nonlinear
         nonlinear_geom = ccx_prefs.GetBool("NonlinearGeometry", False)
@@ -163,7 +159,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyEnumeration",
             "MaterialNonlinearity",
             "Fem",
-            "Set material nonlinearity (needs geometrical nonlinearity)"
+            "Set material nonlinearity (needs geometrical nonlinearity)",
         )
         obj.MaterialNonlinearity = choices_material_nonlinear
         obj.MaterialNonlinearity = choices_material_nonlinear[0]
@@ -173,7 +169,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyIntegerConstraint",
             "EigenmodesCount",
             "Fem",
-            "Number of modes for frequency calculations"
+            "Number of modes for frequency calculations",
         )
         noem = ccx_prefs.GetInt("EigenmodesCount", 10)
         obj.EigenmodesCount = (noem, 1, 100, 1)
@@ -183,7 +179,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyFloatConstraint",
             "EigenmodeLowLimit",
             "Fem",
-            "Low frequency limit for eigenmode calculations"
+            "Low frequency limit for eigenmode calculations",
         )
         ell = ccx_prefs.GetFloat("EigenmodeLowLimit", 0.0)
         obj.EigenmodeLowLimit = (ell, 0.0, 1000000.0, 10000.0)
@@ -193,7 +189,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyFloatConstraint",
             "EigenmodeHighLimit",
             "Fem",
-            "High frequency limit for eigenmode calculations"
+            "High frequency limit for eigenmode calculations",
         )
         ehl = ccx_prefs.GetFloat("EigenmodeHighLimit", 1000000.0)
         obj.EigenmodeHighLimit = (ehl, 0.0, 1000000.0, 10000.0)
@@ -207,7 +203,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyIntegerConstraint",
             "IterationsThermoMechMaximum",
             "Fem",
-            help_string_IterationsThermoMechMaximum
+            help_string_IterationsThermoMechMaximum,
         )
         niter = ccx_prefs.GetInt("AnalysisMaxIterations", 200)
         obj.IterationsThermoMechMaximum = niter
@@ -217,7 +213,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyIntegerConstraint",
             "BucklingFactors",
             "Fem",
-            "Calculates the lowest buckling modes to the corresponding buckling factors"
+            "Calculates the lowest buckling modes to the corresponding buckling factors",
         )
         bckl = ccx_prefs.GetInt("BucklingFactors", 1)
         obj.BucklingFactors = bckl
@@ -227,17 +223,14 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyFloatConstraint",
             "TimeInitialStep",
             "Fem",
-            "Initial time steps"
+            "Initial time steps",
         )
         ini = ccx_prefs.GetFloat("AnalysisTimeInitialStep", 1.0)
         obj.TimeInitialStep = ini
 
     if not hasattr(obj, "TimeEnd"):
         obj.addProperty(
-            "App::PropertyFloatConstraint",
-            "TimeEnd",
-            "Fem",
-            "End time analysis"
+            "App::PropertyFloatConstraint", "TimeEnd", "Fem", "End time analysis"
         )
         eni = ccx_prefs.GetFloat("AnalysisTime", 1.0)
         obj.TimeEnd = eni
@@ -247,7 +240,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyBool",
             "ThermoMechSteadyState",
             "Fem",
-            "Choose between steady state thermo mech or transient thermo mech analysis"
+            "Choose between steady state thermo mech or transient thermo mech analysis",
         )
         sted = ccx_prefs.GetBool("StaticAnalysis", True)
         obj.ThermoMechSteadyState = sted
@@ -257,9 +250,11 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyBool",
             "IterationsControlParameterTimeUse",
             "Fem",
-            "Use the user defined time incrementation control parameter"
+            "Use the user defined time incrementation control parameter",
         )
-        use_non_ccx_iterations_param = ccx_prefs.GetInt("UseNonCcxIterationParam", False)
+        use_non_ccx_iterations_param = ccx_prefs.GetInt(
+            "UseNonCcxIterationParam", False
+        )
         obj.IterationsControlParameterTimeUse = use_non_ccx_iterations_param
 
     if not hasattr(obj, "SplitInputWriter"):
@@ -267,7 +262,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyBool",
             "SplitInputWriter",
             "Fem",
-            "Split writing of ccx input file"
+            "Split writing of ccx input file",
         )
         split = ccx_prefs.GetBool("SplitInputWriter", False)
         obj.SplitInputWriter = split
@@ -291,7 +286,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyString",
             "IterationsControlParameterIter",
             "Fem",
-            "User defined time incrementation iterations control parameter"
+            "User defined time incrementation iterations control parameter",
         )
         obj.IterationsControlParameterIter = control_parameter_iterations
 
@@ -312,7 +307,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyString",
             "IterationsControlParameterCutb",
             "Fem",
-            "User defined time incrementation cutbacks control parameter"
+            "User defined time incrementation cutbacks control parameter",
         )
         obj.IterationsControlParameterCutb = control_parameter_cutback
 
@@ -325,7 +320,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyBool",
             "IterationsUserDefinedIncrementations",
             "Fem",
-            stringIterationsUserDefinedIncrementations
+            stringIterationsUserDefinedIncrementations,
         )
         obj.IterationsUserDefinedIncrementations = False
 
@@ -338,7 +333,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyBool",
             "IterationsUserDefinedTimeStepLength",
             "Fem",
-            help_string_IterationsUserDefinedTimeStepLength
+            help_string_IterationsUserDefinedTimeStepLength,
         )
         obj.IterationsUserDefinedTimeStepLength = False
 
@@ -347,13 +342,13 @@ def add_attributes(obj, ccx_prefs):
             "default",
             "spooles",
             "iterativescaling",
-            "iterativecholesky"
+            "iterativecholesky",
         ]
         obj.addProperty(
             "App::PropertyEnumeration",
             "MatrixSolverType",
             "Fem",
-            "Type of solver to use"
+            "Type of solver to use",
         )
         obj.MatrixSolverType = known_ccx_solver_types
         solver_type = ccx_prefs.GetInt("Solver", 0)
@@ -364,7 +359,7 @@ def add_attributes(obj, ccx_prefs):
             "App::PropertyBool",
             "BeamShellResultOutput3D",
             "Fem",
-            "Output 3D results for 1D and 2D analysis "
+            "Output 3D results for 1D and 2D analysis ",
         )
         dimout = ccx_prefs.GetBool("BeamShellOutput", False)
         obj.BeamShellResultOutput3D = dimout

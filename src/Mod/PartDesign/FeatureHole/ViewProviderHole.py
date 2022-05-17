@@ -1,4 +1,4 @@
-#/******************************************************************************
+# /******************************************************************************
 # *   Copyright (c) 2012 Jan Rheinländer <jrheinlaender@users.sourceforge.net> *
 # *                                                                            *
 # *   This file is part of the FreeCAD CAx development system.                 *
@@ -23,14 +23,15 @@
 import FreeCAD, FreeCADGui
 from TaskHole import TaskHole
 
+
 class ViewProviderHole:
     def __init__(self, obj):
-        ''' Set this object to the proxy object of the actual view provider '''
+        """Set this object to the proxy object of the actual view provider"""
         obj.Proxy = self
         self.Object = obj.Object
 
     def attach(self, obj):
-        ''' Setup the scene sub-graph of the view provider, this method is mandatory '''
+        """Setup the scene sub-graph of the view provider, this method is mandatory"""
         return
 
     def claimChildren(self):
@@ -38,34 +39,38 @@ class ViewProviderHole:
             return
         # The following statement leads to the error:
         # <unknown exception traceback><type 'exceptions.TypeError'>: PyCXX: Error creating object of type N2Py7SeqBaseINS_6ObjectEEE from None
-        if not hasattr(self,  "Object"):
+        if not hasattr(self, "Object"):
             return
-            
+
         if self.Object != None:
-            return [self.Object.HoleGroove,  # the groove feature
-                         self.Object.HoleGroove.Sketch.Support[0],  # the groove sketchplane (datum plane) feature
-                         self.Object.HoleGroove.Sketch.Support[0].References[0][0]] # the sketchplane first reference (datum line)
+            return [
+                self.Object.HoleGroove,  # the groove feature
+                self.Object.HoleGroove.Sketch.Support[
+                    0
+                ],  # the groove sketchplane (datum plane) feature
+                self.Object.HoleGroove.Sketch.Support[0].References[0][0],
+            ]  # the sketchplane first reference (datum line)
 
     def updateData(self, fp, prop):
-        ''' If a property of the handled feature has changed we have the chance to handle this here '''
+        """If a property of the handled feature has changed we have the chance to handle this here"""
         return
 
-    def getDisplayModes(self,obj):
-        ''' Return a list of display modes. '''
-        modes=[]
+    def getDisplayModes(self, obj):
+        """Return a list of display modes."""
+        modes = []
         return modes
 
     def getDefaultDisplayMode(self):
-        ''' Return the name of the default display mode. It must be defined in getDisplayModes. '''
+        """Return the name of the default display mode. It must be defined in getDisplayModes."""
         return "Shaded"
 
     def onChanged(self, vp, prop):
-        ''' Print the name of the property that has changed '''
-        #FreeCAD.Console.PrintMessage("Change property: " + str(prop) + "\n")
+        """Print the name of the property that has changed"""
+        # FreeCAD.Console.PrintMessage("Change property: " + str(prop) + "\n")
         pass
-        
-    def setEdit(self,vp,mode):
-        panel = TaskHole(self.Object)        
+
+    def setEdit(self, vp, mode):
+        panel = TaskHole(self.Object)
 
         FreeCADGui.Control.showDialog(panel)
         if not panel.setupUi():
@@ -74,24 +79,24 @@ class ViewProviderHole:
 
         return True
 
-    def unsetEdit(self,vp,mode):
+    def unsetEdit(self, vp, mode):
         return
 
     def getIcon(self):
-        ''' Return the icon in XMP format which will appear in the tree view. This method is optional
+        """Return the icon in XMP format which will appear in the tree view. This method is optional
         and if not defined a default icon is shown.
-        '''
+        """
         return ""
 
     def __getstate__(self):
-        ''' When saving the document this object gets stored using Python's cPickle module.
+        """When saving the document this object gets stored using Python's cPickle module.
         Since we have some un-pickable here -- the Coin stuff -- we must define this method
         to return a tuple of all pickable objects or None.
-        '''
+        """
         return None
 
-    def __setstate__(self,state):
-        ''' When restoring the pickled object from document we have the chance to set some
+    def __setstate__(self, state):
+        """When restoring the pickled object from document we have the chance to set some
         internals here. Since no data were pickled nothing needs to be done here.
-        '''
+        """
         return None

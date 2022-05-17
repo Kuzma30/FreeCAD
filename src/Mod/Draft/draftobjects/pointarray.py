@@ -68,52 +68,51 @@ class PointArray(DraftLink):
     def linkSetup(self, obj):
         """Set up the object as a link object."""
         super(PointArray, self).linkSetup(obj)
-        obj.configLinkProperty(ElementCount='Count')
+        obj.configLinkProperty(ElementCount="Count")
 
     def set_properties(self, obj):
         """Set properties only if they don't exist."""
         properties = obj.PropertiesList
 
         if "Base" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property","Base object that will be duplicated")
-            obj.addProperty("App::PropertyLink",
-                            "Base",
-                            "Objects",
-                            _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "Base object that will be duplicated"
+            )
+            obj.addProperty("App::PropertyLink", "Base", "Objects", _tip)
             obj.Base = None
 
         if "PointObject" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property", "Object containing points used to distribute the base object, for example, a sketch or a Part compound.\nThe sketch or compound must contain at least one explicit point or vertex object.")
-            obj.addProperty("App::PropertyLink",
-                            "PointObject",
-                            "Objects",
-                            _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Object containing points used to distribute the base object, for example, a sketch or a Part compound.\nThe sketch or compound must contain at least one explicit point or vertex object.",
+            )
+            obj.addProperty("App::PropertyLink", "PointObject", "Objects", _tip)
             obj.PointObject = None
 
         if "Count" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property","Total number of elements in the array.\nThis property is read-only, as the number depends on the points contained within 'Point Object'.")
-            obj.addProperty("App::PropertyInteger",
-                            "Count",
-                            "Objects",
-                            _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Total number of elements in the array.\nThis property is read-only, as the number depends on the points contained within 'Point Object'.",
+            )
+            obj.addProperty("App::PropertyInteger", "Count", "Objects", _tip)
             obj.Count = 0
             obj.setEditorMode("Count", 1)  # Read only
 
         if "ExtraPlacement" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property","Additional placement, shift and rotation, that will be applied to each copy")
-            obj.addProperty("App::PropertyPlacement",
-                            "ExtraPlacement",
-                            "Objects",
-                            _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Additional placement, shift and rotation, that will be applied to each copy",
+            )
+            obj.addProperty("App::PropertyPlacement", "ExtraPlacement", "Objects", _tip)
             obj.ExtraPlacement = App.Placement()
 
         if self.use_link and "ExpandArray" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property","Show the individual array elements (only for Link arrays)")
-            obj.addProperty("App::PropertyBool",
-                            "ExpandArray",
-                            "Objects",
-                            _tip)
-            obj.setPropertyStatus('Shape', 'Transient')
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Show the individual array elements (only for Link arrays)",
+            )
+            obj.addProperty("App::PropertyBool", "ExpandArray", "Objects", _tip)
+            obj.setPropertyStatus("Shape", "Transient")
 
     def execute(self, obj):
         """Run when the object is created or recomputed."""
@@ -136,13 +135,18 @@ class PointArray(DraftLink):
         properties = obj.PropertiesList
 
         if "ExtraPlacement" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property", "Additional placement, shift and rotation, that will be applied to each copy")
-            obj.addProperty("App::PropertyPlacement",
-                            "ExtraPlacement",
-                            "Objects",
-                            _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Additional placement, shift and rotation, that will be applied to each copy",
+            )
+            obj.addProperty("App::PropertyPlacement", "ExtraPlacement", "Objects", _tip)
             obj.ExtraPlacement.Base = obj.Base.Placement.Base
-            _wrn("v0.19, " + obj.Label + ", " + translate("draft","added property 'ExtraPlacement'"))
+            _wrn(
+                "v0.19, "
+                + obj.Label
+                + ", "
+                + translate("draft", "added property 'ExtraPlacement'")
+            )
 
         self.set_properties(obj)
         self.migrate_properties_0v19(obj)
@@ -158,7 +162,12 @@ class PointArray(DraftLink):
             obj.PointObject = obj.PointList
             obj.removeProperty("PointList")
             _info = "'PointList' property will be migrated to 'PointObject'"
-            _wrn("v0.19, " + obj.Label + ", " + translate("draft","added property 'ExtraPlacement'"))
+            _wrn(
+                "v0.19, "
+                + obj.Label
+                + ", "
+                + translate("draft", "added property 'ExtraPlacement'")
+            )
 
 
 def get_point_list(point_object):
@@ -192,20 +201,19 @@ def get_point_list(point_object):
       points contained in nested compounds.
     """
     # If its a clone, extract the real object
-    while utils.get_type(point_object) == 'Clone':
+    while utils.get_type(point_object) == "Clone":
         point_object = point_object.Objects[0]
 
     # If the point object doesn't have actual points
     # the point list will remain empty
     pt_list = list()
 
-    if hasattr(point_object, 'Geometry'):
+    if hasattr(point_object, "Geometry"):
         # Intended for a Sketcher::SketchObject, which has this property
         place = point_object.Placement
         for geo in point_object.Geometry:
             # It must contain at least one Part::GeomPoint.
-            if (hasattr(geo, 'X')
-                    and hasattr(geo, 'Y') and hasattr(geo, 'Z')):
+            if hasattr(geo, "X") and hasattr(geo, "Y") and hasattr(geo, "Z"):
                 point = geo.copy()
                 point.translate(place.Base)
                 point.rotate(place)
@@ -215,21 +223,22 @@ def get_point_list(point_object):
         return pt_list, count
 
     obj_list = list()
-    if hasattr(point_object, 'Links'):
+    if hasattr(point_object, "Links"):
         # Intended for a Part::Compound, which has this property
         obj_list = point_object.Links
-    elif hasattr(point_object, 'Components'):
+    elif hasattr(point_object, "Components"):
         # Intended for a Draft Block, which has this property
         obj_list = point_object.Components
 
     # These compounds should have at least one discrete point object
     # like a Draft Point or a Part::Vertex
     for _obj in obj_list:
-        if hasattr(_obj, 'X') and hasattr(_obj, 'Y') and hasattr(_obj, 'Z'):
+        if hasattr(_obj, "X") and hasattr(_obj, "Y") and hasattr(_obj, "Z"):
             pt_list.append(_obj)
 
     count = len(pt_list)
     return pt_list, count
+
 
 def build_placements(base_object, pt_list=None, placement=App.Placement()):
     """Build a placements from the base object and list of points.
@@ -239,9 +248,13 @@ def build_placements(base_object, pt_list=None, placement=App.Placement()):
     list(App.Placement)
     """
     if not pt_list:
-        _err(translate("Draft",
-                       "Point object doesn't have a discrete point, "
-                       "it cannot be used for an array."))
+        _err(
+            translate(
+                "Draft",
+                "Point object doesn't have a discrete point, "
+                "it cannot be used for an array.",
+            )
+        )
         return []
 
     pls = list()
@@ -259,11 +272,9 @@ def build_placements(base_object, pt_list=None, placement=App.Placement()):
         if point.TypeId == "Part::Vertex":
             # For this object the final position is the value of the Placement
             # plus the value of the X, Y, Z properties
-            place = App.Vector(point.X,
-                               point.Y,
-                               point.Z) + point.Placement.Base
+            place = App.Vector(point.X, point.Y, point.Z) + point.Placement.Base
 
-        elif hasattr(point, 'Placement'):
+        elif hasattr(point, "Placement"):
             # If the point object has a placement (Draft Point), use it
             # to displace the copy of the shape
             place = point.Placement.Base
@@ -291,6 +302,7 @@ def build_placements(base_object, pt_list=None, placement=App.Placement()):
 
     return pls
 
+
 def build_copies(base_object, pt_list=None, placement=App.Placement()):
     """Build a compound of copies from the base object and list of points.
 
@@ -301,9 +313,13 @@ def build_copies(base_object, pt_list=None, placement=App.Placement()):
     """
 
     if not pt_list:
-        _err(translate("Draft",
-                       "Point object doesn't have a discrete point, "
-                       "it cannot be used for an array."))
+        _err(
+            translate(
+                "Draft",
+                "Point object doesn't have a discrete point, "
+                "it cannot be used for an array.",
+            )
+        )
         shape = base_object.Shape.copy()
         return shape
 

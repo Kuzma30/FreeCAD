@@ -45,6 +45,6 @@ class ConstantVacuumPermittivity(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyVacuumPermittivity",
             "VacuumPermittivity",
             "Constants",
-            "Set the permittivity of vacuum"
+            "Set the permittivity of vacuum",
         )
         obj.VacuumPermittivity = Units.Quantity(constants.vacuum_permittivity())

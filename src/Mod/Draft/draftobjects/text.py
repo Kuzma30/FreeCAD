@@ -48,25 +48,21 @@ class Text(DraftAnnotation):
         properties = obj.PropertiesList
 
         if "Placement" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The placement of the base point "
-                                     "of the first line")
-            obj.addProperty("App::PropertyPlacement",
-                            "Placement",
-                            "Base",
-                            _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "The placement of the base point " "of the first line"
+            )
+            obj.addProperty("App::PropertyPlacement", "Placement", "Base", _tip)
             obj.Placement = App.Placement()
 
         if "Text" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The text displayed by this object.\n"
-                                     "It is a list of strings; each element "
-                                     "in the list will be displayed "
-                                     "in its own line.")
-            obj.addProperty("App::PropertyStringList",
-                            "Text",
-                            "Base",
-                            _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "The text displayed by this object.\n"
+                "It is a list of strings; each element "
+                "in the list will be displayed "
+                "in its own line.",
+            )
+            obj.addProperty("App::PropertyStringList", "Text", "Base", _tip)
             obj.Text = []
 
     def onDocumentRestored(self, obj):

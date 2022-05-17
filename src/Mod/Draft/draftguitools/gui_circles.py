@@ -75,12 +75,17 @@ class Circle(gui_arcs.Arc):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Circle',
-                'Accel': "C, I",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Circle", "Circle"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Circle", "Creates a circle (full circular arc).\nCTRL to snap, ALT to select tangent objects.")}
+        return {
+            "Pixmap": "Draft_Circle",
+            "Accel": "C, I",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Circle", "Circle"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Circle",
+                "Creates a circle (full circular arc).\nCTRL to snap, ALT to select tangent objects.",
+            ),
+        }
 
 
-Gui.addCommand('Draft_Circle', Circle())
+Gui.addCommand("Draft_Circle", Circle())
 
 ## @}

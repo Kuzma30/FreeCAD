@@ -47,10 +47,7 @@ elif open.__module__ == "io":
 
 
 # export mesh to python
-def export(
-    objectslist,
-    filename
-):
+def export(objectslist, filename):
     "called when freecad exports a file"
     if len(objectslist) != 1:
         FreeCAD.Console.PrintError("This exporter can only export one object.\n")
@@ -83,10 +80,8 @@ def export(
 
 # ********* writer *******************************************************************************
 
-def write(
-    fem_mesh,
-    filename
-):
+
+def write(fem_mesh, filename):
     """directly write a FemMesh to a Python mesh file
     fem_mesh: a FemMesh"""
 
@@ -120,8 +115,9 @@ def write_python_mesh_to_file(femnodes_mesh, femelement_table, fem_mesh_type, f)
         # print(node, ' --> ', femnodes_mesh[node])
         vec = femnodes_mesh[node]
         f.write(
-            "    {0}.addNode({1}, {2}, {3}, {4})\n"
-            .format(mesh_name, vec.x, vec.y, vec.z, node)
+            "    {0}.addNode({1}, {2}, {3}, {4})\n".format(
+                mesh_name, vec.x, vec.y, vec.z, node
+            )
         )
     f.write("    return True\n")
     f.write("\n\n")
@@ -133,17 +129,20 @@ def write_python_mesh_to_file(femnodes_mesh, femelement_table, fem_mesh_type, f)
         # print(element, ' --> ', femelement_table[element])
         if fem_mesh_type == "Solid":
             f.write(
-                "    {0}.addVolume({1}, {2})\n"
-                .format(mesh_name, list(femelement_table[element]), element)
+                "    {0}.addVolume({1}, {2})\n".format(
+                    mesh_name, list(femelement_table[element]), element
+                )
             )
         elif fem_mesh_type == "Face":
             f.write(
-                "    {0}.addFace({1}, {2})\n"
-                .format(mesh_name, list(femelement_table[element]), element)
+                "    {0}.addFace({1}, {2})\n".format(
+                    mesh_name, list(femelement_table[element]), element
+                )
             )
         elif fem_mesh_type == "Edge":
             f.write(
-                "    {0}.addEdge({1}, {2})\n"
-                .format(mesh_name, list(femelement_table[element]), element)
+                "    {0}.addEdge({1}, {2})\n".format(
+                    mesh_name, list(femelement_table[element]), element
+                )
             )
     f.write("    return True\n")

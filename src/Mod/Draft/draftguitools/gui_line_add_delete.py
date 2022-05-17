@@ -53,9 +53,13 @@ class AddPoint(DraftTools.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_AddPoint',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_AddPoint", "Add point"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_AddPoint", "Adds a point to an existing Wire or B-spline.")}
+        return {
+            "Pixmap": "Draft_AddPoint",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_AddPoint", "Add point"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_AddPoint", "Adds a point to an existing Wire or B-spline."
+            ),
+        }
 
     def IsActive(self):
         """Return True when there is selection and the command is active."""
@@ -68,12 +72,12 @@ class AddPoint(DraftTools.Modifier):
         """Execute when the command is called."""
         selection = Gui.Selection.getSelection()
         if selection:
-            if (utils.get_type(selection[0]) in ['Wire', 'BSpline']):
+            if utils.get_type(selection[0]) in ["Wire", "BSpline"]:
                 Gui.runCommand("Draft_Edit")
                 Gui.draftToolBar.vertUi(True)
 
 
-Gui.addCommand('Draft_AddPoint', AddPoint())
+Gui.addCommand("Draft_AddPoint", AddPoint())
 
 
 class DelPoint(DraftTools.Modifier):
@@ -85,9 +89,13 @@ class DelPoint(DraftTools.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_DelPoint',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_DelPoint", "Remove point"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_DelPoint", "Removes a point from an existing Wire or B-spline.")}
+        return {
+            "Pixmap": "Draft_DelPoint",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_DelPoint", "Remove point"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_DelPoint", "Removes a point from an existing Wire or B-spline."
+            ),
+        }
 
     def IsActive(self):
         """Return True when there is selection and the command is active."""
@@ -100,11 +108,11 @@ class DelPoint(DraftTools.Modifier):
         """Execute when the command is called."""
         selection = Gui.Selection.getSelection()
         if selection:
-            if (utils.get_type(selection[0]) in ['Wire', 'BSpline']):
+            if utils.get_type(selection[0]) in ["Wire", "BSpline"]:
                 Gui.runCommand("Draft_Edit")
                 Gui.draftToolBar.vertUi(False)
 
 
-Gui.addCommand('Draft_DelPoint', DelPoint())
+Gui.addCommand("Draft_DelPoint", DelPoint())
 
 ## @}

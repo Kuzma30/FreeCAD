@@ -42,12 +42,17 @@ if App.GuiUp:
     from draftviewproviders.view_label import ViewProviderLabel
 
 
-def make_label(target_point=App.Vector(0, 0, 0),
-               placement=App.Vector(30, 30, 0),
-               target_object=None, subelements=None,
-               label_type="Custom", custom_text="Label",
-               direction="Horizontal", distance=-10,
-               points=None):
+def make_label(
+    target_point=App.Vector(0, 0, 0),
+    placement=App.Vector(30, 30, 0),
+    target_object=None,
+    subelements=None,
+    label_type="Custom",
+    custom_text="Label",
+    direction="Horizontal",
+    distance=-10,
+    points=None,
+):
     """Create a Label object containing different types of information.
 
     The current color and text height and font specified in preferences
@@ -192,7 +197,7 @@ def make_label(target_point=App.Vector(0, 0, 0),
 
     found, doc = utils.find_doc(App.activeDocument())
     if not found:
-        _err(translate("draft","No active document. Aborting."))
+        _err(translate("draft", "No active document. Aborting."))
         return None
 
     _msg("target_point: {}".format(target_point))
@@ -201,18 +206,22 @@ def make_label(target_point=App.Vector(0, 0, 0),
     try:
         utils.type_check([(target_point, App.Vector)], name=_name)
     except TypeError:
-        _err(translate("draft","Wrong input: must be a vector."))
+        _err(translate("draft", "Wrong input: must be a vector."))
         return None
 
     _msg("placement: {}".format(placement))
     if not placement:
         placement = App.Placement()
     try:
-        utils.type_check([(placement, (App.Placement,
-                                       App.Vector,
-                                       App.Rotation))], name=_name)
+        utils.type_check(
+            [(placement, (App.Placement, App.Vector, App.Rotation))], name=_name
+        )
     except TypeError:
-        _err(translate("draft","Wrong input: must be a placement, a vector, or a rotation."))
+        _err(
+            translate(
+                "draft", "Wrong input: must be a placement, a vector, or a rotation."
+            )
+        )
         return None
 
     # Convert the vector or rotation to a full placement
@@ -227,13 +236,13 @@ def make_label(target_point=App.Vector(0, 0, 0),
     if target_object:
         if isinstance(target_object, (list, tuple)):
             _msg("target_object: {}".format(target_object))
-            _err(translate("draft","Wrong input: object must not be a list."))
+            _err(translate("draft", "Wrong input: object must not be a list."))
             return None
 
         found, target_object = utils.find_object(target_object, doc)
         if not found:
             _msg("target_object: {}".format(target_object_str))
-            _err(translate("draft","Wrong input: object not in document."))
+            _err(translate("draft", "Wrong input: object not in document."))
             return None
 
         _msg("target_object: {}".format(target_object.Label))
@@ -245,10 +254,14 @@ def make_label(target_point=App.Vector(0, 0, 0),
             if isinstance(subelements, str):
                 subelements = [subelements]
 
-            utils.type_check([(subelements, (list, tuple, str))],
-                             name=_name)
+            utils.type_check([(subelements, (list, tuple, str))], name=_name)
         except TypeError:
-            _err(translate("draft","Wrong input: must be a list or tuple of strings, or a single string."))
+            _err(
+                translate(
+                    "draft",
+                    "Wrong input: must be a list or tuple of strings, or a single string.",
+                )
+            )
             return None
 
         # The subelements list is used to build a special list
@@ -260,7 +273,7 @@ def make_label(target_point=App.Vector(0, 0, 0),
             _sub = target_object.getSubObject(sub)
             if not _sub:
                 _err("subelement: {}".format(sub))
-                _err(translate("draft","Wrong input: subelement not in object."))
+                _err(translate("draft", "Wrong input: subelement not in object."))
                 return None
 
     _msg("label_type: {}".format(label_type))
@@ -269,12 +282,15 @@ def make_label(target_point=App.Vector(0, 0, 0),
     try:
         utils.type_check([(label_type, str)], name=_name)
     except TypeError:
-        _err(translate("draft","Wrong input: label_type must be a string."))
+        _err(translate("draft", "Wrong input: label_type must be a string."))
         return None
 
     types = label.get_label_types()
     if label_type not in types:
-        _err(translate("draft", "Wrong input: label_type must be one of the following: ") + str(types).strip("[]"))
+        _err(
+            translate("draft", "Wrong input: label_type must be one of the following: ")
+            + str(types).strip("[]")
+        )
         return None
 
     _msg("custom_text: {}".format(custom_text))
@@ -283,12 +299,21 @@ def make_label(target_point=App.Vector(0, 0, 0),
     try:
         utils.type_check([(custom_text, (str, list))], name=_name)
     except TypeError:
-        _err(translate("draft","Wrong input: must be a list of strings or a single string."))
+        _err(
+            translate(
+                "draft", "Wrong input: must be a list of strings or a single string."
+            )
+        )
         return None
 
-    if (type(custom_text) is list
-            and not all(isinstance(element, str) for element in custom_text)):
-        _err(translate("draft","Wrong input: must be a list of strings or a single string."))
+    if type(custom_text) is list and not all(
+        isinstance(element, str) for element in custom_text
+    ):
+        _err(
+            translate(
+                "draft", "Wrong input: must be a list of strings or a single string."
+            )
+        )
         return None
 
     _msg("direction: {}".format(direction))
@@ -297,11 +322,21 @@ def make_label(target_point=App.Vector(0, 0, 0),
     try:
         utils.type_check([(direction, str)], name=_name)
     except TypeError:
-        _err(translate("draft","Wrong input: must be a string, 'Horizontal', 'Vertical', or 'Custom'."))
+        _err(
+            translate(
+                "draft",
+                "Wrong input: must be a string, 'Horizontal', 'Vertical', or 'Custom'.",
+            )
+        )
         return None
 
     if direction not in ("Horizontal", "Vertical", "Custom"):
-        _err(translate("draft","Wrong input: must be a string, 'Horizontal', 'Vertical', or 'Custom'."))
+        _err(
+            translate(
+                "draft",
+                "Wrong input: must be a string, 'Horizontal', 'Vertical', or 'Custom'.",
+            )
+        )
         return None
 
     _msg("distance: {}".format(distance))
@@ -310,13 +345,15 @@ def make_label(target_point=App.Vector(0, 0, 0),
     try:
         utils.type_check([(distance, (int, float))], name=_name)
     except TypeError:
-        _err(translate("draft","Wrong input: must be a number."))
+        _err(translate("draft", "Wrong input: must be a number."))
         return None
 
     if points:
         _msg("points: {}".format(points))
 
-        _err_msg = translate("draft","Wrong input: must be a list of at least two vectors.")
+        _err_msg = translate(
+            "draft", "Wrong input: must be a list of at least two vectors."
+        )
         try:
             utils.type_check([(points, (tuple, list))], name=_name)
         except TypeError:
@@ -331,8 +368,7 @@ def make_label(target_point=App.Vector(0, 0, 0),
             _err(_err_msg)
             return None
 
-    new_obj = doc.addObject("App::FeaturePython",
-                            "dLabel")
+    new_obj = doc.addObject("App::FeaturePython", "dLabel")
     label.Label(new_obj)
 
     new_obj.TargetPoint = target_point
@@ -350,7 +386,7 @@ def make_label(target_point=App.Vector(0, 0, 0),
     new_obj.StraightDistance = distance
     if points:
         if direction != "Custom":
-            _wrn(translate("draft","Direction is not 'Custom'; points won't be used."))
+            _wrn(translate("draft", "Direction is not 'Custom'; points won't be used."))
         new_obj.Points = points
 
     if App.GuiUp:
@@ -364,8 +400,14 @@ def make_label(target_point=App.Vector(0, 0, 0),
     return new_obj
 
 
-def makeLabel(targetpoint=None, target=None, direction=None,
-              distance=None, labeltype=None, placement=None):
+def makeLabel(
+    targetpoint=None,
+    target=None,
+    direction=None,
+    distance=None,
+    labeltype=None,
+    placement=None,
+):
     """Create a Label. DEPRECATED. Use 'make_label'."""
     utils.use_instead("make_label")
 
@@ -374,10 +416,14 @@ def makeLabel(targetpoint=None, target=None, direction=None,
 
     if target:
         try:
-            utils.type_check([(target, (tuple, list))],
-                             name=_name)
+            utils.type_check([(target, (tuple, list))], name=_name)
         except TypeError:
-            _err(translate("draft","Wrong input: must be a list of two elements. For example, [object, 'Edge1']."))
+            _err(
+                translate(
+                    "draft",
+                    "Wrong input: must be a list of two elements. For example, [object, 'Edge1'].",
+                )
+            )
             return None
 
     # In the old function `target` is the original parameter,
@@ -399,12 +445,15 @@ def makeLabel(targetpoint=None, target=None, direction=None,
     target_object = target[0]
     subelements = target[1]
 
-    return make_label(target_point=targetpoint,
-                      placement=placement,
-                      target_object=target_object,
-                      subelements=subelements,
-                      label_type=labeltype,
-                      direction=direction,
-                      distance=distance)
+    return make_label(
+        target_point=targetpoint,
+        placement=placement,
+        target_object=target_object,
+        subelements=subelements,
+        label_type=labeltype,
+        direction=direction,
+        distance=distance,
+    )
+
 
 ## @}

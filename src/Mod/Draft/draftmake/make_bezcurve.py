@@ -38,13 +38,13 @@ if App.GuiUp:
     from draftviewproviders.view_bezcurve import ViewProviderBezCurve
 
 
-def make_bezcurve(pointslist,
-                  closed=False, placement=None, face=None, support=None,
-                  degree=None):
+def make_bezcurve(
+    pointslist, closed=False, placement=None, face=None, support=None, degree=None
+):
     """make_bezcurve(pointslist, [closed], [placement])
-    
+
     Creates a Bezier Curve object from the given list of vectors.
-    
+
     Parameters
     ----------
     pointlist : [Base.Vector]
@@ -53,53 +53,58 @@ def make_bezcurve(pointslist,
         TODO: Change the name so!
 
     closed : bool
-        If closed is True or first and last points are identical, 
+        If closed is True or first and last points are identical,
         the created BSpline will be closed.
 
     placement : Base.Placement
         If a placement is given, it is used.
-    
-    face : Bool
-        If face is False, the rectangle is shown as a wireframe, 
-        otherwise as a face.   
 
-    support : 
+    face : Bool
+        If face is False, the rectangle is shown as a wireframe,
+        otherwise as a face.
+
+    support :
         TODO: Describe
-    
+
     degree : int
         Degree of the BezCurve
     """
     if not App.ActiveDocument:
         App.Console.PrintError("No active document. Aborting\n")
         return
-    if not isinstance(pointslist,list):
+    if not isinstance(pointslist, list):
         nlist = []
         for v in pointslist.Vertexes:
             nlist.append(v.Point)
         pointslist = nlist
     if placement:
-        utils.type_check([(placement,App.Placement)], "make_bezcurve")
-    if len(pointslist) == 2: fname = "Line"
-    else: fname = "BezCurve"
-    obj = App.ActiveDocument.addObject("Part::Part2DObjectPython",fname)
+        utils.type_check([(placement, App.Placement)], "make_bezcurve")
+    if len(pointslist) == 2:
+        fname = "Line"
+    else:
+        fname = "BezCurve"
+    obj = App.ActiveDocument.addObject("Part::Part2DObjectPython", fname)
     BezCurve(obj)
     obj.Points = pointslist
     if degree:
         obj.Degree = degree
     else:
         import Part
-        obj.Degree = min((len(pointslist)-(1 * (not closed))),
-                         Part.BezierCurve().MaxDegree)
+
+        obj.Degree = min(
+            (len(pointslist) - (1 * (not closed))), Part.BezierCurve().MaxDegree
+        )
     obj.Closed = closed
     obj.Support = support
     if face != None:
         obj.MakeFace = face
     obj.Proxy.resetcontinuity(obj)
-    if placement: obj.Placement = placement
+    if placement:
+        obj.Placement = placement
     if App.GuiUp:
         ViewProviderBezCurve(obj.ViewObject)
-#        if not face: obj.ViewObject.DisplayMode = "Wireframe"
-#        obj.ViewObject.DisplayMode = "Wireframe"
+        #        if not face: obj.ViewObject.DisplayMode = "Wireframe"
+        #        obj.ViewObject.DisplayMode = "Wireframe"
         gui_utils.format_object(obj)
         gui_utils.select(obj)
 

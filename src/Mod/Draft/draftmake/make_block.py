@@ -38,7 +38,7 @@ if App.GuiUp:
 
 def make_block(objectslist):
     """make_block(objectslist)
-    
+
     Creates a Draft Block from the given objects.
 
     Parameters
@@ -50,7 +50,7 @@ def make_block(objectslist):
     if not App.ActiveDocument:
         App.Console.PrintError("No active document. Aborting\n")
         return
-    obj = App.ActiveDocument.addObject("Part::Part2DObjectPython","Block")
+    obj = App.ActiveDocument.addObject("Part::Part2DObjectPython", "Block")
     Block(obj)
     obj.Components = objectslist
     if App.GuiUp:

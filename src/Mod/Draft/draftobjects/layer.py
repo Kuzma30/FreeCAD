@@ -54,12 +54,10 @@ class Layer:
     def set_properties(self, obj):
         """Set properties only if they don't exist."""
         if "Group" not in obj.PropertiesList:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The objects that are part of this layer")
-            obj.addProperty("App::PropertyLinkList",
-                            "Group",
-                            "Layer",
-                            _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "The objects that are part of this layer"
+            )
+            obj.addProperty("App::PropertyLinkList", "Group", "Layer", _tip)
 
     def __getstate__(self):
         """Return a tuple of objects to save or None."""
@@ -116,5 +114,6 @@ class LayerContainer:
         """Set the internal properties from the restored state."""
         if state:
             self.Type = state
+
 
 ## @}

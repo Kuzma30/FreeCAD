@@ -51,12 +51,14 @@ def get_information():
         "constraints": ["fixed", "initial temperature", "temperature"],
         "solvers": ["calculix", "ccxtools", "elmer"],
         "material": "multimaterial",
-        "equation": "thermomechanical"
+        "equation": "thermomechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.thermomech_bimetall import setup
@@ -73,6 +75,7 @@ this file has 7.15 mm max deflection
 
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -83,7 +86,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric objects
     # bottom box
@@ -105,7 +110,7 @@ def setup(doc=None, solvertype="ccxtools"):
     doc.recompute()
 
     # all geom boolean fragment
-    geom_obj = SplitFeatures.makeBooleanFragments(name='BooleanFragments')
+    geom_obj = SplitFeatures.makeBooleanFragments(name="BooleanFragments")
     geom_obj.Objects = [bottom_box_obj, top_box_obj]
     if FreeCAD.GuiUp:
         bottom_box_obj.ViewObject.hide()
@@ -126,7 +131,9 @@ def setup(doc=None, solvertype="ccxtools"):
         solver_obj = ObjectsFem.makeSolverCalculixCcxTools(doc, "CalculiXccxTools")
         solver_obj.WorkingDir = u""
     elif solvertype == "elmer":
-        solver_obj = analysis.addObject(ObjectsFem.makeSolverElmer(doc, "SolverElmer"))[0]
+        solver_obj = analysis.addObject(ObjectsFem.makeSolverElmer(doc, "SolverElmer"))[
+            0
+        ]
         solver_obj.SteadyStateMinIterations = 1
         solver_obj.SteadyStateMaxIterations = 10
         eq_heat = ObjectsFem.makeEquationHeat(doc, solver_obj)
@@ -187,7 +194,9 @@ def setup(doc=None, solvertype="ccxtools"):
     analysis.addObject(con_fixed)
 
     # constraint initial temperature
-    con_inittemp = ObjectsFem.makeConstraintInitialTemperature(doc, "ConstraintInitialTemperature")
+    con_inittemp = ObjectsFem.makeConstraintInitialTemperature(
+        doc, "ConstraintInitialTemperature"
+    )
     con_inittemp.initialTemperature = 273.0
     analysis.addObject(con_inittemp)
 
@@ -211,6 +220,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_thermomech_bimetall_tetra10 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

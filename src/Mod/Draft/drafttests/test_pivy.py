@@ -66,6 +66,7 @@ class DraftPivy(unittest.TestCase):
     def test_pivy_draw(self):
         """Use Coin (pivy.coin) to draw a cube on the active view."""
         import pivy.coin as coin
+
         cube = coin.SoCube()
         _msg("  Draw cube")
         Gui.ActiveDocument.ActiveView.getSceneGraph().addChild(cube)
@@ -78,5 +79,6 @@ class DraftPivy(unittest.TestCase):
         This is executed after each test, so we close the document.
         """
         App.closeDocument(self.doc_name)
+
 
 ## @}

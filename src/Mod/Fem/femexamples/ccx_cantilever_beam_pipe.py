@@ -36,12 +36,14 @@ def get_information():
         "constraints": ["fixed", "force"],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.ccx_cantilever_beam_pipe import setup
@@ -77,6 +79,7 @@ CalculiX FEM max deflection:
 - Delta ca. 1.0 %
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -87,7 +90,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     diameter = 1000
     thickness = 100

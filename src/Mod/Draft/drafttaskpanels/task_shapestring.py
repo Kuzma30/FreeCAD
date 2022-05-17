@@ -49,7 +49,7 @@ True if Draft_rc.__name__ else False
 class ShapeStringTaskPanel:
     """Base class for Draft_ShapeString task panel."""
 
-    def __init__(self, point=App.Vector(0,0,0), size=10, string="", font=""):
+    def __init__(self, point=App.Vector(0, 0, 0), size=10, string="", font=""):
 
         self.form = Gui.PySideUic.loadUi(":/ui/TaskShapeString.ui")
         self.form.setObjectName("ShapeStringTaskPanel")
@@ -57,14 +57,14 @@ class ShapeStringTaskPanel:
         self.form.setWindowIcon(QtGui.QIcon(":/icons/Draft_ShapeString.svg"))
 
         unit_length = App.Units.Quantity(0.0, App.Units.Length).getUserPreferred()[2]
-        self.form.sbX.setProperty('rawValue', point.x)
-        self.form.sbX.setProperty('unit', unit_length)
-        self.form.sbY.setProperty('rawValue', point.y)
-        self.form.sbY.setProperty('unit', unit_length)
-        self.form.sbZ.setProperty('rawValue', point.z)
-        self.form.sbZ.setProperty('unit', unit_length)
-        self.form.sbHeight.setProperty('rawValue', size)
-        self.form.sbHeight.setProperty('unit', unit_length)
+        self.form.sbX.setProperty("rawValue", point.x)
+        self.form.sbX.setProperty("unit", unit_length)
+        self.form.sbY.setProperty("rawValue", point.y)
+        self.form.sbY.setProperty("unit", unit_length)
+        self.form.sbZ.setProperty("rawValue", point.z)
+        self.form.sbZ.setProperty("unit", unit_length)
+        self.form.sbHeight.setProperty("rawValue", size)
+        self.form.sbHeight.setProperty("unit", unit_length)
 
         self.stringText = string if string else translate("draft", "Default")
         self.form.leString.setText(self.stringText)
@@ -78,8 +78,14 @@ class ShapeStringTaskPanel:
         # Dummy attribute used by gui_tools_utils.getPoint in action method
         self.node = None
 
-        QtCore.QObject.connect(self.form.fcFontFile, QtCore.SIGNAL("fileNameSelected(const QString&)"), self.fileSelect)
-        QtCore.QObject.connect(self.form.pbReset, QtCore.SIGNAL("clicked()"), self.resetPoint)
+        QtCore.QObject.connect(
+            self.form.fcFontFile,
+            QtCore.SIGNAL("fileNameSelected(const QString&)"),
+            self.fileSelect,
+        )
+        QtCore.QObject.connect(
+            self.form.pbReset, QtCore.SIGNAL("clicked()"), self.resetPoint
+        )
 
     def fileSelect(self, fn):
         """Assign the selected file."""
@@ -97,7 +103,9 @@ class ShapeStringTaskPanel:
             if arg["Key"] == "ESCAPE":
                 self.reject()
         elif arg["Type"] == "SoLocation2Event":  # mouse movement detection
-            self.point,ctrlPoint,info = gui_tool_utils.getPoint(self, arg, noTracker=True)
+            self.point, ctrlPoint, info = gui_tool_utils.getPoint(
+                self, arg, noTracker=True
+            )
             if not self.pointPicked:
                 self.setPoint(self.point)
         elif arg["Type"] == "SoMouseButtonEvent":
@@ -107,10 +115,9 @@ class ShapeStringTaskPanel:
 
     def setPoint(self, point):
         """Assign the selected point."""
-        self.form.sbX.setProperty('rawValue', point.x)
-        self.form.sbY.setProperty('rawValue', point.y)
-        self.form.sbZ.setProperty('rawValue', point.z)
-
+        self.form.sbX.setProperty("rawValue", point.x)
+        self.form.sbY.setProperty("rawValue", point.y)
+        self.form.sbZ.setProperty("rawValue", point.z)
 
     def platWinDialog(self, flag):
         """Handle the type of dialog depending on the platform."""
@@ -173,20 +180,33 @@ class ShapeStringTaskPanelCmd(ShapeStringTaskPanel):
         try:
             qr, sup, points, fil = self.sourceCmd.getStrings()
             Gui.addModule("Draft")
-            self.sourceCmd.commit(translate("draft", "Create ShapeString"),
-                                  ['ss=Draft.make_shapestring(String=' + String + ', FontFile=' + FFile + ', Size=' + Size + ', Tracking=' + Tracking + ')',
-                                   'plm=FreeCAD.Placement()',
-                                   'plm.Base=' + toString(ssBase),
-                                   'plm.Rotation.Q=' + qr,
-                                   'ss.Placement=plm',
-                                   'ss.Support=' + sup,
-                                   'Draft.autogroup(ss)'])
+            self.sourceCmd.commit(
+                translate("draft", "Create ShapeString"),
+                [
+                    "ss=Draft.make_shapestring(String="
+                    + String
+                    + ", FontFile="
+                    + FFile
+                    + ", Size="
+                    + Size
+                    + ", Tracking="
+                    + Tracking
+                    + ")",
+                    "plm=FreeCAD.Placement()",
+                    "plm.Base=" + toString(ssBase),
+                    "plm.Rotation.Q=" + qr,
+                    "ss.Placement=plm",
+                    "ss.Support=" + sup,
+                    "Draft.autogroup(ss)",
+                ],
+            )
         except Exception:
             _err("Draft_ShapeString: error delaying commit\n")
 
 
 class ShapeStringTaskPanelEdit(ShapeStringTaskPanel):
     """Task panel for Draft ShapeString object in edit mode."""
+
     def __init__(self, vobj):
 
         base = vobj.Object.Placement.Base
@@ -210,11 +230,11 @@ class ShapeStringTaskPanelEdit(ShapeStringTaskPanel):
         string = self.form.leString.text()
         font_file = self.fileSpec
 
-        o = "FreeCAD.ActiveDocument.getObject(\"" + self.vobj.Object.Name + "\")"
-        Gui.doCommand(o+".Placement.Base=" + toString(base))
-        Gui.doCommand(o+".Size=" + str(size))
-        Gui.doCommand(o+".String=\"" + string + "\"")
-        Gui.doCommand(o+".FontFile=\"" + font_file + "\"")
+        o = 'FreeCAD.ActiveDocument.getObject("' + self.vobj.Object.Name + '")'
+        Gui.doCommand(o + ".Placement.Base=" + toString(base))
+        Gui.doCommand(o + ".Size=" + str(size))
+        Gui.doCommand(o + '.String="' + string + '"')
+        Gui.doCommand(o + '.FontFile="' + font_file + '"')
         Gui.doCommand("FreeCAD.ActiveDocument.recompute()")
 
         self.reject()
@@ -235,5 +255,6 @@ class ShapeStringTaskPanelEdit(ShapeStringTaskPanel):
         Gui.Control.closeDialog()
 
         return None
+
 
 ## @}

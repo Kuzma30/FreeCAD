@@ -46,21 +46,21 @@ class MaterialReinforced(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyLinkSubList",
             "References",
             "Material",
-            "List of material shapes"
+            "List of material shapes",
         )
 
         obj.addProperty(
             "App::PropertyMap",
             "Reinforcement",
             "Composites",
-            "Reinforcement material properties"
+            "Reinforcement material properties",
         )
 
         obj.addProperty(
             "App::PropertyEnumeration",
             "Category",
             "Material",
-            "Matrix material properties"
+            "Matrix material properties",
         )
 
         obj.Category = ["Solid"]

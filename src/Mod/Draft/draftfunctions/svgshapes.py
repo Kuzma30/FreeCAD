@@ -95,21 +95,21 @@ def get_discretized(edge, plane):
     if pieces == 0:
         pieces = 10
 
-    d = int(edge.Length/pieces)
+    d = int(edge.Length / pieces)
     if d == 0:
         d = 1
 
     edata = ""
     for i in range(d + 1):
         _length = edge.LastParameter - edge.FirstParameter
-        _point = edge.FirstParameter + float(i)/d * _length
+        _point = edge.FirstParameter + float(i) / d * _length
         _vec = edge.valueAt(_point)
         v = get_proj(_vec, plane)
 
         if not edata:
-            edata += 'M ' + str(v.x) + ' ' + str(v.y) + ' '
+            edata += "M " + str(v.x) + " " + str(v.y) + " "
         else:
-            edata += 'L ' + str(v.x) + ' ' + str(v.y) + ' '
+            edata += "L " + str(v.x) + " " + str(v.y) + " "
 
     return edata
 
@@ -120,9 +120,9 @@ def getDiscretized(edge, plane):
     return get_discretized(edge, plane)
 
 
-def _get_path_circ_ellipse(plane, edge, vertex, edata,
-                           iscircle, isellipse,
-                           fill, stroke, linewidth, lstyle):
+def _get_path_circ_ellipse(
+    plane, edge, vertex, edata, iscircle, isellipse, fill, stroke, linewidth, lstyle
+):
     """Get the edge data from a path that is a circle or ellipse."""
     if hasattr(App, "DraftWorkingPlane"):
         drawing_plane_normal = App.DraftWorkingPlane.axis
@@ -157,10 +157,12 @@ def _get_path_circ_ellipse(plane, edge, vertex, edata,
             except IndexError:
                 # TODO: trap only specific exception.
                 # Check the problem. Split didn't produce a two element list?
-                _wrn("Circle or ellipse: "
-                     "cannot split the projection snip "
-                     "obtained by 'projectToSVG', "
-                     "continue manually.")
+                _wrn(
+                    "Circle or ellipse: "
+                    "cannot split the projection snip "
+                    "obtained by 'projectToSVG', "
+                    "continue manually."
+                )
             else:
                 edata += A
                 done = True
@@ -168,9 +170,7 @@ def _get_path_circ_ellipse(plane, edge, vertex, edata,
     if not done:
         if len(edge.Vertexes) == 1 and iscircle:
             # Complete circle not only arc
-            svg = get_circle(plane,
-                             fill, stroke, linewidth, lstyle,
-                             edge)
+            svg = get_circle(plane, fill, stroke, linewidth, lstyle, edge)
             # If it's a circle we will return the final SVG string,
             # otherwise it will process the `edata` further
             return "svg", svg
@@ -182,9 +182,11 @@ def _get_path_circ_ellipse(plane, edge, vertex, edata,
             # return svg
 
             # Difference in angles
-            _diff = (center.LastParameter - center.FirstParameter)/2.0
-            endpoints = [get_proj(center.value(_diff), plane),
-                         get_proj(vertex[-1].Point, plane)]
+            _diff = (center.LastParameter - center.FirstParameter) / 2.0
+            endpoints = [
+                get_proj(center.value(_diff), plane),
+                get_proj(vertex[-1].Point, plane),
+            ]
         else:
             endpoints = [get_proj(vertex[-1].Point, plane)]
 
@@ -215,16 +217,17 @@ def _get_path_circ_ellipse(plane, edge, vertex, edata,
         # between tangents
         _diff = edge.LastParameter - edge.FirstParameter
         t1 = edge.tangentAt(edge.FirstParameter)
-        t2 = edge.tangentAt(edge.FirstParameter + _diff/10)
+        t2 = edge.tangentAt(edge.FirstParameter + _diff / 10)
         flag_sweep = DraftVecUtils.angle(t1, t2, drawing_plane_normal) < 0
 
         for v in endpoints:
-            edata += ('A {} {} {} '
-                      '{} {} '
-                      '{} {} '.format(rx, ry, rot,
-                                      int(flag_large_arc),
-                                      int(flag_sweep),
-                                      v.x, v.y))
+            edata += (
+                "A {} {} {} "
+                "{} {} "
+                "{} {} ".format(
+                    rx, ry, rot, int(flag_large_arc), int(flag_sweep), v.x, v.y
+                )
+            )
 
     return "edata", edata
 
@@ -234,7 +237,7 @@ def _get_path_bspline(plane, edge, edata):
     bspline = edge.Curve.toBSpline(edge.FirstParameter, edge.LastParameter)
     if bspline.Degree > 3 or bspline.isRational():
         try:
-            bspline = bspline.approximateBSpline(0.05, 50, 3, 'C0')
+            bspline = bspline.approximateBSpline(0.05, 50, 3, "C0")
         except RuntimeError:
             _wrn("Debug: unable to approximate bspline from edge")
 
@@ -244,30 +247,30 @@ def _get_path_bspline(plane, edge, edata):
                 _wrn("Bezier segment of degree > 3")
                 raise AssertionError
             elif bezierseg.Degree == 1:
-                edata += 'L '
+                edata += "L "
             elif bezierseg.Degree == 2:
-                edata += 'Q '
+                edata += "Q "
             elif bezierseg.Degree == 3:
-                edata += 'C '
+                edata += "C "
 
             for pole in bezierseg.getPoles()[1:]:
                 v = get_proj(pole, plane)
-                edata += '{} {} '.format(v.x, v.y)
+                edata += "{} {} ".format(v.x, v.y)
     else:
-        _msg("Debug: one edge (hash {}) "
-             "has been discretized "
-             "with parameter 0.1".format(edge.hashCode()))
+        _msg(
+            "Debug: one edge (hash {}) "
+            "has been discretized "
+            "with parameter 0.1".format(edge.hashCode())
+        )
 
         for linepoint in bspline.discretize(0.1)[1:]:
             v = get_proj(linepoint, plane)
-            edata += 'L {} {} '.format(v.x, v.y)
+            edata += "L {} {} ".format(v.x, v.y)
 
     return edata
 
 
-def get_circle(plane,
-               fill, stroke, linewidth, lstyle,
-               edge):
+def get_circle(plane, fill, stroke, linewidth, lstyle, edge):
     """Get the SVG representation from a circular edge."""
     cen = get_proj(edge.Curve.Center, plane)
     rad = edge.Curve.Radius
@@ -282,7 +285,7 @@ def get_circle(plane,
 
     if round(edge.Curve.Axis.getAngle(drawing_plane_normal), 2) in [0, 3.14]:
         # Perpendicular projection: circle
-        svg = '<circle '
+        svg = "<circle "
         svg += 'cx="{}" cy="{}" r="{}" '.format(cen.x, cen.y, rad)
     else:
         # Any other projection: ellipse
@@ -293,57 +296,60 @@ def get_circle(plane,
     # for the generated SVG?
     svg += 'stroke-width="{} px" '.format(linewidth)
     svg += 'style="'
-    svg += 'stroke-width:{};'.format(linewidth)
-    svg += 'stroke-miterlimit:4;'
-    svg += 'stroke-dasharray:{};'.format(lstyle)
-    svg += 'stroke-linecap:square;'
-    svg += 'fill:{}'.format(fill) + '"'
-    svg += '/>\n'
+    svg += "stroke-width:{};".format(linewidth)
+    svg += "stroke-miterlimit:4;"
+    svg += "stroke-dasharray:{};".format(lstyle)
+    svg += "stroke-linecap:square;"
+    svg += "fill:{}".format(fill) + '"'
+    svg += "/>\n"
     return svg
 
 
-def getCircle(plane,
-              fill, stroke, linewidth, lstyle,
-              edge):
+def getCircle(plane, fill, stroke, linewidth, lstyle, edge):
     """Get the SVG representation from a circular edge."""
     utils.use_instead("get_circle")
     return get_circle(plane, fill, stroke, linewidth, lstyle, edge)
 
 
-def get_ellipse(plane,
-                fill, stroke, linewidth, lstyle,
-                edge):
+def get_ellipse(plane, fill, stroke, linewidth, lstyle, edge):
     """Get the SVG representation from an elliptical edge."""
     cen = get_proj(edge.Curve.Center, plane)
     mir = edge.Curve.MinorRadius
     mar = edge.Curve.MajorRadius
-    svg = '<ellipse '
+    svg = "<ellipse "
     svg += 'cx="{}" cy="{}" '.format(cen.x, cen.y)
     svg += 'rx="{}" ry="{}" '.format(mar, mir)
     svg += 'stroke="{}" '.format(stroke)
     svg += 'stroke-width="{} px" '.format(linewidth)
     svg += 'style="'
-    svg += 'stroke-width:{};'.format(linewidth)
-    svg += 'stroke-miterlimit:4;'
-    svg += 'stroke-dasharray:{};'.format(lstyle)
-    svg += 'stroke-linecap:square;'
-    svg += 'fill:{}'.format(fill) + '"'
-    svg += '/>\n'
+    svg += "stroke-width:{};".format(linewidth)
+    svg += "stroke-miterlimit:4;"
+    svg += "stroke-dasharray:{};".format(lstyle)
+    svg += "stroke-linecap:square;"
+    svg += "fill:{}".format(fill) + '"'
+    svg += "/>\n"
     return svg
 
 
-def getEllipse(plane,
-               fill, stroke, linewidth, lstyle,
-               edge):
+def getEllipse(plane, fill, stroke, linewidth, lstyle, edge):
     """Get the SVG representation from an elliptical edge. DEPRECATED."""
     utils.use_instead("get_ellipse")
     return get_ellipse(plane, fill, stroke, linewidth, lstyle, edge)
 
 
-def get_path(obj, plane,
-             fill, pathdata, stroke, linewidth, lstyle,
-             fill_opacity=None,
-             edges=[], wires=[], pathname=None):
+def get_path(
+    obj,
+    plane,
+    fill,
+    pathdata,
+    stroke,
+    linewidth,
+    lstyle,
+    fill_opacity=None,
+    edges=[],
+    wires=[],
+    pathname=None,
+):
     """Get the SVG representation from an object's edges or wires.
 
     TODO: the `edges` and `wires` must not default to empty list `[]`
@@ -392,20 +398,27 @@ def get_path(obj, plane,
 
             if edgeindex == 0:
                 v = get_proj(vertex[0].Point, plane)
-                edata += 'M {} {} '.format(v.x, v.y)
+                edata += "M {} {} ".format(v.x, v.y)
             else:
                 if (vertex[0].Point - previousvs[-1].Point).Length > 1e-6:
-                    raise ValueError('edges not ordered')
+                    raise ValueError("edges not ordered")
 
             iscircle = DraftGeomUtils.geomType(edge) == "Circle"
             isellipse = DraftGeomUtils.geomType(edge) == "Ellipse"
 
             if iscircle or isellipse:
-                _type, data = _get_path_circ_ellipse(plane, edge, vertex,
-                                                     edata,
-                                                     iscircle, isellipse,
-                                                     fill, stroke,
-                                                     linewidth, lstyle)
+                _type, data = _get_path_circ_ellipse(
+                    plane,
+                    edge,
+                    vertex,
+                    edata,
+                    iscircle,
+                    isellipse,
+                    fill,
+                    stroke,
+                    linewidth,
+                    lstyle,
+                )
                 if _type == "svg":
                     # final svg string already calculated, so just return it
                     return data
@@ -414,14 +427,14 @@ def get_path(obj, plane,
                 edata = data
             elif DraftGeomUtils.geomType(edge) == "Line":
                 v = get_proj(vertex[-1].Point, plane)
-                edata += 'L {} {} '.format(v.x, v.y)
+                edata += "L {} {} ".format(v.x, v.y)
             else:
                 # If it's not a circle nor ellipse nor straight line
                 # convert the curve to BSpline
                 edata = _get_path_bspline(plane, edge, edata)
 
-        if fill != 'none':
-            edata += 'Z '
+        if fill != "none":
+            edata += "Z "
 
         if edata in pathdata:
             # do not draw a path on another identical path
@@ -434,29 +447,48 @@ def get_path(obj, plane,
     svg += 'stroke="{}" '.format(stroke)
     svg += 'stroke-width="{} px" '.format(linewidth)
     svg += 'style="'
-    svg += 'stroke-width:{};'.format(linewidth)
-    svg += 'stroke-miterlimit:4;'
-    svg += 'stroke-dasharray:{};'.format(lstyle)
-    svg += 'stroke-linecap:square;'
-    svg += 'fill:{};'.format(fill)
+    svg += "stroke-width:{};".format(linewidth)
+    svg += "stroke-miterlimit:4;"
+    svg += "stroke-dasharray:{};".format(lstyle)
+    svg += "stroke-linecap:square;"
+    svg += "fill:{};".format(fill)
     # fill_opacity must be a number, but if it's `None` it is omitted
     if fill_opacity is not None:
-        svg += 'fill-opacity:{};'.format(fill_opacity)
+        svg += "fill-opacity:{};".format(fill_opacity)
 
     svg += 'fill-rule: evenodd"'
-    svg += '/>\n'
+    svg += "/>\n"
     return svg
 
 
-def getPath(obj, plane,
-            fill, pathdata, stroke, linewidth, lstyle,
-            fill_opacity,
-            edges=[], wires=[], pathname=None):
+def getPath(
+    obj,
+    plane,
+    fill,
+    pathdata,
+    stroke,
+    linewidth,
+    lstyle,
+    fill_opacity,
+    edges=[],
+    wires=[],
+    pathname=None,
+):
     """Get the SVG representation from a path. DEPRECATED."""
     utils.use_instead("get_path")
-    return get_path(obj, plane,
-                    fill, pathdata, stroke, linewidth, lstyle,
-                    fill_opacity,
-                    edges=edges, wires=wires, pathname=pathname)
+    return get_path(
+        obj,
+        plane,
+        fill,
+        pathdata,
+        stroke,
+        linewidth,
+        lstyle,
+        fill_opacity,
+        edges=edges,
+        wires=wires,
+        pathname=pathname,
+    )
+
 
 ## @}

@@ -64,14 +64,19 @@ class AddToGroup(gui_base.GuiCommandNeedsSelection):
     def __init__(self):
         super(AddToGroup, self).__init__(name=translate("draft", "Add to group"))
         self.ungroup = translate("draft", "Ungroup")
-        #add new group string option
+        # add new group string option
         self.addNewGroupStr = "+ " + translate("draft", "Add new group")
 
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'Pixmap': 'Draft_AddToGroup',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_AddToGroup", "Move to group..."),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_AddToGroup", "Moves the selected objects to an existing group, or removes them from any group.\nCreate a group first to use this tool.")}
+        return {
+            "Pixmap": "Draft_AddToGroup",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_AddToGroup", "Move to group..."),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_AddToGroup",
+                "Moves the selected objects to an existing group, or removes them from any group.\nCreate a group first to use this tool.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -85,7 +90,7 @@ class AddToGroup(gui_base.GuiCommandNeedsSelection):
             obj = self.doc.getObject(group)
             if obj:
                 self.labels.append(obj.Label)
-        #add new group option
+        # add new group option
         self.labels.append(self.addNewGroupStr)
 
         # It uses the `DraftToolBar` class defined in the `DraftGui` module
@@ -97,7 +102,6 @@ class AddToGroup(gui_base.GuiCommandNeedsSelection):
         self.ui = Gui.draftToolBar
         self.ui.sourceCmd = self
         self.ui.popupMenu(self.labels)
-
 
     def proceed(self, labelname):
         """Place the selected objects in the chosen group or ungroup them.
@@ -120,19 +124,19 @@ class AddToGroup(gui_base.GuiCommandNeedsSelection):
             # so that it doesn't do more with this command.
             self.ui.sourceCmd = None
 
-            #if new group is selected then launch AddNamedGroup
+            # if new group is selected then launch AddNamedGroup
             if labelname == self.addNewGroupStr:
-               add=AddNamedGroup()
-               add.Activated()
+                add = AddNamedGroup()
+                add.Activated()
             else:
-            #else add selection to the selected group
-                if labelname in self.labels :
+                # else add selection to the selected group
+                if labelname in self.labels:
                     i = self.labels.index(labelname)
                     g = self.doc.getObject(self.groups[i])
                     moveToGroup(g)
 
 
-Gui.addCommand('Draft_AddToGroup', AddToGroup())
+Gui.addCommand("Draft_AddToGroup", AddToGroup())
 
 
 def moveToGroup(group):
@@ -142,7 +146,7 @@ def moveToGroup(group):
 
     for obj in Gui.Selection.getSelection():
         try:
-            #retrieve group's visibility
+            # retrieve group's visibility
             obj.ViewObject.Visibility = group.ViewObject.Visibility
             group.addObject(obj)
 
@@ -156,13 +160,18 @@ class SelectGroup(gui_base.GuiCommandNeedsSelection):
     """GuiCommand for the Draft_SelectGroup tool."""
 
     def __init__(self):
-        super(SelectGroup, self).__init__(name=translate("draft","Select group"))
+        super(SelectGroup, self).__init__(name=translate("draft", "Select group"))
 
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'Pixmap': 'Draft_SelectGroup',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_SelectGroup", "Select group"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_SelectGroup", "Selects the contents of selected groups. For selected non-group objects, the contents of the group they are in is selected.")}
+        return {
+            "Pixmap": "Draft_SelectGroup",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_SelectGroup", "Select group"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_SelectGroup",
+                "Selects the contents of selected groups. For selected non-group objects, the contents of the group they are in is selected.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -189,24 +198,32 @@ class SelectGroup(gui_base.GuiCommandNeedsSelection):
 
         # Inform the user if there is no new selection:
         if not Gui.Selection.hasSelection():
-            msg = translate("draft", "No new selection. You must select non-empty groups or objects inside groups.")
+            msg = translate(
+                "draft",
+                "No new selection. You must select non-empty groups or objects inside groups.",
+            )
             App.Console.PrintMessage(msg + "\n")
 
 
-Gui.addCommand('Draft_SelectGroup', SelectGroup())
+Gui.addCommand("Draft_SelectGroup", SelectGroup())
 
 
 class SetAutoGroup(gui_base.GuiCommandSimplest):
     """GuiCommand for the Draft_AutoGroup tool."""
 
     def __init__(self):
-        super(SetAutoGroup, self).__init__(name=translate("draft","Autogroup"))
+        super(SetAutoGroup, self).__init__(name=translate("draft", "Autogroup"))
 
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'Pixmap': 'Draft_AutoGroup',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_AutoGroup", "Autogroup"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_AutoGroup", "Select a group to add all Draft and Arch objects to.")}
+        return {
+            "Pixmap": "Draft_AutoGroup",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_AutoGroup", "Autogroup"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_AutoGroup",
+                "Select a group to add all Draft and Arch objects to.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called.
@@ -227,9 +244,9 @@ class SetAutoGroup(gui_base.GuiCommandSimplest):
         self.ui = Gui.draftToolBar
         s = Gui.Selection.getSelection()
         if len(s) == 1:
-            if (utils.get_type(s[0]) == "Layer"
-                or (params.GetBool("AutogroupAddGroups", False)
-                    and groups.is_group(s[0]))):
+            if utils.get_type(s[0]) == "Layer" or (
+                params.GetBool("AutogroupAddGroups", False) and groups.is_group(s[0])
+            ):
                 self.ui.setAutoGroup(s[0].Name)
                 return
 
@@ -255,7 +272,9 @@ class SetAutoGroup(gui_base.GuiCommandSimplest):
         # Once the desired option is chosen
         # it launches the `proceed` method.
         self.ui.sourceCmd = self
-        pos = self.ui.autoGroupButton.mapToGlobal(QtCore.QPoint(0, self.ui.autoGroupButton.geometry().height()))
+        pos = self.ui.autoGroupButton.mapToGlobal(
+            QtCore.QPoint(0, self.ui.autoGroupButton.geometry().height())
+        )
         self.ui.popupMenu(self.labels, self.icons, pos)
 
     def proceed(self, labelname):
@@ -284,7 +303,7 @@ class SetAutoGroup(gui_base.GuiCommandSimplest):
                 self.ui.setAutoGroup(self.groups[i])
 
 
-Gui.addCommand('Draft_AutoGroup', SetAutoGroup())
+Gui.addCommand("Draft_AutoGroup", SetAutoGroup())
 
 
 class AddToConstruction(gui_base.GuiCommandSimplest):
@@ -301,13 +320,22 @@ class AddToConstruction(gui_base.GuiCommandSimplest):
     """
 
     def __init__(self):
-        super(AddToConstruction, self).__init__(name=translate("draft","Add to construction group"))
+        super(AddToConstruction, self).__init__(
+            name=translate("draft", "Add to construction group")
+        )
 
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'Pixmap': 'Draft_AddConstruction',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_AddConstruction", "Add to Construction group"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_AddConstruction", "Adds the selected objects to the construction group,\nand changes their appearance to the construction style.\nIt creates a construction group if it doesn't exist.")}
+        return {
+            "Pixmap": "Draft_AddConstruction",
+            "MenuText": QT_TRANSLATE_NOOP(
+                "Draft_AddConstruction", "Add to Construction group"
+            ),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_AddConstruction",
+                "Adds the selected objects to the construction group,\nand changes their appearance to the construction style.\nIt creates a construction group if it doesn't exist.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -343,24 +371,29 @@ class AddToConstruction(gui_base.GuiCommandSimplest):
 
 
 Draft_AddConstruction = AddToConstruction
-Gui.addCommand('Draft_AddConstruction', AddToConstruction())
+Gui.addCommand("Draft_AddConstruction", AddToConstruction())
 
 
 class AddNamedGroup(gui_base.GuiCommandSimplest):
 
     """Gui Command for the addGroup tool.
-        It adds a new named group
+    It adds a new named group
     """
+
     def __init__(self):
         super().__init__(name=translate("draft", "Add a new group with a given name"))
 
-
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'Pixmap': 'Draft_AddNamedGroup',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_AddNamedGroup", "Add a new named group"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_AddNamedGroup", "Add a new group with a given name.")}
-
+        return {
+            "Pixmap": "Draft_AddNamedGroup",
+            "MenuText": QT_TRANSLATE_NOOP(
+                "Draft_AddNamedGroup", "Add a new named group"
+            ),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_AddNamedGroup", "Add a new group with a given name."
+            ),
+        }
 
     def Activated(self):
         super().Activated()
@@ -370,14 +403,15 @@ class AddNamedGroup(gui_base.GuiCommandSimplest):
 
 
 Draft_AddNamedGroup = AddNamedGroup
-Gui.addCommand('Draft_AddNamedGroup', AddNamedGroup())
+Gui.addCommand("Draft_AddNamedGroup", AddNamedGroup())
 
 
-class Ui_AddNamedGroup():
+class Ui_AddNamedGroup:
     """
     User interface for addgroup tool
     simple label and line edit in dialogbox
     """
+
     def __init__(self):
         self.form = QtGui.QWidget()
         self.form.setWindowTitle(translate("draft", "Add group"))
@@ -387,10 +421,11 @@ class Ui_AddNamedGroup():
         row.addWidget(lbl)
         row.addWidget(self.name)
 
-
     def accept(self):
-        group = App.activeDocument().addObject("App::DocumentObjectGroup",translate("draft", "Group"))
-        group.Label=self.name.text()
+        group = App.activeDocument().addObject(
+            "App::DocumentObjectGroup", translate("draft", "Group")
+        )
+        group.Label = self.name.text()
         moveToGroup(group)
         Gui.Control.closeDialog()
 

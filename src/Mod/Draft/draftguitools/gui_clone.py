@@ -65,10 +65,15 @@ class Clone(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Clone',
-                'Accel': "C,L",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Clone", "Clone"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Clone", "Creates a clone of the selected objects.\nThe resulting clone can be scaled in each of its three directions.")}
+        return {
+            "Pixmap": "Draft_Clone",
+            "Accel": "C,L",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Clone", "Clone"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Clone",
+                "Creates a clone of the selected objects.\nThe resulting clone can be scaled in each of its three directions.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -78,8 +83,8 @@ class Clone(gui_base_original.Modifier):
                 self.ui.selectUi(on_close_call=self.finish)
                 _msg(translate("draft", "Select an object to clone"))
                 self.call = self.view.addEventCallback(
-                    "SoEvent",
-                    gui_tool_utils.selectObject)
+                    "SoEvent", gui_tool_utils.selectObject
+                )
         else:
             self.proceed()
 
@@ -118,6 +123,6 @@ class Clone(gui_base_original.Modifier):
 
 
 Draft_Clone = Clone
-Gui.addCommand('Draft_Clone', Clone())
+Gui.addCommand("Draft_Clone", Clone())
 
 ## @}

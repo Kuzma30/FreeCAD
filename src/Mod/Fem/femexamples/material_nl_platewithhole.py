@@ -51,12 +51,14 @@ def get_information():
         "constraints": ["fixed", "force"],
         "solvers": ["calculix", "ccxtools"],
         "material": "nonlinear",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.material_nl_platewithhole import setup
@@ -80,6 +82,7 @@ TODO nonlinear material: give more information, use values from harry
 TODO compare results with example from HarryvL
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -90,7 +93,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     v1 = vec(-200, -100, 0)
@@ -133,8 +138,8 @@ def setup(doc=None, solvertype="ccxtools"):
         solver_obj.ThermoMechSteadyState = False
         solver_obj.MatrixSolverType = "default"
         solver_obj.IterationsControlParameterTimeUse = False
-        solver_obj.GeometricalNonlinearity = 'nonlinear'
-        solver_obj.MaterialNonlinearity = 'nonlinear'
+        solver_obj.GeometricalNonlinearity = "nonlinear"
+        solver_obj.MaterialNonlinearity = "nonlinear"
     analysis.addObject(solver_obj)
 
     # linear material
@@ -148,8 +153,10 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # nonlinear material
     name_nlm = "Material_nonlin"
-    nonlinear_mat = ObjectsFem.makeMaterialMechanicalNonlinear(doc, material_obj, name_nlm)
-    nonlinear_mat.YieldPoints = ['240.0, 0.0', '270.0, 0.025']
+    nonlinear_mat = ObjectsFem.makeMaterialMechanicalNonlinear(
+        doc, material_obj, name_nlm
+    )
+    nonlinear_mat.YieldPoints = ["240.0, 0.0", "270.0, 0.025"]
     analysis.addObject(nonlinear_mat)
     # check solver attributes, Nonlinearity needs to be set to nonlinear
 
@@ -167,6 +174,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_platewithhole_tetra10 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

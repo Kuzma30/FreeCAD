@@ -35,8 +35,7 @@ from PySide.QtCore import QT_TRANSLATE_NOOP
 
 import draftutils.utils as utils
 
-from draftviewproviders.view_draft_annotation \
-    import ViewProviderDraftAnnotation
+from draftviewproviders.view_draft_annotation import ViewProviderDraftAnnotation
 
 
 class ViewProviderText(ViewProviderDraftAnnotation):
@@ -55,47 +54,31 @@ class ViewProviderText(ViewProviderDraftAnnotation):
         properties = vobj.PropertiesList
 
         if "FontSize" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The size of the text")
-            vobj.addProperty("App::PropertyLength",
-                             "FontSize",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "The size of the text")
+            vobj.addProperty("App::PropertyLength", "FontSize", "Text", _tip)
             vobj.FontSize = utils.get_param("textheight", 1)
 
         if "FontName" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The font of the text")
-            vobj.addProperty("App::PropertyFont",
-                             "FontName",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "The font of the text")
+            vobj.addProperty("App::PropertyFont", "FontName", "Text", _tip)
             vobj.FontName = utils.get_param("textfont", "sans")
 
         if "Justification" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The vertical alignment of the text")
-            vobj.addProperty("App::PropertyEnumeration",
-                             "Justification",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "The vertical alignment of the text"
+            )
+            vobj.addProperty("App::PropertyEnumeration", "Justification", "Text", _tip)
             vobj.Justification = ["Left", "Center", "Right"]
 
         if "TextColor" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "Text color")
-            vobj.addProperty("App::PropertyColor",
-                             "TextColor",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "Text color")
+            vobj.addProperty("App::PropertyColor", "TextColor", "Text", _tip)
 
         if "LineSpacing" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "Line spacing (relative to font size)")
-            vobj.addProperty("App::PropertyFloat",
-                             "LineSpacing",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "Line spacing (relative to font size)"
+            )
+            vobj.addProperty("App::PropertyFloat", "LineSpacing", "Text", _tip)
 
     def getIcon(self):
         """Return the path to the icon used by the view provider."""
@@ -174,8 +157,11 @@ class ViewProviderText(ViewProviderDraftAnnotation):
 
         properties = vobj.PropertiesList
 
-        if (prop == "ScaleMultiplier" and "ScaleMultiplier" in properties
-                and vobj.ScaleMultiplier):
+        if (
+            prop == "ScaleMultiplier"
+            and "ScaleMultiplier" in properties
+            and vobj.ScaleMultiplier
+        ):
             if "FontSize" in properties:
                 self.font.size = vobj.FontSize.Value * vobj.ScaleMultiplier
 
@@ -186,8 +172,12 @@ class ViewProviderText(ViewProviderDraftAnnotation):
         elif prop == "FontName" and "FontName" in properties:
             self.font.name = vobj.FontName.encode("utf8")
 
-        elif (prop == "FontSize" and "FontSize" in properties
-              and "ScaleMultiplier" in properties and vobj.ScaleMultiplier):
+        elif (
+            prop == "FontSize"
+            and "FontSize" in properties
+            and "ScaleMultiplier" in properties
+            and vobj.ScaleMultiplier
+        ):
             # In v0.19 this code causes an `AttributeError` exception
             # during loading of the document as `ScaleMultiplier`
             # apparently isn't set immediately when the document loads.
@@ -218,31 +208,34 @@ class ViewProviderText(ViewProviderDraftAnnotation):
             self.text2d.spacing = vobj.LineSpacing
             self.text3d.spacing = vobj.LineSpacing
 
-    def setEdit(self,vobj,mode):
+    def setEdit(self, vobj, mode):
 
         import FreeCADGui
-        self.text = ''
+
+        self.text = ""
         FreeCADGui.draftToolBar.sourceCmd = self
         FreeCADGui.draftToolBar.taskUi()
         FreeCADGui.draftToolBar.textUi()
         FreeCADGui.draftToolBar.textValue.setPlainText("\n".join(vobj.Object.Text))
         FreeCADGui.draftToolBar.textValue.setFocus()
 
-    def unsetEdit(self,vobj=None,mode=0):
+    def unsetEdit(self, vobj=None, mode=0):
 
         import FreeCADGui
+
         FreeCADGui.Control.closeDialog()
         return True
 
-    def doubleClicked(self,vobj):
+    def doubleClicked(self, vobj):
 
-        self.setEdit(vobj,None)
+        self.setEdit(vobj, None)
 
     def createObject(self):
 
         import FreeCAD
         import FreeCADGui
-        if hasattr(self,"Object"):
+
+        if hasattr(self, "Object"):
             txt = self.text
             if not txt:
                 self.finish()
@@ -252,14 +245,17 @@ class ViewProviderText(ViewProviderDraftAnnotation):
                 txt.pop()
             t_list = ['"' + l + '"' for l in txt]
             list_as_text = ", ".join(t_list)
-            string = '[' + list_as_text + ']'
-            FreeCADGui.doCommand("FreeCAD.ActiveDocument."+self.Object.Name+".Text = "+string)
+            string = "[" + list_as_text + "]"
+            FreeCADGui.doCommand(
+                "FreeCAD.ActiveDocument." + self.Object.Name + ".Text = " + string
+            )
             FreeCAD.ActiveDocument.recompute()
             self.finish()
 
-    def finish(self,args=None):
+    def finish(self, args=None):
 
         import FreeCADGui
+
         FreeCADGui.draftToolBar.sourceCmd = None
         FreeCADGui.draftToolBar.offUi()
 

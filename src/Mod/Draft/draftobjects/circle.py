@@ -42,28 +42,25 @@ class Circle(DraftObject):
         super(Circle, self).__init__(obj, "Circle")
 
         _tip = QT_TRANSLATE_NOOP("App::Property", "Start angle of the arc")
-        obj.addProperty("App::PropertyAngle", "FirstAngle", 
-                        "Draft", _tip)
+        obj.addProperty("App::PropertyAngle", "FirstAngle", "Draft", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property", "End angle of the arc (for a full circle, \
-                give it same value as First Angle)")
-        obj.addProperty("App::PropertyAngle","LastAngle",
-                        "Draft", _tip)
+        _tip = QT_TRANSLATE_NOOP(
+            "App::Property",
+            "End angle of the arc (for a full circle, \
+                give it same value as First Angle)",
+        )
+        obj.addProperty("App::PropertyAngle", "LastAngle", "Draft", _tip)
 
         _tip = QT_TRANSLATE_NOOP("App::Property", "Radius of the circle")
-        obj.addProperty("App::PropertyLength", "Radius",
-                        "Draft", _tip)
+        obj.addProperty("App::PropertyLength", "Radius", "Draft", _tip)
 
         _tip = QT_TRANSLATE_NOOP("App::Property", "Create a face")
-        obj.addProperty("App::PropertyBool", "MakeFace",
-                        "Draft", _tip)
+        obj.addProperty("App::PropertyBool", "MakeFace", "Draft", _tip)
 
         _tip = QT_TRANSLATE_NOOP("App::Property", "The area of this object")
-        obj.addProperty("App::PropertyArea", "Area",
-                        "Draft", _tip)
+        obj.addProperty("App::PropertyArea", "Area", "Draft", _tip)
 
         obj.MakeFace = utils.get_param("fillmode", True)
-
 
     def execute(self, obj):
         """This method is run when the object is created or recomputed."""
@@ -71,20 +68,22 @@ class Circle(DraftObject):
 
         plm = obj.Placement
 
-        shape = Part.makeCircle(obj.Radius.Value,
-                                App.Vector(0,0,0),
-                                App.Vector(0,0,1),
-                                obj.FirstAngle.Value,
-                                obj.LastAngle.Value)
+        shape = Part.makeCircle(
+            obj.Radius.Value,
+            App.Vector(0, 0, 0),
+            App.Vector(0, 0, 1),
+            obj.FirstAngle.Value,
+            obj.LastAngle.Value,
+        )
 
         if obj.FirstAngle.Value == obj.LastAngle.Value:
             shape = Part.Wire(shape)
-            if getattr(obj,"MakeFace",True):
+            if getattr(obj, "MakeFace", True):
                 shape = Part.Face(shape)
 
         obj.Shape = shape
 
-        if hasattr(obj,"Area") and hasattr(shape,"Area"):
+        if hasattr(obj, "Area") and hasattr(shape, "Area"):
             obj.Area = shape.Area
 
         obj.Placement = plm

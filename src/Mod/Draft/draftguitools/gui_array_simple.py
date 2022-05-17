@@ -64,9 +64,14 @@ class Array(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Array',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Array", "Array"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Array", "Creates an array from a selected object.\nBy default, it is a 2x2 orthogonal array.\nOnce the array is created its type can be changed\nto polar or circular, and its properties can be modified.")}
+        return {
+            "Pixmap": "Draft_Array",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Array", "Array"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Array",
+                "Creates an array from a selected object.\nBy default, it is a 2x2 orthogonal array.\nOnce the array is created its type can be changed\nto polar or circular, and its properties can be modified.",
+            ),
+        }
 
     def Activated(self, name="Array"):
         """Execute when the command is called."""
@@ -76,8 +81,8 @@ class Array(gui_base_original.Modifier):
                 self.ui.selectUi()
                 _msg(translate("draft", "Select an object to array"))
                 self.call = self.view.addEventCallback(
-                    "SoEvent",
-                     gui_tool_utils.selectObject)
+                    "SoEvent", gui_tool_utils.selectObject
+                )
         else:
             self.proceed()
 
@@ -86,24 +91,25 @@ class Array(gui_base_original.Modifier):
         if Gui.Selection.getSelection():
             obj = Gui.Selection.getSelection()[0]
             Gui.addModule("Draft")
-            _cmd = 'Draft.make_array'
-            _cmd += '('
-            _cmd += 'FreeCAD.ActiveDocument.' + obj.Name + ', '
-            _cmd += 'FreeCAD.Vector(1, 0, 0), '
-            _cmd += 'FreeCAD.Vector(0, 1, 0), '
-            _cmd += '2, '
-            _cmd += '2, '
-            _cmd += 'use_link=' + str(self.use_link)
-            _cmd += ')'
-            _cmd_list = ['obj = ' + _cmd,
-                         'Draft.autogroup(obj)',
-                         'FreeCAD.ActiveDocument.recompute()']
-            self.commit(translate("draft", "Array"),
-                        _cmd_list)
+            _cmd = "Draft.make_array"
+            _cmd += "("
+            _cmd += "FreeCAD.ActiveDocument." + obj.Name + ", "
+            _cmd += "FreeCAD.Vector(1, 0, 0), "
+            _cmd += "FreeCAD.Vector(0, 1, 0), "
+            _cmd += "2, "
+            _cmd += "2, "
+            _cmd += "use_link=" + str(self.use_link)
+            _cmd += ")"
+            _cmd_list = [
+                "obj = " + _cmd,
+                "Draft.autogroup(obj)",
+                "FreeCAD.ActiveDocument.recompute()",
+            ]
+            self.commit(translate("draft", "Array"), _cmd_list)
         self.finish()
 
 
-Gui.addCommand('Draft_Array', Array())
+Gui.addCommand("Draft_Array", Array())
 
 
 class LinkArray(Array):
@@ -115,15 +121,20 @@ class LinkArray(Array):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_LinkArray',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_LinkArray", "LinkArray"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_LinkArray", "Like the Array tool, but creates a 'Link array' instead.\nA 'Link array' is more efficient when handling many copies but the 'Fuse' option cannot be used.")}
+        return {
+            "Pixmap": "Draft_LinkArray",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_LinkArray", "LinkArray"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_LinkArray",
+                "Like the Array tool, but creates a 'Link array' instead.\nA 'Link array' is more efficient when handling many copies but the 'Fuse' option cannot be used.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
         super(LinkArray, self).Activated(name="Link array")
 
 
-Gui.addCommand('Draft_LinkArray', LinkArray())
+Gui.addCommand("Draft_LinkArray", LinkArray())
 
 ## @}

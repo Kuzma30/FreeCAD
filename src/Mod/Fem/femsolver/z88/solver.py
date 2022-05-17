@@ -45,13 +45,11 @@ ANALYSIS_TYPES = ["static"]
 
 
 def create(doc, name="SolverZ88"):
-    return femutils.createObject(
-        doc, name, Proxy, ViewProxy)
+    return femutils.createObject(doc, name, Proxy, ViewProxy)
 
 
 class Proxy(solverbase.Proxy):
-    """The Fem::FemSolver's Proxy python type, add solver specific properties
-    """
+    """The Fem::FemSolver's Proxy python type, add solver specific properties"""
 
     Type = "Fem::SolverZ88"
 
@@ -61,18 +59,22 @@ class Proxy(solverbase.Proxy):
 
         # z88_prefs = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/Fem/Z88")
 
-        obj.addProperty("App::PropertyEnumeration", "AnalysisType", "Fem", "Type of the analysis")
+        obj.addProperty(
+            "App::PropertyEnumeration", "AnalysisType", "Fem", "Type of the analysis"
+        )
         obj.AnalysisType = ANALYSIS_TYPES
         obj.AnalysisType = ANALYSIS_TYPES[0]
 
     def createMachine(self, obj, directory, testmode=False):
         return run.Machine(
-            solver=obj, directory=directory,
+            solver=obj,
+            directory=directory,
             check=tasks.Check(),
             prepare=tasks.Prepare(),
             solve=tasks.Solve(),
             results=tasks.Results(),
-            testmode=testmode)
+            testmode=testmode,
+        )
 
     def editSupported(self):
         return True
@@ -88,8 +90,8 @@ class Proxy(solverbase.Proxy):
 
 
 class ViewProxy(solverbase.ViewProxy):
-
     def getIcon(self):
         return ":/icons/FEM_SolverZ88.svg"
+
 
 ##  @}

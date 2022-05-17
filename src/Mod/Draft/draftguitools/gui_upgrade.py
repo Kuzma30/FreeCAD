@@ -53,10 +53,15 @@ class Upgrade(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Upgrade',
-                'Accel': "U, P",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Upgrade", "Upgrade"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Upgrade", "Upgrades the selected objects into more complex shapes.\nThe result of the operation depends on the types of objects, which may be able to be upgraded several times in a row.\nFor example, it can join the selected objects into one, convert simple edges into parametric polylines,\nconvert closed edges into filled faces and parametric polygons, and merge faces into a single face.")}
+        return {
+            "Pixmap": "Draft_Upgrade",
+            "Accel": "U, P",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Upgrade", "Upgrade"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Upgrade",
+                "Upgrades the selected objects into more complex shapes.\nThe result of the operation depends on the types of objects, which may be able to be upgraded several times in a row.\nFor example, it can join the selected objects into one, convert simple edges into parametric polylines,\nconvert closed edges into filled faces and parametric polygons, and merge faces into a single face.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -66,8 +71,8 @@ class Upgrade(gui_base_original.Modifier):
                 self.ui.selectUi(on_close_call=self.finish)
                 _msg(translate("draft", "Select an object to upgrade"))
                 self.call = self.view.addEventCallback(
-                    "SoEvent",
-                    gui_tool_utils.selectObject)
+                    "SoEvent", gui_tool_utils.selectObject
+                )
             else:
                 self.proceed()
 
@@ -75,18 +80,16 @@ class Upgrade(gui_base_original.Modifier):
         """Proceed with execution of the command after selection."""
         if Gui.Selection.getSelection():
             Gui.addModule("Draft")
-            _cmd = 'Draft.upgrade'
-            _cmd += '('
-            _cmd += 'FreeCADGui.Selection.getSelection(), '
-            _cmd += 'delete=True'
-            _cmd += ')'
-            _cmd_list = ['_objs_ = ' + _cmd,
-                         'FreeCAD.ActiveDocument.recompute()']
-            self.commit(translate("draft", "Upgrade"),
-                        _cmd_list)
+            _cmd = "Draft.upgrade"
+            _cmd += "("
+            _cmd += "FreeCADGui.Selection.getSelection(), "
+            _cmd += "delete=True"
+            _cmd += ")"
+            _cmd_list = ["_objs_ = " + _cmd, "FreeCAD.ActiveDocument.recompute()"]
+            self.commit(translate("draft", "Upgrade"), _cmd_list)
         self.finish()
 
 
-Gui.addCommand('Draft_Upgrade', Upgrade())
+Gui.addCommand("Draft_Upgrade", Upgrade())
 
 ## @}

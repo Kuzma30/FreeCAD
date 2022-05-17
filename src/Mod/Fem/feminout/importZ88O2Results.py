@@ -44,18 +44,13 @@ elif open.__module__ == "io":
     pyopen = open
 
 
-def open(
-    filename
-):
+def open(filename):
     "called when freecad opens a file"
     docname = os.path.splitext(os.path.basename(filename))[0]
     insert(filename, docname)
 
 
-def insert(
-    filename,
-    docname
-):
+def insert(filename, docname):
     "called when freecad wants to import a file"
     try:
         doc = FreeCAD.getDocument(docname)
@@ -66,11 +61,7 @@ def insert(
 
 
 # ********* module specific methods *********
-def import_z88_disp(
-    filename,
-    analysis = None,
-    result_name_prefix = None
-):
+def import_z88_disp(filename, analysis=None, result_name_prefix=None):
     """insert a FreeCAD FEM mechanical result object in the ActiveDocument
     pure usage:
     import feminout.importZ88O2Results as importZ88O2Results
@@ -84,6 +75,7 @@ def import_z88_disp(
     from . import importZ88Mesh
     from . import importToolsFem
     from femresult import resulttools
+
     if result_name_prefix is None:
         result_name_prefix = ""
     disp_read = read_z88_disp(filename)
@@ -98,8 +90,7 @@ def import_z88_disp(
             mesh_data = importZ88Mesh.read_z88_mesh(mesh_file)
             femmesh = importToolsFem.make_femmesh(mesh_data)
             result_mesh_object = ObjectsFem.makeMeshResult(
-                FreeCAD.ActiveDocument,
-                "Result_mesh"
+                FreeCAD.ActiveDocument, "Result_mesh"
             )
             result_mesh_object.FemMesh = femmesh
         else:
@@ -110,7 +101,9 @@ def import_z88_disp(
         for result_set in disp_read["Results"]:
             results_name = result_name_prefix + "results"
 
-            res_obj = ObjectsFem.makeResultMechanical(FreeCAD.ActiveDocument, results_name)
+            res_obj = ObjectsFem.makeResultMechanical(
+                FreeCAD.ActiveDocument, results_name
+            )
             res_obj.Mesh = result_mesh_object
             res_obj = importToolsFem.fill_femresult_mechanical(res_obj, result_set)
             res_obj = resulttools.add_disp_apps(res_obj)  # fill DisplacementLengths
@@ -122,6 +115,7 @@ def import_z88_disp(
         if FreeCAD.GuiUp:
             if analysis:
                 import FemGui
+
                 FemGui.setActiveAnalysis(analysis_object)
             FreeCAD.ActiveDocument.recompute()
 
@@ -133,9 +127,7 @@ def import_z88_disp(
     return res_obj
 
 
-def read_z88_disp(
-    z88_disp_input
-):
+def read_z88_disp(z88_disp_input):
     """
     read a z88 disp file and extract the nodes and elements
     z88 Displacement output file is z88o2.txt

@@ -71,8 +71,9 @@ def write_constraint(f, femobj, temp_obj, ccxwriter):
         f.write("\n")
     elif temp_obj.ConstraintType == "CFlux":
         f.write("*CFLUX\n")
-        f.write("{},11,{:.13G}\n".format(
-            temp_obj.Name,
-            temp_obj.CFlux * 0.001 / NumberOfNodes
-        ))
+        f.write(
+            "{},11,{:.13G}\n".format(
+                temp_obj.Name, temp_obj.CFlux * 0.001 / NumberOfNodes
+            )
+        )
         f.write("\n")

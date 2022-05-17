@@ -34,8 +34,7 @@ from . import linear
 
 
 def create(doc, name="Elasticity"):
-    return femutils.createObject(
-        doc, name, Proxy, ViewProxy)
+    return femutils.createObject(doc, name, Proxy, ViewProxy)
 
 
 class Proxy(linear.Proxy, equationbase.ElasticityProxy):
@@ -44,47 +43,18 @@ class Proxy(linear.Proxy, equationbase.ElasticityProxy):
 
     def __init__(self, obj):
         super(Proxy, self).__init__(obj)
-        obj.addProperty(
-            "App::PropertyBool",
-            "DoFrequencyAnalysis",
-            "Elasticity",
-            ""
-        )
-        obj.addProperty(
-            "App::PropertyInteger",
-            "EigenmodesCount",
-            "Elasticity",
-            ""
-        )
-        obj.addProperty(
-            "App::PropertyBool",
-            "CalculateStrains",
-            "Elasticity",
-            ""
-        )
-        obj.addProperty(
-            "App::PropertyBool",
-            "CalculateStresses",
-            "Elasticity",
-            ""
-        )
-        obj.addProperty(
-            "App::PropertyBool",
-            "CalculatePrincipal",
-            "Elasticity",
-            ""
-        )
-        obj.addProperty(
-            "App::PropertyBool",
-            "CalculatePangle",
-            "Elasticity",
-            ""
-        )
+        obj.addProperty("App::PropertyBool", "DoFrequencyAnalysis", "Elasticity", "")
+        obj.addProperty("App::PropertyInteger", "EigenmodesCount", "Elasticity", "")
+        obj.addProperty("App::PropertyBool", "CalculateStrains", "Elasticity", "")
+        obj.addProperty("App::PropertyBool", "CalculateStresses", "Elasticity", "")
+        obj.addProperty("App::PropertyBool", "CalculatePrincipal", "Elasticity", "")
+        obj.addProperty("App::PropertyBool", "CalculatePangle", "Elasticity", "")
         obj.EigenmodesCount = 5
         obj.Priority = 10
 
 
 class ViewProxy(linear.ViewProxy, equationbase.ElasticityViewProxy):
     pass
+
 
 ##  @}

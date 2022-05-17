@@ -64,7 +64,7 @@ def pointInversion(circle, point):
     # dist(cen -> P) = r^2 / dist(cen -> invP)
 
     dist = DraftVecUtils.dist(point, cen)
-    invDist = rad**2 / dist
+    invDist = rad ** 2 / dist
 
     invPoint = App.Vector(0, 0, point.z)
     invPoint.x = cen.x + (point.x - cen.x) * invDist / dist
@@ -84,9 +84,7 @@ def polarInversion(circle, edge):
         print("debug: circleInversionPole bad parameters! Must be a circle.")
         return None
 
-    nearest = circle.Curve.Center.add(findDistance(circle.Curve.Center,
-                                                   edge,
-                                                   False))
+    nearest = circle.Curve.Center.add(findDistance(circle.Curve.Center, edge, False))
     if nearest:
         inversionPole = pointInversion(circle, nearest)
         if inversionPole:
@@ -117,8 +115,7 @@ def circleInversion(circle, circle2):
     pointOnCircle2 = App.Vector.add(cen2, App.Vector(rad2, 0, 0))
     invPointOnCircle2 = pointInversion(circle, pointOnCircle2)
 
-    return Part.Circle(invCen2,
-                       NORM,
-                       DraftVecUtils.dist(invCen2, invPointOnCircle2))
+    return Part.Circle(invCen2, NORM, DraftVecUtils.dist(invCen2, invPointOnCircle2))
+
 
 ## @}

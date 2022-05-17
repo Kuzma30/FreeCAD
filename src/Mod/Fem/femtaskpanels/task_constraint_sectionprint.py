@@ -54,10 +54,7 @@ class _TaskPanel:
 
         # geometry selection widget
         self.selectionWidget = selection_widgets.GeometryElementsSelection(
-            obj.References,
-            ["Face"],
-            False,
-            False
+            obj.References, ["Face"], False, False
         )
 
         # form made from param and selection widget
@@ -67,16 +64,18 @@ class _TaskPanel:
         # check values
         items = len(self.selectionWidget.references)
         FreeCAD.Console.PrintMessage(
-            "Task panel: found references: {}\n{}\n"
-            .format(items, self.selectionWidget.references)
+            "Task panel: found references: {}\n{}\n".format(
+                items, self.selectionWidget.references
+            )
         )
 
         if items != 1:
             msgBox = QtGui.QMessageBox()
             msgBox.setIcon(QtGui.QMessageBox.Question)
             msgBox.setText(
-                "Constraint SectionPrint requires exactly one face\n\nfound references: {}"
-                .format(items)
+                "Constraint SectionPrint requires exactly one face\n\nfound references: {}".format(
+                    items
+                )
             )
             msgBox.setWindowTitle("FreeCAD FEM Constraint SectionPrint")
             retryButton = msgBox.addButton(QtGui.QMessageBox.Retry)

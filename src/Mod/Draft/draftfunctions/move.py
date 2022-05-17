@@ -38,27 +38,27 @@ import draftmake.make_line as make_line
 
 def move(objectslist, vector, copy=False):
     """move(objects,vector,[copy])
-    
+
     Move the objects contained in objects (that can be an object or a
     list of objects) in the direction and distance indicated by the given
-    vector. 
+    vector.
 
     Parameters
     ----------
     objectslist : list
 
     vector : Base.Vector
-        Delta Vector to move the clone from the original position. 
+        Delta Vector to move the clone from the original position.
 
     copy : bool
         If copy is True, the actual objects are not moved, but copies
-        are created instead. 
+        are created instead.
 
     Return
     ----------
     The objects (or their copies) are returned.
     """
-    utils.type_check([(vector, App.Vector), (copy,bool)], "move")
+    utils.type_check([(vector, App.Vector), (copy, bool)], "move")
     if not isinstance(objectslist, list):
         objectslist = [objectslist]
 
@@ -90,7 +90,7 @@ def move(objectslist, vector, copy=False):
         elif obj.isDerivedFrom("App::DocumentObjectGroup"):
             pass
 
-        elif hasattr(obj,'Shape'):
+        elif hasattr(obj, "Shape"):
             if copy:
                 newobj = make_copy.make_copy(obj)
             else:
@@ -142,13 +142,15 @@ def move(objectslist, vector, copy=False):
         if copy:
             for p in obj.InList:
                 if p.isDerivedFrom("App::DocumentObjectGroup") and (p in objectslist):
-                    g = newgroups.setdefault(p.Name,App.ActiveDocument.addObject(p.TypeId,p.Name))
+                    g = newgroups.setdefault(
+                        p.Name, App.ActiveDocument.addObject(p.TypeId, p.Name)
+                    )
                     g.addObject(newobj)
                     break
                 if utils.get_type(p) == "Layer":
-                    p.Proxy.addObject(p,newobj)
+                    p.Proxy.addObject(p, newobj)
 
-    if copy and utils.get_param("selectBaseObjects",False):
+    if copy and utils.get_param("selectBaseObjects", False):
         gui_utils.select(objectslist)
     else:
         gui_utils.select(newobjlist)
@@ -183,7 +185,7 @@ def move_edge(object, edge_index, vector):
     if utils.isClosedEdge(edge_index, object):
         moveVertex(object, 0, vector)
     else:
-        moveVertex(object, edge_index+1, vector)
+        moveVertex(object, edge_index + 1, vector)
 
 
 moveEdge = move_edge
@@ -212,7 +214,8 @@ def copy_moved_edge(object, edge_index, vector):
     if utils.isClosedEdge(edge_index, object):
         vertex2 = object.Placement.multVec(object.Points[0]).add(vector)
     else:
-        vertex2 = object.Placement.multVec(object.Points[edge_index+1]).add(vector)
+        vertex2 = object.Placement.multVec(object.Points[edge_index + 1]).add(vector)
     return make_line.make_line(vertex1, vertex2)
+
 
 ## @}

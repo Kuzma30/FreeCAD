@@ -53,10 +53,15 @@ class Downgrade(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Downgrade',
-                'Accel': "D, N",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Downgrade", "Downgrade"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Downgrade", "Downgrades the selected objects into simpler shapes.\nThe result of the operation depends on the types of objects, which may be able to be downgraded several times in a row.\nFor example, it explodes the selected polylines into simpler faces, wires, and then edges. It can also subtract faces.")}
+        return {
+            "Pixmap": "Draft_Downgrade",
+            "Accel": "D, N",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Downgrade", "Downgrade"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Downgrade",
+                "Downgrades the selected objects into simpler shapes.\nThe result of the operation depends on the types of objects, which may be able to be downgraded several times in a row.\nFor example, it explodes the selected polylines into simpler faces, wires, and then edges. It can also subtract faces.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -66,8 +71,8 @@ class Downgrade(gui_base_original.Modifier):
                 self.ui.selectUi(on_close_call=self.finish)
                 _msg(translate("draft", "Select an object to upgrade"))
                 self.call = self.view.addEventCallback(
-                    "SoEvent",
-                    gui_tool_utils.selectObject)
+                    "SoEvent", gui_tool_utils.selectObject
+                )
             else:
                 self.proceed()
 
@@ -75,18 +80,16 @@ class Downgrade(gui_base_original.Modifier):
         """Proceed with execution of the command after selection."""
         if Gui.Selection.getSelection():
             Gui.addModule("Draft")
-            _cmd = 'Draft.downgrade'
-            _cmd += '('
-            _cmd += 'FreeCADGui.Selection.getSelection(), '
-            _cmd += 'delete=True'
-            _cmd += ')'
-            _cmd_list = ['_objs_ = ' + _cmd,
-                         'FreeCAD.ActiveDocument.recompute()']
-            self.commit(translate("draft", "Downgrade"),
-                        _cmd_list)
+            _cmd = "Draft.downgrade"
+            _cmd += "("
+            _cmd += "FreeCADGui.Selection.getSelection(), "
+            _cmd += "delete=True"
+            _cmd += ")"
+            _cmd_list = ["_objs_ = " + _cmd, "FreeCAD.ActiveDocument.recompute()"]
+            self.commit(translate("draft", "Downgrade"), _cmd_list)
         self.finish()
 
 
-Gui.addCommand('Draft_Downgrade', Downgrade())
+Gui.addCommand("Draft_Downgrade", Downgrade())
 
 ## @}

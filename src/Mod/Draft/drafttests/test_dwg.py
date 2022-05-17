@@ -64,7 +64,7 @@ class DraftDWG(unittest.TestCase):
         _msg("  Test '{}'".format(operation))
         _msg("  This test requires a DWG file to read.")
 
-        file = 'Mod/Draft/drafttest/test.dwg'
+        file = "Mod/Draft/drafttest/test.dwg"
         in_file = os.path.join(App.getResourceDir(), file)
         _msg("  file={}".format(in_file))
         _msg("  exists={}".format(os.path.exists(in_file)))
@@ -78,7 +78,7 @@ class DraftDWG(unittest.TestCase):
         operation = "importDWG.export"
         _msg("  Test '{}'".format(operation))
 
-        file = 'Mod/Draft/drafttest/out_test.dwg'
+        file = "Mod/Draft/drafttest/out_test.dwg"
         out_file = os.path.join(App.getResourceDir(), file)
         _msg("  file={}".format(out_file))
         _msg("  exists={}".format(os.path.exists(out_file)))
@@ -93,5 +93,6 @@ class DraftDWG(unittest.TestCase):
         This is executed after each test, so we close the document.
         """
         App.closeDocument(self.doc_name)
+
 
 ## @}

@@ -40,124 +40,133 @@ __author__ = "Yorik van Havre, Jacques-Antoine Gaudin, Ken Cline"
 __url__ = ["https://www.freecadweb.org"]
 
 # Doesn't need requisites
-from draftgeoutils.linear_algebra import (linearFromPoints,
-                                          determinant)
+from draftgeoutils.linear_algebra import linearFromPoints, determinant
 
 # Needs math, Part, and vector tools
 from draftgeoutils.general import PARAMGRP as params
 from draftgeoutils.general import NORM
 
-from draftgeoutils.general import (precision,
-                                   vec,
-                                   edg,
-                                   getVerts,
-                                   v1,
-                                   isNull,
-                                   isPtOnEdge,
-                                   hasCurves,
-                                   isAligned,
-                                   getQuad,
-                                   areColinear,
-                                   hasOnlyWires,
-                                   geomType,
-                                   isValidPath,
-                                   findClosest,
-                                   getBoundaryAngles)
+from draftgeoutils.general import (
+    precision,
+    vec,
+    edg,
+    getVerts,
+    v1,
+    isNull,
+    isPtOnEdge,
+    hasCurves,
+    isAligned,
+    getQuad,
+    areColinear,
+    hasOnlyWires,
+    geomType,
+    isValidPath,
+    findClosest,
+    getBoundaryAngles,
+)
 
 # Needs general functions
-from draftgeoutils.geometry import (findPerpendicular,
-                                    findDistance,
-                                    getSplineNormal,
-                                    get_spline_normal,
-                                    getNormal,
-                                    get_normal,
-                                    getRotation,
-                                    isPlanar,
-                                    is_planar,
-                                    calculatePlacement,
-                                    mirror,
-                                    are_coplanar,
-                                    is_straight_line)
+from draftgeoutils.geometry import (
+    findPerpendicular,
+    findDistance,
+    getSplineNormal,
+    get_spline_normal,
+    getNormal,
+    get_normal,
+    getRotation,
+    isPlanar,
+    is_planar,
+    calculatePlacement,
+    mirror,
+    are_coplanar,
+    is_straight_line,
+)
 
-from draftgeoutils.edges import (findEdge,
-                                 orientEdge,
-                                 isSameLine,
-                                 isLine,
-                                 is_line,
-                                 invert,
-                                 findMidpoint,
-                                 getTangent,
-                                 get_referenced_edges)
+from draftgeoutils.edges import (
+    findEdge,
+    orientEdge,
+    isSameLine,
+    isLine,
+    is_line,
+    invert,
+    findMidpoint,
+    getTangent,
+    get_referenced_edges,
+)
 
-from draftgeoutils.faces import (concatenate,
-                                 getBoundary,
-                                 isCoplanar,
-                                 is_coplanar,
-                                 bind,
-                                 cleanFaces,
-                                 removeSplitter)
+from draftgeoutils.faces import (
+    concatenate,
+    getBoundary,
+    isCoplanar,
+    is_coplanar,
+    bind,
+    cleanFaces,
+    removeSplitter,
+)
 
-from draftgeoutils.arcs import (isClockwise,
-                                isWideAngle,
-                                arcFrom2Pts,
-                                arcFromSpline)
+from draftgeoutils.arcs import isClockwise, isWideAngle, arcFrom2Pts, arcFromSpline
 
-from draftgeoutils.cuboids import (isCubic,
-                                   getCubicDimensions)
+from draftgeoutils.cuboids import isCubic, getCubicDimensions
 
 # Needs geometry functions
-from draftgeoutils.circle_inversion import (pointInversion,
-                                            polarInversion,
-                                            circleInversion)
+from draftgeoutils.circle_inversion import (
+    pointInversion,
+    polarInversion,
+    circleInversion,
+)
 
 # Needs edges functions
-from draftgeoutils.sort_edges import (sortEdges,
-                                      sortEdgesOld)
+from draftgeoutils.sort_edges import sortEdges, sortEdgesOld
 
-from draftgeoutils.intersections import (findIntersection,
-                                         wiresIntersect,
-                                         connect,
-                                         angleBisection)
+from draftgeoutils.intersections import (
+    findIntersection,
+    wiresIntersect,
+    connect,
+    angleBisection,
+)
 
-from draftgeoutils.wires import (findWires,
-                                 findWiresOld,
-                                 findWiresOld2,
-                                 flattenWire,
-                                 superWire,
-                                 isReallyClosed,
-                                 curvetowire,
-                                 curvetosegment,
-                                 rebaseWire,
-                                 removeInterVertices,
-                                 cleanProjection,
-                                 tessellateProjection,
-                                 get_placement_perpendicular_to_wire,
-                                 get_extended_wire)
+from draftgeoutils.wires import (
+    findWires,
+    findWiresOld,
+    findWiresOld2,
+    flattenWire,
+    superWire,
+    isReallyClosed,
+    curvetowire,
+    curvetosegment,
+    rebaseWire,
+    removeInterVertices,
+    cleanProjection,
+    tessellateProjection,
+    get_placement_perpendicular_to_wire,
+    get_extended_wire,
+)
 
 # Needs wires functions
-from draftgeoutils.fillets import (fillet,
-                                   filletWire)
+from draftgeoutils.fillets import fillet, filletWire
 
 # Needs intersections functions
-from draftgeoutils.offsets import (pocket2d,
-                                   offset,
-                                   offsetWire)
+from draftgeoutils.offsets import pocket2d, offset, offsetWire
 
-from draftgeoutils.circles import (findClosestCircle,
-                                   getCircleFromSpline,
-                                   circlefrom1Line2Points,
-                                   circlefrom2Lines1Point,
-                                   circleFrom2LinesRadius,
-                                   circleFrom3LineTangents,
-                                   circleFromPointLineRadius,
-                                   circleFrom2PointsRadius,
-                                   findHomotheticCenterOfCircles,
-                                   findRadicalAxis,
-                                   findRadicalCenter)
+from draftgeoutils.circles import (
+    findClosestCircle,
+    getCircleFromSpline,
+    circlefrom1Line2Points,
+    circlefrom2Lines1Point,
+    circleFrom2LinesRadius,
+    circleFrom3LineTangents,
+    circleFromPointLineRadius,
+    circleFrom2PointsRadius,
+    findHomotheticCenterOfCircles,
+    findRadicalAxis,
+    findRadicalCenter,
+)
 
-from draftgeoutils.circles_apollonius import (outerSoddyCircle,
-                                              innerSoddyCircle,
-                                              circleFrom3CircleTangents)
+from draftgeoutils.circles_apollonius import (
+    outerSoddyCircle,
+    innerSoddyCircle,
+    circleFrom3CircleTangents,
+)
 
 # Needs circles_apollonius functions
 # These functions are not imported because they are incomplete;

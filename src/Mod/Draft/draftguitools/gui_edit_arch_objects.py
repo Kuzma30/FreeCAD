@@ -26,8 +26,10 @@
 # \brief Provides support functions to edit Arch objects.
 
 __title__ = "FreeCAD Draft Edit Tool"
-__author__ = ("Yorik van Havre, Werner Mayer, Martin Burbaum, Ken Cline, "
-              "Dmitry Chigrin, Carlo Pavan")
+__author__ = (
+    "Yorik van Havre, Werner Mayer, Martin Burbaum, Ken Cline, "
+    "Dmitry Chigrin, Carlo Pavan"
+)
 __url__ = "https://www.freecadweb.org"
 
 ## \addtogroup draftguitools
@@ -42,9 +44,7 @@ import draftutils.utils as utils
 from draftguitools.gui_edit_base_object import GuiTools
 
 
-
 class ArchWallGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -61,13 +61,13 @@ class ArchWallGuiTools(GuiTools):
         return editpoints
 
     def update_object_from_edit_points(self, obj, node_idx, v, alt_edit_mode=0):
-        '''            if node_idx == 0:
+        """if node_idx == 0:
             edit_arch.updateWall(obj, node_idx, v)
         elif node_idx > 0:
             if obj.Base:
                 if utils.get_type(obj.Base) in ["Wire", "Circle", "Rectangle",
                                                 "Polygon", "Sketch"]:
-                    self.update(obj.Base, node_idx - 1, v)'''
+                    self.update(obj.Base, node_idx - 1, v)"""
         if node_idx == 0:
             vz = DraftVecUtils.project(v, App.Vector(0, 0, 1))
             if vz.Length > 0:
@@ -75,7 +75,6 @@ class ArchWallGuiTools(GuiTools):
 
 
 class ArchWindowGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -86,9 +85,13 @@ class ArchWindowGuiTools(GuiTools):
         normal = obj.Normal
         angle = normal.getAngle(App.Vector(1, 0, 0))
         editpoints.append(pos)
-        editpoints.append(App.Vector(pos.x + float(obj.Width) * math.cos(angle-math.pi / 2.0),
-                                                pos.y + float(obj.Width) * math.sin(angle-math.pi / 2.0),
-                                                pos.z))
+        editpoints.append(
+            App.Vector(
+                pos.x + float(obj.Width) * math.cos(angle - math.pi / 2.0),
+                pos.y + float(obj.Width) * math.sin(angle - math.pi / 2.0),
+                pos.z,
+            )
+        )
         editpoints.append(App.Vector(pos.x, pos.y, h))
         return editpoints
 
@@ -108,7 +111,6 @@ class ArchWindowGuiTools(GuiTools):
 
 
 class ArchStructureGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -127,9 +129,11 @@ class ArchStructureGuiTools(GuiTools):
         obj.Nodes = nodes
 
     def get_object_style(self, obj):
-        return (obj.ViewObject.DisplayMode,
-                obj.ViewObject.NodeSize,
-                obj.ViewObject.ShowNodes)
+        return (
+            obj.ViewObject.DisplayMode,
+            obj.ViewObject.NodeSize,
+            obj.ViewObject.ShowNodes,
+        )
 
     def set_object_editing_style(self, obj):
         obj.ViewObject.DisplayMode = "Wireframe"
@@ -143,7 +147,6 @@ class ArchStructureGuiTools(GuiTools):
 
 
 class ArchSpaceGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -161,7 +164,6 @@ class ArchSpaceGuiTools(GuiTools):
 
 
 class ArchPanelCutGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -180,7 +182,6 @@ class ArchPanelCutGuiTools(GuiTools):
 
 
 class ArchPanelSheetGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -195,6 +196,7 @@ class ArchPanelSheetGuiTools(GuiTools):
         if node_idx == 0:
             obj.TagPosition = v
         else:
-            obj.Group[node_idx-1].Placement.Base = v
+            obj.Group[node_idx - 1].Placement.Base = v
+
 
 ## @}

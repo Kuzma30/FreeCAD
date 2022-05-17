@@ -37,8 +37,7 @@ from femsolver.calculix.solver import on_restore_of_document
 
 
 class SolverCcxTools(base_fempythonobject.BaseFemPythonObject):
-    """The Fem::FemSolver's Proxy python type, add solver specific properties
-    """
+    """The Fem::FemSolver's Proxy python type, add solver specific properties"""
 
     Type = "Fem::SolverCcxTools"
 
@@ -55,7 +54,7 @@ class SolverCcxTools(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyPath",
             "WorkingDir",
             "Fem",
-            "Working directory for calculations, will only be used it is left blank in preferences"
+            "Working directory for calculations, will only be used it is left blank in preferences",
         )
         # the working directory is not set, the solver working directory is
         # only used if the preferences working directory is left blank

@@ -43,12 +43,14 @@ def get_information():
         "constraints": ["fixed", "pressure"],
         "solvers": ["calculix", "ccxtools"],
         "material": "multimaterial",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.material_multiple_tensionrod_twoboxes import setup
@@ -59,6 +61,7 @@ See forum topic post:
 ...
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -69,7 +72,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric objects
     # two boxes
@@ -159,6 +164,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_boxes_2_vertikal_tetra10 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

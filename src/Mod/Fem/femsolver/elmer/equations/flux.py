@@ -35,8 +35,7 @@ from . import linear
 
 
 def create(doc, name="Flux"):
-    return femutils.createObject(
-        doc, name, Proxy, ViewProxy)
+    return femutils.createObject(doc, name, Proxy, ViewProxy)
 
 
 class Proxy(linear.Proxy, equationbase.FluxProxy):
@@ -45,17 +44,12 @@ class Proxy(linear.Proxy, equationbase.FluxProxy):
 
     def __init__(self, obj):
         super(Proxy, self).__init__(obj)
-        obj.addProperty(
-            "App::PropertyBool",
-            "CalculateFlux",
-            "Flux",
-            ""
-        )
+        obj.addProperty("App::PropertyBool", "CalculateFlux", "Flux", "")
         obj.addProperty(
             "App::PropertyString",
             "FluxVariable",
             "Flux",
-            "Insert variable name for flux calculation"
+            "Insert variable name for flux calculation",
         )
         """
         obj.addProperty(
@@ -75,7 +69,7 @@ class Proxy(linear.Proxy, equationbase.FluxProxy):
             "App::PropertyBool",
             "CalculateGrad",
             "Flux",
-            "Select calculation of gradient"
+            "Select calculation of gradient",
         )
         """
         obj.addProperty(
@@ -102,5 +96,6 @@ class Proxy(linear.Proxy, equationbase.FluxProxy):
 
 class ViewProxy(linear.ViewProxy, equationbase.FluxViewProxy):
     pass
+
 
 ##  @}

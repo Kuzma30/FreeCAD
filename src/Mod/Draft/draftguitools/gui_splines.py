@@ -55,10 +55,15 @@ class BSpline(gui_lines.Line):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_BSpline',
-                'Accel': "B, S",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_BSpline", "B-spline"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_BSpline", "Creates a multiple-point B-spline. CTRL to snap, SHIFT to constrain.")}
+        return {
+            "Pixmap": "Draft_BSpline",
+            "Accel": "B, S",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_BSpline", "B-spline"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_BSpline",
+                "Creates a multiple-point B-spline. CTRL to snap, SHIFT to constrain.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called.
@@ -85,22 +90,24 @@ class BSpline(gui_lines.Line):
             if arg["Key"] == "ESCAPE":
                 self.finish()
         elif arg["Type"] == "SoLocation2Event":  # mouse movement detection
-            (self.point,
-             ctrlPoint, info) = gui_tool_utils.getPoint(self, arg,
-                                                        noTracker=True)
+            (self.point, ctrlPoint, info) = gui_tool_utils.getPoint(
+                self, arg, noTracker=True
+            )
             self.bsplinetrack.update(self.node + [self.point])
             gui_tool_utils.redraw3DView()
-        elif (arg["Type"] == "SoMouseButtonEvent"
-              and arg["State"] == "DOWN"
-              and arg["Button"] == "BUTTON1"):
+        elif (
+            arg["Type"] == "SoMouseButtonEvent"
+            and arg["State"] == "DOWN"
+            and arg["Button"] == "BUTTON1"
+        ):
             if arg["Position"] == self.pos:
                 self.finish(False, cont=True)
 
             if (not self.node) and (not self.support):
                 gui_tool_utils.getSupport(arg)
-                (self.point,
-                 ctrlPoint, info) = gui_tool_utils.getPoint(self, arg,
-                                                            noTracker=True)
+                (self.point, ctrlPoint, info) = gui_tool_utils.getPoint(
+                    self, arg, noTracker=True
+                )
             if self.point:
                 self.ui.redraw()
                 self.pos = arg["Position"]
@@ -116,12 +123,12 @@ class BSpline(gui_lines.Line):
                     if (self.point - self.node[0]).Length < utils.tolerance():
                         self.undolast()
                         self.finish(True, cont=True)
-                        _msg(translate("draft",
-                                       "Spline has been closed"))
+                        _msg(translate("draft", "Spline has been closed"))
 
     def undolast(self):
         """Undo last line segment."""
         import Part
+
         if len(self.node) > 1:
             self.node.pop()
             self.bsplinetrack.update(self.node)
@@ -133,6 +140,7 @@ class BSpline(gui_lines.Line):
     def drawUpdate(self, point):
         """Draw and update to the spline."""
         import Part
+
         if len(self.node) == 1:
             self.bsplinetrack.on()
             if self.planetrack:
@@ -142,9 +150,7 @@ class BSpline(gui_lines.Line):
             spline = Part.BSplineCurve()
             spline.interpolate(self.node, False)
             self.obj.Shape = spline.toShape()
-            _msg(translate("draft",
-                           "Pick next point, "
-                           "or finish (A) or close (O)"))
+            _msg(translate("draft", "Pick next point, " "or finish (A) or close (O)"))
 
     def finish(self, closed=False, cont=False):
         """Terminate the operation and close the spline if asked.
@@ -169,19 +175,20 @@ class BSpline(gui_lines.Line):
                 rot, sup, pts, fil = self.getStrings()
                 Gui.addModule("Draft")
 
-                _cmd = 'Draft.make_bspline'
-                _cmd += '('
-                _cmd += 'points, '
-                _cmd += 'closed=' + str(closed) + ', '
-                _cmd += 'face=' + fil + ', '
-                _cmd += 'support=' + sup
-                _cmd += ')'
-                _cmd_list = ['points = ' + pts,
-                             'spline = ' + _cmd,
-                             'Draft.autogroup(spline)',
-                             'FreeCAD.ActiveDocument.recompute()']
-                self.commit(translate("draft", "Create B-spline"),
-                            _cmd_list)
+                _cmd = "Draft.make_bspline"
+                _cmd += "("
+                _cmd += "points, "
+                _cmd += "closed=" + str(closed) + ", "
+                _cmd += "face=" + fil + ", "
+                _cmd += "support=" + sup
+                _cmd += ")"
+                _cmd_list = [
+                    "points = " + pts,
+                    "spline = " + _cmd,
+                    "Draft.autogroup(spline)",
+                    "FreeCAD.ActiveDocument.recompute()",
+                ]
+                self.commit(translate("draft", "Create B-spline"), _cmd_list)
             except Exception:
                 _err("Draft: error delaying commit")
 
@@ -196,6 +203,6 @@ class BSpline(gui_lines.Line):
             self.Activated()
 
 
-Gui.addCommand('Draft_BSpline', BSpline())
+Gui.addCommand("Draft_BSpline", BSpline())
 
 ## @}

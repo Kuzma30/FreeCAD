@@ -40,17 +40,17 @@ from draftobjects.drawingview import DrawingView
 def make_drawing_view(obj, page, lwmod=None, tmod=None, otherProjection=None):
     """
     make_drawing_view(object,page,[lwmod,tmod])
-    
+
     This function is OBSOLETE, since TechDraw substituted the Drawing Workbench.
-    Add a View of the given object to the given page. 
+    Add a View of the given object to the given page.
 
     Parameters
     ----------
-    lwmod : 
-        modifies lineweights (in percent), 
-    
+    lwmod :
+        modifies lineweights (in percent),
+
     tmod :
-        modifies text heights (in percent). 
+        modifies text heights (in percent).
 
     The Hint scale, X and Y of the page are used.
         TODO: Document it properly
@@ -60,48 +60,53 @@ def make_drawing_view(obj, page, lwmod=None, tmod=None, otherProjection=None):
         return
     if utils.get_type(obj) == "SectionPlane":
         import ArchSectionPlane
-        viewobj = App.ActiveDocument.addObject("Drawing::FeatureViewPython","View")
+
+        viewobj = App.ActiveDocument.addObject("Drawing::FeatureViewPython", "View")
         page.addObject(viewobj)
         ArchSectionPlane._ArchDrawingView(viewobj)
         viewobj.Source = obj
-        viewobj.Label = "View of "+obj.Name
+        viewobj.Label = "View of " + obj.Name
     elif utils.get_type(obj) == "Panel":
         import ArchPanel
+
         viewobj = ArchPanel.makePanelView(obj, page)
     else:
-        viewobj = App.ActiveDocument.addObject("Drawing::FeatureViewPython",
-                                               "View"+ obj.Name)
+        viewobj = App.ActiveDocument.addObject(
+            "Drawing::FeatureViewPython", "View" + obj.Name
+        )
         DrawingView(viewobj)
         page.addObject(viewobj)
-        if (otherProjection):
-            if hasattr(otherProjection,"Scale"):
+        if otherProjection:
+            if hasattr(otherProjection, "Scale"):
                 viewobj.Scale = otherProjection.Scale
-            if hasattr(otherProjection,"X"):
+            if hasattr(otherProjection, "X"):
                 viewobj.X = otherProjection.X
-            if hasattr(otherProjection,"Y"):
+            if hasattr(otherProjection, "Y"):
                 viewobj.Y = otherProjection.Y
-            if hasattr(otherProjection,"Rotation"):
+            if hasattr(otherProjection, "Rotation"):
                 viewobj.Rotation = otherProjection.Rotation
-            if hasattr(otherProjection,"Direction"):
+            if hasattr(otherProjection, "Direction"):
                 viewobj.Direction = otherProjection.Direction
         else:
-            if hasattr(page.ViewObject,"HintScale"):
+            if hasattr(page.ViewObject, "HintScale"):
                 viewobj.Scale = page.ViewObject.HintScale
-            if hasattr(page.ViewObject,"HintOffsetX"):
+            if hasattr(page.ViewObject, "HintOffsetX"):
                 viewobj.X = page.ViewObject.HintOffsetX
-            if hasattr(page.ViewObject,"HintOffsetY"):
+            if hasattr(page.ViewObject, "HintOffsetY"):
                 viewobj.Y = page.ViewObject.HintOffsetY
         viewobj.Source = obj
-        if lwmod: viewobj.LineweightModifier = lwmod
-        if tmod: viewobj.TextModifier = tmod
-        if hasattr(obj.ViewObject,"Pattern"):
+        if lwmod:
+            viewobj.LineweightModifier = lwmod
+        if tmod:
+            viewobj.TextModifier = tmod
+        if hasattr(obj.ViewObject, "Pattern"):
             if str(obj.ViewObject.Pattern) in list(utils.svgpatterns().keys()):
                 viewobj.FillStyle = str(obj.ViewObject.Pattern)
-        if hasattr(obj.ViewObject,"DrawStyle"):
+        if hasattr(obj.ViewObject, "DrawStyle"):
             viewobj.LineStyle = obj.ViewObject.DrawStyle
-        if hasattr(obj.ViewObject,"LineColor"):
+        if hasattr(obj.ViewObject, "LineColor"):
             viewobj.LineColor = obj.ViewObject.LineColor
-        elif hasattr(obj.ViewObject,"TextColor"):
+        elif hasattr(obj.ViewObject, "TextColor"):
             viewobj.LineColor = obj.ViewObject.TextColor
     return viewobj
 

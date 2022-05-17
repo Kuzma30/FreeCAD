@@ -87,22 +87,22 @@ def write_constraint(f, femobj, centrif_obj, ccxwriter):
     else:  # no line found, set default
         # TODO: No test at all in the writer
         # they should all be before in prechecks
-        location = FreeCAD.Vector(0., 0., 0.)
-        direction = FreeCAD.Vector(0., 0., 1.)
+        location = FreeCAD.Vector(0.0, 0.0, 0.0)
+        direction = FreeCAD.Vector(0.0, 0.0, 1.0)
 
     # write to file
     f.write("*DLOAD\n")
     f.write(
-        "{},CENTRIF,{:.13G},{:.13G},{:.13G},{:.13G},{:.13G},{:.13G},{:.13G}\n"
-        .format(
+        "{},CENTRIF,{:.13G},{:.13G},{:.13G},{:.13G},{:.13G},{:.13G},{:.13G}\n".format(
             centrif_obj.Name,
-            (2. * math.pi * float(centrif_obj.RotationFrequency.getValueAs("1/s"))) ** 2,
+            (2.0 * math.pi * float(centrif_obj.RotationFrequency.getValueAs("1/s")))
+            ** 2,
             location.x,
             location.y,
             location.z,
             direction.x,
             direction.y,
-            direction.z
+            direction.z,
         )
     )
     f.write("\n")

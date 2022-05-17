@@ -22,6 +22,7 @@
 
 import FreeCAD as App
 
+
 def havePage():
     objs = App.ActiveDocument.Objects
     for o in objs:
@@ -29,10 +30,10 @@ def havePage():
             return True
     return False
 
+
 def haveView():
     objs = App.ActiveDocument.Objects
     for o in objs:
         if o.isDerivedFrom("TechDraw::DrawView"):
             return True
     return False
-

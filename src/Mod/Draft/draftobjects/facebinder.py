@@ -36,30 +36,40 @@ from draftobjects.base import DraftObject
 
 class Facebinder(DraftObject):
     """The Draft Facebinder object"""
-    def __init__(self,obj):
+
+    def __init__(self, obj):
         super(Facebinder, self).__init__(obj, "Facebinder")
 
-        _tip = QT_TRANSLATE_NOOP("App::Property","Linked faces")
-        obj.addProperty("App::PropertyLinkSubList", "Faces", "Draft",  _tip)
+        _tip = QT_TRANSLATE_NOOP("App::Property", "Linked faces")
+        obj.addProperty("App::PropertyLinkSubList", "Faces", "Draft", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property","Specifies if splitter lines must be removed")
-        obj.addProperty("App::PropertyBool","RemoveSplitter", "Draft",  _tip)
+        _tip = QT_TRANSLATE_NOOP(
+            "App::Property", "Specifies if splitter lines must be removed"
+        )
+        obj.addProperty("App::PropertyBool", "RemoveSplitter", "Draft", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property","An optional extrusion value to be applied to all faces")
-        obj.addProperty("App::PropertyDistance","Extrusion", "Draft" , _tip)
+        _tip = QT_TRANSLATE_NOOP(
+            "App::Property", "An optional extrusion value to be applied to all faces"
+        )
+        obj.addProperty("App::PropertyDistance", "Extrusion", "Draft", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property","An optional offset value to be applied to all faces")
-        obj.addProperty("App::PropertyDistance","Offset", "Draft" , _tip)
+        _tip = QT_TRANSLATE_NOOP(
+            "App::Property", "An optional offset value to be applied to all faces"
+        )
+        obj.addProperty("App::PropertyDistance", "Offset", "Draft", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property","This specifies if the shapes sew")
-        obj.addProperty("App::PropertyBool","Sew", "Draft", _tip)
+        _tip = QT_TRANSLATE_NOOP("App::Property", "This specifies if the shapes sew")
+        obj.addProperty("App::PropertyBool", "Sew", "Draft", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property","The area of the faces of this Facebinder")
-        obj.addProperty("App::PropertyArea","Area", "Draft", _tip)
-        obj.setEditorMode("Area",1)
+        _tip = QT_TRANSLATE_NOOP(
+            "App::Property", "The area of the faces of this Facebinder"
+        )
+        obj.addProperty("App::PropertyArea", "Area", "Draft", _tip)
+        obj.setEditorMode("Area", 1)
 
-    def execute(self,obj):
+    def execute(self, obj):
         import Part
+
         pl = obj.Placement
         if not obj.Faces:
             return
@@ -69,15 +79,15 @@ class Facebinder(DraftObject):
             for f in sel[1]:
                 if "Face" in f:
                     try:
-                        fnum = int(f[4:])-1
+                        fnum = int(f[4:]) - 1
                         face = sel[0].Shape.Faces[fnum]
-                        if hasattr(obj,"Offset") and obj.Offset.Value:
-                            norm = face.normalAt(0,0)
+                        if hasattr(obj, "Offset") and obj.Offset.Value:
+                            norm = face.normalAt(0, 0)
                             dist = norm.multiply(obj.Offset.Value)
                             face.translate(dist)
                         faces.append(face)
                         area += face.Area
-                    except(IndexError, Part.OCCError):
+                    except (IndexError, Part.OCCError):
                         print("Draft: wrong face index")
                         return
         if not faces:
@@ -88,7 +98,9 @@ class Facebinder(DraftObject):
                 if hasattr(obj, "Extrusion"):
                     if obj.Extrusion.Value:
                         for f in faces:
-                            f = f.extrude(f.normalAt(0,0).multiply(obj.Extrusion.Value))
+                            f = f.extrude(
+                                f.normalAt(0, 0).multiply(obj.Extrusion.Value)
+                            )
                             if sh:
                                 sh = sh.fuse(f)
                             else:
@@ -109,7 +121,7 @@ class Facebinder(DraftObject):
                 sh = faces[0]
                 if hasattr(obj, "Extrusion"):
                     if obj.Extrusion.Value:
-                        sh = sh.extrude(sh.normalAt(0,0).multiply(obj.Extrusion.Value))
+                        sh = sh.extrude(sh.normalAt(0, 0).multiply(obj.Extrusion.Value))
                 sh.transformShape(sh.Matrix, True)
         except Part.OCCError:
             print("Draft: error building facebinder")
@@ -118,7 +130,7 @@ class Facebinder(DraftObject):
         obj.Placement = pl
         obj.Area = area
 
-    def addSubobjects(self,obj,facelinks):
+    def addSubobjects(self, obj, facelinks):
         """adds facelinks to this facebinder"""
         objs = obj.Faces
         for o in facelinks:

@@ -51,8 +51,7 @@ def write_meshdata_constraint(f, femobj, heatflux_obj, ccxwriter):
         heatflux_facetype = "F"
         # SvdW: add factor to force heatflux to units system of t/mm/s/K
         heatflux_values = "{:.13G},{:.13G}".format(
-            heatflux_obj.AmbientTemp,
-            heatflux_obj.FilmCoef * 0.001
+            heatflux_obj.AmbientTemp, heatflux_obj.FilmCoef * 0.001
         )
     elif heatflux_obj.ConstraintType == "DFlux":
         heatflux_key_word = "DFLUX"
@@ -66,9 +65,6 @@ def write_meshdata_constraint(f, femobj, heatflux_obj, ccxwriter):
         f.write("** Heat flux on face {}\n".format(elem_string))
         for i in face_table:
             # OvG: Only write out the VolumeIDs linked to a particular face
-            f.write("{},{}{},{}\n".format(
-                i[0],
-                heatflux_facetype,
-                i[1],
-                heatflux_values
-            ))
+            f.write(
+                "{},{}{},{}\n".format(i[0], heatflux_facetype, i[1], heatflux_values)
+            )

@@ -44,9 +44,7 @@ class TestSolverZ88(unittest.TestCase):
     fcc_print("import TestSolverZ88")
 
     # ********************************************************************************************
-    def setUp(
-        self
-    ):
+    def setUp(self):
         # setUp is executed before every test
 
         # new document
@@ -56,65 +54,54 @@ class TestSolverZ88(unittest.TestCase):
         self.mesh_name = "Mesh"
 
     # ********************************************************************************************
-    def tearDown(
-        self
-    ):
+    def tearDown(self):
         # tearDown is executed after every test
         FreeCAD.closeDocument(self.document.Name)
 
     # ********************************************************************************************
-    def test_00print(
-        self
-    ):
+    def test_00print(self):
         # since method name starts with 00 this will be run first
         # this test just prints a line with stars
 
-        fcc_print("\n{0}\n{1} run FEM TestSolverFrameWork tests {2}\n{0}".format(
-            100 * "*",
-            10 * "*",
-            55 * "*"
-        ))
+        fcc_print(
+            "\n{0}\n{1} run FEM TestSolverFrameWork tests {2}\n{0}".format(
+                100 * "*", 10 * "*", 55 * "*"
+            )
+        )
 
     # ********************************************************************************************
-    def test_ccx_cantilever_ele_hexa20(
-        self
-    ):
+    def test_ccx_cantilever_ele_hexa20(self):
         from femexamples.ccx_cantilever_ele_hexa20 import setup
+
         setup(self.document, "z88")
         self.inputfile_writing_test(get_namefromdef("test_"))
 
     # ********************************************************************************************
-    def test_ccx_cantilever_ele_tria6(
-        self
-    ):
+    def test_ccx_cantilever_ele_tria6(self):
         # TODO does pass on my local machine, but not on ci
         return
 
         from femexamples.ccx_cantilever_ele_tria6 import setup
+
         setup(self.document, "z88")
         self.inputfile_writing_test(get_namefromdef("test_"))
 
     # ********************************************************************************************
-    def test_ccx_cantilever_faceload(
-        self
-    ):
+    def test_ccx_cantilever_faceload(self):
         from femexamples.ccx_cantilever_faceload import setup
+
         setup(self.document, "z88")
         self.inputfile_writing_test(get_namefromdef("test_"))
 
     # ********************************************************************************************
-    def test_ccx_cantilever_nodeload(
-        self
-    ):
+    def test_ccx_cantilever_nodeload(self):
         from femexamples.ccx_cantilever_nodeload import setup
+
         setup(self.document, "z88")
         self.inputfile_writing_test(get_namefromdef("test_"))
 
     # ********************************************************************************************
-    def inputfile_writing_test(
-        self,
-        base_name
-    ):
+    def inputfile_writing_test(self, base_name):
         if sys.version_info.major < 3:
             # TODO does not pass on Python 2
             # https://travis-ci.org/github/FreeCAD/FreeCAD/builds/707780320
@@ -126,8 +113,7 @@ class TestSolverZ88(unittest.TestCase):
 
         # start
         fcc_print(
-            "\n------------- Start of FEM Z88 tests for {} -------"
-            .format(base_name)
+            "\n------------- Start of FEM Z88 tests for {} -------".format(base_name)
         )
 
         # get analysis working directory and save FreeCAD file
@@ -138,9 +124,7 @@ class TestSolverZ88(unittest.TestCase):
 
         # write input file
         machine = self.document.SolverZ88.Proxy.createMachine(
-            self.document.SolverZ88,
-            working_dir,
-            True  # set testmode to True
+            self.document.SolverZ88, working_dir, True  # set testmode to True
         )
         machine.target = femsolver.run.PREPARE
         machine.start()
@@ -154,29 +138,16 @@ class TestSolverZ88(unittest.TestCase):
         test_files = [f for f in test_files if f not in not_files]
         fcc_print((test_files))
         for test_file in test_files:
-            inpfile_given = join(
-                test_path,
-                test_file
-            )
-            inpfile_totest = join(
-                working_dir,
-                test_file
-            )
-            fcc_print(
-                "Comparing {}  to  {}"
-                .format(inpfile_given, inpfile_totest)
-            )
-            ret = testtools.compare_inp_files(
-                inpfile_given,
-                inpfile_totest
-            )
+            inpfile_given = join(test_path, test_file)
+            inpfile_totest = join(working_dir, test_file)
+            fcc_print("Comparing {}  to  {}".format(inpfile_given, inpfile_totest))
+            ret = testtools.compare_inp_files(inpfile_given, inpfile_totest)
             self.assertFalse(
                 ret,
-                "Z88 write_inp_file for {0} test failed.\n{1}".format(base_name, ret)
+                "Z88 write_inp_file for {0} test failed.\n{1}".format(base_name, ret),
             )
 
         # end
         fcc_print(
-            "--------------- End of FEM Z88 tests for {} ---------"
-            .format(base_name)
+            "--------------- End of FEM Z88 tests for {} ---------".format(base_name)
         )

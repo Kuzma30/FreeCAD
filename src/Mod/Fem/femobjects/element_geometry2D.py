@@ -46,12 +46,12 @@ class ElementGeometry2D(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyLength",
             "Thickness",
             "ShellThickness",
-            "set thickness of the shell elements"
+            "set thickness of the shell elements",
         )
 
         obj.addProperty(
             "App::PropertyLinkSubList",
             "References",
             "ShellThickness",
-            "List of shell thickness shapes"
+            "List of shell thickness shapes",
         )

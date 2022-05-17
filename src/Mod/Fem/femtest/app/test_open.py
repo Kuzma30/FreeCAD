@@ -64,47 +64,37 @@ class TestObjectOpen(unittest.TestCase):
     fcc_print("import TestObjectOpen")
 
     # ********************************************************************************************
-    def setUp(
-        self
-    ):
+    def setUp(self):
         # setUp is executed before every test
 
         # new document
         self.document = FreeCAD.newDocument(self.__class__.__name__)
 
-        self.test_file_dir = join(
-            testtools.get_fem_test_home_dir(),
-            "open"
-        )
+        self.test_file_dir = join(testtools.get_fem_test_home_dir(), "open")
 
     # ********************************************************************************************
-    def tearDown(
-        self
-    ):
+    def tearDown(self):
         # tearDown is executed after every test
         FreeCAD.closeDocument(self.document.Name)
 
     # ********************************************************************************************
-    def test_00print(
-        self
-    ):
+    def test_00print(self):
         # since method name starts with 00 this will be run first
         # this test just prints a line with stars
 
-        fcc_print("\n{0}\n{1} run FEM TestObjectOpen tests {2}\n{0}".format(
-            100 * "*",
-            10 * "*",
-            60 * "*"
-        ))
+        fcc_print(
+            "\n{0}\n{1} run FEM TestObjectOpen tests {2}\n{0}".format(
+                100 * "*", 10 * "*", 60 * "*"
+            )
+        )
 
     # ********************************************************************************************
-    def test_femobjects_open_head(
-        self
-    ):
+    def test_femobjects_open_head(self):
         fcc_print("load master head document objects")
 
         # get a document with all FEM objects
         from .test_object import create_all_fem_objects_doc
+
         self.document = create_all_fem_objects_doc(self.document)
 
         # save and load the document
@@ -120,15 +110,11 @@ class TestObjectOpen(unittest.TestCase):
 
         # standard name changed
         from femsolver.elmer.equations.flux import Proxy
-        self.assertEqual(
-            Proxy,
-            self.document.Flux.Proxy.__class__
-        )
+
+        self.assertEqual(Proxy, self.document.Flux.Proxy.__class__)
 
     # ********************************************************************************************
-    def test_femobjects_open_de9b3fb438(
-        self
-    ):
+    def test_femobjects_open_de9b3fb438(self):
         # migration modules do not import on Python 2 thus this can not work
         if sys.version_info.major < 3:
             return
@@ -138,8 +124,12 @@ class TestObjectOpen(unittest.TestCase):
         # the document was created by running the object create unit test
         # FreeCAD --run-test "femtest.app.test_object.TestObjectCreate.test_femobjects_make"
         fcc_print("load old document objects")
-        FreeCAD.closeDocument(self.document.Name)  # close the empty document from setUp first
-        self.document = FreeCAD.open(join(self.test_file_dir, "all_objects_de9b3fb438.FCStd"))
+        FreeCAD.closeDocument(
+            self.document.Name
+        )  # close the empty document from setUp first
+        self.document = FreeCAD.open(
+            join(self.test_file_dir, "all_objects_de9b3fb438.FCStd")
+        )
 
         # C++ objects
         self.compare_cpp_objs(self.document)
@@ -148,31 +138,20 @@ class TestObjectOpen(unittest.TestCase):
 
         # standard name changed
         from femsolver.elmer.equations.flux import Proxy
-        self.assertEqual(
-            Proxy,
-            self.document.Fluxsolver.Proxy.__class__
-        )
+
+        self.assertEqual(Proxy, self.document.Fluxsolver.Proxy.__class__)
 
     # ********************************************************************************************
-    def compare_cpp_objs(
-        self,
-        doc
-    ):
+    def compare_cpp_objs(self, doc):
         from femtools.femutils import type_of_obj
 
-        self.assertEqual(
-            "Fem::FemAnalysis",
-            type_of_obj(doc.Analysis)
-        )
+        self.assertEqual("Fem::FemAnalysis", type_of_obj(doc.Analysis))
         # TODO other C++ objects and view provider
         # Is just checking the type sufficient?
         # If there is a type there is at least a object with correct type ;-)
 
     # ********************************************************************************************
-    def compare_feature_pythons_class_app(
-        self,
-        doc
-    ):
+    def compare_feature_pythons_class_app(self, doc):
         # see comments at file end, the code was created by some python code
         """
         # see code lines after comment block for the smarter version
@@ -183,172 +162,132 @@ class TestObjectOpen(unittest.TestCase):
         )
         """
         from femobjects.constraint_bodyheatsource import ConstraintBodyHeatSource
+
         self.assertEqual(
-            ConstraintBodyHeatSource,
-            doc.ConstraintBodyHeatSource.Proxy.__class__
+            ConstraintBodyHeatSource, doc.ConstraintBodyHeatSource.Proxy.__class__
         )
 
-        from femobjects.constraint_electrostaticpotential import ConstraintElectrostaticPotential
+        from femobjects.constraint_electrostaticpotential import (
+            ConstraintElectrostaticPotential,
+        )
+
         self.assertEqual(
             ConstraintElectrostaticPotential,
-            doc.ConstraintElectrostaticPotential.Proxy.__class__
+            doc.ConstraintElectrostaticPotential.Proxy.__class__,
         )
 
         from femobjects.constraint_flowvelocity import ConstraintFlowVelocity
+
         self.assertEqual(
-            ConstraintFlowVelocity,
-            doc.ConstraintFlowVelocity.Proxy.__class__
+            ConstraintFlowVelocity, doc.ConstraintFlowVelocity.Proxy.__class__
         )
 
-        from femobjects.constraint_initialflowvelocity import ConstraintInitialFlowVelocity
+        from femobjects.constraint_initialflowvelocity import (
+            ConstraintInitialFlowVelocity,
+        )
+
         self.assertEqual(
             ConstraintInitialFlowVelocity,
-            doc.ConstraintInitialFlowVelocity.Proxy.__class__
+            doc.ConstraintInitialFlowVelocity.Proxy.__class__,
         )
 
         from femobjects.constraint_selfweight import ConstraintSelfWeight
-        self.assertEqual(
-            ConstraintSelfWeight,
-            doc.ConstraintSelfWeight.Proxy.__class__
-        )
+
+        self.assertEqual(ConstraintSelfWeight, doc.ConstraintSelfWeight.Proxy.__class__)
 
         from femobjects.constraint_tie import ConstraintTie
-        self.assertEqual(
-            ConstraintTie,
-            doc.ConstraintTie.Proxy.__class__
-        )
+
+        self.assertEqual(ConstraintTie, doc.ConstraintTie.Proxy.__class__)
 
         from femobjects.element_fluid1D import ElementFluid1D
-        self.assertEqual(
-            ElementFluid1D,
-            doc.ElementFluid1D.Proxy.__class__
-        )
+
+        self.assertEqual(ElementFluid1D, doc.ElementFluid1D.Proxy.__class__)
 
         from femobjects.element_geometry1D import ElementGeometry1D
-        self.assertEqual(
-            ElementGeometry1D,
-            doc.ElementGeometry1D.Proxy.__class__
-        )
+
+        self.assertEqual(ElementGeometry1D, doc.ElementGeometry1D.Proxy.__class__)
 
         from femobjects.element_geometry2D import ElementGeometry2D
-        self.assertEqual(
-            ElementGeometry2D,
-            doc.ElementGeometry2D.Proxy.__class__
-        )
+
+        self.assertEqual(ElementGeometry2D, doc.ElementGeometry2D.Proxy.__class__)
 
         from femobjects.element_rotation1D import ElementRotation1D
-        self.assertEqual(
-            ElementRotation1D,
-            doc.ElementRotation1D.Proxy.__class__
-        )
+
+        self.assertEqual(ElementRotation1D, doc.ElementRotation1D.Proxy.__class__)
 
         from femobjects.material_common import MaterialCommon
-        self.assertEqual(
-            MaterialCommon,
-            doc.MaterialFluid.Proxy.__class__
-        )
+
+        self.assertEqual(MaterialCommon, doc.MaterialFluid.Proxy.__class__)
 
         from femobjects.material_common import MaterialCommon
-        self.assertEqual(
-            MaterialCommon,
-            doc.MaterialSolid.Proxy.__class__
-        )
+
+        self.assertEqual(MaterialCommon, doc.MaterialSolid.Proxy.__class__)
 
         from femobjects.material_mechanicalnonlinear import MaterialMechanicalNonlinear
+
         self.assertEqual(
-            MaterialMechanicalNonlinear,
-            doc.MaterialMechanicalNonlinear.Proxy.__class__
+            MaterialMechanicalNonlinear, doc.MaterialMechanicalNonlinear.Proxy.__class__
         )
 
         from femobjects.material_reinforced import MaterialReinforced
-        self.assertEqual(
-            MaterialReinforced,
-            doc.MaterialReinforced.Proxy.__class__
-        )
+
+        self.assertEqual(MaterialReinforced, doc.MaterialReinforced.Proxy.__class__)
 
         from femobjects.mesh_gmsh import MeshGmsh
-        self.assertEqual(
-            MeshGmsh,
-            doc.MeshGmsh.Proxy.__class__
-        )
+
+        self.assertEqual(MeshGmsh, doc.MeshGmsh.Proxy.__class__)
 
         from femobjects.mesh_boundarylayer import MeshBoundaryLayer
-        self.assertEqual(
-            MeshBoundaryLayer,
-            doc.MeshBoundaryLayer.Proxy.__class__
-        )
+
+        self.assertEqual(MeshBoundaryLayer, doc.MeshBoundaryLayer.Proxy.__class__)
 
         from femobjects.mesh_group import MeshGroup
-        self.assertEqual(
-            MeshGroup,
-            doc.MeshGroup.Proxy.__class__
-        )
+
+        self.assertEqual(MeshGroup, doc.MeshGroup.Proxy.__class__)
 
         from femobjects.mesh_region import MeshRegion
-        self.assertEqual(
-            MeshRegion,
-            doc.MeshRegion.Proxy.__class__
-        )
+
+        self.assertEqual(MeshRegion, doc.MeshRegion.Proxy.__class__)
 
         from femobjects.mesh_result import MeshResult
-        self.assertEqual(
-            MeshResult,
-            doc.MeshResult.Proxy.__class__
-        )
+
+        self.assertEqual(MeshResult, doc.MeshResult.Proxy.__class__)
 
         from femobjects.result_mechanical import ResultMechanical
-        self.assertEqual(
-            ResultMechanical,
-            doc.ResultMechanical.Proxy.__class__
-        )
+
+        self.assertEqual(ResultMechanical, doc.ResultMechanical.Proxy.__class__)
 
         from femobjects.solver_ccxtools import SolverCcxTools
-        self.assertEqual(
-            SolverCcxTools,
-            doc.SolverCcxTools.Proxy.__class__
-        )
+
+        self.assertEqual(SolverCcxTools, doc.SolverCcxTools.Proxy.__class__)
 
         from femsolver.calculix.solver import Proxy
-        self.assertEqual(
-            Proxy,
-            doc.SolverCalculix.Proxy.__class__
-        )
+
+        self.assertEqual(Proxy, doc.SolverCalculix.Proxy.__class__)
 
         from femsolver.elmer.solver import Proxy
-        self.assertEqual(
-            Proxy,
-            doc.SolverElmer.Proxy.__class__
-        )
+
+        self.assertEqual(Proxy, doc.SolverElmer.Proxy.__class__)
 
         from femsolver.z88.solver import Proxy
-        self.assertEqual(
-            Proxy,
-            doc.SolverZ88.Proxy.__class__
-        )
+
+        self.assertEqual(Proxy, doc.SolverZ88.Proxy.__class__)
 
         from femsolver.elmer.equations.elasticity import Proxy
-        self.assertEqual(
-            Proxy,
-            doc.Elasticity.Proxy.__class__
-        )
+
+        self.assertEqual(Proxy, doc.Elasticity.Proxy.__class__)
 
         from femsolver.elmer.equations.electrostatic import Proxy
-        self.assertEqual(
-            Proxy,
-            doc.Electrostatic.Proxy.__class__
-        )
+
+        self.assertEqual(Proxy, doc.Electrostatic.Proxy.__class__)
 
         from femsolver.elmer.equations.flow import Proxy
-        self.assertEqual(
-            Proxy,
-            doc.Flow.Proxy.__class__
-        )
+
+        self.assertEqual(Proxy, doc.Flow.Proxy.__class__)
 
         from femsolver.elmer.equations.heat import Proxy
-        self.assertEqual(
-            Proxy,
-            doc.Heat.Proxy.__class__
-        )
+
+        self.assertEqual(Proxy, doc.Heat.Proxy.__class__)
 
 
 """

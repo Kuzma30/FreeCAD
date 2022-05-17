@@ -22,7 +22,9 @@
 # *                                                                         *
 # ***************************************************************************
 
-__title__ = "FreeCAD FEM constraint initial flow velocity task panel for the document object"
+__title__ = (
+    "FreeCAD FEM constraint initial flow velocity task panel for the document object"
+)
 __author__ = "Markus Hovorka, Bernd Hahnebach"
 __url__ = "https://www.freecadweb.org"
 
@@ -39,11 +41,11 @@ from femtools import membertools
 
 
 class _TaskPanel(object):
-
     def __init__(self, obj):
         self._obj = obj
         self._paramWidget = FreeCADGui.PySideUic.loadUi(
-            FreeCAD.getHomePath() + "Mod/Fem/Resources/ui/InitialFlowVelocity.ui")
+            FreeCAD.getHomePath() + "Mod/Fem/Resources/ui/InitialFlowVelocity.ui"
+        )
         self._initParamWidget()
         self.form = [self._paramWidget]
         analysis = obj.getParentGroup()
@@ -88,33 +90,24 @@ class _TaskPanel(object):
 
     def _initParamWidget(self):
         unit = "m/s"
-        self._paramWidget.velocityXTxt.setText(
-            str(self._obj.VelocityX) + unit)
-        self._paramWidget.velocityYTxt.setText(
-            str(self._obj.VelocityY) + unit)
-        self._paramWidget.velocityZTxt.setText(
-            str(self._obj.VelocityZ) + unit)
-        self._paramWidget.velocityXBox.setChecked(
-            not self._obj.VelocityXEnabled)
-        self._paramWidget.velocityYBox.setChecked(
-            not self._obj.VelocityYEnabled)
-        self._paramWidget.velocityZBox.setChecked(
-            not self._obj.VelocityZEnabled)
+        self._paramWidget.velocityXTxt.setText(str(self._obj.VelocityX) + unit)
+        self._paramWidget.velocityYTxt.setText(str(self._obj.VelocityY) + unit)
+        self._paramWidget.velocityZTxt.setText(str(self._obj.VelocityZ) + unit)
+        self._paramWidget.velocityXBox.setChecked(not self._obj.VelocityXEnabled)
+        self._paramWidget.velocityYBox.setChecked(not self._obj.VelocityYEnabled)
+        self._paramWidget.velocityZBox.setChecked(not self._obj.VelocityZEnabled)
 
     def _applyWidgetChanges(self):
         unit = "m/s"
-        self._obj.VelocityXEnabled = \
-            not self._paramWidget.velocityXBox.isChecked()
+        self._obj.VelocityXEnabled = not self._paramWidget.velocityXBox.isChecked()
         if self._obj.VelocityXEnabled:
             quantity = Units.Quantity(self._paramWidget.velocityXTxt.text())
             self._obj.VelocityX = quantity.getValueAs(unit).Value
-        self._obj.VelocityYEnabled = \
-            not self._paramWidget.velocityYBox.isChecked()
+        self._obj.VelocityYEnabled = not self._paramWidget.velocityYBox.isChecked()
         if self._obj.VelocityYEnabled:
             quantity = Units.Quantity(self._paramWidget.velocityYTxt.text())
             self._obj.VelocityY = quantity.getValueAs(unit).Value
-        self._obj.VelocityZEnabled = \
-            not self._paramWidget.velocityZBox.isChecked()
+        self._obj.VelocityZEnabled = not self._paramWidget.velocityZBox.isChecked()
         if self._obj.VelocityZEnabled:
             quantity = Units.Quantity(self._paramWidget.velocityZTxt.text())
             self._obj.VelocityZ = quantity.getValueAs(unit).Value

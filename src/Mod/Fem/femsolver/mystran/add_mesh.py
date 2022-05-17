@@ -42,15 +42,12 @@ def add_mesh(f, model, mystran_writer):
             mystran_writer.femmesh
         )
     mesh_eletype = exportNastranMesh.get_export_element_type(
-        mystran_writer.femmesh,
-        mystran_writer.femelement_table
+        mystran_writer.femmesh, mystran_writer.femelement_table
     )
 
     # get the pynas code
     mesh_pynas_code = exportNastranMesh.get_pynastran_mesh(
-        mystran_writer.femnodes_mesh,
-        mystran_writer.femelement_table,
-        mesh_eletype
+        mystran_writer.femnodes_mesh, mystran_writer.femelement_table, mesh_eletype
     )
     # print(mesh_pynas_code)
 

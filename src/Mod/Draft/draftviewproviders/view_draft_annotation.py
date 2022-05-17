@@ -73,34 +73,36 @@ class ViewProviderDraftAnnotation(object):
     def set_annotation_properties(self, vobj, properties):
         """Set annotation properties only if they don't already exist."""
         if "ScaleMultiplier" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "General scaling factor that affects "
-                                     "the annotation consistently\n"
-                                     "because it scales the text, "
-                                     "and the line decorations, if any,\n"
-                                     "in the same proportion.")
-            vobj.addProperty("App::PropertyFloat",
-                             "ScaleMultiplier",
-                             "Annotation",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "General scaling factor that affects "
+                "the annotation consistently\n"
+                "because it scales the text, "
+                "and the line decorations, if any,\n"
+                "in the same proportion.",
+            )
+            vobj.addProperty(
+                "App::PropertyFloat", "ScaleMultiplier", "Annotation", _tip
+            )
             annotation_scale = param.GetFloat("DraftAnnotationScale", 1.0)
             if annotation_scale != 0:
                 vobj.ScaleMultiplier = 1 / annotation_scale
 
         if "AnnotationStyle" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "Annotation style to apply "
-                                     "to this object.\n"
-                                     "When using a saved style "
-                                     "some of the view properties "
-                                     "will become read-only;\n"
-                                     "they will only be editable by changing "
-                                     "the style through "
-                                     "the 'Annotation style editor' tool.")
-            vobj.addProperty("App::PropertyEnumeration",
-                             "AnnotationStyle",
-                             "Annotation",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Annotation style to apply "
+                "to this object.\n"
+                "When using a saved style "
+                "some of the view properties "
+                "will become read-only;\n"
+                "they will only be editable by changing "
+                "the style through "
+                "the 'Annotation style editor' tool.",
+            )
+            vobj.addProperty(
+                "App::PropertyEnumeration", "AnnotationStyle", "Annotation", _tip
+            )
             styles = []
             for key in vobj.Object.Document.Meta.keys():
                 if key.startswith("Draft_Style_"):
@@ -112,17 +114,11 @@ class ViewProviderDraftAnnotation(object):
         """Set graphics properties only if they don't already exist."""
         if "LineWidth" not in properties:
             _tip = QT_TRANSLATE_NOOP("App::Property", "Line width")
-            vobj.addProperty("App::PropertyFloat",
-                             "LineWidth",
-                             "Graphics",
-                             _tip)
+            vobj.addProperty("App::PropertyFloat", "LineWidth", "Graphics", _tip)
 
         if "LineColor" not in properties:
             _tip = QT_TRANSLATE_NOOP("App::Property", "Line color")
-            vobj.addProperty("App::PropertyColor",
-                             "LineColor",
-                             "Graphics",
-                             _tip)
+            vobj.addProperty("App::PropertyColor", "LineColor", "Graphics", _tip)
 
     def __getstate__(self):
         """Return a tuple of objects to save or None."""
@@ -162,7 +158,7 @@ class ViewProviderDraftAnnotation(object):
                 for visprop in utils.ANNOTATION_STYLE.keys():
                     if visprop in properties:
                         # make property writable
-                        vobj.setPropertyStatus(visprop, '-ReadOnly')
+                        vobj.setPropertyStatus(visprop, "-ReadOnly")
             else:
                 # set style
                 styles = {}
@@ -178,16 +174,18 @@ class ViewProviderDraftAnnotation(object):
                         if visprop in properties:
                             try:
                                 getattr(vobj, visprop).setValue(style[visprop])
-                                _msg("setValue: "
-                                     "'{}', '{}'".format(visprop,
-                                                         style[visprop]))
+                                _msg(
+                                    "setValue: "
+                                    "'{}', '{}'".format(visprop, style[visprop])
+                                )
                             except AttributeError:
                                 setattr(vobj, visprop, style[visprop])
-                                _msg("setattr: "
-                                     "'{}', '{}'".format(visprop,
-                                                         style[visprop]))
+                                _msg(
+                                    "setattr: "
+                                    "'{}', '{}'".format(visprop, style[visprop])
+                                )
                             # make property read-only
-                            vobj.setPropertyStatus(visprop, 'ReadOnly')
+                            vobj.setPropertyStatus(visprop, "ReadOnly")
 
     def execute(self, vobj):
         """Execute when the object is created or recomputed."""
@@ -235,5 +233,6 @@ class ViewProviderDraftAnnotation(object):
             objs.extend(self.Object.Group)
 
         return objs
+
 
 ## @}

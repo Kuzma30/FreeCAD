@@ -66,22 +66,32 @@ class Drawing(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Drawing',
-                # 'Accel': "D, D",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Drawing", "Drawing"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Drawing", "Creates a 2D projection on a Drawing Workbench page from the selected objects.\nThis command is OBSOLETE since the Drawing Workbench became obsolete in 0.17.\nUse TechDraw Workbench instead for generating technical drawings.")}
+        return {
+            "Pixmap": "Draft_Drawing",
+            # 'Accel': "D, D",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Drawing", "Drawing"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Drawing",
+                "Creates a 2D projection on a Drawing Workbench page from the selected objects.\nThis command is OBSOLETE since the Drawing Workbench became obsolete in 0.17.\nUse TechDraw Workbench instead for generating technical drawings.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
         super(Drawing, self).Activated(name="Drawing")
-        _wrn(translate("draft","The Drawing Workbench is obsolete since 0.17, consider using the TechDraw Workbench instead."))
+        _wrn(
+            translate(
+                "draft",
+                "The Drawing Workbench is obsolete since 0.17, consider using the TechDraw Workbench instead.",
+            )
+        )
         if not Gui.Selection.getSelection():
             self.ghost = None
             self.ui.selectUi()
             _msg(translate("draft", "Select an object to project"))
-            self.call = \
-                self.view.addEventCallback("SoEvent",
-                                           gui_tool_utils.selectObject)
+            self.call = self.view.addEventCallback(
+                "SoEvent", gui_tool_utils.selectObject
+            )
         else:
             self.proceed()
 
@@ -118,23 +128,26 @@ class Drawing(gui_base_original.Modifier):
                     break
             sel.reverse()
             for obj in sel:
-                if (obj.ViewObject.isVisible()
-                        and not obj.isDerivedFrom("Drawing::FeatureView")
-                        and not obj.isDerivedFrom("Drawing::FeaturePage")):
+                if (
+                    obj.ViewObject.isVisible()
+                    and not obj.isDerivedFrom("Drawing::FeatureView")
+                    and not obj.isDerivedFrom("Drawing::FeaturePage")
+                ):
                     # name = 'View' + obj.Name
                     # no reason to remove the old one...
                     # oldobj = self.page.getObject(name)
                     # if oldobj:
                     #     self.doc.removeObject(oldobj.Name)
-                    Draft.make_drawing_view(obj, self.page,
-                                            otherProjection=otherProjection)
+                    Draft.make_drawing_view(
+                        obj, self.page, otherProjection=otherProjection
+                    )
             self.doc.recompute()
 
     def createDefaultPage(self):
         """Create a default Drawing Workbench page."""
-        _t = App.getResourceDir() + 'Mod/Drawing/Templates/A3_Landscape.svg'
+        _t = App.getResourceDir() + "Mod/Drawing/Templates/A3_Landscape.svg"
         template = utils.getParam("template", _t)
-        page = self.doc.addObject('Drawing::FeaturePage', 'Page')
+        page = self.doc.addObject("Drawing::FeaturePage", "Page")
         page.ViewObject.HintOffsetX = 200
         page.ViewObject.HintOffsetY = 100
         page.ViewObject.HintScale = 2
@@ -143,6 +156,6 @@ class Drawing(gui_base_original.Modifier):
         return page
 
 
-Gui.addCommand('Draft_Drawing', Drawing())
+Gui.addCommand("Draft_Drawing", Drawing())
 
 ## @}

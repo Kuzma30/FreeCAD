@@ -27,7 +27,7 @@ __url__ = "https://www.freecadweb.org"
 
 
 def get_analysis_types():
-    return "all"    # write for all analysis types
+    return "all"  # write for all analysis types
 
 
 def get_sets_name():
@@ -55,12 +55,9 @@ def get_after_write_constraint():
 
 
 def write_meshdata_constraint(f, femobj, fix_obj, ccxwriter):
-    if (
-        ccxwriter.femmesh.Volumes
-        and (
-            len(ccxwriter.member.geos_shellthickness) > 0
-            or len(ccxwriter.member.geos_beamsection) > 0
-        )
+    if ccxwriter.femmesh.Volumes and (
+        len(ccxwriter.member.geos_shellthickness) > 0
+        or len(ccxwriter.member.geos_beamsection) > 0
     ):
         if len(femobj["NodesSolid"]) > 0:
             f.write("*NSET,NSET={}Solid\n".format(fix_obj.Name))
@@ -80,12 +77,9 @@ def write_constraint(f, femobj, fix_obj, ccxwriter):
 
     # floats read from ccx should use {:.13G}, see comment in writer module
 
-    if (
-        ccxwriter.femmesh.Volumes
-        and (
-            len(ccxwriter.member.geos_shellthickness) > 0
-            or len(ccxwriter.member.geos_beamsection) > 0
-        )
+    if ccxwriter.femmesh.Volumes and (
+        len(ccxwriter.member.geos_shellthickness) > 0
+        or len(ccxwriter.member.geos_beamsection) > 0
     ):
         if len(femobj["NodesSolid"]) > 0:
             f.write("*BOUNDARY\n")

@@ -44,8 +44,8 @@ from femtools import membertools
 
 SOLVER_TYPES = ["sorcg", "siccg", "choly"]
 
-class Check(run.Check):
 
+class Check(run.Check):
     def run(self):
         self.pushStatus("Checking analysis member...\n")
         self.check_mesh_exists()
@@ -57,13 +57,14 @@ class Check(run.Check):
 
 
 class Prepare(run.Prepare):
-
     def run(self):
         self.pushStatus("Preparing solver input...\n")
 
         # get mesh set data
         # TODO see calculix tasks get mesh set data
-        mesh_obj = membertools.get_mesh_to_solve(self.analysis)[0]  # pre check done already
+        mesh_obj = membertools.get_mesh_to_solve(self.analysis)[
+            0
+        ]  # pre check done already
         meshdatagetter = meshsetsgetter.MeshSetsGetter(
             self.analysis,
             self.solver,
@@ -74,11 +75,7 @@ class Prepare(run.Prepare):
 
         # write solver input
         w = writer.FemInputWriterZ88(
-            self.analysis,
-            self.solver,
-            mesh_obj,
-            meshdatagetter.member,
-            self.directory
+            self.analysis, self.solver, mesh_obj, meshdatagetter.member, self.directory
         )
         path = w.write_solver_input()
         # report to user if task succeeded
@@ -94,7 +91,6 @@ class Prepare(run.Prepare):
 
 
 class Solve(run.Solve):
-
     def run(self):
         self.pushStatus("Executing test solver...\n")
 
@@ -103,7 +99,7 @@ class Solve(run.Solve):
         binary = settings.get_binary("Z88")
         if binary is None:
             self.fail()  # a print has been made in settings module
-        
+
         prefs = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/Fem/Z88")
         solver = SOLVER_TYPES
         solver = prefs.GetInt("Solver", 0)
@@ -121,7 +117,8 @@ class Solve(run.Solve):
             [binary, "-t", "-" + solver],
             cwd=self.directory,
             stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE)
+            stderr=subprocess.PIPE,
+        )
         self.signalAbort.add(self._process.terminate)
         self._process.communicate()
         self.signalAbort.remove(self._process.terminate)
@@ -133,7 +130,8 @@ class Solve(run.Solve):
             [binary, "-c", "-" + solver],
             cwd=self.directory,
             stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE)
+            stderr=subprocess.PIPE,
+        )
         self.signalAbort.add(self._process.terminate)
         self._process.communicate()
         self.signalAbort.remove(self._process.terminate)
@@ -142,10 +140,8 @@ class Solve(run.Solve):
 
 
 class Results(run.Results):
-
     def run(self):
-        prefs = FreeCAD.ParamGet(
-            "User parameter:BaseApp/Preferences/Mod/Fem/General")
+        prefs = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/Fem/General")
         if not prefs.GetBool("KeepResultsOnReRun", False):
             self.purge_results()
         self.load_results()
@@ -162,18 +158,18 @@ class Results(run.Results):
     def load_results(self):
         self.pushStatus("Import new results...\n")
         # displacements from z88o2 file
-        disp_result_file = os.path.join(
-            self.directory, "z88o2.txt")
+        disp_result_file = os.path.join(self.directory, "z88o2.txt")
         if os.path.isfile(disp_result_file):
             result_name_prefix = "Z88_" + self.solver.AnalysisType + "_"
             importZ88O2Results.import_z88_disp(
-                disp_result_file, self.analysis, result_name_prefix)
+                disp_result_file, self.analysis, result_name_prefix
+            )
         else:
             # TODO: use solver framework status message system
             FreeCAD.Console.PrintError(
-                "FEM: No results found at {}!\n"
-                .format(disp_result_file)
+                "FEM: No results found at {}!\n".format(disp_result_file)
             )
             self.fail()
+
 
 ##  @}

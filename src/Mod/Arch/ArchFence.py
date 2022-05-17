@@ -1,23 +1,23 @@
-#*****************************************************************************
-#*   Copyright (c) 2019 furti <daniel.furtlehner@gmx.net>                    *
-#*                                                                           *
-#*   This program is free software; you can redistribute it and/or modify    *
-#*   it under the terms of the GNU Lesser General Public License (LGPL)      *
-#*   as published by the Free Software Foundation; either version 2 of       *
-#*   the License, or (at your option) any later version.                     *
-#*   for detail see the LICENCE text file.                                   *
-#*                                                                           *
-#*   This program is distributed in the hope that it will be useful,         *
-#*   but WITHOUT ANY WARRANTY; without even the implied warranty of          *
-#*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           *
-#*   GNU Library General Public License for more details.                    *
-#*                                                                           *
-#*   You should have received a copy of the GNU Library General Public       *
-#*   License along with this program; if not, write to the Free Software     *
-#*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307    *
-#*   USA                                                                     *
-#*                                                                           *
-#*****************************************************************************
+# *****************************************************************************
+# *   Copyright (c) 2019 furti <daniel.furtlehner@gmx.net>                    *
+# *                                                                           *
+# *   This program is free software; you can redistribute it and/or modify    *
+# *   it under the terms of the GNU Lesser General Public License (LGPL)      *
+# *   as published by the Free Software Foundation; either version 2 of       *
+# *   the License, or (at your option) any later version.                     *
+# *   for detail see the LICENCE text file.                                   *
+# *                                                                           *
+# *   This program is distributed in the hope that it will be useful,         *
+# *   but WITHOUT ANY WARRANTY; without even the implied warranty of          *
+# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the           *
+# *   GNU Library General Public License for more details.                    *
+# *                                                                           *
+# *   You should have received a copy of the GNU Library General Public       *
+# *   License along with this program; if not, write to the Free Software     *
+# *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307    *
+# *   USA                                                                     *
+# *                                                                           *
+# *****************************************************************************
 
 # Fence functionality for the Arch Workbench
 
@@ -38,6 +38,7 @@ else:
 
     def QT_TRANSLATE_NOOP(ctxt, txt):
         return txt
+
     # \endcond
 
 EAST = FreeCAD.Vector(1, 0, 0)
@@ -58,32 +59,56 @@ class _Fence(ArchComponent.Component):
         pl = obj.PropertiesList
 
         if not "Section" in pl:
-            obj.addProperty("App::PropertyLink", "Section", "Fence", QT_TRANSLATE_NOOP(
-                "App::Property", "A single section of the fence"))
+            obj.addProperty(
+                "App::PropertyLink",
+                "Section",
+                "Fence",
+                QT_TRANSLATE_NOOP("App::Property", "A single section of the fence"),
+            )
 
         if not "Post" in pl:
-            obj.addProperty("App::PropertyLink", "Post", "Fence", QT_TRANSLATE_NOOP(
-                "App::Property", "A single fence post"))
+            obj.addProperty(
+                "App::PropertyLink",
+                "Post",
+                "Fence",
+                QT_TRANSLATE_NOOP("App::Property", "A single fence post"),
+            )
 
         if not "Path" in pl:
-            obj.addProperty("App::PropertyLink", "Path", "Fence", QT_TRANSLATE_NOOP(
-                "App::Property", "The Path the fence should follow"))
+            obj.addProperty(
+                "App::PropertyLink",
+                "Path",
+                "Fence",
+                QT_TRANSLATE_NOOP("App::Property", "The Path the fence should follow"),
+            )
 
         if not "NumberOfSections" in pl:
-            obj.addProperty("App::PropertyInteger", "NumberOfSections", "Fence", QT_TRANSLATE_NOOP(
-                "App::Property", "The number of sections the fence is built of"))
+            obj.addProperty(
+                "App::PropertyInteger",
+                "NumberOfSections",
+                "Fence",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "The number of sections the fence is built of"
+                ),
+            )
             obj.setEditorMode("NumberOfSections", 1)
 
         if not "NumberOfPosts" in pl:
-            obj.addProperty("App::PropertyInteger", "NumberOfPosts", "Fence", QT_TRANSLATE_NOOP(
-                "App::Property", "The number of posts used to build the fence"))
+            obj.addProperty(
+                "App::PropertyInteger",
+                "NumberOfPosts",
+                "Fence",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "The number of posts used to build the fence"
+                ),
+            )
             obj.setEditorMode("NumberOfPosts", 1)
 
         self.Type = "Fence"
 
     def __getstate__(self):
-        if hasattr(self, 'sectionFaceNumbers'):
-            return (self.sectionFaceNumbers)
+        if hasattr(self, "sectionFaceNumbers"):
+            return self.sectionFaceNumbers
 
         return None
 
@@ -100,19 +125,18 @@ class _Fence(ArchComponent.Component):
 
         if not pathwire:
             FreeCAD.Console.PrintLog(
-                "ArchFence.execute: path " + obj.Path.Name + " has no edges\n")
+                "ArchFence.execute: path " + obj.Path.Name + " has no edges\n"
+            )
 
             return
 
         if not obj.Section:
-            FreeCAD.Console.PrintLog(
-                "ArchFence.execute: Section not set\n")
+            FreeCAD.Console.PrintLog("ArchFence.execute: Section not set\n")
 
             return
 
         if not obj.Post:
-            FreeCAD.Console.PrintLog(
-                "ArchFence.execute: Post not set\n")
+            FreeCAD.Console.PrintLog("ArchFence.execute: Post not set\n")
 
             return
 
@@ -121,7 +145,8 @@ class _Fence(ArchComponent.Component):
         postLength = obj.Post.Shape.BoundBox.XMax
 
         obj.NumberOfSections = self.calculateNumberOfSections(
-            pathLength, sectionLength, postLength)
+            pathLength, sectionLength, postLength
+        )
         obj.NumberOfPosts = obj.NumberOfSections + 1
 
         # We assume that the section was drawn in front view.
@@ -129,12 +154,12 @@ class _Fence(ArchComponent.Component):
         # correctly by the algorithm later on
         downRotation = FreeCAD.Rotation(FreeCAD.Vector(1, 0, 0), -90)
 
-        postPlacements = self.calculatePostPlacements(
-            obj, pathwire, downRotation)
+        postPlacements = self.calculatePostPlacements(obj, pathwire, downRotation)
 
         postShapes = self.calculatePosts(obj, postPlacements)
         sectionShapes, sectionFaceNumbers = self.calculateSections(
-            obj, postPlacements, postLength, sectionLength)
+            obj, postPlacements, postLength, sectionLength
+        )
 
         allShapes = []
         allShapes.extend(postShapes)
@@ -156,11 +181,11 @@ class _Fence(ArchComponent.Component):
         postWidth = obj.Post.Shape.BoundBox.YMax
 
         # We want to center the posts on the path. So move them the half width in
-        transformationVector = FreeCAD.Vector(0, - postWidth / 2, 0)
+        transformationVector = FreeCAD.Vector(0, -postWidth / 2, 0)
 
-        placements = patharray.placements_on_path(rotation, pathwire,
-                                                  obj.NumberOfSections + 1,
-                                                  transformationVector, True)
+        placements = patharray.placements_on_path(
+            rotation, pathwire, obj.NumberOfSections + 1, transformationVector, True
+        )
 
         # The placement of the last object is always the second entry in the list.
         # So we move it to the end
@@ -193,8 +218,7 @@ class _Fence(ArchComponent.Component):
             startPlacement = postPlacements[i]
             endPlacement = postPlacements[i + 1]
 
-            sectionLine = Part.LineSegment(
-                startPlacement.Base, endPlacement.Base)
+            sectionLine = Part.LineSegment(startPlacement.Base, endPlacement.Base)
             sectionBase = sectionLine.value(postLength)
 
             if startPlacement.Rotation.isSame(endPlacement.Rotation):
@@ -213,7 +237,8 @@ class _Fence(ArchComponent.Component):
             if sectionLength > sectionLine.length():
                 # Part.show(Part.Shape([sectionLine]), 'line')
                 sectionCopy = self.clipSection(
-                    sectionCopy, sectionLength, sectionLine.length() - postLength)
+                    sectionCopy, sectionLength, sectionLine.length() - postLength
+                )
 
             sectionCopy.Placement = placement
 
@@ -229,10 +254,22 @@ class _Fence(ArchComponent.Component):
         lengthToCut = length - clipLength
         halfLengthToCut = lengthToCut / 2
 
-        leftBox = Part.makeBox(halfLengthToCut, boundBox.YMax + 1, boundBox.ZMax + 1,
-                               FreeCAD.Vector(boundBox.XMin, boundBox.YMin, boundBox.ZMin))
-        rightBox = Part.makeBox(halfLengthToCut, boundBox.YMax + 1, boundBox.ZMax + 1,
-                                FreeCAD.Vector(boundBox.XMin + halfLengthToCut + clipLength, boundBox.YMin, boundBox.ZMin))
+        leftBox = Part.makeBox(
+            halfLengthToCut,
+            boundBox.YMax + 1,
+            boundBox.ZMax + 1,
+            FreeCAD.Vector(boundBox.XMin, boundBox.YMin, boundBox.ZMin),
+        )
+        rightBox = Part.makeBox(
+            halfLengthToCut,
+            boundBox.YMax + 1,
+            boundBox.ZMax + 1,
+            FreeCAD.Vector(
+                boundBox.XMin + halfLengthToCut + clipLength,
+                boundBox.YMin,
+                boundBox.ZMin,
+            ),
+        )
 
         newShape = shape.cut([leftBox, rightBox])
         newBoundBox = newShape.BoundBox
@@ -242,7 +279,7 @@ class _Fence(ArchComponent.Component):
         return newShape.removeSplitter()
 
     def calculatePathWire(self, obj):
-        if (hasattr(obj.Path.Shape, 'Wires') and obj.Path.Shape.Wires):
+        if hasattr(obj.Path.Shape, "Wires") and obj.Path.Shape.Wires:
             return obj.Path.Shape.Wires[0]
         elif obj.Path.Shape.Edges:
             return Part.Wire(obj.Path.Shape.Edges)
@@ -265,8 +302,15 @@ class _ViewProviderFence(ArchComponent.ViewProviderComponent):
         pl = vobj.PropertiesList
 
         if not "UseOriginalColors" in pl:
-            vobj.addProperty("App::PropertyBool", "UseOriginalColors", "Fence", QT_TRANSLATE_NOOP(
-                "App::Property", "When true, the fence will be colored like the original post and section."))
+            vobj.addProperty(
+                "App::PropertyBool",
+                "UseOriginalColors",
+                "Fence",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "When true, the fence will be colored like the original post and section.",
+                ),
+            )
 
     def attach(self, vobj):
         self.setProperties(vobj)
@@ -307,7 +351,10 @@ class _ViewProviderFence(ArchComponent.ViewProviderComponent):
             super().onChanged(vobj, prop)
 
     def applyColors(self, obj):
-        if not hasattr(obj.ViewObject, "UseOriginalColors") or not obj.ViewObject.UseOriginalColors:
+        if (
+            not hasattr(obj.ViewObject, "UseOriginalColors")
+            or not obj.ViewObject.UseOriginalColors
+        ):
             obj.ViewObject.DiffuseColor = [obj.ViewObject.ShapeColor]
         else:
             post = obj.Post
@@ -316,7 +363,7 @@ class _ViewProviderFence(ArchComponent.ViewProviderComponent):
             numberOfPostFaces = len(post.Shape.Faces)
             numberOfSectionFaces = len(section.Shape.Faces)
 
-            if hasattr(obj.Proxy, 'sectionFaceNumbers'):
+            if hasattr(obj.Proxy, "sectionFaceNumbers"):
                 sectionFaceNumbers = obj.Proxy.sectionFaceNumbers
             else:
                 sectionFaceNumbers = [0]
@@ -325,8 +372,7 @@ class _ViewProviderFence(ArchComponent.ViewProviderComponent):
                 return
 
             postColors = self.normalizeColors(post, numberOfPostFaces)
-            defaultSectionColors = self.normalizeColors(
-                section, numberOfSectionFaces)
+            defaultSectionColors = self.normalizeColors(section, numberOfSectionFaces)
 
             ownColors = []
 
@@ -341,8 +387,9 @@ class _ViewProviderFence(ArchComponent.ViewProviderComponent):
                 if actualSectionFaceCount == numberOfSectionFaces:
                     ownColors.extend(defaultSectionColors)
                 else:
-                    ownColors.extend(self.normalizeColors(
-                        section, actualSectionFaceCount))
+                    ownColors.extend(
+                        self.normalizeColors(section, actualSectionFaceCount)
+                    )
 
             viewObject = obj.ViewObject
             viewObject.DiffuseColor = ownColors
@@ -350,7 +397,7 @@ class _ViewProviderFence(ArchComponent.ViewProviderComponent):
     def normalizeColors(self, obj, numberOfFaces):
         colors = obj.ViewObject.DiffuseColor
 
-        if obj.TypeId == 'PartDesign::Body':
+        if obj.TypeId == "PartDesign::Body":
             # When colorizing a PartDesign Body we have two options
             # 1. The whole body got a shape color, that means the tip has only a single diffuse color set
             #   so we use the shape color of the body
@@ -384,9 +431,14 @@ class _CommandFence:
     "the Arch Fence command definition"
 
     def GetResources(self):
-        return {'Pixmap': 'Arch_Fence',
-                'MenuText': QT_TRANSLATE_NOOP("Arch_Fence", "Fence"),
-                'ToolTip': QT_TRANSLATE_NOOP("Arch_Fence", "Creates a fence object from a selected section, post and path")}
+        return {
+            "Pixmap": "Arch_Fence",
+            "MenuText": QT_TRANSLATE_NOOP("Arch_Fence", "Fence"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Arch_Fence",
+                "Creates a fence object from a selected section, post and path",
+            ),
+        }
 
     def IsActive(self):
         return not FreeCAD.ActiveDocument is None
@@ -395,8 +447,11 @@ class _CommandFence:
         sel = FreeCADGui.Selection.getSelection()
 
         if len(sel) != 3:
-            QtGui.QMessageBox.information(QtGui.QApplication.activeWindow(
-            ), 'Arch Fence selection', 'Select a section, post and path in exactly this order to build a fence.')
+            QtGui.QMessageBox.information(
+                QtGui.QApplication.activeWindow(),
+                "Arch Fence selection",
+                "Select a section, post and path in exactly this order to build a fence.",
+            )
 
             return
 
@@ -408,8 +463,7 @@ class _CommandFence:
 
 
 def makeFence(section, post, path):
-    obj = FreeCAD.ActiveDocument.addObject(
-        'Part::FeaturePython', 'Fence')
+    obj = FreeCAD.ActiveDocument.addObject("Part::FeaturePython", "Fence")
 
     _Fence(obj)
     obj.Section = section
@@ -429,55 +483,64 @@ def makeFence(section, post, path):
 
 
 def hide(obj):
-    if hasattr(obj, 'ViewObject') and obj.ViewObject:
+    if hasattr(obj, "ViewObject") and obj.ViewObject:
         obj.ViewObject.Visibility = False
 
 
 if FreeCAD.GuiUp:
-    FreeCADGui.addCommand('Arch_Fence', _CommandFence())
+    FreeCADGui.addCommand("Arch_Fence", _CommandFence())
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # For testing purposes. When someone runs the File as a macro a default fence will be generated
     import Part
 
     def buildSection():
         parts = []
 
-        parts.append(Part.makeBox(
-            2000, 50, 30, FreeCAD.Vector(0, 0, 1000 - 30)))
+        parts.append(Part.makeBox(2000, 50, 30, FreeCAD.Vector(0, 0, 1000 - 30)))
         parts.append(Part.makeBox(2000, 50, 30))
-        parts.append(Part.makeBox(20, 20, 1000 -
-                                  60, FreeCAD.Vector(0, 15, 30)))
-        parts.append(Part.makeBox(20, 20, 1000 - 60,
-                                  FreeCAD.Vector(1980, 15, 30)))
+        parts.append(Part.makeBox(20, 20, 1000 - 60, FreeCAD.Vector(0, 15, 30)))
+        parts.append(Part.makeBox(20, 20, 1000 - 60, FreeCAD.Vector(1980, 15, 30)))
 
         for i in range(8):
-            parts.append(Part.makeBox(20, 20, 1000 - 60,
-                                      FreeCAD.Vector((2000.0 / 9 * (i + 1)) - 10, 15, 30)))
+            parts.append(
+                Part.makeBox(
+                    20,
+                    20,
+                    1000 - 60,
+                    FreeCAD.Vector((2000.0 / 9 * (i + 1)) - 10, 15, 30),
+                )
+            )
 
         Part.show(Part.makeCompound(parts), "Section")
 
-        return FreeCAD.ActiveDocument.getObject('Section')
+        return FreeCAD.ActiveDocument.getObject("Section")
 
     def buildPath():
-        sketch = FreeCAD.ActiveDocument.addObject(
-            'Sketcher::SketchObject', 'Path')
+        sketch = FreeCAD.ActiveDocument.addObject("Sketcher::SketchObject", "Path")
         sketch.Placement = FreeCAD.Placement(
-            FreeCAD.Vector(0, 0, 0), FreeCAD.Rotation(0, 0, 0, 1))
+            FreeCAD.Vector(0, 0, 0), FreeCAD.Rotation(0, 0, 0, 1)
+        )
 
-        sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(
-            0, 0, 0), FreeCAD.Vector(20000, 0, 0)), False)
-        sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(
-            20000, 0, 0), FreeCAD.Vector(20000, 20000, 0)), False)
+        sketch.addGeometry(
+            Part.LineSegment(FreeCAD.Vector(0, 0, 0), FreeCAD.Vector(20000, 0, 0)),
+            False,
+        )
+        sketch.addGeometry(
+            Part.LineSegment(
+                FreeCAD.Vector(20000, 0, 0), FreeCAD.Vector(20000, 20000, 0)
+            ),
+            False,
+        )
 
         return sketch
 
     def buildPost():
         post = Part.makeBox(100, 100, 1000, FreeCAD.Vector(0, 0, 0))
 
-        Part.show(post, 'Post')
+        Part.show(post, "Post")
 
-        return FreeCAD.ActiveDocument.getObject('Post')
+        return FreeCAD.ActiveDocument.getObject("Post")
 
     def colorizeFaces(o, color=(0.6, 0.0, 0.0, 0.0), faceIndizes=[2]):
         numberOfFaces = len(o.Shape.Faces)

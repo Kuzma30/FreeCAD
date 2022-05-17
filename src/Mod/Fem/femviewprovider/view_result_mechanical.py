@@ -69,8 +69,13 @@ class VPResultMechanical(view_base_femconstraint.VPBaseFemConstraint):
             for obj in children:
                 bodyMessage += "\n" + obj.Label
             bodyMessage += "\n\nAre you sure you want to continue?"
-            reply = QtGui.QMessageBox.warning(None, "Object dependencies", bodyMessage,
-            QtGui.QMessageBox.Yes | QtGui.QMessageBox.No, QtGui.QMessageBox.No)
+            reply = QtGui.QMessageBox.warning(
+                None,
+                "Object dependencies",
+                bodyMessage,
+                QtGui.QMessageBox.Yes | QtGui.QMessageBox.No,
+                QtGui.QMessageBox.No,
+            )
             if reply == QtGui.QMessageBox.Yes:
                 return True
             else:

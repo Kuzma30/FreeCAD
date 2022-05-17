@@ -58,7 +58,7 @@ def make_copy(obj, force=None, reparent=False, simple_copy=False):
 
     newobj = None
 
-    if simple_copy and hasattr(obj, 'Shape'):
+    if simple_copy and hasattr(obj, "Shape"):
         # this was the old implementation that is actually not used by default
         _name = utils.get_real_name(obj.Name)
         newobj = App.ActiveDocument.addObject("Part::Feature", _name)
@@ -79,7 +79,9 @@ def make_copy(obj, force=None, reparent=False, simple_copy=False):
         parents = obj.InList
         if parents:
             for par in parents:
-                if par.isDerivedFrom("App::DocumentObjectGroup") or par.isDerivedFrom("App::Part"):
+                if par.isDerivedFrom("App::DocumentObjectGroup") or par.isDerivedFrom(
+                    "App::Part"
+                ):
                     par.addObject(newobj)
                 else:
                     # That's the case of Arch_BuildingParts or Draft_Layers for example
@@ -90,5 +92,6 @@ def make_copy(obj, force=None, reparent=False, simple_copy=False):
                             par.Group = group
 
     return newobj
+
 
 ## @}

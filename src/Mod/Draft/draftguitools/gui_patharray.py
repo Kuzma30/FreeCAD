@@ -69,9 +69,14 @@ class PathArray(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_PathArray',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_PathArray", "Path array"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_PathArray", "Creates copies of the selected object along a selected path.\nFirst select the object, and then select the path.\nThe path can be a polyline, B-spline, Bezier curve, or even edges from other objects.")}
+        return {
+            "Pixmap": "Draft_PathArray",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_PathArray", "Path array"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_PathArray",
+                "Creates copies of the selected object along a selected path.\nFirst select the object, and then select the path.\nThe path can be a polyline, B-spline, Bezier curve, or even edges from other objects.",
+            ),
+        }
 
     def Activated(self, name="Path array"):
         """Execute when the command is called."""
@@ -99,7 +104,12 @@ class PathArray(gui_base_original.Modifier):
         """Proceed with the command if one object was selected."""
         sel = Gui.Selection.getSelectionEx()
         if len(sel) != 2:
-            _err(translate("draft","Please select exactly two objects, the base object and the path object, before calling this command."))
+            _err(
+                translate(
+                    "draft",
+                    "Please select exactly two objects, the base object and the path object, before calling this command.",
+                )
+            )
         else:
             base_object = sel[0].Object
             path_object = sel[1].Object
@@ -137,17 +147,19 @@ class PathArray(gui_base_original.Modifier):
             _cmd += "use_link=" + str(use_link)
             _cmd += ")"
 
-            _cmd_list = ["_obj_ = " + _cmd,
-                         "Draft.autogroup(_obj_)",
-                         "App.ActiveDocument.recompute()"]
-            self.commit(translate("draft","Path array"), _cmd_list)
+            _cmd_list = [
+                "_obj_ = " + _cmd,
+                "Draft.autogroup(_obj_)",
+                "App.ActiveDocument.recompute()",
+            ]
+            self.commit(translate("draft", "Path array"), _cmd_list)
 
         # Commit the transaction and execute the commands
         # through the parent class
         self.finish()
 
 
-Gui.addCommand('Draft_PathArray', PathArray())
+Gui.addCommand("Draft_PathArray", PathArray())
 
 
 class PathLinkArray(PathArray):
@@ -159,15 +171,20 @@ class PathLinkArray(PathArray):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_PathLinkArray',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_PathLinkArray", "Path Link array"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_PathLinkArray", "Like the PathArray tool, but creates a 'Link array' instead.\nA 'Link array' is more efficient when handling many copies but the 'Fuse' option cannot be used.")}
+        return {
+            "Pixmap": "Draft_PathLinkArray",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_PathLinkArray", "Path Link array"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_PathLinkArray",
+                "Like the PathArray tool, but creates a 'Link array' instead.\nA 'Link array' is more efficient when handling many copies but the 'Fuse' option cannot be used.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
         super(PathLinkArray, self).Activated(name="Path link array")
 
 
-Gui.addCommand('Draft_PathLinkArray', PathLinkArray())
+Gui.addCommand("Draft_PathLinkArray", PathLinkArray())
 
 ## @}

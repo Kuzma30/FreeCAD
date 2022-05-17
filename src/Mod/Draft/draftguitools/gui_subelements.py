@@ -56,10 +56,17 @@ class SubelementHighlight(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_SubelementHighlight',
-                'Accel': "H, S",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_SubelementHighlight","Subelement highlight"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_SubelementHighlight","Highlight the subelements of the selected objects, so that they can then be edited with the move, rotate, and scale tools.")}
+        return {
+            "Pixmap": "Draft_SubelementHighlight",
+            "Accel": "H, S",
+            "MenuText": QT_TRANSLATE_NOOP(
+                "Draft_SubelementHighlight", "Subelement highlight"
+            ),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_SubelementHighlight",
+                "Highlight the subelements of the selected objects, so that they can then be edited with the move, rotate, and scale tools.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -106,8 +113,9 @@ class SubelementHighlight(gui_base_original.Modifier):
         """Get the selection."""
         if not Gui.Selection.getSelection() and self.ui:
             _msg(translate("draft", "Select an object to edit"))
-            self.call = self.view.addEventCallback("SoEvent",
-                                                   gui_tool_utils.selectObject)
+            self.call = self.view.addEventCallback(
+                "SoEvent", gui_tool_utils.selectObject
+            )
         else:
             self.proceed()
 
@@ -121,18 +129,18 @@ class SubelementHighlight(gui_base_original.Modifier):
         for obj in Gui.Selection.getSelection():
             if obj.isDerivedFrom("Part::Part2DObject"):
                 self.editable_objects.append(obj)
-            elif (hasattr(obj, "Base")
-                  and obj.Base.isDerivedFrom("Part::Part2DObject")):
+            elif hasattr(obj, "Base") and obj.Base.isDerivedFrom("Part::Part2DObject"):
                 self.editable_objects.append(obj.Base)
 
     def highlight_editable_objects(self):
         """Highlight editable Draft objects from the selection."""
         for obj in self.editable_objects:
             self.original_view_settings[obj.Name] = {
-                'Visibility': obj.ViewObject.Visibility,
-                'PointSize': obj.ViewObject.PointSize,
-                'PointColor': obj.ViewObject.PointColor,
-                'LineColor': obj.ViewObject.LineColor}
+                "Visibility": obj.ViewObject.Visibility,
+                "PointSize": obj.ViewObject.PointSize,
+                "PointColor": obj.ViewObject.PointColor,
+                "LineColor": obj.ViewObject.LineColor,
+            }
             obj.ViewObject.Visibility = True
             obj.ViewObject.PointSize = 10
             obj.ViewObject.PointColor = (1.0, 0.0, 0.0)
@@ -155,6 +163,6 @@ class SubelementHighlight(gui_base_original.Modifier):
                 pass
 
 
-Gui.addCommand('Draft_SubelementHighlight', SubelementHighlight())
+Gui.addCommand("Draft_SubelementHighlight", SubelementHighlight())
 
 ## @}

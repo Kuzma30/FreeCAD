@@ -37,12 +37,14 @@ def get_information():
         "constraints": [],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "frequency"
+        "equation": "frequency",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.boxanalysis_frequency import setup
@@ -53,6 +55,7 @@ See forum topic post:
 ...
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -63,7 +66,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # setup box frequency, change solver attributes
     doc = setup_boxanalysisbase(doc, solvertype)

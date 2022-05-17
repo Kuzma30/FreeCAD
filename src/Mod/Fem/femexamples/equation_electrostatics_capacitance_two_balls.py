@@ -42,12 +42,14 @@ def get_information():
         "constraints": ["electrostatic potential"],
         "solvers": ["elmer"],
         "material": "fluid",
-        "equation": "electrostatic"
+        "equation": "electrostatic",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.equation_electrostatics_capacitance_two_balls import setup
@@ -60,6 +62,7 @@ https://forum.freecadweb.org/viewtopic.php?f=18&t=41488&start=90#p412047
 Electrostatics equation in FreeCAD FEM-Elmer
 
 """
+    )
 
 
 def setup(doc=None, solvertype="elmer"):
@@ -70,15 +73,21 @@ def setup(doc=None, solvertype="elmer"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric objects
     small_sphere1 = doc.addObject("Part::Sphere", "Small_Sphere1")
-    small_sphere1.Placement = FreeCAD.Placement(Vector(-1000, 0, 0), Rotation(Vector(0, 0, 1), 0))
+    small_sphere1.Placement = FreeCAD.Placement(
+        Vector(-1000, 0, 0), Rotation(Vector(0, 0, 1), 0)
+    )
     small_sphere1.Radius = "500 mm"
 
     small_sphere2 = doc.addObject("Part::Sphere", "Small_Sphere2")
-    small_sphere2.Placement = FreeCAD.Placement(Vector(1000, 0, 0), Rotation(Vector(0, 0, 1), 0))
+    small_sphere2.Placement = FreeCAD.Placement(
+        Vector(1000, 0, 0), Rotation(Vector(0, 0, 1), 0)
+    )
     small_sphere2.Radius = "500 mm"
 
     fusion = doc.addObject("Part::MultiFuse", "Fusion")
@@ -152,12 +161,15 @@ def setup(doc=None, solvertype="elmer"):
     analysis.addObject(con_elect_pot3)
 
     # constant vacuum permittivity
-    const_vacperm = ObjectsFem.makeConstantVacuumPermittivity(doc, "ConstantVacuumPermittivity")
+    const_vacperm = ObjectsFem.makeConstantVacuumPermittivity(
+        doc, "ConstantVacuumPermittivity"
+    )
     const_vacperm.VacuumPermittivity = "1 F/m"
     analysis.addObject(const_vacperm)
 
     # mesh
     from .meshes.mesh_capacitance_two_balls_tetra10 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

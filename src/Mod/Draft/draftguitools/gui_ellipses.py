@@ -54,17 +54,23 @@ class Ellipse(gui_base_original.Creator):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Ellipse',
-                'Accel': "E, L",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Ellipse", "Ellipse"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Ellipse", "Creates an ellipse. CTRL to snap.")}
+        return {
+            "Pixmap": "Draft_Ellipse",
+            "Accel": "E, L",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Ellipse", "Ellipse"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Ellipse", "Creates an ellipse. CTRL to snap."
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
         super(Ellipse, self).Activated(name="Ellipse")
         if self.ui:
             self.refpoint = None
-            self.ui.pointUi(title=translate("draft", self.featureName), icon="Draft_Ellipse")
+            self.ui.pointUi(
+                title=translate("draft", self.featureName), icon="Draft_Ellipse"
+            )
             self.ui.extUi()
             self.call = self.view.addEventCallback("SoEvent", self.action)
             self.rect = trackers.rectangleTracker()
@@ -89,8 +95,8 @@ class Ellipse(gui_base_original.Creator):
         center = p1.add(halfdiag)
         p2 = p1.add(DraftVecUtils.project(diagonal, plane.v))
         p4 = p1.add(DraftVecUtils.project(diagonal, plane.u))
-        r1 = (p4.sub(p1).Length)/2
-        r2 = (p2.sub(p1).Length)/2
+        r1 = (p4.sub(p1).Length) / 2
+        r2 = (p2.sub(p1).Length) / 2
         try:
             # The command to run is built as a series of text strings
             # to be committed through the `draftutils.todo.ToDo` class.
@@ -98,7 +104,7 @@ class Ellipse(gui_base_original.Creator):
             if r2 > r1:
                 r1, r2 = r2, r1
                 m = App.Matrix()
-                m.rotateZ(math.pi/2)
+                m.rotateZ(math.pi / 2)
                 rot1 = App.Rotation()
                 rot1.Q = eval(rot)
                 rot2 = App.Placement(m)
@@ -107,36 +113,38 @@ class Ellipse(gui_base_original.Creator):
             Gui.addModule("Draft")
             if utils.getParam("UsePartPrimitives", False):
                 # Insert a Part::Primitive object
-                _cmd = 'FreeCAD.ActiveDocument.'
+                _cmd = "FreeCAD.ActiveDocument."
                 _cmd += 'addObject("Part::Ellipse", "Ellipse")'
-                _cmd_list = ['ellipse = ' + _cmd,
-                             'ellipse.MajorRadius = ' + str(r1),
-                             'ellipse.MinorRadius = ' + str(r2),
-                             'pl = FreeCAD.Placement()',
-                             'pl.Rotation.Q= ' + rot,
-                             'pl.Base = ' + DraftVecUtils.toString(center),
-                             'ellipse.Placement = pl',
-                             'Draft.autogroup(ellipse)',
-                             'FreeCAD.ActiveDocument.recompute()']
-                self.commit(translate("draft", "Create Ellipse"),
-                            _cmd_list)
+                _cmd_list = [
+                    "ellipse = " + _cmd,
+                    "ellipse.MajorRadius = " + str(r1),
+                    "ellipse.MinorRadius = " + str(r2),
+                    "pl = FreeCAD.Placement()",
+                    "pl.Rotation.Q= " + rot,
+                    "pl.Base = " + DraftVecUtils.toString(center),
+                    "ellipse.Placement = pl",
+                    "Draft.autogroup(ellipse)",
+                    "FreeCAD.ActiveDocument.recompute()",
+                ]
+                self.commit(translate("draft", "Create Ellipse"), _cmd_list)
             else:
                 # Insert a Draft ellipse
-                _cmd = 'Draft.make_ellipse'
-                _cmd += '('
-                _cmd += str(r1) + ', ' + str(r2) + ', '
-                _cmd += 'placement=pl, '
-                _cmd += 'face=' + fil + ', '
-                _cmd += 'support=' + sup
-                _cmd += ')'
-                _cmd_list = ['pl = FreeCAD.Placement()',
-                             'pl.Rotation.Q = ' + rot,
-                             'pl.Base = ' + DraftVecUtils.toString(center),
-                             'ellipse = ' + _cmd,
-                             'Draft.autogroup(ellipse)',
-                             'FreeCAD.ActiveDocument.recompute()']
-                self.commit(translate("draft", "Create Ellipse"),
-                            _cmd_list)
+                _cmd = "Draft.make_ellipse"
+                _cmd += "("
+                _cmd += str(r1) + ", " + str(r2) + ", "
+                _cmd += "placement=pl, "
+                _cmd += "face=" + fil + ", "
+                _cmd += "support=" + sup
+                _cmd += ")"
+                _cmd_list = [
+                    "pl = FreeCAD.Placement()",
+                    "pl.Rotation.Q = " + rot,
+                    "pl.Base = " + DraftVecUtils.toString(center),
+                    "ellipse = " + _cmd,
+                    "Draft.autogroup(ellipse)",
+                    "FreeCAD.ActiveDocument.recompute()",
+                ]
+                self.commit(translate("draft", "Create Ellipse"), _cmd_list)
         except Exception:
             _err("Draft: Error: Unable to create object.")
         self.finish(cont=True)
@@ -156,10 +164,9 @@ class Ellipse(gui_base_original.Creator):
             if arg["Key"] == "ESCAPE":
                 self.finish()
         elif arg["Type"] == "SoLocation2Event":  # mouse movement detection
-            (self.point,
-             ctrlPoint, info) = gui_tool_utils.getPoint(self, arg,
-                                                        mobile=True,
-                                                        noTracker=True)
+            (self.point, ctrlPoint, info) = gui_tool_utils.getPoint(
+                self, arg, mobile=True, noTracker=True
+            )
             self.rect.update(self.point)
             gui_tool_utils.redraw3DView()
         elif arg["Type"] == "SoMouseButtonEvent":
@@ -169,10 +176,9 @@ class Ellipse(gui_base_original.Creator):
                 else:
                     if (not self.node) and (not self.support):
                         gui_tool_utils.getSupport(arg)
-                        (self.point,
-                         ctrlPoint, info) = gui_tool_utils.getPoint(self, arg,
-                                                                    mobile=True,
-                                                                    noTracker=True)
+                        (self.point, ctrlPoint, info) = gui_tool_utils.getPoint(
+                            self, arg, mobile=True, noTracker=True
+                        )
                     if self.point:
                         self.ui.redraw()
                         self.appendPoint(self.point)
@@ -201,6 +207,6 @@ class Ellipse(gui_base_original.Creator):
                 self.planetrack.set(point)
 
 
-Gui.addCommand('Draft_Ellipse', Ellipse())
+Gui.addCommand("Draft_Ellipse", Ellipse())
 
 ## @}

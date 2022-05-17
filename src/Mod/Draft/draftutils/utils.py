@@ -94,13 +94,14 @@ def string_encode_coin(ustr):
     """
     try:
         from pivy import coin
+
         coin4 = coin.COIN_MAJOR_VERSION >= 4
     except (ImportError, AttributeError):
         coin4 = False
     if coin4:
-        return ustr.encode('utf-8')
+        return ustr.encode("utf-8")
     else:
-        return ustr.encode('latin1')
+        return ustr.encode("latin1")
 
 
 stringencodecoin = string_encode_coin
@@ -163,31 +164,79 @@ def get_param_type(param):
         `'bool'`, `'unsigned'`, depending on the parameter.
         It returns `None` for unhandled situations.
     """
-    if param in ("dimsymbol", "dimPrecision", "dimorientation",
-                 "precision", "defaultWP", "snapRange", "gridEvery",
-                 "linewidth", "UiMode", "modconstrain", "modsnap",
-                 "maxSnapEdges", "modalt", "HatchPatternResolution",
-                 "snapStyle", "dimstyle", "gridSize", "gridTransparency"):
+    if param in (
+        "dimsymbol",
+        "dimPrecision",
+        "dimorientation",
+        "precision",
+        "defaultWP",
+        "snapRange",
+        "gridEvery",
+        "linewidth",
+        "UiMode",
+        "modconstrain",
+        "modsnap",
+        "maxSnapEdges",
+        "modalt",
+        "HatchPatternResolution",
+        "snapStyle",
+        "dimstyle",
+        "gridSize",
+        "gridTransparency",
+    ):
         return "int"
-    elif param in ("constructiongroupname", "textfont",
-                   "patternFile", "template", "snapModes",
-                   "FontFile", "ClonePrefix", "overrideUnit",
-                   "labeltype") or "inCommandShortcut" in param:
+    elif (
+        param
+        in (
+            "constructiongroupname",
+            "textfont",
+            "patternFile",
+            "template",
+            "snapModes",
+            "FontFile",
+            "ClonePrefix",
+            "overrideUnit",
+            "labeltype",
+        )
+        or "inCommandShortcut" in param
+    ):
         return "string"
-    elif param in ("textheight", "tolerance", "gridSpacing",
-                   "arrowsize", "extlines", "dimspacing",
-                   "dimovershoot", "extovershoot", "HatchPatternSize"):
+    elif param in (
+        "textheight",
+        "tolerance",
+        "gridSpacing",
+        "arrowsize",
+        "extlines",
+        "dimspacing",
+        "dimovershoot",
+        "extovershoot",
+        "HatchPatternSize",
+    ):
         return "float"
-    elif param in ("selectBaseObjects", "alwaysSnap", "grid",
-                   "fillmode", "saveonexit", "maxSnap",
-                   "SvgLinesBlack", "dxfStdSize", "showSnapBar",
-                   "hideSnapBar", "alwaysShowGrid", "renderPolylineWidth",
-                   "showPlaneTracker", "UsePartPrimitives",
-                   "DiscretizeEllipses", "showUnit", "coloredGridAxes",
-                   "Draft_array_fuse", "Draft_array_Link", "gridBorder"):
+    elif param in (
+        "selectBaseObjects",
+        "alwaysSnap",
+        "grid",
+        "fillmode",
+        "saveonexit",
+        "maxSnap",
+        "SvgLinesBlack",
+        "dxfStdSize",
+        "showSnapBar",
+        "hideSnapBar",
+        "alwaysShowGrid",
+        "renderPolylineWidth",
+        "showPlaneTracker",
+        "UsePartPrimitives",
+        "DiscretizeEllipses",
+        "showUnit",
+        "coloredGridAxes",
+        "Draft_array_fuse",
+        "Draft_array_Link",
+        "gridBorder",
+    ):
         return "bool"
-    elif param in ("color", "constructioncolor",
-                   "snapcolor", "gridColor"):
+    elif param in ("color", "constructioncolor", "snapcolor", "gridColor"):
         return "unsigned"
     else:
         return None
@@ -373,7 +422,7 @@ def epsilon():
     float
         1/(10**tolerance)
     """
-    return 1.0/(10.0**tolerance())
+    return 1.0 / (10.0 ** tolerance())
 
 
 def get_real_name(name):
@@ -392,8 +441,8 @@ def get_real_name(name):
         at least one letter.
     """
     for i in range(1, len(name)):
-        if name[-i] not in '1234567890':
-            return name[:len(name) - (i-1)]
+        if name[-i] not in "1234567890":
+            return name[: len(name) - (i - 1)]
     return name
 
 
@@ -422,13 +471,14 @@ def get_type(obj):
         or `None` if `obj` is `None`.
     """
     import Part
+
     if not obj:
         return None
     if isinstance(obj, Part.Shape):
         return "Shape"
-    if hasattr(obj, 'Proxy') and hasattr(obj.Proxy, "Type"):
+    if hasattr(obj, "Proxy") and hasattr(obj.Proxy, "Type"):
         return obj.Proxy.Type
-    if hasattr(obj, 'TypeId'):
+    if hasattr(obj, "TypeId"):
         return obj.TypeId
     return "Unknown"
 
@@ -625,6 +675,7 @@ def shapify(obj):
         name = "Wire"
     elif len(shape.Edges) == 1:
         import DraftGeomUtils
+
         if DraftGeomUtils.geomType(shape.Edges[0]) == "Line":
             name = "Line"
         else:
@@ -690,13 +741,21 @@ def compare_objects(obj1, obj2):
         Any type of scripted object.
     """
     if obj1.TypeId != obj2.TypeId:
-        _msg("'{0}' ({1}), '{2}' ({3}): ".format(obj1.Name, obj1.TypeId,
-                                                 obj2.Name, obj2.TypeId)
-             + translate("draft", "different types") + " (TypeId)")
+        _msg(
+            "'{0}' ({1}), '{2}' ({3}): ".format(
+                obj1.Name, obj1.TypeId, obj2.Name, obj2.TypeId
+            )
+            + translate("draft", "different types")
+            + " (TypeId)"
+        )
     elif getType(obj1) != getType(obj2):
-        _msg("'{0}' ({1}), '{2}' ({3}): ".format(obj1.Name, get_type(obj1),
-                                                 obj2.Name, get_type(obj2))
-             + translate("draft", "different types") + " (Proxy.Type)")
+        _msg(
+            "'{0}' ({1}), '{2}' ({3}): ".format(
+                obj1.Name, get_type(obj1), obj2.Name, get_type(obj2)
+            )
+            + translate("draft", "different types")
+            + " (Proxy.Type)"
+        )
     else:
         for p in obj1.PropertiesList:
             if p in obj2.PropertiesList:
@@ -704,15 +763,23 @@ def compare_objects(obj1, obj2):
                     pass
                 elif p == "Placement":
                     delta = obj1.Placement.Base.sub(obj2.Placement.Base)
-                    text = translate("draft", "Objects have different placements. "
-                                              "Distance between the two base points: ")
+                    text = translate(
+                        "draft",
+                        "Objects have different placements. "
+                        "Distance between the two base points: ",
+                    )
                     _msg(text + str(delta.Length))
                 else:
                     if getattr(obj1, p) != getattr(obj2, p):
-                        _msg("'{}' ".format(p) + translate("draft", "has a different value"))
+                        _msg(
+                            "'{}' ".format(p)
+                            + translate("draft", "has a different value")
+                        )
             else:
-                _msg("{} ".format(p)
-                     + translate("draft", "doesn't exist in one of the objects"))
+                _msg(
+                    "{} ".format(p)
+                    + translate("draft", "doesn't exist in one of the objects")
+                )
 
 
 compareObjects = compare_objects
@@ -725,6 +792,7 @@ def load_svg_patterns():
     attribute.
     """
     import importSVG
+
     App.svgpatterns = {}
 
     # Get default patterns in the resource file
@@ -733,7 +801,7 @@ def load_svg_patterns():
         file = ":/patterns/" + str(fn)
         f = QtCore.QFile(file)
         f.open(QtCore.QIODevice.ReadOnly)
-        p = importSVG.getContents(str(f.readAll()), 'pattern', True)
+        p = importSVG.getContents(str(f.readAll()), "pattern", True)
         if p:
             for k in p:
                 p[k] = [p[k], file]
@@ -745,25 +813,25 @@ def load_svg_patterns():
         for f in os.listdir(altpat):
             if f[-4:].upper() == ".SVG":
                 file = os.path.join(altpat, f)
-                p = importSVG.getContents(file, 'pattern')
+                p = importSVG.getContents(file, "pattern")
                 if p:
                     for k in p:
                         p[k] = [p[k], file]
                     App.svgpatterns.update(p)
 
     # Get TechDraw patterns
-    altpat = os.path.join(App.getResourceDir(),"Mod","TechDraw","Patterns")
+    altpat = os.path.join(App.getResourceDir(), "Mod", "TechDraw", "Patterns")
     if os.path.isdir(altpat):
         for f in os.listdir(altpat):
             if f[-4:].upper() == ".SVG":
                 file = os.path.join(altpat, f)
-                p = importSVG.getContents(file, 'pattern')
+                p = importSVG.getContents(file, "pattern")
                 if p:
                     for k in p:
                         p[k] = [p[k], file]
                 else:
                     # some TD pattern files have no <pattern> definition but can still be used by Draft
-                    p = {f[:-4]:["<pattern></pattern>",file]}
+                    p = {f[:-4]: ["<pattern></pattern>", file]}
                     App.svgpatterns.update(p)
 
 
@@ -800,14 +868,14 @@ def get_rgb(color, testbw=True):
     testwb : bool (default = True)
         pure white will be converted into pure black
     """
-    r = str(hex(int(color[0]*255)))[2:].zfill(2)
-    g = str(hex(int(color[1]*255)))[2:].zfill(2)
-    b = str(hex(int(color[2]*255)))[2:].zfill(2)
-    col = "#"+r+g+b
+    r = str(hex(int(color[0] * 255)))[2:].zfill(2)
+    g = str(hex(int(color[1] * 255)))[2:].zfill(2)
+    b = str(hex(int(color[2] * 255)))[2:].zfill(2)
+    col = "#" + r + g + b
     if testbw:
         if col == "#ffffff":
             # print(getParam('SvgLinesBlack'))
-            if getParam('SvgLinesBlack', True):
+            if getParam("SvgLinesBlack", True):
                 col = "#000000"
     return col
 
@@ -824,13 +892,25 @@ def filter_objects_for_modifiers(objects, isCopied=False):
                 if parent.isDerivedFrom("Part::Feature"):
                     parents.append(parent.Name)
             if len(parents) > 1:
-                warningMessage = translate("draft", "%s shares a base with %d other objects. Please check if you want to modify this.") % (obj.Name,len(parents) - 1)
+                warningMessage = translate(
+                    "draft",
+                    "%s shares a base with %d other objects. Please check if you want to modify this.",
+                ) % (obj.Name, len(parents) - 1)
                 App.Console.PrintError(warningMessage)
                 if App.GuiUp:
                     Gui.getMainWindow().showMessage(warningMessage, 0)
             filteredObjects.append(obj.Base)
-        elif hasattr(obj,"Placement") and obj.getEditorMode("Placement") == ["ReadOnly"] and not isCopied:
-            App.Console.PrintError(translate("draft", "%s cannot be modified because its placement is readonly.") % obj.Name)
+        elif (
+            hasattr(obj, "Placement")
+            and obj.getEditorMode("Placement") == ["ReadOnly"]
+            and not isCopied
+        ):
+            App.Console.PrintError(
+                translate(
+                    "draft", "%s cannot be modified because its placement is readonly."
+                )
+                % obj.Name
+            )
             continue
         else:
             filteredObjects.append(obj)
@@ -1051,11 +1131,18 @@ def use_instead(function, version=""):
         then we should not give a version.
     """
     if version:
-        _wrn(translate("draft", "This function will be deprecated in ")
-             + "{}. ".format(version)
-             + translate("draft", "Please use ") + "'{}'.".format(function))
+        _wrn(
+            translate("draft", "This function will be deprecated in ")
+            + "{}. ".format(version)
+            + translate("draft", "Please use ")
+            + "'{}'.".format(function)
+        )
     else:
-        _wrn(translate("draft", "This function will be deprecated. ")
-             + translate("draft", "Please use ") + "'{}'.".format(function))
+        _wrn(
+            translate("draft", "This function will be deprecated. ")
+            + translate("draft", "Please use ")
+            + "'{}'.".format(function)
+        )
+
 
 ## @}

@@ -49,7 +49,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
         "Frontal",
         "BAMG",
         "DelQuad",
-        "Packing Parallelograms"
+        "Packing Parallelograms",
     ]
     known_mesh_algorithm_3D = [
         "Automatic",
@@ -58,20 +58,20 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
         "Frontal",
         "MMG3D",
         "R-tree",
-        "HXT"
+        "HXT",
     ]
     known_mesh_RecombinationAlgorithms = [
         "Simple",
         "Blossom",
         "Simple full-quad",
-        "Blossom full-quad"
+        "Blossom full-quad",
     ]
     known_mesh_HighOrderOptimizers = [
         "None",
         "Optimization",
         "Elastic+Optimization",
         "Elastic",
-        "Fast curving"
+        "Fast curving",
     ]
 
     def __init__(self, obj):
@@ -110,7 +110,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyLinkList",
                 "MeshBoundaryLayerList",
                 "Base",
-                "Mesh boundaries need inflation layers"
+                "Mesh boundaries need inflation layers",
             )
             obj.MeshBoundaryLayerList = []
 
@@ -119,7 +119,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyLinkList",
                 "MeshRegionList",
                 "Base",
-                "Mesh regions of the mesh"
+                "Mesh regions of the mesh",
             )
             obj.MeshRegionList = []
 
@@ -128,7 +128,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyLinkList",
                 "MeshGroupList",
                 "Base",
-                "Mesh groups of the mesh"
+                "Mesh groups of the mesh",
             )
             obj.MeshGroupList = []
 
@@ -137,7 +137,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyLink",
                 "Part",
                 "FEM Mesh",
-                "Geometry object, the mesh is made from. The geometry object has to have a Shape."
+                "Geometry object, the mesh is made from. The geometry object has to have a Shape.",
             )
             obj.Part = None
 
@@ -146,7 +146,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyLength",
                 "CharacteristicLengthMax",
                 "FEM Gmsh Mesh Params",
-                "Max mesh element size (0.0 = infinity)"
+                "Max mesh element size (0.0 = infinity)",
             )
             obj.CharacteristicLengthMax = 0.0  # will be 1e+22
 
@@ -155,7 +155,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyLength",
                 "CharacteristicLengthMin",
                 "FEM Gmsh Mesh Params",
-                "Min mesh element size"
+                "Min mesh element size",
             )
             obj.CharacteristicLengthMin = 0.0
 
@@ -164,7 +164,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyEnumeration",
                 "ElementDimension",
                 "FEM Gmsh Mesh Params",
-                "Dimension of mesh elements (Auto = according ShapeType of part to mesh)"
+                "Dimension of mesh elements (Auto = according ShapeType of part to mesh)",
             )
             obj.ElementDimension = MeshGmsh.known_element_dimensions
             obj.ElementDimension = "From Shape"  # according ShapeType of Part to mesh
@@ -174,7 +174,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyEnumeration",
                 "ElementOrder",
                 "FEM Gmsh Mesh Params",
-                "Order of mesh elements"
+                "Order of mesh elements",
             )
             obj.ElementOrder = MeshGmsh.known_element_orders
             obj.ElementOrder = "2nd"
@@ -184,7 +184,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyBool",
                 "OptimizeStd",
                 "FEM Gmsh Mesh Params",
-                "Optimize tetrahedral elements"
+                "Optimize tetrahedral elements",
             )
             obj.OptimizeStd = True
 
@@ -193,7 +193,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyBool",
                 "OptimizeNetgen",
                 "FEM Gmsh Mesh Params",
-                "Optimize tetra elements by use of Netgen"
+                "Optimize tetra elements by use of Netgen",
             )
             obj.OptimizeNetgen = False
 
@@ -202,7 +202,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyEnumeration",
                 "HighOrderOptimize",
                 "FEM Gmsh Mesh Params",
-                "Optimization of high order meshes"
+                "Optimization of high order meshes",
             )
             obj.HighOrderOptimize = MeshGmsh.known_mesh_HighOrderOptimizers
             obj.HighOrderOptimize = "None"
@@ -212,7 +212,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyBool",
                 "RecombineAll",
                 "FEM Gmsh Mesh Params",
-                "Apply recombination algorithm to all surfaces"
+                "Apply recombination algorithm to all surfaces",
             )
             obj.RecombineAll = False
 
@@ -221,7 +221,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyBool",
                 "Recombine3DAll",
                 "FEM Gmsh Mesh Params",
-                "Apply recombination algorithm to all volumes"
+                "Apply recombination algorithm to all volumes",
             )
             obj.Recombine3DAll = False
 
@@ -230,7 +230,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyEnumeration",
                 "RecombinationAlgorithm",
                 "FEM Gmsh Mesh Params",
-                "Recombination algorithm"
+                "Recombination algorithm",
             )
             obj.RecombinationAlgorithm = MeshGmsh.known_mesh_RecombinationAlgorithms
             obj.RecombinationAlgorithm = "Simple"
@@ -240,7 +240,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyBool",
                 "CoherenceMesh",
                 "FEM Gmsh Mesh Params",
-                "Removes all duplicate mesh vertices"
+                "Removes all duplicate mesh vertices",
             )
             obj.CoherenceMesh = True
 
@@ -249,7 +249,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyFloat",
                 "GeometryTolerance",
                 "FEM Gmsh Mesh Params",
-                "Geometrical Tolerance (0.0 = GMSH std = 1e-08)"
+                "Geometrical Tolerance (0.0 = GMSH std = 1e-08)",
             )
             obj.GeometryTolerance = 1e-06
 
@@ -258,7 +258,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyBool",
                 "SecondOrderLinear",
                 "FEM Gmsh Mesh Params",
-                "Second order nodes are created by linear interpolation"
+                "Second order nodes are created by linear interpolation",
             )
             obj.SecondOrderLinear = False
             # gives much better meshes in the regard of nonpositive jacobians
@@ -273,7 +273,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyIntegerConstraint",
                 "MeshSizeFromCurvature",
                 "FEM Gmsh Mesh Params",
-                "number of elements per 2*pi radians, 0 to deactivate"
+                "number of elements per 2*pi radians, 0 to deactivate",
             )
             obj.MeshSizeFromCurvature = (12, 0, 10000, 1)
 
@@ -282,7 +282,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyEnumeration",
                 "Algorithm2D",
                 "FEM Gmsh Mesh Params",
-                "mesh algorithm 2D"
+                "mesh algorithm 2D",
             )
             obj.Algorithm2D = MeshGmsh.known_mesh_algorithm_2D
             obj.Algorithm2D = "Automatic"
@@ -292,7 +292,7 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyEnumeration",
                 "Algorithm3D",
                 "FEM Gmsh Mesh Params",
-                "mesh algorithm 3D"
+                "mesh algorithm 3D",
             )
             obj.Algorithm3D = MeshGmsh.known_mesh_algorithm_3D
             obj.Algorithm3D = "Automatic"
@@ -302,6 +302,6 @@ class MeshGmsh(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyBool",
                 "GroupsOfNodes",
                 "FEM Gmsh Mesh Params",
-                "For each group create not only the elements but the nodes too."
+                "For each group create not only the elements but the nodes too.",
             )
             obj.GroupsOfNodes = False

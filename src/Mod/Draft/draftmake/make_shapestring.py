@@ -38,21 +38,20 @@ if App.GuiUp:
 
 def make_shapestring(String, FontFile, Size=100, Tracking=0):
     """ShapeString(Text,FontFile,[Height],[Track])
-    
+
     Turns a text string into a Compound Shape
-    
+
     Parameters
     ----------
-    majradius : 
+    majradius :
         Major radius of the ellipse.
 
     """
     if not App.ActiveDocument:
         App.Console.PrintError("No active document. Aborting\n")
         return
-        
-    obj = App.ActiveDocument.addObject("Part::Part2DObjectPython",
-                                       "ShapeString")
+
+    obj = App.ActiveDocument.addObject("Part::Part2DObjectPython", "ShapeString")
     ShapeString(obj)
     obj.String = String
     obj.FontFile = FontFile
@@ -63,7 +62,8 @@ def make_shapestring(String, FontFile, Size=100, Tracking=0):
         ViewProviderShapeString(obj.ViewObject)
         gui_utils.format_object(obj)
         obrep = obj.ViewObject
-        if "PointSize" in obrep.PropertiesList: obrep.PointSize = 1 # hide the segment end points
+        if "PointSize" in obrep.PropertiesList:
+            obrep.PointSize = 1  # hide the segment end points
         gui_utils.select(obj)
     obj.recompute()
     return obj

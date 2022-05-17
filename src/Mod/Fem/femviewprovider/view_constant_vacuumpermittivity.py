@@ -21,7 +21,9 @@
 # *                                                                         *
 # ***************************************************************************
 
-__title__ = "FreeCAD FEM constant vacuum permittivity ViewProvider for the document object"
+__title__ = (
+    "FreeCAD FEM constant vacuum permittivity ViewProvider for the document object"
+)
 __author__ = "Bernd Hahnebach"
 __url__ = "https://www.freecadweb.org"
 
@@ -33,6 +35,5 @@ from . import view_base_femconstraint
 
 
 class VPConstantVacuumPermittivity(view_base_femconstraint.VPBaseFemConstraint):
-
     def getIcon(self):
         return ":/icons/fem-solver-analysis-thermomechanical.svg"

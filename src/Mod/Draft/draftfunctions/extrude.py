@@ -33,7 +33,7 @@ import draftutils.gui_utils as gui_utils
 
 def extrude(obj, vector, solid=False):
     """extrude(object, vector, [solid])
-    
+
     Create a Part::Extrusion object from a given object.
 
     Parameters
@@ -42,7 +42,7 @@ def extrude(obj, vector, solid=False):
 
     vector : Base.Vector
         The extrusion direction and module.
-    
+
     solid : bool
         TODO: describe.
     """
@@ -55,9 +55,10 @@ def extrude(obj, vector, solid=False):
     newobj.Solid = solid
     if App.GuiUp:
         obj.ViewObject.Visibility = False
-        gui_utils.format_object(newobj,obj)
+        gui_utils.format_object(newobj, obj)
         gui_utils.select(newobj)
 
     return newobj
+
 
 ## @}

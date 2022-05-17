@@ -64,7 +64,7 @@ class DraftOCA(unittest.TestCase):
         _msg("  Test '{}'".format(operation))
         _msg("  This test requires an OCA file to read.")
 
-        file = 'Mod/Draft/drafttest/test.oca'
+        file = "Mod/Draft/drafttest/test.oca"
         in_file = os.path.join(App.getResourceDir(), file)
         _msg("  file={}".format(in_file))
         _msg("  exists={}".format(os.path.exists(in_file)))
@@ -78,7 +78,7 @@ class DraftOCA(unittest.TestCase):
         operation = "importOCA.export"
         _msg("  Test '{}'".format(operation))
 
-        file = 'Mod/Draft/drafttest/out_test.oca'
+        file = "Mod/Draft/drafttest/out_test.oca"
         out_file = os.path.join(App.getResourceDir(), file)
         _msg("  file={}".format(out_file))
         _msg("  exists={}".format(os.path.exists(out_file)))
@@ -93,5 +93,6 @@ class DraftOCA(unittest.TestCase):
         This is executed after each test, so we close the document.
         """
         App.closeDocument(self.doc_name)
+
 
 ## @}

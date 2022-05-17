@@ -49,18 +49,18 @@ _inputFileName = None
 
 
 class Check(run.Check):
-
     def run(self):
         self.pushStatus("Checking analysis member...\n")
         self.check_mesh_exists()
 
         # workaround use Calculix ccxtools pre checks
         from femtools.checksanalysis import check_member_for_solver_calculix
+
         message = check_member_for_solver_calculix(
             self.analysis,
             self.solver,
             membertools.get_mesh_to_solve(self.analysis)[0],
-            membertools.AnalysisMember(self.analysis)
+            membertools.AnalysisMember(self.analysis),
         )
         if message:
             text = "CalculiX can not be started...\n"
@@ -70,7 +70,6 @@ class Check(run.Check):
 
 
 class Prepare(run.Prepare):
-
     def run(self):
         global _inputFileName
         self.pushStatus("Preparing input...\n")
@@ -78,7 +77,9 @@ class Prepare(run.Prepare):
         # get mesh set data
         # TODO evaluate if it makes sense to add new task
         # between check and prepare to the solver frame work
-        mesh_obj = membertools.get_mesh_to_solve(self.analysis)[0]  # pre check done already
+        mesh_obj = membertools.get_mesh_to_solve(self.analysis)[
+            0
+        ]  # pre check done already
         meshdatagetter = meshsetsgetter.MeshSetsGetter(
             self.analysis,
             self.solver,
@@ -94,7 +95,7 @@ class Prepare(run.Prepare):
             mesh_obj,
             meshdatagetter.member,
             self.directory,
-            meshdatagetter.mat_geo_sets
+            meshdatagetter.mat_geo_sets,
         )
         path = w.write_solver_input()
         # report to user if task succeeded
@@ -107,7 +108,6 @@ class Prepare(run.Prepare):
 
 
 class Solve(run.Solve):
-
     def run(self):
         self.pushStatus("Executing solver...\n")
 
@@ -122,7 +122,7 @@ class Solve(run.Solve):
             [binary, "-i", _inputFileName],
             cwd=self.directory,
             stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
+            stderr=subprocess.PIPE,
         )
         self.signalAbort.add(self._process.terminate)
         # output = self._observeSolver(self._process)
@@ -134,10 +134,8 @@ class Solve(run.Solve):
 
 
 class Results(run.Results):
-
     def run(self):
-        prefs = FreeCAD.ParamGet(
-            "User parameter:BaseApp/Preferences/Mod/Fem/General")
+        prefs = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/Fem/General")
         if not prefs.GetBool("KeepResultsOnReRun", False):
             self.purge_results()
         self.load_results()
@@ -161,31 +159,29 @@ class Results(run.Results):
         self.load_ccxdat_results()
 
     def load_ccxfrd_results(self):
-        frd_result_file = os.path.join(
-            self.directory, _inputFileName + ".frd")
+        frd_result_file = os.path.join(self.directory, _inputFileName + ".frd")
         if os.path.isfile(frd_result_file):
             result_name_prefix = "CalculiX_" + self.solver.AnalysisType + "_"
             importCcxFrdResults.importFrd(
-                frd_result_file, self.analysis, result_name_prefix)
+                frd_result_file, self.analysis, result_name_prefix
+            )
         else:
             # TODO: use solver framework status message system
             FreeCAD.Console.PrintError(
-                "FEM: No results found at {}!\n"
-                .format(frd_result_file)
+                "FEM: No results found at {}!\n".format(frd_result_file)
             )
             self.fail()
 
     def load_ccxdat_results(self):
-        dat_result_file = os.path.join(
-            self.directory, _inputFileName + ".dat")
+        dat_result_file = os.path.join(self.directory, _inputFileName + ".dat")
         if os.path.isfile(dat_result_file):
             mode_frequencies = importCcxDatResults.import_dat(
-                dat_result_file, self.analysis)
+                dat_result_file, self.analysis
+            )
         else:
             # TODO: use solver framework status message system
             FreeCAD.Console.PrintError(
-                "FEM: No results found at {}!\n"
-                .format(dat_result_file)
+                "FEM: No results found at {}!\n".format(dat_result_file)
             )
             self.fail()
         if mode_frequencies:
@@ -194,5 +190,6 @@ class Results(run.Results):
                     for mf in mode_frequencies:
                         if m.Eigenmode == mf["eigenmode"]:
                             m.EigenmodeFrequency = mf["frequency"]
+
 
 ##  @}

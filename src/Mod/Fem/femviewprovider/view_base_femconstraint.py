@@ -41,7 +41,9 @@ class VPBaseFemConstraint(view_base_femobject.VPBaseFemObject):
     def attach(self, vobj):
         default = coin.SoGroup()
         vobj.addDisplayMode(default, "Default")
-        self.Object = vobj.Object  # used on various places, claim childreens, get icon, etc.
+        self.Object = (
+            vobj.Object
+        )  # used on various places, claim childreens, get icon, etc.
         # self.ViewObject = vobj  # not used ATM
 
     def getDisplayModes(self, obj):

@@ -39,9 +39,14 @@ from draftutils.translate import translate
 import draftutils.gui_utils as gui_utils
 
 
-def make_arc_3points(points, placement=None, face=False,
-                     support=None, map_mode="Deactivated",
-                     primitive=False):
+def make_arc_3points(
+    points,
+    placement=None,
+    face=False,
+    support=None,
+    map_mode="Deactivated",
+    primitive=False,
+):
     """Draw a circular arc defined by three points in the circumference.
 
     Parameters
@@ -122,21 +127,29 @@ def make_arc_3points(points, placement=None, face=False,
     try:
         utils.type_check([(points, (list, tuple))], name=_name)
     except TypeError:
-        _err(translate("draft","Points:") + " {}".format(points))
-        _err(translate("draft","Wrong input: must be list or tuple of three points exactly."))
+        _err(translate("draft", "Points:") + " {}".format(points))
+        _err(
+            translate(
+                "draft", "Wrong input: must be list or tuple of three points exactly."
+            )
+        )
         return None
 
     if len(points) != 3:
-        _err(translate("draft","Points:") + " {}".format(points))
-        _err(translate("draft","Wrong input: must be list or tuple of three points exactly."))
+        _err(translate("draft", "Points:") + " {}".format(points))
+        _err(
+            translate(
+                "draft", "Wrong input: must be list or tuple of three points exactly."
+            )
+        )
         return None
 
     if placement is not None:
         try:
             utils.type_check([(placement, App.Placement)], name=_name)
         except TypeError:
-            _err(translate("draft","Placement:") + " {}".format(placement))
-            _err(translate("draft","Wrong input: incorrect type of placement."))
+            _err(translate("draft", "Placement:") + " {}".format(placement))
+            _err(translate("draft", "Wrong input: incorrect type of placement."))
             return None
 
     p1, p2, p3 = points
@@ -146,42 +159,44 @@ def make_arc_3points(points, placement=None, face=False,
     _msg("p3: {}".format(p3))
 
     try:
-        utils.type_check([(p1, App.Vector),
-                          (p2, App.Vector),
-                          (p3, App.Vector)], name=_name)
+        utils.type_check(
+            [(p1, App.Vector), (p2, App.Vector), (p3, App.Vector)], name=_name
+        )
     except TypeError:
-        _err(translate("draft","Wrong input: incorrect type of points."))
+        _err(translate("draft", "Wrong input: incorrect type of points."))
         return None
 
     try:
         _edge = Part.Arc(p1, p2, p3)
     except Part.OCCError as error:
-        _err(translate("draft","Cannot generate shape:") + " " + "{}".format(error))
+        _err(translate("draft", "Cannot generate shape:") + " " + "{}".format(error))
         return None
 
     edge = _edge.toShape()
     radius = edge.Curve.Radius
     center = edge.Curve.Center
 
-    _msg(translate("draft","Radius:") + " " + "{}".format(radius))
-    _msg(translate("draft","Center:") + " " + "{}".format(center))
+    _msg(translate("draft", "Radius:") + " " + "{}".format(radius))
+    _msg(translate("draft", "Center:") + " " + "{}".format(center))
 
     if primitive:
-        _msg(translate("draft","Create primitive object"))
+        _msg(translate("draft", "Create primitive object"))
         obj = App.ActiveDocument.addObject("Part::Feature", "Arc")
         obj.Shape = edge
         return obj
 
-    rot = App.Rotation(edge.Curve.XAxis,
-                       edge.Curve.YAxis,
-                       edge.Curve.Axis, "ZXY")
+    rot = App.Rotation(edge.Curve.XAxis, edge.Curve.YAxis, edge.Curve.Axis, "ZXY")
     _placement = App.Placement(center, rot)
     start = edge.FirstParameter
     end = math.degrees(edge.LastParameter)
-    obj = Draft.make_circle(radius,
-                            placement=_placement, face=face,
-                            startangle=start, endangle=end,
-                            support=support)
+    obj = Draft.make_circle(
+        radius,
+        placement=_placement,
+        face=face,
+        startangle=start,
+        endangle=end,
+        support=support,
+    )
 
     if App.GuiUp:
         gui_utils.autogroup(obj)
@@ -190,19 +205,22 @@ def make_arc_3points(points, placement=None, face=False,
 
     if placement and not support:
         obj.Placement.Base = placement.Base
-        _msg(translate("draft","Final placement:") + " " + "{}".format(obj.Placement))
+        _msg(translate("draft", "Final placement:") + " " + "{}".format(obj.Placement))
     if face:
-        _msg(translate("draft","Face: True"))
+        _msg(translate("draft", "Face: True"))
     if support:
-        _msg(translate("draft","Support:") + " " + "{}".format(support))
-        _msg(translate("draft","Map mode:") + " " + "{}".format(map_mode))
+        _msg(translate("draft", "Support:") + " " + "{}".format(support))
+        _msg(translate("draft", "Map mode:") + " " + "{}".format(map_mode))
         obj.MapMode = map_mode
         if placement:
             obj.AttachmentOffset.Base = placement.Base
             obj.AttachmentOffset.Rotation = original_placement.Rotation
-            _msg(translate("draft","Attachment offset: {}".format(obj.AttachmentOffset)))
-        _msg(translate("draft","Final placement:") + " " + "{}".format(obj.Placement))
+            _msg(
+                translate("draft", "Attachment offset: {}".format(obj.AttachmentOffset))
+            )
+        _msg(translate("draft", "Final placement:") + " " + "{}".format(obj.Placement))
 
     return obj
+
 
 ## @}

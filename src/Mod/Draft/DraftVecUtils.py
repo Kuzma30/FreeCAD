@@ -223,7 +223,7 @@ def scale(u, scalar):
         The new vector with each of its elements multiplied by `scalar`.
     """
     typecheck([(u, Vector), (scalar, (int, int, float))], "scale")
-    return Vector(u.x*scalar, u.y*scalar, u.z*scalar)
+    return Vector(u.x * scalar, u.y * scalar, u.z * scalar)
 
 
 def scaleTo(u, l):
@@ -256,8 +256,8 @@ def scaleTo(u, l):
     if u.Length == 0:
         return Vector(u)
     else:
-        a = l/u.Length
-        return Vector(u.x*a, u.y*a, u.z*a)
+        a = l / u.Length
+        return Vector(u.x * a, u.y * a, u.z * a)
 
 
 def dist(u, v):
@@ -324,7 +324,7 @@ def angle(u, v=Vector(1, 0, 0), normal=Vector(0, 0, 1)):
         return 0
 
     # The dot product indicates the projection of one vector over the other
-    dp = u.dot(v)/ll
+    dp = u.dot(v) / ll
 
     # Due to rounding errors, the dot product could be outside
     # the range [-1, 1], so let's force it to be within this range.
@@ -376,7 +376,7 @@ def project(u, v):
         return Vector(0, 0, 0)  # to avoid division by zero
     # Why specifically this value? This should be an else?
     if dp != 15:
-        return scale(v, u.dot(v)/dp)
+        return scale(v, u.dot(v) / dp)
 
     # Return a null vector if the magnitude squared is 15, why?
     return Vector(0, 0, 0)
@@ -462,9 +462,9 @@ def rotate(u, angle, axis=Vector(0, 0, 1)):
 
     # Unit components, so that x**2 + y**2 + z**2 = 1
     L = axis.Length
-    x = axis.x/L
-    y = axis.y/L
-    z = axis.z/L
+    x = axis.x / L
+    y = axis.y / L
+    z = axis.z / L
 
     c = math.cos(angle)
     s = math.sin(angle)
@@ -478,9 +478,20 @@ def rotate(u, angle, axis=Vector(0, 0, 1)):
     ys = y * s
     zs = z * s
 
-    m = FreeCAD.Matrix(c + x*x*t,   xyt - zs,   xzt + ys,   0,
-                       xyt + zs,    c + y*y*t,  yzt - xs,   0,
-                       xzt - ys,    yzt + xs,   c + z*z*t,  0)
+    m = FreeCAD.Matrix(
+        c + x * x * t,
+        xyt - zs,
+        xzt + ys,
+        0,
+        xyt + zs,
+        c + y * y * t,
+        yzt - xs,
+        0,
+        xzt - ys,
+        yzt + xs,
+        c + z * z * t,
+        0,
+    )
 
     return m.multiply(u)
 
@@ -520,7 +531,7 @@ def getRotation(vector, reference=Vector(1, 0, 0)):
         return (0, 0, 0, 1.0)
     c.normalize()
 
-    q1 = math.sqrt((vector.Length**2) * (reference.Length**2))
+    q1 = math.sqrt((vector.Length ** 2) * (reference.Length ** 2))
     q2 = vector.dot(reference)
     Q = q1 + q2
 
@@ -551,7 +562,7 @@ def isNull(vector):
     x = round(vector.x, p)
     y = round(vector.y, p)
     z = round(vector.z, p)
-    return (x == 0 and y == 0 and z == 0)
+    return x == 0 and y == 0 and z == 0
 
 
 def find(vector, vlist):
@@ -698,7 +709,7 @@ def isColinear(vlist):
     return True
 
 
-def rounded(v,d=None):
+def rounded(v, d=None):
     """Return a vector rounded to the `precision` in the parameter database
     or to the given decimals value
 
@@ -759,10 +770,9 @@ def getPlaneRotation(u, v, w=None):
         w = u.cross(v)
     typecheck([(u, Vector), (v, Vector), (w, Vector)], "getPlaneRotation")
 
-    m = FreeCAD.Matrix(u.x, v.x, w.x, 0,
-                       u.y, v.y, w.y, 0,
-                       u.z, v.z, w.z, 0,
-                       0.0, 0.0, 0.0, 1.0)
+    m = FreeCAD.Matrix(
+        u.x, v.x, w.x, 0, u.y, v.y, w.y, 0, u.z, v.z, w.z, 0, 0.0, 0.0, 0.0, 1.0
+    )
     return m
 
 
@@ -805,11 +815,12 @@ def removeDoubles(vlist):
     # Iterate until the penultimate element, and test for equality
     # with the element in front
     for i in range(len(vlist) - 1):
-        if not equals(vlist[i], vlist[i+1]):
+        if not equals(vlist[i], vlist[i + 1]):
             nlist.append(vlist[i])
     # Add the last element
     nlist.append(vlist[-1])
     return nlist
+
 
 def get_spherical_coords(x, y, z):
     """Get the Spherical coordinates of the vector represented
@@ -836,23 +847,23 @@ def get_spherical_coords(x, y, z):
     (0, 0, z) -> (radius, theta, 0)
     """
 
-    v = Vector(x,y,z)
-    x_axis = Vector(1,0,0)
-    z_axis = Vector(0,0,1)
-    y_axis = Vector(0,1,0)
+    v = Vector(x, y, z)
+    x_axis = Vector(1, 0, 0)
+    z_axis = Vector(0, 0, 1)
+    y_axis = Vector(0, 1, 0)
     rad = v.Length
 
     if not bool(round(rad, precision())):
-        return (0, math.pi/2, 0)
+        return (0, math.pi / 2, 0)
 
     theta = v.getAngle(z_axis)
-    v.projectToPlane(Vector(0,0,0), z_axis)
+    v.projectToPlane(Vector(0, 0, 0), z_axis)
     phi = v.getAngle(x_axis)
     if math.isnan(phi):
         return (rad, theta, 0)
     # projected vector is on 3rd or 4th quadrant
     if v.dot(Vector(y_axis)) < 0:
-        phi = -1*phi
+        phi = -1 * phi
 
     return (rad, theta, phi)
 
@@ -876,9 +887,9 @@ def get_cartesian_coords(radius, theta, phi):
         Tuple (x, y, z) with the Cartesian coordinates.
     """
 
-    x = radius*math.sin(theta)*math.cos(phi)
-    y = radius*math.sin(theta)*math.sin(phi)
-    z = radius*math.cos(theta)
+    x = radius * math.sin(theta) * math.cos(phi)
+    y = radius * math.sin(theta) * math.sin(phi)
+    z = radius * math.cos(theta)
 
     return (x, y, z)
 

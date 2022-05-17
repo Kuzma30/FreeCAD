@@ -124,7 +124,7 @@ class ConnectionChecker(QtCore.QThread):
             self.failure.emit(
                 translate(
                     "AddonsInstaller",
-                    "Unable to read data from GitHub: check your internet connection and proxy settings and try again."
+                    "Unable to read data from GitHub: check your internet connection and proxy settings and try again.",
                 )
             )
             return
@@ -200,7 +200,7 @@ class UpdateWorker(QtCore.QThread):
         else:
             message = translate(
                 "AddonsInstaller",
-                "Failed to connect to GitHub. Check your connection and proxy settings."
+                "Failed to connect to GitHub. Check your connection and proxy settings.",
             )
             FreeCAD.Console.PrintError(message + "\n")
             self.status_message.emit(message)
@@ -452,7 +452,7 @@ class UpdateChecker:
                         "AddonManager: "
                         + translate(
                             "AddonsInstaller",
-                            "Unable to fetch git updates for workbench {}"
+                            "Unable to fetch git updates for workbench {}",
                         ).format(wb.name)
                         + "\n"
                     )
@@ -507,8 +507,7 @@ class UpdateChecker:
             except Exception:
                 FreeCAD.Console.PrintWarning(
                     translate(
-                        "AddonsInstaller",
-                        "Failed to read metadata from {name}"
+                        "AddonsInstaller", "Failed to read metadata from {name}"
                     ).format(name=installed_metadata_file)
                     + "\n"
                 )
@@ -530,8 +529,7 @@ class UpdateChecker:
         except Exception:
             FreeCAD.Console.PrintWarning(
                 translate(
-                    "AddonsInstaller",
-                    "Failed to fetch code for macro '{name}'"
+                    "AddonsInstaller", "Failed to fetch code for macro '{name}'"
                 ).format(name=macro_wrapper.macro.name)
                 + "\n"
             )
@@ -588,17 +586,14 @@ class FillMacroListWorker(QtCore.QThread):
             self.status_message_signal.emit(
                 translate(
                     "AddonsInstaller",
-                    "Retrieving macros from FreeCAD/FreeCAD-Macros Git repository"
+                    "Retrieving macros from FreeCAD/FreeCAD-Macros Git repository",
                 )
             )
             self.retrieve_macros_from_git()
 
         if not self.current_thread.isInterruptionRequested():
             self.status_message_signal.emit(
-                translate(
-                    "AddonsInstaller",
-                    "Retrieving macros from FreeCAD wiki"
-                )
+                translate("AddonsInstaller", "Retrieving macros from FreeCAD wiki")
             )
             self.retrieve_macros_from_wiki()
 
@@ -619,7 +614,7 @@ class FillMacroListWorker(QtCore.QThread):
         if not have_git or NOGIT:
             message = translate(
                 "AddonsInstaller",
-                "Failed to execute Git Python command: check installation of GitPython and/or git"
+                "Failed to execute Git Python command: check installation of GitPython and/or git",
             )
             self.status_message_signal.emit(message)
             FreeCAD.Console.PrintWarning(message + "\n")
@@ -681,7 +676,7 @@ class FillMacroListWorker(QtCore.QThread):
             FreeCAD.Console.PrintWarning(
                 translate(
                     "AddonsInstaller",
-                    "Error connecting to the Wiki, FreeCAD cannot retrieve the Wiki macro list at this time"
+                    "Error connecting to the Wiki, FreeCAD cannot retrieve the Wiki macro list at this time",
                 )
                 + "\n"
             )
@@ -752,7 +747,7 @@ class CacheMacroCode(QtCore.QThread):
                         FreeCAD.Console.PrintWarning(
                             translate(
                                 "AddonsInstaller",
-                                "Addon Manager: a worker process failed to halt ({name})"
+                                "Addon Manager: a worker process failed to halt ({name})",
                             ).format(name=worker.macro.name)
                             + "\n"
                         )
@@ -771,7 +766,7 @@ class CacheMacroCode(QtCore.QThread):
                 FreeCAD.Console.PrintError(
                     translate(
                         "AddonsInstaller",
-                        "Addon Manager: a worker process failed to complete while fetching {name}"
+                        "Addon Manager: a worker process failed to complete while fetching {name}",
                     ).format(name=worker.macro.name)
                     + "\n"
                 )
@@ -786,7 +781,7 @@ class CacheMacroCode(QtCore.QThread):
             FreeCAD.Console.PrintWarning(
                 translate(
                     "AddonsInstaller",
-                    "Out of {num_macros} macros, {num_failed} timed out while processing"
+                    "Out of {num_macros} macros, {num_failed} timed out while processing",
                 ).format(num_macros=num_macros, num_failed=num_failed)
             )
 
@@ -815,10 +810,9 @@ class CacheMacroCode(QtCore.QThread):
                     QtCore.QTimer.singleShot(10000, lambda: self.terminate(worker))
                 )
             self.status_message.emit(
-                translate(
-                    "AddonsInstaller",
-                    "Getting metadata from macro {}"
-                ).format(next_repo.macro.name)
+                translate("AddonsInstaller", "Getting metadata from macro {}").format(
+                    next_repo.macro.name
+                )
             )
             worker.start()
         except queue.Empty:
@@ -829,8 +823,7 @@ class CacheMacroCode(QtCore.QThread):
             macro_name = worker.macro.name
             FreeCAD.Console.PrintWarning(
                 translate(
-                    "AddonsInstaller",
-                    "Timeout while fetching metadata for macro {}"
+                    "AddonsInstaller", "Timeout while fetching metadata for macro {}"
                 ).format(macro_name)
                 + "\n"
             )
@@ -840,8 +833,7 @@ class CacheMacroCode(QtCore.QThread):
             if worker.isRunning():
                 FreeCAD.Console.PrintError(
                     translate(
-                        "AddonsInstaller",
-                        "Failed to kill process for macro {}!\n"
+                        "AddonsInstaller", "Failed to kill process for macro {}!\n"
                     ).format(macro_name)
                 )
             with self.lock:
@@ -921,7 +913,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
             FreeCAD.Console.PrintLog(
                 translate(
                     "AddonsInstaller",
-                    "GitPython not found. Using ZIP file download instead."
+                    "GitPython not found. Using ZIP file download instead.",
                 )
                 + "\n"
             )
@@ -929,7 +921,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
                 FreeCAD.Console.PrintError(
                     translate(
                         "AddonsInstaller",
-                        "Your version of Python doesn't appear to support ZIP files. Unable to proceed."
+                        "Your version of Python doesn't appear to support ZIP files. Unable to proceed.",
                     )
                     + "\n"
                 )
@@ -966,7 +958,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
             FreeCAD.Console.PrintLog(
                 translate(
                     "AddonsInstaller",
-                    "No Git Python installed, skipping git operations"
+                    "No Git Python installed, skipping git operations",
                 )
                 + "\n"
             )
@@ -985,7 +977,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
             FreeCAD.Console.PrintWarning(
                 translate(
                     "AddonsInstaller",
-                    "You are installing a Python 2 workbench on a system running Python 3 - "
+                    "You are installing a Python 2 workbench on a system running Python 3 - ",
                 )
                 + str(self.repo.name)
                 + "\n"
@@ -999,12 +991,11 @@ class InstallWorkbenchWorker(QtCore.QThread):
                 if self.repo.contains_workbench():
                     answer = translate(
                         "AddonsInstaller",
-                        "Workbench successfully updated. Please restart FreeCAD to apply the changes."
+                        "Workbench successfully updated. Please restart FreeCAD to apply the changes.",
                     )
                 else:
                     answer = translate(
-                        "AddonsInstaller",
-                        "Workbench successfully updated."
+                        "AddonsInstaller", "Workbench successfully updated."
                     )
             except Exception as e:
                 answer = (
@@ -1032,7 +1023,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
             FreeCAD.Console.PrintWarning(
                 translate(
                     "AddonsInstaller",
-                    "You are installing a Python 2 workbench on a system running Python 3 - "
+                    "You are installing a Python 2 workbench on a system running Python 3 - ",
                 )
                 + str(self.repo.name)
                 + "\n"
@@ -1079,13 +1070,10 @@ class InstallWorkbenchWorker(QtCore.QThread):
         if self.repo.contains_workbench():
             answer = translate(
                 "AddonsInstaller",
-                "Workbench successfully installed. Please restart FreeCAD to apply the changes."
+                "Workbench successfully installed. Please restart FreeCAD to apply the changes.",
             )
         else:
-            answer = translate(
-                "AddonsInstaller",
-                "Addon successfully installed."
-            )
+            answer = translate("AddonsInstaller", "Addon successfully installed.")
 
         if self.repo.repo_type == Addon.Kind.WORKBENCH:
             # symlink any macro contained in the module to the macros folder
@@ -1109,7 +1097,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
                         ).SetString("destination", clonedir)
                         answer += "\n\n" + translate(
                             "AddonsInstaller",
-                            "A macro has been installed and is available under Macro -> Macros menu"
+                            "A macro has been installed and is available under Macro -> Macros menu",
                         )
                         answer += ":\n<b>" + f + "</b>"
         self.update_metadata()
@@ -1157,7 +1145,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
                 self.status_message.emit(
                     translate(
                         "AddonsInstaller",
-                        "Downloading: {mbytes_str}MB of {mbytes_total_str}MB ({percent}%)"
+                        "Downloading: {mbytes_str}MB of {mbytes_total_str}MB ({percent}%)",
                     ).format(
                         mbytes_str=mbytes_str,
                         mbytes_total_str=mbytes_total_str,
@@ -1172,7 +1160,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
                 self.status_message.emit(
                     translate(
                         "AddonsInstaller",
-                        "Downloading: {bytes_str} of {bytes_total_str} bytes ({percent}%)"
+                        "Downloading: {bytes_str} of {bytes_total_str} bytes ({percent}%)",
                     ).format(
                         bytes_str=bytes_str,
                         bytes_total_str=bytes_total_str,
@@ -1184,8 +1172,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
                 bytes_str = locale.toString(MB_read)
                 self.status_message.emit(
                     translate(
-                        "AddonsInstaller",
-                        "Downloading: {bytes_str}MB of unknown total"
+                        "AddonsInstaller", "Downloading: {bytes_str}MB of unknown total"
                     ).format(bytes_str=bytes_str)
                 )
 
@@ -1195,8 +1182,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
             self.failure.emit(
                 self.repo,
                 translate(
-                    "AddonsInstaller",
-                    "Error: Error while downloading ZIP file for {}"
+                    "AddonsInstaller", "Error: Error while downloading ZIP file for {}"
                 ).format(self.repo.display_name),
             )
             return
@@ -1220,8 +1206,7 @@ class InstallWorkbenchWorker(QtCore.QThread):
         self.success.emit(
             self.repo,
             translate(
-                "AddonsInstaller",
-                "Successfully installed {} from ZIP file"
+                "AddonsInstaller", "Successfully installed {} from ZIP file"
             ).format(self.repo.display_name),
         )
 
@@ -1343,8 +1328,7 @@ class DependencyInstallationWorker(QtCore.QThread):
             if proc.returncode != 0:
                 self.failure.emit(
                     translate(
-                        "AddonsInstaller",
-                        "Installation of Python package {} failed"
+                        "AddonsInstaller", "Installation of Python package {} failed"
                     ).format(pymod),
                     proc.stderr,
                 )
@@ -1362,8 +1346,7 @@ class DependencyInstallationWorker(QtCore.QThread):
             if proc.returncode != 0:
                 self.failure.emit(
                     translate(
-                        "AddonsInstaller",
-                        "Installation of Python package {} failed"
+                        "AddonsInstaller", "Installation of Python package {} failed"
                     ).format(pymod),
                     proc.stderr,
                 )
@@ -1559,10 +1542,9 @@ class UpdateMetadataCacheWorker(QtCore.QThread):
 
     def process_requirements_txt(self, repo: Addon, data: QtCore.QByteArray):
         self.status_message.emit(
-            translate(
-                "AddonsInstaller",
-                "Downloaded requirements.txt for {}"
-            ).format(repo.display_name)
+            translate("AddonsInstaller", "Downloaded requirements.txt for {}").format(
+                repo.display_name
+            )
         )
         f = io.StringIO(data.data().decode("utf8"))
         lines = f.readlines()

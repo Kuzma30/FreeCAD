@@ -37,6 +37,7 @@ import Mesh
 App = FreeCAD  # shortcut
 if FreeCAD.GuiUp:
     import FreeCADGui
+
     Gui = FreeCADGui  # shortcut
 
 ## \addtogroup FEM
@@ -47,23 +48,27 @@ def exportMeshToTetGenPoly(meshToExport, filePath, beVerbose=1):
     """Export mesh to TetGen *.poly file format"""
     # ********** Part 1 - write node list to output file
     if beVerbose == 1:
-            Console.PrintMessage("\nExport of mesh to TetGen file ...")
+        Console.PrintMessage("\nExport of mesh to TetGen file ...")
     (allVertices, allFacets) = meshToExport.Topology
     f = open(filePath, "w")
     f.write("# This file was generated from FreeCAD geometry\n")
     f.write("# Part 1 - node list\n")
     f.write(
         "TotalNumOfPoints: {},  NumOfDimensions; {}, "
-        "NumOfProperties: {}, BoundaryMarkerExists: {}\n"
-        .format(len(allVertices), 3, 0, 0)
+        "NumOfProperties: {}, BoundaryMarkerExists: {}\n".format(
+            len(allVertices), 3, 0, 0
+        )
     )
     for PointIndex in range(len(allVertices)):
-        f.write("%(PointIndex)5i %(x) e %(y) e %(z) e\n" % {
-            "PointIndex": PointIndex,
-            "x": allVertices[PointIndex].x,
-            "y": allVertices[PointIndex].y,
-            "z": allVertices[PointIndex].z
-        })
+        f.write(
+            "%(PointIndex)5i %(x) e %(y) e %(z) e\n"
+            % {
+                "PointIndex": PointIndex,
+                "x": allVertices[PointIndex].x,
+                "y": allVertices[PointIndex].y,
+                "z": allVertices[PointIndex].z,
+            }
+        )
 
     # Find out BoundaryMarker for each facet. If edge connects only two facets,
     # then this facets should have the same BoundaryMarker
@@ -115,12 +120,16 @@ def exportMeshToTetGenPoly(meshToExport, filePath, beVerbose=1):
                 FacetPair = []
                 for facet in EdgeFacets[EdgeIndex]:
                     FacetPair.append(facet)
-                if (BoundaryMarker[FacetPair[0]] == 0) and (BoundaryMarker[FacetPair[1]] == 0):
+                if (BoundaryMarker[FacetPair[0]] == 0) and (
+                    BoundaryMarker[FacetPair[1]] == 0
+                ):
                     continue
-                if (BoundaryMarker[FacetPair[0]] != 0) and (BoundaryMarker[FacetPair[1]] != 0):
+                if (BoundaryMarker[FacetPair[0]] != 0) and (
+                    BoundaryMarker[FacetPair[1]] != 0
+                ):
                     removeEdge = 1
                     break
-                if (BoundaryMarker[FacetPair[0]] != 0):
+                if BoundaryMarker[FacetPair[0]] != 0:
                     BoundaryMarker[FacetPair[1]] = BoundaryMarker[FacetPair[0]]
                 else:
                     BoundaryMarker[FacetPair[0]] = BoundaryMarker[FacetPair[1]]
@@ -156,19 +165,26 @@ def exportMeshToTetGenPoly(meshToExport, filePath, beVerbose=1):
 
     # ********** Part 2 - write all facets to *.poly file
     f.write("# Part 2 - facet list\n")
-    f.write("%(TotalNumOfFacets)i  %(BoundaryMarkerExists)i\n" % {
-        "TotalNumOfFacets": len(allFacets),
-        "BoundaryMarkerExists": BoundaryMarkerExists
-    })
+    f.write(
+        "%(TotalNumOfFacets)i  %(BoundaryMarkerExists)i\n"
+        % {
+            "TotalNumOfFacets": len(allFacets),
+            "BoundaryMarkerExists": BoundaryMarkerExists,
+        }
+    )
     for FacetIndex in range(len(allFacets)):
         f.write("# FacetIndex = %(Index)i\n" % {"Index": FacetIndex})
         f.write("%(NumOfPolygons)3i " % {"NumOfPolygons": 1})
         if BoundaryMarkerExists == 1:
-            f.write("0 %(BoundaryMarker)i" % {"BoundaryMarker": BoundaryMarker[FacetIndex]})
+            f.write(
+                "0 %(BoundaryMarker)i" % {"BoundaryMarker": BoundaryMarker[FacetIndex]}
+            )
         f.write("\n%(NumOfConers)3i  " % {"NumOfConers": len(allFacets[FacetIndex])})
         for PointIndex in range(len(allFacets[FacetIndex])):
             #        f.write(repr(allFacets[FacetIndex][PointIndex]))
-            f.write("%(PointIndex)i " % {"PointIndex": allFacets[FacetIndex][PointIndex]})
+            f.write(
+                "%(PointIndex)i " % {"PointIndex": allFacets[FacetIndex][PointIndex]}
+            )
         f.write("\n")
     # ********** Part 3 and Part 4 are zero
     f.write("# Part 3 - the hole list.\n# There is no hole in bar.\n0\n")
@@ -221,7 +237,7 @@ def createMesh():
         PSideBox,
         OxideBox,
         AdsorbtionBox,
-        SurfDepletionBox
+        SurfDepletionBox,
     ]
     NSideBoxMesh = Mesh.Mesh()
     PSideBoxMesh = Mesh.Mesh()
@@ -235,7 +251,7 @@ def createMesh():
         PSideBoxMesh,
         OxideBoxMesh,
         AdsorbtionBoxMesh,
-        SurfDepletionBoxMesh
+        SurfDepletionBoxMesh,
     ]
     if beVerbose == 1:
         if len(BoxList) != len(BoxMeshList):
@@ -280,29 +296,15 @@ def createMesh():
 
     # Object placement
     Rot = App.Rotation(0, 0, 0, 1)
-    NSideBox.Placement = App.Placement(
-        App.Vector(0, 0, -BulkHeight),
-        Rot
-    )
+    NSideBox.Placement = App.Placement(App.Vector(0, 0, -BulkHeight), Rot)
     PSideBox.Placement = App.Placement(
-        App.Vector(DepletionSize * 2 + BulkLength, 0, -BulkHeight),
-        Rot
+        App.Vector(DepletionSize * 2 + BulkLength, 0, -BulkHeight), Rot
     )
-    DepletionBox.Placement = App.Placement(
-        App.Vector(BulkLength, 0, -BulkHeight),
-        Rot
-    )
-    SurfDepletionBox.Placement = App.Placement(
-        App.Vector(0, 0, 0),
-        Rot
-    )
-    OxideBox.Placement = App.Placement(
-        App.Vector(0, 0, DepletionSize),
-        Rot
-    )
+    DepletionBox.Placement = App.Placement(App.Vector(BulkLength, 0, -BulkHeight), Rot)
+    SurfDepletionBox.Placement = App.Placement(App.Vector(0, 0, 0), Rot)
+    OxideBox.Placement = App.Placement(App.Vector(0, 0, DepletionSize), Rot)
     AdsorbtionBox.Placement = App.Placement(
-        App.Vector(0, 0, DepletionSize + OxideThickness),
-        Rot
+        App.Vector(0, 0, DepletionSize + OxideThickness), Rot
     )
 
     # Unite
@@ -347,5 +349,6 @@ def createMesh():
 
     if beVerbose == 1:
         Console.PrintMessage("\nScript finished without errors.")
+
 
 ##  @}

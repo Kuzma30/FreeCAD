@@ -43,12 +43,14 @@ def get_information():
         "constraints": ["self weight"],
         "solvers": ["calculix", "ccxtools"],
         "material": "fluid",
-        "equation": "thermomechanical"
+        "equation": "thermomechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.thermomech_flow1d import setup
@@ -60,6 +62,7 @@ https://forum.freecadweb.org/viewtopic.php?f=18&t=20076
 
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -70,7 +73,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric objects
     p1 = vec(0, 0, 50)
@@ -101,16 +106,35 @@ def setup(doc=None, solvertype="ccxtools"):
     p26 = vec(15046.97, 0, -11147.97)
     p27 = vec(15046.97, 0, -7897.97)
     points = [
-        p1, p2, p3, p4, p5, p6, p7, p8, p9, p10,
-        p11, p12, p13, p14, p15, p16, p17, p18, p19, p20,
-        p21, p22, p23, p24, p25, p26, p27
+        p1,
+        p2,
+        p3,
+        p4,
+        p5,
+        p6,
+        p7,
+        p8,
+        p9,
+        p10,
+        p11,
+        p12,
+        p13,
+        p14,
+        p15,
+        p16,
+        p17,
+        p18,
+        p19,
+        p20,
+        p21,
+        p22,
+        p23,
+        p24,
+        p25,
+        p26,
+        p27,
     ]
-    geom_obj = makeWire(
-        points,
-        closed=False,
-        face=False,
-        support=None
-    )
+    geom_obj = makeWire(points, closed=False, face=False, support=None)
     doc.recompute()
 
     if FreeCAD.GuiUp:
@@ -255,6 +279,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_thermomech_flow1d_seg3 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

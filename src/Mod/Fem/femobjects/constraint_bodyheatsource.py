@@ -40,9 +40,4 @@ class ConstraintBodyHeatSource(base_fempythonobject.BaseFemPythonObject):
     def __init__(self, obj):
         super(ConstraintBodyHeatSource, self).__init__(obj)
 
-        obj.addProperty(
-            "App::PropertyFloat",
-            "HeatSource",
-            "Base",
-            "Body heat source"
-        )
+        obj.addProperty("App::PropertyFloat", "HeatSource", "Base", "Body heat source")

@@ -59,10 +59,15 @@ class Stretch(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Stretch',
-                'Accel': "S, H",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Stretch", "Stretch"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Stretch", "Stretches the selected objects.\nSelect an object, then draw a rectangle to pick the vertices that will be stretched,\nthen draw a line to specify the distance and direction of stretching.")}
+        return {
+            "Pixmap": "Draft_Stretch",
+            "Accel": "S, H",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Stretch", "Stretch"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Stretch",
+                "Stretches the selected objects.\nSelect an object, then draw a rectangle to pick the vertices that will be stretched,\nthen draw a line to specify the distance and direction of stretching.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -73,9 +78,9 @@ class Stretch(gui_base_original.Modifier):
             if not Gui.Selection.getSelection():
                 self.ui.selectUi(on_close_call=self.finish)
                 _msg(translate("draft", "Select an object to stretch"))
-                self.call = \
-                    self.view.addEventCallback("SoEvent",
-                                               gui_tool_utils.selectObject)
+                self.call = self.view.addEventCallback(
+                    "SoEvent", gui_tool_utils.selectObject
+                )
             else:
                 self.proceed()
 
@@ -100,11 +105,18 @@ class Stretch(gui_base_original.Modifier):
                             base = obj.Base.Base
                         if base:
                             if utils.getType(base) in supported:
-                                self.sel.append([base, obj.Placement.multiply(obj.Base.Placement)])
+                                self.sel.append(
+                                    [base, obj.Placement.multiply(obj.Base.Placement)]
+                                )
                     elif hasattr(obj.Base, "Base"):
                         if obj.Base.Base:
                             if utils.getType(obj.Base.Base) in supported:
-                                self.sel.append([obj.Base.Base, obj.Placement.multiply(obj.Base.Placement)])
+                                self.sel.append(
+                                    [
+                                        obj.Base.Base,
+                                        obj.Placement.multiply(obj.Base.Placement),
+                                    ]
+                                )
             elif utils.getType(obj) in ["Offset2D", "Array"]:
                 base = None
                 if hasattr(obj, "Source") and obj.Source:
@@ -117,11 +129,13 @@ class Stretch(gui_base_original.Modifier):
         if self.ui and self.sel:
             self.step = 1
             self.refpoint = None
-            self.ui.pointUi(title=translate("draft", self.featureName), icon="Draft_Stretch")
+            self.ui.pointUi(
+                title=translate("draft", self.featureName), icon="Draft_Stretch"
+            )
             self.call = self.view.addEventCallback("SoEvent", self.action)
-            self.rectracker = trackers.rectangleTracker(dotted=True,
-                                                        scolor=(0.0, 0.0, 1.0),
-                                                        swidth=2)
+            self.rectracker = trackers.rectangleTracker(
+                dotted=True, scolor=(0.0, 0.0, 1.0), swidth=2
+            )
             self.nodetracker = []
             self.displacement = None
             _msg(translate("draft", "Pick first point of selection rectangle"))
@@ -160,8 +174,7 @@ class Stretch(gui_base_original.Modifier):
         """Add point to defined selection rectangle."""
         if self.step == 1:
             # first rctangle point
-            _msg(translate("draft", "Pick opposite point "
-                                    "of selection rectangle"))
+            _msg(translate("draft", "Pick opposite point " "of selection rectangle"))
             self.ui.setRelative()
             self.rectracker.setorigin(point)
             self.rectracker.on()
@@ -294,7 +307,11 @@ class Stretch(gui_base_original.Modifier):
                         _cmd = _doc + ops[0].Name + ".Points=" + pts
                         commitops.append(_cmd)
                     elif tp in ["Sketch"]:
-                        baseverts = [ops[0].Shape.Vertexes[i].Point for i in range(len(ops[1])) if ops[1][i]]
+                        baseverts = [
+                            ops[0].Shape.Vertexes[i].Point
+                            for i in range(len(ops[1]))
+                            if ops[1][i]
+                        ]
                         for i in range(ops[0].GeometryCount):
                             j = 0
                             while True:
@@ -325,9 +342,7 @@ class Stretch(gui_base_original.Modifier):
                     elif tp in ["Rectangle"]:
                         p1 = App.Vector(0, 0, 0)
                         p2 = App.Vector(ops[0].Length.Value, 0, 0)
-                        p3 = App.Vector(ops[0].Length.Value,
-                                        ops[0].Height.Value,
-                                        0)
+                        p3 = App.Vector(ops[0].Length.Value, ops[0].Height.Value, 0)
                         p4 = App.Vector(0, ops[0].Height.Value, 0)
                         if ops[1] == [False, True, True, False]:
                             optype = 1
@@ -345,107 +360,173 @@ class Stretch(gui_base_original.Modifier):
                         #       " - ", self.displacement)
                         done = False
                         if optype > 0:
-                            v1 = ops[0].Placement.multVec(p2).sub(ops[0].Placement.multVec(p1))
+                            v1 = (
+                                ops[0]
+                                .Placement.multVec(p2)
+                                .sub(ops[0].Placement.multVec(p1))
+                            )
                             a1 = round(self.displacement.getAngle(v1), 4)
-                            v2 = ops[0].Placement.multVec(p4).sub(ops[0].Placement.multVec(p1))
+                            v2 = (
+                                ops[0]
+                                .Placement.multVec(p4)
+                                .sub(ops[0].Placement.multVec(p1))
+                            )
                             a2 = round(self.displacement.getAngle(v2), 4)
                             # check if the displacement is along one
                             # of the rectangle directions
                             if a1 == 0:  # 0 degrees
                                 if optype == 1:
                                     if ops[0].Length.Value >= 0:
-                                        d = ops[0].Length.Value + self.displacement.Length
+                                        d = (
+                                            ops[0].Length.Value
+                                            + self.displacement.Length
+                                        )
                                     else:
-                                        d = ops[0].Length.Value - self.displacement.Length
+                                        d = (
+                                            ops[0].Length.Value
+                                            - self.displacement.Length
+                                        )
                                     _cmd = _doc
                                     _cmd += ops[0].Name + ".Length=" + str(d)
                                     commitops.append(_cmd)
                                     done = True
                                 elif optype == 3:
                                     if ops[0].Length.Value >= 0:
-                                        d = ops[0].Length.Value - self.displacement.Length
+                                        d = (
+                                            ops[0].Length.Value
+                                            - self.displacement.Length
+                                        )
                                     else:
-                                        d = ops[0].Length.Value + self.displacement.Length
+                                        d = (
+                                            ops[0].Length.Value
+                                            + self.displacement.Length
+                                        )
                                     _cmd = _doc + ops[0].Name
                                     _cmd += ".Length=" + str(d)
                                     _pl = _doc + ops[0].Name
                                     _pl += ".Placement.Base=FreeCAD."
-                                    _pl += str(ops[0].Placement.Base.add(self.displacement))
+                                    _pl += str(
+                                        ops[0].Placement.Base.add(self.displacement)
+                                    )
                                     commitops.append(_cmd)
                                     commitops.append(_pl)
                                     done = True
                             elif a1 == 3.1416:  # pi radians, 180 degrees
                                 if optype == 1:
                                     if ops[0].Length.Value >= 0:
-                                        d = ops[0].Length.Value - self.displacement.Length
+                                        d = (
+                                            ops[0].Length.Value
+                                            - self.displacement.Length
+                                        )
                                     else:
-                                        d = ops[0].Length.Value + self.displacement.Length
+                                        d = (
+                                            ops[0].Length.Value
+                                            + self.displacement.Length
+                                        )
                                     _cmd = _doc + ops[0].Name
                                     _cmd += ".Length=" + str(d)
                                     commitops.append(_cmd)
                                     done = True
                                 elif optype == 3:
                                     if ops[0].Length.Value >= 0:
-                                        d = ops[0].Length.Value + self.displacement.Length
+                                        d = (
+                                            ops[0].Length.Value
+                                            + self.displacement.Length
+                                        )
                                     else:
-                                        d = ops[0].Length.Value - self.displacement.Length
+                                        d = (
+                                            ops[0].Length.Value
+                                            - self.displacement.Length
+                                        )
                                     _cmd = _doc + ops[0].Name
                                     _cmd += ".Length=" + str(d)
                                     _pl = _doc + ops[0].Name
                                     _pl += ".Placement.Base=FreeCAD."
-                                    _pl += str(ops[0].Placement.Base.add(self.displacement))
+                                    _pl += str(
+                                        ops[0].Placement.Base.add(self.displacement)
+                                    )
                                     commitops.append(_cmd)
                                     commitops.append(_pl)
                                     done = True
                             elif a2 == 0:  # 0 degrees
                                 if optype == 2:
                                     if ops[0].Height.Value >= 0:
-                                        d = ops[0].Height.Value + self.displacement.Length
+                                        d = (
+                                            ops[0].Height.Value
+                                            + self.displacement.Length
+                                        )
                                     else:
-                                        d = ops[0].Height.Value - self.displacement.Length
+                                        d = (
+                                            ops[0].Height.Value
+                                            - self.displacement.Length
+                                        )
                                     _cmd = _doc + ops[0].Name
                                     _cmd += ".Height=" + str(d)
                                     commitops.append(_cmd)
                                     done = True
                                 elif optype == 4:
                                     if ops[0].Height.Value >= 0:
-                                        d = ops[0].Height.Value - self.displacement.Length
+                                        d = (
+                                            ops[0].Height.Value
+                                            - self.displacement.Length
+                                        )
                                     else:
-                                        d = ops[0].Height.Value + self.displacement.Length
+                                        d = (
+                                            ops[0].Height.Value
+                                            + self.displacement.Length
+                                        )
                                     _cmd = _doc + ops[0].Name
                                     _cmd += ".Height=" + str(d)
                                     _pl = _doc + ops[0].Name
                                     _pl += ".Placement.Base=FreeCAD."
-                                    _pl += str(ops[0].Placement.Base.add(self.displacement))
+                                    _pl += str(
+                                        ops[0].Placement.Base.add(self.displacement)
+                                    )
                                     commitops.append(_cmd)
                                     commitops.append(_pl)
                                     done = True
                             elif a2 == 3.1416:  # pi radians, 180 degrees
                                 if optype == 2:
                                     if ops[0].Height.Value >= 0:
-                                        d = ops[0].Height.Value - self.displacement.Length
+                                        d = (
+                                            ops[0].Height.Value
+                                            - self.displacement.Length
+                                        )
                                     else:
-                                        d = ops[0].Height.Value + self.displacement.Length
+                                        d = (
+                                            ops[0].Height.Value
+                                            + self.displacement.Length
+                                        )
                                     _cmd = _doc + ops[0].Name
                                     _cmd += ".Height=" + str(d)
                                     commitops.append(_cmd)
                                     done = True
                                 elif optype == 4:
                                     if ops[0].Height.Value >= 0:
-                                        d = ops[0].Height.Value + self.displacement.Length
+                                        d = (
+                                            ops[0].Height.Value
+                                            + self.displacement.Length
+                                        )
                                     else:
-                                        d = ops[0].Height.Value - self.displacement.Length
+                                        d = (
+                                            ops[0].Height.Value
+                                            - self.displacement.Length
+                                        )
                                     _cmd = _doc + ops[0].Name
                                     _cmd += ".Height=" + str(d)
                                     _pl = _doc + ops[0].Name
                                     _pl += ".Placement.Base=FreeCAD."
-                                    _pl += str(ops[0].Placement.Base.add(self.displacement))
+                                    _pl += str(
+                                        ops[0].Placement.Base.add(self.displacement)
+                                    )
                                     commitops.append(_cmd)
                                     commitops.append(_pl)
                                     done = True
                         if not done:
                             # otherwise create a wire copy and stretch it instead
-                            _msg(translate("draft", "Turning one Rectangle into a Wire"))
+                            _msg(
+                                translate("draft", "Turning one Rectangle into a Wire")
+                            )
                             pts = []
                             vts = ops[0].Shape.Vertexes
                             for i in range(4):
@@ -478,6 +559,6 @@ class Stretch(gui_base_original.Modifier):
         self.finish()
 
 
-Gui.addCommand('Draft_Stretch', Stretch())
+Gui.addCommand("Draft_Stretch", Stretch())
 
 ## @}

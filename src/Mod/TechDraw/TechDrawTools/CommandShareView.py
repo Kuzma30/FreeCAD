@@ -33,6 +33,7 @@ import FreeCADGui as Gui
 
 import TechDrawTools
 
+
 class CommandShareView:
     """Shares a View on current Page to another Page."""
 
@@ -42,14 +43,16 @@ class CommandShareView:
 
     def GetResources(self):
         """Return a dictionary with data that will be used by the button or menu item."""
-        return {'Pixmap': 'actions/TechDraw_ShareView.svg',
-                'Accel': "",
-                'MenuText': QT_TRANSLATE_NOOP("ShareView", "Share View"),
-                'ToolTip': QT_TRANSLATE_NOOP("ShareView", "Share a View on a second Page")}
+        return {
+            "Pixmap": "actions/TechDraw_ShareView.svg",
+            "Accel": "",
+            "MenuText": QT_TRANSLATE_NOOP("ShareView", "Share View"),
+            "ToolTip": QT_TRANSLATE_NOOP("ShareView", "Share a View on a second Page"),
+        }
 
     def Activated(self):
         """Run the following code when the command is activated (button press)."""
-#        print("Activated()")
+        #        print("Activated()")
         sel = Gui.Selection.getSelection()
 
         vName = ""
@@ -71,7 +74,7 @@ class CommandShareView:
         if len(pages) > 1:
             toPageName = pages[1].Name
 
-        self.ui  = TechDrawTools.TaskShareView()
+        self.ui = TechDrawTools.TaskShareView()
 
         self.ui.setValues(vName, fromPageName, toPageName)
         Gui.Control.showDialog(self.ui)
@@ -79,12 +82,14 @@ class CommandShareView:
     def IsActive(self):
         """Return True when the command should be active or False when it should be disabled (greyed)."""
         if App.ActiveDocument:
-            return TechDrawTools.TDToolsUtil.havePage() and TechDrawTools.TDToolsUtil.haveView()
+            return (
+                TechDrawTools.TDToolsUtil.havePage()
+                and TechDrawTools.TDToolsUtil.haveView()
+            )
         else:
             return False
 
 
 #
 # The command must be "registered" with a unique name by calling its class.
-Gui.addCommand('TechDraw_ShareView', CommandShareView())
-
+Gui.addCommand("TechDraw_ShareView", CommandShareView())

@@ -62,9 +62,14 @@ class ShapeString(gui_base_original.Creator):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        d = {'Pixmap': 'Draft_ShapeString',
-             'MenuText': QT_TRANSLATE_NOOP("Draft_ShapeString", "Shape from text"),
-             'ToolTip': QT_TRANSLATE_NOOP("Draft_ShapeString", "Creates a shape from a text string by choosing a specific font and a placement.\nThe closed shapes can be used for extrusions and boolean operations.")}
+        d = {
+            "Pixmap": "Draft_ShapeString",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_ShapeString", "Shape from text"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_ShapeString",
+                "Creates a shape from a text string by choosing a specific font and a placement.\nThe closed shapes can be used for extrusions and boolean operations.",
+            ),
+        }
         return d
 
     def Activated(self):
@@ -86,10 +91,11 @@ class ShapeString(gui_base_original.Creator):
                 todo.ToDo.delay(Gui.Control.showDialog, self.task)
             else:
                 self.dialog = None
-                self.text = ''
+                self.text = ""
                 self.ui.sourceCmd = self
-                self.ui.pointUi(title=translate("draft",self.featureName),
-                                icon="Draft_ShapeString")
+                self.ui.pointUi(
+                    title=translate("draft", self.featureName), icon="Draft_ShapeString"
+                )
                 self.active = True
                 self.call = self.view.addEventCallback("SoEvent", self.action)
                 self.ssBase = None
@@ -115,23 +121,24 @@ class ShapeString(gui_base_original.Creator):
         try:
             qr, sup, points, fil = self.getStrings()
             Gui.addModule("Draft")
-            _cmd = 'Draft.make_shapestring'
-            _cmd += '('
-            _cmd += 'String=' + String + ', '
-            _cmd += 'FontFile=' + FFile + ', '
-            _cmd += 'Size=' + Size + ', '
-            _cmd += 'Tracking=' + Tracking
-            _cmd += ')'
-            _cmd_list = ['ss = ' + _cmd,
-                         'plm = FreeCAD.Placement()',
-                         'plm.Base = ' + DraftVecUtils.toString(self.ssBase),
-                         'plm.Rotation.Q = ' + qr,
-                         'ss.Placement = plm',
-                         'ss.Support = ' + sup,
-                         'Draft.autogroup(ss)',
-                         'FreeCAD.ActiveDocument.recompute()']
-            self.commit(translate("draft", "Create ShapeString"),
-                        _cmd_list)
+            _cmd = "Draft.make_shapestring"
+            _cmd += "("
+            _cmd += "String=" + String + ", "
+            _cmd += "FontFile=" + FFile + ", "
+            _cmd += "Size=" + Size + ", "
+            _cmd += "Tracking=" + Tracking
+            _cmd += ")"
+            _cmd_list = [
+                "ss = " + _cmd,
+                "plm = FreeCAD.Placement()",
+                "plm.Base = " + DraftVecUtils.toString(self.ssBase),
+                "plm.Rotation.Q = " + qr,
+                "ss.Placement = plm",
+                "ss.Support = " + sup,
+                "Draft.autogroup(ss)",
+                "FreeCAD.ActiveDocument.recompute()",
+            ]
+            self.commit(translate("draft", "Create ShapeString"), _cmd_list)
         except Exception:
             _err("Draft_ShapeString: error delaying commit")
         self.finish()
@@ -152,9 +159,9 @@ class ShapeString(gui_base_original.Creator):
                 self.finish()
         elif arg["Type"] == "SoLocation2Event":  # mouse movement detection
             if self.active:
-                (self.point,
-                 ctrlPoint, info) = gui_tool_utils.getPoint(self, arg,
-                                                            noTracker=True)
+                (self.point, ctrlPoint, info) = gui_tool_utils.getPoint(
+                    self, arg, noTracker=True
+                )
             gui_tool_utils.redraw3DView()
         elif arg["Type"] == "SoMouseButtonEvent":
             if (arg["State"] == "DOWN") and (arg["Button"] == "BUTTON1"):
@@ -219,6 +226,6 @@ class ShapeString(gui_base_original.Creator):
                 self.Activated()
 
 
-Gui.addCommand('Draft_ShapeString', ShapeString())
+Gui.addCommand("Draft_ShapeString", ShapeString())
 
 ## @}

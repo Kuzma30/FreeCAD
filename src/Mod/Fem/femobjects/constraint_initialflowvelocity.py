@@ -40,38 +40,20 @@ class ConstraintInitialFlowVelocity(base_fempythonobject.BaseFemPythonObject):
     def __init__(self, obj):
         super(ConstraintInitialFlowVelocity, self).__init__(obj)
         obj.addProperty(
-            "App::PropertyFloat",
-            "VelocityX",
-            "Parameter",
-            "Body heat flux"
+            "App::PropertyFloat", "VelocityX", "Parameter", "Body heat flux"
         )
         obj.addProperty(
-            "App::PropertyBool",
-            "VelocityXEnabled",
-            "Parameter",
-            "Body heat flux"
+            "App::PropertyBool", "VelocityXEnabled", "Parameter", "Body heat flux"
         )
         obj.addProperty(
-            "App::PropertyFloat",
-            "VelocityY",
-            "Parameter",
-            "Body heat flux"
+            "App::PropertyFloat", "VelocityY", "Parameter", "Body heat flux"
         )
         obj.addProperty(
-            "App::PropertyBool",
-            "VelocityYEnabled",
-            "Parameter",
-            "Body heat flux"
+            "App::PropertyBool", "VelocityYEnabled", "Parameter", "Body heat flux"
         )
         obj.addProperty(
-            "App::PropertyFloat",
-            "VelocityZ",
-            "Parameter",
-            "Body heat flux"
+            "App::PropertyFloat", "VelocityZ", "Parameter", "Body heat flux"
         )
         obj.addProperty(
-            "App::PropertyBool",
-            "VelocityZEnabled",
-            "Parameter",
-            "Body heat flux"
+            "App::PropertyBool", "VelocityZEnabled", "Parameter", "Body heat flux"
         )

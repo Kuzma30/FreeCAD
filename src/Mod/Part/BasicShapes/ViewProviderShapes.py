@@ -32,26 +32,33 @@ import FreeCADGui
 
 from PySide import QtGui
 
+
 class ViewProviderTube:
     def __init__(self, obj):
-        ''' Set this object to the proxy object of the actual view provider '''
+        """Set this object to the proxy object of the actual view provider"""
         obj.Proxy = self
         obj.addExtension("PartGui::ViewProviderAttachExtensionPython")
         obj.setIgnoreOverlayIcon(True, "PartGui::ViewProviderAttachExtensionPython")
 
     def attach(self, obj):
-        ''' Setup the scene sub-graph of the view provider, this method is mandatory '''
+        """Setup the scene sub-graph of the view provider, this method is mandatory"""
         return
 
     def setupContextMenu(self, viewObject, menu):
-        action = menu.addAction(FreeCAD.Qt.translate("QObject", "Edit %1").replace("%1", viewObject.Object.Label))
+        action = menu.addAction(
+            FreeCAD.Qt.translate("QObject", "Edit %1").replace(
+                "%1", viewObject.Object.Label
+            )
+        )
         action.triggered.connect(lambda: self.startDefaultEditMode(viewObject))
         return False
 
     def startDefaultEditMode(self, viewObject):
         document = viewObject.Document.Document
         if not document.HasPendingTransaction:
-            text = FreeCAD.Qt.translate("QObject", "Edit %1").replace("%1", viewObject.Object.Label)
+            text = FreeCAD.Qt.translate("QObject", "Edit %1").replace(
+                "%1", viewObject.Object.Label
+            )
             document.openTransaction(text)
         viewObject.Document.setEdit(viewObject.Object, 0)
 
@@ -71,7 +78,7 @@ class ViewProviderTube:
     def __getstate__(self):
         return None
 
-    def __setstate__(self,state):
+    def __setstate__(self, state):
         return None
 
 
@@ -89,13 +96,21 @@ class TaskTubeUI:
         self.form.tubeInnerRadius.setProperty("rawValue", object.InnerRadius.Value)
         self.form.tubeHeight.setProperty("rawValue", object.Height.Value)
 
-        self.form.tubeOuterRadius.valueChanged.connect(lambda x: self.onChangeOuterRadius(x))
-        self.form.tubeInnerRadius.valueChanged.connect(lambda x: self.onChangeInnerRadius(x))
+        self.form.tubeOuterRadius.valueChanged.connect(
+            lambda x: self.onChangeOuterRadius(x)
+        )
+        self.form.tubeInnerRadius.valueChanged.connect(
+            lambda x: self.onChangeInnerRadius(x)
+        )
         self.form.tubeHeight.valueChanged.connect(lambda x: self.onChangeHeight(x))
 
-        FreeCADGui.ExpressionBinding(self.form.tubeOuterRadius).bind(object,"OuterRadius")
-        FreeCADGui.ExpressionBinding(self.form.tubeInnerRadius).bind(object,"InnerRadius")
-        FreeCADGui.ExpressionBinding(self.form.tubeHeight).bind(object,"Height")
+        FreeCADGui.ExpressionBinding(self.form.tubeOuterRadius).bind(
+            object, "OuterRadius"
+        )
+        FreeCADGui.ExpressionBinding(self.form.tubeInnerRadius).bind(
+            object, "InnerRadius"
+        )
+        FreeCADGui.ExpressionBinding(self.form.tubeHeight).bind(object, "Height")
 
     def onChangeOuterRadius(self, radius):
         object = self.viewObject.Object

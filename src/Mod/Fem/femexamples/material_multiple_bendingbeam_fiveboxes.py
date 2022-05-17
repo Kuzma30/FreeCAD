@@ -42,12 +42,14 @@ def get_information():
         "constraints": ["fixed", "force"],
         "solvers": ["calculix", "ccxtools"],
         "material": "multimaterial",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.material_multiple_bendingbeam_fiveboxes import setup
@@ -58,6 +60,7 @@ See forum topic post:
 ...
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -68,7 +71,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric objects
     # name is important because the other method in this module use obj name
@@ -181,7 +186,7 @@ def setup(doc=None, solvertype="ccxtools"):
         (doc.Box2, "Face6"),
         (doc.Box3, "Face6"),
         (doc.Box4, "Face6"),
-        (doc.Box5, "Face6")
+        (doc.Box5, "Face6"),
     ]
     con_force.Force = 10000.00
     con_force.Direction = (doc.Box1, ["Edge1"])
@@ -190,6 +195,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_multibodybeam_tetra10 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

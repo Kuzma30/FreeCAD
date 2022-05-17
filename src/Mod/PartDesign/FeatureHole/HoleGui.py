@@ -1,4 +1,4 @@
-#/******************************************************************************
+# /******************************************************************************
 # * Copyright (c) 2012 Jan Rheinländer <jrheinlaender@users.sourceforge.net>   *
 # *                                                                            *
 # * This file is part of the FreeCAD CAx development system.                   *
@@ -27,6 +27,7 @@ from TaskHole import TaskHole
 from FeatureHole import Hole
 from ViewProviderHole import ViewProviderHole
 
+
 class HoleGui:
     def getMainWindow(self):
         "returns the main window"
@@ -40,6 +41,7 @@ class HoleGui:
         raise Exception("No main window found")
 
     "Create a new hole feature"
+
     def Activated(self):
         # Get main window
         mw = self.getMainWindow()
@@ -47,42 +49,58 @@ class HoleGui:
         # Get active document
         doc = FreeCAD.activeDocument()
         if doc is None:
-            QtGui.QMessageBox.critical(mw, "No document", "A document must be open in order to create a hole feature")
+            QtGui.QMessageBox.critical(
+                mw,
+                "No document",
+                "A document must be open in order to create a hole feature",
+            )
             return
 
         # Check for valid position selection
         selection = FreeCADGui.Selection.getSelectionEx()
         if len(selection) != 1:
-            QtGui.QMessageBox.critical(mw, "No position defined", "Please select a face to create the hole feature on")
+            QtGui.QMessageBox.critical(
+                mw,
+                "No position defined",
+                "Please select a face to create the hole feature on",
+            )
             return
         if selection[0].DocumentName != doc.Name:
-            QtGui.QMessageBox.critical(mw, "Wrong document", "Please select a face in the active document")
+            QtGui.QMessageBox.critical(
+                mw, "Wrong document", "Please select a face in the active document"
+            )
             return
         # Note: For some reason setting the Support property here breaks all sorts of things.
         #       It is done in TaskHole.updateUI() instead
 
         # Show feature preview
-        body = FreeCADGui.activeView().getActiveObject("pdbody");
+        body = FreeCADGui.activeView().getActiveObject("pdbody")
         if body is None:
-            QtGui.QMessageBox.critical(mw, "No active body", "Please create a body or make a body active")
+            QtGui.QMessageBox.critical(
+                mw, "No active body", "Please create a body or make a body active"
+            )
             return
-    
-        feature = doc.addObject("Part::FeaturePython","Hole")
+
+        feature = doc.addObject("Part::FeaturePython", "Hole")
         hole = Hole(feature)
         body.addFeature(feature)
-        
+
         vp = ViewProviderHole(feature.ViewObject)
         feature.touch()
         FreeCAD.ActiveDocument.recompute()
         # Fit view (remove after the testing phase)
         FreeCADGui.SendMsgToActiveView("ViewFit")
 
-        vp.setEdit(vp,  1)
+        vp.setEdit(vp, 1)
 
     def GetResources(self):
-        IconPath = FreeCAD.ConfigGet("AppHomePath") + "Mod/PartDesign/FeatureHole/PartDesign_Hole.svg"
-        MenuText = 'Create a hole feature'
-        ToolTip = 'Create a hole feature'
-        return {'Pixmap' : IconPath, 'MenuText': MenuText, 'ToolTip': ToolTip}
+        IconPath = (
+            FreeCAD.ConfigGet("AppHomePath")
+            + "Mod/PartDesign/FeatureHole/PartDesign_Hole.svg"
+        )
+        MenuText = "Create a hole feature"
+        ToolTip = "Create a hole feature"
+        return {"Pixmap": IconPath, "MenuText": MenuText, "ToolTip": ToolTip}
 
-FreeCADGui.addCommand('PartDesign_Hole', HoleGui())
+
+FreeCADGui.addCommand("PartDesign_Hole", HoleGui())

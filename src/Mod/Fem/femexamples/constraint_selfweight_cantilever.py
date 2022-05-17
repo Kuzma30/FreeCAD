@@ -39,12 +39,14 @@ def get_information():
         "constraints": ["fixed", "self weight"],
         "solvers": ["calculix", "ccxtools", "elmer"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.constraint_selfweight_cantilever import setup
@@ -59,6 +61,7 @@ l = 32 m, yields just from self weight, means max sigma around 235 n/mm2
 max deformation = 576.8 mm
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -69,7 +72,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     geom_obj = doc.addObject("Part::Box", "Box")
@@ -129,6 +134,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_selfweight_cantilever_tetra10 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

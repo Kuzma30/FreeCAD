@@ -33,7 +33,7 @@ import draftutils.groups as groups
 class ViewProviderClone:
     """a view provider that displays a Clone icon instead of a Draft icon"""
 
-    def __init__(self,vobj):
+    def __init__(self, vobj):
         vobj.Proxy = self
 
     def getIcon(self):
@@ -46,7 +46,7 @@ class ViewProviderClone:
         return None
 
     def getDisplayModes(self, vobj):
-        modes=[]
+        modes = []
         return modes
 
     def setDisplayMode(self, mode):
@@ -60,8 +60,8 @@ class ViewProviderClone:
                     colors.extend(o.ViewObject.DiffuseColor)
                 else:
                     c = o.ViewObject.ShapeColor
-                    c = (c[0],c[1],c[2],o.ViewObject.Transparency/100.0)
-                    colors += [c] * len(o.Shape.Faces) # TODO: verify this line
+                    c = (c[0], c[1], c[2], o.ViewObject.Transparency / 100.0)
+                    colors += [c] * len(o.Shape.Faces)  # TODO: verify this line
             elif o.hasExtension("App::GeoFeatureGroupExtension"):
                 for so in vobj.Object.Group:
                     if so.isDerivedFrom("Part::Feature"):
@@ -69,7 +69,7 @@ class ViewProviderClone:
                             colors.extend(so.ViewObject.DiffuseColor)
                         else:
                             c = so.ViewObject.ShapeColor
-                            c = (c[0],c[1],c[2],so.ViewObject.Transparency/100.0)
+                            c = (c[0], c[1], c[2], so.ViewObject.Transparency / 100.0)
                             colors += [c] * len(so.Shape.Faces)
         if colors:
             vobj.DiffuseColor = colors

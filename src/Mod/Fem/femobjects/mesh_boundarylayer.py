@@ -46,7 +46,7 @@ class MeshBoundaryLayer(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyInteger",
             "NumberOfLayers",
             "MeshBoundaryLayerProperties",
-            "set number of inflation layers for this boundary"
+            "set number of inflation layers for this boundary",
         )
         obj.NumberOfLayers = 3
 
@@ -54,7 +54,7 @@ class MeshBoundaryLayer(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyLength",
             "MinimumThickness",
             "MeshBoundaryLayerProperties",
-            "set minimum thickness,usually the first inflation layer"
+            "set minimum thickness,usually the first inflation layer",
         )
         # default to zero, user must specify a proper value for this property
 
@@ -62,7 +62,7 @@ class MeshBoundaryLayer(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyFloat",
             "GrowthRate",
             "MeshBoundaryLayerProperties",
-            "set growth rate of inflation layers for smooth transition"
+            "set growth rate of inflation layers for smooth transition",
         )
         obj.GrowthRate = 1.5
 
@@ -70,5 +70,5 @@ class MeshBoundaryLayer(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyLinkSubList",
             "References",
             "MeshBoundaryLayerShapes",
-            "List of FEM mesh region shapes"
+            "List of FEM mesh region shapes",
         )

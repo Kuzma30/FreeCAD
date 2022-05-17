@@ -61,10 +61,15 @@ class Arc(gui_base_original.Creator):
 
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'Pixmap': 'Draft_Arc',
-                'Accel': "A, R",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Arc", "Arc"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Arc", "Creates a circular arc by a center point and a radius.\nCTRL to snap, SHIFT to constrain.")}
+        return {
+            "Pixmap": "Draft_Arc",
+            "Accel": "A, R",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Arc", "Arc"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Arc",
+                "Creates a circular arc by a center point and a radius.\nCTRL to snap, SHIFT to constrain.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -141,6 +146,7 @@ class Arc(gui_base_original.Creator):
             from the 3D view.
         """
         import DraftGeomUtils
+
         plane = App.DraftWorkingPlane
 
         if arg["Type"] == "SoKeyboardEvent":
@@ -150,8 +156,9 @@ class Arc(gui_base_original.Creator):
             self.point, ctrlPoint, info = gui_tool_utils.getPoint(self, arg)
             # this is to make sure radius is what you see on screen
             if self.center and DraftVecUtils.dist(self.point, self.center) > 0:
-                viewdelta = DraftVecUtils.project(self.point.sub(self.center),
-                                                  plane.axis)
+                viewdelta = DraftVecUtils.project(
+                    self.point.sub(self.center), plane.axis
+                )
                 if not DraftVecUtils.isNull(viewdelta):
                     self.point = self.point.add(viewdelta.negative())
             if self.step == 0:  # choose center
@@ -165,16 +172,16 @@ class Arc(gui_base_original.Creator):
                             self.ui.switchUi(False)
             elif self.step == 1:  # choose radius
                 if len(self.tangents) == 2:
-                    cir = DraftGeomUtils.circleFrom2tan1pt(self.tangents[0],
-                                                           self.tangents[1],
-                                                           self.point)
+                    cir = DraftGeomUtils.circleFrom2tan1pt(
+                        self.tangents[0], self.tangents[1], self.point
+                    )
                     _c = DraftGeomUtils.findClosestCircle(self.point, cir)
                     self.center = _c.Center
                     self.arctrack.setCenter(self.center)
                 elif self.tangents and self.tanpoints:
-                    cir = DraftGeomUtils.circleFrom1tan2pt(self.tangents[0],
-                                                           self.tanpoints[0],
-                                                           self.point)
+                    cir = DraftGeomUtils.circleFrom1tan2pt(
+                        self.tangents[0], self.tanpoints[0], self.point
+                    )
                     _c = DraftGeomUtils.findClosestCircle(self.point, cir)
                     self.center = _c.Center
                     self.arctrack.setCenter(self.center)
@@ -182,19 +189,23 @@ class Arc(gui_base_original.Creator):
                     if not self.altdown:
                         self.altdown = True
                     if info:
-                        ob = self.doc.getObject(info['Object'])
-                        num = int(info['Component'].lstrip('Edge')) - 1
+                        ob = self.doc.getObject(info["Object"])
+                        num = int(info["Component"].lstrip("Edge")) - 1
                         ed = ob.Shape.Edges[num]
                         if len(self.tangents) == 2:
-                            cir = DraftGeomUtils.circleFrom3tan(self.tangents[0],
-                                                                self.tangents[1],
-                                                                ed)
+                            cir = DraftGeomUtils.circleFrom3tan(
+                                self.tangents[0], self.tangents[1], ed
+                            )
                             cl = DraftGeomUtils.findClosestCircle(self.point, cir)
                             self.center = cl.Center
                             self.rad = cl.Radius
                             self.arctrack.setCenter(self.center)
                         else:
-                            self.rad = self.center.add(DraftGeomUtils.findDistance(self.center, ed).sub(self.center)).Length
+                            self.rad = self.center.add(
+                                DraftGeomUtils.findDistance(self.center, ed).sub(
+                                    self.center
+                                )
+                            ).Length
                     else:
                         self.rad = DraftVecUtils.dist(self.point, self.center)
                 else:
@@ -206,23 +217,35 @@ class Arc(gui_base_original.Creator):
                 self.linetrack.p1(self.center)
                 self.linetrack.p2(self.point)
                 self.linetrack.on()
-            elif (self.step == 2):  # choose first angle
+            elif self.step == 2:  # choose first angle
                 currentrad = DraftVecUtils.dist(self.point, self.center)
                 if currentrad != 0:
-                    angle = DraftVecUtils.angle(plane.u, self.point.sub(self.center), plane.axis)
+                    angle = DraftVecUtils.angle(
+                        plane.u, self.point.sub(self.center), plane.axis
+                    )
                 else:
                     angle = 0
-                self.linetrack.p2(DraftVecUtils.scaleTo(self.point.sub(self.center), self.rad).add(self.center))
+                self.linetrack.p2(
+                    DraftVecUtils.scaleTo(self.point.sub(self.center), self.rad).add(
+                        self.center
+                    )
+                )
                 self.ui.setRadiusValue(math.degrees(angle), unit="Angle")
                 self.firstangle = angle
             else:
                 # choose second angle
                 currentrad = DraftVecUtils.dist(self.point, self.center)
                 if currentrad != 0:
-                    angle = DraftVecUtils.angle(plane.u, self.point.sub(self.center), plane.axis)
+                    angle = DraftVecUtils.angle(
+                        plane.u, self.point.sub(self.center), plane.axis
+                    )
                 else:
                     angle = 0
-                self.linetrack.p2(DraftVecUtils.scaleTo(self.point.sub(self.center), self.rad).add(self.center))
+                self.linetrack.p2(
+                    DraftVecUtils.scaleTo(self.point.sub(self.center), self.rad).add(
+                        self.center
+                    )
+                )
                 self.updateAngle(angle)
                 self.ui.setRadiusValue(math.degrees(self.angle), unit="Angle")
                 self.arctrack.setApertureAngle(self.angle)
@@ -235,14 +258,16 @@ class Arc(gui_base_original.Creator):
                     if self.step == 0:  # choose center
                         if not self.support:
                             gui_tool_utils.getSupport(arg)
-                            (self.point,
-                             ctrlPoint, info) = gui_tool_utils.getPoint(self, arg)
+                            (self.point, ctrlPoint, info) = gui_tool_utils.getPoint(
+                                self, arg
+                            )
                         if gui_tool_utils.hasMod(arg, gui_tool_utils.MODALT):
-                            snapped = self.view.getObjectInfo((arg["Position"][0],
-                                                               arg["Position"][1]))
+                            snapped = self.view.getObjectInfo(
+                                (arg["Position"][0], arg["Position"][1])
+                            )
                             if snapped:
-                                ob = self.doc.getObject(snapped['Object'])
-                                num = int(snapped['Component'].lstrip('Edge')) - 1
+                                ob = self.doc.getObject(snapped["Object"])
+                                num = int(snapped["Component"].lstrip("Edge")) - 1
                                 ed = ob.Shape.Edges[num]
                                 self.tangents.append(ed)
                                 if len(self.tangents) == 2:
@@ -260,8 +285,11 @@ class Arc(gui_base_original.Creator):
                                 self.node = [self.point]
                                 self.arctrack.setCenter(self.center)
                                 self.linetrack.p1(self.center)
-                                self.linetrack.p2(self.view.getPoint(arg["Position"][0],
-                                                                     arg["Position"][1]))
+                                self.linetrack.p2(
+                                    self.view.getPoint(
+                                        arg["Position"][0], arg["Position"][1]
+                                    )
+                                )
                             self.arctrack.on()
                             self.ui.radiusUi()
                             self.step = 1
@@ -274,16 +302,26 @@ class Arc(gui_base_original.Creator):
                         if self.closedCircle:
                             self.drawArc()
                         else:
-                            self.ui.labelRadius.setText(translate("draft", "Start angle"))
-                            self.ui.radiusValue.setToolTip(translate("draft", "Start angle"))
-                            self.ui.radiusValue.setText(U.Quantity(0, U.Angle).UserString)
+                            self.ui.labelRadius.setText(
+                                translate("draft", "Start angle")
+                            )
+                            self.ui.radiusValue.setToolTip(
+                                translate("draft", "Start angle")
+                            )
+                            self.ui.radiusValue.setText(
+                                U.Quantity(0, U.Angle).UserString
+                            )
                             self.linetrack.p1(self.center)
                             self.linetrack.on()
                             self.step = 2
                             _msg(translate("draft", "Pick start angle"))
                     elif self.step == 2:  # choose first angle
-                        self.ui.labelRadius.setText(translate("draft", "Aperture angle"))
-                        self.ui.radiusValue.setToolTip(translate("draft", "Aperture angle"))
+                        self.ui.labelRadius.setText(
+                            translate("draft", "Aperture angle")
+                        )
+                        self.ui.radiusValue.setToolTip(
+                            translate("draft", "Aperture angle")
+                        )
                         self.step = 3
                         # scale center->point vector for proper display
                         # u = DraftVecUtils.scaleTo(self.point.sub(self.center), self.rad) obsolete?
@@ -304,36 +342,38 @@ class Arc(gui_base_original.Creator):
                 if utils.getParam("UsePartPrimitives", False):
                     # Insert a Part::Primitive object
                     _base = DraftVecUtils.toString(self.center)
-                    _cmd = 'FreeCAD.ActiveDocument.'
+                    _cmd = "FreeCAD.ActiveDocument."
                     _cmd += 'addObject("Part::Circle", "Circle")'
-                    _cmd_list = ['circle = ' + _cmd,
-                                 'circle.Radius = ' + str(self.rad),
-                                 'pl = FreeCAD.Placement()',
-                                 'pl.Rotation.Q = ' + rot,
-                                 'pl.Base = ' + _base,
-                                 'circle.Placement = pl',
-                                 'Draft.autogroup(circle)',
-                                 'FreeCAD.ActiveDocument.recompute()']
-                    self.commit(translate("draft", "Create Circle (Part)"),
-                                _cmd_list)
+                    _cmd_list = [
+                        "circle = " + _cmd,
+                        "circle.Radius = " + str(self.rad),
+                        "pl = FreeCAD.Placement()",
+                        "pl.Rotation.Q = " + rot,
+                        "pl.Base = " + _base,
+                        "circle.Placement = pl",
+                        "Draft.autogroup(circle)",
+                        "FreeCAD.ActiveDocument.recompute()",
+                    ]
+                    self.commit(translate("draft", "Create Circle (Part)"), _cmd_list)
                 else:
                     # Insert a Draft circle
                     _base = DraftVecUtils.toString(self.center)
-                    _cmd = 'Draft.make_circle'
-                    _cmd += '('
-                    _cmd += 'radius=' + str(self.rad) + ', '
-                    _cmd += 'placement=pl, '
-                    _cmd += 'face=' + fil + ', '
-                    _cmd += 'support=' + sup
-                    _cmd += ')'
-                    _cmd_list = ['pl=FreeCAD.Placement()',
-                                 'pl.Rotation.Q=' + rot,
-                                 'pl.Base=' + _base,
-                                 'circle = ' + _cmd,
-                                 'Draft.autogroup(circle)',
-                                 'FreeCAD.ActiveDocument.recompute()']
-                    self.commit(translate("draft", "Create Circle"),
-                                _cmd_list)
+                    _cmd = "Draft.make_circle"
+                    _cmd += "("
+                    _cmd += "radius=" + str(self.rad) + ", "
+                    _cmd += "placement=pl, "
+                    _cmd += "face=" + fil + ", "
+                    _cmd += "support=" + sup
+                    _cmd += ")"
+                    _cmd_list = [
+                        "pl=FreeCAD.Placement()",
+                        "pl.Rotation.Q=" + rot,
+                        "pl.Base=" + _base,
+                        "circle = " + _cmd,
+                        "Draft.autogroup(circle)",
+                        "FreeCAD.ActiveDocument.recompute()",
+                    ]
+                    self.commit(translate("draft", "Create Circle"), _cmd_list)
             except Exception:
                 _err("Draft: error delaying commit")
         else:
@@ -354,40 +394,42 @@ class Arc(gui_base_original.Creator):
                 if utils.getParam("UsePartPrimitives", False):
                     # Insert a Part::Primitive object
                     _base = DraftVecUtils.toString(self.center)
-                    _cmd = 'FreeCAD.ActiveDocument.'
+                    _cmd = "FreeCAD.ActiveDocument."
                     _cmd += 'addObject("Part::Circle", "Circle")'
-                    _cmd_list = ['circle = ' + _cmd,
-                                 'circle.Radius = ' + str(self.rad),
-                                 'circle.Angle1 = ' + str(sta),
-                                 'circle.Angle2 = ' + str(end),
-                                 'pl = FreeCAD.Placement()',
-                                 'pl.Rotation.Q = ' + rot,
-                                 'pl.Base = ' + _base,
-                                 'circle.Placement = pl',
-                                 'Draft.autogroup(circle)',
-                                 'FreeCAD.ActiveDocument.recompute()']
-                    self.commit(translate("draft", "Create Arc (Part)"),
-                                _cmd_list)
+                    _cmd_list = [
+                        "circle = " + _cmd,
+                        "circle.Radius = " + str(self.rad),
+                        "circle.Angle1 = " + str(sta),
+                        "circle.Angle2 = " + str(end),
+                        "pl = FreeCAD.Placement()",
+                        "pl.Rotation.Q = " + rot,
+                        "pl.Base = " + _base,
+                        "circle.Placement = pl",
+                        "Draft.autogroup(circle)",
+                        "FreeCAD.ActiveDocument.recompute()",
+                    ]
+                    self.commit(translate("draft", "Create Arc (Part)"), _cmd_list)
                 else:
                     # Insert a Draft circle
                     _base = DraftVecUtils.toString(self.center)
-                    _cmd = 'Draft.make_circle'
-                    _cmd += '('
-                    _cmd += 'radius=' + str(self.rad) + ', '
-                    _cmd += 'placement=pl, '
-                    _cmd += 'face=' + fil + ', '
-                    _cmd += 'startangle=' + str(sta) + ', '
-                    _cmd += 'endangle=' + str(end) + ', '
-                    _cmd += 'support=' + sup
-                    _cmd += ')'
-                    _cmd_list = ['pl = FreeCAD.Placement()',
-                                 'pl.Rotation.Q = ' + rot,
-                                 'pl.Base = ' + _base,
-                                 'circle = ' + _cmd,
-                                 'Draft.autogroup(circle)',
-                                 'FreeCAD.ActiveDocument.recompute()']
-                    self.commit(translate("draft", "Create Arc"),
-                                _cmd_list)
+                    _cmd = "Draft.make_circle"
+                    _cmd += "("
+                    _cmd += "radius=" + str(self.rad) + ", "
+                    _cmd += "placement=pl, "
+                    _cmd += "face=" + fil + ", "
+                    _cmd += "startangle=" + str(sta) + ", "
+                    _cmd += "endangle=" + str(end) + ", "
+                    _cmd += "support=" + sup
+                    _cmd += ")"
+                    _cmd_list = [
+                        "pl = FreeCAD.Placement()",
+                        "pl.Rotation.Q = " + rot,
+                        "pl.Base = " + _base,
+                        "circle = " + _cmd,
+                        "Draft.autogroup(circle)",
+                        "FreeCAD.ActiveDocument.recompute()",
+                    ]
+                    self.commit(translate("draft", "Create Arc"), _cmd_list)
             except Exception:
                 _err("Draft: error delaying commit")
 
@@ -416,23 +458,24 @@ class Arc(gui_base_original.Creator):
         when a valid radius has been entered in the input field.
         """
         import DraftGeomUtils
+
         plane = App.DraftWorkingPlane
 
         if self.step == 1:
             self.rad = rad
             if len(self.tangents) == 2:
-                cir = DraftGeomUtils.circleFrom2tan1rad(self.tangents[0],
-                                                        self.tangents[1],
-                                                        rad)
+                cir = DraftGeomUtils.circleFrom2tan1rad(
+                    self.tangents[0], self.tangents[1], rad
+                )
                 if self.center:
                     _c = DraftGeomUtils.findClosestCircle(self.center, cir)
                     self.center = _c.Center
                 else:
                     self.center = cir[-1].Center
             elif self.tangents and self.tanpoints:
-                cir = DraftGeomUtils.circleFrom1tan1pt1rad(self.tangents[0],
-                                                           self.tanpoints[0],
-                                                           rad)
+                cir = DraftGeomUtils.circleFrom1tan1pt1rad(
+                    self.tangents[0], self.tanpoints[0], rad
+                )
                 if self.center:
                     _c = DraftGeomUtils.findClosestCircle(self.center, cir)
                     self.center = _c.Center
@@ -457,7 +500,9 @@ class Arc(gui_base_original.Creator):
             if DraftVecUtils.equals(plane.axis, App.Vector(1, 0, 0)):
                 u = App.Vector(0, self.rad, 0)
             else:
-                u = DraftVecUtils.scaleTo(App.Vector(1, 0, 0).cross(plane.axis), self.rad)
+                u = DraftVecUtils.scaleTo(
+                    App.Vector(1, 0, 0).cross(plane.axis), self.rad
+                )
             urotated = DraftVecUtils.rotate(u, math.radians(rad), plane.axis)
             self.arctrack.setStartAngle(self.firstangle)
             self.step = 3
@@ -471,7 +516,7 @@ class Arc(gui_base_original.Creator):
             self.drawArc()
 
 
-Gui.addCommand('Draft_Arc', Arc())
+Gui.addCommand("Draft_Arc", Arc())
 
 
 class Arc_3Points(gui_base.GuiCommandSimplest):
@@ -482,10 +527,15 @@ class Arc_3Points(gui_base.GuiCommandSimplest):
 
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'Pixmap': "Draft_Arc_3Points",
-                'Accel': "A,T",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Arc_3Points", "Arc by 3 points"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Arc_3Points", "Creates a circular arc by picking 3 points.\nCTRL to snap, SHIFT to constrain.")}
+        return {
+            "Pixmap": "Draft_Arc_3Points",
+            "Accel": "A,T",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Arc_3Points", "Arc by 3 points"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Arc_3Points",
+                "Creates a circular arc by picking 3 points.\nCTRL to snap, SHIFT to constrain.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -503,11 +553,11 @@ class Arc_3Points(gui_base.GuiCommandSimplest):
         if hasattr(App, "DraftWorkingPlane"):
             App.DraftWorkingPlane.setup()
 
-        Gui.Snapper.getPoint(callback=self.getPoint,
-                             movecallback=self.drawArc)
+        Gui.Snapper.getPoint(callback=self.getPoint, movecallback=self.drawArc)
         Gui.Snapper.ui.sourceCmd = self
-        Gui.Snapper.ui.setTitle(title=translate("draft", "Arc by 3 points"),
-                                icon="Draft_Arc_3Points")
+        Gui.Snapper.ui.setTitle(
+            title=translate("draft", "Arc by 3 points"), icon="Draft_Arc_3Points"
+        )
         Gui.Snapper.ui.continueCmd.show()
 
     def getPoint(self, point, info):
@@ -544,12 +594,13 @@ class Arc_3Points(gui_base.GuiCommandSimplest):
             # the arc tracker to show the preview of the final curve.
             if len(self.points) == 2:
                 self.tracker.on()
-            Gui.Snapper.getPoint(last=self.points[-1],
-                                 callback=self.getPoint,
-                                 movecallback=self.drawArc)
+            Gui.Snapper.getPoint(
+                last=self.points[-1], callback=self.getPoint, movecallback=self.drawArc
+            )
             Gui.Snapper.ui.sourceCmd = self
-            Gui.Snapper.ui.setTitle(title=translate("draft", "Arc by 3 points"),
-                                    icon="Draft_Arc_3Points")
+            Gui.Snapper.ui.setTitle(
+                title=translate("draft", "Arc by 3 points"), icon="Draft_Arc_3Points"
+            )
             Gui.Snapper.ui.continueCmd.show()
 
         else:
@@ -557,13 +608,13 @@ class Arc_3Points(gui_base.GuiCommandSimplest):
             # proceed with creating the final object.
             # Draw a simple `Part::Feature` if the parameter is `True`.
             if utils.get_param("UsePartPrimitives", False):
-                Draft.make_arc_3points([self.points[0],
-                                        self.points[1],
-                                        self.points[2]], primitive=True)
+                Draft.make_arc_3points(
+                    [self.points[0], self.points[1], self.points[2]], primitive=True
+                )
             else:
-                Draft.make_arc_3points([self.points[0],
-                                        self.points[1],
-                                        self.points[2]], primitive=False)
+                Draft.make_arc_3points(
+                    [self.points[0], self.points[1], self.points[2]], primitive=False
+                )
 
             self.finish()
             if Gui.Snapper.ui.continueMode:
@@ -585,9 +636,7 @@ class Arc_3Points(gui_base.GuiCommandSimplest):
         """
         if len(self.points) == 2:
             if point.sub(self.points[1]).Length > 0.001:
-                self.tracker.setBy3Points(self.points[0],
-                                          self.points[1],
-                                          point)
+                self.tracker.setBy3Points(self.points[0], self.points[1], point)
 
     def finish(self, close=False):
         self.tracker.finalize()
@@ -595,7 +644,7 @@ class Arc_3Points(gui_base.GuiCommandSimplest):
 
 
 Draft_Arc_3Points = Arc_3Points
-Gui.addCommand('Draft_Arc_3Points', Arc_3Points())
+Gui.addCommand("Draft_Arc_3Points", Arc_3Points())
 
 
 class ArcGroup:
@@ -603,12 +652,16 @@ class ArcGroup:
 
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'MenuText': QT_TRANSLATE_NOOP("Draft_ArcTools", "Arc tools"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_ArcTools", "Create various types of circular arcs.")}
+        return {
+            "MenuText": QT_TRANSLATE_NOOP("Draft_ArcTools", "Arc tools"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_ArcTools", "Create various types of circular arcs."
+            ),
+        }
 
     def GetCommands(self):
         """Return a tuple of commands in the group."""
-        return ('Draft_Arc', 'Draft_Arc_3Points')
+        return ("Draft_Arc", "Draft_Arc_3Points")
 
     def IsActive(self):
         """Return True when this command should be available.
@@ -621,6 +674,6 @@ class ArcGroup:
             return False
 
 
-Gui.addCommand('Draft_ArcTools', ArcGroup())
+Gui.addCommand("Draft_ArcTools", ArcGroup())
 
 ## @}

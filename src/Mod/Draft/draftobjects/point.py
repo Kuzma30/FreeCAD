@@ -54,15 +54,14 @@ class Point(DraftObject):
         obj.Y = y
         obj.Z = z
 
-        obj.setPropertyStatus('Placement', 'Hidden')
+        obj.setPropertyStatus("Placement", "Hidden")
 
     def execute(self, obj):
         import Part
+
         shape = Part.Vertex(App.Vector(0, 0, 0))
         obj.Shape = shape
-        obj.Placement.Base = App.Vector(obj.X.Value,
-                                        obj.Y.Value,
-                                        obj.Z.Value)
+        obj.Placement.Base = App.Vector(obj.X.Value, obj.Y.Value, obj.Z.Value)
 
 
 # Alias for compatibility with v0.18 and earlier

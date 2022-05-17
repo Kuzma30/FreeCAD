@@ -58,9 +58,13 @@ class Point(gui_base_original.Creator):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Point',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Point", "Point"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Point", "Creates a point object. Click anywhere on the 3D view.")}
+        return {
+            "Pixmap": "Draft_Point",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Point", "Point"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Point", "Creates a point object. Click anywhere on the 3D view."
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -69,17 +73,23 @@ class Point(gui_base_original.Creator):
         self.stack = []
         rot = self.view.getCameraNode().getField("orientation").getValue()
         upv = App.Vector(rot.multVec(coin.SbVec3f(0, 1, 0)).getValue())
-        App.DraftWorkingPlane.setup(self.view.getViewDirection().negative(),
-                                    App.Vector(0, 0, 0),
-                                    upv)
+        App.DraftWorkingPlane.setup(
+            self.view.getViewDirection().negative(), App.Vector(0, 0, 0), upv
+        )
         self.point = None
         if self.ui:
-            self.ui.pointUi(title=translate("draft", self.featureName), icon="Draft_Point")
+            self.ui.pointUi(
+                title=translate("draft", self.featureName), icon="Draft_Point"
+            )
             self.ui.isRelative.hide()
             self.ui.continueCmd.show()
         # adding 2 callback functions
-        self.callbackClick = self.view.addEventCallbackPivy(coin.SoMouseButtonEvent.getClassTypeId(), self.click)
-        self.callbackMove = self.view.addEventCallbackPivy(coin.SoLocation2Event.getClassTypeId(), self.move)
+        self.callbackClick = self.view.addEventCallbackPivy(
+            coin.SoMouseButtonEvent.getClassTypeId(), self.click
+        )
+        self.callbackMove = self.view.addEventCallbackPivy(
+            coin.SoLocation2Event.getClassTypeId(), self.move
+        )
 
     def move(self, event_cb):
         """Execute as a callback when the pointer moves in the 3D view.
@@ -111,8 +121,10 @@ class Point(gui_base_original.Creator):
         """
         if event_cb:
             event = event_cb.getEvent()
-            if (event.getState() != coin.SoMouseButtonEvent.DOWN or
-                event.getButton() != event.BUTTON1):
+            if (
+                event.getState() != coin.SoMouseButtonEvent.DOWN
+                or event.getButton() != event.BUTTON1
+            ):
                 return
         if self.point:
             self.stack.append(self.point)
@@ -123,29 +135,31 @@ class Point(gui_base_original.Creator):
                 Gui.addModule("Draft")
                 if utils.getParam("UsePartPrimitives", False):
                     # Insert a Part::Primitive object
-                    _cmd = 'FreeCAD.ActiveDocument.'
+                    _cmd = "FreeCAD.ActiveDocument."
                     _cmd += 'addObject("Part::Vertex", "Point")'
-                    _cmd_list = ['point = ' + _cmd,
-                                 'point.X = ' + str(self.stack[0][0]),
-                                 'point.Y = ' + str(self.stack[0][1]),
-                                 'point.Z = ' + str(self.stack[0][2]),
-                                 'Draft.autogroup(point)',
-                                 'FreeCAD.ActiveDocument.recompute()']
-                    commitlist.append((translate("draft", "Create Point"),
-                                       _cmd_list))
+                    _cmd_list = [
+                        "point = " + _cmd,
+                        "point.X = " + str(self.stack[0][0]),
+                        "point.Y = " + str(self.stack[0][1]),
+                        "point.Z = " + str(self.stack[0][2]),
+                        "Draft.autogroup(point)",
+                        "FreeCAD.ActiveDocument.recompute()",
+                    ]
+                    commitlist.append((translate("draft", "Create Point"), _cmd_list))
                 else:
                     # Insert a Draft point
-                    _cmd = 'Draft.make_point'
-                    _cmd += '('
-                    _cmd += str(self.stack[0][0]) + ', '
-                    _cmd += str(self.stack[0][1]) + ', '
+                    _cmd = "Draft.make_point"
+                    _cmd += "("
+                    _cmd += str(self.stack[0][0]) + ", "
+                    _cmd += str(self.stack[0][1]) + ", "
                     _cmd += str(self.stack[0][2])
-                    _cmd += ')'
-                    _cmd_list = ['point = ' + _cmd,
-                                 'Draft.autogroup(point)',
-                                 'FreeCAD.ActiveDocument.recompute()']
-                    commitlist.append((translate("draft", "Create Point"),
-                                       _cmd_list))
+                    _cmd += ")"
+                    _cmd_list = [
+                        "point = " + _cmd,
+                        "Draft.autogroup(point)",
+                        "FreeCAD.ActiveDocument.recompute()",
+                    ]
+                    commitlist.append((translate("draft", "Create Point"), _cmd_list))
                 todo.ToDo.delayCommit(commitlist)
                 Gui.Snapper.off()
             self.finish()
@@ -154,15 +168,19 @@ class Point(gui_base_original.Creator):
         """Terminate the operation and restart if needed."""
         super(Point, self).finish()
         if self.callbackClick:
-                self.view.removeEventCallbackPivy(coin.SoMouseButtonEvent.getClassTypeId(), self.callbackClick)
+            self.view.removeEventCallbackPivy(
+                coin.SoMouseButtonEvent.getClassTypeId(), self.callbackClick
+            )
         if self.callbackMove:
-                self.view.removeEventCallbackPivy(coin.SoLocation2Event.getClassTypeId(), self.callbackMove)
+            self.view.removeEventCallbackPivy(
+                coin.SoLocation2Event.getClassTypeId(), self.callbackMove
+            )
 
         if self.ui:
             if self.ui.continueMode:
                 self.Activated()
 
 
-Gui.addCommand('Draft_Point', Point())
+Gui.addCommand("Draft_Point", Point())
 
 ## @}

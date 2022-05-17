@@ -39,7 +39,6 @@ INFO_COLOR = "blue"
 
 
 class ReportDialog(QtGui.QDialog):
-
     def __init__(self, report, title="Report", text=None, parent=None):
         super(ReportDialog, self).__init__(parent)
         msgDetails = QtGui.QTextEdit()
@@ -73,5 +72,6 @@ class ReportDialog(QtGui.QDialog):
 
     def _getColoredLine(self, text, color):
         return '<font color="%s">%s</font>' % (color, text)
+
 
 ##  @}

@@ -38,14 +38,14 @@ if App.GuiUp:
 
 
 def make_point(X=0, Y=0, Z=0, color=None, name="Point", point_size=5):
-    """ make_point(x, y, z, [color(r, g, b), point_size]) or
+    """make_point(x, y, z, [color(r, g, b), point_size]) or
         make_point(Vector, color(r, g, b), point_size])
 
     Creates a Draft Point in the current document.
 
     Parameters
     ----------
-    X : 
+    X :
         float -> X coordinate of the point
         Base.Vector -> Ignore Y and Z coordinates and create the point
             from the vector.
@@ -83,8 +83,8 @@ def make_point(X=0, Y=0, Z=0, color=None, name="Point", point_size=5):
 
     if App.GuiUp:
         ViewProviderPoint(obj.ViewObject)
-        if hasattr(Gui,"draftToolBar") and (not color):
-            color = Gui.draftToolBar.getDefaultColor('line')
+        if hasattr(Gui, "draftToolBar") and (not color):
+            color = Gui.draftToolBar.getDefaultColor("line")
         obj.ViewObject.PointColor = (float(color[0]), float(color[1]), float(color[2]))
         obj.ViewObject.PointSize = point_size
         obj.ViewObject.Visibility = True

@@ -3,8 +3,8 @@ import Part
 
 import unittest
 
-class RegressionTests(unittest.TestCase):
 
+class RegressionTests(unittest.TestCase):
     def test_issue_4456(self):
         """
         0004456: Regression : Part.Plane.Intersect do not accept plane as argument

@@ -26,25 +26,30 @@ __doc__ = "Compound Filter: remove some children from a compound (features)."
 
 
 import FreeCAD
+
 if FreeCAD.GuiUp:
     import FreeCADGui
     from PySide import QtGui
     from PySide import QtCore
 
-
-# translation-related code
-#(see forum thread "A new Part tool is being born... JoinFeatures!"
-#http://forum.freecadweb.org/viewtopic.php?f=22&t=11112&start=30#p90239 )
+    # translation-related code
+    # (see forum thread "A new Part tool is being born... JoinFeatures!"
+    # http://forum.freecadweb.org/viewtopic.php?f=22&t=11112&start=30#p90239 )
     try:
         _fromUtf8 = QtCore.QString.fromUtf8
     except Exception:
+
         def _fromUtf8(s):
             return s
+
     try:
         _encoding = QtGui.QApplication.UnicodeUTF8
+
         def _translate(context, text, disambig):
             return QtGui.QApplication.translate(context, text, disambig, _encoding)
+
     except AttributeError:
+
         def _translate(context, text, disambig):
             return QtGui.QApplication.translate(context, text, disambig)
 
@@ -52,28 +57,43 @@ if FreeCAD.GuiUp:
 # command class
 class _CommandCompoundFilter:
     "Command to create CompoundFilter feature"
+
     def GetResources(self):
-        return {'Pixmap': "Part_CompoundFilter",
-                'MenuText': QtCore.QT_TRANSLATE_NOOP("Part_CompoundFilter", "Compound Filter"),
-                'Accel': "",
-                'ToolTip': QtCore.QT_TRANSLATE_NOOP("Part_CompoundFilter",
-                                                    "Filter out objects from a selected compound "
-                                                    "by characteristics like volume,\n"
-                                                    "area, or length, or by choosing specific items.\n"
-                                                    "If a second object is selected, it will be used "
-                                                    "as reference, for example,\n"
-                                                    "for collision or distance filtering.")}
+        return {
+            "Pixmap": "Part_CompoundFilter",
+            "MenuText": QtCore.QT_TRANSLATE_NOOP(
+                "Part_CompoundFilter", "Compound Filter"
+            ),
+            "Accel": "",
+            "ToolTip": QtCore.QT_TRANSLATE_NOOP(
+                "Part_CompoundFilter",
+                "Filter out objects from a selected compound "
+                "by characteristics like volume,\n"
+                "area, or length, or by choosing specific items.\n"
+                "If a second object is selected, it will be used "
+                "as reference, for example,\n"
+                "for collision or distance filtering.",
+            ),
+        }
 
     def Activated(self):
-        if len(FreeCADGui.Selection.getSelection()) == 1 or len(FreeCADGui.Selection.getSelection()) == 2:
+        if (
+            len(FreeCADGui.Selection.getSelection()) == 1
+            or len(FreeCADGui.Selection.getSelection()) == 2
+        ):
             cmdCreateCompoundFilter(name="CompoundFilter")
         else:
             mb = QtGui.QMessageBox()
             mb.setIcon(mb.Icon.Warning)
-            mb.setText(_translate("Part_CompoundFilter",
-                                  "First select a shape that is a compound. "
-                                  "If a second object is selected (optional) "
-                                  "it will be treated as a stencil.", None))
+            mb.setText(
+                _translate(
+                    "Part_CompoundFilter",
+                    "First select a shape that is a compound. "
+                    "If a second object is selected (optional) "
+                    "it will be treated as a stencil.",
+                    None,
+                )
+            )
             mb.setWindowTitle(_translate("Part_CompoundFilter", "Bad selection", None))
             mb.exec_()
 
@@ -85,7 +105,7 @@ class _CommandCompoundFilter:
 
 
 if FreeCAD.GuiUp:
-    FreeCADGui.addCommand('Part_CompoundFilter', _CommandCompoundFilter())
+    FreeCADGui.addCommand("Part_CompoundFilter", _CommandCompoundFilter())
 
 
 # helper
@@ -93,7 +113,9 @@ def cmdCreateCompoundFilter(name):
     sel = FreeCADGui.Selection.getSelection()
     FreeCAD.ActiveDocument.openTransaction("Create CompoundFilter")
     FreeCADGui.addModule("CompoundTools.CompoundFilter")
-    FreeCADGui.doCommand("f = CompoundTools.CompoundFilter.makeCompoundFilter(name = '" + name + "')")
+    FreeCADGui.doCommand(
+        "f = CompoundTools.CompoundFilter.makeCompoundFilter(name = '" + name + "')"
+    )
     FreeCADGui.doCommand("f.Base = App.ActiveDocument." + sel[0].Name)
     if len(sel) == 2:
         FreeCADGui.doCommand("f.Stencil = App.ActiveDocument." + sel[1].Name)
@@ -112,11 +134,19 @@ def cmdCreateCompoundFilter(name):
             error_string = err
         mb = QtGui.QMessageBox()
         mb.setIcon(mb.Icon.Warning)
-        mb.setText(_translate("Part_CompoundFilter", "Computing the result failed with an error: \n\n{errstr}\n\nClick 'Continue' to create the feature anyway, or 'Abort' to cancel.", None)
-                   .format(errstr=error_string))
+        mb.setText(
+            _translate(
+                "Part_CompoundFilter",
+                "Computing the result failed with an error: \n\n{errstr}\n\nClick 'Continue' to create the feature anyway, or 'Abort' to cancel.",
+                None,
+            ).format(errstr=error_string)
+        )
         mb.setWindowTitle(_translate("Part_CompoundFilter", "Bad selection", None))
         btnAbort = mb.addButton(QtGui.QMessageBox.StandardButton.Abort)
-        btnOK = mb.addButton(_translate("Part_SplitFeatures", "Continue", None), QtGui.QMessageBox.ButtonRole.ActionRole)
+        btnOK = mb.addButton(
+            _translate("Part_SplitFeatures", "Continue", None),
+            QtGui.QMessageBox.ButtonRole.ActionRole,
+        )
         mb.setDefaultButton(btnOK)
 
         mb.exec_()

@@ -22,7 +22,9 @@
 # *                                                                         *
 # ***************************************************************************
 
-__title__ = "FreeCAD FEM constraint electrostatic potential task panel for the document object"
+__title__ = (
+    "FreeCAD FEM constraint electrostatic potential task panel for the document object"
+)
 __author__ = "Markus Hovorka, Bernd Hahnebach"
 __url__ = "https://www.freecadweb.org"
 
@@ -38,13 +40,13 @@ from femtools import membertools
 
 
 class _TaskPanel(object):
-
     def __init__(self, obj):
         self._obj = obj
         self._refWidget = selection_widgets.BoundarySelector()
         self._refWidget.setReferences(obj.References)
         self._paramWidget = FreeCADGui.PySideUic.loadUi(
-            FreeCAD.getHomePath() + "Mod/Fem/Resources/ui/ElectrostaticPotential.ui")
+            FreeCAD.getHomePath() + "Mod/Fem/Resources/ui/ElectrostaticPotential.ui"
+        )
         self._initParamWidget()
         self.form = [self._refWidget, self._paramWidget]
         analysis = obj.getParentGroup()
@@ -90,41 +92,39 @@ class _TaskPanel(object):
                 self._part.ViewObject.hide()
 
     def _initParamWidget(self):
-        self._paramWidget.potentialQSB.setProperty(
-            'value', self._obj.Potential)
-        self._paramWidget.potentialBox.setChecked(
-            not self._obj.PotentialEnabled)
-        self._paramWidget.potentialConstantBox.setChecked(
-            self._obj.PotentialConstant)
+        self._paramWidget.potentialQSB.setProperty("value", self._obj.Potential)
+        self._paramWidget.potentialBox.setChecked(not self._obj.PotentialEnabled)
+        self._paramWidget.potentialConstantBox.setChecked(self._obj.PotentialConstant)
 
-        self._paramWidget.electricInfinityBox.setChecked(
-            self._obj.ElectricInfinity)
+        self._paramWidget.electricInfinityBox.setChecked(self._obj.ElectricInfinity)
 
         self._paramWidget.electricForcecalculationBox.setChecked(
-            self._obj.ElectricForcecalculation)
+            self._obj.ElectricForcecalculation
+        )
 
         self._paramWidget.capacitanceBodyBox.setChecked(
-            not self._obj.CapacitanceBodyEnabled)
-        self._paramWidget.capacitanceBody_spinBox.setValue(
-            self._obj.CapacitanceBody)
+            not self._obj.CapacitanceBodyEnabled
+        )
+        self._paramWidget.capacitanceBody_spinBox.setValue(self._obj.CapacitanceBody)
         self._paramWidget.capacitanceBody_spinBox.setEnabled(
-            not self._paramWidget.capacitanceBodyBox.isChecked())
+            not self._paramWidget.capacitanceBodyBox.isChecked()
+        )
 
     def _applyWidgetChanges(self):
         unit = "V"
-        self._obj.PotentialEnabled = \
-            not self._paramWidget.potentialBox.isChecked()
+        self._obj.PotentialEnabled = not self._paramWidget.potentialBox.isChecked()
         if self._obj.PotentialEnabled:
             # if the input widget shows not a green hook, but the user presses ok
             # we could run into a syntax error on getting the quantity
             potential = None
             try:
-                potential = self._paramWidget.potentialQSB.property('value')
+                potential = self._paramWidget.potentialQSB.property("value")
             except ValueError:
                 FreeCAD.Console.PrintMessage(
                     "Wrong input. Not recognised input: '{}' "
-                    "Potential has not been set.\n"
-                    .format(self._paramWidget.potentialQSB.text())
+                    "Potential has not been set.\n".format(
+                        self._paramWidget.potentialQSB.text()
+                    )
                 )
             if potential is not None:
                 self._obj.Potential = potential
@@ -134,10 +134,15 @@ class _TaskPanel(object):
         self._obj.ElectricInfinity = self._paramWidget.electricInfinityBox.isChecked()
 
         calc_is_checked = self._paramWidget.electricForcecalculationBox.isChecked()
-        self._obj.ElectricForcecalculation = calc_is_checked  # two lines because max line length
+        self._obj.ElectricForcecalculation = (
+            calc_is_checked  # two lines because max line length
+        )
 
-        self._obj.CapacitanceBodyEnabled = \
+        self._obj.CapacitanceBodyEnabled = (
             not self._paramWidget.capacitanceBodyBox.isChecked()
+        )
         if self._obj.CapacitanceBodyEnabled:
             self._paramWidget.capacitanceBody_spinBox.setEnabled(True)
-            self._obj.CapacitanceBody = self._paramWidget.capacitanceBody_spinBox.value()
+            self._obj.CapacitanceBody = (
+                self._paramWidget.capacitanceBody_spinBox.value()
+            )

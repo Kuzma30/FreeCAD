@@ -59,20 +59,27 @@ class ShapeString(DraftObject):
 
     def execute(self, obj):
         import Part
+
         # import OpenSCAD2Dgeom
         if obj.String and obj.FontFile:
             if obj.Placement:
                 plm = obj.Placement
 
-            CharList = Part.makeWireString(obj.String,obj.FontFile,obj.Size,obj.Tracking)
+            CharList = Part.makeWireString(
+                obj.String, obj.FontFile, obj.Size, obj.Tracking
+            )
             if len(CharList) == 0:
-                App.Console.PrintWarning(translate("draft","ShapeString: string has no wires")+"\n")
+                App.Console.PrintWarning(
+                    translate("draft", "ShapeString: string has no wires") + "\n"
+                )
                 return
             SSChars = []
 
             # test a simple letter to know if we have a sticky font or not
             sticky = False
-            testWire = Part.makeWireString("L",obj.FontFile,obj.Size,obj.Tracking)[0][0]
+            testWire = Part.makeWireString("L", obj.FontFile, obj.Size, obj.Tracking)[
+                0
+            ][0]
             if testWire.isClosed:
                 try:
                     testFace = Part.Face(testWire)
@@ -112,9 +119,12 @@ class ShapeString(DraftObject):
 
     def makeFaces(self, wireChar):
         import Part
-        compFaces=[]
-        allEdges = [] # unused variable?
-        wirelist=sorted(wireChar,key=(lambda shape: shape.BoundBox.DiagonalLength),reverse=True)
+
+        compFaces = []
+        allEdges = []  # unused variable?
+        wirelist = sorted(
+            wireChar, key=(lambda shape: shape.BoundBox.DiagonalLength), reverse=True
+        )
         fixedwire = []
         for w in wirelist:
             compEdges = Part.Compound(w.Edges)
@@ -127,8 +137,8 @@ class ShapeString(DraftObject):
             face = Part.Face(wirelist[0])
             for w in wirelist[1:]:
                 p = w.Vertexes[0].Point
-                u,v = face.Surface.parameter(p)
-                if face.isPartOfDomain(u,v):
+                u, v = face.Surface.parameter(p)
+                if face.isPartOfDomain(u, v):
                     f = Part.Face(w)
                     if face.Orientation == f.Orientation:
                         if f.Surface.Axis * face.Surface.Axis < 0:
@@ -154,24 +164,25 @@ class ShapeString(DraftObject):
         return ret
 
     def makeGlyph(self, facelist):
-        ''' turn list of simple contour faces into a compound shape representing a glyph '''
-        ''' remove cuts, fuse overlapping contours, retain islands '''
+        """turn list of simple contour faces into a compound shape representing a glyph"""
+        """ remove cuts, fuse overlapping contours, retain islands """
         import Part
-        if len(facelist) == 1:
-            return(facelist[0])
 
-        sortedfaces = sorted(facelist,key=(lambda shape: shape.Area),reverse=True)
+        if len(facelist) == 1:
+            return facelist[0]
+
+        sortedfaces = sorted(facelist, key=(lambda shape: shape.Area), reverse=True)
 
         biggest = sortedfaces[0]
         result = biggest
-        islands =[]
+        islands = []
         for face in sortedfaces[1:]:
             bcfA = biggest.common(face).Area
             fA = face.Area
             difA = abs(bcfA - fA)
             eps = utils.epsilon()
             # if biggest.common(face).Area == face.Area:
-            if difA <= eps:                              # close enough to zero
+            if difA <= eps:  # close enough to zero
                 # biggest completely overlaps current face ==> cut
                 result = result.cut(face)
             # elif biggest.common(face).Area == 0:
@@ -181,13 +192,15 @@ class ShapeString(DraftObject):
             else:
                 # partial overlap - (font designer error?)
                 result = result.fuse(face)
-        #glyphfaces = [result]
+        # glyphfaces = [result]
         wl = result.Wires
         for w in wl:
             w.fixWire()
         glyphfaces = [Part.Face(wl)]
         glyphfaces.extend(islands)
-        ret = Part.Compound(glyphfaces) # should we fuse these instead of making compound?
+        ret = Part.Compound(
+            glyphfaces
+        )  # should we fuse these instead of making compound?
         return ret
 
 

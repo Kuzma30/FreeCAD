@@ -58,16 +58,22 @@ class Move(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Move',
-                'Accel': "M, V",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Move", "Move"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Move", "Moves the selected objects from one base point to another point.\nIf the \"copy\" option is active, it will create displaced copies.\nCTRL to snap, SHIFT to constrain.")}
+        return {
+            "Pixmap": "Draft_Move",
+            "Accel": "M, V",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Move", "Move"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Move",
+                'Moves the selected objects from one base point to another point.\nIf the "copy" option is active, it will create displaced copies.\nCTRL to snap, SHIFT to constrain.',
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
-        super(Move, self).Activated(name="Move",
-                                    is_subtool=isinstance(App.activeDraftCommand,
-                                                          SubelementHighlight))
+        super(Move, self).Activated(
+            name="Move",
+            is_subtool=isinstance(App.activeDraftCommand, SubelementHighlight),
+        )
         if not self.ui:
             return
         self.ghosts = []
@@ -79,19 +85,16 @@ class Move(gui_base_original.Modifier):
             return self.proceed()
         self.ui.selectUi(on_close_call=self.finish)
         _msg(translate("draft", "Select an object to move"))
-        self.call = \
-            self.view.addEventCallback("SoEvent", gui_tool_utils.selectObject)
+        self.call = self.view.addEventCallback("SoEvent", gui_tool_utils.selectObject)
 
     def proceed(self):
         """Continue with the command after a selection has been made."""
         if self.call:
             self.view.removeEventCallback("SoEvent", self.call)
         self.selected_objects = Gui.Selection.getSelection()
-        self.selected_objects = \
-            groups.get_group_contents(self.selected_objects,
-                                      addgroups=True,
-                                      spaces=True,
-                                      noarchchild=True)
+        self.selected_objects = groups.get_group_contents(
+            self.selected_objects, addgroups=True, spaces=True, noarchchild=True
+        )
         self.selected_subelements = Gui.Selection.getSelectionEx()
         self.ui.lineUi(title=translate("draft", self.featureName), icon="Draft_Move")
         self.ui.modUi()
@@ -126,9 +129,11 @@ class Move(gui_base_original.Modifier):
             self.finish()
         elif arg["Type"] == "SoLocation2Event":
             self.handle_mouse_move_event(arg)
-        elif (arg["Type"] == "SoMouseButtonEvent"
-              and arg["State"] == "DOWN"
-              and arg["Button"] == "BUTTON1"):
+        elif (
+            arg["Type"] == "SoMouseButtonEvent"
+            and arg["State"] == "DOWN"
+            and arg["Button"] == "BUTTON1"
+        ):
             self.handle_mouse_click_event(arg)
 
     def handle_mouse_move_event(self, arg):
@@ -165,8 +170,10 @@ class Move(gui_base_original.Modifier):
         else:
             last = self.node[0]
             self.vector = self.point.sub(last)
-            self.move(self.ui.isCopy.isChecked()
-                      or gui_tool_utils.hasMod(arg, gui_tool_utils.MODALT))
+            self.move(
+                self.ui.isCopy.isChecked()
+                or gui_tool_utils.hasMod(arg, gui_tool_utils.MODALT)
+            )
             if gui_tool_utils.hasMod(arg, gui_tool_utils.MODALT):
                 self.extendedCopy = True
             else:
@@ -204,11 +211,13 @@ class Move(gui_base_original.Modifier):
         Gui.addModule("Draft")
         try:
             if is_copy:
-                self.commit(translate("draft", "Copy"),
-                            self.build_copy_subelements_command())
+                self.commit(
+                    translate("draft", "Copy"), self.build_copy_subelements_command()
+                )
             else:
-                self.commit(translate("draft", "Move"),
-                            self.build_move_subelements_command())
+                self.commit(
+                    translate("draft", "Move"), self.build_move_subelements_command()
+                )
         except Exception:
             _err(translate("draft", "Some subelements could not be moved."))
 
@@ -224,17 +233,17 @@ class Move(gui_base_original.Modifier):
                 if not isinstance(subelement, Part.Edge):
                     continue
                 _edge_index = int(obj.SubElementNames[index][E:]) - 1
-                _cmd = '['
-                _cmd += 'FreeCAD.ActiveDocument.'
-                _cmd += obj.ObjectName + ', '
-                _cmd += str(_edge_index) + ', '
+                _cmd = "["
+                _cmd += "FreeCAD.ActiveDocument."
+                _cmd += obj.ObjectName + ", "
+                _cmd += str(_edge_index) + ", "
                 _cmd += DraftVecUtils.toString(self.vector)
-                _cmd += ']'
+                _cmd += "]"
                 arguments.append(_cmd)
 
-        all_args = ', '.join(arguments)
-        command.append('Draft.copyMovedEdges([' + all_args + '])')
-        command.append('FreeCAD.ActiveDocument.recompute()')
+        all_args = ", ".join(arguments)
+        command.append("Draft.copyMovedEdges([" + all_args + "])")
+        command.append("FreeCAD.ActiveDocument.recompute()")
         return command
 
     def build_move_subelements_command(self):
@@ -248,49 +257,47 @@ class Move(gui_base_original.Modifier):
             for index, subelement in enumerate(obj.SubObjects):
                 if isinstance(subelement, Part.Vertex):
                     _vertex_index = int(obj.SubElementNames[index][V:]) - 1
-                    _cmd = 'Draft.moveVertex'
-                    _cmd += '('
-                    _cmd += 'FreeCAD.ActiveDocument.'
-                    _cmd += obj.ObjectName + ', '
-                    _cmd += str(_vertex_index) + ', '
+                    _cmd = "Draft.moveVertex"
+                    _cmd += "("
+                    _cmd += "FreeCAD.ActiveDocument."
+                    _cmd += obj.ObjectName + ", "
+                    _cmd += str(_vertex_index) + ", "
                     _cmd += DraftVecUtils.toString(self.vector)
-                    _cmd += ')'
+                    _cmd += ")"
                     command.append(_cmd)
                 elif isinstance(subelement, Part.Edge):
                     _edge_index = int(obj.SubElementNames[index][E:]) - 1
-                    _cmd = 'Draft.moveEdge'
-                    _cmd += '('
-                    _cmd += 'FreeCAD.ActiveDocument.'
-                    _cmd += obj.ObjectName + ', '
-                    _cmd += str(_edge_index) + ', '
+                    _cmd = "Draft.moveEdge"
+                    _cmd += "("
+                    _cmd += "FreeCAD.ActiveDocument."
+                    _cmd += obj.ObjectName + ", "
+                    _cmd += str(_edge_index) + ", "
                     _cmd += DraftVecUtils.toString(self.vector)
-                    _cmd += ')'
+                    _cmd += ")"
                     command.append(_cmd)
-        command.append('FreeCAD.ActiveDocument.recompute()')
+        command.append("FreeCAD.ActiveDocument.recompute()")
         return command
 
     def move_object(self, is_copy):
         """Move the object."""
-        _doc = 'FreeCAD.ActiveDocument.'
+        _doc = "FreeCAD.ActiveDocument."
         _selected = self.selected_objects
 
-        objects = '['
-        objects += ', '.join([_doc + obj.Name for obj in _selected])
-        objects += ']'
+        objects = "["
+        objects += ", ".join([_doc + obj.Name for obj in _selected])
+        objects += "]"
         Gui.addModule("Draft")
 
-        _cmd = 'Draft.move'
-        _cmd += '('
-        _cmd += objects + ', '
-        _cmd += DraftVecUtils.toString(self.vector) + ', '
-        _cmd += 'copy=' + str(is_copy)
-        _cmd += ')'
-        _cmd_list = [_cmd,
-                     'FreeCAD.ActiveDocument.recompute()']
+        _cmd = "Draft.move"
+        _cmd += "("
+        _cmd += objects + ", "
+        _cmd += DraftVecUtils.toString(self.vector) + ", "
+        _cmd += "copy=" + str(is_copy)
+        _cmd += ")"
+        _cmd_list = [_cmd, "FreeCAD.ActiveDocument.recompute()"]
 
         _mode = "Copy" if is_copy else "Move"
-        self.commit(translate("draft", _mode),
-                    _cmd_list)
+        self.commit(translate("draft", _mode), _cmd_list)
 
     def numericInput(self, numx, numy, numz):
         """Validate the entry fields in the user interface.
@@ -313,6 +320,6 @@ class Move(gui_base_original.Modifier):
             self.finish()
 
 
-Gui.addCommand('Draft_Move', Move())
+Gui.addCommand("Draft_Move", Move())
 
 ## @}

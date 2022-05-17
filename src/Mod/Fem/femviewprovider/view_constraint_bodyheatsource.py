@@ -22,7 +22,9 @@
 # *                                                                         *
 # ***************************************************************************
 
-__title__ = "FreeCAD FEM constraint body heat source ViewProvider for the document object"
+__title__ = (
+    "FreeCAD FEM constraint body heat source ViewProvider for the document object"
+)
 __author__ = "Markus Hovorka, Bernd Hahnebach"
 __url__ = "https://www.freecadweb.org"
 
@@ -34,6 +36,5 @@ from . import view_base_femconstraint
 
 
 class VPConstraintBodyHeatSource(view_base_femconstraint.VPBaseFemConstraint):
-
     def getIcon(self):
         return ":/icons/FEM_ConstraintHeatflux.svg"  # the heatflux icon is used

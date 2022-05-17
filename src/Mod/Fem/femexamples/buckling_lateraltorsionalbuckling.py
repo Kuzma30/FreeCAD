@@ -39,12 +39,14 @@ def get_information():
         "constraints": ["displacement", "force"],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "buckling"
+        "equation": "buckling",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.buckling_lateraltorsionalbuckling import setup
@@ -65,6 +67,7 @@ flange load for a buckling factor of 1.00:
 43280000 Nmm / 278.6 mm = 155348 N
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -75,7 +78,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric objects
     bottom_flange = doc.addObject("Part::Plane", "Bottom_Flange")
@@ -127,10 +132,10 @@ def setup(doc=None, solvertype="ccxtools"):
     analysis.addObject(solver_obj)
 
     # shell thicknesses
-    thickness_flanges = ObjectsFem.makeElementGeometry2D(doc, 10.7, 'Thickness_Flanges')
+    thickness_flanges = ObjectsFem.makeElementGeometry2D(doc, 10.7, "Thickness_Flanges")
     thickness_flanges.References = [(geom_obj, ("Face1", "Face2", "Face3", "Face4"))]
     analysis.addObject(thickness_flanges)
-    thickness_web = ObjectsFem.makeElementGeometry2D(doc, 7.1, 'Thickness_Web')
+    thickness_web = ObjectsFem.makeElementGeometry2D(doc, 7.1, "Thickness_Web")
     thickness_web.References = [(geom_obj, "Face5")]
     analysis.addObject(thickness_web)
 
@@ -150,7 +155,9 @@ def setup(doc=None, solvertype="ccxtools"):
     con_disp_x.xFree = False
     analysis.addObject(con_disp_x)
 
-    con_disp_yz = ObjectsFem.makeConstraintDisplacement(doc, "ConstraintDisplacement_YZ")
+    con_disp_yz = ObjectsFem.makeConstraintDisplacement(
+        doc, "ConstraintDisplacement_YZ"
+    )
     con_disp_yz.References = [(geom_obj, ("Edge15", "Edge16"))]
     con_disp_yz.yFix = True
     con_disp_yz.yFree = False
@@ -175,6 +182,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_buckling_ibeam_tria6 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

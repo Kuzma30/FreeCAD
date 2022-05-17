@@ -43,10 +43,7 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
 
     # solver
     if solver.AnalysisType not in ANALYSIS_TYPES:
-        message += (
-            "Unknown analysis type: {}\n"
-            .format(solver.AnalysisType)
-        )
+        message += "Unknown analysis type: {}\n".format(solver.AnalysisType)
     if solver.AnalysisType == "frequency":
         if not hasattr(solver, "EigenmodeHighLimit"):
             message += "Frequency analysis: Solver has no EigenmodeHighLimit.\n"
@@ -54,15 +51,19 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
             message += "Frequency analysis: Solver has no EigenmodeLowLimit.\n"
         elif not hasattr(solver, "EigenmodesCount"):
             message += "Frequency analysis: Solver has no EigenmodesCount.\n"
-    if hasattr(solver, "MaterialNonlinearity") \
-            and solver.MaterialNonlinearity == "nonlinear":
+    if (
+        hasattr(solver, "MaterialNonlinearity")
+        and solver.MaterialNonlinearity == "nonlinear"
+    ):
         if not member.mats_nonlinear:
             message += (
                 "Solver is set to nonlinear materials, "
                 "but there is no nonlinear material in the analysis.\n"
             )
-        if solver.Proxy.Type == "Fem::SolverCcxTools" \
-                and solver.GeometricalNonlinearity != "nonlinear":
+        if (
+            solver.Proxy.Type == "Fem::SolverCcxTools"
+            and solver.GeometricalNonlinearity != "nonlinear"
+        ):
             # nonlinear geometry --> should be set
             # https://forum.freecadweb.org/viewtopic.php?f=18&t=23101&p=180489#p180489
             message += (
@@ -74,27 +75,33 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
     if not mesh:
         message += "No mesh object defined in the analysis.\n"
     if mesh:
-        if mesh.FemMesh.VolumeCount == 0 \
-                and mesh.FemMesh.FaceCount > 0 \
-                and not member.geos_shellthickness:
+        if (
+            mesh.FemMesh.VolumeCount == 0
+            and mesh.FemMesh.FaceCount > 0
+            and not member.geos_shellthickness
+        ):
             message += (
                 "FEM mesh has no volume elements, "
                 "either define a shell thicknesses or "
                 "provide a FEM mesh with volume elements.\n"
             )
-        if mesh.FemMesh.VolumeCount == 0 \
-                and mesh.FemMesh.FaceCount == 0 \
-                and mesh.FemMesh.EdgeCount > 0 \
-                and not member.geos_beamsection \
-                and not member.geos_fluidsection:
+        if (
+            mesh.FemMesh.VolumeCount == 0
+            and mesh.FemMesh.FaceCount == 0
+            and mesh.FemMesh.EdgeCount > 0
+            and not member.geos_beamsection
+            and not member.geos_fluidsection
+        ):
             message += (
                 "FEM mesh has no volume and no shell elements, "
                 "either define a beam/fluid section or provide "
                 "a FEM mesh with volume elements.\n"
             )
-        if mesh.FemMesh.VolumeCount == 0 \
-                and mesh.FemMesh.FaceCount == 0 \
-                and mesh.FemMesh.EdgeCount == 0:
+        if (
+            mesh.FemMesh.VolumeCount == 0
+            and mesh.FemMesh.FaceCount == 0
+            and mesh.FemMesh.EdgeCount == 0
+        ):
             message += (
                 "FEM mesh has neither volume nor shell or edge elements. "
                 "Provide a FEM mesh with elements.\n"
@@ -150,7 +157,10 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
                     "Thermomechanical analysis: No ThermalConductivity defined "
                     "for at least one material.\n"
                 )
-            if "ThermalExpansionCoefficient" not in mat_map and mat_obj.Category == "Solid":
+            if (
+                "ThermalExpansionCoefficient" not in mat_map
+                and mat_obj.Category == "Solid"
+            ):
                 message += (
                     "Thermomechanical analysis: No ThermalExpansionCoefficient defined "
                     "for at least one material.\n"  # allowed to be 0.0 (in ccx)
@@ -232,9 +242,13 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
     if solver.AnalysisType == "thermomech":
         if not member.cons_initialtemperature:
             if not member.geos_fluidsection:
-                message += "Thermomechanical analysis: No initial temperature defined.\n"
+                message += (
+                    "Thermomechanical analysis: No initial temperature defined.\n"
+                )
         if len(member.cons_initialtemperature) > 1:
-            message += "Thermomechanical analysis: Only one initial temperature is allowed.\n"
+            message += (
+                "Thermomechanical analysis: Only one initial temperature is allowed.\n"
+            )
 
     # constraints
     # fixed
@@ -264,9 +278,8 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
             for reference in c["Object"].References:
                 items += len(reference[1])
             if items != 2:
-                message += (
-                    "{} doesn't references exactly two needed faces.\n"
-                    .format(c["Object"].Name)
+                message += "{} doesn't references exactly two needed faces.\n".format(
+                    c["Object"].Name
                 )
     # sectionprint
     if member.cons_sectionprint:
@@ -275,9 +288,8 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
             for reference in c["Object"].References:
                 items += len(reference[1])
             if items != 1:
-                message += (
-                    "{} doesn't reference exactly one needed face.\n"
-                    .format(c["Object"].Name)
+                message += "{} doesn't reference exactly one needed face.\n".format(
+                    c["Object"].Name
                 )
     # transform
     if member.cons_transform:
@@ -335,21 +347,14 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
                     "Beam sections defined but FEM mesh has volume or shell elements.\n"
                 )
             if mesh.FemMesh.EdgeCount == 0:
-                message += (
-                    "Beam sections defined but FEM mesh has no edge elements.\n"
-                )
-            if not (
-                hasattr(mesh, "Shape")
-                or hasattr(mesh, "Part")
-            ):
+                message += "Beam sections defined but FEM mesh has no edge elements.\n"
+            if not (hasattr(mesh, "Shape") or hasattr(mesh, "Part")):
                 message += (
                     "Mesh without geometry link. "
                     "The mesh needs to know its geometry for the beam rotations.\n"
                 )
         if len(member.geos_beamrotation) > 1:
-            message += (
-                "Multiple beam rotations in one analysis are not supported at the moment.\n"
-            )
+            message += "Multiple beam rotations in one analysis are not supported at the moment.\n"
     # beam rotations
     if member.geos_beamrotation and not member.geos_beamsection:
         message += "Beam rotations in the analysis but no beam sections defined.\n"
@@ -366,17 +371,21 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
                 has_no_references = True
         if mesh:
             if mesh.FemMesh.VolumeCount > 0:
-                message += "Shell thicknesses defined but FEM mesh has volume elements.\n"
+                message += (
+                    "Shell thicknesses defined but FEM mesh has volume elements.\n"
+                )
             if mesh.FemMesh.FaceCount == 0:
-                message += "Shell thicknesses defined but FEM mesh has no shell elements.\n"
+                message += (
+                    "Shell thicknesses defined but FEM mesh has no shell elements.\n"
+                )
     # fluid section
     if member.geos_fluidsection:
         if not member.cons_selfweight:
-            message += (
-                "A fluid network analysis requires self weight constraint to be applied\n"
-            )
+            message += "A fluid network analysis requires self weight constraint to be applied\n"
         if solver.AnalysisType != "thermomech":
-            message += "A fluid network analysis can only be done in a thermomech analysis\n"
+            message += (
+                "A fluid network analysis can only be done in a thermomech analysis\n"
+            )
         has_no_references = False
         for f in member.geos_fluidsection:
             if len(f["Object"].References) == 0:
@@ -388,12 +397,11 @@ def check_member_for_solver_calculix(analysis, solver, mesh, member):
                 has_no_references = True
         if mesh:
             if mesh.FemMesh.FaceCount > 0 or mesh.FemMesh.VolumeCount > 0:
-                message += (
-                    "Fluid sections defined but FEM mesh has volume or shell elements.\n"
-                )
+                message += "Fluid sections defined but FEM mesh has volume or shell elements.\n"
             if mesh.FemMesh.EdgeCount == 0:
                 message += "Fluid sections defined but FEM mesh has no edge elements.\n"
 
     return message
+
 
 ##  @}

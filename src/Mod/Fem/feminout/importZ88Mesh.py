@@ -49,9 +49,7 @@ elif open.__module__ == "io":
     pyopen = open
 
 
-def open(
-    filename
-):
+def open(filename):
     """called when freecad opens a file
     a FEM mesh object is created in a new document"""
 
@@ -59,10 +57,7 @@ def open(
     return insert(filename, docname)
 
 
-def insert(
-    filename,
-    docname
-):
+def insert(filename, docname):
     """called when freecad wants to import a file
     a FEM mesh object is created in a existing document"""
 
@@ -76,10 +71,7 @@ def insert(
     return doc
 
 
-def export(
-    objectslist,
-    filename
-):
+def export(objectslist, filename):
     "called when freecad exports a file"
     if len(objectslist) != 1:
         Console.PrintError("This exporter can only export one object.\n")
@@ -108,11 +100,7 @@ def export(
 # - a method takes a file handle, mesh data and writes to the file handle
 
 # ********* reader *******************************************************************************
-def import_z88_mesh(
-    filename,
-    analysis=None,
-    docname=None
-):
+def import_z88_mesh(filename, analysis=None, docname=None):
     """read a FEM mesh from a Z88 mesh file and
     insert a FreeCAD FEM Mesh object in the ActiveDocument
     """
@@ -136,11 +124,8 @@ def import_z88_mesh(
     return mesh_object
 
 
-def read(
-    filename
-):
-    """read a FemMesh from a Z88 mesh file and return the FemMesh
-    """
+def read(filename):
+    """read a FemMesh from a Z88 mesh file and return the FemMesh"""
     # no document object is created, just the FemMesh is returned
 
     mesh_data = read_z88_mesh(filename)
@@ -149,11 +134,9 @@ def read(
     return importToolsFem.make_femmesh(mesh_data)
 
 
-def read_z88_mesh(
-    z88_mesh_input
-):
-    """ reads a z88 mesh file z88i1.txt (Z88OSV14) or z88structure.txt (Z88AuroraV3)
-        and extracts the nodes and elements
+def read_z88_mesh(z88_mesh_input):
+    """reads a z88 mesh file z88i1.txt (Z88OSV14) or z88structure.txt (Z88AuroraV3)
+    and extracts the nodes and elements
     """
     nodes = {}
     elements_hexa8 = {}
@@ -225,73 +208,61 @@ def read_z88_mesh(
                 # not supported elements
                 if z88_element_type == 8:
                     # torus8
-                    Console.PrintError(
-                        "Z88 Element No. 8, torus8\n"
-                    )
+                    Console.PrintError("Z88 Element No. 8, torus8\n")
                     Console.PrintError(
                         "Rotational elements are not supported at the moment\n"
                     )
                     return {}
                 elif z88_element_type == 12:
                     # torus12
-                    Console.PrintError(
-                        "Z88 Element No. 12, torus12\n"
-                    )
+                    Console.PrintError("Z88 Element No. 12, torus12\n")
                     Console.PrintError(
                         "Rotational elements are not supported at the moment\n"
                     )
                     return {}
                 elif z88_element_type == 15:
                     # torus6
-                    Console.PrintError(
-                        "Z88 Element No. 15, torus6\n"
-                    )
+                    Console.PrintError("Z88 Element No. 15, torus6\n")
                     Console.PrintError(
                         "Rotational elements are not supported at the moment\n"
                     )
                     return {}
                 elif z88_element_type == 19:
                     # platte16
-                    Console.PrintError(
-                        "Z88 Element No. 19, platte16\n"
-                    )
-                    Console.PrintError(
-                        "Not supported at the moment\n"
-                    )
+                    Console.PrintError("Z88 Element No. 19, platte16\n")
+                    Console.PrintError("Not supported at the moment\n")
                     return {}
                 elif z88_element_type == 21:
                     # schale16, mixture made from hexa8 and hexa20 (thickness is linear)
-                    Console.PrintError(
-                        "Z88 Element No. 21, schale16\n"
-                    )
-                    Console.PrintError(
-                        "Not supported at the moment\n"
-                    )
+                    Console.PrintError("Z88 Element No. 21, schale16\n")
+                    Console.PrintError("Not supported at the moment\n")
                     return {}
                 elif z88_element_type == 22:
                     # schale12, mixtrue made from prism6 and prism15 (thickness is linear)
-                    Console.PrintError(
-                        "Z88 Element No. 22, schale12\n"
-                    )
-                    Console.PrintError(
-                        "Not supported at the moment\n"
-                    )
+                    Console.PrintError("Z88 Element No. 22, schale12\n")
+                    Console.PrintError("Not supported at the moment\n")
                     return {}
 
                 # supported elements
-                elif z88_element_type == 2 \
-                        or z88_element_type == 4 \
-                        or z88_element_type == 5 \
-                        or z88_element_type == 9 \
-                        or z88_element_type == 13 \
-                        or z88_element_type == 25:
+                elif (
+                    z88_element_type == 2
+                    or z88_element_type == 4
+                    or z88_element_type == 5
+                    or z88_element_type == 9
+                    or z88_element_type == 13
+                    or z88_element_type == 25
+                ):
                     # stab4 or stab5 or welle5 or beam13 or beam25 Z88 --> seg2 FreeCAD
                     # N1, N2
                     nd1 = int(linecolumns[0])
                     nd2 = int(linecolumns[1])
                     elements_seg2[elem_no] = (nd1, nd2)
                     input_continues = False
-                elif z88_element_type == 3 or z88_element_type == 14 or z88_element_type == 24:
+                elif (
+                    z88_element_type == 3
+                    or z88_element_type == 14
+                    or z88_element_type == 24
+                ):
                     # scheibe3 or scheibe14 or schale24 Z88 --> tria6 FreeCAD
                     # N1, N2, N3, N4, N5, N6
                     nd1 = int(linecolumns[0])
@@ -302,7 +273,11 @@ def read_z88_mesh(
                     nd6 = int(linecolumns[5])
                     elements_tria6[elem_no] = (nd1, nd2, nd3, nd4, nd5, nd6)
                     input_continues = False
-                elif z88_element_type == 7 or z88_element_type == 20 or z88_element_type == 23:
+                elif (
+                    z88_element_type == 7
+                    or z88_element_type == 20
+                    or z88_element_type == 23
+                ):
                     # scheibe7 or platte20 or schale23 Z88 --> quad8 FreeCAD
                     # N1, N2, N3, N4, N5, N6, N7, N8
                     nd1 = int(linecolumns[0])
@@ -339,7 +314,16 @@ def read_z88_mesh(
                     nd9 = int(linecolumns[8])
                     nd10 = int(linecolumns[9])
                     elements_tetra10[elem_no] = (
-                        nd1, nd2, nd4, nd3, nd5, nd8, nd10, nd7, nd6, nd9
+                        nd1,
+                        nd2,
+                        nd4,
+                        nd3,
+                        nd5,
+                        nd8,
+                        nd10,
+                        nd7,
+                        nd6,
+                        nd9,
                     )
                     input_continues = False
                 elif z88_element_type == 1:
@@ -383,8 +367,26 @@ def read_z88_mesh(
                     nd19 = int(linecolumns[18])
                     nd20 = int(linecolumns[19])
                     elements_hexa20[elem_no] = (
-                        nd1, nd2, nd3, nd4, nd5, nd6, nd7, nd8, nd9, nd10,
-                        nd11, nd12, nd13, nd14, nd15, nd16, nd17, nd18, nd19, nd20
+                        nd1,
+                        nd2,
+                        nd3,
+                        nd4,
+                        nd5,
+                        nd6,
+                        nd7,
+                        nd8,
+                        nd9,
+                        nd10,
+                        nd11,
+                        nd12,
+                        nd13,
+                        nd14,
+                        nd15,
+                        nd16,
+                        nd17,
+                        nd18,
+                        nd19,
+                        nd20,
                     )
                     input_continues = False
 
@@ -415,15 +417,12 @@ def read_z88_mesh(
         "Hexa8Elem": elements_hexa8,
         "Hexa20Elem": elements_hexa20,
         "Penta6Elem": elements_penta6,
-        "Penta15Elem": elements_penta15
+        "Penta15Elem": elements_penta15,
     }
 
 
 # ********* writer *******************************************************************************
-def write(
-    fem_mesh,
-    filename
-):
+def write(fem_mesh, filename):
     """directly write a FemMesh to a Z88 mesh file format
     fem_mesh: a FemMesh"""
 
@@ -438,12 +437,7 @@ def write(
     f.close()
 
 
-def write_z88_mesh_to_file(
-    femnodes_mesh,
-    femelement_table,
-    z88_element_type,
-    f
-):
+def write_z88_mesh_to_file(femnodes_mesh, femelement_table, z88_element_type, f):
     node_dimension = 3  # 2 for 2D not supported
     if (
         z88_element_type == 4
@@ -453,10 +447,7 @@ def write_z88_mesh_to_file(
         or z88_element_type == 10
     ):
         node_dof = 3
-    elif (
-        z88_element_type == 23
-        or z88_element_type == 24
-    ):
+    elif z88_element_type == 23 or z88_element_type == 24:
         node_dof = 6  # schalenelemente
     else:
         Console.PrintError("Error: wrong z88_element_type.\n")
@@ -468,15 +459,18 @@ def write_z88_mesh_to_file(
     written_by = "written by FreeCAD"
 
     # first line, some z88 specific stuff
-    f.write("{0} {1} {2} {3} {4} {5}\n".format(
-        node_dimension, node_count, element_count, dofs, unknown_flag, written_by)
+    f.write(
+        "{0} {1} {2} {3} {4} {5}\n".format(
+            node_dimension, node_count, element_count, dofs, unknown_flag, written_by
+        )
     )
     # nodes
     for node in femnodes_mesh:
         vec = femnodes_mesh[node]
         f.write(
-            "{0} {1} {2:.6f} {3:.6f} {4:.6f}\n"
-            .format(node, node_dof, vec.x, vec.y, vec.z)
+            "{0} {1} {2:.6f} {3:.6f} {4:.6f}\n".format(
+                node, node_dof, vec.x, vec.y, vec.z
+            )
         )
     # elements
     for element in femelement_table:
@@ -494,38 +488,46 @@ def write_z88_mesh_to_file(
             # seg2 FreeCAD --> stab4 Z88
             # N1, N2
             f.write("{0} {1}\n".format(element, z88_element_type))
-            f.write("{0} {1}\n".format(
-                    n[0], n[1]))
+            f.write("{0} {1}\n".format(n[0], n[1]))
         elif z88_element_type == 3 or z88_element_type == 14 or z88_element_type == 24:
             # tria6 FreeCAD --> schale24 Z88
             # N1, N2, N3, N4, N5, N6
             f.write("{0} {1}\n".format(element, z88_element_type))
-            f.write("{0} {1} {2} {3} {4} {5}\n".format(
-                    n[0], n[1], n[2], n[3], n[4], n[5]))
+            f.write(
+                "{0} {1} {2} {3} {4} {5}\n".format(n[0], n[1], n[2], n[3], n[4], n[5])
+            )
         elif z88_element_type == 7 or z88_element_type == 20 or z88_element_type == 23:
             # quad8 FreeCAD --> schale23 Z88
             # N1, N2, N3, N4, N5, N6, N7, N8
             f.write("{0} {1}\n".format(element, z88_element_type))
-            f.write("{0} {1} {2} {3} {4} {5} {6} {7}\n".format(
-                    n[0], n[1], n[2], n[3], n[4], n[5], n[6], n[7]))
+            f.write(
+                "{0} {1} {2} {3} {4} {5} {6} {7}\n".format(
+                    n[0], n[1], n[2], n[3], n[4], n[5], n[6], n[7]
+                )
+            )
         elif z88_element_type == 17:
             # tetra4 FreeCAD --> volume17 Z88
             # N4, N2, N3, N1
             f.write("{0} {1}\n".format(element, z88_element_type))
-            f.write("{0} {1} {2} {3}\n".format(
-                    n[3], n[1], n[2], n[0]))
+            f.write("{0} {1} {2} {3}\n".format(n[3], n[1], n[2], n[0]))
         elif z88_element_type == 16:
             # tetra10 FreeCAD --> volume16 Z88
             # N1, N2, N4, N3, N5, N9, N8, N6, N10, N7, FC to Z88 is different as Z88 to FC
             f.write("{0} {1}\n".format(element, z88_element_type))
-            f.write("{0} {1} {2} {3} {4} {5} {6} {7} {8} {9}\n".format(
-                    n[0], n[1], n[3], n[2], n[4], n[8], n[7], n[5], n[9], n[6]))
+            f.write(
+                "{0} {1} {2} {3} {4} {5} {6} {7} {8} {9}\n".format(
+                    n[0], n[1], n[3], n[2], n[4], n[8], n[7], n[5], n[9], n[6]
+                )
+            )
         elif z88_element_type == 1:
             # hexa8 FreeCAD --> volume1 Z88
             # N1, N2, N3, N4, N5, N6, N7, N8
             f.write("{0} {1}\n".format(element, z88_element_type))
-            f.write("{0} {1} {2} {3} {4} {5} {6} {7}\n".format(
-                    n[0], n[1], n[2], n[3], n[4], n[5], n[6], n[7]))
+            f.write(
+                "{0} {1} {2} {3} {4} {5} {6} {7}\n".format(
+                    n[0], n[1], n[2], n[3], n[4], n[5], n[6], n[7]
+                )
+            )
         elif z88_element_type == 10:
             # hexa20 FreeCAD --> volume10 Z88
             # N2, N3, N4, N1, N6, N7, N8, N5, N10, N11
@@ -536,25 +538,41 @@ def write_z88_mesh_to_file(
             f.write("{0} {1}\n".format(element, z88_element_type))
             f.write(
                 "{0} {1} {2} {3} {4} {5} {6} {7} {8} {9} "
-                "{10} {11} {12} {13} {14} {15} {16} {17} {18} {19}\n"
-                .format(
-                    n[0], n[1], n[2], n[3], n[4], n[5], n[6], n[7], n[8], n[9],
-                    n[10], n[11], n[12], n[13], n[14], n[15], n[16], n[17], n[18], n[19]
+                "{10} {11} {12} {13} {14} {15} {16} {17} {18} {19}\n".format(
+                    n[0],
+                    n[1],
+                    n[2],
+                    n[3],
+                    n[4],
+                    n[5],
+                    n[6],
+                    n[7],
+                    n[8],
+                    n[9],
+                    n[10],
+                    n[11],
+                    n[12],
+                    n[13],
+                    n[14],
+                    n[15],
+                    n[16],
+                    n[17],
+                    n[18],
+                    n[19],
                 )
             )
         else:
             Console.PrintError(
-                "Writing of Z88 elementtype {0} not supported.\n".format(z88_element_type)
+                "Writing of Z88 elementtype {0} not supported.\n".format(
+                    z88_element_type
+                )
             )
             # TODO support schale12 (made from prism15) and schale16 (made from hexa20)
             return
 
 
 # Helper
-def get_z88_element_type(
-    femmesh,
-    femelement_table=None
-):
+def get_z88_element_type(femmesh, femelement_table=None):
     return z88_ele_types[meshtools.get_femmesh_eletype(femmesh, femelement_table)]
 
 

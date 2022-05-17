@@ -38,19 +38,12 @@ if App.GuiUp:
 
 
 class Proxy(equationbase.BaseProxy):
-
     def __init__(self, obj):
         super(Proxy, self).__init__(obj)
-        obj.addProperty(
-            "App::PropertyInteger",
-            "Priority",
-            "Base",
-            ""
-        )
+        obj.addProperty("App::PropertyInteger", "Priority", "Base", "")
 
 
 class ViewProxy(equationbase.BaseViewProxy):
-
     def setEdit(self, vobj, mode=0):
         task = _TaskPanel(vobj.Object)
         Gui.Control.showDialog(task)
@@ -69,13 +62,11 @@ class ViewProxy(equationbase.BaseViewProxy):
 
 
 class _TaskPanel(object):
-
     def __init__(self, obj):
         self._obj = obj
         self._refWidget = selection_widgets.SolidSelector()
         self._refWidget.setReferences(obj.References)
-        propWidget = obj.ViewObject.Proxy.getTaskWidget(
-            obj.ViewObject)
+        propWidget = obj.ViewObject.Proxy.getTaskWidget(obj.ViewObject)
         if propWidget is None:
             self.form = self._refWidget
         else:

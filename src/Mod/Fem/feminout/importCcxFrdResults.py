@@ -52,10 +52,7 @@ def open(filename):
     insert(filename, docname)
 
 
-def insert(
-    filename,
-    docname
-):
+def insert(filename, docname):
     "called when freecad wants to import a file"
     try:
         doc = FreeCAD.getDocument(docname)
@@ -66,12 +63,7 @@ def insert(
 
 
 # ********* module specific methods *********
-def importFrd(
-    filename,
-    analysis=None,
-    result_name_prefix="",
-    result_analysis_type=""
-):
+def importFrd(filename, analysis=None, result_name_prefix="", result_analysis_type=""):
     import ObjectsFem
     from . import importToolsFem
 
@@ -86,18 +78,13 @@ def importFrd(
 
     if len(m["Nodes"]) > 0:
         mesh = importToolsFem.make_femmesh(m)
-        result_mesh_object = ObjectsFem.makeMeshResult(
-            doc,
-            "ResultMesh"
-        )
+        result_mesh_object = ObjectsFem.makeMeshResult(doc, "ResultMesh")
         result_mesh_object.FemMesh = mesh
         res_mesh_is_compacted = False
         nodenumbers_for_compacted_mesh = []
 
         number_of_increments = len(m["Results"])
-        Console.PrintLog(
-            "Increments: " + str(number_of_increments) + "\n"
-        )
+        Console.PrintLog("Increments: " + str(number_of_increments) + "\n")
         if len(m["Results"]) > 0:
             for result_set in m["Results"]:
                 if "number" in result_set:
@@ -107,29 +94,23 @@ def importFrd(
                 step_time = result_set["time"]
                 step_time = round(step_time, 2)
                 if eigenmode_number > 0:
-                    results_name = (
-                        "{}EigenMode_{}_Results"
-                        .format(result_name_prefix, eigenmode_number)
+                    results_name = "{}EigenMode_{}_Results".format(
+                        result_name_prefix, eigenmode_number
                     )
                 elif number_of_increments > 1:
 
                     if result_analysis_type == "buckling":
 
-                        results_name = (
-                            "{}BucklingFactor_{}_Results"
-                            .format(result_name_prefix, step_time)
+                        results_name = "{}BucklingFactor_{}_Results".format(
+                            result_name_prefix, step_time
                         )
                     else:
-                        results_name = (
-                            "{}Time_{}_Results"
-                            .format(result_name_prefix, step_time)
+                        results_name = "{}Time_{}_Results".format(
+                            result_name_prefix, step_time
                         )
 
                 else:
-                    results_name = (
-                        "{}Results"
-                        .format(result_name_prefix)
-                    )
+                    results_name = "{}Results".format(result_name_prefix)
 
                 res_obj = ObjectsFem.makeResultMechanical(doc, results_name)
                 res_obj.Mesh = result_mesh_object
@@ -142,6 +123,7 @@ def importFrd(
                 # more result object calculations
                 from femresult import resulttools
                 from femtools import femutils
+
                 if not res_obj.MassFlowRate:
                     # information 1:
                     # only compact result if not Flow 1D results
@@ -215,9 +197,9 @@ def importFrd(
         # see error message above for more information
         if not res_obj:
             if result_name_prefix:
-                results_name = ("{}_Results".format(result_name_prefix))
+                results_name = "{}_Results".format(result_name_prefix)
             else:
-                results_name = ("Results".format(result_name_prefix))
+                results_name = "Results".format(result_name_prefix)
             res_obj = ObjectsFem.makeResultMechanical(doc, results_name)
             res_obj.Mesh = result_mesh_object
             # TODO, node numbers in result obj could be set
@@ -227,13 +209,12 @@ def importFrd(
         if FreeCAD.GuiUp:
             if analysis:
                 import FemGui
+
                 FemGui.setActiveAnalysis(analysis)
             doc.recompute()
 
     else:
-        Console.PrintError(
-            "Problem on frd file import. No nodes found in frd file.\n"
-        )
+        Console.PrintError("Problem on frd file import. No nodes found in frd file.\n")
         # None will be returned
         # or would it be better to raise an exception if there are not even nodes in frd file?
 
@@ -242,13 +223,8 @@ def importFrd(
 
 # read a calculix result file and extract the nodes
 # displacement vectors and stress values.
-def read_frd_result(
-    frd_input
-):
-    Console.PrintMessage(
-        "Read ccx results from frd file: {}\n"
-        .format(frd_input)
-    )
+def read_frd_result(frd_input):
+    Console.PrintMessage("Read ccx results from frd file: {}\n".format(frd_input))
     inout_nodes = []
     inout_nodes_file = frd_input.rsplit(".", 1)[0] + "_inout_nodes.txt"
     if os.path.exists(inout_nodes_file):
@@ -415,8 +391,26 @@ def read_frd_result(
                 hexa20 import works with the following frd file node assignment
                 """
                 elements_hexa20[elem] = (
-                    nd8, nd5, nd6, nd7, nd4, nd1, nd2, nd3, nd20, nd17,
-                    nd18, nd19, nd12, nd9, nd10, nd11, nd16, nd13, nd14, nd15
+                    nd8,
+                    nd5,
+                    nd6,
+                    nd7,
+                    nd4,
+                    nd1,
+                    nd2,
+                    nd3,
+                    nd20,
+                    nd17,
+                    nd18,
+                    nd19,
+                    nd12,
+                    nd9,
+                    nd10,
+                    nd11,
+                    nd16,
+                    nd13,
+                    nd14,
+                    nd15,
                 )
             elif elemType == 5 and input_continues is False:
                 # first line
@@ -451,8 +445,21 @@ def read_frd_result(
                 )  # order of the *.inp file
                 """
                 elements_penta15[elem] = (
-                    nd5, nd6, nd4, nd2, nd3, nd1, nd14, nd15, nd13, nd8,
-                    nd9, nd7, nd11, nd12, nd10
+                    nd5,
+                    nd6,
+                    nd4,
+                    nd2,
+                    nd3,
+                    nd1,
+                    nd14,
+                    nd15,
+                    nd13,
+                    nd8,
+                    nd9,
+                    nd7,
+                    nd11,
+                    nd12,
+                    nd10,
                 )
             elif elemType == 6:
                 # C3D10 Calculix --> tetra10 FreeCAD
@@ -467,7 +474,18 @@ def read_frd_result(
                 nd8 = int(line[73:83])
                 nd9 = int(line[83:93])
                 nd10 = int(line[93:103])
-                elements_tetra10[elem] = (nd2, nd1, nd3, nd4, nd5, nd7, nd6, nd9, nd8, nd10)
+                elements_tetra10[elem] = (
+                    nd2,
+                    nd1,
+                    nd3,
+                    nd4,
+                    nd5,
+                    nd7,
+                    nd6,
+                    nd9,
+                    nd8,
+                    nd10,
+                )
             elif elemType == 7:
                 # S3 Calculix --> tria3 FreeCAD
                 # N1, N2, N3
@@ -578,7 +596,14 @@ def read_frd_result(
             # CalculiX frd files: (Sxx, Syy, Szz, Sxy, Syz, Szx)
             # FreeCAD:            (Sxx, Syy, Szz, Sxy, Sxz, Syz)
             # thus exchange the last two entries
-            mode_stress[elem] = (stress_1, stress_2, stress_3, stress_4, stress_6, stress_5)
+            mode_stress[elem] = (
+                stress_1,
+                stress_2,
+                stress_3,
+                stress_4,
+                stress_6,
+                stress_5,
+            )
 
         # Check if we found strain section
         if line[5:13] == "TOSTRAIN":
@@ -595,7 +620,14 @@ def read_frd_result(
             # CalculiX frd files: (Exx, Eyy, Ezz, Exy, Eyz, Ezx)
             # FreeCAD:            (Exx, Eyy, Ezz, Exy, Exz, Eyz)
             # thus exchange the last two entries
-            mode_strain[elem] = (strain_1, strain_2, strain_3, strain_4, strain_6, strain_5)
+            mode_strain[elem] = (
+                strain_1,
+                strain_2,
+                strain_3,
+                strain_4,
+                strain_6,
+                strain_5,
+            )
 
         # Check if we found an equivalent plastic strain section
         if line[5:7] == "PE":
@@ -604,7 +636,7 @@ def read_frd_result(
             # we found an equivalent plastic strain line
             elem = int(line[4:13])
             peeq = float(line[13:25])
-            mode_peeq[elem] = (peeq)
+            mode_peeq[elem] = peeq
 
         # Check if we found a temperature section
         if line[5:11] == "NDTEMP":
@@ -613,7 +645,7 @@ def read_frd_result(
             # we found a temperature line
             elem = int(line[4:13])
             temperature = float(line[13:25])
-            mode_temp[elem] = (temperature)
+            mode_temp[elem] = temperature
 
         # Check if we found a mass flow section
         if line[5:11] == "MAFLOW":
@@ -622,13 +654,13 @@ def read_frd_result(
             # we found a mass flow line
             elem = int(line[4:13])
             massflow = float(line[13:25])
-            mode_massflow[elem] = (massflow * 1000)  # convert units to kg/s from t/s
+            mode_massflow[elem] = massflow * 1000  # convert units to kg/s from t/s
             if inout_nodes:
                 for i in range(len(inout_nodes)):
                     if elem == int(inout_nodes[i][1]):
                         node = int(inout_nodes[i][2])
                         # convert units to kg/s from t/s
-                        mode_massflow[node] = (massflow * 1000)
+                        mode_massflow[node] = massflow * 1000
 
         # Check if we found a network pressure section
         if line[5:11] == "STPRES":
@@ -637,12 +669,12 @@ def read_frd_result(
             # we found a network pressure line
             elem = int(line[4:13])
             networkpressure = float(line[13:25])
-            mode_networkpressure[elem] = (networkpressure)
+            mode_networkpressure[elem] = networkpressure
             if inout_nodes:
                 for i in range(len(inout_nodes)):
                     if elem == int(inout_nodes[i][1]):
                         node = int(inout_nodes[i][2])
-                        mode_networkpressure[node] = (networkpressure)
+                        mode_networkpressure[node] = networkpressure
 
         # Check if we found the end of a section
         if line[1:3] == "-3":
@@ -713,9 +745,11 @@ def read_frd_result(
         if line[1:5] == "9999":
             end_of_frd_data_found = True
 
-        if (mode_eigen_changed or mode_time_changed or end_of_frd_data_found) \
-                and end_of_section_found \
-                and not node_element_section:
+        if (
+            (mode_eigen_changed or mode_time_changed or end_of_frd_data_found)
+            and end_of_section_found
+            and not node_element_section
+        ):
 
             """
             print("\n\n----Append mode_results to results")
@@ -786,5 +820,5 @@ def read_frd_result(
         "Hexa20Elem": elements_hexa20,
         "Penta6Elem": elements_penta6,
         "Penta15Elem": elements_penta15,
-        "Results": results
+        "Results": results,
     }

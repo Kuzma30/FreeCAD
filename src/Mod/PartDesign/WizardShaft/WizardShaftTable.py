@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#/******************************************************************************
+# /******************************************************************************
 # *   Copyright (c) 2012 Jan Rheinländer <jrheinlaender@users.sourceforge.net> *
 # *                                                                            *
 # *   This file is part of the FreeCAD CAx development system.                 *
@@ -22,33 +22,34 @@
 # ******************************************************************************/
 
 from PySide import QtCore, QtGui
-import FreeCAD # Just for debug printing...
+import FreeCAD  # Just for debug printing...
+
 
 class WizardShaftTable:
     "The table widget that contains all the data of the shaft"
     # Dictionary to access different parameters without using a numeric row index that might change
     # as the code evolves
     rowDict = {
-        "Length"        : 0,
-        "Diameter"      : 1,
-        "InnerDiameter" : 2,
+        "Length": 0,
+        "Diameter": 1,
+        "InnerDiameter": 2,
         "ConstraintType": 3,
-        "StartEdgeType" : 4,
-        "StartEdgeSize" : 5,
-        "EndEdgeType"   : 6,
-        "EndEdgeSize"   : 7
+        "StartEdgeType": 4,
+        "StartEdgeSize": 5,
+        "EndEdgeType": 6,
+        "EndEdgeSize": 7,
     }
     rowDictReverse = {}
     headers = [
-               QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Length [mm]"),
-               QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Diameter [mm]"),
-               QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Inner diameter [mm]"),
-               QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Constraint type"),
-               QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Start edge type"),
-               QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Start edge size"),
-               QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "End edge type"),
-               QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "End edge size")
-              ]
+        QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Length [mm]"),
+        QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Diameter [mm]"),
+        QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Inner diameter [mm]"),
+        QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Constraint type"),
+        QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Start edge type"),
+        QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "Start edge size"),
+        QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "End edge type"),
+        QtCore.QT_TRANSLATE_NOOP("WizardShaftTable", "End edge size"),
+    ]
 
     def __init__(self, w, s):
         for key in iter(self.rowDict.keys()):
@@ -58,16 +59,18 @@ class WizardShaftTable:
         self.shaft = s
         # Create table widget
         self.widget = QtGui.QTableWidget(len(self.rowDict), 0)
-        self.widget.setObjectName("ShaftWizardTable") # Do not change or translate: Used in ViewProviderFemConstraintXXX
+        self.widget.setObjectName(
+            "ShaftWizardTable"
+        )  # Do not change or translate: Used in ViewProviderFemConstraintXXX
         self.widget.setWindowTitle("Shaft wizard")
-        self.widget.resize(QtCore.QSize(300,200))
+        self.widget.resize(QtCore.QSize(300, 200))
         self.editedRow = None
         self.editedColumn = None
 
         # Label rows and columns
         self.widget.setVerticalHeaderLabels(self.headers)
         self.widget.setHorizontalHeaderLabels(["Section 1", "Section 2"])
-        #self.widget.columnMoved.connect(column, oldIndex, newIndex)
+        # self.widget.columnMoved.connect(column, oldIndex, newIndex)
 
         # Create context menu
         action = QtGui.QAction("Add column", self.widget)
@@ -75,7 +78,9 @@ class WizardShaftTable:
         self.widget.addAction(action)
         self.widget.setContextMenuPolicy(QtCore.Qt.ActionsContextMenu)
         self.widget.horizontalHeader().addAction(action)
-        self.widget.horizontalHeader().setContextMenuPolicy(QtCore.Qt.ActionsContextMenu)
+        self.widget.horizontalHeader().setContextMenuPolicy(
+            QtCore.Qt.ActionsContextMenu
+        )
 
         # Set some default data
         # Section 1
@@ -102,13 +107,13 @@ class WizardShaftTable:
         index = self.widget.columnCount()
         # Make an intelligent guess at the length/dia of the next segment
         if index > 0:
-            length = self.shaft.segments[index-1].length
-            diameter = self.shaft.segments[index-1].diameter
+            length = self.shaft.segments[index - 1].length
+            diameter = self.shaft.segments[index - 1].diameter
             if index > 2:
                 diameter -= 5.0
             else:
                 diameter += 5.0
-            innerdiameter = self.shaft.segments[index-1].innerdiameter
+            innerdiameter = self.shaft.segments[index - 1].innerdiameter
         else:
             length = 20.0
             diameter = 10.0
@@ -116,12 +121,14 @@ class WizardShaftTable:
         self.shaft.addSegment(length, diameter, innerdiameter)
 
         self.widget.insertColumn(index)
-        self.widget.setHorizontalHeaderItem(index + 1, QtGui.QTableWidgetItem("Section %s" % (index + 1)))
+        self.widget.setHorizontalHeaderItem(
+            index + 1, QtGui.QTableWidgetItem("Section %s" % (index + 1))
+        )
 
         # Length
         widget = QtGui.QDoubleSpinBox(self.widget)
         widget.setMinimum(0)
-        widget.setMaximum(1E9)
+        widget.setMaximum(1e9)
         self.widget.setCellWidget(self.rowDict["Length"], index, widget)
         widget.setValue(length)
         widget.valueChanged.connect(self.slotValueChanged)
@@ -129,7 +136,7 @@ class WizardShaftTable:
         # Diameter
         widget = QtGui.QDoubleSpinBox(self.widget)
         widget.setMinimum(0)
-        widget.setMaximum(1E9)
+        widget.setMaximum(1e9)
         self.widget.setCellWidget(self.rowDict["Diameter"], index, widget)
         widget.setValue(diameter)
         widget.valueChanged.connect(self.slotValueChanged)
@@ -137,7 +144,7 @@ class WizardShaftTable:
         # inner Diameter
         widget = QtGui.QDoubleSpinBox(self.widget)
         widget.setMinimum(0)
-        widget.setMaximum(1E9)
+        widget.setMaximum(1e9)
         self.widget.setCellWidget(self.rowDict["InnerDiameter"], index, widget)
         widget.setValue(innerdiameter)
         widget.valueChanged.connect(self.slotValueChanged)
@@ -156,39 +163,49 @@ class WizardShaftTable:
         widget.setContextMenuPolicy(QtCore.Qt.ActionsContextMenu)
         self.widget.setCellWidget(self.rowDict["ConstraintType"], index, widget)
         widget.setCurrentIndex(0)
-        self.widget.connect(widget, QtCore.SIGNAL("currentIndexChanged(const QString&)"), self.slotConstraintType)
+        self.widget.connect(
+            widget,
+            QtCore.SIGNAL("currentIndexChanged(const QString&)"),
+            self.slotConstraintType,
+        )
         # Start edge type
         widget = QtGui.QComboBox(self.widget)
-        widget.insertItem(0, "None",)
+        widget.insertItem(
+            0,
+            "None",
+        )
         widget.insertItem(1, "Chamfer")
         widget.insertItem(2, "Fillet")
-        self.widget.setCellWidget(self.rowDict["StartEdgeType"],index, widget)
+        self.widget.setCellWidget(self.rowDict["StartEdgeType"], index, widget)
         widget.setCurrentIndex(0)
         widget.setEnabled(False)
-        #self.widget.connect(widget, QtCore.SIGNAL("currentIndexChanged(const QString&)"), self.slotLoadType)
+        # self.widget.connect(widget, QtCore.SIGNAL("currentIndexChanged(const QString&)"), self.slotLoadType)
         # Start edge size
         widget = QtGui.QDoubleSpinBox(self.widget)
         widget.setMinimum(0)
-        widget.setMaximum(1E9)
-        self.widget.setCellWidget(self.rowDict["StartEdgeSize"],index, widget)
+        widget.setMaximum(1e9)
+        self.widget.setCellWidget(self.rowDict["StartEdgeSize"], index, widget)
         widget.setValue(1)
         widget.valueChanged.connect(self.slotValueChanged)
         widget.editingFinished.connect(self.slotEditingFinished)
         widget.setEnabled(False)
         # End edge type
         widget = QtGui.QComboBox(self.widget)
-        widget.insertItem(0, "None",)
+        widget.insertItem(
+            0,
+            "None",
+        )
         widget.insertItem(1, "Chamfer")
         widget.insertItem(2, "Fillet")
-        self.widget.setCellWidget(self.rowDict["EndEdgeType"],index, widget)
+        self.widget.setCellWidget(self.rowDict["EndEdgeType"], index, widget)
         widget.setCurrentIndex(0)
         widget.setEnabled(False)
-        #self.widget.connect(widget, QtCore.SIGNAL("currentIndexChanged(const QString&)"), self.slotLoadType)
+        # self.widget.connect(widget, QtCore.SIGNAL("currentIndexChanged(const QString&)"), self.slotLoadType)
         # End edge size
         widget = QtGui.QDoubleSpinBox(self.widget)
         widget.setMinimum(0)
-        widget.setMaximum(1E9)
-        self.widget.setCellWidget(self.rowDict["EndEdgeSize"],index, widget)
+        widget.setMaximum(1e9)
+        self.widget.setCellWidget(self.rowDict["EndEdgeSize"], index, widget)
         widget.setValue(1)
         widget.valueChanged.connect(self.slotValueChanged)
         widget.editingFinished.connect(self.slotEditingFinished)
@@ -205,13 +222,24 @@ class WizardShaftTable:
         if rowName is None:
             return
         if rowName == "Length":
-            self.shaft.updateSegment(self.editedColumn, length = self.getDoubleValue(rowName, self.editedColumn))
+            self.shaft.updateSegment(
+                self.editedColumn,
+                length=self.getDoubleValue(rowName, self.editedColumn),
+            )
         elif rowName == "Diameter":
-            self.shaft.updateSegment(self.editedColumn, diameter = self.getDoubleValue(rowName, self.editedColumn))
+            self.shaft.updateSegment(
+                self.editedColumn,
+                diameter=self.getDoubleValue(rowName, self.editedColumn),
+            )
         elif rowName == "InnerDiameter":
-            self.shaft.updateSegment(self.editedColumn, innerdiameter = self.getDoubleValue(rowName, self.editedColumn))
+            self.shaft.updateSegment(
+                self.editedColumn,
+                innerdiameter=self.getDoubleValue(rowName, self.editedColumn),
+            )
         elif rowName == "Constraintype":
-            self.shaft.updateConstraint(self.editedColumn, self.getListValue(rowName, self.editedColumn))
+            self.shaft.updateConstraint(
+                self.editedColumn, self.getListValue(rowName, self.editedColumn)
+            )
         elif rowName == "StartEdgeType":
             pass
         elif rowName == "StartEdgeSize":
@@ -222,34 +250,41 @@ class WizardShaftTable:
             pass
 
     def slotEditConstraint(self):
-        (self.editedRow, self.editedColumn) = self.getFocusedCell() # Because finishEditConstraint() will trigger slotEditingFinished() which requires this information
+        (
+            self.editedRow,
+            self.editedColumn,
+        ) = (
+            self.getFocusedCell()
+        )  # Because finishEditConstraint() will trigger slotEditingFinished() which requires this information
         self.shaft.editConstraint(self.editedColumn)
 
     def finishEditConstraint(self):
-        self.shaft.updateConstraint(self.editedColumn, self.getConstraintType(self.editedColumn))
+        self.shaft.updateConstraint(
+            self.editedColumn, self.getConstraintType(self.editedColumn)
+        )
 
     def setLength(self, column, l):
         self.setDoubleValue("Length", column, l)
-        self.shaft.updateSegment(column, length = l)
+        self.shaft.updateSegment(column, length=l)
 
     def getLength(self, column):
         return self.getDoubleValue("Length", column)
 
     def setDiameter(self, column, d):
         self.setDoubleValue("Diameter", column, d)
-        self.shaft.updateSegment(column, diameter = d)
+        self.shaft.updateSegment(column, diameter=d)
 
     def getDiameter(self, column):
         return self.getDoubleValue("Diameter", column)
 
     def setInnerDiameter(self, column, d):
         self.setDoubleValue("InnerDiameter", column, d)
-        self.shaft.updateSegment(column, innerdiameter = d)
+        self.shaft.updateSegment(column, innerdiameter=d)
 
     def getInnerDiameter(self, column):
         return self.getDoubleValue("InnerDiameter", column)
 
-    @QtCore.Slot('QString')
+    @QtCore.Slot("QString")
     def slotConstraintType(self, text):
         self.shaft.updateConstraint(self.getFocusedColumn(), text)
 
@@ -313,7 +348,7 @@ class WizardShaftTable:
     def getListValue(self, row, column):
         widget = self.widget.cellWidget(self.rowDict[row], column)
         if widget is not None:
-            return widget.currentText() #[0].upper()
+            return widget.currentText()  # [0].upper()
         else:
             return None
 

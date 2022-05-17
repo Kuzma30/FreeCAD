@@ -44,12 +44,14 @@ def get_information():
         "constraints": ["fixed", "pressure", "contact"],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.constraint_contact_solid_solid import setup
@@ -61,6 +63,7 @@ https://forum.freecadweb.org/viewtopic.php?f=18&t=20276
 constraint contact for solid to solid mesh
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -71,7 +74,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric objects
     # bottom box
@@ -91,7 +96,9 @@ def setup(doc=None, solvertype="ccxtools"):
     top_halfcyl_obj.Radius = 30
     top_halfcyl_obj.Height = 500
     top_halfcyl_obj.Angle = 180
-    top_halfcyl_sh = Part.getShape(top_halfcyl_obj, '', needSubElement=False, refine=True)
+    top_halfcyl_sh = Part.getShape(
+        top_halfcyl_obj, "", needSubElement=False, refine=True
+    )
     top_halfcyl_obj.Shape = top_halfcyl_sh
     top_halfcyl_obj.Placement = FreeCAD.Placement(
         Vector(0, -42, 0),
@@ -182,7 +189,11 @@ def setup(doc=None, solvertype="ccxtools"):
     analysis.addObject(con_contact)
 
     # mesh
-    from .meshes.mesh_contact_box_halfcylinder_tetra10 import create_nodes, create_elements
+    from .meshes.mesh_contact_box_halfcylinder_tetra10 import (
+        create_nodes,
+        create_elements,
+    )
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

@@ -37,15 +37,13 @@ def write_femelement_geometry(f, ccxwriter):
             elsetdef = "ELSET={}, ".format(matgeoset["ccx_elset_name"])
             material = "MATERIAL={}".format(matgeoset["mat_obj_name"])
 
-            if "beamsection_obj"in matgeoset:  # beam mesh
+            if "beamsection_obj" in matgeoset:  # beam mesh
                 beamsec_obj = matgeoset["beamsection_obj"]
                 beam_axis_m = matgeoset["beam_axis_m"]
                 # in CalxuliX called the 1direction
                 # see meshtools.get_beam_main_axis_m(beam_direction, defined_angle)
                 section_nor = "{:.13G}, {:.13G}, {:.13G}\n".format(
-                    beam_axis_m[0],
-                    beam_axis_m[1],
-                    beam_axis_m[2]
+                    beam_axis_m[0], beam_axis_m[1], beam_axis_m[2]
                 )
                 print(section_nor)
                 if beamsec_obj.SectionType == "Rectangular":
@@ -57,20 +55,18 @@ def write_femelement_geometry(f, ccxwriter):
                     len_beam_axis_m = beamsec_obj.RectWidth.getValueAs("mm").Value
                     len_beam_axis_n = beamsec_obj.RectHeight.getValueAs("mm").Value
                     section_type = ", SECTION=RECT"
-                    section_geo = "{:.13G},{:.13G}\n".format(len_beam_axis_m, len_beam_axis_n)
+                    section_geo = "{:.13G},{:.13G}\n".format(
+                        len_beam_axis_m, len_beam_axis_n
+                    )
                     section_def = "*BEAM SECTION, {}{}{}\n".format(
-                        elsetdef,
-                        material,
-                        section_type
+                        elsetdef, material, section_type
                     )
                 elif beamsec_obj.SectionType == "Circular":
                     diameter = beamsec_obj.CircDiameter.getValueAs("mm").Value
                     section_type = ", SECTION=CIRC"
                     section_geo = "{:.13G}\n".format(diameter)
                     section_def = "*BEAM SECTION, {}{}{}\n".format(
-                        elsetdef,
-                        material,
-                        section_type
+                        elsetdef, material, section_type
                     )
                 elif beamsec_obj.SectionType == "Pipe":
                     radius = 0.5 * beamsec_obj.PipeDiameter.getValueAs("mm").Value
@@ -78,9 +74,7 @@ def write_femelement_geometry(f, ccxwriter):
                     section_type = ", SECTION=PIPE"
                     section_geo = "{:.13G},{:.13G}\n".format(radius, thickness)
                     section_def = "*BEAM GENERAL SECTION, {}{}{}\n".format(
-                        elsetdef,
-                        material,
-                        section_type
+                        elsetdef, material, section_type
                     )
                 f.write(section_def)
                 f.write(section_geo)
@@ -89,12 +83,12 @@ def write_femelement_geometry(f, ccxwriter):
                 fluidsec_obj = matgeoset["fluidsection_obj"]
                 if fluidsec_obj.SectionType == "Liquid":
                     section_type = fluidsec_obj.LiquidSectionType
-                    if (section_type == "PIPE INLET") or (section_type == "PIPE OUTLET"):
+                    if (section_type == "PIPE INLET") or (
+                        section_type == "PIPE OUTLET"
+                    ):
                         section_type = "PIPE INOUT"
                     section_def = "*FLUID SECTION, {}TYPE={}, {}\n".format(
-                        elsetdef,
-                        section_type,
-                        material
+                        elsetdef, section_type, material
                     )
                     section_geo = liquid_section_def(fluidsec_obj, section_type)
                 """
@@ -127,9 +121,7 @@ def liquid_section_def(obj, section_type):
         manning_radius = obj.ManningRadius.getValueAs("mm").Value
         manning_coefficient = obj.ManningCoefficient
         section_geo = "{:.13G},{:.13G},{:.13G}\n".format(
-            manning_area,
-            manning_radius,
-            manning_coefficient
+            manning_area, manning_radius, manning_coefficient
         )
         return section_geo
     elif section_type == "PIPE ENLARGEMENT":
@@ -157,30 +149,29 @@ def liquid_section_def(obj, section_type):
         bend_radius_diameter = obj.BendRadiusDiameter
         bend_angle = obj.BendAngle
         bend_loss_coefficient = obj.BendLossCoefficient
-        section_geo = ("{:.13G},{:.13G},{:.13G},{:.13G}\n".format(
-            bend_pipe_area,
-            bend_radius_diameter,
-            bend_angle,
-            bend_loss_coefficient
-        ))
+        section_geo = "{:.13G},{:.13G},{:.13G},{:.13G}\n".format(
+            bend_pipe_area, bend_radius_diameter, bend_angle, bend_loss_coefficient
+        )
         return section_geo
     elif section_type == "PIPE GATE VALVE":
         gatevalve_pipe_area = obj.GateValvePipeArea.getValueAs("mm^2").Value
         gatevalve_closing_coeff = obj.GateValveClosingCoeff
-        section_geo = "{:.13G},{:.13G}\n".format(gatevalve_pipe_area, gatevalve_closing_coeff)
+        section_geo = "{:.13G},{:.13G}\n".format(
+            gatevalve_pipe_area, gatevalve_closing_coeff
+        )
         return section_geo
     elif section_type == "PIPE WHITE-COLEBROOK":
         colebrooke_area = obj.ColebrookeArea.getValueAs("mm^2").Value
         colebrooke_diameter = 2 * obj.ColebrookeRadius.getValueAs("mm")
         colebrooke_grain_diameter = obj.ColebrookeGrainDiameter.getValueAs("mm")
         colebrooke_form_factor = obj.ColebrookeFormFactor
-        section_geo = ("{:.13G},{:.13G},{},{:.13G},{:.13G}\n".format(
+        section_geo = "{:.13G},{:.13G},{},{:.13G},{:.13G}\n".format(
             colebrooke_area,
             colebrooke_diameter,
             "-1",
             colebrooke_grain_diameter,
-            colebrooke_form_factor
-        ))
+            colebrooke_form_factor,
+        )
         return section_geo
     elif section_type == "LIQUID PUMP":
         section_geo = ""

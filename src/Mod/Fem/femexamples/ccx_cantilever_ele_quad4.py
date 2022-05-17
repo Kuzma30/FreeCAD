@@ -39,12 +39,14 @@ def get_information():
         "constraints": ["fixed", "force"],
         "solvers": ["calculix", "ccxtools", "mystran"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.ccx_cantilever_ele_quad4 import setup
@@ -57,6 +59,7 @@ See forum topic post:
 CalculiX cantilever modeled with quad4 face elements
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -67,7 +70,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # setup CalculiX cantilever
     doc = setup_cantilever_base_face(doc, solvertype)
@@ -76,6 +81,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # load the quad4 mesh
     from .meshes.mesh_canticcx_quad4 import create_nodes, create_elements
+
     new_fem_mesh = Fem.FemMesh()
     control = create_nodes(new_fem_mesh)
     if not control:

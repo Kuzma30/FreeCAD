@@ -51,17 +51,17 @@ def add_con_force(f, model, mystran_writer):
             force_code += "# {}\n".format(ref_shape[0])
             for n in sorted(ref_shape[1]):
                 node_load = ref_shape[1][n]
-                force_code += (
-                    "model.add_force(sid={}, node={}, mag={}, xyz=({}, {}, {}))\n"
-                    .format(sid, n, node_load, dirvec.x, dirvec.y, dirvec.z)
+                force_code += "model.add_force(sid={}, node={}, mag={}, xyz=({}, {}, {}))\n".format(
+                    sid, n, node_load, dirvec.x, dirvec.y, dirvec.z
                 )
         force_code += "\n"
 
     # generate calce factors lists
     # load card, static load combinations
     load_code = (
-        "model.add_load(sid=1, scale=1.0, scale_factors={}, load_ids={})\n\n\n"
-        .format(scale_factors, load_ids)
+        "model.add_load(sid=1, scale=1.0, scale_factors={}, load_ids={})\n\n\n".format(
+            scale_factors, load_ids
+        )
     )
 
     pynas_code = "{}\n{}".format(force_code, load_code)

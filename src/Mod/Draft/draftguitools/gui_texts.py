@@ -55,19 +55,25 @@ class Text(gui_base_original.Creator):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Text',
-                'Accel': "T, E",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Text", "Text"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Text", "Creates a multi-line annotation. CTRL to snap.")}
+        return {
+            "Pixmap": "Draft_Text",
+            "Accel": "T, E",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Text", "Text"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Text", "Creates a multi-line annotation. CTRL to snap."
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
         super(Text, self).Activated(name="Text")
         if self.ui:
             self.dialog = None
-            self.text = ''
+            self.text = ""
             self.ui.sourceCmd = self
-            self.ui.pointUi(title=translate("draft", self.featureName), icon="Draft_Text")
+            self.ui.pointUi(
+                title=translate("draft", self.featureName), icon="Draft_Text"
+            )
             self.ui.isRelative.hide()
             self.ui.continueCmd.show()
             self.call = self.view.addEventCallback("SoEvent", self.action)
@@ -104,22 +110,23 @@ class Text(gui_base_original.Creator):
 
         list_as_text = ", ".join(t_list)
 
-        string = '[' + list_as_text + ']'
+        string = "[" + list_as_text + "]"
 
         Gui.addModule("Draft")
-        _cmd = 'Draft.make_text'
-        _cmd += '('
-        _cmd += string + ', '
-        _cmd += 'placement=pl'
-        _cmd += ')'
-        _cmd_list = ['pl = FreeCAD.Placement()',
-                     'pl.Rotation.Q = ' + rot,
-                     'pl.Base = ' + base,
-                     '_text_ = ' + _cmd,
-                     'Draft.autogroup(_text_)',
-                     'FreeCAD.ActiveDocument.recompute()']
-        self.commit(translate("draft", "Create Text"),
-                    _cmd_list)
+        _cmd = "Draft.make_text"
+        _cmd += "("
+        _cmd += string + ", "
+        _cmd += "placement=pl"
+        _cmd += ")"
+        _cmd_list = [
+            "pl = FreeCAD.Placement()",
+            "pl.Rotation.Q = " + rot,
+            "pl.Base = " + base,
+            "_text_ = " + _cmd,
+            "Draft.autogroup(_text_)",
+            "FreeCAD.ActiveDocument.recompute()",
+        ]
+        self.commit(translate("draft", "Create Text"), _cmd_list)
         self.finish(cont=True)
 
     def action(self, arg):
@@ -138,8 +145,7 @@ class Text(gui_base_original.Creator):
                 self.finish()
         elif arg["Type"] == "SoLocation2Event":  # mouse movement detection
             if self.active:
-                (self.point,
-                 ctrlPoint, info) = gui_tool_utils.getPoint(self, arg)
+                (self.point, ctrlPoint, info) = gui_tool_utils.getPoint(self, arg)
             gui_tool_utils.redraw3DView()
         elif arg["Type"] == "SoMouseButtonEvent":
             if arg["State"] == "DOWN" and arg["Button"] == "BUTTON1":
@@ -162,6 +168,6 @@ class Text(gui_base_original.Creator):
         self.ui.textValue.setFocus()
 
 
-Gui.addCommand('Draft_Text', Text())
+Gui.addCommand("Draft_Text", Text())
 
 ## @}

@@ -43,9 +43,14 @@ class ApplyStyle(gui_base_original.Modifier):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Apply',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_ApplyStyle", "Apply current style"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_ApplyStyle", "Applies the current style defined in the toolbar (line width and colors) to the selected objects and groups.")}
+        return {
+            "Pixmap": "Draft_Apply",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_ApplyStyle", "Apply current style"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_ApplyStyle",
+                "Applies the current style defined in the toolbar (line width and colors) to the selected objects and groups.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called.
@@ -67,13 +72,12 @@ class ApplyStyle(gui_base_original.Modifier):
                     if obj.TypeId == "App::DocumentObjectGroup":
                         _cmd_list.extend(self.formatGroup(obj))
                     else:
-                        _cmd = 'Draft.formatObject'
-                        _cmd += '('
-                        _cmd += 'FreeCAD.ActiveDocument.' + obj.Name
-                        _cmd += ')'
+                        _cmd = "Draft.formatObject"
+                        _cmd += "("
+                        _cmd += "FreeCAD.ActiveDocument." + obj.Name
+                        _cmd += ")"
                         _cmd_list.append(_cmd)
-                self.commit(translate("draft", "Change Style"),
-                            _cmd_list)
+                self.commit(translate("draft", "Change Style"), _cmd_list)
             super(ApplyStyle, self).finish()
 
     def formatGroup(self, group):
@@ -84,14 +88,14 @@ class ApplyStyle(gui_base_original.Modifier):
             if obj.TypeId == "App::DocumentObjectGroup":
                 _cmd_list.extend(self.formatGroup(obj))
             else:
-                _cmd = 'Draft.formatObject'
-                _cmd += '('
-                _cmd += 'FreeCAD.ActiveDocument.' + obj.Name
-                _cmd += ')'
+                _cmd = "Draft.formatObject"
+                _cmd += "("
+                _cmd += "FreeCAD.ActiveDocument." + obj.Name
+                _cmd += ")"
                 _cmd_list.append(_cmd)
         return _cmd_list
 
 
-Gui.addCommand('Draft_ApplyStyle', ApplyStyle())
+Gui.addCommand("Draft_ApplyStyle", ApplyStyle())
 
 ## @}

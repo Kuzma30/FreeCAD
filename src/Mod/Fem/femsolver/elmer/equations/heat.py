@@ -34,8 +34,7 @@ from ... import equationbase
 
 
 def create(doc, name="Heat"):
-    return femutils.createObject(
-        doc, name, Proxy, ViewProxy)
+    return femutils.createObject(doc, name, Proxy, ViewProxy)
 
 
 class Proxy(nonlinear.Proxy, equationbase.HeatProxy):
@@ -49,5 +48,6 @@ class Proxy(nonlinear.Proxy, equationbase.HeatProxy):
 
 class ViewProxy(nonlinear.ViewProxy, equationbase.HeatViewProxy):
     pass
+
 
 ##  @}

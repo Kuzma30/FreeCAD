@@ -29,10 +29,7 @@ import FreeCAD
 
 
 # ************************************************************************************************
-def find_element_in_shape(
-    aShape,
-    anElement
-):
+def find_element_in_shape(aShape, anElement):
     # import Part
     ele_st = anElement.ShapeType
     if ele_st == "Solid" or ele_st == "CompSolid":
@@ -84,10 +81,7 @@ def find_element_in_shape(
 
 
 # ************************************************************************************************
-def get_vertexes_by_element(
-    aShape,
-    anElement
-):
+def get_vertexes_by_element(aShape, anElement):
     # we're going to extend the method find_element_in_shape and return the vertexes
     # import Part
     ele_vertexes = []
@@ -97,7 +91,9 @@ def get_vertexes_by_element(
             if is_same_geometry(solid, anElement):
                 for vele in aShape.Solids[index].Vertexes:
                     for i, v in enumerate(aShape.Vertexes):
-                        if vele.isSame(v):  # use isSame, because orientation could be different
+                        if vele.isSame(
+                            v
+                        ):  # use isSame, because orientation could be different
                             ele_vertexes.append(i)
                 # FreeCAD.Console.PrintMessage("  " + str(sorted(ele_vertexes)), "\n")
                 return ele_vertexes
@@ -109,7 +105,9 @@ def get_vertexes_by_element(
             if is_same_geometry(face, anElement):
                 for vele in aShape.Faces[index].Vertexes:
                     for i, v in enumerate(aShape.Vertexes):
-                        if vele.isSame(v):  # use isSame, because orientation could be different
+                        if vele.isSame(
+                            v
+                        ):  # use isSame, because orientation could be different
                             ele_vertexes.append(i)
                 # FreeCAD.Console.PrintMessage("  " + str(sorted(ele_vertexes)) + "\n")
                 return ele_vertexes
@@ -118,7 +116,9 @@ def get_vertexes_by_element(
             if is_same_geometry(edge, anElement):
                 for vele in aShape.Edges[index].Vertexes:
                     for i, v in enumerate(aShape.Vertexes):
-                        if vele.isSame(v):  # use isSame, because orientation could be different
+                        if vele.isSame(
+                            v
+                        ):  # use isSame, because orientation could be different
                             ele_vertexes.append(i)
                 # FreeCAD.Console.PrintMessage("  " + str(sorted(ele_vertexes)) + "\n")
                 return ele_vertexes
@@ -133,10 +133,7 @@ def get_vertexes_by_element(
 
 
 # ************************************************************************************************
-def is_same_geometry(
-    shape1,
-    shape2
-):
+def is_same_geometry(shape1, shape2):
     # the vertexes and the CenterOfMass are compared
     # it is a hack, but I do not know any better !
     # check of Volume and Area before starting with the vertices could be added
@@ -172,10 +169,7 @@ def is_same_geometry(
 
 
 # ************************************************************************************************
-def get_element(
-    part,
-    element
-):
+def get_element(part, element):
     if element.startswith("Solid"):
         index = int(element.lstrip("Solid")) - 1
         if index >= len(part.Shape.Solids):
@@ -190,10 +184,9 @@ def get_element(
 
 
 # ************************************************************************************************
-def get_rectangular_coords(
-    obj
-):
+def get_rectangular_coords(obj):
     from math import cos, sin, radians
+
     A = [1, 0, 0]
     B = [0, 1, 0]
     a_x = A[0]
@@ -224,9 +217,7 @@ def get_rectangular_coords(
 
 
 # ************************************************************************************************
-def get_cylindrical_coords(
-    obj
-):
+def get_cylindrical_coords(obj):
     vec = obj.Axis
     base = obj.BasePoint
     a_x = base[0] + 10 * vec[0]

@@ -81,30 +81,41 @@ def make_text(string, placement=None, screen=False):
 
     found, doc = utils.find_doc(App.activeDocument())
     if not found:
-        _err(translate("draft","No active document. Aborting."))
+        _err(translate("draft", "No active document. Aborting."))
         return None
 
     _msg("string: {}".format(string))
     try:
         utils.type_check([(string, (str, list))], name=_name)
     except TypeError:
-        _err(translate("draft","Wrong input: must be a list of strings or a single string."))
+        _err(
+            translate(
+                "draft", "Wrong input: must be a list of strings or a single string."
+            )
+        )
         return None
 
-    if (type(string) is list
-            and not all(isinstance(element, str) for element in string)):
-        _err(translate("draft","Wrong input: must be a list of strings or a single string."))
+    if type(string) is list and not all(isinstance(element, str) for element in string):
+        _err(
+            translate(
+                "draft", "Wrong input: must be a list of strings or a single string."
+            )
+        )
         return None
 
     _msg("placement: {}".format(placement))
     if not placement:
         placement = App.Placement()
     try:
-        utils.type_check([(placement, (App.Placement,
-                                       App.Vector,
-                                       App.Rotation))], name=_name)
+        utils.type_check(
+            [(placement, (App.Placement, App.Vector, App.Rotation))], name=_name
+        )
     except TypeError:
-        _err(translate("draft","Wrong input: must be a placement, a vector, or a rotation."))
+        _err(
+            translate(
+                "draft", "Wrong input: must be a placement, a vector, or a rotation."
+            )
+        )
         return None
 
     # Convert the vector or rotation to a full placement
@@ -113,8 +124,7 @@ def make_text(string, placement=None, screen=False):
     elif isinstance(placement, App.Rotation):
         placement = App.Placement(App.Vector(), placement)
 
-    new_obj = doc.addObject("App::FeaturePython",
-                            "Text")
+    new_obj = doc.addObject("App::FeaturePython", "Text")
     Text(new_obj)
     new_obj.Text = string
     new_obj.Placement = placement
@@ -169,7 +179,7 @@ def convert_draft_texts(textslist=None):
 
     found, doc = utils.find_doc(App.activeDocument())
     if not found:
-        _err(translate("draft","No active document. Aborting."))
+        _err(translate("draft", "No active document. Aborting."))
         return None
 
     if not textslist:
@@ -208,5 +218,6 @@ def convertDraftTexts(textslist=[]):
     """Convert Text. DEPRECATED. Use 'convert_draft_texts'."""
     utils.use_instead("convert_draft_texts")
     return convert_draft_texts(textslist)
+
 
 ## @}

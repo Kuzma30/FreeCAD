@@ -27,7 +27,7 @@ __url__ = "https://www.freecadweb.org"
 
 
 def get_analysis_types():
-    return "all"    # write for all analysis types
+    return "all"  # write for all analysis types
 
 
 def get_sets_name():
@@ -71,8 +71,9 @@ def write_constraint(f, femobj, tie_obj, ccxwriter):
 
     tolerance = tie_obj.Tolerance.getValueAs("mm").Value
     f.write(
-        "*TIE, POSITION TOLERANCE={:.13G}, ADJUST=NO, NAME=TIE{}\n"
-        .format(tolerance, tie_obj.Name)
+        "*TIE, POSITION TOLERANCE={:.13G}, ADJUST=NO, NAME=TIE{}\n".format(
+            tolerance, tie_obj.Name
+        )
     )
     ind_surf = "TIE_IND{}".format(tie_obj.Name)
     dep_surf = "TIE_DEP{}".format(tie_obj.Name)

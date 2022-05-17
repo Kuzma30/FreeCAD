@@ -40,12 +40,14 @@ def get_information():
         "constraints": ["fixed", "force"],
         "solvers": ["calculix", "ccxtools", "elmer", "z88"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.ccx_cantilever_ele_hexa20 import setup
@@ -57,6 +59,7 @@ hexa20 elements and face load
 ...
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -67,7 +70,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # setup cantilever faceload
     doc = setup_with_faceload(doc, solvertype)
@@ -80,6 +85,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # load the hexa20 mesh
     from .meshes.mesh_canticcx_hexa20 import create_nodes, create_elements
+
     new_fem_mesh = Fem.FemMesh()
     control = create_nodes(new_fem_mesh)
     if not control:

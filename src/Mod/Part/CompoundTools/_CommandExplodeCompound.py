@@ -27,23 +27,28 @@ __doc__ = "ExplodeCompound: create a bunch of CompoundFilter objects to split a 
 from .Explode import explodeCompound
 
 import FreeCAD
+
 if FreeCAD.GuiUp:
     import FreeCADGui
     from PySide import QtGui
     from PySide import QtCore
 
-
-# translation-related code
+    # translation-related code
     try:
         _fromUtf8 = QtCore.QString.fromUtf8
     except Exception:
+
         def _fromUtf8(s):
             return s
+
     try:
         _encoding = QtGui.QApplication.UnicodeUTF8
+
         def _translate(context, text, disambig):
             return QtGui.QApplication.translate(context, text, disambig, _encoding)
+
     except AttributeError:
+
         def _translate(context, text, disambig):
             return QtGui.QApplication.translate(context, text, disambig)
 
@@ -51,13 +56,20 @@ if FreeCAD.GuiUp:
 # command class
 class _CommandExplodeCompound:
     "Command to explode a compound"
+
     def GetResources(self):
-        return {'Pixmap': "Part_ExplodeCompound",
-                'MenuText': QtCore.QT_TRANSLATE_NOOP("Part_ExplodeCompound", "Explode compound"),
-                'Accel': "",
-                'ToolTip': QtCore.QT_TRANSLATE_NOOP("Part_ExplodeCompound",
-                                                    "Split up a compound of shapes into separate objects.\n"
-                                                    "It will create a 'Compound Filter' for each shape.")}
+        return {
+            "Pixmap": "Part_ExplodeCompound",
+            "MenuText": QtCore.QT_TRANSLATE_NOOP(
+                "Part_ExplodeCompound", "Explode compound"
+            ),
+            "Accel": "",
+            "ToolTip": QtCore.QT_TRANSLATE_NOOP(
+                "Part_ExplodeCompound",
+                "Split up a compound of shapes into separate objects.\n"
+                "It will create a 'Compound Filter' for each shape.",
+            ),
+        }
 
     def Activated(self):
         if len(FreeCADGui.Selection.getSelection()) == 1:
@@ -65,7 +77,13 @@ class _CommandExplodeCompound:
         else:
             mb = QtGui.QMessageBox()
             mb.setIcon(mb.Icon.Warning)
-            mb.setText(_translate("Part_ExplodeCompound", "First select a shape that is a compound.", None))
+            mb.setText(
+                _translate(
+                    "Part_ExplodeCompound",
+                    "First select a shape that is a compound.",
+                    None,
+                )
+            )
             mb.setWindowTitle(_translate("Part_ExplodeCompound", "Bad selection", None))
             mb.exec_()
 
@@ -77,9 +95,7 @@ class _CommandExplodeCompound:
 
 
 if FreeCAD.GuiUp:
-    FreeCADGui.addCommand('Part_ExplodeCompound', _CommandExplodeCompound())
-
-
+    FreeCADGui.addCommand("Part_ExplodeCompound", _CommandExplodeCompound())
 
 
 def cmdExplode():
@@ -87,16 +103,20 @@ def cmdExplode():
     try:
         sel = FreeCADGui.Selection.getSelectionEx()
         if len(sel) != 1:
-            raise ValueError("Bad selection","More than one object selected. You have selected {num} objects.".format(num= len(sel)))
+            raise ValueError(
+                "Bad selection",
+                "More than one object selected. You have selected {num} objects.".format(
+                    num=len(sel)
+                ),
+            )
         obj = sel[0].Object
         FreeCADGui.addModule("CompoundTools.Explode")
-        FreeCADGui.doCommand("input_obj = App.ActiveDocument."+obj.Name)
+        FreeCADGui.doCommand("input_obj = App.ActiveDocument." + obj.Name)
         FreeCADGui.doCommand("CompoundTools.Explode.explodeCompound(input_obj)")
         FreeCADGui.doCommand("input_obj.ViewObject.hide()")
     except Exception as ex:
         FreeCAD.ActiveDocument.abortTransaction()
         FreeCAD.Console.PrintError("{}\n".format(ex))
-        
+
     FreeCAD.ActiveDocument.commitTransaction()
     FreeCADGui.doCommand("App.ActiveDocument.recompute()")
-    

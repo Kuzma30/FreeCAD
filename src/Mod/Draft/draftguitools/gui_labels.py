@@ -59,10 +59,15 @@ class Label(gui_base_original.Creator):
     def GetResources(self):
         """Set icon, menu and tooltip."""
 
-        return {'Pixmap': 'Draft_Label',
-                'Accel': "D, L",
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Label", "Label"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Label", "Creates a label, optionally attached to a selected object or subelement.\n\nFirst select a vertex, an edge, or a face of an object, then call this command,\nand then set the position of the leader line and the textual label.\nThe label will be able to display information about this object, and about the selected subelement,\nif any.\n\nIf many objects or many subelements are selected, only the first one in each case\nwill be used to provide information to the label.")}
+        return {
+            "Pixmap": "Draft_Label",
+            "Accel": "D, L",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Label", "Label"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Label",
+                "Creates a label, optionally attached to a selected object or subelement.\n\nFirst select a vertex, an edge, or a face of an object, then call this command,\nand then set the position of the leader line and the textual label.\nThe label will be able to display information about this object, and about the selected subelement,\nif any.\n\nIf many objects or many subelements are selected, only the first one in each case\nwill be used to provide information to the label.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called."""
@@ -72,7 +77,9 @@ class Label(gui_base_original.Creator):
         self.sel = Gui.Selection.getSelectionEx()
         if self.sel:
             self.sel = self.sel[0]
-        self.ui.labelUi(title=translate("draft",self.featureName), callback=self.setmode)
+        self.ui.labelUi(
+            title=translate("draft", self.featureName), callback=self.setmode
+        )
         self.ui.xValue.setFocus()
         self.ui.xValue.selectAll()
         self.ghost = trackers.lineTracker()
@@ -83,6 +90,7 @@ class Label(gui_base_original.Creator):
     def setmode(self, i):
         """Set the type of label, if it is associated to an object."""
         from draftobjects.label import get_label_types
+
         self.labeltype = get_label_types()[i]
         utils.setParam("labeltype", self.labeltype)
 
@@ -108,10 +116,10 @@ class Label(gui_base_original.Creator):
                 n = App.Vector(0, 0, 1)
                 r = App.Rotation()
 
-            if abs(DraftVecUtils.angle(v, h, n)) <= math.pi/4:
+            if abs(DraftVecUtils.angle(v, h, n)) <= math.pi / 4:
                 direction = "Horizontal"
                 dist = -dist
-            elif abs(DraftVecUtils.angle(v, h, n)) >= math.pi*3/4:
+            elif abs(DraftVecUtils.angle(v, h, n)) >= math.pi * 3 / 4:
                 direction = "Horizontal"
             elif DraftVecUtils.angle(v, h, n) > 0:
                 direction = "Vertical"
@@ -151,11 +159,12 @@ class Label(gui_base_original.Creator):
 
             # Commit the creation instructions through the parent class,
             # the Creator class
-            _cmd_list = ['_label_ = ' + _cmd,
-                         'Draft.autogroup(_label_)',
-                         'FreeCAD.ActiveDocument.recompute()']
-            self.commit(translate("draft", "Create Label"),
-                        _cmd_list)
+            _cmd_list = [
+                "_label_ = " + _cmd,
+                "Draft.autogroup(_label_)",
+                "FreeCAD.ActiveDocument.recompute()",
+            ]
+            self.commit(translate("draft", "Create Label"), _cmd_list)
         self.finish()
 
     def action(self, arg):
@@ -187,8 +196,7 @@ class Label(gui_base_original.Creator):
                         # first click
                         self.node.append(self.point)
                         self.ui.isRelative.show()
-                        _msg(translate("draft",
-                                       "Pick endpoint of leader line"))
+                        _msg(translate("draft", "Pick endpoint of leader line"))
                         if self.planetrack:
                             self.planetrack.set(self.point)
                     elif len(self.node) == 1:
@@ -233,6 +241,6 @@ class Label(gui_base_original.Creator):
 
 
 Draft_Label = Label
-Gui.addCommand('Draft_Label', Label())
+Gui.addCommand("Draft_Label", Label())
 
 ## @}

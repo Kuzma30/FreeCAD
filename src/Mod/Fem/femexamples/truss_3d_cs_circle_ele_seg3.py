@@ -43,12 +43,14 @@ def get_information():
         "constraints": ["fixed", "force"],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 # To run the example from Python console use,
 # (works even after an edit without restart of FreeCAD):
@@ -69,6 +71,7 @@ Z88 official example 2, crane beam
 - max deflection Mystran : x.xx mm
 - max deflection Z88 : 8.19 mm  # one seg2 truss element foreach bar
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -79,7 +82,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     # load line
@@ -422,10 +427,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # beam section
     beamsection_obj = ObjectsFem.makeElementGeometry1D(
-        doc,
-        sectiontype="Circular",
-        height=25.0,
-        name="CrossSectionCircular"
+        doc, sectiontype="Circular", height=25.0, name="CrossSectionCircular"
     )
     analysis.addObject(beamsection_obj)
 
@@ -453,6 +455,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_truss_crane_seg3 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

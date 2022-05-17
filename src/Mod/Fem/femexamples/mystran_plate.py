@@ -41,12 +41,14 @@ def get_information():
         "constraints": ["fixed", "force"],
         "solvers": ["calculix", "ccxtools", "elmer", "mystran"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.buckling_platebuckling import setup
@@ -64,6 +66,7 @@ one each mesh node on one edge 100 N tension force
 Does not work on Z88 because Z88 does not support quad4 elements
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -74,7 +77,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     plate = doc.addObject("Part::Plane", "Plate")
@@ -95,7 +100,7 @@ def setup(doc=None, solvertype="ccxtools"):
     doc.recompute()
 
     # all geom boolean fragment
-    geom_obj = SplitFeatures.makeBooleanFragments(name='ThePointPlate')
+    geom_obj = SplitFeatures.makeBooleanFragments(name="ThePointPlate")
     geom_obj.Objects = [plate, force_pt1, force_pt2, force_pt3, force_pt4]
     doc.recompute()
     if FreeCAD.GuiUp:
@@ -143,7 +148,7 @@ def setup(doc=None, solvertype="ccxtools"):
     analysis.addObject(solver_obj)
 
     # shell thickness
-    thickness_obj = ObjectsFem.makeElementGeometry2D(doc, 0.3, 'Thickness')
+    thickness_obj = ObjectsFem.makeElementGeometry2D(doc, 0.3, "Thickness")
     analysis.addObject(thickness_obj)
 
     # material
@@ -177,6 +182,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_plate_mystran_quad4 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

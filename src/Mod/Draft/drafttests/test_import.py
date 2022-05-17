@@ -69,4 +69,5 @@ class DraftImport(unittest.TestCase):
         imported = aux.import_test(module)
         self.assertTrue(imported, "Problem importing '{}'".format(module))
 
+
 ## @}

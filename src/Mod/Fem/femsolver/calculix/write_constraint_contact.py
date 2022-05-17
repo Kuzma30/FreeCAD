@@ -27,7 +27,7 @@ __url__ = "https://www.freecadweb.org"
 
 
 def get_analysis_types():
-    return "all"    # write for all analysis types
+    return "all"  # write for all analysis types
 
 
 def get_sets_name():
@@ -70,8 +70,9 @@ def write_constraint(f, femobj, contact_obj, ccxwriter):
     # floats read from ccx should use {:.13G}, see comment in writer module
 
     f.write(
-        "*CONTACT PAIR, INTERACTION=INT{},TYPE=SURFACE TO SURFACE\n"
-        .format(contact_obj.Name)
+        "*CONTACT PAIR, INTERACTION=INT{},TYPE=SURFACE TO SURFACE\n".format(
+            contact_obj.Name
+        )
     )
     ind_surf = "IND" + contact_obj.Name
     dep_surf = "DEP" + contact_obj.Name
@@ -83,5 +84,5 @@ def write_constraint(f, femobj, contact_obj, ccxwriter):
     friction = contact_obj.Friction
     if friction > 0:
         f.write("*FRICTION \n")
-        stick = (slope / 10.0)
+        stick = slope / 10.0
         f.write("{:.13G}, {:.13G}\n".format(friction, stick))

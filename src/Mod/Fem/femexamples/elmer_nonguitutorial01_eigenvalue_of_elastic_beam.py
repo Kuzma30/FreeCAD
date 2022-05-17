@@ -39,12 +39,14 @@ def get_information():
         "constraints": [],
         "solvers": ["calculix", "ccxtools", "elmer"],
         "material": "solid",
-        "equation": "elasticity"  # "frequency", but list not allowed here
+        "equation": "elasticity",  # "frequency", but list not allowed here
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.elmer_nonguitutorial01_eigenvalue_of_elastic_beam import setup
@@ -55,6 +57,7 @@ See forum topic post:
 https://forum.freecadweb.org/viewtopic.php?t=56590
 
 """
+    )
 
 
 def setup(doc=None, solvertype="elmer"):
@@ -65,7 +68,9 @@ def setup(doc=None, solvertype="elmer"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     geom_obj = doc.addObject("Part::Box", "Box")
@@ -122,15 +127,13 @@ def setup(doc=None, solvertype="elmer"):
 
     # constraint fixed
     con_fixed = ObjectsFem.makeConstraintFixed(doc, "ConstraintFixed")
-    con_fixed.References = [
-        (geom_obj, "Face1"),
-        (geom_obj, "Face2")
-    ]
+    con_fixed.References = [(geom_obj, "Face1"), (geom_obj, "Face2")]
     analysis.addObject(con_fixed)
 
     # mesh
     from .meshes.mesh_eigenvalue_of_elastic_beam_tetra10 import create_nodes
     from .meshes.mesh_eigenvalue_of_elastic_beam_tetra10 import create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

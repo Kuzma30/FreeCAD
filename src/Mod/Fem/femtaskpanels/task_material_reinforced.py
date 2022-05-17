@@ -82,26 +82,27 @@ class _TaskPanel:
         QtCore.QObject.connect(
             self.parameterWidget.cb_materials_m,
             QtCore.SIGNAL("activated(int)"),
-            self.choose_material_m
+            self.choose_material_m,
         )
         QtCore.QObject.connect(
             self.parameterWidget.pb_edit_m,
             QtCore.SIGNAL("clicked()"),
-            self.edit_material_m
+            self.edit_material_m,
         )
         QtCore.QObject.connect(
             self.parameterWidget.cb_materials_r,
             QtCore.SIGNAL("activated(int)"),
-            self.choose_material_r
+            self.choose_material_r,
         )
         QtCore.QObject.connect(
             self.parameterWidget.pb_edit_r,
             QtCore.SIGNAL("clicked()"),
-            self.edit_material_r
+            self.edit_material_r,
         )
 
         # get all available materials (fill self.materials, self.cards and self.icons)
         from materialtools.cardutils import import_materials as getmats
+
         self.materials, self.cards, self.icons = getmats()
         # fill the material comboboxes with material cards
         self.add_cards_to_combo_boxes()
@@ -122,7 +123,7 @@ class _TaskPanel:
             self.parameterWidget.cb_materials_m.addItem(
                 QtGui.QIcon(":/icons/help-browser.svg"),
                 self.card_path_m,
-                self.card_path_m
+                self.card_path_m,
             )
             index = self.parameterWidget.cb_materials_m.findData(self.card_path_m)
             # print(index)
@@ -153,7 +154,7 @@ class _TaskPanel:
             self.parameterWidget.cb_materials_r.addItem(
                 QtGui.QIcon(":/icons/help-browser.svg"),
                 self.card_path_r,
-                self.card_path_r
+                self.card_path_r,
             )
             index = self.parameterWidget.cb_materials_r.findData(self.card_path_r)
             # set the current material in the cb widget
@@ -175,6 +176,7 @@ class _TaskPanel:
     # leave task panel ***************************************************************************
     def accept(self):
         from materialtools.cardutils import check_mat_units as checkunits
+
         if checkunits(self.material_m) is True and checkunits(self.material_r) is True:
             self.obj.Material = self.material_m
             self.obj.Reinforcement = self.material_r
@@ -265,7 +267,9 @@ class _TaskPanel:
     # transient material is needed if the user changed mat parameter by the mat editor
     def set_transient_material_m(self):
         self.card_path_m = "_Transient_Matrix_Material"
-        self.materials[self.card_path_m] = self.material_m  # = the current matrix mat dict
+        self.materials[
+            self.card_path_m
+        ] = self.material_m  # = the current matrix mat dict
         index = self.parameterWidget.cb_materials_m.findData(self.card_path_m)
         self.choose_material_m(index)
 
@@ -273,15 +277,15 @@ class _TaskPanel:
         self.has_transient_mat_m = True
         self.card_path_m = "_Transient_Matrix_Material"
         self.parameterWidget.cb_materials_m.addItem(
-            QtGui.QIcon(":/icons/help-browser.svg"),
-            self.card_path_m,
-            self.card_path_m
+            QtGui.QIcon(":/icons/help-browser.svg"), self.card_path_m, self.card_path_m
         )
         self.set_transient_material_m()
 
     def set_transient_material_r(self):
         self.card_path_r = "_Transient_Reinforcement_Material"
-        self.materials[self.card_path_r] = self.material_r  # = the current reinforced mat dict
+        self.materials[
+            self.card_path_r
+        ] = self.material_r  # = the current reinforced mat dict
         index = self.parameterWidget.cb_materials_r.findData(self.card_path_r)
         self.choose_material_r(index)
 
@@ -289,9 +293,7 @@ class _TaskPanel:
         self.has_transient_mat_r = True
         self.card_path_r = "_Transient_Reinforcement_Material"
         self.parameterWidget.cb_materials_r.addItem(
-            QtGui.QIcon(":/icons/help-browser.svg"),
-            self.card_path_r,
-            self.card_path_r
+            QtGui.QIcon(":/icons/help-browser.svg"), self.card_path_r, self.card_path_r
         )
         self.set_transient_material_r()
 
@@ -302,13 +304,16 @@ class _TaskPanel:
     def edit_material_m(self):
         # opens the material editor to choose a material or edit material params
         import MaterialEditor
+
         if self.card_path_m not in self.cards:
             FreeCAD.Console.PrintLog(
                 "Card path not in cards, material dict will be used to open Material Editor.\n"
             )
             new_material_params = MaterialEditor.editMaterial(material=self.material_m)
         else:
-            new_material_params = MaterialEditor.editMaterial(card_path=self.card_path_m)
+            new_material_params = MaterialEditor.editMaterial(
+                card_path=self.card_path_m
+            )
         # material editor returns the mat_dict only, not a card_path
         # if the material editor was canceled a empty dict will be returned
         # do not change the self.material
@@ -316,6 +321,7 @@ class _TaskPanel:
         if new_material_params:
             # check material quantity units
             from materialtools.cardutils import check_mat_units as checkunits
+
             if checkunits(new_material_params) is True:
                 self.material_m = new_material_params
                 self.card_path_m = self.get_material_card(self.material_m)
@@ -338,7 +344,9 @@ class _TaskPanel:
                         "was found in material directories. "
                         "The found material card will be used.\n"
                     )
-                    index = self.parameterWidget.cb_materials_m.findData(self.card_path_m)
+                    index = self.parameterWidget.cb_materials_m.findData(
+                        self.card_path_m
+                    )
                     # print(index)
                     # set the current material in the cb widget
                 self.choose_material_m(index)
@@ -348,20 +356,27 @@ class _TaskPanel:
                     "by the material editor, the material data was not changed.\n"
                 )
                 FreeCAD.Console.PrintError(error_message)
-                QtGui.QMessageBox.critical(None, "Material data not changed", error_message)
+                QtGui.QMessageBox.critical(
+                    None, "Material data not changed", error_message
+                )
         else:
-            FreeCAD.Console.PrintMessage("No changes where made by the material editor.\n")
+            FreeCAD.Console.PrintMessage(
+                "No changes where made by the material editor.\n"
+            )
 
     def edit_material_r(self):
         # opens the material editor to choose a material or edit material params
         import MaterialEditor
+
         if self.card_path_r not in self.cards:
             FreeCAD.Console.PrintLog(
                 "Card path not in cards, material dict will be used to open Material Editor.\n"
             )
             new_material_params = MaterialEditor.editMaterial(material=self.material_r)
         else:
-            new_material_params = MaterialEditor.editMaterial(card_path=self.card_path_r)
+            new_material_params = MaterialEditor.editMaterial(
+                card_path=self.card_path_r
+            )
         # material editor returns the mat_dict only, not a card_path
         # if the material editor was canceled a empty dict will be returned
         # do not change the self.material
@@ -369,6 +384,7 @@ class _TaskPanel:
         if new_material_params:
             # check material quantity units
             from materialtools.cardutils import check_mat_units as checkunits
+
             if checkunits(new_material_params) is True:
                 self.material_r = new_material_params
                 self.card_path_r = self.get_material_card(self.material_r)
@@ -391,7 +407,9 @@ class _TaskPanel:
                         "was found in material directories. "
                         "The found material card will be used.\n"
                     )
-                    index = self.parameterWidget.cb_materials_r.findData(self.card_path_r)
+                    index = self.parameterWidget.cb_materials_r.findData(
+                        self.card_path_r
+                    )
                     # print(index)
                     # set the current material in the cb widget
                 self.choose_material_r(index)
@@ -401,9 +419,13 @@ class _TaskPanel:
                     "by the material editor, the material data was not changed.\n"
                 )
                 FreeCAD.Console.PrintError(error_message)
-                QtGui.QMessageBox.critical(None, "Material data not changed", error_message)
+                QtGui.QMessageBox.critical(
+                    None, "Material data not changed", error_message
+                )
         else:
-            FreeCAD.Console.PrintMessage("No changes where made by the material editor.\n")
+            FreeCAD.Console.PrintMessage(
+                "No changes where made by the material editor.\n"
+            )
 
     # fill the combo box with cards **************************************************************
     def add_cards_to_combo_boxes(self):
@@ -411,7 +433,9 @@ class _TaskPanel:
         self.parameterWidget.cb_materials_m.clear()
         self.parameterWidget.cb_materials_r.clear()
 
-        mat_prefs = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/Material/Cards")
+        mat_prefs = FreeCAD.ParamGet(
+            "User parameter:BaseApp/Preferences/Mod/Material/Cards"
+        )
         sort_by_resources = mat_prefs.GetBool("SortByResources", False)
 
         card_name_list = []  # [ [card_name, card_path, icon_path], ... ]
@@ -428,8 +452,12 @@ class _TaskPanel:
                 card_name_list.append([a_name, a_path, self.icons[a_path]])
 
         for mat in card_name_list:
-            self.parameterWidget.cb_materials_m.addItem(QtGui.QIcon(mat[2]), mat[0], mat[1])
-            self.parameterWidget.cb_materials_r.addItem(QtGui.QIcon(mat[2]), mat[0], mat[1])
+            self.parameterWidget.cb_materials_m.addItem(
+                QtGui.QIcon(mat[2]), mat[0], mat[1]
+            )
+            self.parameterWidget.cb_materials_r.addItem(
+                QtGui.QIcon(mat[2]), mat[0], mat[1]
+            )
             # the whole card path is added to the combo box to make it unique
             # see def choose_material:
             # for assignment of self.card_path the path form the parameterWidget ist used

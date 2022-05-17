@@ -37,7 +37,6 @@ from . import signal
 
 
 class Task(object):
-
     def __init__(self):
         self.report = None
         self.signalStarting = set()
@@ -57,15 +56,13 @@ class Task(object):
         def stopping():
             self.stopTime = time.time()
             self.running = False
+
         self.signalStopping.add(stopping)
 
     @property
     def time(self):
         if self.startTime is not None:
-            endTime = (
-                self.stopTime
-                if self.stopTime is not None
-                else time.time())
+            endTime = self.stopTime if self.stopTime is not None else time.time()
             return endTime - self.startTime
         return None
 
@@ -122,15 +119,13 @@ class Task(object):
 
 
 class Thread(Task):
-
     def __init__(self):
         super(Thread, self).__init__()
         self._thread = None
 
     def start(self):
         super(Thread, self).start()
-        self._thread = threading.Thread(
-            target=self.protector)
+        self._thread = threading.Thread(target=self.protector)
         self._thread.daemon = True
         self._thread.start()
         self._attachObserver()
@@ -144,8 +139,10 @@ class Thread(Task):
             self._thread.join()
             signal.notify(self.signalStopping)
             signal.notify(self.signalStopped)
+
         thread = threading.Thread(target=waitForStop)
         thread.daemon = True
         thread.start()
+
 
 ##  @}

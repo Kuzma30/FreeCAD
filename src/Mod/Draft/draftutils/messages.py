@@ -55,4 +55,5 @@ def _log(text, end="\n"):
     """Write messages to the log file including the line ending."""
     App.Console.PrintLog(text + end)
 
+
 ## @}

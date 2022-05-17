@@ -77,7 +77,7 @@ class MaterialMechanicalNonlinear(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyLink",
                 "LinearBaseMaterial",
                 "Base",
-                "Set the linear material the nonlinear builds upon."
+                "Set the linear material the nonlinear builds upon.",
             )
 
         if not hasattr(obj, "MaterialModelNonlinearity"):
@@ -86,7 +86,7 @@ class MaterialMechanicalNonlinear(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyEnumeration",
                 "MaterialModelNonlinearity",
                 "Fem",
-                "Set the type on nonlinear material model"
+                "Set the type on nonlinear material model",
             )
             obj.MaterialModelNonlinearity = choices_nonlinear_material_models
             obj.MaterialModelNonlinearity = choices_nonlinear_material_models[0]
@@ -97,6 +97,6 @@ class MaterialMechanicalNonlinear(base_fempythonobject.BaseFemPythonObject):
                 "YieldPoints",
                 "Fem",
                 "Set stress and strain for yield points as a list of strings, "
-                "each point \"stress, plastic strain\""
+                'each point "stress, plastic strain"',
             )
             obj.YieldPoints = []

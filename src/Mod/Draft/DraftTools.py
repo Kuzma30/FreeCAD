@@ -61,8 +61,9 @@ True if Draft_rc.__name__ else False
 True if DraftGui.__name__ else False
 
 __title__ = "FreeCAD Draft Workbench GUI Tools"
-__author__ = ("Yorik van Havre, Werner Mayer, Martin Burbaum, Ken Cline, "
-              "Dmitry Chigrin")
+__author__ = (
+    "Yorik van Havre, Werner Mayer, Martin Burbaum, Ken Cline, " "Dmitry Chigrin"
+)
 __url__ = "https://www.freecadweb.org"
 
 if not hasattr(FreeCADGui, "Snapper"):
@@ -102,13 +103,16 @@ FreeCADGui.updateLocale()
 # sets the default working plane
 plane = WorkingPlane.plane()
 FreeCAD.DraftWorkingPlane = plane
-defaultWP = Draft.getParam("defaultWP",0)
-if defaultWP == 1: plane.alignToPointAndAxis(Vector(0,0,0), Vector(0,0,1), 0)
-elif defaultWP == 2: plane.alignToPointAndAxis(Vector(0,0,0), Vector(0,1,0), 0)
-elif defaultWP == 3: plane.alignToPointAndAxis(Vector(0,0,0), Vector(1,0,0), 0)
+defaultWP = Draft.getParam("defaultWP", 0)
+if defaultWP == 1:
+    plane.alignToPointAndAxis(Vector(0, 0, 0), Vector(0, 0, 1), 0)
+elif defaultWP == 2:
+    plane.alignToPointAndAxis(Vector(0, 0, 0), Vector(0, 1, 0), 0)
+elif defaultWP == 3:
+    plane.alignToPointAndAxis(Vector(0, 0, 0), Vector(1, 0, 0), 0)
 
 # last snapped objects, for quick intersection calculation
-lastObj = [0,0]
+lastObj = [0, 0]
 
 # Set modifier keys
 from draftguitools.gui_tool_utils import MODCONSTRAIN

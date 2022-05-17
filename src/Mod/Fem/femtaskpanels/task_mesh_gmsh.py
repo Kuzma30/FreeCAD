@@ -65,41 +65,33 @@ class _TaskPanel:
         QtCore.QObject.connect(
             self.form.if_max,
             QtCore.SIGNAL("valueChanged(Base::Quantity)"),
-            self.max_changed
+            self.max_changed,
         )
         QtCore.QObject.connect(
             self.form.if_min,
             QtCore.SIGNAL("valueChanged(Base::Quantity)"),
-            self.min_changed
+            self.min_changed,
         )
         QtCore.QObject.connect(
             self.form.cb_dimension,
             QtCore.SIGNAL("activated(int)"),
-            self.choose_dimension
+            self.choose_dimension,
         )
         QtCore.QObject.connect(
-            self.form.cb_order,
-            QtCore.SIGNAL("activated(int)"),
-            self.choose_order
+            self.form.cb_order, QtCore.SIGNAL("activated(int)"), self.choose_order
         )
         QtCore.QObject.connect(
-            self.Timer,
-            QtCore.SIGNAL("timeout()"),
-            self.update_timer_text
+            self.Timer, QtCore.SIGNAL("timeout()"), self.update_timer_text
         )
         QtCore.QObject.connect(
             self.form.pb_get_gmsh_version,
             QtCore.SIGNAL("clicked()"),
-            self.get_gmsh_version
+            self.get_gmsh_version,
         )
 
-        self.form.cb_dimension.addItems(
-            mesh_gmsh.MeshGmsh.known_element_dimensions
-        )
+        self.form.cb_dimension.addItems(mesh_gmsh.MeshGmsh.known_element_dimensions)
 
-        self.form.cb_order.addItems(
-            mesh_gmsh.MeshGmsh.known_element_orders
-        )
+        self.form.cb_order.addItems(mesh_gmsh.MeshGmsh.known_element_orders)
 
         self.get_mesh_params()
         self.get_active_analysis()
@@ -107,7 +99,9 @@ class _TaskPanel:
 
     def getStandardButtons(self):
         button_value = int(
-            QtGui.QDialogButtonBox.Ok | QtGui.QDialogButtonBox.Apply | QtGui.QDialogButtonBox.Cancel
+            QtGui.QDialogButtonBox.Ok
+            | QtGui.QDialogButtonBox.Apply
+            | QtGui.QDialogButtonBox.Cancel
         )
         return button_value
         # show a OK, a apply and a Cancel button
@@ -156,8 +150,9 @@ class _TaskPanel:
         if (not isinstance(message, bytes)) and (sys.version_info.major < 3):
             message = message.encode("utf-8", "replace")
         self.console_message_gmsh = self.console_message_gmsh + (
-            '<font color="#0000FF">{0:4.1f}:</font> <font color="{1}">{2}</font><br>'
-            .format(time.time() - self.Start, color, message)
+            '<font color="#0000FF">{0:4.1f}:</font> <font color="{1}">{2}</font><br>'.format(
+                time.time() - self.Start, color, message
+            )
         )
         self.form.te_output.setText(self.console_message_gmsh)
         self.form.te_output.moveCursor(QtGui.QTextCursor.End)
@@ -167,7 +162,9 @@ class _TaskPanel:
         if self.gmsh_runs:
             FreeCAD.Console.PrintMessage("timer2\n")
             # FreeCAD.Console.PrintMessage("Time: {0:4.1f}: \n".format(time.time() - self.Start))
-            self.form.l_time.setText("Time: {0:4.1f}: ".format(time.time() - self.Start))
+            self.form.l_time.setText(
+                "Time: {0:4.1f}: ".format(time.time() - self.Start)
+            )
 
     def max_changed(self, base_quantity_value):
         self.clmax = base_quantity_value
@@ -179,7 +176,9 @@ class _TaskPanel:
         if index < 0:
             return
         self.form.cb_dimension.setCurrentIndex(index)
-        self.dimension = str(self.form.cb_dimension.itemText(index))  # form returns unicode
+        self.dimension = str(
+            self.form.cb_dimension.itemText(index)
+        )  # form returns unicode
 
     def choose_order(self, index):
         if index < 0:
@@ -189,22 +188,22 @@ class _TaskPanel:
 
     def get_gmsh_version(self):
         from femmesh import gmshtools
-        version, full_message = gmshtools.GmshTools(self.mesh_obj, self.analysis).get_gmsh_version()
+
+        version, full_message = gmshtools.GmshTools(
+            self.mesh_obj, self.analysis
+        ).get_gmsh_version()
         if version[0] and version[1] and version[2]:
             messagebox = QtGui.QMessageBox.information
         else:
             messagebox = QtGui.QMessageBox.warning
-        messagebox(
-            None,
-            "Gmsh - Information",
-            full_message
-        )
+        messagebox(None, "Gmsh - Information", full_message)
 
     def run_gmsh(self):
         QApplication.setOverrideCursor(Qt.WaitCursor)
         part = self.mesh_obj.Part
         if (
-            self.mesh_obj.MeshRegionList and part.Shape.ShapeType == "Compound"
+            self.mesh_obj.MeshRegionList
+            and part.Shape.ShapeType == "Compound"
             and (
                 is_of_type(part, "FeatureBooleanFragments")
                 or is_of_type(part, "FeatureSlice")
@@ -222,11 +221,7 @@ class _TaskPanel:
                 "Shape to mesh is a BooleanFragmentsCompound "
                 "and mesh regions are defined"
             )
-            QtGui.QMessageBox.critical(
-                None,
-                qtbox_title,
-                error_message
-            )
+            QtGui.QMessageBox.critical(None, qtbox_title, error_message)
         self.Start = time.time()
         self.form.l_time.setText("Time: {0:4.1f}: ".format(time.time() - self.Start))
         self.console_message_gmsh = ""
@@ -234,6 +229,7 @@ class _TaskPanel:
         self.console_log("We are going to start ...")
         self.get_active_analysis()
         from femmesh import gmshtools
+
         gmsh_mesh = gmshtools.GmshTools(self.mesh_obj, self.analysis)
         self.console_log("Start Gmsh ...")
         error = ""
@@ -242,8 +238,7 @@ class _TaskPanel:
         except Exception:
             error = sys.exc_info()[1]
             FreeCAD.Console.PrintMessage(
-                "Unexpected error when creating mesh: {}\n"
-                .format(error)
+                "Unexpected error when creating mesh: {}\n".format(error)
             )
         if error:
             FreeCAD.Console.PrintMessage("Gmsh had warnings ...\n")
@@ -268,8 +263,7 @@ class _TaskPanel:
             for m in analysis.Group:
                 if m.Name == self.mesh_obj.Name:
                     FreeCAD.Console.PrintMessage(
-                        "Active analysis found: {}\n"
-                        .format(analysis.Name)
+                        "Active analysis found: {}\n".format(analysis.Name)
                     )
                     self.analysis = analysis  # group meshing
                     break

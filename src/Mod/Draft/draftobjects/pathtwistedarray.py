@@ -49,7 +49,12 @@ object in the Arch Workbench.
 
 import draftgeoutils.geo_arrays as geo
 from draftutils.translate import translate
-def QT_TRANSLATE_NOOP(ctx,txt): return txt
+
+
+def QT_TRANSLATE_NOOP(ctx, txt):
+    return txt
+
+
 from draftobjects.draftlink import DraftLink
 
 ## \addtogroup draftobjects
@@ -80,45 +85,65 @@ class PathTwistedArray(DraftLink):
             properties = []
 
         if "Base" not in properties:
-            obj.addProperty("App::PropertyLink",
-                            "Base",
-                            "Objects",
-                            QT_TRANSLATE_NOOP("App::Property","The base object that will be duplicated."))
+            obj.addProperty(
+                "App::PropertyLink",
+                "Base",
+                "Objects",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "The base object that will be duplicated."
+                ),
+            )
             obj.Base = None
 
         if "PathObject" not in properties:
-            obj.addProperty("App::PropertyLink",
-                            "PathObject",
-                            "Objects",
-                            QT_TRANSLATE_NOOP("App::Property","The object along which the copies will be distributed. It must contain 'Edges'."))
+            obj.addProperty(
+                "App::PropertyLink",
+                "PathObject",
+                "Objects",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "The object along which the copies will be distributed. It must contain 'Edges'.",
+                ),
+            )
             obj.PathObject = None
 
         if "Count" not in properties:
-            obj.addProperty("App::PropertyInteger",
-                            "Count",
-                            "Objects",
-                            QT_TRANSLATE_NOOP("App::Property","Number of copies to create."))
+            obj.addProperty(
+                "App::PropertyInteger",
+                "Count",
+                "Objects",
+                QT_TRANSLATE_NOOP("App::Property", "Number of copies to create."),
+            )
             obj.Count = 15
 
         if "RotationFactor" not in properties:
-            obj.addProperty("App::PropertyFloat",
-                            "RotationFactor",
-                            "Objects",
-                            QT_TRANSLATE_NOOP("App::Property","Rotation factor of the twisted array."))
+            obj.addProperty(
+                "App::PropertyFloat",
+                "RotationFactor",
+                "Objects",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "Rotation factor of the twisted array."
+                ),
+            )
             obj.RotationFactor = 0.25
 
         if self.use_link and "ExpandArray" not in properties:
-            obj.addProperty("App::PropertyBool",
-                            "ExpandArray",
-                            "Objects",
-                            QT_TRANSLATE_NOOP("App::Property","Show the individual array elements (only for Link arrays)"))
+            obj.addProperty(
+                "App::PropertyBool",
+                "ExpandArray",
+                "Objects",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "Show the individual array elements (only for Link arrays)",
+                ),
+            )
             obj.ExpandArray = False
-            obj.setPropertyStatus('Shape', 'Transient')
+            obj.setPropertyStatus("Shape", "Transient")
 
     def linkSetup(self, obj):
         """Set up the object as a link object."""
         super(PathTwistedArray, self).linkSetup(obj)
-        obj.configLinkProperty(ElementCount='Count')
+        obj.configLinkProperty(ElementCount="Count")
 
     def onChanged(self, obj, prop):
         """Execute when a property is changed."""
@@ -134,10 +159,10 @@ class PathTwistedArray(DraftLink):
         if self.use_link:
             self.linkSetup(obj)
         else:
-            obj.setPropertyStatus('Shape', '-Transient')
+            obj.setPropertyStatus("Shape", "-Transient")
 
         if obj.Shape.isNull():
-            if getattr(obj, 'PlacementList', None):
+            if getattr(obj, "PlacementList", None):
                 self.buildShape(obj, obj.Placement, obj.PlacementList)
             else:
                 self.execute(obj)
@@ -154,12 +179,13 @@ class PathTwistedArray(DraftLink):
         count = obj.Count
         rot_factor = obj.RotationFactor
 
-        copy_placements, _ = geo.get_twisted_placements(path,
-                                                        count=count,
-                                                        rot_factor=rot_factor)
+        copy_placements, _ = geo.get_twisted_placements(
+            path, count=count, rot_factor=rot_factor
+        )
 
-        return super(PathTwistedArray, self).buildShape(obj,
-                                                        array_placement,
-                                                        copy_placements)
+        return super(PathTwistedArray, self).buildShape(
+            obj, array_placement, copy_placements
+        )
+
 
 ## @}

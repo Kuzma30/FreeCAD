@@ -54,7 +54,7 @@ class MaterialCommon(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyLinkSubList",
                 "References",
                 "Material",
-                "List of material shapes"
+                "List of material shapes",
             )
         # Category
         # attribute Category was added in commit 61fb3d429a
@@ -63,7 +63,7 @@ class MaterialCommon(base_fempythonobject.BaseFemPythonObject):
                 "App::PropertyEnumeration",
                 "Category",
                 "Material",
-                "Material type: fluid or solid"
+                "Material type: fluid or solid",
             )
             obj.Category = ["Solid", "Fluid"]  # used in TaskPanel
             obj.Category = "Solid"

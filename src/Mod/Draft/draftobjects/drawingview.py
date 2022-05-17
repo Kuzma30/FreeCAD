@@ -61,73 +61,44 @@ class DrawingView(DraftObject):
     def __init__(self, obj):
         super(DrawingView, self).__init__(obj, "DrawingView")
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                                 "The linked object")
-        obj.addProperty("App::PropertyLink",
-                        "Source",
-                        "Base",
-                        _tip)
+        _tip = QT_TRANSLATE_NOOP("App::Property", "The linked object")
+        obj.addProperty("App::PropertyLink", "Source", "Base", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                                 "Projection direction")
-        obj.addProperty("App::PropertyVector",
-                        "Direction",
-                        "Shape View",
-                        _tip)
+        _tip = QT_TRANSLATE_NOOP("App::Property", "Projection direction")
+        obj.addProperty("App::PropertyVector", "Direction", "Shape View", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                                 "The width of the lines inside this object")
-        obj.addProperty("App::PropertyFloat",
-                        "LineWidth",
-                        "View Style",
-                        _tip)
+        _tip = QT_TRANSLATE_NOOP(
+            "App::Property", "The width of the lines inside this object"
+        )
+        obj.addProperty("App::PropertyFloat", "LineWidth", "View Style", _tip)
         obj.LineWidth = 0.35
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                                 "The size of the texts inside this object")
-        obj.addProperty("App::PropertyLength",
-                        "FontSize",
-                        "View Style",
-                        _tip)
+        _tip = QT_TRANSLATE_NOOP(
+            "App::Property", "The size of the texts inside this object"
+        )
+        obj.addProperty("App::PropertyLength", "FontSize", "View Style", _tip)
         obj.FontSize = 12
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                                 "The spacing between lines of text")
-        obj.addProperty("App::PropertyLength",
-                        "LineSpacing",
-                        "View Style",
-                        _tip)
+        _tip = QT_TRANSLATE_NOOP("App::Property", "The spacing between lines of text")
+        obj.addProperty("App::PropertyLength", "LineSpacing", "View Style", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                                 "The color of the projected objects")
-        obj.addProperty("App::PropertyColor",
-                        "LineColor",
-                        "View Style",
-                        _tip)
+        _tip = QT_TRANSLATE_NOOP("App::Property", "The color of the projected objects")
+        obj.addProperty("App::PropertyColor", "LineColor", "View Style", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                                 "Shape Fill Style")
-        obj.addProperty("App::PropertyEnumeration",
-                        "FillStyle",
-                        "View Style",
-                        _tip)
-        obj.FillStyle = ['shape color'] + list(utils.svgpatterns().keys())
+        _tip = QT_TRANSLATE_NOOP("App::Property", "Shape Fill Style")
+        obj.addProperty("App::PropertyEnumeration", "FillStyle", "View Style", _tip)
+        obj.FillStyle = ["shape color"] + list(utils.svgpatterns().keys())
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                                 "Line Style")
-        obj.addProperty("App::PropertyEnumeration",
-                        "LineStyle",
-                        "View Style",
-                        _tip)
-        obj.LineStyle = ['Solid', 'Dashed', 'Dotted', 'Dashdot']
+        _tip = QT_TRANSLATE_NOOP("App::Property", "Line Style")
+        obj.addProperty("App::PropertyEnumeration", "LineStyle", "View Style", _tip)
+        obj.LineStyle = ["Solid", "Dashed", "Dotted", "Dashdot"]
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                                 "If checked, source objects are displayed "
-                                 "regardless of being visible in the 3D model")
-        obj.addProperty("App::PropertyBool",
-                        "AlwaysOn",
-                        "View Style",
-                        _tip)
+        _tip = QT_TRANSLATE_NOOP(
+            "App::Property",
+            "If checked, source objects are displayed "
+            "regardless of being visible in the 3D model",
+        )
+        obj.addProperty("App::PropertyBool", "AlwaysOn", "View Style", _tip)
 
     def execute(self, obj):
         """Execute when the object is created or recomputed."""
@@ -154,31 +125,41 @@ class DrawingView(DraftObject):
                     if hasattr(obj, "AlwaysOn") and obj.AlwaysOn:
                         v = True
                     if v:
-                        svg += get_svg.get_svg(o,
-                                               obj.Scale,
-                                               obj.LineWidth,
-                                               obj.FontSize.Value,
-                                               obj.FillStyle,
-                                               obj.Direction, ls, lc, lp)
+                        svg += get_svg.get_svg(
+                            o,
+                            obj.Scale,
+                            obj.LineWidth,
+                            obj.FontSize.Value,
+                            obj.FillStyle,
+                            obj.Direction,
+                            ls,
+                            lc,
+                            lp,
+                        )
             else:
-                svg = get_svg.get_svg(obj.Source,
-                                      obj.Scale,
-                                      obj.LineWidth,
-                                      obj.FontSize.Value,
-                                      obj.FillStyle,
-                                      obj.Direction, ls, lc, lp)
+                svg = get_svg.get_svg(
+                    obj.Source,
+                    obj.Scale,
+                    obj.LineWidth,
+                    obj.FontSize.Value,
+                    obj.FillStyle,
+                    obj.Direction,
+                    ls,
+                    lc,
+                    lp,
+                )
 
             result += '<g id="' + obj.Name + '"'
             result += ' transform="'
-            result += 'rotate(' + str(obj.Rotation) + ','
-            result += str(obj.X) + ',' + str(obj.Y)
-            result += ') '
-            result += 'translate(' + str(obj.X) + ',' + str(obj.Y) + ') '
-            result += 'scale(' + str(obj.Scale) + ',' + str(-obj.Scale)
-            result += ')'
+            result += "rotate(" + str(obj.Rotation) + ","
+            result += str(obj.X) + "," + str(obj.Y)
+            result += ") "
+            result += "translate(" + str(obj.X) + "," + str(obj.Y) + ") "
+            result += "scale(" + str(obj.Scale) + "," + str(-obj.Scale)
+            result += ")"
             result += '">'
             result += svg
-            result += '</g>'
+            result += "</g>"
         obj.ViewResult = result
 
     def getDXF(self, obj):

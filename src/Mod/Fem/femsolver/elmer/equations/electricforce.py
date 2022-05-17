@@ -34,8 +34,7 @@ from . import linear
 
 
 def create(doc, name="Electricforce"):
-    return femutils.createObject(
-        doc, name, Proxy, ViewProxy)
+    return femutils.createObject(doc, name, Proxy, ViewProxy)
 
 
 class Proxy(linear.Proxy, equationbase.ElectricforceProxy):
@@ -49,5 +48,6 @@ class Proxy(linear.Proxy, equationbase.ElectricforceProxy):
 
 class ViewProxy(linear.ViewProxy, equationbase.ElectricforceViewProxy):
     pass
+
 
 ##  @}

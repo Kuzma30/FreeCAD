@@ -37,38 +37,28 @@ from . import linear
 
 
 class Proxy(linear.Proxy):
-
     def __init__(self, obj):
         super(Proxy, self).__init__(obj)
         obj.addProperty(
-            "App::PropertyFloat",
-            "NonlinearTolerance",
-            "Nonlinear System",
-            ""
+            "App::PropertyFloat", "NonlinearTolerance", "Nonlinear System", ""
         )
         obj.addProperty(
-            "App::PropertyInteger",
-            "NonlinearIterations",
-            "Nonlinear System",
-            ""
+            "App::PropertyInteger", "NonlinearIterations", "Nonlinear System", ""
         )
         obj.addProperty(
-            "App::PropertyFloat",
-            "RelaxationFactor",
-            "Nonlinear System",
-            ""
+            "App::PropertyFloat", "RelaxationFactor", "Nonlinear System", ""
         )
         obj.addProperty(
             "App::PropertyInteger",
             "NonlinearNewtonAfterIterations",
             "Nonlinear System",
-            ""
+            "",
         )
         obj.addProperty(
             "App::PropertyFloat",
             "NonlinearNewtonAfterTolerance",
             "Nonlinear System",
-            ""
+            "",
         )
         obj.NonlinearTolerance = 1e-8
         obj.NonlinearIterations = 500
@@ -79,5 +69,6 @@ class Proxy(linear.Proxy):
 
 class ViewProxy(linear.ViewProxy):
     pass
+
 
 ##  @}

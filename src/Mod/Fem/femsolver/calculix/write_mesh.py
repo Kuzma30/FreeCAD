@@ -42,9 +42,7 @@ def write_mesh(ccxwriter):
         ccxwriter.femmesh_file = join(ccxwriter.dir_name, file_name_split)
 
         ccxwriter.femmesh.writeABAQUS(
-            ccxwriter.femmesh_file,
-            element_param,
-            group_param
+            ccxwriter.femmesh_file, element_param, group_param
         )
 
         # Check to see if fluid sections are in analysis and use D network element type
@@ -59,9 +57,7 @@ def write_mesh(ccxwriter):
     else:
         ccxwriter.femmesh_file = ccxwriter.file_name
         ccxwriter.femmesh.writeABAQUS(
-            ccxwriter.femmesh_file,
-            element_param,
-            group_param
+            ccxwriter.femmesh_file, element_param, group_param
         )
 
         # Check to see if fluid sections are in analysis and use D network element type

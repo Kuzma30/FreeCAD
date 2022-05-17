@@ -41,8 +41,7 @@ from femtools import femutils
 
 
 def create(doc, name="ElmerSolver"):
-    return femutils.createObject(
-        doc, name, Proxy, ViewProxy)
+    return femutils.createObject(doc, name, Proxy, ViewProxy)
 
 
 class Proxy(solverbase.Proxy):
@@ -63,45 +62,29 @@ class Proxy(solverbase.Proxy):
         super(Proxy, self).__init__(obj)
 
         obj.addProperty(
-            "App::PropertyInteger",
-            "SteadyStateMaxIterations",
-            "Steady State",
-            ""
+            "App::PropertyInteger", "SteadyStateMaxIterations", "Steady State", ""
         )
         obj.SteadyStateMaxIterations = 1
 
         obj.addProperty(
-            "App::PropertyInteger",
-            "SteadyStateMinIterations",
-            "Steady State",
-            ""
+            "App::PropertyInteger", "SteadyStateMinIterations", "Steady State", ""
         )
         obj.SteadyStateMinIterations = 0
 
-        obj.addProperty(
-            "App::PropertyLink",
-            "ElmerResult",
-            "Base",
-            "",
-            4 | 8
-        )
+        obj.addProperty("App::PropertyLink", "ElmerResult", "Base", "", 4 | 8)
 
-        obj.addProperty(
-            "App::PropertyLink",
-            "ElmerOutput",
-            "Base",
-            "",
-            4 | 8
-        )
+        obj.addProperty("App::PropertyLink", "ElmerOutput", "Base", "", 4 | 8)
 
     def createMachine(self, obj, directory, testmode=False):
         return run.Machine(
-            solver=obj, directory=directory,
+            solver=obj,
+            directory=directory,
             check=tasks.Check(),
             prepare=tasks.Prepare(),
             solve=tasks.Solve(),
             results=tasks.Results(),
-            testmode=testmode)
+            testmode=testmode,
+        )
 
     def createEquation(self, doc, eqId):
         return self._EQUATIONS[eqId].create(doc)
@@ -115,5 +98,6 @@ class ViewProxy(solverbase.ViewProxy):
 
     def getIcon(self):
         return ":/icons/FEM_SolverElmer.svg"
+
 
 ##  @}

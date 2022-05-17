@@ -39,8 +39,7 @@ import FreeCAD as App
 import draftutils.utils as utils
 import draftutils.gui_utils as gui_utils
 
-from draftviewproviders.view_draft_annotation \
-    import ViewProviderDraftAnnotation
+from draftviewproviders.view_draft_annotation import ViewProviderDraftAnnotation
 
 if App.GuiUp:
     import FreeCADGui as Gui
@@ -69,124 +68,81 @@ class ViewProviderLabel(ViewProviderDraftAnnotation):
     def set_text_properties(self, vobj, properties):
         """Set text properties only if they don't already exist."""
         if "TextSize" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The size of the text")
-            vobj.addProperty("App::PropertyLength",
-                             "TextSize",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "The size of the text")
+            vobj.addProperty("App::PropertyLength", "TextSize", "Text", _tip)
             vobj.TextSize = utils.get_param("textheight", 1)
 
         if "TextFont" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The font of the text")
-            vobj.addProperty("App::PropertyFont",
-                             "TextFont",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "The font of the text")
+            vobj.addProperty("App::PropertyFont", "TextFont", "Text", _tip)
             vobj.TextFont = utils.get_param("textfont")
 
         if "TextAlignment" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The vertical alignment of the text")
-            vobj.addProperty("App::PropertyEnumeration",
-                             "TextAlignment",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "The vertical alignment of the text"
+            )
+            vobj.addProperty("App::PropertyEnumeration", "TextAlignment", "Text", _tip)
             vobj.TextAlignment = ["Top", "Middle", "Bottom"]
             vobj.TextAlignment = "Bottom"
 
         if "TextColor" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "Text color")
-            vobj.addProperty("App::PropertyColor",
-                             "TextColor",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "Text color")
+            vobj.addProperty("App::PropertyColor", "TextColor", "Text", _tip)
 
         if "MaxChars" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The maximum number of characters "
-                                     "on each line of the text box")
-            vobj.addProperty("App::PropertyInteger",
-                             "MaxChars",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "The maximum number of characters " "on each line of the text box",
+            )
+            vobj.addProperty("App::PropertyInteger", "MaxChars", "Text", _tip)
 
         if "Justification" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The vertical alignment of the text")
-            vobj.addProperty("App::PropertyEnumeration",
-                             "Justification",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "The vertical alignment of the text"
+            )
+            vobj.addProperty("App::PropertyEnumeration", "Justification", "Text", _tip)
             vobj.Justification = ["Left", "Center", "Right"]
 
         if "LineSpacing" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "Line spacing (relative to font size)")
-            vobj.addProperty("App::PropertyFloat",
-                             "LineSpacing",
-                             "Text",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "Line spacing (relative to font size)"
+            )
+            vobj.addProperty("App::PropertyFloat", "LineSpacing", "Text", _tip)
             vobj.LineSpacing = 1.0
 
     def set_graphics_properties(self, vobj, properties):
         """Set graphics properties only if they don't already exist."""
         if "ArrowSize" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The size of the arrow")
-            vobj.addProperty("App::PropertyLength",
-                             "ArrowSize",
-                             "Graphics",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "The size of the arrow")
+            vobj.addProperty("App::PropertyLength", "ArrowSize", "Graphics", _tip)
             vobj.ArrowSize = utils.get_param("arrowsize", 1)
 
         if "ArrowType" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The type of arrow of this label")
-            vobj.addProperty("App::PropertyEnumeration",
-                             "ArrowType",
-                             "Graphics",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "The type of arrow of this label")
+            vobj.addProperty("App::PropertyEnumeration", "ArrowType", "Graphics", _tip)
             vobj.ArrowType = utils.ARROW_TYPES
             vobj.ArrowType = utils.ARROW_TYPES[utils.get_param("dimsymbol")]
 
         if "Frame" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "The type of frame around the text "
-                                     "of this object")
-            vobj.addProperty("App::PropertyEnumeration",
-                             "Frame",
-                             "Graphics",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property", "The type of frame around the text " "of this object"
+            )
+            vobj.addProperty("App::PropertyEnumeration", "Frame", "Graphics", _tip)
             vobj.Frame = ["None", "Rectangle"]
 
         if "Line" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "Display a leader line or not")
-            vobj.addProperty("App::PropertyBool",
-                             "Line",
-                             "Graphics",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "Display a leader line or not")
+            vobj.addProperty("App::PropertyBool", "Line", "Graphics", _tip)
             vobj.Line = True
 
         if "LineWidth" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "Line width")
-            vobj.addProperty("App::PropertyFloat",
-                             "LineWidth",
-                             "Graphics",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "Line width")
+            vobj.addProperty("App::PropertyFloat", "LineWidth", "Graphics", _tip)
             vobj.LineWidth = utils.get_param("linewidth", 1)
 
         if "LineColor" not in properties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "Line color")
-            vobj.addProperty("App::PropertyColor",
-                             "LineColor",
-                             "Graphics",
-                             _tip)
+            _tip = QT_TRANSLATE_NOOP("App::Property", "Line color")
+            vobj.addProperty("App::PropertyColor", "LineColor", "Graphics", _tip)
 
     def getIcon(self):
         """Return the path to the icon used by the viewprovider."""
@@ -302,9 +258,7 @@ class ViewProviderLabel(ViewProviderDraftAnnotation):
             if n_points >= 2:
                 self.line.coordIndex.deleteValues(0)
                 self.lcoords.point.setValues(obj.Points)
-                self.line.coordIndex.setValues(0,
-                                               n_points,
-                                               range(n_points))
+                self.line.coordIndex.setValues(0, n_points, range(n_points))
                 self.onChanged(obj.ViewObject, "ArrowType")
 
             if obj.StraightDistance > 0:
@@ -314,8 +268,10 @@ class ViewProviderLabel(ViewProviderDraftAnnotation):
                 self.text2d.justification = coin.SoText2.LEFT
                 self.text3d.justification = coin.SoAsciiText.LEFT
 
-            self.onChanged(obj.ViewObject, "DisplayMode") # Property to trigger update_label and update_frame.
-                                                          # We could have used a different property.
+            self.onChanged(
+                obj.ViewObject, "DisplayMode"
+            )  # Property to trigger update_label and update_frame.
+            # We could have used a different property.
 
         elif prop == "Text" and obj.Text:
             self.text2d.string.setValue("")
@@ -334,14 +290,15 @@ class ViewProviderLabel(ViewProviderDraftAnnotation):
         obj = vobj.Object
         properties = vobj.PropertiesList
 
-        can_update_label = ("DisplayMode" in properties
-                            and "LineSpacing" in properties
-                            and "ScaleMultiplier" in properties
-                            and "TextAlignment" in properties # Top, Middle or Bottom.
-                            and "TextFont" in properties
-                            and "TextSize" in properties)
-        can_update_frame = (can_update_label
-                            and "Frame" in properties)
+        can_update_label = (
+            "DisplayMode" in properties
+            and "LineSpacing" in properties
+            and "ScaleMultiplier" in properties
+            and "TextAlignment" in properties  # Top, Middle or Bottom.
+            and "TextFont" in properties
+            and "TextSize" in properties
+        )
+        can_update_frame = can_update_label and "Frame" in properties
 
         if prop == "ScaleMultiplier" and "ScaleMultiplier" in properties:
             if "ArrowSize" in properties:
@@ -387,9 +344,11 @@ class ViewProviderLabel(ViewProviderDraftAnnotation):
             if len(obj.Points) > 1:
                 self.update_arrow(obj, vobj)
 
-        elif (prop == "ArrowSize"
-              and "ArrowSize" in properties
-              and "ScaleMultiplier" in properties):
+        elif (
+            prop == "ArrowSize"
+            and "ArrowSize" in properties
+            and "ScaleMultiplier" in properties
+        ):
             s = vobj.ArrowSize.Value * vobj.ScaleMultiplier
             if s:
                 self.arrowpos.scaleFactor.setValue((s, s, s))
@@ -477,23 +436,23 @@ class ViewProviderLabel(ViewProviderDraftAnnotation):
         self.symbol = gui_utils.dim_symbol(s)
         self.arrow.addChild(self.symbol)
 
-        prec = 10**(-utils.precision())
-        x_axis = App.Vector(1,0,0)
+        prec = 10 ** (-utils.precision())
+        x_axis = App.Vector(1, 0, 0)
         target_dir = None
         # search in Points to get first point != to TargetPoint and use it
         # to get the target line direction
         for pnt in obj.Points[-2::-1]:
-            if not pnt.isEqual(obj.Points[-1],prec):
+            if not pnt.isEqual(obj.Points[-1], prec):
                 target_dir = pnt.sub(obj.Points[-1])
                 break
         if target_dir is None:
             target_dir = x_axis
-        target_dir_xy = obj.Placement.Rotation.inverted()*target_dir
-        angle = target_dir_xy.getAngle(x_axis)*App.Units.Radian
+        target_dir_xy = obj.Placement.Rotation.inverted() * target_dir
+        angle = target_dir_xy.getAngle(x_axis) * App.Units.Radian
         axis = x_axis.cross(target_dir_xy)
         rot = App.Rotation(axis, angle)
 
-        self.arrowpos.rotation.setValue((obj.Placement.Rotation*rot).Q)
+        self.arrowpos.rotation.setValue((obj.Placement.Rotation * rot).Q)
         self.arrowpos.translation.setValue(obj.Points[-1])
 
     def update_frame(self, obj, vobj):
@@ -536,9 +495,7 @@ class ViewProviderLabel(ViewProviderDraftAnnotation):
         pts.append(pts[0])
 
         self.fcoords.point.setValues(pts)
-        self.frame.coordIndex.setValues(0,
-                                        len(pts),
-                                        range(len(pts)))
+        self.frame.coordIndex.setValues(0, len(pts), range(len(pts)))
 
 
 # Alias for compatibility with v0.18 and earlier

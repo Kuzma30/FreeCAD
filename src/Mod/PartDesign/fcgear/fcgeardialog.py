@@ -19,6 +19,7 @@ from PyQt4 import QtGui as qt
 import fcgear
 import FreeCAD, FreeCADGui
 
+
 class GearCreationFrame(qt.QFrame):
     def __init__(self, parent=None):
         super(GearCreationFrame, self).__init__(parent)
@@ -26,13 +27,14 @@ class GearCreationFrame(qt.QFrame):
         self.m = qt.QDoubleSpinBox(value=2.5)
         self.angle = qt.QDoubleSpinBox(value=20)
         self.split = qt.QComboBox()
-        self.split.addItems(['2x3', '1x4'])
+        self.split.addItems(["2x3", "1x4"])
         l = qt.QFormLayout(self)
         l.setFieldGrowthPolicy(l.ExpandingFieldsGrow)
-        l.addRow('Number of teeth:', self.Z)
-        l.addRow('Module (mm):', self.m)
-        l.addRow('Pressure angle:', self.angle)
-        l.addRow('Number of curves:', self.split)
+        l.addRow("Number of teeth:", self.Z)
+        l.addRow("Module (mm):", self.m)
+        l.addRow("Pressure angle:", self.angle)
+        l.addRow("Number of curves:", self.split)
+
 
 class GearDialog(qt.QDialog):
     def __init__(self, parent=None):
@@ -40,22 +42,24 @@ class GearDialog(qt.QDialog):
         self.gc = GearCreationFrame()
 
         btns = qt.QDialogButtonBox.Ok | qt.QDialogButtonBox.Cancel
-        buttonBox = qt.QDialogButtonBox(btns,
-                                        accepted=self.accept,
-                                        rejected=self.reject)
+        buttonBox = qt.QDialogButtonBox(
+            btns, accepted=self.accept, rejected=self.reject
+        )
         l = qt.QVBoxLayout(self)
         l.addWidget(self.gc)
         l.addWidget(buttonBox)
-        self.setWindowTitle('Gear creation dialog')
+        self.setWindowTitle("Gear creation dialog")
 
     def accept(self):
         if FreeCAD.ActiveDocument is None:
             FreeCAD.newDocument("Gear")
 
-        gear = fcgear.makeGear(self.gc.m.value(),
-                               self.gc.Z.value(),
-                               self.gc.angle.value(),
-                               not self.gc.split.currentIndex())
+        gear = fcgear.makeGear(
+            self.gc.m.value(),
+            self.gc.Z.value(),
+            self.gc.angle.value(),
+            not self.gc.split.currentIndex(),
+        )
 
         # Use gear to silence static analyzer complaints about unused variables (TODO: Waiting on PEP640 or similar)
         False if gear.__name__ else True
@@ -64,7 +68,7 @@ class GearDialog(qt.QDialog):
         return super(GearDialog, self).accept()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     a = qt.QApplication([])
     w = GearDialog()
     w.show()

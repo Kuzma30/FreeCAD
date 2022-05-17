@@ -6,6 +6,7 @@ if FreeCAD.GuiUp:
     import FreeCADGui
     from PySide import QtGui
 
+
 class IfcContextView:
     """A default view provider for IfcContext objects."""
 
@@ -33,6 +34,7 @@ class IfcContextView:
         FreeCADGui.Control.showDialog(IfcContextUI(viewObject.Object))
         return True
 
+
 class IfcContextUI:
     """A default task panel for editing context objects."""
 
@@ -53,7 +55,9 @@ class IfcContextUI:
         data = {}
         for lineEdit in self.lineEditObjects:
             data[lineEdit.objectName()] = lineEdit.text()
-        ArchIFC.IfcRoot.setObjIfcComplexAttributeValue(self, self.object, "RepresentationContexts", data)
+        ArchIFC.IfcRoot.setObjIfcComplexAttributeValue(
+            self, self.object, "RepresentationContexts", data
+        )
         return True
 
     def createBaseLayout(self):
@@ -69,20 +73,32 @@ class IfcContextUI:
         the IFC complex attribute, RepresentationContexts.
         """
 
-        self.baseLayout.addWidget(self.createLabel("Target Coordinate Reference System"))
+        self.baseLayout.addWidget(
+            self.createLabel("Target Coordinate Reference System")
+        )
         self.baseLayout.addLayout(self.createFormEntry("name", "Name"))
         self.baseLayout.addLayout(self.createFormEntry("description", "Description"))
-        self.baseLayout.addLayout(self.createFormEntry("geodetic_datum", "Geodetic datum"))
-        self.baseLayout.addLayout(self.createFormEntry("vertical_datum", "Vertical datum"))
-        self.baseLayout.addLayout(self.createFormEntry("map_projection", "Map projection"))
+        self.baseLayout.addLayout(
+            self.createFormEntry("geodetic_datum", "Geodetic datum")
+        )
+        self.baseLayout.addLayout(
+            self.createFormEntry("vertical_datum", "Vertical datum")
+        )
+        self.baseLayout.addLayout(
+            self.createFormEntry("map_projection", "Map projection")
+        )
         self.baseLayout.addLayout(self.createFormEntry("map_zone", "Map zone"))
         self.baseLayout.addLayout(self.createFormEntry("map_unit", "Map unit"))
 
         self.baseLayout.addWidget(self.createLabel("Map Conversion"))
         self.baseLayout.addLayout(self.createFormEntry("eastings", "Eastings"))
         self.baseLayout.addLayout(self.createFormEntry("northings", "Northings"))
-        self.baseLayout.addLayout(self.createFormEntry("orthogonal_height", "Orthogonal height"))
-        self.baseLayout.addLayout(self.createFormEntry("true_north", "True north (anti-clockwise from +Y)"))
+        self.baseLayout.addLayout(
+            self.createFormEntry("orthogonal_height", "Orthogonal height")
+        )
+        self.baseLayout.addLayout(
+            self.createFormEntry("true_north", "True north (anti-clockwise from +Y)")
+        )
         self.baseLayout.addLayout(self.createFormEntry("scale", "Scale"))
 
     def prefillMapConversionForm(self):
@@ -91,7 +107,9 @@ class IfcContextUI:
         Gets the existing value from the object's IfcData, specifically the complex
         attribute, RepresentationContexts.
         """
-        data = ArchIFC.IfcRoot.getObjIfcComplexAttribute(self, self.object, "RepresentationContexts")
+        data = ArchIFC.IfcRoot.getObjIfcComplexAttribute(
+            self, self.object, "RepresentationContexts"
+        )
         for lineEdit in self.lineEditObjects:
             if lineEdit.objectName() in data.keys():
                 lineEdit.setText(data[lineEdit.objectName()])

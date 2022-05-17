@@ -20,10 +20,10 @@
 # ***************************************************************************
 
 __title__ = "TechDrawTools package"
-__author__  = "WandererFan"
-__url__     = "https://www.freecadweb.org"
+__author__ = "WandererFan"
+__url__ = "https://www.freecadweb.org"
 __version__ = "00.01"
-__date__    = "2022-01-11"
+__date__ = "2022-01-11"
 
 ## @package TechDrawTools
 #  \ingroup TechDraw

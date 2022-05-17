@@ -84,14 +84,14 @@ def mirror(objlist, p1, p2):
     just use `Part::Mirroring`. It should create a derived object,
     that is, it should work similar to `Draft.offset`.
     """
-    utils.print_header('mirror', "Create mirror")
+    utils.print_header("mirror", "Create mirror")
 
     if not objlist:
-        _err(translate("draft","No object given"))
+        _err(translate("draft", "No object given"))
         return
 
     if p1 == p2:
-        _err(translate("draft","The two points are coincident"))
+        _err(translate("draft", "The two points are coincident"))
         return
 
     if not isinstance(objlist, list):
@@ -110,7 +110,7 @@ def mirror(objlist, p1, p2):
 
     for obj in objlist:
         mir = App.ActiveDocument.addObject("Part::Mirroring", "mirror")
-        mir.Label = obj.Label + " (" + translate("draft","mirrored") + ") "
+        mir.Label = obj.Label + " (" + translate("draft", "mirrored") + ") "
         mir.Source = obj
         mir.Base = p1
         mir.Normal = pnorm
@@ -122,5 +122,6 @@ def mirror(objlist, p1, p2):
         gui_utils.select(result)
 
     return result
+
 
 ## @}

@@ -46,5 +46,5 @@ class ConstraintTie(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyLength",
             "Tolerance",
             "Geometry",
-            "set max gap between tied faces"
+            "set max gap between tied faces",
         )

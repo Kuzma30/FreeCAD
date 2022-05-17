@@ -58,16 +58,10 @@ class FemInputWriterMystran(writerbase.FemInputWriter):
         mesh_obj,
         member,
         dir_name=None,
-        mat_geo_sets=None
+        mat_geo_sets=None,
     ):
         writerbase.FemInputWriter.__init__(
-            self,
-            analysis_obj,
-            solver_obj,
-            mesh_obj,
-            member,
-            dir_name,
-            mat_geo_sets
+            self, analysis_obj, solver_obj, mesh_obj, member, dir_name, mat_geo_sets
         )
         # basename (only for implementation purpose later delete this code
         # the mesh should never be None for Calculix solver
@@ -79,16 +73,17 @@ class FemInputWriterMystran(writerbase.FemInputWriter):
         self.solverinput_file = join(self.dir_name, self.basename + ".bdf")
         self.pynasinput_file = join(self.dir_name, self.basename + ".py")
         FreeCAD.Console.PrintLog(
-            "FemInputWriterMystran --> self.dir_name  -->  {}\n"
-            .format(self.dir_name)
+            "FemInputWriterMystran --> self.dir_name  -->  {}\n".format(self.dir_name)
         )
         FreeCAD.Console.PrintMessage(
-            "FemInputWriterMystra --> self.solverinput_file  -->  {}\n"
-            .format(self.solverinput_file)
+            "FemInputWriterMystra --> self.solverinput_file  -->  {}\n".format(
+                self.solverinput_file
+            )
         )
         FreeCAD.Console.PrintMessage(
-            "FemInputWriterMystra --> self.pynasf_name  -->  {}\n"
-            .format(self.pynasinput_file)
+            "FemInputWriterMystra --> self.pynasf_name  -->  {}\n".format(
+                self.pynasinput_file
+            )
         )
 
     def write_solver_input(self):
@@ -112,8 +107,9 @@ class FemInputWriterMystran(writerbase.FemInputWriter):
         model = add_solver_control.add_solver_control(pynasf, model, self)
 
         pynasf.write(
-            "\n\nmodel.write_bdf('{}', enddata=True)\n"
-            .format(join(self.dir_name, self.basename + "_pyNas.bdf"))
+            "\n\nmodel.write_bdf('{}', enddata=True)\n".format(
+                join(self.dir_name, self.basename + "_pyNas.bdf")
+            )
         )
 
         pynasf.close()
@@ -121,9 +117,8 @@ class FemInputWriterMystran(writerbase.FemInputWriter):
         # print(model.get_bdf_stats())
         model.write_bdf(self.solverinput_file, enddata=True)
 
-        writing_time_string = (
-            "Writing time input file: {} seconds"
-            .format(round((time.process_time() - timestart), 2))
+        writing_time_string = "Writing time input file: {} seconds".format(
+            round((time.process_time() - timestart), 2)
         )
         FreeCAD.Console.PrintMessage(writing_time_string + " \n\n")
 

@@ -130,7 +130,7 @@ def downgrade(objects, delete=False, force=None):
                 voDColors = o.ViewObject.DiffuseColor
             else:
                 voDColors = None
-            oLabel = o.Label if hasattr(o, 'Label') else ""
+            oLabel = o.Label if hasattr(o, "Label") else ""
             if o.Shape.Faces:
                 for ind, f in enumerate(o.Shape.Faces):
                     newobj = doc.addObject("Part::Feature", "Face")
@@ -205,7 +205,7 @@ def downgrade(objects, delete=False, force=None):
     result = None
 
     for o in objects:
-        if hasattr(o, 'Shape'):
+        if hasattr(o, "Shape"):
             for s in o.Shape.Solids:
                 solids.append(s)
             for f in o.Shape.Faces:
@@ -218,8 +218,15 @@ def downgrade(objects, delete=False, force=None):
     objects = parts
 
     if force:
-        if force in ("explode", "shapify", "subtr", "splitFaces",
-                     "cut2", "getWire", "splitWires"):
+        if force in (
+            "explode",
+            "shapify",
+            "subtr",
+            "splitFaces",
+            "cut2",
+            "getWire",
+            "splitWires",
+        ):
             # TODO: Using eval to evaluate a string is not ideal
             # and potentially a security risk.
             # How do we execute the function without calling eval?
@@ -227,7 +234,7 @@ def downgrade(objects, delete=False, force=None):
             shapify = utils.shapify
             result = eval(force)(objects)
         else:
-            _msg(translate("draft","Upgrade: Unknown force method:") + " " + force)
+            _msg(translate("draft", "Upgrade: Unknown force method:") + " " + force)
             result = None
     else:
         # applying transformation automatically
@@ -235,22 +242,28 @@ def downgrade(objects, delete=False, force=None):
         if len(objects) == 1 and utils.get_type(objects[0]) == "Block":
             result = explode(objects[0])
             if result:
-                _msg(translate("draft","Found 1 block: exploding it"))
+                _msg(translate("draft", "Found 1 block: exploding it"))
 
         # we have one multi-solids compound object: extract its solids
-        elif (len(objects) == 1 and hasattr(objects[0], 'Shape')
-              and len(solids) > 1):
+        elif len(objects) == 1 and hasattr(objects[0], "Shape") and len(solids) > 1:
             result = splitCompounds(objects)
             # print(result)
             if result:
-                _msg(translate("draft","Found 1 multi-solids compound: exploding it"))
+                _msg(translate("draft", "Found 1 multi-solids compound: exploding it"))
 
         # special case, we have one parametric object: we "de-parametrize" it
-        elif (len(objects) == 1 and hasattr(objects[0], 'Shape')
-              and hasattr(objects[0], 'Base')):
+        elif (
+            len(objects) == 1
+            and hasattr(objects[0], "Shape")
+            and hasattr(objects[0], "Base")
+        ):
             result = utils.shapify(objects[0])
             if result:
-                _msg(translate("draft","Found 1 parametric object: breaking its dependencies"))
+                _msg(
+                    translate(
+                        "draft", "Found 1 parametric object: breaking its dependencies"
+                    )
+                )
                 add_list.append(result)
                 # delete_list.append(objects[0])
 
@@ -258,34 +271,39 @@ def downgrade(objects, delete=False, force=None):
         elif len(objects) == 2:
             result = cut2(objects)
             if result:
-                _msg(translate("draft","Found 2 objects: subtracting them"))
+                _msg(translate("draft", "Found 2 objects: subtracting them"))
 
         elif len(faces) > 1:
             # one object with several faces: split it
             if len(objects) == 1:
                 result = splitFaces(objects)
                 if result:
-                    _msg(translate("draft","Found several faces: splitting them"))
+                    _msg(translate("draft", "Found several faces: splitting them"))
             # several objects: remove all the faces from the first one
             else:
                 result = subtr(objects)
                 if result:
-                    _msg(translate("draft","Found several objects: subtracting them from the first one"))
+                    _msg(
+                        translate(
+                            "draft",
+                            "Found several objects: subtracting them from the first one",
+                        )
+                    )
         # only one face: we extract its wires
         elif len(faces) > 0:
             result = getWire(objects[0])
             if result:
-                _msg(translate("draft","Found 1 face: extracting its wires"))
+                _msg(translate("draft", "Found 1 face: extracting its wires"))
 
         # no faces: split wire into single edges
         elif not onlyedges:
             result = splitWires(objects)
             if result:
-                _msg(translate("draft","Found only wires: extracting their edges"))
+                _msg(translate("draft", "Found only wires: extracting their edges"))
 
         # no result has been obtained
         if not result:
-            _msg(translate("draft","No more downgrade possible"))
+            _msg(translate("draft", "No more downgrade possible"))
 
     if delete:
         names = []
@@ -297,5 +315,6 @@ def downgrade(objects, delete=False, force=None):
 
     gui_utils.select(add_list)
     return add_list, delete_list
+
 
 ## @}

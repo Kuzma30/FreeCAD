@@ -1,23 +1,23 @@
-#***************************************************************************
-#*   Copyright (c) 2012 Yorik van Havre <yorik@uncreated.net>              *
-#*                                                                         *
-#*   This program is free software; you can redistribute it and/or modify  *
-#*   it under the terms of the GNU Lesser General Public License (LGPL)    *
-#*   as published by the Free Software Foundation; either version 2 of     *
-#*   the License, or (at your option) any later version.                   *
-#*   for detail see the LICENCE text file.                                 *
-#*                                                                         *
-#*   This program is distributed in the hope that it will be useful,       *
-#*   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-#*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
-#*   GNU Library General Public License for more details.                  *
-#*                                                                         *
-#*   You should have received a copy of the GNU Library General Public     *
-#*   License along with this program; if not, write to the Free Software   *
-#*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
-#*   USA                                                                   *
-#*                                                                         *
-#***************************************************************************
+# ***************************************************************************
+# *   Copyright (c) 2012 Yorik van Havre <yorik@uncreated.net>              *
+# *                                                                         *
+# *   This program is free software; you can redistribute it and/or modify  *
+# *   it under the terms of the GNU Lesser General Public License (LGPL)    *
+# *   as published by the Free Software Foundation; either version 2 of     *
+# *   the License, or (at your option) any later version.                   *
+# *   for detail see the LICENCE text file.                                 *
+# *                                                                         *
+# *   This program is distributed in the hope that it will be useful,       *
+# *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+# *   GNU Library General Public License for more details.                  *
+# *                                                                         *
+# *   You should have received a copy of the GNU Library General Public     *
+# *   License along with this program; if not, write to the Free Software   *
+# *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
+# *   USA                                                                   *
+# *                                                                         *
+# ***************************************************************************
 
 import math
 
@@ -38,8 +38,10 @@ else:
     # \cond
     def translate(ctxt, txt):
         return txt
+
     def QT_TRANSLATE_NOOP(ctxt, txt):
         return txt
+
     # \endcond
 
 ## @package ArchRoof
@@ -50,13 +52,13 @@ else:
 #  Roofs are built from a closed contour and a series of
 #  slopes.
 
-__title__  = "FreeCAD Roof"
+__title__ = "FreeCAD Roof"
 __author__ = "Yorik van Havre", "Jonathan Wiedemann"
-__url__    = "https://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
 
 
-def adjust_list_len (lst, newLn, val):
-    '''Returns a clone of lst with length newLn, val is appended if required'''
+def adjust_list_len(lst, newLn, val):
+    """Returns a clone of lst with length newLn, val is appended if required"""
     ln = len(lst)
     if ln > newLn:
         return lst[0:newLn]
@@ -64,17 +66,18 @@ def adjust_list_len (lst, newLn, val):
         return lst[:] + ([val] * (newLn - ln))
 
 
-def find_inters (edge1, edge2, infinite1=True, infinite2=True):
-    '''Future wrapper for DraftGeomUtils.findIntersection. The function now
+def find_inters(edge1, edge2, infinite1=True, infinite2=True):
+    """Future wrapper for DraftGeomUtils.findIntersection. The function now
     contains a modified copy of getLineIntersections from that function.
-    '''
+    """
+
     def getLineIntersections(pt1, pt2, pt3, pt4, infinite1, infinite2):
         # if pt1:
-            ## first check if we don't already have coincident endpoints ######## we do not want that here ########
-            # if pt1 in [pt3, pt4]:
-                # return [pt1]
-            # elif (pt2 in [pt3, pt4]):
-                # return [pt2]
+        ## first check if we don't already have coincident endpoints ######## we do not want that here ########
+        # if pt1 in [pt3, pt4]:
+        # return [pt1]
+        # elif (pt2 in [pt3, pt4]):
+        # return [pt2]
         norm1 = pt2.sub(pt1).cross(pt3.sub(pt1))
         norm2 = pt2.sub(pt4).cross(pt3.sub(pt4))
 
@@ -103,9 +106,11 @@ def find_inters (edge1, edge2, infinite1=True, infinite2=True):
             norm3 = vec1.cross(vec2)
             denom = norm3.x + norm3.y + norm3.z
             if not DraftVecUtils.isNull(norm3) and denom != 0:
-                k = ((pt3.z - pt1.z) * (vec2.x - vec2.y)
-                     + (pt3.y - pt1.y) * (vec2.z - vec2.x)
-                     + (pt3.x - pt1.x) * (vec2.y - vec2.z)) / denom
+                k = (
+                    (pt3.z - pt1.z) * (vec2.x - vec2.y)
+                    + (pt3.y - pt1.y) * (vec2.z - vec2.x)
+                    + (pt3.x - pt1.x) * (vec2.y - vec2.z)
+                ) / denom
                 vec1.scale(k, k, k)
                 intp = pt1.add(vec1)
 
@@ -121,10 +126,12 @@ def find_inters (edge1, edge2, infinite1=True, infinite2=True):
         else:
             return []  # Lines aren't on same plane
 
-    pt1, pt2, pt3, pt4 = [edge1.Vertexes[0].Point,
-                          edge1.Vertexes[1].Point,
-                          edge2.Vertexes[0].Point,
-                          edge2.Vertexes[1].Point]
+    pt1, pt2, pt3, pt4 = [
+        edge1.Vertexes[0].Point,
+        edge1.Vertexes[1].Point,
+        edge2.Vertexes[0].Point,
+        edge2.Vertexes[1].Point,
+    ]
 
     return getLineIntersections(pt1, pt2, pt3, pt4, infinite1, infinite2)
 
@@ -134,7 +141,7 @@ def face_from_points(ptLst):
     # Use DraftVecUtils.removeDouble after append as it does not compare the first and last vector:
     ptLst = DraftVecUtils.removeDoubles(ptLst)
     ln = len(ptLst)
-    if ln < 4: # at least 4 points are required for 3 edges
+    if ln < 4:  # at least 4 points are required for 3 edges
         return None
     edgeLst = []
     for i in range(ln - 1):
@@ -144,11 +151,17 @@ def face_from_points(ptLst):
     return Part.Face(wire)
 
 
-def makeRoof(baseobj=None,
-             facenr=0,
-             angles=[45.0], run=[250.0], idrel=[-1], thickness=[50.0], overhang=[100.0],
-             name="Roof"):
-    '''makeRoof(baseobj, [facenr], [angle], [name]): Makes a roof based on
+def makeRoof(
+    baseobj=None,
+    facenr=0,
+    angles=[45.0],
+    run=[250.0],
+    idrel=[-1],
+    thickness=[50.0],
+    overhang=[100.0],
+    name="Roof",
+):
+    """makeRoof(baseobj, [facenr], [angle], [name]): Makes a roof based on
     a closed wire or an object.
 
     You can provide a list of angles, run, idrel, thickness, overhang for
@@ -157,7 +170,7 @@ def makeRoof(baseobj=None,
     in the wire.
 
     If the base object is a solid the roof uses its shape.
-    '''
+    """
     if not FreeCAD.ActiveDocument:
         FreeCAD.Console.PrintError("No active document. Aborting\n")
         return
@@ -174,8 +187,8 @@ def makeRoof(baseobj=None,
                 if FreeCAD.GuiUp:
                     obj.Base.ViewObject.hide()
             else:
-                if (obj.Base.Shape.Faces and obj.Face):
-                    baseWire = obj.Base.Shape.Faces[obj.Face-1].Wires[0]
+                if obj.Base.Shape.Faces and obj.Face:
+                    baseWire = obj.Base.Shape.Faces[obj.Face - 1].Wires[0]
                     if FreeCAD.GuiUp:
                         obj.Base.ViewObject.hide()
                 elif obj.Base.Shape.Wires:
@@ -189,23 +202,28 @@ def makeRoof(baseobj=None,
                 edges = Part.__sortEdges__(baseWire.Edges)
                 ln = len(edges)
 
-                obj.Angles    = adjust_list_len(angles, ln, angles[0])
-                obj.Runs      = adjust_list_len(run, ln, run[0])
-                obj.IdRel     = adjust_list_len(idrel, ln, idrel[0])
+                obj.Angles = adjust_list_len(angles, ln, angles[0])
+                obj.Runs = adjust_list_len(run, ln, run[0])
+                obj.IdRel = adjust_list_len(idrel, ln, idrel[0])
                 obj.Thickness = adjust_list_len(thickness, ln, thickness[0])
-                obj.Overhang  = adjust_list_len(overhang, ln, overhang[0])
+                obj.Overhang = adjust_list_len(overhang, ln, overhang[0])
 
     obj.Face = facenr
     return obj
 
 
 class _CommandRoof:
-    '''the Arch Roof command definition'''
+    """the Arch Roof command definition"""
+
     def GetResources(self):
-        return {"Pixmap"  : "Arch_Roof",
-                "MenuText": QT_TRANSLATE_NOOP("Arch_Roof", "Roof"),
-                "Accel"   : "R, F",
-                "ToolTip" : QT_TRANSLATE_NOOP("Arch_Roof", "Creates a roof object from the selected wire.")}
+        return {
+            "Pixmap": "Arch_Roof",
+            "MenuText": QT_TRANSLATE_NOOP("Arch_Roof", "Roof"),
+            "Accel": "R, F",
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Arch_Roof", "Creates a roof object from the selected wire."
+            ),
+        }
 
     def IsActive(self):
         return not FreeCAD.ActiveDocument is None
@@ -219,9 +237,17 @@ class _CommandRoof:
             if sel.HasSubObjects:
                 if "Face" in sel.SubElementNames[0]:
                     i = int(sel.SubElementNames[0][4:])
-                    FreeCAD.ActiveDocument.openTransaction(translate("Arch", "Create Roof"))
+                    FreeCAD.ActiveDocument.openTransaction(
+                        translate("Arch", "Create Roof")
+                    )
                     FreeCADGui.addModule("Arch")
-                    FreeCADGui.doCommand("obj = Arch.makeRoof(FreeCAD.ActiveDocument." + obj.Name + "," + str(i) + ")")
+                    FreeCADGui.doCommand(
+                        "obj = Arch.makeRoof(FreeCAD.ActiveDocument."
+                        + obj.Name
+                        + ","
+                        + str(i)
+                        + ")"
+                    )
                     FreeCADGui.addModule("Draft")
                     FreeCADGui.doCommand("Draft.autogroup(obj)")
                     FreeCAD.ActiveDocument.commitTransaction()
@@ -229,25 +255,36 @@ class _CommandRoof:
                     return
             if hasattr(obj, "Shape"):
                 if obj.Shape.Wires:
-                    FreeCAD.ActiveDocument.openTransaction(translate("Arch", "Create Roof"))
+                    FreeCAD.ActiveDocument.openTransaction(
+                        translate("Arch", "Create Roof")
+                    )
                     FreeCADGui.addModule("Arch")
-                    FreeCADGui.doCommand("obj = Arch.makeRoof(FreeCAD.ActiveDocument." + obj.Name + ")")
+                    FreeCADGui.doCommand(
+                        "obj = Arch.makeRoof(FreeCAD.ActiveDocument." + obj.Name + ")"
+                    )
                     FreeCADGui.addModule("Draft")
                     FreeCADGui.doCommand("Draft.autogroup(obj)")
                     FreeCAD.ActiveDocument.commitTransaction()
                     FreeCAD.ActiveDocument.recompute()
                     return
             else:
-                FreeCAD.Console.PrintMessage(translate("Arch", "Unable to create a roof"))
+                FreeCAD.Console.PrintMessage(
+                    translate("Arch", "Unable to create a roof")
+                )
         else:
-            FreeCAD.Console.PrintMessage(translate("Arch", "Please select a base object") + "\n")
+            FreeCAD.Console.PrintMessage(
+                translate("Arch", "Please select a base object") + "\n"
+            )
             FreeCADGui.Control.showDialog(ArchComponent.SelectionTaskPanel())
-            FreeCAD.ArchObserver = ArchComponent.ArchSelectionObserver(nextCommand = "Arch_Roof")
+            FreeCAD.ArchObserver = ArchComponent.ArchSelectionObserver(
+                nextCommand="Arch_Roof"
+            )
             FreeCADGui.Selection.addObserver(FreeCAD.ArchObserver)
 
 
 class _Roof(ArchComponent.Component):
-    '''The Roof object'''
+    """The Roof object"""
+
     def __init__(self, obj):
         ArchComponent.Component.__init__(self, obj)
         self.setProperties(obj)
@@ -257,57 +294,103 @@ class _Roof(ArchComponent.Component):
     def setProperties(self, obj):
         pl = obj.PropertiesList
         if not "Angles" in pl:
-            obj.addProperty("App::PropertyFloatList",
-                            "Angles",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "The list of angles of the roof segments"))
+            obj.addProperty(
+                "App::PropertyFloatList",
+                "Angles",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "The list of angles of the roof segments"
+                ),
+            )
         if not "Runs" in pl:
-            obj.addProperty("App::PropertyFloatList",
-                            "Runs",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "The list of horizontal length projections of the roof segments"))
+            obj.addProperty(
+                "App::PropertyFloatList",
+                "Runs",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "The list of horizontal length projections of the roof segments",
+                ),
+            )
         if not "IdRel" in pl:
-            obj.addProperty("App::PropertyIntegerList",
-                            "IdRel",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "The list of IDs of the relative profiles of the roof segments"))
+            obj.addProperty(
+                "App::PropertyIntegerList",
+                "IdRel",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "The list of IDs of the relative profiles of the roof segments",
+                ),
+            )
         if not "Thickness" in pl:
-            obj.addProperty("App::PropertyFloatList",
-                            "Thickness",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "The list of thicknesses of the roof segments"))
+            obj.addProperty(
+                "App::PropertyFloatList",
+                "Thickness",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "The list of thicknesses of the roof segments"
+                ),
+            )
         if not "Overhang" in pl:
-            obj.addProperty("App::PropertyFloatList",
-                            "Overhang",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "The list of overhangs of the roof segments"))
+            obj.addProperty(
+                "App::PropertyFloatList",
+                "Overhang",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "The list of overhangs of the roof segments"
+                ),
+            )
         if not "Heights" in pl:
-            obj.addProperty("App::PropertyFloatList",
-                            "Heights",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "The list of calculated heights of the roof segments"))
+            obj.addProperty(
+                "App::PropertyFloatList",
+                "Heights",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "The list of calculated heights of the roof segments",
+                ),
+            )
         if not "Face" in pl:
-            obj.addProperty("App::PropertyInteger",
-                            "Face",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "The face number of the base object used to build the roof"))
+            obj.addProperty(
+                "App::PropertyInteger",
+                "Face",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "The face number of the base object used to build the roof",
+                ),
+            )
         if not "RidgeLength" in pl:
-            obj.addProperty("App::PropertyLength",
-                            "RidgeLength",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "The total length of the ridges and hips of the roof"))
-            obj.setEditorMode("RidgeLength",1)
+            obj.addProperty(
+                "App::PropertyLength",
+                "RidgeLength",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "The total length of the ridges and hips of the roof",
+                ),
+            )
+            obj.setEditorMode("RidgeLength", 1)
         if not "BorderLength" in pl:
-            obj.addProperty("App::PropertyLength",
-                            "BorderLength",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "The total length of the borders of the roof"))
-            obj.setEditorMode("BorderLength",1)
+            obj.addProperty(
+                "App::PropertyLength",
+                "BorderLength",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "The total length of the borders of the roof"
+                ),
+            )
+            obj.setEditorMode("BorderLength", 1)
         if not "Flip" in pl:
-            obj.addProperty("App::PropertyBool",
-                            "Flip",
-                            "Roof",
-                            QT_TRANSLATE_NOOP("App::Property", "Specifies if the direction of the roof should be flipped"))
+            obj.addProperty(
+                "App::PropertyBool",
+                "Flip",
+                "Roof",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "Specifies if the direction of the roof should be flipped",
+                ),
+            )
         self.Type = "Roof"
 
     def onDocumentRestored(self, obj):
@@ -323,31 +406,37 @@ class _Roof(ArchComponent.Component):
         return newEdges
 
     def calcHeight(self, id):
-        '''Get the height from run and angle of the given roof profile'''
-        htRel = self.profilsDico[id]["run"] * (math.tan(math.radians(self.profilsDico[id]["angle"])))
+        """Get the height from run and angle of the given roof profile"""
+        htRel = self.profilsDico[id]["run"] * (
+            math.tan(math.radians(self.profilsDico[id]["angle"]))
+        )
         return htRel
 
     def calcRun(self, id):
-        '''Get the run from height and angle of the given roof profile'''
-        runRel = self.profilsDico[id]["height"] / (math.tan(math.radians(self.profilsDico[id]["angle"])))
+        """Get the run from height and angle of the given roof profile"""
+        runRel = self.profilsDico[id]["height"] / (
+            math.tan(math.radians(self.profilsDico[id]["angle"]))
+        )
         return runRel
 
     def calcAngle(self, id):
-        '''Get the angle from height and run of the given roof profile'''
-        ang = math.degrees(math.atan(self.profilsDico[id]["height"] / self.profilsDico[id]["run"]))
+        """Get the angle from height and run of the given roof profile"""
+        ang = math.degrees(
+            math.atan(self.profilsDico[id]["height"] / self.profilsDico[id]["run"])
+        )
         return ang
 
     def getPerpendicular(self, vec, rotEdge, l):
-        '''Get the perpendicular vec of given edge on xy plane'''
+        """Get the perpendicular vec of given edge on xy plane"""
         norm = Vector(0.0, 0.0, 1.0)
         if hasattr(self, "normal"):
             if self.normal:
                 norm = self.normal
         per = vec.cross(norm)
-        if  -180.0 <= rotEdge < -90.0:
+        if -180.0 <= rotEdge < -90.0:
             per[0] = -abs(per[0])
             per[1] = -abs(per[1])
-        elif   -90.0 <= rotEdge <= 0.0:
+        elif -90.0 <= rotEdge <= 0.0:
             per[0] = -abs(per[0])
             per[1] = abs(per[1])
         elif 0.0 < rotEdge <= 90.0:
@@ -392,19 +481,24 @@ class _Roof(ArchComponent.Component):
         ptCurr = profilCurr["edge"].Vertexes[0].Point
         ptOpposite = profilOpposite["edge"].Vertexes[0].Point
         dis = ptCurr.distanceToLine(ptOpposite, profilOpposite["vec"])
-        if dis < profilCurr["run"] + profilOpposite["run"]: # sum of runs is larger than dis
+        if (
+            dis < profilCurr["run"] + profilOpposite["run"]
+        ):  # sum of runs is larger than dis
             angCurr = profilCurr["angle"]
             angOpposite = profilOpposite["angle"]
-            return dis / (math.tan(math.radians(angCurr)) / math.tan(math.radians(angOpposite)) + 1.0)
+            return dis / (
+                math.tan(math.radians(angCurr)) / math.tan(math.radians(angOpposite))
+                + 1.0
+            )
         return profilCurr["run"]
 
     def calcApex(self, i, numEdges):
-        '''Recalculate the run and height if there is an opposite roof segment
+        """Recalculate the run and height if there is an opposite roof segment
         with a parallel edge, and if the sum of the runs of the segments is
         larger than the distance between the edges of the segments.
-        '''
+        """
         profilCurr = self.findProfil(i)
-        if 0 <= profilCurr["idrel"] < numEdges: # no apex calculation if idrel is used
+        if 0 <= profilCurr["idrel"] < numEdges:  # no apex calculation if idrel is used
             return
         if not 0.0 < profilCurr["angle"] < 90.0:
             return
@@ -414,13 +508,17 @@ class _Roof(ArchComponent.Component):
         vecNext2 = profilNext2["vec"]
         vecBack2 = profilBack2["vec"]
         runs = []
-        if ((not 0 <= profilNext2["idrel"] < numEdges)
+        if (
+            (not 0 <= profilNext2["idrel"] < numEdges)
             and 0.0 < profilNext2["angle"] < 90.0
-            and vecCurr.getAngle(vecNext2) == math.pi):
+            and vecCurr.getAngle(vecNext2) == math.pi
+        ):
             runs.append((self.helperCalcApex(profilCurr, profilNext2)))
-        if ((not 0 <= profilBack2["idrel"] < numEdges)
+        if (
+            (not 0 <= profilBack2["idrel"] < numEdges)
             and 0.0 < profilBack2["angle"] < 90.0
-            and vecCurr.getAngle(vecBack2) == math.pi):
+            and vecCurr.getAngle(vecBack2) == math.pi
+        ):
             runs.append((self.helperCalcApex(profilCurr, profilBack2)))
         runs.sort()
         if len(runs) != 0 and runs[0] != profilCurr["run"]:
@@ -436,9 +534,13 @@ class _Roof(ArchComponent.Component):
         if i != rel and 0 <= rel < numEdges:
             profilRel = self.profilsDico[rel]
             # do not use data from the relative profile if it in turn references a relative profile:
-            if (0 <= profilRel["idrel"] < numEdges                           # idrel of profilRel points to a profile
-                and rel != profilRel["idrel"]                                # profilRel does not reference itself
-                and (profilRel["angle"] == 0.0 or profilRel["run"] == 0.0)): # run or angle of profilRel is zero
+            if (
+                0
+                <= profilRel["idrel"]
+                < numEdges  # idrel of profilRel points to a profile
+                and rel != profilRel["idrel"]  # profilRel does not reference itself
+                and (profilRel["angle"] == 0.0 or profilRel["run"] == 0.0)
+            ):  # run or angle of profilRel is zero
                 hgt = self.calcHeight(i)
                 profilCurr["height"] = hgt
             elif ang == 0.0 and run == 0.0:
@@ -449,7 +551,7 @@ class _Roof(ArchComponent.Component):
                 if ang == 90.0:
                     htRel = self.calcHeight(rel)
                     profilCurr["height"] = htRel
-                else :
+                else:
                     htRel = self.calcHeight(rel)
                     profilCurr["height"] = htRel
                     run = self.calcRun(i)
@@ -459,7 +561,7 @@ class _Roof(ArchComponent.Component):
                 profilCurr["height"] = htRel
                 ang = self.calcAngle(i)
                 profilCurr["angle"] = ang
-            else :
+            else:
                 hgt = self.calcHeight(i)
                 profilCurr["height"] = hgt
         else:
@@ -486,17 +588,24 @@ class _Roof(ArchComponent.Component):
 
     def calcEave(self, i):
         profilCurr = self.findProfil(i)
-        ptInterEaves1Lst = find_inters(profilCurr["eaveDraft"], self.findProfil(i - 1)["eaveDraft"])
+        ptInterEaves1Lst = find_inters(
+            profilCurr["eaveDraft"], self.findProfil(i - 1)["eaveDraft"]
+        )
         if ptInterEaves1Lst:
             ptInterEaves1 = ptInterEaves1Lst[0]
         else:
             ptInterEaves1 = profilCurr["eaveDraft"].Vertexes[0].Point
-        ptInterEaves2Lst = find_inters(profilCurr["eaveDraft"], self.findProfil(i + 1)["eaveDraft"])
+        ptInterEaves2Lst = find_inters(
+            profilCurr["eaveDraft"], self.findProfil(i + 1)["eaveDraft"]
+        )
         if ptInterEaves2Lst:
             ptInterEaves2 = ptInterEaves2Lst[0]
         else:
             ptInterEaves2 = profilCurr["eaveDraft"].Vertexes[1].Point
-        profilCurr["eavePtLst"] = [ptInterEaves1, ptInterEaves2] # list of points instead of edge as points can be identical
+        profilCurr["eavePtLst"] = [
+            ptInterEaves1,
+            ptInterEaves2,
+        ]  # list of points instead of edge as points can be identical
 
     def findProfil(self, i):
         if 0 <= i < len(self.profilsDico):
@@ -512,9 +621,9 @@ class _Roof(ArchComponent.Component):
         else:
             i = 1
         ptIntLst = find_inters(profilCurr["ridge"], profilOther["eaveDraft"])
-        if ptIntLst: # the edges of the roof segments are not parallel
+        if ptIntLst:  # the edges of the roof segments are not parallel
             ptProjLst = [ptIntLst[0]]
-        else: # the edges of the roof segments are parallel
+        else:  # the edges of the roof segments are parallel
             ptProjLst = [profilCurr["ridge"].Vertexes[i].Point]
         ptProjLst = ptProjLst + [profilCurr["eavePtLst"][i]]
         if not isBack:
@@ -525,20 +634,22 @@ class _Roof(ArchComponent.Component):
     def backGable(self, i):
         profilCurr = self.findProfil(i)
         profilBack = self.findProfil(i - 1)
-        self.helperGable(profilCurr, profilBack, isBack = True)
+        self.helperGable(profilCurr, profilBack, isBack=True)
 
     def nextGable(self, i):
         profilCurr = self.findProfil(i)
         profilNext = self.findProfil(i + 1)
-        self.helperGable(profilCurr, profilNext, isBack = False)
+        self.helperGable(profilCurr, profilNext, isBack=False)
 
-    def helperSloped(self, profilCurr, profilOther, ridgeCurr, ridgeOther, isBack, otherIsLower=False):
+    def helperSloped(
+        self, profilCurr, profilOther, ridgeCurr, ridgeOther, isBack, otherIsLower=False
+    ):
         if isBack:
             i = 0
         else:
             i = 1
         ptIntLst = find_inters(ridgeCurr, ridgeOther)
-        if ptIntLst: # the edges of the roof segments are not parallel
+        if ptIntLst:  # the edges of the roof segments are not parallel
             ptInt = ptIntLst[0]
             if otherIsLower:
                 ptRidgeLst = find_inters(profilCurr["ridge"], profilOther["ridge"])
@@ -548,24 +659,27 @@ class _Roof(ArchComponent.Component):
             hip = DraftGeomUtils.edg(ptInt, profilCurr["edge"].Vertexes[i].Point)
             ptEaveCurrLst = find_inters(hip, profilCurr["eaveDraft"])
             ptEaveOtherLst = find_inters(hip, profilOther["eaveDraft"])
-            if ptEaveCurrLst and ptEaveOtherLst: # both roof segments are sloped
+            if ptEaveCurrLst and ptEaveOtherLst:  # both roof segments are sloped
                 lenToEaveCurr = ptEaveCurrLst[0].sub(ptInt).Length
                 lenToEaveOther = ptEaveOtherLst[0].sub(ptInt).Length
                 if lenToEaveCurr < lenToEaveOther:
                     ptProjLst = ptProjLst + [ptEaveCurrLst[0]]
                 else:
-                    ptProjLst = ptProjLst + [ptEaveOtherLst[0],
-                                             profilCurr["eavePtLst"][i]]
-            elif ptEaveCurrLst: # current angle is 0
+                    ptProjLst = ptProjLst + [
+                        ptEaveOtherLst[0],
+                        profilCurr["eavePtLst"][i],
+                    ]
+            elif ptEaveCurrLst:  # current angle is 0
                 ptProjLst = ptProjLst + [ptEaveCurrLst[0]]
-            elif ptEaveOtherLst: # other angle is 0
-                ptProjLst = ptProjLst + [ptEaveOtherLst[0],
-                                         profilCurr["eavePtLst"][i]]
+            elif ptEaveOtherLst:  # other angle is 0
+                ptProjLst = ptProjLst + [ptEaveOtherLst[0], profilCurr["eavePtLst"][i]]
             else:
                 print("Error determining outline")
-        else: # the edges of the roof segments are parallel
-            ptProjLst = [profilCurr["ridge"].Vertexes[i].Point,
-                         profilCurr["eavePtLst"][i]]
+        else:  # the edges of the roof segments are parallel
+            ptProjLst = [
+                profilCurr["ridge"].Vertexes[i].Point,
+                profilCurr["eavePtLst"][i],
+            ]
         if not isBack:
             ptProjLst.reverse()
         for ptProj in ptProjLst:
@@ -574,20 +688,24 @@ class _Roof(ArchComponent.Component):
     def backSameHeight(self, i):
         profilCurr = self.findProfil(i)
         profilBack = self.findProfil(i - 1)
-        self.helperSloped(profilCurr,
-                          profilBack,
-                          profilCurr["ridge"],
-                          profilBack["ridge"],
-                          isBack = True)
+        self.helperSloped(
+            profilCurr,
+            profilBack,
+            profilCurr["ridge"],
+            profilBack["ridge"],
+            isBack=True,
+        )
 
     def nextSameHeight(self, i):
         profilCurr = self.findProfil(i)
         profilNext = self.findProfil(i + 1)
-        self.helperSloped(profilCurr,
-                          profilNext,
-                          profilCurr["ridge"],
-                          profilNext["ridge"],
-                          isBack = False)
+        self.helperSloped(
+            profilCurr,
+            profilNext,
+            profilCurr["ridge"],
+            profilNext["ridge"],
+            isBack=False,
+        )
 
     def backHigher(self, i):
         profilCurr = self.findProfil(i)
@@ -595,11 +713,9 @@ class _Roof(ArchComponent.Component):
         dec = profilCurr["height"] / math.tan(math.radians(profilBack["angle"]))
         per = self.getPerpendicular(profilBack["vec"], profilBack["rot"], dec)
         edgeRidgeOnPane = DraftGeomUtils.offset(profilBack["edge"], per)
-        self.helperSloped(profilCurr,
-                          profilBack,
-                          profilCurr["ridge"],
-                          edgeRidgeOnPane,
-                          isBack = True)
+        self.helperSloped(
+            profilCurr, profilBack, profilCurr["ridge"], edgeRidgeOnPane, isBack=True
+        )
 
     def nextHigher(self, i):
         profilCurr = self.findProfil(i)
@@ -607,11 +723,9 @@ class _Roof(ArchComponent.Component):
         dec = profilCurr["height"] / math.tan(math.radians(profilNext["angle"]))
         per = self.getPerpendicular(profilNext["vec"], profilNext["rot"], dec)
         edgeRidgeOnPane = DraftGeomUtils.offset(profilNext["edge"], per)
-        self.helperSloped(profilCurr,
-                          profilNext,
-                          profilCurr["ridge"],
-                          edgeRidgeOnPane,
-                          isBack = False)
+        self.helperSloped(
+            profilCurr, profilNext, profilCurr["ridge"], edgeRidgeOnPane, isBack=False
+        )
 
     def backLower(self, i):
         profilCurr = self.findProfil(i)
@@ -619,12 +733,14 @@ class _Roof(ArchComponent.Component):
         dec = profilBack["height"] / math.tan(math.radians(profilCurr["angle"]))
         per = self.getPerpendicular(profilCurr["vec"], profilCurr["rot"], dec)
         edgeRidgeOnPane = DraftGeomUtils.offset(profilCurr["edge"], per)
-        self.helperSloped(profilCurr,
-                          profilBack,
-                          edgeRidgeOnPane,
-                          profilBack["ridge"],
-                          isBack = True,
-                          otherIsLower = True)
+        self.helperSloped(
+            profilCurr,
+            profilBack,
+            edgeRidgeOnPane,
+            profilBack["ridge"],
+            isBack=True,
+            otherIsLower=True,
+        )
 
     def nextLower(self, i):
         profilCurr = self.findProfil(i)
@@ -632,12 +748,14 @@ class _Roof(ArchComponent.Component):
         dec = profilNext["height"] / math.tan(math.radians(profilCurr["angle"]))
         per = self.getPerpendicular(profilCurr["vec"], profilCurr["rot"], dec)
         edgeRidgeOnPane = DraftGeomUtils.offset(profilCurr["edge"], per)
-        self.helperSloped(profilCurr,
-                          profilNext,
-                          edgeRidgeOnPane,
-                          profilNext["ridge"],
-                          isBack = False,
-                          otherIsLower = True)
+        self.helperSloped(
+            profilCurr,
+            profilNext,
+            edgeRidgeOnPane,
+            profilNext["ridge"],
+            isBack=False,
+            otherIsLower=True,
+        )
 
     def getRoofPaneProject(self, i):
         self.ptsPaneProject = []
@@ -671,12 +789,12 @@ class _Roof(ArchComponent.Component):
 
         profilCurr["points"] = self.ptsPaneProject
 
-    def createProfilShape (self, points, midpoint, rot, vec, run, diag, sol):
+    def createProfilShape(self, points, midpoint, rot, vec, run, diag, sol):
         lp = len(points)
         points.append(points[0])
         edgesWire = []
         for i in range(lp):
-            edge = Part.makeLine(points[i],points[i + 1])
+            edge = Part.makeLine(points[i], points[i + 1])
             edgesWire.append(edge)
         profil = Part.Wire(edgesWire)
         profil.translate(midpoint)
@@ -690,7 +808,7 @@ class _Roof(ArchComponent.Component):
         profilFace = Part.Face(profil)
         profilShp = profilFace.extrude(vecE)
         profilShp = sol.common(profilShp)
-        #shapesList.append(profilShp)
+        # shapesList.append(profilShp)
         return profilShp
 
     def execute(self, obj):
@@ -699,7 +817,7 @@ class _Roof(ArchComponent.Component):
             return
 
         pl = obj.Placement
-        #self.baseface = None
+        # self.baseface = None
         self.flip = False
         if hasattr(obj, "Flip"):
             if obj.Flip:
@@ -710,10 +828,10 @@ class _Roof(ArchComponent.Component):
             if hasattr(obj.Base, "Shape"):
                 if obj.Base.Shape.Solids:
                     base = obj.Base.Shape
-                    #pl = obj.Base.Placement
+                    # pl = obj.Base.Placement
                 else:
-                    if (obj.Base.Shape.Faces and obj.Face):
-                        baseWire = obj.Base.Shape.Faces[obj.Face-1].Wires[0]
+                    if obj.Base.Shape.Faces and obj.Face:
+                        baseWire = obj.Base.Shape.Faces[obj.Face - 1].Wires[0]
                     elif obj.Base.Shape.Wires:
                         baseWire = obj.Base.Shape.Wires[0]
         if baseWire:
@@ -728,20 +846,29 @@ class _Roof(ArchComponent.Component):
 
                 ln = len(edges)
 
-                obj.Angles    = adjust_list_len(obj.Angles, ln, obj.Angles[0])
-                obj.Runs      = adjust_list_len(obj.Runs, ln, obj.Runs[0])
-                obj.IdRel     = adjust_list_len(obj.IdRel, ln, obj.IdRel[0])
+                obj.Angles = adjust_list_len(obj.Angles, ln, obj.Angles[0])
+                obj.Runs = adjust_list_len(obj.Runs, ln, obj.Runs[0])
+                obj.IdRel = adjust_list_len(obj.IdRel, ln, obj.IdRel[0])
                 obj.Thickness = adjust_list_len(obj.Thickness, ln, obj.Thickness[0])
-                obj.Overhang  = adjust_list_len(obj.Overhang, ln, obj.Overhang[0])
+                obj.Overhang = adjust_list_len(obj.Overhang, ln, obj.Overhang[0])
 
                 for i in range(ln):
-                    self.makeRoofProfilsDic(i, obj.Angles[i], obj.Runs[i], obj.IdRel[i], obj.Overhang[i], obj.Thickness[i])
+                    self.makeRoofProfilsDic(
+                        i,
+                        obj.Angles[i],
+                        obj.Runs[i],
+                        obj.IdRel[i],
+                        obj.Overhang[i],
+                        obj.Thickness[i],
+                    )
                 for i in range(ln):
                     self.calcEdgeGeometry(i, edges[i])
                 for i in range(ln):
-                    self.calcApex(i, ln) # after calcEdgeGeometry as it uses vec data
+                    self.calcApex(i, ln)  # after calcEdgeGeometry as it uses vec data
                 for i in range(ln):
-                    self.calcMissingData(i, ln) # after calcApex so it can use recalculated heights
+                    self.calcMissingData(
+                        i, ln
+                    )  # after calcApex so it can use recalculated heights
                 for i in range(ln):
                     self.calcDraftEdges(i)
                 for i in range(ln):
@@ -759,45 +886,79 @@ class _Roof(ArchComponent.Component):
                     if face:
                         diag = face.BoundBox.DiagonalLength
                         midpoint = DraftGeomUtils.findMidpoint(profilCurr["edge"])
-                        thicknessV = profilCurr["thickness"] / (math.cos(math.radians(profilCurr["angle"])))
-                        overhangV = profilCurr["overhang"] * math.tan(math.radians(profilCurr["angle"]))
-                        sol = face.extrude(Vector(0.0, 0.0, profilCurr["height"] + 1000000.0))
+                        thicknessV = profilCurr["thickness"] / (
+                            math.cos(math.radians(profilCurr["angle"]))
+                        )
+                        overhangV = profilCurr["overhang"] * math.tan(
+                            math.radians(profilCurr["angle"])
+                        )
+                        sol = face.extrude(
+                            Vector(0.0, 0.0, profilCurr["height"] + 1000000.0)
+                        )
                         sol.translate(Vector(0.0, 0.0, -2.0 * overhangV))
 
                         ## baseVolume shape
-                        ptsPaneProfil = [Vector(-profilCurr["overhang"], -overhangV, 0.0),
-                                         Vector(profilCurr["run"], profilCurr["height"], 0.0),
-                                         Vector(profilCurr["run"], profilCurr["height"] + thicknessV, 0.0),
-                                         Vector(-profilCurr["overhang"], -overhangV + thicknessV, 0.0)]
-                        self.shps.append(self.createProfilShape(ptsPaneProfil,
-                                                                midpoint,
-                                                                profilCurr["rot"],
-                                                                profilCurr["vec"],
-                                                                profilCurr["run"],
-                                                                diag,
-                                                                sol))
+                        ptsPaneProfil = [
+                            Vector(-profilCurr["overhang"], -overhangV, 0.0),
+                            Vector(profilCurr["run"], profilCurr["height"], 0.0),
+                            Vector(
+                                profilCurr["run"],
+                                profilCurr["height"] + thicknessV,
+                                0.0,
+                            ),
+                            Vector(
+                                -profilCurr["overhang"], -overhangV + thicknessV, 0.0
+                            ),
+                        ]
+                        self.shps.append(
+                            self.createProfilShape(
+                                ptsPaneProfil,
+                                midpoint,
+                                profilCurr["rot"],
+                                profilCurr["vec"],
+                                profilCurr["run"],
+                                diag,
+                                sol,
+                            )
+                        )
 
                         ## subVolume shape
-                        ptsSubVolProfil = [Vector(-profilCurr["overhang"], -overhangV, 0.0),
-                                           Vector(profilCurr["run"], profilCurr["height"], 0.0),
-                                           Vector(profilCurr["run"], profilCurr["height"] + 900000.0, 0.0),
-                                           Vector(-profilCurr["overhang"], profilCurr["height"] + 900000.0, 0.0)]
-                        self.subVolShps.append(self.createProfilShape(ptsSubVolProfil,
-                                                                      midpoint,
-                                                                      profilCurr["rot"],
-                                                                      profilCurr["vec"],
-                                                                      profilCurr["run"],
-                                                                      diag,
-                                                                      sol))
+                        ptsSubVolProfil = [
+                            Vector(-profilCurr["overhang"], -overhangV, 0.0),
+                            Vector(profilCurr["run"], profilCurr["height"], 0.0),
+                            Vector(
+                                profilCurr["run"], profilCurr["height"] + 900000.0, 0.0
+                            ),
+                            Vector(
+                                -profilCurr["overhang"],
+                                profilCurr["height"] + 900000.0,
+                                0.0,
+                            ),
+                        ]
+                        self.subVolShps.append(
+                            self.createProfilShape(
+                                ptsSubVolProfil,
+                                midpoint,
+                                profilCurr["rot"],
+                                profilCurr["vec"],
+                                profilCurr["run"],
+                                diag,
+                                sol,
+                            )
+                        )
 
-                if len(self.shps) == 0: # occurs if all segments have angle=90 or run=0.
+                if (
+                    len(self.shps) == 0
+                ):  # occurs if all segments have angle=90 or run=0.
                     # create a flat roof using the eavePtLst outline:
                     ptsPaneProject = []
                     for i in range(ln):
                         ptsPaneProject.append(self.profilsDico[i]["eavePtLst"][0])
                     face = face_from_points(ptsPaneProject)
                     if face:
-                        thk = max(1.0, self.profilsDico[0]["thickness"]) # FreeCAD will crash when extruding with a null vector here
+                        thk = max(
+                            1.0, self.profilsDico[0]["thickness"]
+                        )  # FreeCAD will crash when extruding with a null vector here
                         self.shps = [face.extrude(Vector(0.0, 0.0, thk))]
                         self.subVolShps = [face.extrude(Vector(0.0, 0.0, 1000000.0))]
 
@@ -806,7 +967,7 @@ class _Roof(ArchComponent.Component):
                 for s in self.shps:
                     base = base.fuse(s)
                 base = self.processSubShapes(obj, base, pl)
-                self.applyShape(obj, base, pl, allownosolid = True)
+                self.applyShape(obj, base, pl, allownosolid=True)
 
                 ## subVolume
                 self.sub = self.subVolShps.pop()
@@ -819,30 +980,30 @@ class _Roof(ArchComponent.Component):
 
         elif base:
             base = self.processSubShapes(obj, base, pl)
-            self.applyShape(obj, base, pl, allownosolid = True)
+            self.applyShape(obj, base, pl, allownosolid=True)
         else:
             FreeCAD.Console.PrintMessage(translate("Arch", "Unable to create a roof"))
 
     def getSubVolume(self, obj):
-        '''returns a volume to be subtracted'''
+        """returns a volume to be subtracted"""
         if obj.Base:
             if hasattr(obj.Base, "Shape"):
                 if obj.Base.Shape.Solids:
                     return obj.Shape
-                else :
+                else:
                     if hasattr(self, "sub"):
                         if self.sub:
                             return self.sub
-                        else :
+                        else:
                             self.execute(obj)
                             return self.sub
-                    else :
+                    else:
                         self.execute(obj)
                         return self.sub
         return None
 
     def computeAreas(self, obj):
-        '''computes border and ridge roof edges length'''
+        """computes border and ridge roof edges length"""
         if hasattr(obj, "RidgeLength") and hasattr(obj, "BorderLength"):
             rl = 0
             bl = 0
@@ -852,7 +1013,10 @@ class _Roof(ArchComponent.Component):
                 if obj.Shape.Faces:
                     faceLst = []
                     for face in obj.Shape.Faces:
-                        if face.normalAt(0, 0).getAngle(Vector(0.0, 0.0, 1.0)) < math.pi / 2.0:
+                        if (
+                            face.normalAt(0, 0).getAngle(Vector(0.0, 0.0, 1.0))
+                            < math.pi / 2.0
+                        ):
                             faceLst.append(face)
                     if faceLst:
                         try:
@@ -860,7 +1024,7 @@ class _Roof(ArchComponent.Component):
                         except Exception:
                             pass
                         else:
-                            lut={}
+                            lut = {}
                             if shell.Faces:
                                 for face in shell.Faces:
                                     for edge in face.Edges:
@@ -878,15 +1042,16 @@ class _Roof(ArchComponent.Component):
                                         rn += 1
             if obj.RidgeLength.Value != rl:
                 obj.RidgeLength = rl
-                #print(str(rn)+" ridge edges in roof "+obj.Name)
+                # print(str(rn)+" ridge edges in roof "+obj.Name)
             if obj.BorderLength.Value != bl:
                 obj.BorderLength = bl
-                #print(str(bn)+" border edges in roof "+obj.Name)
+                # print(str(bn)+" border edges in roof "+obj.Name)
         ArchComponent.Component.computeAreas(self, obj)
 
 
 class _ViewProviderRoof(ArchComponent.ViewProviderComponent):
-    '''A View Provider for the Roof object'''
+    """A View Provider for the Roof object"""
+
     def __init__(self, vobj):
         ArchComponent.ViewProviderComponent.__init__(self, vobj)
 
@@ -916,7 +1081,8 @@ class _ViewProviderRoof(ArchComponent.ViewProviderComponent):
 
 
 class _RoofTaskPanel:
-    '''The editmode TaskPanel for Roof objects'''
+    """The editmode TaskPanel for Roof objects"""
+
     def __init__(self):
         self.updating = False
         self.obj = None
@@ -930,9 +1096,9 @@ class _RoofTaskPanel:
         # tree
         self.tree = QtGui.QTreeWidget(self.form)
         self.grid.addWidget(self.tree, 1, 0, 1, 1)
-        self.tree.setRootIsDecorated(False) # remove 1st column's extra left margin
+        self.tree.setRootIsDecorated(False)  # remove 1st column's extra left margin
         self.tree.setColumnCount(7)
-        self.tree.header().resizeSection(0, 37) # 37px seems to be the minimum size
+        self.tree.header().resizeSection(0, 37)  # 37px seems to be the minimum size
         self.tree.header().resizeSection(1, 70)
         self.tree.header().resizeSection(2, 62)
         self.tree.header().resizeSection(3, 37)
@@ -940,7 +1106,9 @@ class _RoofTaskPanel:
         self.tree.header().resizeSection(5, 60)
         self.tree.header().resizeSection(6, 70)
 
-        QtCore.QObject.connect(self.tree, QtCore.SIGNAL("itemChanged(QTreeWidgetItem *, int)"), self.edit)
+        QtCore.QObject.connect(
+            self.tree, QtCore.SIGNAL("itemChanged(QTreeWidgetItem *, int)"), self.edit
+        )
         self.update()
 
     def isAllowedAlterSelection(self):
@@ -953,7 +1121,7 @@ class _RoofTaskPanel:
         return int(QtGui.QDialogButtonBox.Close)
 
     def update(self):
-        '''fills the treewidget'''
+        """fills the treewidget"""
         self.updating = True
         if self.obj:
             root = self.tree.invisibleRootItem()
@@ -980,7 +1148,7 @@ class _RoofTaskPanel:
             self.resetObject()
 
     def resetObject(self, remove=None):
-        '''transfers the values from the widget to the object'''
+        """transfers the values from the widget to the object"""
         ang = []
         run = []
         rel = []
@@ -1009,14 +1177,24 @@ class _RoofTaskPanel:
 
     def retranslateUi(self, TaskPanel):
         TaskPanel.setWindowTitle(QtGui.QApplication.translate("Arch", "Roof", None))
-        self.title.setText(QtGui.QApplication.translate("Arch", "Parameters of the roof profiles :\n* Angle : slope in degrees relative to the horizontal.\n* Run : horizontal distance between the wall and the ridge.\n* Thickness : thickness of the roof.\n* Overhang : horizontal distance between the eave and the wall.\n* Height : height of the ridge above the base (calculated automatically).\n* IdRel : Id of the relative profile used for automatic calculations.\n---\nIf Angle = 0 and Run = 0 then the profile is identical to the relative profile.\nIf Angle = 0 then the angle is calculated so that the height is the same as the relative profile.\nIf Run = 0 then the run is calculated so that the height is the same as the relative profile.", None))
-        self.tree.setHeaderLabels([QtGui.QApplication.translate("Arch", "Id", None),
-                                   QtGui.QApplication.translate("Arch", "Angle (deg)", None),
-                                   QtGui.QApplication.translate("Arch", "Run (mm)", None),
-                                   QtGui.QApplication.translate("Arch", "IdRel", None),
-                                   QtGui.QApplication.translate("Arch", "Thickness (mm)", None),
-                                   QtGui.QApplication.translate("Arch", "Overhang (mm)", None),
-                                   QtGui.QApplication.translate("Arch", "Height (mm)", None)])
+        self.title.setText(
+            QtGui.QApplication.translate(
+                "Arch",
+                "Parameters of the roof profiles :\n* Angle : slope in degrees relative to the horizontal.\n* Run : horizontal distance between the wall and the ridge.\n* Thickness : thickness of the roof.\n* Overhang : horizontal distance between the eave and the wall.\n* Height : height of the ridge above the base (calculated automatically).\n* IdRel : Id of the relative profile used for automatic calculations.\n---\nIf Angle = 0 and Run = 0 then the profile is identical to the relative profile.\nIf Angle = 0 then the angle is calculated so that the height is the same as the relative profile.\nIf Run = 0 then the run is calculated so that the height is the same as the relative profile.",
+                None,
+            )
+        )
+        self.tree.setHeaderLabels(
+            [
+                QtGui.QApplication.translate("Arch", "Id", None),
+                QtGui.QApplication.translate("Arch", "Angle (deg)", None),
+                QtGui.QApplication.translate("Arch", "Run (mm)", None),
+                QtGui.QApplication.translate("Arch", "IdRel", None),
+                QtGui.QApplication.translate("Arch", "Thickness (mm)", None),
+                QtGui.QApplication.translate("Arch", "Overhang (mm)", None),
+                QtGui.QApplication.translate("Arch", "Height (mm)", None),
+            ]
+        )
 
 
 if FreeCAD.GuiUp:

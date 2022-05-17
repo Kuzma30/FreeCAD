@@ -32,22 +32,23 @@ from draftviewproviders.view_base import ViewProviderDraft
 
 class ViewProviderPoint(ViewProviderDraft):
     """A viewprovider for the Draft Point object"""
+
     def __init__(self, obj):
         super(ViewProviderPoint, self).__init__(obj)
 
     def onChanged(self, vobj, prop):
         mode = 2
-        vobj.setEditorMode('LineColor', mode)
-        vobj.setEditorMode('LineWidth', mode)
-        vobj.setEditorMode('BoundingBox', mode)
-        vobj.setEditorMode('Deviation', mode)
-        vobj.setEditorMode('DiffuseColor', mode)
-        vobj.setEditorMode('DisplayMode', mode)
-        vobj.setEditorMode('Lighting', mode)
-        vobj.setEditorMode('LineMaterial', mode)
-        vobj.setEditorMode('ShapeColor', mode)
-        vobj.setEditorMode('ShapeMaterial', mode)
-        vobj.setEditorMode('Transparency', mode)
+        vobj.setEditorMode("LineColor", mode)
+        vobj.setEditorMode("LineWidth", mode)
+        vobj.setEditorMode("BoundingBox", mode)
+        vobj.setEditorMode("Deviation", mode)
+        vobj.setEditorMode("DiffuseColor", mode)
+        vobj.setEditorMode("DisplayMode", mode)
+        vobj.setEditorMode("Lighting", mode)
+        vobj.setEditorMode("LineMaterial", mode)
+        vobj.setEditorMode("ShapeColor", mode)
+        vobj.setEditorMode("ShapeMaterial", mode)
+        vobj.setEditorMode("Transparency", mode)
 
     def getIcon(self):
         return ":/icons/Draft_Dot.svg"

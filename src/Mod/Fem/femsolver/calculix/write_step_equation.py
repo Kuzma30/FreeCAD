@@ -37,7 +37,10 @@ def write_step_equation(f, ccxwriter):
     # build STEP line
     step = "*STEP"
     if ccxwriter.solver_obj.GeometricalNonlinearity == "nonlinear":
-        if ccxwriter.analysis_type == "static" or ccxwriter.analysis_type == "thermomech":
+        if (
+            ccxwriter.analysis_type == "static"
+            or ccxwriter.analysis_type == "thermomech"
+        ):
             # https://www.comsol.com/blogs/what-is-geometric-nonlinearity
             step += ", NLGEOM"
         elif ccxwriter.analysis_type == "frequency":
@@ -118,27 +121,29 @@ def write_step_equation(f, ccxwriter):
     # ANALYSIS parameter line
     analysis_parameter = ""
     if ccxwriter.analysis_type == "static" or ccxwriter.analysis_type == "check":
-        if ccxwriter.solver_obj.IterationsUserDefinedIncrementations is True \
-                or ccxwriter.solver_obj.IterationsUserDefinedTimeStepLength is True:
+        if (
+            ccxwriter.solver_obj.IterationsUserDefinedIncrementations is True
+            or ccxwriter.solver_obj.IterationsUserDefinedTimeStepLength is True
+        ):
             analysis_parameter = "{},{}".format(
-                ccxwriter.solver_obj.TimeInitialStep,
-                ccxwriter.solver_obj.TimeEnd
+                ccxwriter.solver_obj.TimeInitialStep, ccxwriter.solver_obj.TimeEnd
             )
     elif ccxwriter.analysis_type == "frequency":
-        if ccxwriter.solver_obj.EigenmodeLowLimit == 0.0 \
-                and ccxwriter.solver_obj.EigenmodeHighLimit == 0.0:
+        if (
+            ccxwriter.solver_obj.EigenmodeLowLimit == 0.0
+            and ccxwriter.solver_obj.EigenmodeHighLimit == 0.0
+        ):
             analysis_parameter = "{}\n".format(ccxwriter.solver_obj.EigenmodesCount)
         else:
             analysis_parameter = "{},{},{}\n".format(
                 ccxwriter.solver_obj.EigenmodesCount,
                 ccxwriter.solver_obj.EigenmodeLowLimit,
-                ccxwriter.solver_obj.EigenmodeHighLimit
+                ccxwriter.solver_obj.EigenmodeHighLimit,
             )
     elif ccxwriter.analysis_type == "thermomech":
         # OvG: 1.0 increment, total time 1 for steady state will cut back automatically
         analysis_parameter = "{},{}".format(
-            ccxwriter.solver_obj.TimeInitialStep,
-            ccxwriter.solver_obj.TimeEnd
+            ccxwriter.solver_obj.TimeInitialStep, ccxwriter.solver_obj.TimeEnd
         )
     elif ccxwriter.analysis_type == "buckling":
         analysis_parameter = "{}\n".format(ccxwriter.solver_obj.BucklingFactors)

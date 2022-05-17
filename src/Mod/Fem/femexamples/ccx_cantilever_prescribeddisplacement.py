@@ -37,12 +37,14 @@ def get_information():
         "constraints": ["fixed", "displacement"],
         "solvers": ["calculix", "ccxtools", "elmer"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.ccx_cantilever_prescribeddisplacement import setup
@@ -53,6 +55,7 @@ See forum topic post:
 ...
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -68,7 +71,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # setup CalculiX cantilever
     # apply a prescribed displacement of 250 mm in -z on the front end face
@@ -77,7 +82,9 @@ def setup(doc=None, solvertype="ccxtools"):
     geom_obj = doc.Box
 
     # constraint displacement
-    con_disp = ObjectsFem.makeConstraintDisplacement(doc, name="ConstraintDisplacmentPrescribed")
+    con_disp = ObjectsFem.makeConstraintDisplacement(
+        doc, name="ConstraintDisplacmentPrescribed"
+    )
     con_disp.References = [(geom_obj, "Face2")]
     con_disp.zFix = False
     con_disp.zFree = False

@@ -34,8 +34,7 @@ from . import linear
 
 
 def create(doc, name="Electrostatic"):
-    return femutils.createObject(
-        doc, name, Proxy, ViewProxy)
+    return femutils.createObject(doc, name, Proxy, ViewProxy)
 
 
 class Proxy(linear.Proxy, equationbase.ElectrostaticProxy):
@@ -45,34 +44,19 @@ class Proxy(linear.Proxy, equationbase.ElectrostaticProxy):
     def __init__(self, obj):
         super(Proxy, self).__init__(obj)
         obj.addProperty(
-            "App::PropertyBool",
-            "CalculateElectricField",
-            "Electrostatic",
-            ""
+            "App::PropertyBool", "CalculateElectricField", "Electrostatic", ""
         )
         obj.addProperty(
-            "App::PropertyBool",
-            "CalculateElectricFlux",
-            "Electrostatic",
-            ""
+            "App::PropertyBool", "CalculateElectricFlux", "Electrostatic", ""
         )
         obj.addProperty(
-            "App::PropertyBool",
-            "CalculateElectricEnergy",
-            "Electrostatic",
-            ""
+            "App::PropertyBool", "CalculateElectricEnergy", "Electrostatic", ""
         )
         obj.addProperty(
-            "App::PropertyBool",
-            "CalculateSurfaceCharge",
-            "Electrostatic",
-            ""
+            "App::PropertyBool", "CalculateSurfaceCharge", "Electrostatic", ""
         )
         obj.addProperty(
-            "App::PropertyBool",
-            "CalculateCapacitanceMatrix",
-            "Electrostatic",
-            ""
+            "App::PropertyBool", "CalculateCapacitanceMatrix", "Electrostatic", ""
         )
         """
         obj.addProperty(
@@ -88,5 +72,6 @@ class Proxy(linear.Proxy, equationbase.ElectrostaticProxy):
 
 class ViewProxy(linear.ViewProxy, equationbase.ElectrostaticViewProxy):
     pass
+
 
 ##  @}

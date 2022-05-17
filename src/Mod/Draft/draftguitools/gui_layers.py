@@ -44,13 +44,18 @@ class Layer(gui_base.GuiCommandSimplest):
     """GuiCommand to create a Layer object in the document."""
 
     def __init__(self):
-        super(Layer, self).__init__(name=translate("draft","Layer"))
+        super(Layer, self).__init__(name=translate("draft", "Layer"))
 
     def GetResources(self):
         """Set icon, menu and tooltip."""
-        return {'Pixmap': 'Draft_Layer',
-                'MenuText': QT_TRANSLATE_NOOP("Draft_Layer", "Layer"),
-                'ToolTip': QT_TRANSLATE_NOOP("Draft_Layer", "Adds a layer to the document.\nObjects added to this layer can share the same visual properties such as line color, line width, and shape color.")}
+        return {
+            "Pixmap": "Draft_Layer",
+            "MenuText": QT_TRANSLATE_NOOP("Draft_Layer", "Layer"),
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Draft_Layer",
+                "Adds a layer to the document.\nObjects added to this layer can share the same visual properties such as line color, line width, and shape color.",
+            ),
+        }
 
     def Activated(self):
         """Execute when the command is called.
@@ -61,11 +66,11 @@ class Layer(gui_base.GuiCommandSimplest):
 
         self.doc.openTransaction("Create Layer")
         Gui.addModule("Draft")
-        Gui.doCommand('_layer_ = Draft.make_layer()')
-        Gui.doCommand('FreeCAD.ActiveDocument.recompute()')
+        Gui.doCommand("_layer_ = Draft.make_layer()")
+        Gui.doCommand("FreeCAD.ActiveDocument.recompute()")
         self.doc.commitTransaction()
 
 
-Gui.addCommand('Draft_Layer', Layer())
+Gui.addCommand("Draft_Layer", Layer())
 
 ## @}

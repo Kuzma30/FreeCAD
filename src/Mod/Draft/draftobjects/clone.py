@@ -38,29 +38,26 @@ from draftobjects.base import DraftObject
 class Clone(DraftObject):
     """The Clone object"""
 
-    def __init__(self,obj):
+    def __init__(self, obj):
         super(Clone, self).__init__(obj, "Clone")
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                "The objects included in this clone")
-        obj.addProperty("App::PropertyLinkListGlobal", "Objects",
-                        "Draft", _tip)
+        _tip = QT_TRANSLATE_NOOP("App::Property", "The objects included in this clone")
+        obj.addProperty("App::PropertyLinkListGlobal", "Objects", "Draft", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                "The scale factor of this clone")
-        obj.addProperty("App::PropertyVector", "Scale",
-                        "Draft", _tip)
+        _tip = QT_TRANSLATE_NOOP("App::Property", "The scale factor of this clone")
+        obj.addProperty("App::PropertyVector", "Scale", "Draft", _tip)
 
-        _tip = QT_TRANSLATE_NOOP("App::Property",
-                "If Clones includes several objects,\n"
-                "set True for fusion or False for compound")
-        obj.addProperty("App::PropertyBool", "Fuse",
-                        "Draft", _tip)
-        
-        obj.Scale = App.Vector(1,1,1)
+        _tip = QT_TRANSLATE_NOOP(
+            "App::Property",
+            "If Clones includes several objects,\n"
+            "set True for fusion or False for compound",
+        )
+        obj.addProperty("App::PropertyBool", "Fuse", "Draft", _tip)
 
-    def join(self,obj,shapes):
-        fuse = getattr(obj, 'Fuse', False)
+        obj.Scale = App.Vector(1, 1, 1)
+
+    def join(self, obj, shapes):
+        fuse = getattr(obj, "Fuse", False)
         if fuse:
             tmps = []
             for s in shapes:
@@ -75,6 +72,7 @@ class Clone(DraftObject):
         if len(shapes) == 1:
             return shapes[0]
         import Part
+
         if fuse:
             try:
                 sh = shapes[0].multiFuse(shapes[1:])
@@ -85,15 +83,18 @@ class Clone(DraftObject):
                 return sh
         return Part.makeCompound(shapes)
 
-    def execute(self,obj):
+    def execute(self, obj):
         import Part
+
         pl = obj.Placement
         shapes = []
         if obj.isDerivedFrom("Part::Part2DObject"):
             # if our clone is 2D, make sure all its linked geometry is 2D too
             for o in obj.Objects:
                 if not o.getLinkedObject(True).isDerivedFrom("Part::Part2DObject"):
-                    App.Console.PrintWarning("Warning 2D Clone "+obj.Name+" contains 3D geometry")
+                    App.Console.PrintWarning(
+                        "Warning 2D Clone " + obj.Name + " contains 3D geometry"
+                    )
                     return
         for o in obj.Objects:
             sh = Part.getShape(o)
@@ -102,9 +103,9 @@ class Clone(DraftObject):
         if shapes:
             sh = self.join(obj, shapes)
             m = App.Matrix()
-            if hasattr(obj,"Scale") and not sh.isNull():
-                sx,sy,sz = obj.Scale
-                if not DraftVecUtils.equals(obj.Scale,App.Vector(1, 1, 1)):
+            if hasattr(obj, "Scale") and not sh.isNull():
+                sx, sy, sz = obj.Scale
+                if not DraftVecUtils.equals(obj.Scale, App.Vector(1, 1, 1)):
                     op = sh.Placement
                     sh.Placement = App.Placement()
                     m.scale(obj.Scale)
@@ -116,13 +117,13 @@ class Clone(DraftObject):
             obj.Shape = sh
 
         obj.Placement = pl
-        if hasattr(obj,"positionBySupport"):
+        if hasattr(obj, "positionBySupport"):
             obj.positionBySupport()
 
-    def getSubVolume(self,obj,placement=None):
+    def getSubVolume(self, obj, placement=None):
         # this allows clones of arch windows to return a subvolume too
         if obj.Objects:
-            if hasattr(obj.Objects[0],"Proxy"):
+            if hasattr(obj.Objects[0], "Proxy"):
                 if hasattr(obj.Objects[0].Proxy, "getSubVolume"):
                     if not placement:
                         # clones must displace the original subvolume too

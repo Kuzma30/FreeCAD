@@ -142,4 +142,3 @@ def parse(pathobj):
             objlist.append(obj)
 
     return objlist
-

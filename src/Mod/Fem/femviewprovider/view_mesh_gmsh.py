@@ -36,6 +36,7 @@ import FemGui
 from PySide import QtGui
 from femtaskpanels import task_mesh_gmsh
 from femtools.femutils import is_of_type
+
 # from . import view_base_femobject
 
 
@@ -115,8 +116,8 @@ class VPMeshGmsh:
             found_an_analysis = False
             for o in gui_doc.Document.Objects:
                 if o.isDerivedFrom("Fem::FemAnalysisPython"):
-                        found_an_analysis = True
-                        break
+                    found_an_analysis = True
+                    break
             if found_an_analysis:
                 if FemGui.getActiveAnalysis() is not None:
                     if FemGui.getActiveAnalysis().Document is FreeCAD.ActiveDocument:
@@ -141,8 +142,9 @@ class VPMeshGmsh:
                                             FemGui.setActiveAnalysis(o)
                                             FreeCAD.Console.PrintMessage(
                                                 "The analysis the Gmsh FEM mesh object "
-                                                "belongs to was found and activated: {}\n"
-                                                .format(o.Name)
+                                                "belongs to was found and activated: {}\n".format(
+                                                    o.Name
+                                                )
                                             )
                                             gui_doc.setEdit(vobj.Object.Name)
                                             break
@@ -153,7 +155,9 @@ class VPMeshGmsh:
                                 )
                                 gui_doc.setEdit(vobj.Object.Name)
                     else:
-                        FreeCAD.Console.PrintError("Active analysis is not in active document.\n")
+                        FreeCAD.Console.PrintError(
+                            "Active analysis is not in active document.\n"
+                        )
                 else:
                     FreeCAD.Console.PrintLog(
                         "No active analysis in active document, "
@@ -169,8 +173,9 @@ class VPMeshGmsh:
                                     FemGui.setActiveAnalysis(o)
                                     FreeCAD.Console.PrintMessage(
                                         "The analysis the Gmsh FEM mesh object "
-                                        "belongs to was found and activated: {}\n"
-                                        .format(o.Name)
+                                        "belongs to was found and activated: {}\n".format(
+                                            o.Name
+                                        )
                                     )
                                     gui_doc.setEdit(vobj.Object.Name)
                                     break
@@ -185,6 +190,7 @@ class VPMeshGmsh:
                 gui_doc.setEdit(vobj.Object.Name)
         else:
             from PySide.QtGui import QMessageBox
+
             message = "Active Task Dialog found! Please close this one before opening  a new one!"
             QMessageBox.critical(None, "Error in tree view", message)
             FreeCAD.Console.PrintError(message + "\n")
@@ -200,7 +206,7 @@ class VPMeshGmsh:
         reg_childs = self.Object.MeshRegionList
         gro_childs = self.Object.MeshGroupList
         bou_childs = self.Object.MeshBoundaryLayerList
-        return (reg_childs + gro_childs + bou_childs)
+        return reg_childs + gro_childs + bou_childs
 
     def onDelete(self, feature, subelements):
         children = self.claimChildren()
@@ -210,8 +216,13 @@ class VPMeshGmsh:
             for obj in children:
                 bodyMessage += "\n" + obj.Label
             bodyMessage += "\n\nAre you sure you want to continue?"
-            reply = QtGui.QMessageBox.warning(None, "Object dependencies", bodyMessage,
-            QtGui.QMessageBox.Yes | QtGui.QMessageBox.No, QtGui.QMessageBox.No)
+            reply = QtGui.QMessageBox.warning(
+                None,
+                "Object dependencies",
+                bodyMessage,
+                QtGui.QMessageBox.Yes | QtGui.QMessageBox.No,
+                QtGui.QMessageBox.No,
+            )
             if reply == QtGui.QMessageBox.Yes:
                 return True
             else:

@@ -25,6 +25,7 @@
 from math import cos, sin, pi, acos, atan, sqrt
 
 import sys
+
 if sys.version_info.major >= 3:
     xrange = range
 
@@ -40,38 +41,38 @@ def CreateExternalGear(w, m, Z, phi, split=True):
     of degree 4
     """
     # ****** external gear specifications
-    addendum = m              # distance from pitch circle to tip circle
-    dedendum = 1.25 * m         # pitch circle to root, sets clearance
+    addendum = m  # distance from pitch circle to tip circle
+    dedendum = 1.25 * m  # pitch circle to root, sets clearance
     clearance = dedendum - addendum
 
     # Calculate radii
-    Rpitch = Z * m / 2            # pitch circle radius
-    Rb = Rpitch*cos(phi * pi / 180)  # base circle radius
-    Ra = Rpitch + addendum    # tip (addendum) circle radius
-    Rroot = Rpitch - dedendum # root circle radius
-    fRad = 1.5 * clearance # fillet radius, max 1.5*clearance
-    Rf = sqrt((Rroot + fRad)**2 - fRad**2) # radius at top of fillet
-    if (Rb < Rf):
+    Rpitch = Z * m / 2  # pitch circle radius
+    Rb = Rpitch * cos(phi * pi / 180)  # base circle radius
+    Ra = Rpitch + addendum  # tip (addendum) circle radius
+    Rroot = Rpitch - dedendum  # root circle radius
+    fRad = 1.5 * clearance  # fillet radius, max 1.5*clearance
+    Rf = sqrt((Rroot + fRad) ** 2 - fRad ** 2)  # radius at top of fillet
+    if Rb < Rf:
         Rf = Rroot + clearance
 
     # ****** calculate angles (all in radians)
     pitchAngle = 2 * pi / Z  # angle subtended by whole tooth (rads)
     baseToPitchAngle = genInvolutePolar(Rb, Rpitch)
     pitchToFilletAngle = baseToPitchAngle  # profile starts at base circle
-    if (Rf > Rb):         # start profile at top of fillet (if its greater)
+    if Rf > Rb:  # start profile at top of fillet (if its greater)
         pitchToFilletAngle -= genInvolutePolar(Rb, Rf)
 
     filletAngle = atan(fRad / (fRad + Rroot))  # radians
 
     # ****** generate Higuchi involute approximation
-    fe = 1       # fraction of profile length at end of approx
-    fs = 0.01    # fraction of length offset from base to avoid singularity
-    if (Rf > Rb):
-        fs = (Rf**2 - Rb**2) / (Ra**2 - Rb**2)  # offset start to top of fillet
+    fe = 1  # fraction of profile length at end of approx
+    fs = 0.01  # fraction of length offset from base to avoid singularity
+    if Rf > Rb:
+        fs = (Rf ** 2 - Rb ** 2) / (Ra ** 2 - Rb ** 2)  # offset start to top of fillet
 
     if split:
         # approximate in 2 sections, split 25% along the involute
-        fm = fs + (fe - fs) / 4   # fraction of length at junction (25% along profile)
+        fm = fs + (fe - fs) / 4  # fraction of length at junction (25% along profile)
         dedInv = BezCoeffs(m, Z, phi, 3, fs, fm)
         addInv = BezCoeffs(m, Z, phi, 3, fm, fe)
 
@@ -89,8 +90,8 @@ def CreateExternalGear(w, m, Z, phi, split=True):
         invR.append((ptx, -pty))
 
     # ****** calculate section junction points R=back of tooth, Next=front of next tooth)
-    fillet = toCartesian(Rf, -pitchAngle / 4 - pitchToFilletAngle) # top of fillet
-    filletR = [fillet[0], -fillet[1]]   # flip to make same point on back of tooth
+    fillet = toCartesian(Rf, -pitchAngle / 4 - pitchToFilletAngle)  # top of fillet
+    filletR = [fillet[0], -fillet[1]]  # flip to make same point on back of tooth
     rootR = toCartesian(Rroot, pitchAngle / 4 + pitchToFilletAngle + filletAngle)
     rootNext = toCartesian(Rroot, 3 * pitchAngle / 4 - pitchToFilletAngle - filletAngle)
     filletNext = rotate(fillet, pitchAngle)  # top of fillet, front of next tooth
@@ -99,35 +100,36 @@ def CreateExternalGear(w, m, Z, phi, split=True):
     t_inc = 2.0 * pi / float(Z)
     thetas = [(x * t_inc) for x in range(Z)]
 
-    w.move(fillet) # start at top of fillet
+    w.move(fillet)  # start at top of fillet
 
     for theta in thetas:
         w.theta = theta
-        if (Rf < Rb):
-            w.line(inv[0]) # line from fillet up to base circle
+        if Rf < Rb:
+            w.line(inv[0])  # line from fillet up to base circle
 
         if split:
             w.curve(inv[1], inv[2], inv[3])
             w.curve(inv[4], inv[5], inv[6])
-            w.arc(invR[6], Ra, 1) # arc across addendum circle
+            w.arc(invR[6], Ra, 1)  # arc across addendum circle
             w.curve(invR[5], invR[4], invR[3])
             w.curve(invR[2], invR[1], invR[0])
         else:
             w.curve(*inv[1:])
-            w.arc(invR[-1], Ra, 1) # arc across addendum circle
+            w.arc(invR[-1], Ra, 1)  # arc across addendum circle
             w.curve(*invR[-2::-1])
 
-        if (Rf < Rb):
-            w.line(filletR) # line down to topof fillet
+        if Rf < Rb:
+            w.line(filletR)  # line down to topof fillet
 
-        if (rootNext[1] > rootR[1]):    # is there a section of root circle between fillets?
-            w.arc(rootR, fRad, 0) # back fillet
-            w.arc(rootNext, Rroot, 1) # root circle arc
+        if rootNext[1] > rootR[1]:  # is there a section of root circle between fillets?
+            w.arc(rootR, fRad, 0)  # back fillet
+            w.arc(rootNext, Rroot, 1)  # root circle arc
 
         w.arc(filletNext, fRad, 0)
 
     w.close()
     return w
+
 
 def CreateInternalGear(w, m, Z, phi, split=True):
     """
@@ -140,36 +142,36 @@ def CreateInternalGear(w, m, Z, phi, split=True):
     of degree 4
     """
     # ****** external gear specifications
-    addendum = 0.6 * m              # distance from pitch circle to tip circle (ref G.M.Maitra)
-    dedendum = 1.25 * m             # pitch circle to root, sets clearance
+    addendum = 0.6 * m  # distance from pitch circle to tip circle (ref G.M.Maitra)
+    dedendum = 1.25 * m  # pitch circle to root, sets clearance
     clearance = 0.25 * m
 
     # Calculate radii
-    Rpitch = Z * m / 2              # pitch circle radius
-    Rb = Rpitch*cos(phi * pi / 180) # base circle radius
-    Ra = Rpitch - addendum          # tip (addendum) circle radius
-    Rroot = Rpitch + dedendum       # root circle radius
-    fRad = 1.5 * clearance          # fillet radius, max 1.5*clearance
-    Rf = Rroot - clearance # radius at top of fillet (end of profile)
- 
+    Rpitch = Z * m / 2  # pitch circle radius
+    Rb = Rpitch * cos(phi * pi / 180)  # base circle radius
+    Ra = Rpitch - addendum  # tip (addendum) circle radius
+    Rroot = Rpitch + dedendum  # root circle radius
+    fRad = 1.5 * clearance  # fillet radius, max 1.5*clearance
+    Rf = Rroot - clearance  # radius at top of fillet (end of profile)
+
     # ****** calculate angles (all in radians)
     pitchAngle = 2 * pi / Z  # angle subtended by whole tooth (rads)
     baseToPitchAngle = genInvolutePolar(Rb, Rpitch)
     tipToPitchAngle = baseToPitchAngle
-    if (Ra > Rb):         # start profile at top of fillet (if its greater)
+    if Ra > Rb:  # start profile at top of fillet (if its greater)
         tipToPitchAngle -= genInvolutePolar(Rb, Ra)
-    pitchToFilletAngle = genInvolutePolar(Rb, Rf) - baseToPitchAngle;
-    filletAngle = 1.414*clearance/Rf  # // to make fillet tangential to root
+    pitchToFilletAngle = genInvolutePolar(Rb, Rf) - baseToPitchAngle
+    filletAngle = 1.414 * clearance / Rf  # // to make fillet tangential to root
 
     # ****** generate Higuchi involute approximation
-    fe = 1       # fraction of profile length at end of approx
-    fs = 0.01    # fraction of length offset from base to avoid singularity
-    if (Ra > Rb):
-        fs = (Ra**2 - Rb**2) / (Rf**2 - Rb**2)  # offset start to top of fillet
+    fe = 1  # fraction of profile length at end of approx
+    fs = 0.01  # fraction of length offset from base to avoid singularity
+    if Ra > Rb:
+        fs = (Ra ** 2 - Rb ** 2) / (Rf ** 2 - Rb ** 2)  # offset start to top of fillet
 
     if split:
         # approximate in 2 sections, split 25% along the involute
-        fm = fs + (fe - fs) / 4   # fraction of length at junction (25% along profile)
+        fm = fs + (fe - fs) / 4  # fraction of length at junction (25% along profile)
         addInv = BezCoeffs(m, Z, phi, 3, fs, fm)
         dedInv = BezCoeffs(m, Z, phi, 3, fm, fe)
 
@@ -182,16 +184,16 @@ def CreateInternalGear(w, m, Z, phi, split=True):
     inv = []
     for i, pt in enumerate(invR):
         # rotate involute to put center of tooth at y = 0
-        ptx, pty = invR[i] = rotate(pt,  pitchAngle / 4 - baseToPitchAngle)
+        ptx, pty = invR[i] = rotate(pt, pitchAngle / 4 - baseToPitchAngle)
         # generate the back of tooth profile nodes, flip Y coords
         inv.append((ptx, -pty))
 
     # ****** calculate section junction points R=back of tooth, Next=front of next tooth)
-    #fillet = inv[6] # top of fillet, front of tooth   #toCartesian(Rf, -pitchAngle / 4 - pitchToFilletAngle) # top of fillet
-    fillet = [ptx,-pty]
-    tip = toCartesian(Ra, -pitchAngle/4+tipToPitchAngle)  # tip, front of tooth
-    tipR = [ tip[0], -tip[1] ]
-    #filletR = [fillet[0], -fillet[1]]   # flip to make same point on back of tooth
+    # fillet = inv[6] # top of fillet, front of tooth   #toCartesian(Rf, -pitchAngle / 4 - pitchToFilletAngle) # top of fillet
+    fillet = [ptx, -pty]
+    tip = toCartesian(Ra, -pitchAngle / 4 + tipToPitchAngle)  # tip, front of tooth
+    tipR = [tip[0], -tip[1]]
+    # filletR = [fillet[0], -fillet[1]]   # flip to make same point on back of tooth
     rootR = toCartesian(Rroot, pitchAngle / 4 + pitchToFilletAngle + filletAngle)
     rootNext = toCartesian(Rroot, 3 * pitchAngle / 4 - pitchToFilletAngle - filletAngle)
     filletNext = rotate(fillet, pitchAngle)  # top of fillet, front of next tooth
@@ -200,8 +202,7 @@ def CreateInternalGear(w, m, Z, phi, split=True):
     t_inc = 2.0 * pi / float(Z)
     thetas = [(x * t_inc) for x in range(Z)]
 
-    w.move(fillet) # start at top of front profile
-
+    w.move(fillet)  # start at top of front profile
 
     for theta in thetas:
         w.theta = theta
@@ -211,17 +212,17 @@ def CreateInternalGear(w, m, Z, phi, split=True):
         else:
             w.curve(*inv[-2::-1])
 
-        if (Ra < Rb):
-            w.line(tip) # line from fillet up to base circle
+        if Ra < Rb:
+            w.line(tip)  # line from fillet up to base circle
 
         if split:
-            w.arc(tipR, Ra, 0) # arc across addendum circle
+            w.arc(tipR, Ra, 0)  # arc across addendum circle
         else:
-            #w.arc(tipR[-1], Ra, 0) # arc across addendum circle
+            # w.arc(tipR[-1], Ra, 0) # arc across addendum circle
             w.arc(tipR, Ra, 0)
 
-        if (Ra < Rb):
-            w.line(invR[0]) # line down to topof fillet
+        if Ra < Rb:
+            w.line(invR[0])  # line down to topof fillet
 
         if split:
             w.curve(invR[1], invR[2], invR[3])
@@ -229,13 +230,12 @@ def CreateInternalGear(w, m, Z, phi, split=True):
         else:
             w.curve(*invR[1:])
 
-        if (rootNext[1] > rootR[1]):    # is there a section of root circle between fillets?
-            w.arc(rootR, fRad, 1) # back fillet
-            w.arc(rootNext, Rroot, 0) # root circle arc
+        if rootNext[1] > rootR[1]:  # is there a section of root circle between fillets?
+            w.arc(rootR, fRad, 1)  # back fillet
+            w.arc(rootNext, Rroot, 0)  # root circle arc
 
         w.arc(filletNext, fRad, 1)
-    
-    
+
     w.close()
     return w
 
@@ -244,16 +244,14 @@ def genInvolutePolar(Rb, R):
     """returns the involute angle as function of radius R.
     Rb = base circle radius
     """
-    return (sqrt(R*R - Rb*Rb) / Rb) - acos(Rb / R)
+    return (sqrt(R * R - Rb * Rb) / Rb) - acos(Rb / R)
 
 
 def rotate(pt, rads):
     "rotate pt by rads radians about origin"
     sinA = sin(rads)
     cosA = cos(rads)
-    return (pt[0] * cosA - pt[1] * sinA,
-            pt[0] * sinA + pt[1] * cosA)
-
+    return (pt[0] * cosA - pt[1] * sinA, pt[0] * sinA + pt[1] * cosA)
 
 
 def toCartesian(radius, angle):
@@ -262,17 +260,17 @@ def toCartesian(radius, angle):
 
 
 def chebyExpnCoeffs(j, func):
-    N = 50      # a suitably large number  N>>p
+    N = 50  # a suitably large number  N>>p
     c = 0
     for k in xrange(1, N + 1):
         c += func(cos(pi * (k - 0.5) / N)) * cos(pi * j * (k - 0.5) / N)
-    return 2 *c / N
+    return 2 * c / N
 
 
 def chebyPolyCoeffs(p, func):
-    coeffs = [0]*(p+1)
+    coeffs = [0] * (p + 1)
     fnCoeff = []
-    T = [coeffs[:] for i in range(p+1)]
+    T = [coeffs[:] for i in range(p + 1)]
     T[0][0] = 1
     T[1][1] = 1
     # now generate the Chebyshev polynomial coefficient using
@@ -316,9 +314,8 @@ def binom(n, k):
 
 
 def bezCoeff(i, p, polyCoeffs):
-    '''generate the polynomial coeffs in one go'''
-    return sum(binom(i, j) * polyCoeffs[j] / binom(p, j) for j in range(i+1))
-
+    """generate the polynomial coeffs in one go"""
+    return sum(binom(i, j) * polyCoeffs[j] / binom(p, j) for j in range(i + 1))
 
     # Parameters:
     # module - sets the size of teeth (see gear design texts)
@@ -327,15 +324,17 @@ def bezCoeff(i, p, polyCoeffs):
     # order - the order of the Bezier curve to be fitted [3, 4, 5, ..]
     # fstart - fraction of distance along tooth profile to start
     # fstop - fraction of distance along profile to stop
+
+
 def BezCoeffs(module, numTeeth, pressureAngle, order, fstart, fstop):
-    Rpitch = module * numTeeth / 2       # pitch circle radius
-    phi = pressureAngle        # pressure angle
-    Rb = Rpitch * cos(phi * pi / 180) # base circle radius
-    Ra = Rpitch + module               # addendum radius (outer radius)
-    ta = sqrt(Ra * Ra - Rb * Rb) / Rb   # involute angle at addendum
-    te = sqrt(fstop) * ta          # involute angle, theta, at end of approx
-    ts = sqrt(fstart) * ta         # involute angle, theta, at start of approx
-    p = order                     # order of Bezier approximation
+    Rpitch = module * numTeeth / 2  # pitch circle radius
+    phi = pressureAngle  # pressure angle
+    Rb = Rpitch * cos(phi * pi / 180)  # base circle radius
+    Ra = Rpitch + module  # addendum radius (outer radius)
+    ta = sqrt(Ra * Ra - Rb * Rb) / Rb  # involute angle at addendum
+    te = sqrt(fstop) * ta  # involute angle, theta, at end of approx
+    ts = sqrt(fstart) * ta  # involute angle, theta, at start of approx
+    p = order  # order of Bezier approximation
 
     def involuteXbez(t):
         "Equation of involute using the Bezier parameter t as variable"
@@ -362,4 +361,3 @@ def BezCoeffs(module, numTeeth, pressureAngle, order, fstart, fstop):
         by = bezCoeff(i, p, polyCoeffsY)
         bzCoeffs.append((bx, by))
     return bzCoeffs
-

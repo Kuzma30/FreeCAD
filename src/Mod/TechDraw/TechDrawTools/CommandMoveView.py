@@ -33,6 +33,7 @@ import FreeCADGui as Gui
 
 import TechDrawTools
 
+
 class CommandMoveView:
     """Moves a View from current Page to a different Page."""
 
@@ -42,10 +43,12 @@ class CommandMoveView:
 
     def GetResources(self):
         """Return a dictionary with data that will be used by the button or menu item."""
-        return {'Pixmap': 'actions/TechDraw_MoveView.svg',
-                'Accel': "",
-                'MenuText': QT_TRANSLATE_NOOP("MoveView", "Move View"),
-                'ToolTip': QT_TRANSLATE_NOOP("MoveView", "Move a View to a new Page")}
+        return {
+            "Pixmap": "actions/TechDraw_MoveView.svg",
+            "Accel": "",
+            "MenuText": QT_TRANSLATE_NOOP("MoveView", "Move View"),
+            "ToolTip": QT_TRANSLATE_NOOP("MoveView", "Move a View to a new Page"),
+        }
 
     def Activated(self):
         """Run the following code when the command is activated (button press)."""
@@ -70,7 +73,7 @@ class CommandMoveView:
         if len(pages) > 1:
             toPageName = pages[1].Name
 
-        self.ui  = TechDrawTools.TaskMoveView()
+        self.ui = TechDrawTools.TaskMoveView()
 
         self.ui.setValues(viewName, fromPageName, toPageName)
         Gui.Control.showDialog(self.ui)
@@ -78,12 +81,14 @@ class CommandMoveView:
     def IsActive(self):
         """Return True when the command should be active or False when it should be disabled (greyed)."""
         if App.ActiveDocument:
-            return TechDrawTools.TDToolsUtil.havePage() and TechDrawTools.TDToolsUtil.haveView()
+            return (
+                TechDrawTools.TDToolsUtil.havePage()
+                and TechDrawTools.TDToolsUtil.haveView()
+            )
         else:
             return False
 
 
 #
 # The command must be "registered" with a unique name by calling its class.
-Gui.addCommand('TechDraw_MoveView', CommandMoveView())
-
+Gui.addCommand("TechDraw_MoveView", CommandMoveView())

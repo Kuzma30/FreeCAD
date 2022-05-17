@@ -40,9 +40,9 @@ if App.GuiUp:
 
 def make_bspline(pointslist, closed=False, placement=None, face=None, support=None):
     """make_bspline(pointslist, [closed], [placement])
-    
+
     Creates a B-Spline object from the given list of vectors.
-    
+
     Parameters
     ----------
     pointlist : [Base.Vector]
@@ -51,32 +51,32 @@ def make_bspline(pointslist, closed=False, placement=None, face=None, support=No
         TODO: Change the name so!
 
     closed : bool
-        If closed is True or first and last points are identical, 
+        If closed is True or first and last points are identical,
         the created BSpline will be closed.
 
     placement : Base.Placement
         If a placement is given, it is used.
-    
-    face : Bool
-        If face is False, the rectangle is shown as a wireframe, 
-        otherwise as a face.   
 
-    support : 
+    face : Bool
+        If face is False, the rectangle is shown as a wireframe,
+        otherwise as a face.
+
+    support :
         TODO: Describe
     """
     if not App.ActiveDocument:
         App.Console.PrintError("No active document. Aborting\n")
         return
-    if not isinstance(pointslist,list):
+    if not isinstance(pointslist, list):
         nlist = []
         for v in pointslist.Vertexes:
             nlist.append(v.Point)
         pointslist = nlist
     if len(pointslist) < 2:
         _err = "Draft.make_bspline: not enough points"
-        App.Console.PrintError(translate("draft", _err)+"\n")
+        App.Console.PrintError(translate("draft", _err) + "\n")
         return
-    if (pointslist[0] == pointslist[-1]):
+    if pointslist[0] == pointslist[-1]:
         if len(pointslist) > 2:
             closed = True
             pointslist.pop()
@@ -85,21 +85,24 @@ def make_bspline(pointslist, closed=False, placement=None, face=None, support=No
         else:
             # len == 2 and first == last   GIGO
             _err = "Draft.make_bspline: Invalid pointslist"
-            App.Console.PrintError(translate("Draft", _err)+"\n")
+            App.Console.PrintError(translate("Draft", _err) + "\n")
             return
     # should have sensible parms from here on
     if placement:
-        utils.type_check([(placement,App.Placement)], "make_bspline")
-    if len(pointslist) == 2: fname = "Line"
-    else: fname = "BSpline"
-    obj = App.ActiveDocument.addObject("Part::Part2DObjectPython",fname)
+        utils.type_check([(placement, App.Placement)], "make_bspline")
+    if len(pointslist) == 2:
+        fname = "Line"
+    else:
+        fname = "BSpline"
+    obj = App.ActiveDocument.addObject("Part::Part2DObjectPython", fname)
     BSpline(obj)
     obj.Closed = closed
     obj.Points = pointslist
     obj.Support = support
     if face != None:
         obj.MakeFace = face
-    if placement: obj.Placement = placement
+    if placement:
+        obj.Placement = placement
     if App.GuiUp:
         ViewProviderBSpline(obj.ViewObject)
         gui_utils.format_object(obj)

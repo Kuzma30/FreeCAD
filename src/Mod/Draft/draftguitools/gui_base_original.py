@@ -151,7 +151,7 @@ class DraftTool:
         if hasattr(Gui, "Snapper"):
             Gui.Snapper.setTrackers()
 
-        _msg("{}".format(16*"-"))
+        _msg("{}".format(16 * "-"))
         _msg("GuiCommand: {}".format(self.featureName))
 
     def finish(self, close=False):
@@ -234,18 +234,18 @@ class DraftTool:
         _params = "User parameter:BaseApp/Preferences/Mod/Draft"
         _params_group = App.ParamGet(_params)
         if self.support and _params_group.GetBool("useSupport", False):
-            sup = 'FreeCAD.ActiveDocument.getObject'
+            sup = "FreeCAD.ActiveDocument.getObject"
             sup += '("{}")'.format(self.support.Name)
         else:
-            sup = 'None'
+            sup = "None"
 
         # Contents of self.node
-        points = '['
+        points = "["
         for n in self.node:
             if len(points) > 1:
-                points += ', '
+                points += ", "
             points += DraftVecUtils.toString(n)
-        points += ']'
+        points += "]"
 
         # Fill mode
         if self.ui:
@@ -308,4 +308,6 @@ class Modifier(DraftTool):
         # call DraftWorkingPlane.save to sync with
         # DraftWorkingPlane.restore called in finish method
         App.DraftWorkingPlane.save()
+
+
 ## @}

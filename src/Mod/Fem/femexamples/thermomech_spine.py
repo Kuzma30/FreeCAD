@@ -40,12 +40,14 @@ def get_information():
         "constraints": ["fixed", "initial temperature", "temperature", "heatflux"],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "thermomechanical"
+        "equation": "thermomechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.thermomech_spine import setup
@@ -56,6 +58,7 @@ See forum topic post:
 ...
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -66,7 +69,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     geom_obj = doc.addObject("Part::Box", "Box")
@@ -142,7 +147,7 @@ def setup(doc=None, solvertype="ccxtools"):
         (geom_obj, "Face3"),
         (geom_obj, "Face4"),
         (geom_obj, "Face5"),
-        (geom_obj, "Face6")
+        (geom_obj, "Face6"),
     ]
     con_heatflux.AmbientTemp = 255.3722
     con_heatflux.FilmCoef = 5.678
@@ -150,6 +155,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_thermomech_spine_tetra10 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

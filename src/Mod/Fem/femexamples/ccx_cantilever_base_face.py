@@ -80,7 +80,7 @@ def setup_cantilever_base_face(doc=None, solvertype="ccxtools"):
     analysis.addObject(solver_obj)
 
     # shell thickness
-    thickness_obj = ObjectsFem.makeElementGeometry2D(doc, 1000, 'Thickness')
+    thickness_obj = ObjectsFem.makeElementGeometry2D(doc, 1000, "Thickness")
     analysis.addObject(thickness_obj)
 
     # material
@@ -107,6 +107,7 @@ def setup_cantilever_base_face(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_canticcx_tria6 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

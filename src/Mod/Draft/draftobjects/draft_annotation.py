@@ -73,27 +73,35 @@ class DraftAnnotation(object):
         """Provide missing annotation properties, if they don't exist."""
         vproperties = vobj.PropertiesList
 
-        if 'ScaleMultiplier' not in vproperties:
-            _tip = QT_TRANSLATE_NOOP("App::Property",
-                                     "General scaling factor that affects "
-                                     "the annotation consistently\n"
-                                     "because it scales the text, "
-                                     "and the line decorations, if any,\n"
-                                     "in the same proportion.")
-            vobj.addProperty("App::PropertyFloat",
-                             "ScaleMultiplier",
-                             "Annotation",
-                             _tip)
+        if "ScaleMultiplier" not in vproperties:
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "General scaling factor that affects "
+                "the annotation consistently\n"
+                "because it scales the text, "
+                "and the line decorations, if any,\n"
+                "in the same proportion.",
+            )
+            vobj.addProperty(
+                "App::PropertyFloat", "ScaleMultiplier", "Annotation", _tip
+            )
             vobj.ScaleMultiplier = 1.00
 
-            _wrn("v0.19, " + obj.Label + ", " + translate("draft","added view property 'ScaleMultiplier'"))
+            _wrn(
+                "v0.19, "
+                + obj.Label
+                + ", "
+                + translate("draft", "added view property 'ScaleMultiplier'")
+            )
 
-        if 'AnnotationStyle' not in vproperties:
-            _tip = QT_TRANSLATE_NOOP("App::Property","Annotation style to apply to this object.\nWhen using a saved style some of the view properties will become read-only;\nthey will only be editable by changing the style through the 'Annotation style editor' tool.")
-            vobj.addProperty("App::PropertyEnumeration",
-                             "AnnotationStyle",
-                             "Annotation",
-                             _tip)
+        if "AnnotationStyle" not in vproperties:
+            _tip = QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Annotation style to apply to this object.\nWhen using a saved style some of the view properties will become read-only;\nthey will only be editable by changing the style through the 'Annotation style editor' tool.",
+            )
+            vobj.addProperty(
+                "App::PropertyEnumeration", "AnnotationStyle", "Annotation", _tip
+            )
             styles = []
             for key in obj.Document.Meta.keys():
                 if key.startswith("Draft_Style_"):
@@ -102,7 +110,12 @@ class DraftAnnotation(object):
             vobj.AnnotationStyle = [""] + styles
 
             _info = "added view property 'AnnotationStyle'"
-            _wrn("v0.19, " + obj.Label + ", " + translate("draft","added view property 'ScaleMultiplier'"))
+            _wrn(
+                "v0.19, "
+                + obj.Label
+                + ", "
+                + translate("draft", "added view property 'ScaleMultiplier'")
+            )
 
     def __getstate__(self):
         """Return a tuple of objects to save or None.
@@ -122,12 +135,18 @@ class DraftAnnotation(object):
                 # the 'DraftText' type was changed to 'Text' type
                 if state["Type"] == "DraftText":
                     state["Type"] = "Text"
-                    _wrn("v0.19, " + translate("draft","migrated 'DraftText' type to 'Text'"))
+                    _wrn(
+                        "v0.19, "
+                        + translate("draft", "migrated 'DraftText' type to 'Text'")
+                    )
                 self.Type = state["Type"]
             else:
                 if state == "DraftText":
                     state = "Text"
-                    _wrn("v0.19, " + translate("draft","migrated 'DraftText' type to 'Text'"))
+                    _wrn(
+                        "v0.19, "
+                        + translate("draft", "migrated 'DraftText' type to 'Text'")
+                    )
                 self.Type = state
 
     def execute(self, obj):
@@ -143,5 +162,6 @@ class DraftAnnotation(object):
         Does nothing.
         """
         return
+
 
 ## @}

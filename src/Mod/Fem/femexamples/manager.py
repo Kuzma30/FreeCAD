@@ -136,6 +136,7 @@ def run_analysis(doc, base_name, filepath="", run_solver=False):
     # find the first solver
     # thus ATM only one solver per analysis is supported
     from femtools.femutils import is_derived_from
+
     for m in doc.Analysis.Group:
         if is_derived_from(m, "Fem::FemSolverObjectPython"):
             solver = m
@@ -150,10 +151,12 @@ def run_analysis(doc, base_name, filepath="", run_solver=False):
 
     # get analysis workig dir
     from femtools.femutils import get_beside_dir
+
     working_dir = get_beside_dir(solver)
 
     # run analysis
     from femsolver.run import run_fem_solver
+
     if run_solver is True:
         run_fem_solver(solver, working_dir)
 
@@ -164,6 +167,7 @@ def run_analysis(doc, base_name, filepath="", run_solver=False):
 def run_example(example, solver=None, base_name=None, run_solver=False):
 
     from importlib import import_module
+
     module = import_module("femexamples." + example)
     if not hasattr(module, "setup"):
         FreeCAD.Console.PrintError("Setup method not found in {}\n".format(example))
@@ -200,7 +204,9 @@ def get_meshname():
 def get_header(information):
     return """{name}
 
-{information}""".format(name=information["name"], information=print_info_dict(information))
+{information}""".format(
+        name=information["name"], information=print_info_dict(information)
+    )
 
 
 def print_info_dict(information):

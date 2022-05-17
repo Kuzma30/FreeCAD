@@ -39,8 +39,9 @@ import draftmake.make_line as make_line
 import draftmake.make_copy as make_copy
 
 
-def rotate(objectslist, angle, center=App.Vector(0,0,0),
-           axis=App.Vector(0,0,1), copy=False):
+def rotate(
+    objectslist, angle, center=App.Vector(0, 0, 0), axis=App.Vector(0, 0, 1), copy=False
+):
     """rotate(objects,angle,[center,axis,copy])
 
     Rotates the objects contained in objects (that can be a list of objects
@@ -67,8 +68,9 @@ def rotate(objectslist, angle, center=App.Vector(0,0,0),
     The objects (or their copies) are returned.
     """
     import Part
-    utils.type_check([(copy,bool)], "rotate")
-    if not isinstance(objectslist,list):
+
+    utils.type_check([(copy, bool)], "rotate")
+    if not isinstance(objectslist, list):
         objectslist = [objectslist]
 
     objectslist.extend(groups.get_movable_children(objectslist))
@@ -96,23 +98,23 @@ def rotate(objectslist, angle, center=App.Vector(0,0,0),
         if obj.isDerivedFrom("App::Annotation"):
             # TODO: this is very different from how move handle annotations
             # maybe we can uniform the two methods
-            if axis.normalize() == App.Vector(1,0,0):
+            if axis.normalize() == App.Vector(1, 0, 0):
                 newobj.ViewObject.RotationAxis = "X"
                 newobj.ViewObject.Rotation = angle
-            elif axis.normalize() == App.Vector(0,1,0):
+            elif axis.normalize() == App.Vector(0, 1, 0):
                 newobj.ViewObject.RotationAxis = "Y"
                 newobj.ViewObject.Rotation = angle
-            elif axis.normalize() == App.Vector(0,-1,0):
+            elif axis.normalize() == App.Vector(0, -1, 0):
                 newobj.ViewObject.RotationAxis = "Y"
                 newobj.ViewObject.Rotation = -angle
-            elif axis.normalize() == App.Vector(0,0,1):
+            elif axis.normalize() == App.Vector(0, 0, 1):
                 newobj.ViewObject.RotationAxis = "Z"
                 newobj.ViewObject.Rotation = angle
-            elif axis.normalize() == App.Vector(0,0,-1):
+            elif axis.normalize() == App.Vector(0, 0, -1):
                 newobj.ViewObject.RotationAxis = "Z"
                 newobj.ViewObject.Rotation = -angle
         elif utils.get_type(obj) == "Point":
-            v = App.Vector(obj.X,obj.Y,obj.Z)
+            v = App.Vector(obj.X, obj.Y, obj.Z)
             rv = v.sub(real_center)
             rv = DraftVecUtils.rotate(rv, math.radians(angle), real_axis)
             v = real_center.add(rv)
@@ -121,25 +123,33 @@ def rotate(objectslist, angle, center=App.Vector(0,0,0),
             newobj.Z = v.z
         elif obj.isDerivedFrom("App::DocumentObjectGroup"):
             pass
-        elif hasattr(obj,"Placement"):
-            #FreeCAD.Console.PrintMessage("placement rotation\n")
+        elif hasattr(obj, "Placement"):
+            # FreeCAD.Console.PrintMessage("placement rotation\n")
             shape = Part.Shape()
             shape.Placement = obj.Placement
-            shape.rotate(DraftVecUtils.tup(real_center), DraftVecUtils.tup(real_axis), angle)
+            shape.rotate(
+                DraftVecUtils.tup(real_center), DraftVecUtils.tup(real_axis), angle
+            )
             newobj.Placement = shape.Placement
-        elif hasattr(obj,'Shape') and (utils.get_type(obj) not in ["WorkingPlaneProxy","BuildingPart"]):
-            #think it make more sense to try first to rotate placement and later to try with shape. no?
+        elif hasattr(obj, "Shape") and (
+            utils.get_type(obj) not in ["WorkingPlaneProxy", "BuildingPart"]
+        ):
+            # think it make more sense to try first to rotate placement and later to try with shape. no?
             shape = obj.Shape.copy()
-            shape.rotate(DraftVecUtils.tup(real_center), DraftVecUtils.tup(real_axis), angle)
+            shape.rotate(
+                DraftVecUtils.tup(real_center), DraftVecUtils.tup(real_axis), angle
+            )
             newobj.Shape = shape
         if copy:
-            gui_utils.formatObject(newobj,obj)
+            gui_utils.formatObject(newobj, obj)
         if newobj is not None:
             newobjlist.append(newobj)
         if copy:
             for p in obj.InList:
                 if p.isDerivedFrom("App::DocumentObjectGroup") and (p in objectslist):
-                    g = newgroups.setdefault(p.Name, App.ActiveDocument.addObject(p.TypeId, p.Name))
+                    g = newgroups.setdefault(
+                        p.Name, App.ActiveDocument.addObject(p.TypeId, p.Name)
+                    )
                     g.addObject(newobj)
                     break
 
@@ -161,8 +171,9 @@ def rotate_vertex(object, vertex_index, angle, center, axis):
     points = object.Points
     points[vertex_index] = object.Placement.inverse().multVec(
         rotate_vector_from_center(
-            object.Placement.multVec(points[vertex_index]),
-            angle, axis, center))
+            object.Placement.multVec(points[vertex_index]), angle, axis, center
+        )
+    )
     object.Points = points
 
 
@@ -191,7 +202,7 @@ def rotate_edge(object, edge_index, angle, center, axis):
     if utils.isClosedEdge(edge_index, object):
         rotateVertex(object, 0, angle, center, axis)
     else:
-        rotateVertex(object, edge_index+1, angle, center, axis)
+        rotateVertex(object, edge_index + 1, angle, center, axis)
 
 
 rotateEdge = rotate_edge
@@ -204,8 +215,11 @@ def copy_rotated_edges(arguments):
     """
     copied_edges = []
     for argument in arguments:
-        copied_edges.append(copy_rotated_edge(argument[0], argument[1],
-            argument[2], argument[3], argument[4]))
+        copied_edges.append(
+            copy_rotated_edge(
+                argument[0], argument[1], argument[2], argument[3], argument[4]
+            )
+        )
     join.join_wires(copied_edges)
 
 
@@ -218,16 +232,17 @@ def copy_rotated_edge(object, edge_index, angle, center, axis):
     Implemented by Dion Moult during 0.19 dev cycle (works only with Draft Wire).
     """
     vertex1 = rotate_vector_from_center(
-        object.Placement.multVec(object.Points[edge_index]),
-        angle, axis, center)
+        object.Placement.multVec(object.Points[edge_index]), angle, axis, center
+    )
     if utils.isClosedEdge(edge_index, object):
         vertex2 = rotate_vector_from_center(
-            object.Placement.multVec(object.Points[0]),
-            angle, axis, center)
+            object.Placement.multVec(object.Points[0]), angle, axis, center
+        )
     else:
         vertex2 = rotate_vector_from_center(
-            object.Placement.multVec(object.Points[edge_index+1]),
-            angle, axis, center)
+            object.Placement.multVec(object.Points[edge_index + 1]), angle, axis, center
+        )
     return make_line.make_line(vertex1, vertex2)
+
 
 ## @}

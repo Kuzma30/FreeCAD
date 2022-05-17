@@ -63,6 +63,7 @@ from draftutils.messages import _msg, _wrn, _err
 if FreeCAD.GuiUp:
     from PySide import QtGui
     import FreeCADGui
+
     gui = True
     try:
         draftui = FreeCADGui.draftToolBar
@@ -73,161 +74,160 @@ else:
     draftui = None
 
 # Save the native open function to avoid collisions
-if open.__module__ in ['__builtin__', 'io']:
+if open.__module__ in ["__builtin__", "io"]:
     pythonopen = open
 
 svgcolors = {
-    'Pink': (255, 192, 203),
-    'Blue': (0, 0, 255),
-    'Honeydew': (240, 255, 240),
-    'Purple': (128, 0, 128),
-    'Fuchsia': (255, 0, 255),
-    'LawnGreen': (124, 252, 0),
-    'Amethyst': (153, 102, 204),
-    'Crimson': (220, 20, 60),
-    'White': (255, 255, 255),
-    'NavajoWhite': (255, 222, 173),
-    'Cornsilk': (255, 248, 220),
-    'Bisque': (255, 228, 196),
-    'PaleGreen': (152, 251, 152),
-    'Brown': (165, 42, 42),
-    'DarkTurquoise': (0, 206, 209),
-    'DarkGreen': (0, 100, 0),
-    'MediumOrchid': (186, 85, 211),
-    'Chocolate': (210, 105, 30),
-    'PapayaWhip': (255, 239, 213),
-    'Olive': (128, 128, 0),
-    'Silver': (192, 192, 192),
-    'PeachPuff': (255, 218, 185),
-    'Plum': (221, 160, 221),
-    'DarkGoldenrod': (184, 134, 11),
-    'SlateGrey': (112, 128, 144),
-    'MintCream': (245, 255, 250),
-    'CornflowerBlue': (100, 149, 237),
-    'Gold': (255, 215, 0),
-    'HotPink': (255, 105, 180),
-    'DarkBlue': (0, 0, 139),
-    'LimeGreen': (50, 205, 50),
-    'DeepSkyBlue': (0, 191, 255),
-    'DarkKhaki': (189, 183, 107),
-    'LightGrey': (211, 211, 211),
-    'Yellow': (255, 255, 0),
-    'Gainsboro': (220, 220, 220),
-    'MistyRose': (255, 228, 225),
-    'SandyBrown': (244, 164, 96),
-    'DeepPink': (255, 20, 147),
-    'Magenta': (255, 0, 255),
-    'AliceBlue': (240, 248, 255),
-    'DarkCyan': (0, 139, 139),
-    'DarkSlateGrey': (47, 79, 79),
-    'GreenYellow': (173, 255, 47),
-    'DarkOrchid': (153, 50, 204),
-    'OliveDrab': (107, 142, 35),
-    'Chartreuse': (127, 255, 0),
-    'Peru': (205, 133, 63),
-    'Orange': (255, 165, 0),
-    'Red': (255, 0, 0),
-    'Wheat': (245, 222, 179),
-    'LightCyan': (224, 255, 255),
-    'LightSeaGreen': (32, 178, 170),
-    'BlueViolet': (138, 43, 226),
-    'LightSlateGrey': (119, 136, 153),
-    'Cyan': (0, 255, 255),
-    'MediumPurple': (147, 112, 219),
-    'MidnightBlue': (25, 25, 112),
-    'FireBrick': (178, 34, 34),
-    'PaleTurquoise': (175, 238, 238),
-    'PaleGoldenrod': (238, 232, 170),
-    'Gray': (128, 128, 128),
-    'MediumSeaGreen': (60, 179, 113),
-    'Moccasin': (255, 228, 181),
-    'Ivory': (255, 255, 240),
-    'DarkSlateBlue': (72, 61, 139),
-    'Beige': (245, 245, 220),
-    'Green': (0, 128, 0),
-    'SlateBlue': (106, 90, 205),
-    'Teal': (0, 128, 128),
-    'Azure': (240, 255, 255),
-    'LightSteelBlue': (176, 196, 222),
-    'DimGrey': (105, 105, 105),
-    'Tan': (210, 180, 140),
-    'AntiqueWhite': (250, 235, 215),
-    'SkyBlue': (135, 206, 235),
-    'GhostWhite': (248, 248, 255),
-    'MediumTurquoise': (72, 209, 204),
-    'FloralWhite': (255, 250, 240),
-    'LavenderBlush': (255, 240, 245),
-    'SeaGreen': (46, 139, 87),
-    'Lavender': (230, 230, 250),
-    'BlanchedAlmond': (255, 235, 205),
-    'DarkOliveGreen': (85, 107, 47),
-    'DarkSeaGreen': (143, 188, 143),
-    'SpringGreen': (0, 255, 127),
-    'Navy': (0, 0, 128),
-    'Orchid': (218, 112, 214),
-    'SaddleBrown': (139, 69, 19),
-    'IndianRed': (205, 92, 92),
-    'Snow': (255, 250, 250),
-    'SteelBlue': (70, 130, 180),
-    'MediumSlateBlue': (123, 104, 238),
-    'Black': (0, 0, 0),
-    'LightBlue': (173, 216, 230),
-    'Turquoise': (64, 224, 208),
-    'MediumVioletRed': (199, 21, 133),
-    'DarkViolet': (148, 0, 211),
-    'DarkGray': (169, 169, 169),
-    'Salmon': (250, 128, 114),
-    'DarkMagenta': (139, 0, 139),
-    'Tomato': (255, 99, 71),
-    'WhiteSmoke': (245, 245, 245),
-    'Goldenrod': (218, 165, 32),
-    'MediumSpringGreen': (0, 250, 154),
-    'DodgerBlue': (30, 144, 255),
-    'Aqua': (0, 255, 255),
-    'ForestGreen': (34, 139, 34),
-    'LemonChiffon': (255, 250, 205),
-    'LightSlateGray': (119, 136, 153),
-    'SlateGray': (112, 128, 144),
-    'LightGray': (211, 211, 211),
-    'Indigo': (75, 0, 130),
-    'CadetBlue': (95, 158, 160),
-    'LightYellow': (255, 255, 224),
-    'DarkOrange': (255, 140, 0),
-    'PowderBlue': (176, 224, 230),
-    'RoyalBlue': (65, 105, 225),
-    'Sienna': (160, 82, 45),
-    'Thistle': (216, 191, 216),
-    'Lime': (0, 255, 0),
-    'Seashell': (255, 245, 238),
-    'DarkRed': (139, 0, 0),
-    'LightSkyBlue': (135, 206, 250),
-    'YellowGreen': (154, 205, 50),
-    'Aquamarine': (127, 255, 212),
-    'LightCoral': (240, 128, 128),
-    'DarkSlateGray': (47, 79, 79),
-    'Khaki': (240, 230, 140),
-    'DarkGrey': (169, 169, 169),
-    'BurlyWood': (222, 184, 135),
-    'LightGoldenrodYellow': (250, 250, 210),
-    'MediumBlue': (0, 0, 205),
-    'DarkSalmon': (233, 150, 122),
-    'RosyBrown': (188, 143, 143),
-    'LightSalmon': (255, 160, 122),
-    'PaleVioletRed': (219, 112, 147),
-    'Coral': (255, 127, 80),
-    'Violet': (238, 130, 238),
-    'Grey': (128, 128, 128),
-    'LightGreen': (144, 238, 144),
-    'Linen': (250, 240, 230),
-    'OrangeRed': (255, 69, 0),
-    'DimGray': (105, 105, 105),
-    'Maroon': (128, 0, 0),
-    'LightPink': (255, 182, 193),
-    'MediumAquamarine': (102, 205, 170),
-    'OldLace': (253, 245, 230)
+    "Pink": (255, 192, 203),
+    "Blue": (0, 0, 255),
+    "Honeydew": (240, 255, 240),
+    "Purple": (128, 0, 128),
+    "Fuchsia": (255, 0, 255),
+    "LawnGreen": (124, 252, 0),
+    "Amethyst": (153, 102, 204),
+    "Crimson": (220, 20, 60),
+    "White": (255, 255, 255),
+    "NavajoWhite": (255, 222, 173),
+    "Cornsilk": (255, 248, 220),
+    "Bisque": (255, 228, 196),
+    "PaleGreen": (152, 251, 152),
+    "Brown": (165, 42, 42),
+    "DarkTurquoise": (0, 206, 209),
+    "DarkGreen": (0, 100, 0),
+    "MediumOrchid": (186, 85, 211),
+    "Chocolate": (210, 105, 30),
+    "PapayaWhip": (255, 239, 213),
+    "Olive": (128, 128, 0),
+    "Silver": (192, 192, 192),
+    "PeachPuff": (255, 218, 185),
+    "Plum": (221, 160, 221),
+    "DarkGoldenrod": (184, 134, 11),
+    "SlateGrey": (112, 128, 144),
+    "MintCream": (245, 255, 250),
+    "CornflowerBlue": (100, 149, 237),
+    "Gold": (255, 215, 0),
+    "HotPink": (255, 105, 180),
+    "DarkBlue": (0, 0, 139),
+    "LimeGreen": (50, 205, 50),
+    "DeepSkyBlue": (0, 191, 255),
+    "DarkKhaki": (189, 183, 107),
+    "LightGrey": (211, 211, 211),
+    "Yellow": (255, 255, 0),
+    "Gainsboro": (220, 220, 220),
+    "MistyRose": (255, 228, 225),
+    "SandyBrown": (244, 164, 96),
+    "DeepPink": (255, 20, 147),
+    "Magenta": (255, 0, 255),
+    "AliceBlue": (240, 248, 255),
+    "DarkCyan": (0, 139, 139),
+    "DarkSlateGrey": (47, 79, 79),
+    "GreenYellow": (173, 255, 47),
+    "DarkOrchid": (153, 50, 204),
+    "OliveDrab": (107, 142, 35),
+    "Chartreuse": (127, 255, 0),
+    "Peru": (205, 133, 63),
+    "Orange": (255, 165, 0),
+    "Red": (255, 0, 0),
+    "Wheat": (245, 222, 179),
+    "LightCyan": (224, 255, 255),
+    "LightSeaGreen": (32, 178, 170),
+    "BlueViolet": (138, 43, 226),
+    "LightSlateGrey": (119, 136, 153),
+    "Cyan": (0, 255, 255),
+    "MediumPurple": (147, 112, 219),
+    "MidnightBlue": (25, 25, 112),
+    "FireBrick": (178, 34, 34),
+    "PaleTurquoise": (175, 238, 238),
+    "PaleGoldenrod": (238, 232, 170),
+    "Gray": (128, 128, 128),
+    "MediumSeaGreen": (60, 179, 113),
+    "Moccasin": (255, 228, 181),
+    "Ivory": (255, 255, 240),
+    "DarkSlateBlue": (72, 61, 139),
+    "Beige": (245, 245, 220),
+    "Green": (0, 128, 0),
+    "SlateBlue": (106, 90, 205),
+    "Teal": (0, 128, 128),
+    "Azure": (240, 255, 255),
+    "LightSteelBlue": (176, 196, 222),
+    "DimGrey": (105, 105, 105),
+    "Tan": (210, 180, 140),
+    "AntiqueWhite": (250, 235, 215),
+    "SkyBlue": (135, 206, 235),
+    "GhostWhite": (248, 248, 255),
+    "MediumTurquoise": (72, 209, 204),
+    "FloralWhite": (255, 250, 240),
+    "LavenderBlush": (255, 240, 245),
+    "SeaGreen": (46, 139, 87),
+    "Lavender": (230, 230, 250),
+    "BlanchedAlmond": (255, 235, 205),
+    "DarkOliveGreen": (85, 107, 47),
+    "DarkSeaGreen": (143, 188, 143),
+    "SpringGreen": (0, 255, 127),
+    "Navy": (0, 0, 128),
+    "Orchid": (218, 112, 214),
+    "SaddleBrown": (139, 69, 19),
+    "IndianRed": (205, 92, 92),
+    "Snow": (255, 250, 250),
+    "SteelBlue": (70, 130, 180),
+    "MediumSlateBlue": (123, 104, 238),
+    "Black": (0, 0, 0),
+    "LightBlue": (173, 216, 230),
+    "Turquoise": (64, 224, 208),
+    "MediumVioletRed": (199, 21, 133),
+    "DarkViolet": (148, 0, 211),
+    "DarkGray": (169, 169, 169),
+    "Salmon": (250, 128, 114),
+    "DarkMagenta": (139, 0, 139),
+    "Tomato": (255, 99, 71),
+    "WhiteSmoke": (245, 245, 245),
+    "Goldenrod": (218, 165, 32),
+    "MediumSpringGreen": (0, 250, 154),
+    "DodgerBlue": (30, 144, 255),
+    "Aqua": (0, 255, 255),
+    "ForestGreen": (34, 139, 34),
+    "LemonChiffon": (255, 250, 205),
+    "LightSlateGray": (119, 136, 153),
+    "SlateGray": (112, 128, 144),
+    "LightGray": (211, 211, 211),
+    "Indigo": (75, 0, 130),
+    "CadetBlue": (95, 158, 160),
+    "LightYellow": (255, 255, 224),
+    "DarkOrange": (255, 140, 0),
+    "PowderBlue": (176, 224, 230),
+    "RoyalBlue": (65, 105, 225),
+    "Sienna": (160, 82, 45),
+    "Thistle": (216, 191, 216),
+    "Lime": (0, 255, 0),
+    "Seashell": (255, 245, 238),
+    "DarkRed": (139, 0, 0),
+    "LightSkyBlue": (135, 206, 250),
+    "YellowGreen": (154, 205, 50),
+    "Aquamarine": (127, 255, 212),
+    "LightCoral": (240, 128, 128),
+    "DarkSlateGray": (47, 79, 79),
+    "Khaki": (240, 230, 140),
+    "DarkGrey": (169, 169, 169),
+    "BurlyWood": (222, 184, 135),
+    "LightGoldenrodYellow": (250, 250, 210),
+    "MediumBlue": (0, 0, 205),
+    "DarkSalmon": (233, 150, 122),
+    "RosyBrown": (188, 143, 143),
+    "LightSalmon": (255, 160, 122),
+    "PaleVioletRed": (219, 112, 147),
+    "Coral": (255, 127, 80),
+    "Violet": (238, 130, 238),
+    "Grey": (128, 128, 128),
+    "LightGreen": (144, 238, 144),
+    "Linen": (250, 240, 230),
+    "OrangeRed": (255, 69, 0),
+    "DimGray": (105, 105, 105),
+    "Maroon": (128, 0, 0),
+    "LightPink": (255, 182, 193),
+    "MediumAquamarine": (102, 205, 170),
+    "OldLace": (253, 245, 230),
 }
-svgcolorslower = \
-    dict((key.lower(), value) for (key, value) in list(svgcolors.items()))
+svgcolorslower = dict((key.lower(), value) for (key, value) in list(svgcolors.items()))
 
 
 def getcolor(color):
@@ -258,9 +258,9 @@ def getcolor(color):
             b = float(int(color[3], 16) * 17 / 255.0)
         return (r, g, b, 0.0)
     # Color string 'rgb(0.12,0.23,0.3,0.0)'
-    elif color.lower().startswith('rgb('):
-        cvalues = color[3:].lstrip('(').rstrip(')').replace('%', '').split(',')
-        if '%' in color:
+    elif color.lower().startswith("rgb("):
+        cvalues = color[3:].lstrip("(").rstrip(")").replace("%", "").split(",")
+        if "%" in color:
             r, g, b = [int(float(cv)) / 100.0 for cv in cvalues]
         else:
             r, g, b = [int(float(cv)) / 255.0 for cv in cvalues]
@@ -299,7 +299,7 @@ def transformCopyShape(shape, m):
         The shape transformed by the matrix
     """
     # If there is no shear, these matrix operations will be very small
-    _s1 = abs(m.A11**2 + m.A12**2 - m.A21**2 - m.A22**2)
+    _s1 = abs(m.A11 ** 2 + m.A12 ** 2 - m.A21 ** 2 - m.A22 ** 2)
     _s2 = abs(m.A11 * m.A21 + m.A12 * m.A22)
     if _s1 < 1e-8 and _s2 < 1e-8:
         try:
@@ -313,7 +313,7 @@ def transformCopyShape(shape, m):
     return shape.transformGeometry(m)
 
 
-def getsize(length, mode='discard', base=1):
+def getsize(length, mode="discard", base=1):
     """Parse the length string containing number and unit.
 
     Parameters
@@ -349,81 +349,81 @@ def getsize(length, mode='discard', base=1):
     #
     # The percentage factor is arbitrarily chosen, as it should depend
     # on the viewport size or for filling patterns on the bounding box.
-    if mode == 'mm90.0':
+    if mode == "mm90.0":
         tomm = {
-            '': 25.4/90,  # default
-            'px': 25.4/90,
-            'pt': 4.0/3 * 25.4/90,
-            'pc': 15 * 25.4/90,
-            'mm': 1.0,
-            'cm': 10.0,
-            'in': 25.4,
-            'em': 15 * 2.54/90,
-            'ex': 10 * 2.54/90,
-            '%': 100
+            "": 25.4 / 90,  # default
+            "px": 25.4 / 90,
+            "pt": 4.0 / 3 * 25.4 / 90,
+            "pc": 15 * 25.4 / 90,
+            "mm": 1.0,
+            "cm": 10.0,
+            "in": 25.4,
+            "em": 15 * 2.54 / 90,
+            "ex": 10 * 2.54 / 90,
+            "%": 100,
         }
-    elif mode == 'mm96.0':
+    elif mode == "mm96.0":
         tomm = {
-            '': 25.4/96,  # default
-            'px': 25.4/96,
-            'pt': 4.0/3 * 25.4/96,
-            'pc': 15 * 25.4/96,
-            'mm': 1.0,
-            'cm': 10.0,
-            'in': 25.4,
-            'em': 15 * 2.54/96,
-            'ex': 10 * 2.54/96,
-            '%': 100
+            "": 25.4 / 96,  # default
+            "px": 25.4 / 96,
+            "pt": 4.0 / 3 * 25.4 / 96,
+            "pc": 15 * 25.4 / 96,
+            "mm": 1.0,
+            "cm": 10.0,
+            "in": 25.4,
+            "em": 15 * 2.54 / 96,
+            "ex": 10 * 2.54 / 96,
+            "%": 100,
         }
-    elif mode == 'css90.0':
+    elif mode == "css90.0":
         topx = {
-            '': 1.0,  # default
-            'px': 1.0,
-            'pt': 4.0/3,
-            'pc': 15,
-            'mm': 90.0/25.4,
-            'cm': 90.0/254.0,
-            'in': 90,
-            'em': 15,
-            'ex': 10,
-            '%': 100
+            "": 1.0,  # default
+            "px": 1.0,
+            "pt": 4.0 / 3,
+            "pc": 15,
+            "mm": 90.0 / 25.4,
+            "cm": 90.0 / 254.0,
+            "in": 90,
+            "em": 15,
+            "ex": 10,
+            "%": 100,
         }
-    elif mode == 'css96.0':
+    elif mode == "css96.0":
         topx = {
-            '': 1.0,  # default
-            'px': 1.0,
-            'pt': 4.0/3,
-            'pc': 15,
-            'mm': 96.0/25.4,
-            'cm': 96.0/254.0,
-            'in': 96,
-            'em': 15,
-            'ex': 10,
-            '%': 100
+            "": 1.0,  # default
+            "px": 1.0,
+            "pt": 4.0 / 3,
+            "pc": 15,
+            "mm": 96.0 / 25.4,
+            "cm": 96.0 / 254.0,
+            "in": 96,
+            "em": 15,
+            "ex": 10,
+            "%": 100,
         }
 
     # Extract a number from a string like '+56215.14565E+6mm'
-    _num = '([-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)'
-    _unit = '(px|pt|pc|mm|cm|in|em|ex|%)?'
+    _num = "([-+]?[0-9]*\.?[0-9]+([eE][-+]?[0-9]+)?)"
+    _unit = "(px|pt|pc|mm|cm|in|em|ex|%)?"
     _full_num = _num + _unit
     number, exponent, unit = re.findall(_full_num, length)[0]
-    if mode == 'discard':
+    if mode == "discard":
         return float(number)
-    elif mode == 'tuple':
+    elif mode == "tuple":
         return float(number), unit
-    elif mode == 'isabsolute':
-        return unit in ('mm', 'cm', 'in', 'px', 'pt')
-    elif mode == 'mm96.0' or mode == 'mm90.0':
+    elif mode == "isabsolute":
+        return unit in ("mm", "cm", "in", "px", "pt")
+    elif mode == "mm96.0" or mode == "mm90.0":
         return float(number) * tomm[unit]
-    elif mode == 'css96.0' or mode == 'css90.0':
-        if unit != '%':
+    elif mode == "css96.0" or mode == "css90.0":
+        if unit != "%":
             return float(number) * topx[unit]
         else:
             return float(number) * base
 
 
 def makewire(path, checkclosed=False, donttry=False):
-    '''Try to make a wire out of the list of edges.
+    """Try to make a wire out of the list of edges.
 
     If the wire functions fail or the wire is not closed,
     if required the TopoShapeCompoundPy::connectEdgesToWires()
@@ -445,10 +445,11 @@ def makewire(path, checkclosed=False, donttry=False):
         A wire created from the ordered edges.
     Part::Compound
         A compound made of the edges, but unable to form a wire.
-    '''
+    """
     if not donttry:
         try:
             import Part
+
             sh = Part.Wire(Part.__sortEdges__(path))
             # sh = Part.Wire(path)
             isok = (not checkclosed) or sh.isClosed()
@@ -461,8 +462,7 @@ def makewire(path, checkclosed=False, donttry=False):
         # Code from wmayer forum p15549 to fix the tolerance problem
         # original tolerance = 0.00001
         comp = Part.Compound(path)
-        _sh = comp.connectEdgesToWires(False,
-                                       10**(-1 * (Draft.precision() - 2)))
+        _sh = comp.connectEdgesToWires(False, 10 ** (-1 * (Draft.precision() - 2)))
         sh = _sh.Wires[0]
         if len(sh.Edges) != len(path):
             _wrn("Unable to form a wire")
@@ -471,7 +471,7 @@ def makewire(path, checkclosed=False, donttry=False):
 
 
 def arccenter2end(center, rx, ry, angle1, angledelta, xrotation=0.0):
-    '''Calculate start and end points, and flags of an arc.
+    """Calculate start and end points, and flags of an arc.
 
     Calculate start and end points, and flags of an arc given in
     ``center parametrization``.
@@ -498,11 +498,11 @@ def arccenter2end(center, rx, ry, angle1, angledelta, xrotation=0.0):
         Tuple indicating the end points of the arc, and two boolean values
         indicating whether the arc is less than 180 degrees or not,
         and whether the angledelta is negative.
-    '''
+    """
     vr1 = Vector(rx * math.cos(angle1), ry * math.sin(angle1), 0)
-    vr2 = Vector(rx * math.cos(angle1 + angledelta),
-                 ry * math.sin(angle1 + angledelta),
-                 0)
+    vr2 = Vector(
+        rx * math.cos(angle1 + angledelta), ry * math.sin(angle1 + angledelta), 0
+    )
     mxrot = FreeCAD.Matrix()
     mxrot.rotateZ(xrotation)
     v1 = mxrot.multiply(vr1).add(center)
@@ -512,9 +512,8 @@ def arccenter2end(center, rx, ry, angle1, angledelta, xrotation=0.0):
     return v1, v2, fa, fs
 
 
-def arcend2center(lastvec, currentvec, rx, ry,
-                  xrotation=0.0, correction=False):
-    '''Calculate the possible centers for an arc in endpoint parameterization.
+def arcend2center(lastvec, currentvec, rx, ry, xrotation=0.0, correction=False):
+    """Calculate the possible centers for an arc in endpoint parameterization.
 
     Calculate (positive and negative) possible centers for an arc given in
     ``endpoint parametrization``.
@@ -553,7 +552,7 @@ def arcend2center(lastvec, currentvec, rx, ry,
         The first element of the list is the positive tuple,
         consisting of center, angle, and angle increment;
         the second element is the negative tuple.
-    '''
+    """
     # scalefacsign = 1 if (largeflag != sweepflag) else -1
     rx = float(rx)
     ry = float(ry)
@@ -563,22 +562,22 @@ def arcend2center(lastvec, currentvec, rx, ry,
     m1.rotateZ(-xrotation)  # eq. 5.1
     v1 = m1.multiply(v0)
     if correction:
-        eparam = v1.x**2 / rx**2 + v1.y**2 / ry**2
+        eparam = v1.x ** 2 / rx ** 2 + v1.y ** 2 / ry ** 2
         if eparam > 1:
             eproot = math.sqrt(eparam)
             rx = eproot * rx
             ry = eproot * ry
-    denom = rx**2 * v1.y**2 + ry**2 * v1.x**2
-    numer = rx**2 * ry**2 - denom
+    denom = rx ** 2 * v1.y ** 2 + ry ** 2 * v1.x ** 2
+    numer = rx ** 2 * ry ** 2 - denom
     results = []
 
     # If the division is very small, set the scaling factor to zero,
     # otherwise try to calculate it by taking the square root
-    if abs(numer/denom) < 10**(-1 * (Draft.precision())):
+    if abs(numer / denom) < 10 ** (-1 * (Draft.precision())):
         scalefacpos = 0
     else:
         try:
-            scalefacpos = math.sqrt(numer/denom)
+            scalefacpos = math.sqrt(numer / denom)
         except ValueError:
             _msg("sqrt({0}/{1})".format(numer, denom))
             scalefacpos = 0
@@ -587,7 +586,7 @@ def arcend2center(lastvec, currentvec, rx, ry,
     for scalefacsign in (1, -1):
         scalefac = scalefacpos * scalefacsign
         # Step2 eq. 5.2
-        vcx1 = Vector(v1.y * rx/ry, -v1.x * ry/rx, 0).multiply(scalefac)
+        vcx1 = Vector(v1.y * rx / ry, -v1.x * ry / rx, 0).multiply(scalefac)
         m2 = FreeCAD.Matrix()
         m2.rotateZ(xrotation)
         centeroff = currentvec.add(lastvec)
@@ -602,16 +601,13 @@ def arcend2center(lastvec, currentvec, rx, ry,
         #                                        (-v1.y - vcx1.y)/ry,
         #                                        0))  # eq. 5.6
         # we need the right sign for the angle
-        angle1 = DraftVecUtils.angle(Vector(1, 0, 0),
-                                     Vector((v1.x - vcx1.x)/rx,
-                                            (v1.y - vcx1.y)/ry,
-                                            0))  # eq. 5.5
-        angledelta = DraftVecUtils.angle(Vector((v1.x - vcx1.x)/rx,
-                                                (v1.y - vcx1.y)/ry,
-                                                0),
-                                         Vector((-v1.x - vcx1.x)/rx,
-                                                (-v1.y - vcx1.y)/ry,
-                                                0))  # eq. 5.6
+        angle1 = DraftVecUtils.angle(
+            Vector(1, 0, 0), Vector((v1.x - vcx1.x) / rx, (v1.y - vcx1.y) / ry, 0)
+        )  # eq. 5.5
+        angledelta = DraftVecUtils.angle(
+            Vector((v1.x - vcx1.x) / rx, (v1.y - vcx1.y) / ry, 0),
+            Vector((-v1.x - vcx1.x) / rx, (-v1.y - vcx1.y) / ry, 0),
+        )  # eq. 5.6
         results.append((vcenter, angle1, angledelta))
 
         if rx < 0 or ry < 0:
@@ -648,8 +644,7 @@ class svgHandler(xml.sax.ContentHandler):
         _prefs = "User parameter:BaseApp/Preferences/Mod/Draft"
         params = FreeCAD.ParamGet(_prefs)
         self.style = params.GetInt("svgstyle")
-        self.disableUnitScaling = params.GetBool("svgDisableUnitScaling",
-                                                 False)
+        self.disableUnitScaling = params.GetBool("svgDisableUnitScaling", False)
         self.count = 0
         self.transform = None
         self.grouptransform = []
@@ -663,16 +658,16 @@ class svgHandler(xml.sax.ContentHandler):
         import Part
 
         if gui and draftui:
-            r = float(draftui.color.red()/255.0)
-            g = float(draftui.color.green()/255.0)
-            b = float(draftui.color.blue()/255.0)
+            r = float(draftui.color.red() / 255.0)
+            g = float(draftui.color.green() / 255.0)
+            b = float(draftui.color.blue() / 255.0)
             self.lw = float(draftui.linewidth)
         else:
             self.lw = float(params.GetInt("linewidth"))
             c = params.GetUnsigned("color")
-            r = float(((c >> 24) & 0xFF)/255)
-            g = float(((c >> 16) & 0xFF)/255)
-            b = float(((c >> 8) & 0xFF)/255)
+            r = float(((c >> 24) & 0xFF) / 255)
+            g = float(((c >> 16) & 0xFF) / 255)
+            b = float(((c >> 8) & 0xFF) / 255)
         self.col = (r, g, b, 0.0)
 
     def format(self, obj):
@@ -698,14 +693,14 @@ class svgHandler(xml.sax.ContentHandler):
             Dictionary of content of the elements
         """
         self.count += 1
-        _msg('processing element {0}: {1}'.format(self.count, name))
-        _msg('existing group transform: {}'.format(self.grouptransform))
+        _msg("processing element {0}: {1}".format(self.count, name))
+        _msg("existing group transform: {}".format(self.grouptransform))
 
         data = {}
         for (keyword, content) in list(attrs.items()):
             # print(keyword, content)
             if keyword != "style":
-                content = content.replace(',', ' ')
+                content = content.replace(",", " ")
                 content = content.split()
             # print(keyword, content)
             data[keyword] = content
@@ -713,10 +708,10 @@ class svgHandler(xml.sax.ContentHandler):
         # If it's the first element, which is <svg>,
         # check if the file is created by Inkscape, and its version,
         # in order to consider some attributes of the SVG file.
-        if self.count == 1 and name == 'svg':
-            if 'inkscape:version' in data:
-                inks_doc_name = attrs.getValue('sodipodi:docname')
-                inks_full_ver = attrs.getValue('inkscape:version')
+        if self.count == 1 and name == "svg":
+            if "inkscape:version" in data:
+                inks_doc_name = attrs.getValue("sodipodi:docname")
+                inks_full_ver = attrs.getValue("inkscape:version")
                 inks_ver_pars = re.search("\d+\.\d+", inks_full_ver)
                 if inks_ver_pars != None:
                     inks_ver_f = float(inks_ver_pars.group(0))
@@ -728,18 +723,23 @@ class svgHandler(xml.sax.ContentHandler):
                     self.svgdpi = 90.0
                 else:
                     self.svgdpi = 96.0
-            if 'inkscape:version' not in data:
-                _inf = ("This SVG file does not appear to have been produced "
-                        "by Inkscape. If it does not contain absolute units "
-                        "then a DPI setting will be used.")
-                _qst = ("Do you wish to use 96 dpi? Choosing 'No' "
-                        "will use the older standard 90 dpi.")
+            if "inkscape:version" not in data:
+                _inf = (
+                    "This SVG file does not appear to have been produced "
+                    "by Inkscape. If it does not contain absolute units "
+                    "then a DPI setting will be used."
+                )
+                _qst = (
+                    "Do you wish to use 96 dpi? Choosing 'No' "
+                    "will use the older standard 90 dpi."
+                )
                 if FreeCAD.GuiUp:
                     msgBox = QtGui.QMessageBox()
                     msgBox.setText(translate("ImportSVG", _inf))
                     msgBox.setInformativeText(translate("ImportSVG", _qst))
-                    msgBox.setStandardButtons(QtGui.QMessageBox.Yes
-                                              | QtGui.QMessageBox.No)
+                    msgBox.setStandardButtons(
+                        QtGui.QMessageBox.Yes | QtGui.QMessageBox.No
+                    )
                     msgBox.setDefaultButton(QtGui.QMessageBox.No)
                     ret = msgBox.exec_()
                     if ret == QtGui.QMessageBox.Yes:
@@ -749,37 +749,51 @@ class svgHandler(xml.sax.ContentHandler):
                     if ret:
                         _msg(translate("ImportSVG", _inf))
                         _msg(translate("ImportSVG", _qst))
-                        _msg("*** User specified {} "
-                             "dpi ***".format(self.svgdpi))
+                        _msg("*** User specified {} " "dpi ***".format(self.svgdpi))
                 else:
                     self.svgdpi = 96.0
                     _msg(_inf)
                     _msg("*** Assuming {} dpi ***".format(self.svgdpi))
             if self.svgdpi == 1.0:
-                _wrn("This SVG file (" + inks_doc_name + ") "
-                     "has an unrecognised format which means "
-                     "the dpi could not be determined; "
-                     "assuming 96 dpi")
+                _wrn(
+                    "This SVG file (" + inks_doc_name + ") "
+                    "has an unrecognised format which means "
+                    "the dpi could not be determined; "
+                    "assuming 96 dpi"
+                )
                 self.svgdpi = 96.0
 
-        if 'style' in data:
-            if not data['style']:
+        if "style" in data:
+            if not data["style"]:
                 # Empty style attribute stops inheriting from parent
                 pass
             else:
-                content = data['style'].replace(' ', '')
-                content = content.split(';')
+                content = data["style"].replace(" ", "")
+                content = content.split(";")
                 for i in content:
-                    pair = i.split(':')
+                    pair = i.split(":")
                     if len(pair) > 1:
                         data[pair[0]] = pair[1]
 
-        for k in ['x', 'y', 'x1', 'y1', 'x2', 'y2',
-                  'r', 'rx', 'ry', 'cx', 'cy', 'width', 'height']:
+        for k in [
+            "x",
+            "y",
+            "x1",
+            "y1",
+            "x2",
+            "y2",
+            "r",
+            "rx",
+            "ry",
+            "cx",
+            "cy",
+            "width",
+            "height",
+        ]:
             if k in data:
-                data[k] = getsize(data[k][0], 'css' + str(self.svgdpi))
+                data[k] = getsize(data[k][0], "css" + str(self.svgdpi))
 
-        for k in ['fill', 'stroke', 'stroke-width', 'font-size']:
+        for k in ["fill", "stroke", "stroke-width", "font-size"]:
             if k in data:
                 if isinstance(data[k], list):
                     if data[k][0].lower().startswith("rgb("):
@@ -793,58 +807,55 @@ class svgHandler(xml.sax.ContentHandler):
         self.width = None
         self.text = None
 
-        if name == 'svg':
+        if name == "svg":
             m = FreeCAD.Matrix()
             if not self.disableUnitScaling:
-                if 'width' in data \
-                        and 'height' in data \
-                        and 'viewBox' in data:
-                    vbw = float(data['viewBox'][2])
-                    vbh = float(data['viewBox'][3])
-                    w = attrs.getValue('width')
-                    h = attrs.getValue('height')
+                if "width" in data and "height" in data and "viewBox" in data:
+                    vbw = float(data["viewBox"][2])
+                    vbh = float(data["viewBox"][3])
+                    w = attrs.getValue("width")
+                    h = attrs.getValue("height")
                     self.viewbox = (vbw, vbh)
                     if len(self.grouptransform) == 0:
-                        unitmode = 'mm' + str(self.svgdpi)
+                        unitmode = "mm" + str(self.svgdpi)
                     else:
                         # nested svg element
-                        unitmode = 'css' + str(self.svgdpi)
+                        unitmode = "css" + str(self.svgdpi)
                     abw = getsize(w, unitmode)
                     abh = getsize(h, unitmode)
                     sx = abw / vbw
                     sy = abh / vbh
-                    _data = data.get('preserveAspectRatio', [])
-                    preservearstr = ' '.join(_data).lower()
-                    uniformscaling = round(sx/sy, 5) == 1
+                    _data = data.get("preserveAspectRatio", [])
+                    preservearstr = " ".join(_data).lower()
+                    uniformscaling = round(sx / sy, 5) == 1
                     if uniformscaling:
                         m.scale(Vector(sx, sy, 1))
                     else:
-                        _wrn('Scaling factors do not match!')
-                        if preservearstr.startswith('none'):
+                        _wrn("Scaling factors do not match!")
+                        if preservearstr.startswith("none"):
                             m.scale(Vector(sx, sy, 1))
                         else:
                             # preserve the aspect ratio
-                            if preservearstr.endswith('slice'):
+                            if preservearstr.endswith("slice"):
                                 sxy = max(sx, sy)
                             else:
                                 sxy = min(sx, sy)
                             m.scale(Vector(sxy, sxy, 1))
                 elif len(self.grouptransform) == 0:
                     # fallback to current dpi
-                    m.scale(Vector(25.4/self.svgdpi, 25.4/self.svgdpi, 1))
+                    m.scale(Vector(25.4 / self.svgdpi, 25.4 / self.svgdpi, 1))
             self.grouptransform.append(m)
-        if 'fill' in data:
-            if data['fill'][0] != 'none':
-                self.fill = getcolor(data['fill'])
-        if 'stroke' in data:
-            if data['stroke'][0] != 'none':
-                self.color = getcolor(data['stroke'])
-        if 'stroke-width' in data:
-            if data['stroke-width'] != 'none':
-                self.width = getsize(data['stroke-width'],
-                                     'css' + str(self.svgdpi))
-        if 'transform' in data:
-            m = self.getMatrix(attrs.getValue('transform'))
+        if "fill" in data:
+            if data["fill"][0] != "none":
+                self.fill = getcolor(data["fill"])
+        if "stroke" in data:
+            if data["stroke"][0] != "none":
+                self.color = getcolor(data["stroke"])
+        if "stroke-width" in data:
+            if data["stroke-width"] != "none":
+                self.width = getsize(data["stroke-width"], "css" + str(self.svgdpi))
+        if "transform" in data:
+            m = self.getMatrix(attrs.getValue("transform"))
             if name == "g":
                 self.grouptransform.append(m)
             else:
@@ -858,16 +869,16 @@ class svgHandler(xml.sax.ContentHandler):
             self.width = self.lw
 
         pathname = None
-        if 'id' in data:
-            pathname = data['id'][0]
-            _msg('name: {}'.format(pathname))
+        if "id" in data:
+            pathname = data["id"][0]
+            _msg("name: {}".format(pathname))
 
         # Process paths
         if name == "path":
-            _msg('data: {}'.format(data))
+            _msg("data: {}".format(data))
 
             if not pathname:
-                pathname = 'Path'
+                pathname = "Path"
 
             path = []
             point = []
@@ -888,24 +899,24 @@ class svgHandler(xml.sax.ContentHandler):
                 self.applyTrans(obj)
                 self.format(obj)
                 self.lastdim = obj
-                data['d'] = []
+                data["d"] = []
 
-            _op = '([mMlLhHvVaAcCqQsStTzZ])'
-            _op2 = '([^mMlLhHvVaAcCqQsStTzZ]*)'
-            _command = '\s*?' + _op + '\s*?' + _op2 + '\s*?'
+            _op = "([mMlLhHvVaAcCqQsStTzZ])"
+            _op2 = "([^mMlLhHvVaAcCqQsStTzZ]*)"
+            _command = "\s*?" + _op + "\s*?" + _op2 + "\s*?"
             pathcommandsre = re.compile(_command, re.DOTALL)
 
-            _num = '[-+]?[0-9]*\.?[0-9]+'
-            _exp = '([eE][-+]?[0-9]+)?'
-            _point = '(' + _num + _exp + ')'
+            _num = "[-+]?[0-9]*\.?[0-9]+"
+            _exp = "([eE][-+]?[0-9]+)?"
+            _point = "(" + _num + _exp + ")"
             pointsre = re.compile(_point, re.DOTALL)
-            _commands = pathcommandsre.findall(' '.join(data['d']))
+            _commands = pathcommandsre.findall(" ".join(data["d"]))
             for d, pointsstr in _commands:
                 relative = d.islower()
-                _points = pointsre.findall(pointsstr.replace(',', ' '))
+                _points = pointsre.findall(pointsstr.replace(",", " "))
                 pointlist = [float(number) for number, exponent in _points]
 
-                if (d == "M" or d == "m"):
+                if d == "M" or d == "m":
                     x = pointlist.pop(0)
                     y = pointlist.pop(0)
                     if path:
@@ -929,11 +940,10 @@ class svgHandler(xml.sax.ContentHandler):
                     else:
                         lastvec = Vector(x, -y, 0)
                     firstvec = lastvec
-                    _msg('move {}'.format(lastvec))
+                    _msg("move {}".format(lastvec))
                     lastpole = None
 
-                if (d == "L" or d == "l") \
-                        or ((d == 'm' or d == 'M') and pointlist):
+                if (d == "L" or d == "l") or ((d == "m" or d == "M") and pointlist):
                     for x, y in zip(pointlist[0::2], pointlist[1::2]):
                         if relative:
                             currentvec = lastvec.add(Vector(x, -y, 0))
@@ -946,7 +956,7 @@ class svgHandler(xml.sax.ContentHandler):
                             lastvec = currentvec
                             path.append(seg)
                         lastpole = None
-                elif (d == "H" or d == "h"):
+                elif d == "H" or d == "h":
                     for x in pointlist:
                         if relative:
                             currentvec = lastvec.add(Vector(x, 0, 0))
@@ -956,7 +966,7 @@ class svgHandler(xml.sax.ContentHandler):
                         lastvec = currentvec
                         lastpole = None
                         path.append(seg)
-                elif (d == "V" or d == "v"):
+                elif d == "V" or d == "v":
                     for y in pointlist:
                         if relative:
                             currentvec = lastvec.add(Vector(0, -y, 0))
@@ -968,14 +978,17 @@ class svgHandler(xml.sax.ContentHandler):
                             lastvec = currentvec
                             lastpole = None
                             path.append(seg)
-                elif (d == "A" or d == "a"):
-                    piter = zip(pointlist[0::7], pointlist[1::7],
-                                pointlist[2::7], pointlist[3::7],
-                                pointlist[4::7], pointlist[5::7],
-                                pointlist[6::7])
-                    for (rx, ry, xrotation,
-                         largeflag, sweepflag,
-                         x, y) in piter:
+                elif d == "A" or d == "a":
+                    piter = zip(
+                        pointlist[0::7],
+                        pointlist[1::7],
+                        pointlist[2::7],
+                        pointlist[3::7],
+                        pointlist[4::7],
+                        pointlist[5::7],
+                        pointlist[6::7],
+                    )
+                    for (rx, ry, xrotation, largeflag, sweepflag, x, y) in piter:
                         # support for large-arc and x-rotation is missing
                         if relative:
                             currentvec = lastvec.add(Vector(x, -y, 0))
@@ -983,24 +996,23 @@ class svgHandler(xml.sax.ContentHandler):
                             currentvec = Vector(x, -y, 0)
                         chord = currentvec.sub(lastvec)
                         # small circular arc
-                        _precision = 10**(-1*Draft.precision())
+                        _precision = 10 ** (-1 * Draft.precision())
                         if (not largeflag) and abs(rx - ry) < _precision:
                             # perp = chord.cross(Vector(0, 0, -1))
                             # here is a better way to find the perpendicular
                             if sweepflag == 1:
                                 # clockwise
-                                perp = DraftVecUtils.rotate2D(chord,
-                                                              -math.pi/2)
+                                perp = DraftVecUtils.rotate2D(chord, -math.pi / 2)
                             else:
                                 # anticlockwise
-                                perp = DraftVecUtils.rotate2D(chord, math.pi/2)
+                                perp = DraftVecUtils.rotate2D(chord, math.pi / 2)
                             chord.multiply(0.5)
                             if chord.Length > rx:
                                 a = 0
                             else:
-                                a = math.sqrt(rx**2 - chord.Length**2)
+                                a = math.sqrt(rx ** 2 - chord.Length ** 2)
                             s = rx - a
-                            perp.multiply(s/perp.Length)
+                            perp.multiply(s / perp.Length)
                             midpoint = lastvec.add(chord.add(perp))
                             _seg = Part.Arc(lastvec, midpoint, currentvec)
                             seg = _seg.toShape()
@@ -1009,14 +1021,16 @@ class svgHandler(xml.sax.ContentHandler):
                             # Calculate the possible centers for an arc
                             # in 'endpoint parameterization'.
                             _xrot = math.radians(-xrotation)
-                            (solution,
-                             (rx, ry)) = arcend2center(lastvec,
-                                                       currentvec,
-                                                       rx, ry,
-                                                       xrotation=_xrot,
-                                                       correction=True)
+                            (solution, (rx, ry)) = arcend2center(
+                                lastvec,
+                                currentvec,
+                                rx,
+                                ry,
+                                xrotation=_xrot,
+                                correction=True,
+                            )
                             # Chose one of the two solutions
-                            negsol = (largeflag != sweepflag)
+                            negsol = largeflag != sweepflag
                             vcenter, angle1, angledelta = solution[negsol]
                             # print(angle1)
                             # print(angledelta)
@@ -1037,10 +1051,11 @@ class svgHandler(xml.sax.ContentHandler):
                                 # angle1 = math.pi - angle1
 
                             d90 = math.radians(90)
-                            e1a = Part.Arc(e1,
-                                           angle1 - swapaxis * d90,
-                                           angle1 + angledelta
-                                                  - swapaxis * d90)
+                            e1a = Part.Arc(
+                                e1,
+                                angle1 - swapaxis * d90,
+                                angle1 + angledelta - swapaxis * d90,
+                            )
                             # e1a = Part.Arc(e1,
                             #                angle1 - 0 * swapaxis * d90,
                             #                angle1 + angledelta
@@ -1048,7 +1063,7 @@ class svgHandler(xml.sax.ContentHandler):
                             seg = e1a.toShape()
                             if swapaxis:
                                 seg.rotate(vcenter, Vector(0, 0, 1), 90)
-                            _precision = 10**(-1*Draft.precision())
+                            _precision = 10 ** (-1 * Draft.precision())
                             if abs(xrotation) > _precision:
                                 seg.rotate(vcenter, Vector(0, 0, 1), -xrotation)
                             if sweepflag:
@@ -1063,24 +1078,32 @@ class svgHandler(xml.sax.ContentHandler):
                         lastpole = None
                         path.append(seg)
                 elif (d == "C" or d == "c") or (d == "S" or d == "s"):
-                    smooth = (d == 'S' or d == 's')
+                    smooth = d == "S" or d == "s"
                     if smooth:
-                        piter = list(zip(pointlist[2::4],
-                                         pointlist[3::4],
-                                         pointlist[0::4],
-                                         pointlist[1::4],
-                                         pointlist[2::4],
-                                         pointlist[3::4]))
+                        piter = list(
+                            zip(
+                                pointlist[2::4],
+                                pointlist[3::4],
+                                pointlist[0::4],
+                                pointlist[1::4],
+                                pointlist[2::4],
+                                pointlist[3::4],
+                            )
+                        )
                     else:
-                        piter = list(zip(pointlist[0::6],
-                                         pointlist[1::6],
-                                         pointlist[2::6],
-                                         pointlist[3::6],
-                                         pointlist[4::6],
-                                         pointlist[5::6]))
+                        piter = list(
+                            zip(
+                                pointlist[0::6],
+                                pointlist[1::6],
+                                pointlist[2::6],
+                                pointlist[3::6],
+                                pointlist[4::6],
+                                pointlist[5::6],
+                            )
+                        )
                     for p1x, p1y, p2x, p2y, x, y in piter:
                         if smooth:
-                            if lastpole is not None and lastpole[0] == 'cubic':
+                            if lastpole is not None and lastpole[0] == "cubic":
                                 pole1 = lastvec.sub(lastpole[1]).add(lastvec)
                             else:
                                 pole1 = lastvec
@@ -1104,12 +1127,10 @@ class svgHandler(xml.sax.ContentHandler):
                             #       mainv.normalize(),
                             #       pole1v.normalize(),
                             #       pole2v.normalize())
-                            _precision = 10**(-1*(2+Draft.precision()))
+                            _precision = 10 ** (-1 * (2 + Draft.precision()))
                             _d1 = pole1.distanceToLine(lastvec, currentvec)
                             _d2 = pole2.distanceToLine(lastvec, currentvec)
-                            if True and \
-                                    _d1 < _precision and \
-                                    _d2 < _precision:
+                            if True and _d1 < _precision and _d2 < _precision:
                                 # print("straight segment")
                                 _seg = Part.LineSegment(lastvec, currentvec)
                                 seg = _seg.toShape()
@@ -1120,24 +1141,31 @@ class svgHandler(xml.sax.ContentHandler):
                                 seg = b.toShape()
                             # print("connect ", lastvec, currentvec)
                             lastvec = currentvec
-                            lastpole = ('cubic', pole2)
+                            lastpole = ("cubic", pole2)
                             path.append(seg)
                 elif (d == "Q" or d == "q") or (d == "T" or d == "t"):
-                    smooth = (d == 'T' or d == 't')
+                    smooth = d == "T" or d == "t"
                     if smooth:
-                        piter = list(zip(pointlist[1::2],
-                                         pointlist[1::2],
-                                         pointlist[0::2],
-                                         pointlist[1::2]))
+                        piter = list(
+                            zip(
+                                pointlist[1::2],
+                                pointlist[1::2],
+                                pointlist[0::2],
+                                pointlist[1::2],
+                            )
+                        )
                     else:
-                        piter = list(zip(pointlist[0::4],
-                                         pointlist[1::4],
-                                         pointlist[2::4],
-                                         pointlist[3::4]))
+                        piter = list(
+                            zip(
+                                pointlist[0::4],
+                                pointlist[1::4],
+                                pointlist[2::4],
+                                pointlist[3::4],
+                            )
+                        )
                     for px, py, x, y in piter:
                         if smooth:
-                            if (lastpole is not None
-                                    and lastpole[0] == 'quadratic'):
+                            if lastpole is not None and lastpole[0] == "quadratic":
                                 pole = lastvec.sub(lastpole[1]).add(lastvec)
                             else:
                                 pole = lastvec
@@ -1152,11 +1180,9 @@ class svgHandler(xml.sax.ContentHandler):
                             currentvec = Vector(x, -y, 0)
 
                         if not DraftVecUtils.equals(currentvec, lastvec):
-                            _precision = 20**(-1*(2+Draft.precision()))
-                            _distance = pole.distanceToLine(lastvec,
-                                                            currentvec)
-                            if True and \
-                                    _distance < _precision:
+                            _precision = 20 ** (-1 * (2 + Draft.precision()))
+                            _distance = pole.distanceToLine(lastvec, currentvec)
+                            if True and _distance < _precision:
                                 # print("straight segment")
                                 _seg = Part.LineSegment(lastvec, currentvec)
                                 seg = _seg.toShape()
@@ -1167,7 +1193,7 @@ class svgHandler(xml.sax.ContentHandler):
                                 seg = b.toShape()
                             # print("connect ", lastvec, currentvec)
                             lastvec = currentvec
-                            lastpole = ('quadratic', pole)
+                            lastpole = ("quadratic", pole)
                             path.append(seg)
                 elif (d == "Z") or (d == "z"):
                     if not DraftVecUtils.equals(lastvec, firstvec):
@@ -1181,9 +1207,7 @@ class svgHandler(xml.sax.ContentHandler):
                         # The path should be closed by now
                         # sh = makewire(path, True)
                         sh = makewire(path, donttry=False)
-                        if self.fill \
-                                and len(sh.Wires) == 1 \
-                                and sh.Wires[0].isClosed():
+                        if self.fill and len(sh.Wires) == 1 and sh.Wires[0].isClosed():
                             sh = Part.Face(sh)
                         sh = self.applyTrans(sh)
                         obj = self.doc.addObject("Part::Feature", pathname)
@@ -1213,59 +1237,45 @@ class svgHandler(xml.sax.ContentHandler):
         # Process rects
         if name == "rect":
             if not pathname:
-                pathname = 'Rectangle'
+                pathname = "Rectangle"
             edges = []
             if "x" not in data:
                 data["x"] = 0
             if "y" not in data:
                 data["y"] = 0
             # Negative values are invalid
-            _precision = 10**(-1*Draft.precision())
-            if ('rx' not in data or data['rx'] < _precision) \
-                    and ('ry' not in data or data['ry'] < _precision):
+            _precision = 10 ** (-1 * Draft.precision())
+            if ("rx" not in data or data["rx"] < _precision) and (
+                "ry" not in data or data["ry"] < _precision
+            ):
                 # if True:
-                p1 = Vector(data['x'],
-                            -data['y'],
-                            0)
-                p2 = Vector(data['x'] + data['width'],
-                            -data['y'],
-                            0)
-                p3 = Vector(data['x'] + data['width'],
-                            -data['y'] - data['height'],
-                            0)
-                p4 = Vector(data['x'],
-                            -data['y'] - data['height'],
-                            0)
+                p1 = Vector(data["x"], -data["y"], 0)
+                p2 = Vector(data["x"] + data["width"], -data["y"], 0)
+                p3 = Vector(data["x"] + data["width"], -data["y"] - data["height"], 0)
+                p4 = Vector(data["x"], -data["y"] - data["height"], 0)
                 edges.append(Part.LineSegment(p1, p2).toShape())
                 edges.append(Part.LineSegment(p2, p3).toShape())
                 edges.append(Part.LineSegment(p3, p4).toShape())
                 edges.append(Part.LineSegment(p4, p1).toShape())
             else:
                 # rounded edges
-                rx = data.get('rx')
-                ry = data.get('ry') or rx
+                rx = data.get("rx")
+                ry = data.get("ry") or rx
                 rx = rx or ry
-                if rx > 2 * data['width']:
-                    rx = data['width'] / 2.0
-                if ry > 2 * data['height']:
-                    ry = data['height'] / 2.0
+                if rx > 2 * data["width"]:
+                    rx = data["width"] / 2.0
+                if ry > 2 * data["height"]:
+                    ry = data["height"] / 2.0
 
-                p1 = Vector(data['x'] + rx,
-                            -data['y'] - data['height'] + ry,
-                            0)
-                p2 = Vector(data['x'] + data['width'] - rx,
-                            -data['y'] - data['height'] + ry,
-                            0)
-                p3 = Vector(data['x'] + data['width'] - rx,
-                            -data['y'] - ry,
-                            0)
-                p4 = Vector(data['x'] + rx,
-                            -data['y'] - ry,
-                            0)
+                p1 = Vector(data["x"] + rx, -data["y"] - data["height"] + ry, 0)
+                p2 = Vector(
+                    data["x"] + data["width"] - rx, -data["y"] - data["height"] + ry, 0
+                )
+                p3 = Vector(data["x"] + data["width"] - rx, -data["y"] - ry, 0)
+                p4 = Vector(data["x"] + rx, -data["y"] - ry, 0)
 
                 if rx < 0 or ry < 0:
-                    _wrn("Warning: 'rx' or 'ry' is negative, "
-                         "check the SVG file")
+                    _wrn("Warning: 'rx' or 'ry' is negative, " "check the SVG file")
 
                 if rx >= ry:
                     e = Part.Ellipse(Vector(), rx, ry)
@@ -1283,8 +1293,7 @@ class svgHandler(xml.sax.ContentHandler):
                     # rotate +90 degrees
                     m = FreeCAD.Matrix(0, -1, 0, 0, 1, 0)
                 esh = []
-                for arc, point in ((e1a, p1), (e2a, p2),
-                                   (e3a, p3), (e4a, p4)):
+                for arc, point in ((e1a, p1), (e2a, p2), (e3a, p3), (e4a, p4)):
                     m1 = FreeCAD.Matrix(m)
                     m1.move(point)
                     arc.transform(m1)
@@ -1311,9 +1320,9 @@ class svgHandler(xml.sax.ContentHandler):
         # Process lines
         if name == "line":
             if not pathname:
-                pathname = 'Line'
-            p1 = Vector(data['x1'], -data['y1'], 0)
-            p2 = Vector(data['x2'], -data['y2'], 0)
+                pathname = "Line"
+            p1 = Vector(data["x1"], -data["y1"], 0)
+            p2 = Vector(data["x2"], -data["y2"], 0)
             sh = Part.LineSegment(p1, p2).toShape()
             sh = self.applyTrans(sh)
             obj = self.doc.addObject("Part::Feature", pathname)
@@ -1333,14 +1342,14 @@ class svgHandler(xml.sax.ContentHandler):
             # but it would be more difficult to search for duplicate
             # points beforehand.
             if not pathname:
-                pathname = 'Polyline'
-            points = [float(d) for d in data['points']]
-            _msg('points {}'.format(points))
+                pathname = "Polyline"
+            points = [float(d) for d in data["points"]]
+            _msg("points {}".format(points))
             lenpoints = len(points)
             if lenpoints >= 4 and lenpoints % 2 == 0:
                 lastvec = Vector(points[0], -points[1], 0)
                 path = []
-                if name == 'polygon':
+                if name == "polygon":
                     points = points + points[:2]  # emulate closepath
                 for svgx, svgy in zip(points[2::2], points[3::2]):
                     currentvec = Vector(svgx, -svgy, 0)
@@ -1362,10 +1371,10 @@ class svgHandler(xml.sax.ContentHandler):
         # Process ellipses
         if name == "ellipse":
             if not pathname:
-                pathname = 'Ellipse'
-            c = Vector(data.get('cx', 0), -data.get('cy', 0), 0)
-            rx = data['rx']
-            ry = data['ry']
+                pathname = "Ellipse"
+            c = Vector(data.get("cx", 0), -data.get("cy", 0), 0)
+            rx = data["rx"]
+            ry = data["ry"]
 
             if rx < 0 or ry < 0:
                 _wrn("Warning: 'rx' or 'ry' is negative, check the SVG file")
@@ -1388,9 +1397,9 @@ class svgHandler(xml.sax.ContentHandler):
         # Process circles
         if name == "circle" and "freecad:skip" not in data:
             if not pathname:
-                pathname = 'Circle'
-            c = Vector(data.get('cx', 0), -data.get('cy', 0), 0)
-            r = data['r']
+                pathname = "Circle"
+            c = Vector(data.get("cx", 0), -data.get("cy", 0), 0)
+            r = data["r"]
             sh = Part.makeCircle(r)
             if self.fill:
                 sh = Part.Wire([sh])
@@ -1407,23 +1416,22 @@ class svgHandler(xml.sax.ContentHandler):
         if name in ["text", "tspan"]:
             if "freecad:skip" not in data:
                 _msg("processing a text")
-                if 'x' in data:
-                    self.x = data['x']
+                if "x" in data:
+                    self.x = data["x"]
                 else:
                     self.x = 0
-                if 'y' in data:
-                    self.y = data['y']
+                if "y" in data:
+                    self.y = data["y"]
                 else:
                     self.y = 0
-                if 'font-size' in data:
-                    if data['font-size'] != 'none':
-                        self.text = getsize(data['font-size'],
-                                            'css' + str(self.svgdpi))
+                if "font-size" in data:
+                    if data["font-size"] != "none":
+                        self.text = getsize(data["font-size"], "css" + str(self.svgdpi))
                 else:
                     self.text = 1
             else:
                 if self.lastdim:
-                    _font_size = int(getsize(data['font-size']))
+                    _font_size = int(getsize(data["font-size"]))
                     self.lastdim.ViewObject.FontSize = _font_size
 
         # Process symbols
@@ -1442,7 +1450,7 @@ class svgHandler(xml.sax.ContentHandler):
                             shapes.append(o.Shape)
                     if shapes:
                         sh = Part.makeCompound(shapes)
-                        v = Vector(float(data['x']), -float(data['y']), 0)
+                        v = Vector(float(data["x"]), -float(data["y"]), 0)
                         sh.translate(v)
                         sh = self.applyTrans(sh)
                         obj = self.doc.addObject("Part::Feature", symbol)
@@ -1452,15 +1460,16 @@ class svgHandler(xml.sax.ContentHandler):
                     _msg("no symbol data")
 
         _msg("done processing element {}".format(self.count))
+
     # startElement()
 
     def characters(self, content):
         """Read characters from the given string."""
         if self.text:
             _msg("reading characters {}".format(content))
-            obj = self.doc.addObject("App::Annotation", 'Text')
+            obj = self.doc.addObject("App::Annotation", "Text")
             # use ignore to not break import if char is not found in latin1
-            obj.LabelText = content.encode('latin1', 'ignore')
+            obj.LabelText = content.encode("latin1", "ignore")
             if self.currentsymbol:
                 self.symbols[self.currentsymbol].append(obj)
             vec = Vector(self.x, -self.y, 0)
@@ -1497,8 +1506,7 @@ class svgHandler(xml.sax.ContentHandler):
             if self.doc.getObject("svgsymbols"):
                 group = self.doc.getObject("svgsymbols")
             else:
-                group = self.doc.addObject("App::DocumentObjectGroup",
-                                           "svgsymbols")
+                group = self.doc.addObject("App::DocumentObjectGroup", "svgsymbols")
             for o in self.symbols[self.currentsymbol]:
                 group.addObject(o)
             self.currentsymbol = None
@@ -1523,13 +1531,12 @@ class svgHandler(xml.sax.ContentHandler):
                 # see issue #2062
                 sh = sh.transformGeometry(transform)
             return sh
-        elif Draft.getType(sh) in ["Dimension","LinearDimension"]:
+        elif Draft.getType(sh) in ["Dimension", "LinearDimension"]:
             pts = []
             for p in [sh.Start, sh.End, sh.Dimline]:
                 cp = Vector(p)
                 if self.transform:
-                    _msg("applying object transform: "
-                         "{}".format(self.transform))
+                    _msg("applying object transform: " "{}".format(self.transform))
                     cp = self.transform.multiply(cp)
                 for transform in self.grouptransform[::-1]:
                     _msg("applying group transform: {}".format(transform))
@@ -1567,26 +1574,26 @@ class svgHandler(xml.sax.ContentHandler):
         Base::Matrix4D
             The translated matrix.
         """
-        _op = '(matrix|translate|scale|rotate|skewX|skewY)'
-        _val = '\((.*?)\)'
-        _transf = _op + '\s*?' + _val
+        _op = "(matrix|translate|scale|rotate|skewX|skewY)"
+        _val = "\((.*?)\)"
+        _transf = _op + "\s*?" + _val
         transformre = re.compile(_transf, re.DOTALL)
         m = FreeCAD.Matrix()
         for transformation, arguments in transformre.findall(tr):
-            _args_rep = arguments.replace(',', ' ').split()
+            _args_rep = arguments.replace(",", " ").split()
             argsplit = [float(arg) for arg in _args_rep]
             # m.multiply(FreeCAD.Matrix(1, 0, 0, 0, 0, -1))
             # print('%s:%s %s %d' % (transformation, arguments,
             #                        argsplit, len(argsplit)))
-            if transformation == 'translate':
+            if transformation == "translate":
                 tx = argsplit[0]
                 ty = argsplit[1] if len(argsplit) > 1 else 0.0
                 m.move(Vector(tx, -ty, 0))
-            elif transformation == 'scale':
+            elif transformation == "scale":
                 sx = argsplit[0]
                 sy = argsplit[1] if len(argsplit) > 1 else sx
                 m.scale(Vector(sx, sy, 1))
-            elif transformation == 'rotate':
+            elif transformation == "rotate":
                 cx = 0
                 cy = 0
                 angle = argsplit[0]
@@ -1599,15 +1606,13 @@ class svgHandler(xml.sax.ContentHandler):
                 m.rotateZ(math.radians(-angle))
                 if len(argsplit) >= 3:
                     m.move(Vector(-cx, cy, 0))
-            elif transformation == 'skewX':
-                _m = FreeCAD.Matrix(1,
-                                    -math.tan(math.radians(argsplit[0])))
+            elif transformation == "skewX":
+                _m = FreeCAD.Matrix(1, -math.tan(math.radians(argsplit[0])))
                 m = m.multiply(_m)
-            elif transformation == 'skewY':
-                _m = FreeCAD.Matrix(1, 0, 0, 0,
-                                    -math.tan(math.radians(argsplit[0])))
+            elif transformation == "skewY":
+                _m = FreeCAD.Matrix(1, 0, 0, 0, -math.tan(math.radians(argsplit[0])))
                 m = m.multiply(_m)
-            elif transformation == 'matrix':
+            elif transformation == "matrix":
                 # transformation matrix:
                 #    FreeCAD                 SVG
                 # (+A -C +0 +E)           (A C 0 E)
@@ -1616,17 +1621,26 @@ class svgHandler(xml.sax.ContentHandler):
                 # (+0 -0 +0 +1)           (0 0 0 1)
                 #
                 # Put the first two rows of the matrix
-                _m = FreeCAD.Matrix(argsplit[0], -argsplit[2],
-                                    0, argsplit[4],
-                                    -argsplit[1], argsplit[3],
-                                    0, -argsplit[5])
+                _m = FreeCAD.Matrix(
+                    argsplit[0],
+                    -argsplit[2],
+                    0,
+                    argsplit[4],
+                    -argsplit[1],
+                    argsplit[3],
+                    0,
+                    -argsplit[5],
+                )
                 m = m.multiply(_m)
             # else:
             #    print('SKIPPED %s' % transformation)
             # print("m = ", m)
         # print("generating transformation: ", m)
         return m
+
     # getMatrix
+
+
 # class svgHandler
 
 
@@ -1646,10 +1660,10 @@ def decodeName(name):
         If it fails it returns the original `name`.
     """
     try:
-        decodedName = (name.decode("utf8"))
+        decodedName = name.decode("utf8")
     except UnicodeDecodeError:
         try:
-            decodedName = (name.decode("latin1"))
+            decodedName = name.decode("latin1")
         except UnicodeDecodeError:
             _err("SVG error: couldn't determine character encoding")
             decodedName = name
@@ -1689,16 +1703,16 @@ def getContents(filename, tag, stringmode=False):
     # Replace the newline character with a string
     # so that it's easiert to parse; later on the newline character
     # will be restored
-    contents = contents.replace('\n', '_linebreak')
-    searchpat = '<' + tag + '.*?</' + tag + '>'
+    contents = contents.replace("\n", "_linebreak")
+    searchpat = "<" + tag + ".*?</" + tag + ">"
     tags = re.findall(searchpat, contents)
     for t in tags:
         tagid = re.findall('id="(.*?)"', t)
         if tagid:
             tagid = tagid[0]
         else:
-            tagid = 'none'
-        res = t.replace('_linebreak', '\n')
+            tagid = "none"
+        res = t.replace("_linebreak", "\n")
         result[tagid] = res
     return result
 
@@ -1791,28 +1805,29 @@ def export(exportList, filename):
     _prefs = "User parameter:BaseApp/Preferences/Mod/Draft"
     svg_export_style = FreeCAD.ParamGet(_prefs).GetInt("svg_export_style")
     if svg_export_style != 0 and svg_export_style != 1:
-        _msg(translate("ImportSVG",
-                       "Unknown SVG export style, switching to Translated"))
+        _msg(
+            translate("ImportSVG", "Unknown SVG export style, switching to Translated")
+        )
         svg_export_style = 0
 
     # Determine the size of the page by adding the bounding boxes
     # of all shapes
     bb = FreeCAD.BoundBox()
     for obj in exportList:
-        if (hasattr(obj, "Shape")
-                and obj.Shape
-                and obj.Shape.BoundBox.isValid()):
+        if hasattr(obj, "Shape") and obj.Shape and obj.Shape.BoundBox.isValid():
             bb.add(obj.Shape.BoundBox)
         else:
             # if Draft.get_type(obj) in ("Text", "LinearDimension", ...)
-            _wrn("'{}': no Shape, "
-                 "calculate manual bounding box".format(obj.Label))
+            _wrn("'{}': no Shape, " "calculate manual bounding box".format(obj.Label))
             bb.add(Draft.get_bbox(obj))
 
     if not bb.isValid():
-        _err(translate("ImportSVG",
-                       "The export list contains no object "
-                       "with a valid bounding box"))
+        _err(
+            translate(
+                "ImportSVG",
+                "The export list contains no object " "with a valid bounding box",
+            )
+        )
         return
 
     minx = bb.XMin
@@ -1836,7 +1851,7 @@ def export(exportList, filename):
     miny += margin
 
     # Use the native Python open which was saved as `pythonopen`
-    svg = pythonopen(filename, 'w')
+    svg = pythonopen(filename, "w")
 
     # Write header.
     # We specify the SVG width and height in FreeCAD's physical units (mm),
@@ -1844,11 +1859,11 @@ def export(exportList, filename):
     svg.write('<?xml version="1.0"?>\n')
     svg.write('<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"')
     svg.write(' "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">\n')
-    svg.write('<svg')
+    svg.write("<svg")
     svg.write(' width="' + str(sizex) + 'mm" height="' + str(sizey) + 'mm"')
     if svg_export_style == 0:
         # translated-style exports have the viewbox starting at X=0, Y=0
-        svg.write(' viewBox="0 0 ' + str(sizex) + ' ' + str(sizey) + '"')
+        svg.write(' viewBox="0 0 ' + str(sizex) + " " + str(sizey) + '"')
     else:
         # Raw-style exports have the viewbox starting at X=xmin, Y=-ymax
         # We need the negative Y here because SVG is upside down, and we
@@ -1856,7 +1871,7 @@ def export(exportList, filename):
         svg.write(' viewBox="%f %f %f %f"' % (minx, -maxy, sizex, sizey))
 
     svg.write(' xmlns="http://www.w3.org/2000/svg" version="1.1"')
-    svg.write('>\n')
+    svg.write(">\n")
 
     # Write paths
     for ob in exportList:
@@ -1866,19 +1881,21 @@ def export(exportList, filename):
             # svg.write('<g transform="translate('
             #           + str(-minx) + ',' + str(-miny + 2*margin)
             #           + ') scale(1,-1)">\n')
-            svg.write('<g id="%s" transform="translate(%f,%f) '
-                      'scale(1,-1)">\n' % (ob.Name, -minx, maxy))
+            svg.write(
+                '<g id="%s" transform="translate(%f,%f) '
+                'scale(1,-1)">\n' % (ob.Name, -minx, maxy)
+            )
         else:
             # raw-style exports do not translate the sketch
             svg.write('<g id="%s" transform="scale(1,-1)">\n' % ob.Name)
 
         svg.write(Draft.get_svg(ob))
-        _label_enc = str(ob.Label.encode('utf8'))
-        _label = _label_enc.replace('<', '&lt;').replace('>', '&gt;')
+        _label_enc = str(ob.Label.encode("utf8"))
+        _label = _label_enc.replace("<", "&lt;").replace(">", "&gt;")
         # replace('"', "&quot;")
-        svg.write('<title>%s</title>\n' % _label)
-        svg.write('</g>\n')
+        svg.write("<title>%s</title>\n" % _label)
+        svg.write("</g>\n")
 
     # Close the file
-    svg.write('</svg>')
+    svg.write("</svg>")
     svg.close()

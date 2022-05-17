@@ -52,11 +52,11 @@ https://wiki.freecadweb.org/Scripted_objects_migration
 # It will be removed definitely in January 2021.
 import FreeCAD as App
 
-from draftobjects.layer import (Layer,
-                                _VisGroup,
-                                LayerContainer)
+from draftobjects.layer import Layer, _VisGroup, LayerContainer
 
 if App.GuiUp:
-    from draftviewproviders.view_layer import (ViewProviderLayer,
-                                               _ViewProviderVisGroup,
-                                               ViewProviderLayerContainer)
+    from draftviewproviders.view_layer import (
+        ViewProviderLayer,
+        _ViewProviderVisGroup,
+        ViewProviderLayerContainer,
+    )

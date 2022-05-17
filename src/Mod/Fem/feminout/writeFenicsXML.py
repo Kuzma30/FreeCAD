@@ -41,9 +41,9 @@ from .importToolsFem import get_MaxDimElementFromList
 
 def write_fenics_mesh_xml(fem_mesh_obj, outputfile):
     """
-        For the export, we only have to use the highest dimensional entities and their
-        vertices to be exported.
-        For second order elements, we have to delete the mid element nodes.
+    For the export, we only have to use the highest dimensional entities and their
+    vertices to be exported.
+    For second order elements, we have to delete the mid element nodes.
     """
 
     # TODO: check for second order elements
@@ -57,9 +57,10 @@ def write_fenics_mesh_xml(fem_mesh_obj, outputfile):
         "Edge": "interval",
         "Node": "point",
         "Quadrangle": "quadrilateral",
-
-        "Polygon": "unknown", "Polyhedron": "unknown",
-        "Prism": "unknown", "Pyramid": "unknown",
+        "Polygon": "unknown",
+        "Polyhedron": "unknown",
+        "Prism": "unknown",
+        "Pyramid": "unknown",
     }
 
     XML_Number_of_Nodes_dict = {
@@ -68,11 +69,15 @@ def write_fenics_mesh_xml(fem_mesh_obj, outputfile):
         "triangle": 3,
         "quadrilateral": 4,
         "tetrahedron": 4,
-        "hexahedron": 8
+        "hexahedron": 8,
     }
 
-    Console.PrintMessage("Converting {} to fenics XML File\n".format(fem_mesh_obj.Label))
-    Console.PrintMessage("Dimension of mesh: %d\n" % (get_FemMeshObjectDimension(fem_mesh_obj),))
+    Console.PrintMessage(
+        "Converting {} to fenics XML File\n".format(fem_mesh_obj.Label)
+    )
+    Console.PrintMessage(
+        "Dimension of mesh: %d\n" % (get_FemMeshObjectDimension(fem_mesh_obj),)
+    )
 
     elements_in_mesh = get_FemMeshObjectElementTypes(fem_mesh_obj)
     Console.PrintMessage("Elements appearing in mesh: %s" % (str(elements_in_mesh),))
@@ -87,13 +92,20 @@ def write_fenics_mesh_xml(fem_mesh_obj, outputfile):
 
     root = ET.Element("dolfin", dolfin="http://fenicsproject.org")
     meshchild = ET.SubElement(root, "mesh", celltype=cellname_fenics, dim=str(dim_cell))
-    vertices = ET.SubElement(meshchild, "vertices", size=str(fem_mesh_obj.FemMesh.NodeCount))
+    vertices = ET.SubElement(
+        meshchild, "vertices", size=str(fem_mesh_obj.FemMesh.NodeCount)
+    )
 
     for (nodeind, fc_vec) in list(fem_mesh_obj.FemMesh.Nodes.items()):
         ET.SubElement(
-            vertices, "vertex", index=str(nodeind - 1),
+            vertices,
+            "vertex",
+            index=str(nodeind - 1),
             # FC starts from 1, fenics starts from 0 to size-1
-            x=str(fc_vec[0]), y=str(fc_vec[1]), z=str(fc_vec[2]))
+            x=str(fc_vec[0]),
+            y=str(fc_vec[1]),
+            z=str(fc_vec[2]),
+        )
 
     cells = ET.SubElement(meshchild, "cells", size=str(num_cells))
     if dim_cell == 3:

@@ -56,24 +56,28 @@ class VPBaseFemObject(object):
             return ""
         if not hasattr(self.Object.Proxy, "Type"):
             FreeCAD.Console.PrintMessage(
-                "{}: Proxy does has not have attribute Type.\n"
-                .format(self.Object.Name)
+                "{}: Proxy does has not have attribute Type.\n".format(self.Object.Name)
             )
             return ""
-        if (
-            isinstance(self.Object.Proxy.Type, string_types)
-            and self.Object.Proxy.Type.startswith("Fem::")
-        ):
-            icon_path = "/icons/{}.svg".format(self.Object.Proxy.Type.replace("Fem::", "FEM_"))
+        if isinstance(
+            self.Object.Proxy.Type, string_types
+        ) and self.Object.Proxy.Type.startswith("Fem::"):
+            icon_path = "/icons/{}.svg".format(
+                self.Object.Proxy.Type.replace("Fem::", "FEM_")
+            )
             FreeCAD.Console.PrintLog("{} --> {}\n".format(self.Object.Name, icon_path))
             return ":/{}".format(icon_path)
         else:
-            FreeCAD.Console.PrintError("No icon returned for {}\n".format(self.Object.Name))
+            FreeCAD.Console.PrintError(
+                "No icon returned for {}\n".format(self.Object.Name)
+            )
             FreeCAD.Console.PrintMessage("{}\n".format(self.Object.Proxy.Type))
             return ""
 
     def attach(self, vobj):
-        self.Object = vobj.Object  # used on various places, claim childreens, get icon, etc.
+        self.Object = (
+            vobj.Object
+        )  # used on various places, claim childreens, get icon, etc.
         # self.ViewObject = vobj  # not used ATM
 
     def setEdit(self, vobj, mode=0, TaskPanel=None, hide_mesh=True):
@@ -115,6 +119,7 @@ class VPBaseFemObject(object):
             guidoc.setEdit(vobj.Object.Name)
         else:
             from PySide.QtGui import QMessageBox
+
             message = "Active Task Dialog found! Please close this one before opening  a new one!"
             QMessageBox.critical(None, "Error in tree view", message)
             FreeCAD.Console.PrintError(message + "\n")

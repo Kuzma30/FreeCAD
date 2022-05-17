@@ -54,8 +54,11 @@ def _print_obj_length(obj, edge, num=1):
     else:
         name = num
 
-    _msg("({0}): {1}; {2} {3}".format(num, name,
-                                      translate("draft","length:"), edge.Length))
+    _msg(
+        "({0}): {1}; {2} {3}".format(
+            num, name, translate("draft", "length:"), edge.Length
+        )
+    )
 
 
 def _extract_edges(objs):
@@ -129,20 +132,35 @@ def make_fillet(objs, radius=100, chamfer=False, delete=False):
     utils.print_header(_name, "Fillet")
 
     if len(objs) != 2:
-        _err(translate("draft","Two elements are needed."))
+        _err(translate("draft", "Two elements are needed."))
         return None
 
     e1, e2 = _extract_edges(objs)
 
     edges = DraftGeomUtils.fillet([e1, e2], radius, chamfer)
     if len(edges) < 3:
-        _err(translate("draft","Radius is too large") + ", r={}".format(radius))
+        _err(translate("draft", "Radius is too large") + ", r={}".format(radius))
         return None
 
     lengths = [edges[0].Length, edges[1].Length, edges[2].Length]
-    _msg(translate("draft","Segment") + " 1, " + translate("draft","length:") + " {}".format(lengths[0]))
-    _msg(translate("draft","Segment") + " 2, " + translate("draft","length:") + " {}".format(lengths[1]))
-    _msg(translate("draft","Segment") + " 3, " + translate("draft","length:") + " {}".format(lengths[2]))
+    _msg(
+        translate("draft", "Segment")
+        + " 1, "
+        + translate("draft", "length:")
+        + " {}".format(lengths[0])
+    )
+    _msg(
+        translate("draft", "Segment")
+        + " 2, "
+        + translate("draft", "length:")
+        + " {}".format(lengths[1])
+    )
+    _msg(
+        translate("draft", "Segment")
+        + " 3, "
+        + translate("draft", "length:")
+        + " {}".format(lengths[2])
+    )
 
     try:
         wire = Part.Wire(edges)
@@ -150,8 +168,7 @@ def make_fillet(objs, radius=100, chamfer=False, delete=False):
         return None
 
     _doc = App.activeDocument()
-    obj = _doc.addObject("Part::Part2DObjectPython",
-                         "Fillet")
+    obj = _doc.addObject("Part::Part2DObjectPython", "Fillet")
     fillet.Fillet(obj)
     obj.Shape = wire
     obj.Length = wire.Length
@@ -162,7 +179,7 @@ def make_fillet(objs, radius=100, chamfer=False, delete=False):
     if delete:
         _doc.removeObject(objs[0].Name)
         _doc.removeObject(objs[1].Name)
-        _msg(translate("draft","Removed original objects."))
+        _msg(translate("draft", "Removed original objects."))
 
     if App.GuiUp:
         view_fillet.ViewProviderFillet(obj.ViewObject)
@@ -171,5 +188,6 @@ def make_fillet(objs, radius=100, chamfer=False, delete=False):
         gui_utils.autogroup(obj)
 
     return obj
+
 
 ## @}

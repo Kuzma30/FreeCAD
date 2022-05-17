@@ -146,8 +146,9 @@ def set_mod(args, mod, state):
 setMod = set_mod
 
 
-def get_point(target, args,
-              mobile=False, sym=False, workingplane=True, noTracker=False):
+def get_point(
+    target, args, mobile=False, sym=False, workingplane=True, noTracker=False
+):
     """Return a constrained 3D point and its original point.
 
     It is used by the Draft tools.
@@ -207,11 +208,13 @@ def get_point(target, args,
     point = None
 
     if hasattr(Gui, "Snapper"):
-        point = Gui.Snapper.snap(args["Position"],
-                                 lastpoint=last,
-                                 active=amod,
-                                 constrain=cmod,
-                                 noTracker=noTracker)
+        point = Gui.Snapper.snap(
+            args["Position"],
+            lastpoint=last,
+            active=amod,
+            constrain=cmod,
+            noTracker=noTracker,
+        )
         info = Gui.Snapper.snapInfo
         mask = Gui.Snapper.affinity
     if not point:
@@ -223,11 +226,13 @@ def get_point(target, args,
     ctrlPoint = App.Vector(point)
     if target.node:
         if target.featureName == "Rectangle":
-            ui.displayPoint(point, target.node[0],
-                            plane=App.DraftWorkingPlane, mask=mask)
+            ui.displayPoint(
+                point, target.node[0], plane=App.DraftWorkingPlane, mask=mask
+            )
         else:
-            ui.displayPoint(point, target.node[-1],
-                            plane=App.DraftWorkingPlane, mask=mask)
+            ui.displayPoint(
+                point, target.node[-1], plane=App.DraftWorkingPlane, mask=mask
+            )
     else:
         ui.displayPoint(point, plane=App.DraftWorkingPlane, mask=mask)
     return point, ctrlPoint, info
@@ -263,9 +268,9 @@ def set_working_plane_to_object_under_cursor(mouseEvent):
     Coin info
         The `getObjectInfo` of the object under the cursor.
     """
-    objectUnderCursor = gui_utils.get_3d_view().getObjectInfo((
-        mouseEvent["Position"][0],
-        mouseEvent["Position"][1]))
+    objectUnderCursor = gui_utils.get_3d_view().getObjectInfo(
+        (mouseEvent["Position"][0], mouseEvent["Position"][1])
+    )
 
     if not objectUnderCursor:
         return None
@@ -274,8 +279,9 @@ def set_working_plane_to_object_under_cursor(mouseEvent):
         # Get the component "face" or "curve" under the "Shape"
         # of the selected object
         componentUnderCursor = getattr(
-            App.ActiveDocument.getObject(objectUnderCursor['Object']).Shape,
-            objectUnderCursor["Component"])
+            App.ActiveDocument.getObject(objectUnderCursor["Object"]).Shape,
+            objectUnderCursor["Component"],
+        )
 
         if not App.DraftWorkingPlane.weak:
             return None
@@ -315,9 +321,11 @@ def set_working_plane_to_selected_object():
     if len(sel) != 1:
         return None
     sel = sel[0]
-    if (sel.HasSubObjects
-            and len(sel.SubElementNames) == 1
-            and "Face" in sel.SubElementNames[0]):
+    if (
+        sel.HasSubObjects
+        and len(sel.SubElementNames) == 1
+        and "Face" in sel.SubElementNames[0]
+    ):
         if App.DraftWorkingPlane.weak:
             App.DraftWorkingPlane.alignToFace(sel.SubObjects[0])
             App.DraftWorkingPlane.weak = True

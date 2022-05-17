@@ -64,7 +64,7 @@ class DraftSVG(unittest.TestCase):
         _msg("  Test '{}'".format(operation))
         _msg("  This test requires an SVG file to read.")
 
-        file = 'Mod/Draft/drafttest/test.svg'
+        file = "Mod/Draft/drafttest/test.svg"
         in_file = os.path.join(App.getResourceDir(), file)
         _msg("  file={}".format(in_file))
         _msg("  exists={}".format(os.path.exists(in_file)))
@@ -78,7 +78,7 @@ class DraftSVG(unittest.TestCase):
         operation = "importSVG.export"
         _msg("  Test '{}'".format(operation))
 
-        file = 'Mod/Draft/drafttest/out_test.svg'
+        file = "Mod/Draft/drafttest/out_test.svg"
         out_file = os.path.join(App.getResourceDir(), file)
         _msg("  file={}".format(out_file))
         _msg("  exists={}".format(os.path.exists(out_file)))
@@ -93,15 +93,15 @@ class DraftSVG(unittest.TestCase):
         import Arch
         import Draft
 
-        sb = Part.makeBox(1,1,1)
-        b = App.ActiveDocument.addObject('Part::Feature','Box')
+        sb = Part.makeBox(1, 1, 1)
+        b = App.ActiveDocument.addObject("Part::Feature", "Box")
         b.Shape = sb
 
         s = Arch.makeSpace(b)
         App.ActiveDocument.recompute()
 
         try:
-            Draft.get_svg(s, direction=App.Vector(0,0,0))
+            Draft.get_svg(s, direction=App.Vector(0, 0, 0))
         except AttributeError as err:
             self.fail("Cryptic exception thrown: {}".format(err))
         except ValueError as err:
@@ -115,5 +115,6 @@ class DraftSVG(unittest.TestCase):
         This is executed after each test, so we close the document.
         """
         App.closeDocument(self.doc_name)
+
 
 ## @}

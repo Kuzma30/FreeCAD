@@ -51,7 +51,7 @@ class ConstraintElectrostaticPotential(base_fempythonobject.BaseFemPythonObject)
                 "App::PropertyElectricPotential",
                 "Potential",
                 "Parameter",
-                "Electric Potential"
+                "Electric Potential",
             ),
             obj.Potential = 0.0
 
@@ -60,7 +60,7 @@ class ConstraintElectrostaticPotential(base_fempythonobject.BaseFemPythonObject)
                 "App::PropertyBool",
                 "PotentialEnabled",
                 "Parameter",
-                "Potential Enabled"
+                "Potential Enabled",
             ),
             obj.PotentialEnabled = False
 
@@ -69,7 +69,7 @@ class ConstraintElectrostaticPotential(base_fempythonobject.BaseFemPythonObject)
                 "App::PropertyBool",
                 "PotentialConstant",
                 "Parameter",
-                "Potential Constant"
+                "Potential Constant",
             ),
             obj.PotentialConstant = False
 
@@ -78,7 +78,7 @@ class ConstraintElectrostaticPotential(base_fempythonobject.BaseFemPythonObject)
                 "App::PropertyBool",
                 "ElectricInfinity",
                 "Parameter",
-                "Electric Infinity"
+                "Electric Infinity",
             ),
             obj.ElectricInfinity = False
 
@@ -87,7 +87,7 @@ class ConstraintElectrostaticPotential(base_fempythonobject.BaseFemPythonObject)
                 "App::PropertyBool",
                 "ElectricForcecalculation",
                 "Parameter",
-                "Electric Force Calculation"
+                "Electric Force Calculation",
             ),
             obj.ElectricForcecalculation = False
 
@@ -96,7 +96,7 @@ class ConstraintElectrostaticPotential(base_fempythonobject.BaseFemPythonObject)
                 "App::PropertyInteger",
                 "CapacitanceBody",
                 "Parameter",
-                "Capacitance Body"
+                "Capacitance Body",
             ),
             obj.CapacitanceBody = 0
 
@@ -105,6 +105,6 @@ class ConstraintElectrostaticPotential(base_fempythonobject.BaseFemPythonObject)
                 "App::PropertyBool",
                 "CapacitanceBodyEnabled",
                 "Parameter",
-                "Capacitance Body Enabled"
+                "Capacitance Body Enabled",
             )
             obj.CapacitanceBodyEnabled = False

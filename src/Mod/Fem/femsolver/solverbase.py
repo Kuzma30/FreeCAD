@@ -60,8 +60,7 @@ class Proxy(object):
         raise NotImplementedError()
 
     def addEquation(self, obj, eqId):
-        obj.addObject(self.createEquation(
-            obj.Document, eqId))
+        obj.addObject(self.createEquation(obj.Document, eqId))
 
     def editSupported(self):
         return False
@@ -87,22 +86,18 @@ class ViewProxy(object):
             error_message = (
                 "Please save the file before opening the task panel. "
                 "This must be done because the location of the working "
-                "directory is set to \"Beside *.FCStd File\"."
+                'directory is set to "Beside *.FCStd File".'
             )
             App.Console.PrintError(error_message + "\n")
             QtGui.QMessageBox.critical(
-                Gui.getMainWindow(),
-                "Can't open Task Panel",
-                error_message
+                Gui.getMainWindow(), "Can't open Task Panel", error_message
             )
             return False
         except DirectoryDoesNotExistError:
             error_message = "Selected working directory doesn't exist."
             App.Console.PrintError(error_message + "\n")
             QtGui.QMessageBox.critical(
-                Gui.getMainWindow(),
-                "Can't open Task Panel",
-                error_message
+                Gui.getMainWindow(), "Can't open Task Panel", error_message
             )
             return False
         task = solver_taskpanel.ControlTaskPanel(machine)
@@ -120,5 +115,6 @@ class ViewProxy(object):
 
     def attach(self, vobj):
         pass
+
 
 ##  @}

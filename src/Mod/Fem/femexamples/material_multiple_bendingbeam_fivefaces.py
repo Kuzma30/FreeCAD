@@ -40,12 +40,14 @@ def get_information():
         "constraints": ["fixed", "force"],
         "solvers": ["calculix", "ccxtools"],
         "material": "multimaterial",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.material_multiple_bendingbeam_fivefaces import setup
@@ -56,6 +58,7 @@ See forum topic post:
 ...
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -66,7 +69,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric objects
     # name is important because the other method in this module use obj name
@@ -145,10 +150,7 @@ def setup(doc=None, solvertype="ccxtools"):
     analysis.addObject(material_obj1)
 
     material_obj2 = ObjectsFem.makeMaterialSolid(doc, "FemMaterial2")
-    material_obj2.References = [
-        (doc.Face2, "Face1"),
-        (doc.Face4, "Face1")
-    ]
+    material_obj2.References = [(doc.Face2, "Face1"), (doc.Face4, "Face1")]
     mat = material_obj2.Material
     mat["Name"] = "PLA"
     mat["YoungsModulus"] = "3640 MPa"
@@ -167,10 +169,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # constraint fixed
     con_fixed = ObjectsFem.makeConstraintFixed(doc, "ConstraintFixed")
-    con_fixed.References = [
-        (doc.Face1, "Edge1"),
-        (doc.Face5, "Edge3")
-    ]
+    con_fixed.References = [(doc.Face1, "Edge1"), (doc.Face5, "Edge3")]
     analysis.addObject(con_fixed)
 
     # constraint force
@@ -180,7 +179,7 @@ def setup(doc=None, solvertype="ccxtools"):
         (doc.Face2, "Edge4"),
         (doc.Face3, "Edge4"),
         (doc.Face4, "Edge4"),
-        (doc.Face5, "Edge4")
+        (doc.Face5, "Edge4"),
     ]
     con_force.Force = 10000.00
     con_force.Direction = (doc.Face1, ["Edge1"])
@@ -189,6 +188,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_multibodybeam_tria6 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

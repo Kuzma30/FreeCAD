@@ -37,7 +37,7 @@ if App.GuiUp:
 
 def make_workingplaneproxy(placement):
     """make_working_plane_proxy(placement)
-    
+
     Creates a Working Plane proxy object in the current document.
 
     Parameters
@@ -46,7 +46,7 @@ def make_workingplaneproxy(placement):
         specify the p.
     """
     if App.ActiveDocument:
-        obj = App.ActiveDocument.addObject("App::FeaturePython","WPProxy")
+        obj = App.ActiveDocument.addObject("App::FeaturePython", "WPProxy")
         WorkingPlaneProxy(obj)
         if App.GuiUp:
             ViewProviderWorkingPlaneProxy(obj.ViewObject)

@@ -64,7 +64,7 @@ class DraftDXF(unittest.TestCase):
         _msg("  Test '{}'".format(operation))
         _msg("  This test requires a DXF file to read.")
 
-        file = 'Mod/Draft/drafttest/test.dxf'
+        file = "Mod/Draft/drafttest/test.dxf"
         in_file = os.path.join(App.getResourceDir(), file)
         _msg("  file={}".format(in_file))
         _msg("  exists={}".format(os.path.exists(in_file)))
@@ -78,7 +78,7 @@ class DraftDXF(unittest.TestCase):
         operation = "importDXF.export"
         _msg("  Test '{}'".format(operation))
 
-        file = 'Mod/Draft/drafttest/out_test.dxf'
+        file = "Mod/Draft/drafttest/out_test.dxf"
         out_file = os.path.join(App.getResourceDir(), file)
         _msg("  file={}".format(out_file))
         _msg("  exists={}".format(os.path.exists(out_file)))
@@ -93,5 +93,6 @@ class DraftDXF(unittest.TestCase):
         This is executed after each test, so we close the document.
         """
         App.closeDocument(self.doc_name)
+
 
 ## @}

@@ -27,7 +27,7 @@ __url__ = "https://www.freecadweb.org"
 
 
 def get_analysis_types():
-    return "all"    # write for all analysis types
+    return "all"  # write for all analysis types
 
 
 def get_sets_name():
@@ -65,7 +65,8 @@ def write_constraint(f, femobj, sectionprint_obj, ccxwriter):
     # floats read from ccx should use {:.13G}, see comment in writer module
 
     f.write(
-        "*SECTION PRINT, SURFACE=SECTIONFACE{}, NAME=SECTIONPRINT{}\n"
-        .format(sectionprint_obj.Name, sectionprint_obj.Name)
+        "*SECTION PRINT, SURFACE=SECTIONFACE{}, NAME=SECTIONPRINT{}\n".format(
+            sectionprint_obj.Name, sectionprint_obj.Name
+        )
     )
     f.write("SOF, SOM, SOAREA\n")

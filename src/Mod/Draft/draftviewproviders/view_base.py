@@ -41,6 +41,7 @@ if App.GuiUp:
     from pivy import coin
     import FreeCADGui as Gui
     import Draft_rc
+
     # The module is used to prevent complaints from code checkers (flake8)
     bool(Draft_rc.__name__)
 
@@ -99,21 +100,25 @@ class ViewProviderDraft(object):
     def _set_properties(self, vobj):
         """Set the properties of objects if they don't exist."""
         if not hasattr(vobj, "Pattern"):
-            vobj.addProperty("App::PropertyEnumeration",
-                             "Pattern",
-                             "Draft",
-                             QT_TRANSLATE_NOOP("App::Property",
-                                               "Defines an SVG pattern."))
+            vobj.addProperty(
+                "App::PropertyEnumeration",
+                "Pattern",
+                "Draft",
+                QT_TRANSLATE_NOOP("App::Property", "Defines an SVG pattern."),
+            )
             patterns = list(utils.svg_patterns().keys())
             patterns.sort()
             vobj.Pattern = ["None"] + patterns
 
         if not hasattr(vobj, "PatternSize"):
-            vobj.addProperty("App::PropertyFloat",
-                             "PatternSize",
-                             "Draft",
-                             QT_TRANSLATE_NOOP("App::Property",
-                                               "Defines the size of the SVG pattern."))
+            vobj.addProperty(
+                "App::PropertyFloat",
+                "PatternSize",
+                "Draft",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "Defines the size of the SVG pattern."
+                ),
+            )
             vobj.PatternSize = utils.get_param("HatchPatternSize", 1)
 
     def __getstate__(self):
@@ -288,9 +293,18 @@ class ViewProviderDraft(object):
                     if path and vobj.RootNode:
                         if vobj.RootNode.getChildren().getLength() > 2:
                             if vobj.RootNode.getChild(2).getChildren().getLength() > 0:
-                                innodes = vobj.RootNode.getChild(2).getChild(0).getChildren().getLength()
-                                if  innodes > 2:
-                                    r = vobj.RootNode.getChild(2).getChild(0).getChild(innodes-1)
+                                innodes = (
+                                    vobj.RootNode.getChild(2)
+                                    .getChild(0)
+                                    .getChildren()
+                                    .getLength()
+                                )
+                                if innodes > 2:
+                                    r = (
+                                        vobj.RootNode.getChild(2)
+                                        .getChild(0)
+                                        .getChild(innodes - 1)
+                                    )
                                     i = QtCore.QFileInfo(path)
                                     if self.texture:
                                         r.removeChild(self.texture)
@@ -301,7 +315,9 @@ class ViewProviderDraft(object):
                                     if i.exists():
                                         size = None
                                         if ".SVG" in path.upper():
-                                            size = utils.get_param("HatchPatternResolution", 128)
+                                            size = utils.get_param(
+                                                "HatchPatternResolution", 128
+                                            )
                                             if not size:
                                                 size = 128
                                         im = gui_utils.load_texture(path, size)
@@ -314,9 +330,15 @@ class ViewProviderDraft(object):
                                                 if hasattr(vobj, "PatternSize"):
                                                     if vobj.PatternSize:
                                                         s = vobj.PatternSize
-                                                self.texcoords = coin.SoTextureCoordinatePlane()
-                                                self.texcoords.directionS.setValue(s, 0, 0)
-                                                self.texcoords.directionT.setValue(0, s, 0)
+                                                self.texcoords = (
+                                                    coin.SoTextureCoordinatePlane()
+                                                )
+                                                self.texcoords.directionS.setValue(
+                                                    s, 0, 0
+                                                )
+                                                self.texcoords.directionT.setValue(
+                                                    0, s, 0
+                                                )
                                                 r.insertChild(self.texcoords, 2)
         elif prop == "PatternSize":
             if hasattr(self, "texcoords"):
@@ -394,12 +416,18 @@ class ViewProviderDraft(object):
             # Act like this function doesn't even exist, so the command falls back to Part (e.g. in the
             # case of an unrecognized context menu action)
             return None
-        elif App.GuiUp and "Draft_Edit" in Gui.listCommands(): # remove App.GuiUp guard after splitting every viewprovider
+        elif (
+            App.GuiUp and "Draft_Edit" in Gui.listCommands()
+        ):  # remove App.GuiUp guard after splitting every viewprovider
             Gui.runCommand("Draft_Edit")
             return True
         else:
-            App.Console.PrintWarning(QT_TRANSLATE_NOOP("draft",
-                                                       "Please load the Draft Workbench to enable editing this object"))
+            App.Console.PrintWarning(
+                QT_TRANSLATE_NOOP(
+                    "draft",
+                    "Please load the Draft Workbench to enable editing this object",
+                )
+            )
             return False
 
     def unsetEdit(self, vobj, mode=0):
@@ -440,7 +468,7 @@ class ViewProviderDraft(object):
             return False
         if App.activeDraftCommand:
             App.activeDraftCommand.finish()
-        if App.GuiUp: # remove guard after splitting every viewprovider
+        if App.GuiUp:  # remove guard after splitting every viewprovider
             Gui.Control.closeDialog()
         return False
 
@@ -461,18 +489,19 @@ class ViewProviderDraft(object):
         str
             `':/icons/Draft_Draft.svg'`
         """
-        if hasattr(self.Object,"Proxy") and hasattr(self.Object.Proxy,"Type"):
+        if hasattr(self.Object, "Proxy") and hasattr(self.Object.Proxy, "Type"):
             tp = self.Object.Proxy.Type
-            if tp in ('Line', 'Wire', 'Polyline'):
+            if tp in ("Line", "Wire", "Polyline"):
                 return ":/icons/Draft_N-Linear.svg"
-            elif tp in ('Rectangle', 'Polygon'):
+            elif tp in ("Rectangle", "Polygon"):
                 return ":/icons/Draft_N-Polygon.svg"
-            elif tp in ('Circle', 'Ellipse', 'BSpline', 'BezCurve', 'Fillet'):
+            elif tp in ("Circle", "Ellipse", "BSpline", "BezCurve", "Fillet"):
                 return ":/icons/Draft_N-Curve.svg"
             elif tp in ("ShapeString"):
                 return ":/icons/Draft_ShapeString_tree.svg"
-        if hasattr(self.Object,"AutoUpdate") and not self.Object.AutoUpdate:
+        if hasattr(self.Object, "AutoUpdate") and not self.Object.AutoUpdate:
             import TechDrawGui
+
             return ":/icons/TechDraw_TreePageUnsync.svg"
         return ":/icons/Draft_Draft.svg"
 

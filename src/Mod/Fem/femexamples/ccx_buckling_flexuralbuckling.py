@@ -40,12 +40,14 @@ def get_information():
         "constraints": ["fixed", "force"],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "buckling"
+        "equation": "buckling",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.ccx_buckling_flexuralbuckling import setup
@@ -59,6 +61,7 @@ This example is based on a CalculiX verification example.
 http://www.feacluster.com/CalculiX/ccx_2.13/doc/ccx/input_deck_viewer.php?input_deck=beam8b.inp
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -69,7 +72,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     geom_obj = doc.addObject("Part::Box", "Beam")
@@ -128,6 +133,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_flexural_buckling import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

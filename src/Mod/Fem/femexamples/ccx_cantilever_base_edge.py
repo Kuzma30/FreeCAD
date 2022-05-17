@@ -94,7 +94,7 @@ def setup_cantilever_base_edge(doc=None, solvertype="ccxtools"):
         sectiontype="Rectangular",
         width=1000.0,
         height=1000.0,
-        name="BeamCrossSection"
+        name="BeamCrossSection",
     )
     analysis.addObject(beamsection_obj)
 
@@ -122,6 +122,7 @@ def setup_cantilever_base_edge(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_canticcx_seg3 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

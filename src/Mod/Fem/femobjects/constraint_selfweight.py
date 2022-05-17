@@ -46,21 +46,21 @@ class ConstraintSelfWeight(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyFloat",
             "Gravity_x",
             "Gravity",
-            "Gravity direction: set the x-component of the normalized gravity vector"
+            "Gravity direction: set the x-component of the normalized gravity vector",
         )
 
         obj.addProperty(
             "App::PropertyFloat",
             "Gravity_y",
             "Gravity",
-            "Gravity direction: set the y-component of the normalized gravity vector"
+            "Gravity direction: set the y-component of the normalized gravity vector",
         )
 
         obj.addProperty(
             "App::PropertyFloat",
             "Gravity_z",
             "Gravity",
-            "Gravity direction: set the z-component of the normalized gravity vector"
+            "Gravity direction: set the z-component of the normalized gravity vector",
         )
 
         obj.Gravity_x = 0.0

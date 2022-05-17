@@ -188,7 +188,10 @@ class Builder(object):
                             allSections.append(solverSection)
             if BODY_FORCE in section and section[BODY_FORCE] not in allSections:
                 allSections.append(section[BODY_FORCE])
-            if INITIAL_CONDITION in section and section[INITIAL_CONDITION] not in allSections:
+            if (
+                INITIAL_CONDITION in section
+                and section[INITIAL_CONDITION] not in allSections
+            ):
                 allSections.append(section[INITIAL_CONDITION])
         for name, section in self._boundaries.items():
             section["Name"] = name
@@ -244,7 +247,6 @@ class Sif(object):
 
 
 class Section(object):
-
     def __init__(self, name):
         self.name = name
         self.priority = 0
@@ -280,15 +282,13 @@ class FileAttr(str):
 
 
 class _Writer(object):
-
     def __init__(self, idManager, sections, stream):
         self._idMgr = idManager
         self._sections = sections
         self._stream = stream
 
     def write(self):
-        sortedSections = sorted(
-            self._sections, key=lambda s: s.priority, reverse=True)
+        sortedSections = sorted(self._sections, key=lambda s: s.priority, reverse=True)
         for s in sortedSections:
             self._writeSection(s)
             self._stream.write(_NEWLINE)
@@ -337,9 +337,8 @@ class _Writer(object):
         return it.next()
 
     def _isCollection(self, data):
-        return (
-            not isinstance(data, six.string_types)
-            and isinstance(data, collections.abc.Iterable)
+        return not isinstance(data, six.string_types) and isinstance(
+            data, collections.abc.Iterable
         )
 
     def _checkScalar(self, dataType):
@@ -428,7 +427,6 @@ class _Writer(object):
 
 
 class _IdManager(object):
-
     def __init__(self, firstId=1):
         self._pool = dict()
         self._ids = dict()
@@ -444,5 +442,6 @@ class _IdManager(object):
         if section not in self._ids:
             self.setId(section)
         return self._ids[section]
+
 
 ##  @}

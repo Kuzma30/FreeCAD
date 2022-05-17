@@ -40,8 +40,7 @@ import femsolver.run
 _UPDATE_INTERVAL = 50
 _REPORT_TITLE = "Run Report"
 _REPORT_ERR = (
-    "Failed to run. Please try again after all "
-    "of the following errors are resolved."
+    "Failed to run. Please try again after all " "of the following errors are resolved."
 )
 
 
@@ -89,14 +88,14 @@ class ControlTaskPanel(QtCore.QObject):
         self.machineStatusChanged.connect(self.form.appendStatus)
         self.machineStatusCleared.connect(self.form.clearStatus)
         self.machineTimeChanged.connect(self.form.setTime)
-        self.machineStateChanged.connect(
-            lambda: self.form.updateState(self.machine))
+        self.machineStateChanged.connect(lambda: self.form.updateState(self.machine))
         self.machineChanged.connect(self._updateTimer)
 
         # Set initial machine. Signal updates the widget.
         self.machineChanged.connect(self.updateWidget)
         self.form.destroyed.connect(
-            lambda: self.machineChanged.disconnect(self.updateWidget))
+            lambda: self.machineChanged.disconnect(self.updateWidget)
+        )
 
         self.machine = machine
 
@@ -125,8 +124,7 @@ class ControlTaskPanel(QtCore.QObject):
     @QtCore.Slot()
     def edit(self):
         self.machine.reset(femsolver.run.SOLVE)
-        self.machine.solver.Proxy.edit(
-            self.machine.directory)
+        self.machine.solver.Proxy.edit(self.machine.directory)
 
     @QtCore.Slot()
     def abort(self):
@@ -143,7 +141,8 @@ class ControlTaskPanel(QtCore.QObject):
     def updateMachine(self):
         if self.form.directory() != self.machine.directory:
             self.machine = femsolver.run.getMachine(
-                self.machine.solver, self.form.directory())
+                self.machine.solver, self.form.directory()
+            )
 
     @QtCore.Slot()
     def _updateTimer(self):
@@ -339,5 +338,6 @@ class ControlWidget(QtGui.QWidget):
                 not machine.solver.Proxy.editSupported()
                 or machine.state < femsolver.run.PREPARE
             )
+
 
 ##  @}

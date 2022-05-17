@@ -40,16 +40,13 @@ class BaseProxy(object):
 
     def __init__(self, obj):
         obj.Proxy = self
-        obj.addProperty(
-            "App::PropertyLinkSubList", "References",
-            "Base", "")
+        obj.addProperty("App::PropertyLinkSubList", "References", "Base", "")
 
     def execute(self, obj):
         return True
 
 
 class BaseViewProxy(object):
-
     def __init__(self, vobj):
         vobj.Proxy = self
 
@@ -74,7 +71,6 @@ class HeatProxy(BaseProxy):
 
 
 class HeatViewProxy(BaseViewProxy):
-
     def getIcon(self):
         return ":/icons/FEM_EquationHeat.svg"
 
@@ -84,13 +80,11 @@ class ElasticityProxy(BaseProxy):
 
 
 class ElasticityViewProxy(BaseViewProxy):
-
     def getIcon(self):
         return ":/icons/FEM_EquationElasticity.svg"
 
 
 class ElectrostaticViewProxy(BaseViewProxy):
-
     def getIcon(self):
         return ":/icons/FEM_EquationElectrostatic.svg"
 
@@ -100,7 +94,6 @@ class ElectrostaticProxy(BaseProxy):
 
 
 class FluxViewProxy(BaseViewProxy):
-
     def getIcon(self):
         return ":/icons/FEM_EquationFlux.svg"
 
@@ -110,7 +103,6 @@ class FluxProxy(BaseProxy):
 
 
 class ElectricforceViewProxy(BaseViewProxy):
-
     def getIcon(self):
         return ":/icons/FEM_EquationElectricforce.svg"
 
@@ -124,8 +116,8 @@ class FlowProxy(BaseProxy):
 
 
 class FlowViewProxy(BaseViewProxy):
-
     def getIcon(self):
         return ":/icons/FEM_EquationFlow.svg"
+
 
 ##  @}

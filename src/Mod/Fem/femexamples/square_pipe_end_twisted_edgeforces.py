@@ -43,12 +43,14 @@ def get_information():
         "constraints": ["force", "fixed"],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.square_pipe_end_twisted_edgeforces import setup
@@ -59,6 +61,7 @@ See forum topic post:
 ...
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -69,7 +72,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     # name is important because the other method in this module use obj name
@@ -129,7 +134,8 @@ def setup(doc=None, solvertype="ccxtools"):
         (doc.SquareTube, "Edge4"),
         (doc.SquareTube, "Edge7"),
         (doc.SquareTube, "Edge10"),
-        (doc.SquareTube, "Edge12")]
+        (doc.SquareTube, "Edge12"),
+    ]
     analysis.addObject(con_fixed)
 
     # con_force1
@@ -166,6 +172,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_square_pipe_end_twisted_tria6 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

@@ -74,9 +74,11 @@ def write_femelement_material(f, ccxwriter):
             SH = FreeCAD.Units.Quantity(mat_obj.Material["SpecificHeat"])
             # SvdW: Add factor to force units to results base units of t/mm/s/K
             # FIXME: why not get it directly in the units needed ?
-            SH_in_JkgK = SH.getValueAs("J/kg/K").Value * 1e+06
+            SH_in_JkgK = SH.getValueAs("J/kg/K").Value * 1e06
             if mat_obj.Category == "Solid":
-                TEC = FreeCAD.Units.Quantity(mat_obj.Material["ThermalExpansionCoefficient"])
+                TEC = FreeCAD.Units.Quantity(
+                    mat_obj.Material["ThermalExpansionCoefficient"]
+                )
                 TEC_in_mmK = TEC.getValueAs("mm/mm/K").Value
             elif mat_obj.Category == "Fluid":
                 DV = FreeCAD.Units.Quantity(mat_obj.Material["DynamicViscosity"])

@@ -37,6 +37,7 @@ import os
 import sys
 
 import FreeCAD
+
 if FreeCAD.GuiUp:
     import FreeCADGui
     from PySide import QtGui
@@ -45,7 +46,7 @@ if FreeCAD.GuiUp:
 # ************************************************************************************************
 # document objects
 def createObject(doc, name, proxy, viewProxy=None):
-    """ Add python object to document using python type string.
+    """Add python object to document using python type string.
 
     Add a document object suitable for the *proxy* and the *viewProxy* to *doc*
     and attach it to the *proxy* and the *viewProxy*. This function can only be
@@ -70,7 +71,7 @@ def createObject(doc, name, proxy, viewProxy=None):
 
 # typeID and object type defs
 def type_of_obj(obj):
-    """ Return type of *obj* honoring the special typesystem of Fem.
+    """Return type of *obj* honoring the special typesystem of Fem.
 
     Python objects of the Fem workbench define their type via a class member
     ``<Class>.Type``. Return this type if the property exists. If not return
@@ -84,7 +85,7 @@ def type_of_obj(obj):
 
 
 def is_of_type(obj, ty):
-    """ Compare type of *obj* with *ty* honoring Fems typesystem.
+    """Compare type of *obj* with *ty* honoring Fems typesystem.
 
     See :py:func:`type_of_obj` for more info about the special typesystem of
     the Fem module.
@@ -98,7 +99,7 @@ def is_of_type(obj, ty):
 
 
 def is_derived_from(obj, t):
-    """ Check if *obj* is derived from *t* honoring Fems typesytem.
+    """Check if *obj* is derived from *t* honoring Fems typesytem.
 
     Essentially just call ``obj.isDerivedFrom(t)`` and return it's value. For
     objects using Fems typesystem (see :py:func:`type_of_obj`) return always
@@ -110,7 +111,7 @@ def is_derived_from(obj, t):
      ``obj.isDerivedFrom`` is called as usual. See
      https://forum.freecadweb.org/viewtopic.php?f=10&t=32625
     """
-    if (hasattr(obj, "Proxy") and hasattr(obj.Proxy, "Type") and obj.Proxy.Type == t):
+    if hasattr(obj, "Proxy") and hasattr(obj.Proxy, "Type") and obj.Proxy.Type == t:
         return True
     return obj.isDerivedFrom(t)
 
@@ -118,7 +119,7 @@ def is_derived_from(obj, t):
 # ************************************************************************************************
 # working dir
 def get_pref_working_dir(solver_obj):
-    """ Return working directory for solver honoring user settings.
+    """Return working directory for solver honoring user settings.
 
     :throws femtools.errors.MustSaveError:
      If user setting is set to BESIDE and the document isn't saved.
@@ -129,6 +130,7 @@ def get_pref_working_dir(solver_obj):
      instead.
     """
     from femsolver import settings
+
     dir_setting = settings.get_dir_setting()
     if dir_setting == settings.DirSetting.TEMPORARY:
         setting_working_dir = get_temp_dir(solver_obj)
@@ -146,6 +148,7 @@ def get_pref_working_dir(solver_obj):
 # the FEM preferences will be used by both
 def get_temp_dir(obj=None):
     from tempfile import mkdtemp
+
     return mkdtemp(prefix="fcfem_")
 
 
@@ -159,8 +162,7 @@ def get_beside_dir(obj):
 
 def get_custom_dir(obj):
     base = get_custom_base(obj)
-    specific_path = os.path.join(
-        base, obj.Document.Name, obj.Label)
+    specific_path = os.path.join(base, obj.Document.Name, obj.Label)
     if not os.path.isdir(specific_path):
         make_dir(specific_path)
     return specific_path
@@ -173,15 +175,16 @@ def get_beside_base(obj):
         error_message = (
             "Please save the file before executing a solver or creating a mesh. "
             "This must be done because the location of the working directory "
-            "is set to \"Beside *.FCStd File\". For the moment the tmp dir {} is used."
-            .format(new_path)
+            'is set to "Beside *.FCStd File". For the moment the tmp dir {} is used.'.format(
+                new_path
+            )
         )
         FreeCAD.Console.PrintError("{}\n".format(error_message))
         if FreeCAD.GuiUp:
             QtGui.QMessageBox.critical(
                 FreeCADGui.getMainWindow(),
                 "Can't start Solver or Mesh creation besides FC file.",
-                error_message
+                error_message,
             )
 
         # from .errors import MustSaveError
@@ -193,20 +196,20 @@ def get_beside_base(obj):
 
 def get_custom_base(solver):
     from femsolver.settings import get_custom_dir
+
     path = get_custom_dir()
     if not os.path.isdir(path):
         new_path = get_temp_dir()
         error_message = (
             "Selected working directory {} doesn't exist. "
-            " For the moment the tmp dir {} is used."
-            .format(path, new_path)
+            " For the moment the tmp dir {} is used.".format(path, new_path)
         )
         FreeCAD.Console.PrintError("{}\n".format(error_message))
         if FreeCAD.GuiUp:
             QtGui.QMessageBox.critical(
                 FreeCADGui.getMainWindow(),
                 "Can't start Solver or Mesh creation.",
-                error_message
+                error_message,
             )
         # from .errors import DirectoryDoesNotExistError
         # raise DirectoryDoesNotExistError("Invalid path")
@@ -218,6 +221,7 @@ def check_working_dir(wdir):
     # check if working_dir exist, if not use a tmp dir and inform the user
     # print(wdir)
     from os.path import isdir
+
     if isdir(wdir):
         return True
     else:
@@ -233,8 +237,7 @@ def make_dir(specific_path):
         # beside dir fails on installed FC examples from start wb
         error_message = (
             "Failed to create the directory {}. "
-            " For the moment the tmp dir {} is used."
-            .format(specific_path, new_path)
+            " For the moment the tmp dir {} is used.".format(specific_path, new_path)
         )
         FreeCAD.Console.PrintError("{}\n".format(error_message))
         return new_path
@@ -261,7 +264,7 @@ def get_part_to_mesh(mesh_obj):
 
 
 def getBoundBoxOfAllDocumentShapes(doc):
-    """ Calculate bounding box containing all objects inside *doc*.
+    """Calculate bounding box containing all objects inside *doc*.
 
     :returns:
      A bounding box containing all objects that have a *Shape* attribute (all
@@ -288,7 +291,9 @@ def getBoundBoxOfAllDocumentShapes(doc):
 
         if bb is None:
             try:
-                FreeCAD.Console.PrintMessage("trying: {}: FemMesh\n".format(o.Label))  # debug only
+                FreeCAD.Console.PrintMessage(
+                    "trying: {}: FemMesh\n".format(o.Label)
+                )  # debug only
                 bb = o.FemMesh.BoundBox
                 FreeCAD.Console.PrintMessage("{}\n".format(bb))  # debug only
             except Exception:
@@ -300,15 +305,17 @@ def getBoundBoxOfAllDocumentShapes(doc):
                     overallboundbox = bb
                 else:
                     overallboundbox.add(bb)
-        else:                                                                   # debug only
-            FreeCAD.Console.PrintMessage("no bb\n")                             # debug only
+        else:  # debug only
+            FreeCAD.Console.PrintMessage("no bb\n")  # debug only
 
-    FreeCAD.Console.PrintMessage("overallBB:" + str(overallboundbox) + "\n")    # debug only
+    FreeCAD.Console.PrintMessage(
+        "overallBB:" + str(overallboundbox) + "\n"
+    )  # debug only
     return overallboundbox
 
 
 def getSelectedFace(selectionex):
-    """ Return selected face if exactly one face is selected.
+    """Return selected face if exactly one face is selected.
 
     :returns:
      The selected face as a ``Part::TopoShape`` if exactly one face is selected.
@@ -337,7 +344,7 @@ def getSelectedFace(selectionex):
 
 
 def get_refshape_type(fem_doc_object):
-    """ Return shape type the constraints references.
+    """Return shape type the constraints references.
 
     Determine single shape type of references of *fem_doc_object* which must be
     a constraint (=have a *References* property). All references must be of the
@@ -359,25 +366,28 @@ def get_refshape_type(fem_doc_object):
      Undefined behaviour if constraint contains no references (empty list).
     """
     from femtools.geomtools import get_element
+
     if hasattr(fem_doc_object, "References") and fem_doc_object.References:
         first_ref_obj = fem_doc_object.References[0]
         first_ref_shape = get_element(first_ref_obj[0], first_ref_obj[1][0])
         st = first_ref_shape.ShapeType
         FreeCAD.Console.PrintLog(
-            "References: {} in {}, {}\n"
-            . format(st, fem_doc_object.Name, fem_doc_object.Label)
+            "References: {} in {}, {}\n".format(
+                st, fem_doc_object.Name, fem_doc_object.Label
+            )
         )
         return st
     else:
         FreeCAD.Console.PrintLog(
-            "References: empty in {}, {}\n"
-            . format(fem_doc_object.Name, fem_doc_object.Label)
+            "References: empty in {}, {}\n".format(
+                fem_doc_object.Name, fem_doc_object.Label
+            )
         )
         return ""
 
 
 def pydecode(bytestring):
-    """ Return *bytestring* as a unicode string for python 2 and 3.
+    """Return *bytestring* as a unicode string for python 2 and 3.
 
     For python 2 *bytestring* is converted to a string of type ``unicode``. For
     python 3 it is returned as is because it uses unicode for it's ``str`` type

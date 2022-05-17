@@ -111,8 +111,7 @@ def findDistance(point, edge, strict=False):
             if strict:
                 s1 = newpoint.sub(edge[0])
                 s2 = newpoint.sub(edge[1])
-                if (s1.Length <= segment.Length
-                        and s2.Length <= segment.Length):
+                if s1.Length <= segment.Length and s2.Length <= segment.Length:
                     return dist
                 else:
                     return None
@@ -131,14 +130,13 @@ def findDistance(point, edge, strict=False):
 
             newpoint = point.add(dist)
 
-            if (dist.Length == 0):
+            if dist.Length == 0:
                 return None
 
             if strict:
                 s1 = newpoint.sub(edge.Vertexes[0].Point)
                 s2 = newpoint.sub(edge.Vertexes[-1].Point)
-                if (s1.Length <= segment.Length
-                        and s2.Length <= segment.Length):
+                if s1.Length <= segment.Length and s2.Length <= segment.Length:
                     return dist
                 else:
                     return None
@@ -170,7 +168,7 @@ def findDistance(point, edge, strict=False):
                 ang1 = DraftVecUtils.angle(ve1.sub(center))
                 ang2 = DraftVecUtils.angle(ve2.sub(center))
                 angpt = DraftVecUtils.angle(newpoint.sub(center))
-                if ang1 >= ang2: # Arc does not cross the 9 o'clock point.
+                if ang1 >= ang2:  # Arc does not cross the 9 o'clock point.
                     if ang1 >= angpt and angpt >= ang2:
                         return dist
                     else:
@@ -182,15 +180,15 @@ def findDistance(point, edge, strict=False):
             else:
                 return dist
 
-        elif (geomType(edge) == "BSplineCurve"
-              or geomType(edge) == "BezierCurve"):
+        elif geomType(edge) == "BSplineCurve" or geomType(edge) == "BezierCurve":
             try:
                 pr = edge.Curve.parameter(point)
                 np = edge.Curve.value(pr)
                 dist = np.sub(point)
             except Part.OCCError:
-                print("DraftGeomUtils: Unable to get curve parameter "
-                      "for point ", point)
+                print(
+                    "DraftGeomUtils: Unable to get curve parameter " "for point ", point
+                )
                 return None
             else:
                 return dist
@@ -327,8 +325,8 @@ def is_straight_line(shape, tol=-1):
     if len(shape.Edges) >= 1:
         start_edge = shape.Edges[0]
         dir_start_edge = start_edge.tangentAt(start_edge.FirstParameter)
-        #set tolerance
-        if tol <=0:
+        # set tolerance
+        if tol <= 0:
             err = shape.globalTolerance(tol)
         else:
             err = tol
@@ -340,8 +338,10 @@ def is_straight_line(shape, tol=-1):
             # check if edge is curve or no parallel to start_edge
             # because sin(x) = x + O(x**3), for small angular deflection it's
             # enough use the cross product of directions (or dot with a normal)
-            if (abs(edge.Length - first_point.distanceToPoint(last_point)) > err
-                or dir_start_edge.cross(dir_edge).Length > err):
+            if (
+                abs(edge.Length - first_point.distanceToPoint(last_point)) > err
+                or dir_start_edge.cross(dir_edge).Length > err
+            ):
                 return False
 
     return True
@@ -362,8 +362,8 @@ def are_coplanar(shape_a, shape_b, tol=-1):
     plane_a = find_plane(shape_a, tol)
     plane_b = find_plane(shape_b, tol)
 
-    #set tolerance
-    if tol <=0:
+    # set tolerance
+    if tol <= 0:
         err = 1e-7
     else:
         err = tol
@@ -372,8 +372,10 @@ def are_coplanar(shape_a, shape_b, tol=-1):
         normal_a = plane_a.Axis
         normal_b = plane_b.Axis
         proj = plane_a.projectPoint(plane_b.Position)
-        if (normal_a.cross(normal_b).Length > err
-            or plane_b.Position.sub(proj).Length > err):
+        if (
+            normal_a.cross(normal_b).Length > err
+            or plane_b.Position.sub(proj).Length > err
+        ):
             return False
         else:
             return True
@@ -418,8 +420,8 @@ def get_spline_surface_normal(shape, tol=-1):
     if len(shape.Faces) == 0:
         return None
 
-    #set tolerance
-    if tol <=0:
+    # set tolerance
+    if tol <= 0:
         err = shape.globalTolerance(tol)
     else:
         err = tol
@@ -431,8 +433,8 @@ def get_spline_surface_normal(shape, tol=-1):
 
     # find bounds of first_surf
     u0, u1, v0, v1 = first_surf.bounds()
-    u = (u0 + u1)/2
-    v = (v0 + v1)/2
+    u = (u0 + u1) / 2
+    v = (v0 + v1) / 2
     first_normal = first_surf.normal(u, v)
     # check if all faces are planar and parallel
     for face in shape.Faces:
@@ -440,8 +442,8 @@ def get_spline_surface_normal(shape, tol=-1):
         if not surf.isPlanar(tol):
             return None
         u0, u1, v0, v1 = surf.bounds()
-        u = (u0 + u1)/2
-        v = (v0 + v1)/2
+        u = (u0 + u1) / 2
+        v = (v0 + v1) / 2
         surf_normal = surf.normal(u, v)
         if first_normal.cross(surf_normal).Length > err:
             return None
@@ -449,6 +451,7 @@ def get_spline_surface_normal(shape, tol=-1):
     normal = first_normal
 
     return normal
+
 
 def find_plane(shape, tol=-1):
     """Find the plane containing the shape if possible.
@@ -517,13 +520,13 @@ def mirror(point, edge):
         return None
 
 
-#compatibility layer
+# compatibility layer
 
 getSplineNormal = get_spline_normal
 
 getNormal = get_normal
 
-isPlanar =  is_planar
+isPlanar = is_planar
 
 
 ## @}

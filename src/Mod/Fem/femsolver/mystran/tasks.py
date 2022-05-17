@@ -37,6 +37,7 @@ import FreeCAD
 
 try:
     import hfcMystranNeuIn
+
     result_reading = True
 except Exception:
     FreeCAD.Console.PrintWarning("Module to read results not found.\n")
@@ -55,7 +56,6 @@ _inputFileName = None
 
 
 class Check(run.Check):
-
     def run(self):
         self.pushStatus("Checking analysis member...\n")
         self.check_mesh_exists()
@@ -67,14 +67,15 @@ class Check(run.Check):
 
 
 class Prepare(run.Prepare):
-
     def run(self):
         global _inputFileName
         self.pushStatus("Preparing solver input...\n")
 
         # get mesh set data
         # TODO see calculix tasks get mesh set data
-        mesh_obj = membertools.get_mesh_to_solve(self.analysis)[0]  # pre check done already
+        mesh_obj = membertools.get_mesh_to_solve(self.analysis)[
+            0
+        ]  # pre check done already
         meshdatagetter = meshsetsgetter.MeshSetsGetter(
             self.analysis,
             self.solver,
@@ -102,7 +103,6 @@ class Prepare(run.Prepare):
 
 
 class Solve(run.Solve):
-
     def run(self):
         self.pushStatus("Executing solver...\n")
 
@@ -120,7 +120,7 @@ class Solve(run.Solve):
             args=[binary, infile],  # pass empty param fails! [binary, "", infile]
             cwd=self.directory,
             stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE
+            stderr=subprocess.PIPE,
         )
         self.signalAbort.add(self._process.terminate)
         self._process.communicate()
@@ -130,10 +130,8 @@ class Solve(run.Solve):
 
 
 class Results(run.Results):
-
     def run(self):
-        prefs = FreeCAD.ParamGet(
-            "User parameter:BaseApp/Preferences/Mod/Fem/General")
+        prefs = FreeCAD.ParamGet("User parameter:BaseApp/Preferences/Mod/Fem/General")
         if not prefs.GetBool("KeepResultsOnReRun", False):
             self.purge_results()
         if result_reading is True:
@@ -161,9 +159,9 @@ class Results(run.Results):
         else:
             # TODO: use solver framework status message system
             FreeCAD.Console.PrintError(
-                "FEM: No results found at {}!\n"
-                .format(neu_result_file)
+                "FEM: No results found at {}!\n".format(neu_result_file)
             )
             self.fail()
+
 
 ##  @}

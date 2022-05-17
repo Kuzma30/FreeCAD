@@ -30,7 +30,7 @@ from femmesh import meshtools
 
 
 def get_analysis_types():
-    return "all"    # write for all analysis types
+    return "all"  # write for all analysis types
 
 
 def get_sets_name():
@@ -73,12 +73,14 @@ def write_meshdata_constraint(f, femobj, fric_obj, ccxwriter):
     # Code to extract nodes and coordinates on the PlaneRotation support face
     nodes_coords = []
     for node in l_nodes:
-        nodes_coords.append((
-            node,
-            ccxwriter.femnodes_mesh[node].x,
-            ccxwriter.femnodes_mesh[node].y,
-            ccxwriter.femnodes_mesh[node].z
-        ))
+        nodes_coords.append(
+            (
+                node,
+                ccxwriter.femnodes_mesh[node].x,
+                ccxwriter.femnodes_mesh[node].y,
+                ccxwriter.femnodes_mesh[node].z,
+            )
+        )
     node_planerotation = meshtools.get_three_non_colinear_nodes(nodes_coords)
     for i in range(len(l_nodes)):
         if l_nodes[i] not in node_planerotation:

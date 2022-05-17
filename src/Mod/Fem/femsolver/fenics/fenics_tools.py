@@ -43,6 +43,7 @@ class XDMFReader(object):
     Reads XDMF file and provides unified interface for returning
     cell functions or facet functions.
     """
+
     def __init__(self, xdmffilename):
         """
         Sets filename and sets mesh instance to None.
@@ -82,27 +83,22 @@ class XDMFReader(object):
         value_type_dictionary = {
             "scalar": ScalarCellExpressionFromXDMF,
             "vector2d": Vector2DCellExpressionFromXDMF,
-            "vector3d": Vector3DCellExpressionFromXDMF}
+            "vector3d": Vector3DCellExpressionFromXDMF,
+        }
 
         self.readMesh()
         xdmffile = fenics.XDMFFile(self.xdmffilename)
         cf = value_type_dictionary[value_type.lower()](
-            group_value_dict,
-            overlap=overlap,
-            *args, **kwargs
+            group_value_dict, overlap=overlap, *args, **kwargs
         )
         cf.init()
         for (key, value) in cf.group_value_dict.items():
             cf.markers[key] = fenics.MeshFunction(
-                "size_t",
-                self.mesh,
-                self.mesh.topology().dim()
+                "size_t", self.mesh, self.mesh.topology().dim()
             )
             xdmffile.read(cf.markers[key], key)
             cf.dx[key] = fenics.Measure(
-                "dx",
-                domain=self.mesh,
-                subdomain_data=cf.markers[key]
+                "dx", domain=self.mesh, subdomain_data=cf.markers[key]
             )
         xdmffile.close()
         return cf
@@ -117,16 +113,12 @@ class XDMFReader(object):
         ff.init()
         for (key, value) in ff.group_value_dict.items():
             ff.markers[key] = fenics.MeshFunction(
-                "size_t",
-                self.mesh,
-                self.mesh.topology().dim() - 1
+                "size_t", self.mesh, self.mesh.topology().dim() - 1
             )
             xdmffile.read(ff.markers[key], key)
             ff.marked[key] = value.get("marked", 1)
             ff.ds[key] = fenics.Measure(
-                "ds",
-                domain=self.mesh,
-                subdomain_data=ff.markers[key]
+                "ds", domain=self.mesh, subdomain_data=ff.markers[key]
             )
             ff.bcs[key] = value
         xdmffile.close()
@@ -137,9 +129,11 @@ class CellExpressionFromXDMF(object):
     """
     Creates cell function expression from XDMF file.
     """
+
     def __init__(
-        self, group_value_dict,
-        default=lambda x: 0.,
+        self,
+        group_value_dict,
+        default=lambda x: 0.0,
         check_marked=(lambda x: x == 1),
         overlap=lambda x: x[0],
         **kwargs
@@ -160,7 +154,8 @@ class CellExpressionFromXDMF(object):
     def eval_cell_backend(self, values, x, cell):
 
         values_list = [
-            func(x) for (key, func) in self.group_value_dict.items()
+            func(x)
+            for (key, func) in self.group_value_dict.items()
             if self.check_marked(self.markers[key][cell.index])
         ]
         return_value = self.overlap(values_list)
@@ -179,20 +174,20 @@ class CellExpressionFromXDMF(object):
 # * overloaded.
 # ***********************************
 class ScalarCellExpressionFromXDMF(fenics.Expression, CellExpressionFromXDMF):
-
     def __init__(
         self,
         group_value_dict,
-        default=lambda x: 0.,
+        default=lambda x: 0.0,
         check_marked=(lambda x: x == 1),
         overlap=lambda x: x[0],
         **kwargs
     ):
         CellExpressionFromXDMF.__init__(
-            self, group_value_dict,
+            self,
+            group_value_dict,
             default=default,
             check_marked=check_marked,
-            overlap=overlap
+            overlap=overlap,
         )
 
     def eval_cell(self, values, x, cell):
@@ -203,19 +198,20 @@ class ScalarCellExpressionFromXDMF(fenics.Expression, CellExpressionFromXDMF):
 
 
 class Vector3DCellExpressionFromXDMF(fenics.Expression, CellExpressionFromXDMF):
-
     def __init__(
         self,
         group_value_dict,
         default=lambda x: np.zeros((3,)),
         check_marked=(lambda x: x == 1),
-        overlap=lambda x: x[0], **kwargs
+        overlap=lambda x: x[0],
+        **kwargs
     ):
         CellExpressionFromXDMF.__init__(
-            self, group_value_dict,
+            self,
+            group_value_dict,
             default=default,
             check_marked=check_marked,
-            overlap=overlap
+            overlap=overlap,
         )
 
     def eval_cell(self, values, x, cell):
@@ -226,7 +222,6 @@ class Vector3DCellExpressionFromXDMF(fenics.Expression, CellExpressionFromXDMF):
 
 
 class Vector2DCellExpressionFromXDMF(fenics.Expression, CellExpressionFromXDMF):
-
     def __init__(
         self,
         group_value_dict,
@@ -240,7 +235,7 @@ class Vector2DCellExpressionFromXDMF(fenics.Expression, CellExpressionFromXDMF):
             group_value_dict,
             default=default,
             check_marked=check_marked,
-            overlap=overlap
+            overlap=overlap,
         )
 
     def eval_cell(self, values, x, cell):
@@ -254,6 +249,7 @@ class FacetFunctionFromXDMF(object):
     """
     Creates facet function from XDMF file.
     """
+
     def __init__(self, group_value_dict, *args, **kwargs):
         self.group_value_dict = group_value_dict
         self.init()
@@ -273,11 +269,14 @@ class FacetFunctionFromXDMF(object):
                     dict_value["value"],
                     self.markers[dict_key],
                     dict_value.get("marked", 1),
-                    *args, **kwargs
+                    *args,
+                    **kwargs
                 )
                 dbcs.append(bc)
         return dbcs
+
     # TODO: write some functions to return integrals for Neumann and Robin
     # boundary conditions for the general case (i.e. vector, tensor)
+
 
 ##  @}

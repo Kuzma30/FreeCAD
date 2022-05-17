@@ -27,7 +27,7 @@ __url__ = "https://www.freecadweb.org"
 
 
 def get_analysis_types():
-    return "all"    # write for all analysis types
+    return "all"  # write for all analysis types
 
 
 def get_sets_name():

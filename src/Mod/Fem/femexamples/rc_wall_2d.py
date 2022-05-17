@@ -44,12 +44,14 @@ def get_information():
         "constraints": ["fixed", "force", "displacement"],
         "solvers": ["calculix", "ccxtools"],
         "material": "reinforced",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.rc_wall_2d import setup
@@ -62,6 +64,7 @@ https://forum.freecadweb.org/viewtopic.php?f=18&t=33106&start=80#p296469
 example from Harry's epic topic: Concrete branch ready for testing
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -72,7 +75,9 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric object
     v1 = vec(0, -2000, 0)
@@ -157,7 +162,9 @@ def setup(doc=None, solvertype="ccxtools"):
     analysis.addObject(con_force)
 
     # constraint displacement
-    con_disp = ObjectsFem.makeConstraintDisplacement(doc, "ConstraintDisplacmentPrescribed")
+    con_disp = ObjectsFem.makeConstraintDisplacement(
+        doc, "ConstraintDisplacmentPrescribed"
+    )
     con_disp.References = [(geom_obj, "Face1")]
     con_disp.zFree = False
     con_disp.zFix = True
@@ -165,6 +172,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_rc_wall_2d_tria6 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

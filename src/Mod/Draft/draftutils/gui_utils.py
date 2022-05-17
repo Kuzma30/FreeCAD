@@ -49,6 +49,7 @@ if App.GuiUp:
     import FreeCADGui as Gui
     from pivy import coin
     from PySide import QtGui
+
     # from PySide import QtSvg  # for load_texture
 
 
@@ -68,6 +69,7 @@ def get_3d_view():
         # Also see discussion https://forum.freecadweb.org/viewtopic.php?f=3&t=60251
         import FreeCADGui as Gui
         from pivy import coin
+
         if Gui.ActiveDocument:
             v = Gui.ActiveDocument.ActiveView
             if "View3DInventor" in str(type(v)):
@@ -108,9 +110,9 @@ def autogroup(obj):
     # check for required conditions for autogroup to work
     if not App.GuiUp:
         return
-    if not hasattr(Gui,"draftToolBar"):
+    if not hasattr(Gui, "draftToolBar"):
         return
-    if not hasattr(Gui.draftToolBar,"autogroup"):
+    if not hasattr(Gui.draftToolBar, "autogroup"):
         return
     if Gui.draftToolBar.isConstructionMode():
         return
@@ -118,8 +120,8 @@ def autogroup(obj):
     # check first for objects that do autogroup themselves
     # at the moment only Arch_BuildingPart, which is an App::GeometryPython
     for par in App.ActiveDocument.findObjects(Type="App::GeometryPython"):
-        if hasattr(par.Proxy,"autogroup"):
-            if par.Proxy.autogroup(par,obj):
+        if hasattr(par.Proxy, "autogroup"):
+            if par.Proxy.autogroup(par, obj):
                 return
 
     # autogroup code
@@ -149,19 +151,21 @@ def autogroup(obj):
             # add object to active part and change it's placement accordingly
             # so object does not jump to different position, works with App::Link
             # if not scaled. Modified accordingly to realthunder suggestions
-            active_part, parent, sub = Gui.ActiveDocument.ActiveView.getActiveObject("part", False)
+            active_part, parent, sub = Gui.ActiveDocument.ActiveView.getActiveObject(
+                "part", False
+            )
             if obj in active_part.InListRecursive:
                 # do not autogroup if obj points to active_part to prevent cyclic references
                 return
             matrix = parent.getSubObject(sub, retType=4)
             if matrix.hasScale() == App.ScaleType.Uniform:
-                err = translate("draft",
-                                "Unable to insert new object into "
-                                "a scaled part")
+                err = translate(
+                    "draft", "Unable to insert new object into " "a scaled part"
+                )
                 App.Console.PrintMessage(err)
                 return
             inverse_placement = App.Placement(matrix.inverse())
-            if utils.get_type(obj) == 'Point':
+            if utils.get_type(obj) == "Point":
                 point_vector = App.Vector(obj.X, obj.Y, obj.Z)
                 real_point = inverse_placement.multVec(point_vector)
                 obj.X = real_point.x
@@ -176,7 +180,7 @@ def autogroup(obj):
             elif utils.get_type(obj) in ["Label"]:
                 obj.Placement = App.Placement(inverse_placement.multiply(obj.Placement))
                 obj.TargetPoint = inverse_placement.multVec(obj.TargetPoint)
-            elif hasattr(obj,"Placement"):
+            elif hasattr(obj, "Placement"):
                 # every object that have a placement is processed here
                 obj.Placement = App.Placement(inverse_placement.multiply(obj.Placement))
 
@@ -240,9 +244,9 @@ def dim_symbol(symbol=None, invert=False):
         t.translation.setValue((0, -2, 0))
         t.center.setValue((0, 2, 0))
         if invert:
-            t.rotation.setValue(coin.SbVec3f((0, 0, 1)), -math.pi/2)
+            t.rotation.setValue(coin.SbVec3f((0, 0, 1)), -math.pi / 2)
         else:
-            t.rotation.setValue(coin.SbVec3f((0, 0, 1)), math.pi/2)
+            t.rotation.setValue(coin.SbVec3f((0, 0, 1)), math.pi / 2)
         c = coin.SoCone()
         c.height.setValue(4)
         marker.addChild(t)
@@ -254,8 +258,7 @@ def dim_symbol(symbol=None, invert=False):
         h = coin.SoShapeHints()
         h.vertexOrdering = h.COUNTERCLOCKWISE
         c = coin.SoCoordinate3()
-        c.point.setValues([(-1, -2, 0), (0, 2, 0),
-                           (1, 2, 0), (0, -2, 0)])
+        c.point.setValues([(-1, -2, 0), (0, 2, 0), (1, 2, 0), (0, -2, 0)])
         f = coin.SoFaceSet()
         marker.addChild(h)
         marker.addChild(c)
@@ -330,7 +333,10 @@ def remove_hidden(objectslist):
         if obj.ViewObject:
             if not obj.ViewObject.isVisible():
                 newlist.remove(obj)
-                _msg(translate("draft", "Visibility off; removed from list: ") + obj.Label)
+                _msg(
+                    translate("draft", "Visibility off; removed from list: ")
+                    + obj.Label
+                )
     return newlist
 
 
@@ -393,9 +399,9 @@ def format_object(target, origin=None):
         lcol = (float(lcol[0]), float(lcol[1]), float(lcol[2]), 0.0)
         tcol = (float(tcol[0]), float(tcol[1]), float(tcol[2]), 0.0)
         fcol = (float(fcol[0]), float(fcol[1]), float(fcol[2]), 0.0)
-        lw = utils.getParam("linewidth",2)
-        fs = utils.getParam("textheight",0.20)
-        if not origin or not hasattr(origin, 'ViewObject'):
+        lw = utils.getParam("linewidth", 2)
+        fs = utils.getParam("textheight", 0.20)
+        if not origin or not hasattr(origin, "ViewObject"):
             if "FontSize" in obrep.PropertiesList:
                 obrep.FontSize = fs
             if "TextSize" in obrep.PropertiesList:
@@ -407,7 +413,7 @@ def format_object(target, origin=None):
             if "PointColor" in obrep.PropertiesList:
                 obrep.PointColor = lcol
             if "LineColor" in obrep.PropertiesList:
-                if hasattr(obrep,"FontName") and (not hasattr(obrep,"TextColor")):
+                if hasattr(obrep, "FontName") and (not hasattr(obrep, "TextColor")):
                     # dimensions and other objects with text but no specific
                     # TextColor property. TODO: Add TextColor property to dimensions
                     obrep.LineColor = tcol
@@ -418,8 +424,13 @@ def format_object(target, origin=None):
         else:
             matchrep = origin.ViewObject
             for p in matchrep.PropertiesList:
-                if p not in ("DisplayMode", "BoundingBox",
-                             "Proxy", "RootNode", "Visibility"):
+                if p not in (
+                    "DisplayMode",
+                    "BoundingBox",
+                    "Proxy",
+                    "RootNode",
+                    "Visibility",
+                ):
                     if p in obrep.PropertiesList:
                         if not obrep.getEditorMode(p):
                             if hasattr(getattr(matchrep, p), "Value"):
@@ -432,8 +443,7 @@ def format_object(target, origin=None):
                                 pass
             if matchrep.DisplayMode in obrep.listDisplayModes():
                 obrep.DisplayMode = matchrep.DisplayMode
-            if (hasattr(matchrep, "DiffuseColor")
-                    and hasattr(obrep, "DiffuseColor")):
+            if hasattr(matchrep, "DiffuseColor") and hasattr(obrep, "DiffuseColor"):
                 obrep.DiffuseColor = matchrep.DiffuseColor
 
 
@@ -603,11 +613,16 @@ def load_texture(filename, size=None, gui=App.GuiUp):
                 _wrn("load_texture: " + translate("draft", "image is Null"))
 
                 if not os.path.exists(filename):
-                    raise FileNotFoundError(-1,
-                                            translate("draft", "filename does not exist "
-                                                               "on the system or "
-                                                               "in the resource file"),
-                                            filename)
+                    raise FileNotFoundError(
+                        -1,
+                        translate(
+                            "draft",
+                            "filename does not exist "
+                            "on the system or "
+                            "in the resource file",
+                        ),
+                        filename,
+                    )
 
             # This is buggy so it was de-activated.
             #
@@ -660,8 +675,7 @@ def load_texture(filename, size=None, gui=App.GuiUp):
             _bytes = bytes(byteList)
             img.setValue(size, numcomponents, _bytes)
         except FileNotFoundError as exc:
-            _wrn("load_texture: {0}, {1}".format(exc.strerror,
-                                                 exc.filename))
+            _wrn("load_texture: {0}, {1}".format(exc.strerror, exc.filename))
             return None
         except Exception as exc:
             _wrn(str(exc))
@@ -732,9 +746,11 @@ def get_bbox(obj, debug=False):
     if debug:
         _msg("obj: {}".format(obj.Label))
 
-    if (not hasattr(obj, "ViewObject")
-            or not obj.ViewObject
-            or not hasattr(obj.ViewObject, "RootNode")):
+    if (
+        not hasattr(obj, "ViewObject")
+        or not obj.ViewObject
+        or not hasattr(obj.ViewObject, "RootNode")
+    ):
         _err(translate("draft", "Does not have 'ViewObject.RootNode'."))
 
     # For Draft Dimensions
@@ -753,5 +769,6 @@ def get_bbox(obj, debug=False):
     xmax, ymax, zmax = bb.getMax().getValue()
 
     return App.BoundBox(xmin, ymin, zmin, xmax, ymax, zmax)
+
 
 ## @}

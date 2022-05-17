@@ -100,8 +100,10 @@ class Fillet(base.DraftObject):
 
     def _migrate(self, obj, _module):
         """Migrate the object to the new object."""
-        _wrn("v0.19, {0}, '{1}' object ".format(obj.Label, _module)
-             + "will be migrated to 'draftobjects.fillet.Fillet'")
+        _wrn(
+            "v0.19, {0}, '{1}' object ".format(obj.Label, _module)
+            + "will be migrated to 'draftobjects.fillet.Fillet'"
+        )
 
         # Save the old properties and delete them
         old_dict = _save_properties0_19_to_0_19(obj)

@@ -44,12 +44,14 @@ def get_information():
         "constraints": ["fixed", "force", "tie"],
         "solvers": ["calculix", "ccxtools"],
         "material": "solid",
-        "equation": "mechanical"
+        "equation": "mechanical",
     }
 
 
 def get_explanation(header=""):
-    return header + """
+    return (
+        header
+        + """
 
 To run the example from Python console use:
 from femexamples.constraint_tie import setup
@@ -62,6 +64,7 @@ https://forum.freecadweb.org/viewtopic.php?f=18&t=42783
 constraint tie, bond two surfaces together (solid mesh only)
 
 """
+    )
 
 
 def setup(doc=None, solvertype="ccxtools"):
@@ -72,21 +75,31 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # explanation object
     # just keep the following line and change text string in get_explanation method
-    manager.add_explanation_obj(doc, get_explanation(manager.get_header(get_information())))
+    manager.add_explanation_obj(
+        doc, get_explanation(manager.get_header(get_information()))
+    )
 
     # geometric objects
     # cones cut
-    cone_outer_sh = Part.makeCone(1100, 1235, 1005, Vector(0, 0, 0), Vector(0, 0, 1), 359)
-    cone_inner_sh = Part.makeCone(1050, 1185, 1005, Vector(0, 0, 0), Vector(0, 0, 1), 359)
+    cone_outer_sh = Part.makeCone(
+        1100, 1235, 1005, Vector(0, 0, 0), Vector(0, 0, 1), 359
+    )
+    cone_inner_sh = Part.makeCone(
+        1050, 1185, 1005, Vector(0, 0, 0), Vector(0, 0, 1), 359
+    )
     cone_cut_sh = cone_outer_sh.cut(cone_inner_sh)
     cone_cut_obj = doc.addObject("Part::Feature", "Cone_Cut")
     cone_cut_obj.Shape = cone_cut_sh
 
     # lines
-    line_fix_sh = Part.Edge(Part.LineSegment(Vector(0, -1235, 1005), Vector(0, -1185, 1005)))
+    line_fix_sh = Part.Edge(
+        Part.LineSegment(Vector(0, -1235, 1005), Vector(0, -1185, 1005))
+    )
     line_fix_obj = doc.addObject("Part::Feature", "Line_Fix")
     line_fix_obj.Shape = line_fix_sh
-    line_force_sh = Part.Edge(Part.LineSegment(Vector(0, 1185, 1005), Vector(0, 1235, 1005)))
+    line_force_sh = Part.Edge(
+        Part.LineSegment(Vector(0, 1185, 1005), Vector(0, 1235, 1005))
+    )
     line_force_obj = doc.addObject("Part::Feature", "Line_Force")
     line_force_obj.Shape = line_force_sh
 
@@ -158,6 +171,7 @@ def setup(doc=None, solvertype="ccxtools"):
 
     # mesh
     from .meshes.mesh_constraint_tie_tetra10 import create_nodes, create_elements
+
     fem_mesh = Fem.FemMesh()
     control = create_nodes(fem_mesh)
     if not control:

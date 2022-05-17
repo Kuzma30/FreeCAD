@@ -22,7 +22,9 @@
 # *                                                                         *
 # ***************************************************************************
 
-__title__ = "FreeCAD FEM constraint initial flow velocity ViewProvider for the document object"
+__title__ = (
+    "FreeCAD FEM constraint initial flow velocity ViewProvider for the document object"
+)
 __author__ = "Markus Hovorka, Bernd Hahnebach"
 __url__ = "https://www.freecadweb.org"
 
@@ -35,11 +37,7 @@ from . import view_base_femconstraint
 
 
 class VPConstraintInitialFlowVelocity(view_base_femconstraint.VPBaseFemConstraint):
-
     def setEdit(self, vobj, mode=0):
         view_base_femconstraint.VPBaseFemConstraint.setEdit(
-            self,
-            vobj,
-            mode,
-            task_constraint_initialflowvelocity._TaskPanel
+            self, vobj, mode, task_constraint_initialflowvelocity._TaskPanel
         )

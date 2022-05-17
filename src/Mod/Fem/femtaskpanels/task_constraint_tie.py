@@ -54,16 +54,13 @@ class _TaskPanel:
         QtCore.QObject.connect(
             self.parameterWidget.if_tolerance,
             QtCore.SIGNAL("valueChanged(Base::Quantity)"),
-            self.tolerance_changed
+            self.tolerance_changed,
         )
         self.init_parameter_widget()
 
         # geometry selection widget
         self.selectionWidget = selection_widgets.GeometryElementsSelection(
-            obj.References,
-            ["Face"],
-            False,
-            False
+            obj.References, ["Face"], False, False
         )
 
         # form made from param and selection widget
@@ -73,16 +70,18 @@ class _TaskPanel:
         # check values
         items = len(self.selectionWidget.references)
         FreeCAD.Console.PrintMessage(
-            "Task panel: found references: {}\n{}\n"
-            .format(items, self.selectionWidget.references)
+            "Task panel: found references: {}\n{}\n".format(
+                items, self.selectionWidget.references
+            )
         )
 
         if items != 2:
             msgBox = QtGui.QMessageBox()
             msgBox.setIcon(QtGui.QMessageBox.Question)
             msgBox.setText(
-                "Constraint Tie requires exactly two faces\n\nfound references: {}"
-                .format(items)
+                "Constraint Tie requires exactly two faces\n\nfound references: {}".format(
+                    items
+                )
             )
             msgBox.setWindowTitle("FreeCAD FEM Constraint Tie")
             retryButton = msgBox.addButton(QtGui.QMessageBox.Retry)

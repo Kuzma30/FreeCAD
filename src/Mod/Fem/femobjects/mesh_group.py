@@ -46,12 +46,12 @@ class MeshGroup(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyBool",
             "UseLabel",
             "MeshGroupProperties",
-            "The identifier used for export (True: Label, False: Name)"
+            "The identifier used for export (True: Label, False: Name)",
         )
 
         obj.addProperty(
             "App::PropertyLinkSubList",
             "References",
             "MeshGroupShapes",
-            "List of FEM mesh group shapes"
+            "List of FEM mesh group shapes",
         )

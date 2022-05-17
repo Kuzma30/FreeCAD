@@ -1,40 +1,44 @@
 # -*- coding: utf8 -*-
-#***************************************************************************
-#*   Copyright (c) 2011 Yorik van Havre <yorik@uncreated.net>              *
-#*                                                                         *
-#*   This program is free software; you can redistribute it and/or modify  *
-#*   it under the terms of the GNU Lesser General Public License (LGPL)    *
-#*   as published by the Free Software Foundation; either version 2 of     *
-#*   the License, or (at your option) any later version.                   *
-#*   for detail see the LICENCE text file.                                 *
-#*                                                                         *
-#*   This program is distributed in the hope that it will be useful,       *
-#*   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
-#*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
-#*   GNU Library General Public License for more details.                  *
-#*                                                                         *
-#*   You should have received a copy of the GNU Library General Public     *
-#*   License along with this program; if not, write to the Free Software   *
-#*   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
-#*   USA                                                                   *
-#*                                                                         *
-#***************************************************************************
+# ***************************************************************************
+# *   Copyright (c) 2011 Yorik van Havre <yorik@uncreated.net>              *
+# *                                                                         *
+# *   This program is free software; you can redistribute it and/or modify  *
+# *   it under the terms of the GNU Lesser General Public License (LGPL)    *
+# *   as published by the Free Software Foundation; either version 2 of     *
+# *   the License, or (at your option) any later version.                   *
+# *   for detail see the LICENCE text file.                                 *
+# *                                                                         *
+# *   This program is distributed in the hope that it will be useful,       *
+# *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+# *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+# *   GNU Library General Public License for more details.                  *
+# *                                                                         *
+# *   You should have received a copy of the GNU Library General Public     *
+# *   License along with this program; if not, write to the Free Software   *
+# *   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  *
+# *   USA                                                                   *
+# *                                                                         *
+# ***************************************************************************
 
 """This module provides tools to build Project objects.  Project objects are
 objects specifically for better IFC compatibility, allowing the user to tweak
 certain IFC relevant values.
 """
 
-import FreeCAD,ArchIFC,ArchIFCView
+import FreeCAD, ArchIFC, ArchIFCView
+
 if FreeCAD.GuiUp:
     import FreeCADGui
     from DraftTools import translate
     from PySide.QtCore import QT_TRANSLATE_NOOP
 else:
-    def translate(ctxt,txt):
+
+    def translate(ctxt, txt):
         return txt
-    def QT_TRANSLATE_NOOP(ctxt,txt):
+
+    def QT_TRANSLATE_NOOP(ctxt, txt):
         return txt
+
 
 ## @package ArchProject
 #  \ingroup ARCH
@@ -42,9 +46,10 @@ else:
 #
 #  This module provides tools to build Project objects.
 
-__title__  = "FreeCAD Project"
+__title__ = "FreeCAD Project"
 __author__ = "Yorik van Havre"
-__url__    = "https://www.freecadweb.org"
+__url__ = "https://www.freecadweb.org"
+
 
 def makeProject(sites=None, name="Project"):
     """Create an Arch project.
@@ -69,6 +74,7 @@ def makeProject(sites=None, name="Project"):
         return FreeCAD.Console.PrintError("No active document. Aborting\n")
 
     import Part
+
     obj = FreeCAD.ActiveDocument.addObject("Part::FeaturePython", "Project")
     obj.Label = translate("Arch", name)
     _Project(obj)
@@ -77,6 +83,7 @@ def makeProject(sites=None, name="Project"):
     if sites:
         obj.Group = sites
     return obj
+
 
 class _CommandProject:
     """The command definition for the Arch workbench's gui tool, Arch Project.
@@ -92,10 +99,15 @@ class _CommandProject:
 
     def GetResources(self):
         """Return a dictionary with the visual aspects of the Arch Project tool."""
-        return {'Pixmap'  : 'Arch_Project',
-                'MenuText': QT_TRANSLATE_NOOP("Arch_Project", "Project"),
-                'Accel': "P, O",
-                'ToolTip': QT_TRANSLATE_NOOP("Arch_Project", "Creates a project entity aggregating the selected sites.")}
+        return {
+            "Pixmap": "Arch_Project",
+            "MenuText": QT_TRANSLATE_NOOP("Arch_Project", "Project"),
+            "Accel": "P, O",
+            "ToolTip": QT_TRANSLATE_NOOP(
+                "Arch_Project",
+                "Creates a project entity aggregating the selected sites.",
+            ),
+        }
 
     def IsActive(self):
         """Determine whether or not the Arch Project tool is active.
@@ -122,13 +134,14 @@ class _CommandProject:
         for o in siteobj:
             ss += "FreeCAD.ActiveDocument." + o.Name + ", "
         ss += "]"
-        FreeCAD.ActiveDocument.openTransaction(translate("Arch","Create Project"))
+        FreeCAD.ActiveDocument.openTransaction(translate("Arch", "Create Project"))
         FreeCADGui.addModule("Arch")
-        FreeCADGui.doCommand("obj = Arch.makeProject("+ss+")")
+        FreeCADGui.doCommand("obj = Arch.makeProject(" + ss + ")")
         FreeCADGui.addModule("Draft")
         FreeCADGui.doCommand("Draft.autogroup(obj)")
         FreeCAD.ActiveDocument.commitTransaction()
         FreeCAD.ActiveDocument.recompute()
+
 
 class _Project(ArchIFC.IfcContext):
     """The project object.
@@ -156,7 +169,7 @@ class _Project(ArchIFC.IfcContext):
 
         ArchIFC.IfcContext.setProperties(self, obj)
         pl = obj.PropertiesList
-        if not hasattr(obj,"Group"):
+        if not hasattr(obj, "Group"):
             obj.addExtension("App::GroupExtensionPython")
         self.Type = "Project"
 
@@ -164,7 +177,7 @@ class _Project(ArchIFC.IfcContext):
         """Method run when the document is restored. Re-add the properties."""
         self.setProperties(obj)
 
-    def addObject(self,obj,child):
+    def addObject(self, obj, child):
 
         "Adds an object to the group of this BuildingPart"
 
@@ -172,6 +185,7 @@ class _Project(ArchIFC.IfcContext):
             g = obj.Group
             g.append(child)
             obj.Group = g
+
 
 class _ViewProviderProject(ArchIFCView.IfcContextView):
     """A View Provider for the project object.
@@ -182,7 +196,7 @@ class _ViewProviderProject(ArchIFCView.IfcContextView):
         The view provider to turn into a project view provider.
     """
 
-    def __init__(self,vobj):
+    def __init__(self, vobj):
         vobj.Proxy = self
         vobj.addExtension("Gui::ViewProviderGroupExtensionPython")
 
@@ -196,7 +210,9 @@ class _ViewProviderProject(ArchIFCView.IfcContextView):
         """
 
         import Arch_rc
+
         return ":/icons/Arch_Project_Tree.svg"
 
+
 if FreeCAD.GuiUp:
-    FreeCADGui.addCommand('Arch_Project', _CommandProject())
+    FreeCADGui.addCommand("Arch_Project", _CommandProject())

@@ -47,49 +47,49 @@ class ElementGeometry1D(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyLength",
             "RectWidth",
             "RectBeamSection",
-            "set width of the rectangular beam elements"
+            "set width of the rectangular beam elements",
         )
 
         obj.addProperty(
             "App::PropertyLength",
             "RectHeight",
             "RectBeamSection",
-            "set height of therectangular beam elements"
+            "set height of therectangular beam elements",
         )
 
         obj.addProperty(
             "App::PropertyLength",
             "CircDiameter",
             "CircBeamSection",
-            "set diameter of the circular beam elements"
+            "set diameter of the circular beam elements",
         )
 
         obj.addProperty(
             "App::PropertyLength",
             "PipeDiameter",
             "PipeBeamSection",
-            "set outer diameter of the pipe beam elements"
+            "set outer diameter of the pipe beam elements",
         )
 
         obj.addProperty(
             "App::PropertyLength",
             "PipeThickness",
             "PipeBeamSection",
-            "set thickness of the pipe beam elements"
+            "set thickness of the pipe beam elements",
         )
 
         obj.addProperty(
             "App::PropertyEnumeration",
             "SectionType",
             "BeamSection",
-            "select beam section type"
+            "select beam section type",
         )
 
         obj.addProperty(
             "App::PropertyLinkSubList",
             "References",
             "BeamSection",
-            "List of beam section shapes"
+            "List of beam section shapes",
         )
 
         obj.SectionType = ElementGeometry1D.known_beam_types

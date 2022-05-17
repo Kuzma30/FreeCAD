@@ -46,12 +46,12 @@ class ConstraintCentrif(base_fempythonobject.BaseFemPythonObject):
             "App::PropertyFrequency",
             "RotationFrequency",
             "Constraint CENTRIF",
-            "set rotation frequency f<sub>rot"
+            "set rotation frequency f<sub>rot",
         )
 
         obj.addProperty(
             "App::PropertyLinkSubList",
             "RotationAxis",
             "Constraint CENTRIF",
-            "set line as axis of rotation"
+            "set line as axis of rotation",
         )

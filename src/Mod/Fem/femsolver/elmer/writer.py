@@ -63,7 +63,6 @@ def _getAllSubObjects(obj):
 
 
 class Writer(object):
-
     def __init__(self, solver, directory, testmode=False):
         self.analysis = solver.getParentGroup()
         self.solver = solver
@@ -161,8 +160,9 @@ class Writer(object):
             Console.PrintMessage(
                 "Unit schema: {} not supported by Elmer writer. "
                 "The FreeCAD standard unit schema mm/kg/s is used. "
-                "Elmer sif-file writing is done in Standard FreeCAD units.\n"
-                .format(Units.listSchemas(self.unit_schema))
+                "Elmer sif-file writing is done in Standard FreeCAD units.\n".format(
+                    Units.listSchemas(self.unit_schema)
+                )
             )
 
     def _getFromUi(self, value, unit, outputDim):
@@ -191,7 +191,9 @@ class Writer(object):
         # TODO without method directly use self.constsdef[name]
         if name == "PermittivityOfVacuum":
             theUnit = "s^4*A^2 / (m^3*kg)"
-            self.constsdef[name] = "{} {}".format(self._convert(quantityStr, theUnit), theUnit)
+            self.constsdef[name] = "{} {}".format(
+                self._convert(quantityStr, theUnit), theUnit
+            )
         return True
 
     def _writeMesh(self):
@@ -210,12 +212,18 @@ class Writer(object):
             binary = settings.get_binary("ElmerGrid")
             if binary is None:
                 raise WriteError("Could not find ElmerGrid binary.")
-            args = [binary,
-                    _ELMERGRID_IFORMAT,
-                    _ELMERGRID_OFORMAT,
-                    unvPath,
-                    "-scale", "0.001", "0.001", "0.001",
-                    "-out", self.directory]
+            args = [
+                binary,
+                _ELMERGRID_IFORMAT,
+                _ELMERGRID_OFORMAT,
+                unvPath,
+                "-scale",
+                "0.001",
+                "0.001",
+                "0.001",
+                "-out",
+                self.directory,
+            ]
             subprocess.call(args, stdout=subprocess.DEVNULL)
 
     def _writeStartinfo(self):
@@ -250,6 +258,7 @@ class Writer(object):
                 "It might not be installed.\n"
             )
             import shutil
+
             shutil.copyfile(geoPath, os.path.join(self.directory, "group_mesh.geo"))
         else:
             tools.get_gmsh_command()
@@ -270,20 +279,23 @@ class Writer(object):
         permittivity_objs = self._getMember("Fem::ConstantVacuumPermittivity")
         if len(permittivity_objs) == 1:
             Console.PrintLog("Constand permittivity overwriting.\n")
-            self._setConstant("PermittivityOfVacuum", permittivity_objs[0].VacuumPermittivity)
+            self._setConstant(
+                "PermittivityOfVacuum", permittivity_objs[0].VacuumPermittivity
+            )
         elif len(permittivity_objs) > 1:
             Console.PrintError(
                 "More than one permittivity constant overwriting objects ({} objs). "
-                "The permittivity constant overwriting is ignored.\n"
-                .format(len(permittivity_objs))
+                "The permittivity constant overwriting is ignored.\n".format(
+                    len(permittivity_objs)
+                )
             )
 
     def _handleSimulation(self):
         self._simulation("Coordinate System", "Cartesian 3D")
         self._simulation("Coordinate Mapping", (1, 2, 3))
         # not necessary anymore since we use SI units
-        #if self.unit_schema == Units.Scheme.SI2:
-        #self._simulation("Coordinate Scaling", 0.001)
+        # if self.unit_schema == Units.Scheme.SI2:
+        # self._simulation("Coordinate Scaling", 0.001)
         #    Console.PrintMessage(
         #        "'Coordinate Scaling = Real 0.001' was inserted into the solver input file.\n"
         #    )
@@ -294,11 +306,11 @@ class Writer(object):
         self._simulation("BDF Order", 1)
         self._simulation("Use Mesh Names", True)
         self._simulation(
-            "Steady State Max Iterations",
-            self.solver.SteadyStateMaxIterations)
+            "Steady State Max Iterations", self.solver.SteadyStateMaxIterations
+        )
         self._simulation(
-            "Steady State Min Iterations",
-            self.solver.SteadyStateMinIterations)
+            "Steady State Min Iterations", self.solver.SteadyStateMinIterations
+        )
 
     def _handleHeat(self):
         activeIn = []
@@ -331,8 +343,8 @@ class Writer(object):
 
     def _handleHeatConstants(self):
         self._constant(
-            "Stefan Boltzmann",
-            self._getConstant("StefanBoltzmann", "M/(O^4*T^3)"))
+            "Stefan Boltzmann", self._getConstant("StefanBoltzmann", "M/(O^4*T^3)")
+        )
 
     def _handleHeatBndConditions(self):
         for obj in self._getMember("Fem::ConstraintTemperature"):
@@ -386,20 +398,19 @@ class Writer(object):
                 self._material(name, "Reference Temperature", refTemp)
         for obj in self._getMember("App::MaterialObject"):
             m = obj.Material
-            refs = (
-                obj.References[0][1]
-                if obj.References
-                else self._getAllBodies())
+            refs = obj.References[0][1] if obj.References else self._getAllBodies()
             for name in (n for n in refs if n in bodies):
+                self._material(name, "Density", self._getDensity(m))
                 self._material(
-                    name, "Density",
-                    self._getDensity(m))
+                    name,
+                    "Heat Conductivity",
+                    self._convert(m["ThermalConductivity"], "M*L/(T^3*O)"),
+                )
                 self._material(
-                    name, "Heat Conductivity",
-                    self._convert(m["ThermalConductivity"], "M*L/(T^3*O)"))
-                self._material(
-                    name, "Heat Capacity",
-                    self._convert(m["SpecificHeat"], "L^2/(T^2*O)"))
+                    name,
+                    "Heat Capacity",
+                    self._convert(m["SpecificHeat"], "L^2/(T^2*O)"),
+                )
 
     def _handleElectrostatic(self):
         activeIn = []
@@ -440,22 +451,18 @@ class Writer(object):
     def _handleElectrostaticConstants(self):
         self._constant(
             "Permittivity Of Vacuum",
-            self._getConstant("PermittivityOfVacuum", "T^4*I^2/(L^3*M)")
+            self._getConstant("PermittivityOfVacuum", "T^4*I^2/(L^3*M)"),
         )
         # https://forum.freecadweb.org/viewtopic.php?f=18&p=400959#p400959
 
     def _handleElectrostaticMaterial(self, bodies):
         for obj in self._getMember("App::MaterialObject"):
             m = obj.Material
-            refs = (
-                obj.References[0][1]
-                if obj.References
-                else self._getAllBodies())
+            refs = obj.References[0][1] if obj.References else self._getAllBodies()
             for name in (n for n in refs if n in bodies):
                 if "RelativePermittivity" in m:
                     self._material(
-                        name, "Relative Permittivity",
-                        float(m["RelativePermittivity"])
+                        name, "Relative Permittivity", float(m["RelativePermittivity"])
                     )
 
     def _handleElectrostaticBndConditions(self):
@@ -474,7 +481,9 @@ class Writer(object):
                         self._boundary(name, "Calculate Electric Force", True)
                     if obj.CapacitanceBodyEnabled:
                         if hasattr(obj, "CapacitanceBody"):
-                            self._boundary(name, "Capacitance Body", obj.CapacitanceBody)
+                            self._boundary(
+                                name, "Capacitance Body", obj.CapacitanceBody
+                            )
                 self._handled(obj)
 
     def _handleFlux(self):
@@ -588,17 +597,20 @@ class Writer(object):
                 for name in obj.References[0][1]:
                     if not obj.xFree:
                         self._boundary(
-                            name, "Displacement 1", obj.xDisplacement * 0.001)
+                            name, "Displacement 1", obj.xDisplacement * 0.001
+                        )
                     elif obj.xFix:
                         self._boundary(name, "Displacement 1", 0.0)
                     if not obj.yFree:
                         self._boundary(
-                            name, "Displacement 2", obj.yDisplacement * 0.001)
+                            name, "Displacement 2", obj.yDisplacement * 0.001
+                        )
                     elif obj.yFix:
                         self._boundary(name, "Displacement 2", 0.0)
                     if not obj.zFree:
                         self._boundary(
-                            name, "Displacement 3", obj.zDisplacement * 0.001)
+                            name, "Displacement 3", obj.zDisplacement * 0.001
+                        )
                     elif obj.zFix:
                         self._boundary(name, "Displacement 3", 0.0)
                 self._handled(obj)
@@ -657,29 +669,17 @@ class Writer(object):
         # get the material data for all boddies
         for obj in self._getMember("App::MaterialObject"):
             m = obj.Material
-            refs = (
-                obj.References[0][1]
-                if obj.References
-                else self._getAllBodies()
-            )
+            refs = obj.References[0][1] if obj.References else self._getAllBodies()
             for name in (n for n in refs if n in bodies):
                 if density_needed is True:
-                    self._material(
-                        name, "Density",
-                        self._getDensity(m)
-                    )
-                self._material(
-                    name, "Youngs Modulus",
-                    self._getYoungsModulus(m)
-                )
-                self._material(
-                    name, "Poisson ratio",
-                    float(m["PoissonRatio"])
-                )
+                    self._material(name, "Density", self._getDensity(m))
+                self._material(name, "Youngs Modulus", self._getYoungsModulus(m))
+                self._material(name, "Poisson ratio", float(m["PoissonRatio"]))
                 if tempObj:
                     self._material(
-                        name, "Heat expansion Coefficient",
-                        self._convert(m["ThermalExpansionCoefficient"], "O^-1")
+                        name,
+                        "Heat expansion Coefficient",
+                        self._convert(m["ThermalExpansionCoefficient"], "O^-1"),
                     )
 
     def _getDensity(self, m):
@@ -737,43 +737,35 @@ class Writer(object):
                 self._material(name, "Reference Temperature", refTemp)
         for obj in self._getMember("App::MaterialObject"):
             m = obj.Material
-            refs = (
-                obj.References[0][1]
-                if obj.References
-                else self._getAllBodies())
+            refs = obj.References[0][1] if obj.References else self._getAllBodies()
             for name in (n for n in refs if n in bodies):
                 if "Density" in m:
-                    self._material(
-                        name, "Density",
-                        self._getDensity(m)
-                    )
+                    self._material(name, "Density", self._getDensity(m))
                 if "ThermalConductivity" in m:
                     self._material(
-                        name, "Heat Conductivity",
-                        self._convert(m["ThermalConductivity"], "M*L/(T^3*O)")
+                        name,
+                        "Heat Conductivity",
+                        self._convert(m["ThermalConductivity"], "M*L/(T^3*O)"),
                     )
                 if "KinematicViscosity" in m:
                     density = self._getDensity(m)
                     kViscosity = self._convert(m["KinematicViscosity"], "L^2/T")
-                    self._material(
-                        name, "Viscosity", kViscosity * density)
+                    self._material(name, "Viscosity", kViscosity * density)
                 if "ThermalExpansionCoefficient" in m:
                     value = self._convert(m["ThermalExpansionCoefficient"], "O^-1")
                     if value > 0:
-                        self._material(
-                            name, "Heat expansion Coefficient", value)
+                        self._material(name, "Heat expansion Coefficient", value)
                 if "ReferencePressure" in m:
                     pressure = self._convert(m["ReferencePressure"], "M/(L*T^2)")
                     self._material(name, "Reference Pressure", pressure)
                 if "SpecificHeatRatio" in m:
                     self._material(
-                        name, "Specific Heat Ratio",
-                        float(m["SpecificHeatRatio"])
+                        name, "Specific Heat Ratio", float(m["SpecificHeatRatio"])
                     )
                 if "CompressibilityModel" in m:
                     self._material(
-                        name, "Compressibility Model",
-                        m["CompressibilityModel"])
+                        name, "Compressibility Model", m["CompressibilityModel"]
+                    )
 
     def _handleFlowInitialVelocity(self, bodies):
         obj = self._getSingleMember("Fem::ConstraintInitialFlowVelocity")
@@ -820,22 +812,15 @@ class Writer(object):
         s.priority = equation.Priority
         s["Linear System Solver"] = equation.LinearSolverType
         if equation.LinearSolverType == "Direct":
-            s["Linear System Direct Method"] = \
-                equation.LinearDirectMethod
+            s["Linear System Direct Method"] = equation.LinearDirectMethod
         elif equation.LinearSolverType == "Iterative":
-            s["Linear System Iterative Method"] = \
-                equation.LinearIterativeMethod
+            s["Linear System Iterative Method"] = equation.LinearIterativeMethod
             if equation.LinearIterativeMethod == "BiCGStabl":
-                s["BiCGstabl polynomial degree"] = \
-                    equation.BiCGstablDegree
-            s["Linear System Max Iterations"] = \
-                equation.LinearIterations
-            s["Linear System Convergence Tolerance"] = \
-                equation.LinearTolerance
-            s["Linear System Preconditioning"] = \
-                equation.LinearPreconditioning
-        s["Steady State Convergence Tolerance"] = \
-            equation.SteadyStateTolerance
+                s["BiCGstabl polynomial degree"] = equation.BiCGstablDegree
+            s["Linear System Max Iterations"] = equation.LinearIterations
+            s["Linear System Convergence Tolerance"] = equation.LinearTolerance
+            s["Linear System Preconditioning"] = equation.LinearPreconditioning
+        s["Steady State Convergence Tolerance"] = equation.SteadyStateTolerance
         s["Linear System Abort Not Converged"] = False
         s["Linear System Residual Output"] = 1
         s["Linear System Precondition Recompute"] = 1
@@ -843,16 +828,15 @@ class Writer(object):
 
     def _createNonlinearSolver(self, equation):
         s = self._createLinearSolver(equation)
-        s["Nonlinear System Max Iterations"] = \
-            equation.NonlinearIterations
-        s["Nonlinear System Convergence Tolerance"] = \
-            equation.NonlinearTolerance
-        s["Nonlinear System Relaxation Factor"] = \
-            equation.RelaxationFactor
-        s["Nonlinear System Newton After Iterations"] = \
-            equation.NonlinearNewtonAfterIterations
-        s["Nonlinear System Newton After Tolerance"] = \
-            equation.NonlinearNewtonAfterTolerance
+        s["Nonlinear System Max Iterations"] = equation.NonlinearIterations
+        s["Nonlinear System Convergence Tolerance"] = equation.NonlinearTolerance
+        s["Nonlinear System Relaxation Factor"] = equation.RelaxationFactor
+        s[
+            "Nonlinear System Newton After Iterations"
+        ] = equation.NonlinearNewtonAfterIterations
+        s[
+            "Nonlinear System Newton After Tolerance"
+        ] = equation.NonlinearNewtonAfterTolerance
         return s
 
     def _getUniqueVarName(self, varName):
@@ -951,5 +935,6 @@ class Writer(object):
 
 class WriteError(Exception):
     pass
+
 
 ##  @}

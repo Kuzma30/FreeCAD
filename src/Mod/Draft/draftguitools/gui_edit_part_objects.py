@@ -24,8 +24,10 @@
 # \brief Provides support functions to edit Part objects.
 
 __title__ = "FreeCAD Draft Edit Tool"
-__author__ = ("Yorik van Havre, Werner Mayer, Martin Burbaum, Ken Cline, "
-              "Dmitry Chigrin, Carlo Pavan")
+__author__ = (
+    "Yorik van Havre, Werner Mayer, Martin Burbaum, Ken Cline, "
+    "Dmitry Chigrin, Carlo Pavan"
+)
 __url__ = "https://www.freecadweb.org"
 
 ## \addtogroup draftguitools
@@ -37,14 +39,13 @@ from draftguitools.gui_edit_base_object import GuiTools
 
 
 class PartLineGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
     def get_edit_points(self, obj):
         editpoints = []
-        editpoints.append(App.Vector(obj.X1,obj.Y1,obj.Z1))
-        editpoints.append(App.Vector(obj.X2,obj.Y2,obj.Z2))
+        editpoints.append(App.Vector(obj.X1, obj.Y1, obj.Z1))
+        editpoints.append(App.Vector(obj.X2, obj.Y2, obj.Z2))
         return editpoints
 
     def update_object_from_edit_points(self, obj, node_idx, v, alt_edit_mode=0):
@@ -59,7 +60,6 @@ class PartLineGuiTools(GuiTools):
 
 
 class PartBoxGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -86,7 +86,6 @@ class PartBoxGuiTools(GuiTools):
 
 
 class PartCylinderGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -109,7 +108,6 @@ class PartCylinderGuiTools(GuiTools):
 
 
 class PartConeGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -125,17 +123,16 @@ class PartConeGuiTools(GuiTools):
         if node_idx == 0:
             obj.Placement.Base = obj.Placement.Base + v
         elif node_idx == 1:
-            obj.Radius1 = v.Length # TODO: Perhaps better to project on the face?
+            obj.Radius1 = v.Length  # TODO: Perhaps better to project on the face?
         elif node_idx == 2:
             v.z = 0
-            obj.Radius2 = v.Length # TODO: Perhaps better to project on the face?
-        elif node_idx == 3: # Height is last to have the priority on the radius
+            obj.Radius2 = v.Length  # TODO: Perhaps better to project on the face?
+        elif node_idx == 3:  # Height is last to have the priority on the radius
             _vector = DraftVecUtils.project(v, App.Vector(0, 0, 1))
             obj.Height = _vector.Length
 
 
 class PartSphereGuiTools(GuiTools):
-
     def __init__(self):
         pass
 
@@ -150,6 +147,7 @@ class PartSphereGuiTools(GuiTools):
             obj.Placement.Base = obj.Placement.Base + v
         elif node_idx == 1:
             if v.Length > 0.0:
-                obj.Radius = v.Length # TODO: Perhaps better to project on the face?
+                obj.Radius = v.Length  # TODO: Perhaps better to project on the face?
+
 
 ## @}

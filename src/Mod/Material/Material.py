@@ -66,13 +66,13 @@ def importFCMat(fileName):
         import configparser
 
     FreeCAD.Console.PrintError(
-        'This mat card reader is probably deprecated and not widely used in FreeCAD. '
-        'See comment in Material.py module.\n'
+        "This mat card reader is probably deprecated and not widely used in FreeCAD. "
+        "See comment in Material.py module.\n"
     )
     Config = configparser.RawConfigParser()
     Config.optionxform = str
     if sys.version_info.major >= 3:
-        Config.read(fileName, encoding='utf-8')  # respect unicode filenames
+        Config.read(fileName, encoding="utf-8")  # respect unicode filenames
     else:
         Config.read(fileName)
     dict1 = {}
@@ -91,32 +91,34 @@ def exportFCMat(fileName, matDict):
     except ImportError:
         import configparser
     import string
+
     Config = configparser.RawConfigParser()
 
     FreeCAD.Console.PrintError(
-        'This mat card writer is probably deprecated and not widely used in FreeCAD. '
-        'See comment in Material.py module.\n'
+        "This mat card writer is probably deprecated and not widely used in FreeCAD. "
+        "See comment in Material.py module.\n"
     )
     # create groups
     for x in matDict.keys():
-        grp, key = string.split(x, sep='_')
+        grp, key = string.split(x, sep="_")
         if not Config.has_section(grp):
             Config.add_section(grp)
 
     # fill groups
     for x in matDict.keys():
-        grp, key = string.split(x, sep='_')
+        grp, key = string.split(x, sep="_")
         Config.set(grp, key, matDict[x])
 
     Preamble = "# This is a FreeCAD material-card file\n\n"
     # Writing our configuration file to 'example.cfg'
-    with open(fileName, 'wb') as configfile:
+    with open(fileName, "wb") as configfile:
         configfile.write(Preamble)
         Config.write(configfile)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import getopt
+
     try:
         opts, args = getopt.getopt(sys.argv[1:], "c:", ["output-csv="])
     except getopt.GetoptError:

@@ -36,12 +36,12 @@ import ArchIFC
 
 # global dicts to store ifc object/freecad object relationships
 
-layers = {} # ifcid : Draft_Layer
-materials = {} #ifcid : Arch_Material
-objects = {} #ifcid : Arch_Component
-subs = {} #host_ifcid: [child_ifcid,...]
-adds = {} #host_ifcid: [child_ifcid,...]
-colors = {} # objname : (r,g,b)
+layers = {}  # ifcid : Draft_Layer
+materials = {}  # ifcid : Arch_Material
+objects = {}  # ifcid : Arch_Component
+subs = {}  # host_ifcid: [child_ifcid,...]
+adds = {}  # host_ifcid: [child_ifcid,...]
+colors = {}  # objname : (r,g,b)
 
 
 def open(filename):
@@ -51,7 +51,7 @@ def open(filename):
     return insert(filename)
 
 
-def insert(filename,docname=None,preferences=None):
+def insert(filename, docname=None, preferences=None):
 
     """imports the contents of an IFC file in the given document"""
 
@@ -71,21 +71,21 @@ def insert(filename,docname=None,preferences=None):
     subs = {}
 
     # statistics
-    starttime = time.time() # in seconds
-    filesize = os.path.getsize(filename) * 0.000001 # in megabytes
-    print("Opening",filename+",",round(filesize,2),"Mb")
+    starttime = time.time()  # in seconds
+    filesize = os.path.getsize(filename) * 0.000001  # in megabytes
+    print("Opening", filename + ",", round(filesize, 2), "Mb")
 
     # setup ifcopenshell
     if not preferences:
         preferences = importIFC.getPreferences()
     settings = ifcopenshell.geom.settings()
-    settings.set(settings.USE_BREP_DATA,True)
-    settings.set(settings.SEW_SHELLS,True)
-    settings.set(settings.USE_WORLD_COORDS,True)
-    if preferences['SEPARATE_OPENINGS']:
-        settings.set(settings.DISABLE_OPENING_SUBTRACTIONS,True)
-    if preferences['SPLIT_LAYERS'] and hasattr(settings,"APPLY_LAYERSETS"):
-        settings.set(settings.APPLY_LAYERSETS,True)
+    settings.set(settings.USE_BREP_DATA, True)
+    settings.set(settings.SEW_SHELLS, True)
+    settings.set(settings.USE_WORLD_COORDS, True)
+    if preferences["SEPARATE_OPENINGS"]:
+        settings.set(settings.DISABLE_OPENING_SUBTRACTIONS, True)
+    if preferences["SPLIT_LAYERS"] and hasattr(settings, "APPLY_LAYERSETS"):
+        settings.set(settings.APPLY_LAYERSETS, True)
 
     # setup document
     if not FreeCAD.ActiveDocument:
@@ -99,9 +99,9 @@ def insert(filename,docname=None,preferences=None):
     ifcfile = ifcopenshell.open(filename)
     progressbar = Base.ProgressIndicator()
     productscount = len(ifcfile.by_type("IfcProduct"))
-    progressbar.start("Importing "+str(productscount)+" products...",productscount)
+    progressbar.start("Importing " + str(productscount) + " products...", productscount)
     cores = preferences["MULTICORE"]
-    iterator = ifcopenshell.geom.iterator(settings,ifcfile,cores)
+    iterator = ifcopenshell.geom.iterator(settings, ifcfile, cores)
     iterator.initialize()
     count = 0
 
@@ -111,9 +111,9 @@ def insert(filename,docname=None,preferences=None):
         if item:
             brep = item.geometry.brep_data
             ifcproduct = ifcfile.by_id(item.guid)
-            obj = createProduct(ifcproduct,brep)
+            obj = createProduct(ifcproduct, brep)
             progressbar.next(True)
-            writeProgress(count,productscount,starttime)
+            writeProgress(count, productscount, starttime)
             count += 1
         if not iterator.next():
             break
@@ -121,10 +121,12 @@ def insert(filename,docname=None,preferences=None):
     # process 2D annotations
     annotations = ifcfile.by_type("IfcAnnotation")
     if annotations:
-        print("Processing",str(len(annotations)),"annotations...")
+        print("Processing", str(len(annotations)), "annotations...")
         ifcscale = importIFCHelper.getScaling(ifcfile)
         for annotation in annotations:
-            importIFCHelper.createAnnotation(annotation,FreeCAD.ActiveDocument,ifcscale,preferences)
+            importIFCHelper.createAnnotation(
+                annotation, FreeCAD.ActiveDocument, ifcscale, preferences
+            )
 
     # post-processing
     processRelationships()
@@ -133,16 +135,16 @@ def insert(filename,docname=None,preferences=None):
     # finished
     progressbar.stop()
     FreeCAD.ActiveDocument.recompute()
-    endtime = round(time.time()-starttime,1)
-    fs = round(filesize,1)
-    ratio = int(endtime/filesize)
+    endtime = round(time.time() - starttime, 1)
+    fs = round(filesize, 1)
+    ratio = int(endtime / filesize)
     endtime = "%02d:%02d" % (divmod(endtime, 60))
-    writeProgress() # this cleans the line
-    print("Finished importing",fs,"Mb in",endtime,"s, or",ratio,"s/Mb")
+    writeProgress()  # this cleans the line
+    print("Finished importing", fs, "Mb in", endtime, "s, or", ratio, "s/Mb")
     return FreeCAD.ActiveDocument
 
 
-def writeProgress(count=None,total=None,starttime=None):
+def writeProgress(count=None, total=None, starttime=None):
 
     """write progress to console"""
 
@@ -150,44 +152,44 @@ def writeProgress(count=None,total=None,starttime=None):
         if count is None:
             sys.stdout.write("\r")
             return
-        r = count/total
-        elapsed = round(time.time()-starttime,1)
+        r = count / total
+        elapsed = round(time.time() - starttime, 1)
         if r:
-            rest = elapsed*((1-r)/r)
+            rest = elapsed * ((1 - r) / r)
             eta = "%02d:%02d" % (divmod(rest, 60))
         else:
             eta = "--:--"
-        hashes = '#'*int(r*10)+' '*int(10-r*10)
-        fstring = '\rImporting '+str(total)+' products [{0}] {1}%, ETA: {2}'
-        sys.stdout.write(fstring.format(hashes, int(r*100),eta))
+        hashes = "#" * int(r * 10) + " " * int(10 - r * 10)
+        fstring = "\rImporting " + str(total) + " products [{0}] {1}%, ETA: {2}"
+        sys.stdout.write(fstring.format(hashes, int(r * 100), eta))
 
 
-def createProduct(ifcproduct,brep):
+def createProduct(ifcproduct, brep):
 
     """creates an Arch object from an IFC product"""
 
     import Part
 
     shape = Part.Shape()
-    shape.importBrepFromString(brep,False)
-    shape.scale(1000.0) # IfcOpenShell outputs in meters
+    shape.importBrepFromString(brep, False)
+    shape.scale(1000.0)  # IfcOpenShell outputs in meters
     if ifcproduct.is_a("IfcSpace"):
         obj = Arch.makeSpace()
     else:
         obj = Arch.makeComponent()
     obj.Shape = shape
     objects[ifcproduct.id()] = obj
-    setAttributes(obj,ifcproduct)
-    setProperties(obj,ifcproduct)
-    createLayer(obj,ifcproduct)
-    createMaterial(obj,ifcproduct)
-    createModelStructure(obj,ifcproduct)
-    setRelationships(obj,ifcproduct)
-    setColor(obj,ifcproduct)
+    setAttributes(obj, ifcproduct)
+    setProperties(obj, ifcproduct)
+    createLayer(obj, ifcproduct)
+    createMaterial(obj, ifcproduct)
+    createModelStructure(obj, ifcproduct)
+    setRelationships(obj, ifcproduct)
+    setColor(obj, ifcproduct)
     return obj
 
 
-def setAttributes(obj,ifcproduct):
+def setAttributes(obj, ifcproduct):
 
     """sets the IFC attributes of a component"""
 
@@ -198,15 +200,15 @@ def setAttributes(obj,ifcproduct):
         obj.IfcType = ifctype
     for attr in dir(ifcproduct):
         if attr in obj.PropertiesList:
-            value = getattr(ifcproduct,attr)
+            value = getattr(ifcproduct, attr)
             if value:
                 try:
-                    setattr(obj,attr,value)
+                    setattr(obj, attr, value)
                 except Exception:
                     pass
 
 
-def setProperties(obj,ifcproduct):
+def setProperties(obj, ifcproduct):
 
     """sets the IFC properties of a component"""
 
@@ -216,13 +218,16 @@ def setProperties(obj,ifcproduct):
             pset = prel.RelatingPropertyDefinition
             if pset.is_a("IfcPropertySet"):
                 for prop in pset.HasProperties:
-                    if hasattr(prop,"NominalValue"):
-                        propname = prop.Name+";;"+pset.Name
-                        v = [p.strip("'") for p in str(prop.NominalValue).strip(")").split(")")]
+                    if hasattr(prop, "NominalValue"):
+                        propname = prop.Name + ";;" + pset.Name
+                        v = [
+                            p.strip("'")
+                            for p in str(prop.NominalValue).strip(")").split(")")
+                        ]
                         propvalue = ";;".join(v)
 
 
-def setColor(obj,ifcproduct):
+def setColor(obj, ifcproduct):
 
     """sets the color of an object"""
 
@@ -234,7 +239,7 @@ def setColor(obj,ifcproduct):
         obj.ViewObject.ShapeColor = color[:3]
 
 
-def createLayer(obj,ifcproduct):
+def createLayer(obj, ifcproduct):
 
     """sets the layer of a component"""
 
@@ -245,10 +250,10 @@ def createLayer(obj,ifcproduct):
             for layer in rep.LayerAssignments:
                 if not layer.id() in layers:
                     layers[layer.id()] = Draft.make_layer(layer.Name)
-                layers[layer.id()].Proxy.addObject(layers[layer.id()],obj)
+                layers[layer.id()].Proxy.addObject(layers[layer.id()], obj)
 
 
-def createMaterial(obj,ifcproduct):
+def createMaterial(obj, ifcproduct):
 
     """sets the material of a component"""
 
@@ -258,15 +263,17 @@ def createMaterial(obj,ifcproduct):
         if association.is_a("IfcRelAssociatesMaterial"):
             material = association.RelatingMaterial
             if material.is_a("IfcMaterialList"):
-                material = material.Materials[0] # take the first one for now...
+                material = material.Materials[0]  # take the first one for now...
             if material.is_a("IfcMaterial"):
                 if not material.id() in materials:
                     color = importIFCHelper.getColorFromMaterial(material)
-                    materials[material.id()] = Arch.makeMaterial(material.Name,color=color)
+                    materials[material.id()] = Arch.makeMaterial(
+                        material.Name, color=color
+                    )
                 obj.Material = materials[material.id()]
 
 
-def createModelStructure(obj,ifcobj):
+def createModelStructure(obj, ifcobj):
 
     """sets the parent containers of an IFC object"""
 
@@ -280,24 +287,24 @@ def createModelStructure(obj,ifcobj):
                 parentobj = Arch.makeSite()
             else:
                 parentobj = Arch.makeBuildingPart()
-            setAttributes(parentobj,parent)
-            setProperties(parentobj,parent)
-            createModelStructure(parentobj,parent)
+            setAttributes(parentobj, parent)
+            setProperties(parentobj, parent)
+            createModelStructure(parentobj, parent)
             objects[parent.id()] = parentobj
-        if hasattr(objects[parent.id()].Proxy,"addObject"):
-            objects[parent.id()].Proxy.addObject(objects[parent.id()],obj)
+        if hasattr(objects[parent.id()].Proxy, "addObject"):
+            objects[parent.id()].Proxy.addObject(objects[parent.id()], obj)
 
 
-def setRelationships(obj,ifcobj):
+def setRelationships(obj, ifcobj):
 
     """sets additions/subtractions"""
 
     global adds
     global subs
 
-    if hasattr(ifcobj,"HasOpenings") and ifcobj.HasOpenings:
+    if hasattr(ifcobj, "HasOpenings") and ifcobj.HasOpenings:
         for rel in ifcobj.HasOpenings:
-            subs.setdefault(ifcobj.id(),[]).append(rel.RelatedOpeningElement)
+            subs.setdefault(ifcobj.id(), []).append(rel.RelatedOpeningElement)
 
     # TODO: assemblies & booleans
 
@@ -306,15 +313,16 @@ def processRelationships():
 
     """process all stored relationships"""
 
-    for dom in ((subs,"Subtractions"),(adds,"Additions")):
-        for key,vals in dom[0].items():
+    for dom in ((subs, "Subtractions"), (adds, "Additions")):
+        for key, vals in dom[0].items():
             if key in objects:
                 for val in vals:
                     if val in objects:
-                        if hasattr(objects[key],dom[1]):
-                            g = getattr(objects[key],dom[1])
+                        if hasattr(objects[key], dom[1]):
+                            g = getattr(objects[key], dom[1])
                             g.append(val)
-                            setattr(objects[key],dom[1],g)
+                            setattr(objects[key], dom[1], g)
+
 
 def storeColorDict():
 
@@ -322,6 +330,7 @@ def storeColorDict():
 
     if colors and not FreeCAD.GuiUp:
         import json
+
         d = FreeCAD.ActiveDocument.Meta
         d["colordict"] = json.dumps(colors)
         FreeCAD.ActiveDocument.Meta = d

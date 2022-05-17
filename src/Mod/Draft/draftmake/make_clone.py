@@ -58,38 +58,43 @@ def make_clone(obj, delta=None, forcedraft=False):
 
     """
 
-    prefix = utils.get_param("ClonePrefix","")
+    prefix = utils.get_param("ClonePrefix", "")
 
     cl = None
 
     if prefix:
         prefix = prefix.strip() + " "
 
-    if not isinstance(obj,list):
+    if not isinstance(obj, list):
         obj = [obj]
 
     if (len(obj) == 1) and obj[0].isDerivedFrom("Part::Part2DObject"):
-        cl = App.ActiveDocument.addObject("Part::Part2DObjectPython","Clone2D")
+        cl = App.ActiveDocument.addObject("Part::Part2DObjectPython", "Clone2D")
         cl.Label = prefix + obj[0].Label + " (2D)"
 
-    elif (len(obj) == 1) and (hasattr(obj[0],"CloneOf") or (utils.get_type(obj[0]) == "BuildingPart")) and (not forcedraft):
+    elif (
+        (len(obj) == 1)
+        and (hasattr(obj[0], "CloneOf") or (utils.get_type(obj[0]) == "BuildingPart"))
+        and (not forcedraft)
+    ):
         # arch objects can be clones
         import Arch
+
         if utils.get_type(obj[0]) == "BuildingPart":
             cl = Arch.makeComponent()
         else:
-            try: # new-style maek function
+            try:  # new-style maek function
                 cl = getattr(Arch, "make_" + obj[0].Proxy.Type.lower())()
             except Exception:
-                try: # old-style make function
+                try:  # old-style make function
                     cl = getattr(Arch, "make" + obj[0].Proxy.Type)()
                 except Exception:
-                    pass # not a standard Arch object... Fall back to Draft mode
+                    pass  # not a standard Arch object... Fall back to Draft mode
         if cl:
             base = utils.get_clone_base(obj[0])
             cl.Label = prefix + base.Label
             cl.CloneOf = base
-            if hasattr(cl,"Material") and hasattr(obj[0],"Material"):
+            if hasattr(cl, "Material") and hasattr(obj[0], "Material"):
                 cl.Material = obj[0].Material
             if utils.get_type(obj[0]) != "BuildingPart":
                 cl.Placement = obj[0].Placement
@@ -100,15 +105,15 @@ def make_clone(obj, delta=None, forcedraft=False):
             except Exception:
                 pass
             if App.GuiUp:
-                gui_utils.format_object(cl,base)
+                gui_utils.format_object(cl, base)
                 cl.ViewObject.DiffuseColor = base.ViewObject.DiffuseColor
-                if utils.get_type(obj[0]) in ["Window","BuildingPart"]:
-                    ToDo.delay(Arch.recolorize,cl)
+                if utils.get_type(obj[0]) in ["Window", "BuildingPart"]:
+                    ToDo.delay(Arch.recolorize, cl)
             gui_utils.select(cl)
             return cl
     # fall back to Draft clone mode
     if not cl:
-        cl = App.ActiveDocument.addObject("Part::FeaturePython","Clone")
+        cl = App.ActiveDocument.addObject("Part::FeaturePython", "Clone")
         cl.addExtension("Part::AttachExtensionPython")
         cl.Label = prefix + obj[0].Label
     Clone(cl)
@@ -117,10 +122,10 @@ def make_clone(obj, delta=None, forcedraft=False):
     cl.Objects = obj
     if delta:
         cl.Placement.move(delta)
-    elif (len(obj) == 1) and hasattr(obj[0],"Placement"):
+    elif (len(obj) == 1) and hasattr(obj[0], "Placement"):
         cl.Placement = obj[0].Placement
-    gui_utils.format_object(cl,obj[0])
-    if hasattr(cl,"LongName") and hasattr(obj[0],"LongName"):
+    gui_utils.format_object(cl, obj[0])
+    if hasattr(cl, "LongName") and hasattr(obj[0], "LongName"):
         cl.LongName = obj[0].LongName
     if App.GuiUp and (len(obj) > 1):
         cl.ViewObject.Proxy.resetColors(cl.ViewObject)

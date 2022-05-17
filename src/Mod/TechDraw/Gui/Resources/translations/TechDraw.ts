@@ -47,16 +47,6 @@
 <context>
     <name>ShareView</name>
     <message>
-        <location filename="CommandShareView.py" line="49"/>
-        <source>Share View</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="CommandShareView.py" line="50"/>
-        <source>Share a View on a second Page</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="TaskShareView.py" line="51"/>
         <source>Share View with another Page</source>
         <translation type="unfinished"></translation>
@@ -89,6 +79,16 @@
     <message>
         <location filename="TaskShareView.py" line="133"/>
         <source>Select To Page.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="CommandShareView.py" line="49"/>
+        <source>Share View</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="CommandShareView.py" line="50"/>
+        <source>Share a View on a second Page</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

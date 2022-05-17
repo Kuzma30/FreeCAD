@@ -4,12 +4,12 @@
 <context>
     <name>Image_Scaling</name>
     <message>
-        <location filename="_CommandImageScaling.py" line="62"/>
+        <location filename="_CommandImageScaling.py" line="69"/>
         <source>Scale image plane</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="_CommandImageScaling.py" line="66"/>
+        <location filename="_CommandImageScaling.py" line="74"/>
         <source>Scales an image plane by defining a distance between two points</source>
         <translation type="unfinished"></translation>
     </message>

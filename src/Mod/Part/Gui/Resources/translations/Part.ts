@@ -4,12 +4,12 @@
 <context>
     <name>AttachmentEditor</name>
     <message>
-        <location filename="Commands.py" line="79"/>
+        <location filename="Commands.py" line="88"/>
         <source>Attachment...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Commands.py" line="83"/>
+        <location filename="Commands.py" line="92"/>
         <source>Edit attachment of selected object.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -17,12 +17,12 @@
 <context>
     <name>Part_CompoundFilter</name>
     <message>
-        <location filename="_CommandCompoundFilter.py" line="57"/>
+        <location filename="_CommandCompoundFilter.py" line="66"/>
         <source>Compound Filter</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="_CommandCompoundFilter.py" line="67"/>
+        <location filename="_CommandCompoundFilter.py" line="76"/>
         <source>Filter out objects from a selected compound by characteristics like volume,
 area, or length, or by choosing specific items.
 If a second object is selected, it will be used as reference, for example,
@@ -33,12 +33,12 @@ for collision or distance filtering.</source>
 <context>
     <name>Part_ExplodeCompound</name>
     <message>
-        <location filename="_CommandExplodeCompound.py" line="56"/>
+        <location filename="_CommandExplodeCompound.py" line="65"/>
         <source>Explode compound</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="_CommandExplodeCompound.py" line="62"/>
+        <location filename="_CommandExplodeCompound.py" line="71"/>
         <source>Split up a compound of shapes into separate objects.
 It will create a &apos;Compound Filter&apos; for each shape.</source>
         <translation type="unfinished"></translation>
@@ -47,12 +47,12 @@ It will create a &apos;Compound Filter&apos; for each shape.</source>
 <context>
     <name>Part_JoinConnect</name>
     <message>
-        <location filename="JoinFeatures.py" line="197"/>
+        <location filename="JoinFeatures.py" line="246"/>
         <source>Connect objects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="JoinFeatures.py" line="202"/>
+        <location filename="JoinFeatures.py" line="250"/>
         <source>Fuses objects, taking care to preserve voids.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -60,12 +60,12 @@ It will create a &apos;Compound Filter&apos; for each shape.</source>
 <context>
     <name>Part_JoinCutout</name>
     <message>
-        <location filename="JoinFeatures.py" line="388"/>
+        <location filename="JoinFeatures.py" line="481"/>
         <source>Cutout for object</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="JoinFeatures.py" line="393"/>
+        <location filename="JoinFeatures.py" line="485"/>
         <source>Makes a cutout in one object to fit another object.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -73,25 +73,62 @@ It will create a &apos;Compound Filter&apos; for each shape.</source>
 <context>
     <name>Part_JoinEmbed</name>
     <message>
-        <location filename="JoinFeatures.py" line="293"/>
+        <location filename="JoinFeatures.py" line="361"/>
         <source>Embed object</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="JoinFeatures.py" line="298"/>
+        <location filename="JoinFeatures.py" line="366"/>
         <source>Fuses one object into another, taking care to preserve voids.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Part_JoinFeatures</name>
+    <message>
+        <location filename="JoinFeatures.py" line="116"/>
+        <source>Computing the result failed with an error:
+
+{err}
+
+Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to cancel.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="JoinFeatures.py" line="503"/>
+        <source>Bad selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="JoinFeatures.py" line="122"/>
+        <source>Continue</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="JoinFeatures.py" line="263"/>
+        <source>Select at least two objects, or one or more compounds</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="JoinFeatures.py" line="380"/>
+        <source>Select base object, then the object to embed, and then invoke this tool.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="JoinFeatures.py" line="500"/>
+        <source>Select the object to make a cutout in, then the object that should fit into the cutout, and then invoke this tool.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Part_SplitFeatures</name>
     <message>
-        <location filename="SplitFeatures.py" line="188"/>
+        <location filename="SplitFeatures.py" line="239"/>
         <source>Boolean fragments</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SplitFeatures.py" line="197"/>
+        <location filename="SplitFeatures.py" line="248"/>
         <source>Create a &apos;Boolean Fragments&apos; object from two or more selected objects,
 or from the shapes inside a compound.
 This is a boolean union which is then sliced at the intersections
@@ -100,35 +137,35 @@ A &apos;Compound Filter&apos; can be used to extract the individual slices.</sou
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SplitFeatures.py" line="347"/>
+        <location filename="SplitFeatures.py" line="441"/>
         <source>Slice to compound</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SplitFeatures.py" line="354"/>
+        <location filename="SplitFeatures.py" line="448"/>
         <source>Slice a selected object by using other objects as cutting tools.
 The resulting pieces will be stored in a compound.
 A &apos;Compound Filter&apos; can be used to extract the individual slices.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SplitFeatures.py" line="379"/>
+        <location filename="SplitFeatures.py" line="482"/>
         <source>Slice apart</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SplitFeatures.py" line="385"/>
+        <location filename="SplitFeatures.py" line="488"/>
         <source>Slice a selected object by other objects, and split it apart.
 It will create a &apos;Compound Filter&apos; for each slice.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SplitFeatures.py" line="529"/>
+        <location filename="SplitFeatures.py" line="674"/>
         <source>Boolean XOR</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SplitFeatures.py" line="537"/>
+        <location filename="SplitFeatures.py" line="682"/>
         <source>Perform an &apos;exclusive OR&apos; boolean operation with two or more selected objects,
 or with the shapes inside a compound.
 This means the overlapping volumes of the shapes will be removed.
@@ -139,12 +176,12 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</sour
 <context>
     <name>Part_Tube</name>
     <message>
-        <location filename="CommandShapes.py" line="44"/>
+        <location filename="CommandShapes.py" line="45"/>
         <source>Create tube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="CommandShapes.py" line="50"/>
+        <location filename="CommandShapes.py" line="49"/>
         <source>Creates a tube</source>
         <translation type="unfinished"></translation>
     </message>
@@ -152,7 +189,7 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</sour
 <context>
     <name>QObject</name>
     <message>
-        <location filename="CommandShapes.py" line="52"/>
+        <location filename="CommandShapes.py" line="54"/>
         <source>Create tube</source>
         <translation type="unfinished"></translation>
     </message>

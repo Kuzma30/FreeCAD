@@ -4,12 +4,12 @@
 <context>
     <name>PartDesign_InvoluteGear</name>
     <message>
-        <location filename="InvoluteGearFeature.py" line="57"/>
+        <location filename="InvoluteGearFeature.py" line="61"/>
         <source>Involute gear...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="InvoluteGearFeature.py" line="61"/>
+        <location filename="InvoluteGearFeature.py" line="66"/>
         <source>Creates or edit the involute gear definition.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -17,12 +17,12 @@
 <context>
     <name>PartDesign_Sprocket</name>
     <message>
-        <location filename="SprocketFeature.py" line="62"/>
+        <location filename="SprocketFeature.py" line="64"/>
         <source>Sprocket...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="SprocketFeature.py" line="66"/>
+        <location filename="SprocketFeature.py" line="68"/>
         <source>Creates or edit the sprocket definition.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -30,12 +30,12 @@
 <context>
     <name>WizardShaft</name>
     <message>
-        <location filename="WizardShaft.py" line="211"/>
+        <location filename="WizardShaft.py" line="247"/>
         <source>Shaft design wizard...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="WizardShaft.py" line="212"/>
+        <location filename="WizardShaft.py" line="250"/>
         <source>Start the shaft design wizard</source>
         <translation type="unfinished"></translation>
     </message>
@@ -43,42 +43,42 @@
 <context>
     <name>WizardShaftTable</name>
     <message>
-        <location filename="WizardShaftTable.py" line="43"/>
+        <location filename="WizardShaftTable.py" line="44"/>
         <source>Length [mm]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="WizardShaftTable.py" line="44"/>
+        <location filename="WizardShaftTable.py" line="45"/>
         <source>Diameter [mm]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="WizardShaftTable.py" line="45"/>
+        <location filename="WizardShaftTable.py" line="46"/>
         <source>Inner diameter [mm]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="WizardShaftTable.py" line="46"/>
+        <location filename="WizardShaftTable.py" line="47"/>
         <source>Constraint type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="WizardShaftTable.py" line="47"/>
+        <location filename="WizardShaftTable.py" line="48"/>
         <source>Start edge type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="WizardShaftTable.py" line="48"/>
+        <location filename="WizardShaftTable.py" line="49"/>
         <source>Start edge size</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="WizardShaftTable.py" line="49"/>
+        <location filename="WizardShaftTable.py" line="50"/>
         <source>End edge type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="WizardShaftTable.py" line="53"/>
+        <location filename="WizardShaftTable.py" line="51"/>
         <source>End edge size</source>
         <translation type="unfinished"></translation>
     </message>

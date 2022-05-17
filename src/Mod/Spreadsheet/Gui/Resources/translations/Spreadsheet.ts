@@ -4,57 +4,57 @@
 <context>
     <name>Spreadsheet</name>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="739"/>
+        <location filename="Spreadsheet_legacy.py" line="870"/>
         <source>Spreadsheet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="874"/>
+        <location filename="Spreadsheet_legacy.py" line="1032"/>
         <source>Cell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="751"/>
+        <location filename="Spreadsheet_legacy.py" line="882"/>
         <source>Apply</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="753"/>
+        <location filename="Spreadsheet_legacy.py" line="886"/>
         <source>Apply the changes to the current cell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="755"/>
+        <location filename="Spreadsheet_legacy.py" line="888"/>
         <source>Delete</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="757"/>
+        <location filename="Spreadsheet_legacy.py" line="892"/>
         <source>Deletes the contents of the current cell</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="759"/>
+        <location filename="Spreadsheet_legacy.py" line="894"/>
         <source>Compute</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="761"/>
+        <location filename="Spreadsheet_legacy.py" line="898"/>
         <source>Updates the values handled by controllers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="907"/>
+        <location filename="Spreadsheet_legacy.py" line="1076"/>
         <source>Create Spreadsheet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="933"/>
+        <location filename="Spreadsheet_legacy.py" line="1114"/>
         <source>Add controller</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="973"/>
+        <location filename="Spreadsheet_legacy.py" line="1179"/>
         <source>Add property controller</source>
         <translation type="unfinished"></translation>
     </message>
@@ -62,12 +62,12 @@
 <context>
     <name>Spreadsheet_Controller</name>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="919"/>
+        <location filename="Spreadsheet_legacy.py" line="1093"/>
         <source>Add controller</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="922"/>
+        <location filename="Spreadsheet_legacy.py" line="1097"/>
         <source>Adds a cell controller to a selected spreadsheet</source>
         <translation type="unfinished"></translation>
     </message>
@@ -75,12 +75,12 @@
 <context>
     <name>Spreadsheet_Create</name>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="902"/>
+        <location filename="Spreadsheet_legacy.py" line="1066"/>
         <source>Spreadsheet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="905"/>
+        <location filename="Spreadsheet_legacy.py" line="1069"/>
         <source>Adds a spreadsheet object to the active document</source>
         <translation type="unfinished"></translation>
     </message>
@@ -88,12 +88,12 @@
 <context>
     <name>Spreadsheet_PropertyController</name>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="944"/>
+        <location filename="Spreadsheet_legacy.py" line="1134"/>
         <source>Add property controller</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="Spreadsheet_legacy.py" line="947"/>
+        <location filename="Spreadsheet_legacy.py" line="1138"/>
         <source>Adds a property controller to a selected spreadsheet</source>
         <translation type="unfinished"></translation>
     </message>

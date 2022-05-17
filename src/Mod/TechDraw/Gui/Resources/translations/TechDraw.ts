@@ -4,7 +4,7 @@
 <context>
     <name>MoveView</name>
     <message>
-        <location filename="CommandMoveView.py" line="47"/>
+        <location filename="CommandMoveView.py" line="49"/>
         <source>Move View</source>
         <translation type="unfinished"></translation>
     </message>
@@ -14,32 +14,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskMoveView.py" line="47"/>
+        <location filename="TaskMoveView.py" line="53"/>
         <source>Move View to a different Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskMoveView.py" line="74"/>
+        <location filename="TaskMoveView.py" line="84"/>
         <source>Select View to move from list.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskMoveView.py" line="75"/>
+        <location filename="TaskMoveView.py" line="85"/>
         <source>Select View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskMoveView.py" line="93"/>
+        <location filename="TaskMoveView.py" line="109"/>
         <source>Select From Page.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskMoveView.py" line="113"/>
+        <location filename="TaskMoveView.py" line="135"/>
         <source>Select Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskMoveView.py" line="112"/>
+        <location filename="TaskMoveView.py" line="134"/>
         <source>Select To Page.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -47,7 +47,7 @@
 <context>
     <name>ShareView</name>
     <message>
-        <location filename="CommandShareView.py" line="47"/>
+        <location filename="CommandShareView.py" line="49"/>
         <source>Share View</source>
         <translation type="unfinished"></translation>
     </message>
@@ -57,37 +57,37 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskShareView.py" line="46"/>
+        <location filename="TaskShareView.py" line="51"/>
         <source>Share View with another Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskShareView.py" line="47"/>
+        <location filename="TaskShareView.py" line="52"/>
         <source>View to share</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskShareView.py" line="74"/>
+        <location filename="TaskShareView.py" line="83"/>
         <source>Select View to share from list.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskShareView.py" line="75"/>
+        <location filename="TaskShareView.py" line="84"/>
         <source>Select View</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskShareView.py" line="93"/>
+        <location filename="TaskShareView.py" line="108"/>
         <source>Select From Page.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskShareView.py" line="113"/>
+        <location filename="TaskShareView.py" line="134"/>
         <source>Select Page</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="TaskShareView.py" line="112"/>
+        <location filename="TaskShareView.py" line="133"/>
         <source>Select To Page.</source>
         <translation type="unfinished"></translation>
     </message>

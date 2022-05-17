@@ -28,6 +28,7 @@ __doc__ = "Implementation of document objects (features) for connect, ebmed and 
 from . import JoinAPI
 import FreeCAD
 import Part
+
 translate = FreeCAD.Qt.translate
 
 if FreeCAD.GuiUp:
@@ -58,7 +59,7 @@ if FreeCAD.GuiUp:
 #        def _translate(context, text, disambig):
 #            return QtGui.QApplication.translate(context, text, disambig)
 #
-#else:
+# else:
 
 #    def _translate(context, text, disambig):
 #        return text

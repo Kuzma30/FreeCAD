@@ -264,11 +264,6 @@ Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to
   <context>
     <name>Part_SplitFeatures</name>
     <message>
-      <location filename="SplitFeatures.py" line="651"/>
-      <source>Continue</source>
-      <translation type="unfinished">Continue</translation>
-    </message>
-    <message>
       <location filename="SplitFeatures.py" line="645"/>
       <source>Computing the result failed with an error:
 
@@ -285,6 +280,11 @@ Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to
       <location filename="SplitFeatures.py" line="701"/>
       <source>Bad selection</source>
       <translation type="unfinished">Bad selection</translation>
+    </message>
+    <message>
+      <location filename="_CommandCompoundFilter.py" line="147"/>
+      <source>Continue</source>
+      <translation type="unfinished">Continue</translation>
     </message>
     <message>
       <location filename="SplitFeatures.py" line="240"/>
@@ -373,15 +373,15 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
   <context>
     <name>QObject</name>
     <message>
+      <location filename="CommandShapes.py" line="54"/>
+      <source>Create tube</source>
+      <translation>Створити трубу</translation>
+    </message>
+    <message>
       <location filename="../../ViewProvider.cpp" line="50"/>
       <location filename="../../ViewProviderPrimitive.cpp" line="66"/>
       <source>Edit %1</source>
       <translation>Редагувати %1</translation>
-    </message>
-    <message>
-      <location filename="CommandShapes.py" line="54"/>
-      <source>Create tube</source>
-      <translation>Створити трубу</translation>
     </message>
     <message>
       <location filename="../../AppPartGui.cpp" line="211"/>

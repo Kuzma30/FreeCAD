@@ -4905,24 +4905,24 @@ Fast, but result is a collection of short straight lines.</translation>
     <message>
       <location filename="../../MDIViewPage.cpp" line="770"/>
       <source>Different orientation</source>
-      <translation>Відмінна орієнтація</translation>
+      <translation>Інша орієнтація</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="771"/>
       <source>The printer uses a different orientation  than the drawing.
 Do you want to continue?</source>
-      <translation>Принтер використовує відмінну від креслення орієнтацію. Бажаєте продовжити?</translation>
+      <translation>Принтер використовує іншу орієнтацію ніж креслення. Бажаєте продовжити?</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="778"/>
       <source>Different paper size</source>
-      <translation>Відмінний розмір паперу</translation>
+      <translation>Інший розмір паперу</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="779"/>
       <source>The printer uses a different paper size than the drawing.
 Do you want to continue?</source>
-      <translation>Принтер використовує відмінний від креслення розмір паперу. Бажаєте продовжити?</translation>
+      <translation>Принтер використовує інший ніж у кресленні розмір паперу. Бажаєте продовжити?</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="790"/>

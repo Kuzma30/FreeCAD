@@ -3055,17 +3055,17 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="importSHP.py" line="184"/>
       <source>Could not download shapefile module. Aborting.</source>
-      <translation>Не вдалося завантажити модуль шейп-файлу. Перервати.</translation>
+      <translation>Не вдалося завантажити shapefile модуль. Скасування операції.</translation>
     </message>
     <message>
       <location filename="importSHP.py" line="190"/>
       <source>Shapefile module not downloaded. Aborting.</source>
-      <translation>Модуль Shapefile не завантажено. Відміна.</translation>
+      <translation>Модуль Shapefile не завантажено. Скасування операції.</translation>
     </message>
     <message>
       <location filename="importSHP.py" line="195"/>
       <source>Shapefile module not found. Aborting.</source>
-      <translation>Модуль Shapefile не завантажено. Відміна.</translation>
+      <translation>Модуль Shapefile не завантажено. Скасування операції.</translation>
     </message>
     <message>
       <location filename="importSHP.py" line="201"/>

@@ -4133,8 +4133,7 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
     <message>
       <location filename="gui_trimex.py" line="490"/>
       <source>Unable to trim these objects, only Draft wires and arcs are supported.</source>
-      <translation>Підрізати можливо лише каркаси креслення та дуги.
-</translation>
+      <translation>Підрізати можливо лише полілінії креслення та дуги.</translation>
     </message>
     <message>
       <location filename="gui_trimex.py" line="498"/>
@@ -6860,7 +6859,7 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="367"/>
       <source>Drawing view line definitions</source>
-      <translation>Визначення вигляду лінії креслення</translation>
+      <translation>Визначення ліній на кресленні</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="375"/>
@@ -7115,34 +7114,34 @@ such as &quot;Arial:Bold&quot;</translation>
     <message>
       <location filename="../ui/preferences-svg.ui" line="40"/>
       <source>Import style</source>
-      <translation>Стиль імпорту</translation>
+      <translation>Стиль імпорту кольору</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="47"/>
       <source>Method chosen for importing SVG object color to FreeCAD</source>
-      <translation>Метод вибору для імпорту кольору SVG об’єктів у FreeCAD</translation>
+      <translation>Вибирає метод для імпорту кольору SVG об’єктів у FreeCAD</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="60"/>
       <source>None (fastest)</source>
-      <translation>Жодний (швидко)</translation>
+      <translation>Не імпортувати (швидко)</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="65"/>
       <source>Use default color and linewidth</source>
-      <translation>Брати стандартний колір та товщину лінії</translation>
+      <translation>Стандартний колір та товщина ліній</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="70"/>
       <source>Original color and linewidth</source>
-      <translation>Оригінальний колір та товщина лінії</translation>
+      <translation>Оригінальний колір та товщина ліній</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="82"/>
       <source>If checked, no units conversion will occur.
 One unit in the SVG file will translate as one millimeter. </source>
-      <translation>Якщо позначено, перетворення одиниць не відбуватиметься.
-Одна одиниця у файлі SVG буде перекладатися як один міліметр.</translation>
+      <translation>Якщо позначено, не перетворювати одиниці вимірювання.
+Одна одиниця у файлі SVG буде відповідати одному міліметру. </translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="86"/>
@@ -7285,7 +7284,7 @@ from the Addon Manager.</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="156"/>
       <source>If unchecked, texts and mtexts won&apos;t be imported</source>
-      <translation type="unfinished">If unchecked, texts and mtexts won&apos;t be imported</translation>
+      <translation>Якщо вимкнено, не імпортує тексти/мультитексти</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="159"/>
@@ -7295,7 +7294,7 @@ from the Addon Manager.</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="172"/>
       <source>If unchecked, points won&apos;t be imported</source>
-      <translation type="unfinished">If unchecked, points won&apos;t be imported</translation>
+      <translation>Якщо вимкнено, не імпортує точки</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="175"/>
@@ -7305,7 +7304,7 @@ from the Addon Manager.</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="188"/>
       <source>If checked, paper space objects will be imported too</source>
-      <translation>Якщо позначено, то обʼєкти простору паперу також будуть імпортовані</translation>
+      <translation>Якщо позначено, також імпортує обʼєкти простору паперу</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="191"/>
@@ -7315,7 +7314,7 @@ from the Addon Manager.</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="204"/>
       <source>If you want the non-named blocks (beginning with a *) to be imported too</source>
-      <translation>Якщо ви хочете, щоб неіменовані блоки (починаються *) було також імпортовано</translation>
+      <translation>Якщо позначено, також імпортує не іменовані блоки (починаються з *)</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="207"/>
@@ -7330,7 +7329,7 @@ from the Addon Manager.</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="231"/>
       <source>Only standard Part objects will be created (fastest)</source>
-      <translation>Будуть створені тільки стандартні обʼєкти деталі: (найшвидші)</translation>
+      <translation>Створює тільки стандартні обʼєкти Деталі (найшвидший метод)</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="234"/>
@@ -7340,12 +7339,12 @@ from the Addon Manager.</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="250"/>
       <source>Parametric Draft objects will be created whenever possible</source>
-      <translation>Параметричні обʼєкти чернетки будуть створюватися щоразу, коли це можливо</translation>
+      <translation>Створює за можливості параметричні обʼєкти Draft</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="253"/>
       <source>Draft objects</source>
-      <translation>Об’єкти креслення</translation>
+      <translation>Обʼєкти Draft</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="266"/>
@@ -7377,8 +7376,8 @@ Example: for files in millimeters: 1, in centimeters: 10,
       <location filename="../ui/preferences-dxf.ui" line="338"/>
       <source>Colors will be retrieved from the DXF objects whenever possible.
 Otherwise default colors will be applied. </source>
-      <translation>Кольори будуть отримані з обʼєктів DXF, коли це можливо.
-В іншому випадку будуть застосовуватися кольори за замовчуванням. </translation>
+      <translation>Отримує кольори з обʼєктів DXF за можливості.
+В іншому випадку використовує кольори за замовчуванням. </translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="342"/>
@@ -7389,7 +7388,7 @@ Otherwise default colors will be applied. </source>
       <location filename="../ui/preferences-dxf.ui" line="359"/>
       <source>FreeCAD will try to join coincident objects into wires.
 Note that this can take a while!</source>
-      <translation>FreeCAD спробує об’єднати об’єкти, що збігаються, у каркаси.
+      <translation>FreeCAD спробує об’єднати об’єкти, що збігаються, у полілінії.
 Зверніть увагу, що це може зайняти деякий час!</translation>
     </message>
     <message>
@@ -7424,29 +7423,29 @@ instead of the size they have in the DXF document</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="422"/>
       <source>If this is checked, DXF layers will be imported as Draft Layers</source>
-      <translation>Якщо позначено цей пункт, DXF шари будуть імпортовані як шари креслення</translation>
+      <translation>Якщо позначено, імпортує DXF шари як Шари Креслення</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="425"/>
       <source>Use Layers</source>
-      <translation>Використовуйте шари.</translation>
+      <translation>Використати Шари</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="445"/>
       <source>Hatches will be converted into simple wires</source>
-      <translation>Штрихи будуть конвертовані в прості каркаси</translation>
+      <translation>Конвертує штрихування в прості полілінії</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="448"/>
       <source>Import hatch boundaries as wires</source>
-      <translation>Імпортувати границі штрихування як лінії</translation>
+      <translation>Імпортувати границі штрихування як полілінії</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="465"/>
       <source>If polylines have a width defined, they will be rendered
 as closed wires with correct width</source>
-      <translation>Якщо полілінії мають визначену ширину, то вони будуть представлені
-як закриті дроти з правильною шириною</translation>
+      <translation>Якщо полілінії мають визначену ширину, візуалізувати 
+їх як замкнені полілінії з правильною шириною</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="469"/>
@@ -7456,12 +7455,12 @@ as closed wires with correct width</source>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="486"/>
       <source>Ellipse export is poorly supported. Use this to export them as polylines instead.</source>
-      <translation>Експорт еліпсів погано підтримується. Використовуйте це для їх експорту як поліліній.</translation>
+      <translation>Експорт еліпсів погано підтримується. Це дозволяє експортувати їх як полілінії.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="489"/>
       <source>Treat ellipses and splines as polylines</source>
-      <translation>Розглядайте еліпси і сплайни як ламані лінії</translation>
+      <translation>Вважати еліпси та сплайни полілініями</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="518"/>
@@ -7495,23 +7494,23 @@ If it is set to &apos;0&apos; the whole spline is treated as a straight segment.
       <location filename="../ui/preferences-dxf.ui" line="587"/>
       <source>Drawing Views will be exported as blocks.
 This might fail for post DXF R12 templates.</source>
-      <translation>Подання з малюнками буде експортовано як блоки.
-Це може не вдалося опублікувати шаблони DXF R12.</translation>
+      <translation>Експортує Види Креслень як блоки.
+Це може не спрацювати для шаблонів після DXF R12.</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="591"/>
       <source>Export Drawing Views as blocks</source>
-      <translation>Експорт вигляду креслення як блоки</translation>
+      <translation>Експорт Виду Креслення як блоки</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="611"/>
       <source>Exported objects will be projected to reflect the current view direction</source>
-      <translation>Експортовані обʼєкти будуть проєктовані для відображення поточного напрямку перегляду</translation>
+      <translation>Проектування експортованих об'єктів з урахуванням поточного напрямку перегляду</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="614"/>
       <source>Project exported objects along current view direction</source>
-      <translation>Обʼєкти проекту в поточному напрямку для перегляду</translation>
+      <translation>Показ експортованих об'єктів вздовж поточного напрямку перегляду</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="14"/>
@@ -7747,7 +7746,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="34"/>
       <source>Conversion method:</source>
-      <translation type="unfinished">Conversion method:</translation>
+      <translation>Метод перетворення:</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="41"/>
@@ -7777,17 +7776,17 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="78"/>
       <source>Path to file converter</source>
-      <translation type="unfinished">Path to file converter</translation>
+      <translation>Шлях до конвертера файлів</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="85"/>
       <source>The path to your DWG file converter executable</source>
-      <translation type="unfinished">The path to your DWG file converter executable</translation>
+      <translation>Встановлює шлях до вашого конвертора DWG файлів</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="100"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; DXF options apply to DWG files as well.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; DXF options apply to DWG files as well.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Примітка:&lt;/span&gt; Опції для DXF та DWG файлів аналогічні.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="14"/>

@@ -4,17 +4,17 @@
 <context>
     <name>MeshPart_FlatteningCommand</name>
     <message>
-        <location filename="MeshFlatteningCommand.py" line="49"/>
+        <location filename="../../MeshFlatteningCommand.py" line="49"/>
         <source>Unwrap Mesh</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MeshFlatteningCommand.py" line="91"/>
+        <location filename="../../MeshFlatteningCommand.py" line="89"/>
         <source>Find a flat representation of a mesh.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="MeshFlatteningCommand.py" line="88"/>
+        <location filename="../../MeshFlatteningCommand.py" line="88"/>
         <source>Unwrap Face</source>
         <translation type="unfinished"></translation>
     </message>

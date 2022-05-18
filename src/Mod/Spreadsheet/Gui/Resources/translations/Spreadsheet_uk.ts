@@ -4,57 +4,57 @@
   <context>
     <name>Spreadsheet</name>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="870"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="870"/>
       <source>Spreadsheet</source>
       <translation>Таблиця</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="1032"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1031"/>
       <source>Cell</source>
       <translation>Комірка</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="882"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="882"/>
       <source>Apply</source>
       <translation>Застосувати</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="886"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="884"/>
       <source>Apply the changes to the current cell</source>
       <translation>Застосувати зміни до поточної комірки</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="888"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="888"/>
       <source>Delete</source>
       <translation>Видалити</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="892"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="890"/>
       <source>Deletes the contents of the current cell</source>
       <translation>Видаляє вміст поточної комірки</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="894"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="894"/>
       <source>Compute</source>
       <translation>Обчислити</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="898"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="896"/>
       <source>Updates the values handled by controllers</source>
       <translation>Оновлює значення, які обробляються елементами керування</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="1076"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1075"/>
       <source>Create Spreadsheet</source>
       <translation>Створити таблицю</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="1114"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1113"/>
       <source>Add controller</source>
       <translation>Додати елемент керування</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="1179"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1178"/>
       <source>Add property controller</source>
       <translation>Додати контролер властивостей</translation>
     </message>
@@ -62,25 +62,20 @@
   <context>
     <name>Spreadsheet_Controller</name>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="1093"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1091"/>
       <source>Add controller</source>
       <translation>Додати елемент керування</translation>
-    </message>
-    <message>
-      <location filename="Spreadsheet_legacy.py" line="1097"/>
-      <source>Adds a cell controller to a selected spreadsheet</source>
-      <translation>Додає елемент керування коміркою до вибраної електронної таблиці</translation>
     </message>
   </context>
   <context>
     <name>Spreadsheet_Create</name>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="1066"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1066"/>
       <source>Spreadsheet</source>
       <translation>Таблиця</translation>
     </message>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="1069"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1067"/>
       <source>Adds a spreadsheet object to the active document</source>
       <translation>Додає обʼєкт електронної таблиці до активного документа</translation>
     </message>
@@ -88,14 +83,9 @@
   <context>
     <name>Spreadsheet_PropertyController</name>
     <message>
-      <location filename="Spreadsheet_legacy.py" line="1134"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1132"/>
       <source>Add property controller</source>
       <translation>Додати контролер властивостей</translation>
-    </message>
-    <message>
-      <location filename="Spreadsheet_legacy.py" line="1138"/>
-      <source>Adds a property controller to a selected spreadsheet</source>
-      <translation>Додає контролер властивостей до вибраної електронної таблиці</translation>
     </message>
   </context>
   <context>

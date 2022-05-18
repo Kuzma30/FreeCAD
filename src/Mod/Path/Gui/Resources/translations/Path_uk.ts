@@ -4,9 +4,334 @@
   <context>
     <name>App::Property</name>
     <message>
-      <location filename="PathDressupTag.py" line="125"/>
+      <location filename="PathOp.py" line="117"/>
+      <source>The base geometry for this operation</source>
+      <translation type="unfinished">The base geometry for this operation</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="128"/>
+      <source>Holds the calculated value for the StartDepth</source>
+      <translation type="unfinished">Holds the calculated value for the StartDepth</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="138"/>
+      <source>Holds the calculated value for the FinalDepth</source>
+      <translation type="unfinished">Holds the calculated value for the FinalDepth</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="146"/>
+      <source>Holds the diameter of the tool</source>
+      <translation type="unfinished">Holds the diameter of the tool</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="154"/>
+      <source>Holds the max Z value of Stock</source>
+      <translation type="unfinished">Holds the max Z value of Stock</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="161"/>
+      <source>Holds the min Z value of Stock</source>
+      <translation type="unfinished">Holds the min Z value of Stock</translation>
+    </message>
+    <message>
+      <location filename="PathFixture.py" line="64"/>
+      <source>Make False, to prevent operation from generating code</source>
+      <translation>Зробіть False, щоб уникнути операції з генерації коду</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="182"/>
+      <source>An optional comment for this Operation</source>
+      <translation>Необовʼязковий коментар до цієї Операції</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="188"/>
+      <source>User Assigned Label</source>
+      <translation type="unfinished">User Assigned Label</translation>
+    </message>
+    <message>
+      <location filename="PathJob.py" line="500"/>
+      <source>Operations Cycle Time Estimation</source>
+      <translation type="unfinished">Operations Cycle Time Estimation</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="208"/>
+      <source>Base locations for this operation</source>
+      <translation type="unfinished">Base locations for this operation</translation>
+    </message>
+    <message>
+      <location filename="PathArray.py" line="134"/>
+      <source>The tool controller that will be used to calculate the path</source>
+      <translation type="unfinished">The tool controller that will be used to calculate the path</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="228"/>
+      <source>Coolant mode for this operation</source>
+      <translation>Режим охолодження для цієї операції</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="238"/>
+      <source>Starting Depth of Tool- first cut depth in Z</source>
+      <translation>Початкова глибина інструменту - перша глибина різу по Z</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="246"/>
+      <source>Final Depth of Tool- lowest value in Z</source>
+      <translation>Фінальна глибина інструменту - найнижче значення по Z</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="260"/>
+      <source>Starting Depth internal use only for derived values</source>
+      <translation type="unfinished">Starting Depth internal use only for derived values</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="271"/>
+      <source>Incremental Step Down of Tool</source>
+      <translation>Крок заглиблення Інструменту</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="281"/>
+      <source>Maximum material removed on final pass.</source>
+      <translation>Максимальна кількість матеріалу, що була видалена на заключному проході.</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="292"/>
+      <source>The height needed to clear clamps and obstructions</source>
+      <translation type="unfinished">The height needed to clear clamps and obstructions</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="300"/>
+      <source>Rapid Safety Height between locations.</source>
+      <translation type="unfinished">Rapid Safety Height between locations.</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="308"/>
+      <source>The start point of this path</source>
+      <translation>Початкова точка цієї траєкторії</translation>
+    </message>
+    <message>
+      <location filename="PathWaterline.py" line="459"/>
+      <source>Make True, if specifying a Start Point</source>
+      <translation type="unfinished">Make True, if specifying a Start Point</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="326"/>
+      <source>Lower limit of the turning diameter</source>
+      <translation type="unfinished">Lower limit of the turning diameter</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="334"/>
+      <source>Upper limit of the turning diameter.</source>
+      <translation type="unfinished">Upper limit of the turning diameter.</translation>
+    </message>
+    <message>
+      <location filename="PathOp.py" line="445"/>
+      <source>Coolant option for this operation</source>
+      <translation>Налаштування охолодження для цієї операції</translation>
+    </message>
+    <message>
+      <location filename="PathToolBit.py" line="145"/>
+      <source>Shape for bit shape</source>
+      <translation type="unfinished">Shape for bit shape</translation>
+    </message>
+    <message>
+      <location filename="PathToolBit.py" line="153"/>
+      <source>The parametrized body representing the tool bit</source>
+      <translation type="unfinished">The parametrized body representing the tool bit</translation>
+    </message>
+    <message>
+      <location filename="PathToolBit.py" line="159"/>
+      <source>The file of the tool</source>
+      <translation>Файл інструменту</translation>
+    </message>
+    <message>
+      <location filename="PathToolBit.py" line="165"/>
+      <source>The name of the shape file</source>
+      <translation>Імʼя файлу форми</translation>
+    </message>
+    <message>
+      <location filename="PathToolBit.py" line="211"/>
+      <source>List of all properties inherited from the bit</source>
+      <translation type="unfinished">List of all properties inherited from the bit</translation>
+    </message>
+    <message>
+      <location filename="PathDressupPathBoundary.py" line="55"/>
       <source>The base path to modify</source>
       <translation>Базова траєкторія для зміни</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="959"/>
+      <source>Width of tags.</source>
+      <translation type="unfinished">Width of tags.</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="965"/>
+      <source>Height of tags.</source>
+      <translation type="unfinished">Height of tags.</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="971"/>
+      <source>Angle of tag plunge and ascent.</source>
+      <translation type="unfinished">Angle of tag plunge and ascent.</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="977"/>
+      <source>Radius of the fillet for the tag.</source>
+      <translation type="unfinished">Radius of the fillet for the tag.</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="983"/>
+      <source>Locations of inserted holding tags</source>
+      <translation type="unfinished">Locations of inserted holding tags</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="989"/>
+      <source>IDs of disabled holding tags</source>
+      <translation type="unfinished">IDs of disabled holding tags</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="998"/>
+      <source>Factor determining the # of segments used to approximate rounded tags.</source>
+      <translation type="unfinished">Factor determining the # of segments used to approximate rounded tags.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="118"/>
+      <source>Default speed for horizontal rapid moves.</source>
+      <translation type="unfinished">Default speed for horizontal rapid moves.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="126"/>
+      <source>Default speed for vertical rapid moves.</source>
+      <translation type="unfinished">Default speed for vertical rapid moves.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="414"/>
+      <source>Coolant Modes</source>
+      <translation type="unfinished">Coolant Modes</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="423"/>
+      <source>Default coolant mode.</source>
+      <translation type="unfinished">Default coolant mode.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="147"/>
+      <source>The usage of this field depends on SafeHeightExpression - by default its value is added to StartDepth and used for SafeHeight of an operation.</source>
+      <translation type="unfinished">The usage of this field depends on SafeHeightExpression - by default its value is added to StartDepth and used for SafeHeight of an operation.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="155"/>
+      <source>Expression set for the SafeHeight of new operations.</source>
+      <translation type="unfinished">Expression set for the SafeHeight of new operations.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="164"/>
+      <source>The usage of this field depends on ClearanceHeightExpression - by default is value is added to StartDepth and used for ClearanceHeight of an operation.</source>
+      <translation type="unfinished">The usage of this field depends on ClearanceHeightExpression - by default is value is added to StartDepth and used for ClearanceHeight of an operation.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="173"/>
+      <source>Expression set for the ClearanceHeight of new operations.</source>
+      <translation type="unfinished">Expression set for the ClearanceHeight of new operations.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="181"/>
+      <source>Expression used for StartDepth of new operations.</source>
+      <translation type="unfinished">Expression used for StartDepth of new operations.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="189"/>
+      <source>Expression used for FinalDepth of new operations.</source>
+      <translation type="unfinished">Expression used for FinalDepth of new operations.</translation>
+    </message>
+    <message>
+      <location filename="PathSetupSheet.py" line="197"/>
+      <source>Expression used for StepDown of new operations.</source>
+      <translation type="unfinished">Expression used for StepDown of new operations.</translation>
+    </message>
+    <message>
+      <location filename="PathComment.py" line="41"/>
+      <source>Comment or note for CNC program</source>
+      <translation>Коментар або примітки до програми ЧПК</translation>
+    </message>
+    <message>
+      <location filename="PathDeburr.py" line="126"/>
+      <source>The desired width of the chamfer</source>
+      <translation>Бажана ширина фаски</translation>
+    </message>
+    <message>
+      <location filename="PathDeburr.py" line="132"/>
+      <source>The additional depth of the tool path</source>
+      <translation type="unfinished">The additional depth of the tool path</translation>
+    </message>
+    <message>
+      <location filename="PathDeburr.py" line="138"/>
+      <source>How to join chamfer segments</source>
+      <translation type="unfinished">How to join chamfer segments</translation>
+    </message>
+    <message>
+      <location filename="PathDeburr.py" line="146"/>
+      <source>Direction of Operation</source>
+      <translation>Напрямок Операції</translation>
+    </message>
+    <message>
+      <location filename="PathDeburr.py" line="153"/>
+      <source>Side of Operation</source>
+      <translation>Сторона операції</translation>
+    </message>
+    <message>
+      <location filename="PathDeburr.py" line="163"/>
+      <source>Select the segment, there the operations starts</source>
+      <translation type="unfinished">Select the segment, there the operations starts</translation>
+    </message>
+    <message>
+      <location filename="PathProfile.py" line="109"/>
+      <source>The direction that the toolpath should go around the part ClockWise (CW) or CounterClockWise (CCW)</source>
+      <translation type="unfinished">The direction that the toolpath should go around the part ClockWise (CW) or CounterClockWise (CCW)</translation>
+    </message>
+    <message>
+      <location filename="PathPocketBase.py" line="136"/>
+      <source>Extra offset to apply to the operation. Direction is operation dependent.</source>
+      <translation type="unfinished">Extra offset to apply to the operation. Direction is operation dependent.</translation>
+    </message>
+    <message>
+      <location filename="PathPocketBase.py" line="142"/>
+      <source>Start pocketing at center or boundary</source>
+      <translation type="unfinished">Start pocketing at center or boundary</translation>
+    </message>
+    <message>
+      <location filename="PathAdaptive.py" line="985"/>
+      <source>Percent of cutter diameter to step over on each pass</source>
+      <translation>Відсоток діаметру вирізання для кожного проходу</translation>
+    </message>
+    <message>
+      <location filename="PathPocketBase.py" line="156"/>
+      <source>Angle of the zigzag pattern</source>
+      <translation>Кут зигзаг шаблону</translation>
+    </message>
+    <message>
+      <location filename="PathPocketBase.py" line="162"/>
+      <source>Clearing pattern to use</source>
+      <translation type="unfinished">Clearing pattern to use</translation>
+    </message>
+    <message>
+      <location filename="PathPocketBase.py" line="168"/>
+      <source>Use 3D Sorting of Path</source>
+      <translation type="unfinished">Use 3D Sorting of Path</translation>
+    </message>
+    <message>
+      <location filename="PathPocketBase.py" line="176"/>
+      <source>Attempts to avoid unnecessary retractions.</source>
+      <translation type="unfinished">Attempts to avoid unnecessary retractions.</translation>
+    </message>
+    <message>
+      <location filename="PathPocketBase.py" line="245"/>
+      <source>Last Stepover Radius.  If 0, 50% of cutter is used. Tuning this can be used to improve stepover for some shapes</source>
+      <translation type="unfinished">Last Stepover Radius.  If 0, 50% of cutter is used. Tuning this can be used to improve stepover for some shapes</translation>
+    </message>
+    <message>
+      <location filename="PathPlane.py" line="38"/>
+      <source>Orientation plane of CNC path</source>
+      <translation>Орієнтація площини з траєкторією ЧПК</translation>
     </message>
     <message>
       <location filename="PathDressupDragknife.py" line="68"/>
@@ -24,14 +349,34 @@
       <translation type="unfinished">Height to raise during corner action</translation>
     </message>
     <message>
-      <location filename="PathVcarve.py" line="216"/>
-      <source>Additional base objects to be engraved</source>
-      <translation>Додаткові базові обʼєкти для гравіювання</translation>
+      <location filename="PathMillFace.py" line="97"/>
+      <source>Shape to use for calculating Boundary</source>
+      <translation type="unfinished">Shape to use for calculating Boundary</translation>
     </message>
     <message>
-      <location filename="PathEngrave.py" line="94"/>
-      <source>The vertex index to start the path from</source>
-      <translation type="unfinished">The vertex index to start the path from</translation>
+      <location filename="PathMillFace.py" line="105"/>
+      <source>Clear edges of surface (Only applicable to BoundBox)</source>
+      <translation type="unfinished">Clear edges of surface (Only applicable to BoundBox)</translation>
+    </message>
+    <message>
+      <location filename="PathMillFace.py" line="114"/>
+      <source>Exclude milling raised areas inside the face.</source>
+      <translation type="unfinished">Exclude milling raised areas inside the face.</translation>
+    </message>
+    <message>
+      <location filename="PathFeatureExtensions.py" line="482"/>
+      <source>Default length of extensions.</source>
+      <translation type="unfinished">Default length of extensions.</translation>
+    </message>
+    <message>
+      <location filename="PathFeatureExtensions.py" line="489"/>
+      <source>List of features to extend.</source>
+      <translation type="unfinished">List of features to extend.</translation>
+    </message>
+    <message>
+      <location filename="PathFeatureExtensions.py" line="499"/>
+      <source>When enabled connected extension edges are combined to wires.</source>
+      <translation type="unfinished">When enabled connected extension edges are combined to wires.</translation>
     </message>
     <message>
       <location filename="PathThreadMilling.py" line="275"/>
@@ -87,6 +432,236 @@
       <location filename="PathThreadMilling.py" line="359"/>
       <source>Operation to clear the inside of the thread</source>
       <translation>Чистовий прохід різьби</translation>
+    </message>
+    <message>
+      <location filename="PathCustom.py" line="56"/>
+      <source>The gcode to be inserted</source>
+      <translation type="unfinished">The gcode to be inserted</translation>
+    </message>
+    <message>
+      <location filename="PathHop.py" line="39"/>
+      <source>The object to be reached by this hop</source>
+      <translation type="unfinished">The object to be reached by this hop</translation>
+    </message>
+    <message>
+      <location filename="PathHop.py" line="45"/>
+      <source>The Z height of the hop</source>
+      <translation type="unfinished">The Z height of the hop</translation>
+    </message>
+    <message>
+      <location filename="PathCollision.py" line="60"/>
+      <source>The base object this collision refers to</source>
+      <translation type="unfinished">The base object this collision refers to</translation>
+    </message>
+    <message>
+      <location filename="PathProbe.py" line="57"/>
+      <source>X offset between tool and probe</source>
+      <translation>Зміщення по вісі X між інструментом і зондом</translation>
+    </message>
+    <message>
+      <location filename="PathProbe.py" line="63"/>
+      <source>Y offset between tool and probe</source>
+      <translation>Зміщення по вісі Y між інструментом і зондом</translation>
+    </message>
+    <message>
+      <location filename="PathProbe.py" line="71"/>
+      <source>Number of points to probe in X direction</source>
+      <translation type="unfinished">Number of points to probe in X direction</translation>
+    </message>
+    <message>
+      <location filename="PathProbe.py" line="79"/>
+      <source>Number of points to probe in Y direction</source>
+      <translation type="unfinished">Number of points to probe in Y direction</translation>
+    </message>
+    <message>
+      <location filename="PathProbe.py" line="87"/>
+      <source>The output location for the probe data to be written</source>
+      <translation type="unfinished">The output location for the probe data to be written</translation>
+    </message>
+    <message>
+      <location filename="PathVcarve.py" line="216"/>
+      <source>Additional base objects to be engraved</source>
+      <translation>Додаткові базові обʼєкти для гравіювання</translation>
+    </message>
+    <message>
+      <location filename="PathEngrave.py" line="94"/>
+      <source>The vertex index to start the path from</source>
+      <translation type="unfinished">The vertex index to start the path from</translation>
+    </message>
+    <message>
+      <location filename="PathAdaptive.py" line="1116"/>
+      <source>Uses the outline of the base geometry.</source>
+      <translation type="unfinished">Uses the outline of the base geometry.</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="110"/>
+      <source>The base object this stock is derived from</source>
+      <translation type="unfinished">The base object this stock is derived from</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="119"/>
+      <source>Extra allowance from part bound box in negative X direction</source>
+      <translation type="unfinished">Extra allowance from part bound box in negative X direction</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="128"/>
+      <source>Extra allowance from part bound box in positive X direction</source>
+      <translation type="unfinished">Extra allowance from part bound box in positive X direction</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="137"/>
+      <source>Extra allowance from part bound box in negative Y direction</source>
+      <translation type="unfinished">Extra allowance from part bound box in negative Y direction</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="146"/>
+      <source>Extra allowance from part bound box in positive Y direction</source>
+      <translation type="unfinished">Extra allowance from part bound box in positive Y direction</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="155"/>
+      <source>Extra allowance from part bound box in negative Z direction</source>
+      <translation type="unfinished">Extra allowance from part bound box in negative Z direction</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="164"/>
+      <source>Extra allowance from part bound box in positive Z direction</source>
+      <translation type="unfinished">Extra allowance from part bound box in positive Z direction</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="170"/>
+      <source>A material for this object</source>
+      <translation>Матеріал для цього обʼєкту</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="242"/>
+      <source>Length of this stock box</source>
+      <translation type="unfinished">Length of this stock box</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="248"/>
+      <source>Width of this stock box</source>
+      <translation type="unfinished">Width of this stock box</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="254"/>
+      <source>Height of this stock box</source>
+      <translation type="unfinished">Height of this stock box</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="294"/>
+      <source>Radius of this stock cylinder</source>
+      <translation type="unfinished">Radius of this stock cylinder</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="300"/>
+      <source>Height of this stock cylinder</source>
+      <translation type="unfinished">Height of this stock cylinder</translation>
+    </message>
+    <message>
+      <location filename="PathStock.py" line="336"/>
+      <source>Internal representation of stock type</source>
+      <translation type="unfinished">Internal representation of stock type</translation>
+    </message>
+    <message>
+      <location filename="PathPocket.py" line="68"/>
+      <source>Choose how to process multiple Base Geometry features.</source>
+      <translation type="unfinished">Choose how to process multiple Base Geometry features.</translation>
+    </message>
+    <message>
+      <location filename="PathProfile.py" line="127"/>
+      <source>Controls how tool moves around corners. Default=Round</source>
+      <translation type="unfinished">Controls how tool moves around corners. Default=Round</translation>
+    </message>
+    <message>
+      <location filename="PathProfile.py" line="135"/>
+      <source>Maximum distance before a miter join is truncated</source>
+      <translation type="unfinished">Maximum distance before a miter join is truncated</translation>
+    </message>
+    <message>
+      <location filename="PathHelix.py" line="167"/>
+      <source>Extra value to stay away from final profile- good for roughing toolpath</source>
+      <translation type="unfinished">Extra value to stay away from final profile- good for roughing toolpath</translation>
+    </message>
+    <message>
+      <location filename="PathProfile.py" line="152"/>
+      <source>Profile holes as well as the outline</source>
+      <translation>Профіль отворів, а також контур</translation>
+    </message>
+    <message>
+      <location filename="PathProfile.py" line="158"/>
+      <source>Profile the outline</source>
+      <translation>Профіль контуру</translation>
+    </message>
+    <message>
+      <location filename="PathProfile.py" line="164"/>
+      <source>Profile round holes</source>
+      <translation>Профіль круглих отворів</translation>
+    </message>
+    <message>
+      <location filename="PathProfile.py" line="170"/>
+      <source>Side of edge that tool should cut</source>
+      <translation type="unfinished">Side of edge that tool should cut</translation>
+    </message>
+    <message>
+      <location filename="PathProfile.py" line="178"/>
+      <source>Make True, if using Cutter Radius Compensation</source>
+      <translation type="unfinished">Make True, if using Cutter Radius Compensation</translation>
+    </message>
+    <message>
+      <location filename="PathHelix.py" line="110"/>
+      <source>The direction of the circular cuts, ClockWise (CW), or CounterClockWise (CCW)</source>
+      <translation type="unfinished">The direction of the circular cuts, ClockWise (CW), or CounterClockWise (CCW)</translation>
+    </message>
+    <message>
+      <location filename="PathHelix.py" line="119"/>
+      <source>Start cutting from the inside or outside</source>
+      <translation>Почати вирізання зсередини або зовні</translation>
+    </message>
+    <message>
+      <location filename="PathHelix.py" line="156"/>
+      <source>Starting Radius</source>
+      <translation>Початковий радіус</translation>
+    </message>
+    <message>
+      <location filename="PathToolController.py" line="71"/>
+      <source>The active tool</source>
+      <translation>Активний інструмент</translation>
+    </message>
+    <message>
+      <location filename="PathToolController.py" line="80"/>
+      <source>The speed of the cutting spindle in RPM</source>
+      <translation>Швидкість обертання шпинделя в об/хв</translation>
+    </message>
+    <message>
+      <location filename="PathToolController.py" line="86"/>
+      <source>Direction of spindle rotation</source>
+      <translation>Напрямок обертання шпинделя</translation>
+    </message>
+    <message>
+      <location filename="PathToolController.py" line="92"/>
+      <source>Feed rate for vertical moves in Z</source>
+      <translation>Швидкість вертикальної подачі по осі Z</translation>
+    </message>
+    <message>
+      <location filename="PathToolController.py" line="98"/>
+      <source>Feed rate for horizontal moves</source>
+      <translation>Швидкість горизонтальної подачі</translation>
+    </message>
+    <message>
+      <location filename="PathToolController.py" line="104"/>
+      <source>Rapid rate for vertical moves in Z</source>
+      <translation>Швидкість прискореної вертикальної подачі по осі Z</translation>
+    </message>
+    <message>
+      <location filename="PathToolController.py" line="110"/>
+      <source>Rapid rate for horizontal moves</source>
+      <translation>Швидкість прискореної горизонтальної подачі</translation>
+    </message>
+    <message>
+      <location filename="PathToolController.py" line="330"/>
+      <source>The tool used by this controller</source>
+      <translation type="unfinished">The tool used by this controller</translation>
     </message>
     <message>
       <location filename="PathWaterline.py" line="204"/>
@@ -152,11 +727,6 @@
       <location filename="PathWaterline.py" line="257"/>
       <source>If true, the cutter will remain inside the boundaries of the model or selected face(s).</source>
       <translation type="unfinished">If true, the cutter will remain inside the boundaries of the model or selected face(s).</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="118"/>
-      <source>Choose how to process multiple Base Geometry features.</source>
-      <translation type="unfinished">Choose how to process multiple Base Geometry features.</translation>
     </message>
     <message>
       <location filename="PathWaterline.py" line="275"/>
@@ -259,374 +829,14 @@
       <translation type="unfinished">The custom start point for the path of this operation</translation>
     </message>
     <message>
-      <location filename="PathWaterline.py" line="459"/>
-      <source>Make True, if specifying a Start Point</source>
-      <translation type="unfinished">Make True, if specifying a Start Point</translation>
+      <location filename="PathAreaOp.py" line="168"/>
+      <source>Split Arcs into discrete segments</source>
+      <translation>Розділити арки на окремі сегменти</translation>
     </message>
     <message>
-      <location filename="PathHelix.py" line="110"/>
-      <source>The direction of the circular cuts, ClockWise (CW), or CounterClockWise (CCW)</source>
-      <translation type="unfinished">The direction of the circular cuts, ClockWise (CW), or CounterClockWise (CCW)</translation>
-    </message>
-    <message>
-      <location filename="PathHelix.py" line="119"/>
-      <source>Start cutting from the inside or outside</source>
-      <translation>Почати вирізання зсередини або зовні</translation>
-    </message>
-    <message>
-      <location filename="PathAdaptive.py" line="985"/>
-      <source>Percent of cutter diameter to step over on each pass</source>
-      <translation>Відсоток діаметру вирізання для кожного проходу</translation>
-    </message>
-    <message>
-      <location filename="PathHelix.py" line="156"/>
-      <source>Starting Radius</source>
-      <translation>Початковий радіус</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="144"/>
-      <source>Extra value to stay away from final profile- good for roughing toolpath</source>
-      <translation type="unfinished">Extra value to stay away from final profile- good for roughing toolpath</translation>
-    </message>
-    <message>
-      <location filename="PathPlane.py" line="38"/>
-      <source>Orientation plane of CNC path</source>
-      <translation>Орієнтація площини з траєкторією ЧПК</translation>
-    </message>
-    <message>
-      <location filename="PathFixture.py" line="64"/>
-      <source>Make False, to prevent operation from generating code</source>
-      <translation>Зробіть False, щоб уникнути операції з генерації коду</translation>
-    </message>
-    <message>
-      <location filename="PathDressupPathBoundary.py" line="65"/>
-      <source>Solid object to be used to limit the generated Path.</source>
-      <translation type="unfinished">Solid object to be used to limit the generated Path.</translation>
-    </message>
-    <message>
-      <location filename="PathDressupPathBoundary.py" line="75"/>
-      <source>Determines if Boundary describes an inclusion or exclusion mask.</source>
-      <translation type="unfinished">Determines if Boundary describes an inclusion or exclusion mask.</translation>
-    </message>
-    <message>
-      <location filename="PathComment.py" line="41"/>
-      <source>Comment or note for CNC program</source>
-      <translation>Коментар або примітки до програми ЧПК</translation>
-    </message>
-    <message>
-      <location filename="PathDressupRampEntry.py" line="65"/>
-      <source>Angle of ramp.</source>
-      <translation>Кут нарощування.</translation>
-    </message>
-    <message>
-      <location filename="PathDressupRampEntry.py" line="71"/>
-      <source>Ramping Method</source>
-      <translation>Метод нарощування</translation>
-    </message>
-    <message>
-      <location filename="PathDressupRampEntry.py" line="77"/>
-      <source>Which feed rate to use for ramping</source>
-      <translation>Визначає робочу подачу для нарощування</translation>
-    </message>
-    <message>
-      <location filename="PathDressupRampEntry.py" line="83"/>
-      <source>Custom feed rate</source>
-      <translation>Індивідуальна швидкість подачі</translation>
-    </message>
-    <message>
-      <location filename="PathDressupRampEntry.py" line="92"/>
-      <source>Should the dressup ignore motion commands above DressupStartDepth</source>
-      <translation type="unfinished">Should the dressup ignore motion commands above DressupStartDepth</translation>
-    </message>
-    <message>
-      <location filename="PathDressupRampEntry.py" line="101"/>
-      <source>The depth where the ramp dressup is enabled. Above this ramps are not generated, but motion commands are passed through as is.</source>
-      <translation type="unfinished">The depth where the ramp dressup is enabled. Above this ramps are not generated, but motion commands are passed through as is.</translation>
-    </message>
-    <message>
-      <location filename="PathDressupDogbone.py" line="433"/>
-      <source>The side of path to insert bones</source>
-      <translation type="unfinished">The side of path to insert bones</translation>
-    </message>
-    <message>
-      <location filename="PathDressupDogbone.py" line="441"/>
-      <source>The style of bones</source>
-      <translation type="unfinished">The style of bones</translation>
-    </message>
-    <message>
-      <location filename="PathDressupDogbone.py" line="449"/>
-      <source>Bones that aren&apos;t dressed up</source>
-      <translation type="unfinished">Bones that aren&apos;t dressed up</translation>
-    </message>
-    <message>
-      <location filename="PathDressupDogbone.py" line="459"/>
-      <source>The algorithm to determine the bone length</source>
-      <translation type="unfinished">The algorithm to determine the bone length</translation>
-    </message>
-    <message>
-      <location filename="PathDressupDogbone.py" line="467"/>
-      <source>Dressup length if Incision == custom</source>
-      <translation type="unfinished">Dressup length if Incision == custom</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="117"/>
-      <source>The base geometry for this operation</source>
-      <translation type="unfinished">The base geometry for this operation</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="128"/>
-      <source>Holds the calculated value for the StartDepth</source>
-      <translation type="unfinished">Holds the calculated value for the StartDepth</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="138"/>
-      <source>Holds the calculated value for the FinalDepth</source>
-      <translation type="unfinished">Holds the calculated value for the FinalDepth</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="146"/>
-      <source>Holds the diameter of the tool</source>
-      <translation type="unfinished">Holds the diameter of the tool</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="154"/>
-      <source>Holds the max Z value of Stock</source>
-      <translation type="unfinished">Holds the max Z value of Stock</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="161"/>
-      <source>Holds the min Z value of Stock</source>
-      <translation type="unfinished">Holds the min Z value of Stock</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="182"/>
-      <source>An optional comment for this Operation</source>
-      <translation>Необовʼязковий коментар до цієї Операції</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="188"/>
-      <source>User Assigned Label</source>
-      <translation type="unfinished">User Assigned Label</translation>
-    </message>
-    <message>
-      <location filename="PathJob.py" line="500"/>
-      <source>Operations Cycle Time Estimation</source>
-      <translation type="unfinished">Operations Cycle Time Estimation</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="208"/>
-      <source>Base locations for this operation</source>
-      <translation type="unfinished">Base locations for this operation</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="134"/>
-      <source>The tool controller that will be used to calculate the path</source>
-      <translation type="unfinished">The tool controller that will be used to calculate the path</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="228"/>
-      <source>Coolant mode for this operation</source>
-      <translation>Режим охолодження для цієї операції</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="238"/>
-      <source>Starting Depth of Tool- first cut depth in Z</source>
-      <translation>Початкова глибина інструменту - перша глибина різу по Z</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="246"/>
-      <source>Final Depth of Tool- lowest value in Z</source>
-      <translation>Фінальна глибина інструменту - найнижче значення по Z</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="260"/>
-      <source>Starting Depth internal use only for derived values</source>
-      <translation type="unfinished">Starting Depth internal use only for derived values</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="271"/>
-      <source>Incremental Step Down of Tool</source>
-      <translation>Крок заглиблення Інструменту</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="281"/>
-      <source>Maximum material removed on final pass.</source>
-      <translation>Максимальна кількість матеріалу, що була видалена на заключному проході.</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="292"/>
-      <source>The height needed to clear clamps and obstructions</source>
-      <translation type="unfinished">The height needed to clear clamps and obstructions</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="300"/>
-      <source>Rapid Safety Height between locations.</source>
-      <translation type="unfinished">Rapid Safety Height between locations.</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="308"/>
-      <source>The start point of this path</source>
-      <translation>Початкова точка цієї траєкторії</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="326"/>
-      <source>Lower limit of the turning diameter</source>
-      <translation type="unfinished">Lower limit of the turning diameter</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="334"/>
-      <source>Upper limit of the turning diameter.</source>
-      <translation type="unfinished">Upper limit of the turning diameter.</translation>
-    </message>
-    <message>
-      <location filename="PathOp.py" line="445"/>
-      <source>Coolant option for this operation</source>
-      <translation>Налаштування охолодження для цієї операції</translation>
-    </message>
-    <message>
-      <location filename="PathFeatureExtensions.py" line="482"/>
-      <source>Default length of extensions.</source>
-      <translation type="unfinished">Default length of extensions.</translation>
-    </message>
-    <message>
-      <location filename="PathFeatureExtensions.py" line="489"/>
-      <source>List of features to extend.</source>
-      <translation type="unfinished">List of features to extend.</translation>
-    </message>
-    <message>
-      <location filename="PathFeatureExtensions.py" line="499"/>
-      <source>When enabled connected extension edges are combined to wires.</source>
-      <translation type="unfinished">When enabled connected extension edges are combined to wires.</translation>
-    </message>
-    <message>
-      <location filename="PathDeburr.py" line="126"/>
-      <source>The desired width of the chamfer</source>
-      <translation>Бажана ширина фаски</translation>
-    </message>
-    <message>
-      <location filename="PathDeburr.py" line="132"/>
-      <source>The additional depth of the tool path</source>
-      <translation type="unfinished">The additional depth of the tool path</translation>
-    </message>
-    <message>
-      <location filename="PathDeburr.py" line="138"/>
-      <source>How to join chamfer segments</source>
-      <translation type="unfinished">How to join chamfer segments</translation>
-    </message>
-    <message>
-      <location filename="PathDeburr.py" line="146"/>
-      <source>Direction of Operation</source>
-      <translation>Напрямок Операції</translation>
-    </message>
-    <message>
-      <location filename="PathDeburr.py" line="153"/>
-      <source>Side of Operation</source>
-      <translation>Сторона операції</translation>
-    </message>
-    <message>
-      <location filename="PathDeburr.py" line="163"/>
-      <source>Select the segment, there the operations starts</source>
-      <translation type="unfinished">Select the segment, there the operations starts</translation>
-    </message>
-    <message>
-      <location filename="PathSlot.py" line="134"/>
-      <source>Enter custom start point for slot path.</source>
-      <translation type="unfinished">Enter custom start point for slot path.</translation>
-    </message>
-    <message>
-      <location filename="PathSlot.py" line="142"/>
-      <source>Enter custom end point for slot path.</source>
-      <translation type="unfinished">Enter custom end point for slot path.</translation>
-    </message>
-    <message>
-      <location filename="PathSlot.py" line="160"/>
-      <source>Positive extends the beginning of the path, negative shortens.</source>
-      <translation type="unfinished">Positive extends the beginning of the path, negative shortens.</translation>
-    </message>
-    <message>
-      <location filename="PathSlot.py" line="169"/>
-      <source>Positive extends the end of the path, negative shortens.</source>
-      <translation type="unfinished">Positive extends the end of the path, negative shortens.</translation>
-    </message>
-    <message>
-      <location filename="PathSlot.py" line="187"/>
-      <source>Choose the path orientation with regard to the feature(s) selected.</source>
-      <translation type="unfinished">Choose the path orientation with regard to the feature(s) selected.</translation>
-    </message>
-    <message>
-      <location filename="PathSlot.py" line="196"/>
-      <source>Choose what point to use on the first selected feature.</source>
-      <translation type="unfinished">Choose what point to use on the first selected feature.</translation>
-    </message>
-    <message>
-      <location filename="PathSlot.py" line="205"/>
-      <source>Choose what point to use on the second selected feature.</source>
-      <translation type="unfinished">Choose what point to use on the second selected feature.</translation>
-    </message>
-    <message>
-      <location filename="PathSlot.py" line="214"/>
-      <source>For arcs/circlular edges, offset the radius for the path.</source>
-      <translation type="unfinished">For arcs/circlular edges, offset the radius for the path.</translation>
-    </message>
-    <message>
-      <location filename="PathSlot.py" line="223"/>
-      <source>Enable to reverse the cut direction of the slot path.</source>
-      <translation type="unfinished">Enable to reverse the cut direction of the slot path.</translation>
-    </message>
-    <message>
-      <location filename="PathCopy.py" line="41"/>
-      <source>The path to be copied</source>
-      <translation>Траєкторія для копіювання</translation>
-    </message>
-    <message>
-      <location filename="PathHop.py" line="39"/>
-      <source>The object to be reached by this hop</source>
-      <translation type="unfinished">The object to be reached by this hop</translation>
-    </message>
-    <message>
-      <location filename="PathHop.py" line="45"/>
-      <source>The Z height of the hop</source>
-      <translation type="unfinished">The Z height of the hop</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="109"/>
-      <source>The direction that the toolpath should go around the part ClockWise (CW) or CounterClockWise (CCW)</source>
-      <translation type="unfinished">The direction that the toolpath should go around the part ClockWise (CW) or CounterClockWise (CCW)</translation>
-    </message>
-    <message>
-      <location filename="PathPocketBase.py" line="136"/>
-      <source>Extra offset to apply to the operation. Direction is operation dependent.</source>
-      <translation type="unfinished">Extra offset to apply to the operation. Direction is operation dependent.</translation>
-    </message>
-    <message>
-      <location filename="PathPocketBase.py" line="142"/>
-      <source>Start pocketing at center or boundary</source>
-      <translation type="unfinished">Start pocketing at center or boundary</translation>
-    </message>
-    <message>
-      <location filename="PathPocketBase.py" line="156"/>
-      <source>Angle of the zigzag pattern</source>
-      <translation>Кут зигзаг шаблону</translation>
-    </message>
-    <message>
-      <location filename="PathPocketBase.py" line="162"/>
-      <source>Clearing pattern to use</source>
-      <translation type="unfinished">Clearing pattern to use</translation>
-    </message>
-    <message>
-      <location filename="PathPocketBase.py" line="168"/>
-      <source>Use 3D Sorting of Path</source>
-      <translation type="unfinished">Use 3D Sorting of Path</translation>
-    </message>
-    <message>
-      <location filename="PathPocketBase.py" line="176"/>
-      <source>Attempts to avoid unnecessary retractions.</source>
-      <translation type="unfinished">Attempts to avoid unnecessary retractions.</translation>
-    </message>
-    <message>
-      <location filename="PathPocketBase.py" line="245"/>
-      <source>Last Stepover Radius.  If 0, 50% of cutter is used. Tuning this can be used to improve stepover for some shapes</source>
-      <translation type="unfinished">Last Stepover Radius.  If 0, 50% of cutter is used. Tuning this can be used to improve stepover for some shapes</translation>
+      <location filename="PathCircularHoleBase.py" line="80"/>
+      <source>List of disabled features</source>
+      <translation>Перелік вимкнених властивостей</translation>
     </message>
     <message>
       <location filename="PathJob.py" line="117"/>
@@ -709,91 +919,6 @@
       <translation type="unfinished">Collection of all tool controllers for the job</translation>
     </message>
     <message>
-      <location filename="PathCollision.py" line="60"/>
-      <source>The base object this collision refers to</source>
-      <translation type="unfinished">The base object this collision refers to</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="45"/>
-      <source>The path(s) to array</source>
-      <translation type="unfinished">The path(s) to array</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="51"/>
-      <source>Pattern method</source>
-      <translation>Метод шаблона</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="60"/>
-      <source>The spacing between the array copies in Linear pattern</source>
-      <translation type="unfinished">The spacing between the array copies in Linear pattern</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="68"/>
-      <source>The number of copies in X direction in Linear pattern</source>
-      <translation>Кількість копій по осі X для Лінійного Масиву</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="76"/>
-      <source>The number of copies in Y direction in Linear pattern</source>
-      <translation>Кількість копій по осі Y для Лінійного Масиву</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="82"/>
-      <source>Total angle in Polar pattern</source>
-      <translation>Загальний кут в Полярному масиві</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="90"/>
-      <source>The number of copies in Linear 1D and Polar pattern</source>
-      <translation>Кількість копій для Лінійного 1D та Полярного масиву</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="98"/>
-      <source>The centre of rotation in Polar pattern</source>
-      <translation>Центр обертання в Полярному масиві</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="107"/>
-      <source>Make copies in X direction before Y in Linear 2D pattern</source>
-      <translation type="unfinished">Make copies in X direction before Y in Linear 2D pattern</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="113"/>
-      <source>Percent of copies to randomly offset</source>
-      <translation type="unfinished">Percent of copies to randomly offset</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="119"/>
-      <source>Maximum random offset of copies</source>
-      <translation type="unfinished">Maximum random offset of copies</translation>
-    </message>
-    <message>
-      <location filename="PathArray.py" line="175"/>
-      <source>Seed value for jitter randomness</source>
-      <translation>Початкове значення для випадкового тремтіння</translation>
-    </message>
-    <message>
-      <location filename="PathDressupZCorrect.py" line="73"/>
-      <source>The point file from the surface probing.</source>
-      <translation type="unfinished">The point file from the surface probing.</translation>
-    </message>
-    <message>
-      <location filename="PathDressupZCorrect.py" line="83"/>
-      <source>Deflection distance for arc interpolation</source>
-      <translation type="unfinished">Deflection distance for arc interpolation</translation>
-    </message>
-    <message>
-      <location filename="PathDressupZCorrect.py" line="92"/>
-      <source>break segments into smaller segments of this length.</source>
-      <translation type="unfinished">break segments into smaller segments of this length.</translation>
-    </message>
-    <message>
-      <location filename="PathAdaptive.py" line="1116"/>
-      <source>Uses the outline of the base geometry.</source>
-      <translation type="unfinished">Uses the outline of the base geometry.</translation>
-    </message>
-    <message>
       <location filename="PathVcarve.py" line="228"/>
       <source>The deflection value for discretizing arcs</source>
       <translation type="unfinished">The deflection value for discretizing arcs</translation>
@@ -811,389 +936,104 @@
       <translation>Точність  V отворів</translation>
     </message>
     <message>
-      <location filename="PathWaterline.py" line="213"/>
-      <source>Smaller values yield a finer, more accurate the mesh. Smaller values increase processing time a lot.</source>
-      <translation type="unfinished">Smaller values yield a finer, more accurate the mesh. Smaller values increase processing time a lot.</translation>
+      <location filename="PathDressupRampEntry.py" line="65"/>
+      <source>Angle of ramp.</source>
+      <translation>Кут нарощування.</translation>
     </message>
     <message>
-      <location filename="PathWaterline.py" line="222"/>
-      <source>Smaller values yield a finer, more accurate the mesh. Smaller values do not increase processing time much.</source>
-      <translation type="unfinished">Smaller values yield a finer, more accurate the mesh. Smaller values do not increase processing time much.</translation>
+      <location filename="PathDressupRampEntry.py" line="71"/>
+      <source>Ramping Method</source>
+      <translation>Метод нарощування</translation>
     </message>
     <message>
-      <location filename="PathWaterline.py" line="293"/>
-      <source>Select the algorithm to use: OCL Dropcutter*, or Experimental (Not OCL based).</source>
-      <translation type="unfinished">Select the algorithm to use: OCL Dropcutter*, or Experimental (Not OCL based).</translation>
+      <location filename="PathDressupRampEntry.py" line="77"/>
+      <source>Which feed rate to use for ramping</source>
+      <translation>Визначає робочу подачу для нарощування</translation>
     </message>
     <message>
-      <location filename="PathWaterline.py" line="310"/>
-      <source>Set to clear last layer in a `Multi-pass` operation.</source>
-      <translation type="unfinished">Set to clear last layer in a `Multi-pass` operation.</translation>
+      <location filename="PathDressupRampEntry.py" line="83"/>
+      <source>Custom feed rate</source>
+      <translation>Індивідуальна швидкість подачі</translation>
     </message>
     <message>
-      <location filename="PathWaterline.py" line="362"/>
-      <source>Ignore outer waterlines above this height.</source>
-      <translation type="unfinished">Ignore outer waterlines above this height.</translation>
+      <location filename="PathDressupRampEntry.py" line="92"/>
+      <source>Should the dressup ignore motion commands above DressupStartDepth</source>
+      <translation type="unfinished">Should the dressup ignore motion commands above DressupStartDepth</translation>
     </message>
     <message>
-      <location filename="PathToolBit.py" line="145"/>
-      <source>Shape for bit shape</source>
-      <translation type="unfinished">Shape for bit shape</translation>
+      <location filename="PathDressupRampEntry.py" line="101"/>
+      <source>The depth where the ramp dressup is enabled. Above this ramps are not generated, but motion commands are passed through as is.</source>
+      <translation type="unfinished">The depth where the ramp dressup is enabled. Above this ramps are not generated, but motion commands are passed through as is.</translation>
     </message>
     <message>
-      <location filename="PathToolBit.py" line="153"/>
-      <source>The parametrized body representing the tool bit</source>
-      <translation type="unfinished">The parametrized body representing the tool bit</translation>
+      <location filename="PathDressupDogbone.py" line="433"/>
+      <source>The side of path to insert bones</source>
+      <translation type="unfinished">The side of path to insert bones</translation>
     </message>
     <message>
-      <location filename="PathToolBit.py" line="159"/>
-      <source>The file of the tool</source>
-      <translation>Файл інструменту</translation>
+      <location filename="PathDressupDogbone.py" line="441"/>
+      <source>The style of bones</source>
+      <translation type="unfinished">The style of bones</translation>
     </message>
     <message>
-      <location filename="PathToolBit.py" line="165"/>
-      <source>The name of the shape file</source>
-      <translation>Імʼя файлу форми</translation>
+      <location filename="PathDressupDogbone.py" line="449"/>
+      <source>Bones that aren&apos;t dressed up</source>
+      <translation type="unfinished">Bones that aren&apos;t dressed up</translation>
     </message>
     <message>
-      <location filename="PathToolBit.py" line="211"/>
-      <source>List of all properties inherited from the bit</source>
-      <translation type="unfinished">List of all properties inherited from the bit</translation>
+      <location filename="PathDressupDogbone.py" line="459"/>
+      <source>The algorithm to determine the bone length</source>
+      <translation type="unfinished">The algorithm to determine the bone length</translation>
     </message>
     <message>
-      <location filename="PathDressupAxisMap.py" line="63"/>
-      <source>The input mapping axis</source>
-      <translation type="unfinished">The input mapping axis</translation>
+      <location filename="PathDressupDogbone.py" line="467"/>
+      <source>Dressup length if Incision == custom</source>
+      <translation type="unfinished">Dressup length if Incision == custom</translation>
     </message>
     <message>
-      <location filename="PathDressupAxisMap.py" line="69"/>
-      <source>The radius of the wrapped axis</source>
-      <translation type="unfinished">The radius of the wrapped axis</translation>
+      <location filename="PathSlot.py" line="134"/>
+      <source>Enter custom start point for slot path.</source>
+      <translation type="unfinished">Enter custom start point for slot path.</translation>
     </message>
     <message>
-      <location filename="PathAreaOp.py" line="168"/>
-      <source>Split Arcs into discrete segments</source>
-      <translation>Розділити арки на окремі сегменти</translation>
+      <location filename="PathSlot.py" line="142"/>
+      <source>Enter custom end point for slot path.</source>
+      <translation type="unfinished">Enter custom end point for slot path.</translation>
     </message>
     <message>
-      <location filename="PathPocket.py" line="79"/>
-      <source>Use adaptive algorithm to eliminate excessive air milling above planar pocket top.</source>
-      <translation type="unfinished">Use adaptive algorithm to eliminate excessive air milling above planar pocket top.</translation>
+      <location filename="PathSlot.py" line="160"/>
+      <source>Positive extends the beginning of the path, negative shortens.</source>
+      <translation type="unfinished">Positive extends the beginning of the path, negative shortens.</translation>
     </message>
     <message>
-      <location filename="PathPocket.py" line="89"/>
-      <source>Use adaptive algorithm to eliminate excessive air milling below planar pocket bottom.</source>
-      <translation type="unfinished">Use adaptive algorithm to eliminate excessive air milling below planar pocket bottom.</translation>
+      <location filename="PathSlot.py" line="169"/>
+      <source>Positive extends the end of the path, negative shortens.</source>
+      <translation type="unfinished">Positive extends the end of the path, negative shortens.</translation>
     </message>
     <message>
-      <location filename="PathPocket.py" line="99"/>
-      <source>Process the model and stock in an operation with no Base Geometry selected.</source>
-      <translation type="unfinished">Process the model and stock in an operation with no Base Geometry selected.</translation>
+      <location filename="PathSlot.py" line="187"/>
+      <source>Choose the path orientation with regard to the feature(s) selected.</source>
+      <translation type="unfinished">Choose the path orientation with regard to the feature(s) selected.</translation>
     </message>
     <message>
-      <location filename="PathToolController.py" line="71"/>
-      <source>The active tool</source>
-      <translation>Активний інструмент</translation>
+      <location filename="PathSlot.py" line="196"/>
+      <source>Choose what point to use on the first selected feature.</source>
+      <translation type="unfinished">Choose what point to use on the first selected feature.</translation>
     </message>
     <message>
-      <location filename="PathToolController.py" line="80"/>
-      <source>The speed of the cutting spindle in RPM</source>
-      <translation>Швидкість обертання шпинделя в об/хв</translation>
+      <location filename="PathSlot.py" line="205"/>
+      <source>Choose what point to use on the second selected feature.</source>
+      <translation type="unfinished">Choose what point to use on the second selected feature.</translation>
     </message>
     <message>
-      <location filename="PathToolController.py" line="86"/>
-      <source>Direction of spindle rotation</source>
-      <translation>Напрямок обертання шпинделя</translation>
+      <location filename="PathSlot.py" line="214"/>
+      <source>For arcs/circlular edges, offset the radius for the path.</source>
+      <translation type="unfinished">For arcs/circlular edges, offset the radius for the path.</translation>
     </message>
     <message>
-      <location filename="PathToolController.py" line="92"/>
-      <source>Feed rate for vertical moves in Z</source>
-      <translation>Швидкість вертикальної подачі по осі Z</translation>
-    </message>
-    <message>
-      <location filename="PathToolController.py" line="98"/>
-      <source>Feed rate for horizontal moves</source>
-      <translation>Швидкість горизонтальної подачі</translation>
-    </message>
-    <message>
-      <location filename="PathToolController.py" line="104"/>
-      <source>Rapid rate for vertical moves in Z</source>
-      <translation>Швидкість прискореної вертикальної подачі по осі Z</translation>
-    </message>
-    <message>
-      <location filename="PathToolController.py" line="110"/>
-      <source>Rapid rate for horizontal moves</source>
-      <translation>Швидкість прискореної горизонтальної подачі</translation>
-    </message>
-    <message>
-      <location filename="PathToolController.py" line="330"/>
-      <source>The tool used by this controller</source>
-      <translation type="unfinished">The tool used by this controller</translation>
-    </message>
-    <message>
-      <location filename="PathStop.py" line="42"/>
-      <source>Add Optional or Mandatory Stop to the program</source>
-      <translation type="unfinished">Add Optional or Mandatory Stop to the program</translation>
-    </message>
-    <message>
-      <location filename="PathCircularHoleBase.py" line="80"/>
-      <source>List of disabled features</source>
-      <translation>Перелік вимкнених властивостей</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="75"/>
-      <source>Calculate roll-on to path</source>
-      <translation type="unfinished">Calculate roll-on to path</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="81"/>
-      <source>Calculate roll-off from path</source>
-      <translation type="unfinished">Calculate roll-off from path</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="87"/>
-      <source>Keep the Tool Down in Path</source>
-      <translation type="unfinished">Keep the Tool Down in Path</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="96"/>
-      <source>Use Machine Cutter Radius Compensation /Tool Path Offset G41/G42</source>
-      <translation type="unfinished">Use Machine Cutter Radius Compensation /Tool Path Offset G41/G42</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="102"/>
-      <source>Length or Radius of the approach</source>
-      <translation type="unfinished">Length or Radius of the approach</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="108"/>
-      <source>The Style of motion into the Path</source>
-      <translation>Стиль руху по Лінії</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="115"/>
-      <source>The Style of motion out of the Path</source>
-      <translation>Стиль руху по Лінії</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="124"/>
-      <source>The Mode of Point Radiusoffset or Center</source>
-      <translation type="unfinished">The Mode of Point Radiusoffset or Center</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="135"/>
-      <source>Extends LeadIn distance</source>
-      <translation type="unfinished">Extends LeadIn distance</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="141"/>
-      <source>Extends LeadOut distance</source>
-      <translation type="unfinished">Extends LeadOut distance</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="147"/>
-      <source>Perform plunges with G0</source>
-      <translation type="unfinished">Perform plunges with G0</translation>
-    </message>
-    <message>
-      <location filename="PathDressupLeadInOut.py" line="155"/>
-      <source>Apply LeadInOut to layers within an operation</source>
-      <translation type="unfinished">Apply LeadInOut to layers within an operation</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="118"/>
-      <source>Default speed for horizontal rapid moves.</source>
-      <translation type="unfinished">Default speed for horizontal rapid moves.</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="126"/>
-      <source>Default speed for vertical rapid moves.</source>
-      <translation type="unfinished">Default speed for vertical rapid moves.</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="414"/>
-      <source>Coolant Modes</source>
-      <translation type="unfinished">Coolant Modes</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="423"/>
-      <source>Default coolant mode.</source>
-      <translation type="unfinished">Default coolant mode.</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="147"/>
-      <source>The usage of this field depends on SafeHeightExpression - by default its value is added to StartDepth and used for SafeHeight of an operation.</source>
-      <translation type="unfinished">The usage of this field depends on SafeHeightExpression - by default its value is added to StartDepth and used for SafeHeight of an operation.</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="155"/>
-      <source>Expression set for the SafeHeight of new operations.</source>
-      <translation type="unfinished">Expression set for the SafeHeight of new operations.</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="164"/>
-      <source>The usage of this field depends on ClearanceHeightExpression - by default is value is added to StartDepth and used for ClearanceHeight of an operation.</source>
-      <translation type="unfinished">The usage of this field depends on ClearanceHeightExpression - by default is value is added to StartDepth and used for ClearanceHeight of an operation.</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="173"/>
-      <source>Expression set for the ClearanceHeight of new operations.</source>
-      <translation type="unfinished">Expression set for the ClearanceHeight of new operations.</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="181"/>
-      <source>Expression used for StartDepth of new operations.</source>
-      <translation type="unfinished">Expression used for StartDepth of new operations.</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="189"/>
-      <source>Expression used for FinalDepth of new operations.</source>
-      <translation type="unfinished">Expression used for FinalDepth of new operations.</translation>
-    </message>
-    <message>
-      <location filename="PathSetupSheet.py" line="197"/>
-      <source>Expression used for StepDown of new operations.</source>
-      <translation type="unfinished">Expression used for StepDown of new operations.</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="127"/>
-      <source>Controls how tool moves around corners. Default=Round</source>
-      <translation type="unfinished">Controls how tool moves around corners. Default=Round</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="135"/>
-      <source>Maximum distance before a miter join is truncated</source>
-      <translation type="unfinished">Maximum distance before a miter join is truncated</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="152"/>
-      <source>Profile holes as well as the outline</source>
-      <translation>Профіль отворів, а також контур</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="158"/>
-      <source>Profile the outline</source>
-      <translation>Профіль контуру</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="164"/>
-      <source>Profile round holes</source>
-      <translation>Профіль круглих отворів</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="170"/>
-      <source>Side of edge that tool should cut</source>
-      <translation type="unfinished">Side of edge that tool should cut</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="178"/>
-      <source>Make True, if using Cutter Radius Compensation</source>
-      <translation type="unfinished">Make True, if using Cutter Radius Compensation</translation>
-    </message>
-    <message>
-      <location filename="PathFixture.py" line="38"/>
-      <source>Fixture Offset Number</source>
-      <translation type="unfinished">Fixture Offset Number</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTag.py" line="131"/>
-      <source>Width of tags.</source>
-      <translation type="unfinished">Width of tags.</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTag.py" line="137"/>
-      <source>Height of tags.</source>
-      <translation type="unfinished">Height of tags.</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTag.py" line="143"/>
-      <source>Angle of tag plunge and ascent.</source>
-      <translation type="unfinished">Angle of tag plunge and ascent.</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTag.py" line="149"/>
-      <source>Radius of the fillet for the tag.</source>
-      <translation type="unfinished">Radius of the fillet for the tag.</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTag.py" line="155"/>
-      <source>Locations of inserted holding tags</source>
-      <translation type="unfinished">Locations of inserted holding tags</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTag.py" line="161"/>
-      <source>IDs of disabled holding tags</source>
-      <translation type="unfinished">IDs of disabled holding tags</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTag.py" line="170"/>
-      <source>Factor determining the # of segments used to approximate rounded tags.</source>
-      <translation type="unfinished">Factor determining the # of segments used to approximate rounded tags.</translation>
-    </message>
-    <message>
-      <location filename="PathCustom.py" line="56"/>
-      <source>The gcode to be inserted</source>
-      <translation type="unfinished">The gcode to be inserted</translation>
-    </message>
-    <message>
-      <location filename="PathDrilling.py" line="110"/>
-      <source>Incremental Drill depth before retracting to clear chips</source>
-      <translation type="unfinished">Incremental Drill depth before retracting to clear chips</translation>
-    </message>
-    <message>
-      <location filename="PathDrilling.py" line="116"/>
-      <source>Enable pecking</source>
-      <translation type="unfinished">Enable pecking</translation>
-    </message>
-    <message>
-      <location filename="PathDrilling.py" line="122"/>
-      <source>The time to dwell between peck cycles</source>
-      <translation type="unfinished">The time to dwell between peck cycles</translation>
-    </message>
-    <message>
-      <location filename="PathDrilling.py" line="128"/>
-      <source>Enable dwell</source>
-      <translation type="unfinished">Enable dwell</translation>
-    </message>
-    <message>
-      <location filename="PathDrilling.py" line="137"/>
-      <source>Calculate the tip length and subtract from final depth</source>
-      <translation type="unfinished">Calculate the tip length and subtract from final depth</translation>
-    </message>
-    <message>
-      <location filename="PathDrilling.py" line="145"/>
-      <source>Controls how tool retracts Default=G99</source>
-      <translation type="unfinished">Controls how tool retracts Default=G99</translation>
-    </message>
-    <message>
-      <location filename="PathDrilling.py" line="154"/>
-      <source>The height where feed starts and height during retract tool when path is finished while in a peck operation</source>
-      <translation type="unfinished">The height where feed starts and height during retract tool when path is finished while in a peck operation</translation>
-    </message>
-    <message>
-      <location filename="PathDrilling.py" line="160"/>
-      <source>How far the drill depth is extended</source>
-      <translation type="unfinished">How far the drill depth is extended</translation>
-    </message>
-    <message>
-      <location filename="PathMillFace.py" line="97"/>
-      <source>Shape to use for calculating Boundary</source>
-      <translation type="unfinished">Shape to use for calculating Boundary</translation>
-    </message>
-    <message>
-      <location filename="PathMillFace.py" line="105"/>
-      <source>Clear edges of surface (Only applicable to BoundBox)</source>
-      <translation type="unfinished">Clear edges of surface (Only applicable to BoundBox)</translation>
-    </message>
-    <message>
-      <location filename="PathMillFace.py" line="114"/>
-      <source>Exclude milling raised areas inside the face.</source>
-      <translation type="unfinished">Exclude milling raised areas inside the face.</translation>
-    </message>
-    <message>
-      <location filename="PathPropertyBag.py" line="75"/>
-      <source>List of custom property groups</source>
-      <translation type="unfinished">List of custom property groups</translation>
+      <location filename="PathSlot.py" line="223"/>
+      <source>Enable to reverse the cut direction of the slot path.</source>
+      <translation type="unfinished">Enable to reverse the cut direction of the slot path.</translation>
     </message>
     <message>
       <location filename="PathAdaptive.py" line="948"/>
@@ -1271,99 +1111,259 @@
       <translation type="unfinished">Limit helix entry diameter, if limit larger than tool diameter or 0, tool diameter is used</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="110"/>
-      <source>The base object this stock is derived from</source>
-      <translation type="unfinished">The base object this stock is derived from</translation>
+      <location filename="PathDressupZCorrect.py" line="73"/>
+      <source>The point file from the surface probing.</source>
+      <translation type="unfinished">The point file from the surface probing.</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="119"/>
-      <source>Extra allowance from part bound box in negative X direction</source>
-      <translation type="unfinished">Extra allowance from part bound box in negative X direction</translation>
+      <location filename="PathDressupZCorrect.py" line="83"/>
+      <source>Deflection distance for arc interpolation</source>
+      <translation type="unfinished">Deflection distance for arc interpolation</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="128"/>
-      <source>Extra allowance from part bound box in positive X direction</source>
-      <translation type="unfinished">Extra allowance from part bound box in positive X direction</translation>
+      <location filename="PathDressupZCorrect.py" line="92"/>
+      <source>break segments into smaller segments of this length.</source>
+      <translation type="unfinished">break segments into smaller segments of this length.</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="137"/>
-      <source>Extra allowance from part bound box in negative Y direction</source>
-      <translation type="unfinished">Extra allowance from part bound box in negative Y direction</translation>
+      <location filename="PathCopy.py" line="41"/>
+      <source>The path to be copied</source>
+      <translation>Траєкторія для копіювання</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="146"/>
-      <source>Extra allowance from part bound box in positive Y direction</source>
-      <translation type="unfinished">Extra allowance from part bound box in positive Y direction</translation>
+      <location filename="PathWaterline.py" line="213"/>
+      <source>Smaller values yield a finer, more accurate the mesh. Smaller values increase processing time a lot.</source>
+      <translation type="unfinished">Smaller values yield a finer, more accurate the mesh. Smaller values increase processing time a lot.</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="155"/>
-      <source>Extra allowance from part bound box in negative Z direction</source>
-      <translation type="unfinished">Extra allowance from part bound box in negative Z direction</translation>
+      <location filename="PathWaterline.py" line="222"/>
+      <source>Smaller values yield a finer, more accurate the mesh. Smaller values do not increase processing time much.</source>
+      <translation type="unfinished">Smaller values yield a finer, more accurate the mesh. Smaller values do not increase processing time much.</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="164"/>
-      <source>Extra allowance from part bound box in positive Z direction</source>
-      <translation type="unfinished">Extra allowance from part bound box in positive Z direction</translation>
+      <location filename="PathWaterline.py" line="293"/>
+      <source>Select the algorithm to use: OCL Dropcutter*, or Experimental (Not OCL based).</source>
+      <translation type="unfinished">Select the algorithm to use: OCL Dropcutter*, or Experimental (Not OCL based).</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="170"/>
-      <source>A material for this object</source>
-      <translation>Матеріал для цього обʼєкту</translation>
+      <location filename="PathWaterline.py" line="310"/>
+      <source>Set to clear last layer in a `Multi-pass` operation.</source>
+      <translation type="unfinished">Set to clear last layer in a `Multi-pass` operation.</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="242"/>
-      <source>Length of this stock box</source>
-      <translation type="unfinished">Length of this stock box</translation>
+      <location filename="PathWaterline.py" line="362"/>
+      <source>Ignore outer waterlines above this height.</source>
+      <translation type="unfinished">Ignore outer waterlines above this height.</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="248"/>
-      <source>Width of this stock box</source>
-      <translation type="unfinished">Width of this stock box</translation>
+      <location filename="PathArray.py" line="45"/>
+      <source>The path(s) to array</source>
+      <translation type="unfinished">The path(s) to array</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="254"/>
-      <source>Height of this stock box</source>
-      <translation type="unfinished">Height of this stock box</translation>
+      <location filename="PathArray.py" line="51"/>
+      <source>Pattern method</source>
+      <translation>Метод шаблона</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="294"/>
-      <source>Radius of this stock cylinder</source>
-      <translation type="unfinished">Radius of this stock cylinder</translation>
+      <location filename="PathArray.py" line="60"/>
+      <source>The spacing between the array copies in Linear pattern</source>
+      <translation type="unfinished">The spacing between the array copies in Linear pattern</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="300"/>
-      <source>Height of this stock cylinder</source>
-      <translation type="unfinished">Height of this stock cylinder</translation>
+      <location filename="PathArray.py" line="68"/>
+      <source>The number of copies in X direction in Linear pattern</source>
+      <translation>Кількість копій по осі X для Лінійного Масиву</translation>
     </message>
     <message>
-      <location filename="PathStock.py" line="336"/>
-      <source>Internal representation of stock type</source>
-      <translation type="unfinished">Internal representation of stock type</translation>
+      <location filename="PathArray.py" line="76"/>
+      <source>The number of copies in Y direction in Linear pattern</source>
+      <translation>Кількість копій по осі Y для Лінійного Масиву</translation>
     </message>
     <message>
-      <location filename="PathProbe.py" line="57"/>
-      <source>X offset between tool and probe</source>
-      <translation>Зміщення по вісі X між інструментом і зондом</translation>
+      <location filename="PathArray.py" line="82"/>
+      <source>Total angle in Polar pattern</source>
+      <translation>Загальний кут в Полярному масиві</translation>
     </message>
     <message>
-      <location filename="PathProbe.py" line="63"/>
-      <source>Y offset between tool and probe</source>
-      <translation>Зміщення по вісі Y між інструментом і зондом</translation>
+      <location filename="PathArray.py" line="90"/>
+      <source>The number of copies in Linear 1D and Polar pattern</source>
+      <translation>Кількість копій для Лінійного 1D та Полярного масиву</translation>
     </message>
     <message>
-      <location filename="PathProbe.py" line="71"/>
-      <source>Number of points to probe in X direction</source>
-      <translation type="unfinished">Number of points to probe in X direction</translation>
+      <location filename="PathArray.py" line="98"/>
+      <source>The centre of rotation in Polar pattern</source>
+      <translation>Центр обертання в Полярному масиві</translation>
     </message>
     <message>
-      <location filename="PathProbe.py" line="79"/>
-      <source>Number of points to probe in Y direction</source>
-      <translation type="unfinished">Number of points to probe in Y direction</translation>
+      <location filename="PathArray.py" line="107"/>
+      <source>Make copies in X direction before Y in Linear 2D pattern</source>
+      <translation type="unfinished">Make copies in X direction before Y in Linear 2D pattern</translation>
     </message>
     <message>
-      <location filename="PathProbe.py" line="87"/>
-      <source>The output location for the probe data to be written</source>
-      <translation type="unfinished">The output location for the probe data to be written</translation>
+      <location filename="PathArray.py" line="113"/>
+      <source>Percent of copies to randomly offset</source>
+      <translation type="unfinished">Percent of copies to randomly offset</translation>
+    </message>
+    <message>
+      <location filename="PathArray.py" line="119"/>
+      <source>Maximum random offset of copies</source>
+      <translation type="unfinished">Maximum random offset of copies</translation>
+    </message>
+    <message>
+      <location filename="PathArray.py" line="175"/>
+      <source>Seed value for jitter randomness</source>
+      <translation>Початкове значення для випадкового тремтіння</translation>
+    </message>
+    <message>
+      <location filename="PathFixture.py" line="38"/>
+      <source>Fixture Offset Number</source>
+      <translation type="unfinished">Fixture Offset Number</translation>
+    </message>
+    <message>
+      <location filename="PathPropertyBag.py" line="75"/>
+      <source>List of custom property groups</source>
+      <translation type="unfinished">List of custom property groups</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="75"/>
+      <source>Calculate roll-on to path</source>
+      <translation type="unfinished">Calculate roll-on to path</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="81"/>
+      <source>Calculate roll-off from path</source>
+      <translation type="unfinished">Calculate roll-off from path</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="87"/>
+      <source>Keep the Tool Down in Path</source>
+      <translation type="unfinished">Keep the Tool Down in Path</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="96"/>
+      <source>Use Machine Cutter Radius Compensation /Tool Path Offset G41/G42</source>
+      <translation type="unfinished">Use Machine Cutter Radius Compensation /Tool Path Offset G41/G42</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="102"/>
+      <source>Length or Radius of the approach</source>
+      <translation type="unfinished">Length or Radius of the approach</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="108"/>
+      <source>The Style of motion into the Path</source>
+      <translation>Стиль руху по Лінії</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="115"/>
+      <source>The Style of motion out of the Path</source>
+      <translation>Стиль руху по Лінії</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="124"/>
+      <source>The Mode of Point Radiusoffset or Center</source>
+      <translation type="unfinished">The Mode of Point Radiusoffset or Center</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="135"/>
+      <source>Extends LeadIn distance</source>
+      <translation type="unfinished">Extends LeadIn distance</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="141"/>
+      <source>Extends LeadOut distance</source>
+      <translation type="unfinished">Extends LeadOut distance</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="147"/>
+      <source>Perform plunges with G0</source>
+      <translation type="unfinished">Perform plunges with G0</translation>
+    </message>
+    <message>
+      <location filename="PathDressupLeadInOut.py" line="155"/>
+      <source>Apply LeadInOut to layers within an operation</source>
+      <translation type="unfinished">Apply LeadInOut to layers within an operation</translation>
+    </message>
+    <message>
+      <location filename="PathDrilling.py" line="110"/>
+      <source>Incremental Drill depth before retracting to clear chips</source>
+      <translation type="unfinished">Incremental Drill depth before retracting to clear chips</translation>
+    </message>
+    <message>
+      <location filename="PathDrilling.py" line="116"/>
+      <source>Enable pecking</source>
+      <translation type="unfinished">Enable pecking</translation>
+    </message>
+    <message>
+      <location filename="PathDrilling.py" line="122"/>
+      <source>The time to dwell between peck cycles</source>
+      <translation type="unfinished">The time to dwell between peck cycles</translation>
+    </message>
+    <message>
+      <location filename="PathDrilling.py" line="128"/>
+      <source>Enable dwell</source>
+      <translation type="unfinished">Enable dwell</translation>
+    </message>
+    <message>
+      <location filename="PathDrilling.py" line="137"/>
+      <source>Calculate the tip length and subtract from final depth</source>
+      <translation type="unfinished">Calculate the tip length and subtract from final depth</translation>
+    </message>
+    <message>
+      <location filename="PathDrilling.py" line="145"/>
+      <source>Controls how tool retracts Default=G99</source>
+      <translation type="unfinished">Controls how tool retracts Default=G99</translation>
+    </message>
+    <message>
+      <location filename="PathDrilling.py" line="154"/>
+      <source>The height where feed starts and height during retract tool when path is finished while in a peck operation</source>
+      <translation type="unfinished">The height where feed starts and height during retract tool when path is finished while in a peck operation</translation>
+    </message>
+    <message>
+      <location filename="PathDrilling.py" line="160"/>
+      <source>How far the drill depth is extended</source>
+      <translation type="unfinished">How far the drill depth is extended</translation>
+    </message>
+    <message>
+      <location filename="PathStop.py" line="42"/>
+      <source>Add Optional or Mandatory Stop to the program</source>
+      <translation type="unfinished">Add Optional or Mandatory Stop to the program</translation>
+    </message>
+    <message>
+      <location filename="PathDressupAxisMap.py" line="63"/>
+      <source>The input mapping axis</source>
+      <translation type="unfinished">The input mapping axis</translation>
+    </message>
+    <message>
+      <location filename="PathDressupAxisMap.py" line="69"/>
+      <source>The radius of the wrapped axis</source>
+      <translation type="unfinished">The radius of the wrapped axis</translation>
+    </message>
+    <message>
+      <location filename="PathDressupPathBoundary.py" line="65"/>
+      <source>Solid object to be used to limit the generated Path.</source>
+      <translation type="unfinished">Solid object to be used to limit the generated Path.</translation>
+    </message>
+    <message>
+      <location filename="PathDressupPathBoundary.py" line="75"/>
+      <source>Determines if Boundary describes an inclusion or exclusion mask.</source>
+      <translation type="unfinished">Determines if Boundary describes an inclusion or exclusion mask.</translation>
+    </message>
+    <message>
+      <location filename="PathPocket.py" line="79"/>
+      <source>Use adaptive algorithm to eliminate excessive air milling above planar pocket top.</source>
+      <translation type="unfinished">Use adaptive algorithm to eliminate excessive air milling above planar pocket top.</translation>
+    </message>
+    <message>
+      <location filename="PathPocket.py" line="89"/>
+      <source>Use adaptive algorithm to eliminate excessive air milling below planar pocket bottom.</source>
+      <translation type="unfinished">Use adaptive algorithm to eliminate excessive air milling below planar pocket bottom.</translation>
+    </message>
+    <message>
+      <location filename="PathPocket.py" line="99"/>
+      <source>Process the model and stock in an operation with no Base Geometry selected.</source>
+      <translation type="unfinished">Process the model and stock in an operation with no Base Geometry selected.</translation>
     </message>
   </context>
   <context>
@@ -1407,16 +1407,6 @@ For example:
       <location filename="InitGui.py" line="279"/>
       <source>Don&apos;t Show This Anymore</source>
       <translation type="unfinished">Don&apos;t Show This Anymore</translation>
-    </message>
-    <message>
-      <location filename="PathInspect.py" line="240"/>
-      <source>GCode size too big ({} o), disabling syntax highlighter.</source>
-      <translation type="unfinished">GCode size too big ({} o), disabling syntax highlighter.</translation>
-    </message>
-    <message>
-      <location filename="PathToolBitGui.py" line="200"/>
-      <source>Invalid Filename</source>
-      <translation type="unfinished">Invalid Filename</translation>
     </message>
     <message>
       <location filename="PathOp.py" line="637"/>
@@ -1479,16 +1469,6 @@ For example:
       <translation type="unfinished">Base object %s.%s rejected by operation</translation>
     </message>
     <message>
-      <location filename="PathDeburr.py" line="185"/>
-      <source>CW</source>
-      <translation>за годинниковою стрілкою</translation>
-    </message>
-    <message>
-      <location filename="PathDeburr.py" line="186"/>
-      <source>CCW</source>
-      <translation>проти годинникової стрілки</translation>
-    </message>
-    <message>
       <location filename="PathVcarveGui.py" line="65"/>
       <source>%s is not a Base Model object of the job %s</source>
       <translation type="unfinished">%s is not a Base Model object of the job %s</translation>
@@ -1499,9 +1479,29 @@ For example:
       <translation type="unfinished">Base shape %s already in the list</translation>
     </message>
     <message>
-      <location filename="PathJob.py" line="554"/>
-      <source>This job contains Legacy tools. Legacy tools are deprecated. They will be removed after version 0.20</source>
-      <translation type="unfinished">This job contains Legacy tools. Legacy tools are deprecated. They will be removed after version 0.20</translation>
+      <location filename="PathPost.py" line="421"/>
+      <source>Choose a Path Job</source>
+      <translation type="unfinished">Choose a Path Job</translation>
+    </message>
+    <message>
+      <location filename="PathDeburr.py" line="185"/>
+      <source>CW</source>
+      <translation>за годинниковою стрілкою</translation>
+    </message>
+    <message>
+      <location filename="PathDeburr.py" line="186"/>
+      <source>CCW</source>
+      <translation>проти годинникової стрілки</translation>
+    </message>
+    <message>
+      <location filename="PathJobGui.py" line="628"/>
+      <source>Feed(H)</source>
+      <translation>Потік (H)</translation>
+    </message>
+    <message>
+      <location filename="PathJobGui.py" line="632"/>
+      <source>Feed(V)</source>
+      <translation>Потік (V)</translation>
     </message>
     <message>
       <location filename="PathProfileGui.py" line="165"/>
@@ -1514,9 +1514,24 @@ For example:
       <translation type="unfinished">Profile entire model, selected face(s) or selected edge(s)</translation>
     </message>
     <message>
-      <location filename="PathPreferences.py" line="195"/>
-      <source>Legacy tools are deprecated. They will be removed after version 0.20</source>
-      <translation type="unfinished">Legacy tools are deprecated. They will be removed after version 0.20</translation>
+      <location filename="PathToolControllerGui.py" line="117"/>
+      <source>Edit</source>
+      <translation>Правка</translation>
+    </message>
+    <message>
+      <location filename="PathCircularHoleBase.py" line="116"/>
+      <source>Hole diameter may be inaccurate due to tessellation on face. Consider selecting hole edge.</source>
+      <translation type="unfinished">Hole diameter may be inaccurate due to tessellation on face. Consider selecting hole edge.</translation>
+    </message>
+    <message>
+      <location filename="PathCircularHoleBase.py" line="150"/>
+      <source>Feature %s.%s cannot be processed as a circular hole - please remove from Base geometry list.</source>
+      <translation type="unfinished">Feature %s.%s cannot be processed as a circular hole - please remove from Base geometry list.</translation>
+    </message>
+    <message>
+      <location filename="PathJob.py" line="554"/>
+      <source>This job contains Legacy tools. Legacy tools are deprecated. They will be removed after version 0.20</source>
+      <translation type="unfinished">This job contains Legacy tools. Legacy tools are deprecated. They will be removed after version 0.20</translation>
     </message>
     <message>
       <location filename="PathUtils.py" line="438"/>
@@ -1544,14 +1559,19 @@ For example:
       <translation type="unfinished">Cutting Edge Angle (%.2f) results in negative tool tip length</translation>
     </message>
     <message>
-      <location filename="PathToolControllerGui.py" line="117"/>
-      <source>Edit</source>
-      <translation>Правка</translation>
+      <location filename="PostUtils.py" line="179"/>
+      <source>GCode size too big ({} o), disabling syntax highlighter.</source>
+      <translation type="unfinished">GCode size too big ({} o), disabling syntax highlighter.</translation>
     </message>
     <message>
-      <location filename="PathPost.py" line="421"/>
-      <source>Choose a Path Job</source>
-      <translation type="unfinished">Choose a Path Job</translation>
+      <location filename="PathToolBitGui.py" line="200"/>
+      <source>Invalid Filename</source>
+      <translation type="unfinished">Invalid Filename</translation>
+    </message>
+    <message>
+      <location filename="PathPreferences.py" line="195"/>
+      <source>Legacy tools are deprecated. They will be removed after version 0.20</source>
+      <translation type="unfinished">Legacy tools are deprecated. They will be removed after version 0.20</translation>
     </message>
     <message>
       <location filename="PathPocket.py" line="334"/>
@@ -1562,26 +1582,6 @@ For example:
       <location filename="PathPocket.py" line="381"/>
       <source>The non-planar adaptive start is also unavailable.</source>
       <translation type="unfinished">The non-planar adaptive start is also unavailable.</translation>
-    </message>
-    <message>
-      <location filename="PathCircularHoleBase.py" line="116"/>
-      <source>Hole diameter may be inaccurate due to tessellation on face. Consider selecting hole edge.</source>
-      <translation type="unfinished">Hole diameter may be inaccurate due to tessellation on face. Consider selecting hole edge.</translation>
-    </message>
-    <message>
-      <location filename="PathCircularHoleBase.py" line="150"/>
-      <source>Feature %s.%s cannot be processed as a circular hole - please remove from Base geometry list.</source>
-      <translation type="unfinished">Feature %s.%s cannot be processed as a circular hole - please remove from Base geometry list.</translation>
-    </message>
-    <message>
-      <location filename="PathJobGui.py" line="628"/>
-      <source>Feed(H)</source>
-      <translation>Потік (H)</translation>
-    </message>
-    <message>
-      <location filename="PathJobGui.py" line="632"/>
-      <source>Feed(V)</source>
-      <translation>Потік (V)</translation>
     </message>
   </context>
   <context>
@@ -1827,21 +1827,6 @@ Aborting op creation</translation>
   <context>
     <name>PathPocket</name>
     <message>
-      <location filename="PathPocketBaseGui.py" line="81"/>
-      <source>Pass Extension</source>
-      <translation type="unfinished">Pass Extension</translation>
-    </message>
-    <message>
-      <location filename="PathPocketBaseGui.py" line="86"/>
-      <source>The distance the facing operation will extend beyond the boundary shape.</source>
-      <translation type="unfinished">The distance the facing operation will extend beyond the boundary shape.</translation>
-    </message>
-    <message>
-      <location filename="PathPocket.py" line="192"/>
-      <source>Final depth set below ZMin of face(s) selected.</source>
-      <translation type="unfinished">Final depth set below ZMin of face(s) selected.</translation>
-    </message>
-    <message>
       <location filename="PathFeatureExtensionsGui.py" line="180"/>
       <source>Normal</source>
       <translation>Звичайне</translation>
@@ -1856,19 +1841,24 @@ Aborting op creation</translation>
       <source>Y</source>
       <translation>Y</translation>
     </message>
+    <message>
+      <location filename="PathPocketBaseGui.py" line="81"/>
+      <source>Pass Extension</source>
+      <translation type="unfinished">Pass Extension</translation>
+    </message>
+    <message>
+      <location filename="PathPocketBaseGui.py" line="86"/>
+      <source>The distance the facing operation will extend beyond the boundary shape.</source>
+      <translation type="unfinished">The distance the facing operation will extend beyond the boundary shape.</translation>
+    </message>
+    <message>
+      <location filename="PathPocket.py" line="192"/>
+      <source>Final depth set below ZMin of face(s) selected.</source>
+      <translation type="unfinished">Final depth set below ZMin of face(s) selected.</translation>
+    </message>
   </context>
   <context>
     <name>PathProfile</name>
-    <message>
-      <location filename="PathProfile.py" line="210"/>
-      <source>Outside</source>
-      <translation type="unfinished">Outside</translation>
-    </message>
-    <message>
-      <location filename="PathProfile.py" line="211"/>
-      <source>Inside</source>
-      <translation type="unfinished">Inside</translation>
-    </message>
     <message>
       <location filename="PathProfile.py" line="197"/>
       <source>CW</source>
@@ -1903,6 +1893,16 @@ Aborting op creation</translation>
       <location filename="PathProfile.py" line="207"/>
       <source>Miter</source>
       <translation type="unfinished">Miter</translation>
+    </message>
+    <message>
+      <location filename="PathHelix.py" line="76"/>
+      <source>Outside</source>
+      <translation type="unfinished">Outside</translation>
+    </message>
+    <message>
+      <location filename="PathHelix.py" line="77"/>
+      <source>Inside</source>
+      <translation type="unfinished">Inside</translation>
     </message>
     <message>
       <location filename="PathProfile.py" line="382"/>
@@ -2524,11 +2524,6 @@ Aborting op creation</translation>
   <context>
     <name>Path_DressupPathBoundary</name>
     <message>
-      <location filename="PathDressupPathBoundary.py" line="306"/>
-      <source>The selected object is not a path</source>
-      <translation type="unfinished">The selected object is not a path</translation>
-    </message>
-    <message>
       <location filename="PathDressupPathBoundaryGui.py" line="265"/>
       <source>Boundary Dress-up</source>
       <translation type="unfinished">Boundary Dress-up</translation>
@@ -2542,6 +2537,11 @@ Aborting op creation</translation>
       <location filename="PathDressupPathBoundaryGui.py" line="285"/>
       <source>Please select one path object</source>
       <translation type="unfinished">Please select one path object</translation>
+    </message>
+    <message>
+      <location filename="PathDressupPathBoundary.py" line="306"/>
+      <source>The selected object is not a path</source>
+      <translation type="unfinished">The selected object is not a path</translation>
     </message>
   </context>
   <context>
@@ -2615,41 +2615,6 @@ Aborting op creation</translation>
   <context>
     <name>Path_DressupTag</name>
     <message>
-      <location filename="PathDressupTagPreferences.py" line="95"/>
-      <source>Holding Tag</source>
-      <translation type="unfinished">Holding Tag</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTagGui.py" line="566"/>
-      <source>Tag Dress-up</source>
-      <translation type="unfinished">Tag Dress-up</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTagGui.py" line="569"/>
-      <source>Creates a Tag Dress-up object from a selected path</source>
-      <translation type="unfinished">Creates a Tag Dress-up object from a selected path</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTagGui.py" line="584"/>
-      <source>Please select one path object</source>
-      <translation type="unfinished">Please select one path object</translation>
-    </message>
-    <message>
-      <location filename="PathDressupHoldingTags.py" line="1323"/>
-      <source>Cannot insert holding tags for this path - please select a Profile path</source>
-      <translation type="unfinished">Cannot insert holding tags for this path - please select a Profile path</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTag.py" line="302"/>
-      <source>The selected object is not a path</source>
-      <translation type="unfinished">The selected object is not a path</translation>
-    </message>
-    <message>
-      <location filename="PathDressupTag.py" line="307"/>
-      <source>Please select a Profile object</source>
-      <translation type="unfinished">Please select a Profile object</translation>
-    </message>
-    <message>
       <location filename="PathDressupTag.py" line="202"/>
       <source>No Base object found.</source>
       <translation type="unfinished">No Base object found.</translation>
@@ -2668,6 +2633,41 @@ Aborting op creation</translation>
       <location filename="PathDressupTag.py" line="215"/>
       <source>Base Path is empty.</source>
       <translation type="unfinished">Base Path is empty.</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="1378"/>
+      <source>The selected object is not a path</source>
+      <translation type="unfinished">The selected object is not a path</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="1383"/>
+      <source>Please select a Profile object</source>
+      <translation type="unfinished">Please select a Profile object</translation>
+    </message>
+    <message>
+      <location filename="PathDressupTagGui.py" line="566"/>
+      <source>Tag Dress-up</source>
+      <translation type="unfinished">Tag Dress-up</translation>
+    </message>
+    <message>
+      <location filename="PathDressupTagGui.py" line="569"/>
+      <source>Creates a Tag Dress-up object from a selected path</source>
+      <translation type="unfinished">Creates a Tag Dress-up object from a selected path</translation>
+    </message>
+    <message>
+      <location filename="PathDressupTagGui.py" line="584"/>
+      <source>Please select one path object</source>
+      <translation type="unfinished">Please select one path object</translation>
+    </message>
+    <message>
+      <location filename="PathDressupTagPreferences.py" line="95"/>
+      <source>Holding Tag</source>
+      <translation type="unfinished">Holding Tag</translation>
+    </message>
+    <message>
+      <location filename="PathDressupHoldingTags.py" line="1323"/>
+      <source>Cannot insert holding tags for this path - please select a Profile path</source>
+      <translation type="unfinished">Cannot insert holding tags for this path - please select a Profile path</translation>
     </message>
   </context>
   <context>
@@ -2771,16 +2771,6 @@ Aborting op creation</translation>
   <context>
     <name>Path_Helix</name>
     <message>
-      <location filename="PathHelix.py" line="72"/>
-      <source>CW</source>
-      <translation>за годинниковою стрілкою</translation>
-    </message>
-    <message>
-      <location filename="PathHelix.py" line="73"/>
-      <source>CCW</source>
-      <translation>проти годинникової стрілки</translation>
-    </message>
-    <message>
       <location filename="PathHelixGui.py" line="112"/>
       <source>Helix</source>
       <translation>Гвинт</translation>
@@ -2789,6 +2779,16 @@ Aborting op creation</translation>
       <location filename="PathHelixGui.py" line="115"/>
       <source>Creates a Path Helix object from a features of a base object</source>
       <translation type="unfinished">Creates a Path Helix object from a features of a base object</translation>
+    </message>
+    <message>
+      <location filename="PathHelix.py" line="72"/>
+      <source>CW</source>
+      <translation>за годинниковою стрілкою</translation>
+    </message>
+    <message>
+      <location filename="PathHelix.py" line="73"/>
+      <source>CCW</source>
+      <translation>проти годинникової стрілки</translation>
     </message>
   </context>
   <context>
@@ -2842,36 +2842,6 @@ Aborting op creation</translation>
   <context>
     <name>Path_Job</name>
     <message>
-      <location filename="PathJobDlg.py" line="61"/>
-      <source>Solids</source>
-      <translation>Суцільні тіла</translation>
-    </message>
-    <message>
-      <location filename="PathJob.py" line="262"/>
-      <source>2D</source>
-      <translation>двовимірний</translation>
-    </message>
-    <message>
-      <location filename="PathJobDlg.py" line="63"/>
-      <source>Jobs</source>
-      <translation>Завдання</translation>
-    </message>
-    <message>
-      <location filename="PathJobDlg.py" line="331"/>
-      <source>Base -/+ %.2f/%.2f %.2f/%.2f %.2f/%.2f</source>
-      <translation type="unfinished">Base -/+ %.2f/%.2f %.2f/%.2f %.2f/%.2f</translation>
-    </message>
-    <message>
-      <location filename="PathJobDlg.py" line="341"/>
-      <source>Box: %.2f x %.2f x %.2f</source>
-      <translation type="unfinished">Box: %.2f x %.2f x %.2f</translation>
-    </message>
-    <message>
-      <location filename="PathJobDlg.py" line="356"/>
-      <source>Unsupported stock type</source>
-      <translation type="unfinished">Unsupported stock type</translation>
-    </message>
-    <message>
       <location filename="PathJobCmd.py" line="59"/>
       <source>Job</source>
       <translation>Завдання</translation>
@@ -2880,36 +2850,6 @@ Aborting op creation</translation>
       <location filename="PathJobCmd.py" line="61"/>
       <source>Creates a Path Job object</source>
       <translation type="unfinished">Creates a Path Job object</translation>
-    </message>
-    <message>
-      <location filename="PathJob.py" line="257"/>
-      <source>Fixture</source>
-      <translation type="unfinished">Fixture</translation>
-    </message>
-    <message>
-      <location filename="PathJob.py" line="258"/>
-      <source>Tool</source>
-      <translation>Інструмент</translation>
-    </message>
-    <message>
-      <location filename="PathJob.py" line="259"/>
-      <source>Operation</source>
-      <translation type="unfinished">Operation</translation>
-    </message>
-    <message>
-      <location filename="PathJob.py" line="263"/>
-      <source>2.5D</source>
-      <translation>2,5Д</translation>
-    </message>
-    <message>
-      <location filename="PathJob.py" line="264"/>
-      <source>Lathe</source>
-      <translation>Виточування</translation>
-    </message>
-    <message>
-      <location filename="PathJob.py" line="265"/>
-      <source>Multiaxis</source>
-      <translation>Мультивісь</translation>
     </message>
     <message>
       <location filename="PathJobGui.py" line="286"/>
@@ -2975,6 +2915,66 @@ Aborting op creation</translation>
       <location filename="PathJobGui.py" line="1617"/>
       <source>This job has no tool.</source>
       <translation type="unfinished">This job has no tool.</translation>
+    </message>
+    <message>
+      <location filename="PathJob.py" line="257"/>
+      <source>Fixture</source>
+      <translation type="unfinished">Fixture</translation>
+    </message>
+    <message>
+      <location filename="PathJob.py" line="258"/>
+      <source>Tool</source>
+      <translation>Інструмент</translation>
+    </message>
+    <message>
+      <location filename="PathJob.py" line="259"/>
+      <source>Operation</source>
+      <translation type="unfinished">Operation</translation>
+    </message>
+    <message>
+      <location filename="PathJobDlg.py" line="62"/>
+      <source>2D</source>
+      <translation>двовимірний</translation>
+    </message>
+    <message>
+      <location filename="PathJob.py" line="263"/>
+      <source>2.5D</source>
+      <translation>2,5Д</translation>
+    </message>
+    <message>
+      <location filename="PathJob.py" line="264"/>
+      <source>Lathe</source>
+      <translation>Виточування</translation>
+    </message>
+    <message>
+      <location filename="PathJob.py" line="265"/>
+      <source>Multiaxis</source>
+      <translation>Мультивісь</translation>
+    </message>
+    <message>
+      <location filename="PathJobDlg.py" line="61"/>
+      <source>Solids</source>
+      <translation>Суцільні тіла</translation>
+    </message>
+    <message>
+      <location filename="PathJobDlg.py" line="63"/>
+      <source>Jobs</source>
+      <translation>Завдання</translation>
+    </message>
+    <message>
+      <location filename="PathJobDlg.py" line="331"/>
+      <source>Base -/+ %.2f/%.2f %.2f/%.2f %.2f/%.2f</source>
+      <translation type="unfinished">Base -/+ %.2f/%.2f %.2f/%.2f %.2f/%.2f</translation>
+    </message>
+    <message>
+      <location filename="PathJobDlg.py" line="341"/>
+      <source>Box: %.2f x %.2f x %.2f</source>
+      <translation type="unfinished">Box: %.2f x %.2f x %.2f</translation>
+    </message>
+    <message>
+      <location filename="PathJobDlg.py" line="356"/>
+      <source>Unsupported stock type</source>
+      <translation type="unfinished">Unsupported stock type</translation>
     </message>
   </context>
   <context>
@@ -3080,16 +3080,6 @@ Aborting op creation</translation>
       <translation>Сітка</translation>
     </message>
     <message>
-      <location filename="PathPocket.py" line="119"/>
-      <source>Collectively</source>
-      <translation type="unfinished">Collectively</translation>
-    </message>
-    <message>
-      <location filename="PathPocket.py" line="120"/>
-      <source>Individually</source>
-      <translation type="unfinished">Individually</translation>
-    </message>
-    <message>
       <location filename="PathMillFace.py" line="69"/>
       <source>Boundbox</source>
       <translation type="unfinished">Boundbox</translation>
@@ -3108,6 +3098,16 @@ Aborting op creation</translation>
       <location filename="PathMillFace.py" line="72"/>
       <source>Stock</source>
       <translation type="unfinished">Stock</translation>
+    </message>
+    <message>
+      <location filename="PathPocket.py" line="119"/>
+      <source>Collectively</source>
+      <translation type="unfinished">Collectively</translation>
+    </message>
+    <message>
+      <location filename="PathPocket.py" line="120"/>
+      <source>Individually</source>
+      <translation type="unfinished">Individually</translation>
     </message>
   </context>
   <context>
@@ -3496,6 +3496,16 @@ Aborting op creation</translation>
   <context>
     <name>Path_Slot</name>
     <message>
+      <location filename="PathSlotGui.py" line="281"/>
+      <source>Slot</source>
+      <translation type="unfinished">Slot</translation>
+    </message>
+    <message>
+      <location filename="PathSlotGui.py" line="284"/>
+      <source>Create a Slot operation from selected geometry or custom points.</source>
+      <translation type="unfinished">Create a Slot operation from selected geometry or custom points.</translation>
+    </message>
+    <message>
       <location filename="PathSlot.py" line="109"/>
       <source>New property added to</source>
       <translation type="unfinished">New property added to</translation>
@@ -3665,16 +3675,6 @@ Aborting op creation</translation>
       <source>Current offset value produces negative radius.</source>
       <translation type="unfinished">Current offset value produces negative radius.</translation>
     </message>
-    <message>
-      <location filename="PathSlotGui.py" line="281"/>
-      <source>Slot</source>
-      <translation type="unfinished">Slot</translation>
-    </message>
-    <message>
-      <location filename="PathSlotGui.py" line="284"/>
-      <source>Create a Slot operation from selected geometry or custom points.</source>
-      <translation type="unfinished">Create a Slot operation from selected geometry or custom points.</translation>
-    </message>
   </context>
   <context>
     <name>Path_Stop</name>
@@ -3835,6 +3835,16 @@ Aborting op creation</translation>
   <context>
     <name>Path_ThreadMilling</name>
     <message>
+      <location filename="PathThreadMillingGui.py" line="259"/>
+      <source>Thread Milling</source>
+      <translation type="unfinished">Thread Milling</translation>
+    </message>
+    <message>
+      <location filename="PathThreadMillingGui.py" line="263"/>
+      <source>Creates a Path Thread Milling operation from features of a base object</source>
+      <translation type="unfinished">Creates a Path Thread Milling operation from features of a base object</translation>
+    </message>
+    <message>
       <location filename="PathThreadMilling.py" line="193"/>
       <source>Custom External</source>
       <translation type="unfinished">Custom External</translation>
@@ -3898,16 +3908,6 @@ Aborting op creation</translation>
       <location filename="PathThreadMilling.py" line="245"/>
       <source>Conventional</source>
       <translation type="unfinished">Conventional</translation>
-    </message>
-    <message>
-      <location filename="PathThreadMillingGui.py" line="259"/>
-      <source>Thread Milling</source>
-      <translation type="unfinished">Thread Milling</translation>
-    </message>
-    <message>
-      <location filename="PathThreadMillingGui.py" line="263"/>
-      <source>Creates a Path Thread Milling operation from features of a base object</source>
-      <translation type="unfinished">Creates a Path Thread Milling operation from features of a base object</translation>
     </message>
   </context>
   <context>

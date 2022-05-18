@@ -182,55 +182,50 @@ def find_tools(noobsolete=True):
 
     print(Usage + "\nFirst, lets find all necessary tools on your system")
     global QMAKE, LUPDATE, PYLUPDATE, LCONVERT
-    if os.system("qmake -version") == 0:
+    if (os.system("qmake -version") == 0):
         QMAKE = "qmake"
-    elif os.system("qmake-qt5 -version") == 0:
+    elif (os.system("qmake-qt5 -version") == 0):
         QMAKE = "qmake-qt5"
     else:
         raise Exception("Cannot find qmake")
-    if os.system("lupdate -version") == 0:
+    if (os.system("lupdate -version") == 0):
         LUPDATE = "lupdate"
         # TODO: we suppose lupdate is a symlink to lupdate-qt4 for now
         if noobsolete:
             LUPDATE += " -no-obsolete"
-    elif os.system("lupdate-qt5 -version") == 0:
+    elif (os.system("lupdate-qt5 -version") == 0):
         LUPDATE = "lupdate-qt5"
         if noobsolete:
             LUPDATE += " -no-obsolete"
     else:
         raise Exception("Cannot find lupdate")
-    if os.system("pylupdate -version") == 0:
+    if (os.system("pylupdate -version") == 0):
         PYLUPDATE = "pylupdate"
-    #    elif (os.system("pylupdate5 -version") == 0):
-    #        PYLUPDATE = "pylupdate5"
-    #        if noobsolete:
-    #            PYLUPDATE += " -noobsolete"
-    elif os.system("pylupdate4 -version") == 0:
+    elif (os.system("pylupdate5 -version") == 0):
+        PYLUPDATE = "pylupdate5"
+        if noobsolete:
+            PYLUPDATE += " -noobsolete"
+    elif (os.system("pylupdate4 -version") == 0):
         PYLUPDATE = "pylupdate4"
         if noobsolete:
             PYLUPDATE += " -noobsolete"
-    elif os.system("pyside2-lupdate -version") == 0:
+    elif (os.system("pyside2-lupdate -version") == 0):
         PYLUPDATE = "pyside2-lupdate"
-        if noobsolete:
-            PYLUPDATE += " -noobsolete"
-    #        raise Exception("Please do not use pyside2-lupdate at the moment, as it shows encoding problems. Please use pylupdate5 instead.")
+        raise Exception("Please do not use pyside2-lupdate at the moment, as it shows encoding problems. Please use pylupdate5 instead.")
     else:
         raise Exception("Cannot find pylupdate")
-    if os.system("lconvert -h") == 0:
+    if (os.system("lconvert -h") == 0):
         LCONVERT = "lconvert"
         if noobsolete:
             LCONVERT += " -no-obsolete"
     else:
         raise Exception("Cannot find lconvert")
-    print(
-        "\nAll Qt tools have been found!\n",
-        "\t" + QMAKE + "\n",
-        "\t" + LUPDATE + "\n",
-        "\t" + PYLUPDATE + "\n",
-        "\t" + LCONVERT + "\n",
-    )
+    print("\nAll Qt tools have been found!\n",
+          "\t" + QMAKE     + "\n",
+          "\t" + LUPDATE   + "\n",
+          "\t" + PYLUPDATE + "\n",
+          "\t" + LCONVERT  + "\n")
     print("==============================================\n")
-
 
 def update_translation(entry):
 

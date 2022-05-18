@@ -264,7 +264,7 @@
     </message>
     <message>
       <source>Different orientation</source>
-      <translation>Відмінна орієнтація</translation>
+      <translation>Інша орієнтація</translation>
     </message>
     <message>
       <source>The printer uses a different orientation than the drawing.
@@ -274,12 +274,12 @@ Do you want to continue?</source>
     </message>
     <message>
       <source>Different paper size</source>
-      <translation>Відмінний розмір паперу</translation>
+      <translation>Інший розмір паперу</translation>
     </message>
     <message>
       <source>The printer uses a different paper size than the drawing.
 Do you want to continue?</source>
-      <translation>Принтер використовує відмінний від креслення розмір паперу. Бажаєте продовжити?</translation>
+      <translation>Принтер використовує інший ніж у кресленні розмір паперу. Бажаєте продовжити?</translation>
     </message>
     <message>
       <source>Opening file failed</source>

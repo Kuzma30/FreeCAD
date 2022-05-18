@@ -484,7 +484,7 @@ while doing a left or right click and move the mouse up or down</source>
     </message>
     <message>
       <source>&amp;Cancel</source>
-      <translation>&amp;Відміна</translation>
+      <translation>&amp;Скасування</translation>
     </message>
   </context>
   <context>
@@ -8541,7 +8541,7 @@ the current copy will be lost.
     <name>StdCmdRevert</name>
     <message>
       <source>Revert</source>
-      <translation>Відмінити</translation>
+      <translation>Скасувати зміни</translation>
     </message>
     <message>
       <source>Reverts to the saved version of this file</source>

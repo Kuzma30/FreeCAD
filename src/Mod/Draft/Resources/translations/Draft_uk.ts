@@ -2959,7 +2959,7 @@ Then you can use it to save a different camera position and objects&apos; states
     <message>
       <location filename="cut.py" line="57"/>
       <source>No active document. Aborting.</source>
-      <translation>Немає активного документа. Відмінити.</translation>
+      <translation>Немає активного документа. Скасування операції.</translation>
     </message>
     <message>
       <location filename="make_orthoarray.py" line="190"/>
@@ -7156,7 +7156,7 @@ One unit in the SVG file will translate as one millimeter. </source>
     <message>
       <location filename="../ui/preferences-svg.ui" line="128"/>
       <source>Style of SVG file to write when exporting a sketch</source>
-      <translation>Стиль SVG файлу для запису при експорті ескізу</translation>
+      <translation>Встановлює стиль для запису SVG файлу при експорті ескізу</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="141"/>
@@ -7171,7 +7171,7 @@ One unit in the SVG file will translate as one millimeter. </source>
     <message>
       <location filename="../ui/preferences-svg.ui" line="158"/>
       <source>All white lines will appear in black in the SVG for better readability against white backgrounds</source>
-      <translation>Всі білі лінії будуть зʼявлятися в чорних у SVG для кращої читабельності проти білих фонів</translation>
+      <translation>Перетворює у SVG всі білі лінії в чорні для кращої читабельності на білому фоні</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="161"/>
@@ -7188,9 +7188,8 @@ One unit in the SVG file will translate as one millimeter. </source>
       <source>Versions of Open CASCADE older than version 6.8 don&apos;t support arc projection.
 In this case arcs will be discretized into small line segments.
 This value is the maximum segment length. </source>
-      <translation type="unfinished">Versions of Open CASCADE older than version 6.8 don&apos;t support arc projection.
-In this case arcs will be discretized into small line segments.
-This value is the maximum segment length. </translation>
+      <translation>Open CASCADE нижче версії 6.8 не підтримує проєкцію дуг.
+Тому дуги розбивають на невеликі сегменти. Це значення є максимальною довжиною сегмента. </translation>
     </message>
     <message>
       <location filename="../ui/preferences-oca.ui" line="14"/>

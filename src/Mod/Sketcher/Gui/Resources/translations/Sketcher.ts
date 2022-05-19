@@ -4,12 +4,12 @@
 <context>
     <name>Sketcher_ProfilesHexagon1</name>
     <message>
-        <location filename="../../../Profiles.py" line="57"/>
+        <location filename="../../../Profiles.py" line="59"/>
         <source>Creates a hexagonal profile</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../../Profiles.py" line="62"/>
+        <location filename="../../../Profiles.py" line="64"/>
         <source>Creates a hexagonal profile in the sketch</source>
         <translation type="unfinished"></translation>
     </message>

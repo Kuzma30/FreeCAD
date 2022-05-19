@@ -2,668 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1">
 <context>
-    <name>AttachmentEditor</name>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="112"/>
-        <source>No object named {name}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="306"/>
-        <source>Attachment</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="289"/>
-        <source>Continue</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="437"/>
-        <source>Edit attachment of {feat}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="653"/>
-        <source>{mode} (add {morerefs})</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="657"/>
-        <source>{mode} (add more references)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="695"/>
-        <source>Reference combinations:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="712"/>
-        <source>Reference{i}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="721"/>
-        <source>Selecting...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="751"/>
-        <source>Failed to resolve links. {err}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="763"/>
-        <source>Not attached</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="767"/>
-        <source>Attached with mode {mode}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="781"/>
-        <source>Error: {err}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/Commands.py" line="88"/>
-        <source>Attachment...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../AttachmentEditor/Commands.py" line="90"/>
-        <source>Edit attachment of selected object.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Part_CompoundFilter</name>
-    <message>
-        <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="64"/>
-        <source>Compound Filter</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="144"/>
-        <source>Bad selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Part_ExplodeCompound</name>
-    <message>
-        <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="64"/>
-        <source>Explode compound</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="88"/>
-        <source>Bad selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Part_JoinConnect</name>
-    <message>
-        <location filename="../../../BOPTools/JoinFeatures.py" line="246"/>
-        <source>Connect objects</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BOPTools/JoinFeatures.py" line="248"/>
-        <source>Fuses objects, taking care to preserve voids.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Part_JoinCutout</name>
-    <message>
-        <location filename="../../../BOPTools/JoinFeatures.py" line="479"/>
-        <source>Cutout for object</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BOPTools/JoinFeatures.py" line="483"/>
-        <source>Makes a cutout in one object to fit another object.</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Part_JoinEmbed</name>
-    <message>
-        <location filename="../../../BOPTools/JoinFeatures.py" line="361"/>
-        <source>Embed object</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Part_JoinFeatures</name>
-    <message>
-        <location filename="../../../BOPTools/JoinFeatures.py" line="503"/>
-        <source>Bad selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BOPTools/JoinFeatures.py" line="121"/>
-        <source>Continue</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Part_SplitFeatures</name>
-    <message>
-        <location filename="../../../BOPTools/SplitFeatures.py" line="650"/>
-        <source>Continue</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BOPTools/SplitFeatures.py" line="701"/>
-        <source>Bad selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BOPTools/SplitFeatures.py" line="238"/>
-        <source>Boolean fragments</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BOPTools/SplitFeatures.py" line="440"/>
-        <source>Slice to compound</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BOPTools/SplitFeatures.py" line="483"/>
-        <source>Slice apart</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BOPTools/SplitFeatures.py" line="675"/>
-        <source>Boolean XOR</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>Part_Tube</name>
-    <message>
-        <location filename="../../../BasicShapes/CommandShapes.py" line="45"/>
-        <source>Create tube</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BasicShapes/CommandShapes.py" line="49"/>
-        <source>Creates a tube</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
-    <name>QObject</name>
-    <message>
-        <location filename="../../ViewProvider.cpp" line="50"/>
-        <location filename="../../ViewProviderPrimitive.cpp" line="66"/>
-        <source>Edit %1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../../BasicShapes/CommandShapes.py" line="53"/>
-        <source>Create tube</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../AppPartGui.cpp" line="211"/>
-        <location filename="../../AppPartGui.cpp" line="212"/>
-        <location filename="../../AppPartGui.cpp" line="213"/>
-        <source>Part design</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../AppPartGui.cpp" line="214"/>
-        <location filename="../../AppPartGui.cpp" line="215"/>
-        <source>Import-Export</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="313"/>
-        <location filename="../../Command.cpp" line="408"/>
-        <location filename="../../Command.cpp" line="508"/>
-        <location filename="../../Command.cpp" line="927"/>
-        <location filename="../../Command.cpp" line="984"/>
-        <location filename="../../Command.cpp" line="2154"/>
-        <source>Wrong selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="314"/>
-        <location filename="../../Command.cpp" line="985"/>
-        <source>Select two shapes please.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="323"/>
-        <location filename="../../Command.cpp" line="423"/>
-        <location filename="../../Command.cpp" line="523"/>
-        <source>Non-solids selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="324"/>
-        <location filename="../../Command.cpp" line="424"/>
-        <location filename="../../Command.cpp" line="524"/>
-        <source>The use of non-solids for boolean operations may lead to unexpected results.
-Do you want to continue?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="409"/>
-        <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to compute common between.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="509"/>
-        <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to be fused.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="928"/>
-        <source>Select one shape or more, please.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="1142"/>
-        <source>All CAD Files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="1147"/>
-        <source>All Files</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../Command.cpp" line="2155"/>
-        <source>You have to select either two edges or two wires.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskAttacher.cpp" line="73"/>
-        <location filename="../../TaskAttacher.cpp" line="109"/>
-        <source>No reference selected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskAttacher.cpp" line="82"/>
-        <location filename="../../TaskCheckGeometry.cpp" line="86"/>
-        <source>Face</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskAttacher.cpp" line="85"/>
-        <location filename="../../TaskCheckGeometry.cpp" line="88"/>
-        <source>Edge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskAttacher.cpp" line="88"/>
-        <location filename="../../TaskCheckGeometry.cpp" line="89"/>
-        <source>Vertex</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="82"/>
-        <source>Compound</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="83"/>
-        <source>Compound Solid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="84"/>
-        <source>Solid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="85"/>
-        <source>Shell</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="87"/>
-        <source>Wire</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="90"/>
-        <source>Shape</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="105"/>
-        <source>No Error</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="106"/>
-        <source>Invalid Point On Curve</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="107"/>
-        <source>Invalid Point On Curve On Surface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="108"/>
-        <source>Invalid Point On Surface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="109"/>
-        <source>No 3D Curve</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="110"/>
-        <source>Multiple 3D Curve</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="111"/>
-        <source>Invalid 3D Curve</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="112"/>
-        <source>No Curve On Surface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="113"/>
-        <source>Invalid Curve On Surface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="114"/>
-        <source>Invalid Curve On Closed Surface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="115"/>
-        <source>Invalid Same Range Flag</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="116"/>
-        <source>Invalid Same Parameter Flag</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="117"/>
-        <source>Invalid Degenerated Flag</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="118"/>
-        <source>Free Edge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="119"/>
-        <source>Invalid MultiConnexity</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="120"/>
-        <source>Invalid Range</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="121"/>
-        <source>Empty Wire</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="122"/>
-        <source>Redundant Edge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="123"/>
-        <source>Self Intersecting Wire</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="124"/>
-        <source>No Surface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="125"/>
-        <source>Invalid Wire</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="126"/>
-        <source>Redundant Wire</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="127"/>
-        <source>Intersecting Wires</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="128"/>
-        <source>Invalid Imbrication Of Wires</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="129"/>
-        <source>Empty Shell</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="130"/>
-        <source>Redundant Face</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="131"/>
-        <source>Unorientable Shape</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="132"/>
-        <source>Not Closed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="133"/>
-        <source>Not Connected</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="134"/>
-        <source>Sub Shape Not In Shape</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="135"/>
-        <source>Bad Orientation</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="136"/>
-        <source>Bad Orientation Of Sub Shape</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="137"/>
-        <source>Invalid Tolerance Value</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="138"/>
-        <source>Check Failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="148"/>
-        <source>No Result</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="152"/>
-        <source>Out Of Enum Range:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="164"/>
-        <source>BOPAlgo CheckUnknown</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="165"/>
-        <source>BOPAlgo BadType</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="166"/>
-        <source>BOPAlgo SelfIntersect</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="167"/>
-        <source>BOPAlgo TooSmallEdge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="168"/>
-        <source>BOPAlgo NonRecoverableFace</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="169"/>
-        <source>BOPAlgo IncompatibilityOfVertex</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="170"/>
-        <source>BOPAlgo IncompatibilityOfEdge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="171"/>
-        <source>BOPAlgo IncompatibilityOfFace</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="172"/>
-        <source>BOPAlgo OperationAborted</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="173"/>
-        <source>BOPAlgo GeomAbs_C0</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="174"/>
-        <source>BOPAlgo_InvalidCurveOnSurface</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="175"/>
-        <source>BOPAlgo NotValid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskCheckGeometry.cpp" line="464"/>
-        <location filename="../../TaskCheckGeometry.cpp" line="713"/>
-        <source>Invalid</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskDimension.cpp" line="632"/>
-        <location filename="../../TaskDimension.cpp" line="1770"/>
-        <source>Selections</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskDimension.cpp" line="639"/>
-        <location filename="../../TaskDimension.cpp" line="1777"/>
-        <source>Control</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskDimension.cpp" line="1398"/>
-        <source>Selection </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskDimension.cpp" line="1482"/>
-        <source>Reset selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskDimension.cpp" line="1486"/>
-        <source>Toggle direct dimensions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskDimension.cpp" line="1491"/>
-        <source>Toggle orthogonal dimensions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../TaskDimension.cpp" line="1496"/>
-        <source>Clear all dimensions</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderExt.cpp" line="864"/>
-        <source>Set colors...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderMirror.cpp" line="78"/>
-        <source>Edit mirror plane</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderMirror.cpp" line="278"/>
-        <source>Edit fillet edges</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderMirror.cpp" line="382"/>
-        <source>Edit chamfer edges</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderMirror.cpp" line="526"/>
-        <source>Edit offset</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderMirror.cpp" line="610"/>
-        <source>Edit thickness</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderSpline.cpp" line="100"/>
-        <source>Show control points</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../ViewProviderAttachExtension.cpp" line="118"/>
-        <source>Attachment editor</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>Attacher</name>
     <message>
         <location filename="../../AttacherTexts.cpp" line="311"/>
@@ -6126,6 +5464,466 @@ in the 3D view for the sweep path.</source>
     <message>
         <location filename="../../../App/FeatureExtrusion.cpp" line="344"/>
         <source>Supports making faces with holes, does not support nesting.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>QObject</name>
+    <message>
+        <location filename="../../ViewProvider.cpp" line="50"/>
+        <location filename="../../ViewProviderPrimitive.cpp" line="66"/>
+        <source>Edit %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../AppPartGui.cpp" line="211"/>
+        <location filename="../../AppPartGui.cpp" line="212"/>
+        <location filename="../../AppPartGui.cpp" line="213"/>
+        <source>Part design</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../AppPartGui.cpp" line="214"/>
+        <location filename="../../AppPartGui.cpp" line="215"/>
+        <source>Import-Export</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="313"/>
+        <location filename="../../Command.cpp" line="408"/>
+        <location filename="../../Command.cpp" line="508"/>
+        <location filename="../../Command.cpp" line="927"/>
+        <location filename="../../Command.cpp" line="984"/>
+        <location filename="../../Command.cpp" line="2154"/>
+        <source>Wrong selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="314"/>
+        <location filename="../../Command.cpp" line="985"/>
+        <source>Select two shapes please.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="323"/>
+        <location filename="../../Command.cpp" line="423"/>
+        <location filename="../../Command.cpp" line="523"/>
+        <source>Non-solids selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="324"/>
+        <location filename="../../Command.cpp" line="424"/>
+        <location filename="../../Command.cpp" line="524"/>
+        <source>The use of non-solids for boolean operations may lead to unexpected results.
+Do you want to continue?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="409"/>
+        <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to compute common between.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="509"/>
+        <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to be fused.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="928"/>
+        <source>Select one shape or more, please.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="1142"/>
+        <source>All CAD Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="1147"/>
+        <source>All Files</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../Command.cpp" line="2155"/>
+        <source>You have to select either two edges or two wires.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskAttacher.cpp" line="73"/>
+        <location filename="../../TaskAttacher.cpp" line="109"/>
+        <source>No reference selected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskAttacher.cpp" line="82"/>
+        <location filename="../../TaskCheckGeometry.cpp" line="86"/>
+        <source>Face</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskAttacher.cpp" line="85"/>
+        <location filename="../../TaskCheckGeometry.cpp" line="88"/>
+        <source>Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskAttacher.cpp" line="88"/>
+        <location filename="../../TaskCheckGeometry.cpp" line="89"/>
+        <source>Vertex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="82"/>
+        <source>Compound</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="83"/>
+        <source>Compound Solid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="84"/>
+        <source>Solid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="85"/>
+        <source>Shell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="87"/>
+        <source>Wire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="90"/>
+        <source>Shape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="105"/>
+        <source>No Error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="106"/>
+        <source>Invalid Point On Curve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="107"/>
+        <source>Invalid Point On Curve On Surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="108"/>
+        <source>Invalid Point On Surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="109"/>
+        <source>No 3D Curve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="110"/>
+        <source>Multiple 3D Curve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="111"/>
+        <source>Invalid 3D Curve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="112"/>
+        <source>No Curve On Surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="113"/>
+        <source>Invalid Curve On Surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="114"/>
+        <source>Invalid Curve On Closed Surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="115"/>
+        <source>Invalid Same Range Flag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="116"/>
+        <source>Invalid Same Parameter Flag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="117"/>
+        <source>Invalid Degenerated Flag</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="118"/>
+        <source>Free Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="119"/>
+        <source>Invalid MultiConnexity</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="120"/>
+        <source>Invalid Range</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="121"/>
+        <source>Empty Wire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="122"/>
+        <source>Redundant Edge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="123"/>
+        <source>Self Intersecting Wire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="124"/>
+        <source>No Surface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="125"/>
+        <source>Invalid Wire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="126"/>
+        <source>Redundant Wire</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="127"/>
+        <source>Intersecting Wires</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="128"/>
+        <source>Invalid Imbrication Of Wires</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="129"/>
+        <source>Empty Shell</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="130"/>
+        <source>Redundant Face</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="131"/>
+        <source>Unorientable Shape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="132"/>
+        <source>Not Closed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="133"/>
+        <source>Not Connected</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="134"/>
+        <source>Sub Shape Not In Shape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="135"/>
+        <source>Bad Orientation</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="136"/>
+        <source>Bad Orientation Of Sub Shape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="137"/>
+        <source>Invalid Tolerance Value</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="138"/>
+        <source>Check Failed</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="148"/>
+        <source>No Result</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="152"/>
+        <source>Out Of Enum Range:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="164"/>
+        <source>BOPAlgo CheckUnknown</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="165"/>
+        <source>BOPAlgo BadType</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="166"/>
+        <source>BOPAlgo SelfIntersect</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="167"/>
+        <source>BOPAlgo TooSmallEdge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="168"/>
+        <source>BOPAlgo NonRecoverableFace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="169"/>
+        <source>BOPAlgo IncompatibilityOfVertex</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="170"/>
+        <source>BOPAlgo IncompatibilityOfEdge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="171"/>
+        <source>BOPAlgo IncompatibilityOfFace</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="172"/>
+        <source>BOPAlgo OperationAborted</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="173"/>
+        <source>BOPAlgo GeomAbs_C0</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="174"/>
+        <source>BOPAlgo_InvalidCurveOnSurface</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="175"/>
+        <source>BOPAlgo NotValid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskCheckGeometry.cpp" line="464"/>
+        <location filename="../../TaskCheckGeometry.cpp" line="713"/>
+        <source>Invalid</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskDimension.cpp" line="632"/>
+        <location filename="../../TaskDimension.cpp" line="1770"/>
+        <source>Selections</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskDimension.cpp" line="639"/>
+        <location filename="../../TaskDimension.cpp" line="1777"/>
+        <source>Control</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskDimension.cpp" line="1398"/>
+        <source>Selection </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskDimension.cpp" line="1482"/>
+        <source>Reset selection</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskDimension.cpp" line="1486"/>
+        <source>Toggle direct dimensions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskDimension.cpp" line="1491"/>
+        <source>Toggle orthogonal dimensions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../TaskDimension.cpp" line="1496"/>
+        <source>Clear all dimensions</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderExt.cpp" line="864"/>
+        <source>Set colors...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderMirror.cpp" line="78"/>
+        <source>Edit mirror plane</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderMirror.cpp" line="278"/>
+        <source>Edit fillet edges</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderMirror.cpp" line="382"/>
+        <source>Edit chamfer edges</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderMirror.cpp" line="526"/>
+        <source>Edit offset</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderMirror.cpp" line="610"/>
+        <source>Edit thickness</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderSpline.cpp" line="100"/>
+        <source>Show control points</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ViewProviderAttachExtension.cpp" line="118"/>
+        <source>Attachment editor</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

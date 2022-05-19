@@ -2,668 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="uk" sourcelanguage="en">
   <context>
-    <name>AttachmentEditor</name>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="112"/>
-      <source>No object named {name}</source>
-      <translation type="unfinished">No object named {name}</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="306"/>
-      <source>Attachment</source>
-      <translation type="unfinished">Attachment</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="289"/>
-      <source>Continue</source>
-      <translation type="unfinished">Continue</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="437"/>
-      <source>Edit attachment of {feat}</source>
-      <translation type="unfinished">Edit attachment of {feat}</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="653"/>
-      <source>{mode} (add {morerefs})</source>
-      <translation type="unfinished">{mode} (add {morerefs})</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="657"/>
-      <source>{mode} (add more references)</source>
-      <translation type="unfinished">{mode} (add more references)</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="695"/>
-      <source>Reference combinations:</source>
-      <translation type="unfinished">Reference combinations:</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="712"/>
-      <source>Reference{i}</source>
-      <translation type="unfinished">Reference{i}</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="721"/>
-      <source>Selecting...</source>
-      <translation type="unfinished">Selecting...</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="751"/>
-      <source>Failed to resolve links. {err}</source>
-      <translation type="unfinished">Failed to resolve links. {err}</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="763"/>
-      <source>Not attached</source>
-      <translation type="unfinished">Not attached</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="767"/>
-      <source>Attached with mode {mode}</source>
-      <translation type="unfinished">Attached with mode {mode}</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="781"/>
-      <source>Error: {err}</source>
-      <translation type="unfinished">Error: {err}</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/Commands.py" line="88"/>
-      <source>Attachment...</source>
-      <translation>Приєднання...</translation>
-    </message>
-    <message>
-      <location filename="../../../AttachmentEditor/Commands.py" line="90"/>
-      <source>Edit attachment of selected object.</source>
-      <translation>Редагувати приєднання вибраного обʼєкта.</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part_CompoundFilter</name>
-    <message>
-      <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="64"/>
-      <source>Compound Filter</source>
-      <translation>Фільтр зʼєднань</translation>
-    </message>
-    <message>
-      <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="144"/>
-      <source>Bad selection</source>
-      <translation type="unfinished">Bad selection</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part_ExplodeCompound</name>
-    <message>
-      <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="64"/>
-      <source>Explode compound</source>
-      <translation>Відкрити обʼєднане</translation>
-    </message>
-    <message>
-      <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="88"/>
-      <source>Bad selection</source>
-      <translation type="unfinished">Bad selection</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part_JoinConnect</name>
-    <message>
-      <location filename="../../../BOPTools/JoinFeatures.py" line="246"/>
-      <source>Connect objects</source>
-      <translation>Зʼєднати обʼєкти</translation>
-    </message>
-    <message>
-      <location filename="../../../BOPTools/JoinFeatures.py" line="248"/>
-      <source>Fuses objects, taking care to preserve voids.</source>
-      <translation>Зʼєднує обʼекти, піклуючись про те, щоб зберегти порожнини.</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part_JoinCutout</name>
-    <message>
-      <location filename="../../../BOPTools/JoinFeatures.py" line="479"/>
-      <source>Cutout for object</source>
-      <translation>Виріз обʼєкту</translation>
-    </message>
-    <message>
-      <location filename="../../../BOPTools/JoinFeatures.py" line="483"/>
-      <source>Makes a cutout in one object to fit another object.</source>
-      <translation>Робить виріз в одному обʼєкті, що відповідає іншому обʼєкту.</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part_JoinEmbed</name>
-    <message>
-      <location filename="../../../BOPTools/JoinFeatures.py" line="361"/>
-      <source>Embed object</source>
-      <translation>Вбудувати обʼєкт</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part_JoinFeatures</name>
-    <message>
-      <location filename="../../../BOPTools/JoinFeatures.py" line="503"/>
-      <source>Bad selection</source>
-      <translation type="unfinished">Bad selection</translation>
-    </message>
-    <message>
-      <location filename="../../../BOPTools/JoinFeatures.py" line="121"/>
-      <source>Continue</source>
-      <translation type="unfinished">Continue</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part_SplitFeatures</name>
-    <message>
-      <location filename="../../../BOPTools/SplitFeatures.py" line="650"/>
-      <source>Continue</source>
-      <translation type="unfinished">Continue</translation>
-    </message>
-    <message>
-      <location filename="../../../BOPTools/SplitFeatures.py" line="701"/>
-      <source>Bad selection</source>
-      <translation type="unfinished">Bad selection</translation>
-    </message>
-    <message>
-      <location filename="../../../BOPTools/SplitFeatures.py" line="238"/>
-      <source>Boolean fragments</source>
-      <translation>Логічні фрагменти</translation>
-    </message>
-    <message>
-      <location filename="../../../BOPTools/SplitFeatures.py" line="440"/>
-      <source>Slice to compound</source>
-      <translation>Нарізка на складні форми</translation>
-    </message>
-    <message>
-      <location filename="../../../BOPTools/SplitFeatures.py" line="483"/>
-      <source>Slice apart</source>
-      <translation>Розрізати на частини</translation>
-    </message>
-    <message>
-      <location filename="../../../BOPTools/SplitFeatures.py" line="675"/>
-      <source>Boolean XOR</source>
-      <translation>Логічний XOR</translation>
-    </message>
-  </context>
-  <context>
-    <name>Part_Tube</name>
-    <message>
-      <location filename="../../../BasicShapes/CommandShapes.py" line="45"/>
-      <source>Create tube</source>
-      <translation>Створити трубу</translation>
-    </message>
-    <message>
-      <location filename="../../../BasicShapes/CommandShapes.py" line="49"/>
-      <source>Creates a tube</source>
-      <translation>Створює трубу</translation>
-    </message>
-  </context>
-  <context>
-    <name>QObject</name>
-    <message>
-      <location filename="../../ViewProvider.cpp" line="50"/>
-      <location filename="../../ViewProviderPrimitive.cpp" line="66"/>
-      <source>Edit %1</source>
-      <translation>Редагувати %1</translation>
-    </message>
-    <message>
-      <location filename="../../../BasicShapes/CommandShapes.py" line="53"/>
-      <source>Create tube</source>
-      <translation>Створити трубу</translation>
-    </message>
-    <message>
-      <location filename="../../AppPartGui.cpp" line="211"/>
-      <location filename="../../AppPartGui.cpp" line="212"/>
-      <location filename="../../AppPartGui.cpp" line="213"/>
-      <source>Part design</source>
-      <translation>ДизайнДеталі</translation>
-    </message>
-    <message>
-      <location filename="../../AppPartGui.cpp" line="214"/>
-      <location filename="../../AppPartGui.cpp" line="215"/>
-      <source>Import-Export</source>
-      <translation>Імпорт-експорт</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="313"/>
-      <location filename="../../Command.cpp" line="408"/>
-      <location filename="../../Command.cpp" line="508"/>
-      <location filename="../../Command.cpp" line="927"/>
-      <location filename="../../Command.cpp" line="984"/>
-      <location filename="../../Command.cpp" line="2154"/>
-      <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="314"/>
-      <location filename="../../Command.cpp" line="985"/>
-      <source>Select two shapes please.</source>
-      <translation>Виберіть дві форми, будь ласка.</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="323"/>
-      <location filename="../../Command.cpp" line="423"/>
-      <location filename="../../Command.cpp" line="523"/>
-      <source>Non-solids selected</source>
-      <translation>Обрано не суцільні тіла</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="324"/>
-      <location filename="../../Command.cpp" line="424"/>
-      <location filename="../../Command.cpp" line="524"/>
-      <source>The use of non-solids for boolean operations may lead to unexpected results.
-Do you want to continue?</source>
-      <translation>Застосування логічних операцій до не суцільних тіл може призвести до неочікуваних результатів. Бажаєте продовжити?</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="409"/>
-      <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to compute common between.</source>
-      <translation>Будь ласка, виберіть дві або більше фігур. Або виділіть зʼєднання, яке також містить дві або більше фігур, для обчислення перетину між ними.</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="509"/>
-      <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to be fused.</source>
-      <translation>Будь ласка, виберіть дві або більше фігур. Або виділіть зʼєднання, що містить дві або більше фігур, для операції злиття.</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="928"/>
-      <source>Select one shape or more, please.</source>
-      <translation>Виберіть одну або більше фігур.</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="1142"/>
-      <source>All CAD Files</source>
-      <translation>Всі CAD файли</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="1147"/>
-      <source>All Files</source>
-      <translation>Всі файли</translation>
-    </message>
-    <message>
-      <location filename="../../Command.cpp" line="2155"/>
-      <source>You have to select either two edges or two wires.</source>
-      <translation>Ви повинні вибрати або дві грані або дві струни.</translation>
-    </message>
-    <message>
-      <location filename="../../TaskAttacher.cpp" line="73"/>
-      <location filename="../../TaskAttacher.cpp" line="109"/>
-      <source>No reference selected</source>
-      <translation>Не вибрано орієнтира</translation>
-    </message>
-    <message>
-      <location filename="../../TaskAttacher.cpp" line="82"/>
-      <location filename="../../TaskCheckGeometry.cpp" line="86"/>
-      <source>Face</source>
-      <translation>Грань</translation>
-    </message>
-    <message>
-      <location filename="../../TaskAttacher.cpp" line="85"/>
-      <location filename="../../TaskCheckGeometry.cpp" line="88"/>
-      <source>Edge</source>
-      <translation>Ребро</translation>
-    </message>
-    <message>
-      <location filename="../../TaskAttacher.cpp" line="88"/>
-      <location filename="../../TaskCheckGeometry.cpp" line="89"/>
-      <source>Vertex</source>
-      <translation>Вершина</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="82"/>
-      <source>Compound</source>
-      <translation>Суміш</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="83"/>
-      <source>Compound Solid</source>
-      <translation>Складене суцільне тіло</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="84"/>
-      <source>Solid</source>
-      <translation>Суцільне тіло</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="85"/>
-      <source>Shell</source>
-      <translation>Оболонка</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="87"/>
-      <source>Wire</source>
-      <translation>Каркас</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="90"/>
-      <source>Shape</source>
-      <translation>Форма</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="105"/>
-      <source>No Error</source>
-      <translation>Помилок немає</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="106"/>
-      <source>Invalid Point On Curve</source>
-      <translation>Неприпустима точка на кривій</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="107"/>
-      <source>Invalid Point On Curve On Surface</source>
-      <translation>Неприпустима точка на кривій поверхні</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="108"/>
-      <source>Invalid Point On Surface</source>
-      <translation>Неприпустима точка на поверхні</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="109"/>
-      <source>No 3D Curve</source>
-      <translation>Немає тривимірних кривих</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="110"/>
-      <source>Multiple 3D Curve</source>
-      <translation>Множинна 3D-крива</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="111"/>
-      <source>Invalid 3D Curve</source>
-      <translation>Неприпустима 3D-крива</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="112"/>
-      <source>No Curve On Surface</source>
-      <translation>Крива на поверхні відсутня</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="113"/>
-      <source>Invalid Curve On Surface</source>
-      <translation>Крива на поверхні є неприпустимою</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="114"/>
-      <source>Invalid Curve On Closed Surface</source>
-      <translation>Відсутня крива на замкнутій поверхні</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="115"/>
-      <source>Invalid Same Range Flag</source>
-      <translation>Неприпустимий діапазон розмітки</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="116"/>
-      <source>Invalid Same Parameter Flag</source>
-      <translation>Неприпустимий параметр розмітки</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="117"/>
-      <source>Invalid Degenerated Flag</source>
-      <translation>Неприпустиме зменшення розмітки</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="118"/>
-      <source>Free Edge</source>
-      <translation>Вільне ребро</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="119"/>
-      <source>Invalid MultiConnexity</source>
-      <translation>Неприпустима багатозвʼязність</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="120"/>
-      <source>Invalid Range</source>
-      <translation>Неприпустимий діапазон</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="121"/>
-      <source>Empty Wire</source>
-      <translation type="unfinished">Empty Wire</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="122"/>
-      <source>Redundant Edge</source>
-      <translation>Зайве ребро</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="123"/>
-      <source>Self Intersecting Wire</source>
-      <translation type="unfinished">Self Intersecting Wire</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="124"/>
-      <source>No Surface</source>
-      <translation>Немає поверхні</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="125"/>
-      <source>Invalid Wire</source>
-      <translation>Неприпустимий каркас</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="126"/>
-      <source>Redundant Wire</source>
-      <translation type="unfinished">Redundant Wire</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="127"/>
-      <source>Intersecting Wires</source>
-      <translation type="unfinished">Intersecting Wires</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="128"/>
-      <source>Invalid Imbrication Of Wires</source>
-      <translation type="unfinished">Invalid Imbrication Of Wires</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="129"/>
-      <source>Empty Shell</source>
-      <translation>Пуста оболонка</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="130"/>
-      <source>Redundant Face</source>
-      <translation>Зайва поверхня</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="131"/>
-      <source>Unorientable Shape</source>
-      <translation>Фігура, яку неможливо зорієнтувати</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="132"/>
-      <source>Not Closed</source>
-      <translation>Не закрито</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="133"/>
-      <source>Not Connected</source>
-      <translation>Не зʼєднано</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="134"/>
-      <source>Sub Shape Not In Shape</source>
-      <translation type="unfinished">Sub Shape Not In Shape</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="135"/>
-      <source>Bad Orientation</source>
-      <translation>Неправильна орієнтація</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="136"/>
-      <source>Bad Orientation Of Sub Shape</source>
-      <translation>Неправильна орієнтація підформ</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="137"/>
-      <source>Invalid Tolerance Value</source>
-      <translation>Неприпустиме значення допуску</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="138"/>
-      <source>Check Failed</source>
-      <translation>Перевірка не відбулася</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="148"/>
-      <source>No Result</source>
-      <translation>Результату немає</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="152"/>
-      <source>Out Of Enum Range:</source>
-      <translation>Поза діапазоном значень:</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="164"/>
-      <source>BOPAlgo CheckUnknown</source>
-      <translation type="unfinished">BOPAlgo CheckUnknown</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="165"/>
-      <source>BOPAlgo BadType</source>
-      <translation type="unfinished">BOPAlgo BadType</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="166"/>
-      <source>BOPAlgo SelfIntersect</source>
-      <translation type="unfinished">BOPAlgo SelfIntersect</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="167"/>
-      <source>BOPAlgo TooSmallEdge</source>
-      <translation type="unfinished">BOPAlgo TooSmallEdge</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="168"/>
-      <source>BOPAlgo NonRecoverableFace</source>
-      <translation type="unfinished">BOPAlgo NonRecoverableFace</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="169"/>
-      <source>BOPAlgo IncompatibilityOfVertex</source>
-      <translation type="unfinished">BOPAlgo IncompatibilityOfVertex</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="170"/>
-      <source>BOPAlgo IncompatibilityOfEdge</source>
-      <translation type="unfinished">BOPAlgo IncompatibilityOfEdge</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="171"/>
-      <source>BOPAlgo IncompatibilityOfFace</source>
-      <translation type="unfinished">BOPAlgo IncompatibilityOfFace</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="172"/>
-      <source>BOPAlgo OperationAborted</source>
-      <translation type="unfinished">BOPAlgo OperationAborted</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="173"/>
-      <source>BOPAlgo GeomAbs_C0</source>
-      <translation type="unfinished">BOPAlgo GeomAbs_C0</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="174"/>
-      <source>BOPAlgo_InvalidCurveOnSurface</source>
-      <translation type="unfinished">BOPAlgo_InvalidCurveOnSurface</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="175"/>
-      <source>BOPAlgo NotValid</source>
-      <translation type="unfinished">BOPAlgo NotValid</translation>
-    </message>
-    <message>
-      <location filename="../../TaskCheckGeometry.cpp" line="464"/>
-      <location filename="../../TaskCheckGeometry.cpp" line="713"/>
-      <source>Invalid</source>
-      <translation>Недійсний</translation>
-    </message>
-    <message>
-      <location filename="../../TaskDimension.cpp" line="632"/>
-      <location filename="../../TaskDimension.cpp" line="1770"/>
-      <source>Selections</source>
-      <translation>Виділення</translation>
-    </message>
-    <message>
-      <location filename="../../TaskDimension.cpp" line="639"/>
-      <location filename="../../TaskDimension.cpp" line="1777"/>
-      <source>Control</source>
-      <translation>Керування</translation>
-    </message>
-    <message>
-      <location filename="../../TaskDimension.cpp" line="1398"/>
-      <source>Selection </source>
-      <translation>Виділення </translation>
-    </message>
-    <message>
-      <location filename="../../TaskDimension.cpp" line="1482"/>
-      <source>Reset selection</source>
-      <translation>Скасувати вибір</translation>
-    </message>
-    <message>
-      <location filename="../../TaskDimension.cpp" line="1486"/>
-      <source>Toggle direct dimensions</source>
-      <translation>Переключити прямі розміри</translation>
-    </message>
-    <message>
-      <location filename="../../TaskDimension.cpp" line="1491"/>
-      <source>Toggle orthogonal dimensions</source>
-      <translation>Переключити ортогональні розміри</translation>
-    </message>
-    <message>
-      <location filename="../../TaskDimension.cpp" line="1496"/>
-      <source>Clear all dimensions</source>
-      <translation>Видалити всі розміри</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderExt.cpp" line="864"/>
-      <source>Set colors...</source>
-      <translation>Встановити кольори...</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderMirror.cpp" line="78"/>
-      <source>Edit mirror plane</source>
-      <translation>Редагувати площину відзеркалення</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderMirror.cpp" line="278"/>
-      <source>Edit fillet edges</source>
-      <translation>Редагувати кромку граней</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderMirror.cpp" line="382"/>
-      <source>Edit chamfer edges</source>
-      <translation>Редагувати фаски ребер</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderMirror.cpp" line="526"/>
-      <source>Edit offset</source>
-      <translation>Редагувати зміщення</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderMirror.cpp" line="610"/>
-      <source>Edit thickness</source>
-      <translation>Редагувати товщину</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderSpline.cpp" line="100"/>
-      <source>Show control points</source>
-      <translation>Показати контрольні точки</translation>
-    </message>
-    <message>
-      <location filename="../../ViewProviderAttachExtension.cpp" line="118"/>
-      <source>Attachment editor</source>
-      <translation>Редактор вкладень</translation>
-    </message>
-  </context>
-  <context>
     <name>Attacher</name>
     <message>
       <location filename="../../AttacherTexts.cpp" line="311"/>
@@ -6177,6 +5515,466 @@ in the 3D view for the sweep path.</translation>
       <location filename="../../../App/FeatureExtrusion.cpp" line="344"/>
       <source>Supports making faces with holes, does not support nesting.</source>
       <translation type="unfinished">Supports making faces with holes, does not support nesting.</translation>
+    </message>
+  </context>
+  <context>
+    <name>QObject</name>
+    <message>
+      <location filename="../../ViewProvider.cpp" line="50"/>
+      <location filename="../../ViewProviderPrimitive.cpp" line="66"/>
+      <source>Edit %1</source>
+      <translation>Редагувати %1</translation>
+    </message>
+    <message>
+      <location filename="../../AppPartGui.cpp" line="211"/>
+      <location filename="../../AppPartGui.cpp" line="212"/>
+      <location filename="../../AppPartGui.cpp" line="213"/>
+      <source>Part design</source>
+      <translation>ДизайнДеталі</translation>
+    </message>
+    <message>
+      <location filename="../../AppPartGui.cpp" line="214"/>
+      <location filename="../../AppPartGui.cpp" line="215"/>
+      <source>Import-Export</source>
+      <translation>Імпорт-експорт</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="313"/>
+      <location filename="../../Command.cpp" line="408"/>
+      <location filename="../../Command.cpp" line="508"/>
+      <location filename="../../Command.cpp" line="927"/>
+      <location filename="../../Command.cpp" line="984"/>
+      <location filename="../../Command.cpp" line="2154"/>
+      <source>Wrong selection</source>
+      <translation>Невірний вибір</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="314"/>
+      <location filename="../../Command.cpp" line="985"/>
+      <source>Select two shapes please.</source>
+      <translation>Виберіть дві форми, будь ласка.</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="323"/>
+      <location filename="../../Command.cpp" line="423"/>
+      <location filename="../../Command.cpp" line="523"/>
+      <source>Non-solids selected</source>
+      <translation>Обрано не суцільні тіла</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="324"/>
+      <location filename="../../Command.cpp" line="424"/>
+      <location filename="../../Command.cpp" line="524"/>
+      <source>The use of non-solids for boolean operations may lead to unexpected results.
+Do you want to continue?</source>
+      <translation>Застосування логічних операцій до не суцільних тіл може призвести до неочікуваних результатів. Бажаєте продовжити?</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="409"/>
+      <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to compute common between.</source>
+      <translation>Будь ласка, виберіть дві або більше фігур. Або виділіть зʼєднання, яке також містить дві або більше фігур, для обчислення перетину між ними.</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="509"/>
+      <source>Select two shapes or more, please. Or, select one compound containing two or more shapes to be fused.</source>
+      <translation>Будь ласка, виберіть дві або більше фігур. Або виділіть зʼєднання, що містить дві або більше фігур, для операції злиття.</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="928"/>
+      <source>Select one shape or more, please.</source>
+      <translation>Виберіть одну або більше фігур.</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="1142"/>
+      <source>All CAD Files</source>
+      <translation>Всі CAD файли</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="1147"/>
+      <source>All Files</source>
+      <translation>Всі файли</translation>
+    </message>
+    <message>
+      <location filename="../../Command.cpp" line="2155"/>
+      <source>You have to select either two edges or two wires.</source>
+      <translation>Ви повинні вибрати або дві грані або дві струни.</translation>
+    </message>
+    <message>
+      <location filename="../../TaskAttacher.cpp" line="73"/>
+      <location filename="../../TaskAttacher.cpp" line="109"/>
+      <source>No reference selected</source>
+      <translation>Не вибрано орієнтира</translation>
+    </message>
+    <message>
+      <location filename="../../TaskAttacher.cpp" line="82"/>
+      <location filename="../../TaskCheckGeometry.cpp" line="86"/>
+      <source>Face</source>
+      <translation>Грань</translation>
+    </message>
+    <message>
+      <location filename="../../TaskAttacher.cpp" line="85"/>
+      <location filename="../../TaskCheckGeometry.cpp" line="88"/>
+      <source>Edge</source>
+      <translation>Ребро</translation>
+    </message>
+    <message>
+      <location filename="../../TaskAttacher.cpp" line="88"/>
+      <location filename="../../TaskCheckGeometry.cpp" line="89"/>
+      <source>Vertex</source>
+      <translation>Вершина</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="82"/>
+      <source>Compound</source>
+      <translation>Суміш</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="83"/>
+      <source>Compound Solid</source>
+      <translation>Складене суцільне тіло</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="84"/>
+      <source>Solid</source>
+      <translation>Суцільне тіло</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="85"/>
+      <source>Shell</source>
+      <translation>Оболонка</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="87"/>
+      <source>Wire</source>
+      <translation>Каркас</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="90"/>
+      <source>Shape</source>
+      <translation>Форма</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="105"/>
+      <source>No Error</source>
+      <translation>Помилок немає</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="106"/>
+      <source>Invalid Point On Curve</source>
+      <translation>Неприпустима точка на кривій</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="107"/>
+      <source>Invalid Point On Curve On Surface</source>
+      <translation>Неприпустима точка на кривій поверхні</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="108"/>
+      <source>Invalid Point On Surface</source>
+      <translation>Неприпустима точка на поверхні</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="109"/>
+      <source>No 3D Curve</source>
+      <translation>Немає тривимірних кривих</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="110"/>
+      <source>Multiple 3D Curve</source>
+      <translation>Множинна 3D-крива</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="111"/>
+      <source>Invalid 3D Curve</source>
+      <translation>Неприпустима 3D-крива</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="112"/>
+      <source>No Curve On Surface</source>
+      <translation>Крива на поверхні відсутня</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="113"/>
+      <source>Invalid Curve On Surface</source>
+      <translation>Крива на поверхні є неприпустимою</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="114"/>
+      <source>Invalid Curve On Closed Surface</source>
+      <translation>Відсутня крива на замкнутій поверхні</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="115"/>
+      <source>Invalid Same Range Flag</source>
+      <translation>Неприпустимий діапазон розмітки</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="116"/>
+      <source>Invalid Same Parameter Flag</source>
+      <translation>Неприпустимий параметр розмітки</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="117"/>
+      <source>Invalid Degenerated Flag</source>
+      <translation>Неприпустиме зменшення розмітки</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="118"/>
+      <source>Free Edge</source>
+      <translation>Вільне ребро</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="119"/>
+      <source>Invalid MultiConnexity</source>
+      <translation>Неприпустима багатозвʼязність</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="120"/>
+      <source>Invalid Range</source>
+      <translation>Неприпустимий діапазон</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="121"/>
+      <source>Empty Wire</source>
+      <translation type="unfinished">Empty Wire</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="122"/>
+      <source>Redundant Edge</source>
+      <translation>Зайве ребро</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="123"/>
+      <source>Self Intersecting Wire</source>
+      <translation type="unfinished">Self Intersecting Wire</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="124"/>
+      <source>No Surface</source>
+      <translation>Немає поверхні</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="125"/>
+      <source>Invalid Wire</source>
+      <translation>Неприпустимий каркас</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="126"/>
+      <source>Redundant Wire</source>
+      <translation type="unfinished">Redundant Wire</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="127"/>
+      <source>Intersecting Wires</source>
+      <translation type="unfinished">Intersecting Wires</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="128"/>
+      <source>Invalid Imbrication Of Wires</source>
+      <translation type="unfinished">Invalid Imbrication Of Wires</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="129"/>
+      <source>Empty Shell</source>
+      <translation>Пуста оболонка</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="130"/>
+      <source>Redundant Face</source>
+      <translation>Зайва поверхня</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="131"/>
+      <source>Unorientable Shape</source>
+      <translation>Фігура, яку неможливо зорієнтувати</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="132"/>
+      <source>Not Closed</source>
+      <translation>Не закрито</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="133"/>
+      <source>Not Connected</source>
+      <translation>Не зʼєднано</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="134"/>
+      <source>Sub Shape Not In Shape</source>
+      <translation type="unfinished">Sub Shape Not In Shape</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="135"/>
+      <source>Bad Orientation</source>
+      <translation>Неправильна орієнтація</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="136"/>
+      <source>Bad Orientation Of Sub Shape</source>
+      <translation>Неправильна орієнтація підформ</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="137"/>
+      <source>Invalid Tolerance Value</source>
+      <translation>Неприпустиме значення допуску</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="138"/>
+      <source>Check Failed</source>
+      <translation>Перевірка не відбулася</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="148"/>
+      <source>No Result</source>
+      <translation>Результату немає</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="152"/>
+      <source>Out Of Enum Range:</source>
+      <translation>Поза діапазоном значень:</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="164"/>
+      <source>BOPAlgo CheckUnknown</source>
+      <translation type="unfinished">BOPAlgo CheckUnknown</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="165"/>
+      <source>BOPAlgo BadType</source>
+      <translation type="unfinished">BOPAlgo BadType</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="166"/>
+      <source>BOPAlgo SelfIntersect</source>
+      <translation type="unfinished">BOPAlgo SelfIntersect</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="167"/>
+      <source>BOPAlgo TooSmallEdge</source>
+      <translation type="unfinished">BOPAlgo TooSmallEdge</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="168"/>
+      <source>BOPAlgo NonRecoverableFace</source>
+      <translation type="unfinished">BOPAlgo NonRecoverableFace</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="169"/>
+      <source>BOPAlgo IncompatibilityOfVertex</source>
+      <translation type="unfinished">BOPAlgo IncompatibilityOfVertex</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="170"/>
+      <source>BOPAlgo IncompatibilityOfEdge</source>
+      <translation type="unfinished">BOPAlgo IncompatibilityOfEdge</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="171"/>
+      <source>BOPAlgo IncompatibilityOfFace</source>
+      <translation type="unfinished">BOPAlgo IncompatibilityOfFace</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="172"/>
+      <source>BOPAlgo OperationAborted</source>
+      <translation type="unfinished">BOPAlgo OperationAborted</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="173"/>
+      <source>BOPAlgo GeomAbs_C0</source>
+      <translation type="unfinished">BOPAlgo GeomAbs_C0</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="174"/>
+      <source>BOPAlgo_InvalidCurveOnSurface</source>
+      <translation type="unfinished">BOPAlgo_InvalidCurveOnSurface</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="175"/>
+      <source>BOPAlgo NotValid</source>
+      <translation type="unfinished">BOPAlgo NotValid</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCheckGeometry.cpp" line="464"/>
+      <location filename="../../TaskCheckGeometry.cpp" line="713"/>
+      <source>Invalid</source>
+      <translation>Недійсний</translation>
+    </message>
+    <message>
+      <location filename="../../TaskDimension.cpp" line="632"/>
+      <location filename="../../TaskDimension.cpp" line="1770"/>
+      <source>Selections</source>
+      <translation>Виділення</translation>
+    </message>
+    <message>
+      <location filename="../../TaskDimension.cpp" line="639"/>
+      <location filename="../../TaskDimension.cpp" line="1777"/>
+      <source>Control</source>
+      <translation>Керування</translation>
+    </message>
+    <message>
+      <location filename="../../TaskDimension.cpp" line="1398"/>
+      <source>Selection </source>
+      <translation>Виділення </translation>
+    </message>
+    <message>
+      <location filename="../../TaskDimension.cpp" line="1482"/>
+      <source>Reset selection</source>
+      <translation>Скасувати вибір</translation>
+    </message>
+    <message>
+      <location filename="../../TaskDimension.cpp" line="1486"/>
+      <source>Toggle direct dimensions</source>
+      <translation>Переключити прямі розміри</translation>
+    </message>
+    <message>
+      <location filename="../../TaskDimension.cpp" line="1491"/>
+      <source>Toggle orthogonal dimensions</source>
+      <translation>Переключити ортогональні розміри</translation>
+    </message>
+    <message>
+      <location filename="../../TaskDimension.cpp" line="1496"/>
+      <source>Clear all dimensions</source>
+      <translation>Видалити всі розміри</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderExt.cpp" line="864"/>
+      <source>Set colors...</source>
+      <translation>Встановити кольори...</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderMirror.cpp" line="78"/>
+      <source>Edit mirror plane</source>
+      <translation>Редагувати площину відзеркалення</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderMirror.cpp" line="278"/>
+      <source>Edit fillet edges</source>
+      <translation>Редагувати кромку граней</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderMirror.cpp" line="382"/>
+      <source>Edit chamfer edges</source>
+      <translation>Редагувати фаски ребер</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderMirror.cpp" line="526"/>
+      <source>Edit offset</source>
+      <translation>Редагувати зміщення</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderMirror.cpp" line="610"/>
+      <source>Edit thickness</source>
+      <translation>Редагувати товщину</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderSpline.cpp" line="100"/>
+      <source>Show control points</source>
+      <translation>Показати контрольні точки</translation>
+    </message>
+    <message>
+      <location filename="../../ViewProviderAttachExtension.cpp" line="118"/>
+      <source>Attachment editor</source>
+      <translation>Редактор вкладень</translation>
     </message>
   </context>
   <context>

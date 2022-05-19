@@ -6,17 +6,17 @@
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="113"/>
       <source>No object named {name}</source>
-      <translation type="unfinished">No object named {name}</translation>
+      <translation>Немає об'єкта з назвою {name}</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="126"/>
       <source>Failed to parse link (more than one colon encountered)</source>
-      <translation type="unfinished">Failed to parse link (more than one colon encountered)</translation>
+      <translation>Не вдалося обробити посилання (зустрінуто більше однієї двокрапки)</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="272"/>
       <source>Object {name} is neither movable nor attachable, can&apos;t edit attachment</source>
-      <translation type="unfinished">Object {name} is neither movable nor attachable, can&apos;t edit attachment</translation>
+      <translation>Об'єкт {name} не можливо рухати або прив'язати, не можу відредагувати приєднання</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="285"/>
@@ -93,7 +93,7 @@
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="782"/>
       <source>Error: {err}</source>
-      <translation type="unfinished">Error: {err}</translation>
+      <translation>Помилка: {err}</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="794"/>
@@ -143,7 +143,7 @@ for collision or distance filtering.</source>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="97"/>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="144"/>
       <source>Bad selection</source>
-      <translation type="unfinished">Bad selection</translation>
+      <translation>Помилка в виділенні</translation>
     </message>
     <message>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="142"/>

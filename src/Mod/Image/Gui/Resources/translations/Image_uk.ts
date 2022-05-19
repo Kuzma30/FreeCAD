@@ -19,12 +19,12 @@
       <translation type="unfinished">Select first point</translation>
     </message>
     <message>
-      <location filename="../../../ImageTools/_CommandImageScaling.py" line="195"/>
+      <location filename="../../../ImageTools/_CommandImageScaling.py" line="199"/>
       <source>&lt;font color=&apos;red&apos;&gt;Enter distance&lt;/font&gt;</source>
       <translation type="unfinished">&lt;font color=&apos;red&apos;&gt;Enter distance&lt;/font&gt;</translation>
     </message>
     <message>
-      <location filename="../../../ImageTools/_CommandImageScaling.py" line="202"/>
+      <location filename="../../../ImageTools/_CommandImageScaling.py" line="206"/>
       <source>&lt;font color=&apos;red&apos;&gt;Select ImagePlane&lt;/font&gt;</source>
       <translation type="unfinished">&lt;font color=&apos;red&apos;&gt;Select ImagePlane&lt;/font&gt;</translation>
     </message>
@@ -34,7 +34,7 @@
       <translation type="unfinished">Select second point</translation>
     </message>
     <message>
-      <location filename="../../../ImageTools/_CommandImageScaling.py" line="248"/>
+      <location filename="../../../ImageTools/_CommandImageScaling.py" line="252"/>
       <source>Select Image Plane and type distance</source>
       <translation type="unfinished">Select Image Plane and type distance</translation>
     </message>
@@ -45,6 +45,11 @@
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="69"/>
       <source>Scale image plane</source>
       <translation>Масштабувати зображення площини</translation>
+    </message>
+    <message>
+      <location filename="../../../ImageTools/_CommandImageScaling.py" line="74"/>
+      <source>Scales an image plane by defining a distance between two points</source>
+      <translation type="unfinished">Scales an image plane by defining a distance between two points</translation>
     </message>
   </context>
   <context>

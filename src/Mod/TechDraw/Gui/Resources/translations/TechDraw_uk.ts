@@ -4,42 +4,43 @@
   <context>
     <name>MoveView</name>
     <message>
-      <location filename="CommandMoveView.py" line="49"/>
+      <location filename="../../../TechDrawTools/CommandMoveView.py" line="49"/>
       <source>Move View</source>
       <translation>Перемістити вид</translation>
     </message>
     <message>
-      <location filename="CommandMoveView.py" line="50"/>
+      <location filename="../../../TechDrawTools/CommandMoveView.py" line="50"/>
       <source>Move a View to a new Page</source>
       <translation>Скопіювати Вигляд на другу сторінку</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="53"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="53"/>
       <source>Move View to a different Page</source>
       <translation>Перемістити Вид на іншу сторінку</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="84"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="84"/>
       <source>Select View to move from list.</source>
       <translation>Виберіть вид для переміщення зі списку.</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="85"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="85"/>
       <source>Select View</source>
       <translation>Виберіть вид</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="109"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="109"/>
       <source>Select From Page.</source>
       <translation>Оберіть із Сторінки.</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="135"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="110"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="135"/>
       <source>Select Page</source>
       <translation>Вибрати сторінку</translation>
     </message>
     <message>
-      <location filename="TaskMoveView.py" line="134"/>
+      <location filename="../../../TechDrawTools/TaskMoveView.py" line="134"/>
       <source>Select To Page.</source>
       <translation>Оберіть із Сторінки.</translation>
     </message>
@@ -47,47 +48,48 @@
   <context>
     <name>ShareView</name>
     <message>
-      <location filename="TaskShareView.py" line="51"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="51"/>
       <source>Share View with another Page</source>
       <translation>Поділитися Виглядом з іншою сторінкою</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="52"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="52"/>
       <source>View to share</source>
       <translation>Переглянути щоб поділитися</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="83"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="83"/>
       <source>Select View to share from list.</source>
       <translation>Виберіть Перегляд, щоб поділитись зі списку.</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="84"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="84"/>
       <source>Select View</source>
       <translation>Виберіть вид</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="108"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="108"/>
       <source>Select From Page.</source>
       <translation>Оберіть із Сторінки.</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="134"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="109"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="134"/>
       <source>Select Page</source>
       <translation>Вибрати сторінку</translation>
     </message>
     <message>
-      <location filename="TaskShareView.py" line="133"/>
+      <location filename="../../../TechDrawTools/TaskShareView.py" line="133"/>
       <source>Select To Page.</source>
       <translation>Оберіть із Сторінки.</translation>
     </message>
     <message>
-      <location filename="CommandShareView.py" line="49"/>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="49"/>
       <source>Share View</source>
       <translation>Поділитися Виглядом</translation>
     </message>
     <message>
-      <location filename="CommandShareView.py" line="50"/>
+      <location filename="../../../TechDrawTools/CommandShareView.py" line="50"/>
       <source>Share a View on a second Page</source>
       <translation>Поділитися Виглядом на другій сторінці</translation>
     </message>
@@ -4905,24 +4907,24 @@ Fast, but result is a collection of short straight lines.</translation>
     <message>
       <location filename="../../MDIViewPage.cpp" line="770"/>
       <source>Different orientation</source>
-      <translation>Відмінна орієнтація</translation>
+      <translation>Інша орієнтація</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="771"/>
       <source>The printer uses a different orientation  than the drawing.
 Do you want to continue?</source>
-      <translation>Принтер використовує відмінну від креслення орієнтацію. Бажаєте продовжити?</translation>
+      <translation>Принтер використовує іншу орієнтацію ніж креслення. Бажаєте продовжити?</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="778"/>
       <source>Different paper size</source>
-      <translation>Відмінний розмір паперу</translation>
+      <translation>Інший розмір паперу</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="779"/>
       <source>The printer uses a different paper size than the drawing.
 Do you want to continue?</source>
-      <translation>Принтер використовує відмінний від креслення розмір паперу. Бажаєте продовжити?</translation>
+      <translation>Принтер використовує інший ніж у кресленні розмір паперу. Бажаєте продовжити?</translation>
     </message>
     <message>
       <location filename="../../MDIViewPage.cpp" line="790"/>

@@ -4,16 +4,6 @@
 <context>
     <name>OpenSCAD</name>
     <message>
-        <location filename="../../OpenSCADUtils.py" line="1221"/>
-        <source>OpenSCAD file contains both 2D and 3D shapes. That is not supported in this importer, all shapes must have the same dimensionality.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../OpenSCADUtils.py" line="1237"/>
-        <source>Error all shapes must be either 2D or both must be 3D</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../InitGui.py" line="131"/>
         <source>It looks like you may be using a Snap version of OpenSCAD.</source>
         <translation type="unfinished"></translation>
@@ -108,6 +98,16 @@
         <location filename="../../importCSG.py" line="605"/>
         <location filename="../../importCSG.py" line="1626"/>
         <source>Press OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADUtils.py" line="1221"/>
+        <source>OpenSCAD file contains both 2D and 3D shapes. That is not supported in this importer, all shapes must have the same dimensionality.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../OpenSCADUtils.py" line="1237"/>
+        <source>Error all shapes must be either 2D or both must be 3D</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

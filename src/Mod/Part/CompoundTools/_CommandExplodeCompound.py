@@ -27,26 +27,11 @@ __doc__ = "ExplodeCompound: create a bunch of CompoundFilter objects to split a 
 from .Explode import explodeCompound
 
 import FreeCAD
+translate = FreeCAD.Qt.translate
 if FreeCAD.GuiUp:
     import FreeCADGui
     from PySide import QtGui
     from PySide import QtCore
-
-
-# translation-related code
-    try:
-        _fromUtf8 = QtCore.QString.fromUtf8
-    except Exception:
-        def _fromUtf8(s):
-            return s
-    try:
-        _encoding = QtGui.QApplication.UnicodeUTF8
-        def _translate(context, text, disambig):
-            return QtGui.QApplication.translate(context, text, disambig, _encoding)
-    except AttributeError:
-        def _translate(context, text, disambig):
-            return QtGui.QApplication.translate(context, text, disambig)
-
 
 # command class
 class _CommandExplodeCompound:
@@ -65,8 +50,8 @@ class _CommandExplodeCompound:
         else:
             mb = QtGui.QMessageBox()
             mb.setIcon(mb.Icon.Warning)
-            mb.setText(_translate("Part_ExplodeCompound", "First select a shape that is a compound.", None))
-            mb.setWindowTitle(_translate("Part_ExplodeCompound", "Bad selection", None))
+            mb.setText(translate("Part_ExplodeCompound", "First select a shape that is a compound.", None))
+            mb.setWindowTitle(translate("Part_ExplodeCompound", "Bad selection", None))
             mb.exec_()
 
     def IsActive(self):

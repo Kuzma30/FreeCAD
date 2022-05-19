@@ -11,7 +11,7 @@
     <message>
       <location filename="../../../InvoluteGearFeature.py" line="66"/>
       <source>Creates or edit the involute gear definition.</source>
-      <translation type="unfinished">Creates or edit the involute gear definition.</translation>
+      <translation>Створює або редагує параметри евольвентної шестерні.</translation>
     </message>
   </context>
   <context>

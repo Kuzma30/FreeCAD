@@ -1459,7 +1459,7 @@ For example:
     &apos;Metric, Small Parts &amp; CNC&apos;
     &apos;US Customary&apos;
     &apos;Imperial Decimal&apos;</source>
-      <translation type="unfinished">The currently selected unit schema: 
+      <translation>Зараз діє наступна схем: 
      &apos;{}&apos;
  Does not use &apos;minutes&apos; for velocity values. 
  
@@ -5569,7 +5569,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="282"/>
       <source>Join:</source>
-      <translation type="unfinished">Join:</translation>
+      <translation>З'єднати:</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="289"/>
@@ -5609,7 +5609,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="120"/>
       <source>Time</source>
-      <translation type="unfinished">Time</translation>
+      <translation>Час</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="134"/>
@@ -5780,7 +5780,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="110"/>
       <source>Pattern</source>
-      <translation type="unfinished">Pattern</translation>
+      <translation>Шаблон</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="117"/>

@@ -38,7 +38,7 @@
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="389"/>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="440"/>
       <source>Edit attachment of {feat}</source>
-      <translation type="unfinished">Edit attachment of {feat}</translation>
+      <translation>Редагувати приєднання {feat}</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="491"/>
@@ -53,7 +53,7 @@
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="655"/>
       <source>{mode} (add {morerefs})</source>
-      <translation type="unfinished">{mode} (add {morerefs})</translation>
+      <translation>{mode} (додати {morerefs})</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="659"/>

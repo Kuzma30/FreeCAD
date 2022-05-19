@@ -78,7 +78,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="62"/>
       <source>Creates an analysis container with standard solver CalculiX</source>
-      <translation type="unfinished">Creates an analysis container with standard solver CalculiX</translation>
+      <translation>Створює контейнер для аналізу зі стандартним обчислювачем CalculiX</translation>
     </message>
   </context>
   <context>
@@ -113,7 +113,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="181"/>
       <source>Creates a FEM constant vacuum permittivity to overwrite standard value</source>
-      <translation type="unfinished">Creates a FEM constant vacuum permittivity to overwrite standard value</translation>
+      <translation>Створює постійну електропроникність вакууму для заміни стандартного значення</translation>
     </message>
   </context>
   <context>
@@ -152,7 +152,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="229"/>
       <source>Creates a FEM constraint electrostatic potential</source>
-      <translation type="unfinished">Creates a FEM constraint electrostatic potential</translation>
+      <translation>Створює електростатичний потенціал обмеження МСЕ</translation>
     </message>
   </context>
   <context>
@@ -178,7 +178,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="260"/>
       <source>Creates a FEM constraint initial flow velocity</source>
-      <translation type="unfinished">Creates a FEM constraint initial flow velocity</translation>
+      <translation>Створює обмеження початкової швидкості потоку для МСЕ</translation>
     </message>
   </context>
   <context>
@@ -422,7 +422,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="579"/>
       <source>Creates a material for reinforced matrix material such as concrete</source>
-      <translation type="unfinished">Creates a material for reinforced matrix material such as concrete</translation>
+      <translation>Створює матеріал для армованої матриці, такої як бетон</translation>
     </message>
   </context>
   <context>
@@ -509,7 +509,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="773"/>
       <source>Create a FEM mesh from a solid or face shape by Netgen internal mesher</source>
-      <translation type="unfinished">Create a FEM mesh from a solid or face shape by Netgen internal mesher</translation>
+      <translation>Створіть сітку МСЕ з твердої форми або форми обличчя за допомогою внутрішньої сітки Netgen</translation>
     </message>
   </context>
   <context>
@@ -561,7 +561,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="908"/>
       <source>Creates a FEM solver CalculiX new framework (less result error handling)</source>
-      <translation type="unfinished">Creates a FEM solver CalculiX new framework (less result error handling)</translation>
+      <translation>Створює МСЕ-розв'язувач нового фреймворку CalculiX (менше обробки помилок результату)</translation>
     </message>
   </context>
   <context>
@@ -574,7 +574,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="868"/>
       <source>Creates a standard FEM solver CalculiX with ccx tools</source>
-      <translation type="unfinished">Creates a standard FEM solver CalculiX with ccx tools</translation>
+      <translation>Створює стандартний метод FEM для розв'язувача CalculiX з інструментами ccx</translation>
     </message>
   </context>
   <context>

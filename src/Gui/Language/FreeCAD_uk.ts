@@ -83,12 +83,12 @@
       <translation>Позиція</translation>
     </message>
     <message>
-      <source>Base</source>
-      <translation>Основні</translation>
-    </message>
-    <message>
       <source>Enum</source>
       <translation>Перелік</translation>
+    </message>
+    <message>
+      <source>Base</source>
+      <translation>Основні</translation>
     </message>
   </context>
   <context>
@@ -179,16 +179,16 @@
       <translation>Перетворити</translation>
     </message>
     <message>
+      <source>Toggle array elements</source>
+      <translation>Перемкнути елементи масиву</translation>
+    </message>
+    <message>
       <source>Link Transform</source>
       <translation>Перетворити посилання</translation>
     </message>
     <message>
       <source>Measure distance</source>
       <translation>Виміряти відстань</translation>
-    </message>
-    <message>
-      <source>Toggle array elements</source>
-      <translation>Перемкнути елементи масиву</translation>
     </message>
   </context>
   <context>
@@ -261,6 +261,10 @@
       <translation>Рух 3D-миші Spaceball</translation>
     </message>
     <message>
+      <source>Global Sensitivity:</source>
+      <translation>Загальна чутливість:</translation>
+    </message>
+    <message>
       <source>Dominant Mode</source>
       <translation>Домінуючий режим</translation>
     </message>
@@ -292,10 +296,6 @@
       <source>Reverse</source>
       <translation>В зворотньому напрямку</translation>
     </message>
-    <message>
-      <source>Global Sensitivity:</source>
-      <translation>Загальна чутливість:</translation>
-    </message>
   </context>
   <context>
     <name>DlgExpressionInput</name>
@@ -308,16 +308,16 @@
       <translation>Результат:</translation>
     </message>
     <message>
-      <source>Ok</source>
-      <translation>Гаразд</translation>
-    </message>
-    <message>
       <source>&amp;Clear</source>
       <translation>&amp;Очистити</translation>
     </message>
     <message>
       <source>Revert to last calculated value (as constant)</source>
       <translation>Повернутися до останнього розрахованого значення (як константи)</translation>
+    </message>
+    <message>
+      <source>Ok</source>
+      <translation>Гаразд</translation>
     </message>
   </context>
   <context>
@@ -520,28 +520,16 @@ while doing a left or right click and move the mouse up or down</source>
       <translation>Про</translation>
     </message>
     <message>
-      <source>Revision number</source>
-      <translation>Номер редакції</translation>
-    </message>
-    <message>
       <source>Version</source>
       <translation>Версія</translation>
     </message>
     <message>
-      <source>OK</source>
-      <translation>Підтвердити</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
+      <source>Revision number</source>
+      <translation>Номер редакції</translation>
     </message>
     <message>
       <source>Release date</source>
       <translation>Дата випуску</translation>
-    </message>
-    <message>
-      <source>Copy to clipboard</source>
-      <translation>Копіювати до буферу обміну</translation>
     </message>
     <message>
       <source>Operating system</source>
@@ -552,28 +540,24 @@ while doing a left or right click and move the mouse up or down</source>
       <translation>Розмір слова</translation>
     </message>
     <message>
+      <source>Copy to clipboard</source>
+      <translation>Копіювати до буферу обміну</translation>
+    </message>
+    <message>
       <source>License</source>
       <translation>Ліцензія</translation>
+    </message>
+    <message>
+      <source>OK</source>
+      <translation>Підтвердити</translation>
+    </message>
+    <message>
+      <source/>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::AboutDialog</name>
-    <message>
-      <source>Libraries</source>
-      <translation>Бібліотеки</translation>
-    </message>
-    <message>
-      <source>This software uses open source components whose copyright and other proprietary rights belong to their respective owners:</source>
-      <translation>Це програмне забезпечення використовує компоненти з відкритим вихідним кодом, чиї права та інші права власності належать їх власникам:</translation>
-    </message>
-    <message>
-      <source>License</source>
-      <translation>Ліцензія</translation>
-    </message>
-    <message>
-      <source>Collection</source>
-      <translation>Колекція</translation>
-    </message>
     <message>
       <source>Credits</source>
       <extracomment>Header for the Credits tab of the About screen</extracomment>
@@ -592,6 +576,22 @@ while doing a left or right click and move the mouse up or down</source>
       <source>Organizations</source>
       <extracomment>Header for the list of companies/organizations in the Credits list.</extracomment>
       <translation>Організацій</translation>
+    </message>
+    <message>
+      <source>License</source>
+      <translation>Ліцензія</translation>
+    </message>
+    <message>
+      <source>Libraries</source>
+      <translation>Бібліотеки</translation>
+    </message>
+    <message>
+      <source>This software uses open source components whose copyright and other proprietary rights belong to their respective owners:</source>
+      <translation>Це програмне забезпечення використовує компоненти з відкритим вихідним кодом, чиї права та інші права власності належать їх власникам:</translation>
+    </message>
+    <message>
+      <source>Collection</source>
+      <translation>Колекція</translation>
     </message>
   </context>
   <context>
@@ -616,20 +616,20 @@ while doing a left or right click and move the mouse up or down</source>
   <context>
     <name>Gui::Dialog::ButtonModel</name>
     <message>
-      <source>Button %1</source>
-      <translation>Кнопка %1</translation>
-    </message>
-    <message>
-      <source>Out Of Range</source>
-      <translation>Поза межами припустимого діапазону</translation>
-    </message>
-    <message>
       <source> &quot;</source>
       <translation> &quot;</translation>
     </message>
     <message>
       <source>&quot;</source>
       <translation>&quot;</translation>
+    </message>
+    <message>
+      <source>Button %1</source>
+      <translation>Кнопка %1</translation>
+    </message>
+    <message>
+      <source>Out Of Range</source>
+      <translation>Поза межами припустимого діапазону</translation>
     </message>
   </context>
   <context>
@@ -674,12 +674,12 @@ while doing a left or right click and move the mouse up or down</source>
       <translation>Відсікання по X</translation>
     </message>
     <message>
-      <source>Flip</source>
-      <translation>Перевернути</translation>
-    </message>
-    <message>
       <source>Offset</source>
       <translation>Зміщення</translation>
+    </message>
+    <message>
+      <source>Flip</source>
+      <translation>Перевернути</translation>
     </message>
     <message>
       <source>Clipping Y</source>
@@ -720,16 +720,28 @@ while doing a left or right click and move the mouse up or down</source>
       <translation>Поворотний перегляд</translation>
     </message>
     <message>
+      <source>Angle</source>
+      <translation>Кут</translation>
+    </message>
+    <message>
+      <source>-90°</source>
+      <translation>-90°</translation>
+    </message>
+    <message>
+      <source>90°</source>
+      <translation>90°</translation>
+    </message>
+    <message>
       <source>Speed</source>
       <translation>Швидкість</translation>
     </message>
     <message>
-      <source>Maximum</source>
-      <translation>Максимум</translation>
-    </message>
-    <message>
       <source>Minimum</source>
       <translation>Мінімум</translation>
+    </message>
+    <message>
+      <source>Maximum</source>
+      <translation>Максимум</translation>
     </message>
     <message>
       <source>Fullscreen</source>
@@ -744,28 +756,16 @@ while doing a left or right click and move the mouse up or down</source>
       <translation> с</translation>
     </message>
     <message>
-      <source>Angle</source>
-      <translation>Кут</translation>
-    </message>
-    <message>
-      <source>90°</source>
-      <translation>90°</translation>
-    </message>
-    <message>
-      <source>-90°</source>
-      <translation>-90°</translation>
-    </message>
-    <message>
       <source>Play</source>
       <translation>Відтворити</translation>
     </message>
     <message>
-      <source>Stop</source>
-      <translation>Стоп</translation>
-    </message>
-    <message>
       <source>Close</source>
       <translation>Закрити</translation>
+    </message>
+    <message>
+      <source>Stop</source>
+      <translation>Стоп</translation>
     </message>
   </context>
   <context>
@@ -840,24 +840,24 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Авторизація</translation>
     </message>
     <message>
-      <source>Password:</source>
-      <translation>Пароль:</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Username:</source>
-      <translation>Імʼя користувача:</translation>
-    </message>
-    <message>
       <source>Site:</source>
       <translation>Веб-сайт:</translation>
     </message>
     <message>
       <source>%1 at %2</source>
       <translation>%1 на %2</translation>
+    </message>
+    <message>
+      <source>Username:</source>
+      <translation>Імʼя користувача:</translation>
+    </message>
+    <message>
+      <source>Password:</source>
+      <translation>Пароль:</translation>
+    </message>
+    <message>
+      <source/>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -927,32 +927,32 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Макрос:</translation>
     </message>
     <message>
-      <source>...</source>
-      <translation type="unfinished">...</translation>
-    </message>
-    <message>
-      <source>Pixmap</source>
-      <translation>Малюнок</translation>
-    </message>
-    <message>
-      <source>Accelerator:</source>
-      <translation>Прискорювач:</translation>
-    </message>
-    <message>
-      <source>What&apos;s this:</source>
-      <translation>Що це?:</translation>
-    </message>
-    <message>
-      <source>Status text:</source>
-      <translation>Текст стану:</translation>
+      <source>Menu text:</source>
+      <translation>Текст меню:</translation>
     </message>
     <message>
       <source>Tool tip:</source>
       <translation>Підказка:</translation>
     </message>
     <message>
-      <source>Menu text:</source>
-      <translation>Текст меню:</translation>
+      <source>Status text:</source>
+      <translation>Текст стану:</translation>
+    </message>
+    <message>
+      <source>What&apos;s this:</source>
+      <translation>Що це?:</translation>
+    </message>
+    <message>
+      <source>Accelerator:</source>
+      <translation>Прискорювач:</translation>
+    </message>
+    <message>
+      <source>Pixmap</source>
+      <translation>Малюнок</translation>
+    </message>
+    <message>
+      <source>...</source>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <source>Add</source>
@@ -1043,10 +1043,6 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Клавіатура</translation>
     </message>
     <message>
-      <source>Description:</source>
-      <translation>Опис:</translation>
-    </message>
-    <message>
       <source>&amp;Category:</source>
       <translation>&amp;Категорія:</translation>
     </message>
@@ -1075,6 +1071,10 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Alt+A</translation>
     </message>
     <message>
+      <source>Clear</source>
+      <translation>Очистити</translation>
+    </message>
+    <message>
       <source>&amp;Reset</source>
       <translation>&amp;Скинути</translation>
     </message>
@@ -1091,12 +1091,12 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Alt+S</translation>
     </message>
     <message>
-      <source/>
-      <translation type="unfinished"/>
+      <source>Description:</source>
+      <translation>Опис:</translation>
     </message>
     <message>
-      <source>Clear</source>
-      <translation>Очистити</translation>
+      <source/>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -1118,12 +1118,12 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Визначені декілька скорочень</translation>
     </message>
     <message>
-      <source>Already defined shortcut</source>
-      <translation>Скорочення вже призначено</translation>
-    </message>
-    <message>
       <source>The shortcut &apos;%1&apos; is defined more than once. This could result in unexpected behaviour.</source>
       <translation>Комбінація клавіш &apos;%1&apos; визначена більше одного разу. Це може призвести до несподіваної поведінки.</translation>
+    </message>
+    <message>
+      <source>Already defined shortcut</source>
+      <translation>Скорочення вже призначено</translation>
     </message>
     <message>
       <source>The shortcut &apos;%1&apos; is already assigned to &apos;%2&apos;.</source>
@@ -1148,8 +1148,16 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Панелі інструментів</translation>
     </message>
     <message>
-      <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; The changes become active the next time you load the appropriate workbench&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Примітка:&lt;/span&gt; Зміни будуть активовані при наступному завантаженні відповідного робочого середовища&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>New...</source>
+      <translation>Новий...</translation>
+    </message>
+    <message>
+      <source>Rename...</source>
+      <translation>Перейменувати...</translation>
+    </message>
+    <message>
+      <source>Delete</source>
+      <translation>Видалити</translation>
     </message>
     <message>
       <source>Move right</source>
@@ -1168,14 +1176,6 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>&lt;b&gt;Переміщення обраного елемента на один рівень вгору.&lt;/b&gt;&lt;p&gt;Це також призведе до зміни рівня батьківського елемента.&lt;/p&gt;</translation>
     </message>
     <message>
-      <source>Move down</source>
-      <translation>Перемістити вниз</translation>
-    </message>
-    <message>
-      <source>&lt;b&gt;Move the selected item down.&lt;/b&gt;&lt;p&gt;The item will be moved within the hierarchy level.&lt;/p&gt;</source>
-      <translation>&lt;b&gt;Перемістити обраний елемент вниз.&lt;/b&gt;&lt;p&gt;Елемент буде переміщено в межах ієрархії рівня.&lt;/p&gt;</translation>
-    </message>
-    <message>
       <source>Move up</source>
       <translation>Перемістити вгору</translation>
     </message>
@@ -1184,16 +1184,20 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>&lt;b&gt;Перемістити обраний елемент вгору.&lt;/b&gt;&lt;p&gt;Елемент буде переміщено в межах ієрархії рівня.&lt;/p&gt;</translation>
     </message>
     <message>
-      <source>New...</source>
-      <translation>Новий...</translation>
+      <source>Move down</source>
+      <translation>Перемістити вниз</translation>
     </message>
     <message>
-      <source>Rename...</source>
-      <translation>Перейменувати...</translation>
+      <source>&lt;b&gt;Move the selected item down.&lt;/b&gt;&lt;p&gt;The item will be moved within the hierarchy level.&lt;/p&gt;</source>
+      <translation>&lt;b&gt;Перемістити обраний елемент вниз.&lt;/b&gt;&lt;p&gt;Елемент буде переміщено в межах ієрархії рівня.&lt;/p&gt;</translation>
     </message>
     <message>
-      <source>Delete</source>
-      <translation>Видалити</translation>
+      <source>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Note:&lt;/span&gt; The changes become active the next time you load the appropriate workbench&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation>&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;/head&gt;&lt;body style=&quot; white-space: pre-wrap; font-family:MS Shell Dlg 2; font-size:7.8pt; font-weight:400; font-style:normal; text-decoration:none;&quot;&gt;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Примітка:&lt;/span&gt; Зміни будуть активовані при наступному завантаженні відповідного робочого середовища&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+      <source>Global</source>
+      <translation>Глобальна</translation>
     </message>
     <message>
       <source>Icon</source>
@@ -1206,6 +1210,10 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <message>
       <source>&lt;Separator&gt;</source>
       <translation>&lt;Розділювач&gt;</translation>
+    </message>
+    <message>
+      <source>%1 module not loaded</source>
+      <translation>Модуль %1 не завантажено</translation>
     </message>
     <message>
       <source>New toolbar</source>
@@ -1230,14 +1238,6 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <message>
       <source/>
       <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Global</source>
-      <translation>Глобальна</translation>
-    </message>
-    <message>
-      <source>%1 module not loaded</source>
-      <translation>Модуль %1 не завантажено</translation>
     </message>
   </context>
   <context>
@@ -1269,6 +1269,10 @@ If this is not ticked, then the property must be uniquely named, and it is acces
   <context>
     <name>Gui::Dialog::DlgCustomizeSpaceball</name>
     <message>
+      <source>Spaceball Buttons</source>
+      <translation>Кнопки 3D-миші Spaceball</translation>
+    </message>
+    <message>
       <source>No Spaceball Present</source>
       <translation>3D-миші Spaceball не виявлено</translation>
     </message>
@@ -1277,16 +1281,12 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Кнопки</translation>
     </message>
     <message>
-      <source>Print Reference</source>
-      <translation>Друкувати посилання</translation>
-    </message>
-    <message>
-      <source>Spaceball Buttons</source>
-      <translation>Кнопки 3D-миші Spaceball</translation>
-    </message>
-    <message>
       <source>Reset</source>
       <translation>Скинути</translation>
+    </message>
+    <message>
+      <source>Print Reference</source>
+      <translation>Друкувати посилання</translation>
     </message>
   </context>
   <context>
@@ -1296,20 +1296,16 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Показати властивості</translation>
     </message>
     <message>
-      <source>Display</source>
-      <translation>Показ</translation>
+      <source>Viewing mode</source>
+      <translation>Режим перегляду</translation>
     </message>
     <message>
-      <source>Transparency:</source>
-      <translation>Прозорість:</translation>
+      <source>Document window:</source>
+      <translation>Вікно документа:</translation>
     </message>
     <message>
-      <source>Line width:</source>
-      <translation>Ширина лінії:</translation>
-    </message>
-    <message>
-      <source>Point size:</source>
-      <translation>Розмір пункту:</translation>
+      <source>Plot mode:</source>
+      <translation>Режим друку:</translation>
     </message>
     <message>
       <source>Material</source>
@@ -1320,36 +1316,40 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>...</translation>
     </message>
     <message>
-      <source>Viewing mode</source>
-      <translation>Режим перегляду</translation>
-    </message>
-    <message>
-      <source>Plot mode:</source>
-      <translation>Режим друку:</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Line transparency:</source>
-      <translation>Прозорість лінії:</translation>
-    </message>
-    <message>
-      <source>Line color:</source>
-      <translation>Колір лінії:</translation>
+      <source>Color plot:</source>
+      <translation>Кольоровий друк:</translation>
     </message>
     <message>
       <source>Shape color:</source>
       <translation>Колір фігури:</translation>
     </message>
     <message>
-      <source>Color plot:</source>
-      <translation>Кольоровий друк:</translation>
+      <source>Line color:</source>
+      <translation>Колір лінії:</translation>
     </message>
     <message>
-      <source>Document window:</source>
-      <translation>Вікно документа:</translation>
+      <source>Display</source>
+      <translation>Показ</translation>
+    </message>
+    <message>
+      <source>Point size:</source>
+      <translation>Розмір пункту:</translation>
+    </message>
+    <message>
+      <source>Line width:</source>
+      <translation>Ширина лінії:</translation>
+    </message>
+    <message>
+      <source>Transparency:</source>
+      <translation>Прозорість:</translation>
+    </message>
+    <message>
+      <source>Line transparency:</source>
+      <translation>Прозорість лінії:</translation>
+    </message>
+    <message>
+      <source/>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -1454,8 +1454,20 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Параметри</translation>
     </message>
     <message>
+      <source>Code lines will be numbered</source>
+      <translation>Рядки коду буде пронумеровано</translation>
+    </message>
+    <message>
       <source>Enable line numbers</source>
       <translation>Показати нумерацію рядків</translation>
+    </message>
+    <message>
+      <source>The cursor shape will be a block</source>
+      <translation>Форма курсору буде блоком</translation>
+    </message>
+    <message>
+      <source>Enable block cursor</source>
+      <translation>Ввімкнути курсор у вигляді блоку</translation>
     </message>
     <message>
       <source>Enable folding</source>
@@ -1466,44 +1478,16 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Відступ</translation>
     </message>
     <message>
-      <source>Insert spaces</source>
-      <translation>Вставляти пробіли</translation>
-    </message>
-    <message>
       <source>Tab size:</source>
       <translation>Розмір табуляції:</translation>
     </message>
     <message>
-      <source>Indent size:</source>
-      <translation>Розмір відступу:</translation>
-    </message>
-    <message>
-      <source>Keep tabs</source>
-      <translation>Залишати табулятори</translation>
-    </message>
-    <message>
-      <source>Family:</source>
-      <translation>Сімейство:</translation>
-    </message>
-    <message>
-      <source>Size:</source>
-      <translation>Розмір:</translation>
-    </message>
-    <message>
-      <source>Preview:</source>
-      <translation>Попередній перегляд:</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Pressing &lt;Tab&gt; will insert amount of defined indent size</source>
-      <translation>Натиснення &lt;Tab&gt; вставляє відступ визначеного розміру</translation>
-    </message>
-    <message>
       <source>Tabulator raster (how many spaces)</source>
       <translation>Розмір табулятора (скільки пробілів)</translation>
+    </message>
+    <message>
+      <source>Indent size:</source>
+      <translation>Розмір відступу:</translation>
     </message>
     <message>
       <source>How many spaces will be inserted when pressing &lt;Tab&gt;</source>
@@ -1514,36 +1498,52 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Натиснення &lt;Tab&gt; вставляє табулятор з визначеним розміром табуляції</translation>
     </message>
     <message>
-      <source>Display items</source>
-      <translation>Показати елементи</translation>
+      <source>Keep tabs</source>
+      <translation>Залишати табулятори</translation>
     </message>
     <message>
-      <source>Font size to be used for selected code type</source>
-      <translation>Розмір шрифту який буде застосовуватись для обраного типу коду</translation>
+      <source>Pressing &lt;Tab&gt; will insert amount of defined indent size</source>
+      <translation>Натиснення &lt;Tab&gt; вставляє відступ визначеного розміру</translation>
+    </message>
+    <message>
+      <source>Insert spaces</source>
+      <translation>Вставляти пробіли</translation>
+    </message>
+    <message>
+      <source>Display items</source>
+      <translation>Показати елементи</translation>
     </message>
     <message>
       <source>Color and font settings will be applied to selected type</source>
       <translation>Налаштування кольору і шрифту будуть застосовані до вибраного типу</translation>
     </message>
     <message>
+      <source>Family:</source>
+      <translation>Сімейство:</translation>
+    </message>
+    <message>
       <source>Font family to be used for selected code type</source>
       <translation>Сімейство шрифтів яке буде застосовуватись для обраного типу коду</translation>
+    </message>
+    <message>
+      <source>Size:</source>
+      <translation>Розмір:</translation>
+    </message>
+    <message>
+      <source>Font size to be used for selected code type</source>
+      <translation>Розмір шрифту який буде застосовуватись для обраного типу коду</translation>
     </message>
     <message>
       <source>Color:</source>
       <translation>Колір:</translation>
     </message>
     <message>
-      <source>Code lines will be numbered</source>
-      <translation>Рядки коду буде пронумеровано</translation>
+      <source>Preview:</source>
+      <translation>Попередній перегляд:</translation>
     </message>
     <message>
-      <source>The cursor shape will be a block</source>
-      <translation>Форма курсору буде блоком</translation>
-    </message>
-    <message>
-      <source>Enable block cursor</source>
-      <translation>Ввімкнути курсор у вигляді блоку</translation>
+      <source/>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -1551,18 +1551,6 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <message>
       <source>General</source>
       <translation>Загальні</translation>
-    </message>
-    <message>
-      <source>Start up</source>
-      <translation>Запуск</translation>
-    </message>
-    <message>
-      <source>Enable splash screen at start up</source>
-      <translation>Ввімкнути заставку при запуску</translation>
-    </message>
-    <message>
-      <source>Auto load module after start up:</source>
-      <translation>Автоматичне завантаження робочого середовища після запуску:</translation>
     </message>
     <message>
       <source>Language</source>
@@ -1573,77 +1561,8 @@ If this is not ticked, then the property must be uniquely named, and it is acces
       <translation>Змінити мову:</translation>
     </message>
     <message>
-      <source>Main window</source>
-      <translation>Головне вікно</translation>
-    </message>
-    <message>
-      <source>Size of recent file list</source>
-      <translation>Розмір списку останніх файлів</translation>
-    </message>
-    <message>
-      <source>Size of toolbar icons:</source>
-      <translation>Розмір піктограм на панелі інструментів:</translation>
-    </message>
-    <message>
-      <source>Enable tiled background</source>
-      <translation>Ввімкнути плитки на тлі</translation>
-    </message>
-    <message>
-      <source>Style sheet:</source>
-      <translation>Таблиця стилів:</translation>
-    </message>
-    <message>
       <source>Language of the application&apos;s user interface</source>
       <translation>Мова інтерфейсу користувача програми</translation>
-    </message>
-    <message>
-      <source>How many files should be listed in recent files list</source>
-      <translation>Скільки файлів має бути у списку останніх файлів</translation>
-    </message>
-    <message>
-      <source>Background of the main window will consist of tiles of a special image.
-See the FreeCAD Wiki for details about the image.</source>
-      <translation>Тло головного вікна складатиметься з плиток спеціального зображення.
-Для деталей щодо зображень див. у FreeCAD Wiki.</translation>
-    </message>
-    <message>
-      <source>Style sheet how user interface will look like</source>
-      <translation>Таблиця стилів як буде виглядати користувацький інтерфейс</translation>
-    </message>
-    <message>
-      <source>Choose your preference for toolbar icon size. You can adjust
-this according to your screen size or personal taste</source>
-      <translation>Оберіть ваші пераметри для розміру значка панелі інструментів. Ви можете налаштувати це
-у відповідності до розміру екрану або на власний смак</translation>
-    </message>
-    <message>
-      <source>Tree view mode:</source>
-      <translation>Режим показу ієрархії документа:</translation>
-    </message>
-    <message>
-      <source>Customize how tree view is shown in the panel (restart required).
-
-&apos;ComboView&apos;: combine tree view and property view into one panel.
-&apos;TreeView and PropertyView&apos;: split tree view and property view into separate panel.
-&apos;Both&apos;: keep all three panels, and you can have two sets of tree view and property view.</source>
-      <translation>Налаштовує, як ієрархія документа буде зображатись в панелі (вимагає перезапуску).
-
-&apos;Комбінований&apos;: комбінує Вид Ієрархії та Вид Властивостей в одній панелі.
-&apos;Вид Ієрархіі та Властивостей&apos;: розділення Виду Ієрархії та Виду Властивостей на окремі панелі.
-&apos;Перше та Друге&apos;: показує всі три панелі. Ви отримаєте два набори Ієрархії та Вид Властивостей.</translation>
-    </message>
-    <message>
-      <source>A Splash screen is a small loading window that is shown
-when FreeCAD is launching. If this option is checked, FreeCAD will
-display the splash screen</source>
-      <translation>Заставка - це маленьке вікно завантаження, яке показується при запуску FreeCAD. 
-Якщо ця опція відмічена, то FreeCAD буде показувати заставку</translation>
-    </message>
-    <message>
-      <source>Choose which workbench will be activated and shown
-after FreeCAD launches</source>
-      <translation>Оберіть, який робочий стіл буде активовано і показано
-після запуску FreeCAD</translation>
     </message>
     <message>
       <source>Number format:</source>
@@ -1698,6 +1617,28 @@ after FreeCAD launches</source>
       <translation>Відновити...</translation>
     </message>
     <message>
+      <source>Main window</source>
+      <translation>Головне вікно</translation>
+    </message>
+    <message>
+      <source>Size of recent file list</source>
+      <translation>Розмір списку останніх файлів</translation>
+    </message>
+    <message>
+      <source>How many files should be listed in recent files list</source>
+      <translation>Скільки файлів має бути у списку останніх файлів</translation>
+    </message>
+    <message>
+      <source>Background of the main window will consist of tiles of a special image.
+See the FreeCAD Wiki for details about the image.</source>
+      <translation>Тло головного вікна складатиметься з плиток спеціального зображення.
+Для деталей щодо зображень див. у FreeCAD Wiki.</translation>
+    </message>
+    <message>
+      <source>Enable tiled background</source>
+      <translation>Ввімкнути плитки на тлі</translation>
+    </message>
+    <message>
       <source>The text cursor will be blinking</source>
       <translation>Текстовий курсор буде миготіти</translation>
     </message>
@@ -1705,12 +1646,71 @@ after FreeCAD launches</source>
       <source>Enable cursor blinking</source>
       <translation>Дозволити миготіння курсору</translation>
     </message>
+    <message>
+      <source>Style sheet:</source>
+      <translation>Таблиця стилів:</translation>
+    </message>
+    <message>
+      <source>Style sheet how user interface will look like</source>
+      <translation>Таблиця стилів як буде виглядати користувацький інтерфейс</translation>
+    </message>
+    <message>
+      <source>Size of toolbar icons:</source>
+      <translation>Розмір піктограм на панелі інструментів:</translation>
+    </message>
+    <message>
+      <source>Choose your preference for toolbar icon size. You can adjust
+this according to your screen size or personal taste</source>
+      <translation>Оберіть ваші пераметри для розміру значка панелі інструментів. Ви можете налаштувати це
+у відповідності до розміру екрану або на власний смак</translation>
+    </message>
+    <message>
+      <source>Tree view mode:</source>
+      <translation>Режим показу ієрархії документа:</translation>
+    </message>
+    <message>
+      <source>Customize how tree view is shown in the panel (restart required).
+
+&apos;ComboView&apos;: combine tree view and property view into one panel.
+&apos;TreeView and PropertyView&apos;: split tree view and property view into separate panel.
+&apos;Both&apos;: keep all three panels, and you can have two sets of tree view and property view.</source>
+      <translation>Налаштовує, як ієрархія документа буде зображатись в панелі (вимагає перезапуску).
+
+&apos;Комбінований&apos;: комбінує Вид Ієрархії та Вид Властивостей в одній панелі.
+&apos;Вид Ієрархіі та Властивостей&apos;: розділення Виду Ієрархії та Виду Властивостей на окремі панелі.
+&apos;Перше та Друге&apos;: показує всі три панелі. Ви отримаєте два набори Ієрархії та Вид Властивостей.</translation>
+    </message>
+    <message>
+      <source>Start up</source>
+      <translation>Запуск</translation>
+    </message>
+    <message>
+      <source>Auto load module after start up:</source>
+      <translation>Автоматичне завантаження робочого середовища після запуску:</translation>
+    </message>
+    <message>
+      <source>Choose which workbench will be activated and shown
+after FreeCAD launches</source>
+      <translation>Оберіть, який робочий стіл буде активовано і показано
+після запуску FreeCAD</translation>
+    </message>
+    <message>
+      <source>A Splash screen is a small loading window that is shown
+when FreeCAD is launching. If this option is checked, FreeCAD will
+display the splash screen</source>
+      <translation>Заставка - це маленьке вікно завантаження, яке показується при запуску FreeCAD. 
+Якщо ця опція відмічена, то FreeCAD буде показувати заставку</translation>
+    </message>
+    <message>
+      <source>Enable splash screen at start up</source>
+      <translation>Ввімкнути заставку при запуску</translation>
+    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgGeneralImp</name>
     <message>
-      <source>No style sheet</source>
-      <translation>Таблиці стилів немає</translation>
+      <source>Manage preference packs</source>
+      <translation>Керування наборами налаштувань</translation>
     </message>
     <message>
       <source>Small (%1px)</source>
@@ -1745,8 +1745,8 @@ after FreeCAD launches</source>
       <translation>Обидві</translation>
     </message>
     <message>
-      <source>Manage preference packs</source>
-      <translation>Керування наборами налаштувань</translation>
+      <source>No style sheet</source>
+      <translation>Таблиці стилів немає</translation>
     </message>
     <message>
       <source>Preference Pack Name</source>
@@ -1794,6 +1794,14 @@ after FreeCAD launches</source>
       <translation>Назва макросу:</translation>
     </message>
     <message>
+      <source>User macros</source>
+      <translation>Користувацькі макроси</translation>
+    </message>
+    <message>
+      <source>System macros</source>
+      <translation>Системні макроси</translation>
+    </message>
+    <message>
       <source>Execute</source>
       <translation>Виконати</translation>
     </message>
@@ -1814,18 +1822,6 @@ after FreeCAD launches</source>
       <translation>Правка</translation>
     </message>
     <message>
-      <source>User macros</source>
-      <translation>Користувацькі макроси</translation>
-    </message>
-    <message>
-      <source>System macros</source>
-      <translation>Системні макроси</translation>
-    </message>
-    <message>
-      <source>User macros location:</source>
-      <translation>Розташування користувацьких макросів:</translation>
-    </message>
-    <message>
       <source>Rename</source>
       <translation>Перейменувати</translation>
     </message>
@@ -1834,12 +1830,12 @@ after FreeCAD launches</source>
       <translation>Створити копію</translation>
     </message>
     <message>
-      <source>Toolbar</source>
-      <translation>Панель інструментів</translation>
-    </message>
-    <message>
       <source>Launch a guide on how to set up a macro in a custom global toolbar.</source>
       <translation>Запускає помічника з налаштування макросу в користувацькій глобальній панелі інструментів.</translation>
+    </message>
+    <message>
+      <source>Toolbar</source>
+      <translation>Панель інструментів</translation>
     </message>
     <message>
       <source>Open Addon Manager where macros created by the community and other addons can be downloaded.</source>
@@ -1849,12 +1845,20 @@ after FreeCAD launches</source>
       <source>Download</source>
       <translation>Завантажити</translation>
     </message>
+    <message>
+      <source>User macros location:</source>
+      <translation>Розташування користувацьких макросів:</translation>
+    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgMacroExecuteImp</name>
     <message>
       <source>Macros</source>
       <translation>Макроси</translation>
+    </message>
+    <message>
+      <source>Read-only</source>
+      <translation>Тільки для читання</translation>
     </message>
     <message>
       <source>Macro file</source>
@@ -1875,14 +1879,6 @@ This file already exists.</source>
 Цей файл вже існує.</translation>
     </message>
     <message>
-      <source>Delete macro</source>
-      <translation>Видалити макрос</translation>
-    </message>
-    <message>
-      <source>Do you really want to delete the macro &apos;%1&apos;?</source>
-      <translation>Ви дійсно бажаєте видалити макрос &apos;%1&apos;?</translation>
-    </message>
-    <message>
       <source>Cannot create file</source>
       <translation>Не вдається створити файл</translation>
     </message>
@@ -1891,46 +1887,12 @@ This file already exists.</source>
       <translation>Помилка створення файлу &apos;%1&apos;.</translation>
     </message>
     <message>
-      <source>Read-only</source>
-      <translation>Тільки для читання</translation>
+      <source>Delete macro</source>
+      <translation>Видалити макрос</translation>
     </message>
     <message>
-      <source>Renaming Macro File</source>
-      <translation>Перейменування файлу макросу</translation>
-    </message>
-    <message>
-      <source>Enter new name:</source>
-      <translation>Введіть нове імʼя:</translation>
-    </message>
-    <message>
-      <source>&apos;%1&apos;
- already exists.</source>
-      <translation>&apos;%1&apos;
- вже існує.</translation>
-    </message>
-    <message>
-      <source>Rename Failed</source>
-      <translation>Не вдалося перейменувати</translation>
-    </message>
-    <message>
-      <source>Failed to rename to &apos;%1&apos;.
-Perhaps a file permission error?</source>
-      <translation>Помилка перейменування &apos;%1&apos;.
-Можливо помилка доступу до файлу?</translation>
-    </message>
-    <message>
-      <source>Duplicate Macro</source>
-      <translation>Створити копію макроса</translation>
-    </message>
-    <message>
-      <source>Duplicate Failed</source>
-      <translation>Не вдалося створити копію</translation>
-    </message>
-    <message>
-      <source>Failed to duplicate to &apos;%1&apos;.
-Perhaps a file permission error?</source>
-      <translation>Помилка дублювання &apos;%1&apos;.
-Можливо помилка доступу до файлу?</translation>
+      <source>Do you really want to delete the macro &apos;%1&apos;?</source>
+      <translation>Ви дійсно бажаєте видалити макрос &apos;%1&apos;?</translation>
     </message>
     <message>
       <source>Do not show again</source>
@@ -1974,6 +1936,44 @@ Note: your changes will be applied when you next switch workbenches
       <source>Walkthrough instructions: Click New, then right arrow (-&gt;) button, then Close.</source>
       <translation>Покрокова Інструкція; Натисніть Новий, потім праву кнопку зі стрілкою (&gt;), потім Закрити.</translation>
     </message>
+    <message>
+      <source>Renaming Macro File</source>
+      <translation>Перейменування файлу макросу</translation>
+    </message>
+    <message>
+      <source>Enter new name:</source>
+      <translation>Введіть нове імʼя:</translation>
+    </message>
+    <message>
+      <source>&apos;%1&apos;
+ already exists.</source>
+      <translation>&apos;%1&apos;
+ вже існує.</translation>
+    </message>
+    <message>
+      <source>Rename Failed</source>
+      <translation>Не вдалося перейменувати</translation>
+    </message>
+    <message>
+      <source>Failed to rename to &apos;%1&apos;.
+Perhaps a file permission error?</source>
+      <translation>Помилка перейменування &apos;%1&apos;.
+Можливо помилка доступу до файлу?</translation>
+    </message>
+    <message>
+      <source>Duplicate Macro</source>
+      <translation>Створити копію макроса</translation>
+    </message>
+    <message>
+      <source>Duplicate Failed</source>
+      <translation>Не вдалося створити копію</translation>
+    </message>
+    <message>
+      <source>Failed to duplicate to &apos;%1&apos;.
+Perhaps a file permission error?</source>
+      <translation>Помилка дублювання &apos;%1&apos;.
+Можливо помилка доступу до файлу?</translation>
+    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgMacroRecord</name>
@@ -1984,14 +1984,6 @@ Note: your changes will be applied when you next switch workbenches
     <message>
       <source>Macro name:</source>
       <translation>Назва макросу:</translation>
-    </message>
-    <message>
-      <source>Stop</source>
-      <translation>Стоп</translation>
-    </message>
-    <message>
-      <source>Cancel</source>
-      <translation>Скасувати</translation>
     </message>
     <message>
       <source>Macro path:</source>
@@ -2005,6 +1997,14 @@ Note: your changes will be applied when you next switch workbenches
       <source>Record</source>
       <translation>Запис</translation>
     </message>
+    <message>
+      <source>Stop</source>
+      <translation>Стоп</translation>
+    </message>
+    <message>
+      <source>Cancel</source>
+      <translation>Скасувати</translation>
+    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgMacroRecordImp</name>
@@ -2017,6 +2017,10 @@ Note: your changes will be applied when you next switch workbenches
       <translation>Спочатку вкажіть місце для збереження.</translation>
     </message>
     <message>
+      <source>The macro directory doesn&apos;t exist. Please, choose another one.</source>
+      <translation>Тека макросів не існує. Виберіть іншу.</translation>
+    </message>
+    <message>
       <source>Existing macro</source>
       <translation>Наявні макроси</translation>
     </message>
@@ -2025,16 +2029,12 @@ Note: your changes will be applied when you next switch workbenches
       <translation>Макрос &apos;%1&apos; вже існує. Бажаєте перезаписати?</translation>
     </message>
     <message>
-      <source>The macro directory doesn&apos;t exist. Please, choose another one.</source>
-      <translation>Тека макросів не існує. Виберіть іншу.</translation>
+      <source>You have no write permission for the directory. Please, choose another one.</source>
+      <translation>Ви не маєте права на запис до цього каталогу. Будь ласка, оберіть інший.</translation>
     </message>
     <message>
       <source>Choose macro directory</source>
       <translation>Вибрати каталог макросів</translation>
-    </message>
-    <message>
-      <source>You have no write permission for the directory. Please, choose another one.</source>
-      <translation>Ви не маєте права на запис до цього каталогу. Будь ласка, оберіть інший.</translation>
     </message>
   </context>
   <context>
@@ -2048,8 +2048,16 @@ Note: your changes will be applied when you next switch workbenches
       <translation>Матеріал</translation>
     </message>
     <message>
+      <source>Ambient color:</source>
+      <translation>Колір оточення:</translation>
+    </message>
+    <message>
       <source>Diffuse color:</source>
       <translation>Колір дифузії:</translation>
+    </message>
+    <message>
+      <source>Emissive color:</source>
+      <translation>Колір емісії:</translation>
     </message>
     <message>
       <source>Specular color:</source>
@@ -2064,16 +2072,8 @@ Note: your changes will be applied when you next switch workbenches
       <translation type="unfinished">%</translation>
     </message>
     <message>
-      <source>Ambient color:</source>
-      <translation>Колір оточення:</translation>
-    </message>
-    <message>
       <source/>
       <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Emissive color:</source>
-      <translation>Колір емісії:</translation>
     </message>
   </context>
   <context>
@@ -2094,6 +2094,10 @@ Note: your changes will be applied when you next switch workbenches
   <context>
     <name>Gui::Dialog::DlgOnlineHelpImp</name>
     <message>
+      <source>HTML files</source>
+      <translation>Файли HTML</translation>
+    </message>
+    <message>
       <source>Access denied</source>
       <translation>Доступ заборонено</translation>
     </message>
@@ -2105,32 +2109,12 @@ Specify another directory, please.</source>
 
 Будь ласка, вкажіть іншу теку.</translation>
     </message>
-    <message>
-      <source>HTML files</source>
-      <translation>Файли HTML</translation>
-    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgParameter</name>
     <message>
       <source>Parameter Editor</source>
       <translation>Редактор Параметрів</translation>
-    </message>
-    <message>
-      <source>Save to disk</source>
-      <translation>Зберегти на диск</translation>
-    </message>
-    <message>
-      <source>Alt+C</source>
-      <translation>Alt+C</translation>
-    </message>
-    <message>
-      <source>&amp;Close</source>
-      <translation>&amp;Закрити</translation>
-    </message>
-    <message>
-      <source>Find...</source>
-      <translation>Знайти...</translation>
     </message>
     <message>
       <source>Sorted</source>
@@ -2147,6 +2131,22 @@ Specify another directory, please.</source>
     <message>
       <source>Search Group</source>
       <translation>Пошук Групи</translation>
+    </message>
+    <message>
+      <source>Find...</source>
+      <translation>Знайти...</translation>
+    </message>
+    <message>
+      <source>Save to disk</source>
+      <translation>Зберегти на диск</translation>
+    </message>
+    <message>
+      <source>Alt+C</source>
+      <translation>Alt+C</translation>
+    </message>
+    <message>
+      <source>&amp;Close</source>
+      <translation>&amp;Закрити</translation>
     </message>
   </context>
   <context>
@@ -2211,8 +2211,16 @@ Specify another directory, please.</source>
       <translation>Значення</translation>
     </message>
     <message>
+      <source>System parameter</source>
+      <translation>Системні параметри</translation>
+    </message>
+    <message>
       <source>User parameter</source>
       <translation>Параметри користувача</translation>
+    </message>
+    <message>
+      <source>Search Group</source>
+      <translation>Пошук Групи</translation>
     </message>
     <message>
       <source>Invalid input</source>
@@ -2221,14 +2229,6 @@ Specify another directory, please.</source>
     <message>
       <source>Invalid key name &apos;%1&apos;</source>
       <translation>Невірне імʼя ключа &apos;%1&apos;</translation>
-    </message>
-    <message>
-      <source>System parameter</source>
-      <translation>Системні параметри</translation>
-    </message>
-    <message>
-      <source>Search Group</source>
-      <translation>Пошук Групи</translation>
     </message>
   </context>
   <context>
@@ -2287,10 +2287,6 @@ Specify another directory, please.</source>
   <context>
     <name>Gui::Dialog::DlgPreferencesImp</name>
     <message>
-      <source>Wrong parameter</source>
-      <translation>Неправильний параметр</translation>
-    </message>
-    <message>
       <source>Clear user settings</source>
       <translation>Очищення настроюань користувача</translation>
     </message>
@@ -2301,6 +2297,10 @@ Specify another directory, please.</source>
     <message>
       <source>If you agree all your settings will be cleared.</source>
       <translation>Якщо Ви згодні, всі ваші настроювання буде знищено.</translation>
+    </message>
+    <message>
+      <source>Wrong parameter</source>
+      <translation>Неправильний параметр</translation>
     </message>
   </context>
   <context>
@@ -2318,40 +2318,36 @@ Specify another directory, please.</source>
       <translation>Назва:</translation>
     </message>
     <message>
-      <source>Commen&amp;t:</source>
-      <translation>Коментар:</translation>
-    </message>
-    <message>
       <source>Path:</source>
       <translation>Шлях:</translation>
     </message>
     <message>
-      <source>&amp;Last modified by:</source>
-      <translation>І останні зміни внесені:</translation>
+      <source>UUID:</source>
+      <translation>UUID:</translation>
+    </message>
+    <message>
+      <source>Program version:</source>
+      <translation>Версія програми:</translation>
     </message>
     <message>
       <source>Created &amp;by:</source>
       <translation>Створено:</translation>
     </message>
     <message>
-      <source>Com&amp;pany:</source>
-      <translation>Компанія:</translation>
+      <source>Creation &amp;date:</source>
+      <translation>Дата створення:</translation>
+    </message>
+    <message>
+      <source>&amp;Last modified by:</source>
+      <translation>І останні зміни внесені:</translation>
     </message>
     <message>
       <source>Last &amp;modification date:</source>
       <translation>Дата останньої зміни:</translation>
     </message>
     <message>
-      <source>Creation &amp;date:</source>
-      <translation>Дата створення:</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>UUID:</source>
-      <translation>UUID:</translation>
+      <source>Com&amp;pany:</source>
+      <translation>Компанія:</translation>
     </message>
     <message>
       <source>License information:</source>
@@ -2366,8 +2362,12 @@ Specify another directory, please.</source>
       <translation>Відкрити у браузері</translation>
     </message>
     <message>
-      <source>Program version:</source>
-      <translation>Версія програми:</translation>
+      <source>Commen&amp;t:</source>
+      <translation>Коментар:</translation>
+    </message>
+    <message>
+      <source/>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -2405,6 +2405,10 @@ Specify another directory, please.</source>
       <translation>Завантажити файл проєкту після створення</translation>
     </message>
     <message>
+      <source>Project file</source>
+      <translation>Файл проєкту</translation>
+    </message>
+    <message>
       <source>Empty source</source>
       <translation>Порожній вихідний файл</translation>
     </message>
@@ -2420,16 +2424,24 @@ Specify another directory, please.</source>
       <source>No destination is defined.</source>
       <translation>Не визначено теки призначення.</translation>
     </message>
-    <message>
-      <source>Project file</source>
-      <translation>Файл проєкту</translation>
-    </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgPropertyLink</name>
     <message>
       <source>Link</source>
       <translation>Посилання</translation>
+    </message>
+    <message>
+      <source>Filter by type</source>
+      <translation>Фільтрувати за типом</translation>
+    </message>
+    <message>
+      <source>If enabled, then 3D view selection will be synchronized with full object hierarchy.</source>
+      <translation>Якщо ввімкнено, то виділення в 3D виді буде синхронізоване з повною ієрархією обʼєктів.</translation>
+    </message>
+    <message>
+      <source>Sync sub-object selection</source>
+      <translation>Синхронізувати вибір субоб’єкту</translation>
     </message>
     <message>
       <source>Search</source>
@@ -2440,24 +2452,12 @@ Specify another directory, please.</source>
       <translation>Шаблон пошуку для фільтрації результатів вище</translation>
     </message>
     <message>
-      <source>Filter by type</source>
-      <translation>Фільтрувати за типом</translation>
-    </message>
-    <message>
-      <source>Sync sub-object selection</source>
-      <translation>Синхронізувати вибір субоб’єкту</translation>
-    </message>
-    <message>
       <source>Reset</source>
       <translation>Скинути</translation>
     </message>
     <message>
       <source>Clear</source>
       <translation>Очистити</translation>
-    </message>
-    <message>
-      <source>If enabled, then 3D view selection will be synchronized with full object hierarchy.</source>
-      <translation>Якщо ввімкнено, то виділення в 3D виді буде синхронізоване з повною ієрархією обʼєктів.</translation>
     </message>
   </context>
   <context>
@@ -2471,64 +2471,36 @@ Specify another directory, please.</source>
       <translation>Вивід</translation>
     </message>
     <message>
-      <source>Record log messages</source>
-      <translation>Запис повідомлень журналу (log)</translation>
+      <source>Normal messages will be recorded</source>
+      <translation>Записує звичайні повідомлення</translation>
     </message>
     <message>
-      <source>Record warnings</source>
-      <translation>Запис попереджень</translation>
-    </message>
-    <message>
-      <source>Record error messages</source>
-      <translation>Запис повідомлень про помилки</translation>
-    </message>
-    <message>
-      <source>Colors</source>
-      <translation>Кольори</translation>
-    </message>
-    <message>
-      <source>Normal messages:</source>
-      <translation>Звичайні повідомлення:</translation>
-    </message>
-    <message>
-      <source>Log messages:</source>
-      <translation>Повідомлення журналу:</translation>
-    </message>
-    <message>
-      <source>Warnings:</source>
-      <translation>Попередження:</translation>
-    </message>
-    <message>
-      <source>Errors:</source>
-      <translation>Помилки:</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Redirect internal Python errors to report view</source>
-      <translation>Перенаправити внутрішні помилки Python у Вид Звіту</translation>
-    </message>
-    <message>
-      <source>Redirect internal Python output to report view</source>
-      <translation>Перенаправити внутрішній вивод Python до Виду Звіту</translation>
-    </message>
-    <message>
-      <source>Python interpreter</source>
-      <translation>Інтерпретатор Python</translation>
+      <source>Record normal messages</source>
+      <translation>Запис звичайних повідомлень</translation>
     </message>
     <message>
       <source>Log messages will be recorded</source>
       <translation>Записує повідомлення журналу</translation>
     </message>
     <message>
+      <source>Record log messages</source>
+      <translation>Запис повідомлень журналу (log)</translation>
+    </message>
+    <message>
       <source>Warnings will be recorded</source>
       <translation>Записує Попередження</translation>
     </message>
     <message>
+      <source>Record warnings</source>
+      <translation>Запис попереджень</translation>
+    </message>
+    <message>
       <source>Error messages will be recorded</source>
       <translation>Записує повідомлення про помилки</translation>
+    </message>
+    <message>
+      <source>Record error messages</source>
+      <translation>Запис повідомлень про помилки</translation>
     </message>
     <message>
       <source>When an error has occurred, the Report View dialog becomes visible
@@ -2571,34 +2543,6 @@ on-screen while displaying the log message</source>
       <translation>Показати Вид Звіту для повідомлень журналу</translation>
     </message>
     <message>
-      <source>Font color for normal messages in Report view panel</source>
-      <translation>Встановлює колір шрифту для звичайних повідомлень у панелі Вид Звіту</translation>
-    </message>
-    <message>
-      <source>Font color for log messages in Report view panel</source>
-      <translation>Встановлює колір шрифту для повідомлень журналу у панелі Вид Звіту</translation>
-    </message>
-    <message>
-      <source>Font color for warning messages in Report view panel</source>
-      <translation>Встановлює колір шрифту для попереджень у панелі Вид Звіту</translation>
-    </message>
-    <message>
-      <source>Font color for error messages in Report view panel</source>
-      <translation>Встановлює колір шрифту для повідомлень про помилки у панелі Вид Звіту</translation>
-    </message>
-    <message>
-      <source>Internal Python output will be redirected
-from Python console to Report view panel</source>
-      <translation>Перенаправляє внутрішні повідомлення Python 
-з консолі Python на панель Вид Звіту</translation>
-    </message>
-    <message>
-      <source>Internal Python error messages will be redirected
-from Python console to Report view panel</source>
-      <translation>Перенаправляє внутрішні повідомлення про помилки Python
-з консолі Python на панель Вид Звіту</translation>
-    </message>
-    <message>
       <source>Include a timecode for each report</source>
       <translation>Додає мітку часу до кожного повідомлення</translation>
     </message>
@@ -2607,12 +2551,68 @@ from Python console to Report view panel</source>
       <translation>Додати мітку часу до кожного запису</translation>
     </message>
     <message>
-      <source>Normal messages will be recorded</source>
-      <translation>Записує звичайні повідомлення</translation>
+      <source>Colors</source>
+      <translation>Кольори</translation>
     </message>
     <message>
-      <source>Record normal messages</source>
-      <translation>Запис звичайних повідомлень</translation>
+      <source>Normal messages:</source>
+      <translation>Звичайні повідомлення:</translation>
+    </message>
+    <message>
+      <source>Font color for normal messages in Report view panel</source>
+      <translation>Встановлює колір шрифту для звичайних повідомлень у панелі Вид Звіту</translation>
+    </message>
+    <message>
+      <source>Log messages:</source>
+      <translation>Повідомлення журналу:</translation>
+    </message>
+    <message>
+      <source>Font color for log messages in Report view panel</source>
+      <translation>Встановлює колір шрифту для повідомлень журналу у панелі Вид Звіту</translation>
+    </message>
+    <message>
+      <source>Warnings:</source>
+      <translation>Попередження:</translation>
+    </message>
+    <message>
+      <source>Font color for warning messages in Report view panel</source>
+      <translation>Встановлює колір шрифту для попереджень у панелі Вид Звіту</translation>
+    </message>
+    <message>
+      <source>Errors:</source>
+      <translation>Помилки:</translation>
+    </message>
+    <message>
+      <source>Font color for error messages in Report view panel</source>
+      <translation>Встановлює колір шрифту для повідомлень про помилки у панелі Вид Звіту</translation>
+    </message>
+    <message>
+      <source>Python interpreter</source>
+      <translation>Інтерпретатор Python</translation>
+    </message>
+    <message>
+      <source>Internal Python output will be redirected
+from Python console to Report view panel</source>
+      <translation>Перенаправляє внутрішні повідомлення Python 
+з консолі Python на панель Вид Звіту</translation>
+    </message>
+    <message>
+      <source>Redirect internal Python output to report view</source>
+      <translation>Перенаправити внутрішній вивод Python до Виду Звіту</translation>
+    </message>
+    <message>
+      <source>Internal Python error messages will be redirected
+from Python console to Report view panel</source>
+      <translation>Перенаправляє внутрішні повідомлення про помилки Python
+з консолі Python на панель Вид Звіту</translation>
+    </message>
+    <message>
+      <source>Redirect internal Python errors to report view</source>
+      <translation>Перенаправити внутрішні помилки Python у Вид Звіту</translation>
+    </message>
+    <message>
+      <source/>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -2683,58 +2683,6 @@ from Python console to Report view panel</source>
       <translation>3D вид</translation>
     </message>
     <message>
-      <source>Show coordinate system in the corner</source>
-      <translation>Показати систему координат в кутку</translation>
-    </message>
-    <message>
-      <source>Show counter of frames per second</source>
-      <translation>Показати кількість кадрів в секунду</translation>
-    </message>
-    <message>
-      <source>Camera type</source>
-      <translation>Тип камери</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Anti-Aliasing</source>
-      <translation>Згладжування</translation>
-    </message>
-    <message>
-      <source>None</source>
-      <translation>Немає</translation>
-    </message>
-    <message>
-      <source>Line Smoothing</source>
-      <translation>Згладжування лінії</translation>
-    </message>
-    <message>
-      <source>MSAA 2x</source>
-      <translation>MSAA 2x</translation>
-    </message>
-    <message>
-      <source>MSAA 4x</source>
-      <translation>MSAA 4x</translation>
-    </message>
-    <message>
-      <source>MSAA 8x</source>
-      <translation>MSAA 8x</translation>
-    </message>
-    <message>
-      <source>Or&amp;thographic rendering</source>
-      <translation>Ор&amp;тогональна візуалізація</translation>
-    </message>
-    <message>
-      <source>Perspective renderin&amp;g</source>
-      <translation>Пе&amp;рспективна візуалізація</translation>
-    </message>
-    <message>
-      <source>Marker size:</source>
-      <translation>Розмір маркера:</translation>
-    </message>
-    <message>
       <source>General</source>
       <translation>Загальні</translation>
     </message>
@@ -2745,10 +2693,41 @@ lower right corner within opened files</source>
 нижньому правому кутку у відкритих файлах</translation>
     </message>
     <message>
+      <source>Show coordinate system in the corner</source>
+      <translation>Показати систему координат в кутку</translation>
+    </message>
+    <message>
+      <source>Relative size :   </source>
+      <translation>Відносний розмір:   </translation>
+    </message>
+    <message>
+      <source>Size of main coordinate system representation
+in the corner -- in % of height/width of viewport</source>
+      <translation>Визначає розмір представлення головної системи координат
+у куті - у % висоти / ширини вікна перегляду</translation>
+    </message>
+    <message>
+      <source>%</source>
+      <translation>%</translation>
+    </message>
+    <message>
+      <source>Axis cross will be shown by default at file
+opening or creation</source>
+      <translation>Під час відкриття або створення файлу за замовчуванням буде зображатися перетин осей</translation>
+    </message>
+    <message>
+      <source>Show axis cross by default</source>
+      <translation>Показати перетин осей за замовчуванням</translation>
+    </message>
+    <message>
       <source>Time needed for last operation and resulting frame rate
 will be shown at the lower left corner in opened files</source>
       <translation>Час, потрібний для останньої операції, та кінцева частота кадрів
 будуть відображені в нижньому лівому кутку у відкритих файлах</translation>
+    </message>
+    <message>
+      <source>Show counter of frames per second</source>
+      <translation>Показати кількість кадрів в секунду</translation>
     </message>
     <message>
       <source>If checked, application will remember which workbench is active for each tab of the viewport</source>
@@ -2761,6 +2740,18 @@ will be shown at the lower left corner in opened files</source>
     <message>
       <source>Rendering</source>
       <translation>Візуалізація</translation>
+    </message>
+    <message>
+      <source>This option is useful for troubleshooting graphics card and driver problems.
+
+Changing this option requires a restart of the application.</source>
+      <translation>Цей параметр є корисним для усунення проблем графічних карт та драйверів.
+
+Зміна цього параметра вимагає перезапуску програми.</translation>
+    </message>
+    <message>
+      <source>Use software OpenGL</source>
+      <translation>Використати "програмний" OpenGL</translation>
     </message>
     <message>
       <source>If selected, Vertex Buffer Objects (VBO) will be used.
@@ -2821,6 +2812,34 @@ but slower response to any scene changes.</source>
       <translation>Централізований</translation>
     </message>
     <message>
+      <source>Anti-Aliasing</source>
+      <translation>Згладжування</translation>
+    </message>
+    <message>
+      <source>What kind of multisample anti-aliasing is used</source>
+      <translation>Який тип багато вибіркове згладжування використано</translation>
+    </message>
+    <message>
+      <source>None</source>
+      <translation>Немає</translation>
+    </message>
+    <message>
+      <source>Line Smoothing</source>
+      <translation>Згладжування лінії</translation>
+    </message>
+    <message>
+      <source>MSAA 2x</source>
+      <translation>MSAA 2x</translation>
+    </message>
+    <message>
+      <source>MSAA 4x</source>
+      <translation>MSAA 4x</translation>
+    </message>
+    <message>
+      <source>MSAA 8x</source>
+      <translation>MSAA 8x</translation>
+    </message>
+    <message>
       <source>Transparent objects:</source>
       <translation>Прозорі обʼєкти:</translation>
     </message>
@@ -2837,12 +2856,36 @@ but slower response to any scene changes.</source>
       <translation>Тіньовий прохід</translation>
     </message>
     <message>
+      <source>Marker size:</source>
+      <translation>Розмір маркера:</translation>
+    </message>
+    <message>
       <source>Size of vertices in the Sketcher workbench</source>
       <translation>Визначає розмір вершин в Редакторі ескізів</translation>
     </message>
     <message>
+      <source>Pick radius (px):</source>
+      <translation>Радіус виділення (пікс):</translation>
+    </message>
+    <message>
+      <source>Area for picking elements in 3D view.
+Larger value eases to pick things, but can make small features impossible to select.
+               </source>
+      <translation>Визначає область для виділення елементів у 3D виді.
+Великі значення полегшують вибір елементів, але можуть зробити неможливим виділення дрібних деталей.
+               </translation>
+    </message>
+    <message>
       <source>Eye to eye distance for stereo modes</source>
       <translation>Відстань між очима для стереорежимів</translation>
+    </message>
+    <message>
+      <source>Eye-to-eye distance used for stereo projections.
+The specified value is a factor that will be multiplied with the
+bounding box size of the 3D object that is currently displayed.</source>
+      <translation>Задає відстань між очима, яка використовується для стереопроєкції.
+Вказане значення є коефіцієнтом, який буде помножено на розмір 
+граничного поля 3D-обʼєкта, який зараз показується.</translation>
     </message>
     <message>
       <source>Backlight is enabled with the defined color</source>
@@ -2861,83 +2904,32 @@ but slower response to any scene changes.</source>
       <translation>Інтенсивність підсвітки</translation>
     </message>
     <message>
-      <source>Objects will be projected in orthographic projection</source>
-      <translation>Встановлює ортографічну проєкцію для показу обʼєктів</translation>
+      <source>Camera type</source>
+      <translation>Тип камери</translation>
     </message>
     <message>
       <source>Objects will appear in a perspective projection</source>
       <translation>Встановлює перспективу проєкцію для показу обʼєктів</translation>
     </message>
     <message>
-      <source>Axis cross will be shown by default at file
-opening or creation</source>
-      <translation>Під час відкриття або створення файлу за замовчуванням буде зображатися перетин осей</translation>
+      <source>Perspective renderin&amp;g</source>
+      <translation>Пе&amp;рспективна візуалізація</translation>
     </message>
     <message>
-      <source>Show axis cross by default</source>
-      <translation>Показати перетин осей за замовчуванням</translation>
+      <source>Objects will be projected in orthographic projection</source>
+      <translation>Встановлює ортографічну проєкцію для показу обʼєктів</translation>
     </message>
     <message>
-      <source>Pick radius (px):</source>
-      <translation>Радіус виділення (пікс):</translation>
+      <source>Or&amp;thographic rendering</source>
+      <translation>Ор&amp;тогональна візуалізація</translation>
     </message>
     <message>
-      <source>Area for picking elements in 3D view.
-Larger value eases to pick things, but can make small features impossible to select.
-               </source>
-      <translation>Визначає область для виділення елементів у 3D виді.
-Великі значення полегшують вибір елементів, але можуть зробити неможливим виділення дрібних деталей.
-               </translation>
-    </message>
-    <message>
-      <source>This option is useful for troubleshooting graphics card and driver problems.
-
-Changing this option requires a restart of the application.</source>
-      <translation>Цей параметр є корисним для усунення проблем графічних карт та драйверів.
-
-Зміна цього параметра вимагає перезапуску програми.</translation>
-    </message>
-    <message>
-      <source>Use software OpenGL</source>
-      <translation>Використати "програмний" OpenGL</translation>
-    </message>
-    <message>
-      <source>What kind of multisample anti-aliasing is used</source>
-      <translation>Який тип багато вибіркове згладжування використано</translation>
-    </message>
-    <message>
-      <source>Eye-to-eye distance used for stereo projections.
-The specified value is a factor that will be multiplied with the
-bounding box size of the 3D object that is currently displayed.</source>
-      <translation>Задає відстань між очима, яка використовується для стереопроєкції.
-Вказане значення є коефіцієнтом, який буде помножено на розмір 
-граничного поля 3D-обʼєкта, який зараз показується.</translation>
-    </message>
-    <message>
-      <source>Relative size :   </source>
-      <translation>Відносний розмір:   </translation>
-    </message>
-    <message>
-      <source>Size of main coordinate system representation
-in the corner -- in % of height/width of viewport</source>
-      <translation>Визначає розмір представлення головної системи координат
-у куті - у % висоти / ширини вікна перегляду</translation>
-    </message>
-    <message>
-      <source>%</source>
-      <translation>%</translation>
+      <source/>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgSettings3DViewImp</name>
-    <message>
-      <source>Anti-aliasing</source>
-      <translation>Згладжування</translation>
-    </message>
-    <message>
-      <source>Open a new viewer or restart %1 to apply anti-aliasing changes.</source>
-      <translation>Відкрити новий переглядач або перезапустити %1 для застосування змін згладжування.</translation>
-    </message>
     <message>
       <source>5px</source>
       <translation>5пікс</translation>
@@ -2961,6 +2953,14 @@ in the corner -- in % of height/width of viewport</source>
     <message>
       <source>15px</source>
       <translation>15пікс</translation>
+    </message>
+    <message>
+      <source>Anti-aliasing</source>
+      <translation>Згладжування</translation>
+    </message>
+    <message>
+      <source>Open a new viewer or restart %1 to apply anti-aliasing changes.</source>
+      <translation>Відкрити новий переглядач або перезапустити %1 для застосування змін згладжування.</translation>
     </message>
   </context>
   <context>
@@ -3029,6 +3029,10 @@ in the corner -- in % of height/width of viewport</source>
   <context>
     <name>Gui::Dialog::DlgSettingsColorGradient</name>
     <message>
+      <source>Color-gradient settings</source>
+      <translation>Налаштування кольору градієнта</translation>
+    </message>
+    <message>
       <source>Color model</source>
       <translation>Колірна модель</translation>
     </message>
@@ -3053,32 +3057,12 @@ in the corner -- in % of height/width of viewport</source>
       <translation>чорний-білий</translation>
     </message>
     <message>
-      <source>Visibility</source>
-      <translation>Видимість</translation>
-    </message>
-    <message>
-      <source>Out g&amp;rayed</source>
-      <translation>З сірого</translation>
-    </message>
-    <message>
-      <source>Alt+R</source>
-      <translation>Alt+R</translation>
-    </message>
-    <message>
-      <source>Alt+I</source>
-      <translation>Alt+I</translation>
-    </message>
-    <message>
       <source>Style</source>
       <translation>Стиль</translation>
     </message>
     <message>
-      <source>&amp;Zero</source>
-      <translation>&amp;Нуль</translation>
-    </message>
-    <message>
-      <source>Alt+Z</source>
-      <translation>Alt+Z</translation>
+      <source>Color gradient is used with its full color range</source>
+      <translation>Градієнт кольору використовується для повного діапазону кольору</translation>
     </message>
     <message>
       <source>&amp;Flow</source>
@@ -3089,46 +3073,34 @@ in the corner -- in % of height/width of viewport</source>
       <translation>Alt+F</translation>
     </message>
     <message>
-      <source>Parameter range</source>
-      <translation>Значення діапазону</translation>
-    </message>
-    <message>
-      <source>Mi&amp;nimum:</source>
-      <translation>Мінімум:</translation>
-    </message>
-    <message>
-      <source>Ma&amp;ximum:</source>
-      <translation>Максимум:</translation>
-    </message>
-    <message>
-      <source>&amp;Labels:</source>
-      <translation>&amp;Мітки:</translation>
-    </message>
-    <message>
-      <source>&amp;Decimals:</source>
-      <translation>&amp;Десяткові:</translation>
-    </message>
-    <message>
-      <source/>
-      <translation type="unfinished"/>
-    </message>
-    <message>
-      <source>Color-gradient settings</source>
-      <translation>Налаштування кольору градієнта</translation>
-    </message>
-    <message>
-      <source>Color gradient is used with its full color range</source>
-      <translation>Градієнт кольору використовується для повного діапазону кольору</translation>
-    </message>
-    <message>
       <source>Color gradient starts from the zero value</source>
       <translation>Градієнт кольору починається з нульового значення</translation>
+    </message>
+    <message>
+      <source>&amp;Zero</source>
+      <translation>&amp;Нуль</translation>
+    </message>
+    <message>
+      <source>Alt+Z</source>
+      <translation>Alt+Z</translation>
+    </message>
+    <message>
+      <source>Visibility</source>
+      <translation>Видимість</translation>
     </message>
     <message>
       <source>Data outside the specified min-max range
 will be displayed in gray</source>
       <translation>Дані за межами вказаного мін-макс діапазону
 будуть зображатися сірим</translation>
+    </message>
+    <message>
+      <source>Out g&amp;rayed</source>
+      <translation>З сірого</translation>
+    </message>
+    <message>
+      <source>Alt+R</source>
+      <translation>Alt+R</translation>
     </message>
     <message>
       <source>Data outside the specified min-max range
@@ -3141,14 +3113,42 @@ will be displayed with transparency</source>
       <translation>Зовнішній та прозорий</translation>
     </message>
     <message>
+      <source>Alt+I</source>
+      <translation>Alt+I</translation>
+    </message>
+    <message>
+      <source>Parameter range</source>
+      <translation>Значення діапазону</translation>
+    </message>
+    <message>
+      <source>Ma&amp;ximum:</source>
+      <translation>Максимум:</translation>
+    </message>
+    <message>
+      <source>&amp;Labels:</source>
+      <translation>&amp;Мітки:</translation>
+    </message>
+    <message>
       <source>Number of labels besides the color bar</source>
       <translation>Кількість міток окрім кольорової полоси</translation>
+    </message>
+    <message>
+      <source>Mi&amp;nimum:</source>
+      <translation>Мінімум:</translation>
+    </message>
+    <message>
+      <source>&amp;Decimals:</source>
+      <translation>&amp;Десяткові:</translation>
     </message>
     <message>
       <source>Number of decimals for labels
 besides the color bar</source>
       <translation>Кількість десяткових знаків для міток
 крім кольорових панелей</translation>
+    </message>
+    <message>
+      <source/>
+      <translation type="unfinished"/>
     </message>
   </context>
   <context>
@@ -3173,106 +3173,18 @@ besides the color bar</source>
       <translation>Загальні</translation>
     </message>
     <message>
-      <source>Document save compression level
-(0 = none, 9 = highest, 3 = default)</source>
-      <translation>Рівень стиснення документу
-(0 = немає, 9 = високий, 3 = за замовчуванням)</translation>
+      <source>The application will create a new document when started</source>
+      <translation>Буде створено новий документ після запуску програми</translation>
     </message>
     <message>
       <source>Create new document at start up</source>
       <translation>Створити новий документ при запуску</translation>
     </message>
     <message>
-      <source>Storage</source>
-      <translation>Сховище</translation>
-    </message>
-    <message>
-      <source>Saving transactions (Auto-save)</source>
-      <translation>Збереження операцій (Автозбереження)</translation>
-    </message>
-    <message>
-      <source>Discard saved transaction after saving document</source>
-      <translation>Очищати збережені операції після збереження документа</translation>
-    </message>
-    <message>
-      <source>Save thumbnail into project file when saving document</source>
-      <translation>Зберігати мініатюру у файл проєкту при збереженні документа</translation>
-    </message>
-    <message>
-      <source>Maximum number of backup files to keep when resaving document</source>
-      <translation>Максимальна кількість файлів резервних копій, що зберігаються при збереженні документа</translation>
-    </message>
-    <message>
-      <source>Document objects</source>
-      <translation>Обʼєкти документу</translation>
-    </message>
-    <message>
-      <source>Allow duplicate object labels in one document</source>
-      <translation>Дозволити дублювання міток обʼєктів в одному документі</translation>
-    </message>
-    <message>
-      <source>Maximum Undo/Redo steps</source>
-      <translation>Максимальна кількість кроків Скасувати/Повторити</translation>
-    </message>
-    <message>
-      <source>Using Undo/Redo on documents</source>
-      <translation>Використати режим Скасувати/Повторити у документах</translation>
-    </message>
-    <message>
-      <source>Authoring and License</source>
-      <translation>Авторство та ліцензії</translation>
-    </message>
-    <message>
-      <source>Author name</source>
-      <translation>Імʼя автора</translation>
-    </message>
-    <message>
-      <source>Set on save</source>
-      <translation>Встановити при збереженні</translation>
-    </message>
-    <message>
-      <source>Company</source>
-      <translation>Назва компанії</translation>
-    </message>
-    <message>
-      <source>Default license</source>
-      <translation>Ліцензія за замовчуванням</translation>
-    </message>
-    <message>
-      <source>All rights reserved</source>
-      <translation>All rights reserved</translation>
-    </message>
-    <message>
-      <source>Public Domain</source>
-      <translation>Public Domain</translation>
-    </message>
-    <message>
-      <source>FreeArt</source>
-      <translation>FreeArt</translation>
-    </message>
-    <message>
-      <source>Other</source>
-      <translation>Інші</translation>
-    </message>
-    <message>
-      <source>License URL</source>
-      <translation>URL ліцензії</translation>
-    </message>
-    <message>
-      <source>Run AutoRecovery at startup</source>
-      <translation>Запускати автовідновлення при завантаженні</translation>
-    </message>
-    <message>
-      <source>Save AutoRecovery information every</source>
-      <translation>Зберігати інформацію для автовідновлення кожні</translation>
-    </message>
-    <message>
-      <source>Add the program logo to the generated thumbnail</source>
-      <translation>Додати логотип програми до згенерованої мініатюри</translation>
-    </message>
-    <message>
-      <source>The application will create a new document when started</source>
-      <translation>Буде створено новий документ після запуску програми</translation>
+      <source>Document save compression level
+(0 = none, 9 = highest, 3 = default)</source>
+      <translation>Рівень стиснення документу
+(0 = немає, 9 = високий, 3 = за замовчуванням)</translation>
     </message>
     <message>
       <source>Compression level for FCStd files</source>
@@ -3281,6 +3193,14 @@ besides the color bar</source>
     <message>
       <source>All changes in documents are stored so that they can be undone/redone</source>
       <translation>Всі зміни в документах зберігаються таким чином, щоб їх можна було Скасувати/Повторити</translation>
+    </message>
+    <message>
+      <source>Using Undo/Redo on documents</source>
+      <translation>Використати режим Скасувати/Повторити у документах</translation>
+    </message>
+    <message>
+      <source>Maximum Undo/Redo steps</source>
+      <translation>Максимальна кількість кроків Скасувати/Повторити</translation>
     </message>
     <message>
       <source>How many Undo/Redo steps should be recorded</source>
@@ -3297,18 +3217,42 @@ This feature may slightly increase recomputation time.</source>
       <translation>Дозволити зупинку переобчислення</translation>
     </message>
     <message>
+      <source>Storage</source>
+      <translation>Сховище</translation>
+    </message>
+    <message>
+      <source>Saving transactions (Auto-save)</source>
+      <translation>Збереження операцій (Автозбереження)</translation>
+    </message>
+    <message>
+      <source>Discard saved transaction after saving document</source>
+      <translation>Очищати збережені операції після збереження документа</translation>
+    </message>
+    <message>
       <source>If there is a recovery file available the application will
 automatically run a file recovery when it is started.</source>
       <translation>Якщо доступний файл відновлення, то програма
 автоматично запустить його відновлення після запуску.</translation>
     </message>
     <message>
+      <source>Run AutoRecovery at startup</source>
+      <translation>Запускати автовідновлення при завантаженні</translation>
+    </message>
+    <message>
       <source>How often a recovery file is written</source>
       <translation>Частота запису файлу відновлення</translation>
     </message>
     <message>
+      <source>Save AutoRecovery information every</source>
+      <translation>Зберігати інформацію для автовідновлення кожні</translation>
+    </message>
+    <message>
       <source>A thumbnail will be stored when document is saved</source>
       <translation>Мініатюра буде зберігатися під час збереження документу</translation>
+    </message>
+    <message>
+      <source>Save thumbnail into project file when saving document</source>
+      <translation>Зберігати мініатюру у файл проєкту при збереженні документа</translation>
     </message>
     <message>
       <source>Size</source>
@@ -3325,8 +3269,16 @@ Common sizes are 128, 256 and 512</source>
       <translation>Логотип програми буде додано до мініатюри</translation>
     </message>
     <message>
+      <source>Add the program logo to the generated thumbnail</source>
+      <translation>Додати логотип програми до згенерованої мініатюри</translation>
+    </message>
+    <message>
       <source>How many backup files will be kept when saving document</source>
       <translation>Визначає кількість резервних копій при збереженні документа</translation>
+    </message>
+    <message>
+      <source>Maximum number of backup files to keep when resaving document</source>
+      <translation>Максимальна кількість файлів резервних копій, що зберігаються при збереженні документа</translation>
     </message>
     <message>
       <source>Backup files will get extension &apos;.FCbak&apos; and file names
@@ -3343,8 +3295,16 @@ get date suffix according to the specified format</source>
       <translation>Формат дати</translation>
     </message>
     <message>
+      <source>Document objects</source>
+      <translation>Обʼєкти документу</translation>
+    </message>
+    <message>
       <source>Allow objects to have same label/name</source>
       <translation>Дозволити обʼєктам мати однакову мітку/назву</translation>
+    </message>
+    <message>
+      <source>Allow duplicate object labels in one document</source>
+      <translation>Дозволити дублювання міток обʼєктів в одному документі</translation>
     </message>
     <message>
       <source>Enable partial loading of external linked documents.
@@ -3360,6 +3320,14 @@ icon in the tree view to fully reload it.</source>
       <translation>Вимкнути часткове завантаження зовнішніх повʼязаних обʼєктів</translation>
     </message>
     <message>
+      <source>Authoring and License</source>
+      <translation>Авторство та ліцензії</translation>
+    </message>
+    <message>
+      <source>Author name</source>
+      <translation>Імʼя автора</translation>
+    </message>
+    <message>
       <source>All documents that will be created will get the specified author name.
 Keep blank for anonymous.
 You can also use the form: John Doe &lt;john@doe.com&gt;</source>
@@ -3372,12 +3340,28 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Під час збереження файлу поле &apos;Востаннє модифіковано&apos; буде заповнене зазначеним автором</translation>
     </message>
     <message>
+      <source>Set on save</source>
+      <translation>Встановити при збереженні</translation>
+    </message>
+    <message>
+      <source>Company</source>
+      <translation>Назва компанії</translation>
+    </message>
+    <message>
       <source>Default company name to use for new files</source>
       <translation>Назва Компанії за замовчуванням для нових файлів</translation>
     </message>
     <message>
+      <source>Default license</source>
+      <translation>Ліцензія за замовчуванням</translation>
+    </message>
+    <message>
       <source>Default license for new documents</source>
       <translation>Типова Ліцензія для нових документів</translation>
+    </message>
+    <message>
+      <source>All rights reserved</source>
+      <translation>All rights reserved</translation>
     </message>
     <message>
       <source>Creative Commons Attribution</source>
@@ -3402,6 +3386,22 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     <message>
       <source>Creative Commons Attribution-NonCommercial-NoDerivatives</source>
       <translation>Creative Commons Attribution-NonCommercial-NoDerivatives</translation>
+    </message>
+    <message>
+      <source>Public Domain</source>
+      <translation>Public Domain</translation>
+    </message>
+    <message>
+      <source>FreeArt</source>
+      <translation>FreeArt</translation>
+    </message>
+    <message>
+      <source>Other</source>
+      <translation>Інші</translation>
+    </message>
+    <message>
+      <source>License URL</source>
+      <translation>URL ліцензії</translation>
     </message>
     <message>
       <source>URL describing more about the license</source>
@@ -3482,12 +3482,12 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Помилка Python</translation>
     </message>
     <message>
-      <source>Items</source>
-      <translation>Елементи</translation>
-    </message>
-    <message>
       <source>Current line highlight</source>
       <translation>Підсвітка поточної лінії</translation>
+    </message>
+    <message>
+      <source>Items</source>
+      <translation>Елементи</translation>
     </message>
   </context>
   <context>
@@ -3497,36 +3497,12 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Параметри зображення</translation>
     </message>
     <message>
-      <source>Image properties</source>
-      <translation>Властивості зображення</translation>
-    </message>
-    <message>
-      <source>Back&amp;ground:</source>
-      <translation>Фон:</translation>
-    </message>
-    <message>
-      <source>Current</source>
-      <translation>Поточне</translation>
-    </message>
-    <message>
-      <source>White</source>
-      <translation>Білий</translation>
-    </message>
-    <message>
-      <source>Black</source>
-      <translation>Чорний</translation>
-    </message>
-    <message>
       <source>Image dimensions</source>
       <translation>Розміри зображення</translation>
     </message>
     <message>
-      <source>Pixel</source>
-      <translation>Піксель</translation>
-    </message>
-    <message>
-      <source>&amp;Width:</source>
-      <translation>Ширина:</translation>
+      <source>Standard sizes:</source>
+      <translation>Стандартні розміри:</translation>
     </message>
     <message>
       <source>Current screen</source>
@@ -3545,8 +3521,12 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Іконка 128 х 128</translation>
     </message>
     <message>
-      <source>Standard sizes:</source>
-      <translation>Стандартні розміри:</translation>
+      <source>&amp;Width:</source>
+      <translation>Ширина:</translation>
+    </message>
+    <message>
+      <source>Pixel</source>
+      <translation>Піксель</translation>
     </message>
     <message>
       <source>&amp;Height:</source>
@@ -3589,6 +3569,34 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Alt+1</translation>
     </message>
     <message>
+      <source>Image properties</source>
+      <translation>Властивості зображення</translation>
+    </message>
+    <message>
+      <source>Back&amp;ground:</source>
+      <translation>Фон:</translation>
+    </message>
+    <message>
+      <source>Current</source>
+      <translation>Поточне</translation>
+    </message>
+    <message>
+      <source>White</source>
+      <translation>Білий</translation>
+    </message>
+    <message>
+      <source>Black</source>
+      <translation>Чорний</translation>
+    </message>
+    <message>
+      <source>Transparent</source>
+      <translation>Прозорий</translation>
+    </message>
+    <message>
+      <source>Creation method:</source>
+      <translation>Метод створення:</translation>
+    </message>
+    <message>
       <source>Image comment</source>
       <translation>Коментар до зображення</translation>
     </message>
@@ -3601,16 +3609,8 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Вставити коментар</translation>
     </message>
     <message>
-      <source>Transparent</source>
-      <translation>Прозорий</translation>
-    </message>
-    <message>
       <source>Add watermark</source>
       <translation>Додати водяний знак</translation>
-    </message>
-    <message>
-      <source>Creation method:</source>
-      <translation>Метод створення:</translation>
     </message>
   </context>
   <context>
@@ -3635,6 +3635,14 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
   <context>
     <name>Gui::Dialog::DlgSettingsLazyLoaded</name>
     <message>
+      <source>Available Workbenches</source>
+      <translation>Доступні Робочі Середовища</translation>
+    </message>
+    <message>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To preserve resources, FreeCAD does not load workbenches until they are used. Loading them may provide access to additional preferences related to their functionality.&lt;/p&gt;&lt;p&gt;The following workbenches are available in your installation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для збереження ресурсів FreeCAD не завантажує робочі середовища, поки вони не почнуть використовуватися. Їх завантаження може відкрити доступ до додаткових налаштувань, повʼязаних з їх роботою.&lt;/p&gt;&lt;p&gt;Для вашої системи доступні наступні робочі середовища:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
       <source>Workbench Name</source>
       <translation>Назва робочого середовища</translation>
     </message>
@@ -3645,14 +3653,6 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     <message>
       <source>Load Now</source>
       <translation>Завантажити зараз</translation>
-    </message>
-    <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To preserve resources, FreeCAD does not load workbenches until they are used. Loading them may provide access to additional preferences related to their functionality.&lt;/p&gt;&lt;p&gt;The following workbenches are available in your installation:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Для збереження ресурсів FreeCAD не завантажує робочі середовища, поки вони не почнуть використовуватися. Їх завантаження може відкрити доступ до додаткових налаштувань, повʼязаних з їх роботою.&lt;/p&gt;&lt;p&gt;Для вашої системи доступні наступні робочі середовища:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-      <source>Available Workbenches</source>
-      <translation>Доступні Робочі Середовища</translation>
     </message>
   </context>
   <context>
@@ -3693,12 +3693,56 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Макрос</translation>
     </message>
     <message>
+      <source>General macro settings</source>
+      <translation>Загальні параметри макросів</translation>
+    </message>
+    <message>
+      <source>Variables defined by macros are created as local variables</source>
+      <translation>Створює змінні, визначені у макросі як локальні</translation>
+    </message>
+    <message>
+      <source>Run macros in local environment</source>
+      <translation>Запускати макроси у локальному середовищі</translation>
+    </message>
+    <message>
       <source>Macro recording settings</source>
       <translation>Налаштування запису макросів</translation>
     </message>
     <message>
+      <source>Macro path</source>
+      <translation>Шлях до макросу</translation>
+    </message>
+    <message>
+      <source>The directory in which the application will search for macros</source>
+      <translation>Тека, в якій програма буде шукати макрос</translation>
+    </message>
+    <message>
+      <source>Gui commands</source>
+      <translation>Команди GUI</translation>
+    </message>
+    <message>
+      <source>Recorded macros will also contain user interface commands</source>
+      <translation>Додає до записаних макросів команди інтерфейсу користувача</translation>
+    </message>
+    <message>
+      <source>Record GUI commands</source>
+      <translation>Запис команд GUI</translation>
+    </message>
+    <message>
+      <source>Recorded macros will also contain user interface commands as comments</source>
+      <translation>Додає до записаних макросів команди інтерфейсу користувача, записані як коментарі</translation>
+    </message>
+    <message>
+      <source>Record as comment</source>
+      <translation>Записати як коментар</translation>
+    </message>
+    <message>
       <source>Logging Commands</source>
       <translation>Ведення журналу команд</translation>
+    </message>
+    <message>
+      <source>Commands executed by macro scripts are shown in Python console</source>
+      <translation>Команди, виконані скриптами макросів, показує в консолі Python</translation>
     </message>
     <message>
       <source>Show script commands in python console</source>
@@ -3711,50 +3755,6 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
     <message>
       <source>FullScript.FCScript</source>
       <translation>FullScript.FCScript</translation>
-    </message>
-    <message>
-      <source>Gui commands</source>
-      <translation>Команди GUI</translation>
-    </message>
-    <message>
-      <source>Record as comment</source>
-      <translation>Записати як коментар</translation>
-    </message>
-    <message>
-      <source>Macro path</source>
-      <translation>Шлях до макросу</translation>
-    </message>
-    <message>
-      <source>General macro settings</source>
-      <translation>Загальні параметри макросів</translation>
-    </message>
-    <message>
-      <source>Run macros in local environment</source>
-      <translation>Запускати макроси у локальному середовищі</translation>
-    </message>
-    <message>
-      <source>Record GUI commands</source>
-      <translation>Запис команд GUI</translation>
-    </message>
-    <message>
-      <source>Variables defined by macros are created as local variables</source>
-      <translation>Створює змінні, визначені у макросі як локальні</translation>
-    </message>
-    <message>
-      <source>Commands executed by macro scripts are shown in Python console</source>
-      <translation>Команди, виконані скриптами макросів, показує в консолі Python</translation>
-    </message>
-    <message>
-      <source>Recorded macros will also contain user interface commands</source>
-      <translation>Додає до записаних макросів команди інтерфейсу користувача</translation>
-    </message>
-    <message>
-      <source>Recorded macros will also contain user interface commands as comments</source>
-      <translation>Додає до записаних макросів команди інтерфейсу користувача, записані як коментарі</translation>
-    </message>
-    <message>
-      <source>The directory in which the application will search for macros</source>
-      <translation>Тека, в якій програма буде шукати макрос</translation>
     </message>
     <message>
       <source>Recent macros menu</source>
@@ -3828,6 +3828,22 @@ You can also use the form: John Doe &lt;john@doe.com&gt;</source>
       <translation>Знизу праворуч</translation>
     </message>
     <message>
+      <source>Rotates to nearest possible state when clicking a cube face</source>
+      <translation>Повертає до найближчого можливого стану при натисканні на грань куба</translation>
+    </message>
+    <message>
+      <source>Rotate to nearest</source>
+      <translation>Повертати до найближчого</translation>
+    </message>
+    <message>
+      <source>Cube size</source>
+      <translation>Розмір куба</translation>
+    </message>
+    <message>
+      <source>Size of the navigation cube</source>
+      <translation>Визначає розмір навігаційного куба</translation>
+    </message>
+    <message>
       <source>3D Navigation</source>
       <translation>3D Навігація</translation>
     </message>
@@ -3866,6 +3882,38 @@ Turntable: the part will be rotated around the z-axis.</source>
       <translation>Трекбол</translation>
     </message>
     <message>
+      <source>Rotation mode</source>
+      <translation>Режим обертання</translation>
+    </message>
+    <message>
+      <source>Rotations in 3D will use current cursor position as center for rotation</source>
+      <translation>Обертання в 3D буде використовувати поточне положення курсору як центр обертання</translation>
+    </message>
+    <message>
+      <source>Window center</source>
+      <translation>Центр вікна</translation>
+    </message>
+    <message>
+      <source>Drag at cursor</source>
+      <translation>Перетягування під курсором</translation>
+    </message>
+    <message>
+      <source>Object center</source>
+      <translation>Центр обʼєкта</translation>
+    </message>
+    <message>
+      <source>Default camera orientation</source>
+      <translation>Типова орієнтація камери</translation>
+    </message>
+    <message>
+      <source>Default camera orientation when creating a new document or selecting the home view</source>
+      <translation>Визначає типову орієнтацію камери під час створення нового документа або вибору стандартного виду</translation>
+    </message>
+    <message>
+      <source>Camera zoom</source>
+      <translation>Масштабування камери</translation>
+    </message>
+    <message>
       <source>Sets camera zoom for new documents.
 The value is the diameter of the sphere to fit on the screen.</source>
       <translation>Встановлює масштабування камери для нових документів.
@@ -3892,6 +3940,16 @@ The value is the diameter of the sphere to fit on the screen.</source>
       <translation>Масштабування над курсором</translation>
     </message>
     <message>
+      <source> Zoom step</source>
+      <translation> Крок масштабування</translation>
+    </message>
+    <message>
+      <source>How much will be zoomed.
+Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</source>
+      <translation>Визначає коефіцієнт збільшення.
+Крок масштабування &apos;1&apos; дорівнює коефіцієнту збільшення 7,5.</translation>
+    </message>
+    <message>
       <source>Direction of zoom operations will be inverted</source>
       <translation>Напрямок масштабування операцій буде інвертований</translation>
     </message>
@@ -3910,10 +3968,6 @@ Mouse tilting is not disabled by this setting.</source>
     <message>
       <source>Disable touchscreen tilt gesture</source>
       <translation>Вимкнути реакцію на нахил екрану</translation>
-    </message>
-    <message>
-      <source>Rotations in 3D will use current cursor position as center for rotation</source>
-      <translation>Обертання в 3D буде використовувати поточне положення курсору як центр обертання</translation>
     </message>
     <message>
       <source>Isometric</source>
@@ -3954,60 +4008,6 @@ Mouse tilting is not disabled by this setting.</source>
     <message>
       <source>Custom</source>
       <translation>Підлаштувати</translation>
-    </message>
-    <message>
-      <source>Default camera orientation</source>
-      <translation>Типова орієнтація камери</translation>
-    </message>
-    <message>
-      <source>Default camera orientation when creating a new document or selecting the home view</source>
-      <translation>Визначає типову орієнтацію камери під час створення нового документа або вибору стандартного виду</translation>
-    </message>
-    <message>
-      <source>Rotation mode</source>
-      <translation>Режим обертання</translation>
-    </message>
-    <message>
-      <source>Window center</source>
-      <translation>Центр вікна</translation>
-    </message>
-    <message>
-      <source>Drag at cursor</source>
-      <translation>Перетягування під курсором</translation>
-    </message>
-    <message>
-      <source>Object center</source>
-      <translation>Центр обʼєкта</translation>
-    </message>
-    <message>
-      <source>Rotates to nearest possible state when clicking a cube face</source>
-      <translation>Повертає до найближчого можливого стану при натисканні на грань куба</translation>
-    </message>
-    <message>
-      <source>Rotate to nearest</source>
-      <translation>Повертати до найближчого</translation>
-    </message>
-    <message>
-      <source>Cube size</source>
-      <translation>Розмір куба</translation>
-    </message>
-    <message>
-      <source>Size of the navigation cube</source>
-      <translation>Визначає розмір навігаційного куба</translation>
-    </message>
-    <message>
-      <source>How much will be zoomed.
-Zoom step of &apos;1&apos; means a factor of 7.5 for every zoom step.</source>
-      <translation>Визначає коефіцієнт збільшення.
-Крок масштабування &apos;1&apos; дорівнює коефіцієнту збільшення 7,5.</translation>
-    </message>
-    <message>
-      <source>Camera zoom</source>
-      <translation>Масштабування камери</translation>
-    </message>
-    <message>
-      <source> Zoom step</source>
-      <translation> Крок масштабування</translation>
     </message>
   </context>
   <context>
@@ -4085,44 +4085,28 @@ horizontal space in Python console</source>
       <translation>Налаштування одиниць</translation>
     </message>
     <message>
-      <source>Standard (mm/kg/s/degree)</source>
-      <translation>Стандарт (мм/кг/с/град)</translation>
+      <source>Unit system:</source>
+      <translation>Система одиниць вимірювання:</translation>
     </message>
     <message>
-      <source>MKS (m/kg/s/degree)</source>
-      <translation>МКС (м/кг/с/град)</translation>
-    </message>
-    <message>
-      <source>Magnitude</source>
-      <translation>Величина</translation>
-    </message>
-    <message>
-      <source>Unit</source>
-      <translation>Одиниця</translation>
-    </message>
-    <message>
-      <source>US customary (in/lb)</source>
-      <translation>Система мір США (дюйм / фунт)</translation>
+      <source>Unit system that should be used for all parts the application</source>
+      <translation>Система одиниць вимірювання для всіх частин програми</translation>
     </message>
     <message>
       <source>Number of decimals:</source>
       <translation>Кількість десяткових знаків:</translation>
     </message>
     <message>
-      <source>Imperial decimal (in/lb)</source>
-      <translation>Британська десяткова (дюйми/фунти)</translation>
-    </message>
-    <message>
-      <source>Building Euro (cm/m²/m³)</source>
-      <translation>Будівля Euro (см/м ²/м ³)</translation>
-    </message>
-    <message>
-      <source>Metric small parts &amp; CNC(mm, mm/min)</source>
-      <translation>Метричні дрібні деталі та ЧПК (мм, мм/хв)</translation>
+      <source>Number of decimals that should be shown for numbers and dimensions</source>
+      <translation>Визначає кількість десяткових знаків для чисел і розмірів</translation>
     </message>
     <message>
       <source>Minimum fractional inch:</source>
       <translation>Мінімальна частина дюйма:</translation>
+    </message>
+    <message>
+      <source>Minimum fractional inch to be displayed</source>
+      <translation>Визначає мінімальну частину дюйма для показу</translation>
     </message>
     <message>
       <source>1/2&quot;</source>
@@ -4153,24 +4137,40 @@ horizontal space in Python console</source>
       <translation>1/128&quot;</translation>
     </message>
     <message>
-      <source>Unit system:</source>
-      <translation>Система одиниць вимірювання:</translation>
+      <source>Magnitude</source>
+      <translation>Величина</translation>
     </message>
     <message>
-      <source>Number of decimals that should be shown for numbers and dimensions</source>
-      <translation>Визначає кількість десяткових знаків для чисел і розмірів</translation>
+      <source>Unit</source>
+      <translation>Одиниця</translation>
     </message>
     <message>
-      <source>Unit system that should be used for all parts the application</source>
-      <translation>Система одиниць вимірювання для всіх частин програми</translation>
+      <source>Standard (mm/kg/s/degree)</source>
+      <translation>Стандарт (мм/кг/с/град)</translation>
     </message>
     <message>
-      <source>Minimum fractional inch to be displayed</source>
-      <translation>Визначає мінімальну частину дюйма для показу</translation>
+      <source>MKS (m/kg/s/degree)</source>
+      <translation>МКС (м/кг/с/град)</translation>
+    </message>
+    <message>
+      <source>US customary (in/lb)</source>
+      <translation>Система мір США (дюйм / фунт)</translation>
+    </message>
+    <message>
+      <source>Imperial decimal (in/lb)</source>
+      <translation>Британська десяткова (дюйми/фунти)</translation>
+    </message>
+    <message>
+      <source>Building Euro (cm/m²/m³)</source>
+      <translation>Будівля Euro (см/м ²/м ³)</translation>
     </message>
     <message>
       <source>Building US (ft-in/sqft/cft)</source>
       <translation>Будівля US (ft-in/sqft/cft)</translation>
+    </message>
+    <message>
+      <source>Metric small parts &amp; CNC(mm, mm/min)</source>
+      <translation>Метричні дрібні деталі та ЧПК (мм, мм/хв)</translation>
     </message>
     <message>
       <source>Imperial for Civil Eng (ft, ft/sec)</source>
@@ -4192,76 +4192,76 @@ horizontal space in Python console</source>
       <translation>Вибір</translation>
     </message>
     <message>
-      <source>Enable selection highlighting</source>
-      <translation>Ввімкнути підсвічування виділеного</translation>
+      <source>Enable preselection and highlight by specified color</source>
+      <translation>Вмикає попереднє виділення та підсвічування вказаним кольором</translation>
     </message>
     <message>
       <source>Enable preselection highlighting</source>
       <translation>Ввімкнути підсвічування попереднього виділення</translation>
     </message>
     <message>
-      <source>Background color</source>
-      <translation>Колір фону</translation>
-    </message>
-    <message>
-      <source>Middle color</source>
-      <translation>Середній колір</translation>
-    </message>
-    <message>
-      <source>Color gradient</source>
-      <translation>Градієнт кольору</translation>
-    </message>
-    <message>
-      <source>Simple color</source>
-      <translation>Прості кольори</translation>
-    </message>
-    <message>
-      <source>Object being edited</source>
-      <translation>Обʼєкт редагувався</translation>
-    </message>
-    <message>
-      <source>Active container</source>
-      <translation>Активний контейнер</translation>
-    </message>
-    <message>
-      <source>Enable preselection and highlight by specified color</source>
-      <translation>Вмикає попереднє виділення та підсвічування вказаним кольором</translation>
-    </message>
-    <message>
       <source>Enable selection highlighting and use specified color</source>
       <translation>Вмикає підсвічування виділення та використовує вказаний колір</translation>
+    </message>
+    <message>
+      <source>Enable selection highlighting</source>
+      <translation>Ввімкнути підсвічування виділеного</translation>
     </message>
     <message>
       <source>Background color for the model view</source>
       <translation>Колір тла моделі</translation>
     </message>
     <message>
+      <source>Background color</source>
+      <translation>Колір фону</translation>
+    </message>
+    <message>
       <source>Background will have selected color</source>
       <translation>Встановлює обраний колір для тла</translation>
     </message>
     <message>
-      <source>Color gradient will get selected color as middle color</source>
-      <translation>Градієнт кольору використовує виділений колір як середній</translation>
-    </message>
-    <message>
-      <source>Bottom color</source>
-      <translation>Колір знизу</translation>
+      <source>Simple color</source>
+      <translation>Прості кольори</translation>
     </message>
     <message>
       <source>Background will have selected color gradient</source>
       <translation>Тло буде мати градієнт виділеного кольору</translation>
     </message>
     <message>
+      <source>Color gradient</source>
+      <translation>Градієнт кольору</translation>
+    </message>
+    <message>
       <source>Top color</source>
       <translation>Верхній колір</translation>
+    </message>
+    <message>
+      <source>Bottom color</source>
+      <translation>Колір знизу</translation>
+    </message>
+    <message>
+      <source>Color gradient will get selected color as middle color</source>
+      <translation>Градієнт кольору використовує виділений колір як середній</translation>
+    </message>
+    <message>
+      <source>Middle color</source>
+      <translation>Середній колір</translation>
     </message>
     <message>
       <source>Tree view</source>
       <translation>Ієрархія документа</translation>
     </message>
     <message>
+      <source>Object being edited</source>
+      <translation>Обʼєкт редагувався</translation>
+    </message>
+    <message>
       <source>Background color for objects in tree view that are currently edited</source>
       <translation>Колір тла для обʼєктів в ієрархії документа під час редагування</translation>
+    </message>
+    <message>
+      <source>Active container</source>
+      <translation>Активний контейнер</translation>
     </message>
     <message>
       <source>Background color for active containers in tree view</source>
@@ -4282,40 +4282,38 @@ horizontal space in Python console</source>
       <translation>Конвертор розмірностей</translation>
     </message>
     <message>
-      <source>as:</source>
-      <translation>у:</translation>
-    </message>
-    <message>
-      <source>=&gt;</source>
-      <translation>=&gt;</translation>
-    </message>
-    <message>
-      <source>Quantity:</source>
-      <translation>Кількість:</translation>
-    </message>
-    <message>
-      <source>Copy</source>
-      <translation>Копіювати</translation>
-    </message>
-    <message>
-      <source>Close</source>
-      <translation>Закрити</translation>
-    </message>
-    <message>
       <source>Input the source value and unit</source>
       <translation>Введіть вихідне значення та одиницю вимірювання</translation>
+    </message>
+    <message>
+      <source>as:</source>
+      <translation>у:</translation>
     </message>
     <message>
       <source>Input here the unit for the result</source>
       <translation>Введіть тут одиниці вимірювання результату</translation>
     </message>
     <message>
+      <source>=&gt;</source>
+      <translation>=&gt;</translation>
+    </message>
+    <message>
       <source>Result</source>
       <translation>Результат</translation>
     </message>
     <message>
+      <source>List of last used calculations.
+To add a calculation press Return in the value input field</source>
+      <translation>Список останніх використаних розрахунків.
+Щоб додати розрахунок, натисніть Return у полі введення значення</translation>
+    </message>
+    <message>
       <source>Quantity</source>
       <translation>Кількість</translation>
+    </message>
+    <message>
+      <source>Quantity:</source>
+      <translation>Кількість:</translation>
     </message>
     <message>
       <source>Unit system:</source>
@@ -4348,21 +4346,23 @@ The preference system is the one set in the general preferences.</source>
       <translation>Скопіювати результат в буфер обміну</translation>
     </message>
     <message>
-      <source>List of last used calculations.
-To add a calculation press Return in the value input field</source>
-      <translation>Список останніх використаних розрахунків.
-Щоб додати розрахунок, натисніть Return у полі введення значення</translation>
+      <source>Copy</source>
+      <translation>Копіювати</translation>
+    </message>
+    <message>
+      <source>Close</source>
+      <translation>Закрити</translation>
     </message>
   </context>
   <context>
     <name>Gui::Dialog::DlgUnitsCalculator</name>
     <message>
-      <source>unit mismatch</source>
-      <translation>невідповідність одиниць вимірювання</translation>
-    </message>
-    <message>
       <source>unknown unit:</source>
       <translation>невідома одиниця вимірювання:</translation>
+    </message>
+    <message>
+      <source>unit mismatch</source>
+      <translation>невідповідність одиниць вимірювання</translation>
     </message>
   </context>
   <context>
@@ -4372,28 +4372,12 @@ To add a calculation press Return in the value input field</source>
       <translation>Робочі середовища</translation>
     </message>
     <message>
-      <source>Enabled workbenches</source>
-      <translation>Активні робочі середовища</translation>
-    </message>
-    <message>
       <source>Disabled workbenches</source>
       <translation>Неактивні робочі середовища</translation>
     </message>
     <message>
-      <source>Move down</source>
-      <translation>Перемістити вниз</translation>
-    </message>
-    <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item down.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved down&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Перемістіть виділений елемент вниз.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Елемент буде переміщено вниз&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-      <source>Move left</source>
-      <translation>Перемістити ліворуч</translation>
-    </message>
-    <message>
-      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Remove the selected workbench from enabled workbenches&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Видалити виділене робоче середовище зі списку активованих&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <source>Enabled workbenches</source>
+      <translation>Активні робочі середовища</translation>
     </message>
     <message>
       <source>Move right</source>
@@ -4402,10 +4386,6 @@ To add a calculation press Return in the value input field</source>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected workbench to enabled workbenches.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
       <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Додати виділене робоче середовище до списку активованих&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-      <source>Sort enabled workbenches</source>
-      <translation>Сортувати активні робочі середовища</translation>
     </message>
     <message>
       <source>Move up</source>
@@ -4420,8 +4400,28 @@ To add a calculation press Return in the value input field</source>
       <translation>Всі робочі середовища додати до активних</translation>
     </message>
     <message>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Remove the selected workbench from enabled workbenches&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Видалити виділене робоче середовище зі списку активованих&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+      <source>Sort enabled workbenches</source>
+      <translation>Сортувати активні робочі середовища</translation>
+    </message>
+    <message>
       <source>&lt;p&gt;Sort enabled workbenches&lt;/p&gt;</source>
       <translation>&lt;p&gt;Сортувати активні робочі середовища&lt;/p&gt;</translation>
+    </message>
+    <message>
+      <source>Move left</source>
+      <translation>Перемістити ліворуч</translation>
+    </message>
+    <message>
+      <source>Move down</source>
+      <translation>Перемістити вниз</translation>
+    </message>
+    <message>
+      <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Move the selected item down.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The item will be moved down&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Перемістіть виділений елемент вниз.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Елемент буде переміщено вниз&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Note:&lt;/span&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt; The changes become active the next time you start the application&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
@@ -4442,6 +4442,14 @@ To add a calculation press Return in the value input field</source>
       <translation>Відновлення Документа</translation>
     </message>
     <message>
+      <source>Press &apos;Start Recovery&apos; to start the recovery process of the document listed below.
+
+The &apos;Status&apos; column shows whether the document could be recovered.</source>
+      <translation>Натисніть ʼПочати відновленняʼ щоб почати процес відновлення документів, що перелічені нижче.
+
+Колонка ʼСтатусʼ показує чи можливе відновлення документів.</translation>
+    </message>
+    <message>
       <source>Status of recovered documents:</source>
       <translation>Стан відновленого документа:</translation>
     </message>
@@ -4452,6 +4460,10 @@ To add a calculation press Return in the value input field</source>
     <message>
       <source>Status</source>
       <translation>Статус</translation>
+    </message>
+    <message>
+      <source>Cleanup...</source>
+      <translation>Очищення...</translation>
     </message>
     <message>
       <source>Start Recovery</source>
@@ -4478,10 +4490,6 @@ To add a calculation press Return in the value input field</source>
       <translation>Завершити</translation>
     </message>
     <message>
-      <source>Cleanup...</source>
-      <translation>Очищення...</translation>
-    </message>
-    <message>
       <source>Delete</source>
       <translation>Видалити</translation>
     </message>
@@ -4502,20 +4510,12 @@ To add a calculation press Return in the value input field</source>
       <translation>Ви дійсно бажаєте видалити всі тимчасові каталоги?</translation>
     </message>
     <message>
-      <source>Transient directories deleted.</source>
-      <translation>Тимчасові каталоги видалені.</translation>
-    </message>
-    <message>
-      <source>Press &apos;Start Recovery&apos; to start the recovery process of the document listed below.
-
-The &apos;Status&apos; column shows whether the document could be recovered.</source>
-      <translation>Натисніть ʼПочати відновленняʼ щоб почати процес відновлення документів, що перелічені нижче.
-
-Колонка ʼСтатусʼ показує чи можливе відновлення документів.</translation>
-    </message>
-    <message>
       <source>When deleting all transient directories you won&apos;t be able to recover any files afterwards.</source>
       <translation>При видаленні всіх тимчасових тек, ви не зможете відновити після цього будь-які файли.</translation>
+    </message>
+    <message>
+      <source>Transient directories deleted.</source>
+      <translation>Тимчасові каталоги видалені.</translation>
     </message>
     <message>
       <source>Transient deleted</source>
@@ -4649,16 +4649,16 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
       <translation>Вектор</translation>
     </message>
     <message>
-      <source>Z:</source>
-      <translation>Z:</translation>
+      <source>X:</source>
+      <translation>X:</translation>
     </message>
     <message>
       <source>Y:</source>
       <translation>Y:</translation>
     </message>
     <message>
-      <source>X:</source>
-      <translation>X:</translation>
+      <source>Z:</source>
+      <translation>Z:</translation>
     </message>
   </context>
   <context>
@@ -4719,6 +4719,10 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
       <translation>Згорнути</translation>
     </message>
     <message>
+      <source>Do you really want to remove this parameter group?</source>
+      <translation>Ви дійсно хочете видалити цю групу параметрів?</translation>
+    </message>
+    <message>
       <source>Existing sub-group</source>
       <translation>Існуючі підгрупи</translation>
     </message>
@@ -4741,10 +4745,6 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
     <message>
       <source>Reading from &apos;%1&apos; failed.</source>
       <translation>Не вдалося прочитати з &apos;%1&apos;.</translation>
-    </message>
-    <message>
-      <source>Do you really want to remove this parameter group?</source>
-      <translation>Ви дійсно хочете видалити цю групу параметрів?</translation>
     </message>
   </context>
   <context>
@@ -4801,100 +4801,64 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
       <translation>Розташування</translation>
     </message>
     <message>
-      <source>OK</source>
-      <translation>Підтвердити</translation>
-    </message>
-    <message>
       <source>Translation:</source>
       <translation>Переміщення:</translation>
-    </message>
-    <message>
-      <source>Z:</source>
-      <translation>Z:</translation>
-    </message>
-    <message>
-      <source>Y:</source>
-      <translation>Y:</translation>
     </message>
     <message>
       <source>X:</source>
       <translation>X:</translation>
     </message>
     <message>
-      <source>Rotation:</source>
-      <translation>Обертання:</translation>
+      <source>Y:</source>
+      <translation>Y:</translation>
     </message>
     <message>
-      <source>Angle:</source>
-      <translation>Кут:</translation>
-    </message>
-    <message>
-      <source>Axis:</source>
-      <translation>Вісь:</translation>
-    </message>
-    <message>
-      <source>Center:</source>
-      <translation>Центр:</translation>
-    </message>
-    <message>
-      <source>Rotation axis with angle</source>
-      <translation>Повернути вісь на кут</translation>
-    </message>
-    <message>
-      <source>Apply</source>
-      <translation>Застосувати</translation>
-    </message>
-    <message>
-      <source>Reset</source>
-      <translation>Скинути</translation>
-    </message>
-    <message>
-      <source>Close</source>
-      <translation>Закрити</translation>
-    </message>
-    <message>
-      <source>Incorrect quantity</source>
-      <translation>Неправильна кількість</translation>
-    </message>
-    <message>
-      <source>There are input fields with incorrect input, please ensure valid placement values!</source>
-      <translation>Поля заповнені некоректними величинами, переконайтесь, що вводите правильні значення!</translation>
-    </message>
-    <message>
-      <source>Use center of mass</source>
-      <translation>Використовувати центр мас</translation>
+      <source>Z:</source>
+      <translation>Z:</translation>
     </message>
     <message>
       <source>Axial:</source>
       <translation>Осьове:</translation>
     </message>
     <message>
+      <source>Shift click for opposite direction</source>
+      <translation>Shift + клік для зміни напрямку</translation>
+    </message>
+    <message>
       <source>Apply axial</source>
       <translation>Застосувати осьове</translation>
     </message>
     <message>
-      <source>Shift click for opposite direction</source>
-      <translation>Shift + клік для зміни напрямку</translation>
+      <source>Center:</source>
+      <translation>Центр:</translation>
+    </message>
+    <message>
+      <source>Use center of mass</source>
+      <translation>Використовувати центр мас</translation>
     </message>
     <message>
       <source>Selected points</source>
       <translation>Обрані точки</translation>
     </message>
     <message>
-      <source>Apply incremental changes</source>
-      <translation>Застосувати покрокові зміни</translation>
+      <source>Rotation:</source>
+      <translation>Обертання:</translation>
     </message>
     <message>
-      <source>Please select 1, 2, or 3 points before clicking this button.  A point may be on a vertex, face, or edge.  If on a face or edge the point used will be the point at the mouse position along face or edge.  If 1 point is selected it will be used as the center of rotation.  If 2 points are selected the midpoint between them will be the center of rotation and a new custom axis will be created, if needed.  If 3 points are selected the first point becomes the center of rotation and lies on the vector that is normal to the plane defined by the 3 points.  Some distance and angle information is provided in the report view, which can be useful when aligning objects.  For your convenience when Shift + click is used the appropriate distance or angle is copied to the clipboard.</source>
-      <translation>Будь ласка, виберіть 1, 2 або 3 точки перед натисканням на цю кнопку. Точка може бути на вершині, грані або на ребрі. Якщо вибрати на грані або на ребрі, то обраною буде точка найближча до курсора, що належить грані або ребру. Якщо вибрано 1 точку, вона буде використовуватися як центр обертання. При виборі двох точок, центром обертання буде середина між ними, а також при потребі буде додано нову вісь обертання. При виборі 3 точок, перша точка стає центром обертання і лежить на векторі, що буде нормаллю до площини утвореної трьома вибраними точками. У додатвовій інформації також надаються дані про відстань та кут. Це може бути корисним для вирівнювання обʼєктів. Для вашої зручності при кліку з натисненим Shift відповідна відстань або кут буде скопійовано в буфер обміну.</translation>
+      <source>Rotation axis with angle</source>
+      <translation>Повернути вісь на кут</translation>
     </message>
     <message>
-      <source>Pitch (around y-axis):</source>
-      <translation>Нахил (про вісь y):</translation>
+      <source>Euler angles (zy&apos;x&apos;&apos;)</source>
+      <translation>Кути Ейлера (zy&apos;x&apos;&apos;)</translation>
     </message>
     <message>
-      <source>Roll (around x-axis):</source>
-      <translation>Обертання (навколо осі x):</translation>
+      <source>Axis:</source>
+      <translation>Вісь:</translation>
+    </message>
+    <message>
+      <source>Angle:</source>
+      <translation>Кут:</translation>
     </message>
     <message>
       <source>Yaw (around z-axis):</source>
@@ -4905,16 +4869,52 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
       <translation>Відхилення (вісь z)</translation>
     </message>
     <message>
+      <source>Pitch (around y-axis):</source>
+      <translation>Нахил (про вісь y):</translation>
+    </message>
+    <message>
       <source>Pitch (around y-axis)</source>
       <translation>Нахил (про вісь y)</translation>
+    </message>
+    <message>
+      <source>Roll (around x-axis):</source>
+      <translation>Обертання (навколо осі x):</translation>
     </message>
     <message>
       <source>Roll (around the x-axis)</source>
       <translation>Обертання (навколо осі x)</translation>
     </message>
     <message>
-      <source>Euler angles (zy&apos;x&apos;&apos;)</source>
-      <translation>Кути Ейлера (zy&apos;x&apos;&apos;)</translation>
+      <source>Apply incremental changes</source>
+      <translation>Застосувати покрокові зміни</translation>
+    </message>
+    <message>
+      <source>Reset</source>
+      <translation>Скинути</translation>
+    </message>
+    <message>
+      <source>OK</source>
+      <translation>Підтвердити</translation>
+    </message>
+    <message>
+      <source>Close</source>
+      <translation>Закрити</translation>
+    </message>
+    <message>
+      <source>Apply</source>
+      <translation>Застосувати</translation>
+    </message>
+    <message>
+      <source>Please select 1, 2, or 3 points before clicking this button.  A point may be on a vertex, face, or edge.  If on a face or edge the point used will be the point at the mouse position along face or edge.  If 1 point is selected it will be used as the center of rotation.  If 2 points are selected the midpoint between them will be the center of rotation and a new custom axis will be created, if needed.  If 3 points are selected the first point becomes the center of rotation and lies on the vector that is normal to the plane defined by the 3 points.  Some distance and angle information is provided in the report view, which can be useful when aligning objects.  For your convenience when Shift + click is used the appropriate distance or angle is copied to the clipboard.</source>
+      <translation>Будь ласка, виберіть 1, 2 або 3 точки перед натисканням на цю кнопку. Точка може бути на вершині, грані або на ребрі. Якщо вибрати на грані або на ребрі, то обраною буде точка найближча до курсора, що належить грані або ребру. Якщо вибрано 1 точку, вона буде використовуватися як центр обертання. При виборі двох точок, центром обертання буде середина між ними, а також при потребі буде додано нову вісь обертання. При виборі 3 точок, перша точка стає центром обертання і лежить на векторі, що буде нормаллю до площини утвореної трьома вибраними точками. У додатвовій інформації також надаються дані про відстань та кут. Це може бути корисним для вирівнювання обʼєктів. Для вашої зручності при кліку з натисненим Shift відповідна відстань або кут буде скопійовано в буфер обміну.</translation>
+    </message>
+    <message>
+      <source>Incorrect quantity</source>
+      <translation>Неправильна кількість</translation>
+    </message>
+    <message>
+      <source>There are input fields with incorrect input, please ensure valid placement values!</source>
+      <translation>Поля заповнені некоректними величинами, переконайтесь, що вводите правильні значення!</translation>
     </message>
   </context>
   <context>
@@ -4966,12 +4966,12 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
       <translation>Діалогове вікно</translation>
     </message>
     <message>
-      <source>Close</source>
-      <translation>Закрити</translation>
-    </message>
-    <message>
       <source>Refresh</source>
       <translation>Оновити</translation>
+    </message>
+    <message>
+      <source>Close</source>
+      <translation>Закрити</translation>
     </message>
   </context>
   <context>
@@ -4981,12 +4981,12 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
       <translation>Дерево конструктора</translation>
     </message>
     <message>
-      <source>Nodes</source>
-      <translation>Вузли</translation>
-    </message>
-    <message>
       <source>Name</source>
       <translation>Назва</translation>
+    </message>
+    <message>
+      <source>Nodes</source>
+      <translation>Вузли</translation>
     </message>
   </context>
   <context>
@@ -5050,30 +5050,20 @@ The &apos;Status&apos; column shows whether the document could be recovered.</so
       <translation>Виділені обʼєкти містять інші залежності. Будь ласка, виберіть, які обʼєкти експортувати. Всі залежності вибираються автоматично за замовчуванням.</translation>
     </message>
     <message>
-      <source>Document</source>
-      <translation>Документ</translation>
-    </message>
-    <message>
-      <source>Name</source>
-      <translation>Назва</translation>
-    </message>
-    <message>
-      <source>&amp;Use Original Selections</source>
-      <translation>&amp;Використовувати початкові виділення</translation>
-    </message>
-    <message>
-      <source>Ignore dependencies and proceed with objects
-originally selected prior to opening this dialog</source>
-      <translation>Ігнорує залежності та продовжує роботу з початково
-виділеними обʼєктами (до відкриття діалогу)</translation>
-    </message>
-    <message>
       <source>Auto select depending objects</source>
       <translation>Автоматично виділяти залежні об’єкти</translation>
     </message>
     <message>
       <source>Depending on</source>
       <translation>В залежності від</translation>
+    </message>
+    <message>
+      <source>Document</source>
+      <translation>Документ</translation>
+    </message>
+    <message>
+      <source>Name</source>
+      <translation>Назва</translation>
     </message>
     <message>
       <source>Depended by</source>
@@ -5086,6 +5076,16 @@ originally selected prior to opening this dialog</source>
     <message>
       <source>All</source>
       <translation>Всі</translation>
+    </message>
+    <message>
+      <source>&amp;Use Original Selections</source>
+      <translation>&amp;Використовувати початкові виділення</translation>
+    </message>
+    <message>
+      <source>Ignore dependencies and proceed with objects
+originally selected prior to opening this dialog</source>
+      <translation>Ігнорує залежності та продовжує роботу з початково
+виділеними обʼєктами (до відкриття діалогу)</translation>
     </message>
   </context>
   <context>
@@ -5132,34 +5132,6 @@ originally selected prior to opening this dialog</source>
       <translation>Параметри</translation>
     </message>
     <message>
-      <source>Clear</source>
-      <translation>Очистити</translation>
-    </message>
-    <message>
-      <source>Save As...</source>
-      <translation>Зберегти як...</translation>
-    </message>
-    <message>
-      <source>Save Report Output</source>
-      <translation>Зберегти звіт</translation>
-    </message>
-    <message>
-      <source>Go to end</source>
-      <translation>Перейти в кінець</translation>
-    </message>
-    <message>
-      <source>Redirect Python output</source>
-      <translation>Перенаправити вивід Python</translation>
-    </message>
-    <message>
-      <source>Redirect Python errors</source>
-      <translation>Перенаправити помилки Python</translation>
-    </message>
-    <message>
-      <source>Plain Text Files</source>
-      <translation>Текстові файли</translation>
-    </message>
-    <message>
       <source>Display message types</source>
       <translation>Показати типи повідомлень</translation>
     </message>
@@ -5183,6 +5155,34 @@ originally selected prior to opening this dialog</source>
       <source>Show output window on</source>
       <translation>Показати вікно виводу на</translation>
     </message>
+    <message>
+      <source>Redirect Python output</source>
+      <translation>Перенаправити вивід Python</translation>
+    </message>
+    <message>
+      <source>Redirect Python errors</source>
+      <translation>Перенаправити помилки Python</translation>
+    </message>
+    <message>
+      <source>Go to end</source>
+      <translation>Перейти в кінець</translation>
+    </message>
+    <message>
+      <source>Clear</source>
+      <translation>Очистити</translation>
+    </message>
+    <message>
+      <source>Save As...</source>
+      <translation>Зберегти як...</translation>
+    </message>
+    <message>
+      <source>Save Report Output</source>
+      <translation>Зберегти звіт</translation>
+    </message>
+    <message>
+      <source>Plain Text Files</source>
+      <translation>Текстові файли</translation>
+    </message>
   </context>
   <context>
     <name>Gui::DockWnd::ReportView</name>
@@ -5198,6 +5198,10 @@ originally selected prior to opening this dialog</source>
   <context>
     <name>Gui::DockWnd::SelectionView</name>
     <message>
+      <source>Selection View</source>
+      <translation>Вид Виділення</translation>
+    </message>
+    <message>
       <source>Search</source>
       <translation>Пошук</translation>
     </message>
@@ -5208,6 +5212,14 @@ originally selected prior to opening this dialog</source>
     <message>
       <source>Clears the search field</source>
       <translation>Очистити поле пошуку</translation>
+    </message>
+    <message>
+      <source>The number of selected items</source>
+      <translation>Кількість вибраних елементів</translation>
+    </message>
+    <message>
+      <source>Picked object list</source>
+      <translation>Список вибраних обʼєктів</translation>
     </message>
     <message>
       <source>Select only</source>
@@ -5242,14 +5254,6 @@ originally selected prior to opening this dialog</source>
       <translation>Виділити обʼєкт та знайти його у ієрархії документа</translation>
     </message>
     <message>
-      <source>To python console</source>
-      <translation>На консоль python</translation>
-    </message>
-    <message>
-      <source>Reveals this object and its subelements in the python console.</source>
-      <translation>Показати цей обʼєкт і його піделементи в консолі Python.</translation>
-    </message>
-    <message>
       <source>Mark to recompute</source>
       <translation>Помітити для переобчислення</translation>
     </message>
@@ -5258,12 +5262,12 @@ originally selected prior to opening this dialog</source>
       <translation>Позначити цей обʼєкт для переобчислення</translation>
     </message>
     <message>
-      <source>Selection View</source>
-      <translation>Вид Виділення</translation>
+      <source>To python console</source>
+      <translation>На консоль python</translation>
     </message>
     <message>
-      <source>The number of selected items</source>
-      <translation>Кількість вибраних елементів</translation>
+      <source>Reveals this object and its subelements in the python console.</source>
+      <translation>Показати цей обʼєкт і його піделементи в консолі Python.</translation>
     </message>
     <message>
       <source>Duplicate subshape</source>
@@ -5272,10 +5276,6 @@ originally selected prior to opening this dialog</source>
     <message>
       <source>Creates a standalone copy of this subshape in the document</source>
       <translation>Створює автономну копію цієї під-форми в документі</translation>
-    </message>
-    <message>
-      <source>Picked object list</source>
-      <translation>Список вибраних обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -5314,8 +5314,16 @@ Do you want to save your changes?</source>
 Бажаєте зберегти внесені зміни?</translation>
     </message>
     <message>
+      <source>FreeCAD macro</source>
+      <translation>Макрос FreeCAD</translation>
+    </message>
+    <message>
       <source>Export PDF</source>
       <translation>Експорт в PDF</translation>
+    </message>
+    <message>
+      <source>PDF file</source>
+      <translation>PDF-файл</translation>
     </message>
     <message>
       <source>untitled[*]</source>
@@ -5336,14 +5344,6 @@ Do you want to save your changes?</source>
     <message>
       <source>Formatted</source>
       <translation>Форматований</translation>
-    </message>
-    <message>
-      <source>FreeCAD macro</source>
-      <translation>Макрос FreeCAD</translation>
-    </message>
-    <message>
-      <source>PDF file</source>
-      <translation>PDF-файл</translation>
     </message>
   </context>
   <context>
@@ -5438,34 +5438,6 @@ Do you want to save your changes?</source>
   <context>
     <name>Gui::GraphvizView</name>
     <message>
-      <source>Export graph</source>
-      <translation>Експортувати діаграму</translation>
-    </message>
-    <message>
-      <source>PNG format</source>
-      <translation>Формат PNG</translation>
-    </message>
-    <message>
-      <source>Bitmap format</source>
-      <translation>Формат Bitmap</translation>
-    </message>
-    <message>
-      <source>GIF format</source>
-      <translation>Формат GIF</translation>
-    </message>
-    <message>
-      <source>JPG format</source>
-      <translation>Формат JPG</translation>
-    </message>
-    <message>
-      <source>SVG format</source>
-      <translation>Формат SVG</translation>
-    </message>
-    <message>
-      <source>PDF format</source>
-      <translation>Формат PDF</translation>
-    </message>
-    <message>
       <source>Graphviz not found</source>
       <translation>Graphviz не знайдено</translation>
     </message>
@@ -5492,6 +5464,34 @@ Do you want to save your changes?</source>
     <message>
       <source>Graphviz failed to create an image file</source>
       <translation>Помилка Graphviz при створенні файла зображення</translation>
+    </message>
+    <message>
+      <source>PNG format</source>
+      <translation>Формат PNG</translation>
+    </message>
+    <message>
+      <source>Bitmap format</source>
+      <translation>Формат Bitmap</translation>
+    </message>
+    <message>
+      <source>GIF format</source>
+      <translation>Формат GIF</translation>
+    </message>
+    <message>
+      <source>JPG format</source>
+      <translation>Формат JPG</translation>
+    </message>
+    <message>
+      <source>SVG format</source>
+      <translation>Формат SVG</translation>
+    </message>
+    <message>
+      <source>PDF format</source>
+      <translation>Формат PDF</translation>
+    </message>
+    <message>
+      <source>Export graph</source>
+      <translation>Експортувати діаграму</translation>
     </message>
   </context>
   <context>
@@ -5534,14 +5534,6 @@ Do you want to save your changes?</source>
   <context>
     <name>Gui::LocationDialog</name>
     <message>
-      <source>Wrong direction</source>
-      <translation>Неправильний напрямок</translation>
-    </message>
-    <message>
-      <source>Direction must not be the null vector</source>
-      <translation>Напрям не може мати нульовий вектор</translation>
-    </message>
-    <message>
       <source>X</source>
       <translation>X</translation>
     </message>
@@ -5556,6 +5548,14 @@ Do you want to save your changes?</source>
     <message>
       <source>User defined...</source>
       <translation>Визначено користувачем...</translation>
+    </message>
+    <message>
+      <source>Wrong direction</source>
+      <translation>Неправильний напрямок</translation>
+    </message>
+    <message>
+      <source>Direction must not be the null vector</source>
+      <translation>Напрям не може мати нульовий вектор</translation>
     </message>
   </context>
   <context>
@@ -5603,16 +5603,28 @@ Do you want to save your changes?</source>
       <translation>Готово</translation>
     </message>
     <message>
+      <source>Help addon needed!</source>
+      <translation>Потрібен Додаток Допомога!</translation>
+    </message>
+    <message>
+      <source>The Help system of %1 is now handled by the &quot;Help&quot; addon. It can easily be installed via the Addons Manager</source>
+      <translation>Система Допомоги %1 тепер обробляється додатком &quot;Допомога&quot;. Її можна легко встановити через Менеджер доповнень</translation>
+    </message>
+    <message>
+      <source>Open Addon Manager</source>
+      <translation>Відкрити менеджер додатків</translation>
+    </message>
+    <message>
+      <source>Close All</source>
+      <translation>Закрити все</translation>
+    </message>
+    <message>
       <source>Toggles this toolbar</source>
       <translation>Переключення цієї панелі</translation>
     </message>
     <message>
       <source>Toggles this dockable window</source>
       <translation>Переключення цього закріплюваного вікна</translation>
-    </message>
-    <message>
-      <source>Close All</source>
-      <translation>Закрити все</translation>
     </message>
     <message>
       <source>Unsaved document</source>
@@ -5627,18 +5639,6 @@ Do you want to save your changes?</source>
 Do you want to save the document now?</source>
       <translation>Щоб привʼязати зовнішні обʼєкти, документ повинен бути збережений хоча б один раз.
 Зберегти документ зараз?</translation>
-    </message>
-    <message>
-      <source>Help addon needed!</source>
-      <translation>Потрібен Додаток Допомога!</translation>
-    </message>
-    <message>
-      <source>The Help system of %1 is now handled by the &quot;Help&quot; addon. It can easily be installed via the Addons Manager</source>
-      <translation>Система Допомоги %1 тепер обробляється додатком &quot;Допомога&quot;. Її можна легко встановити через Менеджер доповнень</translation>
-    </message>
-    <message>
-      <source>Open Addon Manager</source>
-      <translation>Відкрити менеджер додатків</translation>
     </message>
   </context>
   <context>
@@ -5719,12 +5719,12 @@ How do you want to proceed?</source>
       <translation>Обрані точки при (%1, %2 %3)</translation>
     </message>
     <message>
-      <source>No point was picked</source>
-      <translation>Жодної точки не вибрано</translation>
-    </message>
-    <message>
       <source>No point was found on model</source>
       <translation>Не знайдено точки на моделі</translation>
+    </message>
+    <message>
+      <source>No point was picked</source>
+      <translation>Жодної точки не вибрано</translation>
     </message>
   </context>
   <context>
@@ -5872,28 +5872,28 @@ How do you want to proceed?</source>
       <translation>властивість</translation>
     </message>
     <message>
+      <source>Auto expand</source>
+      <translation>Розгортати автоматично</translation>
+    </message>
+    <message>
       <source>Show all</source>
       <translation>Показати все</translation>
-    </message>
-    <message>
-      <source>Add property</source>
-      <translation>Додати властивість</translation>
-    </message>
-    <message>
-      <source>Remove property</source>
-      <translation>Вилучення властивості</translation>
     </message>
     <message>
       <source>Expression...</source>
       <translation>Вираз...</translation>
     </message>
     <message>
-      <source>Auto expand</source>
-      <translation>Розгортати автоматично</translation>
+      <source>Add property</source>
+      <translation>Додати властивість</translation>
     </message>
     <message>
       <source>Rename property group</source>
       <translation>Перейменувати групу властивостей</translation>
+    </message>
+    <message>
+      <source>Remove property</source>
+      <translation>Вилучення властивості</translation>
     </message>
     <message>
       <source>Group name:</source>
@@ -5947,8 +5947,16 @@ Do you want to exit without saving your data?</source>
       <translation>Необроблене виключення FreeCAD.</translation>
     </message>
     <message>
+      <source>Unhandled std C++ exception.</source>
+      <translation>Необроблений виняток C++.</translation>
+    </message>
+    <message>
       <source>Unhandled unknown C++ exception.</source>
       <translation>Необроблений невідомий виняток C++.</translation>
+    </message>
+    <message>
+      <source>&amp;Copy</source>
+      <translation>&amp;Копіювати</translation>
     </message>
     <message>
       <source>&amp;Copy command</source>
@@ -5963,28 +5971,12 @@ Do you want to exit without saving your data?</source>
       <translation>Зберегти історію як...</translation>
     </message>
     <message>
-      <source>Insert file name...</source>
-      <translation>Введіть імʼя файлу...</translation>
-    </message>
-    <message>
-      <source>Save History</source>
+      <source>Save history</source>
       <translation>Зберегти історію</translation>
     </message>
     <message>
-      <source>Insert file name</source>
-      <translation>Введіть імʼя файлу</translation>
-    </message>
-    <message>
-      <source>Unhandled std C++ exception.</source>
-      <translation>Необроблений виняток C++.</translation>
-    </message>
-    <message>
-      <source>Word wrap</source>
-      <translation>Перенесення слів</translation>
-    </message>
-    <message>
-      <source>&amp;Copy</source>
-      <translation>&amp;Копіювати</translation>
+      <source>Saves Python history across %1 sessions</source>
+      <translation>Зберігає історію Python з %1 сесій</translation>
     </message>
     <message>
       <source>&amp;Paste</source>
@@ -5999,20 +5991,28 @@ Do you want to exit without saving your data?</source>
       <translation>Очистити консоль</translation>
     </message>
     <message>
+      <source>Insert file name...</source>
+      <translation>Введіть імʼя файлу...</translation>
+    </message>
+    <message>
+      <source>Word wrap</source>
+      <translation>Перенесення слів</translation>
+    </message>
+    <message>
+      <source>Save History</source>
+      <translation>Зберегти історію</translation>
+    </message>
+    <message>
       <source>Macro Files</source>
       <translation>Файли макросів</translation>
     </message>
     <message>
+      <source>Insert file name</source>
+      <translation>Введіть імʼя файлу</translation>
+    </message>
+    <message>
       <source>All Files</source>
       <translation>Всі файли</translation>
-    </message>
-    <message>
-      <source>Save history</source>
-      <translation>Зберегти історію</translation>
-    </message>
-    <message>
-      <source>Saves Python history across %1 sessions</source>
-      <translation>Зберігає історію Python з %1 сесій</translation>
     </message>
   </context>
   <context>
@@ -6044,6 +6044,10 @@ Do you want to exit without saving your data?</source>
   <context>
     <name>Gui::RecentMacrosAction</name>
     <message>
+      <source>none</source>
+      <translation>нічого</translation>
+    </message>
+    <message>
       <source>Run macro %1 (Shift+click to edit) shortcut: %2</source>
       <translation>Запустити макрос %1 (Shift + клік для редагування): %2</translation>
     </message>
@@ -6054,10 +6058,6 @@ Do you want to exit without saving your data?</source>
     <message>
       <source>The file &apos;%1&apos; cannot be opened.</source>
       <translation>Файл &apos;%1&apos; не вдалося відкрити.</translation>
-    </message>
-    <message>
-      <source>none</source>
-      <translation>нічого</translation>
     </message>
   </context>
   <context>
@@ -6214,28 +6214,28 @@ Do you want to specify another directory?</source>
       <translation>ТекстовийНадпис</translation>
     </message>
     <message>
-      <source>Recompute after commit</source>
-      <translation>Переобчислити після коміту</translation>
-    </message>
-    <message>
-      <source>Remove</source>
-      <translation>Видалити</translation>
-    </message>
-    <message>
       <source>Edit</source>
       <translation>Правка</translation>
-    </message>
-    <message>
-      <source>Remove all</source>
-      <translation>Вилучити все</translation>
     </message>
     <message>
       <source>Hide</source>
       <translation>Приховати</translation>
     </message>
     <message>
+      <source>Remove</source>
+      <translation>Видалити</translation>
+    </message>
+    <message>
+      <source>Remove all</source>
+      <translation>Вилучити все</translation>
+    </message>
+    <message>
       <source>Box select</source>
       <translation>Прямокутне виділення</translation>
+    </message>
+    <message>
+      <source>Recompute after commit</source>
+      <translation>Переобчислити після коміту</translation>
     </message>
     <message>
       <source>On-top when selected</source>
@@ -6244,6 +6244,14 @@ Do you want to specify another directory?</source>
   </context>
   <context>
     <name>Gui::TaskView::TaskAppearance</name>
+    <message>
+      <source>Appearance</source>
+      <translation>Зовнішній вигляд</translation>
+    </message>
+    <message>
+      <source>Document window:</source>
+      <translation>Вікно документа:</translation>
+    </message>
     <message>
       <source>Plot mode:</source>
       <translation>Режим друку:</translation>
@@ -6259,14 +6267,6 @@ Do you want to specify another directory?</source>
     <message>
       <source>Transparency:</source>
       <translation>Прозорість:</translation>
-    </message>
-    <message>
-      <source>Appearance</source>
-      <translation>Зовнішній вигляд</translation>
-    </message>
-    <message>
-      <source>Document window:</source>
-      <translation>Вікно документа:</translation>
     </message>
   </context>
   <context>
@@ -6370,28 +6370,24 @@ Do you want to specify another directory?</source>
   <context>
     <name>Gui::Translator</name>
     <message>
-      <source>English</source>
-      <translation>Англійська</translation>
+      <source>Afrikaans</source>
+      <translation>Африкаанс</translation>
     </message>
     <message>
-      <source>German</source>
-      <translation>Німецька</translation>
+      <source>Arabic</source>
+      <translation>Арабська</translation>
     </message>
     <message>
-      <source>Spanish</source>
-      <translation>Іспанська</translation>
+      <source>Basque</source>
+      <translation>Баскська</translation>
     </message>
     <message>
-      <source>French</source>
-      <translation>Французька</translation>
+      <source>Bulgarian</source>
+      <translation>Болгарська</translation>
     </message>
     <message>
-      <source>Italian</source>
-      <translation>Італійська</translation>
-    </message>
-    <message>
-      <source>Japanese</source>
-      <translation>Японська</translation>
+      <source>Catalan</source>
+      <translation>Каталонська</translation>
     </message>
     <message>
       <source>Chinese Simplified</source>
@@ -6402,24 +6398,80 @@ Do you want to specify another directory?</source>
       <translation>Китайська традиційна</translation>
     </message>
     <message>
+      <source>Croatian</source>
+      <translation>Хорватська</translation>
+    </message>
+    <message>
+      <source>Czech</source>
+      <translation>Чеська</translation>
+    </message>
+    <message>
+      <source>Dutch</source>
+      <translation>Голландська</translation>
+    </message>
+    <message>
+      <source>English</source>
+      <translation>Англійська</translation>
+    </message>
+    <message>
+      <source>Filipino</source>
+      <translation>Філіппінська</translation>
+    </message>
+    <message>
+      <source>Finnish</source>
+      <translation>Фінська</translation>
+    </message>
+    <message>
+      <source>French</source>
+      <translation>Французька</translation>
+    </message>
+    <message>
+      <source>Galician</source>
+      <translation>Галісійська</translation>
+    </message>
+    <message>
+      <source>German</source>
+      <translation>Німецька</translation>
+    </message>
+    <message>
+      <source>Greek</source>
+      <translation>Грецька</translation>
+    </message>
+    <message>
+      <source>Hungarian</source>
+      <translation>Угорська</translation>
+    </message>
+    <message>
+      <source>Indonesian</source>
+      <translation>Індонезійська</translation>
+    </message>
+    <message>
+      <source>Italian</source>
+      <translation>Італійська</translation>
+    </message>
+    <message>
+      <source>Japanese</source>
+      <translation>Японська</translation>
+    </message>
+    <message>
+      <source>Kabyle</source>
+      <translation>Кабільська</translation>
+    </message>
+    <message>
       <source>Korean</source>
       <translation>Корейська</translation>
     </message>
     <message>
-      <source>Russian</source>
-      <translation>Російська</translation>
-    </message>
-    <message>
-      <source>Swedish</source>
-      <translation>Шведська</translation>
-    </message>
-    <message>
-      <source>Afrikaans</source>
-      <translation>Африкаанс</translation>
+      <source>Lithuanian</source>
+      <translation>Литовська</translation>
     </message>
     <message>
       <source>Norwegian</source>
       <translation>Норвезька</translation>
+    </message>
+    <message>
+      <source>Polish</source>
+      <translation>Польська</translation>
     </message>
     <message>
       <source>Portuguese, Brazilian</source>
@@ -6430,100 +6482,48 @@ Do you want to specify another directory?</source>
       <translation>Португальська</translation>
     </message>
     <message>
-      <source>Dutch</source>
-      <translation>Голландська</translation>
-    </message>
-    <message>
-      <source>Ukrainian</source>
-      <translation>Українська</translation>
-    </message>
-    <message>
-      <source>Finnish</source>
-      <translation>Фінська</translation>
-    </message>
-    <message>
-      <source>Croatian</source>
-      <translation>Хорватська</translation>
-    </message>
-    <message>
-      <source>Polish</source>
-      <translation>Польська</translation>
-    </message>
-    <message>
-      <source>Czech</source>
-      <translation>Чеська</translation>
-    </message>
-    <message>
-      <source>Hungarian</source>
-      <translation>Угорська</translation>
-    </message>
-    <message>
       <source>Romanian</source>
       <translation>Румунська</translation>
+    </message>
+    <message>
+      <source>Russian</source>
+      <translation>Російська</translation>
     </message>
     <message>
       <source>Slovak</source>
       <translation>Словацька</translation>
     </message>
     <message>
-      <source>Turkish</source>
-      <translation>Турецька</translation>
-    </message>
-    <message>
       <source>Slovenian</source>
       <translation>Словенська</translation>
     </message>
     <message>
-      <source>Basque</source>
-      <translation>Баскська</translation>
+      <source>Spanish</source>
+      <translation>Іспанська</translation>
     </message>
     <message>
-      <source>Catalan</source>
-      <translation>Каталонська</translation>
+      <source>Spanish, Argentina</source>
+      <translation>Іспанська (Аргентина)</translation>
     </message>
     <message>
-      <source>Galician</source>
-      <translation>Галісійська</translation>
+      <source>Swedish</source>
+      <translation>Шведська</translation>
     </message>
     <message>
-      <source>Kabyle</source>
-      <translation>Кабільська</translation>
+      <source>Turkish</source>
+      <translation>Турецька</translation>
     </message>
     <message>
-      <source>Filipino</source>
-      <translation>Філіппінська</translation>
-    </message>
-    <message>
-      <source>Indonesian</source>
-      <translation>Індонезійська</translation>
-    </message>
-    <message>
-      <source>Lithuanian</source>
-      <translation>Литовська</translation>
+      <source>Ukrainian</source>
+      <translation>Українська</translation>
     </message>
     <message>
       <source>Valencian</source>
       <translation>Валенсійська</translation>
     </message>
     <message>
-      <source>Arabic</source>
-      <translation>Арабська</translation>
-    </message>
-    <message>
       <source>Vietnamese</source>
       <translation>В’єтнамська</translation>
-    </message>
-    <message>
-      <source>Bulgarian</source>
-      <translation>Болгарська</translation>
-    </message>
-    <message>
-      <source>Greek</source>
-      <translation>Грецька</translation>
-    </message>
-    <message>
-      <source>Spanish, Argentina</source>
-      <translation>Іспанська (Аргентина)</translation>
     </message>
     <message>
       <source>Georgian</source>
@@ -6547,40 +6547,12 @@ Do you want to specify another directory?</source>
   <context>
     <name>Gui::TreeWidget</name>
     <message>
-      <source>Create group...</source>
-      <translation>Створити групу...</translation>
+      <source>Search...</source>
+      <translation>Шукати...</translation>
     </message>
     <message>
-      <source>Create a group</source>
-      <translation>Створити групу</translation>
-    </message>
-    <message>
-      <source>Group</source>
-      <translation>Група</translation>
-    </message>
-    <message>
-      <source>Rename</source>
-      <translation>Перейменувати</translation>
-    </message>
-    <message>
-      <source>Rename object</source>
-      <translation>Перейменувати обʼєкт</translation>
-    </message>
-    <message>
-      <source>Labels &amp; Attributes</source>
-      <translation>Мітки та Атрибути</translation>
-    </message>
-    <message>
-      <source>Application</source>
-      <translation>Програма</translation>
-    </message>
-    <message>
-      <source>Finish editing</source>
-      <translation>Завершити редагування</translation>
-    </message>
-    <message>
-      <source>Finish editing object</source>
-      <translation>Завершити редагування обʼєкту</translation>
+      <source>Search for objects</source>
+      <translation>Пошук обʼєктів</translation>
     </message>
     <message>
       <source>Activate document</source>
@@ -6591,36 +6563,20 @@ Do you want to specify another directory?</source>
       <translation>Активувати документ %1</translation>
     </message>
     <message>
-      <source>Skip recomputes</source>
-      <translation>Пропустити перерахунки</translation>
+      <source>Group</source>
+      <translation>Група</translation>
     </message>
     <message>
-      <source>Enable or disable recomputations of document</source>
-      <translation>Ввімкнути або вимкнути перерахунки документа</translation>
-    </message>
-    <message>
-      <source>Mark to recompute</source>
-      <translation>Помітити для переобчислення</translation>
-    </message>
-    <message>
-      <source>Mark this object to be recomputed</source>
-      <translation>Позначити цей обʼєкт для переобчислення</translation>
-    </message>
-    <message>
-      <source>%1, Internal name: %2</source>
-      <translation>%1, внутрішнє імʼя: %2</translation>
-    </message>
-    <message>
-      <source>Search...</source>
-      <translation>Шукати...</translation>
-    </message>
-    <message>
-      <source>Search for objects</source>
-      <translation>Пошук обʼєктів</translation>
+      <source>Labels &amp; Attributes</source>
+      <translation>Мітки та Атрибути</translation>
     </message>
     <message>
       <source>Description</source>
       <translation>Опис</translation>
+    </message>
+    <message>
+      <source>Application</source>
+      <translation>Програма</translation>
     </message>
     <message>
       <source>Show hidden items</source>
@@ -6639,6 +6595,38 @@ Do you want to specify another directory?</source>
       <translation>Приховати елемент в ієрархії</translation>
     </message>
     <message>
+      <source>Create group...</source>
+      <translation>Створити групу...</translation>
+    </message>
+    <message>
+      <source>Create a group</source>
+      <translation>Створити групу</translation>
+    </message>
+    <message>
+      <source>Rename</source>
+      <translation>Перейменувати</translation>
+    </message>
+    <message>
+      <source>Rename object</source>
+      <translation>Перейменувати обʼєкт</translation>
+    </message>
+    <message>
+      <source>Finish editing</source>
+      <translation>Завершити редагування</translation>
+    </message>
+    <message>
+      <source>Finish editing object</source>
+      <translation>Завершити редагування обʼєкту</translation>
+    </message>
+    <message>
+      <source>Add dependent objects to selection</source>
+      <translation>Додати залежні обʼєкти до виділення</translation>
+    </message>
+    <message>
+      <source>Adds all dependent objects to the selection</source>
+      <translation>Додає всі залежні обʼєкти до виділеного</translation>
+    </message>
+    <message>
       <source>Close document</source>
       <translation>Закрити документ</translation>
     </message>
@@ -6655,12 +6643,28 @@ Do you want to specify another directory?</source>
       <translation>Перезавантажити частково завантажений документ</translation>
     </message>
     <message>
+      <source>Skip recomputes</source>
+      <translation>Пропустити перерахунки</translation>
+    </message>
+    <message>
+      <source>Enable or disable recomputations of document</source>
+      <translation>Ввімкнути або вимкнути перерахунки документа</translation>
+    </message>
+    <message>
       <source>Allow partial recomputes</source>
       <translation>Дозволити часткові переобчислення</translation>
     </message>
     <message>
       <source>Enable or disable recomputating editing object when &apos;skip recomputation&apos; is enabled</source>
       <translation>Ввімкнути або вимкнути переобчислення обʼєктів, коли &apos;пропустити переобчислення&apos; активовано</translation>
+    </message>
+    <message>
+      <source>Mark to recompute</source>
+      <translation>Помітити для переобчислення</translation>
+    </message>
+    <message>
+      <source>Mark this object to be recomputed</source>
+      <translation>Позначити цей обʼєкт для переобчислення</translation>
     </message>
     <message>
       <source>Recompute object</source>
@@ -6675,12 +6679,8 @@ Do you want to specify another directory?</source>
       <translation> (але має бути виконано)</translation>
     </message>
     <message>
-      <source>Add dependent objects to selection</source>
-      <translation>Додати залежні обʼєкти до виділення</translation>
-    </message>
-    <message>
-      <source>Adds all dependent objects to the selection</source>
-      <translation>Додає всі залежні обʼєкти до виділеного</translation>
+      <source>%1, Internal name: %2</source>
+      <translation>%1, внутрішнє імʼя: %2</translation>
     </message>
   </context>
   <context>
@@ -6785,6 +6785,10 @@ Do you want to specify another directory?</source>
       <translation>Z:</translation>
     </message>
     <message>
+      <source>Grid Snap in</source>
+      <translation>Захват сітки в</translation>
+    </message>
+    <message>
       <source>0.1 mm</source>
       <translation>0.1 мм</translation>
     </message>
@@ -6840,10 +6844,6 @@ Do you want to specify another directory?</source>
       <source>5 m </source>
       <translation>5 м </translation>
     </message>
-    <message>
-      <source>Grid Snap in</source>
-      <translation>Захват сітки в</translation>
-    </message>
   </context>
   <context>
     <name>PropertyListDialog</name>
@@ -6859,6 +6859,10 @@ Do you want to specify another directory?</source>
   <context>
     <name>QDockWidget</name>
     <message>
+      <source>Toolbox</source>
+      <translation>Панель інструментів</translation>
+    </message>
+    <message>
       <source>Tree view</source>
       <translation>Ієрархія документа</translation>
     </message>
@@ -6871,28 +6875,24 @@ Do you want to specify another directory?</source>
       <translation>Вид Виділення</translation>
     </message>
     <message>
-      <source>Report view</source>
-      <translation>Вид Звіту</translation>
-    </message>
-    <message>
       <source>Combo View</source>
       <translation>Комбінований вид</translation>
     </message>
     <message>
-      <source>Toolbox</source>
-      <translation>Панель інструментів</translation>
+      <source>Report view</source>
+      <translation>Вид Звіту</translation>
     </message>
     <message>
       <source>Python console</source>
       <translation>Консоль python</translation>
     </message>
     <message>
-      <source>Display properties</source>
-      <translation>Налаштування Дисплею</translation>
-    </message>
-    <message>
       <source>DAG View</source>
       <translation>Вид DAG</translation>
+    </message>
+    <message>
+      <source>Display properties</source>
+      <translation>Налаштування Дисплею</translation>
     </message>
   </context>
   <context>
@@ -6906,12 +6906,20 @@ Do you want to specify another directory?</source>
       <translation>Показ</translation>
     </message>
     <message>
+      <source>Workbenches</source>
+      <translation>Робочі середовища</translation>
+    </message>
+    <message>
       <source>Unknown filetype</source>
       <translation>Невідомий тип файлу</translation>
     </message>
     <message>
       <source>Cannot open unknown filetype: %1</source>
       <translation>Не вдається відкрити невідомий тип файлу: %1</translation>
+    </message>
+    <message>
+      <source>Export failed</source>
+      <translation>Експорт не вдався</translation>
     </message>
     <message>
       <source>Cannot save to unknown filetype: %1</source>
@@ -6934,6 +6942,18 @@ Do you want to specify another directory?</source>
       <translation>Відкрити документ</translation>
     </message>
     <message>
+      <source>Error</source>
+      <translation>Помилка</translation>
+    </message>
+    <message>
+      <source>There were errors while loading the file. Some data might have been modified or not recovered at all. Look in the report view for more specific information about the objects involved.</source>
+      <translation>Під час завантаження файлу виникли помилки. Деякі дані, можливо, були змінені або взагалі не відновлені. Ознайомтесь зі звітом для більш отримання конкретної інформації щодо таких обʼєктів.</translation>
+    </message>
+    <message>
+      <source>There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</source>
+      <translation>При завантаженні файлу сталася серйозна помилка. Можливо, деякі дані були змінені або взагалі не відновлені. Збереження проєкту швидше за все, призведе до втрати даних.</translation>
+    </message>
+    <message>
       <source>Import file</source>
       <translation>Імпорт файлу</translation>
     </message>
@@ -6946,12 +6966,78 @@ Do you want to specify another directory?</source>
       <translation>Друк...</translation>
     </message>
     <message>
+      <source>Exporting PDF...</source>
+      <translation>Експорт в PDF ...</translation>
+    </message>
+    <message>
+      <source>Unsaved document</source>
+      <translation>Незбережений документ</translation>
+    </message>
+    <message>
+      <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
+      <translation>Експортований об&apos;єкт містить зовнішні посилання. Збережіть документ хоча б раз перед експортом.</translation>
+    </message>
+    <message>
+      <source>Delete failed</source>
+      <translation>Не вдалося видалити</translation>
+    </message>
+    <message>
+      <source>Dependency error</source>
+      <translation>Помилка залежності</translation>
+    </message>
+    <message>
+      <source>Copy selected</source>
+      <translation>Копіювати вибране</translation>
+    </message>
+    <message>
+      <source>Copy active document</source>
+      <translation>Копіювати активний документ</translation>
+    </message>
+    <message>
+      <source>Copy all documents</source>
+      <translation>Копіювати всі документи</translation>
+    </message>
+    <message>
+      <source>Paste</source>
+      <translation>Вставити</translation>
+    </message>
+    <message>
+      <source>Expression error</source>
+      <translation>Помилка виразу</translation>
+    </message>
+    <message>
+      <source>Failed to parse some of the expressions.
+Please check the Report View for more details.</source>
+      <translation>Не вдалося обробити деякі з виразів.
+Будь ласка перевірте Звіт для отримання більш докладної інформації.</translation>
+    </message>
+    <message>
+      <source>Failed to paste expressions</source>
+      <translation>Не вдалося вставити вирази</translation>
+    </message>
+    <message>
       <source>Cannot load workbench</source>
       <translation>Не вдається завантажити робочу область</translation>
     </message>
     <message>
       <source>A general error occurred while loading the workbench</source>
       <translation>Загальна помилка при завантаженні робочої області</translation>
+    </message>
+    <message>
+      <source>Wrong selection</source>
+      <translation>Невірний вибір</translation>
+    </message>
+    <message>
+      <source>Only one object selected. Please select two objects.
+Be aware the point where you click matters.</source>
+      <translation>Обрано лише один обʼєкт. Будь ласка, виберіть два обʼєкти. 
+Майте на увазі, що має значення місце, де ви робите вибір.</translation>
+    </message>
+    <message>
+      <source>Please select two objects.
+Be aware the point where you click matters.</source>
+      <translation>Будь ласка, виберіть два обʼєкти. Майте на увазі,
+що має значення місце, де ви робите вибір.</translation>
     </message>
     <message>
       <source>Save views...</source>
@@ -6976,6 +7062,10 @@ Do you want to specify another directory?</source>
     <message>
       <source>Save frozen views</source>
       <translation>Зберегти заморожені види</translation>
+    </message>
+    <message>
+      <source>Frozen views</source>
+      <translation>Заморожені перегляди</translation>
     </message>
     <message>
       <source>Restore views</source>
@@ -7044,6 +7134,10 @@ Do you want to continue?</source>
       <translation>Виберіть елемент:</translation>
     </message>
     <message>
+      <source>New boolean item</source>
+      <translation>Новий логічний елемент</translation>
+    </message>
+    <message>
       <source>Rename group</source>
       <translation>Перейменувати групу</translation>
     </message>
@@ -7064,16 +7158,132 @@ Do you want to continue?</source>
       <translation>Змінити значення</translation>
     </message>
     <message>
-      <source>Save document under new filename...</source>
-      <translation>Зберегти документ під новим імʼям...</translation>
+      <source>Identical physical path detected. It may cause unwanted overwrite of existing document!
+
+</source>
+      <translation>Виявлено ідентичний фізичний шлях. Це може призвести до перезапису наявного документа!
+
+</translation>
+    </message>
+    <message>
+      <source>Are you sure you want to continue?</source>
+      <translation>Ви впевнені, що бажаєте продовжити?</translation>
+    </message>
+    <message>
+      <source>Please check report view for more...</source>
+      <translation>Будь ласка, перегляньте Вид Звіту...</translation>
+    </message>
+    <message>
+      <source>Physical path:</source>
+      <translation>Фізичний шлях:</translation>
+    </message>
+    <message>
+      <source>Document:</source>
+      <translation>Документ:</translation>
+    </message>
+    <message>
+      <source>Path:</source>
+      <translation>Шлях:</translation>
+    </message>
+    <message>
+      <source>Identical physical path</source>
+      <translation>Ідентичний фізичний шлях</translation>
+    </message>
+    <message>
+      <source>Could not save document</source>
+      <translation>Не вдалося зберегти документ</translation>
+    </message>
+    <message>
+      <source>There was an issue trying to save the file. This may be because some of the parent folders do not exist, or you do not have sufficient permissions, or for other reasons. Error details:
+
+&quot;%1&quot;
+
+Would you like to save the file with a different name?</source>
+      <translation>При спробі зберегти файл виникла проблема. Це може бути повʼязано з тим, що відсутні деякі батьківські теки, або у вас немає достатніх прав доступу, або з інших причин. Подробиці помилки:
+
+&quot;%1&quot;
+
+Хочете зберегти файл з іншим імʼям?</translation>
     </message>
     <message>
       <source>Saving aborted</source>
       <translation>Збереження перервано</translation>
     </message>
     <message>
-      <source>Unsaved document</source>
-      <translation>Незбережений документ</translation>
+      <source>Save dependent files</source>
+      <translation>Зберегти залежні файли</translation>
+    </message>
+    <message>
+      <source>The file contains external dependencies. Do you want to save the dependent files, too?</source>
+      <translation>Файл містить зовнішні залежності. Бажаєте також зберегти залежні файли?</translation>
+    </message>
+    <message>
+      <source>Saving document failed</source>
+      <translation>Не вдалося зберегти документ</translation>
+    </message>
+    <message>
+      <source>Save document under new filename...</source>
+      <translation>Зберегти документ під новим імʼям...</translation>
+    </message>
+    <message>
+      <source>Save %1 Document</source>
+      <translation>Зберегти %1 документ</translation>
+    </message>
+    <message>
+      <source>Document</source>
+      <translation>Документ</translation>
+    </message>
+    <message>
+      <source>Failed to save document</source>
+      <translation>Не вдалося зберегти документ</translation>
+    </message>
+    <message>
+      <source>Documents contains cyclic dependencies. Do you still want to save them?</source>
+      <translation>Документи містять циклічні залежності. Ви все ще хочете їх зберегти?</translation>
+    </message>
+    <message>
+      <source>Save a copy of the document under new filename...</source>
+      <translation>Зберегти копію документа під новим іменем файла...</translation>
+    </message>
+    <message>
+      <source>%1 document (*.FCStd)</source>
+      <translation>Документ %1 (*.FCStd)</translation>
+    </message>
+    <message>
+      <source>Document not closable</source>
+      <translation>Документ не закривається</translation>
+    </message>
+    <message>
+      <source>The document is not closable for the moment.</source>
+      <translation>Документ не може бути закритим в даний час.</translation>
+    </message>
+    <message>
+      <source>Document not saved</source>
+      <translation>Документ не збережено</translation>
+    </message>
+    <message>
+      <source>The document%1 could not be saved. Do you want to cancel closing it?</source>
+      <translation>Документ%1 не вдалося зберегти. Бажаєте скасувати закриття?</translation>
+    </message>
+    <message>
+      <source>Undo</source>
+      <translation>Скасувати</translation>
+    </message>
+    <message>
+      <source>Redo</source>
+      <translation>Повторити</translation>
+    </message>
+    <message>
+      <source>There are grouped transactions in the following documents with other preceding transactions</source>
+      <translation>В наступних документах відбувається групування операцій з іншими попередніми операціями</translation>
+    </message>
+    <message>
+      <source>Choose &apos;Yes&apos; to roll back all preceding transactions.
+Choose &apos;No&apos; to roll back in the active document only.
+Choose &apos;Abort&apos; to abort</source>
+      <translation>Виберіть &apos;Так&apos; для повернення всіх попередніх транзакцій.
+Виберіть &apos;Ні&apos; щоб повернути транзакції тільки в активному документі.
+Виберіть &apos;Скасувати&apos; для скасування</translation>
     </message>
     <message>
       <source>Save Macro</source>
@@ -7098,6 +7308,10 @@ Do you want to continue?</source>
     <message>
       <source>Outer</source>
       <translation>Зовнішній</translation>
+    </message>
+    <message>
+      <source>Split</source>
+      <translation>Розділити</translation>
     </message>
     <message>
       <source>No Browser</source>
@@ -7144,46 +7358,6 @@ Please open a browser window and type in: http://localhost:%1.</source>
       <translation>Не вдається знайти файл %1 ні в %2 , ні в %3</translation>
     </message>
     <message>
-      <source>Save %1 Document</source>
-      <translation>Зберегти %1 документ</translation>
-    </message>
-    <message>
-      <source>%1 document (*.FCStd)</source>
-      <translation>Документ %1 (*.FCStd)</translation>
-    </message>
-    <message>
-      <source>Document not closable</source>
-      <translation>Документ не закривається</translation>
-    </message>
-    <message>
-      <source>The document is not closable for the moment.</source>
-      <translation>Документ не може бути закритим в даний час.</translation>
-    </message>
-    <message>
-      <source>Exporting PDF...</source>
-      <translation>Експорт в PDF ...</translation>
-    </message>
-    <message>
-      <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
-    </message>
-    <message>
-      <source>Only one object selected. Please select two objects.
-Be aware the point where you click matters.</source>
-      <translation>Обрано лише один обʼєкт. Будь ласка, виберіть два обʼєкти. 
-Майте на увазі, що має значення місце, де ви робите вибір.</translation>
-    </message>
-    <message>
-      <source>Please select two objects.
-Be aware the point where you click matters.</source>
-      <translation>Будь ласка, виберіть два обʼєкти. Майте на увазі,
-що має значення місце, де ви робите вибір.</translation>
-    </message>
-    <message>
-      <source>New boolean item</source>
-      <translation>Новий логічний елемент</translation>
-    </message>
-    <message>
       <source>Navigation styles</source>
       <translation>Стилі навігації</translation>
     </message>
@@ -7204,24 +7378,24 @@ Be aware the point where you click matters.</source>
       <translation>Бажаєте зберегти внесені зміни в документ &apos;%1&apos; перед його закриттям?</translation>
     </message>
     <message>
+      <source>Do you want to save your changes to document before closing?</source>
+      <translation>Бажаєте зберегти зміни, які були внесені до документа перед його закриттям?</translation>
+    </message>
+    <message>
       <source>If you don&apos;t save, your changes will be lost.</source>
       <translation>Якщо ви не збережете, зміни будуть втрачено.</translation>
     </message>
     <message>
-      <source>Save a copy of the document under new filename...</source>
-      <translation>Зберегти копію документа під новим іменем файла...</translation>
+      <source>Apply answer to all</source>
+      <translation>Застосувати відповідь до наступних питань</translation>
     </message>
     <message>
-      <source>Frozen views</source>
-      <translation>Заморожені перегляди</translation>
+      <source>%1 Document(s) not saved</source>
+      <translation>%1 Документ(и/ів) не збережено</translation>
     </message>
     <message>
-      <source>Saving document failed</source>
-      <translation>Не вдалося зберегти документ</translation>
-    </message>
-    <message>
-      <source>Document</source>
-      <translation>Документ</translation>
+      <source>Some documents could not be saved. Do you want to cancel closing?</source>
+      <translation>Деякі документи не вдалося зберегти. Бажаєте скасувати закриття?</translation>
     </message>
     <message>
       <source>Delete macro</source>
@@ -7244,14 +7418,6 @@ Be aware the point where you click matters.</source>
       <translation>%1 не порожній, також видалити його вміст?</translation>
     </message>
     <message>
-      <source>Export failed</source>
-      <translation>Експорт не вдався</translation>
-    </message>
-    <message>
-      <source>Split</source>
-      <translation>Розділити</translation>
-    </message>
-    <message>
       <source>Translation:</source>
       <translation>Переміщення:</translation>
     </message>
@@ -7266,48 +7432,6 @@ Be aware the point where you click matters.</source>
     <message>
       <source>Edit text</source>
       <translation>Редагувати текст</translation>
-    </message>
-    <message>
-      <source>The exported object contains external link. Please save the documentat least once before exporting.</source>
-      <translation>Експортований об&apos;єкт містить зовнішні посилання. Збережіть документ хоча б раз перед експортом.</translation>
-    </message>
-    <message>
-      <source>Delete failed</source>
-      <translation>Не вдалося видалити</translation>
-    </message>
-    <message>
-      <source>Dependency error</source>
-      <translation>Помилка залежності</translation>
-    </message>
-    <message>
-      <source>Copy selected</source>
-      <translation>Копіювати вибране</translation>
-    </message>
-    <message>
-      <source>Copy active document</source>
-      <translation>Копіювати активний документ</translation>
-    </message>
-    <message>
-      <source>Copy all documents</source>
-      <translation>Копіювати всі документи</translation>
-    </message>
-    <message>
-      <source>Paste</source>
-      <translation>Вставити</translation>
-    </message>
-    <message>
-      <source>Expression error</source>
-      <translation>Помилка виразу</translation>
-    </message>
-    <message>
-      <source>Failed to parse some of the expressions.
-Please check the Report View for more details.</source>
-      <translation>Не вдалося обробити деякі з виразів.
-Будь ласка перевірте Звіт для отримання більш докладної інформації.</translation>
-    </message>
-    <message>
-      <source>Failed to paste expressions</source>
-      <translation>Не вдалося вставити вирази</translation>
     </message>
     <message>
       <source>Simple group</source>
@@ -7371,144 +7495,16 @@ underscore, and must not start with a digit.</source>
       <translation>Не вдалося додати властивість до &apos;%1&apos;: %2</translation>
     </message>
     <message>
-      <source>Save dependent files</source>
-      <translation>Зберегти залежні файли</translation>
-    </message>
-    <message>
-      <source>The file contains external dependencies. Do you want to save the dependent files, too?</source>
-      <translation>Файл містить зовнішні залежності. Бажаєте також зберегти залежні файли?</translation>
-    </message>
-    <message>
-      <source>Failed to save document</source>
-      <translation>Не вдалося зберегти документ</translation>
-    </message>
-    <message>
-      <source>Documents contains cyclic dependencies. Do you still want to save them?</source>
-      <translation>Документи містять циклічні залежності. Ви все ще хочете їх зберегти?</translation>
-    </message>
-    <message>
-      <source>Undo</source>
-      <translation>Скасувати</translation>
-    </message>
-    <message>
-      <source>Redo</source>
-      <translation>Повторити</translation>
-    </message>
-    <message>
-      <source>There are grouped transactions in the following documents with other preceding transactions</source>
-      <translation>В наступних документах відбувається групування операцій з іншими попередніми операціями</translation>
-    </message>
-    <message>
-      <source>Choose &apos;Yes&apos; to roll back all preceding transactions.
-Choose &apos;No&apos; to roll back in the active document only.
-Choose &apos;Abort&apos; to abort</source>
-      <translation>Виберіть &apos;Так&apos; для повернення всіх попередніх транзакцій.
-Виберіть &apos;Ні&apos; щоб повернути транзакції тільки в активному документі.
-Виберіть &apos;Скасувати&apos; для скасування</translation>
-    </message>
-    <message>
-      <source>Do you want to save your changes to document before closing?</source>
-      <translation>Бажаєте зберегти зміни, які були внесені до документа перед його закриттям?</translation>
-    </message>
-    <message>
-      <source>Apply answer to all</source>
-      <translation>Застосувати відповідь до наступних питань</translation>
-    </message>
-    <message>
       <source>Drag &amp; drop failed</source>
       <translation>Помилка перетягування</translation>
     </message>
     <message>
-      <source>Override colors...</source>
-      <translation>Змінити кольори...</translation>
-    </message>
-    <message>
-      <source>Identical physical path detected. It may cause unwanted overwrite of existing document!
-
-</source>
-      <translation>Виявлено ідентичний фізичний шлях. Це може призвести до перезапису наявного документа!
-
-</translation>
-    </message>
-    <message>
-      <source>Are you sure you want to continue?</source>
-      <translation>Ви впевнені, що бажаєте продовжити?</translation>
-    </message>
-    <message>
-      <source>Identical physical path</source>
-      <translation>Ідентичний фізичний шлях</translation>
-    </message>
-    <message>
-      <source>Error</source>
-      <translation>Помилка</translation>
-    </message>
-    <message>
-      <source>There were errors while loading the file. Some data might have been modified or not recovered at all. Look in the report view for more specific information about the objects involved.</source>
-      <translation>Під час завантаження файлу виникли помилки. Деякі дані, можливо, були змінені або взагалі не відновлені. Ознайомтесь зі звітом для більш отримання конкретної інформації щодо таких обʼєктів.</translation>
-    </message>
-    <message>
-      <source>There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</source>
-      <translation>При завантаженні файлу сталася серйозна помилка. Можливо, деякі дані були змінені або взагалі не відновлені. Збереження проєкту швидше за все, призведе до втрати даних.</translation>
-    </message>
-    <message>
-      <source>Workbenches</source>
-      <translation>Робочі середовища</translation>
-    </message>
-    <message>
-      <source>Could not save document</source>
-      <translation>Не вдалося зберегти документ</translation>
-    </message>
-    <message>
-      <source>There was an issue trying to save the file. This may be because some of the parent folders do not exist, or you do not have sufficient permissions, or for other reasons. Error details:
-
-&quot;%1&quot;
-
-Would you like to save the file with a different name?</source>
-      <translation>При спробі зберегти файл виникла проблема. Це може бути повʼязано з тим, що відсутні деякі батьківські теки, або у вас немає достатніх прав доступу, або з інших причин. Подробиці помилки:
-
-&quot;%1&quot;
-
-Хочете зберегти файл з іншим імʼям?</translation>
-    </message>
-    <message>
-      <source>Document not saved</source>
-      <translation>Документ не збережено</translation>
-    </message>
-    <message>
-      <source>The document%1 could not be saved. Do you want to cancel closing it?</source>
-      <translation>Документ%1 не вдалося зберегти. Бажаєте скасувати закриття?</translation>
-    </message>
-    <message>
-      <source>%1 Document(s) not saved</source>
-      <translation>%1 Документ(и/ів) не збережено</translation>
-    </message>
-    <message>
-      <source>Some documents could not be saved. Do you want to cancel closing?</source>
-      <translation>Деякі документи не вдалося зберегти. Бажаєте скасувати закриття?</translation>
-    </message>
-    <message>
-      <source>Please check report view for more...</source>
-      <translation>Будь ласка, перегляньте Вид Звіту...</translation>
-    </message>
-    <message>
-      <source>Physical path:</source>
-      <translation>Фізичний шлях:</translation>
-    </message>
-    <message>
-      <source>Document:</source>
-      <translation>Документ:</translation>
-    </message>
-    <message>
-      <source>Path:</source>
-      <translation>Шлях:</translation>
-    </message>
-    <message>
-      <source>Edit %1</source>
-      <translation>Редагувати %1</translation>
-    </message>
-    <message>
       <source>Setup configurable object</source>
       <translation>Налаштування конфігураційного обʼєкта</translation>
+    </message>
+    <message>
+      <source>Select which object to copy or exclude when configuration changes. All external linked objects are excluded by default.</source>
+      <translation type="unfinished">Select which object to copy or exclude when configuration changes. All external linked objects are excluded by default.</translation>
     </message>
     <message>
       <source>Please select which objects to copy when the configuration is changed</source>
@@ -7581,8 +7577,12 @@ the current copy will be lost.
       <translation>Перетворити в місці розташування</translation>
     </message>
     <message>
-      <source>Select which object to copy or exclude when configuration changes. All external linked objects are excluded by default.</source>
-      <translation type="unfinished">Select which object to copy or exclude when configuration changes. All external linked objects are excluded by default.</translation>
+      <source>Override colors...</source>
+      <translation>Змінити кольори...</translation>
+    </message>
+    <message>
+      <source>Edit %1</source>
+      <translation>Редагувати %1</translation>
     </message>
   </context>
   <context>
@@ -8270,12 +8270,12 @@ the current copy will be lost.
   <context>
     <name>StdCmdMeasurementSimple</name>
     <message>
-      <source>Measures distance between two selected objects</source>
-      <translation>Виміряти відстань між двома виділеними обʼєктами</translation>
-    </message>
-    <message>
       <source>Measure distance</source>
       <translation>Виміряти відстань</translation>
+    </message>
+    <message>
+      <source>Measures distance between two selected objects</source>
+      <translation>Виміряти відстань між двома виділеними обʼєктами</translation>
     </message>
   </context>
   <context>
@@ -8289,12 +8289,12 @@ the current copy will be lost.
       <translation>Обʼєднує проєкт</translation>
     </message>
     <message>
-      <source>Cannot merge project with itself.</source>
-      <translation>Неможливо злити проєкт з самим собою.</translation>
-    </message>
-    <message>
       <source>%1 document (*.FCStd)</source>
       <translation>Документ %1 (*.FCStd)</translation>
+    </message>
+    <message>
+      <source>Cannot merge project with itself.</source>
+      <translation>Неможливо злити проєкт з самим собою.</translation>
     </message>
   </context>
   <context>
@@ -9324,12 +9324,12 @@ the current copy will be lost.
   <context>
     <name>StdTreeMultiDocument</name>
     <message>
-      <source>Display all documents in the tree view</source>
-      <translation>Показує всі документи ієрархії документа</translation>
-    </message>
-    <message>
       <source>Multi document</source>
       <translation>Мульти-документ</translation>
+    </message>
+    <message>
+      <source>Display all documents in the tree view</source>
+      <translation>Показує всі документи ієрархії документа</translation>
     </message>
   </context>
   <context>
@@ -9368,12 +9368,12 @@ the current copy will be lost.
   <context>
     <name>StdTreeSingleDocument</name>
     <message>
-      <source>Only display the active document in the tree view</source>
-      <translation>Показує тільки активний документ в ієрархії документа</translation>
-    </message>
-    <message>
       <source>Single document</source>
       <translation>Окремий документ</translation>
+    </message>
+    <message>
+      <source>Only display the active document in the tree view</source>
+      <translation>Показує тільки активний документ в ієрархії документа</translation>
     </message>
   </context>
   <context>
@@ -9498,12 +9498,12 @@ Are you sure you want to continue?
 </translation>
     </message>
     <message>
-      <source>Object dependencies</source>
-      <translation>Залежності обʼєктів</translation>
-    </message>
-    <message>
       <source>These items are selected for deletion, but are not in the active document.</source>
       <translation>Ці елементи виділені для видалення, але вони знаходяться не в активному документі.</translation>
+    </message>
+    <message>
+      <source>Object dependencies</source>
+      <translation>Залежності обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -9524,36 +9524,20 @@ Are you sure you want to continue?
       <translation>Звичайний режим</translation>
     </message>
     <message>
-      <source>Wireframe</source>
-      <translation>Каркас</translation>
-    </message>
-    <message>
-      <source>Wireframe mode</source>
-      <translation>Каркасний режим</translation>
-    </message>
-    <message>
-      <source>Flat lines</source>
-      <translation>Прямі лінії</translation>
-    </message>
-    <message>
-      <source>Flat lines mode</source>
-      <translation>Режим прямих ліній</translation>
-    </message>
-    <message>
-      <source>Shaded</source>
-      <translation>Затінений</translation>
-    </message>
-    <message>
-      <source>Shaded mode</source>
-      <translation>Режим затіненя</translation>
-    </message>
-    <message>
       <source>Points</source>
       <translation>Точки</translation>
     </message>
     <message>
       <source>Points mode</source>
       <translation>Режим точок</translation>
+    </message>
+    <message>
+      <source>Wireframe</source>
+      <translation>Каркас</translation>
+    </message>
+    <message>
+      <source>Wireframe mode</source>
+      <translation>Каркасний режим</translation>
     </message>
     <message>
       <source>Hidden line</source>
@@ -9570,6 +9554,22 @@ Are you sure you want to continue?
     <message>
       <source>No shading mode</source>
       <translation>Режим без затінення</translation>
+    </message>
+    <message>
+      <source>Shaded</source>
+      <translation>Затінений</translation>
+    </message>
+    <message>
+      <source>Shaded mode</source>
+      <translation>Режим затіненя</translation>
+    </message>
+    <message>
+      <source>Flat lines</source>
+      <translation>Прямі лінії</translation>
+    </message>
+    <message>
+      <source>Flat lines mode</source>
+      <translation>Режим прямих ліній</translation>
     </message>
   </context>
   <context>
@@ -9608,12 +9608,12 @@ Do you still want to proceed?</source>
   <context>
     <name>Std_Revert</name>
     <message>
-      <source>This will discard all the changes since last file save.</source>
-      <translation>Це скасує всі зміни від часу останнього збереження файла.</translation>
-    </message>
-    <message>
       <source>Revert document</source>
       <translation>Відновити документ</translation>
+    </message>
+    <message>
+      <source>This will discard all the changes since last file save.</source>
+      <translation>Це скасує всі зміни від часу останнього збереження файла.</translation>
     </message>
     <message>
       <source>Do you want to continue?</source>
@@ -9679,6 +9679,10 @@ Do you still want to proceed?</source>
       <translation>Стандартні види</translation>
     </message>
     <message>
+      <source>Axonometric</source>
+      <translation>Аксонометрія</translation>
+    </message>
+    <message>
       <source>&amp;Stereo</source>
       <translation>&amp;Стерео</translation>
     </message>
@@ -9729,10 +9733,6 @@ Do you still want to proceed?</source>
     <message>
       <source>Special Ops</source>
       <translation>Спеціальні операції</translation>
-    </message>
-    <message>
-      <source>Axonometric</source>
-      <translation>Аксонометрія</translation>
     </message>
     <message>
       <source>Link actions</source>

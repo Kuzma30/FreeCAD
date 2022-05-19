@@ -4,153 +4,190 @@
   <context>
     <name>CmdWebBrowserBack</name>
     <message>
+      <location filename="../../Command.cpp" line="72"/>
       <source>Web</source>
-      <translation>Интернет</translation>
+      <translation type="unfinished">Web</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="73"/>
       <source>Previous page</source>
-      <translation>Предыдущая страница</translation>
+      <translation type="unfinished">Previous page</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="74"/>
       <source>Go back to the previous page</source>
-      <translation>Вернуться на предыдущую страницу</translation>
+      <translation type="unfinished">Go back to the previous page</translation>
     </message>
   </context>
   <context>
     <name>CmdWebBrowserNext</name>
     <message>
+      <location filename="../../Command.cpp" line="101"/>
       <source>Web</source>
-      <translation>Интернет</translation>
+      <translation type="unfinished">Web</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="102"/>
       <source>Next page</source>
-      <translation>Следующая страница</translation>
+      <translation type="unfinished">Next page</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="103"/>
       <source>Go to the next page</source>
-      <translation>Перейти на следующую страницу</translation>
+      <translation type="unfinished">Go to the next page</translation>
     </message>
   </context>
   <context>
     <name>CmdWebBrowserRefresh</name>
     <message>
+      <location filename="../../Command.cpp" line="130"/>
       <source>Web</source>
-      <translation>Интернет</translation>
+      <translation type="unfinished">Web</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="131"/>
+      <location filename="../../Command.cpp" line="132"/>
       <source>Refresh web page</source>
-      <translation>Обновить страницу</translation>
+      <translation type="unfinished">Refresh web page</translation>
     </message>
   </context>
   <context>
     <name>CmdWebBrowserSetURL</name>
     <message>
+      <location filename="../../Command.cpp" line="246"/>
       <source>Web</source>
-      <translation>Интернет</translation>
+      <translation type="unfinished">Web</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="247"/>
+      <location filename="../../Command.cpp" line="248"/>
       <source>Set URL</source>
-      <translation>Установить URL</translation>
+      <translation type="unfinished">Set URL</translation>
     </message>
   </context>
   <context>
     <name>CmdWebBrowserStop</name>
     <message>
+      <location filename="../../Command.cpp" line="158"/>
       <source>Web</source>
-      <translation>Интернет</translation>
+      <translation type="unfinished">Web</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="159"/>
+      <location filename="../../Command.cpp" line="160"/>
       <source>Stop loading</source>
-      <translation>Остановить загрузку</translation>
+      <translation type="unfinished">Stop loading</translation>
     </message>
   </context>
   <context>
     <name>CmdWebBrowserZoomIn</name>
     <message>
+      <location filename="../../Command.cpp" line="188"/>
       <source>Web</source>
-      <translation>Интернет</translation>
+      <translation type="unfinished">Web</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="189"/>
+      <location filename="../../Command.cpp" line="190"/>
       <source>Zoom in</source>
-      <translation>Увеличить</translation>
+      <translation type="unfinished">Zoom in</translation>
     </message>
   </context>
   <context>
     <name>CmdWebBrowserZoomOut</name>
     <message>
+      <location filename="../../Command.cpp" line="217"/>
       <source>Web</source>
-      <translation>Интернет</translation>
+      <translation type="unfinished">Web</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="218"/>
+      <location filename="../../Command.cpp" line="219"/>
       <source>Zoom out</source>
-      <translation>Уменьшить</translation>
+      <translation type="unfinished">Zoom out</translation>
     </message>
   </context>
   <context>
     <name>CmdWebOpenWebsite</name>
     <message>
+      <location filename="../../Command.cpp" line="46"/>
       <source>Web</source>
-      <translation>Интернет</translation>
+      <translation type="unfinished">Web</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="47"/>
       <source>Open website...</source>
-      <translation>Открыть сайт...</translation>
+      <translation type="unfinished">Open website...</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="48"/>
       <source>Opens a website in FreeCAD</source>
-      <translation>Открывает сайт в FreeCAD</translation>
+      <translation type="unfinished">Opens a website in FreeCAD</translation>
     </message>
   </context>
   <context>
     <name>QObject</name>
     <message>
+      <location filename="../../AppWebGui.cpp" line="85"/>
+      <location filename="../../BrowserView.cpp" line="781"/>
       <source>Browser</source>
-      <translation>Браузер</translation>
+      <translation type="unfinished">Browser</translation>
     </message>
     <message>
+      <location filename="../../BrowserView.cpp" line="593"/>
       <source>File does not exist!</source>
-      <translation>Файл не существует!</translation>
+      <translation type="unfinished">File does not exist!</translation>
     </message>
   </context>
   <context>
     <name>WebGui::BrowserView</name>
     <message>
+      <location filename="../../BrowserView.cpp" line="581"/>
+      <location filename="../../BrowserView.cpp" line="586"/>
+      <location filename="../../BrowserView.cpp" line="589"/>
       <source>Error</source>
-      <translation>Ошибки</translation>
+      <translation type="unfinished">Error</translation>
     </message>
     <message>
+      <location filename="../../BrowserView.cpp" line="586"/>
       <source>There were errors while loading the file. Some data might have been modified or not recovered at all. Look in the report view for more specific information about the objects involved.</source>
-      <translation>Произошли ошибки при загрузке файла. Возможно, некоторые данные были изменены или не восстановлены. Посмотрите в окно отчета для более конкретной информации о затронутых объектах.</translation>
+      <translation type="unfinished">There were errors while loading the file. Some data might have been modified or not recovered at all. Look in the report view for more specific information about the objects involved.</translation>
     </message>
     <message>
+      <location filename="../../BrowserView.cpp" line="589"/>
       <source>There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</source>
-      <translation>При загрузке файла возникли серьезные ошибки. Некоторые данные могли быть изменены или не восстановлены вообще. Сохранение проекта скорее всего приведет к потере данных.</translation>
+      <translation type="unfinished">There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</translation>
     </message>
     <message>
+      <location filename="../../BrowserView.cpp" line="749"/>
       <source>Loading %1...</source>
-      <translation>Загрузка %1...</translation>
+      <translation type="unfinished">Loading %1...</translation>
     </message>
   </context>
   <context>
     <name>WebGui::WebView</name>
     <message>
+      <location filename="../../BrowserView.cpp" line="351"/>
       <source>Open in External Browser</source>
-      <translation>Открыть во внешнем браузере</translation>
+      <translation type="unfinished">Open in External Browser</translation>
     </message>
     <message>
+      <location filename="../../BrowserView.cpp" line="355"/>
       <source>Open in new window</source>
-      <translation>Открыть в новом окне</translation>
+      <translation type="unfinished">Open in new window</translation>
     </message>
     <message>
+      <location filename="../../BrowserView.cpp" line="387"/>
       <source>View source</source>
-      <translation>Просмотр HTML-кода</translation>
+      <translation type="unfinished">View source</translation>
     </message>
   </context>
   <context>
     <name>Workbench</name>
     <message>
+      <location filename="../../Workbench.cpp" line="37"/>
       <source>Navigation</source>
-      <translation>Навигация</translation>
+      <translation type="unfinished">Navigation</translation>
     </message>
   </context>
 </TS>

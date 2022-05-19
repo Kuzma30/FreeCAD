@@ -4,9 +4,14 @@
   <context>
     <name>PartDesign_InvoluteGear</name>
     <message>
-      <location filename="../../../InvoluteGearFeature.py" line="59"/>
+      <location filename="../../../InvoluteGearFeature.py" line="61"/>
       <source>Involute gear...</source>
       <translation>Евольвентне зачеплення...</translation>
+    </message>
+    <message>
+      <location filename="../../../InvoluteGearFeature.py" line="66"/>
+      <source>Creates or edit the involute gear definition.</source>
+      <translation type="unfinished">Creates or edit the involute gear definition.</translation>
     </message>
   </context>
   <context>
@@ -17,7 +22,7 @@
       <translation>Зірочка...</translation>
     </message>
     <message>
-      <location filename="../../../SprocketFeature.py" line="66"/>
+      <location filename="../../../SprocketFeature.py" line="68"/>
       <source>Creates or edit the sprocket definition.</source>
       <translation>Створює або редагує зірочку ланцюгової передачі.</translation>
     </message>
@@ -25,12 +30,14 @@
   <context>
     <name>WizardShaft</name>
     <message>
-      <location filename="../../../WizardShaft/WizardShaft.py" line="246"/>
+      <location filename="../../../WizardShaft/WizardShaft.py" line="218"/>
+      <location filename="../../../WizardShaft/WizardShaft.py" line="247"/>
       <source>Shaft design wizard...</source>
       <translation>Майстер конструювання валів ...</translation>
     </message>
     <message>
-      <location filename="../../../WizardShaft/WizardShaft.py" line="247"/>
+      <location filename="../../../WizardShaft/WizardShaft.py" line="221"/>
+      <location filename="../../../WizardShaft/WizardShaft.py" line="250"/>
       <source>Start the shaft design wizard</source>
       <translation>Запустити майстра конструювання валів</translation>
     </message>

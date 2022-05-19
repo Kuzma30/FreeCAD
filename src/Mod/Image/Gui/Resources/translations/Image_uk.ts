@@ -6,7 +6,7 @@
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="168"/>
       <source>Scale image plane</source>
-      <translation type="unfinished">Scale image plane</translation>
+      <translation>Масштабувати зображення площини</translation>
     </message>
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="169"/>
@@ -49,7 +49,7 @@
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="74"/>
       <source>Scales an image plane by defining a distance between two points</source>
-      <translation type="unfinished">Scales an image plane by defining a distance between two points</translation>
+      <translation>Масштабує зображення площини, визначаючи відстань між двома точками</translation>
     </message>
   </context>
   <context>

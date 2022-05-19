@@ -9,7 +9,8 @@
       <translation>Таблиця</translation>
     </message>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="1031"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="879"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1032"/>
       <source>Cell</source>
       <translation>Комірка</translation>
     </message>
@@ -19,7 +20,7 @@
       <translation>Застосувати</translation>
     </message>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="884"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="886"/>
       <source>Apply the changes to the current cell</source>
       <translation>Застосувати зміни до поточної комірки</translation>
     </message>
@@ -29,7 +30,7 @@
       <translation>Видалити</translation>
     </message>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="890"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="892"/>
       <source>Deletes the contents of the current cell</source>
       <translation>Видаляє вміст поточної комірки</translation>
     </message>
@@ -39,22 +40,23 @@
       <translation>Обчислити</translation>
     </message>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="896"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="898"/>
       <source>Updates the values handled by controllers</source>
       <translation>Оновлює значення, які обробляються елементами керування</translation>
     </message>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="1075"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1076"/>
       <source>Create Spreadsheet</source>
       <translation>Створити таблицю</translation>
     </message>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="1113"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1114"/>
       <source>Add controller</source>
       <translation>Додати елемент керування</translation>
     </message>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="1178"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1155"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1179"/>
       <source>Add property controller</source>
       <translation>Додати контролер властивостей</translation>
     </message>
@@ -62,9 +64,14 @@
   <context>
     <name>Spreadsheet_Controller</name>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="1091"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1093"/>
       <source>Add controller</source>
       <translation>Додати елемент керування</translation>
+    </message>
+    <message>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1097"/>
+      <source>Adds a cell controller to a selected spreadsheet</source>
+      <translation type="unfinished">Adds a cell controller to a selected spreadsheet</translation>
     </message>
   </context>
   <context>
@@ -75,7 +82,7 @@
       <translation>Таблиця</translation>
     </message>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="1067"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1069"/>
       <source>Adds a spreadsheet object to the active document</source>
       <translation>Додає обʼєкт електронної таблиці до активного документа</translation>
     </message>
@@ -83,9 +90,14 @@
   <context>
     <name>Spreadsheet_PropertyController</name>
     <message>
-      <location filename="../../../App/Spreadsheet_legacy.py" line="1132"/>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1134"/>
       <source>Add property controller</source>
       <translation>Додати контролер властивостей</translation>
+    </message>
+    <message>
+      <location filename="../../../App/Spreadsheet_legacy.py" line="1138"/>
+      <source>Adds a property controller to a selected spreadsheet</source>
+      <translation type="unfinished">Adds a property controller to a selected spreadsheet</translation>
     </message>
   </context>
   <context>

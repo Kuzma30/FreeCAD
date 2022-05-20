@@ -3131,7 +3131,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="69"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="70"/>
@@ -3835,7 +3835,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="466"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="467"/>
@@ -4339,7 +4339,7 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathWaterline.py" line="115"/>
       <location filename="../../../PathScripts/PathWaterline.py" line="128"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="116"/>
@@ -6319,7 +6319,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="97"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="107"/>
@@ -8306,7 +8306,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1068"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1078"/>

@@ -3128,12 +3128,12 @@ of projection.</source>
     <message>
       <location filename="../../Command.cpp" line="1691"/>
       <source>Make Offset</source>
-      <translation type="unfinished">Make Offset</translation>
+      <translation>Створити зсув</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1757"/>
       <source>Make 2D Offset</source>
-      <translation type="unfinished">Make 2D Offset</translation>
+      <translation>Створює 2D зсув</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1941"/>
@@ -5377,7 +5377,7 @@ the sketch plane&apos;s normal vector will be used</translation>
       <location filename="../../SectionCutting.ui" line="118"/>
       <location filename="../../SectionCutting.ui" line="186"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="71"/>
@@ -6121,7 +6121,7 @@ by dragging a selection rectangle in the 3D view</translation>
       <location filename="../../TaskOffset.ui" line="14"/>
       <location filename="../../TaskOffset.ui" line="20"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../TaskOffset.ui" line="34"/>

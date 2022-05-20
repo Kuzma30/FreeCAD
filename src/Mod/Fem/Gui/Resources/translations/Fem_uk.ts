@@ -4106,7 +4106,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/ResultShow.ui" line="217"/>
       <source>Displacement</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="225"/>

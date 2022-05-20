@@ -1592,14 +1592,14 @@ to polar or circular, and its properties can be modified.</source>
     <message>
       <location filename="../../draftguitools/gui_beziers.py" line="65"/>
       <source>Bézier curve</source>
-      <translation type="unfinished">Bézier curve</translation>
+      <translation>Крива Безьє</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_beziers.py" line="69"/>
       <source>Creates an N-degree Bézier curve. The more points you pick, the higher the degree.
 CTRL to snap, SHIFT to constrain.</source>
-      <translation type="unfinished">Creates an N-degree Bézier curve. The more points you pick, the higher the degree.
-CTRL to snap, SHIFT to constrain.</translation>
+      <translation>Створює криву Безьє N-ступеня. Чим більше точок ви виберете, тим вищий ступінь.
+CTRL для прив'язки, SHIFT для обмеження.</translation>
     </message>
   </context>
   <context>
@@ -1612,7 +1612,7 @@ CTRL to snap, SHIFT to constrain.</translation>
     <message>
       <location filename="../../draftguitools/gui_beziers.py" line="496"/>
       <source>Create various types of Bézier curves.</source>
-      <translation type="unfinished">Create various types of Bézier curves.</translation>
+      <translation>Створює різні типи кривих Безьє.</translation>
     </message>
   </context>
   <context>
@@ -1669,16 +1669,16 @@ The resulting clone can be scaled in each of its three directions.</source>
     <message>
       <location filename="../../draftguitools/gui_beziers.py" line="250"/>
       <source>Cubic Bézier curve</source>
-      <translation type="unfinished">Cubic Bézier curve</translation>
+      <translation>Кубічна крива Безьє</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_beziers.py" line="254"/>
       <source>Creates a Bézier curve made of 2nd degree (quadratic) and 3rd degree (cubic) segments. Click and drag to define each segment.
 After the curve is created you can go back to edit each control point and set the properties of each knot.
 CTRL to snap, SHIFT to constrain.</source>
-      <translation type="unfinished">Creates a Bézier curve made of 2nd degree (quadratic) and 3rd degree (cubic) segments. Click and drag to define each segment.
-After the curve is created you can go back to edit each control point and set the properties of each knot.
-CTRL to snap, SHIFT to constrain.</translation>
+      <translation>Створює криву Безьє, що складається з сегментів 2-го ступеня (квадратичних) та 3-го ступеня (кубічних). Клацніть та перетягніть, щоб визначити кожен сегмент.
+Після створення кривої можна змінити кожну контрольну точку та встановити властивості кожного вузла.
+CTRL для прив'язки, SHIFT для обмеження.</translation>
     </message>
   </context>
   <context>
@@ -2003,7 +2003,7 @@ CTRL to snap, SHIFT to constrain.</translation>
     <message>
       <location filename="../../draftguitools/gui_offset.py" line="64"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_offset.py" line="68"/>
@@ -2046,9 +2046,9 @@ The array can be turned into a polar or a circular array by changing its type.</
       <source>Creates copies of the selected object along a selected path.
 First select the object, and then select the path.
 The path can be a polyline, B-spline, Bezier curve, or even edges from other objects.</source>
-      <translation>Створює копії обраного об'єкту вздовж обраної траєкторії.
-Спочатку виберіть об'єкт та виберіть шлях.
-Шлях може бути багатолінійним, B-сплайном, кривою Безьє або навіть ребра інших об'єктів.</translation>
+      <translation>Створює копії обраного об'єкта вздовж виділеної траєкторії.
+Спочатку виділіть об'єкт потім траєкторію.
+Траєкторіє може бути полілінія, B-сплайн, крива Безьє або навіть ребра інших об'єктів.</translation>
     </message>
   </context>
   <context>
@@ -2078,9 +2078,9 @@ A &apos;Link array&apos; is more efficient when handling many copies but the &ap
       <source>Creates copies of the selected object along a selected path, and twists the copies.
 First select the object, and then select the path.
 The path can be a polyline, B-spline, Bezier curve, or even edges from other objects.</source>
-      <translation>Створює копії обраного об'єкту вздовж обраного шляху і спотворює його копії.
-Спочатку виберіть об'єкт і виберіть потрібну траєкторію.
-Шлях може бути багатолінійним, B-сплайном, кривою Безьє або навіть ребра від інших об'єктів.</translation>
+      <translation>Створює копії обраного об'єкта вздовж виділеної траєкторії та скручує копії.
+Спочатку виділіть об'єкт потім траєкторію.
+Траєкторіє може бути полілінія, B-сплайн, крива Безьє або навіть ребра інших об'єктів.</translation>
     </message>
   </context>
   <context>
@@ -3902,7 +3902,7 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
       <location filename="../../draftguitools/gui_offset.py" line="340"/>
       <location filename="../../DraftGui.py" line="1353"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_selectplane.py" line="574"/>
@@ -4547,7 +4547,7 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
       <location filename="../../draftguitools/gui_beziers.py" line="136"/>
       <location filename="../../draftguitools/gui_beziers.py" line="341"/>
       <source>Bézier curve has been closed</source>
-      <translation type="unfinished">Bézier curve has been closed</translation>
+      <translation>Крива Безьє була замкнена</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_beziers.py" line="144"/>
@@ -6631,7 +6631,7 @@ view each time a command is started</source>
     <message>
       <location filename="../ui/TaskSelectPlane.ui" line="87"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../ui/TaskSelectPlane.ui" line="94"/>

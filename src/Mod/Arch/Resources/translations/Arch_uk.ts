@@ -1514,7 +1514,7 @@
     <message>
       <location filename="../../ArchTruss.py" line="231"/>
       <source>An optional end offset for the top strut</source>
-      <translation>Опція кінцевого зміщення для верхньої стійки</translation>
+      <translation>Необовʼязковий кінцевий зсув для верхньої стійки</translation>
     </message>
     <message>
       <location filename="../../ArchTruss.py" line="241"/>
@@ -1951,7 +1951,7 @@
     <message>
       <location filename="../../ArchBuildingPart.py" line="709"/>
       <source>If true, display offset will affect the origin mark too</source>
-      <translation>Якщо так, відображення зміщення вплине на початок координат також</translation>
+      <translation>Якщо ввімкнено, то зсув зображення вплине на початок координат також</translation>
     </message>
     <message>
       <location filename="../../ArchBuildingPart.py" line="718"/>
@@ -2082,7 +2082,7 @@
     <message>
       <location filename="../../ArchStructure.py" line="862"/>
       <source>Start offset distance along the extrusion path (positive: extend, negative: trim)</source>
-      <translation>Почати відстань зміщення вздовж шляху екструзії (позитивне: збільшення, негативне: обрізка)</translation>
+      <translation>Відстань початкового зсуву вздовж траєкторії видавлювання (позитивне: збільшення, негативне: обрізка)</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="872"/>
@@ -2097,12 +2097,12 @@
     <message>
       <location filename="../../ArchStructure.py" line="892"/>
       <source>X offset between the Base origin and the Tool axis (only used if BasePerpendicularToTool is True)</source>
-      <translation>Зміщення X між початковою точкою та віссю інструменту (використовується тільки якщо BasePerpendicularToTool дорівнює True)</translation>
+      <translation>Зсув X між початковою точкою та віссю інструменту (використовується тільки якщо BasePerpendicularToTool дорівнює True)</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="902"/>
       <source>Y offset between the Base origin and the Tool axis (only used if BasePerpendicularToTool is True)</source>
-      <translation>Зміщення Y між початковою точкою та віссю інструменту (використовується тільки якщо BasePerpendicularToTool дорівнює True)</translation>
+      <translation>Зсув Y між початковою точкою та віссю інструменту (використовується тільки якщо BasePerpendicularToTool дорівнює True)</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="912"/>
@@ -2127,7 +2127,7 @@
     <message>
       <location filename="../../ArchStructure.py" line="991"/>
       <source>Offset distance between the centerline and the nodes line</source>
-      <translation>Зміщення відстані між центральною лінією і вузлами</translation>
+      <translation>Відстань зсуву між центральною лінією і вузлами</translation>
     </message>
     <message>
       <location filename="../../ArchStructure.py" line="1371"/>
@@ -3077,7 +3077,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../ArchWindow.py" line="2167"/>
       <source>If this is checked, the default Offset value of this window will be added to the value entered here</source>
-      <translation>Якщо це позначено, типове значення зміщення у цьому вікні буде додано до введеного тут значення</translation>
+      <translation>Якщо це позначено, типове значення зсуву у цьому вікні буде додано до введеного тут значення</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="2175"/>

@@ -187,8 +187,8 @@
       <location filename="../../draftobjects/array.py" line="184"/>
       <source>Center point for polar and circular arrays.
 The &apos;Axis&apos; passes through this point.</source>
-      <translation type="unfinished">Center point for polar and circular arrays.
-The &apos;Axis&apos; passes through this point.</translation>
+      <translation>Центральна точка для полярних та кругових масивів.
+ &apos;Вісь&apos; проходить через цю точку.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="204"/>
@@ -227,7 +227,7 @@ Leave this property empty to be able to set &apos;Axis&apos; and &apos;Center&ap
     <message>
       <location filename="../../draftobjects/array.py" line="260"/>
       <source>Number of circular layers. The &apos;Base&apos; object counts as one layer.</source>
-      <translation type="unfinished">Number of circular layers. The &apos;Base&apos; object counts as one layer.</translation>
+      <translation>Кількість кругових шарів. Об'єкт &apos;Base&apos; є одним шаром.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="272"/>
@@ -349,7 +349,7 @@ set True for fusion or False for compound</source>
     <message>
       <location filename="../../draftobjects/wire.py" line="56"/>
       <source>The base object is the wire, it&apos;s formed from 2 objects</source>
-      <translation type="unfinished">The base object is the wire, it&apos;s formed from 2 objects</translation>
+      <translation>Базовий об'єкт - полілінія утворена з 2 об’єктів</translation>
     </message>
     <message>
       <location filename="../../draftobjects/wire.py" line="61"/>
@@ -457,12 +457,12 @@ set True for fusion or False for compound</source>
     <message>
       <location filename="../../draftobjects/shape2dview.py" line="133"/>
       <source>If this is True, only solid geometry is handled. This overrides the base object&apos;s Only Solids property</source>
-      <translation type="unfinished">If this is True, only solid geometry is handled. This overrides the base object&apos;s Only Solids property</translation>
+      <translation>Якщо ця опція встановлена, обробляється лише суцільна геометрія. Це замінює властивість "Тільки суцільні тіла" базового об'єкта</translation>
     </message>
     <message>
       <location filename="../../draftobjects/shape2dview.py" line="139"/>
       <source>If this is True, the contents are clipped to the borders of the section plane, if applicable. This overrides the base object&apos;s Clip property</source>
-      <translation type="unfinished">If this is True, the contents are clipped to the borders of the section plane, if applicable. This overrides the base object&apos;s Clip property</translation>
+      <translation>Якщо це Істина, вміст відсікається до меж площини перерізу, якщо це можливо. Це замінює властивість Обрізки базового об'єкта</translation>
     </message>
     <message>
       <location filename="../../draftobjects/shape2dview.py" line="144"/>
@@ -571,8 +571,8 @@ The sketch or compound must contain at least one explicit point or vertex object
       <location filename="../../draftobjects/pointarray.py" line="97"/>
       <source>Total number of elements in the array.
 This property is read-only, as the number depends on the points contained within &apos;Point Object&apos;.</source>
-      <translation type="unfinished">Total number of elements in the array.
-This property is read-only, as the number depends on the points contained within &apos;Point Object&apos;.</translation>
+      <translation>Загальна кількість елементів у масиві.
+Ця властивість доступна лише для читання, оскільки кількість залежить від точок, що містяться в "Point Object".</translation>
     </message>
     <message>
       <location filename="../../draftobjects/pointarray.py" line="106"/>
@@ -652,8 +652,8 @@ it will be a point that lies on the arc.</source>
       <location filename="../../draftobjects/dimension.py" line="257"/>
       <source>The direction of the dimension line.
 If this remains &apos;(0,0,0)&apos;, the direction will be calculated automatically.</source>
-      <translation type="unfinished">The direction of the dimension line.
-If this remains &apos;(0,0,0)&apos;, the direction will be calculated automatically.</translation>
+      <translation>Напрямок розмірної лінії.
+Якщо це значення залишається '(0,0,0)', напрямок буде обчислюватися автоматично.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/dimension.py" line="275"/>
@@ -664,13 +664,13 @@ from the &apos;Start&apos; and &apos;End&apos; properties.
 
 If the &apos;Linked Geometry&apos; is an arc or circle, this &apos;Distance&apos;
 is the radius or diameter, depending on the &apos;Diameter&apos; property.</source>
-      <translation type="unfinished">The value of the measurement.
+      <translation>Значення вимірювання.
 
-This property is read-only because the value is calculated
-from the &apos;Start&apos; and &apos;End&apos; properties.
+Ця властивість доступна лише для читання, оскільки обчислюється значення
+із властивостей «Початок» і «Кінець».
 
-If the &apos;Linked Geometry&apos; is an arc or circle, this &apos;Distance&apos;
-is the radius or diameter, depending on the &apos;Diameter&apos; property.</translation>
+Якщо "Звʼязана геометрія" є дугою або колом, ця "Відстань"
+– радіус або діаметр, залежно від властивості «Діаметр».</translation>
     </message>
     <message>
       <location filename="../../draftobjects/dimension.py" line="287"/>
@@ -699,10 +699,10 @@ The arc is drawn counter-clockwise.</source>
 
 This is normally the point where two line segments, or their extensions
 intersect, resulting in the measured &apos;Angle&apos; between them.</source>
-      <translation type="unfinished">The center point of the dimension line, which is a circular arc.
+      <translation>Центральна точка розмірної лінії, яка є круговою дугою.
 
-This is normally the point where two line segments, or their extensions
-intersect, resulting in the measured &apos;Angle&apos; between them.</translation>
+Зазвичай це точка перетину двох відрізків або їх продовження,
+в результаті чого вимірюється "Кут'' між ними.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/dimension.py" line="547"/>
@@ -710,10 +710,10 @@ intersect, resulting in the measured &apos;Angle&apos; between them.</translatio
 
 This property is read-only because the value is calculated from
 the &apos;First Angle&apos; and &apos;Last Angle&apos; properties.</source>
-      <translation type="unfinished">The value of the measurement.
+      <translation>Значення вимірювання.
 
-This property is read-only because the value is calculated from
-the &apos;First Angle&apos; and &apos;Last Angle&apos; properties.</translation>
+Ця властивість доступна лише для читання, оскільки значення обчислюється з
+властивості "Перший кут" та "Останній кут".</translation>
     </message>
     <message>
       <location filename="../../draftobjects/label.py" line="67"/>
@@ -2301,8 +2301,8 @@ These projections can be used to create technical drawings with the TechDraw Wor
       <location filename="../../draftguitools/gui_shapestrings.py" line="71"/>
       <source>Creates a shape from a text string by choosing a specific font and a placement.
 The closed shapes can be used for extrusions and boolean operations.</source>
-      <translation>Створює форму з текстового рядка, вибираючи певний шрифт і розміщення.
-Закриті форми можуть бути використані для видавлювання та булевих операцій.</translation>
+      <translation>Створює фігуру з текстового рядка, вибираючи певний шрифт і розміщення.
+Закриті фігури можна використовувати для видавлювання та булевих операцій.</translation>
     </message>
   </context>
   <context>
@@ -4011,12 +4011,12 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
     <message>
       <location filename="../../draftguitools/gui_stretch.py" line="186"/>
       <source>Pick start point of displacement</source>
-      <translation>Вкажіть початкову точку зміщення</translation>
+      <translation>Вкажіть початкову точку зсуву</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_stretch.py" line="249"/>
       <source>Pick end point of displacement</source>
-      <translation>Вкажіть кінцеву точку зміщення</translation>
+      <translation>Вкажіть кінцеву точку зсуву</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_stretch.py" line="529"/>
@@ -4216,12 +4216,12 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
     <message>
       <location filename="../../draftguitools/gui_offset.py" line="81"/>
       <source>Select an object to offset</source>
-      <translation>Оберіть обʼєкт для зміщення</translation>
+      <translation>Виділіть обʼєкт для зсуву</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_offset.py" line="88"/>
       <source>Offset only works on one object at a time.</source>
-      <translation>Зміщення працює лише на одному обʼєкті одночасно.</translation>
+      <translation>Зсув працює лише для одного обʼєкта за раз.</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_offset.py" line="98"/>
@@ -4231,7 +4231,7 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
     <message>
       <location filename="../../draftguitools/gui_offset.py" line="134"/>
       <source>Offset of Bezier curves is currently not supported</source>
-      <translation>Зміщення кривих Безьє в даний час не підтримується</translation>
+      <translation>Зсув кривих Безьє зараз не підтримується</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_offset.py" line="154"/>
@@ -4308,7 +4308,7 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
       <location filename="../../DraftGui.py" line="1360"/>
       <location filename="../../DraftGui.py" line="1419"/>
       <source>Offset distance</source>
-      <translation>Відстань зміщення</translation>
+      <translation>Відстань зсуву</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_trimex.py" line="221"/>
@@ -4319,7 +4319,7 @@ https://github. om/yorikvanhavre/Draft-dxf-імпортер
     <message>
       <location filename="../../draftguitools/gui_trimex.py" line="222"/>
       <source>Offset angle</source>
-      <translation>Кут зміщення</translation>
+      <translation>Кут зсуву</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_trimex.py" line="491"/>
@@ -5068,12 +5068,12 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
     <message>
       <location filename="../../DraftGui.py" line="1004"/>
       <source>If checked, an OCC-style offset will be performedinstead of the classic offset</source>
-      <translation>Якщо вибрано, то зміщення стилю CC-типу буде виконано замість класичного зсуву</translation>
+      <translation>Якщо вибрано, то замість класичного зсуву буде виконаний зсув OCC-типу</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="1005"/>
       <source>&amp;OCC-style offset</source>
-      <translation>Зміщення у &amp;OCC-стилі</translation>
+      <translation>Зсув у &amp;OCC стилі</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="1015"/>
@@ -6046,9 +6046,9 @@ The number must be at least 1 in each direction.</source>
       <source>Distance between the elements in the X direction.
 Normally, only the X value is necessary; the other two values can give an additional shift in their respective directions.
 Negative values will result in copies produced in the negative direction.</source>
-      <translation>Відстань між елементами в напрямку X.
-Зазвичай необхідно лише значення X; два інших значення можуть дати додатковий зміщення у відповідних напрямках.
-Негативні значення призведуть до копій вироблених в негативному напрямку.</translation>
+      <translation>Відстань між елементами у напрямку X.
+Зазвичай необхідно лише значення X; два інших значення можуть дати додатковий зсув у відповідних напрямках.
+Негативні значення призведуть створення копій у зворотному напрямку.</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="124"/>

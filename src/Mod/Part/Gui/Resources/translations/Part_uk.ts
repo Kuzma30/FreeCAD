@@ -98,12 +98,12 @@
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="794"/>
       <source>Attachment Offset (in local coordinates):</source>
-      <translation>Зміщення прикріплення (в локальних координатах):</translation>
+      <translation>Зсув прикріплення (в локальних координатах):</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="803"/>
       <source>Attachment Offset (inactive - not attached):</source>
-      <translation>Зміщення приєднання (поля не активні - не приєднано):</translation>
+      <translation>Зсув приєднання (поля не активні - не приєднано):</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/Commands.py" line="88"/>
@@ -836,7 +836,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../ViewProviderMirror.cpp" line="526"/>
       <source>Edit offset</source>
-      <translation>Редагувати зміщення</translation>
+      <translation>Редагувати зсув</translation>
     </message>
     <message>
       <location filename="../../ViewProviderMirror.cpp" line="610"/>
@@ -2364,12 +2364,12 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../Command.cpp" line="1792"/>
       <source>Offset:</source>
-      <translation>Зміщення:</translation>
+      <translation>Зсув:</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1793"/>
       <source>Tools to offset shapes (construct parallel shapes)</source>
-      <translation>Інструменти для зміщення фігур (побудова паралельних фігур)</translation>
+      <translation>Інструменти для зсуву фігур (побудова паралельних фігур)</translation>
     </message>
   </context>
   <context>
@@ -2710,12 +2710,12 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../Command.cpp" line="1668"/>
       <source>3D Offset...</source>
-      <translation>3D зміщення...</translation>
+      <translation>3D зсув...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1669"/>
       <source>Utility to offset in 3D</source>
-      <translation>Утиліта для зміщення в 3D</translation>
+      <translation>Утиліта для зсуву в 3D</translation>
     </message>
   </context>
   <context>
@@ -2728,12 +2728,12 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../Command.cpp" line="1733"/>
       <source>2D Offset...</source>
-      <translation>2D зміщення...</translation>
+      <translation>2D зсув...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1734"/>
       <source>Utility to offset planar shapes</source>
-      <translation>Утиліта для зміщення плоских фігур</translation>
+      <translation>Утиліта для зсуву плоских фігур</translation>
     </message>
   </context>
   <context>
@@ -3262,7 +3262,7 @@ of projection.</source>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="124"/>
       <source>Attachment Offset (in local coordinates):</source>
-      <translation>Зміщення прикріплення (в локальних координатах):</translation>
+      <translation>Зсув прикріплення (в локальних координатах):</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="136"/>
@@ -5678,7 +5678,7 @@ only created cuts will be visible</translation>
       <location filename="../../TaskAttacher.ui" line="124"/>
       <location filename="../../TaskAttacher.cpp" line="336"/>
       <source>Attachment Offset (in local coordinates):</source>
-      <translation>Зміщення прикріплення (в локальних координатах):</translation>
+      <translation>Зсув прикріплення (в локальних координатах):</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.ui" line="136"/>
@@ -5784,7 +5784,7 @@ of object being attached.</translation>
     <message>
       <location filename="../../TaskAttacher.cpp" line="336"/>
       <source>Attachment Offset (inactive - not attached):</source>
-      <translation>Зміщення приєднання (поля не активні - не приєднано):</translation>
+      <translation>Зсув приєднання (поля не активні - не приєднано):</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.cpp" line="631"/>
@@ -6172,7 +6172,7 @@ by dragging a selection rectangle in the 3D view</translation>
     <message>
       <location filename="../../TaskOffset.ui" line="100"/>
       <source>Fill offset</source>
-      <translation>Заповнити зміщення</translation>
+      <translation>Заповнити зсув</translation>
     </message>
     <message>
       <location filename="../../TaskOffset.ui" line="114"/>

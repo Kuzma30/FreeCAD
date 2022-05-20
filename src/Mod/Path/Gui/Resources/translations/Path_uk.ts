@@ -488,12 +488,12 @@
     <message>
       <location filename="../../../PathScripts/PathProbe.py" line="57"/>
       <source>X offset between tool and probe</source>
-      <translation>Зміщення по вісі X між інструментом і зондом</translation>
+      <translation>Зсув по вісі X між інструментом і зондом</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProbe.py" line="63"/>
       <source>Y offset between tool and probe</source>
-      <translation>Зміщення по вісі Y між інструментом і зондом</translation>
+      <translation>Зсув по вісі Y між інструментом і зондом</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProbe.py" line="71"/>
@@ -736,7 +736,7 @@
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="170"/>
       <source>Additional offset to the selected bounding box</source>
-      <translation>Додаткове зміщення до виділеної обмежувальної рамки</translation>
+      <translation>Додатковий зсув до виділеної обмежувальної рамки</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="178"/>

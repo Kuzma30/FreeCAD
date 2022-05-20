@@ -1950,7 +1950,7 @@ Objects added to this layer can share the same visual properties such as line co
     <message>
       <location filename="../../draftguitools/gui_lines.py" line="68"/>
       <source>Creates a 2-point line. CTRL to snap, SHIFT to constrain.</source>
-      <translation>Створює криву Безьє. CTRL для притягування, SHIFT для обмеження.</translation>
+      <translation>Створює криву Безьє. CTRL для привʼязки, SHIFT для обмеження.</translation>
     </message>
   </context>
   <context>
@@ -2362,7 +2362,7 @@ straight Draft lines that are drawn in the XY plane. Selected objects that aren&
     <message>
       <location filename="../../draftguitools/gui_snaps.py" line="434"/>
       <source>Set snapping to the center of a circular arc.</source>
-      <translation>Установіть прив’язування до центру дуги окружності.</translation>
+      <translation>Встановіть прив’язування до центру дуги окружності.</translation>
     </message>
   </context>
   <context>
@@ -2518,7 +2518,7 @@ straight Draft lines that are drawn in the XY plane. Selected objects that aren&
     <message>
       <location filename="../../draftguitools/gui_snaps.py" line="579"/>
       <source>Set snapping to the special points defined inside an object.</source>
-      <translation>Установіть прив'язку до спеціальних точок, визначених всередині об'єкта.</translation>
+      <translation>Встановіть прив'язку до спеціальних точок, визначених всередині об'єкта.</translation>
     </message>
   </context>
   <context>
@@ -2702,7 +2702,7 @@ convert closed edges into filled faces and parametric polygons, and merge faces 
     <message>
       <location filename="../../draftguitools/gui_lines.py" line="321"/>
       <source>Creates a multiple-points line (polyline). CTRL to snap, SHIFT to constrain.</source>
-      <translation>Створює криву Безьє. CTRL для притягування, SHIFT для обмеження.</translation>
+      <translation>Створює полілінію. CTRL для привʼязки, SHIFT для обмеження.</translation>
     </message>
   </context>
   <context>

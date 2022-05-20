@@ -188,8 +188,8 @@ def find_tools(noobsolete=True):
         QMAKE = "qmake-qt5"
     else:
         raise Exception("Cannot find qmake")
-    if (os.system("lupdate -version") == 0):
-        LUPDATE = "lupdate"
+    if (os.system("~/QT/bin/lupdate -version") == 0):
+        LUPDATE = "~/QT/bin/lupdate"
         # TODO: we suppose lupdate is a symlink to lupdate-qt4 for now
         if noobsolete:
             LUPDATE += " -no-obsolete"
@@ -251,7 +251,7 @@ def update_translation(entry):
     )
     execline.append(f"mv {tsBasename}.ts.temp {tsBasename}.ts")
     execline.append(
-        f'{PYLUPDATE} `find ./ -name "*.py"` -ts {tsBasename}py.ts {log_redirect}'
+        f'{LUPDATE} `find ./ -name "*.py"` -ts {tsBasename}py.ts {log_redirect}'
     )
     execline.append(
         f"{LCONVERT} -i {tsBasename}py.ts {tsBasename}.ts -o {tsBasename}.ts {log_redirect}"

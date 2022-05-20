@@ -488,12 +488,12 @@
     <message>
       <location filename="../../../PathScripts/PathProbe.py" line="57"/>
       <source>X offset between tool and probe</source>
-      <translation>Зміщення по вісі X між інструментом і зондом</translation>
+      <translation>Зсув по вісі X між інструментом і зондом</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProbe.py" line="63"/>
       <source>Y offset between tool and probe</source>
-      <translation>Зміщення по вісі Y між інструментом і зондом</translation>
+      <translation>Зсув по вісі Y між інструментом і зондом</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProbe.py" line="71"/>
@@ -736,7 +736,7 @@
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="170"/>
       <source>Additional offset to the selected bounding box</source>
-      <translation>Додаткове зміщення до виділеної обмежувальної рамки</translation>
+      <translation>Додатковий зсув до виділеної обмежувальної рамки</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="178"/>
@@ -1459,7 +1459,7 @@ For example:
     &apos;Metric, Small Parts &amp; CNC&apos;
     &apos;US Customary&apos;
     &apos;Imperial Decimal&apos;</source>
-      <translation type="unfinished">The currently selected unit schema: 
+      <translation>Зараз діє наступна схем: 
      &apos;{}&apos;
  Does not use &apos;minutes&apos; for velocity values. 
  
@@ -3131,7 +3131,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="69"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="70"/>
@@ -3835,7 +3835,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="466"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="467"/>
@@ -4339,7 +4339,7 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathWaterline.py" line="115"/>
       <location filename="../../../PathScripts/PathWaterline.py" line="128"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="116"/>
@@ -5569,7 +5569,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="282"/>
       <source>Join:</source>
-      <translation type="unfinished">Join:</translation>
+      <translation>З'єднати:</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="289"/>
@@ -5609,7 +5609,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="120"/>
       <source>Time</source>
-      <translation type="unfinished">Time</translation>
+      <translation>Час</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="134"/>
@@ -5780,7 +5780,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="110"/>
       <source>Pattern</source>
-      <translation type="unfinished">Pattern</translation>
+      <translation>Шаблон</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="117"/>
@@ -6319,7 +6319,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="97"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="107"/>
@@ -8306,7 +8306,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1068"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1078"/>

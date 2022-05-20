@@ -4,586 +4,772 @@
   <context>
     <name>CmdDrawingAnnotation</name>
     <message>
+      <location filename="../../Command.cpp" line="478"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="479"/>
       <source>&amp;Annotation</source>
-      <translation>&amp;Заметка</translation>
+      <translation type="unfinished">&amp;Annotation</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="480"/>
+      <location filename="../../Command.cpp" line="482"/>
       <source>Inserts an Annotation view in the active drawing</source>
-      <translation>Вставить заметку в активный чертёж</translation>
+      <translation type="unfinished">Inserts an Annotation view in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingClip</name>
     <message>
+      <location filename="../../Command.cpp" line="526"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="527"/>
       <source>&amp;Clip</source>
-      <translation>&amp;Срез</translation>
+      <translation type="unfinished">&amp;Clip</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="528"/>
+      <location filename="../../Command.cpp" line="530"/>
       <source>Inserts a clip group in the active drawing</source>
-      <translation>Вставить группу срезов в активный чертёж</translation>
+      <translation type="unfinished">Inserts a clip group in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingDraftView</name>
     <message>
+      <location filename="../../Command.cpp" line="717"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="718"/>
       <source>&amp;Draft View</source>
-      <translation>&amp;Эскизный вид</translation>
+      <translation type="unfinished">&amp;Draft View</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="719"/>
+      <location filename="../../Command.cpp" line="721"/>
       <source>Inserts a Draft view of the selected object(s) in the active drawing</source>
-      <translation>Вставить эскиз выбранного объекта(ов) в активный чертёж</translation>
+      <translation type="unfinished">Inserts a Draft view of the selected object(s) in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingExportPage</name>
     <message>
+      <location filename="../../Command.cpp" line="628"/>
       <source>File</source>
-      <translation>Файл</translation>
+      <translation type="unfinished">File</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="629"/>
       <source>&amp;Export page...</source>
-      <translation>&amp;Экспортировать страницу...</translation>
+      <translation type="unfinished">&amp;Export page...</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="630"/>
+      <location filename="../../Command.cpp" line="632"/>
       <source>Export a page to an SVG file</source>
-      <translation>Экспорт страницы в файл SVG</translation>
+      <translation type="unfinished">Export a page to an SVG file</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingNewA3Landscape</name>
     <message>
+      <location filename="../../Command.cpp" line="272"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="273"/>
+      <location filename="../../Command.cpp" line="274"/>
       <source>Insert new A3 landscape drawing</source>
-      <translation>Вставить новый фоновый чертеж А3</translation>
+      <translation type="unfinished">Insert new A3 landscape drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingNewPage</name>
     <message>
+      <location filename="../../Command.cpp" line="94"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="95"/>
+      <location filename="../../Command.cpp" line="96"/>
       <source>Insert new drawing</source>
-      <translation>Вставить новый чертёж</translation>
+      <translation type="unfinished">Insert new drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingNewView</name>
     <message>
+      <location filename="../../Command.cpp" line="311"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="312"/>
       <source>Insert view in drawing</source>
-      <translation>Вставить вид в чертёж</translation>
+      <translation type="unfinished">Insert view in drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="313"/>
       <source>Insert a new View of a Part in the active drawing</source>
-      <translation>Вставить новый вид детали в текущий чертёж</translation>
+      <translation type="unfinished">Insert a new View of a Part in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingOpen</name>
     <message>
+      <location filename="../../Command.cpp" line="61"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="62"/>
       <source>Open SVG...</source>
-      <translation>Открыть SVG...</translation>
+      <translation type="unfinished">Open SVG...</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="63"/>
       <source>Open a scalable vector graphic</source>
-      <translation>Открыть масштабируемую векторную графику (svg)</translation>
+      <translation type="unfinished">Open a scalable vector graphic</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingOpenBrowserView</name>
     <message>
+      <location filename="../../Command.cpp" line="440"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="441"/>
       <source>Open &amp;browser view</source>
-      <translation>Открыть в &amp;обозревателе</translation>
+      <translation type="unfinished">Open &amp;browser view</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="442"/>
+      <location filename="../../Command.cpp" line="444"/>
       <source>Opens the selected page in a browser view</source>
-      <translation>Открыть выбранную страницу для просмотра во встроенном обозревателе</translation>
+      <translation type="unfinished">Opens the selected page in a browser view</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingOrthoViews</name>
     <message>
+      <location filename="../../Command.cpp" line="390"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="391"/>
       <source>Insert orthographic views</source>
-      <translation>Вставить ортографические виды</translation>
+      <translation type="unfinished">Insert orthographic views</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="392"/>
       <source>Insert an orthographic projection of a part in the active drawing</source>
-      <translation>Вставить ортографическую проекцию детали в активный чертёж</translation>
+      <translation type="unfinished">Insert an orthographic projection of a part in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingProjectShape</name>
     <message>
+      <location filename="../../Command.cpp" line="681"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="682"/>
       <source>Project shape...</source>
-      <translation>Проекция фигуры...</translation>
+      <translation type="unfinished">Project shape...</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="683"/>
+      <location filename="../../Command.cpp" line="684"/>
       <source>Project shape onto a user-defined plane</source>
-      <translation>Проекция фигуры на заданную плоскость</translation>
+      <translation type="unfinished">Project shape onto a user-defined plane</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingSpreadsheetView</name>
     <message>
+      <location filename="../../Command.cpp" line="748"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="749"/>
       <source>&amp;Spreadsheet View</source>
-      <translation>&amp;Вставка таблицы</translation>
+      <translation type="unfinished">&amp;Spreadsheet View</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="750"/>
+      <location filename="../../Command.cpp" line="752"/>
       <source>Inserts a view of a selected spreadsheet in the active drawing</source>
-      <translation>Вставить выбранную таблицу в активный чертёж</translation>
+      <translation type="unfinished">Inserts a view of a selected spreadsheet in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>CmdDrawingSymbol</name>
     <message>
+      <location filename="../../Command.cpp" line="571"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="572"/>
       <source>&amp;Symbol</source>
-      <translation>&amp;Символ</translation>
+      <translation type="unfinished">&amp;Symbol</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="573"/>
+      <location filename="../../Command.cpp" line="575"/>
       <source>Inserts a symbol from a svg file in the active drawing</source>
-      <translation>Вставить символ из файла svg в активный чертёж</translation>
+      <translation type="unfinished">Inserts a symbol from a svg file in the active drawing</translation>
     </message>
   </context>
   <context>
     <name>DrawingGui::DrawingView</name>
     <message>
+      <location filename="../../DrawingView.cpp" line="217"/>
       <source>&amp;Background</source>
-      <translation>&amp;Фон</translation>
+      <translation type="unfinished">&amp;Background</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="223"/>
       <source>&amp;Outline</source>
-      <translation>&amp;Контур</translation>
+      <translation type="unfinished">&amp;Outline</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="229"/>
       <source>&amp;Native</source>
-      <translation>&amp;Встроенный</translation>
+      <translation type="unfinished">&amp;Native</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="233"/>
       <source>&amp;OpenGL</source>
-      <translation>&amp;OpenGL</translation>
+      <translation type="unfinished">&amp;OpenGL</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="236"/>
       <source>&amp;Image</source>
-      <translation>&amp;Изображение</translation>
+      <translation type="unfinished">&amp;Image</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="240"/>
       <source>&amp;High Quality Antialiasing</source>
-      <translation>&amp;Высококачественное сглаживания</translation>
+      <translation type="unfinished">&amp;High Quality Antialiasing</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="277"/>
       <source>Open SVG File</source>
-      <translation>Открыть файл SVG </translation>
+      <translation type="unfinished">Open SVG File</translation>
     </message>
     <message>
-      <source>Could not open file '%1'.</source>
-      <translation>Не удалось открыть файл '%1'.</translation>
+      <location filename="../../DrawingView.cpp" line="278"/>
+      <source>Could not open file &apos;%1&apos;.</source>
+      <translation type="unfinished">Could not open file &apos;%1&apos;.</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="365"/>
       <source>&amp;Renderer</source>
-      <translation>Отрисовщик</translation>
+      <translation type="unfinished">&amp;Renderer</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="470"/>
       <source>Export PDF</source>
-      <translation>Экспорт в PDF</translation>
+      <translation type="unfinished">Export PDF</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="471"/>
       <source>PDF file</source>
-      <translation>Файл PDF</translation>
+      <translation type="unfinished">PDF file</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="487"/>
       <source>Page sizes</source>
-      <translation>Размеры страницы</translation>
+      <translation type="unfinished">Page sizes</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="488"/>
       <source>A0</source>
-      <translation>А0</translation>
+      <translation type="unfinished">A0</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="490"/>
       <source>A1</source>
-      <translation>А1</translation>
+      <translation type="unfinished">A1</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="492"/>
       <source>A2</source>
-      <translation>А2</translation>
+      <translation type="unfinished">A2</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="494"/>
       <source>A3</source>
-      <translation>А3</translation>
+      <translation type="unfinished">A3</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="496"/>
       <source>A4</source>
-      <translation>А4</translation>
+      <translation type="unfinished">A4</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="498"/>
       <source>A5</source>
-      <translation>А5</translation>
+      <translation type="unfinished">A5</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="581"/>
       <source>Different orientation</source>
-      <translation>Отличающаяся ориентация</translation>
+      <translation type="unfinished">Different orientation</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="582"/>
       <source>The printer uses a different orientation than the drawing.
 Do you want to continue?</source>
-      <translation>Принтер использует отличающуюся от чертежа ориентацию бумаги.
-Хотите продолжить?</translation>
+      <translation type="unfinished">The printer uses a different orientation than the drawing.
+Do you want to continue?</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="589"/>
+      <location filename="../../DrawingView.cpp" line="597"/>
       <source>Different paper size</source>
-      <translation>Отличающийся формат листа</translation>
+      <translation type="unfinished">Different paper size</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="590"/>
+      <location filename="../../DrawingView.cpp" line="598"/>
       <source>The printer uses a different paper size than the drawing.
 Do you want to continue?</source>
-      <translation>Принтер использует отличающийся от чертежа формат листа.
-Хотите продолжить?</translation>
+      <translation type="unfinished">The printer uses a different paper size than the drawing.
+Do you want to continue?</translation>
     </message>
     <message>
+      <location filename="../../DrawingView.cpp" line="609"/>
       <source>Opening file failed</source>
-      <translation>Ошибка при открытии файла</translation>
+      <translation type="unfinished">Opening file failed</translation>
     </message>
     <message>
-      <source>Can't open file '%1' for writing.</source>
-      <translation>Не удается записать в файл '%1'.</translation>
+      <location filename="../../DrawingView.cpp" line="610"/>
+      <source>Can&apos;t open file &apos;%1&apos; for writing.</source>
+      <translation type="unfinished">Can&apos;t open file &apos;%1&apos; for writing.</translation>
     </message>
   </context>
   <context>
     <name>DrawingGui::TaskOrthoViews</name>
     <message>
+      <location filename="../../TaskOrthoViews.ui" line="26"/>
       <source>Orthographic Projection</source>
-      <translation>Ортографическая проекция</translation>
+      <translation type="unfinished">Orthographic Projection</translation>
     </message>
     <message>
-      <source>Right click for axonometric settings</source>
-      <translation>Правый щелчок мыши для настроек аксонометрии</translation>
-    </message>
-    <message>
-      <source>Primary view</source>
-      <translation>Главный вид</translation>
-    </message>
-    <message>
-      <source>Secondary Views</source>
-      <translation>Дополнительные виды</translation>
-    </message>
-    <message>
-      <source>General</source>
-      <translation>Основные</translation>
-    </message>
-    <message>
-      <source>Auto scale / position</source>
-      <translation>Автоматический масштаб / положение</translation>
-    </message>
-    <message>
-      <source>Scale</source>
-      <translation>Масштаб</translation>
-    </message>
-    <message>
-      <source>Top left x / y</source>
-      <translation>Cлева x / Сверху y</translation>
-    </message>
-    <message>
-      <source>Spacing dx / dy</source>
-      <translation>Смещение dx / dy</translation>
-    </message>
-    <message>
-      <source>Show hidden lines</source>
-      <translation>Показать скрытые линии</translation>
-    </message>
-    <message>
-      <source>Show smooth lines</source>
-      <translation>Показать сглаженные линии</translation>
-    </message>
-    <message>
-      <source>Axonometric</source>
-      <translation>Аксонометрия</translation>
-    </message>
-    <message>
-      <source>Axis out and right</source>
-      <translation>Ось вне и справа</translation>
-    </message>
-    <message>
-      <source>Vertical tilt</source>
-      <translation>Вертикальный наклон</translation>
-    </message>
-    <message>
-      <source>X +ve</source>
-      <translation>X +ve</translation>
-    </message>
-    <message>
-      <source>Y +ve</source>
-      <translation>Y +ve</translation>
-    </message>
-    <message>
-      <source>Z +ve</source>
-      <translation>Z +ve</translation>
-    </message>
-    <message>
-      <source>X -ve</source>
-      <translation>X -ve</translation>
-    </message>
-    <message>
-      <source>Y -ve</source>
-      <translation>Y -ve</translation>
-    </message>
-    <message>
-      <source>Z -ve</source>
-      <translation>Z -ve</translation>
-    </message>
-    <message>
-      <source>Isometric</source>
-      <translation>Изометрическая</translation>
-    </message>
-    <message>
-      <source>Dimetric</source>
-      <translation>Диметрическая</translation>
-    </message>
-    <message>
-      <source>Trimetric</source>
-      <translation>Триметрическая</translation>
-    </message>
-    <message>
-      <source> Scale</source>
-      <translation> Масштаб</translation>
-    </message>
-    <message>
-      <source>View projection</source>
-      <translation>Тип аксонометрии</translation>
-    </message>
-    <message>
-      <source> Axis aligned up</source>
-      <translation> Ось выравнивания вверх</translation>
-    </message>
-    <message>
-      <source>Flip</source>
-      <translation>Разворот</translation>
-    </message>
-    <message>
-      <source> Trimetric</source>
-      <translation> Триметрическая</translation>
-    </message>
-    <message>
+      <location filename="../../TaskOrthoViews.ui" line="34"/>
       <source>Projection</source>
-      <translation>Проекция</translation>
+      <translation type="unfinished">Projection</translation>
     </message>
     <message>
+      <location filename="../../TaskOrthoViews.ui" line="45"/>
       <source>Third Angle</source>
-      <translation>Третий угол</translation>
+      <translation type="unfinished">Third Angle</translation>
     </message>
     <message>
+      <location filename="../../TaskOrthoViews.ui" line="50"/>
       <source>First Angle</source>
-      <translation>Первый угол</translation>
+      <translation type="unfinished">First Angle</translation>
     </message>
     <message>
+      <location filename="../../TaskOrthoViews.ui" line="62"/>
       <source>View from:</source>
-      <translation>Вид с:</translation>
+      <translation type="unfinished">View from:</translation>
     </message>
     <message>
+      <location filename="../../TaskOrthoViews.ui" line="76"/>
+      <location filename="../../TaskOrthoViews.ui" line="747"/>
+      <source>X +ve</source>
+      <translation type="unfinished">X +ve</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="81"/>
+      <location filename="../../TaskOrthoViews.ui" line="752"/>
+      <location filename="../../TaskOrthoViews.ui" line="791"/>
+      <source>Y +ve</source>
+      <translation type="unfinished">Y +ve</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="86"/>
+      <location filename="../../TaskOrthoViews.ui" line="757"/>
+      <location filename="../../TaskOrthoViews.ui" line="796"/>
+      <source>Z +ve</source>
+      <translation type="unfinished">Z +ve</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="91"/>
+      <location filename="../../TaskOrthoViews.ui" line="762"/>
+      <source>X -ve</source>
+      <translation type="unfinished">X -ve</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="96"/>
+      <location filename="../../TaskOrthoViews.ui" line="767"/>
+      <location filename="../../TaskOrthoViews.ui" line="801"/>
+      <source>Y -ve</source>
+      <translation type="unfinished">Y -ve</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="101"/>
+      <location filename="../../TaskOrthoViews.ui" line="772"/>
+      <location filename="../../TaskOrthoViews.ui" line="806"/>
+      <source>Z -ve</source>
+      <translation type="unfinished">Z -ve</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="109"/>
       <source>Axis aligned right:</source>
-      <translation>Ось выровнена вправо:</translation>
+      <translation type="unfinished">Axis aligned right:</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="154"/>
+      <source>Secondary Views</source>
+      <translation type="unfinished">Secondary Views</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="176"/>
+      <location filename="../../TaskOrthoViews.ui" line="201"/>
+      <location filename="../../TaskOrthoViews.ui" line="232"/>
+      <location filename="../../TaskOrthoViews.ui" line="257"/>
+      <location filename="../../TaskOrthoViews.ui" line="282"/>
+      <location filename="../../TaskOrthoViews.ui" line="307"/>
+      <location filename="../../TaskOrthoViews.ui" line="357"/>
+      <location filename="../../TaskOrthoViews.ui" line="382"/>
+      <location filename="../../TaskOrthoViews.ui" line="407"/>
+      <location filename="../../TaskOrthoViews.ui" line="432"/>
+      <location filename="../../TaskOrthoViews.ui" line="457"/>
+      <location filename="../../TaskOrthoViews.ui" line="482"/>
+      <source>Right click for axonometric settings</source>
+      <translation type="unfinished">Right click for axonometric settings</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="329"/>
+      <source>Primary view</source>
+      <translation type="unfinished">Primary view</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="532"/>
+      <source>General</source>
+      <translation type="unfinished">General</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="541"/>
+      <source>Auto scale / position</source>
+      <translation type="unfinished">Auto scale / position</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="556"/>
+      <source>Scale</source>
+      <translation type="unfinished">Scale</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="588"/>
+      <source>Top left x / y</source>
+      <translation type="unfinished">Top left x / y</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="636"/>
+      <source>Spacing dx / dy</source>
+      <translation type="unfinished">Spacing dx / dy</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="681"/>
+      <source>Show hidden lines</source>
+      <translation type="unfinished">Show hidden lines</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="688"/>
+      <source>Show smooth lines</source>
+      <translation type="unfinished">Show smooth lines</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="699"/>
+      <source>Axonometric</source>
+      <translation type="unfinished">Axonometric</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="707"/>
+      <source>View projection</source>
+      <translation type="unfinished">View projection</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="718"/>
+      <source>Isometric</source>
+      <translation type="unfinished">Isometric</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="723"/>
+      <source>Dimetric</source>
+      <translation type="unfinished">Dimetric</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="728"/>
+      <source>Trimetric</source>
+      <translation type="unfinished">Trimetric</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="736"/>
+      <source> Axis aligned up</source>
+      <translation type="unfinished"> Axis aligned up</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="780"/>
+      <source>Axis out and right</source>
+      <translation type="unfinished">Axis out and right</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="814"/>
+      <source>Vertical tilt</source>
+      <translation type="unfinished">Vertical tilt</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="821"/>
+      <location filename="../../TaskOrthoViews.ui" line="858"/>
+      <source>Flip</source>
+      <translation type="unfinished">Flip</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="834"/>
+      <source> Scale</source>
+      <translation type="unfinished"> Scale</translation>
+    </message>
+    <message>
+      <location filename="../../TaskOrthoViews.ui" line="848"/>
+      <source> Trimetric</source>
+      <translation type="unfinished"> Trimetric</translation>
     </message>
   </context>
   <context>
     <name>DrawingGui::TaskProjection</name>
     <message>
+      <location filename="../../TaskDialog.cpp" line="51"/>
       <source>Visible sharp edges</source>
-      <translation>Видимые острые края</translation>
+      <translation type="unfinished">Visible sharp edges</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="52"/>
       <source>Visible smooth edges</source>
-      <translation>Видимые сглаженные края</translation>
+      <translation type="unfinished">Visible smooth edges</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="53"/>
       <source>Visible sewn edges</source>
-      <translation>Видимые сшитые края</translation>
+      <translation type="unfinished">Visible sewn edges</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="54"/>
       <source>Visible outline edges</source>
-      <translation>Видимые края контура</translation>
+      <translation type="unfinished">Visible outline edges</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="55"/>
       <source>Visible isoparameters</source>
-      <translation>Параметры отображения изометрии</translation>
+      <translation type="unfinished">Visible isoparameters</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="56"/>
       <source>Hidden sharp edges</source>
-      <translation>Скрытые острые края</translation>
+      <translation type="unfinished">Hidden sharp edges</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="57"/>
       <source>Hidden smooth edges</source>
-      <translation>Скрытые сглаженные края</translation>
+      <translation type="unfinished">Hidden smooth edges</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="58"/>
       <source>Hidden sewn edges</source>
-      <translation>Скрытые cшитые края</translation>
+      <translation type="unfinished">Hidden sewn edges</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="59"/>
       <source>Hidden outline edges</source>
-      <translation>Скрытые края контура</translation>
+      <translation type="unfinished">Hidden outline edges</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="60"/>
       <source>Hidden isoparameters</source>
-      <translation>Параметры скрытия изометрии</translation>
+      <translation type="unfinished">Hidden isoparameters</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="77"/>
       <source>Project shapes</source>
-      <translation>Настройка проекции фигур</translation>
+      <translation type="unfinished">Project shapes</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="91"/>
       <source>No active document</source>
-      <translation>Нет активного документа</translation>
+      <translation type="unfinished">No active document</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="92"/>
       <source>There is currently no active document to complete the operation</source>
-      <translation>В настоящее время нет активного документа для выполнения этой операции</translation>
+      <translation type="unfinished">There is currently no active document to complete the operation</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="97"/>
       <source>No active view</source>
-      <translation>Нет активного вида</translation>
+      <translation type="unfinished">No active view</translation>
     </message>
     <message>
+      <location filename="../../TaskDialog.cpp" line="98"/>
       <source>There is currently no active view to complete the operation</source>
-      <translation>В настоящее время нет активного вида для выполнения этой операции</translation>
+      <translation type="unfinished">There is currently no active view to complete the operation</translation>
     </message>
   </context>
   <context>
     <name>Drawing_NewPage</name>
     <message>
+      <location filename="../../Command.cpp" line="220"/>
       <source>Landscape</source>
-      <translation>Альбомный</translation>
+      <translation type="unfinished">Landscape</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="222"/>
       <source>Portrait</source>
-      <translation>Портретный</translation>
+      <translation type="unfinished">Portrait</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="226"/>
       <source>%1%2 %3</source>
-      <translation>%1%2 %3</translation>
+      <translation type="unfinished">%1%2 %3</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="231"/>
       <source>Insert new %1%2 %3 drawing</source>
-      <translation>Вставить новый чертёж %1 %2%3</translation>
+      <translation type="unfinished">Insert new %1%2 %3 drawing</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="238"/>
       <source>%1%2 %3 (%4)</source>
-      <translation>%1%2 %3 (%4)</translation>
+      <translation type="unfinished">%1%2 %3 (%4)</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="244"/>
       <source>Insert new %1%2 %3 (%4) drawing</source>
-      <translation>Вставить новый чертёж %1%2 %3 (%4)</translation>
+      <translation type="unfinished">Insert new %1%2 %3 (%4) drawing</translation>
     </message>
   </context>
   <context>
     <name>QObject</name>
     <message>
+      <location filename="../../Command.cpp" line="73"/>
+      <location filename="../../Command.cpp" line="592"/>
       <source>Choose an SVG file to open</source>
-      <translation>Выберите файл SVG для открытия</translation>
+      <translation type="unfinished">Choose an SVG file to open</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="74"/>
+      <location filename="../../Command.cpp" line="593"/>
+      <location filename="../../Command.cpp" line="647"/>
       <source>Scalable Vector Graphic</source>
-      <translation>Масштабируемая векторная графика</translation>
+      <translation type="unfinished">Scalable Vector Graphic</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="324"/>
+      <location filename="../../Command.cpp" line="403"/>
+      <location filename="../../Command.cpp" line="453"/>
+      <location filename="../../Command.cpp" line="641"/>
+      <location filename="../../Command.cpp" line="761"/>
       <source>Wrong selection</source>
-      <translation>Неправильный выбор</translation>
+      <translation type="unfinished">Wrong selection</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="325"/>
       <source>Select a Part object.</source>
-      <translation>Выберите объект типа Деталь.</translation>
+      <translation type="unfinished">Select a Part object.</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="333"/>
+      <location filename="../../Command.cpp" line="412"/>
+      <location filename="../../Command.cpp" line="493"/>
+      <location filename="../../Command.cpp" line="541"/>
+      <location filename="../../Command.cpp" line="586"/>
+      <location filename="../../Command.cpp" line="767"/>
       <source>No page found</source>
-      <translation>Страниц не найдено</translation>
+      <translation type="unfinished">No page found</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="334"/>
+      <location filename="../../Command.cpp" line="413"/>
+      <location filename="../../Command.cpp" line="494"/>
+      <location filename="../../Command.cpp" line="542"/>
+      <location filename="../../Command.cpp" line="587"/>
+      <location filename="../../Command.cpp" line="768"/>
       <source>Create a page first.</source>
-      <translation>Сначала создайте страницу.</translation>
+      <translation type="unfinished">Create a page first.</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="404"/>
       <source>Select exactly one Part object.</source>
-      <translation>Выберите ровно один объект Детали.</translation>
+      <translation type="unfinished">Select exactly one Part object.</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="454"/>
+      <location filename="../../Command.cpp" line="642"/>
       <source>Select one Page object.</source>
-      <translation>Выберите один объект типа Страница.</translation>
+      <translation type="unfinished">Select one Page object.</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="648"/>
       <source>All Files</source>
-      <translation>Все файлы</translation>
+      <translation type="unfinished">All Files</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="650"/>
       <source>Export page</source>
-      <translation>Экспортировать страницу</translation>
+      <translation type="unfinished">Export page</translation>
     </message>
     <message>
+      <location filename="../../Command.cpp" line="762"/>
       <source>Select exactly one Spreadsheet object.</source>
-      <translation>Выберите только один объект типа Таблица.</translation>
+      <translation type="unfinished">Select exactly one Spreadsheet object.</translation>
     </message>
     <message>
+      <location filename="../../TaskOrthoViews.cpp" line="50"/>
+      <location filename="../../TaskOrthoViews.cpp" line="978"/>
       <source>Make axonometric...</source>
-      <translation>Сделать аксонометрическим...</translation>
+      <translation type="unfinished">Make axonometric...</translation>
     </message>
     <message>
+      <location filename="../../TaskOrthoViews.cpp" line="51"/>
+      <location filename="../../TaskOrthoViews.cpp" line="979"/>
       <source>Edit axonometric settings...</source>
-      <translation>Изменить настройки аксонометрии...</translation>
+      <translation type="unfinished">Edit axonometric settings...</translation>
     </message>
     <message>
+      <location filename="../../TaskOrthoViews.cpp" line="52"/>
+      <location filename="../../TaskOrthoViews.cpp" line="980"/>
       <source>Make orthographic</source>
-      <translation>Сделать ортографическим</translation>
+      <translation type="unfinished">Make orthographic</translation>
     </message>
     <message>
+      <location filename="../../ViewProviderPage.cpp" line="152"/>
       <source>Show drawing</source>
-      <translation>Показать чертёж</translation>
+      <translation type="unfinished">Show drawing</translation>
     </message>
   </context>
   <context>
     <name>Workbench</name>
     <message>
+      <location filename="../../Workbench.cpp" line="37"/>
       <source>Drawing</source>
-      <translation>Чертёж</translation>
+      <translation type="unfinished">Drawing</translation>
     </message>
   </context>
 </TS>

@@ -71,7 +71,7 @@
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="1097"/>
       <source>Adds a cell controller to a selected spreadsheet</source>
-      <translation type="unfinished">Adds a cell controller to a selected spreadsheet</translation>
+      <translation>Додає елемент керування коміркою до вибраної електронної таблиці</translation>
     </message>
   </context>
   <context>
@@ -97,7 +97,7 @@
     <message>
       <location filename="../../../App/Spreadsheet_legacy.py" line="1138"/>
       <source>Adds a property controller to a selected spreadsheet</source>
-      <translation type="unfinished">Adds a property controller to a selected spreadsheet</translation>
+      <translation>Додає контролер властивостей до вибраної електронної таблиці</translation>
     </message>
   </context>
   <context>

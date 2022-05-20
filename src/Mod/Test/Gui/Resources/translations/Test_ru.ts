@@ -4,109 +4,132 @@
   <context>
     <name>TestGui::UnitTest</name>
     <message>
+      <location filename="../../UnitTest.ui" line="17"/>
       <source>FreeCAD UnitTest</source>
-      <translation>FreeCAD UnitTest</translation>
+      <translation type="unfinished">FreeCAD UnitTest</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="32"/>
       <source>Test</source>
-      <translation>Тест</translation>
+      <translation type="unfinished">Test</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="44"/>
       <source>Select test name:</source>
-      <translation>Выберите название теста:</translation>
+      <translation type="unfinished">Select test name:</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="96"/>
       <source>&amp;Start</source>
-      <translation>&amp;Запустить</translation>
+      <translation type="unfinished">&amp;Start</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="99"/>
       <source>Alt+S</source>
-      <translation>Alt+S</translation>
+      <translation type="unfinished">Alt+S</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="128"/>
       <source>&amp;Help</source>
-      <translation>Помощь</translation>
+      <translation type="unfinished">&amp;Help</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="131"/>
       <source>F1</source>
-      <translation>F1</translation>
+      <translation type="unfinished">F1</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="141"/>
       <source>&amp;About</source>
-      <translation>О программе</translation>
+      <translation type="unfinished">&amp;About</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="144"/>
       <source>Alt+A</source>
-      <translation>Alt+A</translation>
+      <translation type="unfinished">Alt+A</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="154"/>
       <source>&amp;Close</source>
-      <translation>Закрыть</translation>
+      <translation type="unfinished">&amp;Close</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="157"/>
       <source>Alt+C</source>
-      <translation>Alt+C</translation>
+      <translation type="unfinished">Alt+C</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="169"/>
       <source>Progress</source>
-      <translation>Прогресс</translation>
+      <translation type="unfinished">Progress</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="188"/>
       <source>Run:</source>
-      <translation>Выполнено:</translation>
+      <translation type="unfinished">Run:</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="205"/>
       <source>Failures:</source>
-      <translation>Сбои:</translation>
+      <translation type="unfinished">Failures:</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="222"/>
       <source>Errors:</source>
-      <translation>Ошибки:</translation>
+      <translation type="unfinished">Errors:</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="239"/>
       <source>Remaining:</source>
-      <translation>Осталось:</translation>
+      <translation type="unfinished">Remaining:</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="259"/>
       <source>Failures and errors</source>
-      <translation>Сбои и ошибки</translation>
+      <translation type="unfinished">Failures and errors</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="275"/>
       <source>Description</source>
-      <translation>Описание</translation>
+      <translation type="unfinished">Description</translation>
     </message>
     <message>
+      <location filename="../../UnitTest.ui" line="292"/>
       <source>Idle</source>
-      <translation>В ожидании</translation>
+      <translation type="unfinished">Idle</translation>
     </message>
   </context>
   <context>
     <name>TestGui::UnitTestDialog</name>
     <message>
+      <location filename="../../UnitTestImp.cpp" line="155"/>
       <source>Help</source>
-      <translation>Справка</translation>
+      <translation type="unfinished">Help</translation>
     </message>
     <message>
+      <location filename="../../UnitTestImp.cpp" line="155"/>
       <source>Enter the name of a callable object which, when called, will return a TestCase.
-Click 'start', and the test thus produced will be run.
+Click &apos;start&apos;, and the test thus produced will be run.
 
 Double click on an error in the tree view to see more information about it, including the stack trace.</source>
-      <translation>Введите имя вызываемого объекта при вызове которого, будет возвращаться TestCase.
-Кликните 'Запустить' и, тест будет запущен.
+      <translation type="unfinished">Enter the name of a callable object which, when called, will return a TestCase.
+Click &apos;start&apos;, and the test thus produced will be run.
 
-Сделайте двойной щелчок на ошибке в древовидном списке для дополнительной информации о ней, включая стек вызовов.</translation>
+Double click on an error in the tree view to see more information about it, including the stack trace.</translation>
     </message>
     <message>
+      <location filename="../../UnitTestImp.cpp" line="167"/>
       <source>About FreeCAD UnitTest</source>
-      <translation>О FreeCAD UnitTest</translation>
+      <translation type="unfinished">About FreeCAD UnitTest</translation>
     </message>
     <message>
+      <location filename="../../UnitTestImp.cpp" line="167"/>
       <source>Copyright (c) Werner Mayer
 
 FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own modules.</source>
-      <translation>Copyright (C) Вернер Майер
+      <translation type="unfinished">Copyright (c) Werner Mayer
 
-FreeCAD UnitTest является частью FreeCAD и поддерживает написание модульных (unit) тестов для собственных модулей.</translation>
+FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own modules.</translation>
     </message>
   </context>
 </TS>

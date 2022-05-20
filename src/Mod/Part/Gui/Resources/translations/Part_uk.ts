@@ -6,17 +6,17 @@
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="113"/>
       <source>No object named {name}</source>
-      <translation type="unfinished">No object named {name}</translation>
+      <translation>Немає об'єкта з назвою {name}</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="126"/>
       <source>Failed to parse link (more than one colon encountered)</source>
-      <translation type="unfinished">Failed to parse link (more than one colon encountered)</translation>
+      <translation>Не вдалося обробити посилання (зустрінуто більше однієї двокрапки)</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="272"/>
       <source>Object {name} is neither movable nor attachable, can&apos;t edit attachment</source>
-      <translation type="unfinished">Object {name} is neither movable nor attachable, can&apos;t edit attachment</translation>
+      <translation>Об'єкт {name} не можливо рухати або прив'язати, не можу відредагувати приєднання</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="285"/>
@@ -27,18 +27,18 @@
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="287"/>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="306"/>
       <source>Attachment</source>
-      <translation type="unfinished">Attachment</translation>
+      <translation>Вкладення</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="290"/>
       <source>Continue</source>
-      <translation type="unfinished">Continue</translation>
+      <translation>Продовжити</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="389"/>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="440"/>
       <source>Edit attachment of {feat}</source>
-      <translation type="unfinished">Edit attachment of {feat}</translation>
+      <translation>Редагувати приєднання {feat}</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="491"/>
@@ -53,27 +53,27 @@
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="655"/>
       <source>{mode} (add {morerefs})</source>
-      <translation type="unfinished">{mode} (add {morerefs})</translation>
+      <translation>{mode} (додати {morerefs})</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="659"/>
       <source>{mode} (add more references)</source>
-      <translation type="unfinished">{mode} (add more references)</translation>
+      <translation>{mode} (додати більше орієнтирів)</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="697"/>
       <source>Reference combinations:</source>
-      <translation type="unfinished">Reference combinations:</translation>
+      <translation>Комбінації орієнтирів:</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="712"/>
       <source>Reference{i}</source>
-      <translation type="unfinished">Reference{i}</translation>
+      <translation>Орієнтир{i}</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="723"/>
       <source>Selecting...</source>
-      <translation type="unfinished">Selecting...</translation>
+      <translation>Вибір...</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="754"/>
@@ -83,37 +83,37 @@
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="765"/>
       <source>Not attached</source>
-      <translation type="unfinished">Not attached</translation>
+      <translation>Привʼязка відсутня</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="770"/>
       <source>Attached with mode {mode}</source>
-      <translation type="unfinished">Attached with mode {mode}</translation>
+      <translation>Режим приєднання: {mode}</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="782"/>
       <source>Error: {err}</source>
-      <translation type="unfinished">Error: {err}</translation>
+      <translation>Помилка: {err}</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="794"/>
       <source>Attachment Offset (in local coordinates):</source>
-      <translation type="unfinished">Attachment Offset (in local coordinates):</translation>
+      <translation>Зсув прикріплення (в локальних координатах):</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="803"/>
       <source>Attachment Offset (inactive - not attached):</source>
-      <translation type="unfinished">Attachment Offset (inactive - not attached):</translation>
+      <translation>Зсув приєднання (поля не активні - не приєднано):</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/Commands.py" line="88"/>
       <source>Attachment...</source>
-      <translation type="unfinished">Attachment...</translation>
+      <translation>Вкладення...</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/Commands.py" line="92"/>
       <source>Edit attachment of selected object.</source>
-      <translation type="unfinished">Edit attachment of selected object.</translation>
+      <translation>Редагувати приєднання вибраного об'єкта.</translation>
     </message>
   </context>
   <context>
@@ -121,7 +121,7 @@
     <message>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="66"/>
       <source>Compound Filter</source>
-      <translation type="unfinished">Compound Filter</translation>
+      <translation>Фільтр з'єднань</translation>
     </message>
     <message>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="76"/>
@@ -129,10 +129,10 @@
 area, or length, or by choosing specific items.
 If a second object is selected, it will be used as reference, for example,
 for collision or distance filtering.</source>
-      <translation type="unfinished">Filter out objects from a selected compound by characteristics like volume,
-area, or length, or by choosing specific items.
-If a second object is selected, it will be used as reference, for example,
-for collision or distance filtering.</translation>
+      <translation>Відфільтруйте об’єкти з вибраної сполуки за такими характеристиками, як обсяг,
+площі, або довжині, або шляхом вибору конкретних елементів.
+Якщо вибрано другий об’єкт, він буде використовуватися як посилання, наприклад,
+для фільтрації перетину або відстані.</translation>
     </message>
     <message>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="96"/>
@@ -143,7 +143,7 @@ for collision or distance filtering.</translation>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="97"/>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="144"/>
       <source>Bad selection</source>
-      <translation type="unfinished">Bad selection</translation>
+      <translation>Помилка в виділенні</translation>
     </message>
     <message>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="142"/>
@@ -164,7 +164,7 @@ Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to
     <message>
       <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="66"/>
       <source>Explode compound</source>
-      <translation type="unfinished">Explode compound</translation>
+      <translation>Відкрити об'єднане</translation>
     </message>
     <message>
       <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="72"/>
@@ -189,12 +189,12 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="246"/>
       <source>Connect objects</source>
-      <translation type="unfinished">Connect objects</translation>
+      <translation>Зʼєднати обʼєкти</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="250"/>
       <source>Fuses objects, taking care to preserve voids.</source>
-      <translation type="unfinished">Fuses objects, taking care to preserve voids.</translation>
+      <translation>З'єднує об'екти, піклуючись про те, щоб зберегти порожнини.</translation>
     </message>
   </context>
   <context>
@@ -202,12 +202,12 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="481"/>
       <source>Cutout for object</source>
-      <translation type="unfinished">Cutout for object</translation>
+      <translation>Виріз об'єкту</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="485"/>
       <source>Makes a cutout in one object to fit another object.</source>
-      <translation type="unfinished">Makes a cutout in one object to fit another object.</translation>
+      <translation>Робить виріз в одному об'єкті, що відповідає іншому об'єкту.</translation>
     </message>
   </context>
   <context>
@@ -215,12 +215,12 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="361"/>
       <source>Embed object</source>
-      <translation type="unfinished">Embed object</translation>
+      <translation>Вбудувати об'єкт</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="366"/>
       <source>Fuses one object into another, taking care to preserve voids.</source>
-      <translation type="unfinished">Fuses one object into another, taking care to preserve voids.</translation>
+      <translation>Обʼєднати один обʼєкт з іншим, зберігаючи пустоти.</translation>
     </message>
   </context>
   <context>
@@ -249,7 +249,7 @@ Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="122"/>
       <source>Continue</source>
-      <translation type="unfinished">Continue</translation>
+      <translation>Продовжити</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="265"/>
@@ -301,12 +301,12 @@ Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to
       <location filename="../../../BOPTools/SplitFeatures.py" line="651"/>
       <location filename="../../../CompoundTools/_CommandCompoundFilter.py" line="147"/>
       <source>Continue</source>
-      <translation type="unfinished">Continue</translation>
+      <translation>Продовжити</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/SplitFeatures.py" line="240"/>
       <source>Boolean fragments</source>
-      <translation type="unfinished">Boolean fragments</translation>
+      <translation>Логічні фрагменти</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/SplitFeatures.py" line="249"/>
@@ -330,7 +330,7 @@ A &apos;Compound Filter&apos; can be used to extract the individual slices.</tra
     <message>
       <location filename="../../../BOPTools/SplitFeatures.py" line="442"/>
       <source>Slice to compound</source>
-      <translation type="unfinished">Slice to compound</translation>
+      <translation>Нарізка на складні форми</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/SplitFeatures.py" line="449"/>
@@ -350,7 +350,7 @@ A &apos;Compound Filter&apos; can be used to extract the individual slices.</tra
     <message>
       <location filename="../../../BOPTools/SplitFeatures.py" line="483"/>
       <source>Slice apart</source>
-      <translation type="unfinished">Slice apart</translation>
+      <translation>Розрізати на частини</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/SplitFeatures.py" line="489"/>
@@ -362,7 +362,7 @@ It will create a &apos;Compound Filter&apos; for each slice.</translation>
     <message>
       <location filename="../../../BOPTools/SplitFeatures.py" line="675"/>
       <source>Boolean XOR</source>
-      <translation type="unfinished">Boolean XOR</translation>
+      <translation>Логічний XOR</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/SplitFeatures.py" line="683"/>
@@ -381,12 +381,12 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
     <message>
       <location filename="../../../BasicShapes/CommandShapes.py" line="45"/>
       <source>Create tube</source>
-      <translation type="unfinished">Create tube</translation>
+      <translation>Створити трубу</translation>
     </message>
     <message>
       <location filename="../../../BasicShapes/CommandShapes.py" line="49"/>
       <source>Creates a tube</source>
-      <translation type="unfinished">Creates a tube</translation>
+      <translation>Створює трубу</translation>
     </message>
   </context>
   <context>
@@ -394,7 +394,7 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
     <message>
       <location filename="../../../BasicShapes/CommandShapes.py" line="54"/>
       <source>Create tube</source>
-      <translation type="unfinished">Create tube</translation>
+      <translation>Створити трубу</translation>
     </message>
     <message>
       <location filename="../../ViewProvider.cpp" line="50"/>
@@ -836,7 +836,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../ViewProviderMirror.cpp" line="526"/>
       <source>Edit offset</source>
-      <translation>Редагувати зміщення</translation>
+      <translation>Редагувати зсув</translation>
     </message>
     <message>
       <location filename="../../ViewProviderMirror.cpp" line="610"/>
@@ -2364,12 +2364,12 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../Command.cpp" line="1792"/>
       <source>Offset:</source>
-      <translation>Зміщення:</translation>
+      <translation>Зсув:</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1793"/>
       <source>Tools to offset shapes (construct parallel shapes)</source>
-      <translation>Інструменти для зміщення фігур (побудова паралельних фігур)</translation>
+      <translation>Інструменти для зсуву фігур (побудова паралельних фігур)</translation>
     </message>
   </context>
   <context>
@@ -2710,12 +2710,12 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../Command.cpp" line="1668"/>
       <source>3D Offset...</source>
-      <translation>3D зміщення...</translation>
+      <translation>3D зсув...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1669"/>
       <source>Utility to offset in 3D</source>
-      <translation>Утиліта для зміщення в 3D</translation>
+      <translation>Утиліта для зсуву в 3D</translation>
     </message>
   </context>
   <context>
@@ -2728,12 +2728,12 @@ into its X, Y, and Z components.</source>
     <message>
       <location filename="../../Command.cpp" line="1733"/>
       <source>2D Offset...</source>
-      <translation>2D зміщення...</translation>
+      <translation>2D зсув...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1734"/>
       <source>Utility to offset planar shapes</source>
-      <translation>Утиліта для зміщення плоских фігур</translation>
+      <translation>Утиліта для зсуву плоских фігур</translation>
     </message>
   </context>
   <context>
@@ -3128,12 +3128,12 @@ of projection.</source>
     <message>
       <location filename="../../Command.cpp" line="1691"/>
       <source>Make Offset</source>
-      <translation type="unfinished">Make Offset</translation>
+      <translation>Створити зсув</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1757"/>
       <source>Make 2D Offset</source>
-      <translation type="unfinished">Make 2D Offset</translation>
+      <translation>Створює 2D зсув</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1941"/>
@@ -3262,7 +3262,7 @@ of projection.</source>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="124"/>
       <source>Attachment Offset (in local coordinates):</source>
-      <translation>Зміщення прикріплення (в локальних координатах):</translation>
+      <translation>Зсув прикріплення (в локальних координатах):</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.ui" line="136"/>
@@ -5377,7 +5377,7 @@ the sketch plane&apos;s normal vector will be used</translation>
       <location filename="../../SectionCutting.ui" line="118"/>
       <location filename="../../SectionCutting.ui" line="186"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../SectionCutting.ui" line="71"/>
@@ -5678,7 +5678,7 @@ only created cuts will be visible</translation>
       <location filename="../../TaskAttacher.ui" line="124"/>
       <location filename="../../TaskAttacher.cpp" line="336"/>
       <source>Attachment Offset (in local coordinates):</source>
-      <translation>Зміщення прикріплення (в локальних координатах):</translation>
+      <translation>Зсув прикріплення (в локальних координатах):</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.ui" line="136"/>
@@ -5784,7 +5784,7 @@ of object being attached.</translation>
     <message>
       <location filename="../../TaskAttacher.cpp" line="336"/>
       <source>Attachment Offset (inactive - not attached):</source>
-      <translation>Зміщення приєднання (поля не активні - не приєднано):</translation>
+      <translation>Зсув приєднання (поля не активні - не приєднано):</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.cpp" line="631"/>
@@ -6121,7 +6121,7 @@ by dragging a selection rectangle in the 3D view</translation>
       <location filename="../../TaskOffset.ui" line="14"/>
       <location filename="../../TaskOffset.ui" line="20"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../TaskOffset.ui" line="34"/>
@@ -6172,7 +6172,7 @@ by dragging a selection rectangle in the 3D view</translation>
     <message>
       <location filename="../../TaskOffset.ui" line="100"/>
       <source>Fill offset</source>
-      <translation>Заповнити зміщення</translation>
+      <translation>Заповнити зсув</translation>
     </message>
     <message>
       <location filename="../../TaskOffset.ui" line="114"/>

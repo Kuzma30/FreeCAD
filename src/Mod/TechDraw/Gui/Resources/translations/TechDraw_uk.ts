@@ -5300,7 +5300,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCosVertex.ui" line="78"/>
       <source>Point Picker</source>
-      <translation type="unfinished">Point Picker</translation>
+      <translation>Вибір точки</translation>
     </message>
     <message>
       <location filename="../../TaskCosVertex.ui" line="107"/>

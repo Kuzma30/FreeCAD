@@ -11,7 +11,7 @@
     <message>
       <location filename="../../../InvoluteGearFeature.py" line="66"/>
       <source>Creates or edit the involute gear definition.</source>
-      <translation type="unfinished">Creates or edit the involute gear definition.</translation>
+      <translation>Створює або редагує параметри евольвентної шестерні.</translation>
     </message>
   </context>
   <context>
@@ -2465,7 +2465,7 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskPadParameters.cpp" line="42"/>
       <source>Offset from face at which pad will end</source>
-      <translation>Зміщення до грані, на якій закінчится накладка</translation>
+      <translation>Зсув до грані, на якій закінчиться накладка</translation>
     </message>
     <message>
       <location filename="../../TaskPadParameters.cpp" line="43"/>
@@ -2523,7 +2523,7 @@ click again to end selection</source>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="58"/>
       <source>Offset to face</source>
-      <translation>Зміщення до грані</translation>
+      <translation>Зсув до грані</translation>
     </message>
     <message>
       <location filename="../../TaskPadPocketParameters.ui" line="77"/>
@@ -2883,7 +2883,7 @@ measured along the specified direction</source>
     <message>
       <location filename="../../TaskPocketParameters.cpp" line="43"/>
       <source>Offset from face at which pocket will end</source>
-      <translation>Зміщення до грані, на якій закінчится виріз</translation>
+      <translation>Зсув до грані, на якій закінчиться виріз</translation>
     </message>
     <message>
       <location filename="../../TaskPocketParameters.cpp" line="44"/>

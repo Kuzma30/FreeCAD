@@ -121,7 +121,7 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="709"/>
       <source>Add an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</source>
-      <translation type="unfinished">Add an OpenSCAD element by entering OpenSCAD code and executing the OpenSCAD binary</translation>
+      <translation>Додати елемент OpenSCAD, ввівши код OpenSCAD і запустивши OpenSCAD</translation>
     </message>
   </context>
   <context>
@@ -155,7 +155,7 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="419"/>
       <source>Expand all placements downwards the FeatureTree</source>
-      <translation type="unfinished">Expand all placements downwards the FeatureTree</translation>
+      <translation>Розгорнути всі місця розташування вниз на FeatureTree</translation>
     </message>
   </context>
   <context>
@@ -168,7 +168,7 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="144"/>
       <source>Remove fusion, apply placement to children, and color randomly</source>
-      <translation type="unfinished">Remove fusion, apply placement to children, and color randomly</translation>
+      <translation>Видалити злиття та випадково застосувати розташування та колір до дочірніх обʼєктів</translation>
     </message>
   </context>
   <context>
@@ -194,7 +194,7 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="391"/>
       <source>Create Feature that allows to increase the tolerance</source>
-      <translation type="unfinished">Create Feature that allows to increase the tolerance</translation>
+      <translation>Створити властивість, яка дозволить збільшити точність</translation>
     </message>
   </context>
   <context>
@@ -207,7 +207,7 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="733"/>
       <source>Export objects as meshes and use OpenSCAD to perform a boolean operation</source>
-      <translation type="unfinished">Export objects as meshes and use OpenSCAD to perform a boolean operation</translation>
+      <translation>Експортувати об'єкти у вигляді сітки та задіяти OpenSCAD для виконання логічних операцій</translation>
     </message>
   </context>
   <context>
@@ -259,7 +259,7 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="479"/>
       <source>Removes the selected objects and all children that are not referenced from other objects</source>
-      <translation type="unfinished">Removes the selected objects and all children that are not referenced from other objects</translation>
+      <translation>Видалити обраний та всі дочірні об'єкти, на які відсутні посилання з інших об'єктів</translation>
     </message>
   </context>
   <context>
@@ -272,7 +272,7 @@
     <message>
       <location filename="../../OpenSCADCommands.py" line="457"/>
       <source>Replace an object in the Feature Tree. Please select old, new, and parent object</source>
-      <translation type="unfinished">Replace an object in the Feature Tree. Please select old, new, and parent object</translation>
+      <translation>Замінити об'єкт у дереві властивостей. Оберіть, будь ласка, старий, новий та породжуючий об'єкт</translation>
     </message>
   </context>
   <context>

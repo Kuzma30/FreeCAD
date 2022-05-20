@@ -851,7 +851,7 @@ while doing a left or right click and move the mouse up or down</source>
       <location filename="../Clipping.ui" line="122"/>
       <location filename="../Clipping.ui" line="167"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../Clipping.ui" line="55"/>

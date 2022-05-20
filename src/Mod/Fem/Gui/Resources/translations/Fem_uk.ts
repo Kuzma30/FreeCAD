@@ -4627,7 +4627,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="107"/>
       <source>Displacement x</source>
-      <translation>Зміщення x</translation>
+      <translation>Зсув x</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="116"/>
@@ -4652,12 +4652,12 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="139"/>
       <source>Displacement y</source>
-      <translation>Зміщення y</translation>
+      <translation>Зсув y</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="171"/>
       <source>Displacement z</source>
-      <translation>Зміщення z</translation>
+      <translation>Зсув z</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="207"/>

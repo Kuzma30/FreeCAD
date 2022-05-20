@@ -3840,7 +3840,7 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
     <message>
       <location filename="../../SketchOrientationDialog.ui" line="81"/>
       <source>Offset:</source>
-      <translation>Зміщення:</translation>
+      <translation>Зсув:</translation>
     </message>
   </context>
   <context>

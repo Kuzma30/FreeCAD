@@ -282,7 +282,7 @@
     <message>
       <location filename="../../ArchSite.py" line="802"/>
       <source>An optional offset between the model (0,0,0) origin and the point indicated by the geocoordinates</source>
-      <translation>Опція зміщення між моделлю (0,0) джерелом та точкою, що зазначена геокоординатами</translation>
+      <translation>Необовʼязковий зсув між початком координат моделі (0,0,0) та точкою, що зазначена геокоординатами</translation>
     </message>
     <message>
       <location filename="../../ArchSite.py" line="811"/>
@@ -911,7 +911,7 @@
     <message>
       <location filename="../../ArchWindow.py" line="815"/>
       <source>The offset size of this window</source>
-      <translation>Розмір зміщення цього вікна</translation>
+      <translation>Величина зсуву цього вікна</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="822"/>
@@ -1009,7 +1009,7 @@
     <message>
       <location filename="../../ArchFrame.py" line="152"/>
       <source>An offset vector between the base sketch and the frame</source>
-      <translation>Вектор зміщення між базовим ескізом і рамкою</translation>
+      <translation>Вектор зсуву між базовим ескізом і рамкою</translation>
     </message>
     <message>
       <location filename="../../ArchFrame.py" line="161"/>
@@ -1362,12 +1362,12 @@
     <message>
       <location filename="../../ArchPipe.py" line="250"/>
       <source>Offset from the start point</source>
-      <translation>Зміщення від початкової точки</translation>
+      <translation>Зсув від початкової точки</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="257"/>
       <source>Offset from the end point</source>
-      <translation>Зміщення від кінцевої точки</translation>
+      <translation>Зсув від кінцевої точки</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="267"/>
@@ -1439,7 +1439,7 @@
     <message>
       <location filename="../../ArchWall.py" line="981"/>
       <source>The offset between this wall and its baseline (only for left and right alignments)</source>
-      <translation>Зміщення стіни від базової лінії (тільки для лівого і правого вирівнювання)</translation>
+      <translation>Зсув стіни від базової лінії (тільки для лівого і правого вирівнювання)</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="997"/>
@@ -1459,12 +1459,12 @@
     <message>
       <location filename="../../ArchWall.py" line="1020"/>
       <source>The horizontal offset of the first line of blocks</source>
-      <translation>Горизонтальне зміщення першого рядка блоків</translation>
+      <translation>Горизонтальний зсув першого рядка блоків</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="1030"/>
       <source>The horizontal offset of the second line of blocks</source>
-      <translation>Горизонтальне зміщення другого рядка блоків</translation>
+      <translation>Горизонтальний зсув другого рядка блоків</translation>
     </message>
     <message>
       <location filename="../../ArchWall.py" line="1039"/>
@@ -1509,7 +1509,7 @@
     <message>
       <location filename="../../ArchTruss.py" line="222"/>
       <source>An optional start offset for the top strut</source>
-      <translation>Опція стартового зміщення для верхньої стійки</translation>
+      <translation>Необовʼязковий початковий зсув для верхньої стійки</translation>
     </message>
     <message>
       <location filename="../../ArchTruss.py" line="231"/>
@@ -3051,7 +3051,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
       <location filename="../../ArchWindow.py" line="2149"/>
       <location filename="../../ArchPrecast.py" line="1749"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="2150"/>
@@ -5921,7 +5921,7 @@ instead of the FreeCAD web workbench</translation>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="372"/>
       <source>Offset</source>
-      <translation>Зміщення</translation>
+      <translation>Зсув</translation>
     </message>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="444"/>

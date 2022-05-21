@@ -195,9 +195,9 @@ The &apos;Axis&apos; passes through this point.</source>
       <source>The axis object that overrides the value of &apos;Axis&apos; and &apos;Center&apos;, for example, a datum line.
 Its placement, position and rotation, will be used when creating polar and circular arrays.
 Leave this property empty to be able to set &apos;Axis&apos; and &apos;Center&apos; manually.</source>
-      <translation type="unfinished">The axis object that overrides the value of &apos;Axis&apos; and &apos;Center&apos;, for example, a datum line.
-Its placement, position and rotation, will be used when creating polar and circular arrays.
-Leave this property empty to be able to set &apos;Axis&apos; and &apos;Center&apos; manually.</translation>
+      <translation>Об'єкт осі, який замінює значення "Вісь" та "Центр", наприклад, базисна лінія.
+Його розміщення, положення та обертання будуть використовуватися при створенні полярних та кругових масивів.
+Залиште цю властивість порожньою, щоб мати можливість вручну встановити "Осі" та "Центр".</translation>
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="215"/>
@@ -207,7 +207,7 @@ Leave this property empty to be able to set &apos;Axis&apos; and &apos;Center&ap
     <message>
       <location filename="../../draftobjects/array.py" line="223"/>
       <source>Distance and orientation of intervals in &apos;Axis&apos; direction</source>
-      <translation type="unfinished">Distance and orientation of intervals in &apos;Axis&apos; direction</translation>
+      <translation>Відстань та орієнтація інтервалів у напрямку "Вісь"</translation>
     </message>
     <message>
       <location filename="../../draftobjects/array.py" line="230"/>
@@ -760,10 +760,10 @@ can be set as a list of arbitrary points.</translation>
 
 If &apos;Custom&apos; is chosen, the points of the leader can be specified by
 assigning a custom list to the &apos;Points&apos; attribute.</source>
-      <translation type="unfinished">The direction of the straight segment of the leader line.
+      <translation>Напрямок прямого відрізка виносної лінії.
 
-If &apos;Custom&apos; is chosen, the points of the leader can be specified by
-assigning a custom list to the &apos;Points&apos; attribute.</translation>
+Якщо вибрано "Користувацький", точки виносної лінії можуть бути вказані
+присвоєнням спеціального списку атрибуту "Точки".</translation>
     </message>
     <message>
       <location filename="../../draftobjects/label.py" line="142"/>
@@ -772,11 +772,11 @@ assigning a custom list to the &apos;Points&apos; attribute.</translation>
 This is an oriented distance; if it is negative, the line will be drawn
 to the left or below the &apos;Text&apos;, otherwise to the right or above it,
 depending on the value of &apos;Straight Direction&apos;.</source>
-      <translation type="unfinished">The length of the straight segment of the leader line.
+      <translation>Довжина прямого відрізка виносної лінії.
 
-This is an oriented distance; if it is negative, the line will be drawn
-to the left or below the &apos;Text&apos;, otherwise to the right or above it,
-depending on the value of &apos;Straight Direction&apos;.</translation>
+Це орієнтована відстань; якщо воно від’ємне, буде проведена лінія
+ліворуч або нижче "Тексту", інакше праворуч або над ним,
+залежно від значення "Прямий напрямок".</translation>
     </message>
     <message>
       <location filename="../../draftobjects/label.py" line="153"/>

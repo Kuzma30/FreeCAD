@@ -1450,7 +1450,7 @@ It creates a construction group if it doesn&apos;t exist.</translation>
     <message>
       <location filename="../../draftguitools/gui_groups.py" line="74"/>
       <source>Move to group...</source>
-      <translation type="unfinished">Move to group...</translation>
+      <translation>Перемістити до групи...</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_groups.py" line="78"/>
@@ -1607,7 +1607,7 @@ CTRL для прив'язки, SHIFT для обмеження.</translation>
     <message>
       <location filename="../../draftguitools/gui_beziers.py" line="493"/>
       <source>Bézier tools</source>
-      <translation type="unfinished">Bézier tools</translation>
+      <translation>Інструменти для побудови кривих Безьє</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_beziers.py" line="496"/>
@@ -1856,7 +1856,7 @@ If other objects are selected they are ignored.</source>
     <message>
       <location filename="../../draftguitools/gui_hatch.py" line="38"/>
       <source>Hatch</source>
-      <translation type="unfinished">Hatch</translation>
+      <translation>Штрихування</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_hatch.py" line="42"/>
@@ -2806,7 +2806,7 @@ Then you can use it to save a different camera position and objects&apos; states
     <message>
       <location filename="../../draftutils/init_tools.py" line="63"/>
       <source>Bézier tools</source>
-      <translation type="unfinished">Bézier tools</translation>
+      <translation>Інструменти для побудови кривих Безьє</translation>
     </message>
     <message>
       <location filename="../../draftutils/init_tools.py" line="101"/>
@@ -5210,7 +5210,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
     <message>
       <location filename="../../DraftGui.py" line="1257"/>
       <source>DWire</source>
-      <translation type="unfinished">DWire</translation>
+      <translation>DWire</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="1280"/>
@@ -6372,7 +6372,7 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
       <location filename="../ui/TaskPanel_SetStyle.ui" line="120"/>
       <source>DashDot</source>
-      <translation type="unfinished">DashDot</translation>
+      <translation>DashDot</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_SetStyle.ui" line="128"/>
@@ -6427,7 +6427,7 @@ A Link array is more efficient when creating multiple copies, but it cannot be f
     <message>
       <location filename="../ui/TaskPanel_SetStyle.ui" line="186"/>
       <source> %</source>
-      <translation type="unfinished"> %</translation>
+      <translation> %</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_SetStyle.ui" line="199"/>
@@ -6779,7 +6779,7 @@ value by using the [ and ] keys while drawing</source>
     <message>
       <location filename="../ui/dialogHatch.ui" line="71"/>
       <source>°</source>
-      <translation type="unfinished">°</translation>
+      <translation>°</translation>
     </message>
   </context>
   <context>
@@ -6979,7 +6979,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="59"/>
       <source>R</source>
-      <translation type="unfinished">R</translation>
+      <translation>R</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="81"/>
@@ -6989,7 +6989,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="103"/>
       <source>T</source>
-      <translation type="unfinished">T</translation>
+      <translation>T</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="125"/>
@@ -6999,7 +6999,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="147"/>
       <source>O</source>
-      <translation type="unfinished">O</translation>
+      <translation>O</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="169"/>
@@ -7009,7 +7009,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="191"/>
       <source>P</source>
-      <translation type="unfinished">P</translation>
+      <translation>P</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="213"/>
@@ -7019,7 +7019,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="235"/>
       <source>D</source>
-      <translation type="unfinished">D</translation>
+      <translation>D</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="257"/>
@@ -7029,7 +7029,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="279"/>
       <source>L</source>
-      <translation type="unfinished">L</translation>
+      <translation>L</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="301"/>
@@ -7039,7 +7039,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="323"/>
       <source>A</source>
-      <translation type="unfinished">A</translation>
+      <translation>A</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="345"/>
@@ -7049,7 +7049,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="367"/>
       <source>E</source>
-      <translation type="unfinished">E</translation>
+      <translation>E</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="389"/>
@@ -7059,7 +7059,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="411"/>
       <source>Q</source>
-      <translation type="unfinished">Q</translation>
+      <translation>Q</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="433"/>
@@ -7069,7 +7069,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="455"/>
       <source>H</source>
-      <translation type="unfinished">H</translation>
+      <translation>H</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="477"/>
@@ -7079,7 +7079,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="499"/>
       <source>W</source>
-      <translation type="unfinished">W</translation>
+      <translation>W</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="521"/>
@@ -7089,7 +7089,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="543"/>
       <source>U</source>
-      <translation type="unfinished">U</translation>
+      <translation>U</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="565"/>
@@ -7099,7 +7099,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="587"/>
       <source>`</source>
-      <translation type="unfinished">`</translation>
+      <translation>`</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="609"/>
@@ -7109,7 +7109,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="631"/>
       <source>G</source>
-      <translation type="unfinished">G</translation>
+      <translation>G</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="653"/>
@@ -7119,7 +7119,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="675"/>
       <source>S</source>
-      <translation type="unfinished">S</translation>
+      <translation>S</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="697"/>
@@ -7129,7 +7129,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="719"/>
       <source>[</source>
-      <translation type="unfinished">[</translation>
+      <translation>[</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="741"/>
@@ -7139,7 +7139,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="763"/>
       <source>]</source>
-      <translation type="unfinished">]</translation>
+      <translation>]</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="785"/>
@@ -7236,21 +7236,21 @@ Note that this is not fully supported, and many object will be not editable with
       <location filename="../ui/preferences-draftsnap.ui" line="151"/>
       <location filename="../ui/preferences-draftsnap.ui" line="206"/>
       <source>Shift</source>
-      <translation type="unfinished">Shift</translation>
+      <translation>Shift</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="101"/>
       <location filename="../ui/preferences-draftsnap.ui" line="156"/>
       <location filename="../ui/preferences-draftsnap.ui" line="211"/>
       <source>Ctrl</source>
-      <translation type="unfinished">Ctrl</translation>
+      <translation>Ctrl</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="106"/>
       <location filename="../ui/preferences-draftsnap.ui" line="161"/>
       <location filename="../ui/preferences-draftsnap.ui" line="216"/>
       <source>Alt</source>
-      <translation type="unfinished">Alt</translation>
+      <translation>Alt</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="118"/>
@@ -7330,7 +7330,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="341"/>
       <source>Show human figure</source>
-      <translation type="unfinished">Show human figure</translation>
+      <translation>Показати людську фігуру</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="357"/>
@@ -7767,7 +7767,7 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="398"/>
       <source>0.09,0.05</source>
-      <translation type="unfinished">0.09,0.05</translation>
+      <translation>0.09,0.05</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="418"/>
@@ -7777,7 +7777,7 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="441"/>
       <source>0.09,0.05,0.02,0.05</source>
-      <translation type="unfinished">0.09,0.05,0.02,0.05</translation>
+      <translation>0.09,0.05,0.02,0.05</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="461"/>
@@ -7787,12 +7787,12 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-draftvisual.ui" line="484"/>
       <source>0.02,0.02</source>
-      <translation type="unfinished">0.02,0.02</translation>
+      <translation>0.02,0.02</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="14"/>
       <source>DWG</source>
-      <translation type="unfinished">DWG</translation>
+      <translation>DWG</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="26"/>
@@ -7817,17 +7817,17 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="56"/>
       <source>LibreDWG</source>
-      <translation type="unfinished">LibreDWG</translation>
+      <translation>LibreDWG</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="61"/>
       <source>ODA Converter</source>
-      <translation type="unfinished">ODA Converter</translation>
+      <translation>ODA Converter</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="66"/>
       <source>QCAD pro</source>
-      <translation type="unfinished">QCAD pro</translation>
+      <translation>QCAD pro</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dwg.ui" line="78"/>
@@ -7847,7 +7847,7 @@ make Shell</translation>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="14"/>
       <source>DXF</source>
-      <translation type="unfinished">DXF</translation>
+      <translation>DXF</translation>
     </message>
     <message>
       <location filename="../ui/preferences-dxf.ui" line="35"/>
@@ -8152,7 +8152,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-oca.ui" line="14"/>
       <source>OCA</source>
-      <translation type="unfinished">OCA</translation>
+      <translation>OCA</translation>
     </message>
     <message>
       <location filename="../ui/preferences-oca.ui" line="46"/>
@@ -8167,7 +8167,7 @@ This might fail for post DXF R12 templates.</source>
     <message>
       <location filename="../ui/preferences-svg.ui" line="14"/>
       <source>SVG</source>
-      <translation type="unfinished">SVG</translation>
+      <translation>SVG</translation>
     </message>
     <message>
       <location filename="../ui/preferences-svg.ui" line="40"/>

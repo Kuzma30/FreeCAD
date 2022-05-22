@@ -6,7 +6,7 @@
     <message>
       <location filename="../../../femguiutils/selection_widgets.py" line="130"/>
       <source>Select Faces/Edges/Vertexes</source>
-      <translation>Обрати Грані/Ребра/Вершини</translation>
+      <translation type="unfinished">Select Faces/Edges/Vertexes</translation>
     </message>
     <message>
       <location filename="../../../femguiutils/selection_widgets.py" line="135"/>
@@ -19,18 +19,18 @@
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="214"/>
       <source>Solver Control</source>
-      <translation>Керування розвʼязувачем</translation>
+      <translation type="unfinished">Solver Control</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="225"/>
       <source>Working Directory</source>
-      <translation>Робочий каталог</translation>
+      <translation type="unfinished">Working Directory</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="229"/>
       <location filename="../../../femsolver/solver_taskpanel.py" line="302"/>
       <source>Write</source>
-      <translation>Записати</translation>
+      <translation type="unfinished">Write</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="230"/>
@@ -38,34 +38,34 @@
       <location filename="../../../femsolver/solver_taskpanel.py" line="307"/>
       <location filename="../../../femsolver/solver_taskpanel.py" line="311"/>
       <source>Edit</source>
-      <translation>Правка</translation>
+      <translation type="unfinished">Edit</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="244"/>
       <source>Elapsed Time:</source>
-      <translation>Минуло часу:</translation>
+      <translation type="unfinished">Elapsed Time:</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="304"/>
       <location filename="../../../femsolver/solver_taskpanel.py" line="308"/>
       <source>Run</source>
-      <translation>Запустити</translation>
+      <translation type="unfinished">Run</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="306"/>
       <location filename="../../../femsolver/solver_taskpanel.py" line="310"/>
       <source>Re-write</source>
-      <translation>Перезаписати</translation>
+      <translation type="unfinished">Re-write</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="312"/>
       <source>Re-run</source>
-      <translation>Перезапустити</translation>
+      <translation type="unfinished">Re-run</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="314"/>
       <source>Abort</source>
-      <translation>Перервати</translation>
+      <translation type="unfinished">Abort</translation>
     </message>
   </context>
   <context>
@@ -73,12 +73,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="57"/>
       <source>Analysis container</source>
-      <translation>Контейнер аналізу</translation>
+      <translation type="unfinished">Analysis container</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="62"/>
       <source>Creates an analysis container with standard solver CalculiX</source>
-      <translation>Створює контейнер для аналізу зі стандартним обчислювачем CalculiX</translation>
+      <translation type="unfinished">Creates an analysis container with standard solver CalculiX</translation>
     </message>
   </context>
   <context>
@@ -86,12 +86,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="93"/>
       <source>Clipping plane on face</source>
-      <translation>Відсікання площини на поверхні</translation>
+      <translation type="unfinished">Clipping plane on face</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="96"/>
       <source>Add a clipping plane on a selected face</source>
-      <translation>Додати площину, що розриває на вибрану поверхню</translation>
+      <translation type="unfinished">Add a clipping plane on a selected face</translation>
     </message>
   </context>
   <context>
@@ -100,7 +100,7 @@
       <location filename="../../../femcommands/commands.py" line="153"/>
       <location filename="../../../femcommands/commands.py" line="156"/>
       <source>Remove all clipping planes</source>
-      <translation>Вилучити всі розривні площини</translation>
+      <translation type="unfinished">Remove all clipping planes</translation>
     </message>
   </context>
   <context>
@@ -108,12 +108,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="177"/>
       <source>Constant vacuum permittivity</source>
-      <translation>Постійна проникність вакууму</translation>
+      <translation type="unfinished">Constant vacuum permittivity</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="181"/>
       <source>Creates a FEM constant vacuum permittivity to overwrite standard value</source>
-      <translation>Створює постійну електропроникність вакууму для заміни стандартного значення</translation>
+      <translation type="unfinished">Creates a FEM constant vacuum permittivity to overwrite standard value</translation>
     </message>
   </context>
   <context>
@@ -121,12 +121,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="195"/>
       <source>Constraint body heat source</source>
-      <translation>Обмеження джерела тепла</translation>
+      <translation type="unfinished">Constraint body heat source</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="198"/>
       <source>Creates a FEM constraint body heat source</source>
-      <translation>Створює джерело тепла обмеження МСЕ</translation>
+      <translation type="unfinished">Creates a FEM constraint body heat source</translation>
     </message>
   </context>
   <context>
@@ -134,12 +134,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="210"/>
       <source>Constraint centrif</source>
-      <translation>Констрайнт-центр</translation>
+      <translation type="unfinished">Constraint centrif</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="213"/>
       <source>Creates a FEM constraint centrif</source>
-      <translation>Створює МСЕ-центр обмеження МСЕ</translation>
+      <translation type="unfinished">Creates a FEM constraint centrif</translation>
     </message>
   </context>
   <context>
@@ -147,12 +147,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="225"/>
       <source>Constraint electrostatic potential</source>
-      <translation>Електростатичний потенціал обмеження</translation>
+      <translation type="unfinished">Constraint electrostatic potential</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="229"/>
       <source>Creates a FEM constraint electrostatic potential</source>
-      <translation>Створює електростатичний потенціал обмеження МСЕ</translation>
+      <translation type="unfinished">Creates a FEM constraint electrostatic potential</translation>
     </message>
   </context>
   <context>
@@ -160,12 +160,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="241"/>
       <source>Constraint flow velocity</source>
-      <translation>Обмеження швидкості потоку</translation>
+      <translation type="unfinished">Constraint flow velocity</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="244"/>
       <source>Creates a FEM constraint flow velocity</source>
-      <translation>Створює обмежуючу швидкість потоку МСЕ</translation>
+      <translation type="unfinished">Creates a FEM constraint flow velocity</translation>
     </message>
   </context>
   <context>
@@ -173,12 +173,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="256"/>
       <source>Constraint initial flow velocity</source>
-      <translation>Обмеження початкової швидкості потоку</translation>
+      <translation type="unfinished">Constraint initial flow velocity</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="260"/>
       <source>Creates a FEM constraint initial flow velocity</source>
-      <translation>Створює обмеження початкової швидкості потоку для МСЕ</translation>
+      <translation type="unfinished">Creates a FEM constraint initial flow velocity</translation>
     </message>
   </context>
   <context>
@@ -186,12 +186,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="272"/>
       <source>Constraint sectionprint</source>
-      <translation>Символ обмеження</translation>
+      <translation type="unfinished">Constraint sectionprint</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="275"/>
       <source>Creates a FEM constraint sectionprint</source>
-      <translation>Створює секцію обмеження МСЕ</translation>
+      <translation type="unfinished">Creates a FEM constraint sectionprint</translation>
     </message>
   </context>
   <context>
@@ -199,12 +199,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="287"/>
       <source>Constraint self weight</source>
-      <translation>Обмеження власної ваги</translation>
+      <translation type="unfinished">Constraint self weight</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="290"/>
       <source>Creates a FEM constraint self weight</source>
-      <translation>Створює власну вагу для МСЕ обмеження МСЕ</translation>
+      <translation type="unfinished">Creates a FEM constraint self weight</translation>
     </message>
   </context>
   <context>
@@ -212,12 +212,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="300"/>
       <source>Constraint tie</source>
-      <translation>Обмежувальний зв’язок</translation>
+      <translation type="unfinished">Constraint tie</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="303"/>
       <source>Creates a FEM constraint tie</source>
-      <translation>Створює вузол обмеження МСЕ</translation>
+      <translation type="unfinished">Creates a FEM constraint tie</translation>
     </message>
   </context>
   <context>
@@ -225,12 +225,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="315"/>
       <source>Fluid section for 1D flow</source>
-      <translation>Розділ рідини для 1D потоку</translation>
+      <translation type="unfinished">Fluid section for 1D flow</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="318"/>
       <source>Creates a FEM fluid section for 1D flow</source>
-      <translation>Створює розділ FEM для потоку 1D</translation>
+      <translation type="unfinished">Creates a FEM fluid section for 1D flow</translation>
     </message>
   </context>
   <context>
@@ -238,12 +238,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="330"/>
       <source>Beam cross section</source>
-      <translation>Переріз Балки.</translation>
+      <translation type="unfinished">Beam cross section</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="333"/>
       <source>Creates a FEM beam cross section</source>
-      <translation>Створює переріз МСЕ для балки</translation>
+      <translation type="unfinished">Creates a FEM beam cross section</translation>
     </message>
   </context>
   <context>
@@ -251,12 +251,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="345"/>
       <source>Shell plate thickness</source>
-      <translation>Товщина  оболонки  плити </translation>
+      <translation type="unfinished">Shell plate thickness</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="348"/>
       <source>Creates a FEM shell plate thickness</source>
-      <translation>Створює  МСЕМ облонки товщини плити</translation>
+      <translation type="unfinished">Creates a FEM shell plate thickness</translation>
     </message>
   </context>
   <context>
@@ -264,12 +264,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="358"/>
       <source>Beam rotation</source>
-      <translation>Обертання балки</translation>
+      <translation type="unfinished">Beam rotation</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="361"/>
       <source>Creates a FEM beam rotation</source>
-      <translation>Створює оберт МСЕ балки</translation>
+      <translation type="unfinished">Creates a FEM beam rotation</translation>
     </message>
   </context>
   <context>
@@ -277,13 +277,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="388"/>
       <source>Elasticity equation</source>
-      <translation>Рівняння пружності</translation>
+      <translation type="unfinished">Elasticity equation</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="391"/>
       <source>Creates a FEM equation for elasticity</source>
-      <translation>Створює рівняння МСЕ для пружності
-</translation>
+      <translation type="unfinished">Creates a FEM equation for elasticity</translation>
     </message>
   </context>
   <context>
@@ -291,12 +290,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="429"/>
       <source>Electricforce equation</source>
-      <translation>Рівняння електричної сили</translation>
+      <translation type="unfinished">Electricforce equation</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="432"/>
       <source>Creates a FEM equation for electric forces</source>
-      <translation>Створює рівняння МСЕ для електричних сил</translation>
+      <translation type="unfinished">Creates a FEM equation for electric forces</translation>
     </message>
   </context>
   <context>
@@ -304,12 +303,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="373"/>
       <source>Electrostatic equation</source>
-      <translation>Електростатичне рівняння</translation>
+      <translation type="unfinished">Electrostatic equation</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="376"/>
       <source>Creates a FEM equation for electrostatic</source>
-      <translation>Створює рівняння МСЕ для електростатики</translation>
+      <translation type="unfinished">Creates a FEM equation for electrostatic</translation>
     </message>
   </context>
   <context>
@@ -317,12 +316,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="401"/>
       <source>Flow equation</source>
-      <translation>Рівняння течії</translation>
+      <translation type="unfinished">Flow equation</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="404"/>
       <source>Creates a FEM equation for flow</source>
-      <translation>Створює для потоку рівняння МСЕ</translation>
+      <translation type="unfinished">Creates a FEM equation for flow</translation>
     </message>
   </context>
   <context>
@@ -330,12 +329,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="414"/>
       <source>Flux equation</source>
-      <translation>Рівняння потоку</translation>
+      <translation type="unfinished">Flux equation</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="417"/>
       <source>Creates a FEM equation for flux</source>
-      <translation>Створює рівняння МСЕ для потоку</translation>
+      <translation type="unfinished">Creates a FEM equation for flux</translation>
     </message>
   </context>
   <context>
@@ -343,12 +342,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="442"/>
       <source>Heat equation</source>
-      <translation>Рівняння теплоти</translation>
+      <translation type="unfinished">Heat equation</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="445"/>
       <source>Creates a FEM equation for heat</source>
-      <translation>Створює рівняння МСЕ для обігріву</translation>
+      <translation type="unfinished">Creates a FEM equation for heat</translation>
     </message>
   </context>
   <context>
@@ -357,7 +356,7 @@
       <location filename="../../../femcommands/commands.py" line="456"/>
       <location filename="../../../femcommands/commands.py" line="457"/>
       <source>Open FEM examples</source>
-      <translation>Відкрити приклади FEM</translation>
+      <translation type="unfinished">Open FEM examples</translation>
     </message>
   </context>
   <context>
@@ -365,12 +364,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="603"/>
       <source>FEM mesh to mesh</source>
-      <translation>Сітка МЕМ для сітки</translation>
+      <translation type="unfinished">FEM mesh to mesh</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="606"/>
       <source>Convert the surface of a FEM mesh to a mesh</source>
-      <translation>Конвертувати поверхню сітки МСЕ [FEM] в сітку</translation>
+      <translation type="unfinished">Convert the surface of a FEM mesh to a mesh</translation>
     </message>
   </context>
   <context>
@@ -378,12 +377,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="471"/>
       <source>Material editor</source>
-      <translation>Редактор матеріалів</translation>
+      <translation type="unfinished">Material editor</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="474"/>
       <source>Opens the FreeCAD material editor</source>
-      <translation>Відкрити редактор матеріалу FreeCAD</translation>
+      <translation type="unfinished">Opens the FreeCAD material editor</translation>
     </message>
   </context>
   <context>
@@ -391,12 +390,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="487"/>
       <source>Material for fluid</source>
-      <translation>Матеріал для рідини</translation>
+      <translation type="unfinished">Material for fluid</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="490"/>
       <source>Creates a FEM material for fluid</source>
-      <translation>Створює МСЕ матеріал для рідини</translation>
+      <translation type="unfinished">Creates a FEM material for fluid</translation>
     </message>
   </context>
   <context>
@@ -404,12 +403,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="502"/>
       <source>Nonlinear mechanical material</source>
-      <translation>Нелінійна механічний матеріал</translation>
+      <translation type="unfinished">Nonlinear mechanical material</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="505"/>
       <source>Creates a nonlinear mechanical material</source>
-      <translation>Створює нелінійний механічний матеріал</translation>
+      <translation type="unfinished">Creates a nonlinear mechanical material</translation>
     </message>
   </context>
   <context>
@@ -417,12 +416,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="575"/>
       <source>Reinforced material (concrete)</source>
-      <translation>Матеріал армування (залізобетон)</translation>
+      <translation type="unfinished">Reinforced material (concrete)</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="579"/>
       <source>Creates a material for reinforced matrix material such as concrete</source>
-      <translation>Створює матеріал для армованої матриці, такої як бетон</translation>
+      <translation type="unfinished">Creates a material for reinforced matrix material such as concrete</translation>
     </message>
   </context>
   <context>
@@ -430,12 +429,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="589"/>
       <source>Material for solid</source>
-      <translation>Матеріал для суцільного тіла</translation>
+      <translation type="unfinished">Material for solid</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="593"/>
       <source>Creates a FEM material for solid</source>
-      <translation>Створює МСЕ-матеріал для суцільного тіла</translation>
+      <translation type="unfinished">Creates a FEM material for solid</translation>
     </message>
   </context>
   <context>
@@ -443,12 +442,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="648"/>
       <source>FEM mesh boundary layer</source>
-      <translation>Граничний шар сітки МСЕ</translation>
+      <translation type="unfinished">FEM mesh boundary layer</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="651"/>
       <source>Creates a FEM mesh boundary layer</source>
-      <translation>Створює граничний шар сітки МСЕ</translation>
+      <translation type="unfinished">Creates a FEM mesh boundary layer</translation>
     </message>
   </context>
   <context>
@@ -456,12 +455,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="661"/>
       <source>Clear FEM mesh</source>
-      <translation>Очистити сітку МСЕ</translation>
+      <translation type="unfinished">Clear FEM mesh</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="664"/>
       <source>Clear the Mesh of a FEM mesh object</source>
-      <translation>Очистити сітку обʼєкту МСЕ сітки</translation>
+      <translation type="unfinished">Clear the Mesh of a FEM mesh object</translation>
     </message>
   </context>
   <context>
@@ -470,7 +469,7 @@
       <location filename="../../../femcommands/commands.py" line="684"/>
       <location filename="../../../femcommands/commands.py" line="687"/>
       <source>Display FEM mesh info</source>
-      <translation>Відображати інформацію по сітці МСЕ</translation>
+      <translation type="unfinished">Display FEM mesh info</translation>
     </message>
   </context>
   <context>
@@ -478,12 +477,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="713"/>
       <source>FEM mesh from shape by Gmsh</source>
-      <translation>FEM сітка з фігур за допомогою Gmsh</translation>
+      <translation type="unfinished">FEM mesh from shape by Gmsh</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="716"/>
       <source>Create a FEM mesh from a shape by Gmsh mesher</source>
-      <translation>Створення сітки МСЕ з фігур за допомогою Gmsh mesher</translation>
+      <translation type="unfinished">Create a FEM mesh from a shape by Gmsh mesher</translation>
     </message>
   </context>
   <context>
@@ -491,12 +490,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="756"/>
       <source>FEM mesh group</source>
-      <translation>Група сітки МСЕ</translation>
+      <translation type="unfinished">FEM mesh group</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="757"/>
       <source>Creates a FEM mesh group</source>
-      <translation>Створює групу сітки МСЕ</translation>
+      <translation type="unfinished">Creates a FEM mesh group</translation>
     </message>
   </context>
   <context>
@@ -504,12 +503,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="769"/>
       <source>FEM mesh from shape by Netgen</source>
-      <translation>FEM сітка з фігур за допомогою Netgen</translation>
+      <translation type="unfinished">FEM mesh from shape by Netgen</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="773"/>
       <source>Create a FEM mesh from a solid or face shape by Netgen internal mesher</source>
-      <translation>Створіть сітку МСЕ з твердої форми або форми обличчя за допомогою внутрішньої сітки Netgen</translation>
+      <translation type="unfinished">Create a FEM mesh from a solid or face shape by Netgen internal mesher</translation>
     </message>
   </context>
   <context>
@@ -517,12 +516,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="813"/>
       <source>FEM mesh region</source>
-      <translation>Область сітки МСЕ</translation>
+      <translation type="unfinished">FEM mesh region</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="816"/>
       <source>Creates a FEM mesh region</source>
-      <translation>Створює область сітки МСЕ</translation>
+      <translation type="unfinished">Creates a FEM mesh region</translation>
     </message>
   </context>
   <context>
@@ -530,12 +529,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="826"/>
       <source>Show result</source>
-      <translation>Показати результат</translation>
+      <translation type="unfinished">Show result</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="830"/>
       <source>Shows and visualizes selected result data</source>
-      <translation>Відображення та візуалізація вибраних даних результату</translation>
+      <translation type="unfinished">Shows and visualizes selected result data</translation>
     </message>
   </context>
   <context>
@@ -543,12 +542,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="842"/>
       <source>Purge results</source>
-      <translation>Очистити результати</translation>
+      <translation type="unfinished">Purge results</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="846"/>
       <source>Purges all results from active analysis</source>
-      <translation>Видаляє всі результати активного аналізу</translation>
+      <translation type="unfinished">Purges all results from active analysis</translation>
     </message>
   </context>
   <context>
@@ -556,12 +555,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="903"/>
       <source>Solver CalculiX (new framework)</source>
-      <translation>Розвʼязувач CalculiX (новий фреймворк)</translation>
+      <translation type="unfinished">Solver CalculiX (new framework)</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="908"/>
       <source>Creates a FEM solver CalculiX new framework (less result error handling)</source>
-      <translation>Створює МСЕ-розв'язувач нового фреймворку CalculiX (менше обробки помилок результату)</translation>
+      <translation type="unfinished">Creates a FEM solver CalculiX new framework (less result error handling)</translation>
     </message>
   </context>
   <context>
@@ -569,12 +568,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="863"/>
       <source>Solver CalculiX Standard</source>
-      <translation>Розв’язувач CalculiX Стандартний</translation>
+      <translation type="unfinished">Solver CalculiX Standard</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="868"/>
       <source>Creates a standard FEM solver CalculiX with ccx tools</source>
-      <translation>Створює стандартний метод FEM для розв'язувача CalculiX з інструментами ccx</translation>
+      <translation type="unfinished">Creates a standard FEM solver CalculiX with ccx tools</translation>
     </message>
   </context>
   <context>
@@ -582,7 +581,7 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="919"/>
       <source>Solver job control</source>
-      <translation>Керування завданнями розвʼязувача</translation>
+      <translation type="unfinished">Solver job control</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="924"/>
@@ -634,12 +633,12 @@
     <message>
       <location filename="../../../femcommands/commands.py" line="985"/>
       <source>Solver Z88</source>
-      <translation>Розвʼязувач Z88</translation>
+      <translation type="unfinished">Solver Z88</translation>
     </message>
     <message>
       <location filename="../../../femcommands/commands.py" line="987"/>
       <source>Creates a FEM solver Z88</source>
-      <translation>Створює розвʼязувач Z88 МСЕ</translation>
+      <translation type="unfinished">Creates a FEM solver Z88</translation>
     </message>
   </context>
   <context>
@@ -652,7 +651,7 @@
     <message>
       <location filename="../../../femguiutils/selection_widgets.py" line="272"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../../femguiutils/selection_widgets.py" line="278"/>
@@ -667,12 +666,12 @@
     <message>
       <location filename="../../../femguiutils/selection_widgets.py" line="295"/>
       <source>Selection mode</source>
-      <translation>Режим вибору</translation>
+      <translation type="unfinished">Selection mode</translation>
     </message>
     <message>
       <location filename="../../../femguiutils/selection_widgets.py" line="299"/>
       <source>Solid</source>
-      <translation>Суцільне тіло</translation>
+      <translation type="unfinished">Solid</translation>
     </message>
   </context>
   <context>
@@ -693,12 +692,12 @@
     <message>
       <location filename="../../../femguiutils/selection_widgets.py" line="51"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../../femguiutils/selection_widgets.py" line="52"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
   </context>
   <context>
@@ -706,7 +705,7 @@
     <message>
       <location filename="../../Command.cpp" line="288"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="289"/>
@@ -724,7 +723,7 @@
     <message>
       <location filename="../../Command.cpp" line="329"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="330"/>
@@ -742,7 +741,7 @@
     <message>
       <location filename="../../Command.cpp" line="374"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="375"/>
@@ -760,7 +759,7 @@
     <message>
       <location filename="../../Command.cpp" line="417"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="418"/>
@@ -778,7 +777,7 @@
     <message>
       <location filename="../../Command.cpp" line="459"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="460"/>
@@ -796,7 +795,7 @@
     <message>
       <location filename="../../Command.cpp" line="502"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="503"/>
@@ -814,7 +813,7 @@
     <message>
       <location filename="../../Command.cpp" line="546"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="547"/>
@@ -832,7 +831,7 @@
     <message>
       <location filename="../../Command.cpp" line="587"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="588"/>
@@ -850,7 +849,7 @@
     <message>
       <location filename="../../Command.cpp" line="632"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="633"/>
@@ -868,7 +867,7 @@
     <message>
       <location filename="../../Command.cpp" line="675"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="676"/>
@@ -886,7 +885,7 @@
     <message>
       <location filename="../../Command.cpp" line="717"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="718"/>
@@ -904,7 +903,7 @@
     <message>
       <location filename="../../Command.cpp" line="807"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="808"/>
@@ -922,7 +921,7 @@
     <message>
       <location filename="../../Command.cpp" line="762"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="763"/>
@@ -940,7 +939,7 @@
     <message>
       <location filename="../../Command.cpp" line="853"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="854"/>
@@ -958,7 +957,7 @@
     <message>
       <location filename="../../Command.cpp" line="896"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="897"/>
@@ -976,12 +975,12 @@
     <message>
       <location filename="../../Command.cpp" line="1088"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1089"/>
       <source>Nodes set</source>
-      <translation>Набір вузлів</translation>
+      <translation type="unfinished">Nodes set</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1090"/>
@@ -991,7 +990,7 @@
     <message>
       <location filename="../../Command.cpp" line="1118"/>
       <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
+      <translation type="unfinished">Wrong selection</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1119"/>
@@ -1004,7 +1003,7 @@
     <message>
       <location filename="../../Command.cpp" line="1032"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1033"/>
@@ -1023,7 +1022,7 @@
     <message>
       <location filename="../../Command.cpp" line="1737"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1738"/>
@@ -1041,7 +1040,7 @@
     <message>
       <location filename="../../Command.cpp" line="1281"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1282"/>
@@ -1056,7 +1055,7 @@
     <message>
       <location filename="../../Command.cpp" line="1665"/>
       <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
+      <translation type="unfinished">Wrong selection</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1666"/>
@@ -1077,7 +1076,7 @@
     <message>
       <location filename="../../Command.cpp" line="1324"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1325"/>
@@ -1095,7 +1094,7 @@
     <message>
       <location filename="../../Command.cpp" line="1367"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1368"/>
@@ -1113,7 +1112,7 @@
     <message>
       <location filename="../../Command.cpp" line="1408"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1409"/>
@@ -1131,7 +1130,7 @@
     <message>
       <location filename="../../Command.cpp" line="1597"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1598"/>
@@ -1146,12 +1145,12 @@
     <message>
       <location filename="../../Command.cpp" line="1710"/>
       <source>Plane</source>
-      <translation>Площини</translation>
+      <translation type="unfinished">Plane</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1715"/>
       <source>Sphere</source>
-      <translation>Сфера</translation>
+      <translation type="unfinished">Sphere</translation>
     </message>
   </context>
   <context>
@@ -1159,7 +1158,7 @@
     <message>
       <location filename="../../Command.cpp" line="1453"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1454"/>
@@ -1175,7 +1174,7 @@
       <location filename="../../Command.cpp" line="1485"/>
       <location filename="../../Command.cpp" line="1491"/>
       <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
+      <translation type="unfinished">Wrong selection</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1486"/>
@@ -1189,7 +1188,7 @@
     <message>
       <location filename="../../Command.cpp" line="1776"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1777"/>
@@ -1217,7 +1216,7 @@
     <message>
       <location filename="../../Command.cpp" line="1515"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1516"/>
@@ -1235,7 +1234,7 @@
     <message>
       <location filename="../../Command.cpp" line="1556"/>
       <source>Fem</source>
-      <translation>МСЕ (Метод скінченних елементів)</translation>
+      <translation type="unfinished">Fem</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1557"/>
@@ -1368,7 +1367,7 @@
       <location filename="../../TaskPanelConstraintTemperature.ui" line="14"/>
       <location filename="../../TaskPanelInitialTemperature.ui" line="14"/>
       <source>Dialog</source>
-      <translation>Діалогове вікно</translation>
+      <translation type="unfinished">Dialog</translation>
     </message>
     <message>
       <location filename="../ui/MeshGroupXDMFExport.ui" line="23"/>
@@ -1378,17 +1377,17 @@
     <message>
       <location filename="../ui/MeshGroupXDMFExport.ui" line="62"/>
       <source>Id</source>
-      <translation>Ідентифікатор</translation>
+      <translation type="unfinished">Id</translation>
     </message>
     <message>
       <location filename="../ui/MeshGroupXDMFExport.ui" line="67"/>
       <source>Label</source>
-      <translation>Позначка</translation>
+      <translation type="unfinished">Label</translation>
     </message>
     <message>
       <location filename="../ui/MeshGroupXDMFExport.ui" line="72"/>
       <source>Elements</source>
-      <translation>Елементи</translation>
+      <translation type="unfinished">Elements</translation>
     </message>
     <message>
       <location filename="../ui/MeshGroupXDMFExport.ui" line="77"/>
@@ -1409,7 +1408,7 @@
       <location filename="../../TaskPanelConstraintTemperature.ui" line="39"/>
       <location filename="../../TaskPanelInitialTemperature.ui" line="43"/>
       <source>Temperature:</source>
-      <translation>Температура:</translation>
+      <translation type="unfinished">Temperature:</translation>
     </message>
     <message>
       <location filename="../../TaskPanelConstraintTemperature.ui" line="52"/>
@@ -1426,12 +1425,12 @@
     <message>
       <location filename="../../TaskPanelConstraintTemperature.ui" line="81"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskPanelConstraintTemperature.ui" line="94"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskPanelInitialTemperature.ui" line="26"/>
@@ -1446,12 +1445,12 @@
     <message>
       <location filename="../../Command.cpp" line="1711"/>
       <source>Create a plane function, defined by its origin and normal</source>
-      <translation>Створити функцію площини, яка визначається її початком координат та нормаллю</translation>
+      <translation type="unfinished">Create a plane function, defined by its origin and normal</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1716"/>
       <source>Create a sphere function, defined by its center and radius</source>
-      <translation>Створити функцію сфери, яка визначається її центром та радіусом</translation>
+      <translation type="unfinished">Create a sphere function, defined by its center and radius</translation>
     </message>
   </context>
   <context>
@@ -1490,17 +1489,17 @@
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="126"/>
       <source>Use internal editor for *.inp files</source>
-      <translation>Використовувати вбудований редактор для *.inp-файлів</translation>
+      <translation type="unfinished">Use internal editor for *.inp files</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="151"/>
       <source>External editor:</source>
-      <translation>Зовнішній редактор:</translation>
+      <translation type="unfinished">External editor:</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="171"/>
       <source>Input file splitting</source>
-      <translation>Розділення вхідного файлу на фрагменти</translation>
+      <translation type="unfinished">Input file splitting</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="181"/>
@@ -1515,22 +1514,22 @@
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="210"/>
       <source>Type</source>
-      <translation>Тип</translation>
+      <translation type="unfinished">Type</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="223"/>
       <source>Default type on analysis</source>
-      <translation>Стандартний тип аналізу</translation>
+      <translation type="unfinished">Default type on analysis</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="233"/>
       <source>Static</source>
-      <translation>Статичний</translation>
+      <translation type="unfinished">Static</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="242"/>
       <source>Frequency</source>
-      <translation>Частота</translation>
+      <translation type="unfinished">Frequency</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="251"/>
@@ -1565,7 +1564,7 @@
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="349"/>
       <source>Default</source>
-      <translation>За замовчуванням</translation>
+      <translation type="unfinished">Default</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="354"/>
@@ -1661,18 +1660,18 @@
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="655"/>
       <source>High frequency limit</source>
-      <translation>Верхня межа частоти</translation>
+      <translation type="unfinished">High frequency limit</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="693"/>
       <location filename="../../DlgSettingsFemCcx.ui" line="741"/>
       <source>Hz</source>
-      <translation>Гц</translation>
+      <translation type="unfinished">Hz</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemCcx.ui" line="700"/>
       <source>Low frequency limit</source>
-      <translation>Нижня межа частоти</translation>
+      <translation type="unfinished">Low frequency limit</translation>
     </message>
   </context>
   <context>
@@ -1734,7 +1733,7 @@
     <message>
       <location filename="../../DlgSettingsFemExportAbaqus.ui" line="20"/>
       <source>Export</source>
-      <translation>Експорт</translation>
+      <translation type="unfinished">Export</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemExportAbaqus.ui" line="28"/>
@@ -1766,7 +1765,7 @@ not belonging to faces and faces not belonging to volumes.</translation>
     <message>
       <location filename="../../DlgSettingsFemExportAbaqus.ui" line="57"/>
       <source>All</source>
-      <translation>Вся</translation>
+      <translation type="unfinished">All</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemExportAbaqus.ui" line="62"/>
@@ -1776,7 +1775,7 @@ not belonging to faces and faces not belonging to volumes.</translation>
     <message>
       <location filename="../../DlgSettingsFemExportAbaqus.ui" line="67"/>
       <source>FEM</source>
-      <translation>МСЕ</translation>
+      <translation type="unfinished">FEM</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemExportAbaqus.ui" line="75"/>
@@ -1800,7 +1799,7 @@ constraint or material is applied.</translation>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="14"/>
       <source>General</source>
-      <translation>Загальні</translation>
+      <translation type="unfinished">General</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="31"/>
@@ -1830,7 +1829,7 @@ constraint or material is applied.</translation>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="116"/>
       <source>Create a directory in the same folder in which the FCStd file of the document is located. Use Subfolder for each solver (e.g. for a file ./mydoc.FCStd and a solver with the label Elmer002 use ./mydoc/Elmer002).</source>
-      <translation>Створіть каталог у тій же теці, в якій міститься файл FCStd документа. Використовуйте додаткову теку для кожного вирішувача (наприклад, для файлу ./mydoc.FCStd та вирішувача з позначкою Elmer002 використовуйте ./mydoc/Elmer002).</translation>
+      <translation type="unfinished">Create a directory in the same folder in which the FCStd file of the document is located. Use Subfolder for each solver (e.g. for a file ./mydoc.FCStd and a solver with the label Elmer002 use ./mydoc/Elmer002).</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="142"/>
@@ -1845,7 +1844,7 @@ constraint or material is applied.</translation>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="187"/>
       <source>Path:</source>
-      <translation>Шлях:</translation>
+      <translation type="unfinished">Path:</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="247"/>
@@ -1855,7 +1854,7 @@ constraint or material is applied.</translation>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="268"/>
       <source>Mesh</source>
-      <translation>Сітка(Меш)</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemGeneral.ui" line="279"/>
@@ -1921,7 +1920,7 @@ constraint or material is applied.</translation>
     <message>
       <location filename="../../DlgSettingsFemInOutVtk.ui" line="23"/>
       <source>Import</source>
-      <translation>Імпортувати</translation>
+      <translation type="unfinished">Import</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemInOutVtk.ui" line="31"/>
@@ -1977,7 +1976,7 @@ exported from FreeCAD.</translation>
     <message>
       <location filename="../../DlgSettingsFemMaterial.ui" line="14"/>
       <source>Material</source>
-      <translation>Матеріал</translation>
+      <translation type="unfinished">Material</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemMaterial.ui" line="23"/>
@@ -2019,7 +2018,7 @@ will be listed as available.</translation>
     <message>
       <location filename="../../DlgSettingsFemMaterial.ui" line="100"/>
       <source>User directory</source>
-      <translation>Каталог користувача</translation>
+      <translation type="unfinished">User directory</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsFemMaterial.ui" line="148"/>
@@ -2188,7 +2187,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskAnalysisInfo.cpp" line="43"/>
       <source>Nodes set</source>
-      <translation>Набір вузлів</translation>
+      <translation type="unfinished">Nodes set</translation>
     </message>
   </context>
   <context>
@@ -2196,7 +2195,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskCreateNodeSet.cpp" line="64"/>
       <source>Nodes set</source>
-      <translation>Набір вузлів</translation>
+      <translation type="unfinished">Nodes set</translation>
     </message>
   </context>
   <context>
@@ -2205,12 +2204,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraint.cpp" line="276"/>
       <location filename="../../TaskFemConstraint.cpp" line="287"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.cpp" line="276"/>
       <source>You must specify at least one reference</source>
-      <translation>Потрібно вказати принаймні одне посилання</translation>
+      <translation type="unfinished">You must specify at least one reference</translation>
     </message>
   </context>
   <context>
@@ -2218,7 +2217,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintBearing.cpp" line="338"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2226,7 +2225,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintContact.cpp" line="427"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2234,7 +2233,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.cpp" line="604"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2242,7 +2241,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="951"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2251,7 +2250,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintForce.cpp" line="430"/>
       <location filename="../../TaskFemConstraintForce.cpp" line="459"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.cpp" line="430"/>
@@ -2264,7 +2263,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintGear.cpp" line="306"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2272,7 +2271,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintHeatflux.cpp" line="419"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2281,7 +2280,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintInitialTemperature.cpp" line="121"/>
       <location filename="../../TaskFemConstraintInitialTemperature.cpp" line="133"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2289,7 +2288,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintPressure.cpp" line="297"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2297,7 +2296,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintPulley.cpp" line="207"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2305,7 +2304,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintSpring.cpp" line="299"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2313,7 +2312,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintTemperature.cpp" line="351"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2321,7 +2320,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintTransform.cpp" line="514"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2329,12 +2328,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskDlgMeshShapeNetgen.cpp" line="76"/>
       <source>Edit FEM mesh</source>
-      <translation>Редагувати сітку МСЕ</translation>
+      <translation type="unfinished">Edit FEM mesh</translation>
     </message>
     <message>
       <location filename="../../TaskDlgMeshShapeNetgen.cpp" line="107"/>
       <source>Meshing failure</source>
-      <translation>Не вдалося побудувати сітку</translation>
+      <translation type="unfinished">Meshing failure</translation>
     </message>
   </context>
   <context>
@@ -2342,7 +2341,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskPostBoxes.cpp" line="266"/>
       <source>Input error</source>
-      <translation>Помилка вводу</translation>
+      <translation type="unfinished">Input error</translation>
     </message>
   </context>
   <context>
@@ -2350,7 +2349,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskDriver.cpp" line="49"/>
       <source>Nodes set</source>
-      <translation>Набір вузлів</translation>
+      <translation type="unfinished">Nodes set</translation>
     </message>
   </context>
   <context>
@@ -2358,12 +2357,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraint.cpp" line="73"/>
       <source>FEM constraint parameters</source>
-      <translation>Обмежувальні параметри МСЕ</translation>
+      <translation type="unfinished">FEM constraint parameters</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.cpp" line="218"/>
       <source>Delete</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Delete</translation>
     </message>
   </context>
   <context>
@@ -2376,7 +2375,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintBearing.cpp" line="189"/>
       <location filename="../../TaskFemConstraintBearing.cpp" line="194"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.cpp" line="156"/>
@@ -2386,17 +2385,17 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintBearing.cpp" line="160"/>
       <source>Only faces can be picked</source>
-      <translation>Можливо обрати лише грані</translation>
+      <translation type="unfinished">Only faces can be picked</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.cpp" line="167"/>
       <source>Only cylindrical faces can be picked</source>
-      <translation>Можуть бути обраними лише циліндричні поверхні</translation>
+      <translation type="unfinished">Only cylindrical faces can be picked</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.cpp" line="183"/>
       <source>Only planar faces can be picked</source>
-      <translation>Можуть бути обрані лише планарні грані</translation>
+      <translation type="unfinished">Only planar faces can be picked</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.cpp" line="189"/>
@@ -2415,7 +2414,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintContact.cpp" line="56"/>
       <location filename="../../TaskFemConstraintContact.cpp" line="59"/>
       <source>Delete</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Delete</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintContact.cpp" line="97"/>
@@ -2436,7 +2435,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintContact.cpp" line="307"/>
       <location filename="../../TaskFemConstraintContact.cpp" line="316"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintContact.cpp" line="97"/>
@@ -2475,7 +2474,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintContact.cpp" line="173"/>
       <location filename="../../TaskFemConstraintContact.cpp" line="279"/>
       <source>Only faces can be picked</source>
-      <translation>Можливо обрати лише грані</translation>
+      <translation type="unfinished">Only faces can be picked</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintContact.cpp" line="256"/>
@@ -2497,7 +2496,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintDisplacement.cpp" line="430"/>
       <location filename="../../TaskFemConstraintDisplacement.cpp" line="439"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.cpp" line="373"/>
@@ -2526,7 +2525,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintFixed.cpp" line="164"/>
       <location filename="../../TaskFemConstraintFixed.cpp" line="173"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFixed.cpp" line="107"/>
@@ -2621,7 +2620,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="592"/>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="597"/>
       <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
+      <translation type="unfinished">Wrong selection</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="565"/>
@@ -2655,7 +2654,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="788"/>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="797"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="730"/>
@@ -2684,7 +2683,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintForce.cpp" line="186"/>
       <location filename="../../TaskFemConstraintForce.cpp" line="195"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.cpp" line="128"/>
@@ -2707,7 +2706,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintForce.cpp" line="300"/>
       <location filename="../../TaskFemConstraintForce.cpp" line="315"/>
       <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
+      <translation type="unfinished">Wrong selection</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.cpp" line="300"/>
@@ -2722,12 +2721,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintGear.cpp" line="156"/>
       <location filename="../../TaskFemConstraintGear.cpp" line="161"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintGear.cpp" line="150"/>
       <source>Only planar faces can be picked</source>
-      <translation>Можуть бути обрані лише планарні грані</translation>
+      <translation type="unfinished">Only planar faces can be picked</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintGear.cpp" line="156"/>
@@ -2750,7 +2749,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintHeatflux.cpp" line="264"/>
       <location filename="../../TaskFemConstraintHeatflux.cpp" line="273"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintHeatflux.cpp" line="201"/>
@@ -2783,7 +2782,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="181"/>
       <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="190"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="113"/>
@@ -2806,12 +2805,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="139"/>
       <source>Only faces can be picked</source>
-      <translation>Можливо обрати лише грані</translation>
+      <translation type="unfinished">Only faces can be picked</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="146"/>
       <source>Only planar faces can be picked</source>
-      <translation>Можуть бути обрані лише планарні грані</translation>
+      <translation type="unfinished">Only planar faces can be picked</translation>
     </message>
   </context>
   <context>
@@ -2823,7 +2822,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintPressure.cpp" line="168"/>
       <location filename="../../TaskFemConstraintPressure.cpp" line="177"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPressure.cpp" line="122"/>
@@ -2840,7 +2839,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintPressure.cpp" line="140"/>
       <source>Only faces can be picked</source>
-      <translation>Можливо обрати лише грані</translation>
+      <translation type="unfinished">Only faces can be picked</translation>
     </message>
   </context>
   <context>
@@ -2848,12 +2847,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintPulley.cpp" line="86"/>
       <source>Pulley diameter</source>
-      <translation>Діаметр шківу</translation>
+      <translation type="unfinished">Pulley diameter</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPulley.cpp" line="87"/>
       <source>Torque [Nm]</source>
-      <translation>Крутний момент [Nm]</translation>
+      <translation type="unfinished">Torque [Nm]</translation>
     </message>
   </context>
   <context>
@@ -2865,7 +2864,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintSpring.cpp" line="166"/>
       <location filename="../../TaskFemConstraintSpring.cpp" line="175"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintSpring.cpp" line="120"/>
@@ -2882,7 +2881,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintSpring.cpp" line="138"/>
       <source>Only faces can be picked</source>
-      <translation>Можливо обрати лише грані</translation>
+      <translation type="unfinished">Only faces can be picked</translation>
     </message>
   </context>
   <context>
@@ -2893,7 +2892,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintTemperature.cpp" line="211"/>
       <location filename="../../TaskFemConstraintTemperature.cpp" line="220"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTemperature.cpp" line="170"/>
@@ -2932,7 +2931,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintTransform.cpp" line="351"/>
       <location filename="../../TaskFemConstraintTransform.cpp" line="360"/>
       <source>Selection error</source>
-      <translation>Помилка виділення</translation>
+      <translation type="unfinished">Selection error</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTransform.cpp" line="231"/>
@@ -2960,12 +2959,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintTransform.cpp" line="268"/>
       <source>Only faces can be picked</source>
-      <translation>Можливо обрати лише грані</translation>
+      <translation type="unfinished">Only faces can be picked</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTransform.cpp" line="277"/>
       <source>Only cylindrical faces can be picked</source>
-      <translation>Можуть бути обраними лише циліндричні поверхні</translation>
+      <translation type="unfinished">Only cylindrical faces can be picked</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTransform.cpp" line="303"/>
@@ -3058,7 +3057,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../ViewProviderAnalysis.cpp" line="106"/>
       <source>Activate analysis</source>
-      <translation>Активувати аналіз</translation>
+      <translation type="unfinished">Activate analysis</translation>
     </message>
   </context>
   <context>
@@ -3066,7 +3065,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../ViewProviderFemMeshShapeNetgen.cpp" line="76"/>
       <source>Meshing failure</source>
-      <translation>Не вдалося побудувати сітку</translation>
+      <translation type="unfinished">Meshing failure</translation>
     </message>
     <message>
       <location filename="../../ViewProviderFemMeshShapeNetgen.cpp" line="77"/>
@@ -3087,12 +3086,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MaterialReinforcement.ui" line="37"/>
       <location filename="../ui/MaterialReinforcement.ui" line="110"/>
       <source>Material</source>
-      <translation>Матеріал</translation>
+      <translation type="unfinished">Material</translation>
     </message>
     <message>
       <location filename="../ui/Material.ui" line="34"/>
       <source>Category</source>
-      <translation>Категорія</translation>
+      <translation type="unfinished">Category</translation>
     </message>
     <message>
       <location filename="../ui/Material.ui" line="48"/>
@@ -3102,7 +3101,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/Material.ui" line="56"/>
       <source>choose...</source>
-      <translation>обрати...</translation>
+      <translation type="unfinished">choose...</translation>
     </message>
     <message>
       <location filename="../ui/Material.ui" line="64"/>
@@ -3114,12 +3113,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MaterialReinforcement.ui" line="74"/>
       <location filename="../ui/MaterialReinforcement.ui" line="147"/>
       <source>TextLabel</source>
-      <translation>ТекстовийНадпис</translation>
+      <translation type="unfinished">TextLabel</translation>
     </message>
     <message>
       <location filename="../ui/Material.ui" line="80"/>
       <source>Material Description</source>
-      <translation>Опис матеріалу</translation>
+      <translation type="unfinished">Material Description</translation>
     </message>
     <message>
       <location filename="../ui/Material.ui" line="99"/>
@@ -3169,7 +3168,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/Material.ui" line="265"/>
       <source>Poisson Ratio:</source>
-      <translation>Коефіцієнт Пуассона:</translation>
+      <translation type="unfinished">Poisson Ratio:</translation>
     </message>
     <message>
       <location filename="../ui/Material.ui" line="314"/>
@@ -3248,19 +3247,19 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MaterialReinforcement.ui" line="60"/>
       <location filename="../ui/MaterialReinforcement.ui" line="133"/>
       <source>Edit</source>
-      <translation>Правка</translation>
+      <translation type="unfinished">Edit</translation>
     </message>
     <message>
       <location filename="../ui/MaterialReinforcement.ui" line="67"/>
       <location filename="../ui/MaterialReinforcement.ui" line="140"/>
       <source>Name</source>
-      <translation>Назва</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <location filename="../ui/MaterialReinforcement.ui" line="83"/>
       <location filename="../ui/MaterialReinforcement.ui" line="156"/>
       <source>Description</source>
-      <translation>Опис</translation>
+      <translation type="unfinished">Description</translation>
     </message>
     <message>
       <location filename="../ui/MaterialReinforcement.ui" line="102"/>
@@ -3273,7 +3272,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/ElementFluid1D.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../ui/ElementFluid1D.ui" line="26"/>
@@ -3304,7 +3303,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/ElementFluid1D.ui" line="568"/>
       <location filename="../ui/ElementFluid1D.ui" line="724"/>
       <source>0 mm^2</source>
-      <translation>0 мм^2</translation>
+      <translation type="unfinished">0 mm^2</translation>
     </message>
     <message>
       <location filename="../ui/ElementFluid1D.ui" line="85"/>
@@ -3342,7 +3341,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/ElementFluid1D.ui" line="235"/>
       <location filename="../ui/ElementFluid1D.ui" line="308"/>
       <source>Pressure</source>
-      <translation>Тиск</translation>
+      <translation type="unfinished">Pressure</translation>
     </message>
     <message>
       <location filename="../ui/ElementFluid1D.ui" line="245"/>
@@ -3495,7 +3494,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MeshBoundaryLayer.ui" line="50"/>
       <location filename="../ui/MeshRegion.ui" line="56"/>
       <source>0 mm</source>
-      <translation>0 мм</translation>
+      <translation type="unfinished">0 mm</translation>
     </message>
     <message>
       <location filename="../ui/ConstraintTie.ui" line="77"/>
@@ -3514,7 +3513,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MeshBoundaryLayer.ui" line="26"/>
       <location filename="../ui/MeshRegion.ui" line="26"/>
       <source>Parameter</source>
-      <translation>Параметр</translation>
+      <translation type="unfinished">Parameter</translation>
     </message>
     <message>
       <location filename="../ui/ConstraintCentrif.ui" line="43"/>
@@ -3636,12 +3635,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/ElementGeometry1D.ui" line="225"/>
       <location filename="../ui/ElementGeometry1D.ui" line="243"/>
       <source>Diameter:   </source>
-      <translation>Діаметр:   </translation>
+      <translation type="unfinished">Diameter:   </translation>
     </message>
     <message>
       <location filename="../ui/ElementGeometry1D.ui" line="287"/>
       <source>Thickness:</source>
-      <translation>Товщина:</translation>
+      <translation type="unfinished">Thickness:</translation>
     </message>
     <message>
       <location filename="../ui/ElementGeometry2D.ui" line="14"/>
@@ -3734,12 +3733,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/MeshGroup.ui" line="37"/>
       <source>Name</source>
-      <translation>Назва</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <location filename="../ui/MeshGroup.ui" line="47"/>
       <source>Label</source>
-      <translation>Позначка</translation>
+      <translation type="unfinished">Label</translation>
     </message>
     <message>
       <location filename="../ui/MeshRegion.ui" line="14"/>
@@ -3772,18 +3771,18 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/MeshGmsh.ui" line="47"/>
       <source>Max element size (0.0 = Auto):</source>
-      <translation>Макс. розмір елемента (0.0 = авто):</translation>
+      <translation type="unfinished">Max element size (0.0 = Auto):</translation>
     </message>
     <message>
       <location filename="../ui/MeshGmsh.ui" line="66"/>
       <location filename="../ui/MeshGmsh.ui" line="110"/>
       <source>0 mm</source>
-      <translation>0 мм</translation>
+      <translation type="unfinished">0 mm</translation>
     </message>
     <message>
       <location filename="../ui/MeshGmsh.ui" line="91"/>
       <source>Min element size (0.0 = Auto):</source>
-      <translation>Мін. розмір елемента (0.0 = авто):</translation>
+      <translation type="unfinished">Min element size (0.0 = Auto):</translation>
     </message>
     <message>
       <location filename="../ui/MeshGmsh.ui" line="138"/>
@@ -3798,7 +3797,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/MeshGmsh.ui" line="181"/>
       <source>Time:</source>
-      <translation>Час:</translation>
+      <translation type="unfinished">Time:</translation>
     </message>
     <message>
       <location filename="../ui/MeshGmsh.ui" line="207"/>
@@ -3811,17 +3810,17 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../PlaneWidget.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../PlaneWidget.ui" line="29"/>
       <source>Origin</source>
-      <translation>Початок координат</translation>
+      <translation type="unfinished">Origin</translation>
     </message>
     <message>
       <location filename="../../PlaneWidget.ui" line="115"/>
       <source>Normal</source>
-      <translation>Звичайна</translation>
+      <translation type="unfinished">Normal</translation>
     </message>
   </context>
   <context>
@@ -3834,22 +3833,22 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../Command.cpp" line="73"/>
       <source>You need to create or activate a Analysis</source>
-      <translation>Вам потрібно створити або активувати аналіз</translation>
+      <translation type="unfinished">You need to create or activate a Analysis</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.cpp" line="95"/>
       <source>Ok</source>
-      <translation>Гаразд</translation>
+      <translation type="unfinished">Ok</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.cpp" line="96"/>
       <source>Cancel</source>
-      <translation>Скасувати</translation>
+      <translation type="unfinished">Cancel</translation>
     </message>
     <message>
       <location filename="../../ViewProviderFemConstraint.cpp" line="148"/>
       <source>Edit constraint</source>
-      <translation>Редагувати обмеження</translation>
+      <translation type="unfinished">Edit constraint</translation>
     </message>
     <message>
       <location filename="../../ViewProviderFemConstraintBearing.cpp" line="77"/>
@@ -3861,7 +3860,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../ViewProviderFemPostFunction.cpp" line="340"/>
       <location filename="../../ViewProviderFemPostObject.cpp" line="604"/>
       <source>A dialog is already open in the task panel</source>
-      <translation>Діалогове вікно вже відкрито в панелі задач</translation>
+      <translation type="unfinished">A dialog is already open in the task panel</translation>
     </message>
     <message>
       <location filename="../../ViewProviderFemConstraintBearing.cpp" line="78"/>
@@ -3873,12 +3872,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../ViewProviderFemPostFunction.cpp" line="341"/>
       <location filename="../../ViewProviderFemPostObject.cpp" line="605"/>
       <source>Do you want to close this dialog?</source>
-      <translation>Ви бажаєте закрити це діалогове вікно?</translation>
+      <translation type="unfinished">Do you want to close this dialog?</translation>
     </message>
     <message>
       <location filename="../../ViewProviderFemMeshShapeNetgen.cpp" line="62"/>
       <source>Meshing</source>
-      <translation>Побудова сітки</translation>
+      <translation type="unfinished">Meshing</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.cpp" line="413"/>
@@ -3894,13 +3893,13 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../AppFemGui.cpp" line="174"/>
       <location filename="../../AppFemGui.cpp" line="175"/>
       <source>FEM</source>
-      <translation>МСЕ</translation>
+      <translation type="unfinished">FEM</translation>
     </message>
     <message>
       <location filename="../../AppFemGui.cpp" line="178"/>
       <location filename="../../AppFemGui.cpp" line="179"/>
       <source>Import-Export</source>
-      <translation>Імпорт-експорт</translation>
+      <translation type="unfinished">Import-Export</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintContact.cpp" line="405"/>
@@ -3970,17 +3969,17 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="110"/>
       <source>Nodes</source>
-      <translation>Вузли</translation>
+      <translation type="unfinished">Nodes</translation>
     </message>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="111"/>
       <source>Edges</source>
-      <translation>Ребра</translation>
+      <translation type="unfinished">Edges</translation>
     </message>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="112"/>
       <source>Faces</source>
-      <translation>Грані</translation>
+      <translation type="unfinished">Faces</translation>
     </message>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="113"/>
@@ -4000,7 +3999,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../PropertyFemMeshItem.cpp" line="116"/>
       <source>Groups</source>
-      <translation>Групи</translation>
+      <translation type="unfinished">Groups</translation>
     </message>
     <message>
       <location filename="../../ViewProviderAnalysis.cpp" line="227"/>
@@ -4008,7 +4007,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../ViewProviderFemPostObject.cpp" line="681"/>
       <location filename="../../ViewProviderSolver.cpp" line="71"/>
       <source>Are you sure you want to continue?</source>
-      <translation>Ви впевнені, що бажаєте продовжити?</translation>
+      <translation type="unfinished">Are you sure you want to continue?</translation>
     </message>
   </context>
   <context>
@@ -4016,7 +4015,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/ResultShow.ui" line="14"/>
       <source>Show result</source>
-      <translation>Показати результат</translation>
+      <translation type="unfinished">Show result</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="20"/>
@@ -4026,7 +4025,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/ResultShow.ui" line="34"/>
       <source>None</source>
-      <translation>Немає</translation>
+      <translation type="unfinished">None</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="50"/>
@@ -4081,7 +4080,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/ResultShow.ui" line="150"/>
       <source>Temperature</source>
-      <translation>Температура</translation>
+      <translation type="unfinished">Temperature</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="157"/>
@@ -4091,12 +4090,12 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/ResultShow.ui" line="168"/>
       <source>Min:</source>
-      <translation>Мінімум:</translation>
+      <translation type="unfinished">Min:</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="188"/>
       <source>Max:</source>
-      <translation>Максимум:</translation>
+      <translation type="unfinished">Max:</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="205"/>
@@ -4106,17 +4105,17 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/ResultShow.ui" line="217"/>
       <source>Displacement</source>
-      <translation>Зсув</translation>
+      <translation type="unfinished">Displacement</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="225"/>
       <source>Show</source>
-      <translation>Показати</translation>
+      <translation type="unfinished">Show</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="261"/>
       <source>Factor:</source>
-      <translation>Фактор:</translation>
+      <translation type="unfinished">Factor:</translation>
     </message>
     <message>
       <location filename="../ui/ResultShow.ui" line="294"/>
@@ -4232,32 +4231,32 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../ui/SolverCalculix.ui" line="14"/>
       <source>Mechanical analysis</source>
-      <translation>Механічний аналіз</translation>
+      <translation type="unfinished">Mechanical analysis</translation>
     </message>
     <message>
       <location filename="../ui/SolverCalculix.ui" line="20"/>
       <source>Working directory</source>
-      <translation>Робочий каталог</translation>
+      <translation type="unfinished">Working directory</translation>
     </message>
     <message>
       <location filename="../ui/SolverCalculix.ui" line="45"/>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <location filename="../ui/SolverCalculix.ui" line="55"/>
       <source>Analysis type</source>
-      <translation>Тип аналізу</translation>
+      <translation type="unfinished">Analysis type</translation>
     </message>
     <message>
       <location filename="../ui/SolverCalculix.ui" line="67"/>
       <source>Static</source>
-      <translation>Статичний</translation>
+      <translation type="unfinished">Static</translation>
     </message>
     <message>
       <location filename="../ui/SolverCalculix.ui" line="77"/>
       <source>Frequency</source>
-      <translation>Частота</translation>
+      <translation type="unfinished">Frequency</translation>
     </message>
     <message>
       <location filename="../ui/SolverCalculix.ui" line="84"/>
@@ -4277,12 +4276,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../ui/SolverCalculix.ui" line="110"/>
       <source>Write .inp file</source>
-      <translation>Записати файл .inp</translation>
+      <translation type="unfinished">Write .inp file</translation>
     </message>
     <message>
       <location filename="../ui/SolverCalculix.ui" line="120"/>
       <source>Edit .inp file</source>
-      <translation>Редагувати файл .inp</translation>
+      <translation type="unfinished">Edit .inp file</translation>
     </message>
     <message>
       <location filename="../ui/SolverCalculix.ui" line="130"/>
@@ -4292,7 +4291,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../ui/SolverCalculix.ui" line="151"/>
       <source>Time:</source>
-      <translation>Час:</translation>
+      <translation type="unfinished">Time:</translation>
     </message>
   </context>
   <context>
@@ -4300,17 +4299,17 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../../SphereWidget.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../SphereWidget.ui" line="29"/>
       <source>Radius</source>
-      <translation>Радіус</translation>
+      <translation type="unfinished">Radius</translation>
     </message>
     <message>
       <location filename="../../SphereWidget.ui" line="71"/>
       <source>Center</source>
-      <translation>Центр</translation>
+      <translation type="unfinished">Center</translation>
     </message>
   </context>
   <context>
@@ -4328,7 +4327,7 @@ following referencing objects might be lost:</translation>
       <location filename="../../ViewProviderFemPostObject.cpp" line="684"/>
       <location filename="../../ViewProviderSolver.cpp" line="74"/>
       <source>Object dependencies</source>
-      <translation>Залежності обʼєктів</translation>
+      <translation type="unfinished">Object dependencies</translation>
     </message>
     <message>
       <location filename="../../ViewProviderFemPostFunction.cpp" line="145"/>
@@ -4357,17 +4356,17 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskAnalysisInfo.ui" line="20"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskAnalysisInfo.ui" line="32"/>
       <source>Meshes:</source>
-      <translation>Сітки:</translation>
+      <translation type="unfinished">Meshes:</translation>
     </message>
     <message>
       <location filename="../../TaskAnalysisInfo.ui" line="48"/>
       <source>Constraints</source>
-      <translation>Обмеження</translation>
+      <translation type="unfinished">Constraints</translation>
     </message>
   </context>
   <context>
@@ -4375,42 +4374,42 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="20"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="27"/>
       <source>Volume</source>
-      <translation>Обʼєм</translation>
+      <translation type="unfinished">Volume</translation>
     </message>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="32"/>
       <source>Surface</source>
-      <translation>Поверхня</translation>
+      <translation type="unfinished">Surface</translation>
     </message>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="49"/>
       <source>Nodes: 0</source>
-      <translation>Вузлів: 0</translation>
+      <translation type="unfinished">Nodes: 0</translation>
     </message>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="60"/>
       <source>Poly</source>
-      <translation>Багатокутників</translation>
+      <translation type="unfinished">Poly</translation>
     </message>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="70"/>
       <source>Box</source>
-      <translation>Коробка</translation>
+      <translation type="unfinished">Box</translation>
     </message>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="80"/>
       <source>Pick</source>
-      <translation>Вибрати</translation>
+      <translation type="unfinished">Pick</translation>
     </message>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="87"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="96"/>
@@ -4425,7 +4424,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskCreateNodeSet.ui" line="111"/>
       <source>Stop angle:</source>
-      <translation>Кут зупинки:</translation>
+      <translation type="unfinished">Stop angle:</translation>
     </message>
   </context>
   <context>
@@ -4433,7 +4432,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskDriver.ui" line="20"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
   </context>
   <context>
@@ -4441,52 +4440,52 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="23"/>
       <source>Add reference</source>
-      <translation>Додати посилання</translation>
+      <translation type="unfinished">Add reference</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="35"/>
       <source>Load [N]</source>
-      <translation>Навантаження [N]</translation>
+      <translation type="unfinished">Load [N]</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="59"/>
       <source>Diameter</source>
-      <translation>Діаметр</translation>
+      <translation type="unfinished">Diameter</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="86"/>
       <source>Other diameter</source>
-      <translation>Інший діаметр</translation>
+      <translation type="unfinished">Other diameter</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="113"/>
       <source>Center distance</source>
-      <translation>Середина відстані</translation>
+      <translation type="unfinished">Center distance</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="137"/>
       <source>Direction</source>
-      <translation>Напрямок</translation>
+      <translation type="unfinished">Direction</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="149"/>
       <source>Reverse direction</source>
-      <translation>Зворотний напрямок</translation>
+      <translation type="unfinished">Reverse direction</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="158"/>
       <source>Location</source>
-      <translation>Розташування</translation>
+      <translation type="unfinished">Location</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="172"/>
       <source>Distance</source>
-      <translation>Відстань</translation>
+      <translation type="unfinished">Distance</translation>
     </message>
   </context>
   <context>
@@ -4494,17 +4493,17 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="20"/>
       <source>Add reference</source>
-      <translation>Додати посилання</translation>
+      <translation type="unfinished">Add reference</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="35"/>
       <source>Gear diameter</source>
-      <translation>Діаметр передачі</translation>
+      <translation type="unfinished">Gear diameter</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="59"/>
@@ -4514,22 +4513,22 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="80"/>
       <source>Center distance</source>
-      <translation>Середина відстані</translation>
+      <translation type="unfinished">Center distance</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="101"/>
       <source>Force</source>
-      <translation>Сила</translation>
+      <translation type="unfinished">Force</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="122"/>
       <source>Belt tension force</source>
-      <translation>Сила натяжіння ременя</translation>
+      <translation type="unfinished">Belt tension force</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="141"/>
       <source>Driven pulley</source>
-      <translation>Ведений шків</translation>
+      <translation type="unfinished">Driven pulley</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="150"/>
@@ -4539,12 +4538,12 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="177"/>
       <source>Force Direction</source>
-      <translation>Напрямок сили</translation>
+      <translation type="unfinished">Force Direction</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="189"/>
       <source>Reversed direction</source>
-      <translation>Зворотній напрямок</translation>
+      <translation type="unfinished">Reversed direction</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="196"/>
@@ -4554,12 +4553,12 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="205"/>
       <source>Location</source>
-      <translation>Розташування</translation>
+      <translation type="unfinished">Location</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.ui" line="219"/>
       <source>Distance</source>
-      <translation>Відстань</translation>
+      <translation type="unfinished">Distance</translation>
     </message>
   </context>
   <context>
@@ -4567,7 +4566,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintContact.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintContact.ui" line="20"/>
@@ -4578,13 +4577,13 @@ following referencing objects might be lost:</translation>
       <location filename="../../TaskFemConstraintContact.ui" line="35"/>
       <location filename="../../TaskFemConstraintContact.ui" line="94"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintContact.ui" line="51"/>
       <location filename="../../TaskFemConstraintContact.ui" line="110"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintContact.ui" line="79"/>
@@ -4617,17 +4616,17 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="56"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="72"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="107"/>
       <source>Displacement x</source>
-      <translation>Зсув x</translation>
+      <translation type="unfinished">Displacement x</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="116"/>
@@ -4637,7 +4636,7 @@ following referencing objects might be lost:</translation>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="263"/>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="298"/>
       <source>Free</source>
-      <translation>Вільно</translation>
+      <translation type="unfinished">Free</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="123"/>
@@ -4647,17 +4646,17 @@ following referencing objects might be lost:</translation>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="270"/>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="308"/>
       <source>Fixed</source>
-      <translation>Зафіксовано</translation>
+      <translation type="unfinished">Fixed</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="139"/>
       <source>Displacement y</source>
-      <translation>Зсув y</translation>
+      <translation type="unfinished">Displacement y</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="171"/>
       <source>Displacement z</source>
-      <translation>Зсув z</translation>
+      <translation type="unfinished">Displacement z</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="207"/>
@@ -4667,17 +4666,17 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="222"/>
       <source>Rotation x</source>
-      <translation>Обертання x</translation>
+      <translation type="unfinished">Rotation x</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="254"/>
       <source>Rotation y</source>
-      <translation>Обертання y</translation>
+      <translation type="unfinished">Rotation y</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="286"/>
       <source>Rotation z</source>
-      <translation>Обертання z</translation>
+      <translation type="unfinished">Rotation z</translation>
     </message>
   </context>
   <context>
@@ -4685,7 +4684,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintFixed.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFixed.ui" line="20"/>
@@ -4695,12 +4694,12 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintFixed.ui" line="35"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFixed.ui" line="51"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
   </context>
   <context>
@@ -4708,7 +4707,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="28"/>
@@ -4728,12 +4727,12 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="85"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="101"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="141"/>
@@ -4770,12 +4769,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="298"/>
       <source>Reverse direction</source>
-      <translation>Зворотний напрямок</translation>
+      <translation type="unfinished">Reverse direction</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="306"/>
       <source>Page</source>
-      <translation>Сторінка</translation>
+      <translation type="unfinished">Page</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="312"/>
@@ -4790,7 +4789,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="357"/>
       <source>Length [m]</source>
-      <translation>Довжина [m]</translation>
+      <translation type="unfinished">Length [m]</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="383"/>
@@ -4800,7 +4799,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="394"/>
       <source> Type </source>
-      <translation> Тип </translation>
+      <translation type="unfinished"> Type </translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="411"/>
@@ -4833,17 +4832,17 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="47"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="63"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="93"/>
       <source>Load [N]</source>
-      <translation>Навантаження [N]</translation>
+      <translation type="unfinished">Load [N]</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="111"/>
@@ -4853,7 +4852,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="114"/>
       <source>Direction</source>
-      <translation>Напрямок</translation>
+      <translation type="unfinished">Direction</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="121"/>
@@ -4865,7 +4864,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="131"/>
       <source>Reverse direction</source>
-      <translation>Зворотний напрямок</translation>
+      <translation type="unfinished">Reverse direction</translation>
     </message>
   </context>
   <context>
@@ -4883,12 +4882,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintHeatflux.ui" line="35"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintHeatflux.ui" line="51"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintHeatflux.ui" line="68"/>
@@ -4932,7 +4931,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintInitialTemperature.ui" line="14"/>
       <source>Dialog</source>
-      <translation>Діалогове вікно</translation>
+      <translation type="unfinished">Dialog</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintInitialTemperature.ui" line="20"/>
@@ -4950,7 +4949,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintPlaneRotation.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPlaneRotation.ui" line="20"/>
@@ -4960,12 +4959,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintPlaneRotation.ui" line="35"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPlaneRotation.ui" line="51"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
   </context>
   <context>
@@ -4973,7 +4972,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintPressure.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPressure.ui" line="20"/>
@@ -4983,17 +4982,17 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintPressure.ui" line="35"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPressure.ui" line="51"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPressure.ui" line="68"/>
       <source>Pressure</source>
-      <translation>Тиск</translation>
+      <translation type="unfinished">Pressure</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPressure.ui" line="75"/>
@@ -5011,7 +5010,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintSpring.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintSpring.ui" line="20"/>
@@ -5021,12 +5020,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintSpring.ui" line="35"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintSpring.ui" line="51"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintSpring.ui" line="81"/>
@@ -5049,7 +5048,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintTemperature.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTemperature.ui" line="20"/>
@@ -5059,18 +5058,18 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintTemperature.ui" line="29"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTemperature.ui" line="39"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTemperature.ui" line="56"/>
       <location filename="../../TaskFemConstraintTemperature.ui" line="80"/>
       <source>Temperature</source>
-      <translation>Температура</translation>
+      <translation type="unfinished">Temperature</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTemperature.ui" line="69"/>
@@ -5088,7 +5087,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintTransform.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTransform.ui" line="22"/>
@@ -5108,12 +5107,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintTransform.ui" line="65"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTransform.ui" line="87"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTransform.ui" line="124"/>
@@ -5142,7 +5141,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskObjectName.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
   </context>
   <context>
@@ -5150,12 +5149,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostClip.ui" line="20"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskPostClip.ui" line="31"/>
       <source>Create</source>
-      <translation>Створити</translation>
+      <translation type="unfinished">Create</translation>
     </message>
     <message>
       <location filename="../../TaskPostClip.ui" line="73"/>
@@ -5173,12 +5172,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostCut.ui" line="20"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskPostCut.ui" line="31"/>
       <source>Create</source>
-      <translation>Створити</translation>
+      <translation type="unfinished">Create</translation>
     </message>
   </context>
   <context>
@@ -5186,7 +5185,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDataAlongLine.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskPostDataAlongLine.ui" line="29"/>
@@ -5211,7 +5210,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDataAlongLine.ui" line="230"/>
       <source>Mode</source>
-      <translation>Режим</translation>
+      <translation type="unfinished">Mode</translation>
     </message>
     <message>
       <location filename="../../TaskPostDataAlongLine.ui" line="244"/>
@@ -5221,7 +5220,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDataAlongLine.ui" line="254"/>
       <source>Vector</source>
-      <translation>Вектор</translation>
+      <translation type="unfinished">Vector</translation>
     </message>
     <message>
       <location filename="../../TaskPostDataAlongLine.ui" line="273"/>
@@ -5234,12 +5233,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDataAtPoint.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskPostDataAtPoint.ui" line="29"/>
       <source>Center</source>
-      <translation>Центр</translation>
+      <translation type="unfinished">Center</translation>
     </message>
     <message>
       <location filename="../../TaskPostDataAtPoint.ui" line="107"/>
@@ -5257,24 +5256,24 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="28"/>
       <source>Mode</source>
-      <translation>Режим</translation>
+      <translation type="unfinished">Mode</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="42"/>
       <location filename="../../TaskPostDisplay.ui" line="93"/>
       <source>Outline</source>
-      <translation>Контур</translation>
+      <translation type="unfinished">Outline</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="47"/>
       <location filename="../../TaskPostDisplay.ui" line="98"/>
       <source>Surface</source>
-      <translation>Поверхня</translation>
+      <translation type="unfinished">Surface</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="52"/>
@@ -5286,7 +5285,7 @@ normal vector of the face is used as direction</translation>
       <location filename="../../TaskPostDisplay.ui" line="57"/>
       <location filename="../../TaskPostDisplay.ui" line="108"/>
       <source>Wireframe</source>
-      <translation>Каркас</translation>
+      <translation type="unfinished">Wireframe</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="73"/>
@@ -5301,7 +5300,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="116"/>
       <source>Vector</source>
-      <translation>Вектор</translation>
+      <translation type="unfinished">Vector</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="130"/>
@@ -5311,17 +5310,17 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="135"/>
       <source>X</source>
-      <translation>X</translation>
+      <translation type="unfinished">X</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="140"/>
       <source>Y</source>
-      <translation>Y</translation>
+      <translation type="unfinished">Y</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="145"/>
       <source>Z</source>
-      <translation>Z</translation>
+      <translation type="unfinished">Z</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="156"/>
@@ -5331,7 +5330,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="162"/>
       <source>Transparency</source>
-      <translation>Прозорість</translation>
+      <translation type="unfinished">Transparency</translation>
     </message>
   </context>
   <context>
@@ -5339,7 +5338,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostScalarClip.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskPostScalarClip.ui" line="28"/>
@@ -5349,12 +5348,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostScalarClip.ui" line="42"/>
       <source>Outline</source>
-      <translation>Контур</translation>
+      <translation type="unfinished">Outline</translation>
     </message>
     <message>
       <location filename="../../TaskPostScalarClip.ui" line="47"/>
       <source>Surface</source>
-      <translation>Поверхня</translation>
+      <translation type="unfinished">Surface</translation>
     </message>
     <message>
       <location filename="../../TaskPostScalarClip.ui" line="52"/>
@@ -5364,7 +5363,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostScalarClip.ui" line="57"/>
       <source>Wireframe</source>
-      <translation>Каркас</translation>
+      <translation type="unfinished">Wireframe</translation>
     </message>
     <message>
       <location filename="../../TaskPostScalarClip.ui" line="101"/>
@@ -5402,12 +5401,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostWarpVector.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskPostWarpVector.ui" line="28"/>
       <source>Vector</source>
-      <translation>Вектор</translation>
+      <translation type="unfinished">Vector</translation>
     </message>
     <message>
       <location filename="../../TaskPostWarpVector.ui" line="42"/>
@@ -5435,82 +5434,82 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskTetParameter.ui" line="20"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="28"/>
       <source>Max. Size:</source>
-      <translation>Макс. розмір:</translation>
+      <translation type="unfinished">Max. Size:</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="44"/>
       <source>Second order</source>
-      <translation>Другий порядок</translation>
+      <translation type="unfinished">Second order</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="53"/>
       <source>Fineness:</source>
-      <translation>Чистота:</translation>
+      <translation type="unfinished">Fineness:</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="64"/>
       <source>VeryCoarse</source>
-      <translation>Дуже шорсткий</translation>
+      <translation type="unfinished">VeryCoarse</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="69"/>
       <source>Coarse</source>
-      <translation>Шорсткий</translation>
+      <translation type="unfinished">Coarse</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="74"/>
       <source>Moderate</source>
-      <translation>Помірний</translation>
+      <translation type="unfinished">Moderate</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="79"/>
       <source>Fine</source>
-      <translation>Добре</translation>
+      <translation type="unfinished">Fine</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="84"/>
       <source>VeryFine</source>
-      <translation>Дуже добре</translation>
+      <translation type="unfinished">VeryFine</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="89"/>
       <source>UserDefined</source>
-      <translation>Визначений користувачем</translation>
+      <translation type="unfinished">UserDefined</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="97"/>
       <source>Growth Rate:</source>
-      <translation>Темп зростання:</translation>
+      <translation type="unfinished">Growth Rate:</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="111"/>
       <source>Nbr. Segs per Edge:</source>
-      <translation>Кількість відрізків на ребро:</translation>
+      <translation type="unfinished">Nbr. Segs per Edge:</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="128"/>
       <source>Nbr. Segs per Radius:</source>
-      <translation>Кількість відрізків на радіус:</translation>
+      <translation type="unfinished">Nbr. Segs per Radius:</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="144"/>
       <source>Optimize</source>
-      <translation>Оптимізувати</translation>
+      <translation type="unfinished">Optimize</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="166"/>
       <source>Node count: </source>
-      <translation>Кількість вузлів: </translation>
+      <translation type="unfinished">Node count: </translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="180"/>
       <source>Triangle count:</source>
-      <translation>Кількість трикутників:</translation>
+      <translation type="unfinished">Triangle count:</translation>
     </message>
     <message>
       <location filename="../../TaskTetParameter.ui" line="194"/>
@@ -5523,17 +5522,17 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../Workbench.cpp" line="38"/>
       <source>FEM</source>
-      <translation>МСЕ</translation>
+      <translation type="unfinished">FEM</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="39"/>
       <source>&amp;FEM</source>
-      <translation>&amp;МСЕ</translation>
+      <translation type="unfinished">&amp;FEM</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="41"/>
       <source>Model</source>
-      <translation>Модель</translation>
+      <translation type="unfinished">Model</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="42"/>
@@ -5543,12 +5542,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../Workbench.cpp" line="43"/>
       <source>Materials</source>
-      <translation>Матеріали</translation>
+      <translation type="unfinished">Materials</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="44"/>
       <source>&amp;Materials</source>
-      <translation>&amp;Матеріали</translation>
+      <translation type="unfinished">&amp;Materials</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="45"/>
@@ -5633,7 +5632,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../Workbench.cpp" line="62"/>
       <source>Mesh</source>
-      <translation>Сітка(Меш)</translation>
+      <translation type="unfinished">Mesh</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="63"/>
@@ -5643,12 +5642,12 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../Workbench.cpp" line="65"/>
       <source>Solve</source>
-      <translation>Розв’язати</translation>
+      <translation type="unfinished">Solve</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="66"/>
       <source>&amp;Solve</source>
-      <translation>&amp;Розв’язати</translation>
+      <translation type="unfinished">&amp;Solve</translation>
     </message>
     <message>
       <location filename="../../Workbench.cpp" line="68"/>
@@ -5673,7 +5672,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../Workbench.cpp" line="73"/>
       <source>Utilities</source>
-      <translation>Утиліти</translation>
+      <translation type="unfinished">Utilities</translation>
     </message>
   </context>
   <context>

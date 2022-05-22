@@ -6,32 +6,32 @@
     <message>
       <location filename="../../UnitTest.ui" line="17"/>
       <source>FreeCAD UnitTest</source>
-      <translation>FreeCAD Модульний Тест</translation>
+      <translation type="unfinished">FreeCAD UnitTest</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="32"/>
       <source>Test</source>
-      <translation>Тест</translation>
+      <translation type="unfinished">Test</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="44"/>
       <source>Select test name:</source>
-      <translation>Виберіть назву тесту:</translation>
+      <translation type="unfinished">Select test name:</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="96"/>
       <source>&amp;Start</source>
-      <translation>&amp;Старт</translation>
+      <translation type="unfinished">&amp;Start</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="99"/>
       <source>Alt+S</source>
-      <translation>Alt+S</translation>
+      <translation type="unfinished">Alt+S</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="128"/>
       <source>&amp;Help</source>
-      <translation>&amp;Допомога</translation>
+      <translation type="unfinished">&amp;Help</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="131"/>
@@ -41,62 +41,62 @@
     <message>
       <location filename="../../UnitTest.ui" line="141"/>
       <source>&amp;About</source>
-      <translation>&amp;Про</translation>
+      <translation type="unfinished">&amp;About</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="144"/>
       <source>Alt+A</source>
-      <translation>Alt+A</translation>
+      <translation type="unfinished">Alt+A</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="154"/>
       <source>&amp;Close</source>
-      <translation>&amp;Закрити</translation>
+      <translation type="unfinished">&amp;Close</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="157"/>
       <source>Alt+C</source>
-      <translation>Alt+C</translation>
+      <translation type="unfinished">Alt+C</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="169"/>
       <source>Progress</source>
-      <translation>Прогрес</translation>
+      <translation type="unfinished">Progress</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="188"/>
       <source>Run:</source>
-      <translation>Запуск:</translation>
+      <translation type="unfinished">Run:</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="205"/>
       <source>Failures:</source>
-      <translation>Збої:</translation>
+      <translation type="unfinished">Failures:</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="222"/>
       <source>Errors:</source>
-      <translation>Помилки:</translation>
+      <translation type="unfinished">Errors:</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="239"/>
       <source>Remaining:</source>
-      <translation>Залишилось:</translation>
+      <translation type="unfinished">Remaining:</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="259"/>
       <source>Failures and errors</source>
-      <translation>Збої та помилки</translation>
+      <translation type="unfinished">Failures and errors</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="275"/>
       <source>Description</source>
-      <translation>Опис</translation>
+      <translation type="unfinished">Description</translation>
     </message>
     <message>
       <location filename="../../UnitTest.ui" line="292"/>
       <source>Idle</source>
-      <translation>Бездіяльний</translation>
+      <translation type="unfinished">Idle</translation>
     </message>
   </context>
   <context>
@@ -104,7 +104,7 @@
     <message>
       <location filename="../../UnitTestImp.cpp" line="155"/>
       <source>Help</source>
-      <translation>Допомога</translation>
+      <translation type="unfinished">Help</translation>
     </message>
     <message>
       <location filename="../../UnitTestImp.cpp" line="155"/>
@@ -120,14 +120,16 @@ Double click on an error in the tree view to see more information about it, incl
     <message>
       <location filename="../../UnitTestImp.cpp" line="167"/>
       <source>About FreeCAD UnitTest</source>
-      <translation>Про Модульний Тест FreeCAD</translation>
+      <translation type="unfinished">About FreeCAD UnitTest</translation>
     </message>
     <message>
       <location filename="../../UnitTestImp.cpp" line="167"/>
       <source>Copyright (c) Werner Mayer
 
 FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own modules.</source>
-      <translation>Copyright (c) Вернер Майер (Werner Mayer) FreeCAD UnitTest є частиною FreeCAD і підтримує написання Unit Tests для тих власних модулів.</translation>
+      <translation type="unfinished">Copyright (c) Werner Mayer
+
+FreeCAD UnitTest is part of FreeCAD and supports writing Unit Tests for ones own modules.</translation>
     </message>
   </context>
 </TS>

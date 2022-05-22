@@ -6,92 +6,92 @@
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="70"/>
       <source>Select</source>
-      <translation>Вибрати</translation>
+      <translation type="unfinished">Select</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="71"/>
       <source>Zoom</source>
-      <translation>Масштаб</translation>
+      <translation type="unfinished">Zoom</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="72"/>
       <source>Rotate</source>
-      <translation>Обертання</translation>
+      <translation type="unfinished">Rotate</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="73"/>
       <source>Pan</source>
-      <translation>Посунути</translation>
+      <translation type="unfinished">Pan</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="74"/>
       <source>Tilt</source>
-      <translation>Нахил</translation>
+      <translation type="unfinished">Tilt</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="75"/>
       <source>Navigation style</source>
-      <translation>Стиль навігації</translation>
+      <translation type="unfinished">Navigation style</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="76"/>
       <source>Page Up or Page Down key.</source>
-      <translation>Клавіша Page Up або Page Down.</translation>
+      <translation type="unfinished">Page Up or Page Down key.</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="77"/>
       <source>Rotation focus</source>
-      <translation>Фокус обертання</translation>
+      <translation type="unfinished">Rotation focus</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="78"/>
       <source>Middle mouse button or H key.</source>
-      <translation>Середня кнопка миші або клавіша H.</translation>
+      <translation type="unfinished">Middle mouse button or H key.</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="80"/>
       <source>Middle mouse button.</source>
-      <translation>Середня кнопка миші.</translation>
+      <translation type="unfinished">Middle mouse button.</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="83"/>
       <source>Navigation style not recognized.</source>
-      <translation>Стиль навігації не визначений.</translation>
+      <translation type="unfinished">Navigation style not recognized.</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="550"/>
       <source>Settings</source>
-      <translation>Параметри</translation>
+      <translation type="unfinished">Settings</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="551"/>
       <source>Orbit style</source>
-      <translation>Стиль орбіти</translation>
+      <translation type="unfinished">Orbit style</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="552"/>
       <source>Compact</source>
-      <translation>Зменшити</translation>
+      <translation type="unfinished">Compact</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="553"/>
       <source>Tooltip</source>
-      <translation>Підказка</translation>
+      <translation type="unfinished">Tooltip</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="554"/>
       <source>Turntable</source>
-      <translation>Поворотний</translation>
+      <translation type="unfinished">Turntable</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="555"/>
       <source>Trackball</source>
-      <translation>Трекбол</translation>
+      <translation type="unfinished">Trackball</translation>
     </message>
     <message>
       <location filename="../../NavigationIndicatorGui.py" line="556"/>
       <source>Undefined</source>
-      <translation>Невизначено</translation>
+      <translation type="unfinished">Undefined</translation>
     </message>
   </context>
 </TS>

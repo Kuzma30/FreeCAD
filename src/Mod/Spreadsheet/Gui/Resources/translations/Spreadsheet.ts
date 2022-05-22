@@ -446,7 +446,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../SheetModel.cpp" line="487"/>
+        <location filename="../../SheetModel.cpp" line="471"/>
         <source>Edit cell</source>
         <translation type="unfinished"></translation>
     </message>

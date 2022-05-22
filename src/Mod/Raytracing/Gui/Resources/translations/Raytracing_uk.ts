@@ -6,17 +6,17 @@
     <message>
       <location filename="../../Command.cpp" line="523"/>
       <source>File</source>
-      <translation>Файл</translation>
+      <translation type="unfinished">File</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="524"/>
       <source>&amp;Export project...</source>
-      <translation>&amp;Експортувати проект...</translation>
+      <translation type="unfinished">&amp;Export project...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="525"/>
       <source>Export a Raytracing project to a file</source>
-      <translation>Експортувати Raytracing-проект у файл</translation>
+      <translation type="unfinished">Export a Raytracing project to a file</translation>
     </message>
   </context>
   <context>
@@ -24,27 +24,27 @@
     <message>
       <location filename="../../Command.cpp" line="768"/>
       <source>Raytracing</source>
-      <translation>Трасування променів</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="769"/>
       <source>New Luxrender project</source>
-      <translation>Новий проект Luxrender</translation>
+      <translation type="unfinished">New Luxrender project</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="770"/>
       <source>Insert new Luxrender project into the document</source>
-      <translation>Вставити новий проект Luxrender в документ</translation>
+      <translation type="unfinished">Insert new Luxrender project into the document</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="822"/>
       <source>No template</source>
-      <translation>Шаблон відсутній</translation>
+      <translation type="unfinished">No template</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="823"/>
       <source>No template available</source>
-      <translation>Немає доступних шаблонів</translation>
+      <translation type="unfinished">No template available</translation>
     </message>
   </context>
   <context>
@@ -52,17 +52,17 @@
     <message>
       <location filename="../../Command.cpp" line="439"/>
       <source>Raytracing</source>
-      <translation>Трасування променів</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="440"/>
       <source>Insert part</source>
-      <translation>Вставити деталь</translation>
+      <translation type="unfinished">Insert part</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="441"/>
       <source>Insert a new part object into a Raytracing project</source>
-      <translation>Вставити нову деталь у проект трасування променів</translation>
+      <translation type="unfinished">Insert a new part object into a Raytracing project</translation>
     </message>
   </context>
   <context>
@@ -70,27 +70,27 @@
     <message>
       <location filename="../../Command.cpp" line="322"/>
       <source>Raytracing</source>
-      <translation>Трасування променів</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="323"/>
       <source>New POV-Ray project</source>
-      <translation>Новий проект POV-Ray</translation>
+      <translation type="unfinished">New POV-Ray project</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="324"/>
       <source>Insert new POV-Ray project into the document</source>
-      <translation>Вставити новий POV-Ray проект</translation>
+      <translation type="unfinished">Insert new POV-Ray project into the document</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="376"/>
       <source>No template</source>
-      <translation>Шаблон відсутній</translation>
+      <translation type="unfinished">No template</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="377"/>
       <source>No template available</source>
-      <translation>Немає доступних шаблонів</translation>
+      <translation type="unfinished">No template available</translation>
     </message>
   </context>
   <context>
@@ -98,17 +98,17 @@
     <message>
       <location filename="../../Command.cpp" line="586"/>
       <source>Raytracing</source>
-      <translation>Трасування променів</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="587"/>
       <source>&amp;Render</source>
-      <translation>&amp;Візуалізація</translation>
+      <translation type="unfinished">&amp;Render</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="588"/>
       <source>Renders the current raytracing project with an external renderer</source>
-      <translation>Візуалізує даний проект raytracing за допомогою зовнішнього рендера</translation>
+      <translation type="unfinished">Renders the current raytracing project with an external renderer</translation>
     </message>
   </context>
   <context>
@@ -116,17 +116,17 @@
     <message>
       <location filename="../../Command.cpp" line="881"/>
       <source>Raytracing</source>
-      <translation>Трасування променів</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="882"/>
       <source>&amp;Reset Camera</source>
-      <translation>&amp;Скинути налаштування камери</translation>
+      <translation type="unfinished">&amp;Reset Camera</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="883"/>
       <source>Sets the camera of the selected Raytracing project to match the current view</source>
-      <translation>Встановлює камеру вибраного проекту Raytracing відповідно до поточного вигляду</translation>
+      <translation type="unfinished">Sets the camera of the selected Raytracing project to match the current view</translation>
     </message>
   </context>
   <context>
@@ -134,17 +134,17 @@
     <message>
       <location filename="../../Command.cpp" line="85"/>
       <source>Raytracing</source>
-      <translation>Трасування променів</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="86"/>
       <source>Export camera to POV-Ray...</source>
-      <translation>Експортувати камеру у POV-Ray...</translation>
+      <translation type="unfinished">Export camera to POV-Ray...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="87"/>
       <source>Export the camera position of the active 3D view in POV-Ray format to a file</source>
-      <translation>Експортуйте положення камери активного 3D-вигляду у форматі POV-Ray у файл</translation>
+      <translation type="unfinished">Export the camera position of the active 3D view in POV-Ray format to a file</translation>
     </message>
   </context>
   <context>
@@ -152,17 +152,17 @@
     <message>
       <location filename="../../Command.cpp" line="178"/>
       <source>Raytracing</source>
-      <translation>Трасування променів</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="179"/>
       <source>Export part to POV-Ray...</source>
-      <translation>Експортувати частину у POV-Ray...</translation>
+      <translation type="unfinished">Export part to POV-Ray...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="180"/>
       <source>Write the selected Part (object) as a POV-Ray file</source>
-      <translation>Запишіть вибрану Частину (об’єкт) як файл POV-Ray</translation>
+      <translation type="unfinished">Write the selected Part (object) as a POV-Ray file</translation>
     </message>
   </context>
   <context>
@@ -173,7 +173,7 @@
       <location filename="../../Command.cpp" line="338"/>
       <location filename="../../Command.cpp" line="784"/>
       <source>No perspective camera</source>
-      <translation>Немає перегляду перспективи</translation>
+      <translation type="unfinished">No perspective camera</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="102"/>
@@ -181,42 +181,42 @@
       <location filename="../../Command.cpp" line="339"/>
       <source>The current view camera is not perspective and thus resulting in a POV-Ray image that may look different than what was expected.
 Do you want to continue?</source>
-      <translation>Поточна камера огляду не є оптичною, і, отже, утворюється зображення POV-Ray, яке може виглядати інакше, ніж очікувалося.
-Продовжити?</translation>
+      <translation type="unfinished">The current view camera is not perspective and thus resulting in a POV-Ray image that may look different than what was expected.
+Do you want to continue?</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="225"/>
       <source>Raytracing</source>
-      <translation>Трасування променів</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="226"/>
       <source>Export view to POV-Ray...</source>
-      <translation>Експорт виду у POV-Ray...</translation>
+      <translation type="unfinished">Export view to POV-Ray...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="227"/>
       <source>Write the active 3D view with camera and all its content to a POV-Ray file</source>
-      <translation>Запишіть активний 3D-вигляд із камерою та весь вміст у файл POV-Ray</translation>
+      <translation type="unfinished">Write the active 3D view with camera and all its content to a POV-Ray file</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="353"/>
       <location filename="../../Command.cpp" line="799"/>
       <source>No template</source>
-      <translation>Шаблон відсутній</translation>
+      <translation type="unfinished">No template</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="354"/>
       <location filename="../../Command.cpp" line="800"/>
       <source>Cannot create a project because there is no template installed.</source>
-      <translation>Не вдається створити проект, оскільки не встановлено шаблон.</translation>
+      <translation type="unfinished">Cannot create a project because there is no template installed.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="785"/>
       <source>The current view camera is not perspective and thus resulting in a luxrender image that may look different than what was expected.
 Do you want to continue?</source>
-      <translation>Поточна камера огляду не є оптичною, і, отже, виходить зображення, яке може виглядати інакше ніж очікувалося.
-Продовжити?</translation>
+      <translation type="unfinished">The current view camera is not perspective and thus resulting in a luxrender image that may look different than what was expected.
+Do you want to continue?</translation>
     </message>
   </context>
   <context>
@@ -236,7 +236,7 @@ Do you want to continue?</source>
       <location filename="../../Command.cpp" line="552"/>
       <location filename="../../Command.cpp" line="662"/>
       <source>All Files</source>
-      <translation>Всі файли</translation>
+      <translation type="unfinished">All Files</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="140"/>
@@ -244,7 +244,7 @@ Do you want to continue?</source>
       <location filename="../../Command.cpp" line="255"/>
       <location filename="../../Command.cpp" line="554"/>
       <source>Export page</source>
-      <translation>Експорт сторінки</translation>
+      <translation type="unfinished">Export page</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="451"/>
@@ -252,35 +252,35 @@ Do you want to continue?</source>
       <location filename="../../Command.cpp" line="602"/>
       <location filename="../../Command.cpp" line="895"/>
       <source>Wrong selection</source>
-      <translation>Невірний вибір</translation>
+      <translation type="unfinished">Wrong selection</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="452"/>
       <source>Select a Part object.</source>
-      <translation>Виберіть частину обʼєкта.</translation>
+      <translation type="unfinished">Select a Part object.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="462"/>
       <location filename="../../Command.cpp" line="474"/>
       <source>No Raytracing project to insert</source>
-      <translation>Проект трасування променів для вставки відсутній</translation>
+      <translation type="unfinished">No Raytracing project to insert</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="463"/>
       <source>Create a Raytracing project to insert a view.</source>
-      <translation>Створіть проект Raytracing для вставки вид.</translation>
+      <translation type="unfinished">Create a Raytracing project to insert a view.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="475"/>
       <source>Select a Raytracing project to insert the view.</source>
-      <translation>Виберіть проект трасування Raytracing, щоб вставити цей вид.</translation>
+      <translation type="unfinished">Select a Raytracing project to insert the view.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="539"/>
       <location filename="../../Command.cpp" line="603"/>
       <location filename="../../Command.cpp" line="896"/>
       <source>Select one Raytracing project object.</source>
-      <translation>Виберіть обʼєкт трасування променів.</translation>
+      <translation type="unfinished">Select one Raytracing project object.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="543"/>
@@ -291,38 +291,38 @@ Do you want to continue?</source>
       <location filename="../../Command.cpp" line="618"/>
       <location filename="../../Command.cpp" line="624"/>
       <source>POV-Ray not found</source>
-      <translation>Програма POV-Ray не знайдена</translation>
+      <translation type="unfinished">POV-Ray not found</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="619"/>
       <source>Please set the path to the POV-Ray executable in the preferences.</source>
-      <translation>Встановіть шлях до виконуваного файлу POV-Ray у налаштуваннях.</translation>
+      <translation type="unfinished">Please set the path to the POV-Ray executable in the preferences.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="625"/>
       <source>Please correct the path to the POV-Ray executable in the preferences.</source>
-      <translation>Скоригуйте шлях до виконуваного файлу POV-Ray у налаштуваннях.</translation>
+      <translation type="unfinished">Please correct the path to the POV-Ray executable in the preferences.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="632"/>
       <location filename="../../Command.cpp" line="638"/>
       <source>Luxrender not found</source>
-      <translation>Luxrender не знайдено</translation>
+      <translation type="unfinished">Luxrender not found</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="633"/>
       <source>Please set the path to the luxrender or luxconsole executable in the preferences.</source>
-      <translation>Будь ласка встановіть шлях до файлу luxrender або luxconsole в налаштуваннях.</translation>
+      <translation type="unfinished">Please set the path to the luxrender or luxconsole executable in the preferences.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="639"/>
       <source>Please correct the path to the luxrender or luxconsole executable in the preferences.</source>
-      <translation>Будь ласка виправте шлях до файлу luxrender або luxconsole в налаштуваннях.</translation>
+      <translation type="unfinished">Please correct the path to the luxrender or luxconsole executable in the preferences.</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="651"/>
       <source>POV-Ray file missing</source>
-      <translation>Відсутній POV-Ray файл</translation>
+      <translation type="unfinished">POV-Ray file missing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="652"/>
@@ -334,12 +334,12 @@ Do you want to continue?</source>
       <location filename="../../Command.cpp" line="660"/>
       <location filename="../../Command.cpp" line="663"/>
       <source>Rendered image</source>
-      <translation>Зображення після візуалізації</translation>
+      <translation type="unfinished">Rendered image</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="735"/>
       <source>Lux project file missing</source>
-      <translation>Файл проекту Lux відсутній</translation>
+      <translation type="unfinished">Lux project file missing</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="736"/>
@@ -352,27 +352,27 @@ Do you want to continue?</source>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="14"/>
       <source>Raytracing</source>
-      <translation>Трасування променів</translation>
+      <translation type="unfinished">Raytracing</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="26"/>
       <source>Render</source>
-      <translation>Візуалізувати</translation>
+      <translation type="unfinished">Render</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="34"/>
       <source>POV-Ray executable:</source>
-      <translation>Програма POV-Ray для виконання:</translation>
+      <translation type="unfinished">POV-Ray executable:</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="51"/>
       <source>POV-Ray output parameters:</source>
-      <translation>Вихідні параметри POV-Ray:</translation>
+      <translation type="unfinished">POV-Ray output parameters:</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="60"/>
       <source>The POV-Ray parameters to be passed to the render.</source>
-      <translation>Параметри POV-Ray будуть передані рендеру.</translation>
+      <translation type="unfinished">The POV-Ray parameters to be passed to the render.</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="63"/>
@@ -387,7 +387,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="83"/>
       <source>The width of the rendered image</source>
-      <translation>Ширина візуалізованого зображення</translation>
+      <translation type="unfinished">The width of the rendered image</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="102"/>
@@ -397,39 +397,39 @@ Do you want to continue?</source>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="109"/>
       <source>The height of the rendered image</source>
-      <translation>Висота візуалізованого зображення</translation>
+      <translation type="unfinished">The height of the rendered image</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="130"/>
       <source>Luxrender executable:</source>
-      <translation>Виконуваний файл luxrender:</translation>
+      <translation type="unfinished">Luxrender executable:</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="137"/>
       <source>The path to the luxrender (or luxconsole) executable</source>
-      <translation>Шлях до виконуваного файлу luxrender (або luxconsole)</translation>
+      <translation type="unfinished">The path to the luxrender (or luxconsole) executable</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="155"/>
       <source>Directories</source>
-      <translation>Каталоги</translation>
+      <translation type="unfinished">Directories</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="175"/>
       <source>Default Project dir:</source>
-      <translation>Каталог проекту за замовчуванням:</translation>
+      <translation type="unfinished">Default Project dir:</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="185"/>
       <location filename="../../DlgSettingsRay.ui" line="208"/>
       <location filename="../../DlgSettingsRay.ui" line="231"/>
       <source>Used by utility tools</source>
-      <translation>Використовується допоміжними інструментами</translation>
+      <translation type="unfinished">Used by utility tools</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="201"/>
       <source>Camera file name:</source>
-      <translation>Імʼя файлу камери:</translation>
+      <translation type="unfinished">Camera file name:</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="211"/>
@@ -439,7 +439,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="224"/>
       <source>Part file name:</source>
-      <translation>Імʼя файлу деталі:</translation>
+      <translation type="unfinished">Part file name:</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="234"/>
@@ -449,22 +449,22 @@ Do you want to continue?</source>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="252"/>
       <source>Mesh export settings</source>
-      <translation>Налаштування експорту сітки(Mesh)</translation>
+      <translation type="unfinished">Mesh export settings</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="278"/>
       <source>Max mesh deviation:</source>
-      <translation>Максимальне відхилення полігональної сітки:</translation>
+      <translation type="unfinished">Max mesh deviation:</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="306"/>
       <source>Do not calculate vertex normals</source>
-      <translation>Не розраховувати нормалі вершин</translation>
+      <translation type="unfinished">Do not calculate vertex normals</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsRay.ui" line="319"/>
       <source>Write u,v coordinates</source>
-      <translation>Записувати u,v координати</translation>
+      <translation type="unfinished">Write u,v coordinates</translation>
     </message>
   </context>
   <context>
@@ -472,7 +472,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../DlgSettingsRayImp.cpp" line="47"/>
       <source>The path to the POV-Ray executable, if you want to render from %1</source>
-      <translation>Шлях до POV-Ray виконуваний, якщо ви хочете подати з %1</translation>
+      <translation type="unfinished">The path to the POV-Ray executable, if you want to render from %1</translation>
     </message>
   </context>
   <context>
@@ -480,17 +480,17 @@ Do you want to continue?</source>
     <message>
       <location filename="../../ViewProvider.cpp" line="68"/>
       <source>Edit LuxRender project</source>
-      <translation>Редагувати проект LuxRender</translation>
+      <translation type="unfinished">Edit LuxRender project</translation>
     </message>
     <message>
       <location filename="../../ViewProvider.cpp" line="99"/>
       <source>LuxRender template</source>
-      <translation>Шаблон LuxRender</translation>
+      <translation type="unfinished">LuxRender template</translation>
     </message>
     <message>
       <location filename="../../ViewProvider.cpp" line="99"/>
       <source>Select a LuxRender template</source>
-      <translation>Обрати шаблон LuxRender</translation>
+      <translation type="unfinished">Select a LuxRender template</translation>
     </message>
   </context>
   <context>
@@ -498,17 +498,17 @@ Do you want to continue?</source>
     <message>
       <location filename="../../ViewProvider.cpp" line="147"/>
       <source>Edit Povray project</source>
-      <translation>Редагувати Povray-проект</translation>
+      <translation type="unfinished">Edit Povray project</translation>
     </message>
     <message>
       <location filename="../../ViewProvider.cpp" line="178"/>
       <source>Povray template</source>
-      <translation>Шаблон Povray</translation>
+      <translation type="unfinished">Povray template</translation>
     </message>
     <message>
       <location filename="../../ViewProvider.cpp" line="178"/>
       <source>Select a Povray template</source>
-      <translation>Обрати Povray-шаблон</translation>
+      <translation type="unfinished">Select a Povray template</translation>
     </message>
   </context>
   <context>
@@ -516,7 +516,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../Workbench.cpp" line="37"/>
       <source>&amp;Raytracing</source>
-      <translation>&amp;Трасування променів</translation>
+      <translation type="unfinished">&amp;Raytracing</translation>
     </message>
   </context>
 </TS>

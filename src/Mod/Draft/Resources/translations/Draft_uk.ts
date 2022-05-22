@@ -728,10 +728,10 @@ This point can be decorated with an arrow or another symbol.</source>
 as &apos;Text&apos;, depending on &apos;Label Type&apos;.
 
 &apos;Target&apos; won&apos;t be used if &apos;Label Type&apos; is set to &apos;Custom&apos;.</source>
-      <translation type="unfinished">Object, and optionally subelement, whose properties will be displayed
-as &apos;Text&apos;, depending on &apos;Label Type&apos;.
+      <translation>Об'єкт, і, за потреби, піделемент, властивості якого показуватися 
+як &apos;Text&apos;, залежно від &apos;Label Type&apos;.
 
-&apos;Target&apos; won&apos;t be used if &apos;Label Type&apos; is set to &apos;Custom&apos;.</translation>
+&apos;Target&apos; не буде використовуватися, якщо &apos;Label Type&apos; встановлений на &apos;Custom&apos;.</translation>
     </message>
     <message>
       <location filename="../../draftobjects/label.py" line="109"/>
@@ -781,12 +781,12 @@ depending on the value of &apos;Straight Direction&apos;.</source>
     <message>
       <location filename="../../draftobjects/label.py" line="153"/>
       <source>The placement of the &apos;Text&apos; element in 3D space</source>
-      <translation type="unfinished">The placement of the &apos;Text&apos; element in 3D space</translation>
+      <translation>Розміщення елемента "Текст" у 3D просторі</translation>
     </message>
     <message>
       <location filename="../../draftobjects/label.py" line="161"/>
       <source>The text to display when &apos;Label Type&apos; is set to &apos;Custom&apos;</source>
-      <translation type="unfinished">The text to display when &apos;Label Type&apos; is set to &apos;Custom&apos;</translation>
+      <translation>Текст для показу коли &apos;Тип мітки&apos; встановлений на &apos;Користувацький&apos;</translation>
     </message>
     <message>
       <location filename="../../draftobjects/label.py" line="175"/>
@@ -795,11 +795,11 @@ depending on the value of &apos;Straight Direction&apos;.</source>
 This property is read-only, as the final text depends on &apos;Label Type&apos;,
 and the object defined in &apos;Target&apos;.
 The &apos;Custom Text&apos; is displayed only if &apos;Label Type&apos; is set to &apos;Custom&apos;.</source>
-      <translation type="unfinished">The text displayed by this label.
+      <translation>Текст, що показуватися цією міткою.
 
-This property is read-only, as the final text depends on &apos;Label Type&apos;,
-and the object defined in &apos;Target&apos;.
-The &apos;Custom Text&apos; is displayed only if &apos;Label Type&apos; is set to &apos;Custom&apos;.</translation>
+Ця властивість доступна лише для читання, оскільки остаточний текст залежить від "Тип мітки",
+і об'єкту, визначеного у "Ціль".
+"Custom Text" показує лише в тому випадку, якщо для параметра "Тип мітки" встановлено значення "Custom".</translation>
     </message>
     <message>
       <location filename="../../draftobjects/label.py" line="209"/>
@@ -2835,7 +2835,7 @@ Then you can use it to save a different camera position and objects&apos; states
       <location filename="../../draftobjects/pointarray.py" line="149"/>
       <location filename="../../draftobjects/pointarray.py" line="170"/>
       <source>added property &apos;ExtraPlacement&apos;</source>
-      <translation type="unfinished">added property &apos;ExtraPlacement&apos;</translation>
+      <translation>додав властивість &apos;ExtraPlacement&apos;</translation>
     </message>
     <message>
       <location filename="../../draftobjects/patharray.py" line="290"/>

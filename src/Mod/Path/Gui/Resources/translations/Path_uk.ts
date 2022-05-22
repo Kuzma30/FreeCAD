@@ -38,12 +38,12 @@
       <location filename="../../../PathScripts/PathPlane.py" line="47"/>
       <location filename="../../../PathScripts/PathFixture.py" line="64"/>
       <source>Make False, to prevent operation from generating code</source>
-      <translation>Зробіть False, щоб уникнути операції з генерації коду</translation>
+      <translation type="unfinished">Make False, to prevent operation from generating code</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="182"/>
       <source>An optional comment for this Operation</source>
-      <translation>Необовʼязковий коментар до цієї Операції</translation>
+      <translation type="unfinished">An optional comment for this Operation</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="188"/>
@@ -72,17 +72,17 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="228"/>
       <source>Coolant mode for this operation</source>
-      <translation>Режим охолодження для цієї операції</translation>
+      <translation type="unfinished">Coolant mode for this operation</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="238"/>
       <source>Starting Depth of Tool- first cut depth in Z</source>
-      <translation>Початкова глибина інструменту - перша глибина різу по Z</translation>
+      <translation type="unfinished">Starting Depth of Tool- first cut depth in Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="246"/>
       <source>Final Depth of Tool- lowest value in Z</source>
-      <translation>Фінальна глибина інструменту - найнижче значення по Z</translation>
+      <translation type="unfinished">Final Depth of Tool- lowest value in Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="260"/>
@@ -92,12 +92,12 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="271"/>
       <source>Incremental Step Down of Tool</source>
-      <translation>Крок заглиблення Інструменту</translation>
+      <translation type="unfinished">Incremental Step Down of Tool</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="281"/>
       <source>Maximum material removed on final pass.</source>
-      <translation>Максимальна кількість матеріалу, що була видалена на заключному проході.</translation>
+      <translation type="unfinished">Maximum material removed on final pass.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="292"/>
@@ -112,7 +112,7 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="308"/>
       <source>The start point of this path</source>
-      <translation>Початкова точка цієї траєкторії</translation>
+      <translation type="unfinished">The start point of this path</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="316"/>
@@ -135,7 +135,7 @@
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="445"/>
       <source>Coolant option for this operation</source>
-      <translation>Налаштування охолодження для цієї операції</translation>
+      <translation type="unfinished">Coolant option for this operation</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="145"/>
@@ -150,12 +150,12 @@
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="159"/>
       <source>The file of the tool</source>
-      <translation>Файл інструменту</translation>
+      <translation type="unfinished">The file of the tool</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="165"/>
       <source>The name of the shape file</source>
-      <translation>Імʼя файлу форми</translation>
+      <translation type="unfinished">The name of the shape file</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolBit.py" line="173"/>
@@ -174,7 +174,7 @@
       <location filename="../../../PathScripts/PathDressupAxisMap.py" line="57"/>
       <location filename="../../../PathScripts/PathDressupPathBoundary.py" line="55"/>
       <source>The base path to modify</source>
-      <translation>Базова траєкторія для зміни</translation>
+      <translation type="unfinished">The base path to modify</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupTag.py" line="131"/>
@@ -278,12 +278,12 @@
     <message>
       <location filename="../../../PathScripts/PathComment.py" line="41"/>
       <source>Comment or note for CNC program</source>
-      <translation>Коментар або примітки до програми ЧПК</translation>
+      <translation type="unfinished">Comment or note for CNC program</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="126"/>
       <source>The desired width of the chamfer</source>
-      <translation>Бажана ширина фаски</translation>
+      <translation type="unfinished">The desired width of the chamfer</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="132"/>
@@ -298,12 +298,12 @@
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="146"/>
       <source>Direction of Operation</source>
-      <translation>Напрямок Операції</translation>
+      <translation type="unfinished">Direction of Operation</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="153"/>
       <source>Side of Operation</source>
-      <translation>Сторона операції</translation>
+      <translation type="unfinished">Side of Operation</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="163"/>
@@ -331,12 +331,12 @@
       <location filename="../../../PathScripts/PathHelix.py" line="128"/>
       <location filename="../../../PathScripts/PathAdaptive.py" line="985"/>
       <source>Percent of cutter diameter to step over on each pass</source>
-      <translation>Відсоток діаметру вирізання для кожного проходу</translation>
+      <translation type="unfinished">Percent of cutter diameter to step over on each pass</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="156"/>
       <source>Angle of the zigzag pattern</source>
-      <translation>Кут зигзаг шаблону</translation>
+      <translation type="unfinished">Angle of the zigzag pattern</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="162"/>
@@ -362,7 +362,7 @@
     <message>
       <location filename="../../../PathScripts/PathPlane.py" line="38"/>
       <source>Orientation plane of CNC path</source>
-      <translation>Орієнтація площини з траєкторією ЧПК</translation>
+      <translation type="unfinished">Orientation plane of CNC path</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupDragknife.py" line="68"/>
@@ -372,7 +372,7 @@
     <message>
       <location filename="../../../PathScripts/PathDressupDragknife.py" line="76"/>
       <source>Distance the point trails behind the spindle</source>
-      <translation>Відстань точки до шпинделя</translation>
+      <translation type="unfinished">Distance the point trails behind the spindle</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupDragknife.py" line="82"/>
@@ -412,32 +412,32 @@
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="275"/>
       <source>Set thread orientation</source>
-      <translation>Встановити напрямок різьби</translation>
+      <translation type="unfinished">Set thread orientation</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="282"/>
       <source>Currently only internal</source>
-      <translation>На цю мить тільки внутрішня</translation>
+      <translation type="unfinished">Currently only internal</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="291"/>
       <source>Defines which standard thread was chosen</source>
-      <translation>Визначає яку стандартну різьбу обрано</translation>
+      <translation type="unfinished">Defines which standard thread was chosen</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="297"/>
       <source>Set thread&apos;s major diameter</source>
-      <translation>Встановіть зовнішній діаметр різьби</translation>
+      <translation type="unfinished">Set thread&apos;s major diameter</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="303"/>
       <source>Set thread&apos;s minor diameter</source>
-      <translation>Встановіть діаметр западин різьби</translation>
+      <translation type="unfinished">Set thread&apos;s minor diameter</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="311"/>
       <source>Set thread&apos;s pitch - used for metric threads</source>
-      <translation>Встановіть крок різьби - використовується для метричних різьб</translation>
+      <translation type="unfinished">Set thread&apos;s pitch - used for metric threads</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="320"/>
@@ -448,12 +448,12 @@
       <location filename="../../../PathScripts/PathThreadMilling.py" line="328"/>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="336"/>
       <source>Set how many passes are used to cut the thread</source>
-      <translation>Встановіть кількість проходів для вирізання різьби</translation>
+      <translation type="unfinished">Set how many passes are used to cut the thread</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="342"/>
       <source>Direction of thread cutting operation</source>
-      <translation>Напрямок операції вирізання різьби</translation>
+      <translation type="unfinished">Direction of thread cutting operation</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="351"/>
@@ -463,7 +463,7 @@
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="359"/>
       <source>Operation to clear the inside of the thread</source>
-      <translation>Чистовий прохід різьби</translation>
+      <translation type="unfinished">Operation to clear the inside of the thread</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathCustom.py" line="56"/>
@@ -488,12 +488,12 @@
     <message>
       <location filename="../../../PathScripts/PathProbe.py" line="57"/>
       <source>X offset between tool and probe</source>
-      <translation>Зсув по вісі X між інструментом і зондом</translation>
+      <translation type="unfinished">X offset between tool and probe</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProbe.py" line="63"/>
       <source>Y offset between tool and probe</source>
-      <translation>Зсув по вісі Y між інструментом і зондом</translation>
+      <translation type="unfinished">Y offset between tool and probe</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProbe.py" line="71"/>
@@ -515,7 +515,7 @@
       <location filename="../../../PathScripts/PathEngrave.py" line="82"/>
       <location filename="../../../PathScripts/PathVcarve.py" line="216"/>
       <source>Additional base objects to be engraved</source>
-      <translation>Додаткові базові обʼєкти для гравіювання</translation>
+      <translation type="unfinished">Additional base objects to be engraved</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathEngrave.py" line="94"/>
@@ -566,7 +566,7 @@
     <message>
       <location filename="../../../PathScripts/PathStock.py" line="170"/>
       <source>A material for this object</source>
-      <translation>Матеріал для цього обʼєкту</translation>
+      <translation type="unfinished">A material for this object</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathStock.py" line="242"/>
@@ -626,17 +626,17 @@
     <message>
       <location filename="../../../PathScripts/PathProfile.py" line="152"/>
       <source>Profile holes as well as the outline</source>
-      <translation>Профіль отворів, а також контур</translation>
+      <translation type="unfinished">Profile holes as well as the outline</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfile.py" line="158"/>
       <source>Profile the outline</source>
-      <translation>Профіль контуру</translation>
+      <translation type="unfinished">Profile the outline</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfile.py" line="164"/>
       <source>Profile round holes</source>
-      <translation>Профіль круглих отворів</translation>
+      <translation type="unfinished">Profile round holes</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfile.py" line="170"/>
@@ -656,48 +656,48 @@
     <message>
       <location filename="../../../PathScripts/PathHelix.py" line="119"/>
       <source>Start cutting from the inside or outside</source>
-      <translation>Почати вирізання зсередини або зовні</translation>
+      <translation type="unfinished">Start cutting from the inside or outside</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathHelix.py" line="134"/>
       <location filename="../../../PathScripts/PathHelix.py" line="156"/>
       <source>Starting Radius</source>
-      <translation>Початковий радіус</translation>
+      <translation type="unfinished">Starting Radius</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="71"/>
       <source>The active tool</source>
-      <translation>Активний інструмент</translation>
+      <translation type="unfinished">The active tool</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="80"/>
       <source>The speed of the cutting spindle in RPM</source>
-      <translation>Швидкість обертання шпинделя в об/хв</translation>
+      <translation type="unfinished">The speed of the cutting spindle in RPM</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="86"/>
       <source>Direction of spindle rotation</source>
-      <translation>Напрямок обертання шпинделя</translation>
+      <translation type="unfinished">Direction of spindle rotation</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="92"/>
       <source>Feed rate for vertical moves in Z</source>
-      <translation>Швидкість вертикальної подачі по осі Z</translation>
+      <translation type="unfinished">Feed rate for vertical moves in Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="98"/>
       <source>Feed rate for horizontal moves</source>
-      <translation>Швидкість горизонтальної подачі</translation>
+      <translation type="unfinished">Feed rate for horizontal moves</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="104"/>
       <source>Rapid rate for vertical moves in Z</source>
-      <translation>Швидкість прискореної вертикальної подачі по осі Z</translation>
+      <translation type="unfinished">Rapid rate for vertical moves in Z</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="110"/>
       <source>Rapid rate for horizontal moves</source>
-      <translation>Швидкість прискореної горизонтальної подачі</translation>
+      <translation type="unfinished">Rapid rate for horizontal moves</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="321"/>
@@ -726,7 +726,7 @@
       <location filename="../../../PathScripts/PathSurface.py" line="153"/>
       <location filename="../../../PathScripts/PathSurface.py" line="194"/>
       <source>Stop index(angle) for rotational scan</source>
-      <translation>Індекс зупинки (кут) для обертального сканування</translation>
+      <translation type="unfinished">Stop index(angle) for rotational scan</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="162"/>
@@ -736,17 +736,17 @@
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="170"/>
       <source>Additional offset to the selected bounding box</source>
-      <translation>Додатковий зсув до виділеної обмежувальної рамки</translation>
+      <translation type="unfinished">Additional offset to the selected bounding box</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="178"/>
       <source>The model will be rotated around this axis.</source>
-      <translation>Модель буде обертатися навколо цієї осі.</translation>
+      <translation type="unfinished">The model will be rotated around this axis.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="186"/>
       <source>Start index(angle) for rotational scan</source>
-      <translation>Індекс старту (кут) для обертального сканування</translation>
+      <translation type="unfinished">Start index(angle) for rotational scan</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="203"/>
@@ -763,7 +763,7 @@
       <location filename="../../../PathScripts/PathSurface.py" line="220"/>
       <location filename="../../../PathScripts/PathWaterline.py" line="239"/>
       <source>Do not cut internal features on avoided faces.</source>
-      <translation>Не вирізайте внутрішні обриси поверхонь яких уникаєте.</translation>
+      <translation type="unfinished">Do not cut internal features on avoided faces.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="229"/>
@@ -793,7 +793,7 @@
       <location filename="../../../PathScripts/PathSurface.py" line="273"/>
       <location filename="../../../PathScripts/PathWaterline.py" line="301"/>
       <source>Select the overall boundary for the operation.</source>
-      <translation>Оберіть загальну межу для операції.</translation>
+      <translation type="unfinished">Select the overall boundary for the operation.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="282"/>
@@ -812,7 +812,7 @@
       <location filename="../../../PathScripts/PathSurface.py" line="299"/>
       <location filename="../../../PathScripts/PathWaterline.py" line="336"/>
       <source>The yaw angle used for certain clearing patterns</source>
-      <translation>Кут нахилу, який використовується для певних схем очищення</translation>
+      <translation type="unfinished">The yaw angle used for certain clearing patterns</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="308"/>
@@ -837,7 +837,7 @@
       <location filename="../../../PathScripts/PathSurface.py" line="334"/>
       <location filename="../../../PathScripts/PathWaterline.py" line="379"/>
       <source>Set the start point for the cut pattern.</source>
-      <translation>Встановити початкову точку для шаблону різання.</translation>
+      <translation type="unfinished">Set the start point for the cut pattern.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="343"/>
@@ -848,7 +848,7 @@
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="351"/>
       <source>Profile the edges of the selection.</source>
-      <translation>Профіль країв виділення.</translation>
+      <translation type="unfinished">Profile the edges of the selection.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="360"/>
@@ -902,12 +902,12 @@
       <location filename="../../../PathScripts/PathAreaOp.py" line="99"/>
       <location filename="../../../PathScripts/PathAreaOp.py" line="168"/>
       <source>Split Arcs into discrete segments</source>
-      <translation>Розділити арки на окремі сегменти</translation>
+      <translation type="unfinished">Split Arcs into discrete segments</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathCircularHoleBase.py" line="80"/>
       <source>List of disabled features</source>
-      <translation>Перелік вимкнених властивостей</translation>
+      <translation type="unfinished">List of disabled features</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJob.py" line="117"/>
@@ -917,7 +917,7 @@
     <message>
       <location filename="../../../PathScripts/PathJob.py" line="123"/>
       <source>Select the Post Processor</source>
-      <translation>Оберіть пост процесор</translation>
+      <translation type="unfinished">Select the Post Processor</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJob.py" line="132"/>
@@ -959,7 +959,7 @@
       <location filename="../../../PathScripts/PathJob.py" line="192"/>
       <location filename="../../../PathScripts/PathJob.py" line="542"/>
       <source>Select the Type of Job</source>
-      <translation>Виберіть тип роботи</translation>
+      <translation type="unfinished">Select the Type of Job</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJob.py" line="202"/>
@@ -1009,27 +1009,27 @@
     <message>
       <location filename="../../../PathScripts/PathVcarve.py" line="244"/>
       <source>Vcarve Tolerance</source>
-      <translation>Точність  V отворів</translation>
+      <translation type="unfinished">Vcarve Tolerance</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="65"/>
       <source>Angle of ramp.</source>
-      <translation>Кут нарощування.</translation>
+      <translation type="unfinished">Angle of ramp.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="71"/>
       <source>Ramping Method</source>
-      <translation>Метод нарощування</translation>
+      <translation type="unfinished">Ramping Method</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="77"/>
       <source>Which feed rate to use for ramping</source>
-      <translation>Визначає робочу подачу для нарощування</translation>
+      <translation type="unfinished">Which feed rate to use for ramping</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="83"/>
       <source>Custom feed rate</source>
-      <translation>Індивідуальна швидкість подачі</translation>
+      <translation type="unfinished">Custom feed rate</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="92"/>
@@ -1155,7 +1155,7 @@
       <location filename="../../../PathScripts/PathAdaptive.py" line="1036"/>
       <location filename="../../../PathScripts/PathAdaptive.py" line="1047"/>
       <source>Stop processing</source>
-      <translation>Зупинити обробку</translation>
+      <translation type="unfinished">Stop processing</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathAdaptive.py" line="1058"/>
@@ -1205,7 +1205,7 @@
     <message>
       <location filename="../../../PathScripts/PathCopy.py" line="41"/>
       <source>The path to be copied</source>
-      <translation>Траєкторія для копіювання</translation>
+      <translation type="unfinished">The path to be copied</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="213"/>
@@ -1240,7 +1240,7 @@
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="51"/>
       <source>Pattern method</source>
-      <translation>Метод шаблона</translation>
+      <translation type="unfinished">Pattern method</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="60"/>
@@ -1250,27 +1250,27 @@
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="68"/>
       <source>The number of copies in X direction in Linear pattern</source>
-      <translation>Кількість копій по осі X для Лінійного Масиву</translation>
+      <translation type="unfinished">The number of copies in X direction in Linear pattern</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="76"/>
       <source>The number of copies in Y direction in Linear pattern</source>
-      <translation>Кількість копій по осі Y для Лінійного Масиву</translation>
+      <translation type="unfinished">The number of copies in Y direction in Linear pattern</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="82"/>
       <source>Total angle in Polar pattern</source>
-      <translation>Загальний кут в Полярному масиві</translation>
+      <translation type="unfinished">Total angle in Polar pattern</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="90"/>
       <source>The number of copies in Linear 1D and Polar pattern</source>
-      <translation>Кількість копій для Лінійного 1D та Полярного масиву</translation>
+      <translation type="unfinished">The number of copies in Linear 1D and Polar pattern</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="98"/>
       <source>The centre of rotation in Polar pattern</source>
-      <translation>Центр обертання в Полярному масиві</translation>
+      <translation type="unfinished">The centre of rotation in Polar pattern</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="107"/>
@@ -1291,7 +1291,7 @@
       <location filename="../../../PathScripts/PathArray.py" line="125"/>
       <location filename="../../../PathScripts/PathArray.py" line="175"/>
       <source>Seed value for jitter randomness</source>
-      <translation>Початкове значення для випадкового тремтіння</translation>
+      <translation type="unfinished">Seed value for jitter randomness</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathFixture.py" line="38"/>
@@ -1331,12 +1331,12 @@
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="108"/>
       <source>The Style of motion into the Path</source>
-      <translation>Стиль руху по Лінії</translation>
+      <translation type="unfinished">The Style of motion into the Path</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="115"/>
       <source>The Style of motion out of the Path</source>
-      <translation>Стиль руху по Лінії</translation>
+      <translation type="unfinished">The Style of motion out of the Path</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="124"/>
@@ -1459,7 +1459,7 @@ For example:
     &apos;Metric, Small Parts &amp; CNC&apos;
     &apos;US Customary&apos;
     &apos;Imperial Decimal&apos;</source>
-      <translation>Зараз діє наступна схем: 
+      <translation type="unfinished">The currently selected unit schema: 
      &apos;{}&apos;
  Does not use &apos;minutes&apos; for velocity values. 
  
@@ -1474,12 +1474,12 @@ For example:
     <message>
       <location filename="../../../InitGui.py" line="275"/>
       <source>Warning</source>
-      <translation>Увага</translation>
+      <translation type="unfinished">Warning</translation>
     </message>
     <message>
       <location filename="../../../InitGui.py" line="277"/>
       <source>Ok</source>
-      <translation>Гаразд</translation>
+      <translation type="unfinished">Ok</translation>
     </message>
     <message>
       <location filename="../../../InitGui.py" line="279"/>
@@ -1566,27 +1566,27 @@ For example:
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="185"/>
       <source>CW</source>
-      <translation>за годинниковою стрілкою</translation>
+      <translation type="unfinished">CW</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburr.py" line="186"/>
       <source>CCW</source>
-      <translation>проти годинникової стрілки</translation>
+      <translation type="unfinished">CCW</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="628"/>
       <source>Feed(H)</source>
-      <translation>Потік (H)</translation>
+      <translation type="unfinished">Feed(H)</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="632"/>
       <source>Feed(V)</source>
-      <translation>Потік (V)</translation>
+      <translation type="unfinished">Feed(V)</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfileGui.py" line="165"/>
       <source>Profile</source>
-      <translation>Профіль</translation>
+      <translation type="unfinished">Profile</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfileGui.py" line="168"/>
@@ -1597,7 +1597,7 @@ For example:
       <location filename="../../../PathScripts/PathIconViewProvider.py" line="98"/>
       <location filename="../../../PathScripts/PathToolControllerGui.py" line="117"/>
       <source>Edit</source>
-      <translation>Правка</translation>
+      <translation type="unfinished">Edit</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathCircularHoleBase.py" line="117"/>
@@ -1674,7 +1674,7 @@ For example:
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="376"/>
       <source>No base objects for PathArray.</source>
-      <translation>Відсутні базові об’єкти для PathAray.</translation>
+      <translation type="unfinished">No base objects for PathArray.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="397"/>
@@ -1774,12 +1774,12 @@ For example:
     <message>
       <location filename="../../../PathScripts/PathOpGui.py" line="191"/>
       <source>Edit</source>
-      <translation>Правка</translation>
+      <translation type="unfinished">Edit</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOpGui.py" line="496"/>
       <source>Base Geometry</source>
-      <translation>Базова Геометрія</translation>
+      <translation type="unfinished">Base Geometry</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOpGui.py" line="560"/>
@@ -1809,7 +1809,7 @@ For example:
     <message>
       <location filename="../../../PathScripts/PathOpGui.py" line="837"/>
       <source>Heights</source>
-      <translation>Висоти</translation>
+      <translation type="unfinished">Heights</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOpGui.py" line="915"/>
@@ -1865,7 +1865,7 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathArray.py" line="142"/>
       <location filename="../../../PathScripts/PathArray.py" line="205"/>
       <source>Make False, to prevent operation from generating code</source>
-      <translation>Зробіть False, щоб уникнути операції з генерації коду</translation>
+      <translation type="unfinished">Make False, to prevent operation from generating code</translation>
     </message>
   </context>
   <context>
@@ -1886,17 +1886,17 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathFeatureExtensionsGui.py" line="180"/>
       <source>Normal</source>
-      <translation>Звичайне</translation>
+      <translation type="unfinished">Normal</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathFeatureExtensionsGui.py" line="181"/>
       <source>X</source>
-      <translation>X</translation>
+      <translation type="unfinished">X</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathFeatureExtensionsGui.py" line="182"/>
       <source>Y</source>
-      <translation>Y</translation>
+      <translation type="unfinished">Y</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBaseGui.py" line="81"/>
@@ -1919,12 +1919,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathProfile.py" line="197"/>
       <source>CW</source>
-      <translation>за годинниковою стрілкою</translation>
+      <translation type="unfinished">CW</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfile.py" line="198"/>
       <source>CCW</source>
-      <translation>проти годинникової стрілки</translation>
+      <translation type="unfinished">CCW</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfile.py" line="201"/>
@@ -1944,7 +1944,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathProfile.py" line="206"/>
       <source>Square</source>
-      <translation>Квадрат</translation>
+      <translation type="unfinished">Square</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfile.py" line="207"/>
@@ -2085,7 +2085,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurfaceSupport.py" line="97"/>
       <source>Shape appears to not be horizontal planar.</source>
-      <translation>Фігура не має горизонтальної площини.</translation>
+      <translation type="unfinished">Shape appears to not be horizontal planar.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurfaceSupport.py" line="122"/>
@@ -2259,7 +2259,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathAdaptiveGui.py" line="142"/>
       <source>Adaptive</source>
-      <translation>Адаптивний</translation>
+      <translation type="unfinished">Adaptive</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathAdaptiveGui.py" line="143"/>
@@ -2279,12 +2279,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathAdaptive.py" line="919"/>
       <source>Clearing</source>
-      <translation>Очищення</translation>
+      <translation type="unfinished">Clearing</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathAdaptive.py" line="920"/>
       <source>Profiling</source>
-      <translation>Профілювання</translation>
+      <translation type="unfinished">Profiling</translation>
     </message>
   </context>
   <context>
@@ -2292,7 +2292,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="512"/>
       <source>Array</source>
-      <translation>Масив</translation>
+      <translation type="unfinished">Array</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathArray.py" line="515"/>
@@ -2310,7 +2310,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathComment.py" line="103"/>
       <source>Comment</source>
-      <translation>Коментар</translation>
+      <translation type="unfinished">Comment</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathComment.py" line="106"/>
@@ -2323,7 +2323,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathCopy.py" line="91"/>
       <source>Copy</source>
-      <translation>Копіювати</translation>
+      <translation type="unfinished">Copy</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathCopy.py" line="94"/>
@@ -2336,7 +2336,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathCustomGui.py" line="72"/>
       <source>Custom</source>
-      <translation>Підлаштувати</translation>
+      <translation type="unfinished">Custom</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathCustomGui.py" line="73"/>
@@ -2349,7 +2349,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathDeburrGui.py" line="145"/>
       <source>Deburr</source>
-      <translation>Згладити</translation>
+      <translation type="unfinished">Deburr</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDeburrGui.py" line="148"/>
@@ -2451,32 +2451,32 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="60"/>
       <source>Arc</source>
-      <translation>Дуга</translation>
+      <translation type="unfinished">Arc</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="61"/>
       <source>Tangent</source>
-      <translation>Дотичний</translation>
+      <translation type="unfinished">Tangent</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="62"/>
       <source>Perpendicular</source>
-      <translation>Перпендикулярний</translation>
+      <translation type="unfinished">Perpendicular</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="127"/>
       <source>Radius</source>
-      <translation>Радіус</translation>
+      <translation type="unfinished">Radius</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="128"/>
       <source>Center</source>
-      <translation>Центр</translation>
+      <translation type="unfinished">Center</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="191"/>
       <source>Length/Radius positive not Null</source>
-      <translation>Довжина / радіус позитивний, а не ненульовий</translation>
+      <translation type="unfinished">Length/Radius positive not Null</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupLeadInOut.py" line="709"/>
@@ -2612,42 +2612,42 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="133"/>
       <source>RampMethod1</source>
-      <translation>Метод Рампи 1</translation>
+      <translation type="unfinished">RampMethod1</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="134"/>
       <source>RampMethod2</source>
-      <translation>Метод Рампи 2</translation>
+      <translation type="unfinished">RampMethod2</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="135"/>
       <source>RampMethod3</source>
-      <translation>Метод Рампи 3</translation>
+      <translation type="unfinished">RampMethod3</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="136"/>
       <source>Helix</source>
-      <translation>Гвинт</translation>
+      <translation type="unfinished">Helix</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="140"/>
       <source>Horizontal Feed Rate</source>
-      <translation>Горизонтальна швидкість подачі</translation>
+      <translation type="unfinished">Horizontal Feed Rate</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="144"/>
       <source>Vertical Feed Rate</source>
-      <translation>Вертикальна швидкість подачі</translation>
+      <translation type="unfinished">Vertical Feed Rate</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="148"/>
       <source>Ramp Feed Rate</source>
-      <translation>Швидкість подачі рампи</translation>
+      <translation type="unfinished">Ramp Feed Rate</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="151"/>
       <source>Custom</source>
-      <translation>Підлаштувати</translation>
+      <translation type="unfinished">Custom</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDressupRampEntry.py" line="902"/>
@@ -2753,7 +2753,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathDrillingGui.py" line="158"/>
       <source>Drilling</source>
-      <translation>Свердління</translation>
+      <translation type="unfinished">Drilling</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDrillingGui.py" line="162"/>
@@ -2773,7 +2773,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathDrilling.py" line="75"/>
       <source>None</source>
-      <translation>Немає</translation>
+      <translation type="unfinished">None</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathDrilling.py" line="76"/>
@@ -2825,12 +2825,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/post/gcode_pre.py" line="226"/>
       <source>No active document</source>
-      <translation>Немає активного документу</translation>
+      <translation type="unfinished">No active document</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/post/gcode_pre.py" line="229"/>
       <source>No job object</source>
-      <translation>Немає об’єкта завдання</translation>
+      <translation type="unfinished">No job object</translation>
     </message>
   </context>
   <context>
@@ -2838,7 +2838,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathHelixGui.py" line="112"/>
       <source>Helix</source>
-      <translation>Гвинт</translation>
+      <translation type="unfinished">Helix</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathHelixGui.py" line="115"/>
@@ -2848,12 +2848,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathHelix.py" line="72"/>
       <source>CW</source>
-      <translation>за годинниковою стрілкою</translation>
+      <translation type="unfinished">CW</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathHelix.py" line="73"/>
       <source>CCW</source>
-      <translation>проти годинникової стрілки</translation>
+      <translation type="unfinished">CCW</translation>
     </message>
   </context>
   <context>
@@ -2861,7 +2861,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathHop.py" line="101"/>
       <source>Hop</source>
-      <translation>Крок</translation>
+      <translation type="unfinished">Hop</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathHop.py" line="102"/>
@@ -2891,12 +2891,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathInspect.py" line="260"/>
       <source>Inspect Path Commands</source>
-      <translation>Перевірити команди Path</translation>
+      <translation type="unfinished">Inspect Path Commands</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathInspect.py" line="264"/>
       <source>Inspects the contents of a Path object</source>
-      <translation>Перевіряє вміст об’єкта Path</translation>
+      <translation type="unfinished">Inspects the contents of a Path object</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathInspect.py" line="277"/>
@@ -2910,7 +2910,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathJobCmd.py" line="59"/>
       <source>Job</source>
-      <translation>Завдання</translation>
+      <translation type="unfinished">Job</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobCmd.py" line="61"/>
@@ -2920,7 +2920,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="286"/>
       <source>Edit</source>
-      <translation>Правка</translation>
+      <translation type="unfinished">Edit</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="529"/>
@@ -2935,7 +2935,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="914"/>
       <source>All Files (*.*)</source>
-      <translation>Всі файли (*.*)</translation>
+      <translation type="unfinished">All Files (*.*)</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="1300"/>
@@ -2955,7 +2955,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="1595"/>
       <source>Warning</source>
-      <translation>Увага</translation>
+      <translation type="unfinished">Warning</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="1596"/>
@@ -2965,12 +2965,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="1597"/>
       <source>Ok</source>
-      <translation>Гаразд</translation>
+      <translation type="unfinished">Ok</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="1599"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="1610"/>
@@ -2990,7 +2990,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathJob.py" line="258"/>
       <source>Tool</source>
-      <translation>Інструмент</translation>
+      <translation type="unfinished">Tool</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJob.py" line="259"/>
@@ -3001,32 +3001,32 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathJob.py" line="262"/>
       <location filename="../../../PathScripts/PathJobDlg.py" line="62"/>
       <source>2D</source>
-      <translation>двовимірний</translation>
+      <translation type="unfinished">2D</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJob.py" line="263"/>
       <source>2.5D</source>
-      <translation>2,5Д</translation>
+      <translation type="unfinished">2.5D</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJob.py" line="264"/>
       <source>Lathe</source>
-      <translation>Виточування</translation>
+      <translation type="unfinished">Lathe</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJob.py" line="265"/>
       <source>Multiaxis</source>
-      <translation>Мультивісь</translation>
+      <translation type="unfinished">Multiaxis</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobDlg.py" line="61"/>
       <source>Solids</source>
-      <translation>Суцільні тіла</translation>
+      <translation type="unfinished">Solids</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobDlg.py" line="63"/>
       <source>Jobs</source>
-      <translation>Завдання</translation>
+      <translation type="unfinished">Jobs</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobDlg.py" line="331"/>
@@ -3049,7 +3049,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathJobDlg.py" line="347"/>
       <source>Cylinder: %.2f x %.2f</source>
-      <translation>Циліндр: %.2f x %.2f</translation>
+      <translation type="unfinished">Cylinder: %.2f x %.2f</translation>
     </message>
   </context>
   <context>
@@ -3057,7 +3057,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathMillFaceGui.py" line="76"/>
       <source>Face</source>
-      <translation>Грань</translation>
+      <translation type="unfinished">Face</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathMillFaceGui.py" line="79"/>
@@ -3079,17 +3079,17 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="380"/>
       <source>None</source>
-      <translation>Немає</translation>
+      <translation type="unfinished">None</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="381"/>
       <source>Flood</source>
-      <translation>Потік</translation>
+      <translation type="unfinished">Flood</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOp.py" line="382"/>
       <source>Mist</source>
-      <translation>затуманити</translation>
+      <translation type="unfinished">Mist</translation>
     </message>
   </context>
   <context>
@@ -3116,12 +3116,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="64"/>
       <source>Center</source>
-      <translation>Центр</translation>
+      <translation type="unfinished">Center</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="65"/>
       <source>Edge</source>
-      <translation>Ребро</translation>
+      <translation type="unfinished">Edge</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="68"/>
@@ -3131,7 +3131,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="69"/>
       <source>Offset</source>
-      <translation>Зсув</translation>
+      <translation type="unfinished">Offset</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="70"/>
@@ -3141,12 +3141,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="71"/>
       <source>Line</source>
-      <translation>Лінія</translation>
+      <translation type="unfinished">Line</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPocketBase.py" line="72"/>
       <source>Grid</source>
-      <translation>Сітка</translation>
+      <translation type="unfinished">Grid</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathMillFace.py" line="69"/>
@@ -3210,7 +3210,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathPost.py" line="184"/>
       <source>Post Process</source>
-      <translation>Пост-обробка</translation>
+      <translation type="unfinished">Post Process</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathPost.py" line="186"/>
@@ -3237,7 +3237,7 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathDressupZCorrect.py" line="294"/>
       <location filename="../../../PathScripts/PathProbeGui.py" line="95"/>
       <source>All Files (*.*)</source>
-      <translation>Всі файли (*.*)</translation>
+      <translation type="unfinished">All Files (*.*)</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProbeGui.py" line="93"/>
@@ -3262,7 +3262,7 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathProfileFacesGui.py" line="50"/>
       <location filename="../../../PathScripts/PathProfileContourGui.py" line="48"/>
       <source>Profile</source>
-      <translation>Профіль</translation>
+      <translation type="unfinished">Profile</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfileEdgesGui.py" line="53"/>
@@ -3372,7 +3372,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSanity.py" line="312"/>
       <source>Description</source>
-      <translation>Опис</translation>
+      <translation type="unfinished">Description</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSanity.py" line="313"/>
@@ -3387,7 +3387,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSanity.py" line="315"/>
       <source>URL</source>
-      <translation>Посилання</translation>
+      <translation type="unfinished">URL</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSanity.py" line="316"/>
@@ -3437,7 +3437,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSanity.py" line="378"/>
       <source>Material</source>
-      <translation>Матеріал</translation>
+      <translation type="unfinished">Material</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSanity.py" line="391"/>
@@ -3502,12 +3502,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSanity.py" line="428"/>
       <source>Note</source>
-      <translation>Примітка</translation>
+      <translation type="unfinished">Note</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSanity.py" line="429"/>
       <source>Operator</source>
-      <translation>Оператор</translation>
+      <translation type="unfinished">Operator</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSanity.py" line="431"/>
@@ -3596,7 +3596,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSlot.py" line="258"/>
       <source>Line</source>
-      <translation>Лінія</translation>
+      <translation type="unfinished">Line</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSlot.py" line="259"/>
@@ -3621,7 +3621,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSlot.py" line="267"/>
       <source>Perpendicular</source>
-      <translation>Перпендикулярний</translation>
+      <translation type="unfinished">Perpendicular</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSlot.py" line="270"/>
@@ -3661,7 +3661,7 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathSlot.py" line="279"/>
       <location filename="../../../PathScripts/PathSlot.py" line="289"/>
       <source>Vertex</source>
-      <translation>Вершина</translation>
+      <translation type="unfinished">Vertex</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSlot.py" line="608"/>
@@ -3703,7 +3703,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSlot.py" line="973"/>
       <source>The selected face is inaccessible.</source>
-      <translation>Обрана поверхня недоступна.</translation>
+      <translation type="unfinished">The selected face is inaccessible.</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSlot.py" line="992"/>
@@ -3767,7 +3767,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathStop.py" line="110"/>
       <source>Stop</source>
-      <translation>Стоп</translation>
+      <translation type="unfinished">Stop</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathStop.py" line="113"/>
@@ -3790,22 +3790,22 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="453"/>
       <source>CenterOfMass</source>
-      <translation>Центр Мас</translation>
+      <translation type="unfinished">CenterOfMass</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="454"/>
       <source>CenterOfBoundBox</source>
-      <translation>Центр Коробки Оточення</translation>
+      <translation type="unfinished">CenterOfBoundBox</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="455"/>
       <source>XminYmin</source>
-      <translation>X мін Y мін</translation>
+      <translation type="unfinished">XminYmin</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="456"/>
       <source>Custom</source>
-      <translation>Підлаштувати</translation>
+      <translation type="unfinished">Custom</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="459"/>
@@ -3830,17 +3830,17 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="465"/>
       <source>Line</source>
-      <translation>Лінія</translation>
+      <translation type="unfinished">Line</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="466"/>
       <source>Offset</source>
-      <translation>Зсув</translation>
+      <translation type="unfinished">Offset</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="467"/>
       <source>Spiral</source>
-      <translation>Спіраль</translation>
+      <translation type="unfinished">Spiral</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="468"/>
@@ -3851,13 +3851,13 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathSurface.py" line="471"/>
       <location filename="../../../PathScripts/PathSurface.py" line="489"/>
       <source>X</source>
-      <translation>X</translation>
+      <translation type="unfinished">X</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="472"/>
       <location filename="../../../PathScripts/PathSurface.py" line="490"/>
       <source>Y</source>
-      <translation>Y</translation>
+      <translation type="unfinished">Y</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="475"/>
@@ -3882,7 +3882,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="483"/>
       <source>None</source>
-      <translation>Немає</translation>
+      <translation type="unfinished">None</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="484"/>
@@ -3902,7 +3902,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="493"/>
       <source>Planar</source>
-      <translation>Плоский</translation>
+      <translation type="unfinished">Planar</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurface.py" line="494"/>
@@ -3912,7 +3912,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathSurfaceGui.py" line="282"/>
       <source>3D Surface</source>
-      <translation>3D Поверхня</translation>
+      <translation type="unfinished">3D Surface</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathSurfaceGui.py" line="285"/>
@@ -3980,12 +3980,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="231"/>
       <source>LeftHand</source>
-      <translation>Шульга</translation>
+      <translation type="unfinished">LeftHand</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="235"/>
       <source>RightHand</source>
-      <translation>Права рука</translation>
+      <translation type="unfinished">RightHand</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathThreadMilling.py" line="241"/>
@@ -4101,17 +4101,17 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="134"/>
       <source>Forward</source>
-      <translation>Вперед</translation>
+      <translation type="unfinished">Forward</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="135"/>
       <source>Reverse</source>
-      <translation>В зворотньому напрямку</translation>
+      <translation type="unfinished">Reverse</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolController.py" line="136"/>
       <source>None</source>
-      <translation>Немає</translation>
+      <translation type="unfinished">None</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathToolControllerGui.py" line="146"/>
@@ -4214,23 +4214,23 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../InitGui.py" line="179"/>
       <source>Tool Commands</source>
-      <translation>Команди інструментів</translation>
+      <translation type="unfinished">Tool Commands</translation>
     </message>
     <message>
       <location filename="../../../InitGui.py" line="181"/>
       <source>New Operations</source>
-      <translation>Нові операції</translation>
+      <translation type="unfinished">New Operations</translation>
     </message>
     <message>
       <location filename="../../../InitGui.py" line="185"/>
       <location filename="../../../InitGui.py" line="222"/>
       <source>Path Modification</source>
-      <translation>Модифікація траєкторії</translation>
+      <translation type="unfinished">Path Modification</translation>
     </message>
     <message>
       <location filename="../../../InitGui.py" line="189"/>
       <source>Helpful Tools</source>
-      <translation>Допоміжні інструменти</translation>
+      <translation type="unfinished">Helpful Tools</translation>
     </message>
     <message>
       <location filename="../../../InitGui.py" line="193"/>
@@ -4242,7 +4242,7 @@ Aborting op creation</translation>
       <location filename="../../../InitGui.py" line="237"/>
       <location filename="../../../InitGui.py" line="240"/>
       <source>&amp;Path</source>
-      <translation>&amp;Шлях</translation>
+      <translation type="unfinished">&amp;Path</translation>
     </message>
     <message>
       <location filename="../../../InitGui.py" line="208"/>
@@ -4295,27 +4295,27 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="105"/>
       <source>CenterOfMass</source>
-      <translation>Центр Мас</translation>
+      <translation type="unfinished">CenterOfMass</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="106"/>
       <source>CenterOfBoundBox</source>
-      <translation>Центр Коробки Оточення</translation>
+      <translation type="unfinished">CenterOfBoundBox</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="107"/>
       <source>XminYmin</source>
-      <translation>X мін Y мін</translation>
+      <translation type="unfinished">XminYmin</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="108"/>
       <source>Custom</source>
-      <translation>Підлаштувати</translation>
+      <translation type="unfinished">Custom</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="111"/>
       <source>Off</source>
-      <translation>Вимк.</translation>
+      <translation type="unfinished">Off</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="112"/>
@@ -4333,19 +4333,19 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathWaterline.py" line="114"/>
       <location filename="../../../PathScripts/PathWaterline.py" line="127"/>
       <source>Line</source>
-      <translation>Лінія</translation>
+      <translation type="unfinished">Line</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="115"/>
       <location filename="../../../PathScripts/PathWaterline.py" line="128"/>
       <source>Offset</source>
-      <translation>Зсув</translation>
+      <translation type="unfinished">Offset</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="116"/>
       <location filename="../../../PathScripts/PathWaterline.py" line="129"/>
       <source>Spiral</source>
-      <translation>Спіраль</translation>
+      <translation type="unfinished">Spiral</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="117"/>
@@ -4366,7 +4366,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="124"/>
       <source>None</source>
-      <translation>Немає</translation>
+      <translation type="unfinished">None</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathWaterline.py" line="133"/>
@@ -4394,12 +4394,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../Command.cpp" line="56"/>
       <source>Path</source>
-      <translation>Траєкторія</translation>
+      <translation type="unfinished">Path</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="57"/>
       <source>Area</source>
-      <translation>Площа</translation>
+      <translation type="unfinished">Area</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="58"/>
@@ -4412,7 +4412,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../Command.cpp" line="138"/>
       <source>Path</source>
-      <translation>Траєкторія</translation>
+      <translation type="unfinished">Path</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="139"/>
@@ -4430,12 +4430,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../Command.cpp" line="228"/>
       <source>Path</source>
-      <translation>Траєкторія</translation>
+      <translation type="unfinished">Path</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="229"/>
       <source>Compound</source>
-      <translation>Суміш</translation>
+      <translation type="unfinished">Compound</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="230"/>
@@ -4448,7 +4448,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../Command.cpp" line="280"/>
       <source>Path</source>
-      <translation>Траєкторія</translation>
+      <translation type="unfinished">Path</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="281"/>
@@ -4499,7 +4499,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DlgJobCreate.ui" line="23"/>
       <source>Template</source>
-      <translation>Шаблон</translation>
+      <translation type="unfinished">Template</translation>
     </message>
     <message>
       <location filename="../panels/DlgJobCreate.ui" line="32"/>
@@ -4509,7 +4509,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DlgJobCreate.ui" line="42"/>
       <source>Model</source>
-      <translation>Модель</translation>
+      <translation type="unfinished">Model</translation>
     </message>
     <message>
       <location filename="../panels/DlgJobModelSelect.ui" line="14"/>
@@ -4519,12 +4519,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DlgJobModelSelect.ui" line="24"/>
       <source>Solids</source>
-      <translation>Суцільні тіла</translation>
+      <translation type="unfinished">Solids</translation>
     </message>
     <message>
       <location filename="../panels/DlgJobModelSelect.ui" line="34"/>
       <source>2D</source>
-      <translation>двовимірний</translation>
+      <translation type="unfinished">2D</translation>
     </message>
     <message>
       <location filename="../panels/DlgJobModelSelect.ui" line="44"/>
@@ -4559,7 +4559,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DlgJobTemplateExport.ui" line="51"/>
       <source>Tools</source>
-      <translation>Інструменти</translation>
+      <translation type="unfinished">Tools</translation>
     </message>
     <message>
       <location filename="../panels/DlgJobTemplateExport.ui" line="60"/>
@@ -4649,7 +4649,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DlgJobTemplateExport.ui" line="182"/>
       <source>Placement</source>
-      <translation>Розташування</translation>
+      <translation type="unfinished">Placement</translation>
     </message>
     <message>
       <location filename="../panels/DlgJobTemplateExport.ui" line="198"/>
@@ -4659,12 +4659,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DlgJobTemplateExport.ui" line="236"/>
       <source>Export</source>
-      <translation>Експорт</translation>
+      <translation type="unfinished">Export</translation>
     </message>
     <message>
       <location filename="../panels/DlgSelectPostProcessor.ui" line="14"/>
       <source>Post Processor</source>
-      <translation>Пост-процесор</translation>
+      <translation type="unfinished">Post Processor</translation>
     </message>
     <message>
       <location filename="../panels/DlgSelectPostProcessor.ui" line="42"/>
@@ -4719,12 +4719,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DlgToolControllerEdit.ui" line="201"/>
       <source>Reverse</source>
-      <translation>Навпаки</translation>
+      <translation type="unfinished">Reverse</translation>
     </message>
     <message>
       <location filename="../panels/DlgToolControllerEdit.ui" line="244"/>
       <source>Tool</source>
-      <translation>Інструмент</translation>
+      <translation type="unfinished">Tool</translation>
     </message>
     <message>
       <location filename="../panels/DlgToolControllerEdit.ui" line="293"/>
@@ -4744,7 +4744,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PropertyCreate.ui" line="20"/>
       <source>Name</source>
-      <translation>Назва</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <location filename="../panels/PropertyCreate.ui" line="27"/>
@@ -4759,7 +4759,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PropertyCreate.ui" line="44"/>
       <source>Group</source>
-      <translation>Група</translation>
+      <translation type="unfinished">Group</translation>
     </message>
     <message>
       <location filename="../panels/PropertyCreate.ui" line="51"/>
@@ -4769,7 +4769,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PropertyCreate.ui" line="58"/>
       <source>Type</source>
-      <translation>Тип</translation>
+      <translation type="unfinished">Type</translation>
     </message>
     <message>
       <location filename="../panels/PropertyCreate.ui" line="65"/>
@@ -4829,7 +4829,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/ToolBitLibraryEdit.ui" line="75"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitLibraryEdit.ui" line="99"/>
@@ -4859,7 +4859,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/ToolBitLibraryEdit.ui" line="272"/>
       <source>Close</source>
-      <translation>Закрити</translation>
+      <translation type="unfinished">Close</translation>
     </message>
   </context>
   <context>
@@ -4887,7 +4887,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DlgToolCopy.ui" line="29"/>
       <source>Destination</source>
-      <translation>Призначення</translation>
+      <translation type="unfinished">Destination</translation>
     </message>
   </context>
   <context>
@@ -4937,7 +4937,7 @@ Aborting op creation</translation>
       <location filename="../panels/ToolEditor.ui" line="14"/>
       <location filename="../preferences/PathDressupHoldingTags.ui" line="14"/>
       <source>Form</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Form</translation>
     </message>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="20"/>
@@ -5022,7 +5022,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="175"/>
       <source>Radius</source>
-      <translation>Радіус</translation>
+      <translation type="unfinished">Radius</translation>
     </message>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="182"/>
@@ -5033,7 +5033,7 @@ Aborting op creation</translation>
       <location filename="../panels/DressupPathBoundary.ui" line="189"/>
       <location filename="../panels/DressupPathBoundary.ui" line="237"/>
       <source>Height</source>
-      <translation>Висота</translation>
+      <translation type="unfinished">Height</translation>
     </message>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="196"/>
@@ -5043,7 +5043,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="209"/>
       <source>Length</source>
-      <translation>Довжина</translation>
+      <translation type="unfinished">Length</translation>
     </message>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="216"/>
@@ -5053,7 +5053,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="223"/>
       <source>Width</source>
-      <translation>Ширина</translation>
+      <translation type="unfinished">Width</translation>
     </message>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="230"/>
@@ -5083,7 +5083,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="43"/>
       <source>Import</source>
-      <translation>Імпортувати</translation>
+      <translation type="unfinished">Import</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="59"/>
@@ -5100,7 +5100,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="45"/>
       <location filename="../panels/PageBaseLocationEdit.ui" line="43"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="79"/>
@@ -5113,7 +5113,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageBaseLocationEdit.ui" line="53"/>
       <location filename="../panels/PropertyBag.ui" line="48"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="89"/>
@@ -5124,7 +5124,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="92"/>
       <location filename="../panels/PageOpPocketExtEdit.ui" line="149"/>
       <source>Clear</source>
-      <translation>Очистити</translation>
+      <translation type="unfinished">Clear</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="99"/>
@@ -5145,7 +5145,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="34"/>
       <location filename="../panels/ToolEditor.ui" line="96"/>
       <source>Diameter</source>
-      <translation>Діаметр</translation>
+      <translation type="unfinished">Diameter</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="42"/>
@@ -5165,7 +5165,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="65"/>
       <source>Reset</source>
-      <translation>Скинути</translation>
+      <translation type="unfinished">Reset</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseHoleGeometryEdit.ui" line="72"/>
@@ -5180,12 +5180,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="24"/>
       <source>X</source>
-      <translation>X</translation>
+      <translation type="unfinished">X</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="29"/>
       <source>Y</source>
-      <translation>Y</translation>
+      <translation type="unfinished">Y</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="40"/>
@@ -5205,7 +5205,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="63"/>
       <source>Edit</source>
-      <translation>Правка</translation>
+      <translation type="unfinished">Edit</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="70"/>
@@ -5237,7 +5237,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageDiametersEdit.ui" line="83"/>
       <location filename="../panels/PageOpProbeEdit.ui" line="155"/>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <location filename="../panels/PageDepthsEdit.ui" line="85"/>
@@ -5503,7 +5503,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpAdaptiveEdit.ui" line="255"/>
       <source>Stop</source>
-      <translation>Стоп</translation>
+      <translation type="unfinished">Stop</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="131"/>
@@ -5511,7 +5511,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageOpProfileFullEdit.ui" line="82"/>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="167"/>
       <source>Direction</source>
-      <translation>Напрямок</translation>
+      <translation type="unfinished">Direction</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="138"/>
@@ -5523,13 +5523,13 @@ Aborting op creation</translation>
       <location filename="../panels/PageOpDeburrEdit.ui" line="148"/>
       <location filename="../panels/PageOpHelixEdit.ui" line="98"/>
       <source>CW</source>
-      <translation>за годинниковою стрілкою</translation>
+      <translation type="unfinished">CW</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="153"/>
       <location filename="../panels/PageOpHelixEdit.ui" line="103"/>
       <source>CCW</source>
-      <translation>проти годинникової стрілки</translation>
+      <translation type="unfinished">CCW</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="188"/>
@@ -5554,7 +5554,7 @@ Aborting op creation</translation>
       <location filename="../panels/ToolEditor.ui" line="240"/>
       <location filename="../panels/ToolEditor.ui" line="280"/>
       <source>mm</source>
-      <translation>мм</translation>
+      <translation type="unfinished">mm</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="215"/>
@@ -5569,7 +5569,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="282"/>
       <source>Join:</source>
-      <translation>З'єднати:</translation>
+      <translation type="unfinished">Join:</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="289"/>
@@ -5584,7 +5584,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="381"/>
       <source>TextLabel</source>
-      <translation>ТекстовийНадпис</translation>
+      <translation type="unfinished">TextLabel</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="69"/>
@@ -5594,7 +5594,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="79"/>
       <source>Depth</source>
-      <translation>Глибина</translation>
+      <translation type="unfinished">Depth</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="96"/>
@@ -5609,7 +5609,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="120"/>
       <source>Time</source>
-      <translation>Час</translation>
+      <translation type="unfinished">Time</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="134"/>
@@ -5619,7 +5619,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="142"/>
       <source>None</source>
-      <translation>Немає</translation>
+      <translation type="unfinished">None</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="147"/>
@@ -5695,7 +5695,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpPocketExtEdit.ui" line="58"/>
       <source>Show All</source>
-      <translation>Показати усе</translation>
+      <translation type="unfinished">Show All</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketExtEdit.ui" line="65"/>
@@ -5730,7 +5730,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpPocketExtEdit.ui" line="129"/>
       <source>Enable</source>
-      <translation>Увімкнути</translation>
+      <translation type="unfinished">Enable</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketExtEdit.ui" line="136"/>
@@ -5740,7 +5740,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpPocketExtEdit.ui" line="139"/>
       <source>Disable</source>
-      <translation>Вимкнути</translation>
+      <translation type="unfinished">Disable</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketExtEdit.ui" line="146"/>
@@ -5780,7 +5780,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="110"/>
       <source>Pattern</source>
-      <translation>Шаблон</translation>
+      <translation type="unfinished">Pattern</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="117"/>
@@ -5795,7 +5795,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="134"/>
       <source>Spiral</source>
-      <translation>Спіраль</translation>
+      <translation type="unfinished">Spiral</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="139"/>
@@ -5805,22 +5805,22 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="144"/>
       <source>Line</source>
-      <translation>Лінія</translation>
+      <translation type="unfinished">Line</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="149"/>
       <source>Grid</source>
-      <translation>Сітка</translation>
+      <translation type="unfinished">Grid</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="154"/>
       <source>Triangle</source>
-      <translation>Трикутник</translation>
+      <translation type="unfinished">Triangle</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="162"/>
       <source>Angle</source>
-      <translation>Кут</translation>
+      <translation type="unfinished">Angle</translation>
     </message>
     <message>
       <location filename="../panels/PageOpPocketFullEdit.ui" line="169"/>
@@ -5879,12 +5879,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="58"/>
       <source>X:</source>
-      <translation>X:</translation>
+      <translation type="unfinished">X:</translation>
     </message>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="75"/>
       <source>Y:</source>
-      <translation>Y:</translation>
+      <translation type="unfinished">Y:</translation>
     </message>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="95"/>
@@ -5904,12 +5904,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="132"/>
       <source>Output</source>
-      <translation>Вивід</translation>
+      <translation type="unfinished">Output</translation>
     </message>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="138"/>
       <source>File Name</source>
-      <translation>Імʼя файлу</translation>
+      <translation type="unfinished">File Name</translation>
     </message>
     <message>
       <location filename="../panels/PageOpProbeEdit.ui" line="145"/>
@@ -6030,7 +6030,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageOpSlotEdit.ui" line="127"/>
       <location filename="../panels/PageOpSlotEdit.ui" line="189"/>
       <source>Vertex</source>
-      <translation>Вершина</translation>
+      <translation type="unfinished">Vertex</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSlotEdit.ui" line="141"/>
@@ -6124,7 +6124,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpSlotEdit.ui" line="390"/>
       <source>Perpendicular</source>
-      <translation>Перпендикулярний</translation>
+      <translation type="unfinished">Perpendicular</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSlotEdit.ui" line="398"/>
@@ -6230,7 +6230,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="215"/>
       <location filename="../panels/PageOpWaterlineEdit.ui" line="159"/>
       <source>Step over</source>
-      <translation>Крок за кроком</translation>
+      <translation type="unfinished">Step over</translation>
     </message>
     <message>
       <location filename="../panels/PageOpSurfaceEdit.ui" line="235"/>
@@ -6309,7 +6309,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="81"/>
       <source>Heights</source>
-      <translation>Висоти</translation>
+      <translation type="unfinished">Heights</translation>
     </message>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="87"/>
@@ -6319,12 +6319,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="97"/>
       <source>Offset</source>
-      <translation>Зсув</translation>
+      <translation type="unfinished">Offset</translation>
     </message>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="107"/>
       <source>Clearance</source>
-      <translation>Відхилення</translation>
+      <translation type="unfinished">Clearance</translation>
     </message>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="114"/>
@@ -6359,7 +6359,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="178"/>
       <source>Horizontal</source>
-      <translation>По горизонталі</translation>
+      <translation type="unfinished">Horizontal</translation>
     </message>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="191"/>
@@ -6369,7 +6369,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="198"/>
       <source>Vertical</source>
-      <translation>По вертикалі</translation>
+      <translation type="unfinished">Vertical</translation>
     </message>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="211"/>
@@ -6384,13 +6384,13 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="38"/>
       <source>Orientation</source>
-      <translation>Орієнтація</translation>
+      <translation type="unfinished">Orientation</translation>
     </message>
     <message>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="52"/>
       <location filename="../panels/ToolEditor.ui" line="43"/>
       <source>Type</source>
-      <translation>Тип</translation>
+      <translation type="unfinished">Type</translation>
     </message>
     <message>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="65"/>
@@ -6410,7 +6410,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="113"/>
       <source>Pitch</source>
-      <translation>Крок</translation>
+      <translation type="unfinished">Pitch</translation>
     </message>
     <message>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="134"/>
@@ -6482,17 +6482,17 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PointEdit.ui" line="23"/>
       <source>Global X</source>
-      <translation>Глобальна X</translation>
+      <translation type="unfinished">Global X</translation>
     </message>
     <message>
       <location filename="../panels/PointEdit.ui" line="30"/>
       <source>Global Y</source>
-      <translation>Глобальна Y</translation>
+      <translation type="unfinished">Global Y</translation>
     </message>
     <message>
       <location filename="../panels/PointEdit.ui" line="40"/>
       <source>Global Z</source>
-      <translation>Глобальна Z</translation>
+      <translation type="unfinished">Global Z</translation>
     </message>
     <message>
       <location filename="../panels/PropertyBag.ui" line="14"/>
@@ -6512,12 +6512,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/ToolEditor.ui" line="20"/>
       <source>Tool</source>
-      <translation>Інструмент</translation>
+      <translation type="unfinished">Tool</translation>
     </message>
     <message>
       <location filename="../panels/ToolEditor.ui" line="26"/>
       <source>Name</source>
-      <translation>Назва</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <location filename="../panels/ToolEditor.ui" line="36"/>
@@ -6527,7 +6527,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/ToolEditor.ui" line="57"/>
       <source>Material</source>
-      <translation>Матеріал</translation>
+      <translation type="unfinished">Material</translation>
     </message>
     <message>
       <location filename="../panels/ToolEditor.ui" line="67"/>
@@ -6577,7 +6577,7 @@ Aborting op creation</translation>
       <location filename="../panels/ToolEditor.ui" line="161"/>
       <location filename="../panels/ToolEditor.ui" line="254"/>
       <source>180°</source>
-      <translation>180°</translation>
+      <translation type="unfinished">180°</translation>
     </message>
     <message>
       <location filename="../panels/ToolEditor.ui" line="164"/>
@@ -6613,7 +6613,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/ToolEditor.ui" line="308"/>
       <source>Image</source>
-      <translation>Зображення</translation>
+      <translation type="unfinished">Image</translation>
     </message>
     <message>
       <location filename="../preferences/PathDressupHoldingTags.ui" line="20"/>
@@ -6681,27 +6681,27 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="14"/>
       <source>Job Preferences</source>
-      <translation>Налаштування для Завдань</translation>
+      <translation type="unfinished">Job Preferences</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="32"/>
       <source>General</source>
-      <translation>Загальні</translation>
+      <translation type="unfinished">General</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="38"/>
       <source>Defaults</source>
-      <translation>За замовчуванням</translation>
+      <translation type="unfinished">Defaults</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="44"/>
       <source>Path</source>
-      <translation>Шлях</translation>
+      <translation type="unfinished">Path</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="51"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Path to look for templates, post processors, tool tables and other external files.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty the macro directory is used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Шлях для пошуку шаблонів, постпроцесорів, таблиць інструментів та інших зовнішніх файлів.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Якщо залишити порожнім, буде використовуватись каталог макросів.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Path to look for templates, post processors, tool tables and other external files.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty the macro directory is used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="58"/>
@@ -6713,103 +6713,103 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="65"/>
       <source>Template</source>
-      <translation>Шаблон</translation>
+      <translation type="unfinished">Template</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="72"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default template to be selected when creating a new Job. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;This can be helpful when almost all jobs will be processed by the same machine with a similar setup.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty no template will be preselected.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Шаблон за замовчуванням, який вибирається під час створення нового завдання. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Це може бути корисно, коли майже всі завдання оброблятимуться на одному комп’ютері з подібними налаштуваннями.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Якщо залишити пустим, шаблон не буде попередньо вибрано.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;The default template to be selected when creating a new Job. &lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;This can be helpful when almost all jobs will be processed by the same machine with a similar setup.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;If left empty no template will be preselected.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="89"/>
       <source>Geometry</source>
-      <translation>Геометрії</translation>
+      <translation type="unfinished">Geometry</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="98"/>
       <source>Default Geometry Tolerance</source>
-      <translation>Допуск геометрії за замовчуванням</translation>
+      <translation type="unfinished">Default Geometry Tolerance</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="105"/>
       <source>Default value for new Jobs, used for computing Paths.  Smaller increases accuracy, but slows down computation</source>
-      <translation>Значення за замовчуванням для нових Завдань, яке використовується для обчислення Траєкторій. Менше значення збільшує точність, але уповільнює обчислення</translation>
+      <translation type="unfinished">Default value for new Jobs, used for computing Paths.  Smaller increases accuracy, but slows down computation</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="112"/>
       <source>Default Curve Accuracy</source>
-      <translation>Допуск кривих за замовчуванням</translation>
+      <translation type="unfinished">Default Curve Accuracy</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="150"/>
       <location filename="../preferences/PathJob.ui" line="265"/>
       <source>Post Processor</source>
-      <translation>Пост-процесор</translation>
+      <translation type="unfinished">Post Processor</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="162"/>
       <source>Output File</source>
-      <translation>Вихідний файл</translation>
+      <translation type="unfinished">Output File</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="174"/>
       <source>Default Path</source>
-      <translation>Шлях за замовчуванням</translation>
+      <translation type="unfinished">Default Path</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="193"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть шлях і назву файлу (за бажанням) (дивіться нижче), які будуть використовуватися за замовчуванням для роботи постпроцесора.&lt;/p&gt;&lt;p&gt;Наведені нижче заміни виконуються перед початком експорту. імʼя визначається під час постобробки:&lt;/p&gt;&lt;p&gt;%D ... тека активного документа&lt;br/&gt;%d ... імʼя активного документа (з розширенням)&lt;br/&gt; %M ... тека макросу користувача&lt;br/&gt;%j ... імʼя активного обʼєкта Завдання&lt;/p&gt;&lt;p&gt;У наведеному нижче прикладі всі файли з тими ж іменами, що й у документі, зберігаються у каталог /home/freecad ( будь ласка, видаліть лапки):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;Перегляньте політику збереження файлів нижче, щоб дізнатися, як боротися з конфліктами імен.&lt;/p&gt;&lt;br&gt;/body&gt;&lt;/html&gt;</translation>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="213"/>
       <source>File Save Policy</source>
-      <translation>Політика Збереження Файлу</translation>
+      <translation type="unfinished">File Save Policy</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="232"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Choose how to deal with potential file name conflicts. Always open a dialog, only open a dialog if the output file already exists, overwrite any existing file or add a unique (3 digit) sequential ID to the file name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Дозволяє вибрати, як чинити з потенційними конфліктами імен файлів. Завжди відкривати діалог, відкривати діалог, лише якщо вихідний файл вже існує, перезаписати будь-який існуючий файл або додати унікальний (3-значний) послідовний ідентифікатор до імені файлу.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Choose how to deal with potential file name conflicts. Always open a dialog, only open a dialog if the output file already exists, overwrite any existing file or add a unique (3 digit) sequential ID to the file name.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="236"/>
       <source>Open File Dialog</source>
-      <translation>Відкрити Діалог Файл</translation>
+      <translation type="unfinished">Open File Dialog</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="241"/>
       <source>Open File Dialog on conflict</source>
-      <translation>Відкрити Діалог Файл при конфлікті</translation>
+      <translation type="unfinished">Open File Dialog on conflict</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="246"/>
       <source>Overwrite existing file</source>
-      <translation>Перезаписати існуючий файл</translation>
+      <translation type="unfinished">Overwrite existing file</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="251"/>
       <source>Append Unique ID on conflict</source>
-      <translation>Додати унікальний ID при конфлікті</translation>
+      <translation type="unfinished">Append Unique ID on conflict</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="274"/>
       <source>Post Processors Selection </source>
-      <translation>Вибір Пост Процесорів </translation>
+      <translation type="unfinished">Post Processors Selection </translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="284"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;It doesn&apos;t seem there are any post processor scripts installed. Please add some into your macro directory and make sure the file name ends with &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Схоже, що у вас не встановлені скрипти постпроцесора. Будь ласка, додайте кілька до каталогу макросів і переконайтеся, що імʼя файлу закінчується на &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;It doesn&apos;t seem there are any post processor scripts installed. Please add some into your macro directory and make sure the file name ends with &amp;quot;_post.py&amp;quot;.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="291"/>
       <source>Default Post Processor</source>
-      <translation>Пост Процесор за замовчуванням</translation>
+      <translation type="unfinished">Default Post Processor</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="298"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select one of the post processors as the default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Дозволяє вибрати один із постпроцесорів як за замовчуванням.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select one of the post processors as the default.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="301"/>
@@ -6824,7 +6824,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="311"/>
       <source>Default Arguments</source>
-      <translation>Аргументи За Замовчуванням</translation>
+      <translation type="unfinished">Default Arguments</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="318"/>
@@ -6874,48 +6874,48 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="467"/>
       <source>Radius</source>
-      <translation>Радіус</translation>
+      <translation type="unfinished">Radius</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="477"/>
       <location filename="../preferences/PathJob.ui" line="513"/>
       <source>Height</source>
-      <translation>Висота</translation>
+      <translation type="unfinished">Height</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="493"/>
       <source>Length</source>
-      <translation>Довжина</translation>
+      <translation type="unfinished">Length</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="503"/>
       <source>Width</source>
-      <translation>Ширина</translation>
+      <translation type="unfinished">Width</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="539"/>
       <source>Placement</source>
-      <translation>Розташування</translation>
+      <translation type="unfinished">Placement</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="551"/>
       <source>Angle</source>
-      <translation>Кут</translation>
+      <translation type="unfinished">Angle</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="561"/>
       <source>Axis</source>
-      <translation>Вісь</translation>
+      <translation type="unfinished">Axis</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="589"/>
       <source>Position</source>
-      <translation>Позиція</translation>
+      <translation type="unfinished">Position</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="633"/>
       <source>Tools</source>
-      <translation>Інструменти</translation>
+      <translation type="unfinished">Tools</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="639"/>
@@ -6944,7 +6944,7 @@ Aborting op creation</translation>
       <location filename="../../DlgProcessorChooser.cpp" line="49"/>
       <location filename="../../DlgProcessorChooser.cpp" line="76"/>
       <source>None</source>
-      <translation>Немає</translation>
+      <translation type="unfinished">None</translation>
     </message>
   </context>
   <context>
@@ -6967,7 +6967,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="42"/>
       <source>The default color for new shapes</source>
-      <translation>Встановлює колір за замовчанням для нових фігур</translation>
+      <translation type="unfinished">The default color for new shapes</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="68"/>
@@ -6977,12 +6977,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="75"/>
       <source>The default line thickness for new shapes</source>
-      <translation>Встановлює товщину лінії за замовчанням для нових фігур</translation>
+      <translation type="unfinished">The default line thickness for new shapes</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="78"/>
       <source>px</source>
-      <translation>пікс.</translation>
+      <translation type="unfinished">px</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="103"/>
@@ -6997,7 +6997,7 @@ Aborting op creation</translation>
       <location filename="../../DlgSettingsPathColor.ui" line="259"/>
       <location filename="../../DlgSettingsPathColor.ui" line="292"/>
       <source>The default line color for new shapes</source>
-      <translation>Встановлює колір лінії за замовчанням для нових фігур</translation>
+      <translation type="unfinished">The default line color for new shapes</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="136"/>
@@ -7022,12 +7022,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="252"/>
       <source>Bounding Box Normal Color</source>
-      <translation>Звичайний колір обмежувальної рамки</translation>
+      <translation type="unfinished">Bounding Box Normal Color</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="285"/>
       <source>Bounding Box Selection Color</source>
-      <translation>Колір виділеної обмежувальної рамки</translation>
+      <translation type="unfinished">Bounding Box Selection Color</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="352"/>
@@ -7047,17 +7047,17 @@ Aborting op creation</translation>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="384"/>
       <source>Shape</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Shape</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="389"/>
       <source>Bounding Box</source>
-      <translation>Обмежувальна рамка</translation>
+      <translation type="unfinished">Bounding Box</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="394"/>
       <source>None</source>
-      <translation>Немає</translation>
+      <translation type="unfinished">None</translation>
     </message>
     <message>
       <location filename="../../DlgSettingsPathColor.ui" line="402"/>
@@ -7092,7 +7092,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/Advanced.ui" line="20"/>
       <source>Warnings</source>
-      <translation>Застереження</translation>
+      <translation type="unfinished">Warnings</translation>
     </message>
     <message>
       <location filename="../preferences/Advanced.ui" line="26"/>
@@ -7123,7 +7123,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/Advanced.ui" line="67"/>
       <source>Suppress Velocity warning</source>
-      <translation>Попереджати про перевищення швидкості</translation>
+      <translation type="unfinished">Suppress Velocity warning</translation>
     </message>
     <message>
       <location filename="../preferences/Advanced.ui" line="86"/>
@@ -7198,7 +7198,7 @@ p, li { white-space: pre-wrap; }
       <location filename="../panels/AxisMapEdit.ui" line="20"/>
       <location filename="../panels/HoldingTagsEdit.ui" line="80"/>
       <source>Radius</source>
-      <translation>Радіус</translation>
+      <translation type="unfinished">Radius</translation>
     </message>
     <message>
       <location filename="../panels/AxisMapEdit.ui" line="27"/>
@@ -7259,7 +7259,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/DogboneEdit.ui" line="41"/>
       <source>Style</source>
-      <translation>Стиль</translation>
+      <translation type="unfinished">Style</translation>
     </message>
     <message>
       <location filename="../panels/DogboneEdit.ui" line="48"/>
@@ -7294,7 +7294,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/DogboneEdit.ui" line="80"/>
       <source>Side</source>
-      <translation>Сторона</translation>
+      <translation type="unfinished">Side</translation>
     </message>
     <message>
       <location filename="../panels/DogboneEdit.ui" line="87"/>
@@ -7304,12 +7304,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/DogboneEdit.ui" line="94"/>
       <source>Left</source>
-      <translation>Ліворуч</translation>
+      <translation type="unfinished">Left</translation>
     </message>
     <message>
       <location filename="../panels/DogboneEdit.ui" line="99"/>
       <source>Right</source>
-      <translation>Направо</translation>
+      <translation type="unfinished">Right</translation>
     </message>
     <message>
       <location filename="../panels/DogboneEdit.ui" line="107"/>
@@ -7329,7 +7329,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/DogboneEdit.ui" line="126"/>
       <source>custom</source>
-      <translation>На замовлення</translation>
+      <translation type="unfinished">custom</translation>
     </message>
     <message>
       <location filename="../panels/DogboneEdit.ui" line="131"/>
@@ -7349,7 +7349,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/DogboneEdit.ui" line="165"/>
       <source>Length</source>
-      <translation>Довжина</translation>
+      <translation type="unfinished">Length</translation>
     </message>
     <message>
       <location filename="../panels/DragKnifeEdit.ui" line="14"/>
@@ -7394,12 +7394,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/HoldingTagsEdit.ui" line="26"/>
       <source>Width</source>
-      <translation>Ширина</translation>
+      <translation type="unfinished">Width</translation>
     </message>
     <message>
       <location filename="../panels/HoldingTagsEdit.ui" line="33"/>
       <source>Height</source>
-      <translation>Висота</translation>
+      <translation type="unfinished">Height</translation>
     </message>
     <message>
       <location filename="../panels/HoldingTagsEdit.ui" line="40"/>
@@ -7434,7 +7434,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/HoldingTagsEdit.ui" line="116"/>
       <source>Delete</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Delete</translation>
     </message>
     <message>
       <location filename="../panels/HoldingTagsEdit.ui" line="126"/>
@@ -7465,12 +7465,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="20"/>
       <source>Surface</source>
-      <translation>Поверхня</translation>
+      <translation type="unfinished">Surface</translation>
     </message>
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="45"/>
       <source>Base Geometry</source>
-      <translation>Базова Геометрія</translation>
+      <translation type="unfinished">Base Geometry</translation>
     </message>
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="51"/>
@@ -7495,7 +7495,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="80"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="87"/>
@@ -7505,7 +7505,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="90"/>
       <source>Update</source>
-      <translation>Оновити</translation>
+      <translation type="unfinished">Update</translation>
     </message>
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="97"/>
@@ -7540,7 +7540,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="198"/>
       <source>Heights</source>
-      <translation>Висоти</translation>
+      <translation type="unfinished">Heights</translation>
     </message>
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="214"/>
@@ -7600,7 +7600,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="47"/>
       <source>File Name</source>
-      <translation>Імʼя файлу</translation>
+      <translation type="unfinished">File Name</translation>
     </message>
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="54"/>
@@ -7610,7 +7610,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ZCorrectEdit.ui" line="64"/>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
   </context>
   <context>
@@ -7628,7 +7628,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="38"/>
       <source>Stop</source>
-      <translation>Стоп</translation>
+      <translation type="unfinished">Stop</translation>
     </message>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="55"/>
@@ -7638,7 +7638,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="58"/>
       <source>Play</source>
-      <translation>Відтворити</translation>
+      <translation type="unfinished">Play</translation>
     </message>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="75"/>
@@ -7673,7 +7673,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="180"/>
       <source>Speed:</source>
-      <translation>Швидкість:</translation>
+      <translation type="unfinished">Speed:</translation>
     </message>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="209"/>
@@ -7688,7 +7688,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="261"/>
       <source>%</source>
-      <translation>%</translation>
+      <translation type="unfinished">%</translation>
     </message>
     <message>
       <location filename="../panels/TaskPathSimulator.ui" line="278"/>
@@ -7711,7 +7711,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="30"/>
       <source>Shape</source>
-      <translation>Форма</translation>
+      <translation type="unfinished">Shape</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="42"/>
@@ -7721,7 +7721,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="48"/>
       <source>Name</source>
-      <translation>Назва</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="55"/>
@@ -7746,7 +7746,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="99"/>
       <source>path</source>
-      <translation>траєкторія</translation>
+      <translation type="unfinished">path</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="106"/>
@@ -7756,12 +7756,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="109"/>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="122"/>
       <source>Parameter</source>
-      <translation>Параметр</translation>
+      <translation type="unfinished">Parameter</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="131"/>
@@ -7786,17 +7786,17 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="155"/>
       <source>0 mm</source>
-      <translation>0 мм</translation>
+      <translation type="unfinished">0 mm</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="158"/>
       <source>mm</source>
-      <translation>мм</translation>
+      <translation type="unfinished">mm</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="174"/>
       <source>Image</source>
-      <translation>Зображення</translation>
+      <translation type="unfinished">Image</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitEditor.ui" line="198"/>
@@ -7834,27 +7834,27 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="257"/>
       <source>Delete</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Delete</translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="274"/>
       <source>Edit</source>
-      <translation>Правка</translation>
+      <translation type="unfinished">Edit</translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="291"/>
       <source>Duplicate</source>
-      <translation>Створити копію</translation>
+      <translation type="unfinished">Duplicate</translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="305"/>
       <source>Move up</source>
-      <translation>Перемістити вгору</translation>
+      <translation type="unfinished">Move up</translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="331"/>
       <source>Move down</source>
-      <translation>Перемістити вниз</translation>
+      <translation type="unfinished">Move down</translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="368"/>
@@ -7877,7 +7877,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolBitSelector.ui" line="30"/>
       <source>TextLabel</source>
-      <translation>ТекстовийНадпис</translation>
+      <translation type="unfinished">TextLabel</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitSelector.ui" line="78"/>
@@ -7905,34 +7905,34 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="21"/>
       <source>General</source>
-      <translation>Загальні</translation>
+      <translation type="unfinished">General</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="39"/>
       <source>Job</source>
-      <translation>Завдання</translation>
+      <translation type="unfinished">Job</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="45"/>
       <source>Label</source>
-      <translation>Позначка</translation>
+      <translation type="unfinished">Label</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="57"/>
       <source>Model</source>
-      <translation>Модель</translation>
+      <translation type="unfinished">Model</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="86"/>
       <location filename="../panels/PathEdit.ui" line="1239"/>
       <location filename="../panels/PathEdit.ui" line="1461"/>
       <source>Edit</source>
-      <translation>Правка</translation>
+      <translation type="unfinished">Edit</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="99"/>
       <source>Description</source>
-      <translation>Опис</translation>
+      <translation type="unfinished">Description</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="120"/>
@@ -7942,24 +7942,24 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="130"/>
       <source>Output</source>
-      <translation>Вивід</translation>
+      <translation type="unfinished">Output</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="136"/>
       <source>Output File</source>
-      <translation>Вихідний файл</translation>
+      <translation type="unfinished">Output File</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="143"/>
       <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-      <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Введіть шлях та імʼя файлу (за бажанням) (дивіться нижче), які будуть використовуватися за замовчуванням для роботи постпроцесора.&lt;/p&gt;&lt;p&gt;Наведені нижче заміни виконуються перед початком експорту. імʼя визначається під час постобробки:&lt;/p&gt;&lt;p&gt;%D ... тека активного документа&lt;br/&gt;%d ... імʼя активного документа (з розширенням)&lt;br/&gt; %M ... тека макросу користувача&lt;br/&gt;%j ... імʼя активного обʼєкта Завдання&lt;/p&gt;&lt;p&gt;У наведеному нижче прикладі всі файли з тими ж іменами, що й у документі, зберігаються у каталог /home/freecad ( будь ласка, видаліть лапки):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;Перегляньте політику збереження файлів нижче, щоб дізнатися, як боротися з конфліктами імен.&lt;/p&gt;&lt;br&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+      <translation type="unfinished">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter a path and optionally file name (see below) to be used as the default for the post processor export.&lt;/p&gt;&lt;p&gt;The following substitutions are performed before the name is resolved at the time of the post processing:&lt;/p&gt;&lt;p&gt;%D ... directory of the active document&lt;br/&gt;%d ... name of the active document (with extension)&lt;br/&gt;%M ... user macro directory&lt;br/&gt;%j ... name of the active Job object&lt;/p&gt;&lt;p&gt;The following example store all files with the same name as the document the directory /home/freecad (please remove quotes):&lt;/p&gt;&lt;p&gt;&amp;quot;/home/cnc/%d.g-code&amp;quot;&lt;/p&gt;&lt;p&gt;See the file save policy below on how to deal with name conflicts.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="150"/>
       <location filename="../panels/PathEdit.ui" line="1417"/>
       <location filename="../panels/PathEdit.ui" line="1428"/>
       <source>...</source>
-      <translation>...</translation>
+      <translation type="unfinished">...</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="157"/>
@@ -8134,7 +8134,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="475"/>
       <source>Refresh</source>
-      <translation>Оновити</translation>
+      <translation type="unfinished">Refresh</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="510"/>
@@ -8154,28 +8154,28 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="562"/>
       <source>Radius</source>
-      <translation>Радіус</translation>
+      <translation type="unfinished">Radius</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="572"/>
       <location filename="../panels/PathEdit.ui" line="608"/>
       <source>Height</source>
-      <translation>Висота</translation>
+      <translation type="unfinished">Height</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="588"/>
       <source>Length</source>
-      <translation>Довжина</translation>
+      <translation type="unfinished">Length</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="598"/>
       <source>Width</source>
-      <translation>Ширина</translation>
+      <translation type="unfinished">Width</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="624"/>
       <source>Alignment</source>
-      <translation>Вирівнювання</translation>
+      <translation type="unfinished">Alignment</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="630"/>
@@ -8205,12 +8205,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="667"/>
       <source>X-Axis</source>
-      <translation>Вісь X</translation>
+      <translation type="unfinished">X-Axis</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="674"/>
       <source>Y-Axis</source>
-      <translation>Вісь Y</translation>
+      <translation type="unfinished">Y-Axis</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="681"/>
@@ -8250,7 +8250,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="934"/>
       <source>Compound</source>
-      <translation>Суміш</translation>
+      <translation type="unfinished">Compound</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="995"/>
@@ -8296,7 +8296,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1052"/>
       <source>Heights</source>
-      <translation>Висоти</translation>
+      <translation type="unfinished">Heights</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1058"/>
@@ -8306,12 +8306,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1068"/>
       <source>Offset</source>
-      <translation>Зсув</translation>
+      <translation type="unfinished">Offset</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1078"/>
       <source>Clearance</source>
-      <translation>Відхилення</translation>
+      <translation type="unfinished">Clearance</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1085"/>
@@ -8352,12 +8352,12 @@ p, li { white-space: pre-wrap; }
       <location filename="../panels/PathEdit.ui" line="1160"/>
       <location filename="../panels/PathEdit.ui" line="1178"/>
       <source>Tools</source>
-      <translation>Інструменти</translation>
+      <translation type="unfinished">Tools</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1197"/>
       <source>Name</source>
-      <translation>Назва</translation>
+      <translation type="unfinished">Name</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1202"/>
@@ -8378,12 +8378,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1246"/>
       <source>Add</source>
-      <translation>Додати</translation>
+      <translation type="unfinished">Add</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1256"/>
       <source>Remove</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Remove</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1284"/>
@@ -8393,7 +8393,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1293"/>
       <source>Horizontal</source>
-      <translation>По горизонталі</translation>
+      <translation type="unfinished">Horizontal</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1306"/>
@@ -8403,7 +8403,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1313"/>
       <source>Vertical</source>
-      <translation>По вертикалі</translation>
+      <translation type="unfinished">Vertical</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1326"/>
@@ -8423,7 +8423,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1481"/>
       <source>Delete</source>
-      <translation>Видалити</translation>
+      <translation type="unfinished">Delete</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1492"/>

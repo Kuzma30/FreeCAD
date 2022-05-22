@@ -6,7 +6,7 @@
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="168"/>
       <source>Scale image plane</source>
-      <translation>Масштабувати зображення площини</translation>
+      <translation type="unfinished">Scale image plane</translation>
     </message>
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="169"/>
@@ -44,12 +44,12 @@
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="69"/>
       <source>Scale image plane</source>
-      <translation>Масштабувати зображення площини</translation>
+      <translation type="unfinished">Scale image plane</translation>
     </message>
     <message>
       <location filename="../../../ImageTools/_CommandImageScaling.py" line="74"/>
       <source>Scales an image plane by defining a distance between two points</source>
-      <translation>Масштабує зображення площини, визначаючи відстань між двома точками</translation>
+      <translation type="unfinished">Scales an image plane by defining a distance between two points</translation>
     </message>
   </context>
   <context>
@@ -57,17 +57,17 @@
     <message>
       <location filename="../../Command.cpp" line="100"/>
       <source>Image</source>
-      <translation>Зображення</translation>
+      <translation type="unfinished">Image</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="101"/>
       <source>Create image plane...</source>
-      <translation>Створити площину зображення...</translation>
+      <translation type="unfinished">Create image plane...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="102"/>
       <source>Create a planar image in the 3D space</source>
-      <translation>Створити плоске зображення у 3D-просторі</translation>
+      <translation type="unfinished">Create a planar image in the 3D space</translation>
     </message>
   </context>
   <context>
@@ -75,17 +75,17 @@
     <message>
       <location filename="../../Command.cpp" line="55"/>
       <source>Image</source>
-      <translation>Зображення</translation>
+      <translation type="unfinished">Image</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="56"/>
       <source>Open...</source>
-      <translation>Відкрити...</translation>
+      <translation type="unfinished">Open...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="57"/>
       <source>Open image view</source>
-      <translation>Відкрити зображення</translation>
+      <translation type="unfinished">Open image view</translation>
     </message>
   </context>
   <context>
@@ -93,17 +93,17 @@
     <message>
       <location filename="../../Command.cpp" line="175"/>
       <source>Image</source>
-      <translation>Зображення</translation>
+      <translation type="unfinished">Image</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="176"/>
       <source>Scale...</source>
-      <translation>Масштаб...</translation>
+      <translation type="unfinished">Scale...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="177"/>
       <source>Image Scaling</source>
-      <translation>Масштабування зображення</translation>
+      <translation type="unfinished">Image Scaling</translation>
     </message>
   </context>
   <context>
@@ -111,7 +111,7 @@
     <message>
       <location filename="../../Command.cpp" line="150"/>
       <source>Create ImagePlane</source>
-      <translation>Створити площину зображення</translation>
+      <translation type="unfinished">Create ImagePlane</translation>
     </message>
   </context>
   <context>
@@ -119,12 +119,12 @@
     <message>
       <location filename="../../OpenGLImageBox.cpp" line="392"/>
       <source>Image pixel format</source>
-      <translation>Формат пікселя зображення</translation>
+      <translation type="unfinished">Image pixel format</translation>
     </message>
     <message>
       <location filename="../../OpenGLImageBox.cpp" line="393"/>
       <source>Undefined type of colour space for image viewing</source>
-      <translation>Невизначений тип кольору простору для перегляду зображень</translation>
+      <translation type="unfinished">Undefined type of colour space for image viewing</translation>
     </message>
   </context>
   <context>
@@ -132,37 +132,37 @@
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="14"/>
       <source>Choose orientation</source>
-      <translation>Оберіть орієнтацію</translation>
+      <translation type="unfinished">Choose orientation</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="20"/>
       <source>Image plane</source>
-      <translation>Площина зображення</translation>
+      <translation type="unfinished">Image plane</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="26"/>
       <source>XY-Plane</source>
-      <translation>Площина XY</translation>
+      <translation type="unfinished">XY-Plane</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="36"/>
       <source>XZ-Plane</source>
-      <translation>Площина XZ</translation>
+      <translation type="unfinished">XZ-Plane</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="43"/>
       <source>YZ-Plane</source>
-      <translation>Площина YZ</translation>
+      <translation type="unfinished">YZ-Plane</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="72"/>
       <source>Reverse direction</source>
-      <translation>Зворотний напрямок</translation>
+      <translation type="unfinished">Reverse direction</translation>
     </message>
     <message>
       <location filename="../../ImageOrientationDialog.ui" line="81"/>
       <source>Offset:</source>
-      <translation>Зміщення:</translation>
+      <translation type="unfinished">Offset:</translation>
     </message>
   </context>
   <context>
@@ -170,37 +170,37 @@
     <message>
       <location filename="../../ImageView.cpp" line="107"/>
       <source>&amp;Fit image</source>
-      <translation>&amp;Вмістити зображення</translation>
+      <translation type="unfinished">&amp;Fit image</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="109"/>
       <source>Stretch the image to fit the view</source>
-      <translation>Розтягнути зображення до розмірів виду</translation>
+      <translation type="unfinished">Stretch the image to fit the view</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="113"/>
       <source>&amp;1:1 scale</source>
-      <translation>Масштаб &amp;1:1</translation>
+      <translation type="unfinished">&amp;1:1 scale</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="115"/>
       <source>Display the image at a 1:1 scale</source>
-      <translation>Показати зображення в масштабі 1:1</translation>
+      <translation type="unfinished">Display the image at a 1:1 scale</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="124"/>
       <source>Standard</source>
-      <translation>Стандартно</translation>
+      <translation type="unfinished">Standard</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="142"/>
       <source>Ready...</source>
-      <translation>Готово...</translation>
+      <translation type="unfinished">Ready...</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="543"/>
       <source>grey</source>
-      <translation>сірий</translation>
+      <translation type="unfinished">grey</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="544"/>
@@ -214,7 +214,7 @@
       <location filename="../../ImageView.cpp" line="604"/>
       <location filename="../../ImageView.cpp" line="609"/>
       <source>zoom</source>
-      <translation>масштаб</translation>
+      <translation type="unfinished">zoom</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="547"/>
@@ -223,7 +223,7 @@
       <location filename="../../ImageView.cpp" line="588"/>
       <location filename="../../ImageView.cpp" line="604"/>
       <source>outside image</source>
-      <translation>зовнішнє зображення</translation>
+      <translation type="unfinished">outside image</translation>
     </message>
   </context>
   <context>
@@ -232,29 +232,29 @@
       <location filename="../../Command.cpp" line="70"/>
       <location filename="../../Command.cpp" line="114"/>
       <source>Images</source>
-      <translation>Зображення</translation>
+      <translation type="unfinished">Images</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="75"/>
       <location filename="../../Command.cpp" line="119"/>
       <source>All files</source>
-      <translation>Всі файли</translation>
+      <translation type="unfinished">All files</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="77"/>
       <location filename="../../Command.cpp" line="121"/>
       <source>Choose an image file to open</source>
-      <translation>Оберіть файл зображення для відкриття</translation>
+      <translation type="unfinished">Choose an image file to open</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="127"/>
       <source>Error opening image</source>
-      <translation>Не вдалося відкрити файл зображення</translation>
+      <translation type="unfinished">Error opening image</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="128"/>
       <source>Could not load the chosen image</source>
-      <translation>Не вдалося завантажити вибране зображення</translation>
+      <translation type="unfinished">Could not load the chosen image</translation>
     </message>
   </context>
   <context>
@@ -262,7 +262,7 @@
     <message>
       <location filename="../../Workbench.cpp" line="32"/>
       <source>Image</source>
-      <translation>Зображення</translation>
+      <translation type="unfinished">Image</translation>
     </message>
   </context>
 </TS>

@@ -6,17 +6,17 @@
     <message>
       <location filename="../../Command.cpp" line="72"/>
       <source>Web</source>
-      <translation type="unfinished">Web</translation>
+      <translation>Веб</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="73"/>
       <source>Previous page</source>
-      <translation type="unfinished">Previous page</translation>
+      <translation>Попередня сторінка</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="74"/>
       <source>Go back to the previous page</source>
-      <translation type="unfinished">Go back to the previous page</translation>
+      <translation>Повертається на попередню сторінку</translation>
     </message>
   </context>
   <context>
@@ -24,17 +24,17 @@
     <message>
       <location filename="../../Command.cpp" line="101"/>
       <source>Web</source>
-      <translation type="unfinished">Web</translation>
+      <translation>Веб</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="102"/>
       <source>Next page</source>
-      <translation type="unfinished">Next page</translation>
+      <translation>Наступна сторінка</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="103"/>
       <source>Go to the next page</source>
-      <translation type="unfinished">Go to the next page</translation>
+      <translation>Переходить на наступну сторінку</translation>
     </message>
   </context>
   <context>
@@ -42,13 +42,13 @@
     <message>
       <location filename="../../Command.cpp" line="130"/>
       <source>Web</source>
-      <translation type="unfinished">Web</translation>
+      <translation>Веб</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="131"/>
       <location filename="../../Command.cpp" line="132"/>
       <source>Refresh web page</source>
-      <translation type="unfinished">Refresh web page</translation>
+      <translation>Оновити веб-сторінку</translation>
     </message>
   </context>
   <context>
@@ -56,13 +56,13 @@
     <message>
       <location filename="../../Command.cpp" line="246"/>
       <source>Web</source>
-      <translation type="unfinished">Web</translation>
+      <translation>Веб</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="247"/>
       <location filename="../../Command.cpp" line="248"/>
       <source>Set URL</source>
-      <translation type="unfinished">Set URL</translation>
+      <translation>Задати URL</translation>
     </message>
   </context>
   <context>
@@ -70,13 +70,13 @@
     <message>
       <location filename="../../Command.cpp" line="158"/>
       <source>Web</source>
-      <translation type="unfinished">Web</translation>
+      <translation>Веб</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="159"/>
       <location filename="../../Command.cpp" line="160"/>
       <source>Stop loading</source>
-      <translation type="unfinished">Stop loading</translation>
+      <translation>Зупинити завантаження</translation>
     </message>
   </context>
   <context>
@@ -84,13 +84,13 @@
     <message>
       <location filename="../../Command.cpp" line="188"/>
       <source>Web</source>
-      <translation type="unfinished">Web</translation>
+      <translation>Веб</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="189"/>
       <location filename="../../Command.cpp" line="190"/>
       <source>Zoom in</source>
-      <translation type="unfinished">Zoom in</translation>
+      <translation>Збільшити масштаб</translation>
     </message>
   </context>
   <context>
@@ -98,13 +98,13 @@
     <message>
       <location filename="../../Command.cpp" line="217"/>
       <source>Web</source>
-      <translation type="unfinished">Web</translation>
+      <translation>Веб</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="218"/>
       <location filename="../../Command.cpp" line="219"/>
       <source>Zoom out</source>
-      <translation type="unfinished">Zoom out</translation>
+      <translation>Зменшити масштаб</translation>
     </message>
   </context>
   <context>
@@ -112,17 +112,17 @@
     <message>
       <location filename="../../Command.cpp" line="46"/>
       <source>Web</source>
-      <translation type="unfinished">Web</translation>
+      <translation>Веб</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="47"/>
       <source>Open website...</source>
-      <translation type="unfinished">Open website...</translation>
+      <translation>Відкрити веб-сайт...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="48"/>
       <source>Opens a website in FreeCAD</source>
-      <translation type="unfinished">Opens a website in FreeCAD</translation>
+      <translation>Веб-сайт відкривається у FreeCAD</translation>
     </message>
   </context>
   <context>
@@ -131,12 +131,12 @@
       <location filename="../../AppWebGui.cpp" line="85"/>
       <location filename="../../BrowserView.cpp" line="781"/>
       <source>Browser</source>
-      <translation type="unfinished">Browser</translation>
+      <translation>Браузер</translation>
     </message>
     <message>
       <location filename="../../BrowserView.cpp" line="593"/>
       <source>File does not exist!</source>
-      <translation type="unfinished">File does not exist!</translation>
+      <translation>Файл не існує!</translation>
     </message>
   </context>
   <context>
@@ -146,22 +146,22 @@
       <location filename="../../BrowserView.cpp" line="586"/>
       <location filename="../../BrowserView.cpp" line="589"/>
       <source>Error</source>
-      <translation type="unfinished">Error</translation>
+      <translation>Помилка</translation>
     </message>
     <message>
       <location filename="../../BrowserView.cpp" line="586"/>
       <source>There were errors while loading the file. Some data might have been modified or not recovered at all. Look in the report view for more specific information about the objects involved.</source>
-      <translation type="unfinished">There were errors while loading the file. Some data might have been modified or not recovered at all. Look in the report view for more specific information about the objects involved.</translation>
+      <translation>Під час завантаження файлу виникли помилки. Деякі дані, можливо, були змінені або взагалі не відновлені. Ознайомтесь зі звітом для більш отримання конкретної інформації щодо таких обʼєктів.</translation>
     </message>
     <message>
       <location filename="../../BrowserView.cpp" line="589"/>
       <source>There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</source>
-      <translation type="unfinished">There were serious errors while loading the file. Some data might have been modified or not recovered at all. Saving the project will most likely result in loss of data.</translation>
+      <translation>При завантаженні файлу сталася серйозна помилка. Можливо, деякі дані були змінені або взагалі не відновлені. Збереження проєкту швидше за все, призведе до втрати даних.</translation>
     </message>
     <message>
       <location filename="../../BrowserView.cpp" line="749"/>
       <source>Loading %1...</source>
-      <translation type="unfinished">Loading %1...</translation>
+      <translation>Завантаження %1...</translation>
     </message>
   </context>
   <context>
@@ -169,17 +169,17 @@
     <message>
       <location filename="../../BrowserView.cpp" line="351"/>
       <source>Open in External Browser</source>
-      <translation type="unfinished">Open in External Browser</translation>
+      <translation>Відкрити у зовнішньому браузері</translation>
     </message>
     <message>
       <location filename="../../BrowserView.cpp" line="355"/>
       <source>Open in new window</source>
-      <translation type="unfinished">Open in new window</translation>
+      <translation>Відкрити у новому вікні</translation>
     </message>
     <message>
       <location filename="../../BrowserView.cpp" line="387"/>
       <source>View source</source>
-      <translation type="unfinished">View source</translation>
+      <translation>Переглянути вихідний код</translation>
     </message>
   </context>
   <context>
@@ -187,7 +187,7 @@
     <message>
       <location filename="../../Workbench.cpp" line="37"/>
       <source>Navigation</source>
-      <translation type="unfinished">Navigation</translation>
+      <translation>Навігація</translation>
     </message>
   </context>
 </TS>

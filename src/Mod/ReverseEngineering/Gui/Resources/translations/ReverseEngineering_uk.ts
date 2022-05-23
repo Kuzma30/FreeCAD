@@ -6,12 +6,12 @@
     <message>
       <location filename="../../Command.cpp" line="211"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="212"/>
       <source>Cylinder</source>
-      <translation type="unfinished">Cylinder</translation>
+      <translation>Циліндр</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="213"/>
@@ -24,7 +24,7 @@
     <message>
       <location filename="../../Command.cpp" line="110"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="111"/>
@@ -34,7 +34,7 @@
     <message>
       <location filename="../../Command.cpp" line="112"/>
       <source>Approximate a plane</source>
-      <translation type="unfinished">Approximate a plane</translation>
+      <translation>Приблизна площина</translation>
     </message>
   </context>
   <context>
@@ -42,7 +42,7 @@
     <message>
       <location filename="../../Command.cpp" line="324"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="325"/>
@@ -60,12 +60,12 @@
     <message>
       <location filename="../../Command.cpp" line="277"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="278"/>
       <source>Sphere</source>
-      <translation type="unfinished">Sphere</translation>
+      <translation>Сфера</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="279"/>
@@ -78,17 +78,17 @@
     <message>
       <location filename="../../Command.cpp" line="74"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="75"/>
       <source>Approximate B-spline surface...</source>
-      <translation type="unfinished">Approximate B-spline surface...</translation>
+      <translation>Апроксимувати поверхню B-сплайна...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="76"/>
       <source>Approximate a B-spline surface</source>
-      <translation type="unfinished">Approximate a B-spline surface</translation>
+      <translation>Апроксимувати поверхню B-сплайна</translation>
     </message>
   </context>
   <context>
@@ -96,7 +96,7 @@
     <message>
       <location filename="../../Command.cpp" line="490"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="491"/>
@@ -114,17 +114,17 @@
     <message>
       <location filename="../../Command.cpp" line="556"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="557"/>
       <source>Poisson...</source>
-      <translation type="unfinished">Poisson...</translation>
+      <translation>Пуассона...</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="558"/>
       <source>Poisson surface reconstruction</source>
-      <translation type="unfinished">Poisson surface reconstruction</translation>
+      <translation>Реконструкція поверхні Пуассона</translation>
     </message>
   </context>
   <context>
@@ -132,7 +132,7 @@
     <message>
       <location filename="../../Command.cpp" line="379"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="380"/>
@@ -142,7 +142,7 @@
     <message>
       <location filename="../../Command.cpp" line="381"/>
       <source>Create mesh segments</source>
-      <translation type="unfinished">Create mesh segments</translation>
+      <translation>Створити сегменти сітки</translation>
     </message>
   </context>
   <context>
@@ -150,7 +150,7 @@
     <message>
       <location filename="../../Command.cpp" line="440"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="441"/>
@@ -168,7 +168,7 @@
     <message>
       <location filename="../../Command.cpp" line="411"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="412"/>
@@ -186,18 +186,18 @@
     <message>
       <location filename="../../Command.cpp" line="590"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="591"/>
       <source>Structured point clouds</source>
-      <translation type="unfinished">Structured point clouds</translation>
+      <translation>Хмари структурованих точок</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="592"/>
       <location filename="../../Command.cpp" line="593"/>
       <source>Triangulation of structured point clouds</source>
-      <translation type="unfinished">Triangulation of structured point clouds</translation>
+      <translation>Триангуляція хмар структурованих точок</translation>
     </message>
   </context>
   <context>
@@ -230,7 +230,7 @@
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="157"/>
       <source>Placement</source>
-      <translation type="unfinished">Placement</translation>
+      <translation>Розташувати</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="229"/>
@@ -253,49 +253,49 @@
     <message>
       <location filename="../../FitBSplineSurface.ui" line="14"/>
       <source>Fit B-spline surface</source>
-      <translation type="unfinished">Fit B-spline surface</translation>
+      <translation>Розмістити B-сплайна поверхню</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="20"/>
       <source>u-Direction</source>
-      <translation type="unfinished">u-Direction</translation>
+      <translation>u напрямок</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="26"/>
       <location filename="../../FitBSplineSurface.ui" line="93"/>
       <source>Degree</source>
-      <translation type="unfinished">Degree</translation>
+      <translation>Кут</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="55"/>
       <location filename="../../FitBSplineSurface.ui" line="122"/>
       <source>Control points</source>
-      <translation type="unfinished">Control points</translation>
+      <translation>Контрольні точки</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="87"/>
       <source>v-Direction</source>
-      <translation type="unfinished">v-Direction</translation>
+      <translation>v напрямок</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="154"/>
       <source>Settings</source>
-      <translation type="unfinished">Settings</translation>
+      <translation>Параметри</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="160"/>
       <source>Iterations</source>
-      <translation type="unfinished">Iterations</translation>
+      <translation>Ітерації</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="189"/>
       <source>Size factor</source>
-      <translation type="unfinished">Size factor</translation>
+      <translation>Розмірний фактор</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="218"/>
       <source>User-defined u/v directions</source>
-      <translation type="unfinished">User-defined u/v directions</translation>
+      <translation>Користувацькі u / v напрямки</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="231"/>
@@ -305,27 +305,27 @@
     <message>
       <location filename="../../FitBSplineSurface.ui" line="238"/>
       <source>Smoothing</source>
-      <translation type="unfinished">Smoothing</translation>
+      <translation>Згладжування</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="247"/>
       <source>Total Weight</source>
-      <translation type="unfinished">Total Weight</translation>
+      <translation>Загальна вага</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="276"/>
       <source>Length of gradient</source>
-      <translation type="unfinished">Length of gradient</translation>
+      <translation>Довжина градієнту</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="305"/>
       <source>Bending energy</source>
-      <translation type="unfinished">Bending energy</translation>
+      <translation>Енергія згинання</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.ui" line="334"/>
       <source>Curvature variation</source>
-      <translation type="unfinished">Curvature variation</translation>
+      <translation>Варіанти кривизни</translation>
     </message>
   </context>
   <context>
@@ -334,17 +334,17 @@
       <location filename="../../FitBSplineSurface.cpp" line="168"/>
       <location filename="../../FitBSplineSurface.cpp" line="236"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Помилка вводу</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="208"/>
       <source>Wrong selection</source>
-      <translation type="unfinished">Wrong selection</translation>
+      <translation>Невірний вибір</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="209"/>
       <source>Please select a single placement object to get local orientation.</source>
-      <translation type="unfinished">Please select a single placement object to get local orientation.</translation>
+      <translation>Будь ласка, виберіть один обʼєкт розміщення для отримання локальної орієнтації.</translation>
     </message>
   </context>
   <context>
@@ -352,32 +352,32 @@
     <message>
       <location filename="../../Poisson.ui" line="14"/>
       <source>Poisson</source>
-      <translation type="unfinished">Poisson</translation>
+      <translation>Пуассона</translation>
     </message>
     <message>
       <location filename="../../Poisson.ui" line="20"/>
       <source>Parameters</source>
-      <translation type="unfinished">Parameters</translation>
+      <translation>Параметри</translation>
     </message>
     <message>
       <location filename="../../Poisson.ui" line="26"/>
       <source>Octree depth</source>
-      <translation type="unfinished">Octree depth</translation>
+      <translation>Глибина октодерева</translation>
     </message>
     <message>
       <location filename="../../Poisson.ui" line="46"/>
       <source>Solver divide</source>
-      <translation type="unfinished">Solver divide</translation>
+      <translation>Вирішувач поділу</translation>
     </message>
     <message>
       <location filename="../../Poisson.ui" line="66"/>
       <source>Samples per node</source>
-      <translation type="unfinished">Samples per node</translation>
+      <translation>Зразків на вузол</translation>
     </message>
     <message>
       <location filename="../../Poisson.cpp" line="108"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Помилка вводу</translation>
     </message>
   </context>
   <context>
@@ -386,7 +386,7 @@
       <location filename="../../Command.cpp" line="89"/>
       <location filename="../../Command.cpp" line="569"/>
       <source>Wrong selection</source>
-      <translation type="unfinished">Wrong selection</translation>
+      <translation>Невірний вибір</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="90"/>
@@ -396,7 +396,7 @@
     <message>
       <location filename="../../Command.cpp" line="570"/>
       <source>Please select a single point cloud.</source>
-      <translation type="unfinished">Please select a single point cloud.</translation>
+      <translation>Оберіть одну точку хмари.</translation>
     </message>
   </context>
   <context>
@@ -404,7 +404,7 @@
     <message>
       <location filename="../../Command.cpp" line="625"/>
       <source>View triangulation failed</source>
-      <translation type="unfinished">View triangulation failed</translation>
+      <translation>Перегляд непрорахованими тріангуляції</translation>
     </message>
   </context>
   <context>
@@ -412,17 +412,17 @@
     <message>
       <location filename="../../Segmentation.ui" line="14"/>
       <source>Mesh segmentation</source>
-      <translation type="unfinished">Mesh segmentation</translation>
+      <translation>Сегментація сітки</translation>
     </message>
     <message>
       <location filename="../../Segmentation.ui" line="20"/>
       <source>Smooth mesh</source>
-      <translation type="unfinished">Smooth mesh</translation>
+      <translation>Згладити сітку</translation>
     </message>
     <message>
       <location filename="../../Segmentation.ui" line="37"/>
       <source>Plane</source>
-      <translation type="unfinished">Plane</translation>
+      <translation>Площини</translation>
     </message>
     <message>
       <location filename="../../Segmentation.ui" line="46"/>
@@ -437,7 +437,7 @@
     <message>
       <location filename="../../Segmentation.ui" line="80"/>
       <source>Minimum number of faces</source>
-      <translation type="unfinished">Minimum number of faces</translation>
+      <translation>Мінімальна кількість граней</translation>
     </message>
     <message>
       <location filename="../../Segmentation.ui" line="100"/>
@@ -460,47 +460,47 @@
     <message>
       <location filename="../../SegmentationManual.ui" line="20"/>
       <source>Select</source>
-      <translation type="unfinished">Select</translation>
+      <translation>Вибрати</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="41"/>
       <source>Region</source>
-      <translation type="unfinished">Region</translation>
+      <translation>Область</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="61"/>
       <source>All</source>
-      <translation type="unfinished">All</translation>
+      <translation>Вся</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="81"/>
       <source>Components</source>
-      <translation type="unfinished">Components</translation>
+      <translation>Компоненти</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="88"/>
       <source>&lt; faces than</source>
-      <translation type="unfinished">&lt; faces than</translation>
+      <translation>&gt; граней, ніж</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="98"/>
       <source>Pick triangle</source>
-      <translation type="unfinished">Pick triangle</translation>
+      <translation>Вибрати трикутник</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="105"/>
       <source>Select whole component</source>
-      <translation type="unfinished">Select whole component</translation>
+      <translation>Вибрати всі компоненти</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="112"/>
       <source>Clear</source>
-      <translation type="unfinished">Clear</translation>
+      <translation>Очистити</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="122"/>
       <source>Plane</source>
-      <translation type="unfinished">Plane</translation>
+      <translation>Площини</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="128"/>
@@ -514,39 +514,39 @@
       <location filename="../../SegmentationManual.ui" line="188"/>
       <location filename="../../SegmentationManual.ui" line="241"/>
       <source>Tolerance</source>
-      <translation type="unfinished">Tolerance</translation>
+      <translation>Точність</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="155"/>
       <location filename="../../SegmentationManual.ui" line="208"/>
       <location filename="../../SegmentationManual.ui" line="261"/>
       <source>Minimum number of faces</source>
-      <translation type="unfinished">Minimum number of faces</translation>
+      <translation>Мінімальна кількість граней</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="175"/>
       <source>Cylinder</source>
-      <translation type="unfinished">Cylinder</translation>
+      <translation>Циліндр</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="228"/>
       <source>Sphere</source>
-      <translation type="unfinished">Sphere</translation>
+      <translation>Сфера</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="281"/>
       <source>Region options</source>
-      <translation type="unfinished">Region options</translation>
+      <translation>Параметри області</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="287"/>
       <source>Respect only visible triangles</source>
-      <translation type="unfinished">Respect only visible triangles</translation>
+      <translation>Поважати лише видимі трикутники</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="297"/>
       <source>Respect only triangles with normals facing screen</source>
-      <translation type="unfinished">Respect only triangles with normals facing screen</translation>
+      <translation>Поважати лише трикутники з нормалями на передньому плані</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="310"/>
@@ -569,7 +569,7 @@
     <message>
       <location filename="../../SegmentationManual.cpp" line="311"/>
       <source>Create</source>
-      <translation type="unfinished">Create</translation>
+      <translation>Створити</translation>
     </message>
   </context>
   <context>
@@ -577,7 +577,7 @@
     <message>
       <location filename="../../Workbench.cpp" line="37"/>
       <source>Reverse Engineering</source>
-      <translation type="unfinished">Reverse Engineering</translation>
+      <translation>Зворотнє проектування</translation>
     </message>
   </context>
 </TS>

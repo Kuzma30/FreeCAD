@@ -439,7 +439,7 @@
     <message>
       <location filename="../ui/openscadprefs-base.ui" line="299"/>
       <source>°</source>
-      <translation type="unfinished">°</translation>
+      <translation>°</translation>
     </message>
     <message>
       <location filename="../ui/openscadprefs-base.ui" line="328"/>

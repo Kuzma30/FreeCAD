@@ -554,7 +554,7 @@
     <message>
       <location filename="../../TrajectorySimulate.ui" line="292"/>
       <source>A</source>
-      <translation type="unfinished">A</translation>
+      <translation>A</translation>
     </message>
   </context>
   <context>
@@ -734,7 +734,7 @@
     <message>
       <location filename="../../TaskTrajectory.ui" line="337"/>
       <source>A</source>
-      <translation type="unfinished">A</translation>
+      <translation>A</translation>
     </message>
     <message>
       <location filename="../../TaskTrajectory.cpp" line="44"/>

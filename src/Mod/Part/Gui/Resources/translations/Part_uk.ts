@@ -181,7 +181,7 @@ It will create a &apos;Compound Filter&apos; for each shape.</translation>
     <message>
       <location filename="../../../CompoundTools/_CommandExplodeCompound.py" line="88"/>
       <source>Bad selection</source>
-      <translation type="unfinished">Bad selection</translation>
+      <translation>Помилка в виділенні</translation>
     </message>
   </context>
   <context>
@@ -244,7 +244,7 @@ Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to
       <location filename="../../../BOPTools/JoinFeatures.py" line="383"/>
       <location filename="../../../BOPTools/JoinFeatures.py" line="503"/>
       <source>Bad selection</source>
-      <translation type="unfinished">Bad selection</translation>
+      <translation>Помилка в виділенні</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/JoinFeatures.py" line="122"/>
@@ -293,7 +293,7 @@ Click &apos;Continue&apos; to create the feature anyway, or &apos;Abort&apos; to
       <location filename="../../../BOPTools/SplitFeatures.py" line="648"/>
       <location filename="../../../BOPTools/SplitFeatures.py" line="701"/>
       <source>Bad selection</source>
-      <translation type="unfinished">Bad selection</translation>
+      <translation>Помилка в виділенні</translation>
     </message>
     <message>
       <location filename="../../../BOPTools/SplitFeatures.py" line="214"/>
@@ -4962,7 +4962,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgSettings3DViewPart.ui" line="59"/>
       <source> %</source>
-      <translation type="unfinished"> %</translation>
+      <translation> %</translation>
     </message>
     <message>
       <location filename="../../DlgSettings3DViewPart.ui" line="87"/>

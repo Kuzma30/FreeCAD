@@ -213,12 +213,12 @@
     <message>
       <location filename="../../DlgPointsRead.ui" line="157"/>
       <source>,</source>
-      <translation type="unfinished">,</translation>
+      <translation>,</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="162"/>
       <source>;</source>
-      <translation type="unfinished">;</translation>
+      <translation>;</translation>
     </message>
     <message>
       <location filename="../../DlgPointsRead.ui" line="167"/>

@@ -3892,7 +3892,7 @@ when hatching a face with a PAT pattern</translation>
       <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="400"/>
       <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="507"/>
       <source>DashDot</source>
-      <translation type="unfinished">DashDot</translation>
+      <translation>DashDot</translation>
     </message>
     <message>
       <location filename="../../DlgPrefsTechDrawAnnotation.ui" line="172"/>
@@ -4179,7 +4179,7 @@ when hatching a face with a PAT pattern</translation>
     <message>
       <location filename="../../DlgPrefsTechDrawColors.ui" line="292"/>
       <source>Hatch</source>
-      <translation type="unfinished">Hatch</translation>
+      <translation>Штрихування</translation>
     </message>
     <message>
       <location filename="../../DlgPrefsTechDrawColors.ui" line="299"/>
@@ -5277,7 +5277,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCenterLine.ui" line="354"/>
       <source>DashDot</source>
-      <translation type="unfinished">DashDot</translation>
+      <translation>DashDot</translation>
     </message>
     <message>
       <location filename="../../TaskCenterLine.ui" line="363"/>
@@ -5691,7 +5691,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="421"/>
       <source>R</source>
-      <translation type="unfinished">R</translation>
+      <translation>R</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="428"/>
@@ -5746,7 +5746,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="482"/>
       <source>°</source>
-      <translation type="unfinished">°</translation>
+      <translation>°</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="489"/>
@@ -6523,7 +6523,7 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskLeaderLine.ui" line="314"/>
       <source>DashDot</source>
-      <translation type="unfinished">DashDot</translation>
+      <translation>DashDot</translation>
     </message>
     <message>
       <location filename="../../TaskLeaderLine.ui" line="323"/>
@@ -6597,7 +6597,7 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskLineDecor.ui" line="120"/>
       <source>DashDot</source>
-      <translation type="unfinished">DashDot</translation>
+      <translation>DashDot</translation>
     </message>
     <message>
       <location filename="../../TaskLineDecor.ui" line="125"/>
@@ -7083,7 +7083,7 @@ using the given X/Y Spacing</translation>
     <message>
       <location filename="../../TaskRichAnno.ui" line="225"/>
       <source>DashDot</source>
-      <translation type="unfinished">DashDot</translation>
+      <translation>DashDot</translation>
     </message>
     <message>
       <location filename="../../TaskRichAnno.ui" line="230"/>

@@ -2045,7 +2045,7 @@
     <message>
       <location filename="../../TaskLeaderLine.cpp" line="273"/>
       <source>Pick points</source>
-      <translation type="unfinished">Pick points</translation>
+      <translation>Вкажіть точки</translation>
     </message>
     <message>
       <location filename="../../TaskLeaderLine.cpp" line="322"/>
@@ -2053,7 +2053,7 @@
       <location filename="../../TaskLeaderLine.cpp" line="740"/>
       <location filename="../../TaskLeaderLine.cpp" line="757"/>
       <source>Edit points</source>
-      <translation type="unfinished">Edit points</translation>
+      <translation>Редагувати точки</translation>
     </message>
     <message>
       <location filename="../../TaskLeaderLine.cpp" line="392"/>
@@ -2068,23 +2068,23 @@
     <message>
       <location filename="../../TaskLeaderLine.cpp" line="518"/>
       <source>Pick Points</source>
-      <translation type="unfinished">Pick Points</translation>
+      <translation>Вкажіть точки</translation>
     </message>
     <message>
       <location filename="../../TaskLeaderLine.cpp" line="530"/>
       <source>Edit Points</source>
-      <translation type="unfinished">Edit Points</translation>
+      <translation>Редагувати точки</translation>
     </message>
     <message>
       <location filename="../../TaskLeaderLine.cpp" line="550"/>
       <source>Save Points</source>
-      <translation type="unfinished">Save Points</translation>
+      <translation>Зберегти точки</translation>
     </message>
     <message>
       <location filename="../../TaskLeaderLine.cpp" line="577"/>
       <location filename="../../TaskLeaderLine.cpp" line="594"/>
       <source>Save changes</source>
-      <translation type="unfinished">Save changes</translation>
+      <translation>Зберегти зміни</translation>
     </message>
     <message>
       <location filename="../../TaskRichAnno.cpp" line="343"/>
@@ -2297,7 +2297,7 @@
     <message>
       <location filename="../../mrichtextedit.ui" line="35"/>
       <source>Save changes</source>
-      <translation type="unfinished">Save changes</translation>
+      <translation>Зберегти зміни</translation>
     </message>
     <message>
       <location filename="../../mrichtextedit.ui" line="49"/>
@@ -5361,7 +5361,7 @@ Do you want to continue?</source>
       <location filename="../../TaskCosVertex.cpp" line="180"/>
       <location filename="../../TaskCosVertex.cpp" line="266"/>
       <source>Pick Points</source>
-      <translation type="unfinished">Pick Points</translation>
+      <translation>Вкажіть точки</translation>
     </message>
     <message>
       <location filename="../../TaskCosVertex.cpp" line="194"/>
@@ -5371,7 +5371,7 @@ Do you want to continue?</source>
     <message>
       <location filename="../../TaskCosVertex.cpp" line="197"/>
       <source>Escape picking</source>
-      <translation type="unfinished">Escape picking</translation>
+      <translation>Скасувати вибір</translation>
     </message>
     <message>
       <location filename="../../TaskCosVertex.cpp" line="222"/>
@@ -6504,7 +6504,7 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskLeaderLine.ui" line="118"/>
       <source>Pick Points</source>
-      <translation type="unfinished">Pick Points</translation>
+      <translation>Вкажіть точки</translation>
     </message>
     <message>
       <location filename="../../TaskLeaderLine.ui" line="149"/>

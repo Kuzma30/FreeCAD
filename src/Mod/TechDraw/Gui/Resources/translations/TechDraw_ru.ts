@@ -2043,6 +2043,19 @@
       <translation type="unfinished">Update Detail</translation>
     </message>
     <message>
+      <location filename="../../TaskLeaderLine.cpp" line="273"/>
+      <source>Pick points</source>
+      <translation type="unfinished">Pick points</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLeaderLine.cpp" line="322"/>
+      <location filename="../../TaskLeaderLine.cpp" line="688"/>
+      <location filename="../../TaskLeaderLine.cpp" line="740"/>
+      <location filename="../../TaskLeaderLine.cpp" line="757"/>
+      <source>Edit points</source>
+      <translation type="unfinished">Edit points</translation>
+    </message>
+    <message>
       <location filename="../../TaskLeaderLine.cpp" line="392"/>
       <source>Create Leader</source>
       <translation type="unfinished">Create Leader</translation>
@@ -2051,6 +2064,27 @@
       <location filename="../../TaskLeaderLine.cpp" line="448"/>
       <source>Edit Leader</source>
       <translation type="unfinished">Edit Leader</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLeaderLine.cpp" line="518"/>
+      <source>Pick Points</source>
+      <translation type="unfinished">Pick Points</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLeaderLine.cpp" line="530"/>
+      <source>Edit Points</source>
+      <translation type="unfinished">Edit Points</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLeaderLine.cpp" line="550"/>
+      <source>Save Points</source>
+      <translation type="unfinished">Save Points</translation>
+    </message>
+    <message>
+      <location filename="../../TaskLeaderLine.cpp" line="577"/>
+      <location filename="../../TaskLeaderLine.cpp" line="594"/>
+      <source>Save changes</source>
+      <translation type="unfinished">Save changes</translation>
     </message>
     <message>
       <location filename="../../TaskRichAnno.cpp" line="343"/>
@@ -5301,6 +5335,7 @@ Do you want to continue?</translation>
     </message>
     <message>
       <location filename="../../TaskCosVertex.ui" line="78"/>
+      <location filename="../../TaskCosVertex.cpp" line="136"/>
       <source>Point Picker</source>
       <translation type="unfinished">Point Picker</translation>
     </message>
@@ -5325,9 +5360,20 @@ Do you want to continue?</translation>
       <translation type="unfinished">Y</translation>
     </message>
     <message>
+      <location filename="../../TaskCosVertex.cpp" line="180"/>
+      <location filename="../../TaskCosVertex.cpp" line="266"/>
+      <source>Pick Points</source>
+      <translation type="unfinished">Pick Points</translation>
+    </message>
+    <message>
       <location filename="../../TaskCosVertex.cpp" line="194"/>
       <source>Pick a point for cosmetic vertex</source>
       <translation type="unfinished">Pick a point for cosmetic vertex</translation>
+    </message>
+    <message>
+      <location filename="../../TaskCosVertex.cpp" line="197"/>
+      <source>Escape picking</source>
+      <translation type="unfinished">Escape picking</translation>
     </message>
     <message>
       <location filename="../../TaskCosVertex.cpp" line="222"/>

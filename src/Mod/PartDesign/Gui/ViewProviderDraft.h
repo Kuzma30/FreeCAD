@@ -43,6 +43,8 @@ public:
 
     /// return "Draft"
     virtual const std::string & featureName() const;
+    /// return translated "Edit Draft"
+    QString getL10nContextMenuText();
 
 protected:
     /// Returns a newly create dialog for the part to be placed in the task view

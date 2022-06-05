@@ -35,7 +35,10 @@ const std::string & ViewProviderChamfer::featureName() const {
     static const std::string name = "Chamfer";
     return name;
 }
-
+QString ViewProviderChamfer::getL10nContextMenuText(){
+    QString l10Name = tr("Edit Chamfer");
+    return l10Name;
+}
 
 TaskDlgFeatureParameters *ViewProviderChamfer::getEditDialog() {
     return new TaskDlgChamferParameters (this);

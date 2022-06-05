@@ -47,7 +47,7 @@ PROPERTY_SOURCE(PartDesignGui::ViewProviderDressUp,PartDesignGui::ViewProvider)
 void ViewProviderDressUp::setupContextMenu(QMenu* menu, QObject* receiver, const char* member)
 {
     QAction* act;
-    act = menu->addAction(QObject::tr("Edit %1").arg(QString::fromStdString(featureName())), receiver, member);
+    act = menu->addAction(getL10nContextMenuText(), receiver, member);
     act->setData(QVariant((int)ViewProvider::Default));
     PartDesignGui::ViewProvider::setupContextMenu(menu, receiver, member);
 }
@@ -57,7 +57,10 @@ const std::string & ViewProviderDressUp::featureName() const {
     static const std::string name = "Undefined";
     return name;
 }
-
+QString ViewProviderDressUp::getL10nContextMenuText() {
+    QString name = QObject::tr("Edit Undefined");
+    return name;
+}
 
 bool ViewProviderDressUp::setEdit(int ModNum) {
     if (ModNum == ViewProvider::Default ) {

@@ -43,6 +43,9 @@ public:
     /// return "Fillet"
     virtual const std::string & featureName() const;
 
+    /// return translated "Edit Fillet"
+    QString getL10nContextMenuText();
+
 protected:
     /// Returns a newly create dialog for the part to be placed in the task view
     virtual TaskDlgFeatureParameters *getEditDialog();

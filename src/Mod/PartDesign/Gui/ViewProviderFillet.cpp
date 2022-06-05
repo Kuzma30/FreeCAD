@@ -36,6 +36,10 @@ const std::string & ViewProviderFillet::featureName() const {
     return name;
 }
 
+QString ViewProviderFillet::getL10nContextMenuText(){
+    QString l10Name = tr("Edit Fillet");
+    return l10Name;
+}
 
 TaskDlgFeatureParameters *ViewProviderFillet::getEditDialog() {
     return new TaskDlgFilletParameters (this);

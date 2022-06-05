@@ -55,6 +55,11 @@ public:
      * Should be reimplemented in the successor.
      */
     virtual const std::string & featureName() const;
+    /**
+     * Returns the translated feature Name associated with the view provider.
+     * Should be reimplemented in the successor.
+     */
+    virtual QString getL10nContextMenuText();
     QString menuName;
 
 protected:

@@ -36,6 +36,11 @@ const std::string & ViewProviderThickness::featureName() const {
     return name;
 }
 
+QString ViewProviderThickness::getL10nContextMenuText() {
+    QString l10Name = tr("Edit Thickness");
+    return l10Name;
+}
+
 
 TaskDlgFeatureParameters *ViewProviderThickness::getEditDialog() {
     return new TaskDlgThicknessParameters (this);

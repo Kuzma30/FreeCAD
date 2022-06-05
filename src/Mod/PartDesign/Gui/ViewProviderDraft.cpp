@@ -37,6 +37,10 @@ const std::string & ViewProviderDraft::featureName() const {
     return name;
 }
 
+QString ViewProviderDraft::getL10nContextMenuText(){
+    QString l10Name = tr("Edit Draft");
+    return l10Name;
+}
 
 TaskDlgFeatureParameters *ViewProviderDraft::getEditDialog() {
     return new TaskDlgDraftParameters (this);

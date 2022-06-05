@@ -47,7 +47,28 @@ PROPERTY_SOURCE(PartDesignGui::ViewProviderDressUp,PartDesignGui::ViewProvider)
 void ViewProviderDressUp::setupContextMenu(QMenu* menu, QObject* receiver, const char* member)
 {
     QAction* act;
-    act = menu->addAction(QObject::tr("Edit %1").arg(QString::fromStdString(featureName())), receiver, member);
+    QString menuName;
+    std::string featName = featureName();
+    if (featName == "Fillet")
+    {
+        menuName=QObject::tr("Edit Fillet");
+    }else {
+        if (featName == "Chamfer"){
+            menuName=QObject::tr("Edit Chamfer");
+        }else{
+            if (featName == "Draft"){
+                menuName=QObject::tr("Edit Draft");
+            }else {
+                if (featName == "Thickness")
+                {
+                    menuName=QObject::tr("Edit Thickness");
+                }else{
+                    menuName=QObject::tr("Edit Undefined");
+                }
+            }
+        }
+    }
+    act = menu->addAction(menuName, receiver, member);
     act->setData(QVariant((int)ViewProvider::Default));
     PartDesignGui::ViewProvider::setupContextMenu(menu, receiver, member);
 }

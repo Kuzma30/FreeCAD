@@ -39,7 +39,14 @@ TaskDlgFeatureParameters *ViewProviderMultiTransform::getEditDialog() {
 
 void ViewProviderMultiTransform::setupContextMenu(QMenu* menu, QObject* receiver, const char* member)
 {
-    this->addDefaultAction(menu, QObject::tr("Edit %1").arg(QString::fromStdString(featureName)));
+    QString contextMenuText;
+    if (featureName == "MultiTransform")
+    {
+        contextMenuText=QObject::tr("Edit Multi Transform");
+    }else {
+        contextMenuText=QObject::tr("Edit Undefined");
+    }
+    this->addDefaultAction(menu, contextMenuText);
     PartDesignGui::ViewProvider::setupContextMenu(menu, receiver, member);
 }
 

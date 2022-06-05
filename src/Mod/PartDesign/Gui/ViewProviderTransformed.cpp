@@ -62,7 +62,28 @@ PROPERTY_SOURCE(PartDesignGui::ViewProviderTransformed,PartDesignGui::ViewProvid
 void ViewProviderTransformed::setupContextMenu(QMenu* menu, QObject* receiver, const char* member)
 {
     QAction* act;
-    act = menu->addAction(QObject::tr("Edit %1").arg(QString::fromStdString(featureName)), receiver, member);
+    QString contextMenuText;
+    if (featureName == "Mirrored")
+    {
+        contextMenuText=QObject::tr("Edit Mirrored");
+    }else {
+        if (featureName == "LinearPattern"){
+            contextMenuText=QObject::tr("Edit Linear Pattern");
+        }else{
+            if (featureName == "PolarPattern")
+            {
+                contextMenuText=QObject::tr("Edit Polar Pattern");
+            }else{
+                if (featureName == "Scaled")
+                {
+                    contextMenuText=QObject::tr("Edit Scaled");
+                }else{
+                    contextMenuText=QObject::tr("Edit Undefined");
+                }
+            }
+        }
+    }
+    act = menu->addAction(contextMenuText, receiver, member);
     act->setData(QVariant((int)ViewProvider::Default));
     PartDesignGui::ViewProvider::setupContextMenu(menu, receiver, member);
 }

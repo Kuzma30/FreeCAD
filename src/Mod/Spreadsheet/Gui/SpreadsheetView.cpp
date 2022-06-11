@@ -431,13 +431,13 @@ void SheetView::aliasChanged(const QString& text)
 
     if (!aliasOk) {
         // change tooltip and make text color red
-        ui->cellAlias->setToolTip(QObject::tr("Alias contains invalid characters!"));
+        ui->cellAlias->setToolTip(QObject::tr("Alias contains invalid characters!","ToolTip"));
         ui->cellAlias->setStyleSheet(QLatin1String("color:") + warningColor);
     }
     else {
         // go back to normal
         ui->cellAlias->setToolTip(
-            QObject::tr("Refer to cell by alias, for example\nSpreadsheet.my_alias_name instead of Spreadsheet.B1"));
+            QObject::tr("Refer to cell by alias, for example\nSpreadsheet.my_alias_name instead of Spreadsheet.B1","ToolTip"));
         ui->cellAlias->setStyleSheet(originalStylesheet);
     }
 }

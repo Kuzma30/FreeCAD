@@ -88,7 +88,8 @@ CmdTechDrawHatch::CmdTechDrawHatch()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Hatch a Face using Image File");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Hatch a face using image file");
     sWhatsThis      = "TechDraw_Hatch";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_Hatch";
@@ -209,7 +210,8 @@ CmdTechDrawGeometricHatch::CmdTechDrawGeometricHatch()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Apply Geometric Hatch to Face");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Apply geometric hatch to face");
     sWhatsThis      = "TechDraw_GeometricHatch";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_GeometricHatch";
@@ -278,6 +280,7 @@ CmdTechDrawImage::CmdTechDrawImage()
     // setting the Gui eye-candy
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Insert Bitmap Image");
+    //: ToolTip
     sToolTipText  = QT_TR_NOOP("Insert Bitmap from a file into a page");
     sWhatsThis    = "TechDraw_Image";
     sStatusTip    = QT_TR_NOOP("Insert Bitmap from a file into a page");
@@ -329,7 +332,8 @@ CmdTechDrawToggleFrame::CmdTechDrawToggleFrame()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Turn View Frames On/Off");
-    sToolTipText    = QT_TR_NOOP("Turn View Frames On/Off");
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Turn on or turn off view frames");
     sWhatsThis      = "TechDraw_Toggle";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/techdraw-toggleframe";

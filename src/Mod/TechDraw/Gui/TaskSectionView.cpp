@@ -163,7 +163,7 @@ void TaskSectionView::setUiPrimary()
 
     // before the user did not select an orientation,
     // the section properties cannot be changed
-    this->setToolTip(QObject::tr("Select at first an orientation"));
+    this->setToolTip(QObject::tr("Select at first an orientation","ToolTip"));
     enableAll(false);
 
     connect(ui->leSymbol, SIGNAL(editingFinished()), this, SLOT(onIdentifierChanged()));

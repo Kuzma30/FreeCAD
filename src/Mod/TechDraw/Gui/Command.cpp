@@ -118,7 +118,8 @@ CmdTechDrawPageDefault::CmdTechDrawPageDefault()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert Default Page");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert default page");
     sWhatsThis      = "TechDraw_PageDefault";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_PageDefault";
@@ -182,7 +183,8 @@ CmdTechDrawPageTemplate::CmdTechDrawPageTemplate()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert Page using Template");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert page using template");
     sWhatsThis      = "TechDraw_PageTemplate";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_PageTemplate";
@@ -262,7 +264,8 @@ CmdTechDrawRedrawPage::CmdTechDrawRedrawPage()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Redraw Page");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Redraw page");
     sWhatsThis      = "TechDraw_RedrawPage";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_RedrawPage";
@@ -299,7 +302,8 @@ CmdTechDrawView::CmdTechDrawView()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert View");
-    sToolTipText    = QT_TR_NOOP("Insert a View");
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert a view");
     sWhatsThis      = "TechDraw_View";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/techdraw-View";
@@ -443,7 +447,8 @@ CmdTechDrawActiveView::CmdTechDrawActiveView()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert Active View (3D View)");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert active view (3D view)");
     sWhatsThis      = "TechDraw_ActiveView";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_ActiveView";
@@ -477,7 +482,8 @@ CmdTechDrawSectionView::CmdTechDrawSectionView()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert Section View");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert section view");
     sWhatsThis      = "TechDraw_SectionView";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_SectionView";
@@ -527,7 +533,8 @@ CmdTechDrawDetailView::CmdTechDrawDetailView()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert Detail View");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert detail view");
     sWhatsThis      = "TechDraw_DetailView";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_DetailView";
@@ -576,6 +583,7 @@ CmdTechDrawProjectionGroup::CmdTechDrawProjectionGroup()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert Projection Group");
+    //: ToolTip
     sToolTipText    = QT_TR_NOOP("Insert multiple linked views of drawable object(s)");
     sWhatsThis      = "TechDraw_ProjectionGroup";
     sStatusTip      = sToolTipText;
@@ -856,7 +864,8 @@ CmdTechDrawBalloon::CmdTechDrawBalloon()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert Balloon Annotation");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert balloon annotation");
     sWhatsThis      = "TechDraw_Balloon";
     sStatusTip      = sToolTipText;
     sPixmap         = "TechDraw_Balloon";
@@ -921,7 +930,8 @@ CmdTechDrawClipGroup::CmdTechDrawClipGroup()
     // setting the
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Insert Clip Group");
-    sToolTipText  = sMenuText;
+    //: ToolTip
+    sToolTipText  = QT_TR_NOOP("Insert clip group");
     sWhatsThis    = "TechDraw_ClipGroup";
     sStatusTip    = sToolTipText;
     sPixmap       = "actions/TechDraw_ClipGroup";
@@ -960,7 +970,8 @@ CmdTechDrawClipGroupAdd::CmdTechDrawClipGroupAdd()
 {
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Add View to Clip Group");
-    sToolTipText  = sMenuText;
+    //: ToolTip
+    sToolTipText  = QT_TR_NOOP("Add view to clip group");
     sWhatsThis    = "TechDraw_ClipGroupAdd";
     sStatusTip    = sToolTipText;
     sPixmap       = "actions/TechDraw_ClipGroupAdd";
@@ -1044,7 +1055,8 @@ CmdTechDrawClipGroupRemove::CmdTechDrawClipGroupRemove()
 {
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Remove View from Clip Group");
-    sToolTipText  = sMenuText;
+    //: ToolTip
+    sToolTipText  = QT_TR_NOOP("Remove view from clip group");
     sWhatsThis    = "TechDraw_ClipGroupRemove";
     sStatusTip    = sToolTipText;
     sPixmap       = "actions/TechDraw_ClipGroupRemove";
@@ -1119,6 +1131,7 @@ CmdTechDrawSymbol::CmdTechDrawSymbol()
     // setting the Gui eye-candy
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Insert SVG Symbol");
+    //: ToolTip
     sToolTipText  = QT_TR_NOOP("Insert symbol from an SVG file");
     sWhatsThis    = "TechDraw_Symbol";
     sStatusTip    = sToolTipText;
@@ -1174,6 +1187,7 @@ CmdTechDrawDraftView::CmdTechDrawDraftView()
     // setting the Gui eye-candy
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Insert Draft Workbench Object");
+    //: ToolTip
     sToolTipText  = QT_TR_NOOP("Insert a View of a Draft Workbench object");
     sWhatsThis    = "TechDraw_NewDraft";
     sStatusTip    = sToolTipText;
@@ -1240,6 +1254,7 @@ CmdTechDrawArchView::CmdTechDrawArchView()
     // setting the Gui eye-candy
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Insert Arch Workbench Object");
+    //: ToolTip
     sToolTipText  = QT_TR_NOOP("Insert a View of a Section Plane from Arch Workbench");
     sWhatsThis    = "TechDraw_NewArch";
     sStatusTip    = sToolTipText;
@@ -1305,6 +1320,7 @@ CmdTechDrawSpreadsheetView::CmdTechDrawSpreadsheetView()
     // setting the
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Insert Spreadsheet View");
+    //: ToolTip
     sToolTipText  = QT_TR_NOOP("Insert View to a spreadsheet");
     sWhatsThis    = "TechDraw_SpreadsheetView";
     sStatusTip    = sToolTipText;
@@ -1364,7 +1380,8 @@ CmdTechDrawExportPageSVG::CmdTechDrawExportPageSVG()
 {
     sGroup        = QT_TR_NOOP("File");
     sMenuText     = QT_TR_NOOP("Export Page as SVG");
-    sToolTipText  = sMenuText;
+    //: ToolTip
+    sToolTipText  = QT_TR_NOOP("Export page as SVG");
     sWhatsThis    = "TechDraw_ExportPageSVG";
     sStatusTip    = sToolTipText;
     sPixmap       = "actions/TechDraw_ExportPageSVG";
@@ -1409,7 +1426,8 @@ CmdTechDrawExportPageDXF::CmdTechDrawExportPageDXF()
 {
     sGroup        = QT_TR_NOOP("File");
     sMenuText     = QT_TR_NOOP("Export Page as DXF");
-    sToolTipText  = sMenuText;
+    //: ToolTip
+    sToolTipText  = QT_TR_NOOP("Export page as DXF");
     sWhatsThis    = "TechDraw_ExportPageDXF";
     sStatusTip    = sToolTipText;
     sPixmap       = "actions/TechDraw_ExportPageDXF";
@@ -1476,7 +1494,8 @@ CmdTechDrawProjectShape::CmdTechDrawProjectShape()
     sAppModule      = "TechDraw";
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Project shape...");
-    sToolTipText  = sMenuText;
+    //: ToolTip
+    sToolTipText  = QT_TR_NOOP("Project shape");
     sWhatsThis    = "TechDraw_ProjectShape";
     sStatusTip    = sToolTipText;
     sPixmap         = "actions/TechDraw_ProjectShape";

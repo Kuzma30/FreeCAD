@@ -104,7 +104,8 @@ CmdTechDrawLeaderLine::CmdTechDrawLeaderLine()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Add Leaderline to View");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Add leader line to view");
     sWhatsThis      = "TechDraw_LeaderLine";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/techdraw-LeaderLine";
@@ -166,7 +167,8 @@ CmdTechDrawRichTextAnnotation::CmdTechDrawRichTextAnnotation()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert Rich Text Annotation");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert rich text annotation");
     sWhatsThis      = "TechDraw_RichTextAnnotation";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_RichTextAnnotation";
@@ -217,8 +219,9 @@ CmdTechDrawCosmeticVertexGroup::CmdTechDrawCosmeticVertexGroup()
 {
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
-    sMenuText       = QT_TR_NOOP("Insert Cosmetic Vertex");
-    sToolTipText    = sMenuText;
+    sMenuText       = QT_TR_NOOP("Insert Cosmetic Vertex Group");
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert cosmetic vertex group");
     sWhatsThis      = "TechDraw_CosmeticVertexGroup";
     sStatusTip      = sToolTipText;
 //    eType           = ForEdit;
@@ -293,15 +296,15 @@ void CmdTechDrawCosmeticVertexGroup::languageChange()
 
     QAction* arc1 = a[0];
     arc1->setText(QApplication::translate("CmdTechDrawCosmeticVertexGroup","Add Cosmetic Vertex"));
-    arc1->setToolTip(QApplication::translate("TechDraw_CosmeticVertex","Inserts a Cosmetic Vertex into a View"));
+    arc1->setToolTip(QApplication::translate("TechDraw_CosmeticVertex","Inserts a cosmetic vertex into a view","ToolTip"));
     arc1->setStatusTip(arc1->toolTip());
     QAction* arc2 = a[1];
     arc2->setText(QApplication::translate("CmdMidpoints","Add Midpoint Vertices"));
-    arc2->setToolTip(QApplication::translate("TechDraw_Midpoints","Inserts Cosmetic Vertices at Midpoint of selected Edges"));
+    arc2->setToolTip(QApplication::translate("TechDraw_Midpoints","Inserts cosmetic vertices at midle point of selected edges","ToolTip"));
     arc2->setStatusTip(arc2->toolTip());
     QAction* arc3 = a[2];
     arc3->setText(QApplication::translate("CmdQuadrants","Add Quadrant Vertices"));
-    arc3->setToolTip(QApplication::translate("TechDraw_Quadrants","Inserts Cosmetic Vertices at Quadrant Points of selected Circles"));
+    arc3->setToolTip(QApplication::translate("TechDraw_Quadrants","Inserts cosmetic vertices at quadrant points of selected circles","ToolTip"));
     arc3->setStatusTip(arc3->toolTip());
 }
 
@@ -407,7 +410,8 @@ CmdTechDrawCosmeticVertex::CmdTechDrawCosmeticVertex()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Add Cosmetic Vertex");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Add cosmetic vertex");
     sWhatsThis      = "TechDraw_CosmeticVertex";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/techdraw-CosmeticVertex";
@@ -468,7 +472,8 @@ CmdTechDrawMidpoints::CmdTechDrawMidpoints()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Add Midpoint Vertices");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Add midle point vertices");
     sWhatsThis      = "TechDraw_Midpoints";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_Midpoints";
@@ -507,7 +512,8 @@ CmdTechDrawQuadrants::CmdTechDrawQuadrants()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Add Quadrant Vertices");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Add quadrant vertices");
     sWhatsThis      = "TechDraw_Quadrants";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_Quadrants";
@@ -546,7 +552,8 @@ CmdTechDrawAnnotation::CmdTechDrawAnnotation()
     // setting the Gui eye-candy
     sGroup        = QT_TR_NOOP("TechDraw");
     sMenuText     = QT_TR_NOOP("Insert Annotation");
-    sToolTipText  = sMenuText;
+    //: ToolTip
+    sToolTipText  = QT_TR_NOOP("Insert annotation");
     sWhatsThis    = "TechDraw_NewAnnotation";
     sStatusTip    = sToolTipText;
     sPixmap       = "actions/techdraw-annotation";
@@ -586,7 +593,8 @@ CmdTechDrawCenterLineGroup::CmdTechDrawCenterLineGroup()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Insert Center Line");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Insert center line");
     sWhatsThis      = "TechDraw_CenterLineGroup";
     sStatusTip      = sToolTipText;
 //    eType           = ForEdit;
@@ -659,15 +667,15 @@ void CmdTechDrawCenterLineGroup::languageChange()
 
     QAction* arc1 = a[0];
     arc1->setText(QApplication::translate("CmdTechDrawCenterLineGroup","Add Centerline to Faces"));
-    arc1->setToolTip(QApplication::translate("TechDraw_FaceCenterLine","Adds a Centerline to Faces"));
+    arc1->setToolTip(QApplication::translate("TechDraw_FaceCenterLine","Adds a center line to faces","ToolTip"));
     arc1->setStatusTip(arc1->toolTip());
     QAction* arc2 = a[1];
     arc2->setText(QApplication::translate("Cmd2LineCenterLine","Add Centerline between 2 Lines"));
-    arc2->setToolTip(QApplication::translate("TechDraw_2LineCenterLine","Adds a Centerline between 2 Lines"));
+    arc2->setToolTip(QApplication::translate("TechDraw_2LineCenterLine","Adds a center line between 2 lines","ToolTip"));
     arc2->setStatusTip(arc2->toolTip());
     QAction* arc3 = a[2];
     arc3->setText(QApplication::translate("Cmd2PointCenterLine","Add Centerline between 2 Points"));
-    arc3->setToolTip(QApplication::translate("TechDraw_2PointCenterLine","Adds a Centerline between 2 Points"));
+    arc3->setToolTip(QApplication::translate("TechDraw_2PointCenterLine","Adds a center line between 2 points","ToolTip"));
     arc3->setStatusTip(arc3->toolTip());
 }
 
@@ -689,7 +697,8 @@ CmdTechDrawFaceCenterLine::CmdTechDrawFaceCenterLine()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Add Centerline to Faces");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Add center line to faces");
     sWhatsThis      = "TechDraw_FaceCenterLine";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_FaceCenterLine";
@@ -799,7 +808,8 @@ CmdTechDraw2LineCenterLine::CmdTechDraw2LineCenterLine()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Add Centerline between 2 Lines");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Add center line between 2 lines");
     sWhatsThis      = "TechDraw_2LineCenterLine";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/techdraw-2linecenterline";
@@ -876,7 +886,8 @@ CmdTechDraw2PointCenterLine::CmdTechDraw2PointCenterLine()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Add Centerline between 2 Points");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Add center line between 2 points");
     sWhatsThis      = "TechDraw_2PointCenterLine";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/techdraw-2pointcenterline";
@@ -989,7 +1000,8 @@ CmdTechDraw2PointCosmeticLine::CmdTechDraw2PointCosmeticLine()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Add Cosmetic Line Through 2 Points");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Add cosmetic line through 2 points");
     sWhatsThis      = "TechDraw_2PointCosmeticLine";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/techdraw-line2points";
@@ -1141,7 +1153,8 @@ CmdTechDrawCosmeticEraser::CmdTechDrawCosmeticEraser()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Remove Cosmetic Object");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Remove cosmetic object");
     sWhatsThis      = "TechDraw_CosmeticEraser";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/techdraw-CosmeticEraser";
@@ -1268,7 +1281,8 @@ CmdTechDrawDecorateLine::CmdTechDrawDecorateLine()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Change Appearance of Lines");
-    sToolTipText    = QT_TR_NOOP("Change Appearance of selected Lines");
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Change appearance of selected lines");
     sWhatsThis      = "TechDraw_DecorateLine";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/techdraw-DecorateLine";
@@ -1347,7 +1361,8 @@ CmdTechDrawShowAll::CmdTechDrawShowAll()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Show/Hide Invisible Edges");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Show or hide invisible edges");
     sWhatsThis      = "TechDraw_ShowAll";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_ShowAll";
@@ -1412,7 +1427,8 @@ CmdTechDrawWeldSymbol::CmdTechDrawWeldSymbol()
     sAppModule      = "TechDraw";
     sGroup          = QT_TR_NOOP("TechDraw");
     sMenuText       = QT_TR_NOOP("Add Welding Information to Leaderline");
-    sToolTipText    = sMenuText;
+    //: ToolTip
+    sToolTipText    = QT_TR_NOOP("Add welding information to leader line");
     sWhatsThis      = "TechDraw_WeldSymbol";
     sStatusTip      = sToolTipText;
     sPixmap         = "actions/TechDraw_WeldSymbol";

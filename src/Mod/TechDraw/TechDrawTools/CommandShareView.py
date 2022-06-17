@@ -45,7 +45,7 @@ class CommandShareView:
         return {'Pixmap': 'actions/TechDraw_ShareView.svg',
                 'Accel': "",
                 'MenuText': QT_TRANSLATE_NOOP("TechDraw_ShareView", "Share View"),
-                'ToolTip': QT_TRANSLATE_NOOP("TechDraw_ShareView", "Share a View on a second Page")}
+                'ToolTip': QT_TRANSLATE_NOOP("TechDraw_ShareView", "Share a View on a second Page","ToolTip")}
 
     def Activated(self):
         """Run the following code when the command is activated (button press)."""

@@ -155,7 +155,7 @@
      <item row="5" column="2">
       <widget class="Gui::QuantitySpinBox" name="dsb_Weight">
        <property name="toolTip">
-        <string>Thickness of pattern lines.</string>
+        <string extracomment="ToolTip">Thickness of pattern lines.</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>

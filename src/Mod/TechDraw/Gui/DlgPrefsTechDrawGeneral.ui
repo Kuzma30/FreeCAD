@@ -58,7 +58,7 @@
            </sizepolicy>
           </property>
           <property name="toolTip">
-           <string>Whether or not pages are updated every time the 3D model is changed</string>
+           <string extracomment="ToolTip">Whether or not pages are updated every time the 3D model is changed</string>
           </property>
           <property name="text">
            <string>Update With 3D (global policy)</string>
@@ -89,7 +89,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Whether or not a page's 'Keep Updated' property
+           <string extracomment="ToolTip">Whether or not a page's 'Keep Updated' property
 can override the global 'Update With 3D' parameter</string>
           </property>
           <property name="text">
@@ -120,7 +120,7 @@ can override the global 'Update With 3D' parameter</string>
            </font>
           </property>
           <property name="toolTip">
-           <string>Keep drawing pages in sync with changes of 3D model in real time.
+           <string extracomment="ToolTip">Keep drawing pages in sync with changes of 3D model in real time.
 This can slow down the response time.</string>
           </property>
           <property name="text">
@@ -157,7 +157,7 @@ This can slow down the response time.</string>
            </font>
           </property>
           <property name="toolTip">
-           <string>Automatically distribute secondary views
+           <string extracomment="ToolTip">Automatically distribute secondary views
 for ProjectionGroups</string>
           </property>
           <property name="text">
@@ -214,7 +214,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>* this font is also used for dimensions
+           <string extracomment="ToolTip">* this font is also used for dimensions
    Changes have no effect on existing dimensions.</string>
           </property>
           <property name="text">
@@ -265,7 +265,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Font for labels</string>
+           <string extracomment="ToolTip">Font for labels</string>
           </property>
           <property name="currentFont">
            <font/>
@@ -307,7 +307,7 @@ for ProjectionGroups</string>
            </sizepolicy>
           </property>
           <property name="toolTip">
-           <string>Label size</string>
+           <string extracomment="ToolTip">Label size</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -395,7 +395,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Use first- or third-angle multiview projection convention</string>
+           <string extracomment="ToolTip">Use first- or third-angle multiview projection convention</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>ProjectionAngle</cstring>
@@ -442,7 +442,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Style for hidden lines</string>
+           <string extracomment="ToolTip">Style for hidden lines</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>HiddenLine</cstring>
@@ -523,7 +523,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Default template file for new pages</string>
+           <string extracomment="ToolTip">Default template file for new pages</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>TemplateFile</cstring>
@@ -568,7 +568,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Starting directory for menu 'Insert Page using Template'</string>
+           <string extracomment="ToolTip">Starting directory for menu 'Insert Page using Template'</string>
           </property>
           <property name="mode">
            <enum>Gui::FileChooser::Directory</enum>
@@ -608,7 +608,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Default SVG or bitmap file for hatching</string>
+           <string extracomment="ToolTip">Default SVG or bitmap file for hatching</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>FileHatch</cstring>
@@ -645,7 +645,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Alternate file for personal LineGroup definition</string>
+           <string extracomment="ToolTip">Alternate file for personal LineGroup definition</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>LineGroupFile</cstring>
@@ -682,7 +682,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Default directory for welding symbols</string>
+           <string extracomment="ToolTip">Default directory for welding symbols</string>
           </property>
           <property name="mode">
            <enum>Gui::FileChooser::Directory</enum>
@@ -722,7 +722,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Default PAT pattern definition file for geometric hatching</string>
+           <string extracomment="ToolTip">Default PAT pattern definition file for geometric hatching</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>FilePattern</cstring>
@@ -765,7 +765,7 @@ for ProjectionGroups</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Name of the default PAT pattern</string>
+           <string extracomment="ToolTip">Name of the default PAT pattern</string>
           </property>
           <property name="text">
            <string>Diamond</string>
@@ -802,7 +802,7 @@ for ProjectionGroups</string>
            </font>
           </property>
           <property name="toolTip">
-           <string>Set ShowGrid property to true on new Pages.</string>
+           <string extracomment="ToolTip">Set ShowGrid property to true on new Pages.</string>
           </property>
           <property name="text">
            <string>Show Grid</string>
@@ -846,7 +846,7 @@ for ProjectionGroups</string>
         <item row="1" column="2">
          <widget class="Gui::PrefUnitSpinBox" name="psb_GridSpacing">
           <property name="toolTip">
-           <string>Distance between Page grid lines.</string>
+           <string extracomment="ToolTip">Distance between Page grid lines.</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

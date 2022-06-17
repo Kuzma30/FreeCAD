@@ -110,7 +110,7 @@
      <item>
       <widget class="QPushButton" name="pbTracker">
        <property name="toolTip">
-        <string>First pick the start point of the line,
+        <string extracomment="ToolTip">First pick the start point of the line,
 then at least a second point.
 You can pick further points to get line segments.</string>
        </property>
@@ -209,7 +209,7 @@ You can pick further points to get line segments.</string>
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Line color</string>
+        <string extracomment="ToolTip">Line color</string>
        </property>
        <property name="color">
         <color>
@@ -239,7 +239,7 @@ You can pick further points to get line segments.</string>
         </size>
        </property>
        <property name="toolTip">
-        <string>Line width</string>
+        <string extracomment="ToolTip">Line width</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -268,7 +268,7 @@ You can pick further points to get line segments.</string>
         </size>
        </property>
        <property name="toolTip">
-        <string>Line style</string>
+        <string extracomment="ToolTip">Line style</string>
        </property>
        <property name="currentIndex">
         <number>1</number>

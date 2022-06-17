@@ -64,7 +64,7 @@
         <item row="0" column="1">
          <widget class="Gui::PrefColorButton" name="pcb_Normal">
           <property name="toolTip">
-           <string>Normal line color</string>
+           <string extracomment="ToolTip">Normal line color</string>
           </property>
           <property name="color">
            <color>
@@ -109,7 +109,7 @@
         <item row="0" column="4">
          <widget class="Gui::PrefColorButton" name="pcb_Hidden">
           <property name="toolTip">
-           <string>Hidden line color</string>
+           <string extracomment="ToolTip">Hidden line color</string>
           </property>
           <property name="color">
            <color>
@@ -141,7 +141,7 @@
         <item row="1" column="1">
          <widget class="Gui::PrefColorButton" name="pcb_PreSelect">
           <property name="toolTip">
-           <string>Preselection color</string>
+           <string extracomment="ToolTip">Preselection color</string>
           </property>
           <property name="color">
            <color>
@@ -173,7 +173,7 @@
         <item row="1" column="4">
          <widget class="Gui::PrefColorButton" name="pcb_Surface">
           <property name="toolTip">
-           <string>Section face color</string>
+           <string extracomment="ToolTip">Section face color</string>
           </property>
           <property name="color">
            <color>
@@ -205,7 +205,7 @@
         <item row="2" column="1">
          <widget class="Gui::PrefColorButton" name="pcb_Select">
           <property name="toolTip">
-           <string>Selected item color</string>
+           <string extracomment="ToolTip">Selected item color</string>
           </property>
           <property name="color">
            <color>
@@ -232,7 +232,7 @@
         <item row="2" column="4">
          <widget class="Gui::PrefColorButton" name="pcbSectionLine">
           <property name="toolTip">
-           <string>Section line color</string>
+           <string extracomment="ToolTip">Section line color</string>
           </property>
           <property name="color">
            <color>
@@ -264,7 +264,7 @@
         <item row="3" column="1">
          <widget class="Gui::PrefColorButton" name="pcb_Background">
           <property name="toolTip">
-           <string>Background color around pages</string>
+           <string extracomment="ToolTip">Background color around pages</string>
           </property>
           <property name="color">
            <color>
@@ -296,7 +296,7 @@
         <item row="3" column="4">
          <widget class="Gui::PrefColorButton" name="pcb_Hatch">
           <property name="toolTip">
-           <string>Hatch image color</string>
+           <string extracomment="ToolTip">Hatch image color</string>
           </property>
           <property name="color">
            <color>
@@ -323,7 +323,7 @@
         <item row="4" column="1">
          <widget class="Gui::PrefColorButton" name="pcbDimColor">
           <property name="toolTip">
-           <string>Color of dimension lines and text.</string>
+           <string extracomment="ToolTip">Color of dimension lines and text.</string>
           </property>
           <property name="color">
            <color>
@@ -355,7 +355,7 @@
         <item row="4" column="4">
          <widget class="Gui::PrefColorButton" name="pcb_GeomHatch">
           <property name="toolTip">
-           <string>Geometric hatch pattern color</string>
+           <string extracomment="ToolTip">Geometric hatch pattern color</string>
           </property>
           <property name="color">
            <color>
@@ -382,7 +382,7 @@
         <item row="5" column="1">
          <widget class="Gui::PrefColorButton" name="pcbCenterColor">
           <property name="toolTip">
-           <string>Centerline color</string>
+           <string extracomment="ToolTip">Centerline color</string>
           </property>
           <property name="color">
            <color>
@@ -409,7 +409,7 @@
         <item row="5" column="4">
          <widget class="Gui::PrefColorButton" name="pcbVertexColor">
           <property name="toolTip">
-           <string>Color of vertices in views</string>
+           <string extracomment="ToolTip">Color of vertices in views</string>
           </property>
           <property name="color">
            <color>
@@ -470,7 +470,7 @@
         <item row="6" column="4">
          <widget class="Gui::PrefColorButton" name="pcbMarkup">
           <property name="toolTip">
-           <string>Default color for leader lines</string>
+           <string extracomment="ToolTip">Default color for leader lines</string>
           </property>
           <property name="color">
            <color>
@@ -525,7 +525,7 @@
            </font>
           </property>
           <property name="toolTip">
-           <string>Object faces will be transparent</string>
+           <string extracomment="ToolTip">Object faces will be transparent</string>
           </property>
           <property name="text">
            <string>Transparent Faces</string>
@@ -541,7 +541,7 @@
         <item row="8" column="1">
          <widget class="Gui::PrefColorButton" name="pcb_Face">
           <property name="toolTip">
-           <string>Face color (if not transparent)</string>
+           <string extracomment="ToolTip">Face color (if not transparent)</string>
           </property>
           <property name="color">
            <color>

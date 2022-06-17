@@ -49,7 +49,7 @@
            </sizepolicy>
           </property>
           <property name="toolTip">
-           <string>If checked, TechDraw will attempt to build faces using the
+           <string extracomment="ToolTip">If checked, TechDraw will attempt to build faces using the
 line segments returned by the hidden line removal algorithm.
 Faces must be detected in order to use hatching, but there
 can be a performance penalty in complex models.</string>
@@ -83,7 +83,7 @@ can be a performance penalty in complex models.</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Highlights border of section cut in section views</string>
+           <string extracomment="ToolTip">Highlights border of section cut in section views</string>
           </property>
           <property name="text">
            <string>Show Section Edges</string>
@@ -108,7 +108,7 @@ can be a performance penalty in complex models.</string>
            </sizepolicy>
           </property>
           <property name="toolTip">
-           <string>Dump intermediate results during Section view processing</string>
+           <string extracomment="ToolTip">Dump intermediate results during Section view processing</string>
           </property>
           <property name="text">
            <string>Debug Section</string>
@@ -136,7 +136,7 @@ can be a performance penalty in complex models.</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Dump intermediate results during Detail view processing</string>
+           <string extracomment="ToolTip">Dump intermediate results during Detail view processing</string>
           </property>
           <property name="text">
            <string>Debug Detail</string>
@@ -158,7 +158,7 @@ can be a performance penalty in complex models.</string>
            </sizepolicy>
           </property>
           <property name="toolTip">
-           <string>Include edges with unexpected geometry (zero length etc.) in results</string>
+           <string extracomment="ToolTip">Include edges with unexpected geometry (zero length etc.) in results</string>
           </property>
           <property name="text">
            <string>Allow Crazy Edges</string>
@@ -204,7 +204,7 @@ can be a performance penalty in complex models.</string>
            </font>
           </property>
           <property name="toolTip">
-           <string>Perform a fuse operation on input shape(s) before Section view processing</string>
+           <string extracomment="ToolTip">Perform a fuse operation on input shape(s) before Section view processing</string>
           </property>
           <property name="text">
            <string>Fuse Before Section</string>
@@ -226,7 +226,7 @@ can be a performance penalty in complex models.</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Include 2D Objects in projection</string>
+           <string extracomment="ToolTip">Include 2D Objects in projection</string>
           </property>
           <property name="text">
            <string>Show Loose 2D Geom</string>
@@ -282,7 +282,7 @@ can be a performance penalty in complex models.</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Size of selection area around edges
+           <string extracomment="ToolTip">Size of selection area around edges
 Each unit is approx. 0.1 mm wide</string>
           </property>
           <property name="statusTip">
@@ -336,7 +336,7 @@ Each unit is approx. 0.1 mm wide</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Selection area around center marks
+           <string extracomment="ToolTip">Selection area around center marks
 Each unit is approx. 0.1 mm wide</string>
           </property>
           <property name="statusTip">
@@ -388,7 +388,7 @@ Each unit is approx. 0.1 mm wide</string>
            </font>
           </property>
           <property name="toolTip">
-           <string>Shape of line end caps.
+           <string extracomment="ToolTip">Shape of line end caps.
 Only change unless you know what you are doing!</string>
           </property>
           <property name="prefEntry" stdset="0">
@@ -430,7 +430,7 @@ Only change unless you know what you are doing!</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Limit of 64x64 pixel SVG tiles used to hatch a single face.
+           <string extracomment="ToolTip">Limit of 64x64 pixel SVG tiles used to hatch a single face.
 For large scalings you might get an error about to many SVG tiles.
 Then you need to increase the tile limit.</string>
           </property>
@@ -473,7 +473,7 @@ Then you need to increase the tile limit.</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Maximum hatch line segments to use
+           <string extracomment="ToolTip">Maximum hatch line segments to use
 when hatching a face with a PAT pattern</string>
           </property>
           <property name="alignment">

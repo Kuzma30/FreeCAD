@@ -48,7 +48,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Width of generated view</string>
+        <string extracomment="ToolTip">Width of generated view</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -80,7 +80,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Height of generated view</string>
+        <string extracomment="ToolTip">Height of generated view</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -112,7 +112,7 @@
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Minimal distance of the object from
+        <string extracomment="ToolTip">Minimal distance of the object from
 the top and left view border</string>
        </property>
        <property name="alignment">
@@ -129,7 +129,7 @@ the top and left view border</string>
      <item row="3" column="0">
       <widget class="QCheckBox" name="cbbg">
        <property name="toolTip">
-        <string>Paint background yes/no</string>
+        <string extracomment="ToolTip">Paint background yes/no</string>
        </property>
        <property name="text">
         <string>Background</string>
@@ -161,7 +161,7 @@ the top and left view border</string>
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Background color</string>
+        <string extracomment="ToolTip">Background color</string>
        </property>
       </widget>
      </item>
@@ -181,7 +181,7 @@ the top and left view border</string>
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Width of lines in generated view</string>
+        <string extracomment="ToolTip">Width of lines in generated view</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -210,7 +210,7 @@ the top and left view border</string>
      <item row="5" column="2">
       <widget class="QComboBox" name="cbMode">
        <property name="toolTip">
-        <string>Drawing style - see SoRenderManager</string>
+        <string extracomment="ToolTip">Drawing style - see SoRenderManager</string>
        </property>
        <item>
         <property name="text">

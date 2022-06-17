@@ -38,7 +38,7 @@
      <item row="1" column="0">
       <widget class="QRadioButton" name="rbSolid">
        <property name="toolTip">
-        <string>Set line style to solid</string>
+        <string extracomment="ToolTip">Set line style to solid</string>
        </property>
        <property name="text">
         <string>Solid</string>

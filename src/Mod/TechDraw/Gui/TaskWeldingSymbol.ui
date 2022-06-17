@@ -39,7 +39,7 @@
          <item row="0" column="1">
           <widget class="QLineEdit" name="leArrowTextC">
            <property name="toolTip">
-            <string>Text above arrow side symbol
+            <string extracomment="ToolTip">Text above arrow side symbol
 Angle, surface finish, root</string>
            </property>
           </widget>
@@ -47,7 +47,7 @@ Angle, surface finish, root</string>
         <item row="2" column="0">
           <widget class="QLineEdit" name="leArrowTextL">
            <property name="toolTip">
-            <string>Text before arrow side symbol
+            <string extracomment="ToolTip">Text before arrow side symbol
 Preparation depth, (weld size)</string>
            </property>
           </widget>
@@ -73,7 +73,7 @@ Preparation depth, (weld size)</string>
             </size>
            </property>
            <property name="toolTip">
-            <string>Pick arrow side symbol</string>
+            <string extracomment="ToolTip">Pick arrow side symbol</string>
            </property>
            <property name="statusTip">
             <string/>
@@ -89,7 +89,7 @@ Preparation depth, (weld size)</string>
          <item row="2" column="2">
           <widget class="QLineEdit" name="leArrowTextR">
            <property name="toolTip">
-            <string>Text after arrow side symbol
+            <string extracomment="ToolTip">Text after arrow side symbol
 Number of welds × length, (gap)</string>
            </property>
           </widget>
@@ -118,7 +118,7 @@ Number of welds × length, (gap)</string>
          <item row="0" column="0">
           <widget class="QLineEdit" name="leOtherTextL">
            <property name="toolTip">
-            <string>Text before other side symbol
+            <string extracomment="ToolTip">Text before other side symbol
 Preparation depth, (weld size)</string>
            </property>
           </widget>
@@ -126,7 +126,7 @@ Preparation depth, (weld size)</string>
          <item row="0" column="1">
           <widget class="QPushButton" name="pbOtherSymbol">
            <property name="toolTip">
-            <string>Pick other side symbol</string>
+            <string extracomment="ToolTip">Pick other side symbol</string>
            </property>
            <property name="text">
             <string>Symbol</string>
@@ -136,7 +136,7 @@ Preparation depth, (weld size)</string>
          <item row="0" column="2">
           <widget class="QLineEdit" name="leOtherTextR">
            <property name="toolTip">
-            <string>Text after other side symbol
+            <string extracomment="ToolTip">Text after other side symbol
 Number of welds × length, (gap)</string>
            </property>
           </widget>
@@ -168,7 +168,7 @@ Number of welds × length, (gap)</string>
             </size>
            </property>
            <property name="toolTip">
-            <string>Remove other side symbol</string>
+            <string extracomment="ToolTip">Remove other side symbol</string>
            </property>
            <property name="text">
             <string>Delete</string>
@@ -178,7 +178,7 @@ Number of welds × length, (gap)</string>
         <item row="1" column="1">
           <widget class="QLineEdit" name="leOtherTextC">
            <property name="toolTip">
-            <string>Text below arrow side symbol
+            <string extracomment="ToolTip">Text below arrow side symbol
 Angle, surface finish, root</string>
            </property>
           </widget>
@@ -210,7 +210,7 @@ Angle, surface finish, root</string>
             </size>
            </property>
            <property name="toolTip">
-            <string>Flips the sides</string>
+            <string extracomment="ToolTip">Flips the sides</string>
            </property>
            <property name="text">
             <string>Flip Sides</string>
@@ -235,7 +235,7 @@ Angle, surface finish, root</string>
      <item row="0" column="0">
       <widget class="QCheckBox" name="cbFieldWeld">
        <property name="toolTip">
-        <string>Adds the 'Field Weld' symbol (flag)
+        <string extracomment="ToolTip">Adds the 'Field Weld' symbol (flag)
 at the kink in the leader line</string>
        </property>
        <property name="text">
@@ -246,7 +246,7 @@ at the kink in the leader line</string>
      <item row="0" column="1">
       <widget class="QCheckBox" name="cbAllAround">
        <property name="toolTip">
-        <string>Adds the 'All Around' symbol (circle)
+        <string extracomment="ToolTip">Adds the 'All Around' symbol (circle)
 at the kink in the leader line</string>
        </property>
        <property name="text">
@@ -257,7 +257,7 @@ at the kink in the leader line</string>
      <item row="0" column="2">
       <widget class="QCheckBox" name="cbAltWeld">
        <property name="toolTip">
-        <string>Offsets the lower symbol to indicate alternating welds</string>
+        <string extracomment="ToolTip">Offsets the lower symbol to indicate alternating welds</string>
        </property>
        <property name="text">
         <string>Alternating</string>
@@ -284,7 +284,7 @@ at the kink in the leader line</string>
         </sizepolicy>
        </property>
        <property name="toolTip">
-        <string>Text at end of symbol</string>
+        <string extracomment="ToolTip">Text at end of symbol</string>
        </property>
       </widget>
      </item>
@@ -298,7 +298,7 @@ at the kink in the leader line</string>
      <item row="1" column="1">
       <widget class="Gui::FileChooser" name="fcSymbolDir">
        <property name="toolTip">
-        <string>Directory path for welding symbols.
+        <string extracomment="ToolTip">Directory path for welding symbols.
 This directory will be used for the symbol selection.</string>
        </property>
        <property name="mode">

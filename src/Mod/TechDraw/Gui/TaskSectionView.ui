@@ -71,7 +71,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Identifier for this section</string>
+        <string extracomment="ToolTip">Identifier for this section</string>
        </property>
       </widget>
      </item>
@@ -91,7 +91,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Scale Page/Auto/Custom</string>
+        <string extracomment="ToolTip">Scale Page/Auto/Custom</string>
        </property>
        <item>
         <property name="text">
@@ -138,7 +138,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Scale factor for the section view</string>
+        <string extracomment="ToolTip">Scale factor for the section view</string>
        </property>
        <property name="keyboardTracking">
         <bool>false</bool>
@@ -183,7 +183,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Looking up</string>
+           <string extracomment="ToolTip">Looking up</string>
           </property>
           <property name="statusTip">
            <string/>
@@ -219,7 +219,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Looking down</string>
+           <string extracomment="ToolTip">Looking down</string>
           </property>
           <property name="text">
            <string/>
@@ -249,7 +249,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Looking left</string>
+           <string extracomment="ToolTip">Looking left</string>
           </property>
           <property name="text">
            <string/>
@@ -279,7 +279,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Looking right</string>
+           <string extracomment="ToolTip">Looking right</string>
           </property>
           <property name="text">
            <string/>
@@ -315,7 +315,7 @@
    <item>
     <widget class="QGroupBox" name="groupBox">
      <property name="toolTip">
-      <string>Position from the 3D origin of the object in the view</string>
+      <string extracomment="ToolTip">Position from the 3D origin of the object in the view</string>
      </property>
      <property name="title">
       <string>Section Plane Location</string>

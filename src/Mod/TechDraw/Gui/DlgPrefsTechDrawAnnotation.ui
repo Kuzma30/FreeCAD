@@ -61,7 +61,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Standard to be used to draw section lines</string>
+           <string extracomment="ToolTip">Standard to be used to draw section lines</string>
           </property>
           <property name="currentIndex">
            <number>1</number>
@@ -111,7 +111,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Style for section lines</string>
+           <string extracomment="ToolTip">Style for section lines</string>
           </property>
           <property name="currentIndex">
            <number>2</number>
@@ -199,7 +199,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Default appearance of cut surface in section view</string>
+           <string extracomment="ToolTip">Default appearance of cut surface in section view</string>
           </property>
           <property name="currentIndex">
            <number>2</number>
@@ -240,7 +240,7 @@
            </font>
           </property>
           <property name="toolTip">
-           <string>Line group used to set line widths</string>
+           <string extracomment="ToolTip">Line group used to set line widths</string>
           </property>
           <property name="text">
            <string>Line Width Group</string>
@@ -299,7 +299,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Outline shape for detail views</string>
+           <string extracomment="ToolTip">Outline shape for detail views</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>MattingStyle</cstring>
@@ -335,7 +335,7 @@
            </font>
           </property>
           <property name="toolTip">
-           <string>Line style of detail highlight on base view</string>
+           <string extracomment="ToolTip">Line style of detail highlight on base view</string>
           </property>
           <property name="text">
            <string>Detail Highlight Style</string>
@@ -455,7 +455,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Type for centerlines</string>
+           <string extracomment="ToolTip">Type for centerlines</string>
           </property>
           <property name="currentIndex">
            <number>2</number>
@@ -549,7 +549,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Shape of balloon annotations</string>
+           <string extracomment="ToolTip">Shape of balloon annotations</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>BalloonShape</cstring>
@@ -658,7 +658,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Style for balloon leader line ends</string>
+           <string extracomment="ToolTip">Style for balloon leader line ends</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>BalloonArrow</cstring>
@@ -676,7 +676,7 @@
            </font>
           </property>
           <property name="toolTip">
-           <string>Length of horizontal portion of Balloon leader</string>
+           <string extracomment="ToolTip">Length of horizontal portion of Balloon leader</string>
           </property>
           <property name="text">
            <string>Ballon Leader Kink Length</string>
@@ -698,7 +698,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Length of balloon leader line kink</string>
+           <string extracomment="ToolTip">Length of balloon leader line kink</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -729,7 +729,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Restrict Filled Triangle line end to vertical or horizontal directions</string>
+           <string extracomment="ToolTip">Restrict Filled Triangle line end to vertical or horizontal directions</string>
           </property>
           <property name="text">
            <string>Balloon Orthogonal Triangle</string>
@@ -760,7 +760,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Forces last leader line segment to be horizontal</string>
+           <string extracomment="ToolTip">Forces last leader line segment to be horizontal</string>
           </property>
           <property name="text">
            <string>Leader Line Auto Horizontal</string>
@@ -796,7 +796,7 @@
            </font>
           </property>
           <property name="toolTip">
-           <string>Show arc center marks in views</string>
+           <string extracomment="ToolTip">Show arc center marks in views</string>
           </property>
           <property name="text">
            <string>Show Center Marks</string>
@@ -827,7 +827,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Show arc centers in printed output</string>
+           <string extracomment="ToolTip">Show arc centers in printed output</string>
           </property>
           <property name="text">
            <string>Print Center Marks</string>

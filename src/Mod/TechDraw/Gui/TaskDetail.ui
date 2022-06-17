@@ -77,7 +77,7 @@
      <item>
       <widget class="QPushButton" name="pbDragger">
        <property name="toolTip">
-        <string>Click to drag detail highlight to new position</string>
+        <string extracomment="ToolTip">Click to drag detail highlight to new position</string>
        </property>
        <property name="text">
         <string>Drag Highlight</string>
@@ -131,7 +131,7 @@
      <item row="0" column="2">
       <widget class="Gui::QuantitySpinBox" name="qsbX">
        <property name="toolTip">
-        <string>x position of detail highlight within view</string>
+        <string extracomment="ToolTip">x position of detail highlight within view</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -157,7 +157,7 @@
      <item row="1" column="2">
       <widget class="Gui::QuantitySpinBox" name="qsbY">
        <property name="toolTip">
-        <string>y position of detail highlight within view</string>
+        <string extracomment="ToolTip">y position of detail highlight within view</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -180,7 +180,7 @@
      <item row="2" column="2">
       <widget class="Gui::QuantitySpinBox" name="qsbRadius">
        <property name="toolTip">
-        <string>size of detail view</string>
+        <string extracomment="ToolTip">size of detail view</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -206,7 +206,7 @@
      <item row="3" column="2">
       <widget class="QComboBox" name="cbScaleType">
        <property name="toolTip">
-        <string>Page: scale factor of page is used
+        <string extracomment="ToolTip">Page: scale factor of page is used
 Automatic: if the detail view is larger than the page,
                    it will be scaled down to fit into the page
 Custom: custom scale factor is used</string>
@@ -241,7 +241,7 @@ Custom: custom scale factor is used</string>
         <bool>false</bool>
        </property>
        <property name="toolTip">
-        <string>scale factor for detail view</string>
+        <string extracomment="ToolTip">scale factor for detail view</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -270,7 +270,7 @@ Custom: custom scale factor is used</string>
      <item row="5" column="2">
       <widget class="QLineEdit" name="leReference">
        <property name="toolTip">
-        <string>reference label</string>
+        <string extracomment="ToolTip">reference label</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

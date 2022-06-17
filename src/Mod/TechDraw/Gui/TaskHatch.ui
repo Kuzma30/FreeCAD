@@ -56,7 +56,7 @@
            </sizepolicy>
           </property>
           <property name="toolTip">
-           <string>The PAT file containing your pattern</string>
+           <string extracomment="ToolTip">The PAT file containing your pattern</string>
           </property>
          </widget>
         </item>
@@ -93,7 +93,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Enlarges/shrinks the pattern</string>
+           <string extracomment="ToolTip">Enlarges/shrinks the pattern</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -128,7 +128,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Color of pattern lines</string>
+           <string extracomment="ToolTip">Color of pattern lines</string>
           </property>
          </widget>
         </item>

@@ -71,7 +71,7 @@
         <item row="1" column="1">
          <widget class="Gui::QuantitySpinBox" name="dsbMaxWidth">
           <property name="toolTip">
-           <string>Maximal width, if -1 then automatic width</string>
+           <string extracomment="ToolTip">Maximal width, if -1 then automatic width</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -145,7 +145,7 @@
            <bool>false</bool>
           </property>
           <property name="toolTip">
-           <string>Line color</string>
+           <string extracomment="ToolTip">Line color</string>
           </property>
           <property name="color">
            <color>
@@ -169,7 +169,7 @@
            <bool>false</bool>
           </property>
           <property name="toolTip">
-           <string>Line width</string>
+           <string extracomment="ToolTip">Line width</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -195,7 +195,7 @@
            <bool>false</bool>
           </property>
           <property name="toolTip">
-           <string>Line style</string>
+           <string extracomment="ToolTip">Line style</string>
           </property>
           <property name="currentIndex">
            <number>1</number>

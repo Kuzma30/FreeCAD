@@ -32,7 +32,7 @@
       <item>
        <widget class="QToolButton" name="f_save">
         <property name="toolTip">
-         <string>Save changes</string>
+         <string extracomment="ToolTip">Save changes</string>
         </property>
         <property name="text">
          <string/>
@@ -46,7 +46,7 @@
       <item>
        <widget class="QToolButton" name="f_exit">
         <property name="toolTip">
-         <string>Close editor</string>
+         <string extracomment="ToolTip">Close editor</string>
         </property>
         <property name="text">
          <string/>
@@ -70,7 +70,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Paragraph formatting</string>
+         <string extracomment="ToolTip">Paragraph formatting</string>
         </property>
         <property name="editable">
          <bool>true</bool>
@@ -93,7 +93,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Undo (CTRL+Z)</string>
+         <string extracomment="ToolTip">Undo (CTRL+Z)</string>
         </property>
         <property name="text">
          <string>Undo</string>
@@ -119,7 +119,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Redo</string>
+         <string extracomment="ToolTip">Redo</string>
         </property>
         <property name="text">
          <string>Redo</string>
@@ -142,7 +142,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Cut (CTRL+X)</string>
+         <string extracomment="ToolTip">Cut (CTRL+X)</string>
         </property>
         <property name="text">
          <string>Cut</string>
@@ -165,7 +165,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Copy (CTRL+C)</string>
+         <string extracomment="ToolTip">Copy (CTRL+C)</string>
         </property>
         <property name="text">
          <string>Copy</string>
@@ -188,7 +188,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Paste (CTRL+V)</string>
+         <string extracomment="ToolTip">Paste (CTRL+V)</string>
         </property>
         <property name="text">
          <string>Paste</string>
@@ -218,7 +218,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Link (CTRL+L)</string>
+         <string extracomment="ToolTip">Link (CTRL+L)</string>
         </property>
         <property name="text">
          <string>Link</string>
@@ -251,7 +251,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string notr="true">Bold (CTRL+B)</string>
+         <string extracomment="ToolTip">Bold (CTRL+B)</string>
         </property>
         <property name="text">
          <string>Bold</string>
@@ -277,7 +277,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Italic (CTRL+I)</string>
+         <string extracomment="ToolTip">Italic (CTRL+I)</string>
         </property>
         <property name="text">
          <string>Italic</string>
@@ -303,7 +303,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Underline (CTRL+U)</string>
+         <string extracomment="ToolTip">Underline (CTRL+U)</string>
         </property>
         <property name="text">
          <string>Underline</string>
@@ -326,7 +326,7 @@
       <item>
        <widget class="QToolButton" name="f_strikeout">
         <property name="toolTip">
-         <string>Strikethrough</string>
+         <string extracomment="ToolTip">Strikethrough</string>
         </property>
         <property name="text">
          <string>Strike Out</string>
@@ -359,7 +359,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Bullet list (CTRL+-)</string>
+         <string extracomment="ToolTip">Bullet list (CTRL+-)</string>
         </property>
         <property name="text">
          <string/>
@@ -385,7 +385,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Ordered list (CTRL+=)</string>
+         <string extracomment="ToolTip">Ordered list (CTRL+=)</string>
         </property>
         <property name="text">
          <string/>
@@ -411,7 +411,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Decrease indentation (CTRL+,)</string>
+         <string extracomment="ToolTip">Decrease indentation (CTRL+,)</string>
         </property>
         <property name="text">
          <string>Decrease indentation</string>
@@ -434,7 +434,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Increase indentation (CTRL+.)</string>
+         <string extracomment="ToolTip">Increase indentation (CTRL+.)</string>
         </property>
         <property name="text">
          <string>Increase indentation</string>
@@ -470,7 +470,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Text foreground color</string>
+         <string extracomment="ToolTip">Text foreground color</string>
         </property>
         <property name="text">
          <string/>
@@ -493,7 +493,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Text background color</string>
+         <string extracomment="ToolTip">Text background color</string>
         </property>
         <property name="text">
          <string>Background</string>
@@ -522,7 +522,7 @@
          <enum>Qt::ClickFocus</enum>
         </property>
         <property name="toolTip">
-         <string>Font size</string>
+         <string extracomment="ToolTip">Font size</string>
         </property>
         <property name="editable">
          <bool>true</bool>
@@ -563,7 +563,7 @@
       <item>
        <widget class="QToolButton" name="f_menu">
         <property name="toolTip">
-         <string>More functions</string>
+         <string extracomment="ToolTip">More functions</string>
         </property>
         <property name="text">
          <string/>
@@ -609,7 +609,7 @@
    <item>
     <widget class="MTextEdit" name="f_textedit">
      <property name="toolTip">
-      <string>More functions</string>
+      <string extracomment="ToolTip">More functions</string>
      </property>
      <property name="autoFormatting">
       <set>QTextEdit::AutoNone</set>

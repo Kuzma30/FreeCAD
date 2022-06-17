@@ -79,7 +79,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Standard to be used for dimensional values</string>
+           <string extracomment="ToolTip">Standard to be used for dimensional values</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>StandardAndStyle</cstring>
@@ -123,7 +123,7 @@
            </font>
           </property>
           <property name="toolTip">
-           <string>Use system setting for number of decimals</string>
+           <string extracomment="ToolTip">Use system setting for number of decimals</string>
           </property>
           <property name="text">
            <string>Use Global Decimals</string>
@@ -154,7 +154,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Append unit to dimension values</string>
+           <string extracomment="ToolTip">Append unit to dimension values</string>
           </property>
           <property name="text">
            <string>Show Units</string>
@@ -192,7 +192,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Number of decimals if 'Use Global Decimals' is not used</string>
+           <string extracomment="ToolTip">Number of decimals if 'Use Global Decimals' is not used</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -223,7 +223,7 @@
         <item row="3" column="2">
          <widget class="Gui::PrefLineEdit" name="leFormatSpec">
           <property name="toolTip">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Leave blank for automatic dimension format.  Use %f, %g or %w specifiers to override.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string extracomment="ToolTip">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Leave blank for automatic dimension format.  Use %f, %g or %w specifiers to override.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -276,7 +276,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Dimension text font size</string>
+           <string extracomment="ToolTip">Dimension text font size</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -337,7 +337,7 @@
            </size>
           </property>
           <property name="toolTip">
-           <string>Tolerance text scale
+           <string extracomment="ToolTip">Tolerance text scale
 Multiplier of 'Font Size'</string>
           </property>
           <property name="accessibleName">
@@ -387,7 +387,7 @@ Multiplier of 'Font Size'</string>
            </font>
           </property>
           <property name="toolTip">
-           <string>Character used to indicate diameter dimensions</string>
+           <string extracomment="ToolTip">Character used to indicate diameter dimensions</string>
           </property>
           <property name="text">
            <string>⌀</string>
@@ -430,7 +430,7 @@ Multiplier of 'Font Size'</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Arrowhead style</string>
+           <string extracomment="ToolTip">Arrowhead style</string>
           </property>
           <property name="currentIndex">
            <number>-1</number>
@@ -470,7 +470,7 @@ Multiplier of 'Font Size'</string>
            </size>
           </property>
           <property name="toolTip">
-           <string>Arrowhead size</string>
+           <string extracomment="ToolTip">Arrowhead size</string>
           </property>
           <property name="alignment">
            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

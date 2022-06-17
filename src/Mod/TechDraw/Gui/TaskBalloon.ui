@@ -26,7 +26,7 @@
      <item row="0" column="1">
       <widget class="QLineEdit" name="leText">
        <property name="toolTip">
-        <string>Text to be displayed</string>
+        <string extracomment="ToolTip">Text to be displayed</string>
        </property>
       </widget>
      </item>
@@ -40,7 +40,7 @@
      <item row="1" column="1">
       <widget class="Gui::ColorButton" name="textColor">
        <property name="toolTip">
-        <string>Color for 'Text'</string>
+        <string extracomment="ToolTip">Color for 'Text'</string>
        </property>
        <property name="color">
         <color>
@@ -73,7 +73,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Fontsize for 'Text'</string>
+        <string extracomment="ToolTip">Fontsize for 'Text'</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -99,7 +99,7 @@
      <item row="3" column="1">
       <widget class="QComboBox" name="comboBubbleShape">
        <property name="toolTip">
-        <string>Shape of the balloon bubble</string>
+        <string extracomment="ToolTip">Shape of the balloon bubble</string>
        </property>
        <item>
         <property name="text">
@@ -191,7 +191,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Bubble shape scale factor</string>
+        <string extracomment="ToolTip">Bubble shape scale factor</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -217,7 +217,7 @@
      <item row="5" column="1">
       <widget class="QComboBox" name="comboEndSymbol">
        <property name="toolTip">
-        <string>End symbol for the balloon line</string>
+        <string extracomment="ToolTip">End symbol for the balloon line</string>
        </property>
       </widget>
      </item>
@@ -237,7 +237,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>End symbol scale factor</string>
+        <string extracomment="ToolTip">End symbol scale factor</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -263,7 +263,7 @@
      <item row="7" column="1">
       <widget class="QComboBox" name="comboLineVisible">
        <property name="toolTip">
-        <string>Whether the leader line is visible or not</string>
+        <string extracomment="ToolTip">Whether the leader line is visible or not</string>
        </property>
        <property name="currentIndex">
         <number>0</number>
@@ -302,7 +302,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Leader line width</string>
+        <string extracomment="ToolTip">Leader line width</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -340,7 +340,7 @@
         </size>
        </property>
        <property name="toolTip">
-        <string>Length of balloon leader line kink</string>
+        <string extracomment="ToolTip">Length of balloon leader line kink</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

@@ -26,7 +26,7 @@
      <item row="1" column="0">
       <widget class="QPushButton" name="pbA01">
        <property name="toolTip">
-        <string>Straightness</string>
+        <string extracomment="ToolTip">Straightness</string>
        </property>
        <property name="text">
         <string notr="true">⏤</string>
@@ -36,7 +36,7 @@
      <item row="1" column="1">
       <widget class="QPushButton" name="pbA02">
        <property name="toolTip">
-        <string>Flatness</string>
+        <string extracomment="ToolTip">Flatness</string>
        </property>
        <property name="text">
         <string notr="true">⏥</string>
@@ -46,7 +46,7 @@
      <item row="1" column="2">
       <widget class="QPushButton" name="pbA03">
        <property name="toolTip">
-        <string>Circularity</string>
+        <string extracomment="ToolTip">Circularity</string>
        </property>
        <property name="text">
         <string notr="true">○</string>
@@ -56,7 +56,7 @@
      <item row="1" column="3">
       <widget class="QPushButton" name="pbA04">
        <property name="toolTip">
-        <string>Cylindricity</string>
+        <string extracomment="ToolTip">Cylindricity</string>
        </property>
        <property name="text">
         <string notr="true">⌭</string>
@@ -66,7 +66,7 @@
      <item row="1" column="4">
       <widget class="QPushButton" name="pbA05">
        <property name="toolTip">
-        <string>Parallelism</string>
+        <string extracomment="ToolTip">Parallelism</string>
        </property>
        <property name="text">
         <string notr="true">∥</string>
@@ -76,7 +76,7 @@
      <item row="2" column="0">
       <widget class="QPushButton" name="pbA06">
        <property name="toolTip">
-        <string>Perpendicularity</string>
+        <string extracomment="ToolTip">Perpendicularity</string>
        </property>
        <property name="text">
         <string notr="true">⟂</string>
@@ -86,7 +86,7 @@
      <item row="2" column="1">
       <widget class="QPushButton" name="pbA07">
        <property name="toolTip">
-        <string>Angularity</string>
+        <string extracomment="ToolTip">Angularity</string>
        </property>
        <property name="text">
         <string notr="true">∠</string>
@@ -101,7 +101,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Profile of a line</string>
+        <string extracomment="ToolTip">Profile of a line</string>
        </property>
        <property name="text">
         <string notr="true">⌒</string>
@@ -111,7 +111,7 @@
      <item row="2" column="3">
       <widget class="QPushButton" name="pbA09">
        <property name="toolTip">
-        <string>Profile of a surface</string>
+        <string extracomment="ToolTip">Profile of a surface</string>
        </property>
        <property name="text">
         <string notr="true">⌓</string>
@@ -121,7 +121,7 @@
      <item row="2" column="4">
       <widget class="QPushButton" name="pbA10">
        <property name="toolTip">
-        <string>Circular runout</string>
+        <string extracomment="ToolTip">Circular runout</string>
        </property>
        <property name="text">
         <string notr="true">↗</string>
@@ -131,7 +131,7 @@
      <item row="3" column="0">
       <widget class="QPushButton" name="pbA11">
        <property name="toolTip">
-        <string>Total runout</string>
+        <string extracomment="ToolTip">Total runout</string>
        </property>
        <property name="text">
         <string notr="true">⌰</string>
@@ -141,7 +141,7 @@
      <item row="3" column="1">
       <widget class="QPushButton" name="pbA12">
        <property name="toolTip">
-        <string>Position</string>
+        <string extracomment="ToolTip">Position</string>
        </property>
        <property name="text">
         <string notr="true">⌖</string>
@@ -151,7 +151,7 @@
      <item row="3" column="2">
       <widget class="QPushButton" name="pbA13">
        <property name="toolTip">
-        <string>Concentricity</string>
+        <string extracomment="ToolTip">Concentricity</string>
        </property>
        <property name="text">
         <string notr="true">◎</string>
@@ -161,7 +161,7 @@
      <item row="3" column="3">
       <widget class="QPushButton" name="pbA14">
        <property name="toolTip">
-        <string>Symmetry</string>
+        <string extracomment="ToolTip">Symmetry</string>
        </property>
        <property name="text">
         <string notr="true">⌯</string>
@@ -187,7 +187,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>derived geometry element</string>
+        <string extracomment="ToolTip">derived geometry element</string>
        </property>
        <property name="text">
         <string notr="true">Ⓐ</string>
@@ -202,7 +202,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Minimax (Tschebyschew)</string>
+        <string extracomment="ToolTip">Minimax (Tschebyschew)</string>
        </property>
        <property name="text">
         <string notr="true">Ⓒ</string>
@@ -217,7 +217,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Hull condition</string>
+        <string extracomment="ToolTip">Hull condition</string>
        </property>
        <property name="text">
         <string notr="true">Ⓔ</string>
@@ -232,7 +232,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Free state</string>
+        <string extracomment="ToolTip">Free state</string>
        </property>
        <property name="text">
         <string notr="true">Ⓕ</string>
@@ -247,7 +247,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Least square geometry element</string>
+        <string extracomment="ToolTip">Least square geometry element</string>
        </property>
        <property name="text">
         <string notr="true">Ⓖ</string>
@@ -262,7 +262,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Least material condition (LMC)</string>
+        <string extracomment="ToolTip">Least material condition (LMC)</string>
        </property>
        <property name="text">
         <string notr="true">Ⓛ</string>
@@ -277,7 +277,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Maximum material condition (MMC)</string>
+        <string extracomment="ToolTip">Maximum material condition (MMC)</string>
        </property>
        <property name="text">
         <string notr="true">Ⓜ</string>
@@ -292,7 +292,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>least inscribed geometry element</string>
+        <string extracomment="ToolTip">least inscribed geometry element</string>
        </property>
        <property name="text">
         <string notr="true">Ⓝ</string>
@@ -307,7 +307,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Projected tolerance zone</string>
+        <string extracomment="ToolTip">Projected tolerance zone</string>
        </property>
        <property name="text">
         <string notr="true">Ⓟ</string>
@@ -322,7 +322,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Reciprocity condition</string>
+        <string extracomment="ToolTip">Reciprocity condition</string>
        </property>
        <property name="text">
         <string notr="true">Ⓡ</string>
@@ -337,7 +337,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Regardless of feature size (RFS)</string>
+        <string extracomment="ToolTip">Regardless of feature size (RFS)</string>
        </property>
        <property name="text">
         <string notr="true">Ⓢ</string>
@@ -352,7 +352,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Tangent plane</string>
+        <string extracomment="ToolTip">Tangent plane</string>
        </property>
        <property name="text">
         <string notr="true">Ⓣ</string>
@@ -367,7 +367,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>Unequal Bilateral</string>
+        <string extracomment="ToolTip">Unequal Bilateral</string>
        </property>
        <property name="text">
         <string notr="true">Ⓤ</string>
@@ -382,7 +382,7 @@
         </font>
        </property>
        <property name="toolTip">
-        <string>most inscribed geometry element</string>
+        <string extracomment="ToolTip">most inscribed geometry element</string>
        </property>
        <property name="text">
         <string notr="true">Ⓧ</string>
@@ -403,7 +403,7 @@
      <item row="4" column="0">
       <widget class="QPushButton" name="pbC01">
        <property name="toolTip">
-        <string>Radius</string>
+        <string extracomment="ToolTip">Radius</string>
        </property>
        <property name="text">
         <string notr="true">R</string>
@@ -413,7 +413,7 @@
      <item row="4" column="1">
       <widget class="QPushButton" name="pbC02">
        <property name="toolTip">
-        <string>Diameter</string>
+        <string extracomment="ToolTip">Diameter</string>
        </property>
        <property name="text">
         <string notr="true">⌀</string>
@@ -423,7 +423,7 @@
      <item row="4" column="2">
       <widget class="QPushButton" name="pbC03">
        <property name="toolTip">
-        <string>Radius of sphere</string>
+        <string extracomment="ToolTip">Radius of sphere</string>
        </property>
        <property name="text">
         <string notr="true">SR</string>
@@ -433,7 +433,7 @@
      <item row="4" column="3">
       <widget class="QPushButton" name="pbC04">
        <property name="toolTip">
-        <string>Diameter of sphere</string>
+        <string extracomment="ToolTip">Diameter of sphere</string>
        </property>
        <property name="text">
         <string notr="true">S⌀</string>
@@ -443,7 +443,7 @@
      <item row="4" column="4">
       <widget class="QPushButton" name="pbC05">
        <property name="toolTip">
-        <string>Square</string>
+        <string extracomment="ToolTip">Square</string>
        </property>
        <property name="text">
         <string notr="true">□</string>
@@ -464,7 +464,7 @@
      <item row="0" column="0">
       <widget class="QPushButton" name="pbD01">
        <property name="toolTip">
-        <string>Degree</string>
+        <string extracomment="ToolTip">Degree</string>
        </property>
        <property name="text">
         <string notr="true">°</string>
@@ -474,7 +474,7 @@
      <item row="0" column="1">
       <widget class="QPushButton" name="pbD02">
        <property name="toolTip">
-        <string>(Arc) Minute</string>
+        <string extracomment="ToolTip">(Arc) Minute</string>
        </property>
        <property name="text">
         <string notr="true">′</string>
@@ -484,7 +484,7 @@
      <item row="0" column="2">
       <widget class="QPushButton" name="pbD03">
        <property name="toolTip">
-        <string>(Arc) Second</string>
+        <string extracomment="ToolTip">(Arc) Second</string>
        </property>
        <property name="text">
         <string notr="true">″</string>
@@ -494,7 +494,7 @@
      <item row="0" column="3">
       <widget class="QPushButton" name="pbD04">
        <property name="toolTip">
-        <string>(Arc) Tertie</string>
+        <string extracomment="ToolTip">(Arc) Tertie</string>
        </property>
        <property name="text">
         <string notr="true">‴</string>
@@ -518,7 +518,7 @@
      <item row="0" column="0">
       <widget class="QPushButton" name="pbE01">
        <property name="toolTip">
-        <string>Taper</string>
+        <string extracomment="ToolTip">Taper</string>
        </property>
        <property name="text">
         <string notr="true">⌲</string>
@@ -528,7 +528,7 @@
      <item row="0" column="1">
       <widget class="QPushButton" name="pbE02">
        <property name="toolTip">
-        <string>Slope</string>
+        <string extracomment="ToolTip">Slope</string>
        </property>
        <property name="text">
         <string notr="true">⌳</string>
@@ -538,7 +538,7 @@
      <item row="0" column="2">
       <widget class="QPushButton" name="pbE03">
        <property name="toolTip">
-        <string>Counterbore</string>
+        <string extracomment="ToolTip">Counterbore</string>
        </property>
        <property name="text">
         <string notr="true">⌴</string>
@@ -548,7 +548,7 @@
      <item row="0" column="3">
       <widget class="QPushButton" name="pbE04">
        <property name="toolTip">
-        <string>Countersink</string>
+        <string extracomment="ToolTip">Countersink</string>
        </property>
        <property name="text">
         <string notr="true">⌵</string>
@@ -558,7 +558,7 @@
      <item row="0" column="4">
       <widget class="QPushButton" name="pbE05">
        <property name="toolTip">
-        <string>Plus - Minus</string>
+        <string extracomment="ToolTip">Plus - Minus</string>
        </property>
        <property name="text">
         <string notr="true">±</string>
@@ -568,7 +568,7 @@
      <item row="1" column="0">
       <widget class="QPushButton" name="pbE06">
        <property name="toolTip">
-        <string>Centerline</string>
+        <string extracomment="ToolTip">Centerline</string>
        </property>
        <property name="text">
         <string notr="true">℄</string>
@@ -578,7 +578,7 @@
      <item row="1" column="1">
       <widget class="QPushButton" name="pbE07">
        <property name="toolTip">
-        <string>Left/right arrow</string>
+        <string extracomment="ToolTip">Left/right arrow</string>
        </property>
        <property name="text">
         <string notr="true">↔</string>
@@ -588,7 +588,7 @@
      <item row="1" column="2">
       <widget class="QPushButton" name="pbE08">
        <property name="toolTip">
-        <string>Downward arrow</string>
+        <string extracomment="ToolTip">Downward arrow</string>
        </property>
        <property name="text">
         <string notr="true">↧</string>
@@ -598,7 +598,7 @@
      <item row="1" column="3">
       <widget class="QPushButton" name="pbE09">
        <property name="toolTip">
-        <string>Multiplication sign</string>
+        <string extracomment="ToolTip">Multiplication sign</string>
        </property>
        <property name="text">
         <string notr="true">×</string>
@@ -619,7 +619,7 @@
      <item row="0" column="0">
       <widget class="QPushButton" name="pbF01">
        <property name="toolTip">
-        <string>Capital delta</string>
+        <string extracomment="ToolTip">Capital delta</string>
        </property>
        <property name="text">
         <string notr="true">Δ</string>
@@ -629,7 +629,7 @@
      <item row="0" column="1">
       <widget class="QPushButton" name="pbF02">
        <property name="toolTip">
-        <string>Capital sigma</string>
+        <string extracomment="ToolTip">Capital sigma</string>
        </property>
        <property name="text">
         <string notr="true">Σ</string>
@@ -639,7 +639,7 @@
      <item row="0" column="2">
       <widget class="QPushButton" name="pbF03">
        <property name="toolTip">
-        <string>Capital omega</string>
+        <string extracomment="ToolTip">Capital omega</string>
        </property>
        <property name="text">
         <string notr="true">Ω</string>
@@ -649,7 +649,7 @@
      <item row="0" column="3">
       <widget class="QPushButton" name="pbF04">
        <property name="toolTip">
-        <string>Small mu</string>
+        <string extracomment="ToolTip">Small mu</string>
        </property>
        <property name="text">
         <string notr="true">μ</string>
@@ -659,7 +659,7 @@
      <item row="0" column="4">
       <widget class="QPushButton" name="pbF05">
        <property name="toolTip">
-        <string>Small sigma</string>
+        <string extracomment="ToolTip">Small sigma</string>
        </property>
        <property name="text">
         <string notr="true">σ</string>
@@ -679,7 +679,7 @@
      <item row="1" column="1">
       <widget class="QPushButton" name="pbF07">
        <property name="toolTip">
-        <string>Small omega</string>
+        <string extracomment="ToolTip">Small omega</string>
        </property>
        <property name="text">
         <string notr="true">⍵</string>

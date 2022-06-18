@@ -883,7 +883,7 @@
     <message>
       <location filename="../../package_list.py" line="766"/>
       <source>Status:</source>
-      <translation type="unfinished">Status:</translation>
+      <translation>Состояние:</translation>
     </message>
     <message>
       <location filename="../../package_list.py" line="769"/>
@@ -1184,7 +1184,7 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
     <message>
       <location filename="../../AddonManager.ui" line="143"/>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Закрыть</translation>
     </message>
     <message>
       <location filename="../../first_run.ui" line="17"/>

@@ -334,7 +334,7 @@
       <location filename="../../FitBSplineSurface.cpp" line="168"/>
       <location filename="../../FitBSplineSurface.cpp" line="236"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
     <message>
       <location filename="../../FitBSplineSurface.cpp" line="208"/>
@@ -377,7 +377,7 @@
     <message>
       <location filename="../../Poisson.cpp" line="108"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -422,7 +422,7 @@
     <message>
       <location filename="../../Segmentation.ui" line="37"/>
       <source>Plane</source>
-      <translation type="unfinished">Plane</translation>
+      <translation>Плоскость</translation>
     </message>
     <message>
       <location filename="../../Segmentation.ui" line="46"/>
@@ -500,7 +500,7 @@
     <message>
       <location filename="../../SegmentationManual.ui" line="122"/>
       <source>Plane</source>
-      <translation type="unfinished">Plane</translation>
+      <translation>Плоскость</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="128"/>
@@ -514,7 +514,7 @@
       <location filename="../../SegmentationManual.ui" line="188"/>
       <location filename="../../SegmentationManual.ui" line="241"/>
       <source>Tolerance</source>
-      <translation type="unfinished">Tolerance</translation>
+      <translation>Точность</translation>
     </message>
     <message>
       <location filename="../../SegmentationManual.ui" line="155"/>

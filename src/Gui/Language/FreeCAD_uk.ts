@@ -1189,7 +1189,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <message>
       <location filename="../DlgActions.ui" line="150"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../DlgActions.ui" line="208"/>
@@ -2483,7 +2483,7 @@ Perhaps a file permission error?</source>
     <message>
       <location filename="../DlgMacroRecord.ui" line="99"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../DlgMacroRecord.ui" line="126"/>
@@ -3302,7 +3302,7 @@ from Python console to Report view panel</source>
     <message>
       <location filename="../DlgRunExternal.ui" line="87"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../DlgRunExternal.ui" line="104"/>
@@ -7848,7 +7848,7 @@ Do you want to specify another directory?</source>
       <location filename="../TaskView/TaskSelectLinkProperty.ui" line="36"/>
       <location filename="../TaskView/TaskSelectLinkProperty.ui" line="56"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../TaskView/TaskSelectLinkProperty.cpp" line="41"/>
@@ -8351,7 +8351,7 @@ Do you want to specify another directory?</source>
       <location filename="../VectorListEditor.ui" line="145"/>
       <location filename="../VectorListEditor.ui" line="156"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
   </context>
   <context>

@@ -38,7 +38,7 @@
       <location filename="../../../femsolver/solver_taskpanel.py" line="307"/>
       <location filename="../../../femsolver/solver_taskpanel.py" line="311"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../../../femsolver/solver_taskpanel.py" line="244"/>
@@ -697,7 +697,7 @@
     <message>
       <location filename="../../../femguiutils/selection_widgets.py" line="52"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
   </context>
   <context>
@@ -1145,7 +1145,7 @@
     <message>
       <location filename="../../Command.cpp" line="1710"/>
       <source>Plane</source>
-      <translation type="unfinished">Plane</translation>
+      <translation>Плоскость</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="1715"/>
@@ -1430,7 +1430,7 @@
     <message>
       <location filename="../../TaskPanelConstraintTemperature.ui" line="94"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskPanelInitialTemperature.ui" line="26"/>
@@ -2204,7 +2204,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraint.cpp" line="276"/>
       <location filename="../../TaskFemConstraint.cpp" line="287"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.cpp" line="276"/>
@@ -2217,7 +2217,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintBearing.cpp" line="338"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2225,7 +2225,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintContact.cpp" line="427"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2233,7 +2233,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.cpp" line="604"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2241,7 +2241,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="951"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2250,7 +2250,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintForce.cpp" line="430"/>
       <location filename="../../TaskFemConstraintForce.cpp" line="459"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.cpp" line="430"/>
@@ -2263,7 +2263,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintGear.cpp" line="306"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2271,7 +2271,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintHeatflux.cpp" line="419"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2280,7 +2280,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintInitialTemperature.cpp" line="121"/>
       <location filename="../../TaskFemConstraintInitialTemperature.cpp" line="133"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2288,7 +2288,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintPressure.cpp" line="297"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2296,7 +2296,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintPulley.cpp" line="207"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2304,7 +2304,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintSpring.cpp" line="299"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2312,7 +2312,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintTemperature.cpp" line="351"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2320,7 +2320,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskFemConstraintTransform.cpp" line="514"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2341,7 +2341,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../../TaskPostBoxes.cpp" line="266"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -2375,7 +2375,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintBearing.cpp" line="189"/>
       <location filename="../../TaskFemConstraintBearing.cpp" line="194"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintBearing.cpp" line="156"/>
@@ -2435,7 +2435,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintContact.cpp" line="307"/>
       <location filename="../../TaskFemConstraintContact.cpp" line="316"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintContact.cpp" line="97"/>
@@ -2496,7 +2496,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintDisplacement.cpp" line="430"/>
       <location filename="../../TaskFemConstraintDisplacement.cpp" line="439"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.cpp" line="373"/>
@@ -2525,7 +2525,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintFixed.cpp" line="164"/>
       <location filename="../../TaskFemConstraintFixed.cpp" line="173"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFixed.cpp" line="107"/>
@@ -2654,7 +2654,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="788"/>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="797"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.cpp" line="730"/>
@@ -2683,7 +2683,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintForce.cpp" line="186"/>
       <location filename="../../TaskFemConstraintForce.cpp" line="195"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.cpp" line="128"/>
@@ -2721,7 +2721,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintGear.cpp" line="156"/>
       <location filename="../../TaskFemConstraintGear.cpp" line="161"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintGear.cpp" line="150"/>
@@ -2749,7 +2749,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintHeatflux.cpp" line="264"/>
       <location filename="../../TaskFemConstraintHeatflux.cpp" line="273"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintHeatflux.cpp" line="201"/>
@@ -2782,7 +2782,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="181"/>
       <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="190"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPlaneRotation.cpp" line="113"/>
@@ -2822,7 +2822,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintPressure.cpp" line="168"/>
       <location filename="../../TaskFemConstraintPressure.cpp" line="177"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPressure.cpp" line="122"/>
@@ -2864,7 +2864,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintSpring.cpp" line="166"/>
       <location filename="../../TaskFemConstraintSpring.cpp" line="175"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintSpring.cpp" line="120"/>
@@ -2892,7 +2892,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintTemperature.cpp" line="211"/>
       <location filename="../../TaskFemConstraintTemperature.cpp" line="220"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTemperature.cpp" line="170"/>
@@ -2931,7 +2931,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../../TaskFemConstraintTransform.cpp" line="351"/>
       <location filename="../../TaskFemConstraintTransform.cpp" line="360"/>
       <source>Selection error</source>
-      <translation type="unfinished">Selection error</translation>
+      <translation>Ошибка выбора</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTransform.cpp" line="231"/>
@@ -3247,7 +3247,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
       <location filename="../ui/MaterialReinforcement.ui" line="60"/>
       <location filename="../ui/MaterialReinforcement.ui" line="133"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../ui/MaterialReinforcement.ui" line="67"/>
@@ -3640,7 +3640,7 @@ that &quot;MAXKOI&quot; needs to be increased.</translation>
     <message>
       <location filename="../ui/ElementGeometry1D.ui" line="287"/>
       <source>Thickness:</source>
-      <translation type="unfinished">Thickness:</translation>
+      <translation>Толщина:</translation>
     </message>
     <message>
       <location filename="../ui/ElementGeometry2D.ui" line="14"/>
@@ -4470,7 +4470,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="137"/>
       <source>Direction</source>
-      <translation type="unfinished">Direction</translation>
+      <translation>Направление</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraint.ui" line="149"/>
@@ -4583,7 +4583,7 @@ following referencing objects might be lost:</translation>
       <location filename="../../TaskFemConstraintContact.ui" line="51"/>
       <location filename="../../TaskFemConstraintContact.ui" line="110"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintContact.ui" line="79"/>
@@ -4621,7 +4621,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="72"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="107"/>
@@ -4646,7 +4646,7 @@ following referencing objects might be lost:</translation>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="270"/>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="308"/>
       <source>Fixed</source>
-      <translation type="unfinished">Fixed</translation>
+      <translation>Зафиксировано</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintDisplacement.ui" line="139"/>
@@ -4699,7 +4699,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintFixed.ui" line="51"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
   </context>
   <context>
@@ -4732,7 +4732,7 @@ following referencing objects might be lost:</translation>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="101"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintFluidBoundary.ui" line="141"/>
@@ -4837,7 +4837,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="63"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="93"/>
@@ -4852,7 +4852,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="114"/>
       <source>Direction</source>
-      <translation type="unfinished">Direction</translation>
+      <translation>Направление</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintForce.ui" line="121"/>
@@ -4887,7 +4887,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintHeatflux.ui" line="51"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintHeatflux.ui" line="68"/>
@@ -4964,7 +4964,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintPlaneRotation.ui" line="51"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
   </context>
   <context>
@@ -4987,7 +4987,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintPressure.ui" line="51"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintPressure.ui" line="68"/>
@@ -5025,7 +5025,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintSpring.ui" line="51"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintSpring.ui" line="81"/>
@@ -5063,7 +5063,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintTemperature.ui" line="39"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTemperature.ui" line="56"/>
@@ -5112,7 +5112,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskFemConstraintTransform.ui" line="87"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../TaskFemConstraintTransform.ui" line="124"/>
@@ -5210,7 +5210,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDataAlongLine.ui" line="230"/>
       <source>Mode</source>
-      <translation type="unfinished">Mode</translation>
+      <translation>Режим</translation>
     </message>
     <message>
       <location filename="../../TaskPostDataAlongLine.ui" line="244"/>
@@ -5261,7 +5261,7 @@ normal vector of the face is used as direction</translation>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="28"/>
       <source>Mode</source>
-      <translation type="unfinished">Mode</translation>
+      <translation>Режим</translation>
     </message>
     <message>
       <location filename="../../TaskPostDisplay.ui" line="42"/>

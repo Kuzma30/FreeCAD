@@ -615,7 +615,7 @@
     <message>
       <location filename="../../TaskRobot6Axis.ui" line="345"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../../TaskRobot6Axis.cpp" line="52"/>
@@ -970,7 +970,7 @@
     <message>
       <location filename="../../TaskTrajectoryDressUpParameter.ui" line="149"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../../TaskTrajectoryDressUpParameter.ui" line="159"/>

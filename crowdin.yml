@@ -1,4 +1,4 @@
-commit_message: "[ci skip]"
+commit_message: '[ci skip]'
 files:
   - source: src/Mod/AddonManager/Resources/translations/AddonManager.ts
     translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%

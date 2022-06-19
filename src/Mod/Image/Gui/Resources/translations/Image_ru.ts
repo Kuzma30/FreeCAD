@@ -190,7 +190,7 @@
     <message>
       <location filename="../../ImageView.cpp" line="124"/>
       <source>Standard</source>
-      <translation type="unfinished">Standard</translation>
+      <translation>Стандартно</translation>
     </message>
     <message>
       <location filename="../../ImageView.cpp" line="142"/>

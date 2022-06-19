@@ -3510,7 +3510,7 @@ the top and left view border</translation>
       <location filename="../../TaskMoveView.ui" line="57"/>
       <location filename="../../TaskMoveView.ui" line="78"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../../TaskMoveView.ui" line="43"/>

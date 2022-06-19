@@ -2192,7 +2192,7 @@
       <location filename="../../ArchWindow.py" line="2129"/>
       <location filename="../../ArchSpace.py" line="1033"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../ArchAxis.py" line="1000"/>
@@ -2211,7 +2211,7 @@
     <message>
       <location filename="../../ArchAxis.py" line="1008"/>
       <source>Axis</source>
-      <translation type="unfinished">Axis</translation>
+      <translation>Ось</translation>
     </message>
     <message>
       <location filename="../../ArchAxis.py" line="1009"/>
@@ -2499,7 +2499,7 @@ Site creation aborted.</translation>
       <location filename="../../ArchWall.py" line="580"/>
       <location filename="../../ArchStructure.py" line="568"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Длина</translation>
     </message>
     <message>
       <location filename="../../ArchCommands.py" line="1194"/>
@@ -2715,7 +2715,7 @@ Site creation aborted.</translation>
       <location filename="../../ArchMaterial.py" line="1099"/>
       <location filename="../../ArchWindow.py" line="2148"/>
       <source>Thickness</source>
-      <translation type="unfinished">Thickness</translation>
+      <translation>Толщина</translation>
     </message>
     <message>
       <location filename="../../ArchMaterial.py" line="1138"/>
@@ -3024,7 +3024,7 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     <message>
       <location filename="../../ArchWindow.py" line="2131"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="2134"/>
@@ -3354,7 +3354,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchPrecast.py" line="1270"/>
       <source>Chamfer</source>
-      <translation type="unfinished">Chamfer</translation>
+      <translation>Фаска</translation>
     </message>
     <message>
       <location filename="../../ArchPrecast.py" line="1271"/>
@@ -3520,7 +3520,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchProfile.py" line="698"/>
       <source>Profile</source>
-      <translation type="unfinished">Profile</translation>
+      <translation>Профиль</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="129"/>
@@ -4062,7 +4062,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchAxis.py" line="94"/>
       <source>Axis</source>
-      <translation type="unfinished">Axis</translation>
+      <translation>Ось</translation>
     </message>
     <message>
       <location filename="../../ArchAxis.py" line="96"/>
@@ -4474,7 +4474,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchPipe.py" line="109"/>
       <source>Pipe</source>
-      <translation type="unfinished">Pipe</translation>
+      <translation>Труба</translation>
     </message>
     <message>
       <location filename="../../ArchPipe.py" line="113"/>
@@ -4509,7 +4509,7 @@ Floor creation aborted.</translation>
     <message>
       <location filename="../../ArchProfile.py" line="124"/>
       <source>Profile</source>
-      <translation type="unfinished">Profile</translation>
+      <translation>Профиль</translation>
     </message>
     <message>
       <location filename="../../ArchProfile.py" line="126"/>
@@ -4833,7 +4833,7 @@ Floor creation aborted.</translation>
       <location filename="../../InitGui.py" line="268"/>
       <location filename="../../InitGui.py" line="272"/>
       <source>Draft</source>
-      <translation type="unfinished">Draft</translation>
+      <translation>Притяжка</translation>
     </message>
     <message>
       <location filename="../../InitGui.py" line="312"/>
@@ -5494,7 +5494,7 @@ Leave blank to use all objects from the document</translation>
     <message>
       <location filename="../ui/ArchNest.ui" line="64"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../ui/ArchNest.ui" line="76"/>
@@ -5504,7 +5504,7 @@ Leave blank to use all objects from the document</translation>
     <message>
       <location filename="../ui/ArchNest.ui" line="82"/>
       <source>Tolerance</source>
-      <translation type="unfinished">Tolerance</translation>
+      <translation>Точность</translation>
     </message>
     <message>
       <location filename="../ui/ArchNest.ui" line="89"/>
@@ -5844,7 +5844,7 @@ instead of the FreeCAD web workbench</translation>
       <location filename="../ui/preferences-archdefaults.ui" line="702"/>
       <location filename="../ui/preferences-archdefaults.ui" line="859"/>
       <source>Width:</source>
-      <translation type="unfinished">Width:</translation>
+      <translation>Ширина:</translation>
     </message>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="41"/>
@@ -5869,7 +5869,7 @@ instead of the FreeCAD web workbench</translation>
       <location filename="../ui/preferences-archdefaults.ui" line="494"/>
       <location filename="../ui/preferences-archdefaults.ui" line="741"/>
       <source>Height:</source>
-      <translation type="unfinished">Height:</translation>
+      <translation>Высота:</translation>
     </message>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="103"/>
@@ -5940,7 +5940,7 @@ instead of the FreeCAD web workbench</translation>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="536"/>
       <source>Thickness:</source>
-      <translation type="unfinished">Thickness:</translation>
+      <translation>Толщина:</translation>
     </message>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="543"/>
@@ -5989,7 +5989,7 @@ instead of the FreeCAD web workbench</translation>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="898"/>
       <source>Thickness</source>
-      <translation type="unfinished">Thickness</translation>
+      <translation>Толщина</translation>
     </message>
     <message>
       <location filename="../ui/preferences-archdefaults.ui" line="970"/>

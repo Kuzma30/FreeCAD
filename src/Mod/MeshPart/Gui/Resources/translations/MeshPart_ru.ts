@@ -304,7 +304,7 @@ This command only works with a &apos;mesh&apos; object, not a regular face or su
     <message>
       <location filename="../../Tessellation.ui" line="30"/>
       <source>Standard</source>
-      <translation type="unfinished">Standard</translation>
+      <translation>Стандартно</translation>
     </message>
     <message>
       <location filename="../../Tessellation.ui" line="33"/>

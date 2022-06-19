@@ -1,4 +1,5 @@
-commit_message: '[ci skip]'
+pull_request_title: "[skip ci] Crowdin upload"
+pull_request_labels: ["crowdin","l10n"]
 files:
   - source: src/Mod/AddonManager/Resources/translations/AddonManager.ts
     translation: /%original_path%/%file_name%_%two_letters_code%.%file_extension%

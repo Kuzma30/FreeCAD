@@ -2459,7 +2459,7 @@
     <message>
       <location filename="../../mrichtextedit.cpp" line="99"/>
       <source>Standard</source>
-      <translation type="unfinished">Standard</translation>
+      <translation>Стандартно</translation>
     </message>
     <message>
       <location filename="../../mrichtextedit.cpp" line="100"/>
@@ -3211,7 +3211,7 @@
       <location filename="../../ViewProviderBalloon.cpp" line="104"/>
       <location filename="../../ViewProviderDimension.cpp" line="123"/>
       <source>Edit %1</source>
-      <translation type="unfinished">Edit %1</translation>
+      <translation>Редактировать %1</translation>
     </message>
     <message>
       <location filename="../../CommandExtensionDims.cpp" line="557"/>
@@ -3821,7 +3821,7 @@ Only change unless you know what you are doing!</translation>
     <message>
       <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="412"/>
       <source>Flat</source>
-      <translation type="unfinished">Flat</translation>
+      <translation>Плоскость</translation>
     </message>
     <message>
       <location filename="../../DlgPrefsTechDrawAdvanced.ui" line="420"/>
@@ -4223,7 +4223,7 @@ when hatching a face with a PAT pattern</translation>
     <message>
       <location filename="../../DlgPrefsTechDrawColors.ui" line="319"/>
       <source>Dimension</source>
-      <translation type="unfinished">Dimension</translation>
+      <translation>Размер</translation>
     </message>
     <message>
       <location filename="../../DlgPrefsTechDrawColors.ui" line="326"/>
@@ -5149,12 +5149,12 @@ Do you want to continue?</translation>
     <message>
       <location filename="../../TaskBalloon.ui" line="273"/>
       <source>False</source>
-      <translation type="unfinished">False</translation>
+      <translation>Нет</translation>
     </message>
     <message>
       <location filename="../../TaskBalloon.ui" line="278"/>
       <source>True</source>
-      <translation type="unfinished">True</translation>
+      <translation>Да</translation>
     </message>
     <message>
       <location filename="../../TaskBalloon.ui" line="286"/>
@@ -5347,7 +5347,7 @@ Do you want to continue?</translation>
     <message>
       <location filename="../../TaskCosVertex.ui" line="110"/>
       <source>Position</source>
-      <translation type="unfinished">Position</translation>
+      <translation>Положение</translation>
     </message>
     <message>
       <location filename="../../TaskCosVertex.ui" line="118"/>
@@ -5554,7 +5554,7 @@ Do you want to continue?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="156"/>
       <source>Position</source>
-      <translation type="unfinished">Position</translation>
+      <translation>Положение</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="159"/>
@@ -5854,7 +5854,7 @@ Do you want to continue?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="553"/>
       <source>Counterbore</source>
-      <translation type="unfinished">Counterbore</translation>
+      <translation>Цековка</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="556"/>
@@ -5864,7 +5864,7 @@ Do you want to continue?</translation>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="563"/>
       <source>Countersink</source>
-      <translation type="unfinished">Countersink</translation>
+      <translation>Зенковка</translation>
     </message>
     <message>
       <location filename="../../TaskCustomizeFormat.ui" line="566"/>
@@ -6126,7 +6126,7 @@ Custom: custom scale factor is used</translation>
     <message>
       <location filename="../../TaskDimension.ui" line="14"/>
       <source>Dimension</source>
-      <translation type="unfinished">Dimension</translation>
+      <translation>Размер</translation>
     </message>
     <message>
       <location filename="../../TaskDimension.ui" line="20"/>
@@ -6675,12 +6675,12 @@ You can pick further points to get line segments.</translation>
     <message>
       <location filename="../../TaskLineDecor.ui" line="191"/>
       <source>False</source>
-      <translation type="unfinished">False</translation>
+      <translation>Нет</translation>
     </message>
     <message>
       <location filename="../../TaskLineDecor.ui" line="196"/>
       <source>True</source>
-      <translation type="unfinished">True</translation>
+      <translation>Да</translation>
     </message>
   </context>
   <context>

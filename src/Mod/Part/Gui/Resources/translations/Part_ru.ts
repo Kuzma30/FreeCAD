@@ -27,7 +27,7 @@
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="287"/>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="306"/>
       <source>Attachment</source>
-      <translation type="unfinished">Attachment</translation>
+      <translation>Присоединение</translation>
     </message>
     <message>
       <location filename="../../../AttachmentEditor/TaskAttachmentEditor.py" line="290"/>
@@ -400,7 +400,7 @@ A &apos;Compound Filter&apos; can be used to extract the remaining pieces.</tran
       <location filename="../../ViewProvider.cpp" line="50"/>
       <location filename="../../ViewProviderPrimitive.cpp" line="66"/>
       <source>Edit %1</source>
-      <translation type="unfinished">Edit %1</translation>
+      <translation>Редактировать %1</translation>
     </message>
     <message>
       <location filename="../../AppPartGui.cpp" line="211"/>
@@ -487,7 +487,7 @@ Do you want to continue?</translation>
       <location filename="../../TaskAttacher.cpp" line="82"/>
       <location filename="../../TaskCheckGeometry.cpp" line="86"/>
       <source>Face</source>
-      <translation type="unfinished">Face</translation>
+      <translation>Грань</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.cpp" line="85"/>
@@ -817,7 +817,7 @@ Do you want to continue?</translation>
     <message>
       <location filename="../../ViewProviderExt.cpp" line="864"/>
       <source>Set colors...</source>
-      <translation type="unfinished">Set colors...</translation>
+      <translation>Установите цвета ...</translation>
     </message>
     <message>
       <location filename="../../ViewProviderMirror.cpp" line="78"/>
@@ -879,7 +879,7 @@ Do you want to continue?</translation>
       <location filename="../../AttacherTexts.cpp" line="314"/>
       <source>Face</source>
       <comment>Attacher reference type</comment>
-      <translation type="unfinished">Face</translation>
+      <translation>Грань</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="316"/>
@@ -927,7 +927,7 @@ Do you want to continue?</translation>
       <location filename="../../AttacherTexts.cpp" line="324"/>
       <source>Plane</source>
       <comment>Attacher reference type</comment>
-      <translation type="unfinished">Plane</translation>
+      <translation>Плоскость</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="325"/>
@@ -963,7 +963,7 @@ Do you want to continue?</translation>
       <location filename="../../AttacherTexts.cpp" line="331"/>
       <source>Object</source>
       <comment>Attacher reference type</comment>
-      <translation type="unfinished">Object</translation>
+      <translation>Объект</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="332"/>
@@ -1068,7 +1068,7 @@ Do you want to continue?</translation>
       <location filename="../../AttacherTexts.cpp" line="289"/>
       <source>Intersection</source>
       <comment>AttachmentPoint mode caption</comment>
-      <translation type="unfinished">Intersection</translation>
+      <translation>Пересечение</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="290"/>
@@ -1246,7 +1246,7 @@ Do you want to continue?</translation>
       <location filename="../../AttacherTexts.cpp" line="232"/>
       <source>Binormal</source>
       <comment>AttachmentLine mode caption</comment>
-      <translation type="unfinished">Binormal</translation>
+      <translation>Бинормали</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="233"/>
@@ -1289,7 +1289,7 @@ Do you want to continue?</translation>
       <location filename="../../AttacherTexts.cpp" line="244"/>
       <source>Intersection</source>
       <comment>AttachmentLine mode caption</comment>
-      <translation type="unfinished">Intersection</translation>
+      <translation>Пересечение</translation>
     </message>
     <message>
       <location filename="../../AttacherTexts.cpp" line="245"/>
@@ -1908,7 +1908,7 @@ Do you want to continue?</translation>
       <location filename="../../DlgBlock.ui" line="48"/>
       <location filename="../../DlgBlock.ui" line="209"/>
       <source>Dimension</source>
-      <translation type="unfinished">Dimension</translation>
+      <translation>Размер</translation>
     </message>
     <message>
       <location filename="../../DlgBlock.ui" line="53"/>
@@ -1932,7 +1932,7 @@ Do you want to continue?</translation>
       <location filename="../../DlgBlock.ui" line="68"/>
       <location filename="../../DlgBlock.ui" line="229"/>
       <source>Up to face</source>
-      <translation type="unfinished">Up to face</translation>
+      <translation>До грани</translation>
     </message>
     <message>
       <location filename="../../DlgBlock.ui" line="76"/>
@@ -1963,7 +1963,7 @@ Do you want to continue?</translation>
     <message>
       <location filename="../../DlgBlock.ui" line="115"/>
       <source>Profile</source>
-      <translation type="unfinished">Profile</translation>
+      <translation>Профиль</translation>
     </message>
     <message>
       <location filename="../../DlgBlock.ui" line="135"/>
@@ -1988,7 +1988,7 @@ Do you want to continue?</translation>
     <message>
       <location filename="../../DlgBlock.ui" line="276"/>
       <source>Direction</source>
-      <translation type="unfinished">Direction</translation>
+      <translation>Направление</translation>
     </message>
     <message>
       <location filename="../../DlgBlock.ui" line="288"/>
@@ -2299,7 +2299,7 @@ into its X, Y, and Z components.</translation>
     <message>
       <location filename="../../Command.cpp" line="1487"/>
       <source>Chamfer the selected edges of a shape</source>
-      <translation type="unfinished">Chamfer the selected edges of a shape</translation>
+      <translation>Добавить фаску на выбранные ребра фигуры</translation>
     </message>
   </context>
   <context>
@@ -2312,7 +2312,7 @@ into its X, Y, and Z components.</translation>
     <message>
       <location filename="../../Command.cpp" line="378"/>
       <source>Intersection</source>
-      <translation type="unfinished">Intersection</translation>
+      <translation>Пересечение</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="379"/>
@@ -3093,7 +3093,7 @@ of projection.</translation>
     <message>
       <location filename="../../Command.cpp" line="435"/>
       <source>Common</source>
-      <translation type="unfinished">Common</translation>
+      <translation>Пересечение</translation>
     </message>
     <message>
       <location filename="../../Command.cpp" line="535"/>
@@ -3204,7 +3204,7 @@ of projection.</translation>
       <location filename="../../TaskShapeBuilder.cpp" line="335"/>
       <location filename="../../TaskShapeBuilder.cpp" line="387"/>
       <source>Face</source>
-      <translation type="unfinished">Face</translation>
+      <translation>Грань</translation>
     </message>
     <message>
       <location filename="../../TaskShapeBuilder.cpp" line="450"/>
@@ -3396,7 +3396,7 @@ Note: The placement is expressed in local space of object being attached.</trans
     <message>
       <location filename="../../DlgBooleanOperation.ui" line="20"/>
       <source>Boolean operation</source>
-      <translation type="unfinished">Boolean operation</translation>
+      <translation>Булева операция</translation>
     </message>
     <message>
       <location filename="../../DlgBooleanOperation.ui" line="32"/>
@@ -3411,7 +3411,7 @@ Note: The placement is expressed in local space of object being attached.</trans
     <message>
       <location filename="../../DlgBooleanOperation.ui" line="49"/>
       <source>Intersection</source>
-      <translation type="unfinished">Intersection</translation>
+      <translation>Пересечение</translation>
     </message>
     <message>
       <location filename="../../DlgBooleanOperation.ui" line="56"/>
@@ -3516,7 +3516,7 @@ Note: The placement is expressed in local space of object being attached.</trans
     <message>
       <location filename="../../DlgExtrusion.ui" line="26"/>
       <source>Direction</source>
-      <translation type="unfinished">Direction</translation>
+      <translation>Направление</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="32"/>
@@ -3546,7 +3546,7 @@ Note: The placement is expressed in local space of object being attached.</trans
     <message>
       <location filename="../../DlgExtrusion.ui" line="58"/>
       <source>Reversed</source>
-      <translation type="unfinished">Reversed</translation>
+      <translation>В обратную сторону</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="68"/>
@@ -3587,7 +3587,7 @@ Note: The placement is expressed in local space of object being attached.</trans
     <message>
       <location filename="../../DlgExtrusion.ui" line="179"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Длина</translation>
     </message>
     <message>
       <location filename="../../DlgExtrusion.ui" line="185"/>
@@ -3851,7 +3851,7 @@ If both lengths are zero, magnitude of direction is used.</translation>
     <message>
       <location filename="../../DlgFilletEdges.cpp" line="831"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Длина</translation>
     </message>
     <message>
       <location filename="../../DlgFilletEdges.cpp" line="833"/>
@@ -4130,7 +4130,7 @@ during file reading (slower but higher details).</translation>
     <message>
       <location filename="../../DlgImportExportStep.ui" line="285"/>
       <source>Mode</source>
-      <translation type="unfinished">Mode</translation>
+      <translation>Режим</translation>
     </message>
     <message>
       <location filename="../../DlgImportExportStep.ui" line="305"/>
@@ -4237,12 +4237,12 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgPartBox.ui" line="141"/>
       <source>Width:</source>
-      <translation type="unfinished">Width:</translation>
+      <translation>Ширина:</translation>
     </message>
     <message>
       <location filename="../../DlgPartBox.ui" line="161"/>
       <source>Height:</source>
-      <translation type="unfinished">Height:</translation>
+      <translation>Высота:</translation>
     </message>
   </context>
   <context>
@@ -4290,7 +4290,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgPartCylinder.ui" line="141"/>
       <source>Height:</source>
-      <translation type="unfinished">Height:</translation>
+      <translation>Высота:</translation>
     </message>
   </context>
   <context>
@@ -4360,13 +4360,13 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgPrimitives.ui" line="14"/>
       <source>Geometric Primitives</source>
-      <translation type="unfinished">Geometric Primitives</translation>
+      <translation>Геометрические примитивы</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="33"/>
       <location filename="../../DlgPrimitives.cpp" line="739"/>
       <source>Plane</source>
-      <translation type="unfinished">Plane</translation>
+      <translation>Плоскость</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="42"/>
@@ -4472,7 +4472,7 @@ the size of the resulting STEP file.</translation>
       <location filename="../../DlgPrimitives.ui" line="260"/>
       <location filename="../../DlgPrimitives.ui" line="351"/>
       <source>Width:</source>
-      <translation type="unfinished">Width:</translation>
+      <translation>Ширина:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="371"/>
@@ -4481,7 +4481,7 @@ the size of the resulting STEP file.</translation>
       <location filename="../../DlgPrimitives.ui" line="1419"/>
       <location filename="../../DlgPrimitives.ui" line="1745"/>
       <source>Height:</source>
-      <translation type="unfinished">Height:</translation>
+      <translation>Высота:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="445"/>
@@ -4519,21 +4519,21 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgPrimitives.ui" line="569"/>
       <source>Rotation angle:</source>
-      <translation type="unfinished">Rotation angle:</translation>
+      <translation>Угол поворота:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="643"/>
       <location filename="../../DlgPrimitives.ui" line="975"/>
       <location filename="../../DlgPrimitives.ui" line="1184"/>
       <source>Radius 1:</source>
-      <translation type="unfinished">Radius 1:</translation>
+      <translation>Радиус 1:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="663"/>
       <location filename="../../DlgPrimitives.ui" line="995"/>
       <location filename="../../DlgPrimitives.ui" line="1204"/>
       <source>Radius 2:</source>
-      <translation type="unfinished">Radius 2:</translation>
+      <translation>Радиус 2:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="729"/>
@@ -4545,122 +4545,122 @@ the size of the resulting STEP file.</translation>
       <location filename="../../DlgPrimitives.ui" line="852"/>
       <location filename="../../DlgPrimitives.ui" line="1064"/>
       <source>U parameter:</source>
-      <translation type="unfinished">U parameter:</translation>
+      <translation>Параметр U:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="872"/>
       <source>V parameters:</source>
-      <translation type="unfinished">V parameters:</translation>
+      <translation>Параметры V:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1015"/>
       <source>Radius 3:</source>
-      <translation type="unfinished">Radius 3:</translation>
+      <translation>Радиус 3:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1084"/>
       <location filename="../../DlgPrimitives.ui" line="1273"/>
       <source>V parameter:</source>
-      <translation type="unfinished">V parameter:</translation>
+      <translation>Параметр V:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1253"/>
       <source>U Parameter:</source>
-      <translation type="unfinished">U Parameter:</translation>
+      <translation>Параметр U:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1376"/>
       <location filename="../../DlgPrimitives.ui" line="2418"/>
       <source>Polygon:</source>
-      <translation type="unfinished">Polygon:</translation>
+      <translation>Многоугольник:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1399"/>
       <location filename="../../DlgPrimitives.ui" line="2441"/>
       <source>Circumradius:</source>
-      <translation type="unfinished">Circumradius:</translation>
+      <translation>Радиус:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1518"/>
       <source>X min/max:</source>
-      <translation type="unfinished">X min/max:</translation>
+      <translation>X мин. /макс. :</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1548"/>
       <source>Y min/max:</source>
-      <translation type="unfinished">Y min/max:</translation>
+      <translation>Y мин. /макс. :</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1578"/>
       <source>Z min/max:</source>
-      <translation type="unfinished">Z min/max:</translation>
+      <translation>Z мин. /макс. :</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1608"/>
       <source>X2 min/max:</source>
-      <translation type="unfinished">X2 min/max:</translation>
+      <translation>X2 мин. /макс. :</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1641"/>
       <source>Z2 min/max:</source>
-      <translation type="unfinished">Z2 min/max:</translation>
+      <translation>Z2 мин. /макс. :</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1725"/>
       <source>Pitch:</source>
-      <translation type="unfinished">Pitch:</translation>
+      <translation>Шаг:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1802"/>
       <source>Coordinate system:</source>
-      <translation type="unfinished">Coordinate system:</translation>
+      <translation>Система координат:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1810"/>
       <source>Right-handed</source>
-      <translation type="unfinished">Right-handed</translation>
+      <translation>Правая</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1815"/>
       <source>Left-handed</source>
-      <translation type="unfinished">Left-handed</translation>
+      <translation>Левая</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1874"/>
       <source>Growth:</source>
-      <translation type="unfinished">Growth:</translation>
+      <translation>Приращение (шаг):</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1894"/>
       <source>Number of rotations:</source>
-      <translation type="unfinished">Number of rotations:</translation>
+      <translation>Число оборотов:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="1990"/>
       <location filename="../../DlgPrimitives.ui" line="2112"/>
       <source>Angle 1:</source>
-      <translation type="unfinished">Angle 1:</translation>
+      <translation>Угол 1:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="2007"/>
       <location filename="../../DlgPrimitives.ui" line="2129"/>
       <source>Angle 2:</source>
-      <translation type="unfinished">Angle 2:</translation>
+      <translation>Угол 2:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="2044"/>
       <source>From three points</source>
-      <translation type="unfinished">From three points</translation>
+      <translation>По трём точкам</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="2072"/>
       <source>Major radius:</source>
-      <translation type="unfinished">Major radius:</translation>
+      <translation>Большая полуось:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="2092"/>
       <source>Minor radius:</source>
-      <translation type="unfinished">Minor radius:</translation>
+      <translation>Малая полуось:</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="2170"/>
@@ -4683,12 +4683,12 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgPrimitives.ui" line="2251"/>
       <source>Start point</source>
-      <translation type="unfinished">Start point</translation>
+      <translation>Начальная точка</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.ui" line="2258"/>
       <source>End point</source>
-      <translation type="unfinished">End point</translation>
+      <translation>Конечная точка</translation>
     </message>
     <message>
       <location filename="../../DlgPrimitives.cpp" line="1003"/>
@@ -4768,7 +4768,7 @@ the size of the resulting STEP file.</translation>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="141"/>
       <source>Direction</source>
-      <translation type="unfinished">Direction</translation>
+      <translation>Направление</translation>
     </message>
     <message>
       <location filename="../../DlgProjectionOnSurface.ui" line="147"/>
@@ -5168,7 +5168,7 @@ will be used or black.</translation>
     <message>
       <location filename="../../Location.ui" line="29"/>
       <source>Position</source>
-      <translation type="unfinished">Position</translation>
+      <translation>Положение</translation>
     </message>
     <message>
       <location filename="../../Location.ui" line="37"/>
@@ -5215,7 +5215,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../Location.ui" line="147"/>
       <source>y</source>
-      <translation type="unfinished">y</translation>
+      <translation>у</translation>
     </message>
     <message>
       <location filename="../../Location.ui" line="154"/>
@@ -5263,7 +5263,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../TaskLoft.cpp" line="220"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
     <message>
       <location filename="../../TaskLoft.cpp" line="249"/>
@@ -5321,7 +5321,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../Mirroring.ui" line="96"/>
       <source>y</source>
-      <translation type="unfinished">y</translation>
+      <translation>у</translation>
     </message>
     <message>
       <location filename="../../Mirroring.ui" line="119"/>
@@ -5344,7 +5344,7 @@ the sketch plane&apos;s normal vector will be used</translation>
     <message>
       <location filename="../../TaskOffset.cpp" line="198"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>
@@ -5587,7 +5587,7 @@ only created cuts will be visible</translation>
     <message>
       <location filename="../../TaskSweep.cpp" line="338"/>
       <source>Invalid selection</source>
-      <translation type="unfinished">Invalid selection</translation>
+      <translation>Неверный выбор</translation>
     </message>
     <message>
       <location filename="../../TaskSweep.cpp" line="338"/>
@@ -5607,7 +5607,7 @@ only created cuts will be visible</translation>
     <message>
       <location filename="../../TaskSweep.cpp" line="383"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
     <message>
       <location filename="../../TaskSweep.cpp" line="416"/>
@@ -5794,7 +5794,7 @@ of object being attached.</translation>
     <message>
       <location filename="../../TaskAttacher.cpp" line="631"/>
       <source>Face</source>
-      <translation type="unfinished">Face</translation>
+      <translation>Грань</translation>
     </message>
     <message>
       <location filename="../../TaskAttacher.cpp" line="636"/>
@@ -6112,12 +6112,12 @@ by dragging a selection rectangle in the 3D view</translation>
     <message>
       <location filename="../../TaskLoft.ui" line="30"/>
       <source>Ruled surface</source>
-      <translation type="unfinished">Ruled surface</translation>
+      <translation>Линейчатая поверхность</translation>
     </message>
     <message>
       <location filename="../../TaskLoft.ui" line="37"/>
       <source>Closed</source>
-      <translation type="unfinished">Closed</translation>
+      <translation>Закрыто</translation>
     </message>
   </context>
   <context>
@@ -6131,17 +6131,17 @@ by dragging a selection rectangle in the 3D view</translation>
     <message>
       <location filename="../../TaskOffset.ui" line="34"/>
       <source>Mode</source>
-      <translation type="unfinished">Mode</translation>
+      <translation>Режим</translation>
     </message>
     <message>
       <location filename="../../TaskOffset.ui" line="42"/>
       <source>Skin</source>
-      <translation type="unfinished">Skin</translation>
+      <translation>Тема оформления</translation>
     </message>
     <message>
       <location filename="../../TaskOffset.ui" line="47"/>
       <source>Pipe</source>
-      <translation type="unfinished">Pipe</translation>
+      <translation>Труба</translation>
     </message>
     <message>
       <location filename="../../TaskOffset.ui" line="52"/>
@@ -6167,7 +6167,7 @@ by dragging a selection rectangle in the 3D view</translation>
       <location filename="../../TaskOffset.ui" line="78"/>
       <location filename="../../TaskOffset.ui" line="86"/>
       <source>Intersection</source>
-      <translation type="unfinished">Intersection</translation>
+      <translation>Пересечение</translation>
     </message>
     <message>
       <location filename="../../TaskOffset.ui" line="93"/>
@@ -6269,7 +6269,7 @@ by dragging a selection rectangle in the 3D view</translation>
     <message>
       <location filename="../../TaskSweep.ui" line="60"/>
       <source>Frenet</source>
-      <translation type="unfinished">Frenet</translation>
+      <translation>Френе</translation>
     </message>
     <message>
       <location filename="../../TaskSweep.cpp" line="490"/>
@@ -6304,7 +6304,7 @@ in the 3D view for the sweep path.</translation>
     <message>
       <location filename="../../../BasicShapes/TaskTube.ui" line="92"/>
       <source>Height:</source>
-      <translation type="unfinished">Height:</translation>
+      <translation>Высота:</translation>
     </message>
   </context>
   <context>
@@ -6314,7 +6314,7 @@ in the 3D view for the sweep path.</translation>
       <location filename="../../TaskThickness.cpp" line="280"/>
       <location filename="../../TaskThickness.cpp" line="290"/>
       <source>Thickness</source>
-      <translation type="unfinished">Thickness</translation>
+      <translation>Толщина</translation>
     </message>
     <message>
       <location filename="../../TaskThickness.cpp" line="178"/>
@@ -6329,7 +6329,7 @@ in the 3D view for the sweep path.</translation>
     <message>
       <location filename="../../TaskThickness.cpp" line="245"/>
       <source>Input error</source>
-      <translation type="unfinished">Input error</translation>
+      <translation>Ошибка ввода</translation>
     </message>
   </context>
   <context>

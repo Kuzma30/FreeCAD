@@ -1586,7 +1586,7 @@ For example:
     <message>
       <location filename="../../../PathScripts/PathProfileGui.py" line="165"/>
       <source>Profile</source>
-      <translation type="unfinished">Profile</translation>
+      <translation>Профиль</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfileGui.py" line="168"/>
@@ -1597,7 +1597,7 @@ For example:
       <location filename="../../../PathScripts/PathIconViewProvider.py" line="98"/>
       <location filename="../../../PathScripts/PathToolControllerGui.py" line="117"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathCircularHoleBase.py" line="117"/>
@@ -1774,7 +1774,7 @@ For example:
     <message>
       <location filename="../../../PathScripts/PathOpGui.py" line="191"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathOpGui.py" line="496"/>
@@ -2920,7 +2920,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="286"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathJobGui.py" line="529"/>
@@ -3057,7 +3057,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../../../PathScripts/PathMillFaceGui.py" line="76"/>
       <source>Face</source>
-      <translation type="unfinished">Face</translation>
+      <translation>Грань</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathMillFaceGui.py" line="79"/>
@@ -3262,7 +3262,7 @@ Aborting op creation</translation>
       <location filename="../../../PathScripts/PathProfileFacesGui.py" line="50"/>
       <location filename="../../../PathScripts/PathProfileContourGui.py" line="48"/>
       <source>Profile</source>
-      <translation type="unfinished">Profile</translation>
+      <translation>Профиль</translation>
     </message>
     <message>
       <location filename="../../../PathScripts/PathProfileEdgesGui.py" line="53"/>
@@ -4829,7 +4829,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/ToolBitLibraryEdit.ui" line="75"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../panels/ToolBitLibraryEdit.ui" line="99"/>
@@ -4859,7 +4859,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/ToolBitLibraryEdit.ui" line="272"/>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Закрыть</translation>
     </message>
   </context>
   <context>
@@ -5043,7 +5043,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="209"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Длина</translation>
     </message>
     <message>
       <location filename="../panels/DressupPathBoundary.ui" line="216"/>
@@ -5113,7 +5113,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageBaseLocationEdit.ui" line="53"/>
       <location filename="../panels/PropertyBag.ui" line="48"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseGeometryEdit.ui" line="89"/>
@@ -5205,7 +5205,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="63"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../panels/PageBaseLocationEdit.ui" line="70"/>
@@ -5511,7 +5511,7 @@ Aborting op creation</translation>
       <location filename="../panels/PageOpProfileFullEdit.ui" line="82"/>
       <location filename="../panels/PageOpThreadMillingEdit.ui" line="167"/>
       <source>Direction</source>
-      <translation type="unfinished">Direction</translation>
+      <translation>Направление</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDeburrEdit.ui" line="138"/>
@@ -5594,7 +5594,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="79"/>
       <source>Depth</source>
-      <translation type="unfinished">Depth</translation>
+      <translation>Глубина</translation>
     </message>
     <message>
       <location filename="../panels/PageOpDrillingEdit.ui" line="96"/>
@@ -6324,7 +6324,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="107"/>
       <source>Clearance</source>
-      <translation type="unfinished">Clearance</translation>
+      <translation>Отклонение</translation>
     </message>
     <message>
       <location filename="../panels/SetupGlobal.ui" line="114"/>
@@ -6885,7 +6885,7 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="493"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Длина</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="503"/>
@@ -6905,12 +6905,12 @@ Aborting op creation</translation>
     <message>
       <location filename="../preferences/PathJob.ui" line="561"/>
       <source>Axis</source>
-      <translation type="unfinished">Axis</translation>
+      <translation>Ось</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="589"/>
       <source>Position</source>
-      <translation type="unfinished">Position</translation>
+      <translation>Положение</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="633"/>
@@ -7349,7 +7349,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/DogboneEdit.ui" line="165"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Длина</translation>
     </message>
     <message>
       <location filename="../panels/DragKnifeEdit.ui" line="14"/>
@@ -7495,7 +7495,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="80"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../panels/SurfaceEdit.ui" line="87"/>
@@ -7839,7 +7839,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="274"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="291"/>
@@ -7849,12 +7849,12 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="305"/>
       <source>Move up</source>
-      <translation type="unfinished">Move up</translation>
+      <translation>Переместить вверх</translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="331"/>
       <source>Move down</source>
-      <translation type="unfinished">Move down</translation>
+      <translation>Переместить вниз </translation>
     </message>
     <message>
       <location filename="../panels/ToolLibraryEditor.ui" line="368"/>
@@ -7927,7 +7927,7 @@ p, li { white-space: pre-wrap; }
       <location filename="../panels/PathEdit.ui" line="1239"/>
       <location filename="../panels/PathEdit.ui" line="1461"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="99"/>
@@ -8165,7 +8165,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="588"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Длина</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="598"/>
@@ -8311,7 +8311,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1078"/>
       <source>Clearance</source>
-      <translation type="unfinished">Clearance</translation>
+      <translation>Отклонение</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1085"/>
@@ -8383,7 +8383,7 @@ p, li { white-space: pre-wrap; }
     <message>
       <location filename="../panels/PathEdit.ui" line="1256"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../panels/PathEdit.ui" line="1284"/>

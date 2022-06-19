@@ -6708,7 +6708,7 @@ Aborting op creation</translation>
       <location filename="../preferences/PathJob.ui" line="79"/>
       <location filename="../preferences/PathJob.ui" line="200"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../preferences/PathJob.ui" line="65"/>

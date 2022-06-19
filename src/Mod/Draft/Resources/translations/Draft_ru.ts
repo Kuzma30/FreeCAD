@@ -1216,7 +1216,7 @@ beyond the dimension line</translation>
       <location filename="../../InitGui.py" line="170"/>
       <location filename="../../InitGui.py" line="174"/>
       <source>Draft</source>
-      <translation type="unfinished">Draft</translation>
+      <translation>Притяжка</translation>
     </message>
     <message>
       <location filename="../../InitGui.py" line="222"/>
@@ -1267,14 +1267,14 @@ beyond the dimension line</translation>
       <location filename="../../drafttaskpanels/task_circulararray.py" line="157"/>
       <location filename="../../drafttaskpanels/task_polararray.py" line="144"/>
       <source>True</source>
-      <translation type="unfinished">True</translation>
+      <translation>Да</translation>
     </message>
     <message>
       <location filename="../../drafttaskpanels/task_orthoarray.py" line="162"/>
       <location filename="../../drafttaskpanels/task_circulararray.py" line="161"/>
       <location filename="../../drafttaskpanels/task_polararray.py" line="148"/>
       <source>False</source>
-      <translation type="unfinished">False</translation>
+      <translation>Нет</translation>
     </message>
     <message>
       <location filename="../../drafttaskpanels/task_scale.py" line="210"/>
@@ -1324,7 +1324,7 @@ beyond the dimension line</translation>
     <message>
       <location filename="../../drafttaskpanels/task_scale.py" line="219"/>
       <source>Create a clone</source>
-      <translation type="unfinished">Create a clone</translation>
+      <translation>Создать клон</translation>
     </message>
     <message>
       <location filename="../../importDXF.py" line="140"/>
@@ -1699,7 +1699,7 @@ CTRL to snap, SHIFT to constrain.</translation>
     <message>
       <location filename="../../draftguitools/gui_dimensions.py" line="85"/>
       <source>Dimension</source>
-      <translation type="unfinished">Dimension</translation>
+      <translation>Размер</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_dimensions.py" line="89"/>
@@ -1785,7 +1785,7 @@ Use TechDraw Workbench instead for generating technical drawings.</translation>
     <message>
       <location filename="../../draftguitools/gui_edit.py" line="285"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_edit.py" line="289"/>
@@ -1828,7 +1828,7 @@ on supported nodes and on supported objects.</translation>
     <message>
       <location filename="../../draftguitools/gui_fillets.py" line="65"/>
       <source>Fillet</source>
-      <translation type="unfinished">Fillet</translation>
+      <translation>Скругление</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_fillets.py" line="68"/>
@@ -2422,7 +2422,7 @@ straight Draft lines that are drawn in the XY plane. Selected objects that aren&
     <message>
       <location filename="../../draftguitools/gui_snaps.py" line="284"/>
       <source>Intersection</source>
-      <translation type="unfinished">Intersection</translation>
+      <translation>Пересечение</translation>
     </message>
     <message>
       <location filename="../../draftguitools/gui_snaps.py" line="287"/>
@@ -2826,7 +2826,7 @@ Then you can use it to save a different camera position and objects&apos; states
     <message>
       <location filename="../../InitGui.py" line="46"/>
       <source>Draft</source>
-      <translation type="unfinished">Draft</translation>
+      <translation>Притяжка</translation>
     </message>
     <message>
       <location filename="../../draftobjects/shapestring.py" line="73"/>
@@ -3103,7 +3103,7 @@ Then you can use it to save a different camera position and objects&apos; states
     <message>
       <location filename="../../draftutils/utils.py" line="709"/>
       <source>Face</source>
-      <translation type="unfinished">Face</translation>
+      <translation>Грань</translation>
     </message>
     <message>
       <location filename="../../draftutils/utils.py" line="714"/>
@@ -4848,7 +4848,7 @@ The final angle will be the base angle plus this amount.</translation>
       <location filename="../../DraftGui.py" line="72"/>
       <location filename="../../DraftGui.py" line="1018"/>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Закрыть</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="82"/>
@@ -4996,7 +4996,7 @@ The final angle will be the base angle plus this amount.</translation>
     <message>
       <location filename="../../DraftGui.py" line="932"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Длина</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="934"/>
@@ -5246,7 +5246,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
     <message>
       <location filename="../../DraftGui.py" line="1535"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="1585"/>
@@ -5346,7 +5346,7 @@ Not available if Draft preference option &apos;Use Part Primitives&apos; is enab
     <message>
       <location filename="../../DraftGui.py" line="2820"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../../DraftGui.py" line="2821"/>
@@ -5979,7 +5979,7 @@ This only works if &quot;Link array&quot; is off.</translation>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="244"/>
       <source>Fuse</source>
-      <translation type="unfinished">Fuse</translation>
+      <translation>Объединение</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_CircularArray.ui" line="251"/>
@@ -6116,7 +6116,7 @@ This only works if &quot;Link array&quot; is off.</translation>
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="398"/>
       <source>Fuse</source>
-      <translation type="unfinished">Fuse</translation>
+      <translation>Объединение</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_OrthoArray.ui" line="405"/>
@@ -6218,7 +6218,7 @@ This only works if &quot;Link array&quot; is off.</translation>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="206"/>
       <source>Fuse</source>
-      <translation type="unfinished">Fuse</translation>
+      <translation>Объединение</translation>
     </message>
     <message>
       <location filename="../ui/TaskPanel_PolarArray.ui" line="213"/>
@@ -6834,7 +6834,7 @@ value by using the [ and ] keys while drawing</translation>
     <message>
       <location filename="../ui/preferences-draft.ui" line="143"/>
       <source>Tolerance</source>
-      <translation type="unfinished">Tolerance</translation>
+      <translation>Точность</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draft.ui" line="169"/>
@@ -6996,7 +6996,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="125"/>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Закрыть</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="147"/>
@@ -7066,7 +7066,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="433"/>
       <source>Length</source>
-      <translation type="unfinished">Length</translation>
+      <translation>Длина</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftinterface.ui" line="455"/>
@@ -7402,7 +7402,7 @@ Note that this is not fully supported, and many object will be not editable with
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="598"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../ui/preferences-draftsnap.ui" line="621"/>

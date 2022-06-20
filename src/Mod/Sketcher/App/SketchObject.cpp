@@ -62,7 +62,6 @@
 # include <boost_bind_bind.hpp>
 //# include <QtGlobal>
 #endif
-
 #include <App/Application.h>
 #include <App/Document.h>
 #include <App/Expression.h>
@@ -199,22 +198,22 @@ App::DocumentObjectExecReturn *SketchObject::execute(void)
     int err = this->solve(true);
 
     if (err == -4) { // over-constrained sketch
-        std::string msg="Over-constrained sketch\n";
+        std::string msg=QT_TR_NOOP("Over-constrained sketch\n");
         appendConflictMsg(lastConflicting, msg);
         return new App::DocumentObjectExecReturn(msg.c_str(),this);
     }
     else if (err == -3) { // conflicting constraints
-        std::string msg="Sketch with conflicting constraints\n";
+        std::string msg=QT_TR_NOOP("Sketch with conflicting constraints\n");
         appendConflictMsg(lastConflicting, msg);
         return new App::DocumentObjectExecReturn(msg.c_str(),this);
     }
     else if (err == -2) { // redundant constraints
-        std::string msg="Sketch with redundant constraints\n";
+        std::string msg=QT_TR_NOOP("Sketch with redundant constraints\n");
         appendRedundantMsg(lastRedundant, msg);
         return new App::DocumentObjectExecReturn(msg.c_str(),this);
     }
     else if (err == -5) {
-        std::string msg="Sketch with malformed constraints\n";
+        std::string msg=QT_TR_NOOP("Sketch with malformed constraints\n");
         appendMalformedConstraintsMsg(lastMalformedConstraints, msg);
         return new App::DocumentObjectExecReturn(msg.c_str(),this);
     }
@@ -7476,24 +7475,24 @@ void SketchObject::getConstraintIndices (int GeoId, std::vector<int> &constraint
 void SketchObject::appendConflictMsg(const std::vector<int> &conflicting, std::string &msg)
 {
     appendConstraintsMsg(conflicting,
-                         "Please remove the following conflicting constraint:\n",
-                         "Please remove at least one of the following conflicting constraints:\n",
+                         QT_TR_NOOP("Please remove the following conflicting constraint:\n"),
+                         QT_TR_NOOP("Please remove at least one of the following conflicting constraints:\n"),
                          msg);
 }
 
 void SketchObject::appendRedundantMsg(const std::vector<int> &redundant, std::string &msg)
 {
     appendConstraintsMsg(redundant,
-                         "Please remove the following redundant constraint:",
-                         "Please remove the following redundant constraints:",
+                         QT_TR_NOOP("Please remove the following redundant constraint:"),
+                         QT_TR_NOOP("Please remove the following redundant constraints:"),
                          msg);
 }
 
 void SketchObject::appendMalformedConstraintsMsg(const std::vector<int> &malformed, std::string &msg)
 {
     appendConstraintsMsg(malformed,
-                         "Please remove the following malformed constraint:",
-                         "Please remove the following malformed constraints:",
+                         QT_TR_NOOP("Please remove the following malformed constraint:"),
+                         QT_TR_NOOP("Please remove the following malformed constraints:"),
                          msg);
 }
 

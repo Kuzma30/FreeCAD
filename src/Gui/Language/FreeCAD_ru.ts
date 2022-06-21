@@ -96,12 +96,12 @@
       <location filename="../propertyeditor/PropertyItem.cpp" line="2270"/>
       <location filename="../propertyeditor/PropertyItem.cpp" line="2537"/>
       <source>Axis</source>
-      <translation type="unfinished">Axis</translation>
+      <translation>Ось</translation>
     </message>
     <message>
       <location filename="../propertyeditor/PropertyItem.cpp" line="2542"/>
       <source>Position</source>
-      <translation type="unfinished">Position</translation>
+      <translation>Положение</translation>
     </message>
     <message>
       <location filename="../propertyeditor/PropertyItem.cpp" line="2781"/>
@@ -147,7 +147,7 @@
     <message>
       <location filename="../ViewProviderDocumentObject.cpp" line="304"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../Application.cpp" line="635"/>
@@ -253,7 +253,7 @@
     <message>
       <location filename="../Workbench.cpp" line="518"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../Workbench.cpp" line="519"/>
@@ -283,7 +283,7 @@
     <message>
       <location filename="../Workbench.cpp" line="524"/>
       <source>Standard</source>
-      <translation type="unfinished">Standard</translation>
+      <translation>Стандартно</translation>
     </message>
     <message>
       <location filename="../Workbench.cpp" line="525"/>
@@ -318,7 +318,7 @@
     <message>
       <location filename="../Workbench.cpp" line="531"/>
       <source>Measure</source>
-      <translation type="unfinished">Measure</translation>
+      <translation>Измерить</translation>
     </message>
   </context>
   <context>
@@ -499,17 +499,17 @@
     <message>
       <location filename="../Widgets.cpp" line="245"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../Widgets.cpp" line="246"/>
       <source>Move up</source>
-      <translation type="unfinished">Move up</translation>
+      <translation>Переместить вверх</translation>
     </message>
     <message>
       <location filename="../Widgets.cpp" line="247"/>
       <source>Move down</source>
-      <translation type="unfinished">Move down</translation>
+      <translation>Переместить вниз </translation>
     </message>
   </context>
   <context>
@@ -888,7 +888,7 @@ while doing a left or right click and move the mouse up or down</translation>
     <message>
       <location filename="../Clipping.ui" line="204"/>
       <source>Direction</source>
-      <translation type="unfinished">Direction</translation>
+      <translation>Направление</translation>
     </message>
   </context>
   <context>
@@ -960,7 +960,7 @@ while doing a left or right click and move the mouse up or down</translation>
     <message>
       <location filename="../DemoMode.ui" line="209"/>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Закрыть</translation>
     </message>
     <message>
       <location filename="../DemoMode.cpp" line="212"/>
@@ -1199,7 +1199,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <message>
       <location filename="../DlgActions.ui" line="215"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../DlgActions.ui" line="222"/>
@@ -1469,7 +1469,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <message>
       <location filename="../DlgToolbars.ui" line="210"/>
       <source>Move up</source>
-      <translation type="unfinished">Move up</translation>
+      <translation>Переместить вверх</translation>
     </message>
     <message>
       <location filename="../DlgToolbars.ui" line="213"/>
@@ -1479,7 +1479,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <message>
       <location filename="../DlgToolbars.ui" line="235"/>
       <source>Move down</source>
-      <translation type="unfinished">Move down</translation>
+      <translation>Переместить вниз </translation>
     </message>
     <message>
       <location filename="../DlgToolbars.ui" line="238"/>
@@ -2254,7 +2254,7 @@ display the splash screen</translation>
     <message>
       <location filename="../DlgMacroExecute.ui" line="173"/>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Закрыть</translation>
     </message>
     <message>
       <location filename="../DlgMacroExecute.ui" line="199"/>
@@ -2269,7 +2269,7 @@ display the splash screen</translation>
     <message>
       <location filename="../DlgMacroExecute.ui" line="219"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../DlgMacroExecute.ui" line="229"/>
@@ -4037,7 +4037,7 @@ automatically run a file recovery when it is started.</translation>
     <message>
       <location filename="../DlgSettingsDocument.ui" line="373"/>
       <source>Size</source>
-      <translation type="unfinished">Size</translation>
+      <translation>Размер</translation>
     </message>
     <message>
       <location filename="../DlgSettingsDocument.ui" line="383"/>
@@ -5393,7 +5393,7 @@ The preference system is the one set in the general preferences.</translation>
     <message>
       <location filename="../DlgUnitsCalculator.ui" line="203"/>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Закрыть</translation>
     </message>
   </context>
   <context>
@@ -5439,7 +5439,7 @@ The preference system is the one set in the general preferences.</translation>
     <message>
       <location filename="../DlgWorkbenches.ui" line="101"/>
       <source>Move up</source>
-      <translation type="unfinished">Move up</translation>
+      <translation>Переместить вверх</translation>
     </message>
     <message>
       <location filename="../DlgWorkbenches.ui" line="104"/>
@@ -5475,7 +5475,7 @@ The preference system is the one set in the general preferences.</translation>
     <message>
       <location filename="../DlgWorkbenches.ui" line="220"/>
       <source>Move down</source>
-      <translation type="unfinished">Move down</translation>
+      <translation>Переместить вниз </translation>
     </message>
     <message>
       <location filename="../DlgWorkbenches.ui" line="223"/>
@@ -6033,7 +6033,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     <message>
       <location filename="../Placement.ui" line="290"/>
       <source>Axis:</source>
-      <translation type="unfinished">Axis:</translation>
+      <translation>Ось:</translation>
     </message>
     <message>
       <location filename="../Placement.ui" line="310"/>
@@ -6088,7 +6088,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     <message>
       <location filename="../Placement.ui" line="503"/>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Закрыть</translation>
     </message>
     <message>
       <location filename="../Placement.ui" line="510"/>
@@ -6177,7 +6177,7 @@ The &apos;Status&apos; column shows whether the document could be recovered.</tr
     <message>
       <location filename="../SceneInspector.ui" line="45"/>
       <source>Close</source>
-      <translation type="unfinished">Close</translation>
+      <translation>Закрыть</translation>
     </message>
   </context>
   <context>
@@ -6727,7 +6727,7 @@ Do you want to save your changes?</translation>
     <message>
       <location filename="../Flag.cpp" line="164"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
   </context>
   <context>
@@ -6833,7 +6833,7 @@ Do you want to save your changes?</translation>
     <message>
       <location filename="../InputField.cpp" line="191"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../InputField.cpp" line="211"/>
@@ -6875,66 +6875,66 @@ Do you want to save your changes?</translation>
   <context>
     <name>Gui::LocationDialog</name>
     <message>
-      <location filename="../InputVector.cpp" line="108"/>
-      <location filename="../InputVector.cpp" line="122"/>
       <location filename="../InputVector.h" line="129"/>
       <location filename="../InputVector.h" line="143"/>
       <location filename="../InputVector.h" line="260"/>
       <location filename="../InputVector.h" line="274"/>
       <location filename="../InputVector.h" line="446"/>
       <location filename="../InputVector.h" line="460"/>
+      <location filename="../InputVector.cpp" line="108"/>
+      <location filename="../InputVector.cpp" line="122"/>
       <source>X</source>
       <translation type="unfinished">X</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="109"/>
-      <location filename="../InputVector.cpp" line="123"/>
       <location filename="../InputVector.h" line="130"/>
       <location filename="../InputVector.h" line="144"/>
       <location filename="../InputVector.h" line="261"/>
       <location filename="../InputVector.h" line="275"/>
       <location filename="../InputVector.h" line="447"/>
       <location filename="../InputVector.h" line="461"/>
+      <location filename="../InputVector.cpp" line="109"/>
+      <location filename="../InputVector.cpp" line="123"/>
       <source>Y</source>
       <translation type="unfinished">Y</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="110"/>
-      <location filename="../InputVector.cpp" line="124"/>
       <location filename="../InputVector.h" line="131"/>
       <location filename="../InputVector.h" line="145"/>
       <location filename="../InputVector.h" line="262"/>
       <location filename="../InputVector.h" line="276"/>
       <location filename="../InputVector.h" line="448"/>
       <location filename="../InputVector.h" line="462"/>
+      <location filename="../InputVector.cpp" line="110"/>
+      <location filename="../InputVector.cpp" line="124"/>
       <source>Z</source>
       <translation type="unfinished">Z</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="111"/>
-      <location filename="../InputVector.cpp" line="126"/>
       <location filename="../InputVector.h" line="132"/>
       <location filename="../InputVector.h" line="147"/>
       <location filename="../InputVector.h" line="263"/>
       <location filename="../InputVector.h" line="278"/>
       <location filename="../InputVector.h" line="449"/>
       <location filename="../InputVector.h" line="464"/>
+      <location filename="../InputVector.cpp" line="111"/>
+      <location filename="../InputVector.cpp" line="126"/>
       <source>User defined...</source>
       <translation type="unfinished">User defined...</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="213"/>
       <location filename="../InputVector.h" line="223"/>
       <location filename="../InputVector.h" line="343"/>
       <location filename="../InputVector.h" line="529"/>
+      <location filename="../InputVector.cpp" line="213"/>
       <source>Wrong direction</source>
       <translation type="unfinished">Wrong direction</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="214"/>
       <location filename="../InputVector.h" line="224"/>
       <location filename="../InputVector.h" line="344"/>
       <location filename="../InputVector.h" line="530"/>
+      <location filename="../InputVector.cpp" line="214"/>
       <source>Direction must not be the null vector</source>
       <translation type="unfinished">Direction must not be the null vector</translation>
     </message>
@@ -6965,9 +6965,9 @@ Do you want to save your changes?</translation>
   <context>
     <name>Gui::MacroCommand</name>
     <message>
+      <location filename="../DlgToolbarsImp.cpp" line="92"/>
       <location filename="../DlgCommandsImp.cpp" line="92"/>
       <location filename="../DlgKeyboardImp.cpp" line="85"/>
-      <location filename="../DlgToolbarsImp.cpp" line="92"/>
       <source>Macros</source>
       <translation type="unfinished">Macros</translation>
     </message>
@@ -6988,7 +6988,7 @@ Do you want to save your changes?</translation>
       <location filename="../MainWindow.cpp" line="294"/>
       <location filename="../MainWindow.cpp" line="1868"/>
       <source>Dimension</source>
-      <translation type="unfinished">Dimension</translation>
+      <translation>Размер</translation>
     </message>
     <message>
       <location filename="../MainWindow.cpp" line="483"/>
@@ -7253,7 +7253,7 @@ How do you want to proceed?</translation>
     <message>
       <location filename="../PrefWidgets.cpp" line="636"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../PrefWidgets.cpp" line="651"/>
@@ -7328,7 +7328,7 @@ How do you want to proceed?</translation>
     <message>
       <location filename="../propertyeditor/PropertyEditor.cpp" line="279"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../propertyeditor/PropertyEditor.cpp" line="289"/>
@@ -7397,7 +7397,7 @@ How do you want to proceed?</translation>
       <location filename="../PropertyView.cpp" line="92"/>
       <location filename="../PropertyView.cpp" line="537"/>
       <source>Data</source>
-      <translation type="unfinished">Data</translation>
+      <translation>Данные</translation>
     </message>
   </context>
   <context>
@@ -7724,7 +7724,7 @@ Do you want to specify another directory?</translation>
     <message>
       <location filename="../TaskDlgRelocation.cpp" line="42"/>
       <source>Position</source>
-      <translation type="unfinished">Position</translation>
+      <translation>Положение</translation>
     </message>
   </context>
   <context>
@@ -7760,7 +7760,7 @@ Do you want to specify another directory?</translation>
     <message>
       <location filename="../TaskElementColors.ui" line="40"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
     <message>
       <location filename="../TaskElementColors.ui" line="47"/>
@@ -7770,7 +7770,7 @@ Do you want to specify another directory?</translation>
     <message>
       <location filename="../TaskElementColors.ui" line="54"/>
       <source>Remove</source>
-      <translation type="unfinished">Remove</translation>
+      <translation>Удалить</translation>
     </message>
     <message>
       <location filename="../TaskElementColors.ui" line="61"/>
@@ -7840,7 +7840,7 @@ Do you want to specify another directory?</translation>
     <message>
       <location filename="../TaskView/TaskEditControl.ui" line="14"/>
       <source>Edit</source>
-      <translation type="unfinished">Edit</translation>
+      <translation>Редактировать</translation>
     </message>
   </context>
   <context>
@@ -8713,8 +8713,8 @@ Do you want to specify another directory?</translation>
       <translation type="unfinished">Exporting PDF...</translation>
     </message>
     <message>
-      <location filename="../CommandDoc.cpp" line="1207"/>
       <location filename="../MainWindow.cpp" line="547"/>
+      <location filename="../CommandDoc.cpp" line="1207"/>
       <source>Unsaved document</source>
       <translation type="unfinished">Unsaved document</translation>
     </message>
@@ -9246,8 +9246,8 @@ Please open a browser window and type in: http://localhost:%1.</translation>
       <translation type="unfinished">Move annotation</translation>
     </message>
     <message>
-      <location filename="../ViewProviderDragger.cpp" line="88"/>
       <location filename="../ViewProviderLink.cpp" line="2657"/>
+      <location filename="../ViewProviderDragger.cpp" line="88"/>
       <source>Transform</source>
       <translation type="unfinished">Transform</translation>
     </message>
@@ -9519,7 +9519,7 @@ the current copy will be lost.
     <message>
       <location filename="../ViewProviderDocumentObject.cpp" line="261"/>
       <source>Edit %1</source>
-      <translation type="unfinished">Edit %1</translation>
+      <translation>Редактировать %1</translation>
     </message>
   </context>
   <context>
@@ -10438,9 +10438,9 @@ the current copy will be lost.
       <translation type="unfinished">Create a new empty document</translation>
     </message>
     <message>
-      <location filename="../CommandDoc.cpp" line="607"/>
-      <location filename="../DocumentRecovery.cpp" line="389"/>
       <location filename="../MainWindow.cpp" line="1856"/>
+      <location filename="../DocumentRecovery.cpp" line="389"/>
+      <location filename="../CommandDoc.cpp" line="607"/>
       <source>Unnamed</source>
       <translation type="unfinished">Unnamed</translation>
     </message>

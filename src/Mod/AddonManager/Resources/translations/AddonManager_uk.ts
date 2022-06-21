@@ -1057,19 +1057,6 @@
     </message>
   </context>
   <context>
-    <name>Std_AddonMgr</name>
-    <message>
-      <location filename="../../AddonManager.py" line="129"/>
-      <source>&amp;Addon manager</source>
-      <translation>&amp;Менеджер додатків</translation>
-    </message>
-    <message>
-      <location filename="../../AddonManager.py" line="133"/>
-      <source>Manage external workbenches, macros, and preference packs</source>
-      <translation>Керує зовнішніми Робочими Середовищами, Макросами та Наборами Налаштувань</translation>
-    </message>
-  </context>
-  <context>
     <name>CompactView</name>
     <message>
       <location filename="../../compact_view.ui" line="20"/>
@@ -1154,7 +1141,7 @@ Do you want the Addon Manager to install them automatically? Choose &quot;Ignore
     <message>
       <location filename="../../AddonManager.ui" line="89"/>
       <source>labelStatusInfo</source>
-      <translation>labelStatusInfo</translation>
+      <translation type="unfinished">labelStatusInfo</translation>
     </message>
     <message>
       <location filename="../../AddonManager.ui" line="103"/>
@@ -1304,7 +1291,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="44"/>
       <source>DownloadMacros</source>
-      <translation>DownloadMacros</translation>
+      <translation type="unfinished">DownloadMacros</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="47"/>
@@ -1343,7 +1330,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="102"/>
       <source>HidePy2</source>
-      <translation>HidePy2</translation>
+      <translation type="unfinished">HidePy2</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="112"/>
@@ -1353,7 +1340,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="118"/>
       <source>HideObsolete</source>
-      <translation>HideObsolete</translation>
+      <translation type="unfinished">HideObsolete</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="128"/>
@@ -1363,7 +1350,7 @@ installed addons will be checked for available updates
     <message>
       <location filename="../../AddonManagerOptions.ui" line="137"/>
       <source>HideNewerFreeCADRequired</source>
-      <translation>HideNewerFreeCADRequired</translation>
+      <translation type="unfinished">HideNewerFreeCADRequired</translation>
     </message>
     <message>
       <location filename="../../AddonManagerOptions.ui" line="144"/>
@@ -1422,7 +1409,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../AddonManagerOptions.ui" line="305"/>
       <source>ShowBranchSwitcher</source>
-      <translation>ShowBranchSwitcher</translation>
+      <translation type="unfinished">ShowBranchSwitcher</translation>
     </message>
   </context>
   <context>
@@ -1435,7 +1422,7 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
       <location filename="../../package_details.ui" line="29"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../../package_details.ui" line="49"/>
@@ -1466,6 +1453,19 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
       <location filename="../../package_details.ui" line="80"/>
       <source>Change branch</source>
       <translation>Змінити гілку</translation>
+    </message>
+  </context>
+  <context>
+    <name>Std_AddonMgr</name>
+    <message>
+      <location filename="../../AddonManager.py" line="129"/>
+      <source>&amp;Addon manager</source>
+      <translation>&amp;Менеджер додатків</translation>
+    </message>
+    <message>
+      <location filename="../../AddonManager.py" line="133"/>
+      <source>Manage external workbenches, macros, and preference packs</source>
+      <translation>Керує зовнішніми Робочими Середовищами, Макросами та Наборами Налаштувань</translation>
     </message>
   </context>
   <context>

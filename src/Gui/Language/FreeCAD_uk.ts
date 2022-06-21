@@ -1189,7 +1189,7 @@ If this is not ticked, then the property must be uniquely named, and it is acces
     <message>
       <location filename="../DlgActions.ui" line="150"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../DlgActions.ui" line="208"/>
@@ -2483,7 +2483,7 @@ Perhaps a file permission error?</source>
     <message>
       <location filename="../DlgMacroRecord.ui" line="99"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../DlgMacroRecord.ui" line="126"/>
@@ -3302,7 +3302,7 @@ from Python console to Report view panel</source>
     <message>
       <location filename="../DlgRunExternal.ui" line="87"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../DlgRunExternal.ui" line="104"/>
@@ -6870,66 +6870,66 @@ Do you want to save your changes?</source>
   <context>
     <name>Gui::LocationDialog</name>
     <message>
-      <location filename="../InputVector.cpp" line="108"/>
-      <location filename="../InputVector.cpp" line="122"/>
       <location filename="../InputVector.h" line="129"/>
       <location filename="../InputVector.h" line="143"/>
       <location filename="../InputVector.h" line="260"/>
       <location filename="../InputVector.h" line="274"/>
       <location filename="../InputVector.h" line="446"/>
       <location filename="../InputVector.h" line="460"/>
+      <location filename="../InputVector.cpp" line="108"/>
+      <location filename="../InputVector.cpp" line="122"/>
       <source>X</source>
       <translation>X</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="109"/>
-      <location filename="../InputVector.cpp" line="123"/>
       <location filename="../InputVector.h" line="130"/>
       <location filename="../InputVector.h" line="144"/>
       <location filename="../InputVector.h" line="261"/>
       <location filename="../InputVector.h" line="275"/>
       <location filename="../InputVector.h" line="447"/>
       <location filename="../InputVector.h" line="461"/>
+      <location filename="../InputVector.cpp" line="109"/>
+      <location filename="../InputVector.cpp" line="123"/>
       <source>Y</source>
       <translation>Y</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="110"/>
-      <location filename="../InputVector.cpp" line="124"/>
       <location filename="../InputVector.h" line="131"/>
       <location filename="../InputVector.h" line="145"/>
       <location filename="../InputVector.h" line="262"/>
       <location filename="../InputVector.h" line="276"/>
       <location filename="../InputVector.h" line="448"/>
       <location filename="../InputVector.h" line="462"/>
+      <location filename="../InputVector.cpp" line="110"/>
+      <location filename="../InputVector.cpp" line="124"/>
       <source>Z</source>
       <translation>Z</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="111"/>
-      <location filename="../InputVector.cpp" line="126"/>
       <location filename="../InputVector.h" line="132"/>
       <location filename="../InputVector.h" line="147"/>
       <location filename="../InputVector.h" line="263"/>
       <location filename="../InputVector.h" line="278"/>
       <location filename="../InputVector.h" line="449"/>
       <location filename="../InputVector.h" line="464"/>
+      <location filename="../InputVector.cpp" line="111"/>
+      <location filename="../InputVector.cpp" line="126"/>
       <source>User defined...</source>
       <translation>Визначено користувачем...</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="213"/>
       <location filename="../InputVector.h" line="223"/>
       <location filename="../InputVector.h" line="343"/>
       <location filename="../InputVector.h" line="529"/>
+      <location filename="../InputVector.cpp" line="213"/>
       <source>Wrong direction</source>
       <translation>Неправильний напрямок</translation>
     </message>
     <message>
-      <location filename="../InputVector.cpp" line="214"/>
       <location filename="../InputVector.h" line="224"/>
       <location filename="../InputVector.h" line="344"/>
       <location filename="../InputVector.h" line="530"/>
+      <location filename="../InputVector.cpp" line="214"/>
       <source>Direction must not be the null vector</source>
       <translation>Напрям не може мати нульовий вектор</translation>
     </message>
@@ -6960,9 +6960,9 @@ Do you want to save your changes?</source>
   <context>
     <name>Gui::MacroCommand</name>
     <message>
+      <location filename="../DlgToolbarsImp.cpp" line="92"/>
       <location filename="../DlgCommandsImp.cpp" line="92"/>
       <location filename="../DlgKeyboardImp.cpp" line="85"/>
-      <location filename="../DlgToolbarsImp.cpp" line="92"/>
       <source>Macros</source>
       <translation>Макроси</translation>
     </message>
@@ -7848,7 +7848,7 @@ Do you want to specify another directory?</source>
       <location filename="../TaskView/TaskSelectLinkProperty.ui" line="36"/>
       <location filename="../TaskView/TaskSelectLinkProperty.ui" line="56"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
     <message>
       <location filename="../TaskView/TaskSelectLinkProperty.cpp" line="41"/>
@@ -8351,7 +8351,7 @@ Do you want to specify another directory?</source>
       <location filename="../VectorListEditor.ui" line="145"/>
       <location filename="../VectorListEditor.ui" line="156"/>
       <source>...</source>
-      <translation type="unfinished">...</translation>
+      <translation>...</translation>
     </message>
   </context>
   <context>
@@ -8705,8 +8705,8 @@ Do you want to specify another directory?</source>
       <translation>Експорт в PDF ...</translation>
     </message>
     <message>
-      <location filename="../CommandDoc.cpp" line="1207"/>
       <location filename="../MainWindow.cpp" line="547"/>
+      <location filename="../CommandDoc.cpp" line="1207"/>
       <source>Unsaved document</source>
       <translation>Незбережений документ</translation>
     </message>
@@ -9238,8 +9238,8 @@ Please open a browser window and type in: http://localhost:%1.</source>
       <translation>Переміщення анотації</translation>
     </message>
     <message>
-      <location filename="../ViewProviderDragger.cpp" line="88"/>
       <location filename="../ViewProviderLink.cpp" line="2657"/>
+      <location filename="../ViewProviderDragger.cpp" line="88"/>
       <source>Transform</source>
       <translation>Перетворення</translation>
     </message>
@@ -10431,9 +10431,9 @@ the current copy will be lost.
       <translation>Створює новий порожній документ</translation>
     </message>
     <message>
-      <location filename="../CommandDoc.cpp" line="607"/>
-      <location filename="../DocumentRecovery.cpp" line="389"/>
       <location filename="../MainWindow.cpp" line="1856"/>
+      <location filename="../DocumentRecovery.cpp" line="389"/>
+      <location filename="../CommandDoc.cpp" line="607"/>
       <source>Unnamed</source>
       <translation>Без назви</translation>
     </message>

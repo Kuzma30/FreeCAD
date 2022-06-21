@@ -285,8 +285,8 @@
       <translation>Необовʼязковий зсув між початком координат моделі (0,0,0) та точкою, що зазначена геокоординатами</translation>
     </message>
     <message>
-      <location filename="../../ArchSite.py" line="811"/>
       <location filename="../../ArchIFC.py" line="83"/>
+      <location filename="../../ArchSite.py" line="811"/>
       <source>The type of this object</source>
       <translation>Тип цього обʼєкта</translation>
     </message>
@@ -1064,8 +1064,8 @@
       <translation>Висота елементу</translation>
     </message>
     <message>
-      <location filename="../../ArchPrecast.py" line="93"/>
       <location filename="../../ArchStructure.py" line="971"/>
+      <location filename="../../ArchPrecast.py" line="93"/>
       <source>The structural nodes of this element</source>
       <translation>Структурні вузли цього елемента</translation>
     </message>
@@ -1425,9 +1425,9 @@
       <translation>Вирівнювання стіни на базовому об'єкті, якщо можливо</translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="961"/>
-      <location filename="../../ArchPanel.py" line="626"/>
       <location filename="../../ArchStructure.py" line="962"/>
+      <location filename="../../ArchPanel.py" line="626"/>
+      <location filename="../../ArchWall.py" line="961"/>
       <source>The normal extrusion direction of this object (keep (0,0,0) for automatic normal)</source>
       <translation>Нормальний напрямок видавлювання для цього об'єкта (залишити (0,0,0) для завдання автоматичної нормалі)</translation>
     </message>
@@ -1707,14 +1707,14 @@
       <translation>Показати суфікс одиниці</translation>
     </message>
     <message>
-      <location filename="../../ArchPanel.py" line="506"/>
       <location filename="../../ArchStructure.py" line="932"/>
+      <location filename="../../ArchPanel.py" line="506"/>
       <source>The length of this element, if not based on a profile</source>
       <translation>Довжина елемента, якщо вона не визначена в профілі</translation>
     </message>
     <message>
-      <location filename="../../ArchPanel.py" line="516"/>
       <location filename="../../ArchStructure.py" line="942"/>
+      <location filename="../../ArchPanel.py" line="516"/>
       <source>The width of this element, if not based on a profile</source>
       <translation>Ширина елемента, якщо вона не визначена в профілі</translation>
     </message>
@@ -1769,8 +1769,8 @@
       <translation>Область цієї панелі</translation>
     </message>
     <message>
-      <location filename="../../ArchPanel.py" line="615"/>
       <location filename="../../ArchStructure.py" line="1001"/>
+      <location filename="../../ArchPanel.py" line="615"/>
       <source>The facemaker type to use to build the profile of this object</source>
       <translation>Тип генератора поверхні, який слід використовувати для створення профілю цього об'єкта</translation>
     </message>
@@ -2178,28 +2178,28 @@
       <translation>Створити вісь</translation>
     </message>
     <message>
+      <location filename="../../ArchAxisSystem.py" line="383"/>
       <location filename="../../ArchAxis.py" line="998"/>
       <location filename="../../ArchComponent.py" line="2290"/>
-      <location filename="../../ArchAxisSystem.py" line="383"/>
       <source>Axes</source>
       <translation>Вісі</translation>
     </message>
     <message>
-      <location filename="../../ArchAxis.py" line="999"/>
-      <location filename="../../ArchComponent.py" line="2273"/>
-      <location filename="../../ArchAxisSystem.py" line="384"/>
       <location filename="../../ArchSectionPlane.py" line="1993"/>
       <location filename="../../ArchWindow.py" line="2129"/>
+      <location filename="../../ArchAxisSystem.py" line="384"/>
       <location filename="../../ArchSpace.py" line="1033"/>
+      <location filename="../../ArchAxis.py" line="999"/>
+      <location filename="../../ArchComponent.py" line="2273"/>
       <source>Remove</source>
       <translation>Видалити</translation>
     </message>
     <message>
+      <location filename="../../ArchWindow.py" line="2130"/>
+      <location filename="../../ArchAxisSystem.py" line="385"/>
+      <location filename="../../ArchSpace.py" line="1025"/>
       <location filename="../../ArchAxis.py" line="1000"/>
       <location filename="../../ArchComponent.py" line="2274"/>
-      <location filename="../../ArchAxisSystem.py" line="385"/>
-      <location filename="../../ArchWindow.py" line="2130"/>
-      <location filename="../../ArchSpace.py" line="1025"/>
       <source>Add</source>
       <translation>Додати</translation>
     </message>
@@ -2259,9 +2259,9 @@
       <translation>Закрити редагування ескізу</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="1954"/>
-      <location filename="../../ArchRoof.py" line="276"/>
       <location filename="../../ArchSpace.py" line="268"/>
+      <location filename="../../ArchRoof.py" line="276"/>
+      <location filename="../../ArchComponent.py" line="1954"/>
       <source>Please select a base object</source>
       <translation>Будь ласка, виберіть базовий обʼєкт</translation>
     </message>
@@ -2296,8 +2296,8 @@
       <translation>Обʼєкти</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2293"/>
       <location filename="../../ArchWindow.py" line="2141"/>
+      <location filename="../../ArchComponent.py" line="2293"/>
       <source>Components</source>
       <translation>Компоненти</translation>
     </message>
@@ -2332,17 +2332,17 @@
       <translation>Властивість</translation>
     </message>
     <message>
+      <location filename="../../ArchWindow.py" line="2146"/>
       <location filename="../../ArchComponent.py" line="2367"/>
       <location filename="../../ArchCommands.py" line="1995"/>
-      <location filename="../../ArchWindow.py" line="2146"/>
       <source>Type</source>
       <translation>Тип</translation>
     </message>
     <message>
-      <location filename="../../ArchComponent.py" line="2368"/>
-      <location filename="../../ArchCommands.py" line="1996"/>
       <location filename="../../ArchSchedule.py" line="715"/>
       <location filename="../../ArchSchedule.py" line="741"/>
+      <location filename="../../ArchComponent.py" line="2368"/>
+      <location filename="../../ArchCommands.py" line="1996"/>
       <source>Value</source>
       <translation>Значення</translation>
     </message>
@@ -2487,17 +2487,17 @@ Site creation aborted.</source>
       <translation>Експорт CSV</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1192"/>
       <location filename="../../ArchSchedule.py" line="714"/>
       <location filename="../../ArchSchedule.py" line="739"/>
+      <location filename="../../ArchCommands.py" line="1192"/>
       <source>Description</source>
       <translation>Опис</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1193"/>
+      <location filename="../../ArchStructure.py" line="568"/>
       <location filename="../../ArchPrecast.py" line="1743"/>
       <location filename="../../ArchWall.py" line="580"/>
-      <location filename="../../ArchStructure.py" line="568"/>
+      <location filename="../../ArchCommands.py" line="1193"/>
       <source>Length</source>
       <translation>Довжина</translation>
     </message>
@@ -2512,8 +2512,8 @@ Site creation aborted.</source>
       <translation>Всього</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1300"/>
       <location filename="../../ArchSchedule.py" line="656"/>
+      <location filename="../../ArchCommands.py" line="1300"/>
       <source>Export CSV File</source>
       <translation>Експортувати .CSV файл</translation>
     </message>
@@ -2575,9 +2575,9 @@ Site creation aborted.</source>
       <translation>Створити компонент</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1993"/>
-      <location filename="../../ArchProfile.py" line="157"/>
       <location filename="../../ArchStructure.py" line="552"/>
+      <location filename="../../ArchProfile.py" line="157"/>
+      <location filename="../../ArchCommands.py" line="1993"/>
       <source>Category</source>
       <translation>Категорія</translation>
     </message>
@@ -2587,9 +2587,9 @@ Site creation aborted.</source>
       <translation>Ключ</translation>
     </message>
     <message>
-      <location filename="../../ArchCommands.py" line="1997"/>
       <location filename="../../ArchSchedule.py" line="716"/>
       <location filename="../../ArchSchedule.py" line="743"/>
+      <location filename="../../ArchCommands.py" line="1997"/>
       <source>Unit</source>
       <translation>Одиниця</translation>
     </message>
@@ -2698,9 +2698,9 @@ Site creation aborted.</source>
       <translation>Створити мульти-матеріал</translation>
     </message>
     <message>
+      <location filename="../../ArchWindow.py" line="2145"/>
       <location filename="../../ArchMaterial.py" line="1054"/>
       <location filename="../../ArchMaterial.py" line="1097"/>
-      <location filename="../../ArchWindow.py" line="2145"/>
       <source>Name</source>
       <translation>Назва</translation>
     </message>
@@ -2711,9 +2711,9 @@ Site creation aborted.</source>
       <translation>Матеріал</translation>
     </message>
     <message>
+      <location filename="../../ArchWindow.py" line="2148"/>
       <location filename="../../ArchMaterial.py" line="1056"/>
       <location filename="../../ArchMaterial.py" line="1099"/>
-      <location filename="../../ArchWindow.py" line="2148"/>
       <source>Thickness</source>
       <translation>Порожнина</translation>
     </message>
@@ -2748,10 +2748,10 @@ Site creation aborted.</source>
       <translation>pycollada не знайдена, підтримка collada відключена.</translation>
     </message>
     <message>
-      <location filename="../../importDAE.py" line="140"/>
-      <location filename="../../importSH3D.py" line="73"/>
       <location filename="../../import3DS.py" line="86"/>
       <location filename="../../importIFClegacy.py" line="1057"/>
+      <location filename="../../importSH3D.py" line="73"/>
+      <location filename="../../importDAE.py" line="140"/>
       <source>Error: Couldn&apos;t determine character encoding</source>
       <translation type="unfinished">Error: Couldn&apos;t determine character encoding</translation>
     </message>
@@ -2979,8 +2979,8 @@ If Run = 0 then the run is calculated so that the height is the same as the rela
     </message>
     <message>
       <location filename="../../ArchWindow.py" line="512"/>
-      <location filename="../../ArchProfile.py" line="164"/>
       <location filename="../../ArchStructure.py" line="559"/>
+      <location filename="../../ArchProfile.py" line="164"/>
       <source>Preset</source>
       <translation>Налаштування</translation>
     </message>
@@ -3457,16 +3457,16 @@ Floor creation aborted.</source>
       <translation>Видалити зуб.</translation>
     </message>
     <message>
+      <location filename="../../ArchStructure.py" line="582"/>
       <location filename="../../ArchPrecast.py" line="1744"/>
       <location filename="../../ArchWall.py" line="586"/>
-      <location filename="../../ArchStructure.py" line="582"/>
       <source>Width</source>
       <translation>Ширина</translation>
     </message>
     <message>
+      <location filename="../../ArchStructure.py" line="591"/>
       <location filename="../../ArchPrecast.py" line="1745"/>
       <location filename="../../ArchWall.py" line="594"/>
-      <location filename="../../ArchStructure.py" line="591"/>
       <source>Height</source>
       <translation>Висота</translation>
     </message>
@@ -3627,8 +3627,8 @@ Floor creation aborted.</source>
       <translation>Перша точка стіни</translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="413"/>
       <location filename="../../ArchStructure.py" line="421"/>
+      <location filename="../../ArchWall.py" line="413"/>
       <source>Next point</source>
       <translation>Наступна точка</translation>
     </message>
@@ -3663,8 +3663,8 @@ Floor creation aborted.</source>
       <translation>Направо</translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="614"/>
       <location filename="../../ArchStructure.py" line="611"/>
+      <location filename="../../ArchWall.py" line="614"/>
       <source>Con&amp;tinue</source>
       <translation>Продовжити</translation>
     </message>
@@ -3700,8 +3700,8 @@ Floor creation aborted.</source>
       <translation>Не можна обчислити блоки для стіни</translation>
     </message>
     <message>
-      <location filename="../../ArchWall.py" line="1275"/>
       <location filename="../../ArchStructure.py" line="1100"/>
+      <location filename="../../ArchWall.py" line="1275"/>
       <source>This mesh is an invalid solid</source>
       <translation>Ця сітка є недійсним тілом</translation>
     </message>
@@ -3803,8 +3803,8 @@ Floor creation aborted.</source>
       <translation>Створіть Панель Листів</translation>
     </message>
     <message>
-      <location filename="../../ArchPanel.py" line="736"/>
       <location filename="../../ArchStructure.py" line="1154"/>
+      <location filename="../../ArchPanel.py" line="736"/>
       <source>Facemaker returned an error</source>
       <translation>Facemaker повернув помилку</translation>
     </message>
@@ -3814,8 +3814,8 @@ Floor creation aborted.</source>
       <translation>Помилка обчислення форми</translation>
     </message>
     <message>
-      <location filename="../../ArchPanel.py" line="990"/>
       <location filename="../../ArchStructure.py" line="1966"/>
+      <location filename="../../ArchPanel.py" line="990"/>
       <source>Couldn&apos;t compute a shape</source>
       <translation type="unfinished">Couldn&apos;t compute a shape</translation>
     </message>
@@ -4030,6 +4030,114 @@ Floor creation aborted.</source>
       <location filename="../../ArchStructure.py" line="1817"/>
       <source>Done</source>
       <translation>Готово</translation>
+    </message>
+  </context>
+  <context>
+    <name>ArchMaterial</name>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="14"/>
+      <source>Arch material</source>
+      <translation>Матеріали арки</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="26"/>
+      <source>Choose a preset card</source>
+      <translation>Виберіть попередньо встановлену карту</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="30"/>
+      <source>Choose preset...</source>
+      <translation>Виберіть пресет...</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="44"/>
+      <source>Copy values from an existing material in the document</source>
+      <translation>Копіювати значення з існуючого матеріалу в документ</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="48"/>
+      <source>Copy existing...</source>
+      <translation>Копіювання вже існує...</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="58"/>
+      <source>Name</source>
+      <translation>Назва</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="65"/>
+      <source>The name/label of this material</source>
+      <translation>Назва/мітка цього матеріалу</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="94"/>
+      <source>Description</source>
+      <translation>Опис</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="101"/>
+      <source>An optional description for this material</source>
+      <translation>Необовʼязковий опис для цього матеріалу</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="112"/>
+      <source>Color</source>
+      <translation>Колір</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="125"/>
+      <source>The color of this material</source>
+      <translation>Колір цього матеріалу</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="139"/>
+      <source>Section Color</source>
+      <translation>Колір секції</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="163"/>
+      <source>Transparency</source>
+      <translation>Прозорість</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="170"/>
+      <source>A transparency value for this material</source>
+      <translation>Значення прозорості для цього матеріалу</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="184"/>
+      <source>Standard code</source>
+      <translation>Стандартний код</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="191"/>
+      <source>A standard (MasterFormat, Omniclass...) code for this material</source>
+      <translation>Стандарт (MasterFormat, Omniclass...) коду для цього матеріалу</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="204"/>
+      <source>Opens a browser dialog to choose a class from a BIM standard</source>
+      <translation>Відкриває діалог для браузера для вибору класу з стандарту BIM</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="223"/>
+      <source>URL</source>
+      <translation>Посилання</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="236"/>
+      <source>A URL describing this material</source>
+      <translation>URL, що описує цей матеріал</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="249"/>
+      <source>Opens the URL in a browser</source>
+      <translation>Відкриває URL-адресу у браузері</translation>
+    </message>
+    <message>
+      <location filename="../ui/ArchMaterial.ui" line="268"/>
+      <source>Father</source>
+      <translation>Родоначальник</translation>
     </message>
   </context>
   <context>
@@ -4827,225 +4935,6 @@ Floor creation aborted.</source>
     </message>
   </context>
   <context>
-    <name>Draft</name>
-    <message>
-      <location filename="../../InitGui.py" line="262"/>
-      <location filename="../../InitGui.py" line="265"/>
-      <location filename="../../InitGui.py" line="268"/>
-      <location filename="../../InitGui.py" line="272"/>
-      <source>Draft</source>
-      <translation>Ухил</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="312"/>
-      <location filename="../../InitGui.py" line="315"/>
-      <location filename="../../InitGui.py" line="318"/>
-      <source>Import-Export</source>
-      <translation>Імпорт-експорт</translation>
-    </message>
-    <message>
-      <location filename="../../ArchBuildingPart.py" line="1377"/>
-      <source>Writing camera position</source>
-      <translation>Запис положення камери</translation>
-    </message>
-  </context>
-  <context>
-    <name>Workbench</name>
-    <message>
-      <location filename="../../InitGui.py" line="75"/>
-      <source>Structure tools</source>
-      <translation>Структурні інструменти</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="91"/>
-      <source>Axis tools</source>
-      <translation>Інструменти осей</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="99"/>
-      <source>Panel tools</source>
-      <translation>Інструменти панелі</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="109"/>
-      <source>Material tools</source>
-      <translation>Інструменти матеріалу</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="115"/>
-      <source>Pipe tools</source>
-      <translation>Інструменти для труб</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="168"/>
-      <source>Rebar tools</source>
-      <translation>Арматурні інструменти</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="184"/>
-      <source>Arch tools</source>
-      <translation>Інструменти арки</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="188"/>
-      <source>Draft creation tools</source>
-      <translation>Інструменти створення ескізу</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="193"/>
-      <source>Draft annotation tools</source>
-      <translation>Інструменти анотації креслення</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="198"/>
-      <source>Draft modification tools</source>
-      <translation>Інструменти редагування ескізу</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="206"/>
-      <location filename="../../InitGui.py" line="211"/>
-      <source>&amp;Arch</source>
-      <translation>&amp;Арка</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="207"/>
-      <location filename="../../InitGui.py" line="240"/>
-      <source>Utilities</source>
-      <translation>Утиліти</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="215"/>
-      <location filename="../../InitGui.py" line="223"/>
-      <location filename="../../InitGui.py" line="231"/>
-      <location filename="../../InitGui.py" line="239"/>
-      <source>&amp;Draft</source>
-      <translation>&amp;Ескіз</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="216"/>
-      <source>Creation</source>
-      <translation>Створення</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="224"/>
-      <source>Annotation</source>
-      <translation>Анотація</translation>
-    </message>
-    <message>
-      <location filename="../../InitGui.py" line="232"/>
-      <source>Modification</source>
-      <translation>Модифікація</translation>
-    </message>
-  </context>
-  <context>
-    <name>ArchMaterial</name>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="14"/>
-      <source>Arch material</source>
-      <translation>Матеріали арки</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="26"/>
-      <source>Choose a preset card</source>
-      <translation>Виберіть попередньо встановлену карту</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="30"/>
-      <source>Choose preset...</source>
-      <translation>Виберіть пресет...</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="44"/>
-      <source>Copy values from an existing material in the document</source>
-      <translation>Копіювати значення з існуючого матеріалу в документ</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="48"/>
-      <source>Copy existing...</source>
-      <translation>Копіювання вже існує...</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="58"/>
-      <source>Name</source>
-      <translation>Назва</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="65"/>
-      <source>The name/label of this material</source>
-      <translation>Назва/мітка цього матеріалу</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="94"/>
-      <source>Description</source>
-      <translation>Опис</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="101"/>
-      <source>An optional description for this material</source>
-      <translation>Необовʼязковий опис для цього матеріалу</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="112"/>
-      <source>Color</source>
-      <translation>Колір</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="125"/>
-      <source>The color of this material</source>
-      <translation>Колір цього матеріалу</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="139"/>
-      <source>Section Color</source>
-      <translation>Колір секції</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="163"/>
-      <source>Transparency</source>
-      <translation>Прозорість</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="170"/>
-      <source>A transparency value for this material</source>
-      <translation>Значення прозорості для цього матеріалу</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="184"/>
-      <source>Standard code</source>
-      <translation>Стандартний код</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="191"/>
-      <source>A standard (MasterFormat, Omniclass...) code for this material</source>
-      <translation>Стандарт (MasterFormat, Omniclass...) коду для цього матеріалу</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="204"/>
-      <source>Opens a browser dialog to choose a class from a BIM standard</source>
-      <translation>Відкриває діалог для браузера для вибору класу з стандарту BIM</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="223"/>
-      <source>URL</source>
-      <translation>Посилання</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="236"/>
-      <source>A URL describing this material</source>
-      <translation>URL, що описує цей матеріал</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="249"/>
-      <source>Opens the URL in a browser</source>
-      <translation>Відкриває URL-адресу у браузері</translation>
-    </message>
-    <message>
-      <location filename="../ui/ArchMaterial.ui" line="268"/>
-      <source>Father</source>
-      <translation>Родоначальник</translation>
-    </message>
-  </context>
-  <context>
     <name>BimServer</name>
     <message>
       <location filename="../ui/BimServerTaskPanel.ui" line="14"/>
@@ -5347,6 +5236,29 @@ Leave blank to use all objects from the document</source>
       <location filename="../ui/DialogIfcProperties.ui" line="83"/>
       <source>Force export full FreeCAD parametric data</source>
       <translation>Примусово експортувати повні параметричні дані FreeCAD</translation>
+    </message>
+  </context>
+  <context>
+    <name>Draft</name>
+    <message>
+      <location filename="../../InitGui.py" line="262"/>
+      <location filename="../../InitGui.py" line="265"/>
+      <location filename="../../InitGui.py" line="268"/>
+      <location filename="../../InitGui.py" line="272"/>
+      <source>Draft</source>
+      <translation>Ухил</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="312"/>
+      <location filename="../../InitGui.py" line="315"/>
+      <location filename="../../InitGui.py" line="318"/>
+      <source>Import-Export</source>
+      <translation>Імпорт-експорт</translation>
+    </message>
+    <message>
+      <location filename="../../ArchBuildingPart.py" line="1377"/>
+      <source>Writing camera position</source>
+      <translation>Запис положення камери</translation>
     </message>
   </context>
   <context>
@@ -6304,8 +6216,8 @@ are placed in a &apos;Group&apos; instead.
       <translation type="unfinished">DAE</translation>
     </message>
     <message>
-      <location filename="../ui/preferences-dae.ui" line="26"/>
       <location filename="../ui/preferences-ifc-export.ui" line="57"/>
+      <location filename="../ui/preferences-dae.ui" line="26"/>
       <source>Export options</source>
       <translation>Налаштування експорту</translation>
     </message>
@@ -6678,6 +6590,94 @@ unit to work with when opening the file.</source>
       <location filename="../ui/preferences-ifc-export.ui" line="388"/>
       <source>Imperial</source>
       <translation>Англійська (Імперська) система</translation>
+    </message>
+  </context>
+  <context>
+    <name>Workbench</name>
+    <message>
+      <location filename="../../InitGui.py" line="75"/>
+      <source>Structure tools</source>
+      <translation>Структурні інструменти</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="91"/>
+      <source>Axis tools</source>
+      <translation>Інструменти осей</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="99"/>
+      <source>Panel tools</source>
+      <translation>Інструменти панелі</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="109"/>
+      <source>Material tools</source>
+      <translation>Інструменти матеріалу</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="115"/>
+      <source>Pipe tools</source>
+      <translation>Інструменти для труб</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="168"/>
+      <source>Rebar tools</source>
+      <translation>Арматурні інструменти</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="184"/>
+      <source>Arch tools</source>
+      <translation>Інструменти арки</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="188"/>
+      <source>Draft creation tools</source>
+      <translation>Інструменти створення ескізу</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="193"/>
+      <source>Draft annotation tools</source>
+      <translation>Інструменти анотації креслення</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="198"/>
+      <source>Draft modification tools</source>
+      <translation>Інструменти редагування ескізу</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="206"/>
+      <location filename="../../InitGui.py" line="211"/>
+      <source>&amp;Arch</source>
+      <translation>&amp;Арка</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="207"/>
+      <location filename="../../InitGui.py" line="240"/>
+      <source>Utilities</source>
+      <translation>Утиліти</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="215"/>
+      <location filename="../../InitGui.py" line="223"/>
+      <location filename="../../InitGui.py" line="231"/>
+      <location filename="../../InitGui.py" line="239"/>
+      <source>&amp;Draft</source>
+      <translation>&amp;Ескіз</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="216"/>
+      <source>Creation</source>
+      <translation>Створення</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="224"/>
+      <source>Annotation</source>
+      <translation>Анотація</translation>
+    </message>
+    <message>
+      <location filename="../../InitGui.py" line="232"/>
+      <source>Modification</source>
+      <translation>Модифікація</translation>
     </message>
   </context>
 </TS>

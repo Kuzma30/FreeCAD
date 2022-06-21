@@ -2,19 +2,6 @@
 <!DOCTYPE TS>
 <TS version="2.1" language="uk" sourcelanguage="en">
   <context>
-    <name>Sketcher_ProfilesHexagon1</name>
-    <message>
-      <location filename="../../../Profiles.py" line="59"/>
-      <source>Creates a hexagonal profile</source>
-      <translation>Створює шестикутний профіль</translation>
-    </message>
-    <message>
-      <location filename="../../../Profiles.py" line="64"/>
-      <source>Creates a hexagonal profile in the sketch</source>
-      <translation>Створює шестикутний профіль на ескізі</translation>
-    </message>
-  </context>
-  <context>
     <name>CmdSketcherBSplineComb</name>
     <message>
       <location filename="../../CommandSketcherBSpline.cpp" line="203"/>
@@ -1709,11 +1696,11 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Додати обмеження блокування</translation>
     </message>
     <message>
+      <location filename="../../CommandSketcherTools.cpp" line="149"/>
+      <location filename="../../CommandSketcherTools.cpp" line="256"/>
       <location filename="../../CommandConstraints.cpp" line="1843"/>
       <location filename="../../CommandConstraints.cpp" line="2001"/>
       <location filename="../../CommandConstraints.cpp" line="2066"/>
-      <location filename="../../CommandSketcherTools.cpp" line="149"/>
-      <location filename="../../CommandSketcherTools.cpp" line="256"/>
       <source>Add coincident constraint</source>
       <translation>Додати обмеження збігу</translation>
     </message>
@@ -2224,65 +2211,65 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Помилка автообмеження: Ескіз не вирішується після додавання обмеження рівності.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="2008"/>
+      <location filename="../../../App/SketchObject.cpp" line="2007"/>
       <source>Unable to guess intersection of curves. Try adding a coincident constraint between the vertices of the curves you are intending to fillet.</source>
       <translation>Не вдалося розрахувати перетин кривих. Спробуйте додати обмеження збігу між вершинами кривих, які ви хочете заокруглити.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5756"/>
-      <location filename="../../../App/SketchObject.cpp" line="5933"/>
+      <location filename="../../../App/SketchObject.cpp" line="5755"/>
+      <location filename="../../../App/SketchObject.cpp" line="5932"/>
       <source>This version of OCE/OCC does not support knot operation. You need 6.9.0 or higher.</source>
       <translation>Ця версія OCE/OCC не підтримує операції з вузлами. Потрібна версія 6.9.0 або старша.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5760"/>
-      <location filename="../../../App/SketchObject.cpp" line="5938"/>
+      <location filename="../../../App/SketchObject.cpp" line="5759"/>
+      <location filename="../../../App/SketchObject.cpp" line="5937"/>
       <source>BSpline Geometry Index (GeoID) is out of bounds.</source>
       <translation>BSpline ідентифікатор геометрії (GeoID) знаходиться поза межами.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5763"/>
+      <location filename="../../../App/SketchObject.cpp" line="5762"/>
       <source>You are requesting no change in knot multiplicity.</source>
       <translation>Ви просите не змінювати кратність вузлів.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5768"/>
-      <location filename="../../../App/SketchObject.cpp" line="5946"/>
+      <location filename="../../../App/SketchObject.cpp" line="5767"/>
+      <location filename="../../../App/SketchObject.cpp" line="5945"/>
       <source>The Geometry Index (GeoId) provided is not a B-spline curve.</source>
       <translation>Ідентифікатор геометрії (GeoId) не є кривою B-сплайн.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5775"/>
+      <location filename="../../../App/SketchObject.cpp" line="5774"/>
       <source>The knot index is out of bounds. Note that in accordance with OCC notation, the first knot has index 1 and not zero.</source>
       <translation>Індекс вузла виходить за межі. Зверніть увагу, що відповідно до нотації OCC перший вузол має індекс 1, а не нуль.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5782"/>
+      <location filename="../../../App/SketchObject.cpp" line="5781"/>
       <source>The multiplicity cannot be increased beyond the degree of the B-spline.</source>
       <translation>Кратність не може бути збільшена понад ступінь B-сплайну.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5785"/>
+      <location filename="../../../App/SketchObject.cpp" line="5784"/>
       <source>The multiplicity cannot be decreased beyond zero.</source>
       <translation>Кратність не може бути зменшена нижче нуля.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5797"/>
+      <location filename="../../../App/SketchObject.cpp" line="5796"/>
       <source>OCC is unable to decrease the multiplicity within the maximum tolerance.</source>
       <translation>OCC нездатний зменшити кратність у межах максимального допуску.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5941"/>
+      <location filename="../../../App/SketchObject.cpp" line="5940"/>
       <source>Knot cannot have zero multiplicity.</source>
       <translation>Вузол не може мати нульову кратність.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5955"/>
+      <location filename="../../../App/SketchObject.cpp" line="5954"/>
       <source>Knot multiplicity cannot be higher than the degree of the BSpline.</source>
       <translation>Кратність вузла не повинна перевищувати ступінь B-сплайна.</translation>
     </message>
     <message>
-      <location filename="../../../App/SketchObject.cpp" line="5958"/>
+      <location filename="../../../App/SketchObject.cpp" line="5957"/>
       <source>Knot cannot be inserted outside the BSpline parameter range.</source>
       <translation>Вузол не можна розмістити за межами діапазону параметрів B-сплайну.</translation>
     </message>
@@ -2347,8 +2334,39 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Не приєднувати</translation>
     </message>
     <message>
+      <location filename="../../CommandSketcherTools.cpp" line="130"/>
+      <location filename="../../CommandSketcherTools.cpp" line="138"/>
+      <location filename="../../CommandSketcherTools.cpp" line="180"/>
+      <location filename="../../CommandSketcherTools.cpp" line="241"/>
+      <location filename="../../CommandSketcherTools.cpp" line="249"/>
+      <location filename="../../CommandSketcherTools.cpp" line="328"/>
+      <location filename="../../CommandSketcherTools.cpp" line="975"/>
+      <location filename="../../CommandSketcherTools.cpp" line="1087"/>
+      <location filename="../../CommandSketcherTools.cpp" line="1095"/>
+      <location filename="../../CommandSketcherTools.cpp" line="1200"/>
+      <location filename="../../CommandSketcherTools.cpp" line="1209"/>
+      <location filename="../../CommandSketcherTools.cpp" line="1468"/>
+      <location filename="../../CommandSketcherTools.cpp" line="1477"/>
+      <location filename="../../CommandSketcherTools.cpp" line="1536"/>
+      <location filename="../../CommandSketcherTools.cpp" line="2023"/>
+      <location filename="../../CommandSketcherTools.cpp" line="2032"/>
+      <location filename="../../CommandSketcherTools.cpp" line="2094"/>
+      <location filename="../../CommandSketcherTools.cpp" line="2290"/>
+      <location filename="../../CommandSketcherTools.cpp" line="2299"/>
+      <location filename="../../CommandSketcherTools.cpp" line="2344"/>
+      <location filename="../../CommandSketcherVirtualSpace.cpp" line="116"/>
+      <location filename="../../CommandSketcherVirtualSpace.cpp" line="124"/>
+      <location filename="../../CommandSketcherVirtualSpace.cpp" line="147"/>
       <location filename="../../CommandAlterGeometry.cpp" line="124"/>
       <location filename="../../CommandAlterGeometry.cpp" line="132"/>
+      <location filename="../../CommandSketcherBSpline.cpp" line="471"/>
+      <location filename="../../CommandSketcherBSpline.cpp" line="542"/>
+      <location filename="../../CommandSketcherBSpline.cpp" line="620"/>
+      <location filename="../../CommandSketcherBSpline.cpp" line="680"/>
+      <location filename="../../CommandSketcherBSpline.cpp" line="736"/>
+      <location filename="../../CommandSketcherBSpline.cpp" line="827"/>
+      <location filename="../../CommandSketcherBSpline.cpp" line="868"/>
+      <location filename="../../CommandSketcherBSpline.cpp" line="1216"/>
       <location filename="../../CommandConstraints.cpp" line="156"/>
       <location filename="../../CommandConstraints.cpp" line="162"/>
       <location filename="../../CommandConstraints.cpp" line="911"/>
@@ -2480,37 +2498,6 @@ invalid constraints, degenerated geometry, etc.</source>
       <location filename="../../CommandConstraints.cpp" line="7485"/>
       <location filename="../../CommandConstraints.cpp" line="7558"/>
       <location filename="../../CommandConstraints.cpp" line="7569"/>
-      <location filename="../../CommandSketcherBSpline.cpp" line="471"/>
-      <location filename="../../CommandSketcherBSpline.cpp" line="542"/>
-      <location filename="../../CommandSketcherBSpline.cpp" line="620"/>
-      <location filename="../../CommandSketcherBSpline.cpp" line="680"/>
-      <location filename="../../CommandSketcherBSpline.cpp" line="736"/>
-      <location filename="../../CommandSketcherBSpline.cpp" line="827"/>
-      <location filename="../../CommandSketcherBSpline.cpp" line="868"/>
-      <location filename="../../CommandSketcherBSpline.cpp" line="1216"/>
-      <location filename="../../CommandSketcherTools.cpp" line="130"/>
-      <location filename="../../CommandSketcherTools.cpp" line="138"/>
-      <location filename="../../CommandSketcherTools.cpp" line="180"/>
-      <location filename="../../CommandSketcherTools.cpp" line="241"/>
-      <location filename="../../CommandSketcherTools.cpp" line="249"/>
-      <location filename="../../CommandSketcherTools.cpp" line="328"/>
-      <location filename="../../CommandSketcherTools.cpp" line="975"/>
-      <location filename="../../CommandSketcherTools.cpp" line="1087"/>
-      <location filename="../../CommandSketcherTools.cpp" line="1095"/>
-      <location filename="../../CommandSketcherTools.cpp" line="1200"/>
-      <location filename="../../CommandSketcherTools.cpp" line="1209"/>
-      <location filename="../../CommandSketcherTools.cpp" line="1468"/>
-      <location filename="../../CommandSketcherTools.cpp" line="1477"/>
-      <location filename="../../CommandSketcherTools.cpp" line="1536"/>
-      <location filename="../../CommandSketcherTools.cpp" line="2023"/>
-      <location filename="../../CommandSketcherTools.cpp" line="2032"/>
-      <location filename="../../CommandSketcherTools.cpp" line="2094"/>
-      <location filename="../../CommandSketcherTools.cpp" line="2290"/>
-      <location filename="../../CommandSketcherTools.cpp" line="2299"/>
-      <location filename="../../CommandSketcherTools.cpp" line="2344"/>
-      <location filename="../../CommandSketcherVirtualSpace.cpp" line="116"/>
-      <location filename="../../CommandSketcherVirtualSpace.cpp" line="124"/>
-      <location filename="../../CommandSketcherVirtualSpace.cpp" line="147"/>
       <source>Wrong selection</source>
       <translation>Невірний вибір</translation>
     </message>
@@ -2574,6 +2561,8 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Виділіть ребро на ескізі.</translation>
     </message>
     <message>
+      <location filename="../../CommandSketcherTools.cpp" line="170"/>
+      <location filename="../../CommandSketcherTools.cpp" line="273"/>
       <location filename="../../CommandConstraints.cpp" line="937"/>
       <location filename="../../CommandConstraints.cpp" line="951"/>
       <location filename="../../CommandConstraints.cpp" line="957"/>
@@ -2590,8 +2579,6 @@ invalid constraints, degenerated geometry, etc.</source>
       <location filename="../../CommandConstraints.cpp" line="1268"/>
       <location filename="../../CommandConstraints.cpp" line="1277"/>
       <location filename="../../CommandConstraints.cpp" line="1288"/>
-      <location filename="../../CommandSketcherTools.cpp" line="170"/>
-      <location filename="../../CommandSketcherTools.cpp" line="273"/>
       <source>Impossible constraint</source>
       <translation>Неможливі обмеження</translation>
     </message>
@@ -2693,6 +2680,7 @@ invalid constraints, degenerated geometry, etc.</source>
       <translation>Виділіть лише ребра на ескізі.</translation>
     </message>
     <message>
+      <location filename="../../CommandSketcherBSpline.cpp" line="861"/>
       <location filename="../../CommandConstraints.cpp" line="1673"/>
       <location filename="../../CommandConstraints.cpp" line="1718"/>
       <location filename="../../CommandConstraints.cpp" line="3470"/>
@@ -2700,7 +2688,6 @@ invalid constraints, degenerated geometry, etc.</source>
       <location filename="../../CommandConstraints.cpp" line="4168"/>
       <location filename="../../CommandConstraints.cpp" line="4677"/>
       <location filename="../../CommandConstraints.cpp" line="6926"/>
-      <location filename="../../CommandSketcherBSpline.cpp" line="861"/>
       <source>Error</source>
       <translation>Помилка</translation>
     </message>
@@ -3177,9 +3164,9 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
       <translation>Визначте ступінь B-сплайну між 1 та %1:</translation>
     </message>
     <message>
-      <location filename="../../CommandCreateGeo.cpp" line="5890"/>
       <location filename="../../CommandSketcherBSpline.cpp" line="718"/>
       <location filename="../../CommandSketcherBSpline.cpp" line="1077"/>
+      <location filename="../../CommandCreateGeo.cpp" line="5890"/>
       <source>CAD Kernel Error</source>
       <translation>Помилка ядра CAD</translation>
     </message>
@@ -3324,6 +3311,71 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
       <location filename="../../CommandSketcherTools.cpp" line="2345"/>
       <source>Removal of axes alignment requires at least one selected non-external geometric element</source>
       <translation>Для видалення вирівнювання осей потрібно вибрати принаймні один не зовнішній геометричний елемент</translation>
+    </message>
+  </context>
+  <context>
+    <name>Sketcher::SketchObject</name>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="201"/>
+      <source>Over-constrained sketch
+</source>
+      <translation type="unfinished">Over-constrained sketch
+</translation>
+    </message>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="206"/>
+      <source>Sketch with conflicting constraints
+</source>
+      <translation type="unfinished">Sketch with conflicting constraints
+</translation>
+    </message>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="211"/>
+      <source>Sketch with redundant constraints
+</source>
+      <translation type="unfinished">Sketch with redundant constraints
+</translation>
+    </message>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="216"/>
+      <source>Sketch with malformed constraints
+</source>
+      <translation type="unfinished">Sketch with malformed constraints
+</translation>
+    </message>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="7478"/>
+      <source>Please remove the following conflicting constraint:
+</source>
+      <translation type="unfinished">Please remove the following conflicting constraint:
+</translation>
+    </message>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="7479"/>
+      <source>Please remove at least one of the following conflicting constraints:
+</source>
+      <translation type="unfinished">Please remove at least one of the following conflicting constraints:
+</translation>
+    </message>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="7486"/>
+      <source>Please remove the following redundant constraint:</source>
+      <translation>Будь ласка, видаліть наступне надлишкове обмеження:</translation>
+    </message>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="7487"/>
+      <source>Please remove the following redundant constraints:</source>
+      <translation>Видаліть, будь ласка, наступні надлишкові обмеження:</translation>
+    </message>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="7494"/>
+      <source>Please remove the following malformed constraint:</source>
+      <translation>Видаліть, будь ласка, наступне невірне обмеження:</translation>
+    </message>
+    <message>
+      <location filename="../../../App/SketchObject.cpp" line="7495"/>
+      <source>Please remove the following malformed constraints:</source>
+      <translation>Видаліть, будь ласка, наступні невірні обмеження:</translation>
     </message>
   </context>
   <context>
@@ -5798,6 +5850,19 @@ Select the method to attach this sketch to selected objects.</source>
       <location filename="../../Command.cpp" line="182"/>
       <source>Select the method to attach this sketch to selected object</source>
       <translation>Виберіть спосіб приєднання ескізу до виділеного обʼєкту</translation>
+    </message>
+  </context>
+  <context>
+    <name>Sketcher_ProfilesHexagon1</name>
+    <message>
+      <location filename="../../../Profiles.py" line="59"/>
+      <source>Creates a hexagonal profile</source>
+      <translation>Створює шестикутний профіль</translation>
+    </message>
+    <message>
+      <location filename="../../../Profiles.py" line="64"/>
+      <source>Creates a hexagonal profile in the sketch</source>
+      <translation>Створює шестикутний профіль на ескізі</translation>
     </message>
   </context>
   <context>

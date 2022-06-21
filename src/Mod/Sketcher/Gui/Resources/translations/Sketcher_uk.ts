@@ -3319,42 +3319,42 @@ Accepted combinations: two curves; an endpoint and a curve; two endpoints; two c
       <location filename="../../../App/SketchObject.cpp" line="201"/>
       <source>Over-constrained sketch
 </source>
-      <translation type="unfinished">Over-constrained sketch
+      <translation>Ескіз має надлишкові обмеження
 </translation>
     </message>
     <message>
       <location filename="../../../App/SketchObject.cpp" line="206"/>
       <source>Sketch with conflicting constraints
 </source>
-      <translation type="unfinished">Sketch with conflicting constraints
+      <translation>Ескіз з з обмеженнями, що конфліктують
 </translation>
     </message>
     <message>
       <location filename="../../../App/SketchObject.cpp" line="211"/>
       <source>Sketch with redundant constraints
 </source>
-      <translation type="unfinished">Sketch with redundant constraints
+      <translation>Ескіз з надлишковими обмеженнями
 </translation>
     </message>
     <message>
       <location filename="../../../App/SketchObject.cpp" line="216"/>
       <source>Sketch with malformed constraints
 </source>
-      <translation type="unfinished">Sketch with malformed constraints
+      <translation>Ескіз з неправильними обмеженнями
 </translation>
     </message>
     <message>
       <location filename="../../../App/SketchObject.cpp" line="7478"/>
       <source>Please remove the following conflicting constraint:
 </source>
-      <translation type="unfinished">Please remove the following conflicting constraint:
+      <translation>Будь ласка, видаліть наступне конфліктне обмеження:
 </translation>
     </message>
     <message>
       <location filename="../../../App/SketchObject.cpp" line="7479"/>
       <source>Please remove at least one of the following conflicting constraints:
 </source>
-      <translation type="unfinished">Please remove at least one of the following conflicting constraints:
+      <translation>Будь ласка, видаліть принаймні одне з наступних конфліктних обмежень:
 </translation>
     </message>
     <message>

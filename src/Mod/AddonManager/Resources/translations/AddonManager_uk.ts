@@ -1057,19 +1057,6 @@
     </message>
   </context>
   <context>
-    <name>Std_AddonMgr</name>
-    <message>
-      <location filename="../../AddonManager.py" line="129"/>
-      <source>&amp;Addon manager</source>
-      <translation>&amp;Менеджер додатків</translation>
-    </message>
-    <message>
-      <location filename="../../AddonManager.py" line="133"/>
-      <source>Manage external workbenches, macros, and preference packs</source>
-      <translation>Керує зовнішніми Робочими Середовищами, Макросами та Наборами Налаштувань</translation>
-    </message>
-  </context>
-  <context>
     <name>CompactView</name>
     <message>
       <location filename="../../compact_view.ui" line="20"/>
@@ -1466,6 +1453,19 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
       <location filename="../../package_details.ui" line="80"/>
       <source>Change branch</source>
       <translation>Змінити гілку</translation>
+    </message>
+  </context>
+  <context>
+    <name>Std_AddonMgr</name>
+    <message>
+      <location filename="../../AddonManager.py" line="129"/>
+      <source>&amp;Addon manager</source>
+      <translation>&amp;Менеджер додатків</translation>
+    </message>
+    <message>
+      <location filename="../../AddonManager.py" line="133"/>
+      <source>Manage external workbenches, macros, and preference packs</source>
+      <translation>Керує зовнішніми Робочими Середовищами, Макросами та Наборами Налаштувань</translation>
     </message>
   </context>
   <context>

@@ -1049,19 +1049,6 @@
     </message>
 </context>
 <context>
-    <name>Std_AddonMgr</name>
-    <message>
-        <location filename="../../AddonManager.py" line="129"/>
-        <source>&amp;Addon manager</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../../AddonManager.py" line="133"/>
-        <source>Manage external workbenches, macros, and preference packs</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>CompactView</name>
     <message>
         <location filename="../../compact_view.ui" line="20"/>
@@ -1451,6 +1438,19 @@ of the line after a space (e.g. https://github.com/FreeCAD/FreeCAD master).</sou
     <message>
         <location filename="../../package_details.ui" line="80"/>
         <source>Change branch</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>Std_AddonMgr</name>
+    <message>
+        <location filename="../../AddonManager.py" line="129"/>
+        <source>&amp;Addon manager</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../AddonManager.py" line="133"/>
+        <source>Manage external workbenches, macros, and preference packs</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

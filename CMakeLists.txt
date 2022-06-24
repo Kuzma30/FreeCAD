@@ -94,7 +94,7 @@ BuildAndInstallDesignerPlugin()
 CreatePackagingTargets()
 
 #run updateqm.py script  here
-execute_process(COMMAND python3 updateqm.py
+execute_process(COMMAND ${PYTHON_EXECUTABLE} updateqm.py
     WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/src/Tools/)
 
 PrintFinalReport()

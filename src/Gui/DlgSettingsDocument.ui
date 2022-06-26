@@ -19,23 +19,8 @@
      <property name="title">
       <string>General</string>
      </property>
-     <layout class="QGridLayout" name="gridLayout_4">
-      <property name="leftMargin">
-       <number>9</number>
-      </property>
-      <property name="topMargin">
-       <number>9</number>
-      </property>
-      <property name="rightMargin">
-       <number>9</number>
-      </property>
-      <property name="bottomMargin">
-       <number>9</number>
-      </property>
-      <property name="spacing">
-       <number>6</number>
-      </property>
-      <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
        <widget class="Gui::PrefCheckBox" name="prefCheckNewDoc">
         <property name="toolTip">
          <string>The application will create a new document when started</string>
@@ -54,7 +39,31 @@
         </property>
        </widget>
       </item>
-      <item row="1" column="0">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>New Document Name</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="Gui::PrefLineEdit" name="prefNewDocumentName">
+          <property name="toolTip">
+           <string>Specify here new documen's name</string>
+          </property>
+          <property name="prefEntry" stdset="0">
+           <cstring>prefNewDocumentName</cstring>
+          </property>
+          <property name="prefPath" stdset="0">
+           <cstring>Document</cstring>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
        <widget class="Line" name="line1">
         <property name="frameShape">
          <enum>QFrame::HLine</enum>
@@ -67,7 +76,7 @@
         </property>
        </widget>
       </item>
-      <item row="2" column="0">
+      <item>
        <layout class="QHBoxLayout">
         <property name="spacing">
          <number>6</number>
@@ -110,7 +119,7 @@
         </item>
        </layout>
       </item>
-      <item row="3" column="0">
+      <item>
        <widget class="Line" name="line1_2">
         <property name="frameShape">
          <enum>QFrame::HLine</enum>
@@ -123,7 +132,7 @@
         </property>
        </widget>
       </item>
-      <item row="4" column="0">
+      <item>
        <widget class="Gui::PrefCheckBox" name="prefUndoRedo">
         <property name="toolTip">
          <string>All changes in documents are stored so that they can be undone/redone</string>
@@ -142,7 +151,7 @@
         </property>
        </widget>
       </item>
-      <item row="5" column="0">
+      <item>
        <layout class="QHBoxLayout">
         <property name="spacing">
          <number>6</number>
@@ -184,14 +193,14 @@
         </item>
        </layout>
       </item>
-      <item row="6" column="0">
+      <item>
        <widget class="Line" name="line">
         <property name="orientation">
          <enum>Qt::Horizontal</enum>
         </property>
        </widget>
       </item>
-      <item row="7" column="0">
+      <item>
        <widget class="Gui::PrefCheckBox" name="prefCanAbortRecompute">
         <property name="toolTip">
          <string>Allow user aborting document recomputation by pressing ESC.

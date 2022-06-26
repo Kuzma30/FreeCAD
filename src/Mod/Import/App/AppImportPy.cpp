@@ -157,7 +157,7 @@ private:
                 pcDoc = App::GetApplication().getDocument(DocName);
             }
             if (!pcDoc) {
-                pcDoc = App::GetApplication().newDocument("Unnamed");
+                pcDoc = App::GetApplication().newDocument();
             }
 
             Handle(XCAFApp_Application) hApp = XCAFApp_Application::GetApplication();

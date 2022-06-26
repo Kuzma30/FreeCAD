@@ -121,7 +121,6 @@
 #include <Build/Version.h>
 #include "Branding.h"
 
-
 using namespace App;
 using namespace std;
 using namespace boost;
@@ -452,7 +451,8 @@ Document* Application::newDocument(const char * Name, const char * UserName, boo
         userName = UserName;
     }
     else {
-        userName = Name;
+        userName = App::GetApplication().GetParameterGroupByPath
+                ("User parameter:BaseApp/Preferences/Document")->GetASCII("prefNewDocumentName","");
         std::vector<std::string> names;
         names.reserve(DocMap.size());
         std::map<string,Document*>::const_iterator pos;

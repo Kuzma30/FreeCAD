@@ -68,7 +68,11 @@ DlgSettingsDocumentImp::~DlgSettingsDocumentImp()
 
 void DlgSettingsDocumentImp::saveSettings()
 {
+
     ui->prefCheckNewDoc->onSave();
+    if (ui->prefNewDocumentName->text().isEmpty())
+        ui->prefNewDocumentName->setText(tr("Unnamed"));
+    ui->prefNewDocumentName->onSave();
     ui->prefCompression->onSave();
 
     ui->prefUndoRedo->onSave();
@@ -103,6 +107,13 @@ void DlgSettingsDocumentImp::saveSettings()
 void DlgSettingsDocumentImp::loadSettings()
 {
     ui->prefCheckNewDoc->onRestore();
+    ui->prefNewDocumentName->onRestore();
+    if (ui->prefNewDocumentName->text().isEmpty()){
+        ui->prefNewDocumentName->setText(tr("Unnamed"));
+        ui->prefNewDocumentName->onSave();
+        ui->prefNewDocumentName->onRestore();
+    }
+
     ui->prefCompression->onRestore();
 
     ui->prefUndoRedo->onRestore();

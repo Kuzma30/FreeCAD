@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>607</width>
-    <height>859</height>
+    <height>884</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,7 +51,7 @@
         <item row="0" column="1">
          <widget class="Gui::PrefLineEdit" name="prefNewDocumentName">
           <property name="toolTip">
-           <string>Specify here new documen's name</string>
+           <string>Specify here new document's name</string>
           </property>
           <property name="prefEntry" stdset="0">
            <cstring>prefNewDocumentName</cstring>

@@ -452,7 +452,7 @@ Document* Application::newDocument(const char * Name, const char * UserName, boo
     }
     else {
         userName = App::GetApplication().GetParameterGroupByPath
-                ("User parameter:BaseApp/Preferences/Document")->GetASCII("prefNewDocumentName","");
+                ("User parameter:BaseApp/Preferences/Document")->GetASCII("prefNewDocumentName","Unnamed");
         std::vector<std::string> names;
         names.reserve(DocMap.size());
         std::map<string,Document*>::const_iterator pos;

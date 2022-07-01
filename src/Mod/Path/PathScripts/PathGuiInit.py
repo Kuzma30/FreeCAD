@@ -21,6 +21,7 @@
 # ***************************************************************************
 
 import PathScripts.PathLog as PathLog
+import subprocess
 
 LOGLEVEL = False
 
@@ -76,6 +77,22 @@ def Startup():
         from PathScripts import PathToolLibraryManager
         from PathScripts import PathUtilsGui
         from PathScripts import PathVcarveGui
+
+        from packaging.version import Version, parse
+
+        # If camotics is installed and current enough, import the GUI
+        try:
+            import camotics
+
+            r = subprocess.run(
+                ["camotics", "--version"], capture_output=True, text=True
+            ).stderr.strip()
+
+            v = parse(r)
+            if v >= Version("1.2.2"):
+                from PathScripts import PathCamoticsGui
+        except (FileNotFoundError, ModuleNotFoundError):
+            pass
 
         Processed = True
     else:

@@ -228,8 +228,7 @@ void  ViewProviderFemMeshPy::setNodeDisplacement(Py::Dict arg)
         this->getViewProviderFemMeshPtr()->resetColorByNodeId();
     else {
         std::map<long, Base::Vector3d> NodeDispMap;
-        union PyType_Object pyType = { &(Base::VectorPy::Type) };
-        Py::Type vType(pyType.o);
+        Py::Type vType(Base::getTypeAsObject(&Base::VectorPy::Type));
 
         for (Py::Dict::iterator it = arg.begin(); it != arg.end(); ++it) {
             Py::Long id((*it).first);
@@ -258,8 +257,8 @@ Py::List ViewProviderFemMeshPy::getHighlightedNodes(void) const
 void ViewProviderFemMeshPy::setHighlightedNodes(Py::List arg)
 {
     ViewProviderFemMesh* vp = this->getViewProviderFemMeshPtr();
-    SMESHDS_Mesh* data = const_cast<SMESH_Mesh*>((static_cast<Fem::FemMeshObject*>
-        (vp->getObject())->FemMesh).getValue().getSMesh())->GetMeshDS();
+    const SMESHDS_Mesh* data = static_cast<Fem::FemMeshObject*>
+        (vp->getObject())->FemMesh.getValue().getSMesh()->GetMeshDS();
 
     std::set<long> res;
     for (Py::List::iterator it = arg.begin(); it != arg.end(); ++it) {

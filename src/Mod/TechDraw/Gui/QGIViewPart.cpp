@@ -409,7 +409,7 @@ QPainterPath QGIViewPart::geomToPainterPath(BaseGeomPtr baseGeom, double rot)
 
 void QGIViewPart::updateView(bool update)
 {
-//    Base::Console().Message("QGIVP::updateView()\n");
+//    Base::Console().Message("QGIVP::updateView() - %s\n", getViewObject()->getNameInDocument());
     auto viewPart( dynamic_cast<TechDraw::DrawViewPart *>(getViewObject()) );
     if( viewPart == nullptr ) {
         return;
@@ -564,7 +564,7 @@ void QGIViewPart::drawViewPart()
             item->setWidth(lineWidth);
             item->setNormalColor(edgeColor);
             item->setStyle(Qt::SolidLine);
-            if ((*itGeom)->cosmetic == true) {
+            if ((*itGeom)->cosmetic) {
                 int source = (*itGeom)->source();
                 if (source == COSMETICEDGE) {
                     std::string cTag = (*itGeom)->getCosmeticTag();
@@ -959,7 +959,7 @@ void QGIViewPart::drawHighlight(TechDraw::DrawViewDetail* viewDetail, bool b)
         QGIHighlight* highlight = new QGIHighlight();
         addToGroup(highlight);
         highlight->setPos(0.0,0.0);   //sb setPos(center.x,center.y)?
-        highlight->setReference(const_cast<char*>(viewDetail->Reference.getValue()));
+        highlight->setReference(viewDetail->Reference.getValue());
         highlight->setStyle((Qt::PenStyle)vp->HighlightLineStyle.getValue());
         highlight->setColor(vp->HighlightLineColor.getValue().asValue<QColor>());
 

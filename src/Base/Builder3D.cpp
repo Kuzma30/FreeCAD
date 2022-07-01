@@ -116,7 +116,7 @@ void Builder3D::endPoints()
 void Builder3D::addSinglePoint(float x, float y, float z,short pointSize, float color_r,float color_g,float color_b)
 {
   // addSinglePoint() not between startXXX() and endXXX() allowed
-  assert( bStartEndOpen == false );
+  assert(!bStartEndOpen);
 
   result << "Separator { ";
   result <<   "Material { ";
@@ -155,7 +155,7 @@ void Builder3D::addSinglePoint(const Base::Vector3f &vec, short pointSize, float
 void Builder3D::addText(float pos_x, float pos_y , float pos_z,const char * text, float color_r,float color_g,float color_b)
 {
   // addSinglePoint() not between startXXX() and endXXX() allowed
-  assert( bStartEndOpen == false );
+  assert(!bStartEndOpen);
 
   result << "Separator { "
          <<   "Material { diffuseColor " << color_r << " "<< color_g << " "<< color_b << "} "
@@ -172,8 +172,8 @@ void Builder3D::addText(const Base::Vector3f &vec,const char * text, float color
 
 void Builder3D::clear ()
 {
-  // Under VC6 string::clear() doesn't exist, under gcc stringstream::str() returns a copy not a reference
-#if defined(_MSC_VER) && _MSC_VER >= 1400
+  // under gcc stringstream::str() returns a copy not a reference
+#if defined(_MSC_VER)
   result.str().clear();
 #endif
   result.clear();

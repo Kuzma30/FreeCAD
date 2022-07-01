@@ -53,6 +53,7 @@
 #include "Rez.h"
 #include "ZVALUE.h"
 #include "DrawGuiUtil.h"
+#include "QGSPage.h"
 #include "QGVPage.h"
 #include "QGCustomLabel.h"
 #include "QGCustomBorder.h"
@@ -343,6 +344,8 @@ void QGIView::updateView(bool update)
 {
 //    Base::Console().Message("QGIV::updateView() - %s\n",getViewObject()->getNameInDocument());
     (void) update;
+
+    //allow/prevent dragging
     if (getViewObject()->isLocked()) {
         setFlag(QGraphicsItem::ItemIsMovable, false);
     } else {
@@ -418,12 +421,12 @@ void QGIView::toggleCache(bool state)
 void QGIView::draw()
 {
 //    Base::Console().Message("QGIV::draw()\n");
-    double x, y;
+    double xFeat, yFeat;
     if (getViewObject() != nullptr) {
-        x = Rez::guiX(getViewObject()->X.getValue());
-        y = Rez::guiX(getViewObject()->Y.getValue());
+        xFeat = Rez::guiX(getViewObject()->X.getValue());
+        yFeat = Rez::guiX(getViewObject()->Y.getValue());
         if (!getViewObject()->LockPosition.getValue()) {
-            setPosition(x, y);
+            setPosition(xFeat, yFeat);
         }
     }
     if (isVisible()) {
@@ -626,9 +629,24 @@ QGVPage* QGIView::getGraphicsView(TechDraw::DrawView* dv)
     return graphicsView;
 }
 
+QGSPage* QGIView::getGraphicsScene(TechDraw::DrawView* dv)
+{
+    QGSPage* graphicsScene = nullptr;
+    Gui::ViewProvider* vp = getViewProvider(dv);
+    ViewProviderDrawingView* vpdv = dynamic_cast<ViewProviderDrawingView*>(vp);
+    if (vpdv != nullptr) {
+        MDIViewPage* mdi = vpdv->getMDIViewPage();
+        if (mdi != nullptr) {
+            graphicsScene = mdi->getQGSPage();
+        }
+    }
+    return graphicsScene;
+}
+
 MDIViewPage* QGIView::getMDIViewPage(void) const
 {
-    return MDIViewPage::getFromScene(scene());
+    QGSPage* qgsp = static_cast<QGSPage*>(scene());
+    return MDIViewPage::getFromScene(qgsp);
 }
 
 //remove a child of this from scene while keeping scene indexes valid

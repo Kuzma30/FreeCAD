@@ -73,7 +73,7 @@ unsigned int Thumbnail::getMemSize (void) const
 void Thumbnail::Save (Base::Writer &writer) const
 {
     // It's only possible to add extra information if force of XML is disabled
-    if (writer.isForceXML() == false)
+    if (!writer.isForceXML())
         writer.addFile("thumbnails/Thumbnail.png", this);
 }
 
@@ -115,7 +115,7 @@ void Thumbnail::SaveDocFile (Base::Writer &writer) const
 
     if (!px.isNull()) {
         // according to specification add some meta-information to the image
-        uint mt = QDateTime::currentDateTime().toTime_t();
+        uint mt = QDateTime::currentDateTimeUtc().toTime_t();
         QString mtime = QString::fromLatin1("%1").arg(mt);
         img.setText(QLatin1String("Software"), qApp->applicationName());
         img.setText(QLatin1String("Thumb::Mimetype"), QLatin1String("application/x-extension-fcstd"));

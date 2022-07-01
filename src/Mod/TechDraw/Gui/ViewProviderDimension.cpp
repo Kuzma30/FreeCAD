@@ -122,7 +122,7 @@ void ViewProviderDimension::setupContextMenu(QMenu* menu, QObject* receiver, con
     Gui::ActionFunction* func = new Gui::ActionFunction(menu);
     QAction* act = menu->addAction(QObject::tr("Edit %1").arg(QString::fromUtf8(getObject()->Label.getValue())));
     act->setData(QVariant((int)ViewProvider::Default));
-    func->trigger(act, boost::bind(&ViewProviderDimension::startDefaultEditMode, this));
+    func->trigger(act, std::bind(&ViewProviderDimension::startDefaultEditMode, this));
 
     ViewProviderDrawingView::setupContextMenu(menu, receiver, member);
 }
@@ -174,7 +174,19 @@ void ViewProviderDimension::updateData(const App::Property* p)
             sPixmap = "TechDraw_3PtAngleDimension";
         }
     }
-    ViewProviderDrawingView::updateData(p);
+
+    //Dimension handles X,Y updates differently that other QGIView
+    //call QGIViewDimension::updateView
+    if (p == &(getViewObject()->X)  ||
+        p == &(getViewObject()->Y) ){
+        QGIView* qgiv = getQView();
+        if (qgiv) {
+            qgiv->updateView(true);
+        }
+    }
+
+    //Skip QGIView X,Y processing - do not call ViewProviderDrawingView
+    Gui::ViewProviderDocumentObject::updateData(p);
 }
 
 void ViewProviderDimension::onChanged(const App::Property* p)

@@ -160,16 +160,11 @@ int main( int argc, char ** argv )
     }
 #endif
 
-#if defined(_MSC_VER) && _MSC_VER <= 1800
-    // See InterpreterSingleton::init
-    Redirection out(stdout), err(stderr), inp(stdin);
-#endif
-
     // Name and Version of the Application
     App::Application::Config()["ExeName"] = "FreeCAD";
     App::Application::Config()["ExeVendor"] = "FreeCAD";
     App::Application::Config()["AppDataSkipVendor"] = "true";
-    App::Application::Config()["MaintainerUrl"] = "http://www.freecadweb.org/wiki/Main_Page";
+    App::Application::Config()["MaintainerUrl"] = "http://www.freecad.org/wiki/Main_Page";
 
     // set the banner (for logging and console)
     App::Application::Config()["CopyrightInfo"] = sBanner;

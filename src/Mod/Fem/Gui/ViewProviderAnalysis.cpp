@@ -23,7 +23,6 @@
 #include "PreCompiled.h"
 
 #ifndef _PreComp_
-# include <boost_bind_bind.hpp>
 # include <QAction>
 # include <QApplication>
 # include <QMenu>
@@ -104,7 +103,7 @@ void ViewProviderFemAnalysis::setupContextMenu(QMenu* menu, QObject* , const cha
 {
     Gui::ActionFunction* func = new Gui::ActionFunction(menu);
     QAction* act = menu->addAction(tr("Activate analysis"));
-    func->trigger(act, boost::bind(&ViewProviderFemAnalysis::doubleClicked, this));
+    func->trigger(act, std::bind(&ViewProviderFemAnalysis::doubleClicked, this));
 }
 
 bool ViewProviderFemAnalysis::setEdit(int ModNum)

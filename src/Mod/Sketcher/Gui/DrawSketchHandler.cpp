@@ -54,7 +54,6 @@
 #include "ViewProviderSketch.h"
 #include "CommandConstraints.h"
 
-
 using namespace SketcherGui;
 using namespace Sketcher;
 
@@ -99,6 +98,16 @@ inline void ViewProviderSketchDrawSketchHandlerAttorney::drawEditMarkers(ViewPro
 inline void ViewProviderSketchDrawSketchHandlerAttorney::setAxisPickStyle(ViewProviderSketch &vp, bool on)
 {
     vp.setAxisPickStyle(on);
+}
+
+inline void ViewProviderSketchDrawSketchHandlerAttorney::moveCursorToSketchPoint(ViewProviderSketch &vp, Base::Vector2d point)
+{
+    vp.moveCursorToSketchPoint(point);
+}
+
+inline void ViewProviderSketchDrawSketchHandlerAttorney::preselectAtPoint(ViewProviderSketch &vp, Base::Vector2d point)
+{
+    vp.preselectAtPoint(point);
 }
 
 inline int ViewProviderSketchDrawSketchHandlerAttorney::getPreselectPoint(const ViewProviderSketch &vp)
@@ -221,9 +230,21 @@ DrawSketchHandler::DrawSketchHandler() : sketchgui(nullptr) {}
 
 DrawSketchHandler::~DrawSketchHandler() {}
 
+QString DrawSketchHandler::getCrosshairCursorSVGName() const
+{
+    return QString::fromLatin1("None");
+}
+
 void DrawSketchHandler::activate(ViewProviderSketch * vp)
 {
     sketchgui = vp;
+
+    // save the cursor at the time the DSH is activated
+    Gui::MDIView* view = Gui::getMainWindow()->activeWindow();
+    Gui::View3DInventorViewer* viewer = static_cast<Gui::View3DInventor*>(view)->getViewer();
+    oldCursor = viewer->getWidget()->cursor();
+
+    updateCursor();
 
     this->preActivated();
     this->activated();
@@ -234,6 +255,11 @@ void DrawSketchHandler::deactivate()
     this->deactivated();
     this->postDeactivated();
     ViewProviderSketchDrawSketchHandlerAttorney::setConstraintSelectability(*sketchgui, true);
+
+    // clear temporary Curve and Markers from the scenograph
+    drawEdit(std::vector<Base::Vector2d>());
+    drawEditMarkers(std::vector<Base::Vector2d>());
+    resetPositionText();
     unsetCursor();
 }
 
@@ -245,14 +271,10 @@ void DrawSketchHandler::preActivated()
 void DrawSketchHandler::quit(void)
 {
     assert(sketchgui);
-    drawEdit(std::vector<Base::Vector2d>());
-    drawEditMarkers(std::vector<Base::Vector2d>());
-    resetPositionText();
 
     Gui::Selection().rmvSelectionGate();
     Gui::Selection().rmvPreselect();
 
-    unsetCursor();
     sketchgui->purgeHandler();
 }
 
@@ -280,8 +302,7 @@ unsigned long DrawSketchHandler::getCrosshairColor()
     return color;
 }
 
-void DrawSketchHandler::setCrosshairCursor(const char* svgName) {
-    QString cursorName = QString::fromLatin1(svgName);
+void DrawSketchHandler::setCrosshairCursor(const QString & svgName) {
     const unsigned long defaultCrosshairColor = 0xFFFFFF;
     unsigned long color = getCrosshairColor();
     auto colorMapping = std::map<unsigned long, unsigned long>();
@@ -289,7 +310,12 @@ void DrawSketchHandler::setCrosshairCursor(const char* svgName) {
     // hot spot of all SVG icons should be 8,8 for 32x32 size (16x16 for 64x64)
     int hotX = 8;
     int hotY = 8;
-    setSvgCursor(cursorName, hotX, hotY, colorMapping);
+    setSvgCursor(svgName, hotX, hotY, colorMapping);
+}
+
+void DrawSketchHandler::setCrosshairCursor(const char* svgName) {
+    QString cursorName = QString::fromLatin1(svgName);
+    setCrosshairCursor(cursorName);
 }
 
 void DrawSketchHandler::setSvgCursor(const QString & cursorName, int x, int y, const std::map<unsigned long, unsigned long>& colorMapping)
@@ -324,8 +350,6 @@ void DrawSketchHandler::setCursor(const QPixmap &p,int x,int y, bool autoScale)
     Gui::MDIView* view = Gui::getMainWindow()->activeWindow();
     if (view && view->isDerivedFrom(Gui::View3DInventor::getClassTypeId())) {
         Gui::View3DInventorViewer* viewer = static_cast<Gui::View3DInventor*>(view)->getViewer();
-
-        oldCursor = viewer->getWidget()->cursor();
 
         QCursor cursor;
         QPixmap p1(p);
@@ -410,6 +434,14 @@ void DrawSketchHandler::addCursorTail( std::vector<QPixmap> &pixmaps ) {
         QCursor newCursor(newIcon, p.x(), p.y());
         applyCursor(newCursor);
     }
+}
+
+void DrawSketchHandler::updateCursor()
+{
+    auto cursorstring = getCrosshairCursorSVGName();
+
+    if(cursorstring != QString::fromLatin1("None"))
+        setCrosshairCursor(cursorstring);
 }
 
 void DrawSketchHandler::applyCursor(void)
@@ -915,6 +947,21 @@ void DrawSketchHandler::drawEdit(const std::vector<Part::Geometry *> &geometries
     drawEdit(list);
 }
 
+void DrawSketchHandler::drawPositionAtCursor(const Base::Vector2d & position)
+{
+    setPositionText(position);
+}
+
+void DrawSketchHandler::drawDirectionAtCursor(const Base::Vector2d & position, const Base::Vector2d & origin)
+{
+    float length = (position - origin).Length();
+    float angle = (position - origin).GetAngle(Base::Vector2d(1.f,0.f));
+
+    SbString text;
+    text.sprintf(" (%.1f,%.1fdeg)", length, angle * 180 / M_PI);
+    setPositionText(position, text);
+}
+
 void DrawSketchHandler::drawEditMarkers(const std::vector<Base::Vector2d> &EditMarkers, unsigned int augmentationlevel)
 {
     ViewProviderSketchDrawSketchHandlerAttorney::drawEditMarkers(*sketchgui, EditMarkers, augmentationlevel);
@@ -923,6 +970,16 @@ void DrawSketchHandler::drawEditMarkers(const std::vector<Base::Vector2d> &EditM
 void DrawSketchHandler::setAxisPickStyle(bool on)
 {
     ViewProviderSketchDrawSketchHandlerAttorney::setAxisPickStyle(*sketchgui, on);
+}
+
+void DrawSketchHandler::moveCursorToSketchPoint(Base::Vector2d point)
+{
+    ViewProviderSketchDrawSketchHandlerAttorney::moveCursorToSketchPoint(*sketchgui, point);
+}
+
+void DrawSketchHandler::preselectAtPoint(Base::Vector2d point)
+{
+    ViewProviderSketchDrawSketchHandlerAttorney::preselectAtPoint(*sketchgui, point);
 }
 
 int DrawSketchHandler::getPreselectPoint(void) const
@@ -939,3 +996,9 @@ int DrawSketchHandler::getPreselectCross(void) const
 {
     return ViewProviderSketchDrawSketchHandlerAttorney::getPreselectCross(*sketchgui);
 }
+
+Sketcher::SketchObject * DrawSketchHandler::getSketchObject()
+{
+    return sketchgui->getSketchObject();
+}
+

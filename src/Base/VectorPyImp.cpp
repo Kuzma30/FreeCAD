@@ -32,8 +32,6 @@
 // inclusion of the generated files (generated out of VectorPy.xml)
 #include "GeometryPyCXX.h"
 #include "VectorPy.h"
-#include "MatrixPy.h"
-#include "RotationPy.h"
 #include "VectorPy.cpp"
 
 using namespace Base;
@@ -98,8 +96,7 @@ PyObject*  VectorPy::__reduce__(PyObject *args)
 
     Py::Tuple tuple(2);
 
-    union PyType_Object pyType = {&VectorPy::Type};
-    Py::Object type(pyType.o);
+    Py::Object type(Base::getTypeAsObject(&Base::VectorPy::Type));
     tuple.setItem(0, type);
 
     Base::Vector3d v = this->value();
@@ -156,7 +153,7 @@ PyObject* VectorPy::number_multiply_handler(PyObject *self, PyObject *other)
             return new VectorPy(a * b);
         }
         else {
-            PyErr_SetString(PyExc_NotImplementedError, "Not implemented");
+            PyErr_SetString(PyExc_TypeError, "A Vector can only be multiplied by Vector or number");
             return nullptr;
         }
     }

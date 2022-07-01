@@ -510,7 +510,7 @@ void View3DInventorViewer::init()
     // Settings
     setSeekTime(0.4f);
 
-    if (isSeekValuePercentage() == false)
+    if (!isSeekValuePercentage())
         setSeekValueAsPercentage(true);
 
     setSeekDistance(100);
@@ -1082,14 +1082,15 @@ void View3DInventorViewer::resetEditingRoot(bool updateLinks)
     }
 }
 
-SoPickedPoint* View3DInventorViewer::getPointOnRay(const SbVec2s& pos, ViewProvider* vp) const
+SoPickedPoint* View3DInventorViewer::getPointOnRay(const SbVec2s& pos, const ViewProvider* vp) const
 {
     SoPath *path;
-    if(vp == editViewProvider && pcEditingRoot->getNumChildren()>1) {
+    if (vp == editViewProvider && pcEditingRoot->getNumChildren() > 1) {
         path = new SoPath(1);
         path->ref();
         path->append(pcEditingRoot);
-    }else{
+    }
+    else {
         //first get the path to this node and calculate the current transformation
         SoSearchAction sa;
         sa.setNode(vp->getRoot());
@@ -1128,17 +1129,18 @@ SoPickedPoint* View3DInventorViewer::getPointOnRay(const SbVec2s& pos, ViewProvi
     return (pick ? new SoPickedPoint(*pick) : nullptr);
 }
 
-SoPickedPoint* View3DInventorViewer::getPointOnRay(const SbVec3f& pos,const SbVec3f& dir, ViewProvider* vp) const
+SoPickedPoint* View3DInventorViewer::getPointOnRay(const SbVec3f& pos, const SbVec3f& dir, const ViewProvider* vp) const
 {
     // Note: There seems to be a  bug with setRay() which causes SoRayPickAction
     // to fail to get intersections between the ray and a line
 
     SoPath *path;
-    if(vp == editViewProvider && pcEditingRoot->getNumChildren()>1) {
+    if (vp == editViewProvider && pcEditingRoot->getNumChildren() > 1) {
         path = new SoPath(1);
         path->ref();
         path->append(pcEditingRoot);
-    }else{
+    }
+    else {
         //first get the path to this node and calculate the current setTransformation
         SoSearchAction sa;
         sa.setNode(vp->getRoot());
@@ -1290,14 +1292,14 @@ void View3DInventorViewer::setGLWidgetCB(void* userdata, SoAction* action)
     // Coin error in SoNode::GLRenderS(): GL error: 'GL_STACK_UNDERFLOW', nodetype:
     // Separator (set envvar COIN_GLERROR_DEBUGGING=1 and re-run to get more information)
     if (action->isOfType(SoGLRenderAction::getClassTypeId())) {
-        QWidget* gl = reinterpret_cast<QWidget*>(userdata);
+        QWidget* gl = static_cast<QWidget*>(userdata);
         SoGLWidgetElement::set(action->getState(), qobject_cast<QtGLWidget*>(gl));
     }
 }
 
 void View3DInventorViewer::handleEventCB(void* ud, SoEventCallback* n)
 {
-    View3DInventorViewer* that = reinterpret_cast<View3DInventorViewer*>(ud);
+    View3DInventorViewer* that = static_cast<View3DInventorViewer*>(ud);
     SoGLRenderAction* glra = that->getSoRenderManager()->getGLRenderAction();
     SoAction* action = n->getAction();
     SoGLRenderActionElement::set(action->getState(), glra);

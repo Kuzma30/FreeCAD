@@ -885,13 +885,13 @@ Py::Object View3DInventorPy::setCameraOrientation(const Py::Tuple& args)
             float q1 = (float)Py::Float(tuple[1]);
             float q2 = (float)Py::Float(tuple[2]);
             float q3 = (float)Py::Float(tuple[3]);
-            getView3DIventorPtr()->getViewer()->setCameraOrientation(SbRotation(q0, q1, q2, q3), PyObject_IsTrue(m));
+            getView3DIventorPtr()->getViewer()->setCameraOrientation(SbRotation(q0, q1, q2, q3), PyObject_IsTrue(m) ? true : false);
         }
         else if (PyObject_TypeCheck(o, &Base::RotationPy::Type)) {
             Base::Rotation r = (Base::Rotation)Py::Rotation(o,false);
             double q0, q1, q2, q3;
             r.getValue(q0, q1, q2, q3);
-            getView3DIventorPtr()->getViewer()->setCameraOrientation(SbRotation((float)q0, (float)q1, (float)q2, (float)q3), PyObject_IsTrue(m));
+            getView3DIventorPtr()->getViewer()->setCameraOrientation(SbRotation((float)q0, (float)q1, (float)q2, (float)q3), PyObject_IsTrue(m) ? true : false);
         }
         else {
             throw Py::ValueError("Neither tuple nor rotation object");
@@ -1293,11 +1293,11 @@ Py::Object View3DInventorPy::dump(const Py::Tuple& args)
 {
     char* filename;
     PyObject *onlyVisible = Py_False;
-    if (!PyArg_ParseTuple(args.ptr(), "s|O", &filename, &onlyVisible))
+    if (!PyArg_ParseTuple(args.ptr(), "s|O!", &filename, &PyBool_Type, &onlyVisible))
         throw Py::Exception();
 
     try {
-        getView3DIventorPtr()->dump(filename, PyObject_IsTrue(onlyVisible));
+        getView3DIventorPtr()->dump(filename, PyObject_IsTrue(onlyVisible) ? true : false);
         return Py::None();
     }
     catch (const Base::Exception& e) {
@@ -1324,7 +1324,7 @@ Py::Object View3DInventorPy::dumpNode(const Py::Tuple& args)
     catch (const Base::Exception& e) {
         throw Py::RuntimeError(e.what());
     }
-    SoNode* node = reinterpret_cast<SoNode*>(ptr);
+    SoNode* node = static_cast<SoNode*>(ptr);
     return Py::String(SoFCDB::writeNodesToString(node));
 }
 
@@ -2342,7 +2342,7 @@ Py::Object View3DInventorPy::addEventCallbackPivy(const Py::Tuple& args)
         throw Py::RuntimeError(e.what());
     }
 
-    SoType* eventId = reinterpret_cast<SoType*>(ptr);
+    SoType* eventId = static_cast<SoType*>(ptr);
     if (eventId->isBad() || !eventId->isDerivedFrom(SoEvent::getClassTypeId())) {
         std::string s;
         std::ostringstream s_out;
@@ -2384,7 +2384,7 @@ Py::Object View3DInventorPy::removeEventCallbackPivy(const Py::Tuple& args)
         throw Py::RuntimeError(e.what());
     }
 
-    SoType* eventId = reinterpret_cast<SoType*>(ptr);
+    SoType* eventId = static_cast<SoType*>(ptr);
     if (eventId->isBad() || !eventId->isDerivedFrom(SoEvent::getClassTypeId())) {
         std::string s;
         std::ostringstream s_out;
@@ -2475,7 +2475,7 @@ Py::Object View3DInventorPy::addDraggerCallback(const Py::Tuple& args)
     catch (const Base::Exception&) {
         throw Py::TypeError("The first argument must be of type SoDragger");
     }
-    SoDragger* drag = reinterpret_cast<SoDragger*>(ptr);
+    SoDragger* drag = static_cast<SoDragger*>(ptr);
 
     //Check if method is callable
     if (PyCallable_Check(method) == 0) {
@@ -2528,7 +2528,7 @@ Py::Object View3DInventorPy::removeDraggerCallback(const Py::Tuple& args)
         throw Py::TypeError("The first argument must be of type SoDragger");
     }
 
-    SoDragger* drag = reinterpret_cast<SoDragger*>(ptr);
+    SoDragger* drag = static_cast<SoDragger*>(ptr);
     try {
         if (strcmp(type, "addFinishCallback") == 0) {
             drag->removeFinishCallback(draggerCallback, method);
@@ -2583,7 +2583,7 @@ Py::Object View3DInventorPy::getActiveObject(const Py::Tuple& args)
 {
     char* name;
     PyObject *resolve = Py_True;
-    if (!PyArg_ParseTuple(args.ptr(), "s|O", &name,&resolve))
+    if (!PyArg_ParseTuple(args.ptr(), "s|O!", &name, &PyBool_Type, &resolve))
                 throw Py::Exception();
 
     App::DocumentObject *parent = nullptr;
@@ -2592,7 +2592,7 @@ Py::Object View3DInventorPy::getActiveObject(const Py::Tuple& args)
     if (!obj)
         return Py::None();
 
-    if (PyObject_IsTrue(resolve))
+    if (PyObject_IsTrue(resolve) ? true : false)
         return Py::asObject(obj->getPyObject());
 
     return Py::TupleN(
@@ -2652,15 +2652,16 @@ Py::Object View3DInventorPy::toggleClippingPlane(const Py::Tuple& args, const Py
     PyObject *beforeEditing = Py_False;
     PyObject *noManip = Py_True;
     PyObject *pyPla = Py_None;
-    if (!PyArg_ParseTupleAndKeywords(args.ptr(), kwds.ptr(), "|iOOO!", keywords,
-                    &toggle, &beforeEditing, &noManip, &Base::PlacementPy::Type,&pyPla))
+    if (!PyArg_ParseTupleAndKeywords(args.ptr(), kwds.ptr(), "|iO!O!O!", keywords,
+                    &toggle, &PyBool_Type, &beforeEditing, &PyBool_Type, &noManip,
+                    &Base::PlacementPy::Type, &pyPla))
         throw Py::Exception();
 
     Base::Placement pla;
     if(pyPla!=Py_None)
         pla = *static_cast<Base::PlacementPy*>(pyPla)->getPlacementPtr();
-    getView3DIventorPtr()->getViewer()->toggleClippingPlane(toggle,PyObject_IsTrue(beforeEditing),
-            PyObject_IsTrue(noManip),pla);
+    getView3DIventorPtr()->getViewer()->toggleClippingPlane(toggle,PyObject_IsTrue(beforeEditing) ? true : false,
+            PyObject_IsTrue(noManip) ? true : false,pla);
     return Py::None();
 }
 

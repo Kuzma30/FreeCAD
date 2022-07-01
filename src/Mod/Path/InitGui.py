@@ -88,6 +88,8 @@ class PathWorkbench(Workbench):
         from PySide.QtCore import QT_TRANSLATE_NOOP
 
         import PathCommands
+        import subprocess
+        from packaging.version import Version, parse
 
         PathGuiInit.Startup()
 
@@ -158,7 +160,18 @@ class PathWorkbench(Workbench):
 
         if PathPreferences.advancedOCLFeaturesEnabled():
             try:
-                import ocl
+                r = subprocess.run(
+                    ["camotics", "--version"], capture_output=True, text=True
+                ).stderr.strip()
+                v = parse(r)
+
+                if v >= Version("1.2.2"):
+                    toolcmdlist.append("Path_Camotics")
+            except (FileNotFoundError, ModuleNotFoundError):
+                pass
+
+            try:
+                import ocl  # pylint: disable=unused-variable
                 from PathScripts import PathSurfaceGui
                 from PathScripts import PathWaterlineGui
 
@@ -269,8 +282,8 @@ class PathWorkbench(Workbench):
 
                 msg = translate(
                     "Path",
-                    "The currently selected unit schema: \n     '{}'\n Does not use 'minutes' for velocity values. \n \nCNC machines require feed rate to be expressed in \nunit/minute. To ensure correct gcode: \nSelect a minute-based schema in preferences.\nFor example:\n    'Metric, Small Parts & CNC'\n    'US Customary'\n    'Imperial Decimal'"
-                    ).format(current_schema)
+                    "The currently selected unit schema: \n     '{}'\n Does not use 'minutes' for velocity values. \n \nCNC machines require feed rate to be expressed in \nunit/minute. To ensure correct gcode: \nSelect a minute-based schema in preferences.\nFor example:\n    'Metric, Small Parts & CNC'\n    'US Customary'\n    'Imperial Decimal'",
+                ).format(current_schema)
                 header = translate("Path", "Warning")
                 msgbox = QtGui.QMessageBox(QtGui.QMessageBox.Warning, header, msg)
 

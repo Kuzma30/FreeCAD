@@ -172,7 +172,7 @@ void ViewProviderDocumentObject::onChanged(const App::Property* prop)
     }
     else if (prop == &Visibility) {
         // use this bit to check whether show() or hide() must be called
-        if (Visibility.testStatus(App::Property::User2) == false) {
+        if (!Visibility.testStatus(App::Property::User2)) {
             Visibility.setStatus(App::Property::User2, true);
             Visibility.getValue() ? show() : hide();
             Visibility.setStatus(App::Property::User2, false);
@@ -228,7 +228,7 @@ void ViewProviderDocumentObject::hide(void)
 {
     ViewProvider::hide();
     // use this bit to check whether 'Visibility' must be adjusted
-    if (Visibility.testStatus(App::Property::User2) == false) {
+    if (!Visibility.testStatus(App::Property::User2)) {
         Visibility.setStatus(App::Property::User2, true);
         Visibility.setValue(false);
         Visibility.setStatus(App::Property::User2, false);
@@ -272,7 +272,7 @@ void ViewProviderDocumentObject::addDefaultAction(QMenu* menu, const QString& te
     QAction* act = menu->addAction(text);
     act->setData(QVariant((int)ViewProvider::Default));
     Gui::ActionFunction* func = new Gui::ActionFunction(menu);
-    func->trigger(act, boost::bind(&ViewProviderDocumentObject::startDefaultEditMode, this));
+    func->trigger(act, std::bind(&ViewProviderDocumentObject::startDefaultEditMode, this));
 }
 
 void ViewProviderDocumentObject::setModeSwitch() {
@@ -292,7 +292,7 @@ void ViewProviderDocumentObject::show(void)
     }
 
     // use this bit to check whether 'Visibility' must be adjusted
-    if (Visibility.testStatus(App::Property::User2) == false) {
+    if (!Visibility.testStatus(App::Property::User2)) {
         Visibility.setStatus(App::Property::User2, true);
         Visibility.setValue(true);
         Visibility.setStatus(App::Property::User2, false);

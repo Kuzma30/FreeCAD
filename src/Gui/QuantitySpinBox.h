@@ -121,6 +121,8 @@ public:
     virtual QValidator::State validate(QString &input, int &pos) const;
     virtual void fixup(QString &str) const;
 
+    /// This is a helper function to determine the size this widget requires to fully display the text
+    QSize sizeForText(const QString&) const;
     QSize sizeHint() const;
     QSize minimumSizeHint() const;
     bool event(QEvent *event);
@@ -165,12 +167,12 @@ Q_SIGNALS:
      *  Valid means the user inputted string obeys all restrictions
      *  like: minimum, maximum and/or the right Unit (if specified).
      */
-    void valueChanged(const Base::Quantity&);
+    void valueChanged(const Base::Quantity&); // clazy:exclude=overloaded-signal
     /** Gets emitted if the user has entered a VALID input
      *  Valid means the user inputted string obeys all restrictions
      *  like: minimum, maximum and/or the right Unit (if specified).
      */
-    void valueChanged(double);
+    void valueChanged(double); // clazy:exclude=overloaded-signal
     /**
      * The new value is passed in \a text with unit.
      */

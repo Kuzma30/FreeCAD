@@ -232,14 +232,14 @@ void LinkBaseExtension::setProperty(int idx, Property *prop) {
     case PropLinkMode: {
         static const char *linkModeEnums[] = {"None","Auto Delete","Auto Link","Auto Unlink",nullptr};
         auto propLinkMode = static_cast<PropertyEnumeration*>(prop);
-        if(!propLinkMode->getEnums())
+        if(!propLinkMode->hasEnums())
             propLinkMode->setEnums(linkModeEnums);
         break;
     }
     case PropLinkCopyOnChange: {
         static const char *enums[] = {"Disabled","Enabled","Owned","Tracking",nullptr};
         auto propEnum = static_cast<PropertyEnumeration*>(prop);
-        if(!propEnum->getEnums())
+        if(!propEnum->hasEnums())
             propEnum->setEnums(enums);
         break;
     }
@@ -554,7 +554,7 @@ void LinkBaseExtension::syncCopyOnChange()
     // so the last object will be the copy of the original linked object
     auto newLinked = copiedObjs.back();
 
-    // We are coping from the original linked object and we've already mutated
+    // We are copying from the original linked object and we've already mutated
     // it, so we need to copy all CopyOnChange properties from the mutated
     // object to the new copy.
     std::vector<App::Property*> propList;

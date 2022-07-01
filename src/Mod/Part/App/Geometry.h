@@ -265,6 +265,10 @@ public:
     virtual ~GeomBSplineCurve();
     virtual Geometry *copy(void) const;
 
+   /*!
+    * Interpolate a spline passing through the given points without tangency.
+    */
+    void interpolate(const std::vector<gp_Pnt>&, Standard_Boolean=Standard_False);
     /*!
      * Set the poles and tangents for the cubic Hermite spline
      */
@@ -325,13 +329,6 @@ public:
     const Handle(Geom_Geometry)& handle() const;
 
 private:
-    void createArcs(double tolerance, std::list<Geometry*>& new_spans,
-                    const gp_Pnt &p_start, const gp_Vec &v_start,
-                    double t_start, double t_end, gp_Pnt &p_end, gp_Vec &v_end) const;
-    bool calculateBiArcPoints(const gp_Pnt& p0, gp_Vec v_start,
-                              const gp_Pnt& p4, gp_Vec v_end,
-                              gp_Pnt& p1, gp_Pnt& p2, gp_Pnt& p3) const;
-
     // If during assignment of weights (during the for loop iteratively setting the poles) all weights
     // become (temporarily) equal even though weights does not have equal values
     // OCCT will convert all the weights (the already assigned and those not yet assigned)
@@ -371,6 +368,8 @@ public:
     double getAngleXU(void) const;
     void setAngleXU(double angle);
     bool isReversed() const;
+
+    Base::Vector3d getAxisDirection(void) const;
 
     virtual unsigned int getMemSize(void) const = 0;
     virtual PyObject *getPyObject(void) = 0;
@@ -438,6 +437,8 @@ public:
      * \brief setCenter
      */
     void setCenter(const Base::Vector3d& Center);
+
+    Base::Vector3d getAxisDirection(void) const;
 
     virtual void getRange(double& u, double& v, bool emulateCCWXY) const = 0;
     virtual void setRange(double u, double v, bool emulateCCWXY) = 0;
@@ -530,6 +531,7 @@ public:
     void setMinorRadius(double Radius);
     Base::Vector3d getMajorAxisDir() const;
     void setMajorAxisDir(Base::Vector3d newdir);
+    Base::Vector3d getMinorAxisDir() const;
 
     // Persistence implementer ---------------------
     virtual unsigned int getMemSize(void) const;

@@ -47,8 +47,6 @@
 # include <QMessageBox>
 # include <QPainter>
 # include <QTextStream>
-
-# include <boost_bind_bind.hpp>
 #endif
 
 /// Here the FreeCAD includes sorted by Base,App,Gui......
@@ -371,10 +369,6 @@ void ViewProviderSketch::deactivateHandler()
 {
     assert(isInEditMode());
     if(sketchHandler){
-        std::vector<Base::Vector2d> editCurve;
-        editCurve.clear();
-        drawEdit(editCurve); // erase any line
-        resetPositionText();
         sketchHandler->deactivate();
         sketchHandler = nullptr;
     }
@@ -402,6 +396,62 @@ void ViewProviderSketch::setAxisPickStyle(bool on)
     editCoinManager->setAxisPickStyle(on);
 }
 
+void ViewProviderSketch::moveCursorToSketchPoint(Base::Vector2d point) {
+
+    SbVec3f sbpoint(point.x,point.y,0.f);
+
+    Gui::MDIView *mdi = this->getActiveView();
+    Gui::View3DInventor *view = qobject_cast<Gui::View3DInventor*>(mdi);
+
+    if (!view)
+        return;
+
+    Gui::View3DInventorViewer* viewer = view->getViewer();
+
+    SbVec2s screencoords = viewer->getPointOnScreen(sbpoint);
+
+    short x,y; screencoords.getValue(x,y);
+
+    short height = viewer->getGLWidget()->height(); // Coin3D origin bottom left, QT origin top left
+
+    QPoint newPos = viewer->getGLWidget()->mapToGlobal(QPoint(x,height-y));
+
+
+    // QScreen *screen = view->windowHandle()->screen();
+    //QScreen *screen = QGuiApplication::primaryScreen();
+
+    //QCursor::setPos(screen, newPos);
+    QCursor::setPos(newPos);
+}
+
+void ViewProviderSketch::preselectAtPoint(Base::Vector2d point)
+{
+    if (Mode != STATUS_SELECT_Point &&
+        Mode != STATUS_SELECT_Edge &&
+        Mode != STATUS_SELECT_Constraint &&
+        Mode != STATUS_SKETCH_DragPoint &&
+        Mode != STATUS_SKETCH_DragCurve &&
+        Mode != STATUS_SKETCH_DragConstraint &&
+        Mode != STATUS_SKETCH_UseRubberBand) {
+
+        SbVec3f sbpoint(point.x,point.y,0.f);
+
+        Gui::MDIView *mdi = this->getActiveView();
+        Gui::View3DInventor *view = qobject_cast<Gui::View3DInventor*>(mdi);
+
+        if (!view)
+            return;
+
+        Gui::View3DInventorViewer* viewer = view->getViewer();
+
+        SbVec2s screencoords = viewer->getPointOnScreen(sbpoint);
+
+        std::unique_ptr<SoPickedPoint> Point(this->getPointOnRay(screencoords, viewer));
+
+        detectAndShowPreselection(Point.get(), screencoords);
+    }
+}
+
 // **********************************************************************************
 
 bool ViewProviderSketch::keyPressed(bool pressed, int key)
@@ -416,7 +466,7 @@ bool ViewProviderSketch::keyPressed(bool pressed, int key)
                     sketchHandler->quit();
                 return true;
             }
-            if (isInEditMode() && (drag.DragConstraintSet.empty() == false)) {
+            if (isInEditMode() && !drag.DragConstraintSet.empty()) {
                 if (!pressed) {
                     drag.DragConstraintSet.clear();
                 }
@@ -827,7 +877,7 @@ bool ViewProviderSketch::mouseButtonPressed(int Button, bool pressed, const SbVe
                     Mode = STATUS_NONE;
                     return true;
                 case STATUS_SKETCH_DragConstraint:
-                    if (drag.DragConstraintSet.empty() == false) {
+                    if (!drag.DragConstraintSet.empty()) {
                         getDocument()->openCommand(QT_TRANSLATE_NOOP("Command", "Drag Constraint"));
                         auto idset = drag.DragConstraintSet;
                         for(int id : idset) {
@@ -1249,7 +1299,7 @@ bool ViewProviderSketch::mouseMove(const SbVec2s &cursorPos, Gui::View3DInventor
             }
             return true;
         case STATUS_SKETCH_DragConstraint:
-            if (drag.DragConstraintSet.empty() == false) {
+            if (!drag.DragConstraintSet.empty()) {
                 auto idset = drag.DragConstraintSet;
                 for(int id : idset)
                     moveConstraint(id, Base::Vector2d(x,y));
@@ -1728,7 +1778,7 @@ bool ViewProviderSketch::detectAndShowPreselection(SoPickedPoint * Point, const 
                     sketchHandler->applyCursor();
                 return true;
             }
-        } else if (result.ConstrIndices.empty() == false && result.ConstrIndices != preselection.PreselectConstraintSet) { // if a constraint is hit
+        } else if (!result.ConstrIndices.empty() && result.ConstrIndices != preselection.PreselectConstraintSet) { // if a constraint is hit
             bool accepted = true;
             for(std::set<int>::iterator it = result.ConstrIndices.begin(); it != result.ConstrIndices.end(); ++it) {
                 std::stringstream ss;
@@ -2911,7 +2961,7 @@ void ViewProviderSketch::UpdateSolverInformation()
         signalSetUp(QString::fromUtf8("under_constrained"),
             tr("Under constrained:"),
             QString::fromUtf8("#dofs"),
-            QString::fromUtf8("%1 %2").arg(dofs).arg(tr("DoF")));
+            tr("%n DoF(s)","",dofs));
     }
     else {
         signalSetUp(QString::fromUtf8("fully_constrained"), tr("Fully constrained"), QString(), QString());
@@ -3106,7 +3156,7 @@ void ViewProviderSketch::deleteSelected()
 
     // only one sketch with its subelements are allowed to be selected
     if (selection.size() != 1) {
-        Base::Console().Warning("Delete: Selection not restricted to one sketch and its subelements");
+        Base::Console().Warning("Delete: Selection not restricted to one sketch and its subelements\n");
         return;
     }
 

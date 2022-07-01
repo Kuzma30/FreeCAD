@@ -23,6 +23,8 @@
 #ifndef DRAWINGGUI_QGRAPHICSITEMVIEWDIMENSION_H
 #define DRAWINGGUI_QGRAPHICSITEMVIEWDIMENSION_H
 
+#include <Mod/TechDraw/TechDrawGlobal.h>
+
 #include <QColor>
 #include <QFont>
 #include <QGraphicsItem>
@@ -47,6 +49,7 @@ class AOC;
 
 namespace TechDrawGui
 {
+class QGCustomText;
 class QGIArrow;
 class QGIDimLines;
 class QGIViewDimension;
@@ -180,6 +183,10 @@ public Q_SLOTS:
 
 protected:
 
+    virtual void mousePressEvent( QGraphicsSceneMouseEvent * event) override;
+    virtual void mouseMoveEvent( QGraphicsSceneMouseEvent * event) override;
+    virtual void mouseReleaseEvent( QGraphicsSceneMouseEvent * event) override;
+
     static double getAnglePlacementFactor(double testAngle, double endAngle, double startRotation);
     static int compareAngleStraightness(double straightAngle, double leftAngle, double rightAngle,
                                         double leftStrikeFactor, double rightStrikeFactor);
@@ -257,8 +264,6 @@ protected:
     Base::Vector3d findIsoDir(Base::Vector3d ortho) const;
     Base::Vector3d findIsoExt(Base::Vector3d isoDir) const;
     QString getPrecision(void);
-
-    virtual void mouseReleaseEvent( QGraphicsSceneMouseEvent * event) override;
 
     bool hasHover;
     QGIDatumLabel* datumLabel;                                         //dimension text

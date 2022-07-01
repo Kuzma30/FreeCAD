@@ -54,6 +54,7 @@
 
 #include "DrawGuiUtil.h"
 #include "PreferencesGui.h"
+#include "QGSPage.h"
 #include "QGVPage.h"
 #include "QGIView.h"
 #include "QGIPrimPath.h"
@@ -121,10 +122,10 @@ TaskLeaderLine::TaskLeaderLine(TechDrawGui::ViewProviderLeader* leadVP) :
     m_haveMdi = true;
     m_mdi = vpp->getMDIViewPage();
     if (m_mdi != nullptr) {
-        m_scene = m_mdi->m_scene;
+        m_scene = m_mdi->getQGSPage();
         m_view = m_mdi->getQGVPage();
         if (m_baseFeat != nullptr) {
-            m_qgParent = m_view->findQViewForDocObj(m_baseFeat);
+            m_qgParent = m_scene->findQViewForDocObj(m_baseFeat);
         }
     } else {
         m_haveMdi = false;
@@ -197,10 +198,10 @@ TaskLeaderLine::TaskLeaderLine(TechDraw::DrawView* baseFeat,
     m_haveMdi = true;
     m_mdi = vpp->getMDIViewPage();
     if (m_mdi != nullptr) {
-        m_scene = m_mdi->m_scene;
+        m_scene = m_mdi->getQGSPage();
         m_view = m_mdi->getQGVPage();
         if (baseFeat != nullptr) {
-            m_qgParent = m_view->findQViewForDocObj(baseFeat);
+            m_qgParent = m_scene->findQViewForDocObj(baseFeat);
         }
     } else {
         m_haveMdi = false;
@@ -270,7 +271,7 @@ void TaskLeaderLine::setUiPrimary()
         ui->tbBaseView->setText(Base::Tools::fromStdString(baseName));
     }
 
-    ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Pick points")));
+    ui->pbTracker->setText(tr("Pick points"));
     if (m_haveMdi) {
         ui->pbTracker->setEnabled(true);
         ui->pbCancelEdit->setEnabled(true);
@@ -319,7 +320,7 @@ void TaskLeaderLine::setUiEdit()
         ui->cboxEndSym->setCurrentIndex(m_lineFeat->EndSymbol.getValue());
         connect(ui->cboxEndSym, SIGNAL(currentIndexChanged(int)), this, SLOT(onEndSymbolChanged()));
 
-        ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Edit points")));
+        ui->pbTracker->setText(tr("Edit points"));
         if (m_haveMdi) {
             ui->pbTracker->setEnabled(true);
             ui->pbCancelEdit->setEnabled(true);
@@ -515,7 +516,7 @@ void TaskLeaderLine::onTrackerClicked(bool b)
             m_tracker->terminateDrawing();
         }
         m_pbTrackerState = TRACKERPICK;
-        ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Pick Points")));
+        ui->pbTracker->setText(tr("Pick Points"));
         ui->pbCancelEdit->setEnabled(false);
         enableTaskButtons(true);
 
@@ -527,7 +528,7 @@ void TaskLeaderLine::onTrackerClicked(bool b)
             m_qgLine->closeEdit();
         }
         m_pbTrackerState = TRACKERPICK;
-        ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Edit Points")));
+        ui->pbTracker->setText(tr("Edit Points"));
         ui->pbCancelEdit->setEnabled(false);
         enableTaskButtons(true);
 
@@ -547,7 +548,7 @@ void TaskLeaderLine::onTrackerClicked(bool b)
         QString msg = tr("Pick a starting point for leader line");
         getMainWindow()->statusBar()->show();
         Gui::getMainWindow()->showMessage(msg,3000);
-        ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Save Points")));
+        ui->pbTracker->setText(tr("Save Points"));
         ui->pbTracker->setEnabled(true);
         ui->pbCancelEdit->setEnabled(true);
         m_pbTrackerState = TRACKERSAVE;
@@ -558,8 +559,8 @@ void TaskLeaderLine::onTrackerClicked(bool b)
             m_inProgressLock = true;
             m_saveContextPolicy = m_mdi->contextMenuPolicy();
             m_mdi->setContextMenuPolicy(Qt::PreventContextMenu);
-            QGVPage* qgvp = m_mdi->getQGVPage();
-            QGIView* qgiv = qgvp->findQViewForDocObj(m_lineFeat);
+            QGSPage* qgsp = m_mdi->getQGSPage();
+            QGIView* qgiv = qgsp->findQViewForDocObj(m_lineFeat);
             QGILeaderLine* qgLead = dynamic_cast<QGILeaderLine*>(qgiv);
 
             if (qgLead == nullptr) {
@@ -574,7 +575,7 @@ void TaskLeaderLine::onTrackerClicked(bool b)
                 QString msg = tr("Click and drag markers to adjust leader line");
                 getMainWindow()->statusBar()->show();
                 Gui::getMainWindow()->showMessage(msg,3000);
-                ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Save changes")));
+                ui->pbTracker->setText(tr("Save changes"));
                 ui->pbTracker->setEnabled(true);
                 ui->pbCancelEdit->setEnabled(true);
                 m_pbTrackerState = TRACKERSAVE;
@@ -591,7 +592,7 @@ void TaskLeaderLine::onTrackerClicked(bool b)
             QString msg = tr("Pick a starting point for leader line");
             getMainWindow()->statusBar()->show();
             Gui::getMainWindow()->showMessage(msg,3000);
-            ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Save changes")));
+            ui->pbTracker->setText(tr("Save changes"));
             ui->pbTracker->setEnabled(true);
             ui->pbCancelEdit->setEnabled(true);
             m_pbTrackerState = TRACKERSAVE;
@@ -685,7 +686,7 @@ void TaskLeaderLine::onCancelEditClicked(bool b)
     }
 
     m_pbTrackerState = TRACKEREDIT;
-    ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Edit points")));
+    ui->pbTracker->setText(tr("Edit points"));
     ui->pbCancelEdit->setEnabled(false);
     enableTaskButtons(true);
 
@@ -712,7 +713,7 @@ void TaskLeaderLine::setEditCursor(QCursor c)
         return;
     }
     if (m_baseFeat != nullptr) {
-        QGIView* qgivBase = m_view->findQViewForDocObj(m_baseFeat);
+        QGIView* qgivBase = m_scene->findQViewForDocObj(m_baseFeat);
         qgivBase->setCursor(c);
     }
 }
@@ -737,7 +738,7 @@ void TaskLeaderLine::onPointEditComplete(void)
     m_inProgressLock = false;
 
     m_pbTrackerState = TRACKEREDIT;
-    ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Edit points")));
+    ui->pbTracker->setText(tr("Edit points"));
     ui->pbTracker->setEnabled(true);
     ui->pbCancelEdit->setEnabled(true);
     enableTaskButtons(true);
@@ -754,7 +755,7 @@ void TaskLeaderLine::abandonEditSession(void)
     Gui::getMainWindow()->showMessage(msg,4000);
 
     m_pbTrackerState = TRACKEREDIT;
-    ui->pbTracker->setText(QT_TRANSLATE_NOOP("Command", QString::fromUtf8("Edit points")));
+    ui->pbTracker->setText(tr("Edit points"));
     enableTaskButtons(true);
     ui->pbTracker->setEnabled(true);
     ui->pbCancelEdit->setEnabled(false);

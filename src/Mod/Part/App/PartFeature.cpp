@@ -53,7 +53,6 @@
 #endif
 
 #include <boost/algorithm/string/predicate.hpp>
-#include <boost_bind_bind.hpp>
 #include <Base/Console.h>
 #include <Base/Writer.h>
 #include <Base/Reader.h>
@@ -189,12 +188,10 @@ App::DocumentObject *Feature::getSubObject(const char *subname,
         // instance or do simply nothing. For now the error message is degraded to a log message.
         std::ostringstream str;
         Standard_CString msg = e.GetMessageString();
-#if OCC_VERSION_HEX >= 0x070000
+
         // Avoid name mangling
         str << e.DynamicType()->get_type_name() << " ";
-#else
-        str << typeid(e).name() << " ";
-#endif
+
         if (msg) {str << msg;}
         else     {str << "No OCCT Exception Message";}
         str << ": " << getFullName();
@@ -542,14 +539,12 @@ void Feature::onChanged(const App::Property* prop)
 {
     // if the placement has changed apply the change to the point data as well
     if (prop == &this->Placement) {
-        TopoShape& shape = const_cast<TopoShape&>(this->Shape.getShape());
-        shape.setTransform(this->Placement.getValue().toMatrix());
+        this->Shape.setTransform(this->Placement.getValue().toMatrix());
     }
     // if the point data has changed check and adjust the transformation as well
     else if (prop == &this->Shape) {
         if (this->isRecomputing()) {
-            TopoShape& shape = const_cast<TopoShape&>(this->Shape.getShape());
-            shape.setTransform(this->Placement.getValue().toMatrix());
+            this->Shape.setTransform(this->Placement.getValue().toMatrix());
         }
         else {
             Base::Placement p;

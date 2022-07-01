@@ -575,7 +575,7 @@ public:
     static
     void syncCameraCB(void * data, SoSensor * s)
     {
-        ManualAlignment* self = reinterpret_cast<ManualAlignment*>(data);
+        ManualAlignment* self = static_cast<ManualAlignment*>(data);
         if (!self->myViewer)
             return; // already destroyed
         SoCamera* cam1 = self->myViewer->getViewer(0)->getSoRenderManager()->getCamera();
@@ -932,7 +932,7 @@ void ManualAlignment::finish()
     Gui::getMainWindow()->showMessage(tr("The alignment has finished"));
 
     // If an event receiver has been defined send the manual alignment finished event to it
-    emitFinished();
+    Q_EMIT emitFinished();
 }
 
 /**
@@ -950,7 +950,7 @@ void ManualAlignment::cancel()
     Gui::getMainWindow()->showMessage(tr("The alignment has been canceled"));
 
     // If an event receiver has been defined send the manual alignment cancelled event to it
-    emitCanceled();
+    Q_EMIT emitCanceled();
 }
 
 void ManualAlignment::align()
@@ -1215,7 +1215,7 @@ void ManualAlignment::probePickedCallback(void * ud, SoEventCallback * n)
 {
     Q_UNUSED(ud);
 
-    Gui::View3DInventorViewer* view  = reinterpret_cast<Gui::View3DInventorViewer*>(n->getUserData());
+    Gui::View3DInventorViewer* view  = static_cast<Gui::View3DInventorViewer*>(n->getUserData());
     const SoEvent* ev = n->getEvent();
     if (ev->getTypeId() == SoMouseButtonEvent::getClassTypeId()) {
         // set as handled

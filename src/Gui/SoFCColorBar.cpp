@@ -45,7 +45,7 @@ SO_NODE_ABSTRACT_SOURCE(SoFCColorBarBase)
 /*!
   Constructor.
 */
-SoFCColorBarBase::SoFCColorBarBase(): _windowSize(0,0)
+SoFCColorBarBase::SoFCColorBarBase() : _boxWidth(-1.0f), _windowSize(0,0)
 {
     SO_NODE_CONSTRUCTOR(SoFCColorBarBase);
 }
@@ -80,12 +80,22 @@ void SoFCColorBarBase::GLRenderBelowPath(SoGLRenderAction *  action)
     SoSeparator::GLRenderBelowPath(action);
 }
 
+void SoFCColorBarBase::setModified()
+{
+    _boxWidth = -1.0f;
+}
+
 float SoFCColorBarBase::getBoundingWidth(const SbVec2s& size)
 {
+    float fRatio = static_cast<float>(size[0]) / static_cast<float>(size[1]);
+    if (fRatio >= 1.0f && _boxWidth >= 0.0f) {
+        return _boxWidth;
+    }
+
     // These are the same camera settings for front nodes as defined in the 3d view
     SoOrthographicCamera* cam = new SoOrthographicCamera;
-    cam->position = SbVec3f(0, 0, 5);
-    cam->height = 10;
+    cam->position = SbVec3f(0, 0, 5); // the 5 is just a value > 0
+    cam->height = 10; // sets the coordinate range of the screen to [-5, +5]
     cam->nearDistance = 0;
     cam->farDistance = 10;
 
@@ -103,6 +113,7 @@ float SoFCColorBarBase::getBoundingWidth(const SbVec2s& size)
     group->unref();
 
     float boxWidth = maxPt[0] - minPt[0];
+    _boxWidth = boxWidth;
     return boxWidth;
 }
 
@@ -110,9 +121,16 @@ float SoFCColorBarBase::getBounds(const SbVec2s& size, float& fMinX, float&fMinY
 {
     // ratio of window width / height
     float fRatio = static_cast<float>(size[0]) / static_cast<float>(size[1]);
+
+    // The cam height is set in SoFCColorBarBase::getBoundingWidth to 10.
+    // Therefore the normalized coordinates are in the range [-5, +5] x [-5ratio, +5ratio] if ratio > 1
+    //  and [-5ratio, +5ratio] x [-5, +5] if ratio < 1.
+    // We don't want the whole height covered by the color bar (to have e.g space to the axis cross)
+    // thus we take as base 4.
     float baseYValue = 4.0f;
     float barWidth = 0.5f;
 
+    // we want the color bar at the rightmost position, therefore we take 5 as base
     fMinX = 5.0f * fRatio; // must be scaled with the ratio to assure it stays at the right
     fMaxX = fMinX + barWidth;
     fMinY = -baseYValue;

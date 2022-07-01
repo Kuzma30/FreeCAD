@@ -831,7 +831,7 @@ PyObject* Application::sSendActiveView(PyObject * /*self*/, PyObject *args)
 
     const char* ppReturn = nullptr;
     if (!Instance->sendMsgToActiveView(psCommandStr,&ppReturn)) {
-        if (!PyObject_IsTrue(suppress))
+        if (PyObject_IsTrue(suppress) ? false : true)
             Base::Console().Warning("Unknown view command: %s\n",psCommandStr);
     }
 
@@ -852,7 +852,7 @@ PyObject* Application::sSendFocusView(PyObject * /*self*/, PyObject *args)
 
     const char* ppReturn = nullptr;
     if (!Instance->sendMsgToFocusView(psCommandStr,&ppReturn)) {
-        if (!PyObject_IsTrue(suppress))
+        if (PyObject_IsTrue(suppress) ? false : true)
             Base::Console().Warning("Unknown view command: %s\n",psCommandStr);
     }
 
@@ -1640,7 +1640,7 @@ PyObject* Application::sCoinRemoveAllChildren(PyObject * /*self*/, PyObject *arg
     PY_TRY {
         void* ptr = nullptr;
         Base::Interpreter().convertSWIGPointerObj("pivy.coin","_p_SoGroup", pynode, &ptr, 0);
-        coinRemoveAllChildren(reinterpret_cast<SoGroup*>(ptr));
+        coinRemoveAllChildren(static_cast<SoGroup*>(ptr));
         Py_Return;
     }
     PY_CATCH;

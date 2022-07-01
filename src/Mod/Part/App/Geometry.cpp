@@ -124,6 +124,7 @@
 #include <Mod/Part/App/OffsetCurvePy.h>
 #include <Mod/Part/App/ParabolaPy.h>
 #include <Mod/Part/App/BezierSurfacePy.h>
+#include <Mod/Part/App/BSplineCurveBiArcs.h>
 #include <Mod/Part/App/BSplineSurfacePy.h>
 #include <Mod/Part/App/ConePy.h>
 #include <Mod/Part/App/CylinderPy.h>
@@ -462,11 +463,7 @@ void Geometry::transform(const Base::Matrix4D& mat)
     gp_Trsf trf;
     trf.SetValues(mat[0][0],mat[0][1],mat[0][2],mat[0][3],
                 mat[1][0],mat[1][1],mat[1][2],mat[1][3],
-                mat[2][0],mat[2][1],mat[2][2],mat[2][3]
-#if OCC_VERSION_HEX < 0x060800
-                , 0.00001,0.00001
-#endif
-                ); //precision was removed in OCCT CR0025194
+                mat[2][0],mat[2][1],mat[2][2],mat[2][3]);
     handle()->Transform(trf);
 }
 
@@ -1209,6 +1206,12 @@ void GeomBSplineCurve::setPole(int index, const Base::Vector3d& pole, double wei
     }
 }
 
+std::list<Geometry*> GeomBSplineCurve::toBiArcs(double tolerance) const
+{
+    BSplineCurveBiArcs arcs(this->myCurve);
+    return arcs.toBiArcs(tolerance);
+}
+
 void GeomBSplineCurve::workAroundOCCTBug(const std::vector<double>& weights)
 {
     // If during assignment of weights (during the for loop below) all weights
@@ -1392,6 +1395,22 @@ bool GeomBSplineCurve::join(const Handle(Geom_BSplineCurve)& spline)
         return false;
     this->myCurve = ccbc.BSplineCurve();
     return true;
+}
+
+void GeomBSplineCurve::interpolate(const std::vector<gp_Pnt>& p, Standard_Boolean periodic)
+{
+    if (p.size() < 2)
+        Standard_ConstructionError::Raise();
+
+    double tol3d = Precision::Approximation();
+    Handle(TColgp_HArray1OfPnt) pts = new TColgp_HArray1OfPnt(1, p.size());
+    for (std::size_t i=0; i<p.size(); i++) {
+        pts->SetValue(i+1, p[i]);
+    }
+
+    GeomAPI_Interpolate interpolate(pts, periodic, tol3d);
+    interpolate.Perform();
+    this->myCurve = interpolate.Curve();
 }
 
 void GeomBSplineCurve::interpolate(const std::vector<gp_Pnt>& p,
@@ -1784,6 +1803,14 @@ void GeomConic::setCenter(const Base::Vector3d& Center)
     }
 }
 
+Base::Vector3d GeomConic::getAxisDirection(void) const
+{
+    Handle(Geom_Conic) conic =  Handle(Geom_Conic)::DownCast(handle());
+    gp_Ax1 axis = conic->Axis();
+    const gp_Dir& dir = axis.Direction();
+    return Base::Vector3d( dir.X(),dir.Y(),dir.Z());
+}
+
 /*!
  * \brief GeomConic::getAngleXU
  * \return The angle between ellipse's major axis (in direction to focus1) and
@@ -2033,6 +2060,15 @@ void GeomArcOfConic::setLocation(const Base::Vector3d& Center)
     }
 }
 
+Base::Vector3d GeomArcOfConic::getAxisDirection(void) const
+{
+    Handle(Geom_TrimmedCurve) curve =  Handle(Geom_TrimmedCurve)::DownCast(handle());
+    Handle(Geom_Conic) conic = Handle(Geom_Conic)::DownCast(curve->BasisCurve());
+    gp_Ax1 axis = conic->Axis();
+    const gp_Dir& dir = axis.Direction();
+    return Base::Vector3d( dir.X(),dir.Y(),dir.Z());
+}
+
 /*!
  * \brief GeomArcOfConic::isReversed
  * \return tests if an arc that lies in XY plane is reversed (i.e. drawn from
@@ -2122,11 +2158,8 @@ void GeomArcOfConic::setXAxisDir(const Base::Vector3d& newdir)
     Handle(Geom_TrimmedCurve) curve =  Handle(Geom_TrimmedCurve)::DownCast(handle());
     Handle(Geom_Conic) c = Handle(Geom_Conic)::DownCast( curve->BasisCurve() );
     assert(!c.IsNull());
-#if OCC_VERSION_HEX >= 0x060504
+
     if (newdir.Sqr() < Precision::SquareConfusion())
-#else
-    if (newdir.Length() < Precision::Confusion())
-#endif
         return;//zero vector was passed. Keep the old orientation.
 
     try {
@@ -2697,6 +2730,17 @@ Base::Vector3d GeomEllipse::getMajorAxisDir() const
 }
 
 /*!
+ * \brief GeomEllipse::getMinorAxisDir
+ * \return the direction vector (unit-length) of minor axis of the ellipse.
+ */
+Base::Vector3d GeomEllipse::getMinorAxisDir() const
+{
+    gp_Dir ydir = myCurve->YAxis().Direction();
+    return Base::Vector3d(ydir.X(), ydir.Y(), ydir.Z());
+}
+
+
+/*!
  * \brief GeomEllipse::setMajorAxisDir Rotates the ellipse in its plane, so
  * that its major axis is as close as possible to the provided direction.
  * \param newdir [in] is the new direction. If the vector is small, the
@@ -2706,11 +2750,7 @@ Base::Vector3d GeomEllipse::getMajorAxisDir() const
  */
 void GeomEllipse::setMajorAxisDir(Base::Vector3d newdir)
 {
-#if OCC_VERSION_HEX >= 0x060504
     if (newdir.Sqr() < Precision::SquareConfusion())
-#else
-    if (newdir.Length() < Precision::Confusion())
-#endif
         return;//zero vector was passed. Keep the old orientation.
     try {
         gp_Ax2 pos = myCurve->Position();
@@ -2925,11 +2965,7 @@ void GeomArcOfEllipse::setMajorAxisDir(Base::Vector3d newdir)
 {
     Handle(Geom_Ellipse) c = Handle(Geom_Ellipse)::DownCast( myCurve->BasisCurve() );
     assert(!c.IsNull());
-#if OCC_VERSION_HEX >= 0x060504
     if (newdir.Sqr() < Precision::SquareConfusion())
-#else
-    if (newdir.Length() < Precision::Confusion())
-#endif
         return;//zero vector was passed. Keep the old orientation.
     try {
         gp_Ax2 pos = c->Position();
@@ -3363,11 +3399,7 @@ void GeomArcOfHyperbola::setMajorAxisDir(Base::Vector3d newdir)
 {
     Handle(Geom_Hyperbola) c = Handle(Geom_Hyperbola)::DownCast( myCurve->BasisCurve() );
     assert(!c.IsNull());
-    #if OCC_VERSION_HEX >= 0x060504
     if (newdir.Sqr() < Precision::SquareConfusion())
-    #else
-    if (newdir.Length() < Precision::Confusion())
-    #endif
         return;//zero vector was passed. Keep the old orientation.
 
     try {
@@ -4223,11 +4255,7 @@ TopoDS_Shape GeomSurface::toShape() const
     Handle(Geom_Surface) s = Handle(Geom_Surface)::DownCast(handle());
     Standard_Real u1,u2,v1,v2;
     s->Bounds(u1,u2,v1,v2);
-    BRepBuilderAPI_MakeFace mkBuilder(s, u1, u2, v1, v2
-#if OCC_VERSION_HEX >= 0x060502
-      , Precision::Confusion()
-#endif
-      );
+    BRepBuilderAPI_MakeFace mkBuilder(s, u1, u2, v1, v2, Precision::Confusion() );
     return mkBuilder.Shape();
 }
 
@@ -4239,7 +4267,6 @@ bool GeomSurface::tangentU(double u, double v, gp_Dir& dirU) const
         prop.TangentU(dirU);
         return true;
     }
-
     return false;
 }
 
@@ -5539,13 +5566,11 @@ std::unique_ptr<GeomCurve> makeFromCurveAdaptor(const Adaptor3d_Curve& adapt)
             geoCurve.reset(new GeomBSplineCurve(adapt.BSpline()));
             break;
         }
-#if OCC_VERSION_HEX >= 0x070000
     case GeomAbs_OffsetCurve:
         {
             geoCurve.reset(new GeomOffsetCurve(adapt.OffsetCurve()));
             break;
         }
-#endif
     case GeomAbs_OtherCurve:
     default:
         break;

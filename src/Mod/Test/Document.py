@@ -203,6 +203,15 @@ class DocumentBasicCases(unittest.TestCase):
     with self.assertRaises(ValueError):
       obj.myEnumeration = enumeration_choices[0]
 
+    obj.myEnumeration = enumeration_choices
+    obj.myEnumeration = 0
+    self.Doc.openTransaction("Modify enum")
+    obj.myEnumeration = 1
+    self.assertTrue(obj.myEnumeration, enumeration_choices[1])
+    self.Doc.commitTransaction()
+    self.Doc.undo()
+    self.assertTrue(obj.myEnumeration, enumeration_choices[0])
+
   def testWrongTypes(self):
     with self.assertRaises(TypeError):
       self.Doc.addObject("App::DocumentObjectExtension")
@@ -1550,6 +1559,14 @@ class DocumentExpressionCases(unittest.TestCase):
     self.Obj2.Placement = self.Obj2.Placement
     # must not raise a topological error
     self.assertEqual(self.Doc.recompute(), 2)
+
+    # add test for issue #6948
+    self.Obj3 = self.Doc.addObject("App::FeatureTest", "Test")
+    self.Obj3.setExpression('Float', u'2*(5%3)')
+    self.Doc.recompute()
+    self.assertEqual(self.Obj3.Float, 4)
+    self.assertEqual(self.Obj3.evalExpression(self.Obj3.ExpressionEngine[0][1]), 4)
+
 
   def testIssue4649(self):
       class Cls():

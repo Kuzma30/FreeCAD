@@ -58,6 +58,7 @@ class DrawView;
 
 namespace TechDrawGui
 {
+class QGSPage;
 class QGVPage;
 class QGCustomBorder;
 class QGCustomLabel;
@@ -79,7 +80,6 @@ public:
     enum {Type = QGraphicsItem::UserType + 101};
     int type() const override { return Type;}
     virtual QRectF boundingRect() const override;
-    virtual void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override;
     virtual void paint( QPainter *painter,
                         const QStyleOptionGraphicsItem *option,
                         QWidget *widget = nullptr ) override;
@@ -130,6 +130,7 @@ public:
     
     static Gui::ViewProvider* getViewProvider(App::DocumentObject* obj);
     static QGVPage* getGraphicsView(TechDraw::DrawView* dv);
+    static QGSPage* getGraphicsScene(TechDraw::DrawView* dv);
     static int calculateFontPixelSize(double sizeInMillimetres);
     static int calculateFontPixelWidth(const QFont &font);
     static const double DefaultFontSizeInMM;
@@ -145,7 +146,10 @@ public:
     virtual void addArbitraryItem(QGraphicsItem* qgi);
 
     // Mouse handling
-    virtual void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
+    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
+    void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override;
+
     boost::signals2::signal<void (QGIView*, QPointF)> signalSelectPoint;
 
 public Q_SLOTS:
@@ -154,12 +158,10 @@ public Q_SLOTS:
 protected:
     QGIView* getQGIVByName(std::string name);
 
-    virtual QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;
-    // Mouse handling
-    virtual void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;
+    QVariant itemChange(GraphicsItemChange change, const QVariant &value) override;
     // Preselection events:
-    virtual void hoverEnterEvent(QGraphicsSceneHoverEvent *event) override;
-    virtual void hoverLeaveEvent(QGraphicsSceneHoverEvent *event) override;
+    void hoverEnterEvent(QGraphicsSceneHoverEvent *event) override;
+    void hoverLeaveEvent(QGraphicsSceneHoverEvent *event) override;
     virtual QRectF customChildrenBoundingRect(void) const;
     void dumpRect(const char* text, QRectF r);
 

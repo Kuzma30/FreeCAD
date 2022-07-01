@@ -52,12 +52,7 @@ BRepOffsetAPI_MakeOffsetFix::BRepOffsetAPI_MakeOffsetFix()
 
 BRepOffsetAPI_MakeOffsetFix::BRepOffsetAPI_MakeOffsetFix(const GeomAbs_JoinType Join, const Standard_Boolean IsOpenResult)
 {
-#if OCC_VERSION_HEX >= 0x060900
     mkOffset.Init(Join, IsOpenResult);
-#else
-    (void)IsOpenResult;
-    mkOffset.Init(Join);
-#endif
 }
 
 BRepOffsetAPI_MakeOffsetFix::~BRepOffsetAPI_MakeOffsetFix()
@@ -141,7 +136,16 @@ void BRepOffsetAPI_MakeOffsetFix::MakeWire(TopoDS_Shape& wire)
 
     std::list<TopoDS_Edge> edgeList;
     for (auto itLoc : myLocations) {
-        const TopTools_ListOfShape& newShapes = mkOffset.Generated(itLoc.first);
+        TopTools_ListOfShape newShapes = mkOffset.Generated(itLoc.first);
+        // Check generated shapes for the vertexes, too
+        TopExp_Explorer xpv(itLoc.first, TopAbs_VERTEX);
+        while (xpv.More()) {
+            TopTools_ListOfShape newEdge = mkOffset.Generated(xpv.Current());
+            if (!newEdge.IsEmpty()) {
+                newShapes.Append(newEdge);
+            }
+            xpv.Next();
+        }
         for (TopTools_ListIteratorOfListOfShape it(newShapes); it.More(); it.Next()) {
             TopoDS_Shape newShape = it.Value();
 

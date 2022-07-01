@@ -197,8 +197,8 @@ void highlight(const HighlightMode& high)
 void ViewProvider::eventCallback(void * ud, SoEventCallback * node)
 {
     const SoEvent * ev = node->getEvent();
-    Gui::View3DInventorViewer* viewer = reinterpret_cast<Gui::View3DInventorViewer*>(node->getUserData());
-    ViewProvider *self = reinterpret_cast<ViewProvider*>(ud);
+    Gui::View3DInventorViewer* viewer = static_cast<Gui::View3DInventorViewer*>(node->getUserData());
+    ViewProvider *self = static_cast<ViewProvider*>(ud);
     assert(self);
 
     try {
@@ -233,7 +233,7 @@ void ViewProvider::eventCallback(void * ud, SoEventCallback * node)
 
                         Gui::TimerFunction* func = new Gui::TimerFunction();
                         func->setAutoDelete(true);
-                        func->setFunction(boost::bind(&Document::resetEdit, doc));
+                        func->setFunction(std::bind(&Document::resetEdit, doc));
                         QTimer::singleShot(0, func, SLOT(timeout()));
                     }
                 }
@@ -633,14 +633,13 @@ bool ViewProvider::checkRecursion(SoNode* node)
 
 SoPickedPoint* ViewProvider::getPointOnRay(const SbVec2s& pos, const View3DInventorViewer* viewer) const
 {
-    return viewer->getPointOnRay(pos,const_cast<ViewProvider*>(this));
+    return viewer->getPointOnRay(pos, this);
 }
 
 SoPickedPoint* ViewProvider::getPointOnRay(const SbVec3f& pos,const SbVec3f& dir, const View3DInventorViewer* viewer) const
 {
-    return viewer->getPointOnRay(pos,dir,const_cast<ViewProvider*>(this));
+    return viewer->getPointOnRay(pos, dir, this);
 }
-
 
 std::vector<Base::Vector3d> ViewProvider::getModelPoints(const SoPickedPoint* pp) const
 {

@@ -138,7 +138,7 @@ void TaskCreateNodeSet::DefineNodesCallback(void* ud, SoEventCallback* n)
 
 
     // When this callback function is invoked we must in either case leave the edit mode
-    Gui::View3DInventorViewer* view = reinterpret_cast<Gui::View3DInventorViewer*>(n->getUserData());
+    Gui::View3DInventorViewer* view = static_cast<Gui::View3DInventorViewer*>(n->getUserData());
     view->setEditing(false);
     view->removeEventCallback(SoMouseButtonEvent::getClassTypeId(), DefineNodesCallback, ud);
     n->setHandled();
@@ -162,7 +162,7 @@ void TaskCreateNodeSet::DefineNodesCallback(void* ud, SoEventCallback* n)
 
 void TaskCreateNodeSet::DefineNodes(const Base::Polygon2d& polygon, const Gui::ViewVolumeProjection& proj, bool inner)
 {
-    const SMESHDS_Mesh* data = const_cast<SMESH_Mesh*>(pcObject->FemMesh.getValue<Fem::FemMeshObject*>()->FemMesh.getValue().getSMesh())->GetMeshDS();
+    const SMESHDS_Mesh* data = pcObject->FemMesh.getValue<Fem::FemMeshObject*>()->FemMesh.getValue().getSMesh()->GetMeshDS();
 
     SMDS_NodeIteratorPtr aNodeIter = data->nodesIterator();
     Base::Vector3f pt2d;

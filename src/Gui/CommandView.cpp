@@ -40,7 +40,6 @@
 # include <QPainter>
 # include <QPointer>
 # include <QTextStream>
-# include <boost_bind_bind.hpp>
 #endif
 
 #include <App/ComplexGeoDataPy.h>
@@ -343,7 +342,7 @@ void StdCmdFreezeViews::activated(int iMsg)
 
         QList<QAction*> acts = pcAction->actions();
         int index = 1;
-        for (QList<QAction*>::ConstIterator it = acts.begin()+offset; it != acts.end(); ++it, index++) {
+        for (QList<QAction*>::Iterator it = acts.begin()+offset; it != acts.end(); ++it, index++) {
             if (!(*it)->isVisible()) {
                 savedViews++;
                 QString viewnr = QString(QObject::tr("Restore view &%1")).arg(index);
@@ -360,7 +359,7 @@ void StdCmdFreezeViews::activated(int iMsg)
     else if (iMsg == 4) {
         savedViews = 0;
         QList<QAction*> acts = pcAction->actions();
-        for (QList<QAction*>::ConstIterator it = acts.begin()+offset; it != acts.end(); ++it)
+        for (QList<QAction*>::Iterator it = acts.begin()+offset; it != acts.end(); ++it)
             (*it)->setVisible(false);
     }
     else if (iMsg >= offset) {
@@ -389,7 +388,7 @@ void StdCmdFreezeViews::onSaveViews()
             << "<FrozenViews SchemaVersion=\"1\">\n";
         str << "  <Views Count=\"" << savedViews <<"\">\n";
 
-        for (QList<QAction*>::ConstIterator it = acts.begin()+offset; it != acts.end(); ++it) {
+        for (QList<QAction*>::Iterator it = acts.begin()+offset; it != acts.end(); ++it) {
             if ( !(*it)->isVisible() )
                 break;
             QString data = (*it)->toolTip();
@@ -530,7 +529,7 @@ void StdCmdFreezeViews::languageChange()
     acts[3]->setText(QObject::tr("Freeze view"));
     acts[4]->setText(QObject::tr("Clear views"));
     int index=1;
-    for (QList<QAction*>::ConstIterator it = acts.begin()+5; it != acts.end(); ++it, index++) {
+    for (QList<QAction*>::Iterator it = acts.begin()+5; it != acts.end(); ++it, index++) {
         if ((*it)->isVisible()) {
             QString viewnr = QString(QObject::tr("Restore view &%1")).arg(index);
             (*it)->setText(viewnr);
@@ -1824,7 +1823,7 @@ void StdViewScreenShot::activated(int iMsg)
         Base::Reference<ParameterGrp> hExt = App::GetApplication().GetUserParameter().GetGroup("BaseApp")
                                    ->GetGroup("Preferences")->GetGroup("General");
         QString ext = QString::fromLatin1(hExt->GetASCII("OffscreenImageFormat").c_str());
-        int backtype = hExt->GetInt("OffscreenImageBackground",0);
+        int backtype = hExt->GetInt("OffscreenImageBackground", 0);
 
         Base::Reference<ParameterGrp> methodGrp = App::GetApplication().GetParameterGroupByPath
             ("User parameter:BaseApp/Preferences/View");
@@ -1889,14 +1888,14 @@ void StdViewScreenShot::activated(int iMsg)
 
             // which background chosen
             const char* background;
-            switch(opt->backgroundType()){
-                case 0:  background="Current"; break;
-                case 1:  background="White"; break;
-                case 2:  background="Black"; break;
-                case 3:  background="Transparent"; break;
-                default: background="Current"; break;
+            switch (opt->backgroundType()) {
+            case 0:  background = "Current"; break;
+            case 1:  background = "White"; break;
+            case 2:  background = "Black"; break;
+            case 3:  background = "Transparent"; break;
+            default: background = "Current"; break;
             }
-            hExt->SetInt("OffscreenImageBackground",opt->backgroundType());
+            hExt->SetInt("OffscreenImageBackground", opt->backgroundType());
 
             QString comment = opt->comment();
             if (!comment.isEmpty()) {
@@ -1904,17 +1903,17 @@ void StdViewScreenShot::activated(int iMsg)
                 // otherwise Python would interpret it as an invalid command.
                 // Python does the decoding for us.
 #if QT_VERSION >= QT_VERSION_CHECK(5,15,0)
-                QStringList lines = comment.split(QLatin1String("\n"), Qt::KeepEmptyParts );
+                QStringList lines = comment.split(QLatin1String("\n"), Qt::KeepEmptyParts);
 #else
-                QStringList lines = comment.split(QLatin1String("\n"), QString::KeepEmptyParts );
+                QStringList lines = comment.split(QLatin1String("\n"), QString::KeepEmptyParts);
 #endif
                 comment = lines.join(QLatin1String("\\n"));
-                doCommand(Gui,"Gui.activeDocument().activeView().saveImage('%s',%d,%d,'%s','%s')",
-                            fn.toUtf8().constData(),w,h,background,comment.toUtf8().constData());
+                doCommand(Gui, "Gui.activeDocument().activeView().saveImage('%s',%d,%d,'%s','%s')",
+                          fn.toUtf8().constData(), w, h, background, comment.toUtf8().constData());
             }
             else {
-                doCommand(Gui,"Gui.activeDocument().activeView().saveImage('%s',%d,%d,'%s')",
-                            fn.toUtf8().constData(),w,h,background);
+                doCommand(Gui, "Gui.activeDocument().activeView().saveImage('%s',%d,%d,'%s')",
+                          fn.toUtf8().constData(), w, h, background);
             }
 
             // When adding a watermark check if the image could be created
@@ -1924,7 +1923,7 @@ void StdViewScreenShot::activated(int iMsg)
                 if (fi.exists() && pixmap.load(fn)) {
                     QString name = qApp->applicationName();
                     std::map<std::string, std::string>& config = App::Application::Config();
-                    QString url  = QString::fromLatin1(config["MaintainerUrl"].c_str());
+                    QString url = QString::fromLatin1(config["MaintainerUrl"].c_str());
                     url = QUrl(url).host();
 
                     QPixmap appicon = Gui::BitmapFactory().pixmap(config["AppIcon"].c_str());
@@ -1932,7 +1931,7 @@ void StdViewScreenShot::activated(int iMsg)
                     QPainter painter;
                     painter.begin(&pixmap);
 
-                    painter.drawPixmap(8, h-15-appicon.height(), appicon);
+                    painter.drawPixmap(8, h - 15 - appicon.height(), appicon);
 
                     QFont font = painter.font();
                     font.setPointSize(20);
@@ -1942,12 +1941,13 @@ void StdViewScreenShot::activated(int iMsg)
                     int h = pixmap.height();
 
                     painter.setFont(font);
-                    painter.drawText(8+appicon.width(), h-24, name);
+                    painter.drawText(8 + appicon.width(), h - 24, name);
 
                     font.setPointSize(12);
-                    int u = QtTools::horizontalAdvance(fm, url);
+                    QFontMetrics fm2(font);
+                    int u = QtTools::horizontalAdvance(fm2, url);
                     painter.setFont(font);
-                    painter.drawText(8+appicon.width()+n-u, h-9, url);
+                    painter.drawText(8 + appicon.width() + n - u, h - 6, url);
 
                     painter.end();
                     pixmap.save(fn);
@@ -2151,7 +2151,7 @@ void StdCmdAxisCross::activated(int iMsg)
     Q_UNUSED(iMsg);
     Gui::View3DInventor* view = qobject_cast<View3DInventor*>(Gui::getMainWindow()->activeWindow());
     if (view) {
-        if (view->getViewer()->hasAxisCross() == false)
+        if (!view->getViewer()->hasAxisCross())
             doCommand(Command::Gui,"Gui.ActiveDocument.ActiveView.setAxisCross(True)");
         else
             doCommand(Command::Gui,"Gui.ActiveDocument.ActiveView.setAxisCross(False)");
@@ -2568,8 +2568,8 @@ public:
     // Also supports aborting the selection mode by pressing (releasing) the Escape key. 
     static void selectionCallback(void * ud, SoEventCallback * n)
     {
-        SelectionCallbackHandler* selectionHandler = reinterpret_cast<SelectionCallbackHandler*>(ud);
-        Gui::View3DInventorViewer* view = reinterpret_cast<Gui::View3DInventorViewer*>(n->getUserData());
+        SelectionCallbackHandler* selectionHandler = static_cast<SelectionCallbackHandler*>(ud);
+        Gui::View3DInventorViewer* view = static_cast<Gui::View3DInventorViewer*>(n->getUserData());
         const SoEvent* ev = n->getEvent();
         if (ev->isOfType(SoKeyboardEvent::getClassTypeId())) {
 
@@ -2873,7 +2873,7 @@ static std::vector<std::string> getBoxSelection(
 static void doSelect(void* ud, SoEventCallback * cb)
 {
     bool selectElement = ud ? true : false;
-    Gui::View3DInventorViewer* viewer = reinterpret_cast<Gui::View3DInventorViewer*>(cb->getUserData());
+    Gui::View3DInventorViewer* viewer = static_cast<Gui::View3DInventorViewer*>(cb->getUserData());
 
     SoNode* root = viewer->getSceneGraph();
     static_cast<Gui::SoFCUnifiedSelection*>(root)->selectionRole.setValue(true);

@@ -62,7 +62,7 @@ class Draft_SelectPlane:
         """Set icon, menu and tooltip."""
         d = {'Pixmap': 'Draft_SelectPlane',
              'Accel': "W, P",
-             'MenuText': QT_TRANSLATE_NOOP("Draft_SelectPlane", "SelectPlane"),
+             'MenuText': QT_TRANSLATE_NOOP("Draft_SelectPlane", "Select Plane"),
              'ToolTip': QT_TRANSLATE_NOOP("Draft_SelectPlane", "Select the face of solid body to create a working plane on which to sketch Draft objects.\nYou may also select a three vertices or a Working Plane Proxy.")}
         return d
 
@@ -195,7 +195,7 @@ class Draft_SelectPlane:
         sel = FreeCADGui.Selection.getSelectionEx()
         if len(sel) == 1:
             sel = sel[0]
-            if hasattr(sel.Object, 'TypeId') and sel.Object.TypeId == 'App::Part':
+            if hasattr(sel.Object, 'TypeId') and (sel.Object.TypeId == 'App::Part' or sel.Object.TypeId == 'PartDesign::Plane'):
                 self.setPlaneFromObjPlacement(sel.Object)
                 return True
             elif Draft.getType(sel.Object) == "Axis":

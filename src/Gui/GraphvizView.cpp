@@ -305,10 +305,10 @@ void GraphvizView::updateSvgItem(const App::Document &doc)
     dotProc->setEnvironment(QProcess::systemEnvironment());
     flatProc->setEnvironment(QProcess::systemEnvironment());
     do {
-        flatProc->start(unflatten, flatArgs);
+        flatProc->startCommand(unflatten, flatArgs);
         bool value = flatProc->waitForStarted();
         Q_UNUSED(value); // quieten code analyzer
-        dotProc->start(dot, args);
+        dotProc->startCommand(dot, args);
         if (!dotProc->waitForStarted()) {
             int ret = QMessageBox::warning(Gui::getMainWindow(),
                                            tr("Graphviz not found"),
@@ -418,7 +418,7 @@ QByteArray GraphvizView::exportGraph(const QString& format)
 #endif
 
     dotProc.setEnvironment(QProcess::systemEnvironment());
-    dotProc.start(exe, args);
+    dotProc.startCommand(exe, args);
     if (!dotProc.waitForStarted()) {
         return QByteArray();
     }
@@ -426,7 +426,7 @@ QByteArray GraphvizView::exportGraph(const QString& format)
     ParameterGrp::handle depGrp = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/DependencyGraph");
     if(depGrp->GetBool("Unflatten", true)) {
         flatProc.setEnvironment(QProcess::systemEnvironment());
-        flatProc.start(unflatten, flatArgs);
+        flatProc.startCommand(unflatten, flatArgs);
         if (!flatProc.waitForStarted()) {
             return QByteArray();
         }

@@ -123,7 +123,7 @@ void DlgMacroExecuteImp::fillUpList(void)
     }
 
     QString dirstr = QString::fromStdString(App::Application::getHomePath()) + QString::fromLatin1("Macro");
-    dir = QDir(dirstr, QLatin1String("*.FCMacro *.py"));
+    dir.setPath(QDir(dirstr, QLatin1String("*.FCMacro *.py")));
 
     ui->systemMacroListBox->clear();
     if (dir.exists()) {
@@ -266,11 +266,11 @@ void DlgMacroExecuteImp::accept()
     QDir dir;
 
     if (!mitem->systemWide){
-        dir =QDir(this->macroPath);
+        dir.setPath(QDir(this->macroPath));
     }
     else {
         QString dirstr = QString::fromStdString(App::Application::getHomePath()) + QString::fromLatin1("Macro");
-        dir = QDir(dirstr);
+        dir.setPath(QDir(dirstr));
     }
 
     QFileInfo fi(dir, item->text(0));

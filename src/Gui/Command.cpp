@@ -1122,11 +1122,11 @@ void MacroCommand::activated(int iMsg)
                              ("User parameter:BaseApp/Preferences/Macro")->GetASCII("MacroPath",
                                      App::Application::getUserMacroDir().c_str());
 
-        d = QDir(QString::fromUtf8(cMacroPath.c_str()));
+        d.setPath(QDir(QString::fromUtf8(cMacroPath.c_str())));
     }
     else {
         QString dirstr = QString::fromStdString(App::Application::getHomePath()) + QString::fromLatin1("Macro");
-        d = QDir(dirstr);
+        d.setPath(QDir(dirstr));
     }
 
     QFileInfo fi(d, QString::fromUtf8(sScriptName));

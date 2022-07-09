@@ -38,7 +38,7 @@
 #include <config.h>
 #endif
 
-template <class Key, class T> class QMap;
+#include <QtCore/qcontainerfwd.h>
 
 namespace SIM { namespace Coin3D { namespace Quarter {
 

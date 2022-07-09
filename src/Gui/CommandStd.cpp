@@ -90,7 +90,7 @@ void StdCmdWorkbench::activated(int i)
         QString msg(QLatin1String(e.what()));
         // ignore '<type 'exceptions.*Error'>' prefixes
         QRegExp rx;
-        rx.setPattern(QLatin1String("^\\s*<type 'exceptions.\\w*'>:\\s*"));
+        rx.setPattern(u"^\s*<type 'exceptions.\w*'>:\s*"_qs);
         int pos = rx.indexIn(msg);
         if (pos != -1)
             msg = msg.mid(rx.matchedLength());
@@ -155,7 +155,7 @@ void StdCmdRecentFiles::activated(int iMsg)
 Action * StdCmdRecentFiles::createAction(void)
 {
     RecentFilesAction* pcAction = new RecentFilesAction(this, getMainWindow());
-    pcAction->setObjectName(QLatin1String("recentFiles"));
+    pcAction->setObjectName(u"recentFiles"_qs);
     pcAction->setDropDownMenu(true);
     applyCommandData(this->className(), pcAction);
     return pcAction;
@@ -195,7 +195,7 @@ void StdCmdRecentMacros::activated(int iMsg)
 Action * StdCmdRecentMacros::createAction(void)
 {
     RecentMacrosAction* pcAction = new RecentMacrosAction(this, getMainWindow());
-    pcAction->setObjectName(QLatin1String("recentMacros"));
+    pcAction->setObjectName(u"recentMacros"_qs);
     pcAction->setDropDownMenu(true);
     applyCommandData(this->className(), pcAction);
     return pcAction;
@@ -230,7 +230,7 @@ Action * StdCmdAbout::createAction(void)
         this->className(), getToolTipText()).arg(exe));
     pcAction->setStatusTip(QCoreApplication::translate(
         this->className(), getStatusTip()).arg(exe));
-    pcAction->setWhatsThis(QLatin1String(getWhatsThis()));
+    pcAction->setWhatsThis();
     pcAction->setIcon(QApplication::windowIcon());
     pcAction->setShortcut(QString::fromLatin1(getAccel()));
     // Needs to have AboutRole set to avoid duplicates if adding the about action more than once on macOS
@@ -264,7 +264,7 @@ void StdCmdAbout::languageChange()
             this->className(), getToolTipText()).arg(exe));
         _pcAction->setStatusTip(QCoreApplication::translate(
             this->className(), getStatusTip()).arg(exe));
-        _pcAction->setWhatsThis(QLatin1String(getWhatsThis()));
+        _pcAction->setWhatsThis();
     }
 }
 

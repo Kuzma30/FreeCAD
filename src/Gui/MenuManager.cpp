@@ -234,7 +234,7 @@ void MenuManager::setup(MenuItem* menuItems) const
             // we can safely remove it if available and append it at the end
             if ((*it)->command() == "Separator") {
                 action = menuBar->addSeparator();
-                action->setObjectName(QLatin1String("Separator"));
+                action->setObjectName(u"Separator"_qs);
             }
             else {
                 // create a new menu
@@ -283,7 +283,7 @@ void MenuManager::setup(MenuItem* item, QMenu* menu) const
         if (used_actions.isEmpty()) {
             if ((*it)->command() == "Separator") {
                 QAction* action = menu->addSeparator();
-                action->setObjectName(QLatin1String("Separator"));
+                action->setObjectName(u"Separator"_qs);
                 // set the menu user data
                 action->setData(QLatin1String("Separator"));
                 used_actions.append(action);

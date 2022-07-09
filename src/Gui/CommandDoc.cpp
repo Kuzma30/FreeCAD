@@ -100,7 +100,7 @@ void StdCmdOpen::activated(int iMsg)
     const char* supported = QT_TR_NOOP("Supported formats");
     const char* allFiles = QT_TR_NOOP("All files (*.*)");
     formatList = QObject::tr(supported);
-    formatList += QLatin1String(" (");
+    formatList += u" ("_qs;
 
     std::vector<std::string> filetypes = App::GetApplication().getImportTypes();
     std::vector<std::string>::iterator it;
@@ -111,11 +111,11 @@ void StdCmdOpen::activated(int iMsg)
         filetypes.insert(filetypes.begin(), "FCStd");
     }
     for (it=filetypes.begin();it != filetypes.end();++it) {
-        formatList += QLatin1String(" *.");
+        formatList += u" *."_qs;
         formatList += QLatin1String(it->c_str());
     }
 
-    formatList += QLatin1String(");;");
+    formatList += u");;"_qs;
 
     std::map<std::string, std::string> FilterList = App::GetApplication().getImportFilters();
     std::map<std::string, std::string>::iterator jt;
@@ -123,14 +123,14 @@ void StdCmdOpen::activated(int iMsg)
     for (jt=FilterList.begin();jt != FilterList.end();++jt) {
         if (jt->first.find("*.FCStd") != std::string::npos) {
             formatList += QLatin1String(jt->first.c_str());
-            formatList += QLatin1String(";;");
+            formatList += u";;"_qs;
             FilterList.erase(jt);
             break;
         }
     }
     for (jt=FilterList.begin();jt != FilterList.end();++jt) {
         formatList += QLatin1String(jt->first.c_str());
-        formatList += QLatin1String(";;");
+        formatList += u";;"_qs;
     }
     formatList += QObject::tr(allFiles);
 
@@ -190,19 +190,19 @@ void StdCmdImport::activated(int iMsg)
     const char* supported = QT_TR_NOOP("Supported formats");
     const char* allFiles = QT_TR_NOOP("All files (*.*)");
     formatList = QObject::tr(supported);
-    formatList += QLatin1String(" (");
+    formatList += u" ("_qs;
 
     std::vector<std::string> filetypes = App::GetApplication().getImportTypes();
     std::vector<std::string>::const_iterator it;
     for (it=filetypes.begin();it != filetypes.end();++it) {
         if (*it != "FCStd") {
             // ignore the project file format
-            formatList += QLatin1String(" *.");
+            formatList += u" *."_qs;
             formatList += QLatin1String(it->c_str());
         }
     }
 
-    formatList += QLatin1String(");;");
+    formatList += u");;"_qs;
 
     std::map<std::string, std::string> FilterList = App::GetApplication().getImportFilters();
     std::map<std::string, std::string>::const_iterator jt;
@@ -210,7 +210,7 @@ void StdCmdImport::activated(int iMsg)
         // ignore the project file format
         if (jt->first.find("(*.FCStd)") == std::string::npos) {
             formatList += QLatin1String(jt->first.c_str());
-            formatList += QLatin1String(";;");
+            formatList += u";;"_qs;
         }
     }
     formatList += QObject::tr(allFiles);
@@ -335,7 +335,7 @@ QString createDefaultExportBasename()
     // Parse the format string one character at a time:
     for (int i = 0; i < exportFormatString.size(); ++i) {
         auto c = exportFormatString.at(i);
-        if (c != QLatin1Char('%')) {
+        if (c != u'%') {
             // Anything that's not a format start character is just a literal
             defaultFilename.append(c);
         }
@@ -345,11 +345,11 @@ QString createDefaultExportBasename()
             if (i < exportFormatString.size() - 1) {
                 ++i;
                 auto formatChar = exportFormatString.at(i);
-                QChar separatorChar = QLatin1Char('-');
+                QChar separatorChar = u'-';
                 // If this format type requires an additional char, read that now (or default to
                 // '-' if the format string ends) 
-                if (formatChar == QLatin1Char('L') ||
-                    formatChar == QLatin1Char('P')) {
+                if (formatChar == u'L' ||
+                    formatChar == u'P') {
                     if (i < exportFormatString.size() - 1) {
                         ++i;
                         separatorChar = exportFormatString.at(i);
@@ -357,19 +357,19 @@ QString createDefaultExportBasename()
                 }
 
                 // Handle our format characters:
-                if (formatChar == QLatin1Char('F')) {
+                if (formatChar == u'F') {
                     defaultFilename.append(fcstdBasename);
                 }
-                else if (formatChar == QLatin1Char('L')) {
+                else if (formatChar == u'L') {
                     defaultFilename.append(objectLabels.join(separatorChar));
                 }
-                else if (formatChar == QLatin1Char('P')) {
+                else if (formatChar == u'P') {
                     defaultFilename.append(parentLabels.join(separatorChar));
                 }
-                else if (formatChar == QLatin1Char('U')) {
+                else if (formatChar == u'U') {
                     defaultFilename.append(utcISO8601);
                 }
-                else if (formatChar == QLatin1Char('D')) {
+                else if (formatChar == u'D') {
                     defaultFilename.append(localISO8601);
                 }
                 else {
@@ -382,9 +382,9 @@ QString createDefaultExportBasename()
     }
 
     // Finally, clean the string so it's valid for all operating systems:
-    QString invalidCharacters = QLatin1String("/\\?%*:|\"<>");
+    QString invalidCharacters = u"/\?%*:|"<>"_qs;
     for (const auto &c : invalidCharacters)
-        defaultFilename.replace(c,QLatin1String("_"));
+        defaultFilename.replace(c,u"_"_qs);
 
     return defaultFilename;
 }
@@ -413,7 +413,7 @@ void StdCmdExport::activated(int iMsg)
         if (filter.first.find("(*.FCStd)") == std::string::npos)
             filterList << QString::fromStdString(filter.first);
     }
-    QString formatList = filterList.join(QLatin1String(";;"));
+    QString formatList = filterList.join(u";;"_qs);
     Base::Reference<ParameterGrp> hPath = 
         App::GetApplication().GetUserParameter().GetGroup("BaseApp")->GetGroup("Preferences")->GetGroup("General");
     QString selectedFilter = QString::fromStdString(hPath->GetASCII("FileExportFilter"));
@@ -450,13 +450,13 @@ void StdCmdExport::activated(int iMsg)
         }
 
         if (lastExportUsedGeneratedFilename /*<- static, true on first call*/ ) {
-            defaultFilename = defaultExportPath + QLatin1Char('/') + createDefaultExportBasename();
+            defaultFilename = defaultExportPath + u'/' + createDefaultExportBasename();
 
             // Append the last extension used, if there is one.
             if (!lastExportFullPath.isEmpty()) {
                 QFileInfo lastExportFile(lastExportFullPath);
                 if (!lastExportFile.suffix().isEmpty())
-                    defaultFilename += QLatin1String(".") + lastExportFile.suffix();
+                    defaultFilename += u"."_qs + lastExportFile.suffix();
             }
             filenameWasGenerated = true;
         }

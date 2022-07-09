@@ -286,8 +286,8 @@ void GraphvizView::updateSvgItem(const App::Document &doc)
     QProcess * dotProc = thread->dotProcess();
     QProcess * flatProc = thread->unflattenProcess();
     QStringList args, flatArgs;
-    args << QLatin1String("-Tsvg");
-    flatArgs << QLatin1String("-c2 -l2");
+    args << u"-Tsvg"_qs;
+    flatArgs << u"-c2 -l2"_qs;
 
 #ifdef FC_OS_LINUX
     QString path = QString::fromUtf8(hGrp->GetASCII("Graphviz", "/usr/bin").c_str());
@@ -305,10 +305,10 @@ void GraphvizView::updateSvgItem(const App::Document &doc)
     dotProc->setEnvironment(QProcess::systemEnvironment());
     flatProc->setEnvironment(QProcess::systemEnvironment());
     do {
-        flatProc->start(unflatten, flatArgs);
+        flatProc->startCommand(unflatten, flatArgs);
         bool value = flatProc->waitForStarted();
         Q_UNUSED(value); // quieten code analyzer
-        dotProc->start(dot, args);
+        dotProc->startCommand(dot, args);
         if (!dotProc->waitForStarted()) {
             int ret = QMessageBox::warning(Gui::getMainWindow(),
                                            tr("Graphviz not found"),
@@ -401,7 +401,7 @@ QByteArray GraphvizView::exportGraph(const QString& format)
     QProcess dotProc, flatProc;
     QStringList args, flatArgs;
     args << QString::fromLatin1("-T%1").arg(format);
-    flatArgs << QLatin1String("-c2 -l2");
+    flatArgs << u"-c2 -l2"_qs;
 
 #ifdef FC_OS_LINUX
     QString path = QString::fromUtf8(hGrp->GetASCII("Graphviz", "/usr/bin").c_str());
@@ -418,7 +418,7 @@ QByteArray GraphvizView::exportGraph(const QString& format)
 #endif
 
     dotProc.setEnvironment(QProcess::systemEnvironment());
-    dotProc.start(exe, args);
+    dotProc.startCommand(exe, args);
     if (!dotProc.waitForStarted()) {
         return QByteArray();
     }
@@ -426,7 +426,7 @@ QByteArray GraphvizView::exportGraph(const QString& format)
     ParameterGrp::handle depGrp = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/DependencyGraph");
     if(depGrp->GetBool("Unflatten", true)) {
         flatProc.setEnvironment(QProcess::systemEnvironment());
-        flatProc.start(unflatten, flatArgs);
+        flatProc.startCommand(unflatten, flatArgs);
         if (!flatProc.waitForStarted()) {
             return QByteArray();
         }
@@ -464,7 +464,7 @@ bool GraphvizView::onMsg(const char* pMsg,const char**)
             filter << it->first;
 
         QString selectedFilter;
-        QString fn = Gui::FileDialog::getSaveFileName(this, tr("Export graph"), QString(), filter.join(QLatin1String(";;")), &selectedFilter);
+        QString fn = Gui::FileDialog::getSaveFileName(this, tr("Export graph"), QString(), filter.join(u";;"_qs), &selectedFilter);
         if (!fn.isEmpty()) {
             QString format;
             for (QList< QPair<QString, QString> >::iterator it = formatMap.begin(); it != formatMap.end(); ++it) {
@@ -543,7 +543,7 @@ void GraphvizView::printPdf()
     filter << QString::fromLatin1("%1 (*.pdf)").arg(tr("PDF format"));
 
     QString selectedFilter;
-    QString fn = Gui::FileDialog::getSaveFileName(this, tr("Export graph"), QString(), filter.join(QLatin1String(";;")), &selectedFilter);
+    QString fn = Gui::FileDialog::getSaveFileName(this, tr("Export graph"), QString(), filter.join(u";;"_qs), &selectedFilter);
     if (!fn.isEmpty()) {
         QByteArray buffer = exportGraph(selectedFilter);
         if (buffer.isEmpty())

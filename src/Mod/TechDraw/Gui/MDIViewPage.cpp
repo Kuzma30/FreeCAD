@@ -677,7 +677,7 @@ void MDIViewPage::printPdf()
     filter << QObject::tr("PDF (*.pdf)");
     filter << QObject::tr("All Files (*.*)");
     QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export Page As PDF"),
-                                                  QString(), filter.join(QLatin1String(";;")));
+                                                  QString(), filter.join(u";;"_qs));
     if (fn.isEmpty()) {
       return;
     }
@@ -877,7 +877,7 @@ void MDIViewPage::saveSVG()
     filter << QObject::tr("SVG (*.svg)");
     filter << QObject::tr("All Files (*.*)");
     QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export page as SVG"),
-                                                  QString(), filter.join(QLatin1String(";;")));
+                                                  QString(), filter.join(u";;"_qs));
     if (fn.isEmpty()) {
       return;
     }

@@ -182,12 +182,12 @@ QString Base::Tools::escapeEncodeString(const QString& s)
     const int len = s.length();
     result.reserve(int(len * 1.1));
     for (int i = 0; i < len; ++i) {
-        if (s.at(i) == QLatin1Char('\\'))
-            result += QLatin1String("\\\\");
-        else if (s.at(i) == QLatin1Char('\"'))
-            result += QLatin1String("\\\"");
-        else if (s.at(i) == QLatin1Char('\''))
-            result += QLatin1String("\\\'");
+        if (s.at(i) == u'\\')
+            result += u"\\"_qs;
+        else if (s.at(i) == u'"')
+            result += u"\""_qs;
+        else if (s.at(i) == u'\'')
+            result += u"\'"_qs;
         else
             result += s.at(i);
     }
@@ -218,10 +218,10 @@ QString Base::Tools::escapeEncodeFilename(const QString& s)
     const int len = s.length();
     result.reserve(int(len * 1.1));
     for (int i = 0; i < len; ++i) {
-        if (s.at(i) == QLatin1Char('\"'))
-            result += QLatin1String("\\\"");
-        else if (s.at(i) == QLatin1Char('\''))
-            result += QLatin1String("\\\'");
+        if (s.at(i) == u'"')
+            result += u"\""_qs;
+        else if (s.at(i) == u'\'')
+            result += u"\'"_qs;
         else
             result += s.at(i);
     }

@@ -113,7 +113,7 @@ DlgGeneralImp::~DlgGeneralImp()
  */
 void DlgGeneralImp::setRecentFileSize()
 {
-    RecentFilesAction *recent = getMainWindow()->findChild<RecentFilesAction *>(QLatin1String("recentFiles"));
+    RecentFilesAction *recent = getMainWindow()->findChild<RecentFilesAction *>(u"recentFiles"_qs);
     if (recent) {
         ParameterGrp::handle hGrp = WindowParameter::getDefaultParameter()->GetGroup("RecentFiles");
         recent->resizeList(hGrp->GetInt("RecentFiles", 4));

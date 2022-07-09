@@ -117,8 +117,8 @@ void CmdDrawingNewPage::activated(int iMsg)
     }
     else {
         QMessageBox::critical(Gui::getMainWindow(),
-            QLatin1String("No template"),
-            QLatin1String("No template available for this page size"));
+            u"No template"_qs,
+            u"No template available for this page size"_qs);
     }
 }
 
@@ -216,9 +216,9 @@ void CmdDrawingNewPage::languageChange()
         QString paper = (*it)->property("TemplatePaper").toString();
         int id = (*it)->property("TemplateId").toInt();
         QString orientation = (*it)->property("TemplateOrientation").toString();
-        if (orientation.compare(QLatin1String("landscape"), Qt::CaseInsensitive) == 0)
+        if (orientation.compare(u"landscape"_qs, Qt::CaseInsensitive) == 0)
             orientation = QCoreApplication::translate("Drawing_NewPage", "Landscape");
-        else if (orientation.compare(QLatin1String("portrait"), Qt::CaseInsensitive) == 0)
+        else if (orientation.compare(u"portrait"_qs, Qt::CaseInsensitive) == 0)
             orientation = QCoreApplication::translate("Drawing_NewPage", "Portrait");
         QString info = (*it)->property("TemplateInfo").toString();
 
@@ -647,7 +647,7 @@ void CmdDrawingExportPage::activated(int iMsg)
     filter << QString::fromLatin1("%1 (*.svg)").arg(QObject::tr("Scalable Vector Graphic"));
     filter << QString::fromLatin1("%1 (*.*)").arg(QObject::tr("All Files"));
 
-    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export page"), QString(), filter.join(QLatin1String(";;")));
+    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export page"), QString(), filter.join(u";;"_qs));
     if (!fn.isEmpty()) {
         std::vector<Gui::SelectionSingleton::SelObj> Sel = getSelection().getSelection();
         openCommand("Drawing export page");

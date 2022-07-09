@@ -173,7 +173,7 @@ QXmlName QDomNodeModel::name ( const QXmlNodeModelIndex & ni ) const
 
         if (p.isEmpty())
         {
-            int c = t.indexOf(QLatin1Char(':'));
+            int c = t.indexOf(u':');
             if (c < 0)
                 p = QString::fromUtf8("");
             else

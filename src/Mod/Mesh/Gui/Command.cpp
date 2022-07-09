@@ -464,7 +464,7 @@ void CmdMeshImport::activated(int)
 
     // Allow multi selection
     QStringList fn = Gui::FileDialog::getOpenFileNames(Gui::getMainWindow(),
-        QObject::tr("Import mesh"), QString(), filter.join(QLatin1String(";;")));
+        QObject::tr("Import mesh"), QString(), filter.join(u";;"_qs));
     for (QStringList::Iterator it = fn.begin(); it != fn.end(); ++it) {
         std::string unicodepath = Base::Tools::escapedUnicodeFromUtf8((*it).toUtf8().data());
         unicodepath = Base::Tools::escapeEncodeFilename(unicodepath);
@@ -534,7 +534,7 @@ void CmdMeshExport::activated(int)
 
     QString format;
     QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(),
-        QObject::tr("Export mesh"), dir, filter.join(QLatin1String(";;")), &format);
+        QObject::tr("Export mesh"), dir, filter.join(u";;"_qs), &format);
     if (!fn.isEmpty()) {
         QFileInfo fi(fn);
         QByteArray extension = fi.suffix().toLatin1();

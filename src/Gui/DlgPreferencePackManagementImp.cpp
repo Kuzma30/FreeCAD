@@ -102,8 +102,8 @@ void DlgPreferencePackManagementImp::showEvent(QShowEvent* event)
 
 void DlgPreferencePackManagementImp::addTreeNode(const std::string &name, const std::vector<std::string> &contents, TreeWidgetType twt)
 {
-    static const auto iconIsVisible = QIcon(QLatin1String(":/icons/dagViewVisible.svg"));
-    static const auto iconIsInvisible = QIcon(QLatin1String(":/icons/Invisible.svg"));
+    static const auto iconIsVisible = QIcon(u":/icons/dagViewVisible.svg"_qs);
+    static const auto iconIsInvisible = QIcon(u":/icons/Invisible.svg"_qs);
     auto packRoot = new QTreeWidgetItem();
     packRoot->setText(0, QString::fromStdString(name));
     std::vector<QTreeWidgetItem*> items;
@@ -130,7 +130,7 @@ void DlgPreferencePackManagementImp::addTreeNode(const std::string &name, const 
                 });
         break; case TreeWidgetType::USER:
             // The button is a "delete" button
-            button->setIcon(QIcon(QLatin1String(":/icons/delete.svg")));
+            button->setIcon(QIcon(u":/icons/delete.svg"_qs));
             button->setToolTip(tr("Delete user-saved preference pack '%1'").arg(item->text(0)));
             connect(button, &QPushButton::clicked, [this, item]() {
                 this->deleteUserPack(item->text(0).toStdString());

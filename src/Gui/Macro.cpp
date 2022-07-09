@@ -89,7 +89,7 @@ void MacroManager::open(MacroType eType, const char *sName)
     // Convert from Utf-8
     this->macroName = QString::fromUtf8(sName);
     if (!this->macroName.endsWith(QLatin1String(".FCMacro")))
-        this->macroName += QLatin1String(".FCMacro");
+        this->macroName += u".FCMacro"_qs;
 
     this->macroInProgress.clear();
     this->openMacro = true;
@@ -111,8 +111,8 @@ void MacroManager::commit(void)
         QStringList::Iterator it;
         for (it = this->macroInProgress.begin(); it != this->macroInProgress.end(); ++it )
         {
-            if ((*it).startsWith(QLatin1String("import ")) ||
-                (*it).startsWith(QLatin1String("#import ")))
+            if ((*it).startsWith(u"import "_qs) ||
+                (*it).startsWith(u"#import "_qs))
             {
                 if (import.indexOf(*it) == -1)
                     import.push_back(*it);
@@ -136,10 +136,13 @@ void MacroManager::commit(void)
         // write the data to the text file
         str << header;
         for (it = import.begin(); it != import.end(); ++it)
-            str << (*it) << QLatin1Char('\n');
-        str << QLatin1Char('\n');
+            str << (*it) << u'
+';
+        str << u'
+';
         for (it = body.begin(); it != body.end(); ++it)
-            str << (*it) << QLatin1Char('\n');
+            str << (*it) << u'
+';
         str << footer;
 
         Base::Console().Log("Commit macro: %s\n",(const char*)this->macroName.toUtf8());
@@ -200,11 +203,12 @@ void MacroManager::addLine(LineType Type, const char* sLine, bool pending)
             record = false;
     }
 
-    QStringList lines = QString::fromUtf8(sLine).split(QLatin1String("\n"));
+    QStringList lines = QString::fromUtf8(sLine).split(u"
+"_qs);
     if (comment) {
         for (auto &line : lines) {
-            if(!line.startsWith(QLatin1String("#")))
-                line.prepend(QLatin1String("# "));
+            if(!line.startsWith(u"#"_qs))
+                line.prepend(u"# "_qs);
         }
     }
 

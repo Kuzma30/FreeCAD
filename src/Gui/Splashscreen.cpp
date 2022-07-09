@@ -72,16 +72,16 @@ public:
         if (al != cfg.end()) {
             QString alt = QString::fromLatin1(al->second.c_str());
             int align=0;
-            if (alt.startsWith(QLatin1String("VCenter")))
+            if (alt.startsWith(u"VCenter"_qs))
                 align = Qt::AlignVCenter;
-            else if (alt.startsWith(QLatin1String("Top")))
+            else if (alt.startsWith(u"Top"_qs))
                 align = Qt::AlignTop;
             else
                 align = Qt::AlignBottom;
 
-            if (alt.endsWith(QLatin1String("HCenter")))
+            if (alt.endsWith(u"HCenter"_qs))
                 align += Qt::AlignHCenter;
-            else if (alt.endsWith(QLatin1String("Right")))
+            else if (alt.endsWith(u"Right"_qs))
                 align += Qt::AlignRight;
             else
                 align += Qt::AlignLeft;
@@ -121,20 +121,21 @@ public:
         QString msg(QString::fromUtf8(s));
         QRegExp rx;
         // ignore 'Init:' and 'Mod:' prefixes
-        rx.setPattern(QLatin1String("^\\s*(Init:|Mod:)\\s*"));
+        rx.setPattern(u"^\s*(Init:|Mod:)\s*"_qs);
         int pos = rx.indexIn(msg);
         if (pos != -1) {
             msg = msg.mid(rx.matchedLength());
         }
         else {
             // ignore activation of commands
-            rx.setPattern(QLatin1String("^\\s*(\\+App::|Create|CmdC:|CmdG:|Act:)\\s*"));
+            rx.setPattern(u"^\s*(\+App::|Create|CmdC:|CmdG:|Act:)\s*"_qs);
             pos = rx.indexIn(msg);
             if (pos == 0)
                 return;
         }
 
-        splash->showMessage(msg.replace(QLatin1String("\n"), QString()), alignment, textColor);
+        splash->showMessage(msg.replace(u"
+"_qs, QString()), alignment, textColor);
         QMutex mutex;
         QMutexLocker ml(&mutex);
         QWaitCondition().wait(&mutex, 50);
@@ -293,7 +294,8 @@ void AboutDialog::setupLabels()
     std::map<std::string, std::string>& config = App::Application::Config();
     std::map<std::string,std::string>::iterator it;
     QString banner  = QString::fromUtf8(config["CopyrightInfo"].c_str());
-    banner = banner.left( banner.indexOf(QLatin1Char('\n')) );
+    banner = banner.left( banner.indexOf(u'
+') );
     QString major  = QString::fromLatin1(config["BuildVersionMajor"].c_str());
     QString minor  = QString::fromLatin1(config["BuildVersionMinor"].c_str());
     QString build  = QString::fromLatin1(config["BuildRevision"].c_str());
@@ -454,7 +456,7 @@ void AboutDialog::showLicenseInformation()
         textField->setHtml(licenseHTML);
     }
     else {
-        QString info(QLatin1String("SUCH DAMAGES.<hr/>"));
+        QString info(u"SUCH DAMAGES.<hr/>"_qs);
         info += getAdditionalLicenseInformation();
         QString lictext = ui->textBrowserLicense->toHtml();
         lictext.replace(QString::fromLatin1("SUCH DAMAGES.<hr/>"), info);
@@ -496,130 +498,130 @@ void AboutDialog::showLibraryInformation()
             .arg(QString::fromUtf8(App::Application::getHelpDir().c_str()));
 
     // Boost
-    li.name = QLatin1String("Boost");
-    li.href = baseurl + QLatin1String("#_TocBoost");
-    li.url = QLatin1String("https://www.boost.org");
+    li.name = u"Boost"_qs;
+    li.href = baseurl + u"#_TocBoost"_qs;
+    li.url = u"https://www.boost.org"_qs;
     li.version = QLatin1String(BOOST_LIB_VERSION);
     libInfo << li;
 
     // Coin3D
-    li.name = QLatin1String("Coin3D");
-    li.href = baseurl + QLatin1String("#_TocCoin3D");
-    li.url = QLatin1String("https://coin3d.github.io");
+    li.name = u"Coin3D"_qs;
+    li.href = baseurl + u"#_TocCoin3D"_qs;
+    li.url = u"https://coin3d.github.io"_qs;
     li.version = QLatin1String(COIN_VERSION);
     libInfo << li;
 
     // Eigen3
-    li.name = QLatin1String("Eigen");
-    li.href = baseurl + QLatin1String("#_TocEigen");
-    li.url = QLatin1String("https://eigen.tuxfamily.org");
+    li.name = u"Eigen"_qs;
+    li.href = baseurl + u"#_TocEigen"_qs;
+    li.url = u"https://eigen.tuxfamily.org"_qs;
     li.version = QString::fromLatin1(FC_EIGEN3_VERSION);
     libInfo << li;
 
     // FreeType
-    li.name = QLatin1String("FreeType");
-    li.href = baseurl + QLatin1String("#_TocFreeType");
-    li.url = QLatin1String("https://freetype.org");
+    li.name = u"FreeType"_qs;
+    li.href = baseurl + u"#_TocFreeType"_qs;
+    li.url = u"https://freetype.org"_qs;
     li.version = QString::fromLatin1(FC_FREETYPE_VERSION);
     libInfo << li;
 
     // KDL
-    li.name = QLatin1String("KDL");
-    li.href = baseurl + QLatin1String("#_TocKDL");
-    li.url = QLatin1String("https://www.orocos.org/kdl");
+    li.name = u"KDL"_qs;
+    li.href = baseurl + u"#_TocKDL"_qs;
+    li.url = u"https://www.orocos.org/kdl"_qs;
     li.version.clear();
     libInfo << li;
 
     // libarea
-    li.name = QLatin1String("libarea");
-    li.href = baseurl + QLatin1String("#_TocLibArea");
-    li.url = QLatin1String("https://github.com/danielfalck/libarea");
+    li.name = u"libarea"_qs;
+    li.href = baseurl + u"#_TocLibArea"_qs;
+    li.url = u"https://github.com/danielfalck/libarea"_qs;
     li.version.clear();
     libInfo << li;
 
     // OCCT
 #if defined(HAVE_OCC_VERSION)
-    li.name = QLatin1String("Open CASCADE Technology");
-    li.href = baseurl + QLatin1String("#_TocOCCT");
-    li.url = QLatin1String("https://www.opencascade.com/open-cascade-technology/");
+    li.name = u"Open CASCADE Technology"_qs;
+    li.href = baseurl + u"#_TocOCCT"_qs;
+    li.url = u"https://www.opencascade.com/open-cascade-technology/"_qs;
     li.version = QLatin1String(OCC_VERSION_STRING_EXT);
     libInfo << li;
 #endif
 
     // pcl
-    li.name = QLatin1String("Point Cloud Library");
-    li.href = baseurl + QLatin1String("#_TocPcl");
-    li.url = QLatin1String("https://www.pointclouds.org");
+    li.name = u"Point Cloud Library"_qs;
+    li.href = baseurl + u"#_TocPcl"_qs;
+    li.url = u"https://www.pointclouds.org"_qs;
     li.version = QString::fromLatin1(FC_PCL_VERSION);
     libInfo << li;
 
     // PyCXX
-    li.name = QLatin1String("PyCXX");
-    li.href = baseurl + QLatin1String("#_TocPyCXX");
-    li.url = QLatin1String("http://cxx.sourceforge.net");
+    li.name = u"PyCXX"_qs;
+    li.href = baseurl + u"#_TocPyCXX"_qs;
+    li.url = u"http://cxx.sourceforge.net"_qs;
     li.version = QString::fromLatin1(FC_PYCXX_VERSION);
     libInfo << li;
 
     // Python
-    li.name = QLatin1String("Python");
-    li.href = baseurl + QLatin1String("#_TocPython");
-    li.url = QLatin1String("https://www.python.org");
+    li.name = u"Python"_qs;
+    li.href = baseurl + u"#_TocPython"_qs;
+    li.url = u"https://www.python.org"_qs;
     li.version = QLatin1String(PY_VERSION);
     libInfo << li;
 
     // PySide
-    li.name = QLatin1String("Qt for Python (PySide)");
-    li.href = baseurl + QLatin1String("#_TocPySide");
-    li.url = QLatin1String("https://wiki.qt.io/Qt_for_Python");
+    li.name = u"Qt for Python (PySide)"_qs;
+    li.href = baseurl + u"#_TocPySide"_qs;
+    li.url = u"https://wiki.qt.io/Qt_for_Python"_qs;
     li.version = QString::fromLatin1(FC_PYSIDE_VERSION);
     libInfo << li;
 
     // Qt
-    li.name = QLatin1String("Qt");
-    li.href = baseurl + QLatin1String("#_TocQt");
-    li.url = QLatin1String("https://www.qt.io");
+    li.name = u"Qt"_qs;
+    li.href = baseurl + u"#_TocQt"_qs;
+    li.url = u"https://www.qt.io"_qs;
     li.version = QLatin1String(QT_VERSION_STR);
     libInfo << li;
 
     // Salome SMESH
-    li.name = QLatin1String("Salome SMESH");
-    li.href = baseurl + QLatin1String("#_TocSalomeSMESH");
-    li.url = QLatin1String("https://salome-platform.org");
+    li.name = u"Salome SMESH"_qs;
+    li.href = baseurl + u"#_TocSalomeSMESH"_qs;
+    li.url = u"https://salome-platform.org"_qs;
     li.version.clear();
     libInfo << li;
 
     // Shiboken
-    li.name = QLatin1String("Qt for Python (Shiboken)");
-    li.href = baseurl + QLatin1String("#_TocPySide");
-    li.url = QLatin1String("https://wiki.qt.io/Qt_for_Python");
+    li.name = u"Qt for Python (Shiboken)"_qs;
+    li.href = baseurl + u"#_TocPySide"_qs;
+    li.url = u"https://wiki.qt.io/Qt_for_Python"_qs;
     li.version = QString::fromLatin1(FC_SHIBOKEN_VERSION);
     libInfo << li;
 
     // vtk
-    li.name = QLatin1String("vtk");
-    li.href = baseurl + QLatin1String("#_TocVtk");
-    li.url = QLatin1String("https://www.vtk.org");
+    li.name = u"vtk"_qs;
+    li.href = baseurl + u"#_TocVtk"_qs;
+    li.url = u"https://www.vtk.org"_qs;
     li.version = QString::fromLatin1(FC_VTK_VERSION);
     libInfo << li;
 
     // Xerces-C
-    li.name = QLatin1String("Xerces-C");
-    li.href = baseurl + QLatin1String("#_TocXercesC");
-    li.url = QLatin1String("https://xerces.apache.org/xerces-c");
+    li.name = u"Xerces-C"_qs;
+    li.href = baseurl + u"#_TocXercesC"_qs;
+    li.url = u"https://xerces.apache.org/xerces-c"_qs;
     li.version = QString::fromLatin1(FC_XERCESC_VERSION);
     libInfo << li;
 
     // Zipios++
-    li.name = QLatin1String("Zipios++");
-    li.href = baseurl + QLatin1String("#_TocZipios");
-    li.url = QLatin1String("http://zipios.sourceforge.net");
+    li.name = u"Zipios++"_qs;
+    li.href = baseurl + u"#_TocZipios"_qs;
+    li.url = u"http://zipios.sourceforge.net"_qs;
     li.version.clear();
     libInfo << li;
 
     // zlib
-    li.name = QLatin1String("zlib");
-    li.href = baseurl + QLatin1String("#_TocZlib");
-    li.url = QLatin1String("https://zlib.net");
+    li.name = u"zlib"_qs;
+    li.href = baseurl + u"#_TocZlib"_qs;
+    li.url = u"https://zlib.net"_qs;
     li.version = QLatin1String(ZLIB_VERSION);
     libInfo << li;
 
@@ -644,7 +646,7 @@ void AboutDialog::showLibraryInformation()
 void AboutDialog::showCollectionInformation()
 {
     QString doc = QString::fromUtf8(App::Application::getHelpDir().c_str());
-    QString path = doc + QLatin1String("Collection.html");
+    QString path = doc + u"Collection.html"_qs;
     if (!QFile::exists(path))
         return;
 
@@ -665,7 +667,7 @@ void AboutDialog::linkActivated(const QUrl& link)
     licenseView->show();
     QString title = tr("License");
     QString fragment = link.fragment();
-    if (fragment.startsWith(QLatin1String("_Toc"))) {
+    if (fragment.startsWith(u"_Toc"_qs)) {
         QString prefix = fragment.mid(4);
         title = QString::fromLatin1("%1 %2").arg(prefix, title);
     }
@@ -692,9 +694,9 @@ void AboutDialog::on_copyButton_clicked()
 
     if ( !(deskEnv.isEmpty() && deskSess.isEmpty()) ) {
         if ( deskEnv.isEmpty() || deskSess.isEmpty() )
-            deskInfo = QLatin1String(" (") + deskEnv + deskSess + QLatin1String(")");
+            deskInfo = u" ("_qs + deskEnv + deskSess + u")"_qs;
         else
-            deskInfo = QLatin1String(" (") + deskEnv + QLatin1String("/") + deskSess + QLatin1String(")");
+            deskInfo = u" ("_qs + deskEnv + u"/"_qs + deskSess + u")"_qs;
     }
 
     str << "[code]\n";
@@ -768,7 +770,7 @@ void AboutDialog::on_copyButton_clicked()
             if (fs::exists(metadataFile)) {
                 App::Metadata metadata(metadataFile);
                 if (metadata.version() != App::Meta::Version())
-                    str << QLatin1String(" ") + QString::fromStdString(metadata.version().str());
+                    str << u" "_qs + QString::fromStdString(metadata.version().str());
             }
             auto disablingFile = mod.path() / "ADDON_DISABLED";
             if (fs::exists(disablingFile))

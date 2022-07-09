@@ -219,7 +219,7 @@ static void setPropertyItemName(PropertyItem *item, const char *propName, QStrin
     QString name = QString::fromLatin1(propName);
     QString realName = name;
     if(name.size()>groupName.size()+1 
-            && name.startsWith(groupName + QLatin1Char('_')))
+            && name.startsWith(groupName + u'_'))
         name = name.right(name.size()-groupName.size()-1);
 
     item->setPropertyName(name, realName);

@@ -85,12 +85,12 @@ bool Assistant::startAssistant()
 #else
         QString app = QLibraryInfo::location(QLibraryInfo::BinariesPath) + QDir::separator();
 #endif
-        app += QLatin1String("assistant");
+        app += u"assistant"_qs;
 
         // get the name of the executable and the doc path
         QString exe = QString::fromStdString(App::Application::getExecutableName());
         QString doc = QString::fromStdString(App::Application::getHelpDir());
-        QString qhc = doc + exe.toLower() + QLatin1String(".qhc");
+        QString qhc = doc + exe.toLower() + u".qhc"_qs;
 
 
         QFileInfo fi(qhc);
@@ -114,15 +114,15 @@ bool Assistant::startAssistant()
         if (start) {
             char* appimage = getenv("APPIMAGE");
             if (appimage) {
-                QString qch = doc + exe.toLower() + QLatin1String(".qch");
+                QString qch = doc + exe.toLower() + u".qch"_qs;
                 QFileInfo fi(qch);
                 if (fi.isReadable()) {
                     // Assume documentation is embedded
                     // Unregister qch file (path) from previous AppImage run
                     QStringList args;
 
-                    args << QLatin1String("-collectionFile") << qhc
-                         << QLatin1String("-unregister") << qch;
+                    args << u"-collectionFile"_qs << qhc
+                         << u"-unregister"_qs << qch;
 
                     proc->start(app, args);
 
@@ -135,8 +135,8 @@ bool Assistant::startAssistant()
                     // Register qch file (path) for current AppImage run
                     args.clear();
 
-                    args << QLatin1String("-collectionFile") << qhc
-                         << QLatin1String("-register") << qch;
+                    args << u"-collectionFile"_qs << qhc
+                         << u"-register"_qs << qch;
 
                     proc->start(app, args);
 
@@ -153,8 +153,8 @@ bool Assistant::startAssistant()
 
         QStringList args;
 
-        args << QLatin1String("-collectionFile") << qhc
-             << QLatin1String("-enableRemoteControl");
+        args << u"-collectionFile"_qs << qhc
+             << u"-enableRemoteControl"_qs;
 
         proc->start(app, args);
 

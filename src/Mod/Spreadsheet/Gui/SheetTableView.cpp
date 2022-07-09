@@ -697,8 +697,9 @@ void SheetTableView::pasteClipboard()
             QStringList cells;
             QString text = mimeData->text();
             int i=0;
-            for (auto it : text.split(QLatin1Char('\n'))) {
-                QStringList cols = it.split(QLatin1Char('\t'));
+            for (auto it : text.split(u'
+')) {
+                QStringList cols = it.split(u'	');
                 int j=0;
                 for (auto jt : cols) {
                     QModelIndex index = model()->index(current.row()+i, current.col()+j);

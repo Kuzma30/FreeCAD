@@ -92,11 +92,12 @@ DlgProjectInformationImp::DlgProjectInformationImp(App::Document* doc, QWidget* 
     // See also accept().
     QString comment = QString::fromUtf8(doc->Comment.getValue());
 #if QT_VERSION >= QT_VERSION_CHECK(5,15,0)
-    QStringList lines = comment.split(QLatin1String("\\n"), Qt::KeepEmptyParts);
+    QStringList lines = comment.split(u"\n"_qs, Qt::KeepEmptyParts);
 #else
     QStringList lines = comment.split(QLatin1String("\\n"), QString::KeepEmptyParts);
 #endif
-    QString text = lines.join(QLatin1String("\n"));
+    QString text = lines.join(u"
+"_qs);
     ui->textEditComment->setPlainText( text );
     connect(ui->pushButtonOpenURL, SIGNAL(clicked()),this, SLOT(open_url()));
     connect(ui->comboLicense, SIGNAL(currentIndexChanged(int)), this, SLOT(onLicenseTypeChanged(int)));
@@ -128,11 +129,12 @@ void DlgProjectInformationImp::accept()
     // Replace newline escape sequence through '\\n' string
     QStringList lines = ui->textEditComment->toPlainText().split
 #if QT_VERSION >= QT_VERSION_CHECK(5,15,0)
-        (QLatin1String("\n"), Qt::KeepEmptyParts);
+        (u"
+"_qs, Qt::KeepEmptyParts);
 #else
         (QLatin1String("\n"), QString::KeepEmptyParts);
 #endif
-    QString text = lines.join(QLatin1String("\\n"));
+    QString text = lines.join(u"\n"_qs);
     _doc->Comment.setValue(text.isEmpty() ? "" : text.toUtf8());
 
     QDialog::accept();

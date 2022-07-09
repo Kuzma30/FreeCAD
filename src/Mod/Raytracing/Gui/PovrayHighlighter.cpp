@@ -36,18 +36,18 @@ class PovrayHighlighterP
 public:
     PovrayHighlighterP()
     {
-        keywords << QLatin1String("include") << QLatin1String("if")
-                 << QLatin1String("ifdef") << QLatin1String("ifndef")
-                 << QLatin1String("switch") << QLatin1String("while")
-                 << QLatin1String("macro") << QLatin1String("else")
-                 << QLatin1String("end") << QLatin1String("declare")
-                 << QLatin1String("local") << QLatin1String("undef")
-                 << QLatin1String("fopen") << QLatin1String("fclose")
-                 << QLatin1String("read") << QLatin1String("write")
-                 << QLatin1String("default") << QLatin1String("version")
-                 << QLatin1String("debug") << QLatin1String("case")
-                 << QLatin1String("range") << QLatin1String("break")
-                 << QLatin1String("error") << QLatin1String("warning");
+        keywords << u"include"_qs << u"if"_qs
+                 << u"ifdef"_qs << u"ifndef"_qs
+                 << u"switch"_qs << u"while"_qs
+                 << u"macro"_qs << u"else"_qs
+                 << u"end"_qs << u"declare"_qs
+                 << u"local"_qs << u"undef"_qs
+                 << u"fopen"_qs << u"fclose"_qs
+                 << u"read"_qs << u"write"_qs
+                 << u"default"_qs << u"version"_qs
+                 << u"debug"_qs << u"case"_qs
+                 << u"range"_qs << u"break"_qs
+                 << u"error"_qs << u"warning"_qs;
 ;
     }
 
@@ -95,7 +95,7 @@ void PovrayHighlighter::highlightBlock(const QString &text)
                 state = InsideCStyleComment;
             }
             else if (text.mid(i,1) == QLatin1String("#")) {
-                QRegExp rx(QLatin1String("#\\s*(\\w*)"));
+                QRegExp rx(u"#\s*(\w*)"_qs);
                 int pos = text.indexOf(rx, i);
                 if (pos != -1) {
                     if (d->keywords.contains(rx.cap(1)) != 0)
@@ -103,10 +103,10 @@ void PovrayHighlighter::highlightBlock(const QString &text)
                     i += rx.matchedLength();
                 }
             }
-            else if (text[i] == QLatin1Char('"')) {
+            else if (text[i] == u'"') {
                 int j=i;
                 for (;j<text.length();j++) {
-                    if (j > i && text[j] == QLatin1Char('"'))
+                    if (j > i && text[j] == u'"')
                         break;
                 }
 

@@ -2590,7 +2590,7 @@ public:
         // The path could be an URI, in that case
         // TODO: build a far much more resilient approach to test for an URI
         QString path = QString::fromUtf8(filename);
-        if (path.startsWith(QLatin1String("https://"))) {
+        if (path.startsWith(u"https://"_qs)) {
             // We do have an URI
             if (fullPath)
                 *fullPath = path;
@@ -2672,7 +2672,7 @@ public:
         if (path.isEmpty())
             return path;
 
-        if (path.startsWith(QLatin1String("https://")))
+        if (path.startsWith(u"https://"_qs))
             return path;
         else {
             // return QFileInfo(path).canonicalFilePath();
@@ -2682,7 +2682,7 @@ public:
 
     QString getFullPath() const {
         QString path = myPos->first;
-        if (path.startsWith(QLatin1String("https://")))
+        if (path.startsWith(u"https://"_qs))
             return path;
         else {
             // return QFileInfo(myPos->first).canonicalFilePath();

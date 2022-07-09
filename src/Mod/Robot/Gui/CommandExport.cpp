@@ -87,7 +87,7 @@ void CmdRobotExportKukaCompact::activated(int)
     QStringList filter;
     filter << QString::fromLatin1("%1 (*.src)").arg(QObject::tr("KRL file"));
     filter << QString::fromLatin1("%1 (*.*)").arg(QObject::tr("All Files"));
-    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export program"), QString(), filter.join(QLatin1String(";;")));
+    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export program"), QString(), filter.join(u";;"_qs));
     if (fn.isEmpty())
         return;
 
@@ -149,7 +149,7 @@ void CmdRobotExportKukaFull::activated(int)
     QStringList filter;
     filter << QString::fromLatin1("%1 (*.src)").arg(QObject::tr("KRL file"));
     filter << QString::fromLatin1("%1 (*.*)").arg(QObject::tr("All Files"));
-    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export program"), QString(), filter.join(QLatin1String(";;")));
+    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export program"), QString(), filter.join(u";;"_qs));
     if (fn.isEmpty())
         return;
 

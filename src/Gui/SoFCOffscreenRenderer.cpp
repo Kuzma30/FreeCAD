@@ -153,16 +153,16 @@ void SoFCOffscreenRenderer::writeToImageFile(const char* filename, const char* c
             QImage img = image;
             // set keywords for PNG format
             if (file.hasExtension("PNG")) {
-                img.setText(QLatin1String("Title"), QString::fromUtf8(filename));
-                img.setText(QLatin1String("Author"), QLatin1String("FreeCAD (http://www.freecadweb.org)"));
+                img.setText(u"Title"_qs, QString::fromUtf8(filename));
+                img.setText(u"Author"_qs, u"FreeCAD (http://www.freecadweb.org)"_qs);
                 if (strcmp(comment,"")==0)
-                    img.setText(QLatin1String("Description"), QLatin1String("Screenshot created by FreeCAD"));
+                    img.setText(u"Description"_qs, u"Screenshot created by FreeCAD"_qs);
                 else if (strcmp(comment,"$MIBA")==0)
-                    img.setText(QLatin1String("Description"), QLatin1String(createMIBA(mat).c_str()));
+                    img.setText(u"Description"_qs, QLatin1String(createMIBA(mat).c_str()));
                 else
-                    img.setText(QLatin1String("Description"), QString::fromUtf8(comment));
-                img.setText(QLatin1String("Creation Time"), QDateTime::currentDateTime().toString());
-                img.setText(QLatin1String("Software"),
+                    img.setText(u"Description"_qs, QString::fromUtf8(comment));
+                img.setText(u"Creation Time"_qs, QDateTime::currentDateTime().toString());
+                img.setText(u"Software"_qs,
                     QString::fromStdString(App::Application::getExecutableName()));
             }
 
@@ -259,10 +259,10 @@ QStringList SoFCOffscreenRenderer::getWriteImageFiletypeInfo()
     }
 
     // now add PostScript and SGI RGB
-    if (formats.indexOf(QLatin1String("EPS")) == -1)
-        formats << QLatin1String("EPS");
-    else if (formats.indexOf(QLatin1String("SGI")) == -1)
-        formats << QLatin1String("SGI");
+    if (formats.indexOf(u"EPS"_qs) == -1)
+        formats << u"EPS"_qs;
+    else if (formats.indexOf(u"SGI"_qs) == -1)
+        formats << u"SGI"_qs;
 
     formats.sort();
 

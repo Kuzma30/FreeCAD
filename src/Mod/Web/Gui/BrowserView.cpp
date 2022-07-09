@@ -117,7 +117,7 @@ private:
 UrlWidget::UrlWidget(BrowserView *view) :
     QLineEdit(view), m_view(view)
 {
-    setText(QLatin1String("https://"));
+    setText(u"https://"_qs);
     hide();
 }
 UrlWidget::~UrlWidget()

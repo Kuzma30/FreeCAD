@@ -103,8 +103,8 @@ bool Branding::evaluateXML(QIODevice *device, QDomDocument& xmlDocument)
     if (root.tagName() != QLatin1String("Branding")) {
         return false;
     }
-    else if (root.hasAttribute(QLatin1String("version"))) {
-        QString attr = root.attribute(QLatin1String("version"));
+    else if (root.hasAttribute(u"version"_qs)) {
+        QString attr = root.attribute(u"version"_qs);
         if (attr != QLatin1String("1.0"))
             return false;
     }

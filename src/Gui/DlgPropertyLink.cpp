@@ -135,7 +135,7 @@ QList<App::SubObjectT> DlgPropertyLink::getLinksFromProperty(const App::Property
 QString DlgPropertyLink::formatObject(App::Document *ownerDoc, App::DocumentObject *obj, const char *sub)
 {
     if(!obj || !obj->getNameInDocument())
-        return QLatin1String("?");
+        return u"?"_qs;
 
     const char *objName = obj->getNameInDocument();
     std::string _objName;
@@ -182,7 +182,7 @@ QString DlgPropertyLink::formatLinks(App::Document *ownerDoc, QList<App::SubObje
 
     auto obj = links.front().getObject();
     if(!obj)
-        return QLatin1String("?");
+        return u"?"_qs;
 
     if(links.size() == 1 && links.front().getSubName().empty())
         return formatObject(ownerDoc, links.front());
@@ -196,7 +196,7 @@ QString DlgPropertyLink::formatLinks(App::Document *ownerDoc, QList<App::SubObje
                 break;
         }
         return QString::fromLatin1("%1 [%2%3]").arg(formatObject(ownerDoc,obj,nullptr),
-                                                    list.join(QLatin1String(", ")),
+                                                    list.join(u", "_qs),
                                                     QLatin1String(links.size()>3?" ...":""));
     }
 
@@ -206,7 +206,7 @@ QString DlgPropertyLink::formatLinks(App::Document *ownerDoc, QList<App::SubObje
         if( ++i >= 3)
             break;
     }
-    return QString::fromLatin1("[%1%2]").arg(list.join(QLatin1String(", ")),
+    return QString::fromLatin1("[%1%2]").arg(list.join(u", "_qs),
                                              QLatin1String(links.size()>3?" ...":""));
 }
 
@@ -652,10 +652,10 @@ void DlgPropertyLink::onSelectionChanged(const Gui::SelectionChanges& msg)
             QStringList list;
             QString text = item->text(1);
             if(text.size())
-                list = text.split(QLatin1Char(','));
+                list = text.split(u',');
             if(list.indexOf(element)<0) {
                 list << element;
-                item->setText(1, list.join(QLatin1String(",")));
+                item->setText(1, list.join(u","_qs));
                 subSelections.insert(item);
             }
         } else if (subSelections.erase(item))
@@ -707,7 +707,7 @@ DlgPropertyLink::getLinkFromItem(QTreeWidgetItem *item, bool needSubName) const
         return res;
     }
 
-    for(const QString &element : elements.split(QLatin1Char(','))) {
+    for(const QString &element : elements.split(u',')) {
         res.append(App::SubObjectT());
         res.last() = App::SubObjectT(sobj.getDocumentName().c_str(),
                                      sobj.getObjectName().c_str(),
@@ -747,7 +747,7 @@ QList<App::SubObjectT> DlgPropertyLink::originalLinks() const
 
 QString DlgPropertyLink::linksToPython(QList<App::SubObjectT> links) {
     if(links.isEmpty())
-        return QLatin1String("None");
+        return u"None"_qs;
 
     if(links.size() == 1)
         return QString::fromLatin1(links.front().getSubObjectPython(false).c_str());

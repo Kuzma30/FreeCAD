@@ -106,8 +106,8 @@ BitmapFactoryInst& BitmapFactoryInst::instance(void)
         }
         _pcSingleton->addPath(QString::fromLatin1("%1/icons").arg(QString::fromStdString(App::Application::getHomePath())));
         _pcSingleton->addPath(QString::fromLatin1("%1/icons").arg(QString::fromStdString(App::Application::getUserAppDataDir())));
-        _pcSingleton->addPath(QLatin1String(":/icons/"));
-        _pcSingleton->addPath(QLatin1String(":/Icons/"));
+        _pcSingleton->addPath(u":/icons/"_qs);
+        _pcSingleton->addPath(u":/Icons/"_qs);
     }
 
     return *_pcSingleton;
@@ -302,7 +302,7 @@ QPixmap BitmapFactoryInst::pixmapFromSvg(const char* name, const QSizeF& size,
             iconPath = fi.filePath();
         }
         else {
-            fileName += QLatin1String(".svg");
+            fileName += u".svg"_qs;
             fi.setFile(fileName);
             if (fi.exists()) {
                 iconPath = fi.filePath();

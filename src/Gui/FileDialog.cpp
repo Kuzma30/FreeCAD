@@ -85,7 +85,7 @@ FileDialog::~FileDialog()
 
 void FileDialog::onSelectedFilter(const QString& /*filter*/)
 {
-    QRegExp rx(QLatin1String("\\(\\*.(\\w+)"));
+    QRegExp rx(u"\(\*.(\w+)"_qs);
     QString suf = selectedNameFilter();
     if (rx.indexIn(suf) >= 0) {
         suf = rx.cap(1);
@@ -146,7 +146,7 @@ QString FileDialog::getSaveFileName (QWidget * parent, const QString & caption, 
         QFileInfo fi(dir);
         if (fi.isRelative()) {
             dirName = getWorkingDirectory();
-            dirName += QLatin1String("/");
+            dirName += u"/"_qs;
             dirName += fi.fileName();
         }
         if (!fi.fileName().isEmpty()) {
@@ -163,7 +163,7 @@ QString FileDialog::getSaveFileName (QWidget * parent, const QString & caption, 
             filterToSearch = &filter;
         }
         QRegExp rx;
-        rx.setPattern(QLatin1String("\\s(\\(\\*\\.\\w{1,})\\W"));
+        rx.setPattern(u"\s(\(\*\.\w{1,})\W"_qs);
         int index = rx.indexIn(*filterToSearch);
         if (index != -1) {
             // get the suffix with the leading dot
@@ -206,7 +206,7 @@ QString FileDialog::getSaveFileName (QWidget * parent, const QString & caption, 
         dlg.setDirectory(dirName);
         if (hasFilename)
             dlg.selectFile(dirName);
-        dlg.setNameFilters(filter.split(QLatin1String(";;")));
+        dlg.setNameFilters(filter.split(u";;"_qs));
         if (selectedFilter && !selectedFilter->isEmpty())
             dlg.selectNameFilter(*selectedFilter);
         dlg.onSelectedFilter(dlg.selectedNameFilter());
@@ -286,7 +286,7 @@ QString FileDialog::getOpenFileName(QWidget * parent, const QString & caption, c
         dlg.setFileMode(QFileDialog::ExistingFile);
         dlg.setAcceptMode(QFileDialog::AcceptOpen);
         dlg.setDirectory(dirName);
-        dlg.setNameFilters(filter.split(QLatin1String(";;")));
+        dlg.setNameFilters(filter.split(u";;"_qs));
         dlg.setOption(QFileDialog::HideNameFilterDetails, false);
         if (selectedFilter && !selectedFilter->isEmpty())
             dlg.selectNameFilter(*selectedFilter);
@@ -348,7 +348,7 @@ QStringList FileDialog::getOpenFileNames (QWidget * parent, const QString & capt
         dlg.setFileMode(QFileDialog::ExistingFiles);
         dlg.setAcceptMode(QFileDialog::AcceptOpen);
         dlg.setDirectory(dirName);
-        dlg.setNameFilters(filter.split(QLatin1String(";;")));
+        dlg.setNameFilters(filter.split(u";;"_qs));
         dlg.setOption(QFileDialog::HideNameFilterDetails, false);
         if (selectedFilter && !selectedFilter->isEmpty())
             dlg.selectNameFilter(*selectedFilter);
@@ -464,10 +464,10 @@ void FileOptionsDialog::accept()
     // Fixes a bug of the default implementation when entering an asterisk
     QLineEdit* filename = this->findChild<QLineEdit*>();
     QString fn = filename->text();
-    if (fn.startsWith(QLatin1String("*"))) {
+    if (fn.startsWith(u"*"_qs)) {
         QFileInfo fi(fn);
         QString ext = fi.suffix();
-        ext.prepend(QLatin1String("*."));
+        ext.prepend(u"*."_qs);
         QStringList filters = this->nameFilters();
         bool ok=false;
         // Compare the given suffix with the suffixes of all filters
@@ -498,7 +498,7 @@ void FileOptionsDialog::accept()
     else if (!fn.isEmpty()) {
         QFileInfo fi(fn);
         QString ext = fi.completeSuffix();
-        QRegExp rx(QLatin1String("\\(\\*.(\\w+)"));
+        QRegExp rx(u"\(\*.(\w+)"_qs);
         QString suf = selectedNameFilter();
         if (rx.indexIn(suf) >= 0)
             suf = rx.cap(1);
@@ -679,7 +679,7 @@ FileChooser::FileChooser ( QWidget * parent )
 
     connect(lineEdit, SIGNAL(editingFinished()), this, SLOT(editingFinished()));
 
-    button = new QPushButton(QLatin1String("..."), this);
+    button = new QPushButton(u"..."_qs, this);
 
 #if defined (Q_OS_MAC)
     button->setAttribute(Qt::WA_LayoutUsesWidgetRect); // layout size from QMacStyle was not correct
@@ -816,7 +816,7 @@ void FileChooser::setButtonText( const QString& txt )
 {
     button->setText( txt );
     int w1 = 2 * QtTools::horizontalAdvance(button->fontMetrics(), txt);
-    int w2 = 2 * QtTools::horizontalAdvance(button->fontMetrics(), QLatin1String(" ... "));
+    int w2 = 2 * QtTools::horizontalAdvance(button->fontMetrics(), u" ... "_qs);
     button->setFixedWidth( (w1 > w2 ? w1 : w2) );
 }
 
@@ -858,14 +858,14 @@ SelectModule::SelectModule (const QString& type, const SelectModule::Dict& types
         QString module = it.value();
 
         // ignore file types in (...)
-        rx.setPattern(QLatin1String("\\s+\\([\\w\\*\\s\\.]+\\)$"));
+        rx.setPattern(u"\s+\([\w\*\s\.]+\)$"_qs);
         int pos = rx.indexIn(filter);
         if (pos != -1) {
             filter = filter.left(pos);
         }
 
         // ignore Gui suffix in module name
-        rx.setPattern(QLatin1String("Gui$"));
+        rx.setPattern(u"Gui$"_qs);
         pos = rx.indexIn(module);
         if (pos != -1) {
             module = module.left(pos);

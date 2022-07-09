@@ -138,11 +138,11 @@ bool Sheet::getCharsFromPrefs(char &delim, char &quote, char &escape, std::strin
     QString escapeChar = QString::fromStdString(group->GetASCII("ImportExportEscapeCharacter","\\"));
 
     delim = delimiter.size() == 1 ? delimiter[0].toLatin1() : '\0';
-    if (delimiter.compare(QLatin1String("tab"), Qt::CaseInsensitive) == 0 || delimiter.compare(QLatin1String("\\t"),Qt::CaseInsensitive) == 0){
+    if (delimiter.compare(u"tab"_qs, Qt::CaseInsensitive) == 0 || delimiter.compare(u"\t"_qs,Qt::CaseInsensitive) == 0){
         delim = '\t';
-    } else if (delimiter.compare(QLatin1String("comma"), Qt::CaseInsensitive) == 0){
+    } else if (delimiter.compare(u"comma"_qs, Qt::CaseInsensitive) == 0){
         delim = ',';
-    } else if (delimiter.compare(QLatin1String("semicolon"), Qt::CaseInsensitive) == 0){
+    } else if (delimiter.compare(u"semicolon"_qs, Qt::CaseInsensitive) == 0){
         delim = ';';
     }
     if(delim != '\0' && quoteChar.size() == 1 && escapeChar.size() == 1){

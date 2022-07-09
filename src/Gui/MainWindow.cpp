@@ -571,14 +571,14 @@ int MainWindow::confirmSave(const char *docName, QWidget *parent, bool addCheckb
     QAbstractButton* saveBtn = box.button(QMessageBox::Save);
     if (saveBtn->shortcut().isEmpty()) {
         QString text = saveBtn->text();
-        text.prepend(QLatin1Char('&'));
+        text.prepend(u'&');
         saveBtn->setShortcut(QKeySequence::mnemonic(text));
     }
 
     QAbstractButton* discardBtn = box.button(QMessageBox::Discard);
     if (discardBtn->shortcut().isEmpty()) {
         QString text = discardBtn->text();
-        text.prepend(QLatin1Char('&'));
+        text.prepend(u'&');
         discardBtn->setShortcut(QKeySequence::mnemonic(text));
     }
 
@@ -1579,7 +1579,7 @@ QPixmap MainWindow::splashImage() const
         int v = QtTools::horizontalAdvance(metricVer, version);
 
         int x = -1, y = -1;
-        QRegExp rx(QLatin1String("(\\d+).(\\d+)"));
+        QRegExp rx(u"(\d+).(\d+)"_qs);
         if (rx.indexIn(position) != -1) {
             x = rx.cap(1).toInt();
             y = rx.cap(2).toInt();
@@ -1854,10 +1854,10 @@ void MainWindow::loadUrls(App::Document* doc, const QList<QUrl>& urls)
         else if (it->scheme().toLower() == QLatin1String("https")) {
             QUrl url = *it;
             QUrlQuery urlq(url);
-            if (urlq.hasQueryItem(QLatin1String("sid"))) {
-                urlq.removeAllQueryItems(QLatin1String("sid"));
+            if (urlq.hasQueryItem(u"sid"_qs)) {
+                urlq.removeAllQueryItems(u"sid"_qs);
                 url.setQuery(urlq);
-                url.setScheme(QLatin1String("http"));
+                url.setScheme(u"http"_qs);
             }
             Gui::Dialog::DownloadManager* dm = Gui::Dialog::DownloadManager::getInstance();
             dm->download(dm->redirectUrl(url));
@@ -1993,7 +1993,7 @@ void MainWindow::customEvent(QEvent* e)
         QString msg = ce->message();
         switch(ce->type()) {
         case MainWindow::Log: {
-            if (msg.startsWith(QLatin1String("#Inventor V2.1 ascii "))) {
+            if (msg.startsWith(u"#Inventor V2.1 ascii "_qs)) {
                 Gui::Document *d = Application::Instance->activeDocument();
                 if (d) {
                     ViewProviderExtern *view = new ViewProviderExtern();

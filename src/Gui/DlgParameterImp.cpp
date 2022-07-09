@@ -285,7 +285,7 @@ void DlgParameterImp::closeEvent(QCloseEvent* )
             parent = parent->parent();
         }
 
-        QString path = paths.join(QLatin1String("."));
+        QString path = paths.join(u"."_qs);
         hGrp->SetASCII("LastParameterGroup", (const char*)path.toUtf8());
         // save geometry of window
         const QRect& r = this->geometry();
@@ -381,7 +381,7 @@ void DlgParameterImp::onChangeParameterSet(int itemPos)
     hGrp = hGrp->GetGroup("ParameterEditor");
     QString path = QString::fromUtf8(hGrp->GetASCII("LastParameterGroup").c_str());
 #if QT_VERSION >= QT_VERSION_CHECK(5,15,0)
-    QStringList paths = path.split(QLatin1String("."), Qt::SkipEmptyParts);
+    QStringList paths = path.split(u"."_qs, Qt::SkipEmptyParts);
 #else
     QStringList paths = path.split(QLatin1String("."), QString::SkipEmptyParts);
 #endif

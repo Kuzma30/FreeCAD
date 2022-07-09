@@ -161,8 +161,8 @@ void CmdTechDrawPageDefault::activated(int iMsg)
         }
     } else {
         QMessageBox::critical(Gui::getMainWindow(),
-            QLatin1String("No template"),
-            QLatin1String("No default template found"));
+            u"No template"_qs,
+            u"No default template found"_qs);
     }
 }
 
@@ -241,8 +241,8 @@ void CmdTechDrawPageTemplate::activated(int iMsg)
     }
     else {
         QMessageBox::critical(Gui::getMainWindow(),
-            QLatin1String("No template"),
-            QLatin1String("Template file is invalid"));
+            u"No template"_qs,
+            u"Template file is invalid"_qs);
     }
 }
 

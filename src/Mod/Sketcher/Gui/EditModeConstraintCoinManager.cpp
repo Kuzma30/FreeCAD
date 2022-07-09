@@ -1692,13 +1692,13 @@ QString EditModeConstraintCoinManager::getPresentationString(const Constraint *c
             constraintParameters.sDimensionalStringFormat.contains(QLatin1String("%N")))
         {
             presentationStr = constraintParameters.sDimensionalStringFormat;
-            presentationStr.replace(QLatin1String("%N"), nameStr);
-            presentationStr.replace(QLatin1String("%V"), valueStr);
+            presentationStr.replace(u"%N"_qs, nameStr);
+            presentationStr.replace(u"%V"_qs, valueStr);
         }
         else
         {
             // user defined format string does not contain any valid parameter, using default format "%N = %V"
-            presentationStr = nameStr + QLatin1String(" = ") + valueStr;
+            presentationStr = nameStr + u" = "_qs + valueStr;
         }
 
         return presentationStr;

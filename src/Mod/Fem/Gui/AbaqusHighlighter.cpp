@@ -63,7 +63,7 @@ void AbaqusHighlighter::highlightBlock(const QString& text)
 
     for (int i = 0; i < text.length(); ++i) {
         // highlight the supported operators
-        if (text[i] == QLatin1Char(',') || text[i] == QLatin1Char('=')) {
+        if (text[i] == u',' || text[i] == u'=') {
             setFormat(i, 1, operateColor);
         }
 
@@ -112,7 +112,7 @@ void AbaqusHighlighter::highlightBlock(const QString& text)
         }
         // Number
         else if (state == Number) {
-            if (!text[i].isNumber() && text[i] != QLatin1Char('.')) {
+            if (!text[i].isNumber() && text[i] != u'.') {
                 QTextCharFormat numberFormat;
                 numberFormat.setForeground(numberColor);
                 setFormat(start, i - start, numberFormat);
@@ -121,7 +121,7 @@ void AbaqusHighlighter::highlightBlock(const QString& text)
                 state = NormalState;
             }
         }
-        else if (text[i].isNumber() || text[i] == QLatin1Char('-')) {
+        else if (text[i].isNumber() || text[i] == u'-') {
             if (state == NormalState) {
                 start = i;
                 state = Number;
@@ -136,7 +136,7 @@ void AbaqusHighlighter::highlightBlock(const QString& text)
             break;
         }
         // Definition
-        else if (text[i] == QLatin1Char('*')) {
+        else if (text[i] == u'*') {
             start = i;
             state = Definition;
         }

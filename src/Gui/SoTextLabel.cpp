@@ -372,7 +372,7 @@ void SoStringLabel::GLRender(SoGLRenderAction *action)
 
     QFont font;
     font.setStyleStrategy(QFont::NoAntialias);
-    font.setFamily(QLatin1String(this->name.getValue()));
+    font.setFamily();
     font.setPixelSize(this->size.getValue());
 
     glBlendFunc(GL_ONE,GL_SRC_ALPHA);
@@ -507,7 +507,8 @@ void SoFrameLabel::drawImage()
         align = Qt::AlignVCenter | Qt::AlignRight;
     else
         align = Qt::AlignVCenter | Qt::AlignHCenter;
-    QString text = lines.join(QLatin1String("\n"));
+    QString text = lines.join(u"
+"_qs);
     painter.setFont(font);
     painter.drawText(5,5,w,h,align,text);
     painter.end();

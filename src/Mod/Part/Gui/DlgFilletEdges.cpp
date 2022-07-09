@@ -316,10 +316,10 @@ void DlgFilletEdges::onSelectionChanged(const Gui::SelectionChanges& msg)
         std::string objname = d->object->getNameInDocument();
         if (docname==msg.pDocName && objname==msg.pObjectName) {
             QString subelement = QString::fromLatin1(msg.pSubName);
-            if (subelement.startsWith(QLatin1String("Edge"))) {
+            if (subelement.startsWith(u"Edge"_qs)) {
                 onSelectEdge(subelement, msg.Type);
             }
-            else if (subelement.startsWith(QLatin1String("Face"))) {
+            else if (subelement.startsWith(u"Face"_qs)) {
                 d->selection->selectEdges();
                 onSelectEdgesOfFace(subelement, msg.Type);
                 d->selection->selectFaces();

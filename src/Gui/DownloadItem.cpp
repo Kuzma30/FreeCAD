@@ -291,12 +291,12 @@ QString DownloadItem::getDownloadDirectory() const
 void DownloadItem::getFileName()
 {
     QSettings settings;
-    settings.beginGroup(QLatin1String("downloadmanager"));
+    settings.beginGroup(u"downloadmanager"_qs);
     //QString defaultLocation = QDesktopServices::storageLocation(QDesktopServices::DesktopLocation);
     QString defaultLocation = getDownloadDirectory();
-    QString downloadDirectory = settings.value(QLatin1String("downloadDirectory"), defaultLocation).toString();
+    QString downloadDirectory = settings.value(u"downloadDirectory"_qs, defaultLocation).toString();
     if (!downloadDirectory.isEmpty())
-        downloadDirectory += QLatin1Char('/');
+        downloadDirectory += u'/';
 
     QString defaultFileName = saveFileName(downloadDirectory);
     QString fileName = defaultFileName;
@@ -326,15 +326,15 @@ QString DownloadItem::saveFileName(const QString &directory) const
     QString endName = info.suffix();
 
     if (baseName.isEmpty()) {
-        baseName = QLatin1String("unnamed_download");
+        baseName = u"unnamed_download"_qs;
         qDebug() << "DownloadManager:: downloading unknown file:" << m_url;
     }
-    QString name = directory + baseName + QLatin1Char('.') + endName;
+    QString name = directory + baseName + u'.' + endName;
     if (QFile::exists(name)) {
         // already exists, don't overwrite
         int i = 1;
         do {
-            name = directory + baseName + QLatin1Char('-') + QString::number(i++) + QLatin1Char('.') + endName;
+            name = directory + baseName + u'-' + QString::number(i++) + u'.' + endName;
         } while (QFile::exists(name));
     }
     return name;
@@ -584,7 +584,7 @@ QString DownloadItem::dataString(int size) const
         size /= 1024*1024;
         unit = tr("MB");
     }
-    return QString(QLatin1String("%1 %2")).arg(size).arg(unit);
+    return QString(u"%1 %2"_qs).arg(size).arg(unit);
 }
 
 bool DownloadItem::downloading() const

@@ -1864,7 +1864,7 @@ void StdViewScreenShot::activated(int iMsg)
             QString fn = fd.selectedFiles().front();
             // We must convert '\' path separators to '/' before otherwise
             // Python would interpret them as escape sequences.
-            fn.replace(QLatin1Char('\\'), QLatin1Char('/'));
+            fn.replace(u'\\', u'/');
 
             Gui::WaitCursor wc;
 
@@ -1903,11 +1903,12 @@ void StdViewScreenShot::activated(int iMsg)
                 // otherwise Python would interpret it as an invalid command.
                 // Python does the decoding for us.
 #if QT_VERSION >= QT_VERSION_CHECK(5,15,0)
-                QStringList lines = comment.split(QLatin1String("\n"), Qt::KeepEmptyParts);
+                QStringList lines = comment.split(u"
+"_qs, Qt::KeepEmptyParts);
 #else
                 QStringList lines = comment.split(QLatin1String("\n"), QString::KeepEmptyParts);
 #endif
-                comment = lines.join(QLatin1String("\\n"));
+                comment = lines.join(u"\n"_qs);
                 doCommand(Gui, "Gui.activeDocument().activeView().saveImage('%s',%d,%d,'%s','%s')",
                           fn.toUtf8().constData(), w, h, background, comment.toUtf8().constData());
             }

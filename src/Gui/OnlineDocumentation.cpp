@@ -237,7 +237,9 @@ QByteArray PythonOnlineHelp::fileNotFound() const
 
     QString header = QString::fromLatin1("content-type: %1\r\n").arg(contentType);
 
-    QString http(QLatin1String("HTTP/1.1 %1 %2\r\n%3\r\n"));
+    QString http(u"HTTP/1.1 %1 %2
+%3
+"_qs);
     QString httpResponseHeader = http.arg(404).arg(QString::fromLatin1("File not found"), header);
 
     QByteArray res = httpResponseHeader.toLatin1();
@@ -266,7 +268,9 @@ QByteArray PythonOnlineHelp::loadFailed(const QString& error) const
 
     QString header = QString::fromLatin1("content-type: %1\r\n").arg(contentType);
 
-    QString http(QLatin1String("HTTP/1.1 %1 %2\r\n%3\r\n"));
+    QString http(QLu"HTTP/1.1 %1 %2
+%3
+"_qs
     QString httpResponseHeader = http.arg(404).arg(QString::fromLatin1("File not found"), header);
 
     QByteArray res = httpResponseHeader.toLatin1();
@@ -314,8 +318,7 @@ void HttpServer::readClient()
     QTcpSocket* socket = (QTcpSocket*)sender();
     if (socket->canReadLine()) {
         QString httpRequestHeader = QString::fromLatin1(socket->readLine());
-        QStringList lst = httpRequestHeader.simplified().split(QLatin1String(" "));
-        QString method;
+        QStringList lst = httpRequestHeader.simplified().split(QLatu" "_qs       QString method;
         QString path;
         if (lst.count() > 0) {
             QString m = lst[0];
@@ -324,7 +327,7 @@ void HttpServer::readClient()
                 if (lst.count() > 2) {
                     QString v = lst[2];
                     if (v.length() >= 8 && v.left(5) == QLatin1String("HTTP/") &&
-                        v[5].isDigit() && v[6] == QLatin1Char('.') && v[7].isDigit()) {
+                        v[5].isDigit() && v[6] == QLatu'.'v[7].isDigit()) {
                         method = m;
                         path = p;
                     }

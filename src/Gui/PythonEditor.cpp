@@ -176,7 +176,7 @@ void PythonEditor::onComment()
             if ( pos+1 > selEnd )
                 break; // end of selection reached
             cursor.setPosition(block.position());
-            cursor.insertText(QLatin1String("#"));
+            cursor.insertText(u"#"_qs);
                 selEnd++;
         }
     }
@@ -217,24 +217,24 @@ class PythonSyntaxHighlighterP
 public:
     PythonSyntaxHighlighterP()
     {
-        keywords << QLatin1String("and") << QLatin1String("as")
-                 << QLatin1String("assert") << QLatin1String("break")
-                 << QLatin1String("class") << QLatin1String("continue")
-                 << QLatin1String("def") << QLatin1String("del")
-                 << QLatin1String("elif") << QLatin1String("else")
-                 << QLatin1String("except") << QLatin1String("exec")
-                 << QLatin1String("False") << QLatin1String("finally")
-                 << QLatin1String("for") << QLatin1String("from")
-                 << QLatin1String("global") << QLatin1String("if")
-                 << QLatin1String("import") << QLatin1String("in")
-                 << QLatin1String("is") << QLatin1String("lambda")
-                 << QLatin1String("None") << QLatin1String("nonlocal")
-                 << QLatin1String("not") << QLatin1String("or")
-                 << QLatin1String("pass") << QLatin1String("print")
-                 << QLatin1String("raise") << QLatin1String("return")
-                 << QLatin1String("True") << QLatin1String("try")
-                 << QLatin1String("while") << QLatin1String("with")
-                 << QLatin1String("yield");
+        keywords << u"and"_qs << u"as"_qs
+                 << u"assert"_qs << u"break"_qs
+                 << u"class"_qs << u"continue"_qs
+                 << u"def"_qs << u"del"_qs
+                 << u"elif"_qs << u"else"_qs
+                 << u"except"_qs << u"exec"_qs
+                 << u"False"_qs << u"finally"_qs
+                 << u"for"_qs << u"from"_qs
+                 << u"global"_qs << u"if"_qs
+                 << u"import"_qs << u"in"_qs
+                 << u"is"_qs << u"lambda"_qs
+                 << u"None"_qs << u"nonlocal"_qs
+                 << u"not"_qs << u"or"_qs
+                 << u"pass"_qs << u"print"_qs
+                 << u"raise"_qs << u"return"_qs
+                 << u"True"_qs << u"try"_qs
+                 << u"while"_qs << u"with"_qs
+                 << u"yield"_qs;
     }
 
     QStringList keywords;
@@ -297,8 +297,8 @@ void PythonSyntaxHighlighter::highlightBlock (const QString & text)
         case '"':
           {
             // Begin either string literal or block comment
-            if ((i>=2) && text.at(i-1) == QLatin1Char('"') &&
-                text.at(i-2) == QLatin1Char('"'))
+            if ((i>=2) && text.at(i-1) == u'"' &&
+                text.at(i-2) == u'"')
             {
               setFormat( i-2, 3, this->colorByType(SyntaxHighlighter::BlockComment));
               endStateOfLastPara=Blockcomment1;
@@ -312,8 +312,8 @@ void PythonSyntaxHighlighter::highlightBlock (const QString & text)
         case '\'':
           {
             // Begin either string literal or block comment
-            if ((i>=2) && text.at(i-1) == QLatin1Char('\'') &&
-                text.at(i-2) == QLatin1Char('\''))
+            if ((i>=2) && text.at(i-1) == u'\'' &&
+                text.at(i-2) == u'\'')
             {
               setFormat( i-2, 3, this->colorByType(SyntaxHighlighter::BlockComment));
               endStateOfLastPara=Blockcomment2;
@@ -340,11 +340,11 @@ void PythonSyntaxHighlighter::highlightBlock (const QString & text)
         default:
           {
             // Check for normal text
-            if ( ch.isLetter() || ch == QLatin1Char('_') )
+            if ( ch.isLetter() || ch == u'_' )
             {
               QString buffer;
               int j=i;
-              while ( ch.isLetterOrNumber() || ch == QLatin1Char('_') ) {
+              while ( ch.isLetterOrNumber() || ch == u'_' ) {
                 buffer += ch;
                 ++j;
                 if (j >= text.length())
@@ -392,34 +392,34 @@ void PythonSyntaxHighlighter::highlightBlock (const QString & text)
     case Literal1:
       {
         setFormat( i, 1, this->colorByType(SyntaxHighlighter::String));
-        if ( ch == QLatin1Char('"') )
+        if ( ch == u'"' )
           endStateOfLastPara = Standard;
       } break;
     case Literal2:
       {
         setFormat( i, 1, this->colorByType(SyntaxHighlighter::String));
-        if ( ch == QLatin1Char('\'') )
+        if ( ch == u'\'' )
           endStateOfLastPara = Standard;
       } break;
     case Blockcomment1:
       {
         setFormat( i, 1, this->colorByType(SyntaxHighlighter::BlockComment));
-        if ( i>=2 && ch == QLatin1Char('"') &&
-            text.at(i-1) == QLatin1Char('"') &&
-            text.at(i-2) == QLatin1Char('"'))
+        if ( i>=2 && ch == u'"' &&
+            text.at(i-1) == u'"' &&
+            text.at(i-2) == u'"')
           endStateOfLastPara = Standard;
       } break;
     case Blockcomment2:
       {
         setFormat( i, 1, this->colorByType(SyntaxHighlighter::BlockComment));
-        if ( i>=2 && ch == QLatin1Char('\'') &&
-            text.at(i-1) == QLatin1Char('\'') &&
-            text.at(i-2) == QLatin1Char('\''))
+        if ( i>=2 && ch == u'\'' &&
+            text.at(i-1) == u'\'' &&
+            text.at(i-2) == u'\'')
           endStateOfLastPara = Standard;
       } break;
     case DefineName:
       {
-        if ( ch.isLetterOrNumber() || ch == QLatin1Char(' ') || ch == QLatin1Char('_') )
+        if ( ch.isLetterOrNumber() || ch == u' ' || ch == u'_' )
         {
           setFormat( i, 1, this->colorByType(SyntaxHighlighter::Defname));
         }
@@ -432,7 +432,7 @@ void PythonSyntaxHighlighter::highlightBlock (const QString & text)
       } break;
     case ClassName:
       {
-        if ( ch.isLetterOrNumber() || ch == QLatin1Char(' ') || ch == QLatin1Char('_') )
+        if ( ch.isLetterOrNumber() || ch == u' ' || ch == u'_' )
         {
           setFormat( i, 1, this->colorByType(SyntaxHighlighter::Classname));
         }
@@ -445,7 +445,7 @@ void PythonSyntaxHighlighter::highlightBlock (const QString & text)
       } break;
     case Digit:
       {
-        if (ch.isDigit() || ch == QLatin1Char('.'))
+        if (ch.isDigit() || ch == u'.')
         {
           setFormat( i, 1, this->colorByType(SyntaxHighlighter::Number));
         }

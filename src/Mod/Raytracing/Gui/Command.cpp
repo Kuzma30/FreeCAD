@@ -137,7 +137,7 @@ void CmdRaytracingWriteCamera::activated(int)
         QStringList filter;
         filter << QString::fromLatin1("%1 (*.pov)").arg(QObject::tr("POV-Ray"));
         filter << QString::fromLatin1("%1 (*.*)").arg(QObject::tr("All Files"));
-        QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export page"), QString(), filter.join(QLatin1String(";;")));
+        QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export page"), QString(), filter.join(u";;"_qs));
         if (fn.isEmpty())
             return;
         std::string cFullName = (const char*)fn.toUtf8();
@@ -188,7 +188,7 @@ void CmdRaytracingWritePart::activated(int)
     QStringList filter;
     filter << QString::fromLatin1("%1 (*.pov)").arg(QObject::tr("POV-Ray"));
     filter << QString::fromLatin1("%1 (*.*)").arg(QObject::tr("All Files"));
-    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export page"), QString(), filter.join(QLatin1String(";;")));
+    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export page"), QString(), filter.join(u";;"_qs));
     if (fn.isEmpty())
         return;
     std::string cFullName = (const char*)fn.toUtf8();
@@ -252,7 +252,7 @@ void CmdRaytracingWriteView::activated(int)
     filter << QString::fromLatin1("%1 (*.pov)").arg(QObject::tr("POV-Ray"));
     filter << QString::fromLatin1("%1 (*.*)").arg(QObject::tr("All Files"));
     QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(),
-        QObject::tr("Export page"), QString(), filter.join(QLatin1String(";;")));
+        QObject::tr("Export page"), QString(), filter.join(u";;"_qs));
     if (fn.isEmpty())
         return;
     std::string cFullName = (const char*)fn.toUtf8();
@@ -551,7 +551,7 @@ void CmdRaytracingExportProject::activated(int)
     filter << filterLabel;
     filter << QString::fromLatin1("%1 (*.*)").arg(QObject::tr("All Files"));
 
-    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export page"), QString(), filter.join(QLatin1String(";;")));
+    QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Export page"), QString(), filter.join(u";;"_qs));
     if (!fn.isEmpty()) {
         std::vector<Gui::SelectionSingleton::SelObj> Sel = getSelection().getSelection();
         openCommand("Raytracing export project");
@@ -660,7 +660,7 @@ void CmdRaytracingRender::activated(int)
         filter << QString::fromLatin1("%1 (*.png)").arg(QObject::tr("Rendered image"));
 #endif
         filter << QString::fromLatin1("%1 (*.*)").arg(QObject::tr("All Files"));
-        QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Rendered image"), QString(), filter.join(QLatin1String(";;")));
+        QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), QObject::tr("Rendered image"), QString(), filter.join(u";;"_qs));
         if (!fn.isEmpty()) {
             fn = QDir::toNativeSeparators(fn);
 #ifdef FC_OS_WIN32

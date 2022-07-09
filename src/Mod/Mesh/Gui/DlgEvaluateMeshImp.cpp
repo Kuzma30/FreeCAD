@@ -1275,7 +1275,7 @@ DockEvaluateMeshImp::DockEvaluateMeshImp( QWidget* parent, Qt::WindowFlags fl )
   : DlgEvaluateMeshImp( parent, fl )
 {
     scrollArea = new QScrollArea();
-    scrollArea->setObjectName(QLatin1String("scrollArea"));
+    scrollArea->setObjectName(u"scrollArea"_qs);
     scrollArea->setFrameShape(QFrame::NoFrame);
     scrollArea->setFrameShadow(QFrame::Plain);
     scrollArea->setWidgetResizable(true);

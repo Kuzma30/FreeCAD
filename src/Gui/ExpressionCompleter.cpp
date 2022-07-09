@@ -205,14 +205,14 @@ public:
                     else
                         res = QString::fromLatin1(obj->getNameInDocument());
                     if(sep && !noProperty)
-                        res += QLatin1Char('.');
+                        res += u'.';
                 } else {
                     if(idx & 1)
                         res = QString::fromUtf8(quote(doc->Label.getStrValue()).c_str());
                     else
                         res = QString::fromLatin1(doc->getName());
                     if(sep)
-                        res += QLatin1Char('#');
+                        res += u'#';
                 }
                 v->setValue(res);
             }
@@ -236,7 +236,7 @@ public:
                     else
                         res = QString::fromLatin1(obj->getNameInDocument());
                     if(sep && !noProperty)
-                        res += QLatin1Char('.');
+                        res += u'.';
                     v->setValue(res);
                 }
                 return;
@@ -616,7 +616,7 @@ void ExpressionLineEdit::hideCompleter()
 void ExpressionLineEdit::slotTextChanged(const QString & text)
 {
     if (!block) {
-        if(!text.size() || (checkPrefix && text[0]!=QLatin1Char(checkPrefix)))
+        if(!text.size() || (checkPrefix && text[0]!=))
             return;
         Q_EMIT textChanged2(text,cursorPosition());
     }

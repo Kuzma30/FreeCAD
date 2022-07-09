@@ -55,7 +55,7 @@ using namespace Gui::DockWnd;
 ReportView::ReportView( QWidget* parent )
   : QWidget(parent)
 {
-    setObjectName(QLatin1String("ReportOutput"));
+    setObjectName(u"ReportOutput"_qs);
 
     resize( 529, 162 );
     QGridLayout* tabLayout = new QGridLayout( this );
@@ -445,7 +445,7 @@ ReportOutput::~ReportOutput()
 
 void ReportOutput::restoreFont()
 {
-    QFont serifFont(QLatin1String("Courier"), 10, QFont::Normal);
+    QFont serifFont(u"Courier"_qs, 10, QFont::Normal);
     setFont(serifFont);
 }
 
@@ -495,7 +495,7 @@ void ReportOutput::customEvent ( QEvent* ev )
         // The time code can only be set when the cursor is at the block start
         if (showTimecode && blockStart) {
             QTime time = QTime::currentTime();
-            text.prepend(time.toString(QLatin1String("hh:mm:ss  ")));
+            text.prepend(time.toString(u"hh:mm:ss  "_qs));
         }
 
         QTextCursor cursor(this->document());
@@ -633,7 +633,7 @@ void ReportOutput::onSaveAs()
     if (!fn.isEmpty()) {
         QFileInfo fi(fn);
         if (fi.completeSuffix().isEmpty())
-            fn += QLatin1String(".log");
+            fn += u".log"_qs;
         QFile f(fn);
         if (f.open(QIODevice::WriteOnly)) {
             QTextStream t (&f);
@@ -786,7 +786,7 @@ void ReportOutput::OnChange(Base::Subject<const char*> &rCaller, const char * sR
         QFont font(fontFamily, fontSize);
         setFont(font);
         QFontMetrics metric(font);
-        int width = QtTools::horizontalAdvance(metric, QLatin1String("0000"));
+        int width = QtTools::horizontalAdvance(metric, u"0000"_qs);
 #if QT_VERSION < QT_VERSION_CHECK(5, 10, 0)
         setTabStopWidth(width);
 #else

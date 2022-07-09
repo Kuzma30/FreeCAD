@@ -390,15 +390,15 @@ DocumentRecoveryPrivate::Info DocumentRecoveryPrivate::getRecoveryInfo(const QFi
 
     QString file;
     QDir doc_dir(fi.absoluteFilePath());
-    QDir rec_dir(doc_dir.absoluteFilePath(QLatin1String("fc_recovery_files")));
+    QDir rec_dir(doc_dir.absoluteFilePath(u"fc_recovery_files"_qs));
 
     // compressed recovery file
-    if (doc_dir.exists(QLatin1String("fc_recovery_file.fcstd"))) {
-        file = doc_dir.absoluteFilePath(QLatin1String("fc_recovery_file.fcstd"));
+    if (doc_dir.exists(u"fc_recovery_file.fcstd"_qs)) {
+        file = doc_dir.absoluteFilePath(u"fc_recovery_file.fcstd"_qs);
     }
     // separate files for recovery
-    else if (rec_dir.exists(QLatin1String("Document.xml"))) {
-        file = rec_dir.absoluteFilePath(QLatin1String("Document.xml"));
+    else if (rec_dir.exists(u"Document.xml"_qs)) {
+        file = rec_dir.absoluteFilePath(u"Document.xml"_qs);
     }
 
     info.status = DocumentRecoveryPrivate::Created;
@@ -406,8 +406,8 @@ DocumentRecoveryPrivate::Info DocumentRecoveryPrivate::getRecoveryInfo(const QFi
     info.tooltip = fi.fileName();
 
     // when the Xml meta exists get some relevant information
-    info.xmlFile = doc_dir.absoluteFilePath(QLatin1String("fc_recovery_file.xml"));
-    if (doc_dir.exists(QLatin1String("fc_recovery_file.xml"))) {
+    info.xmlFile = doc_dir.absoluteFilePath(u"fc_recovery_file.xml"_qs);
+    if (doc_dir.exists(u"fc_recovery_file.xml"_qs)) {
         XmlConfig cfg = readXmlFile(info.xmlFile);
 
         if (cfg.contains(QString::fromLatin1("Label"))) {
@@ -598,7 +598,7 @@ void DocumentRecoveryFinder::checkDocumentDirs(QDir& tmp, const QList<QFileInfo>
                     countDeletedDocs++;
             }
             // search for the existence of a recovery file
-            else if (doc_dir.exists(QLatin1String("fc_recovery_file.xml"))) {
+            else if (doc_dir.exists(u"fc_recovery_file.xml"_qs)) {
                 // store the transient directory in case it's not empty
                 restoreDocFiles << *it;
             }

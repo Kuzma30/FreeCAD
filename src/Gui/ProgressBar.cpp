@@ -359,7 +359,7 @@ void SequencerBar::setText (const char* pszTxt)
     QThread *thr = d->bar->thread(); // this is the main thread
 
     // print message to the statusbar
-    d->text = pszTxt ? QString::fromUtf8(pszTxt) : QLatin1String("");
+    d->text = pszTxt ? QString::fromUtf8(pszTxt) : u""_qs;
     if (thr != currentThread) {
         QMetaObject::invokeMethod(getMainWindow(), "showMessage",
             Qt::/*Blocking*/QueuedConnection,

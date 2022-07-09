@@ -470,7 +470,7 @@ Action * StdCmdWindowsMenu::createAction(void)
             this->className(), getWhatsThis()));
     }
 
-    QAction* sep = pcAction->addAction(QLatin1String(""));
+    QAction* sep = pcAction->addAction(u""_qs);
     sep->setSeparator(true);
 
     return pcAction;

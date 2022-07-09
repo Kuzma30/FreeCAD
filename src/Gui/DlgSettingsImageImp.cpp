@@ -161,9 +161,9 @@ bool DlgSettingsImageImp::addWatermark() const
 
 void DlgSettingsImageImp::onSelectedFilter(const QString& filter)
 {
-    bool ok = (filter.startsWith(QLatin1String("JPG")) ||
-               filter.startsWith(QLatin1String("JPEG")) ||
-               filter.startsWith(QLatin1String("PNG")));
+    bool ok = (filter.startsWith(u"JPG"_qs) ||
+               filter.startsWith(u"JPEG"_qs) ||
+               filter.startsWith(u"PNG"_qs));
     ui->buttonGroupComment->setEnabled( ok );
 }
 
@@ -215,7 +215,7 @@ void DlgSettingsImageImp::on_standardSizeBox_activated(int index)
     else {
         // try to extract from the string
         QString text = ui->standardSizeBox->itemText(index);
-        QRegExp rx(QLatin1String("\\b\\d{2,5}\\b"));
+        QRegExp rx(u"\b\d{2,5}\b"_qs);
         int pos = 0;
         pos = rx.indexIn(text, pos);
         QString w = text.mid(pos, rx.matchedLength());

@@ -130,11 +130,11 @@ void DlgRegularSolidImp::on_createSolidButton_clicked()
         }
         if (ui->comboBox1->currentIndex() == 0) {         // cube
             name = doc->getUniqueObjectName("Cube");
-            cmd = QString(QLatin1String(
-                "App.ActiveDocument.addObject(\"Mesh::Cube\",\"%1\")\n"
-                "App.ActiveDocument.%1.Length=%2\n"
-                "App.ActiveDocument.%1.Width=%3\n"
-                "App.ActiveDocument.%1.Height=%4\n"))
+            cmd = QString(u"App.ActiveDocument.addObject("Mesh::Cube","%1")
+App.ActiveDocument.%1.Length=%2
+App.ActiveDocument.%1.Width=%3
+App.ActiveDocument.%1.Height=%4
+"_qs)
                 .arg(QLatin1String(name.c_str()))
                 .arg(Base::UnitsApi::toNumber(ui->boxLength->value()))
                 .arg(Base::UnitsApi::toNumber(ui->boxWidth->value()))
@@ -142,13 +142,13 @@ void DlgRegularSolidImp::on_createSolidButton_clicked()
         }
         else if (ui->comboBox1->currentIndex() == 1) {  // cylinder
             name = doc->getUniqueObjectName("Cylinder");
-            cmd = QString(QLatin1String(
-                "App.ActiveDocument.addObject(\"Mesh::Cylinder\",\"%1\")\n"
-                "App.ActiveDocument.%1.Radius=%2\n"
-                "App.ActiveDocument.%1.Length=%3\n"
-                "App.ActiveDocument.%1.EdgeLength=%4\n"
-                "App.ActiveDocument.%1.Closed=%5\n"
-                "App.ActiveDocument.%1.Sampling=%6\n"))
+            cmd = QString(u"App.ActiveDocument.addObject("Mesh::Cylinder","%1")
+App.ActiveDocument.%1.Radius=%2
+App.ActiveDocument.%1.Length=%3
+App.ActiveDocument.%1.EdgeLength=%4
+App.ActiveDocument.%1.Closed=%5
+App.ActiveDocument.%1.Sampling=%6
+"_qs)
                 .arg(QLatin1String(name.c_str()))
                 .arg(Base::UnitsApi::toNumber(ui->cylinderRadius->value()))
                 .arg(Base::UnitsApi::toNumber(ui->cylinderLength->value()))
@@ -158,14 +158,14 @@ void DlgRegularSolidImp::on_createSolidButton_clicked()
         }
         else if (ui->comboBox1->currentIndex() == 2) {  // cone
             name = doc->getUniqueObjectName("Cone");
-            cmd = QString(QLatin1String(
-                "App.ActiveDocument.addObject(\"Mesh::Cone\",\"%1\")\n"
-                "App.ActiveDocument.%1.Radius1=%2\n"
-                "App.ActiveDocument.%1.Radius2=%3\n"
-                "App.ActiveDocument.%1.Length=%4\n"
-                "App.ActiveDocument.%1.EdgeLength=%5\n"
-                "App.ActiveDocument.%1.Closed=%6\n"
-                "App.ActiveDocument.%1.Sampling=%7\n"))
+            cmd = QString(u"App.ActiveDocument.addObject("Mesh::Cone","%1")
+App.ActiveDocument.%1.Radius1=%2
+App.ActiveDocument.%1.Radius2=%3
+App.ActiveDocument.%1.Length=%4
+App.ActiveDocument.%1.EdgeLength=%5
+App.ActiveDocument.%1.Closed=%6
+App.ActiveDocument.%1.Sampling=%7
+"_qs)
                 .arg(QLatin1String(name.c_str()))
                 .arg(Base::UnitsApi::toNumber(ui->coneRadius1->value()))
                 .arg(Base::UnitsApi::toNumber(ui->coneRadius2->value()))
@@ -176,21 +176,21 @@ void DlgRegularSolidImp::on_createSolidButton_clicked()
         }
         else if (ui->comboBox1->currentIndex() == 3) {  // sphere
             name = doc->getUniqueObjectName("Sphere");
-            cmd = QString(QLatin1String(
-                "App.ActiveDocument.addObject(\"Mesh::Sphere\",\"%1\")\n"
-                "App.ActiveDocument.%1.Radius=%2\n"
-                "App.ActiveDocument.%1.Sampling=%3\n"))
+            cmd = QString(u"App.ActiveDocument.addObject("Mesh::Sphere","%1")
+App.ActiveDocument.%1.Radius=%2
+App.ActiveDocument.%1.Sampling=%3
+"_qs)
                 .arg(QLatin1String(name.c_str()))
                 .arg(Base::UnitsApi::toNumber(ui->sphereRadius->value()))
                 .arg(ui->sphereCount->value());
         }
         else if (ui->comboBox1->currentIndex() == 4) {  // ellipsoid
             name = doc->getUniqueObjectName("Ellipsoid");
-            cmd = QString(QLatin1String(
-                "App.ActiveDocument.addObject(\"Mesh::Ellipsoid\",\"%1\")\n"
-                "App.ActiveDocument.%1.Radius1=%2\n"
-                "App.ActiveDocument.%1.Radius2=%3\n"
-                "App.ActiveDocument.%1.Sampling=%4\n"))
+            cmd = QString(u"App.ActiveDocument.addObject("Mesh::Ellipsoid","%1")
+App.ActiveDocument.%1.Radius1=%2
+App.ActiveDocument.%1.Radius2=%3
+App.ActiveDocument.%1.Sampling=%4
+"_qs)
                 .arg(QLatin1String(name.c_str()))
                 .arg(Base::UnitsApi::toNumber(ui->ellipsoidRadius1->value()))
                 .arg(Base::UnitsApi::toNumber(ui->ellipsoidRadius2->value()))
@@ -198,11 +198,11 @@ void DlgRegularSolidImp::on_createSolidButton_clicked()
         }
         else if (ui->comboBox1->currentIndex() == 5) {  // toroid
             name = doc->getUniqueObjectName("Torus");
-            cmd = QString(QLatin1String(
-                "App.ActiveDocument.addObject(\"Mesh::Torus\",\"%1\")\n"
-                "App.ActiveDocument.%1.Radius1=%2\n"
-                "App.ActiveDocument.%1.Radius2=%3\n"
-                "App.ActiveDocument.%1.Sampling=%4\n"))
+            cmd = QString(u"App.ActiveDocument.addObject("Mesh::Torus","%1")
+App.ActiveDocument.%1.Radius1=%2
+App.ActiveDocument.%1.Radius2=%3
+App.ActiveDocument.%1.Sampling=%4
+"_qs)
                 .arg(QLatin1String(name.c_str()))
                 .arg(Base::UnitsApi::toNumber(ui->toroidRadius1->value()))
                 .arg(Base::UnitsApi::toNumber(ui->toroidRadius2->value()))

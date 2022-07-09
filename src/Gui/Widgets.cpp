@@ -124,7 +124,7 @@ ActionSelector::ActionSelector(QWidget* parent)
   : QWidget(parent)
 {
     addButton = new QPushButton(this);
-    addButton->setObjectName(QLatin1String("addButton"));
+    addButton->setObjectName(u"addButton"_qs);
     addButton->setMinimumSize(QSize(30, 30));
     addButton->setIcon(BitmapFactory().pixmap("button_right"));
     gridLayout = new QGridLayout(this);
@@ -136,7 +136,7 @@ ActionSelector::ActionSelector(QWidget* parent)
     gridLayout->addItem(spacerItem1, 0, 1, 1, 1);
 
     removeButton = new QPushButton(this);
-    removeButton->setObjectName(QLatin1String("removeButton"));
+    removeButton->setObjectName(u"removeButton"_qs);
     removeButton->setMinimumSize(QSize(30, 30));
     removeButton->setIcon(BitmapFactory().pixmap("button_left"));
     removeButton->setAutoDefault(true);
@@ -145,14 +145,14 @@ ActionSelector::ActionSelector(QWidget* parent)
     gridLayout->addWidget(removeButton, 2, 1, 1, 1);
 
     upButton = new QPushButton(this);
-    upButton->setObjectName(QLatin1String("upButton"));
+    upButton->setObjectName(u"upButton"_qs);
     upButton->setMinimumSize(QSize(30, 30));
     upButton->setIcon(BitmapFactory().pixmap("button_up"));
 
     gridLayout->addWidget(upButton, 3, 1, 1, 1);
 
     downButton = new QPushButton(this);
-    downButton->setObjectName(QLatin1String("downButton"));
+    downButton->setObjectName(u"downButton"_qs);
     downButton->setMinimumSize(QSize(30, 30));
     downButton->setIcon(BitmapFactory().pixmap("button_down"));
     downButton->setAutoDefault(true);
@@ -165,7 +165,7 @@ ActionSelector::ActionSelector(QWidget* parent)
     vboxLayout->addWidget(labelAvailable);
 
     availableWidget = new QTreeWidget(this);
-    availableWidget->setObjectName(QLatin1String("availableTreeWidget"));
+    availableWidget->setObjectName(u"availableTreeWidget"_qs);
     availableWidget->setRootIsDecorated(false);
     availableWidget->setHeaderLabels(QStringList() << QString());
     availableWidget->header()->hide();
@@ -179,7 +179,7 @@ ActionSelector::ActionSelector(QWidget* parent)
     vboxLayout1->addWidget(labelSelected);
 
     selectedWidget = new QTreeWidget(this);
-    selectedWidget->setObjectName(QLatin1String("selectedTreeWidget"));
+    selectedWidget->setObjectName(u"selectedTreeWidget"_qs);
     selectedWidget->setRootIsDecorated(false);
     selectedWidget->setHeaderLabels(QStringList() << QString());
     selectedWidget->header()->hide();
@@ -1078,7 +1078,7 @@ LabelButton::LabelButton (QWidget * parent)
     label->setAutoFillBackground(true);
     layout->addWidget(label);
 
-    button = new QPushButton(QLatin1String("..."), this);
+    button = new QPushButton(u"..."_qs, this);
 #if defined (Q_OS_MAC)
     button->setAttribute(Qt::WA_LayoutUsesWidgetRect); // layout size from QMacStyle was not correct
 #endif
@@ -1312,7 +1312,7 @@ int PropertyListEditor::lineNumberAreaWidth()
         ++digits;
     }
 
-    int space = 3 + QtTools::horizontalAdvance(fontMetrics(), QLatin1Char('9')) * digits;
+    int space = 3 + QtTools::horizontalAdvance(fontMetrics(), u'9') * digits;
 
     return space;
 }
@@ -1446,7 +1446,7 @@ LabelEditor::LabelEditor (QWidget * parent)
     connect(lineEdit, SIGNAL(textChanged(const QString &)),
             this, SLOT(validateText(const QString &)));
 
-    button = new QPushButton(QLatin1String("..."), this);
+    button = new QPushButton(u"..."_qs, this);
 #if defined (Q_OS_MAC)
     button->setAttribute(Qt::WA_LayoutUsesWidgetRect); // layout size from QMacStyle was not correct
 #endif
@@ -1507,7 +1507,7 @@ void LabelEditor::changeText()
  */
 void LabelEditor::validateText(const QString& text)
 {
-    if (text.startsWith(QLatin1String("[")) && text.endsWith(QLatin1String("]"))) {
+    if (text.startsWith(u"["_qs) && text.endsWith(u"]"_qs)) {
         this->plainText = text.mid(1, text.size()-2);
         Q_EMIT textChanged(this->plainText);
     }
@@ -1520,7 +1520,7 @@ void LabelEditor::setButtonText(const QString& txt)
 {
     button->setText(txt);
     int w1 = 2 * QtTools::horizontalAdvance(button->fontMetrics(), txt);
-    int w2 = 2 * QtTools::horizontalAdvance(button->fontMetrics(), QLatin1String(" ... "));
+    int w2 = 2 * QtTools::horizontalAdvance(button->fontMetrics(), u" ... "_qs);
     button->setFixedWidth((w1 > w2 ? w1 : w2));
 }
 

@@ -520,7 +520,8 @@ void ViewProviderAnnotationLabel::drawImage(const std::vector<std::string>& s)
         align = Qt::AlignVCenter | Qt::AlignRight;
     else
         align = Qt::AlignVCenter | Qt::AlignHCenter;
-    QString text = lines.join(QLatin1String("\n"));
+    QString text = lines.join(u"
+"_qs);
     painter.setFont(font);
     painter.drawText(5,5,w,h,align,text);
     painter.end();

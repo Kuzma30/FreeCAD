@@ -284,7 +284,7 @@ void DrawingView::load (const QString & fileName)
 
         m_view->openFile(file);
 
-        if (!fileName.startsWith(QLatin1String(":/"))) {
+        if (!fileName.startsWith(u":/"_qs)) {
             m_currentPath = fileName;
             //setWindowTitle(tr("%1 - SVG Viewer").arg(m_currentPath));
         }
@@ -298,7 +298,7 @@ void DrawingView::load (const QString & fileName)
 
 void DrawingView::findPrinterSettings(const QString& fileName)
 {
-    if (fileName.indexOf(QLatin1String("Portrait"), Qt::CaseInsensitive) >= 0) {
+    if (fileName.indexOf(u"Portrait"_qs, Qt::CaseInsensitive) >= 0) {
         m_orientation = QPageLayout::Portrait;
     }
     else {

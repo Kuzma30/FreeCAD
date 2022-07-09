@@ -134,10 +134,13 @@ void UnitTestDialog::on_treeViewFailure_itemDoubleClicked(QTreeWidgetItem * item
     msgBox.setDetailedText(text);
 
     // truncate the visible text when it's too long
-    if (text.count(QLatin1Char('\n')) > 20) {
-        QStringList lines = text.split(QLatin1Char('\n'));
+    if (text.count(u'
+') > 20) {
+        QStringList lines = text.split(u'
+');
         lines.erase(lines.begin()+20, lines.end());
-        text = lines.join(QLatin1String("\n"));
+        text = lines.join(u"
+"_qs);
     }
     if (text.size() > 1000) {
         text = text.left(1000);

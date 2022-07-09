@@ -481,8 +481,8 @@ void SketcherGui::notifyConstraintSubstitutions(const QString & message)
 {
     Gui::Dialog::DlgCheckableMessageBox::showMessage(   QObject::tr("Sketcher Constraint Substitution"),
                                                         message,
-                                                        QLatin1String("User parameter:BaseApp/Preferences/Mod/Sketcher/General"),
-                                                        QLatin1String("NotifyConstraintSubstitutions"),
+                                                        u"User parameter:BaseApp/Preferences/Mod/Sketcher/General"_qs,
+                                                        u"NotifyConstraintSubstitutions"_qs,
                                                         true, // Default ParamEntry
                                                         true, // checkbox state
                                                         QObject::tr("Keep notifying me of constraint substitutions"));

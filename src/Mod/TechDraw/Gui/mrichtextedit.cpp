@@ -435,7 +435,7 @@ void MRichTextEdit::textStyle(int index) {
 void MRichTextEdit::textFgColor() {
     QColor col;
     if (Gui::DialogOptions::dontUseNativeColorDialog()){
-        col = QColorDialog::getColor(f_textedit->textColor(),this, QLatin1String(""), QColorDialog::DontUseNativeDialog);
+        col = QColorDialog::getColor(f_textedit->textColor(),this, u""_qs, QColorDialog::DontUseNativeDialog);
     } else {
         col = QColorDialog::getColor(f_textedit->textColor(), this);
     }
@@ -457,7 +457,7 @@ void MRichTextEdit::textFgColor() {
 void MRichTextEdit::textBgColor() {
     QColor col;
     if (Gui::DialogOptions::dontUseNativeColorDialog()){
-        col = QColorDialog::getColor(f_textedit->textBackgroundColor(),this, QLatin1String(""), QColorDialog::DontUseNativeDialog);
+        col = QColorDialog::getColor(f_textedit->textBackgroundColor(),this, u""_qs, QColorDialog::DontUseNativeDialog);
     } else {
         col = QColorDialog::getColor(f_textedit->textBackgroundColor(), this);
     }

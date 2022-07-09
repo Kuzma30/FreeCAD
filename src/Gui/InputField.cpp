@@ -711,10 +711,10 @@ void InputField::wheelEvent (QWheelEvent * event)
 void InputField::fixup(QString& input) const
 {
     input.remove(locale().groupSeparator());
-    if (locale().negativeSign() != QLatin1Char('-'))
-        input.replace(locale().negativeSign(), QLatin1Char('-'));
-    if (locale().positiveSign() != QLatin1Char('+'))
-        input.replace(locale().positiveSign(), QLatin1Char('+'));
+    if (locale().negativeSign() != u'-')
+        input.replace(locale().negativeSign(), u'-');
+    if (locale().positiveSign() != u'+')
+        input.replace(locale().positiveSign(), u'+');
 }
 
 QValidator::State InputField::validate(QString& input, int& pos) const

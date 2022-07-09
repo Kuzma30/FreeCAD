@@ -355,7 +355,7 @@ ContainerDialog::ContainerDialog( QWidget* templChild )
     MyDialogLayout = new QGridLayout(this);
 
     buttonOk = new QPushButton(this);
-    buttonOk->setObjectName(QLatin1String("buttonOK"));
+    buttonOk->setObjectName(u"buttonOK"_qs);
     buttonOk->setText( tr( "&OK" ) );
     buttonOk->setAutoDefault( true );
     buttonOk->setDefault( true );
@@ -365,7 +365,7 @@ ContainerDialog::ContainerDialog( QWidget* templChild )
     MyDialogLayout->addItem( spacer, 1, 1 );
 
     buttonCancel = new QPushButton(this);
-    buttonCancel->setObjectName(QLatin1String("buttonCancel"));
+    buttonCancel->setObjectName(u"buttonCancel"_qs);
     buttonCancel->setText( tr( "&Cancel" ) );
     buttonCancel->setAutoDefault( true );
 

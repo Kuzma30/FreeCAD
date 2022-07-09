@@ -40,17 +40,17 @@ PropertyMeshKernelItem::PropertyMeshKernelItem()
     m_p = static_cast<Gui::PropertyEditor::PropertyIntegerItem*>
         (Gui::PropertyEditor::PropertyIntegerItem::create());
     m_p->setParent(this);
-    m_p->setPropertyName(QLatin1String("Points"));
+    m_p->setPropertyName(u"Points"_qs);
     this->appendChild(m_p);
     m_e = static_cast<Gui::PropertyEditor::PropertyIntegerItem*>
         (Gui::PropertyEditor::PropertyIntegerItem::create());
     m_e->setParent(this);
-    m_e->setPropertyName(QLatin1String("Edges"));
+    m_e->setPropertyName(u"Edges"_qs);
     this->appendChild(m_e);
     m_f = static_cast<Gui::PropertyEditor::PropertyIntegerItem*>
         (Gui::PropertyEditor::PropertyIntegerItem::create());
     m_f->setParent(this);
-    m_f->setPropertyName(QLatin1String("Faces"));
+    m_f->setPropertyName(u"Faces"_qs);
     this->appendChild(m_f);
 }
 

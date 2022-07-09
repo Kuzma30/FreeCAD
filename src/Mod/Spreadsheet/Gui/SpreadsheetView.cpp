@@ -421,9 +421,9 @@ void SheetView::aliasChanged(const QString& text)
     static auto originalStylesheet = ui->cellAlias->styleSheet();
     QString warningColor;
     if (qApp->styleSheet().contains(QLatin1String("dark"), Qt::CaseInsensitive))
-        warningColor = QLatin1String("rgb(255,90,90)"); // Light red for dark mode
+        warningColor = u"rgb(255,90,90)"_qs; // Light red for dark mode
     else
-        warningColor = QLatin1String("rgb(200,0,0)"); // Dark red for light mode
+        warningColor = u"rgb(200,0,0)"_qs; // Dark red for light mode
 
     if (!text.isEmpty() && !sheet->isValidAlias(Base::Tools::toStdString(text)))
         aliasOk = false;
@@ -431,7 +431,7 @@ void SheetView::aliasChanged(const QString& text)
     if (!aliasOk) {
         // change tooltip and make text color red
         ui->cellAlias->setToolTip(QObject::tr("Alias contains invalid characters!"));
-        ui->cellAlias->setStyleSheet(QLatin1String("color:") + warningColor);
+        ui->cellAlias->setStyleSheet(u"color:"_qs + warningColor);
     }
     else {
         // go back to normal

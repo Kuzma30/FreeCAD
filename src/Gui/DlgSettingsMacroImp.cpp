@@ -65,7 +65,7 @@ DlgSettingsMacroImp::~DlgSettingsMacroImp()
  */
 void DlgSettingsMacroImp::setRecentMacroSize()
 {
-    RecentMacrosAction *recent = getMainWindow()->findChild<RecentMacrosAction *>(QLatin1String("recentMacros"));
+    RecentMacrosAction *recent = getMainWindow()->findChild<RecentMacrosAction *>(u"recentMacros"_qs);
     if (recent) {
         ParameterGrp::handle hGrp = WindowParameter::getDefaultParameter()->GetGroup("RecentMacros");
         recent->resizeList(hGrp->GetInt("RecentMacros", 4));

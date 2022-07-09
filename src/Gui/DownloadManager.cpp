@@ -117,12 +117,13 @@ QUrl DownloadManager::redirectUrl(const QUrl& url) const
         for (QList< QPair<QString, QString> >::iterator it = query.begin(); it != query.end(); ++it) {
             if (it->first == QLatin1String("dl")) {
                 if (it->second == QLatin1String("0\r\n")) {
-                    urlQuery.removeQueryItem(QLatin1String("dl"));
-                    urlQuery.addQueryItem(QLatin1String("dl"), QLatin1String("1\r\n"));
+                    urlQuery.removeQueryItem(u"dl"_qs);
+                    urlQuery.addQueryItem(u"dl"_qs, u"1
+"_qs);
                 }
                 else if (it->second == QLatin1String("0")) {
-                    urlQuery.removeQueryItem(QLatin1String("dl"));
-                    urlQuery.addQueryItem(QLatin1String("dl"), QLatin1String("1"));
+                    urlQuery.removeQueryItem(Qu"dl"_qs;
+                    urlQuery.addQueryItem(Qu"dl"_qs Qu"1"_qs;
                 }
                 break;
             }
@@ -133,7 +134,8 @@ QUrl DownloadManager::redirectUrl(const QUrl& url) const
         // When the url comes from drag and drop it may end with CR+LF. This may cause problems
         // and thus should be removed.
         QString str = redirectUrl.toString();
-        if (str.endsWith(QLatin1String("\r\n"))) {
+        if (str.endsWith(Qu"
+"_qs) {
             str.chop(2);
             redirectUrl.setUrl(str);
         }
@@ -221,48 +223,48 @@ void DownloadManager::setRemovePolicy(RemovePolicy policy)
 void DownloadManager::save() const
 {
     QSettings settings;
-    settings.beginGroup(QLatin1String("downloadmanager"));
+    settings.beginGroup(QLu"downloadmanager"_qs
     QMetaEnum removePolicyEnum = staticMetaObject.enumerator(staticMetaObject.indexOfEnumerator("RemovePolicy"));
-    settings.setValue(QLatin1String("removeDownloadsPolicy"), QLatin1String(removePolicyEnum.valueToKey(m_removePolicy)));
-    settings.setValue(QLatin1String("size"), size());
+    settings.setValue(QLu"removeDownloadsPolicy"_qsQLatin1String(removePolicyEnum.valueToKey(m_removePolicy)));
+    settings.setValue(QLu"size"_qssize());
     if (m_removePolicy == Exit)
         return;
 
     for (int i = 0; i < m_downloads.count(); ++i) {
-        QString key = QString(QLatin1String("download_%1_")).arg(i);
-        settings.setValue(key + QLatin1String("url"), m_downloads[i]->m_url);
-        settings.setValue(key + QLatin1String("location"), QFileInfo(m_downloads[i]->m_output).filePath());
-        settings.setValue(key + QLatin1String("done"), m_downloads[i]->downloadedSuccessfully());
+        QString key = QString(QLu"download_%1_"_qsarg(i);
+        settings.setValue(key + QLu"url"_qsm_downloads[i]->m_url);
+        settings.setValue(key + QLu"location"_qsQFileInfo(m_downloads[i]->m_output).filePath());
+        settings.setValue(key + QLu"done"_qsm_downloads[i]->downloadedSuccessfully());
     }
     int i = m_downloads.count();
-    QString key = QString(QLatin1String("download_%1_")).arg(i);
-    while (settings.contains(key + QLatin1String("url"))) {
-        settings.remove(key + QLatin1String("url"));
-        settings.remove(key + QLatin1String("location"));
-        settings.remove(key + QLatin1String("done"));
-        key = QString(QLatin1String("download_%1_")).arg(++i);
+    QString key = QString(QLu"download_%1_"_qsarg(i);
+    while (settings.contains(key + QLu"url"_qs {
+        settings.remove(key + QLu"url"_qs
+        settings.remove(key + QLu"location"_qs
+        settings.remove(key + QLu"done"_qs
+        key = QString(QLu"download_%1_"_qsarg(++i);
     }
 }
 
 void DownloadManager::load()
 {
     QSettings settings;
-    settings.beginGroup(QLatin1String("downloadmanager"));
-    QSize size = settings.value(QLatin1String("size")).toSize();
+    settings.beginGroup(QLu"downloadmanager"_qs
+    QSize size = settings.value(QLu"size"_qstoSize();
     if (size.isValid())
         resize(size);
-    QByteArray value = settings.value(QLatin1String("removeDownloadsPolicy"), QLatin1String("Never")).toByteArray();
+    QByteArray value = settings.value(QLu"removeDownloadsPolicy"_qsQLatin1String("Never")).toByteArray();
     QMetaEnum removePolicyEnum = staticMetaObject.enumerator(staticMetaObject.indexOfEnumerator("RemovePolicy"));
     m_removePolicy = removePolicyEnum.keyToValue(value) == -1 ?
                         Never :
                         static_cast<RemovePolicy>(removePolicyEnum.keyToValue(value));
 
     int i = 0;
-    QString key = QString(QLatin1String("download_%1_")).arg(i);
-    while (settings.contains(key + QLatin1String("url"))) {
-        QUrl url = settings.value(key + QLatin1String("url")).toUrl();
-        QString fileName = settings.value(key + QLatin1String("location")).toString();
-        bool done = settings.value(key + QLatin1String("done"), true).toBool();
+    QString key = QString(QLu"download_%1_"_qsarg(i);
+    while (settings.contains(key + QLu"url"_qs {
+        QUrl url = settings.value(key + QLu"url"_qstoUrl();
+        QString fileName = settings.value(key + QLu"location"_qstoString();
+        bool done = settings.value(key + QLu"done"_qstrue).toBool();
         if (!url.isEmpty() && !fileName.isEmpty()) {
             DownloadItem *item = new DownloadItem(nullptr, false, this);
             item->m_output.setFileName(fileName);
@@ -275,7 +277,7 @@ void DownloadManager::load()
             item->progressBar->setVisible(!done);
             addItem(item);
         }
-        key = QString(QLatin1String("download_%1_")).arg(++i);
+        key = QString(QLu"download_%1_"_qsarg(++i);
     }
     ui->cleanupButton->setEnabled(m_downloads.count() - activeDownloads() > 0);
 }

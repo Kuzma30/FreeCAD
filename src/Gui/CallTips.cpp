@@ -160,7 +160,7 @@ void CallTipsList::validateCursor()
         QString word = cursor.selectedText();
         if (!word.isEmpty()) {
             // the following text might be an operator, brackets, ...
-            const QChar underscore =  QLatin1Char('_');
+            const QChar underscore =  u'_';
             const QChar ch = word.at(0);
             if (!ch.isLetterOrNumber() && ch != underscore)
                 word.clear();
@@ -209,7 +209,7 @@ QMap<QString, CallTip> CallTipsList::extractTips(const QString& context) const
         Py::Dict dict = module.getDict();
 
         // this is used to filter out input of the form "1."
-        QStringList items = context.split(QLatin1Char('.'));
+        QStringList items = context.split(u'.');
         QString modname = items.front();
         items.pop_front();
         if (!dict.hasKey(std::string(modname.toLatin1())))
@@ -283,7 +283,7 @@ QMap<QString, CallTip> CallTipsList::extractTips(const QString& context) const
 
                 // this should be now a user-defined Python class
                 // http://stackoverflow.com/questions/12233103/in-python-at-runtime-determine-if-an-object-is-a-class-old-and-new-type-instan
-                if (!typestr.startsWith(QLatin1String("PySide")) && Py_TYPE(obj.ptr())->tp_flags & Py_TPFLAGS_HEAPTYPE) {
+                if (!typestr.startsWith(u"PySide"_qs) && Py_TYPE(obj.ptr())->tp_flags & Py_TPFLAGS_HEAPTYPE) {
                     obj = type;
                 }
             }
@@ -404,7 +404,8 @@ void CallTipsList::extractTipsFromObject(Py::Object& obj, Py::List& list, QMap<Q
                 if (help.isString()) {
                     Py::String doc(help);
                     QString longdoc = QString::fromUtf8(doc.as_string().c_str());
-                    int pos = longdoc.indexOf(QLatin1Char('\n'));
+                    int pos = longdoc.indexOf(u'
+');
                     pos = qMin(pos, 70);
                     if (pos < 0)
                         pos = qMin(longdoc.length(), 70);
@@ -417,7 +418,8 @@ void CallTipsList::extractTipsFromObject(Py::Object& obj, Py::List& list, QMap<Q
                 if (help.isString()) {
                     Py::String doc(help);
                     QString longdoc = QString::fromUtf8(doc.as_string().c_str());
-                    int pos = longdoc.indexOf(QLatin1Char('\n'));
+                    int pos = longdoc.indexOf(u'
+');
                     pos = qMin(pos, 70);
                     if (pos < 0)
                         pos = qMin(longdoc.length(), 70);
@@ -466,7 +468,8 @@ void CallTipsList::extractTipsFromProperties(Py::Object& obj, QMap<QString, Call
             }
         }
         if (!longdoc.isEmpty()) {
-            int pos = longdoc.indexOf(QLatin1Char('\n'));
+            int pos = longdoc.indexOf(u'
+');
             pos = qMin(pos, 70);
             if (pos < 0)
                 pos = qMin(longdoc.length(), 70);
@@ -700,7 +703,7 @@ void CallTipsList::callTipItemActivated(QListWidgetItem *item)
     QString sel = cursor.selectedText();
     if (!sel.isEmpty()) {
         // in case the cursor moved too far on the right side
-        const QChar underscore =  QLatin1Char('_');
+        const QChar underscore =  u'_';
         const QChar ch = sel.at(sel.count()-1);
         if (!ch.isLetterOrNumber() && ch != underscore)
             cursor.movePosition(QTextCursor::Left, QTextCursor::KeepAnchor);
@@ -714,13 +717,13 @@ void CallTipsList::callTipItemActivated(QListWidgetItem *item)
     if (this->doCallCompletion
      && (callTip.type == CallTip::Method || callTip.type == CallTip::Class))
     {
-      cursor.insertText( QLatin1String("()") ); //< just append parenthesis to identifier even inserted.
+      cursor.insertText( u"()"_qs ); //< just append parenthesis to identifier even inserted.
 
       /**
        * Try to find out if call needs arguments.
        * For this we search the description for appropriate hints ...
        */
-      QRegExp argumentMatcher( QRegExp::escape( callTip.name ) + QLatin1String("\\s*\\(\\s*\\w+.*\\)") );
+      QRegExp argumentMatcher( QRegExp::escape( callTip.name ) + u"\s*\(\s*\w+.*\)"_qs );
       argumentMatcher.setMinimal( true ); //< set regex non-greedy!
       if (argumentMatcher.indexIn( callTip.description ) != -1)
       {
@@ -743,14 +746,15 @@ void CallTipsList::callTipItemActivated(QListWidgetItem *item)
 QString CallTipsList::stripWhiteSpace(const QString& str) const
 {
     QString stripped = str;
-    QStringList lines = str.split(QLatin1String("\n"));
+    QStringList lines = str.split(u"
+"_qs);
     int minspace=INT_MAX;
     int line=0;
     for (QStringList::iterator it = lines.begin(); it != lines.end(); ++it, ++line) {
         if (it->count() > 0 && line > 0) {
             int space = 0;
             for (int i=0; i<it->count(); i++) {
-                if ((*it)[i] == QLatin1Char('\t'))
+                if ((*it)[i] == u'	')
                     space++;
                 else
                     break;
@@ -774,7 +778,8 @@ QString CallTipsList::stripWhiteSpace(const QString& str) const
             }
         }
 
-        stripped = strippedlines.join(QLatin1String("\n"));
+        stripped = strippedlines.join(u"
+"_qs);
     }
 
     return stripped;

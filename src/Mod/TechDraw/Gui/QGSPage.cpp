@@ -862,7 +862,7 @@ void QGSPage::postProcessXml(QTemporaryFile& temporaryFile, QString fileName, QS
     }
 
     // Obtain the drawing group element, move it under root node and set its id to "DrawingContent"
-    QDomElement drawingGroup = exportDocElem.firstChildElement(QLatin1String("g"));
+    QDomElement drawingGroup = exportDocElem.firstChildElement(u"g"_qs);
     if (!drawingGroup.isNull()) {
         drawingGroup.setAttribute(QString::fromUtf8("id"), QString::fromUtf8("DrawingContent"));
         rootGroup.appendChild(drawingGroup);

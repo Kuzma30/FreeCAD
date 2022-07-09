@@ -176,16 +176,20 @@ void DlgSettingsNavigation::on_mouseButton_clicked()
     uimb.groupBox->setTitle(uimb.groupBox->title()+QString::fromLatin1(" ")+ui->comboNavigationStyle->currentText());
     QString descr;
     descr = qApp->translate((const char*)data.toByteArray(),ns->mouseButtons(NavigationStyle::SELECTION));
-    descr.replace(QLatin1String("\n"), QLatin1String("<p>"));
+    descr.replace(u"
+"_qs, u"<p>"_qs);
     uimb.selectionLabel->setText(QString::fromLatin1("<b>%1</b>").arg(descr));
     descr = qApp->translate((const char*)data.toByteArray(),ns->mouseButtons(NavigationStyle::PANNING));
-    descr.replace(QLatin1String("\n"), QLatin1String("<p>"));
+    descr.replace(u"
+"_qs, u"<p>"_qs);
     uimb.panningLabel->setText(QString::fromLatin1("<b>%1</b>").arg(descr));
     descr = qApp->translate((const char*)data.toByteArray(),ns->mouseButtons(NavigationStyle::DRAGGING));
-    descr.replace(QLatin1String("\n"), QLatin1String("<p>"));
+    descr.replace(u"
+"_qs, u"<p>"_qs);
     uimb.rotationLabel->setText(QString::fromLatin1("<b>%1</b>").arg(descr));
     descr = qApp->translate((const char*)data.toByteArray(),ns->mouseButtons(NavigationStyle::ZOOMING));
-    descr.replace(QLatin1String("\n"), QLatin1String("<p>"));
+    descr.replace(u"
+"_qs, u"<p>"_qs);
     uimb.zoomingLabel->setText(QString::fromLatin1("<b>%1</b>").arg(descr));
     dlg.exec();
 }

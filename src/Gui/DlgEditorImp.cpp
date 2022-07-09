@@ -173,7 +173,7 @@ void DlgSettingsEditorImp::on_colorButton_changed()
 void DlgSettingsEditorImp::setEditorTabWidth(int tabWidth)
 {
     QFontMetrics metric(font());
-    int fontSize = QtTools::horizontalAdvance(metric, QLatin1Char('0'));
+    int fontSize = QtTools::horizontalAdvance(metric, u'0');
 #if QT_VERSION < QT_VERSION_CHECK(5, 10, 0)
     ui->textEdit1->setTabStopWidth(tabWidth * fontSize);
 #else

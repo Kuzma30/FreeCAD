@@ -526,7 +526,7 @@ WorkbenchGroup::WorkbenchGroup (  Command* pcCmd, QObject * parent )
 {
     // Start a list with 50 elements but extend it when requested
     for (int i=0; i<50; i++) {
-        QAction* action = _group->addAction(QLatin1String(""));
+        QAction* action = _group->addAction(u""_qs);
         action->setVisible(false);
         action->setCheckable(true);
         action->setData(QVariant(i)); // set the index
@@ -613,7 +613,7 @@ void WorkbenchGroup::refreshWorkbenchList()
     int extend = enable_wbs.size() - numActions;
     if (extend > 0) {
         for (int i=0; i<extend; i++) {
-            QAction* action = _group->addAction(QLatin1String(""));
+            QAction* action = _group->addAction(u""_qs);
             action->setCheckable(true);
             action->setData(QVariant(numActions++)); // set the index
         }
@@ -651,7 +651,7 @@ void WorkbenchGroup::slotAddWorkbench(const char* name)
 
     if (!action) {
         int index = workbenches.size();
-        action = _group->addAction(QLatin1String(""));
+        action = _group->addAction(u""_qs);
         action->setCheckable(true);
         action->setData(QVariant(index)); // set the index
     }
@@ -825,7 +825,7 @@ void RecentFilesAction::resizeList(int size)
     int diff = this->visibleItems - this->maximumItems;
     // create new items if needed
     for (int i=0; i<diff; i++)
-        _group->addAction(QLatin1String(""))->setVisible(false);
+        _group->addAction(u""_qs)->setVisible(false);
     setFiles(files());
 }
 
@@ -839,7 +839,7 @@ void RecentFilesAction::restore()
 
     int count = std::max<int>(this->maximumItems, this->visibleItems);
     for (int i=0; i<count; i++)
-        _group->addAction(QLatin1String(""))->setVisible(false);
+        _group->addAction(u""_qs)->setVisible(false);
     std::vector<std::string> MRU = hGrp->GetASCIIs("MRU");
     QStringList files;
     for (std::vector<std::string>::iterator it = MRU.begin(); it!=MRU.end();++it)
@@ -1018,7 +1018,7 @@ void RecentMacrosAction::resizeList(int size)
     int diff = this->visibleItems - this->maximumItems;
     // create new items if needed
     for (int i=0; i<diff; i++)
-        _group->addAction(QLatin1String(""))->setVisible(false);
+        _group->addAction(u""_qs)->setVisible(false);
     setFiles(files());
 }
 
@@ -1029,7 +1029,7 @@ void RecentMacrosAction::restore()
                                 ->GetGroup("Preferences")->GetGroup("RecentMacros");
 
     for (int i=_group->actions().size(); i<this->maximumItems; i++)
-        _group->addAction(QLatin1String(""))->setVisible(false);
+        _group->addAction(u""_qs)->setVisible(false);
     resizeList(hGrp->GetInt("RecentMacros"));
 
     std::vector<std::string> MRU = hGrp->GetASCIIs("MRU");

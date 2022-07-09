@@ -113,7 +113,7 @@ public:
         if (state == QValidator::Intermediate) {
             if (!q->hasExpression()) {
                 tmp = tmp.trimmed();
-                tmp += QLatin1Char(' ');
+                tmp += u' ';
                 tmp += unitStr;
                 validateInput(tmp);
             }
@@ -169,17 +169,17 @@ public:
         case 1:
             if (copy.at(0) == locale.decimalPoint()) {
                 state = QValidator::Intermediate;
-                copy.prepend(QLatin1Char('0'));
+                copy.prepend(u'0');
                 pos++;
                 len++;
                 goto end;
             }
-            else if (copy.at(0) == QLatin1Char('+')) {
+            else if (copy.at(0) == u'+') {
                 // the quantity parser doesn't allow numbers of the form '+1.0'
                 state = QValidator::Invalid;
                 goto end;
             }
-            else if (copy.at(0) == QLatin1Char('-')) {
+            else if (copy.at(0) == u'-') {
                 if (minus)
                     state = QValidator::Intermediate;
                 else
@@ -189,14 +189,14 @@ public:
             break;
         case 2:
             if (copy.at(1) == locale.decimalPoint()
-                && (plus && copy.at(0) == QLatin1Char('+'))) {
+                && (plus && copy.at(0) == u'+')) {
                 state = QValidator::Intermediate;
                 goto end;
             }
             if (copy.at(1) == locale.decimalPoint()
-                && (minus && copy.at(0) == QLatin1Char('-'))) {
+                && (minus && copy.at(0) == u'-')) {
                 state = QValidator::Intermediate;
-                copy.insert(1, QLatin1Char('0'));
+                copy.insert(1, u'0');
                 pos++;
                 len++;
                 goto end;
@@ -228,10 +228,10 @@ public:
                 }
             }
 
-            if (locale.negativeSign() != QLatin1Char('-'))
-                copy.replace(locale.negativeSign(), QLatin1Char('-'));
-            if (locale.positiveSign() != QLatin1Char('+'))
-                copy.replace(locale.positiveSign(), QLatin1Char('+'));
+            if (locale.negativeSign() != u'-')
+                copy.replace(locale.negativeSign(), u'-');
+            if (locale.positiveSign() != u'+')
+                copy.replace(locale.positiveSign(), u'+');
 
             double value = min;
             bool ok = parseString(copy, res, value);
@@ -360,7 +360,7 @@ void QuantitySpinBox::setBoundToByName(const QString &name)
     try {
         // get document
         App::Document *doc = App::GetApplication().getActiveDocument();
-        QStringList list = name.split(QLatin1Char('#'));
+        QStringList list = name.split(u'#');
         if (list.size() > 1) {
             doc = App::GetApplication().getDocument(list.front().toLatin1());
             list.pop_front();
@@ -372,7 +372,7 @@ void QuantitySpinBox::setBoundToByName(const QString &name)
         }
 
         // first element is assumed to be the document name
-        list = list.front().split(QLatin1Char('.'));
+        list = list.front().split(u'.');
 
         // get object
         App::DocumentObject* obj = doc->getObject(list.front().toLatin1());
@@ -812,7 +812,7 @@ QSize QuantitySpinBox::sizeHint() const
     int w = 0;
 
     QString s;
-    QString fixedContent = QLatin1String(" ");
+    QString fixedContent = u" "_qs;
 
     Base::Quantity q(d->quantity);
     q.setValue(d->maximum);
@@ -842,7 +842,7 @@ QSize QuantitySpinBox::minimumSizeHint() const
     int w = 0;
 
     QString s;
-    QString fixedContent = QLatin1String(" ");
+    QString fixedContent = u" "_qs;
 
     Base::Quantity q(d->quantity);
     q.setValue(d->maximum);

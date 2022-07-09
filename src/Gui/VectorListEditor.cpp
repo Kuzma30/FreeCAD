@@ -43,11 +43,11 @@ QVariant VectorTableModel::headerData(int section, Qt::Orientation orientation, 
     if (role != Qt::DisplayRole || orientation != Qt::Horizontal)
         return QVariant();
     if (section == 0)
-        return QVariant(QLatin1Char('x'));
+        return QVariant(u'x');
     if (section == 1)
-        return QVariant(QLatin1Char('y'));
+        return QVariant(u'y');
     if (section == 2)
-        return QVariant(QLatin1Char('z'));
+        return QVariant(u'z');
     else
         return QVariant();
 }

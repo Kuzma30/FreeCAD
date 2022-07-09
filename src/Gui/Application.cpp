@@ -1427,7 +1427,7 @@ bool Application::activateWorkbench(const char* name)
         QString msg = QString::fromUtf8(e.what());
         QRegExp rx;
         // ignore '<type 'exceptions.ImportError'>' prefixes
-        rx.setPattern(QLatin1String("^\\s*<type 'exceptions.ImportError'>:\\s*"));
+        rx.setPattern(u"^\s*<type 'exceptions.ImportError'>:\s*"_qs);
         int pos = rx.indexIn(msg);
         while ( pos != -1 ) {
             msg = msg.mid(rx.matchedLength());
@@ -1586,22 +1586,22 @@ QStringList Application::workbenches(void) const
     if (ht != config.end()) {
         QString items = QString::fromLatin1(ht->second.c_str());
 #if QT_VERSION >= QT_VERSION_CHECK(5,15,0)
-        hidden = items.split(QLatin1Char(';'), Qt::SkipEmptyParts);
+        hidden = items.split(u';', Qt::SkipEmptyParts);
 #else
         hidden = items.split(QLatin1Char(';'), QString::SkipEmptyParts);
 #endif
         if (hidden.isEmpty())
-            hidden.push_back(QLatin1String(""));
+            hidden.push_back(u""_qs);
     }
     if (et != config.end()) {
         QString items = QString::fromLatin1(et->second.c_str());
 #if QT_VERSION >= QT_VERSION_CHECK(5,15,0)
-        extra = items.split(QLatin1Char(';'), Qt::SkipEmptyParts);
+        extra = items.split(u';', Qt::SkipEmptyParts);
 #else
         extra = items.split(QLatin1Char(';'), QString::SkipEmptyParts);
 #endif
         if (extra.isEmpty())
-            extra.push_back(QLatin1String(""));
+            extra.push_back(u""_qs);
     }
 
     PyObject *key, *value;
@@ -1973,21 +1973,21 @@ void Application::runApplication(void)
 #endif
     QString plugin;
     plugin = QString::fromStdString(App::Application::getHomePath());
-    plugin += QLatin1String("/plugins");
+    plugin += u"/plugins"_qs;
     QCoreApplication::addLibraryPath(plugin);
 
     // setup the search paths for Qt style sheets
     QStringList qssPaths;
     qssPaths << QString::fromUtf8((App::Application::getUserAppDataDir() + "Gui/Stylesheets/").c_str())
              << QString::fromUtf8((App::Application::getResourceDir() + "Gui/Stylesheets/").c_str())
-             << QLatin1String(":/stylesheets");
+             << u":/stylesheets"_qs;
     QDir::setSearchPaths(QString::fromLatin1("qss"), qssPaths);
 
     // set search paths for images
     QStringList imagePaths;
     imagePaths << QString::fromUtf8((App::Application::getUserAppDataDir() + "Gui/images").c_str())
                << QString::fromUtf8((App::Application::getUserAppDataDir() + "pixmaps").c_str())
-               << QLatin1String(":/icons");
+               << u":/icons"_qs;
     QDir::setSearchPaths(QString::fromLatin1("images"), imagePaths);
 
     // register action style event type
@@ -2005,7 +2005,7 @@ void Application::runApplication(void)
         QStringList searchPaths;
         searchPaths.prepend(QString::fromUtf8(":/icons"));
         QIcon::setThemeSearchPaths(searchPaths);
-        QIcon::setThemeName(QLatin1String("FreeCAD-default"));
+        QIcon::setThemeName(u"FreeCAD-default"_qs);
     }
 #endif
 
@@ -2356,7 +2356,7 @@ void Application::setStyleSheet(const QString& qssFile, bool tiledBackground)
     if (!qssFile.isEmpty() && current != qssFile) {
         // Search for stylesheet in user-defined search paths.
         // For qss they are set-up in runApplication() with the prefix "qss"
-        QString prefix(QLatin1String("qss:"));
+        QString prefix(u"qss:"_qs);
 
         QFile f;
         if (QFile::exists(qssFile)) {
@@ -2401,7 +2401,7 @@ void Application::setStyleSheet(const QString& qssFile, bool tiledBackground)
             qApp->setStyleSheet(QString());
             ActionStyleEvent e(ActionStyleEvent::Restore);
             qApp->sendEvent(getMainWindow(), &e);
-            mdi->setBackground(QPixmap(QLatin1String("images:background.png")));
+            mdi->setBackground(QPixmap(u"images:background.png"_qs));
         }
         else {
             qApp->setStyleSheet(QString());

@@ -61,7 +61,7 @@ Workbench::Workbench()
 
     QGridLayout* pLayout = new QGridLayout(tree); 
     pLayout->setSpacing(0);
-    pLayout->setMargin (0);
+    pLayout->setContentsMargins (0, 0, 0, 0);
     pLayout->addWidget(treeWidget, 0, 0);
 
     tree->setObjectName

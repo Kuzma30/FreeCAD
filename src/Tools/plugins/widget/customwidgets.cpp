@@ -143,7 +143,7 @@ FileChooser::FileChooser( QWidget *parent )
   : QWidget( parent ), md( File ), _filter( QString() )
 {
     QHBoxLayout *layout = new QHBoxLayout( this );
-    layout->setMargin( 0 );
+    layout->setContentsMargins( 0, 0, 0, 0 );
     layout->setSpacing( 6 );
 
     lineEdit = new QLineEdit( this );
@@ -1168,7 +1168,7 @@ QSize QuantitySpinBox::sizeHint() const
     initStyleOption(&opt);
     QSize hint(w, h);
     QSize size = style()->sizeFromContents(QStyle::CT_SpinBox, &opt, hint, this)
-                        .expandedTo(QApplication::globalStrut());
+                        .expandedTo(QSize(0, 0));
     return size;
 }
 
@@ -1199,7 +1199,7 @@ QSize QuantitySpinBox::minimumSizeHint() const
     initStyleOption(&opt);
     QSize hint(w, h);
     QSize size = style()->sizeFromContents(QStyle::CT_SpinBox, &opt, hint, this)
-                        .expandedTo(QApplication::globalStrut());
+                        .expandedTo(QSize(0, 0));
     return size;
 }
 

@@ -27,6 +27,8 @@
 # include <locale>
 # include <iostream>
 # include <QElapsedTimer>
+# include <QVector>
+# include <QString>
 #endif
 
 #include "PyExport.h"
@@ -155,20 +157,25 @@ std::string Base::Tools::addNumber(const std::string& name, unsigned int num, in
 std::string Base::Tools::getIdentifier(const std::string& name)
 {
     if (name.empty())
-        return "_";
-    // check for first character whether it's a digit
-    std::string CleanName = name;
-    if (!CleanName.empty() && CleanName[0] >= 48 && CleanName[0] <= 57)
-        CleanName[0] = '_';
-    // strip illegal chars
-    for (char & it : CleanName) {
-        if (!((it>=48 && it<=57) ||  // number
-             (it>=65 && it<=90)  ||  // uppercase letter
-             (it>=97 && it<=122)))   // lowercase letter
-             it = '_'; // it's neither number nor letter
-    }
+          return name;
 
-    return CleanName;
+    // Convert the given name into a PEP-3131 conforming Python identifier.
+    // See: https://peps.python.org/pep-3131/#specification-of-language-changes
+
+    auto CleanName = QString::fromUtf8(name.c_str()).toUcs4();
+
+    // We'll replace all non Xid-Continue character as _. Special handling for
+    // the first character. If it is non Xid-Start but a valid Xid-Continue,
+    // insert an underscore as the new starting character.
+    if (CleanName[0] != '_' && _PyUnicode_IsXidContinue(CleanName[0])
+                            && !_PyUnicode_IsXidStart(CleanName[0]))
+        CleanName.push_front('_');
+
+    for (auto &c : CleanName) {
+        if (!_PyUnicode_IsXidContinue(c))
+            c = '_';
+    }
+    return QString::fromUcs4(&CleanName[0], CleanName.size()).toUtf8().constData();
 }
 
 std::wstring Base::Tools::widen(const std::string& str)

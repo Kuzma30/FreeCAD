@@ -142,7 +142,7 @@ bool PropertySheet::isValidAlias(const std::string& candidate)
     }
 
     /* Check to make sure it doesn't match a cell reference */
-    if (boost::regex_match(candidate.c_str(), cm, gen)) {
+    if (Base::Tools::getIdentifier(candidate) == candidate) {
         static const boost::regex e("\\${0,1}([A-Z]{1,2})\\${0,1}([0-9]{1,5})");
 
         if (boost::regex_match(candidate.c_str(), cm, e)) {

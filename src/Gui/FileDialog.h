@@ -29,7 +29,11 @@
 #include <QFileIconProvider>
 #include <QFileSystemModel>
 #include <QPointer>
+#include <QLabel>
+#include <QComboBox>
 #include <FCGlobal.h>
+#include "Format_Type.h"
+#include <QMap>
 
 class QButtonGroup;
 class QDialogButtonBox;
@@ -82,6 +86,7 @@ public:
 
     void accept() override;
 
+    static void createCodePageMap();
 private Q_SLOTS:
     void onSelectedFilter(const QString&);
 
@@ -89,6 +94,7 @@ private:
     bool hasSuffix(const QString&) const;
     static QList<QUrl> fetchSidebarUrls();
     static QString workingDirectory;
+    static QMap<Resource_FormatType, QString> codePageMap;
 };
 
 // ----------------------------------------------------------------------

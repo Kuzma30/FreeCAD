@@ -1256,6 +1256,7 @@ SET(FreeCADGui_SRCS
     StartupProcess.h
     TransactionObject.h
     ToolHandler.h
+    Format_Type.h
     ${FreeCADGui_SDK_MOC_HDRS}
 )
 
@@ -1342,7 +1343,7 @@ if (EIGEN3_NO_DEPRECATED_COPY)
         PROPERTIES COMPILE_FLAGS ${EIGEN3_NO_DEPRECATED_COPY})
 endif ()
 
-add_library(FreeCADGui SHARED ${FreeCADGui_SRCS})
+add_library(FreeCADGui SHARED ${FreeCADGui_SRCS}
 target_link_libraries(FreeCADGui ${FreeCADGui_LIBS})
 
 SET_BIN_DIR(FreeCADGui FreeCADGui)

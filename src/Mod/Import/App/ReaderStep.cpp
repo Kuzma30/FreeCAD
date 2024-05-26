@@ -51,7 +51,10 @@ void ReaderStep::read(Handle(TDocStd_Document) hDoc)  // NOLINT
     aReader.SetNameMode(true);
     aReader.SetLayerMode(true);
     aReader.SetSHUOMode(true);
-    if (aReader.ReadFile(name8bit.c_str()) != IFSelect_RetDone) {
+    Handle(StepData_StepModel) aStepModel = new StepData_StepModel;
+    aStepModel->InternalParameters.InitFromStatic();
+    aStepModel->SetSourceCodePage(Resource_FormatType_CP1251);
+    if (aReader.ReadFile(name8bit.c_str(),aStepModel->InternalParameters) != IFSelect_RetDone) {
         throw Base::FileException("Cannot read STEP file", file);
     }
 

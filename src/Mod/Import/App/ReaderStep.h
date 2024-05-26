@@ -27,6 +27,7 @@
 #include <Mod/Import/ImportGlobal.h>
 #include <Base/FileInfo.h>
 #include <TDocStd_Document.hxx>
+#include <StepData_StepModel.hxx>
 
 namespace Import
 {

@@ -82,7 +82,7 @@ void StdCmdWorkbench::activated(int i)
     try {
         Workbench* w = WorkbenchManager::instance()->active();
         QList<QAction*> items = static_cast<WorkbenchGroup*>(_pcAction)->actions();
-        std::string switch_to = (const char*)items[i]->objectName().toLatin1();
+        std::string switch_to = (const char*)items[i]->objectName().toUtf8();
         if (w) {
             std::string current_w = w->name();
             if (switch_to == current_w)
@@ -116,7 +116,7 @@ Action * StdCmdWorkbench::createAction()
     Action *pcAction;
 
     pcAction = new WorkbenchGroup(this,getMainWindow());
-    pcAction->setShortcut(QString::fromLatin1(getAccel()));
+    pcAction->setShortcut(QString::fromUtf8(getAccel()));
     applyCommandData(this->className(), pcAction);
     if (getPixmap())
         pcAction->setIcon(Gui::BitmapFactory().iconFromTheme(getPixmap()));
@@ -237,7 +237,7 @@ Action * StdCmdAbout::createAction()
         this->className(), getStatusTip()).arg(exe));
     pcAction->setWhatsThis(QLatin1String(getWhatsThis()));
     pcAction->setIcon(QApplication::windowIcon());
-    pcAction->setShortcut(QString::fromLatin1(getAccel()));
+    pcAction->setShortcut(QString::fromUtf8(getAccel()));
     // Needs to have AboutRole set to avoid duplicates if adding the about action more than once on macOS
     pcAction->setMenuRole(QAction::AboutRole);
     return pcAction;
@@ -483,7 +483,7 @@ StdCmdOnlineHelp::StdCmdOnlineHelp()
 void StdCmdOnlineHelp::activated(int iMsg)
 {
     Q_UNUSED(iMsg);
-    Gui::getMainWindow()->showDocumentation(QString::fromLatin1("Online_Help_Startpage"));
+    Gui::getMainWindow()->showDocumentation(QStringLiteral("Online_Help_Startpage"));
 }
 
 //===========================================================================
@@ -892,9 +892,9 @@ Gui::Action * StdCmdUserEditMode::createAction()
         QAction* act = pcAction->addAction(QString());
         auto modeName = QString::fromStdString(uem.second.first);
         act->setCheckable(true);
-        act->setIcon(BitmapFactory().iconFromTheme(qPrintable(QString::fromLatin1("Std_UserEditMode")+modeName)));
-        act->setObjectName(QString::fromLatin1("Std_UserEditMode")+modeName);
-        act->setWhatsThis(QString::fromLatin1(getWhatsThis()));
+        act->setIcon(BitmapFactory().iconFromTheme(qPrintable(QStringLiteral("Std_UserEditMode")+modeName)));
+        act->setObjectName(QStringLiteral("Std_UserEditMode")+modeName);
+        act->setWhatsThis(QString::fromUtf8(getWhatsThis()));
         act->setToolTip(QString::fromStdString(uem.second.second));
 
         if (uem.first == 0) {

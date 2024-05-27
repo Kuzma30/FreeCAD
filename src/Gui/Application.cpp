@@ -365,7 +365,7 @@ Application::Application(bool GUIenabled)
         hPGrp = hPGrp->GetGroup("Preferences")->GetGroup("General");
         QString lang = QLocale::languageToString(QLocale().language());
         Translator::instance()->activateLanguage(
-            hPGrp->GetASCII("Language", (const char*)lang.toLatin1()).c_str());
+            hPGrp->GetASCII("Language", (const char*)lang.toUtf8()).c_str());
         GetWidgetFactorySupplier();
 
         // Coin3d disabled VBO support for all Intel drivers but in the meantime they have improved
@@ -1435,7 +1435,7 @@ bool Application::activateWorkbench(const char* name)
             ok = true; // already active
         // now try to create and activate the matching workbench object
         else if (WorkbenchManager::instance()->activate(name, type)) {
-            getMainWindow()->activateWorkbench(QString::fromLatin1(name));
+            getMainWindow()->activateWorkbench(QString::fromUtf8(name));
             this->signalActivateWorkbench(name);
             ok = true;
         }
@@ -1519,7 +1519,7 @@ QPixmap Application::workbenchIcon(const QString& wb) const
 {
     Base::PyGILStateLocker lock;
     // get the python workbench object from the dictionary
-    PyObject* pcWorkbench = PyDict_GetItemString(_pcWorkbenchDictionary, wb.toLatin1());
+    PyObject* pcWorkbench = PyDict_GetItemString(_pcWorkbenchDictionary, wb.toUtf8());
     // test if the workbench exists
     if (pcWorkbench) {
         // make a unique icon name
@@ -1593,7 +1593,7 @@ QString Application::workbenchToolTip(const QString& wb) const
 {
     // get the python workbench object from the dictionary
     Base::PyGILStateLocker lock;
-    PyObject* pcWorkbench = PyDict_GetItemString(_pcWorkbenchDictionary, wb.toLatin1());
+    PyObject* pcWorkbench = PyDict_GetItemString(_pcWorkbenchDictionary, wb.toUtf8());
     // test if the workbench exists
     if (pcWorkbench) {
         // get its ToolTip member if possible
@@ -1617,7 +1617,7 @@ QString Application::workbenchMenuText(const QString& wb) const
 {
     // get the python workbench object from the dictionary
     Base::PyGILStateLocker lock;
-    PyObject* pcWorkbench = PyDict_GetItemString(_pcWorkbenchDictionary, wb.toLatin1());
+    PyObject* pcWorkbench = PyDict_GetItemString(_pcWorkbenchDictionary, wb.toUtf8());
     // test if the workbench exists
     if (pcWorkbench) {
         // get its ToolTip member if possible
@@ -1648,7 +1648,7 @@ QStringList Application::workbenches() const
     const char* start = (st != config.end() ? st->second.c_str() : "<none>");
     QStringList hidden, extra;
     if (ht != config.end()) {
-        QString items = QString::fromLatin1(ht->second.c_str());
+        QString items = QString::fromUtf8(ht->second.c_str());
 #if QT_VERSION >= QT_VERSION_CHECK(5,15,0)
         hidden = items.split(QLatin1Char(';'), Qt::SkipEmptyParts);
 #else
@@ -1658,7 +1658,7 @@ QStringList Application::workbenches() const
             hidden.push_back(QLatin1String(""));
     }
     if (et != config.end()) {
-        QString items = QString::fromLatin1(et->second.c_str());
+        QString items = QString::fromUtf8(et->second.c_str());
 #if QT_VERSION >= QT_VERSION_CHECK(5,15,0)
         extra = items.split(QLatin1Char(';'), Qt::SkipEmptyParts);
 #else
@@ -1678,18 +1678,18 @@ QStringList Application::workbenches() const
         // add only allowed workbenches
         bool ok = true;
         if (!extra.isEmpty()&&ok) {
-            ok = (extra.indexOf(QString::fromLatin1(wbName)) != -1);
+            ok = (extra.indexOf(QString::fromUtf8(wbName)) != -1);
         }
         if (!hidden.isEmpty()&&ok) {
-            ok = (hidden.indexOf(QString::fromLatin1(wbName)) == -1);
+            ok = (hidden.indexOf(QString::fromUtf8(wbName)) == -1);
         }
 
         // okay the item is visible
         if (ok)
-            wb.push_back(QString::fromLatin1(wbName));
+            wb.push_back(QString::fromUtf8(wbName));
         // also allow start workbench in case it is hidden
         else if (strcmp(wbName, start) == 0)
-            wb.push_back(QString::fromLatin1(wbName));
+            wb.push_back(QString::fromUtf8(wbName));
     }
 
     return wb;
@@ -1830,7 +1830,7 @@ void messageHandlerCoin(const SoError * error, void * /*userdata*/)
         }
 #ifdef FC_OS_WIN32
     if (old_qtmsg_handler)
-        (*old_qtmsg_handler)(QtDebugMsg, QMessageLogContext(), QString::fromLatin1(msg));
+        (*old_qtmsg_handler)(QtDebugMsg, QMessageLogContext(), QString::fromUtf8(msg));
 #endif
     }
     else if (error) {
@@ -2270,13 +2270,13 @@ QString Application::replaceVariablesInQss(QString qssText)
 
     //convert them to hex.
     //Note: the ulong contains alpha channels so 8 hex characters when we need 6 here.
-    QString accentColor1 = QString::fromLatin1("#%1").arg(longAccentColor1, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
-    QString accentColor2 = QString::fromLatin1("#%1").arg(longAccentColor2, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
-    QString accentColor3 = QString::fromLatin1("#%1").arg(longAccentColor3, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
+    QString accentColor1 = QStringLiteral("#%1").arg(longAccentColor1, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
+    QString accentColor2 = QStringLiteral("#%1").arg(longAccentColor2, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
+    QString accentColor3 = QStringLiteral("#%1").arg(longAccentColor3, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
 
-    qssText = qssText.replace(QString::fromLatin1("@ThemeAccentColor1"), accentColor1);
-    qssText = qssText.replace(QString::fromLatin1("@ThemeAccentColor2"), accentColor2);
-    qssText = qssText.replace(QString::fromLatin1("@ThemeAccentColor3"), accentColor3);
+    qssText = qssText.replace(QStringLiteral("@ThemeAccentColor1"), accentColor1);
+    qssText = qssText.replace(QStringLiteral("@ThemeAccentColor2"), accentColor2);
+    qssText = qssText.replace(QStringLiteral("@ThemeAccentColor3"), accentColor3);
 
     //Base::Console().Warning("%s\n", qssText.toStdString());
     return qssText;

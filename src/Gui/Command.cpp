@@ -925,7 +925,7 @@ const char* Command::keySequenceToAccel(int sk) const
     auto type = static_cast<QKeySequence::StandardKey>(sk);
     QKeySequence ks(type);
     QString qs = ks.toString();
-    QByteArray data = qs.toLatin1();
+    QByteArray data = qs.toUtf8();
 
     return (strings[sk] = static_cast<const char*>(data)).c_str();
 }

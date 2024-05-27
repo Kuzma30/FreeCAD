@@ -155,7 +155,7 @@ void StdCmdOpen::activated(int iMsg)
             // Set flag indicating that this load/restore has been initiated by the user (not by a macro)
             getGuiApplication()->setStatus(Gui::Application::UserInitiatedOpenDocument, true);
 
-            getGuiApplication()->open(it.key().toUtf8(), it.value().toLatin1());
+            getGuiApplication()->open(it.key().toUtf8(), it.value().toUtf8());
 
             getGuiApplication()->setStatus(Gui::Application::UserInitiatedOpenDocument, false);
 
@@ -202,27 +202,27 @@ void StdCmdImport::activated(int iMsg)
     const char* supported = QT_TR_NOOP("Supported formats");
     const char* allFiles = QT_TR_NOOP("All files (*.*)");
     formatList = QObject::tr(supported);
-    formatList += QLatin1String(" (");
+    formatList += QStringLiteral(" (");
 
     std::vector<std::string> filetypes = App::GetApplication().getImportTypes();
     std::vector<std::string>::const_iterator it;
     for (it=filetypes.begin();it != filetypes.end();++it) {
         if (*it != "FCStd") {
             // ignore the project file format
-            formatList += QLatin1String(" *.");
-            formatList += QLatin1String(it->c_str());
+            formatList += QStringLiteral(" *.");
+            formatList += QString::fromUtf8(it->c_str());
         }
     }
 
-    formatList += QLatin1String(");;");
+    formatList += QStringLiteral(");;");
 
     std::map<std::string, std::string> FilterList = App::GetApplication().getImportFilters();
     std::map<std::string, std::string>::const_iterator jt;
     for (jt=FilterList.begin();jt != FilterList.end();++jt) {
         // ignore the project file format
         if (jt->first.find("(*.FCStd)") == std::string::npos) {
-            formatList += QLatin1String(jt->first.c_str());
-            formatList += QLatin1String(";;");
+            formatList += QString::fromUtf8(jt->first.c_str());
+            formatList += QStringLiteral(";;");
         }
     }
     formatList += QObject::tr(allFiles);
@@ -233,7 +233,7 @@ void StdCmdImport::activated(int iMsg)
     QStringList fileList = FileDialog::getOpenFileNames(getMainWindow(),
         QObject::tr("Import file"), QString(), formatList, &selectedFilter);
     if (!fileList.isEmpty()) {
-        hPath->SetASCII("FileImportFilter", selectedFilter.toLatin1().constData());
+        hPath->SetASCII("FileImportFilter", selectedFilter.toUtf8().constData());
         SelectModule::Dict dict = SelectModule::importHandler(fileList, selectedFilter);
 
         bool emptyDoc = (getActiveGuiDocument()->getDocument()->countObjects() == 0);
@@ -241,7 +241,7 @@ void StdCmdImport::activated(int iMsg)
         for (SelectModule::Dict::iterator it = dict.begin(); it != dict.end(); ++it) {
             getGuiApplication()->importFrom(it.key().toUtf8(),
                 getActiveGuiDocument()->getDocument()->getName(),
-                it.value().toLatin1());
+                it.value().toUtf8());
         }
 
         if (emptyDoc) {
@@ -478,14 +478,14 @@ void StdCmdExport::activated(int iMsg)
     QString fileName = FileDialog::getSaveFileName(getMainWindow(),
         QObject::tr("Export file"), defaultFilename, formatList, &selectedFilter);
     if (!fileName.isEmpty()) {
-        hPath->SetASCII("FileExportFilter", selectedFilter.toLatin1().constData());
+        hPath->SetASCII("FileExportFilter", selectedFilter.toUtf8().constData());
         lastExportFilterUsed = selectedFilter; // So we can select the same one next time
         SelectModule::Dict dict = SelectModule::exportHandler(fileName, selectedFilter);
         // export the files with the associated modules
         for (SelectModule::Dict::iterator it = dict.begin(); it != dict.end(); ++it) {
             getGuiApplication()->exportTo(it.key().toUtf8(),
                 getActiveGuiDocument()->getDocument()->getName(),
-                it.value().toLatin1());
+                it.value().toUtf8());
         }
 
         // Keep a record of if the user used our suggested generated filename. If they
@@ -615,7 +615,7 @@ void StdCmdExportDependencyGraph::activated(int iMsg)
 {
     Q_UNUSED(iMsg);
     App::Document* doc = App::GetApplication().getActiveDocument();
-    QString format = QString::fromLatin1("%1 (*.gv)").arg(Gui::GraphvizView::tr("Graphviz format"));
+    QString format = QStringLiteral("%1 (*.gv)").arg(Gui::GraphvizView::tr("Graphviz format"));
     QString fn = Gui::FileDialog::getSaveFileName(Gui::getMainWindow(), Gui::GraphvizView::tr("Export graph"), QString(), format);
     if (!fn.isEmpty()) {
         QFile file(fn);
@@ -656,7 +656,7 @@ void StdCmdNew::activated(int iMsg)
 {
     Q_UNUSED(iMsg);
     QString cmd;
-    cmd = QString::fromLatin1("App.newDocument()");
+    cmd = QStringLiteral("App.newDocument()");
     runCommand(Command::Doc,cmd.toUtf8());
     doCommand(Command::Gui,"Gui.activeDocument().activeView().viewDefaultOrientation()");
 
@@ -1030,7 +1030,7 @@ Action * StdCmdUndo::createAction()
     Action *pcAction;
 
     pcAction = new UndoAction(this,getMainWindow());
-    pcAction->setShortcut(QString::fromLatin1(getAccel()));
+    pcAction->setShortcut(QString::fromUtf8(getAccel()));
     applyCommandData(this->className(), pcAction);
     if (getPixmap())
         pcAction->setIcon(Gui::BitmapFactory().iconFromTheme(getPixmap()));
@@ -1074,7 +1074,7 @@ Action * StdCmdRedo::createAction()
     Action *pcAction;
 
     pcAction = new RedoAction(this,getMainWindow());
-    pcAction->setShortcut(QString::fromLatin1(getAccel()));
+    pcAction->setShortcut(QString::fromUtf8(getAccel()));
     applyCommandData(this->className(), pcAction);
     if (getPixmap())
         pcAction->setIcon(Gui::BitmapFactory().iconFromTheme(getPixmap()));
@@ -1365,11 +1365,11 @@ void StdCmdDelete::activated(int iMsg)
                             autoDeletion = false;
                             QString label;
                             if(parent->getDocument() != obj->getDocument())
-                                label = QLatin1String(parent->getFullName().c_str());
+                                label = QString::fromUtf8(parent->getFullName().c_str());
                             else
-                                label = QLatin1String(parent->getNameInDocument());
+                                label = QString::fromUtf8(parent->getNameInDocument());
                             if(parent->Label.getStrValue() != parent->getNameInDocument())
-                                label += QString::fromLatin1(" (%1)").arg(
+                                label += QStringLiteral(" (%1)").arg(
                                         QString::fromUtf8(parent->Label.getValue()));
                             affectedLabels.insert(label);
                             if(affectedLabels.size()>=10) {
@@ -1431,11 +1431,11 @@ void StdCmdDelete::activated(int iMsg)
         }
     } catch (const Base::Exception& e) {
         QMessageBox::critical(getMainWindow(), QObject::tr("Delete failed"),
-                QString::fromLatin1(e.what()));
+                QString::fromUtf8(e.what()));
         e.ReportException();
     } catch (...) {
         QMessageBox::critical(getMainWindow(), QObject::tr("Delete failed"),
-                QString::fromLatin1("Unknown error"));
+                QStringLiteral("Unknown error"));
     }
     commitCommand();
     Gui::getMainWindow()->setUpdatesEnabled(true);
@@ -1938,7 +1938,7 @@ protected:
         } catch (const Base::Exception& e) {
             abortCommand();
             QMessageBox::critical(getMainWindow(), QObject::tr("Failed to paste expressions"),
-                QString::fromLatin1(e.what()));
+                QString::fromUtf8(e.what()));
             e.ReportException();
         }
     }

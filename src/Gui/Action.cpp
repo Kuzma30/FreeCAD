@@ -76,7 +76,7 @@ Action::Action (Command* pcCmd, QObject * parent)
   , _action(new QAction( this ))
   , _pcCmd(pcCmd)
 {
-    _action->setObjectName(QString::fromLatin1(_pcCmd->getName()));
+    _action->setObjectName(QString::fromUtf8(_pcCmd->getName()));
     _connection = connect(_action, &QAction::triggered, this, &Action::onActivated);
 }
 
@@ -86,7 +86,7 @@ Action::Action (Command* pcCmd, QAction* action, QObject * parent)
   , _pcCmd(pcCmd)
 {
     _action->setParent(this);
-    _action->setObjectName(QString::fromLatin1(_pcCmd->getName()));
+    _action->setObjectName(QString::fromUtf8(_pcCmd->getName()));
     _connection = connect(_action, &QAction::triggered, this, &Action::onActivated);
 }
 
@@ -331,23 +331,23 @@ QString Action::createToolTip(QString helpText,
         helpText.resize(helpText.size() - shortcut.size());
     }
     if (!shortcut.isEmpty()) {
-        shortcut = QString::fromLatin1(" (%1)").arg(shortcut);
+        shortcut = QStringLiteral(" (%1)").arg(shortcut);
     }
 
-    QString tooltip = QString::fromLatin1(
+    QString tooltip = QStringLiteral(
             "<p style='white-space:pre; margin-bottom:0.5em;'><b>%1</b>%2</p>").arg(
             text.toHtmlEscaped(), shortcut.toHtmlEscaped());
 
     QString cmdName;
     if (command && command->getName()) {
-        cmdName = QString::fromLatin1(command->getName());
+        cmdName = QString::fromUtf8(command->getName());
         if (auto groupcmd = dynamic_cast<const GroupCommand*>(command)) {
             if (auto act = command->getAction()) {
                 int idx = act->property("defaultAction").toInt();
                 auto cmd = groupcmd->getCommand(idx);
                 if (cmd && cmd->getName()) {
                     cmdName = QStringLiteral("%1 (%2:%3)")
-                        .arg(QString::fromLatin1(cmd->getName()), cmdName)
+                        .arg(QString::fromUtf8(cmd->getName()), cmdName)
                         .arg(idx);
                 }
             }
@@ -371,12 +371,12 @@ QString Action::createToolTip(QString helpText,
         return tooltip + helpText + cmdName;
     }
 
-    tooltip += QString::fromLatin1(
+    tooltip += QStringLiteral(
             "<p style='white-space:pre; margin:0;'>");
 
     // If the user supplied tooltip contains line break, we shall honour it.
     if (helpText.indexOf(QLatin1Char('\n')) >= 0) {
-        tooltip += helpText.toHtmlEscaped() + QString::fromLatin1("</p>") ;
+        tooltip += helpText.toHtmlEscaped() + QStringLiteral("</p>") ;
     }
     else {
         // If not, try to end the non wrapping paragraph at some pre defined
@@ -385,7 +385,7 @@ QString Action::createToolTip(QString helpText,
         QFontMetrics fm(font);
         int width = QtTools::horizontalAdvance(fm, helpText);
         if (width <= tipWidth) {
-            tooltip += helpText.toHtmlEscaped() + QString::fromLatin1("</p>") ;
+            tooltip += helpText.toHtmlEscaped() + QStringLiteral("</p>") ;
         }
         else {
             int index = tipWidth / width * helpText.size();
@@ -396,7 +396,7 @@ QString Action::createToolTip(QString helpText,
                 }
             }
             tooltip += helpText.left(index).toHtmlEscaped()
-                + QString::fromLatin1("</p>")
+                + QStringLiteral("</p>")
                 + helpText.right(helpText.size()-index).trimmed().toHtmlEscaped();
         }
     }
@@ -475,7 +475,7 @@ void ActionGroup::addTo(QWidget *widget)
             widget->addAction(action());
             QToolButton* tb = widget->findChildren<QToolButton*>().constLast();
             tb->setPopupMode(QToolButton::MenuButtonPopup);
-            tb->setObjectName(QString::fromLatin1("qt_toolbutton_menubutton"));
+            tb->setObjectName(QStringLiteral("qt_toolbutton_menubutton"));
             QList<QAction*> acts = groupAction()->actions();
             auto menu = new QMenu(tb);
             menu->addActions(acts);
@@ -864,7 +864,7 @@ void RecentFilesAction::setFiles(const QStringList& files)
     int numRecentFiles = std::min<int>(recentFiles.count(), files.count());
     for (int index = 0; index < numRecentFiles; index++) {
         QFileInfo fi(files[index]);
-        recentFiles[index]->setText(QString::fromLatin1("%1 %2").arg(index+1).arg(fi.fileName()));
+        recentFiles[index]->setText(QStringLiteral("%1 %2").arg(index+1).arg(fi.fileName()));
         recentFiles[index]->setStatusTip(tr("Open file %1").arg(files[index]));
         recentFiles[index]->setToolTip(files[index]); // set the full name that we need later for saving
         recentFiles[index]->setData(QVariant(index));
@@ -918,7 +918,7 @@ void RecentFilesAction::activateFile(int id)
         // invokes appendFile()
         SelectModule::Dict dict = SelectModule::importHandler(filename);
         for (SelectModule::Dict::iterator it = dict.begin(); it != dict.end(); ++it) {
-            Application::Instance->open(it.key().toUtf8(), it.value().toLatin1());
+            Application::Instance->open(it.key().toUtf8(), it.value().toUtf8());
             break;
         }
     }
@@ -969,12 +969,12 @@ void RecentFilesAction::save()
     QList<QAction*> recentFiles = groupAction()->actions();
     int num = std::min<int>(count, recentFiles.count());
     for (int index = 0; index < num; index++) {
-        QString key = QString::fromLatin1("MRU%1").arg(index);
+        QString key = QStringLiteral("MRU%1").arg(index);
         QString value = recentFiles[index]->toolTip();
         if (value.isEmpty()) {
             break;
         }
-        hGrp->SetASCII(key.toLatin1(), value.toUtf8());
+        hGrp->SetASCII(key.toUtf8(), value.toUtf8());
     }
 
     Base::StateLocker guard(_pimpl->updating);
@@ -1032,7 +1032,7 @@ void RecentMacrosAction::setFiles(const QStringList& files)
     auto accel_col = QString::fromStdString(shortcut_modifiers);
     for (int index = 0; index < numRecentFiles; index++) {
         QFileInfo fi(files[index]);
-        recentFiles[index]->setText(QString::fromLatin1("%1 %2").arg(index+1).arg(fi.completeBaseName()));
+        recentFiles[index]->setText(QStringLiteral("%1 %2").arg(index+1).arg(fi.completeBaseName()));
         recentFiles[index]->setToolTip(files[index]); // set the full name that we need later for saving
         recentFiles[index]->setData(QVariant(index));
         QString accel(tr("none"));
@@ -1184,12 +1184,12 @@ void RecentMacrosAction::save()
     QList<QAction*> recentFiles = groupAction()->actions();
     int num = std::min<int>(count, recentFiles.count());
     for (int index = 0; index < num; index++) {
-        QString key = QString::fromLatin1("MRU%1").arg(index);
+        QString key = QStringLiteral("MRU%1").arg(index);
         QString value = recentFiles[index]->toolTip();
         if (value.isEmpty()) {
             break;
         }
-        hGrp->SetASCII(key.toLatin1(), value.toUtf8());
+        hGrp->SetASCII(key.toUtf8(), value.toUtf8());
     }
 
     hGrp->SetInt("RecentMacros", count); // restore

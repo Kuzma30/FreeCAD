@@ -63,14 +63,14 @@ std::string Uuid::createUuid()
     QString uuid = QUuid::createUuid().toString();
     uuid = uuid.mid(1);
     uuid.chop(1);
-    Uuid = uuid.toLatin1().constData();
+    Uuid = uuid.toUtf8().constData();
     return Uuid;
 }
 
 void Uuid::setValue(const char* sString)
 {
     if (sString) {
-        QUuid uuid(QString::fromLatin1(sString));
+        QUuid uuid(QString::fromUtf8(sString));
         if (uuid.isNull()) {
             throw std::runtime_error("invalid uuid");
         }
@@ -78,7 +78,7 @@ void Uuid::setValue(const char* sString)
         QString id = uuid.toString();
         id = id.mid(1);
         id.chop(1);
-        _uuid = id.toLatin1().constData();
+        _uuid = id.toUtf8().constData();
     }
 }
 

@@ -133,7 +133,7 @@ void NumberRange::throwIfOutOfRange(const Base::Quantity& value) const
         QString valStr = value.getUserString();
         QString minStr = minVal.getUserString();
         QString maxStr = maxVal.getUserString();
-        QString error = QString::fromLatin1("Value out of range (%1 out of [%2, %3])").arg(valStr, minStr, maxStr);
+        QString error = QString::fromUtf8("Value out of range (%1 out of [%2, %3])").arg(valStr, minStr, maxStr);
 
         throw Base::ValueError(error.toStdString());
     }

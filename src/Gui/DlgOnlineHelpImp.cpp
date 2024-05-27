@@ -49,7 +49,7 @@ DlgOnlineHelpImp::DlgOnlineHelpImp( QWidget* parent )
 {
     ui->setupUi(this);
 
-    ui->prefStartPage->setFilter(QString::fromLatin1("%1 (*.html *.htm)").arg(tr("HTML files")));
+    ui->prefStartPage->setFilter(QString::fromUtf8("%1 (*.html *.htm)").arg(tr("HTML files")));
     if (ui->prefStartPage->fileName().isEmpty()) {
         ui->prefStartPage->setFileName(getStartpage());
     }

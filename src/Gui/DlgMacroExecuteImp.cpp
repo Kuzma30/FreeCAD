@@ -224,7 +224,7 @@ void DlgMacroExecuteImp::fillUpList()
         item->setText(0, fn);
     }
 
-    QString dirstr = QString::fromStdString(App::Application::getHomePath()) + QString::fromLatin1("Macro");
+    QString dirstr = QString::fromStdString(App::Application::getHomePath()) + QStringLiteral("Macro");
     filteredByContent = this->filterFiles(dirstr);
 
     ui->systemMacroListBox->clear();
@@ -380,7 +380,7 @@ void DlgMacroExecuteImp::accept()
         dir =QDir(this->macroPath);
     }
     else {
-        QString dirstr = QString::fromStdString(App::Application::getHomePath()) + QString::fromLatin1("Macro");
+        QString dirstr = QString::fromStdString(App::Application::getHomePath()) + QStringLiteral("Macro");
         dir = QDir(dirstr);
     }
 
@@ -436,7 +436,7 @@ void DlgMacroExecuteImp::onEditButtonClicked()
     else {
         //index == 1 system-wide
         item = ui->systemMacroListBox->currentItem();
-        dir.setPath(QString::fromStdString(App::Application::getHomePath()) + QString::fromLatin1("Macro"));
+        dir.setPath(QString::fromStdString(App::Application::getHomePath()) + QStringLiteral("Macro"));
     }
 
     if (!item)
@@ -444,7 +444,7 @@ void DlgMacroExecuteImp::onEditButtonClicked()
 
     auto mitem = static_cast<MacroItem *>(item);
 
-    QString file = QString::fromLatin1("%1/%2").arg(dir.absolutePath(), item->text(0));
+    QString file = QString::fromUtf8("%1/%2").arg(dir.absolutePath(), item->text(0));
     auto editor = new PythonEditor();
     editor->setWindowIcon(Gui::BitmapFactory().iconFromTheme("applications-python"));
     auto edit = new PythonEditorView(editor, getMainWindow());
@@ -457,7 +457,7 @@ void DlgMacroExecuteImp::onEditButtonClicked()
     if (mitem->systemWide) {
         editor->setReadOnly(true);
         QString shownName;
-        shownName = QString::fromLatin1("%1[*] - [%2]").arg(item->text(0), tr("Read-only"));
+        shownName = QString::fromUtf8("%1[*] - [%2]").arg(item->text(0), tr("Read-only"));
         edit->setWindowTitle(shownName);
     }
     close();
@@ -507,7 +507,7 @@ void DlgMacroExecuteImp::onCreateButtonClicked()
             auto edit = new PythonEditorView(editor, getMainWindow());
             edit->open(fi.absoluteFilePath());
             getMainWindow()->appendRecentMacro(fi.absoluteFilePath());
-            edit->setWindowTitle(QString::fromLatin1("%1[*]").arg(fn));
+            edit->setWindowTitle(QString::fromUtf8("%1[*]").arg(fn));
             edit->resize(400, 300);
             getMainWindow()->addWindow(edit);
             close();
@@ -600,7 +600,7 @@ Note: your changes will be applied when you next switch workbenches\n"));
         auto mc = dynamic_cast<MacroCommand*>(aCmd);
         if (mc && fn.compare(QLatin1String(mc->getScriptName())) == 0) {
             hasMacroCommand = true;
-            macroMenuText = QString::fromLatin1(mc->getMenuText());
+            macroMenuText = QString::fromUtf8(mc->getMenuText());
         }
     }
 
@@ -613,37 +613,37 @@ Note: your changes will be applied when you next switch workbenches\n"));
         /** title is normally "Customize" **/
         dlg.setWindowTitle(tr("Walkthrough, dialog 1 of 2"));
 
-        tabWidget = dlg.findChild<QTabWidget*>(QString::fromLatin1("Gui__Dialog__TabWidget"));
+        tabWidget = dlg.findChild<QTabWidget*>(QStringLiteral("Gui__Dialog__TabWidget"));
         if (!tabWidget) {
             std::cerr << "Toolbar walkthrough error: Unable to find tabwidget" << std::endl;
             return;
         }
 
-        auto setupCustomMacrosPage = tabWidget->findChild<QWidget*>(QString::fromLatin1("Gui__Dialog__DlgCustomActions"));
+        auto setupCustomMacrosPage = tabWidget->findChild<QWidget*>(QStringLiteral("Gui__Dialog__DlgCustomActions"));
         if (!setupCustomMacrosPage) {
             std::cerr << "Toolbar walkthrough error: Unable to find setupCustomMacrosPage" << std::endl;
             return;
         }
         tabWidget->setCurrentWidget(setupCustomMacrosPage);
 
-        auto groupBox7 = setupCustomMacrosPage->findChild<QGroupBox*>(QString::fromLatin1("GroupBox7"));
+        auto groupBox7 = setupCustomMacrosPage->findChild<QGroupBox*>(QStringLiteral("GroupBox7"));
         if (!groupBox7) {
             Base::Console().Warning("Toolbar walkthrough: Unable to find groupBox7\n");
             //just warn when not a fatal error
         } else {
             /** normally the groupbox title is "Setup Custom Macros", but we change it here **/
             groupBox7->setTitle(tr("Walkthrough instructions: Fill in missing fields (optional) then click Add, then Close"));
-            groupBox7->setStyleSheet(QString::fromLatin1("QGroupBox::title {color:red}"));
+            groupBox7->setStyleSheet(QStringLiteral("QGroupBox::title {color:red}"));
         }
 
-        auto buttonAddAction = setupCustomMacrosPage->findChild<QPushButton*>(QString::fromLatin1("buttonAddAction"));
+        auto buttonAddAction = setupCustomMacrosPage->findChild<QPushButton*>(QStringLiteral("buttonAddAction"));
         if (!buttonAddAction) {
             Base::Console().Warning("Toolbar walkthrough: Unable to find buttonAddAction\n");
         } else {
-            buttonAddAction->setStyleSheet(QString::fromLatin1("color:red"));
+            buttonAddAction->setStyleSheet(QStringLiteral("color:red"));
         }
 
-        auto macroListBox = setupCustomMacrosPage->findChild<QComboBox*>(QString::fromLatin1("actionMacros"));
+        auto macroListBox = setupCustomMacrosPage->findChild<QComboBox*>(QStringLiteral("actionMacros"));
         if (!macroListBox) {
             Base::Console().Warning("Toolbar walkthrough: Unable to find actionMacros combo box\n");
         } else {
@@ -651,7 +651,7 @@ Note: your changes will be applied when you next switch workbenches\n"));
             macroListBox->setCurrentIndex(macroIndex); //select it for the user so they don't have to
         }
 
-        auto menuText = setupCustomMacrosPage->findChild<QLineEdit*>(QString::fromLatin1("actionMenu"));
+        auto menuText = setupCustomMacrosPage->findChild<QLineEdit*>(QStringLiteral("actionMenu"));
         if (!menuText) {
             Base::Console().Warning("Toolbar walkthrough: Unable to find actionMenu menuText\n");
         } else {
@@ -672,38 +672,38 @@ Note: your changes will be applied when you next switch workbenches\n"));
     }
 
     tabWidget = nullptr;
-    tabWidget = dlg.findChild<QTabWidget*>(QString::fromLatin1("Gui__Dialog__TabWidget"));
+    tabWidget = dlg.findChild<QTabWidget*>(QStringLiteral("Gui__Dialog__TabWidget"));
     if (!tabWidget) {
         std::cerr << "Toolbar walkthrough: Unable to find tabWidget Gui__Dialog__TabWidget" << std::endl;
         return;
     }
 
-    auto setupToolbarPage = tabWidget->findChild<DlgCustomToolbars*>(QString::fromLatin1("Gui__Dialog__DlgCustomToolbars"));
+    auto setupToolbarPage = tabWidget->findChild<DlgCustomToolbars*>(QStringLiteral("Gui__Dialog__DlgCustomToolbars"));
     if (!setupToolbarPage){
         std::cerr << "Toolbar walkthrough: Unable to find setupToolbarPage Gui__Dialog__DlgCustomToolbars" << std::endl;
         return;
     }
 
     tabWidget->setCurrentWidget(setupToolbarPage);
-    auto moveActionRightButton = setupToolbarPage->findChild<QPushButton*>(QString::fromLatin1("moveActionRightButton"));
+    auto moveActionRightButton = setupToolbarPage->findChild<QPushButton*>(QStringLiteral("moveActionRightButton"));
     if (!moveActionRightButton){
         Base::Console().Warning("Toolbar walkthrough: Unable to find moveActionRightButton\n");
     } else {
-        moveActionRightButton->setStyleSheet(QString::fromLatin1("background-color: red"));
+        moveActionRightButton->setStyleSheet(QStringLiteral("background-color: red"));
     }
     /** tailor instructions depending on whether user already has custom toolbar created
      * if not, they need to click New button to create one first
     **/
 
     QString instructions2 = tr("Walkthrough instructions: Click right arrow button (->), then Close.");
-    auto workbenchBox = setupToolbarPage->findChild<QComboBox*>(QString::fromLatin1("workbenchBox"));
+    auto workbenchBox = setupToolbarPage->findChild<QComboBox*>(QStringLiteral("workbenchBox"));
     if (!workbenchBox) {
         Base::Console().Warning("Toolbar walkthrough: Unable to find workbenchBox\n");
     }
     else {
         /** find the Global workbench and select it for the user **/
 
-        int globalIdx = workbenchBox->findData(QString::fromLatin1("Global"));
+        int globalIdx = workbenchBox->findData(QStringLiteral("Global"));
         if (globalIdx != -1){
             workbenchBox->setCurrentIndex(globalIdx);
             QMetaObject::invokeMethod(setupToolbarPage, "on_workbenchBox_activated",
@@ -714,27 +714,27 @@ Note: your changes will be applied when you next switch workbenches\n"));
         }
 
         if (!hasCustomToolbar){
-            auto newButton = setupToolbarPage->findChild<QPushButton*>(QString::fromLatin1("newButton"));
+            auto newButton = setupToolbarPage->findChild<QPushButton*>(QStringLiteral("newButton"));
             if (!newButton){
                 Base::Console().Warning("Toolbar walkthrough: Unable to find newButton\n");
             } else {
-                newButton->setStyleSheet(QString::fromLatin1("color:red"));
+                newButton->setStyleSheet(QStringLiteral("color:red"));
                 instructions2 = tr("Walkthrough instructions: Click New, then right arrow (->) button, then Close.");
             }
         }
     }
     /** "label" normally says "Note: the changes become active the next time you load the appropriate workbench" **/
 
-    auto label = setupToolbarPage->findChild<QLabel*>(QString::fromLatin1("label"));
+    auto label = setupToolbarPage->findChild<QLabel*>(QStringLiteral("label"));
     if (!label){
         Base::Console().Warning("Toolbar walkthrough: Unable to find label\n");
     } else {
         label->setText(instructions2);
-        label->setStyleSheet(QString::fromLatin1("color:red"));
+        label->setStyleSheet(QStringLiteral("color:red"));
     }
 
     /** find Macros category and select it for the user **/
-    auto categoryBox = setupToolbarPage->findChild<QComboBox*>(QString::fromLatin1("categoryBox"));
+    auto categoryBox = setupToolbarPage->findChild<QComboBox*>(QStringLiteral("categoryBox"));
     if (!categoryBox){
         Base::Console().Warning("Toolbar walkthrough: Unable to find categoryBox\n");
     } else {
@@ -750,7 +750,7 @@ Note: your changes will be applied when you next switch workbenches\n"));
     }
 
     /** expand custom toolbar items **/
-    auto toolbarTreeWidget = setupToolbarPage->findChild<QTreeWidget*>(QString::fromLatin1("toolbarTreeWidget"));
+    auto toolbarTreeWidget = setupToolbarPage->findChild<QTreeWidget*>(QStringLiteral("toolbarTreeWidget"));
     if (!toolbarTreeWidget) {
         Base::Console().Warning("Toolbar walkthrough: Unable to find toolbarTreeWidget\n");
     } else {
@@ -759,7 +759,7 @@ Note: your changes will be applied when you next switch workbenches\n"));
 
     /** preselect macro command for user **/
 
-    auto commandTreeWidget = setupToolbarPage->findChild<QTreeWidget*>(QString::fromLatin1("commandTreeWidget"));
+    auto commandTreeWidget = setupToolbarPage->findChild<QTreeWidget*>(QStringLiteral("commandTreeWidget"));
     if (!commandTreeWidget) {
         Base::Console().Warning("Toolbar walkthrough: Unable to find commandTreeWidget\n");
     } else {

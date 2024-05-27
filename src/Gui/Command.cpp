@@ -609,7 +609,7 @@ void Command::setGroupName(const char* s)
 QString Command::translatedGroupName() const
 {
     QString text = qApp->translate(className(), getGroupName());
-    if (text == QString::fromLatin1(getGroupName()))
+    if (text == QString::fromUtf8(getGroupName()))
         text = qApp->translate("CommandGroup", getGroupName());
     return text;
 }
@@ -1075,11 +1075,11 @@ Action * GroupCommand::createAction() {
     pcAction->setExclusive(isExclusive());
     pcAction->setCheckable(isCheckable());
     pcAction->setRememberLast(doesRememberLast());
-    pcAction->setWhatsThis(QString::fromLatin1(sWhatsThis));
+    pcAction->setWhatsThis(QString::fromUtf8(sWhatsThis));
 
     for(auto &v : cmds) {
         if(!v.first)
-            pcAction->addAction(QString::fromLatin1(""))->setSeparator(true);
+            pcAction->addAction(QStringLiteral(""))->setSeparator(true);
         else
             v.first->addToGroup(pcAction);
     }
@@ -1175,7 +1175,7 @@ void MacroCommand::activated(int iMsg)
         d = QDir(QString::fromUtf8(cMacroPath.c_str()));
     }
     else {
-        QString dirstr = QString::fromStdString(App::Application::getHomePath()) + QString::fromLatin1("Macro");
+        QString dirstr = QString::fromStdString(App::Application::getHomePath()) + QStringLiteral("Macro");
         d = QDir(dirstr);
     }
 
@@ -1991,7 +1991,7 @@ const Command* Gui::CommandManager::checkAcceleratorForConflicts(const char* acc
     if (!accel || accel[0] == '\0')
         return nullptr;
 
-    QString newCombo = QString::fromLatin1(accel);
+    QString newCombo = QString::fromUtf8(accel);
     if (newCombo.isEmpty())
         return nullptr;
     auto newSequence = QKeySequence::fromString(newCombo);
@@ -2012,7 +2012,7 @@ const Command* Gui::CommandManager::checkAcceleratorForConflicts(const char* acc
         // 2) The new command is a one-char combo that overrides an existing two-char combo
         // 3) The old command is a one-char combo that overrides the new command
 
-        QString existingCombo = QString::fromLatin1(existingAccel);
+        QString existingCombo = QString::fromUtf8(existingAccel);
         if (existingCombo.isEmpty())
             continue;
         auto existingSequence = QKeySequence::fromString(existingCombo);

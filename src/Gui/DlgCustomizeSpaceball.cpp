@@ -227,7 +227,7 @@ void ButtonModel::insertButtonRows(int number)
     {
         QString groupName;
         groupName.setNum(index);
-        Base::Reference<ParameterGrp> newGroup = spaceballButtonGroup()->GetGroup(groupName.toLatin1());//builds the group.
+        Base::Reference<ParameterGrp> newGroup = spaceballButtonGroup()->GetGroup(groupName.toUtf8());//builds the group.
         newGroup->SetASCII("Command", "");
         newGroup->SetASCII("Description", "");
     }
@@ -238,14 +238,14 @@ void ButtonModel::insertButtonRows(int number)
 void ButtonModel::setCommand(int row, QString command)
 {
     GroupVector groupVector = spaceballButtonGroup()->GetGroups();
-    groupVector.at(row)->SetASCII("Command", command.toLatin1());
+    groupVector.at(row)->SetASCII("Command", command.toUtf8());
 }
 
 void ButtonModel::goButtonPress(int number)
 {
     QString numberString;
     numberString.setNum(number);
-    if (!spaceballButtonGroup()->HasGroup(numberString.toLatin1()))
+    if (!spaceballButtonGroup()->HasGroup(numberString.toUtf8()))
         insertButtonRows(number);
 }
 
@@ -279,7 +279,7 @@ QString ButtonModel::getLabel(const int &number) const
         QString numberString;
         numberString.setNum(number);
         QString desc = QString::fromStdString(spaceballButtonGroup()->
-                                              GetGroup(numberString.toLatin1())->
+                                              GetGroup(numberString.toUtf8())->
                                               GetASCII("Description",""));
         if (desc.length())
             desc = QString::fromUtf8(" \"") + desc + QString::fromUtf8("\"");
@@ -447,19 +447,19 @@ QVariant CommandModel::data(const QModelIndex &index, int role) const
     if (role == Qt::UserRole)
     {
         if (node->nodeType == CommandNode::CommandType)
-            return {QString::fromLatin1(node->aCommand->getName())};
+            return {QString::fromUtf8(node->aCommand->getName())};
         if (node->nodeType == CommandNode::GroupType)
         {
             if (node->children.empty())
                 return {};
             CommandNode *childNode = node->children.at(0);
-            return {QString::fromLatin1(childNode->aCommand->getGroupName())};
+            return {QString::fromUtf8(childNode->aCommand->getGroupName())};
         }
         return {};
     }
     if (role == Qt::ToolTipRole) {
         if (node->nodeType == CommandNode::CommandType)
-            return {QString::fromLatin1(node->aCommand->getToolTipText())};
+            return {QString::fromUtf8(node->aCommand->getToolTipText())};
     }
     return {};
 }
@@ -492,7 +492,7 @@ CommandNode* CommandModel::nodeFromIndex(const QModelIndex &index) const
 
 void CommandModel::goAddMacro(const QByteArray &macroName)
 {
-    QModelIndexList indexList(this->match(this->index(0,0), Qt::UserRole, QVariant(QString::fromLatin1("Macros")),
+    QModelIndexList indexList(this->match(this->index(0,0), Qt::UserRole, QVariant(QStringLiteral("Macros")),
                                           1, Qt::MatchWrap | Qt::MatchRecursive));
     QModelIndex macrosIndex;
     if (indexList.empty())
@@ -500,7 +500,7 @@ void CommandModel::goAddMacro(const QByteArray &macroName)
         //this is the first macro and we have to add the Macros item.
         //figure out where to insert it. Should be in the command groups now.
         QStringList groups = orderedGroups();
-        int location(groups.indexOf(QString::fromLatin1("Macros")));
+        int location(groups.indexOf(QStringLiteral("Macros")));
         if (location == -1)
             location = groups.size();
         //add row
@@ -533,7 +533,7 @@ void CommandModel::goAddMacro(const QByteArray &macroName)
 
 void CommandModel::goRemoveMacro(const QByteArray &macroName)
 {
-    QModelIndexList macroList(this->match(this->index(0,0), Qt::UserRole, QVariant(QString::fromLatin1(macroName.data())),
+    QModelIndexList macroList(this->match(this->index(0,0), Qt::UserRole, QVariant(QString::fromUtf8(macroName.data())),
                                           1, Qt::MatchWrap | Qt::MatchRecursive));
     if (macroList.isEmpty())
         return;
@@ -573,7 +573,7 @@ void CommandModel::groupCommands(const QString& groupName)
     auto parentNode = new CommandNode(CommandNode::GroupType);
     parentNode->parent = rootNode;
     rootNode->children.push_back(parentNode);
-    std::vector <Command*> commands = Application::Instance->commandManager().getGroupCommands(groupName.toLatin1());
+    std::vector <Command*> commands = Application::Instance->commandManager().getGroupCommands(groupName.toUtf8());
     for (const auto & command : commands)
     {
         auto childNode = new CommandNode(CommandNode::CommandType);
@@ -589,7 +589,7 @@ QStringList CommandModel::orderedGroups()
     std::vector <Command*> commands = Application::Instance->commandManager().getAllCommands();
     for (const auto & command : commands)
     {
-        QString groupName(QString::fromLatin1(command->getGroupName()));
+        QString groupName(QString::fromUtf8(command->getGroupName()));
         if (!groups.contains(groupName))
             groups << groupName;
     }

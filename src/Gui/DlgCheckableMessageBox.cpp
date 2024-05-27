@@ -44,8 +44,8 @@ namespace Gui {
 namespace Dialog {
 QByteArray toParamEntry(QString name)
 {
-    name.replace(QString::fromLatin1(" "), QString::fromLatin1("_"));
-    return name.toLatin1();
+    name.replace(QStringLiteral(" "), QStringLiteral("_"));
+    return name.toUtf8();
 }
 
 QPixmap getStandardIcon(QWidget* widget, QStyle::StandardPixmap standardPixmap)

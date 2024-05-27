@@ -100,9 +100,9 @@ PyObject* CommandPy::listByShortcut(PyObject *args)
     for (Command* c : cmds) {
         Action* action = c->getAction();
         if (action) {
-            QString spc = QString::fromLatin1(" ");
+            QString spc = QStringLiteral(" ");
             if (Base::asBoolean(bIsRegularExp)) {
-               QRegularExpression re(QString::fromLatin1(shortcut_to_find), QRegularExpression::CaseInsensitiveOption);
+               QRegularExpression re(QString::fromUtf8(shortcut_to_find), QRegularExpression::CaseInsensitiveOption);
                if (!re.isValid()) {
                    std::stringstream str;
                    str << "Invalid regular expression:" << ' ' << shortcut_to_find;
@@ -114,7 +114,7 @@ PyObject* CommandPy::listByShortcut(PyObject *args)
                }
             }
             else if (action->shortcut().toString().remove(spc).toUpper() ==
-                     QString::fromLatin1(shortcut_to_find).remove(spc).toUpper()) {
+                     QString::fromUtf8(shortcut_to_find).remove(spc).toUpper()) {
                 matches.emplace_back(c->getName());
             }
         }

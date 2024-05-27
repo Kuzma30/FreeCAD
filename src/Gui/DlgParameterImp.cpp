@@ -213,7 +213,7 @@ void DlgParameterImp::onFindGroupTtextChanged(const QString &SearchStr)
     }
     else {
         // Set red background to indicate no matching
-        QString styleSheet = QString::fromLatin1(
+        QString styleSheet = QStringLiteral(
             " QLineEdit {\n"
             "     background-color: rgb(221,144,161);\n"
             " }\n"
@@ -561,14 +561,14 @@ void ParameterGroup::onCreateSubgroup()
             auto para = static_cast<ParameterGroupItem*>(item);
             Base::Reference<ParameterGrp> hGrp = para->_hcGrp;
 
-            if ( hGrp->HasGroup( name.toLatin1() ) )
+            if ( hGrp->HasGroup( name.toUtf8() ) )
             {
                 QMessageBox::critical( this, tr("Existing sub-group"),
                     tr("The sub-group '%1' already exists.").arg( name ) );
                 return;
             }
 
-            hGrp = hGrp->GetGroup( name.toLatin1() );
+            hGrp = hGrp->GetGroup( name.toUtf8() );
             (void)new ParameterGroupItem(para,hGrp);
             expandItem(para);
         }
@@ -578,7 +578,7 @@ void ParameterGroup::onCreateSubgroup()
 void ParameterGroup::onExportToFile()
 {
     QString file = FileDialog::getSaveFileName( this, tr("Export parameter to file"),
-        QString(), QString::fromLatin1("XML (*.FCParam)"));
+        QString(), QString::fromUtf8("XML (*.FCParam)"));
     if ( !file.isEmpty() )
     {
         QTreeWidgetItem* item = currentItem();
@@ -594,7 +594,7 @@ void ParameterGroup::onExportToFile()
 void ParameterGroup::onImportFromFile()
 {
     QString file = FileDialog::getOpenFileName( this, tr("Import parameter from file"),
-        QString(), QString::fromLatin1("XML (*.FCParam)"));
+        QString(), QString::fromUtf8("XML (*.FCParam)"));
     if ( !file.isEmpty() )
     {
         QTreeWidgetItem* item = currentItem();
@@ -912,8 +912,8 @@ void ParameterValue::onCreateBoolItem()
         }
     }
 
-    QStringList list; list << QString::fromLatin1("true")
-                           << QString::fromLatin1("false");
+    QStringList list; list << QStringLiteral("true")
+                           << QStringLiteral("false");
     QString val = QInputDialog::getItem (this, QObject::tr("New boolean item"), QObject::tr("Choose an item:"),
                                          list, 0, false, &ok, Qt::MSWindowsFixedSizeDialogHint);
     if ( ok )
@@ -977,7 +977,7 @@ void ParameterGroupItem::setData ( int column, int role, const QVariant & value 
                 QObject::tr("The group '%1' cannot be renamed.").arg( oldName ) );
             return;
         }
-        if ( item->_hcGrp->HasGroup( newName.toLatin1() ) )
+        if ( item->_hcGrp->HasGroup( newName.toUtf8() ) )
         {
             QMessageBox::critical( treeWidget(), QObject::tr("Existing group"),
                 QObject::tr("The group '%1' already exists.").arg( newName ) );
@@ -986,7 +986,7 @@ void ParameterGroupItem::setData ( int column, int role, const QVariant & value 
         else
         {
             // rename the group by adding a new group, copy the content and remove the old group
-            if (!item->_hcGrp->RenameGrp(oldName.toLatin1(), newName.toLatin1()))
+            if (!item->_hcGrp->RenameGrp(oldName.toUtf8(), newName.toUtf8()))
                 return;
         }
     }
@@ -1042,7 +1042,7 @@ ParameterText::ParameterText ( QTreeWidget * parent, QString label, const char* 
 {
     setIcon(0, BitmapFactory().iconFromTheme("Param_Text") );
     setText(0, label);
-    setText(1, QString::fromLatin1("Text"));
+    setText(1, QStringLiteral("Text"));
     setText(2, QString::fromUtf8(value));
 }
 
@@ -1056,25 +1056,25 @@ void ParameterText::changeValue()
     if ( ok )
     {
         setText( 2, txt );
-        _hcGrp->SetASCII(text(0).toLatin1(), txt.toUtf8());
+        _hcGrp->SetASCII(text(0).toUtf8(), txt.toUtf8());
     }
 }
 
 void ParameterText::removeFromGroup ()
 {
-    _hcGrp->RemoveASCII(text(0).toLatin1());
+    _hcGrp->RemoveASCII(text(0).toUtf8());
 }
 
 void ParameterText::replace( const QString& oldName, const QString& newName )
 {
-    std::string val = _hcGrp->GetASCII(oldName.toLatin1());
-    _hcGrp->RemoveASCII(oldName.toLatin1());
-    _hcGrp->SetASCII(newName.toLatin1(), val.c_str());
+    std::string val = _hcGrp->GetASCII(oldName.toUtf8());
+    _hcGrp->RemoveASCII(oldName.toUtf8());
+    _hcGrp->SetASCII(newName.toUtf8(), val.c_str());
 }
 
 void ParameterText::appendToGroup()
 {
-    _hcGrp->SetASCII(text(0).toLatin1(), text(2).toUtf8());
+    _hcGrp->SetASCII(text(0).toUtf8(), text(2).toUtf8());
 }
 
 // --------------------------------------------------------------------
@@ -1084,8 +1084,8 @@ ParameterInt::ParameterInt ( QTreeWidget * parent, QString label, long value, co
 {
     setIcon(0, BitmapFactory().iconFromTheme("Param_Int") );
     setText(0, label);
-    setText(1, QString::fromLatin1("Integer"));
-    setText(2, QString::fromLatin1("%1").arg(value));
+    setText(1, QStringLiteral("Integer"));
+    setText(2, QString::fromUtf8("%1").arg(value));
 }
 
 ParameterInt::~ParameterInt() = default;
@@ -1097,26 +1097,26 @@ void ParameterInt::changeValue()
                                    text(2).toInt(), -2147483647, 2147483647, 1, &ok, Qt::MSWindowsFixedSizeDialogHint);
     if ( ok )
     {
-        setText(2, QString::fromLatin1("%1").arg(num));
-        _hcGrp->SetInt(text(0).toLatin1(), (long)num);
+        setText(2, QStringLiteral("%1").arg(num));
+        _hcGrp->SetInt(text(0).toUtf8(), (long)num);
     }
 }
 
 void ParameterInt::removeFromGroup ()
 {
-    _hcGrp->RemoveInt(text(0).toLatin1());
+    _hcGrp->RemoveInt(text(0).toUtf8());
 }
 
 void ParameterInt::replace( const QString& oldName, const QString& newName )
 {
-    long val = _hcGrp->GetInt(oldName.toLatin1());
-    _hcGrp->RemoveInt(oldName.toLatin1());
-    _hcGrp->SetInt(newName.toLatin1(), val);
+    long val = _hcGrp->GetInt(oldName.toUtf8());
+    _hcGrp->RemoveInt(oldName.toUtf8());
+    _hcGrp->SetInt(newName.toUtf8(), val);
 }
 
 void ParameterInt::appendToGroup()
 {
-    _hcGrp->SetInt(text(0).toLatin1(), text(2).toLong());
+    _hcGrp->SetInt(text(0).toUtf8(), text(2).toLong());
 }
 
 // --------------------------------------------------------------------
@@ -1126,8 +1126,8 @@ ParameterUInt::ParameterUInt ( QTreeWidget * parent, QString label, unsigned lon
 {
     setIcon(0, BitmapFactory().iconFromTheme("Param_UInt") );
     setText(0, label);
-    setText(1, QString::fromLatin1("Unsigned"));
-    setText(2, QString::fromLatin1("%1").arg(value));
+    setText(1, QStringLiteral("Unsigned"));
+    setText(2, QString::fromUtf8("%1").arg(value));
 }
 
 ParameterUInt::~ParameterUInt() = default;
@@ -1147,27 +1147,27 @@ void ParameterUInt::changeValue()
 
         if ( ok )
         {
-            setText(2, QString::fromLatin1("%1").arg(num));
-            _hcGrp->SetUnsigned(text(0).toLatin1(), (unsigned long)num);
+            setText(2, QString::fromUtf8("%1").arg(num));
+            _hcGrp->SetUnsigned(text(0).toUtf8(), (unsigned long)num);
         }
     }
 }
 
 void ParameterUInt::removeFromGroup ()
 {
-    _hcGrp->RemoveUnsigned(text(0).toLatin1());
+    _hcGrp->RemoveUnsigned(text(0).toUtf8());
 }
 
 void ParameterUInt::replace( const QString& oldName, const QString& newName )
 {
-    unsigned long val = _hcGrp->GetUnsigned(oldName.toLatin1());
-    _hcGrp->RemoveUnsigned(oldName.toLatin1());
-    _hcGrp->SetUnsigned(newName.toLatin1(), val);
+    unsigned long val = _hcGrp->GetUnsigned(oldName.toUtf8());
+    _hcGrp->RemoveUnsigned(oldName.toUtf8());
+    _hcGrp->SetUnsigned(newName.toUtf8(), val);
 }
 
 void ParameterUInt::appendToGroup()
 {
-    _hcGrp->SetUnsigned(text(0).toLatin1(), text(2).toULong());
+    _hcGrp->SetUnsigned(text(0).toUtf8(), text(2).toULong());
 }
 
 // --------------------------------------------------------------------
@@ -1177,8 +1177,8 @@ ParameterFloat::ParameterFloat ( QTreeWidget * parent, QString label, double val
 {
     setIcon(0, BitmapFactory().iconFromTheme("Param_Float") );
     setText(0, label);
-    setText(1, QString::fromLatin1("Float"));
-    setText(2, QString::fromLatin1("%1").arg(value));
+    setText(1, QStringLiteral("Float"));
+    setText(2, QString::fromUtf8("%1").arg(value));
 }
 
 ParameterFloat::~ParameterFloat() = default;
@@ -1190,26 +1190,26 @@ void ParameterFloat::changeValue()
                                          text(2).toDouble(), -2147483647, 2147483647, 12, &ok, Qt::MSWindowsFixedSizeDialogHint);
     if ( ok )
     {
-        setText(2, QString::fromLatin1("%1").arg(num));
-        _hcGrp->SetFloat(text(0).toLatin1(), num);
+        setText(2, QString::fromUtf8("%1").arg(num));
+        _hcGrp->SetFloat(text(0).toUtf8(), num);
     }
 }
 
 void ParameterFloat::removeFromGroup ()
 {
-    _hcGrp->RemoveFloat(text(0).toLatin1());
+    _hcGrp->RemoveFloat(text(0).toUtf8());
 }
 
 void ParameterFloat::replace( const QString& oldName, const QString& newName )
 {
-    double val = _hcGrp->GetFloat(oldName.toLatin1());
-    _hcGrp->RemoveFloat(oldName.toLatin1());
-    _hcGrp->SetFloat(newName.toLatin1(), val);
+    double val = _hcGrp->GetFloat(oldName.toUtf8());
+    _hcGrp->RemoveFloat(oldName.toUtf8());
+    _hcGrp->SetFloat(newName.toUtf8(), val);
 }
 
 void ParameterFloat::appendToGroup()
 {
-    _hcGrp->SetFloat(text(0).toLatin1(), text(2).toDouble());
+    _hcGrp->SetFloat(text(0).toUtf8(), text(2).toDouble());
 }
 
 // --------------------------------------------------------------------
@@ -1219,8 +1219,8 @@ ParameterBool::ParameterBool ( QTreeWidget * parent, QString label, bool value, 
 {
     setIcon(0, BitmapFactory().iconFromTheme("Param_Bool") );
     setText(0, label);
-    setText(1, QString::fromLatin1("Boolean"));
-    setText(2, QString::fromLatin1((value ? "true" : "false")));
+    setText(1, QStringLiteral("Boolean"));
+    setText(2, QString::fromUtf8((value ? "true" : "false")));
 }
 
 ParameterBool::~ParameterBool() = default;
@@ -1228,8 +1228,8 @@ ParameterBool::~ParameterBool() = default;
 void ParameterBool::changeValue()
 {
     bool ok;
-    QStringList list; list << QString::fromLatin1("true")
-                           << QString::fromLatin1("false");
+    QStringList list; list << QStringLiteral("true")
+                           << QStringLiteral("false");
     int pos = (text(2) == list[0] ? 0 : 1);
 
     QString txt = QInputDialog::getItem (treeWidget(), QObject::tr("Change value"), QObject::tr("Choose an item:"),
@@ -1237,26 +1237,26 @@ void ParameterBool::changeValue()
     if ( ok )
     {
         setText( 2, txt );
-        _hcGrp->SetBool(text(0).toLatin1(), (txt == list[0] ? true : false) );
+        _hcGrp->SetBool(text(0).toUtf8(), (txt == list[0] ? true : false) );
     }
 }
 
 void ParameterBool::removeFromGroup ()
 {
-    _hcGrp->RemoveBool(text(0).toLatin1());
+    _hcGrp->RemoveBool(text(0).toUtf8());
 }
 
 void ParameterBool::replace( const QString& oldName, const QString& newName )
 {
-    bool val = _hcGrp->GetBool(oldName.toLatin1());
-    _hcGrp->RemoveBool(oldName.toLatin1());
-    _hcGrp->SetBool(newName.toLatin1(), val);
+    bool val = _hcGrp->GetBool(oldName.toUtf8());
+    _hcGrp->RemoveBool(oldName.toUtf8());
+    _hcGrp->SetBool(newName.toUtf8(), val);
 }
 
 void ParameterBool::appendToGroup()
 {
     bool val = (text(2) == QLatin1String("true") ? true : false);
-    _hcGrp->SetBool(text(0).toLatin1(), val);
+    _hcGrp->SetBool(text(0).toUtf8(), val);
 }
 
 #include "moc_DlgParameterImp.cpp"

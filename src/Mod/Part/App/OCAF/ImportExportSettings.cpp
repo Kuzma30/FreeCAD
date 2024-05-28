@@ -101,12 +101,12 @@ void ImportExportSettings::initIGES(Base::Reference<ParameterGrp> hGrp)
 
 std::list<ImportExportSettings::CodePage> ImportExportSettings::getCodePageList() const
 {
-    Base::Console().Message("ImportExportSettings::getCodePageList())\n");
-    int i=0;
-    for (const auto& codePageIt : codePageList) {
-        Base::Console().Message("Number in List =%i Name=%s  number=%i\n", i, codePageIt.codePageName, codePageIt.codePage);
-        i++;
-    }
+    // Base::Console().Message("ImportExportSettings::getCodePageList())\n");
+    // int i=0;
+    // for (const auto& codePageIt : codePageList) {
+    //     Base::Console().Message("Number in List =%i Name=%s  number=%i\n", i, codePageIt.codePageName, codePageIt.codePage);
+    //     i++;
+    // }
     return codePageList;
 }
 
@@ -282,7 +282,7 @@ ImportExportSettings::ImportMode ImportExportSettings::getImportMode() const
 
 void ImportExportSettings::setImportCodePage(int cpIndex)
 {
-    Base::Console().Message("ImportExportSettings::setImportCodePage(%i)", cpIndex);
+    //Base::Console().Message("ImportExportSettings::setImportCodePage(%i)", cpIndex);
     pGroup->SetInt("ImportCodePage", cpIndex);
 }
 

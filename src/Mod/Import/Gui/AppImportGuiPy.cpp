@@ -117,6 +117,7 @@ private:
         PyObject* merge = Py_None;
         PyObject* useLinkGroup = Py_None;
         int mode = -1;
+
         static const std::array<const char*, 7>
             kwd_list {"name", "docName", "importHidden", "merge", "useLinkGroup", "mode", nullptr};
         if (!Base::Wrapped_ParseTupleAndKeywords(args.ptr(),
@@ -164,6 +165,7 @@ private:
                 if (mode < 0) {
                     mode = ocaf.getMode();
                 }
+                Resource_FormatType cp = ocaf.getImportCodePage();
                 if (mode && !pcDoc->isSaved()) {
                     auto gdoc = Gui::Application::Instance->getDocument(pcDoc);
                     if (!gdoc->save()) {
@@ -173,7 +175,7 @@ private:
 
                 try {
                     Import::ReaderStep reader(file);
-                    reader.read(hDoc);
+                    reader.read(hDoc, cp);
                 }
                 catch (OSD_Exception& e) {
                     Base::Console().Error("%s\n", e.GetMessageString());
@@ -483,7 +485,7 @@ private:
 
             if (file.hasExtension({"stp", "step"})) {
                 Import::ReaderStep reader(file);
-                reader.read(hDoc);
+                reader.read(hDoc, Resource_FormatType_UTF8);
             }
             else if (file.hasExtension({"igs", "iges"})) {
                 Import::ReaderIges reader(file);

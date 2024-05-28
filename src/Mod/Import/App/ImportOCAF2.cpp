@@ -109,6 +109,7 @@ ImportOCAFOptions ImportOCAF2::customImportOptions()
     defaultOptions.showProgress = settings.getShowProgress();
     defaultOptions.expandCompound = settings.getExpandCompound();
     defaultOptions.mode = static_cast<int>(settings.getImportMode());
+    defaultOptions.codePage = static_cast<Resource_FormatType>(settings.getImportCodePage());
 
     auto hGrp =
         App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/View");
@@ -156,6 +157,24 @@ void ImportOCAF2::setMode(int m)
             FC_WARN("Disable multi-document mode because the input document is not saved.");
         }
     }
+}
+
+void ImportOCAF2::setImportCodePage(int cp)
+{
+    printf("ImportOCAF2::setCodePage(%i)", cp);
+    Part::OCAF::ImportExportSettings settings;
+    std::list<Part::OCAF::ImportExportSettings::CodePage> codePageList;
+    codePageList = settings.getCodePageList() ;
+    for (const auto& codePageIt : codePageList) {
+        if (codePageIt.codePage == cp)
+        {
+            options.codePage = codePageIt.codePage;
+            printf("ImportOCAF2::setCodePage save codepage as = %i", options.codePage);
+            return;
+        }
+    }
+    options.codePage = Resource_FormatType_UTF8;
+    printf("ImportOCAF2::setCodePage save codepage as = %i", options.codePage);
 }
 
 static void setPlacement(App::PropertyPlacement* prop, const TopoDS_Shape& shape)

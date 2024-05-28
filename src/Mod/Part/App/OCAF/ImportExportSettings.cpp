@@ -101,6 +101,12 @@ void ImportExportSettings::initIGES(Base::Reference<ParameterGrp> hGrp)
 
 std::list<ImportExportSettings::CodePage> ImportExportSettings::getCodePageList() const
 {
+    Base::Console().Message("ImportExportSettings::getCodePageList())\n");
+    int i=0;
+    for (const auto& codePageIt : codePageList) {
+        Base::Console().Message("Number in List =%i Name=%s  number=%i\n", i, codePageIt.codePageName, codePageIt.codePage);
+        i++;
+    }
     return codePageList;
 }
 
@@ -272,6 +278,28 @@ void ImportExportSettings::setImportMode(ImportExportSettings::ImportMode mode)
 ImportExportSettings::ImportMode ImportExportSettings::getImportMode() const
 {
     return static_cast<ImportExportSettings::ImportMode>(pGroup->GetInt("ImportMode", 0));
+}
+
+void ImportExportSettings::setImportCodePage(int cpIndex)
+{
+    Base::Console().Message("ImportExportSettings::setImportCodePage(%i)", cpIndex);
+    pGroup->SetInt("ImportCodePage", cpIndex);
+}
+
+Resource_FormatType ImportExportSettings::getImportCodePage() const
+{
+    Resource_FormatType result;
+    int codePageIndex = pGroup->GetInt("ImportCodePage", 0);
+    int i=0;
+    for (const auto& codePageIt : codePageList) {
+        if (i == codePageIndex)
+        {
+            result = codePageIt.codePage;
+            break;
+        }
+        i++;
+    }
+    return result;
 }
 
 } // namespace OCAF

@@ -37,7 +37,7 @@ class ImportExport ReaderStep
 public:
     explicit ReaderStep(const Base::FileInfo& file);
 
-    void read(Handle(TDocStd_Document) hDoc);
+    void read(Handle(TDocStd_Document) hDoc, Resource_FormatType codePage);
 
 private:
     Base::FileInfo file;

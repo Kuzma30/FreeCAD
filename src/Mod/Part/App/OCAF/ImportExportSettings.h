@@ -102,6 +102,9 @@ public:
     void setImportMode(ImportMode);
     ImportMode getImportMode() const;
 
+    void setImportCodePage(int);
+    Resource_FormatType getImportCodePage() const;
+
     std::list<ImportExportSettings::CodePage> getCodePageList() const;
 
 private:
@@ -122,15 +125,6 @@ private:
          {"GBK (Unified Chinese) encoding", Resource_FormatType_GBK},
          {"Big5 (Traditional Chinese) encoding", Resource_FormatType_Big5},
          //{"active system-defined locale; this value is strongly NOT recommended to use", Resource_FormatType_SystemLocale},
-         {"CP1250 (Central European) encoding", Resource_FormatType_CP1250},
-         {"CP1251 (Cyrillic) encoding", Resource_FormatType_CP1251},
-         {"CP1252 (Western European) encoding", Resource_FormatType_CP1252},
-         {"CP1253 (Greek) encoding", Resource_FormatType_CP1253},
-         {"CP1254 (Turkish) encoding", Resource_FormatType_CP1254},
-         {"CP1255 (Hebrew) encoding", Resource_FormatType_CP1255},
-         {"CP1256 (Arabic) encoding", Resource_FormatType_CP1256},
-         {"CP1257 (Baltic) encoding", Resource_FormatType_CP1257},
-         {"CP1258 (Vietnamese) encoding", Resource_FormatType_CP1258},
          {"ISO 8859-1 (Western European) encoding", Resource_FormatType_iso8859_1},
          {"ISO 8859-2 (Central European) encoding", Resource_FormatType_iso8859_2},
          {"ISO 8859-3 (Turkish) encoding", Resource_FormatType_iso8859_3},
@@ -141,6 +135,15 @@ private:
          {"ISO 8859-8 (Hebrew) encoding", Resource_FormatType_iso8859_8},
          {"ISO 8859-9 (Turkish) encoding", Resource_FormatType_iso8859_9},
          {"ISO 850 (Western European) encoding", Resource_FormatType_CP850},
+         {"CP1250 (Central European) encoding", Resource_FormatType_CP1250},
+         {"CP1251 (Cyrillic) encoding", Resource_FormatType_CP1251},
+         {"CP1252 (Western European) encoding", Resource_FormatType_CP1252},
+         {"CP1253 (Greek) encoding", Resource_FormatType_CP1253},
+         {"CP1254 (Turkish) encoding", Resource_FormatType_CP1254},
+         {"CP1255 (Hebrew) encoding", Resource_FormatType_CP1255},
+         {"CP1256 (Arabic) encoding", Resource_FormatType_CP1256},
+         {"CP1257 (Baltic) encoding", Resource_FormatType_CP1257},
+         {"CP1258 (Vietnamese) encoding", Resource_FormatType_CP1258},
          };
 };
 

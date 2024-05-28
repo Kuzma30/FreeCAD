@@ -61,7 +61,7 @@ DlgImportStep::~DlgImportStep() = default;
 void DlgImportStep::saveSettings()
 {
     // (h)STEP of Import module
-    ui->comboBoxImportCodePage->onSave();
+    ui->checkBoxShowOnImport->onSave();
     ui->checkBoxMergeCompound->onSave();
     ui->checkBoxImportHiddenObj->onSave();
     ui->checkBoxUseLinkGroup->onSave();
@@ -76,7 +76,7 @@ void DlgImportStep::saveSettings()
 void DlgImportStep::loadSettings()
 {
     // (h)STEP of Import module
-    ui->comboBoxImportCodePage->onRestore();
+    ui->checkBoxShowOnImport->onRestore();
     ui->checkBoxMergeCompound->onRestore();
     ui->checkBoxImportHiddenObj->onRestore();
     ui->checkBoxUseLinkGroup->onRestore();

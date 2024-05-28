@@ -38,6 +38,7 @@ DlgImportStep::DlgImportStep(QWidget* parent)
     ui->setupUi(this);
 
     Part::OCAF::ImportExportSettings settings;
+    ui->checkBoxMergeCompound->setChecked(settings.getReadShowDialogImport());
     ui->checkBoxMergeCompound->setChecked(settings.getReadShapeCompoundMode());
     ui->checkBoxImportHiddenObj->setChecked(settings.getImportHiddenObject());
     ui->checkBoxUseLinkGroup->setChecked(settings.getUseLinkGroup());
@@ -45,6 +46,11 @@ DlgImportStep::DlgImportStep(QWidget* parent)
     ui->checkBoxReduceObjects->setChecked(settings.getReduceObjects());
     ui->checkBoxExpandCompound->setChecked(settings.getExpandCompound());
     ui->checkBoxShowProgress->setChecked(settings.getShowProgress());
+    std::list<Part::OCAF::ImportExportSettings::CodePage> codepagelist;
+    codepagelist = settings.getCodePageList();
+    for (const auto& codePage : codepagelist) {
+        ui->comboBoxImportCodePage->addItem(QString::fromStdString(codePage.codePageName));
+    }
 }
 
 /**
@@ -55,6 +61,7 @@ DlgImportStep::~DlgImportStep() = default;
 void DlgImportStep::saveSettings()
 {
     // (h)STEP of Import module
+    ui->comboBoxImportCodePage->onSave();
     ui->checkBoxMergeCompound->onSave();
     ui->checkBoxImportHiddenObj->onSave();
     ui->checkBoxUseLinkGroup->onSave();
@@ -63,11 +70,13 @@ void DlgImportStep::saveSettings()
     ui->checkBoxExpandCompound->onSave();
     ui->checkBoxShowProgress->onSave();
     ui->comboBoxImportMode->onSave();
+    ui->comboBoxImportCodePage->onSave();
 }
 
 void DlgImportStep::loadSettings()
 {
     // (h)STEP of Import module
+    ui->comboBoxImportCodePage->onRestore();
     ui->checkBoxMergeCompound->onRestore();
     ui->checkBoxImportHiddenObj->onRestore();
     ui->checkBoxUseLinkGroup->onRestore();
@@ -76,6 +85,7 @@ void DlgImportStep::loadSettings()
     ui->checkBoxExpandCompound->onRestore();
     ui->checkBoxShowProgress->onRestore();
     ui->comboBoxImportMode->onRestore();
+    ui->comboBoxImportCodePage->onRestore();
 }
 
 /**

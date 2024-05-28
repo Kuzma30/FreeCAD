@@ -99,6 +99,11 @@ void ImportExportSettings::initIGES(Base::Reference<ParameterGrp> hGrp)
     }
 }
 
+std::list<ImportExportSettings::CodePage> ImportExportSettings::getCodePageList() const
+{
+    return codePageList;
+}
+
 void ImportExportSettings::initSTEP(Base::Reference<ParameterGrp> hGrp)
 {
     //STEP handling
@@ -143,6 +148,18 @@ IGES::ImportExportSettingsPtr ImportExportSettings::getIGESSettings() const
     }
 
     return iges;
+}
+
+void ImportExportSettings::setReadShowDialogImport(bool on)
+{
+    auto grp = pGroup->GetGroup("hSTEP");
+    grp->SetBool("ReadShowDialogImport", on);
+}
+
+bool ImportExportSettings::getReadShowDialogImport() const
+{
+    auto grp = pGroup->GetGroup("hSTEP");
+    return grp->GetBool("ReadShowDialogImport", false);
 }
 
 void ImportExportSettings::setReadShapeCompoundMode(bool on)

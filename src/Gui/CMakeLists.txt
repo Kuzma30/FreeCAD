@@ -1256,7 +1256,7 @@ SET(FreeCADGui_SRCS
     StartupProcess.h
     TransactionObject.h
     ToolHandler.h
-    Format_Type.h
+
     ${FreeCADGui_SDK_MOC_HDRS}
 )
 

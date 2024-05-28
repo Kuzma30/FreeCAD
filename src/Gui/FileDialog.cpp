@@ -73,46 +73,14 @@ bool DialogOptions::dontUseNativeColorDialog()
 }
 
 /* TRANSLATOR Gui::FileDialog */
-QMap<Resource_FormatType, QString> FileDialog::codePageMap;
 
 FileDialog::FileDialog(QWidget * parent)
   : QFileDialog(parent)
 {
-    createCodePageMap();
     connect(this, &QFileDialog::filterSelected, this, &FileDialog::onSelectedFilter);
 }
 
-void FileDialog::createCodePageMap() {
-    if (codePageMap.isEmpty()) {
-    codePageMap[Resource_FormatType_NoConversion] = QStringLiteral("No conversion");
-    codePageMap[Resource_FormatType_SJIS] = QStringLiteral("SJIS (Shift Japanese Industrial Standards) encoding");
-    codePageMap[Resource_FormatType_EUC] = QStringLiteral("EUC (Extended Unix Code) multi-byte encoding primarily for Japanese, Korean, and simplified Chinese");
-    codePageMap[Resource_FormatType_GB] = QStringLiteral("GB (Guobiao) encoding for Simplified Chinese");
-    codePageMap[Resource_FormatType_UTF8] = QStringLiteral("Multi-byte UTF-8 encoding");
-    codePageMap[Resource_FormatType_SystemLocale] = QStringLiteral("Active system-defined locale; this value is strongly NOT recommended to use");
-    codePageMap[Resource_FormatType_CP1250] = QStringLiteral("CP1250 (Central European) encoding");
-    codePageMap[Resource_FormatType_CP1251] = QStringLiteral("CP1251 (Cyrillic) encoding");
-    codePageMap[Resource_FormatType_CP1252] = QStringLiteral("CP1252 (Western European) encoding");
-    codePageMap[Resource_FormatType_CP1253] = QStringLiteral("CP1253 (Greek) encoding");
-    codePageMap[Resource_FormatType_CP1254] = QStringLiteral("CP1254 (Turkish) encoding");
-    codePageMap[Resource_FormatType_CP1255] = QStringLiteral("CP1255 (Hebrew) encoding");
-    codePageMap[Resource_FormatType_CP1256] = QStringLiteral("CP1256 (Arabic) encoding");
-    codePageMap[Resource_FormatType_CP1257] = QStringLiteral("CP1257 (Baltic) encoding");
-    codePageMap[Resource_FormatType_CP1258] = QStringLiteral("CP1258 (Vietnamese) encoding");
-    codePageMap[Resource_FormatType_iso8859_1] = QStringLiteral("ISO 8859-1 (Western European) encoding");
-    codePageMap[Resource_FormatType_iso8859_2] = QStringLiteral("ISO 8859-2 (Central European) encoding");
-    codePageMap[Resource_FormatType_iso8859_3] = QStringLiteral("ISO 8859-3 (Turkish) encoding");
-    codePageMap[Resource_FormatType_iso8859_4] = QStringLiteral("ISO 8859-4 (Northern European) encoding");
-    codePageMap[Resource_FormatType_iso8859_5] = QStringLiteral("ISO 8859-5 (Cyrillic) encoding");
-    codePageMap[Resource_FormatType_iso8859_6] = QStringLiteral("ISO 8859-6 (Arabic) encoding");
-    codePageMap[Resource_FormatType_iso8859_7] = QStringLiteral("ISO 8859-7 (Greek) encoding");
-    codePageMap[Resource_FormatType_iso8859_8] = QStringLiteral("ISO 8859-8 (Hebrew) encoding");
-    codePageMap[Resource_FormatType_iso8859_9] = QStringLiteral("ISO 8859-9 (Turkish) encoding");
-    codePageMap[Resource_FormatType_CP850] = QStringLiteral("ISO 850 (Western European) encoding");
-    codePageMap[Resource_FormatType_GBK] = QStringLiteral("GBK (Unified Chinese) encoding");
-    codePageMap[Resource_FormatType_Big5] = QStringLiteral("Big5 (Traditional Chinese) encoding");
-    }
-}
+
 
 FileDialog::~FileDialog() = default;
 
@@ -384,14 +352,6 @@ QStringList FileDialog::getOpenFileNames (QWidget * parent, const QString & capt
         dlg.setOption(QFileDialog::HideNameFilterDetails, false);
         if (selectedFilter && !selectedFilter->isEmpty())
             dlg.selectNameFilter(*selectedFilter);
-        auto * layout = dlg.layout();
-        auto * labelFormat = new QLabel(tr("Code Page"), &dlg);
-        layout->addWidget(labelFormat);
-        auto * codePageComboBox = new QComboBox(&dlg);
-        for (auto it = codePageMap.cbegin(); it != codePageMap.cend(); ++it) {
-            codePageComboBox->addItem(it.value());
-        }
-        layout->addWidget(codePageComboBox);
         if (dlg.exec() == QDialog::Accepted) {
             if (selectedFilter)
                 *selectedFilter = dlg.selectedNameFilter();

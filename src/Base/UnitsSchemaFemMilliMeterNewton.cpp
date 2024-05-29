@@ -42,12 +42,12 @@ QString UnitsSchemaFemMilliMeterNewton::schemaTranslate(const Quantity& quant,
     Unit unit = quant.getUnit();
     if (unit == Unit::Length) {
         // all length units in millimeters
-        unitString = QString::fromLatin1("mm");
+        unitString = QStringLiteral("mm");
         factor = 1.0;
     }
     else if (unit == Unit::Mass) {
         // all mass units in t
-        unitString = QString::fromUtf8("t");
+        unitString = QStringLiteral("t");
         factor = 1e3;
     }
     else {

@@ -648,7 +648,7 @@ void PythonConsole::keyPressEvent(QKeyEvent * e)
               if (!inputStrg.isEmpty())
               {
                   d->history.append( QLatin1String("# ") + inputStrg );  //< put commented string to history ...
-                  inputLineBegin.insertText( QString::fromLatin1("# ") ); //< and comment it on console
+                  inputLineBegin.insertText( QLatin1String("# ") ); //< and comment it on console
                   setTextCursor( inputLineBegin );
                   printPrompt(d->interpreter->hasPendingInput()          //< print adequate prompt
                       ? PythonConsole::Incomplete

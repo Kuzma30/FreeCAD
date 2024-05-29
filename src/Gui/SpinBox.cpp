@@ -134,7 +134,7 @@ void ExpressionSpinBox::updateExpression()
         }
     }
     catch (const Base::Exception & e) {
-        showInvalidExpression(QString::fromLatin1(e.what()));
+        showInvalidExpression(QString::fromUtf8(e.what()));
     }
 }
 
@@ -147,7 +147,7 @@ void ExpressionSpinBox::setExpression(std::shared_ptr<Expression> expr)
         validateInput();
     }
     catch (const Base::Exception & e) {
-        showInvalidExpression(QString::fromLatin1(e.what()));
+        showInvalidExpression(QString::fromUtf8(e.what()));
     }
 }
 

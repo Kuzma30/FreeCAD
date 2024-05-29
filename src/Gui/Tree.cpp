@@ -1094,9 +1094,9 @@ void TreeWidget::onCreateGroup()
     if (this->contextItem->type() == DocumentType) {
         auto docitem = static_cast<DocumentItem*>(this->contextItem);
         App::Document* doc = docitem->document()->getDocument();
-        QString cmd = QString::fromLatin1("App.getDocument(\"%1\").addObject"
+        QString cmd = QString::fromUtf8("App.getDocument(\"%1\").addObject"
             "(\"App::DocumentObjectGroup\",\"Group\").Label=\"%2\"")
-            .arg(QString::fromLatin1(doc->getName()), name);
+            .arg(QString::fromUtf8(doc->getName()), name);
         Gui::Command::runCommand(Gui::Command::App, cmd.toUtf8());
     }
     else if (this->contextItem->type() == ObjectType) {
@@ -1104,10 +1104,10 @@ void TreeWidget::onCreateGroup()
             (this->contextItem);
         App::DocumentObject* obj = objitem->object()->getObject();
         App::Document* doc = obj->getDocument();
-        QString cmd = QString::fromLatin1("App.getDocument(\"%1\").getObject(\"%2\")"
+        QString cmd = QString::fromUtf8("App.getDocument(\"%1\").getObject(\"%2\")"
             ".newObject(\"App::DocumentObjectGroup\",\"Group\").Label=\"%3\"")
-            .arg(QString::fromLatin1(doc->getName()),
-                QString::fromLatin1(obj->getNameInDocument()),
+            .arg(QString::fromUtf8(doc->getName()),
+                QString::fromUtf8(obj->getNameInDocument()),
                 name);
         Gui::Command::runCommand(Gui::Command::App, cmd.toUtf8());
     }
@@ -5364,7 +5364,7 @@ void DocumentObjectItem::displayStatusInfo()
         info += TreeWidget::tr(" (but must be executed)");
 
     QString status = TreeWidget::tr("%1, Internal name: %2")
-        .arg(info, QString::fromLatin1(Obj->getNameInDocument()));
+        .arg(info, QString::fromUtf8(Obj->getNameInDocument()));
 
     if (!Obj->isError())
         getMainWindow()->showMessage(status);

@@ -53,7 +53,7 @@ ViewProviderTextDocument::ViewProviderTextDocument()
             "Defines whether the content can be edited.");
 
     QFont font;
-    font.setFamily(QString::fromLatin1(App::GetApplication().GetUserParameter().
+    font.setFamily(QString::fromUtf8(App::GetApplication().GetUserParameter().
         GetGroup("BaseApp")->GetGroup("Preferences")->GetGroup("Editor")->GetASCII("Font", font.family().toLatin1()).c_str()));
     font.setPointSize(App::GetApplication().GetUserParameter().
         GetGroup("BaseApp")->GetGroup("Preferences")->GetGroup("Editor")->GetInt("FontSize", font.pointSize()));
@@ -104,7 +104,7 @@ void ViewProviderTextDocument::onChanged(const App::Property* prop)
             editorWidget->setReadOnly(ReadOnly.getValue());
         }
         else if (prop == &FontSize || prop == &FontName) {
-            QFont font(QString::fromLatin1(this->FontName.getValue()), (int)this->FontSize.getValue());
+            QFont font(QString::fromUtf8(this->FontName.getValue()), (int)this->FontSize.getValue());
             editorWidget->setFont(font);
         }
         else if (prop == &SyntaxHighlighter) {

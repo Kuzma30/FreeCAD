@@ -450,7 +450,7 @@ void ViewProviderAnnotationLabel::drawImage(const std::vector<std::string>& s)
         return;
     }
 
-    QFont font(QString::fromLatin1(this->FontName.getValue()), (int)this->FontSize.getValue());
+    QFont font(QString::fromUtf8(this->FontName.getValue()), (int)this->FontSize.getValue());
     QFontMetrics fm(font);
     int w = 0;
     int h = fm.height() * s.size();

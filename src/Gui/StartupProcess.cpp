@@ -134,7 +134,7 @@ void StartupProcess::setStyleSheetPaths()
         (App::Application::getUserAppDataDir() + "Gui/Stylesheets/").c_str())
             << QString::fromUtf8((App::Application::getResourceDir() + "Gui/Stylesheets/").c_str())
             << QLatin1String(":/stylesheets");
-    QDir::setSearchPaths(QString::fromLatin1("qss"), qssPaths);
+    QDir::setSearchPaths(QLatin1String("qss"), qssPaths);
     // setup the search paths for Qt overlay style sheets
     QStringList qssOverlayPaths;
     qssOverlayPaths << QString::fromUtf8((App::Application::getUserAppDataDir()
@@ -151,7 +151,7 @@ void StartupProcess::setImagePaths()
     imagePaths << QString::fromUtf8((App::Application::getUserAppDataDir() + "Gui/images").c_str())
             << QString::fromUtf8((App::Application::getUserAppDataDir() + "pixmaps").c_str())
             << QLatin1String(":/icons");
-    QDir::setSearchPaths(QString::fromLatin1("images"), imagePaths);
+    QDir::setSearchPaths(QLatin1String("images"), imagePaths);
 }
 
 void StartupProcess::registerEventType()
@@ -166,7 +166,7 @@ void StartupProcess::setThemePaths()
         "User parameter:BaseApp/Preferences/Bitmaps/Theme");
 #if !defined(Q_OS_LINUX)
     QIcon::setThemeSearchPaths(QIcon::themeSearchPaths()
-                            << QString::fromLatin1(":/icons/FreeCAD-default"));
+                            << QLatin1String(":/icons/FreeCAD-default"));
     QIcon::setThemeName(QLatin1String("FreeCAD-default"));
 #else
     // Option to opt-out from using a Linux desktop icon theme.
@@ -189,7 +189,7 @@ void StartupProcess::setThemePaths()
 
     std::string name = hTheme->GetASCII("Name");
     if (!name.empty()) {
-        QIcon::setThemeName(QString::fromLatin1(name.c_str()));
+        QIcon::setThemeName(QString::fromUtf8(name.c_str()));
     }
 }
 
@@ -469,7 +469,7 @@ void StartupPostProcess::activateWorkbench()
     // if the auto workbench is not visible then force to use the default workbech
     // and replace the wrong entry in the parameters
     QStringList wb = guiApp.workbenches();
-    if (!wb.contains(QString::fromLatin1(start.c_str()))) {
+    if (!wb.contains(QString::fromUtf8(start.c_str()))) {
         start = App::Application::Config()["StartWorkbench"];
         if ("$LastModule" == autoload) {
             App::GetApplication()
@@ -540,7 +540,7 @@ void StartupPostProcess::autoloadModules(const QStringList& wb)
     std::stringstream stream(autoloadCSV);
     std::string workbench;
     while (std::getline(stream, workbench, ',')) {
-        if (wb.contains(QString::fromLatin1(workbench.c_str()))) {
+        if (wb.contains(QString::fromUtf8(workbench.c_str()))) {
             guiApp.activateWorkbench(workbench.c_str());
         }
     }

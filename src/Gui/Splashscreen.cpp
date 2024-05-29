@@ -391,41 +391,41 @@ void AboutDialog::setupLabels()
     // gets replaced to "<b>FreeCAD</b>", for example
 
     QString author = ui->labelAuthor->text();
-    author.replace(QString::fromLatin1("Unknown Application"), exeName);
-    author.replace(QString::fromLatin1("(c) Unknown Author"), banner);
+    author.replace(QLatin1String("Unknown Application"), exeName);
+    author.replace(QLatin1String("(c) Unknown Author"), banner);
     ui->labelAuthor->setText(author);
     ui->labelAuthor->setUrl(mturl);
 
     if (qApp->styleSheet().isEmpty()) {
-        ui->labelAuthor->setStyleSheet(QString::fromLatin1("Gui--UrlLabel {color: #0000FF;text-decoration: underline;font-weight: 600;}"));
+        ui->labelAuthor->setStyleSheet(QLatin1String("Gui--UrlLabel {color: #0000FF;text-decoration: underline;font-weight: 600;}"));
     }
 
     QString version = ui->labelBuildVersion->text();
-    version.replace(QString::fromLatin1("Unknown"), QString::fromLatin1("%1.%2.%3%4").arg(major, minor, point, suffix));
+    version.replace(QLatin1String("Unknown"), QString::fromLatin1("%1.%2.%3%4").arg(major, minor, point, suffix));
     ui->labelBuildVersion->setText(version);
 
     QString revision = ui->labelBuildRevision->text();
-    revision.replace(QString::fromLatin1("Unknown"), build);
+    revision.replace(QLatin1String("Unknown"), build);
     ui->labelBuildRevision->setText(revision);
 
     QString date = ui->labelBuildDate->text();
-    date.replace(QString::fromLatin1("Unknown"), disda);
+    date.replace(QLatin1String("Unknown"), disda);
     ui->labelBuildDate->setText(date);
 
     QString os = ui->labelBuildOS->text();
-    os.replace(QString::fromLatin1("Unknown"), prettyProductInfoWrapper());
+    os.replace(QLatin1String("Unknown"), prettyProductInfoWrapper());
     ui->labelBuildOS->setText(os);
 
     QString platform = ui->labelBuildPlatform->text();
-    platform.replace(QString::fromLatin1("Unknown"),
-        QString::fromLatin1("%1-bit").arg(QSysInfo::WordSize));
+    platform.replace(QLatin1String("Unknown"),
+        QLatin1String("%1-bit").arg(QSysInfo::WordSize));
     ui->labelBuildPlatform->setText(platform);
 
     // branch name
     it = config.find("BuildRevisionBranch");
     if (it != config.end()) {
         QString branch = ui->labelBuildBranch->text();
-        branch.replace(QString::fromLatin1("Unknown"), QString::fromUtf8(it->second.c_str()));
+        branch.replace(QLatin1String("Unknown"), QString::fromUtf8(it->second.c_str()));
         ui->labelBuildBranch->setText(branch);
     }
     else {
@@ -437,7 +437,7 @@ void AboutDialog::setupLabels()
     it = config.find("BuildRevisionHash");
     if (it != config.end()) {
         QString hash = ui->labelBuildHash->text();
-        hash.replace(QString::fromLatin1("Unknown"), QString::fromLatin1(it->second.c_str()).left(7)); // Use the 7-char abbreviated hash
+        hash.replace(QLatin1String("Unknown"), QString::fromLatin1(it->second.c_str()).left(7)); // Use the 7-char abbreviated hash
         ui->labelBuildHash->setText(hash);
         if (auto url_itr = config.find("BuildRepositoryURL"); url_itr != config.end()) {
             auto url = QString::fromStdString(url_itr->second);
@@ -445,13 +445,13 @@ void AboutDialog::setupLabels()
             if (int space = url.indexOf(QChar::fromLatin1(' ')); space != -1)
                 url = url.left(space); // Strip off the branch information to get just the repo
 
-            if (url == QString::fromUtf8("Unknown"))
-                url = QString::fromUtf8("https://github.com/FreeCAD/FreeCAD"); // Just take a guess
+            if (url == QLatin1String("Unknown"))
+                url = QLatin1String("https://github.com/FreeCAD/FreeCAD"); // Just take a guess
 
             // This may only create valid URLs for Github, but some other hosts use the same format so give it a shot...
-            auto https = url.replace(QString::fromUtf8("git://"), QString::fromUtf8("https://"));
-            https.replace(QString::fromUtf8(".git"), QString::fromUtf8(""));
-            ui->labelBuildHash->setUrl(https + QString::fromUtf8("/commit/") + QString::fromStdString(it->second));
+            auto https = url.replace(QLatin1String("git://"), QLatin1String("https://"));
+            https.replace(QLatin1String(".git"), QLatin1String(""));
+            ui->labelBuildHash->setUrl(https + QLatin1String("/commit/") + QString::fromStdString(it->second));
         }
     }
     else {
@@ -478,7 +478,7 @@ void AboutDialog::showCredits()
     }
 
     auto tab_credits = new QWidget();
-    tab_credits->setObjectName(QString::fromLatin1("tab_credits"));
+    tab_credits->setObjectName(QLatin1String("tab_credits"));
     ui->tabWidget->addTab(tab_credits, tr("Credits"));
     auto hlayout = new QVBoxLayout(tab_credits);
     auto textField = new QTextBrowser(tab_credits);
@@ -486,15 +486,15 @@ void AboutDialog::showCredits()
     textField->setOpenLinks(false);
     hlayout->addWidget(textField);
 
-    QString creditsHTML = QString::fromLatin1("<html><body><h1>");
+    QString creditsHTML = QLatin1String("<html><body><h1>");
     //: Header for the Credits tab of the About screen
     creditsHTML += tr("Credits");
-    creditsHTML += QString::fromLatin1("</h1><p>");
+    creditsHTML += QLatin1String("</h1><p>");
     creditsHTML += tr("FreeCAD would not be possible without the contributions of");
-    creditsHTML += QString::fromLatin1(":</p><h2>"); 
+    creditsHTML += QLatin1String(":</p><h2>");
     //: Header for the list of individual people in the Credits list.
     creditsHTML += tr("Individuals");
-    creditsHTML += QString::fromLatin1("</h2><ul>");
+    creditsHTML += QLatin1String("</h2><ul>");
 
     QTextStream stream(&creditsFile);
 #if QT_VERSION < QT_VERSION_CHECK(6,0,0)
@@ -503,24 +503,24 @@ void AboutDialog::showCredits()
     QString line;
     while (stream.readLineInto(&line)) {
         if (!line.isEmpty()) {
-            if (line == QString::fromLatin1("Firms")) {
-                creditsHTML += QString::fromLatin1("</ul><h2>");
+            if (line == QLatin1String("Firms")) {
+                creditsHTML += QLatin1String("</ul><h2>");
                 //: Header for the list of companies/organizations in the Credits list.
                 creditsHTML += tr("Organizations");
-                creditsHTML += QString::fromLatin1("</h2><ul>");
+                creditsHTML += QLatin1String("</h2><ul>");
             }
             else {
-                creditsHTML += QString::fromLatin1("<li>") + line + QString::fromLatin1("</li>");
+                creditsHTML += QLatin1String("<li>") + line + QLatin1String("</li>");
             }
         }
     }
-    creditsHTML += QString::fromLatin1("</ul></body></html>");
+    creditsHTML += QLatin1String("</ul></body></html>");
     textField->setHtml(creditsHTML);
 }
 
 void AboutDialog::showLicenseInformation()
 {
-    QString licenseFileURL = QString::fromLatin1("%1/LICENSE.html")
+    QString licenseFileURL = QLatin1String("%1/LICENSE.html")
         .arg(QString::fromUtf8(App::Application::getHelpDir().c_str()));
     QFile licenseFile(licenseFileURL);
 
@@ -532,7 +532,7 @@ void AboutDialog::showLicenseInformation()
         ui->tabWidget->removeTab(1); // Hide the license placeholder widget
 
         auto tab_license = new QWidget();
-        tab_license->setObjectName(QString::fromLatin1("tab_license"));
+        tab_license->setObjectName(QLatin1String("tab_license"));
         ui->tabWidget->addTab(tab_license, tr("License"));
         auto hlayout = new QVBoxLayout(tab_license);
         auto textField = new QTextBrowser(tab_license);
@@ -546,7 +546,7 @@ void AboutDialog::showLicenseInformation()
         QString info(QLatin1String("SUCH DAMAGES.<hr/>"));
         info += getAdditionalLicenseInformation();
         QString lictext = ui->textBrowserLicense->toHtml();
-        lictext.replace(QString::fromLatin1("SUCH DAMAGES.<hr/>"), info);
+        lictext.replace(QLatin1String("SUCH DAMAGES.<hr/>"), info);
         ui->textBrowserLicense->setHtml(lictext);
     }
 }
@@ -571,7 +571,7 @@ QString AboutDialog::getAdditionalLicenseInformation() const
 void AboutDialog::showLibraryInformation()
 {
     auto tab_library = new QWidget();
-    tab_library->setObjectName(QString::fromLatin1("tab_library"));
+    tab_library->setObjectName(QLatin1String("tab_library"));
     ui->tabWidget->addTab(tab_library, tr("Libraries"));
     auto hlayout = new QVBoxLayout(tab_library);
     auto textField = new QTextBrowser(tab_library);
@@ -580,7 +580,7 @@ void AboutDialog::showLibraryInformation()
     hlayout->addWidget(textField);
 
     QList<LibraryInfo> libInfo;
-    QString baseurl = QString::fromLatin1("file:///%1/ThirdPartyLibraries.html")
+    QString baseurl = QLatin1String("file:///%1/ThirdPartyLibraries.html")
             .arg(QString::fromUtf8(App::Application::getHelpDir().c_str()));
 
     // Boost
@@ -604,7 +604,7 @@ void AboutDialog::showLibraryInformation()
         QLatin1String("Eigen"),
         baseurl + QLatin1String("#_TocEigen"),
         QLatin1String("https://eigen.tuxfamily.org"),
-        QString::fromLatin1(fcEigen3Version)
+        QLatin1String(fcEigen3Version)
     };
 
     // FreeType
@@ -612,7 +612,7 @@ void AboutDialog::showLibraryInformation()
         QLatin1String("FreeType"),
         baseurl + QLatin1String("#_TocFreeType"),
         QLatin1String("https://freetype.org"),
-        QString::fromLatin1(fcFreetypeVersion)
+        QLatin1String(fcFreetypeVersion)
     };
 
     // KDL
@@ -646,7 +646,7 @@ void AboutDialog::showLibraryInformation()
         QLatin1String("Point Cloud Library"),
         baseurl + QLatin1String("#_TocPcl"),
         QLatin1String("https://www.pointclouds.org"),
-        QString::fromLatin1(fcPclVersion)
+        QLatin1String(fcPclVersion)
     };
 
     // PyCXX
@@ -654,7 +654,7 @@ void AboutDialog::showLibraryInformation()
         QLatin1String("PyCXX"),
         baseurl + QLatin1String("#_TocPyCXX"),
         QLatin1String("http://cxx.sourceforge.net"),
-        QString::fromLatin1(fcPycxxVersion)
+        QLatin1String(fcPycxxVersion)
     };
 
     // Python
@@ -670,7 +670,7 @@ void AboutDialog::showLibraryInformation()
         QLatin1String("Qt for Python (PySide)"),
         baseurl + QLatin1String("#_TocPySide"),
         QLatin1String("https://wiki.qt.io/Qt_for_Python"),
-        QString::fromLatin1(fcPysideVersion)
+        QLatin1String(fcPysideVersion)
     };
 
     // Qt
@@ -698,7 +698,7 @@ void AboutDialog::showLibraryInformation()
         QLatin1String("Qt for Python (Shiboken)"),
         baseurl + QLatin1String("#_TocPySide"),
         QLatin1String("https://wiki.qt.io/Qt_for_Python"),
-        QString::fromLatin1(fcShibokenVersion)
+        QLatin1String(fcShibokenVersion)
     };
 
     // vtk
@@ -706,7 +706,7 @@ void AboutDialog::showLibraryInformation()
         QLatin1String("vtk"),
         baseurl + QLatin1String("#_TocVtk"),
         QLatin1String("https://www.vtk.org"),
-        QString::fromLatin1(fcVtkVersion)
+        QLatin1String(fcVtkVersion)
     };
 
     // Xerces-C
@@ -714,7 +714,7 @@ void AboutDialog::showLibraryInformation()
         QLatin1String("Xerces-C"),
         baseurl + QLatin1String("#_TocXercesC"),
         QLatin1String("https://xerces.apache.org/xerces-c"),
-        QString::fromLatin1(fcXercescVersion)
+        QLatin1String(fcXercescVersion)
     };
 
     // Zipios++
@@ -759,7 +759,7 @@ void AboutDialog::showCollectionInformation()
         return;
 
     auto tab_collection = new QWidget();
-    tab_collection->setObjectName(QString::fromLatin1("tab_collection"));
+    tab_collection->setObjectName(QLatin1String("tab_collection"));
     ui->tabWidget->addTab(tab_collection, tr("Collection"));
     auto hlayout = new QVBoxLayout(tab_collection);
     auto textField = new QTextBrowser(tab_collection);
@@ -778,7 +778,7 @@ void AboutDialog::showPrivacyPolicy()
     }
     auto text = QString::fromUtf8(policyFile.readAll());
     auto tabPrivacyPolicy = new QWidget();
-    tabPrivacyPolicy->setObjectName(QString::fromLatin1("tabPrivacyPolicy"));
+    tabPrivacyPolicy->setObjectName(QLatin1String("tabPrivacyPolicy"));
     ui->tabWidget->addTab(tabPrivacyPolicy, tr("Privacy Policy"));
     auto hLayout = new QVBoxLayout(tabPrivacyPolicy);
     auto textField = new QTextBrowser(tabPrivacyPolicy);

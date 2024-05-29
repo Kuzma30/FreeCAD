@@ -680,8 +680,8 @@ QVariant PropertyItem::dataProperty(int role) const
         return {};
     }
     if (role == Qt::ToolTipRole) {
-        QString type = QString::fromLatin1("Type: %1\nName: %2").arg(
-                QString::fromLatin1(propertyItems[0]->getTypeId().getName()), objectName());
+        QString type = QString::fromUtf8("Type: %1\nName: %2").arg(
+                QString::fromUtf8(propertyItems[0]->getTypeId().getName()), objectName());
 
         QString doc = PropertyItem::toolTip(propertyItems[0]).toString();
         if (doc.isEmpty()) {
@@ -844,7 +844,7 @@ void PropertyStringItem::setValue(const QVariant& value)
         }
         QString val = value.toString();
         val = QString::fromUtf8(Base::InterpreterSingleton::strToPython(val.toUtf8()).c_str());
-        QString data = QString::fromLatin1("\"%1\"").arg(val);
+        QString data = QString::fromUtf8("\"%1\"").arg(val);
         setPropertyValue(data);
     }
 }
@@ -896,7 +896,7 @@ void PropertyFontItem::setValue(const QVariant& value)
     }
 
     QString val = value.toString();
-    QString data = QString::fromLatin1("\"%1\"").arg(val);
+    QString data = QString::fromUtf8("\"%1\"").arg(val);
     setPropertyValue(data);
 }
 
@@ -965,7 +965,7 @@ void PropertyIntegerItem::setValue(const QVariant& value)
             return;
         }
         int val = value.toInt();
-        QString data = QString::fromLatin1("%1").arg(val);
+        QString data = QString::fromUtf8("%1").arg(val);
         setPropertyValue(data);
     }
 }
@@ -1003,7 +1003,7 @@ QVariant PropertyIntegerItem::toString(const QVariant& v) const
     QString string(PropertyItem::toString(v).toString());
 
     if (hasExpression()) {
-        string += QString::fromLatin1("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
+        string += QString::fromUtf8("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
     }
 
     return {string};
@@ -1088,7 +1088,7 @@ QVariant PropertyIntegerConstraintItem::toString(const QVariant& v) const
     QString string(PropertyItem::toString(v).toString());
 
     if (hasExpression()) {
-        string += QString::fromLatin1("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
+        string += QString::fromUtf8("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
     }
 
     return {string};
@@ -1107,7 +1107,7 @@ QVariant PropertyFloatItem::toString(const QVariant& prop) const
     QString data = QLocale().toString(value, 'f', decimals());
 
     if (hasExpression()) {
-        data += QString::fromLatin1("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
+        data += QString::fromUtf8("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
     }
 
     return {data};
@@ -1175,7 +1175,7 @@ QVariant PropertyUnitItem::toString(const QVariant& prop) const
     const Base::Quantity& unit = prop.value<Base::Quantity>();
     QString string = unit.getUserString();
     if (hasExpression()) {
-        string += QString::fromLatin1("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
+        string += QString::fromUtf8("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
     }
 
     return {string};
@@ -1490,7 +1490,7 @@ QVariant PropertyVectorItem::toString(const QVariant& prop) const
              loc.toString(value.y, 'f', lowPrec),
              loc.toString(value.z, 'f', lowPrec));
     if (hasExpression()) {
-        data += QString::fromLatin1("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
+        data += QString::fromUtf8("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
     }
     return {data};
 }
@@ -1672,7 +1672,7 @@ void VectorListWidget::showValue(const QVariant& d)
     QString data;
     const QList<Base::Vector3d>& value = d.value<QList<Base::Vector3d>>();
     if (value.isEmpty()) {
-        data = QString::fromLatin1("[]");
+        data = QLatin1String("[]");
     }
     else {
         data = QString::fromLatin1("[%1 %2 %3], ...")
@@ -1694,7 +1694,7 @@ QVariant PropertyVectorListItem::toString(const QVariant& prop) const
     QString data;
     const QList<Base::Vector3d>& value = prop.value<QList<Base::Vector3d>>();
     if (value.isEmpty()) {
-        data = QString::fromLatin1("[]");
+        data = QLatin1String("[]");
     }
     else {
         data = QString::fromLatin1("[%1 %2 %3], ...")
@@ -1704,7 +1704,7 @@ QVariant PropertyVectorListItem::toString(const QVariant& prop) const
     }
 
     if (hasExpression()) {
-        data += QString::fromLatin1("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
+        data += QString::fromUtf8("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
     }
     return {data};
 }
@@ -1781,12 +1781,12 @@ PropertyVectorDistanceItem::PropertyVectorDistanceItem()
 QVariant PropertyVectorDistanceItem::toString(const QVariant& prop) const
 {
     const Base::Vector3d& value = prop.value<Base::Vector3d>();
-    QString data = QString::fromLatin1("[") + 
-           Base::Quantity(value.x, Base::Unit::Length).getUserString() + QString::fromLatin1("  ") +
-           Base::Quantity(value.y, Base::Unit::Length).getUserString() + QString::fromLatin1("  ") +
-           Base::Quantity(value.z, Base::Unit::Length).getUserString() + QString::fromLatin1("]");
+    QString data = QString::fromUtf8("[") +
+           Base::Quantity(value.x, Base::Unit::Length).getUserString() + QLatin1String("  ") +
+           Base::Quantity(value.y, Base::Unit::Length).getUserString() + QLatin1String("  ") +
+           Base::Quantity(value.z, Base::Unit::Length).getUserString() + QLatin1String("]");
     if (hasExpression()) {
-        data += QString::fromLatin1("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
+        data += QString::fromUtf8("  ( %1 )").arg(QString::fromStdString(getExpressionString()));
     }
     return {data};
 }
@@ -4607,7 +4607,7 @@ void LinkLabel::updatePropertyLink()
             auto &sobj = links.front();
             link = QVariant::fromValue(sobj);
             QString linkcolor = QApplication::palette().color(QPalette::Link).name();
-            text = QString::fromLatin1(
+            text = QString::fromUtf8(
                     "<html><head><style type=\"text/css\">"
                     "p, li { white-space: pre-wrap; }"
                     "</style></head><body>"
@@ -4615,8 +4615,8 @@ void LinkLabel::updatePropertyLink()
                     "<a href=\"%1#%2.%3\"><span style=\" text-decoration: underline; color:%4;\">%5</span></a>"
                     "</p></body></html>"
                     )
-                .arg(QLatin1String(sobj.getDocumentName().c_str()),
-                     QLatin1String(sobj.getObjectName().c_str()),
+                .arg(QString::fromUtf8(sobj.getDocumentName().c_str()),
+                     QString::fromUtf8(sobj.getObjectName().c_str()),
                      QString::fromUtf8(sobj.getSubName().c_str()),
                      linkcolor,
                      DlgPropertyLink::formatObject(

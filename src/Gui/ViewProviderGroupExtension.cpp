@@ -97,11 +97,11 @@ void ViewProviderGroupExtension::extensionDropObject(App::DocumentObject* obj) {
 
     // build Python command for execution
     QString cmd;
-    cmd = QString::fromLatin1("App.getDocument(\"%1\").getObject(\"%2\").addObject("
+    cmd = QString::fromUtf8("App.getDocument(\"%1\").getObject(\"%2\").addObject("
                         "App.getDocument(\"%1\").getObject(\"%3\"))")
-                        .arg(QString::fromLatin1(doc->getName()),
-                             QString::fromLatin1(grp->getNameInDocument()),
-                             QString::fromLatin1(obj->getNameInDocument()));
+                        .arg(QString::fromUtf8(doc->getName()),
+                             QString::fromUtf8(grp->getNameInDocument()),
+                             QString::fromUtf8(obj->getNameInDocument()));
 
     Gui::Command::doCommand(Gui::Command::App, cmd.toUtf8());
 }

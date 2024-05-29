@@ -118,7 +118,7 @@ QList<QUrl> FileDialog::fetchSidebarUrls()
 
 bool FileDialog::hasSuffix(const QString& ext) const
 {
-    QRegularExpression rx(QString::fromLatin1("\\*.(%1)\\W").arg(ext), QRegularExpression::CaseInsensitiveOption);
+    QRegularExpression rx(QString::fromUtf8("\\*.(%1)\\W").arg(ext), QRegularExpression::CaseInsensitiveOption);
     QStringList filters = nameFilters();
     for (const auto & str : filters) {
         if (rx.match(str).hasMatch()) {
@@ -142,9 +142,9 @@ void FileDialog::accept()
             // #0001928: do not add a suffix if a file with suffix is entered
             // #0002209: make sure that the entered suffix is part of one of the filters
             if (!ext.isEmpty() && (suffix.isEmpty() || !hasSuffix(suffix))) {
-                file = QString::fromLatin1("%1.%2").arg(file, ext);
+                file = QString::fromUtf8("%1.%2").arg(file, ext);
                 // That's the built-in line edit
-                auto fileNameEdit = this->findChild<QLineEdit*>(QString::fromLatin1("fileNameEdit"));
+                auto fileNameEdit = this->findChild<QLineEdit*>(QStringLiteral("fileNameEdit"));
                 if (fileNameEdit)
                     fileNameEdit->setText(file);
             }
@@ -503,10 +503,10 @@ void FileOptionsDialog::accept()
         if (ext.isEmpty())
             setDefaultSuffix(suf);
         else if (ext.toLower() != suf.toLower()) {
-            fn = QString::fromLatin1("%1.%2").arg(fn, suf);
+            fn = QString::fromUtf8("%1.%2").arg(fn, suf);
             selectFile(fn);
             // That's the built-in line edit (fixes Debian bug #811200)
-            auto fileNameEdit = this->findChild<QLineEdit*>(QString::fromLatin1("fileNameEdit"));
+            auto fileNameEdit = this->findChild<QLineEdit*>(QStringLiteral("fileNameEdit"));
             if (fileNameEdit)
                 fileNameEdit->setText(fn);
         }
@@ -604,9 +604,9 @@ QIcon FileIconProvider::icon(const QFileInfo & info) const
     };
 
     auto urlToThumbnail = [](const QString& filename) {
-        QString hash = QString::fromLatin1(QCryptographicHash::hash(filename.toUtf8(), QCryptographicHash::Md5).toHex());
+        QString hash = QString::fromUtf8(QCryptographicHash::hash(filename.toUtf8(), QCryptographicHash::Md5).toHex());
         QString cache = QStandardPaths::writableLocation(QStandardPaths::GenericCacheLocation);
-        return QString::fromLatin1("%1/thumbnails/normal/%2.png").arg(cache, hash);
+        return QString::fromUtf8("%1/thumbnails/normal/%2.png").arg(cache, hash);
     };
 
     auto iconFromFile = [](const QString& filename) {
@@ -616,7 +616,7 @@ QIcon FileIconProvider::icon(const QFileInfo & info) const
                 return icon;
         }
 
-        return QIcon(QString::fromLatin1(":/icons/freecad-doc.png"));
+        return QIcon(QStringLiteral(":/icons/freecad-doc.png"));
     };
 
     if (info.suffix().toLower() == QLatin1String("fcstd")) {
@@ -626,7 +626,7 @@ QIcon FileIconProvider::icon(const QFileInfo & info) const
         return iconFromFile(thumb);
     }
     else if (info.suffix().toLower().startsWith(QLatin1String("fcstd"))) {
-        QIcon icon(QString::fromLatin1(":/icons/freecad-doc.png"));
+        QIcon icon(QStringLiteral(":/icons/freecad-doc.png"));
         QIcon darkIcon;
         int w = QApplication::style()->pixelMetric(QStyle::PM_ListViewIconSize);
         darkIcon.addPixmap(icon.pixmap(w, w, QIcon::Disabled, QIcon::Off), QIcon::Normal, QIcon::Off);
@@ -873,7 +873,7 @@ SelectModule::SelectModule (const QString& type, const SelectModule::Dict& types
             module = module.left(match.capturedStart());
         }
 
-        button->setText(QString::fromLatin1("%1 (%2)").arg(filter, module));
+        button->setText(QString::fromUtf8("%1 (%2)").arg(filter, module));
         button->setObjectName(it.value());
         gridLayout1->addWidget(button, index, 0, 1, 1);
         group->addButton(button, index);
@@ -948,7 +948,7 @@ SelectModule::Dict SelectModule::exportHandler(const QStringList& fileNames, con
         std::map<std::string, std::string>::const_iterator it;
         it = filterList.find((const char*)filter.toUtf8());
         if (it != filterList.end()) {
-            QString module = QString::fromLatin1(it->second.c_str());
+            QString module = QString::fromUtf8(it->second.c_str());
             for (const auto & fileName : fileNames) {
                 dict[fileName] = module;
             }
@@ -972,10 +972,10 @@ SelectModule::Dict SelectModule::exportHandler(const QStringList& fileNames, con
 
         fileExtension[ext].push_back(fileName);
         for (const auto & filter : filters)
-            filetypeHandler[ext][QString::fromUtf8(filter.first.c_str())] = QString::fromLatin1(filter.second.c_str());
+            filetypeHandler[ext][QString::fromUtf8(filter.first.c_str())] = QString::fromUtf8(filter.second.c_str());
         // set the default module handler
         if (!filters.empty())
-            dict[fileName] = QString::fromLatin1(filters.begin()->second.c_str());
+            dict[fileName] = QString::fromUtf8(filters.begin()->second.c_str());
     }
 
     for (QMap<QString, SelectModule::Dict>::const_iterator it = filetypeHandler.cbegin();
@@ -1010,7 +1010,7 @@ SelectModule::Dict SelectModule::importHandler(const QStringList& fileNames, con
         std::map<std::string, std::string>::const_iterator it;
         it = filterList.find((const char*)filter.toUtf8());
         if (it != filterList.end()) {
-            QString module = QString::fromLatin1(it->second.c_str());
+            QString module = QString::fromUtf8(it->second.c_str());
             for (const auto & fileName : fileNames) {
                 dict[fileName] = module;
             }
@@ -1034,10 +1034,10 @@ SelectModule::Dict SelectModule::importHandler(const QStringList& fileNames, con
 
         fileExtension[ext].push_back(fileName);
         for (const auto & filter : filters)
-            filetypeHandler[ext][QString::fromUtf8(filter.first.c_str())] = QString::fromLatin1(filter.second.c_str());
+            filetypeHandler[ext][QString::fromUtf8(filter.first.c_str())] = QString::fromUtf8(filter.second.c_str());
         // set the default module handler
         if (!filters.empty())
-            dict[fileName] = QString::fromLatin1(filters.begin()->second.c_str());
+            dict[fileName] = QString::fromUtf8(filters.begin()->second.c_str());
     }
 
     for (QMap<QString, SelectModule::Dict>::const_iterator it = filetypeHandler.cbegin();

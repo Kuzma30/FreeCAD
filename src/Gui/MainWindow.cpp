@@ -431,7 +431,7 @@ MainWindow::MainWindow(QWidget * parent, Qt::WindowFlags f)
         tab->setTabsClosable(true);
         // The tabs might be very wide
         tab->setExpanding(false);
-        tab->setObjectName(QString::fromLatin1("mdiAreaTabBar"));
+        tab->setObjectName(QLatin1String("mdiAreaTabBar"));
     }
     d->mdiArea->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
     d->mdiArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAsNeeded);
@@ -440,7 +440,7 @@ MainWindow::MainWindow(QWidget * parent, Qt::WindowFlags f)
     d->mdiArea->setBackground(QBrush(QColor(160,160,160)));
     setCentralWidget(d->mdiArea);
 
-    statusBar()->setObjectName(QString::fromLatin1("statusBar"));
+    statusBar()->setObjectName(QLatin1String("statusBar"));
     connect(statusBar(), &QStatusBar::messageChanged, this, &MainWindow::statusMessageChanged);
 
     // labels and progressbar
@@ -466,24 +466,24 @@ MainWindow::MainWindow(QWidget * parent, Qt::WindowFlags f)
 
     if(notificationAreaEnabled) {
         NotificationArea* notificationArea = new NotificationArea(statusBar());
-        notificationArea->setObjectName(QString::fromLatin1("notificationArea"));
-        notificationArea->setStyleSheet(QStringLiteral("text-align:left;"));
+        notificationArea->setObjectName(QLatin1String("notificationArea"));
+        notificationArea->setStyleSheet(QLatin1String("text-align:left;"));
         statusBar()->addPermanentWidget(notificationArea);
     }
 
     // clears the action label
     d->actionTimer = new QTimer( this );
-    d->actionTimer->setObjectName(QString::fromLatin1("actionTimer"));
+    d->actionTimer->setObjectName(QLatin1String("actionTimer"));
     connect(d->actionTimer, &QTimer::timeout, d->actionLabel, &QLabel::clear);
 
     // clear status type
     d->statusTimer = new QTimer( this );
-    d->statusTimer->setObjectName(QString::fromLatin1("statusTimer"));
+    d->statusTimer->setObjectName(QLatin1String("statusTimer"));
     connect(d->statusTimer, &QTimer::timeout, this, &MainWindow::clearStatus);
 
     // update gui timer
     d->activityTimer = new QTimer(this);
-    d->activityTimer->setObjectName(QString::fromLatin1("activityTimer"));
+    d->activityTimer->setObjectName(QLatin1String("activityTimer"));
     connect(d->activityTimer, &QTimer::timeout, this, &MainWindow::_updateActions);
     d->activityTimer->setSingleShot(false);
     d->activityTimer->start(150);
@@ -609,7 +609,7 @@ bool MainWindow::setupTaskView()
         auto taskView = new Gui::TaskView::TaskView(this);
         bool restore = group->GetBool("RestoreWidth", taskView->shouldRestoreWidth());
         taskView->setRestoreWidth(restore);
-        taskView->setObjectName(QString::fromLatin1(QT_TRANSLATE_NOOP("QDockWidget","Tasks")));
+        taskView->setObjectName(QString::fromUtf8(QT_TRANSLATE_NOOP("QDockWidget","Tasks")));
         taskView->setMinimumWidth(210);
 
         DockWindowManager* pDockMgr = DockWindowManager::instance();
@@ -626,7 +626,7 @@ bool MainWindow::setupSelectionView()
     if (d->hiddenDockWindows.find("Std_SelectionView") == std::string::npos) {
         auto pcSelectionView = new SelectionView(nullptr, this);
         pcSelectionView->setObjectName
-            (QString::fromLatin1(QT_TRANSLATE_NOOP("QDockWidget","Selection view")));
+            (QString::fromUtf8(QT_TRANSLATE_NOOP("QDockWidget","Selection view")));
         pcSelectionView->setMinimumWidth(210);
 
         DockWindowManager* pDockMgr = DockWindowManager::instance();
@@ -644,7 +644,7 @@ bool MainWindow::setupReportView()
         auto pcReport = new ReportOutput(this);
         pcReport->setWindowIcon(BitmapFactory().pixmap("MacroEditor"));
         pcReport->setObjectName
-            (QString::fromLatin1(QT_TRANSLATE_NOOP("QDockWidget","Report view")));
+            (QString::fromUtf8(QT_TRANSLATE_NOOP("QDockWidget","Report view")));
 
         DockWindowManager* pDockMgr = DockWindowManager::instance();
         pDockMgr->registerDockWindow("Std_ReportView", pcReport);
@@ -664,7 +664,7 @@ bool MainWindow::setupPythonConsole()
         auto pcPython = new PythonConsole(this);
         pcPython->setWindowIcon(Gui::BitmapFactory().iconFromTheme("applications-python"));
         pcPython->setObjectName
-            (QString::fromLatin1(QT_TRANSLATE_NOOP("QDockWidget","Python console")));
+            (QString::fromUtf8(QT_TRANSLATE_NOOP("QDockWidget","Python console")));
 
         DockWindowManager* pDockMgr = DockWindowManager::instance();
         pDockMgr->registerDockWindow("Std_PythonView", pcPython);
@@ -1390,16 +1390,16 @@ void MainWindow::onWindowsMenuAboutToShow()
         QAction* action = actions.at(index);
         QString text;
         QString title = child->windowTitle();
-        int lastIndex = title.lastIndexOf(QString::fromLatin1("[*]"));
+        int lastIndex = title.lastIndexOf(QLatin1String("[*]"));
         if (lastIndex > 0) {
             title = title.left(lastIndex);
             if (child->isWindowModified())
-                title = QString::fromLatin1("%1*").arg(title);
+                title = QString::fromUtf8("%1*").arg(title);
         }
         if (index < 9)
-            text = QString::fromLatin1("&%1 %2").arg(index+1).arg(title);
+            text = QString::fromUtf8("&%1 %2").arg(index+1).arg(title);
         else
-            text = QString::fromLatin1("%1 %2").arg(index+1).arg(title);
+            text = QString::fromUtf8("%1 %2").arg(index+1).arg(title);
         action->setText(text);
         action->setVisible(true);
         action->setChecked(child == active);
@@ -1647,7 +1647,7 @@ void MainWindow::delayedStartup()
 void MainWindow::appendRecentFile(const QString& filename)
 {
     auto recent = this->findChild<RecentFilesAction *>
-        (QString::fromLatin1("recentFiles"));
+        (QLatin1String("recentFiles"));
     if (recent) {
         recent->appendFile(filename);
     }
@@ -1656,7 +1656,7 @@ void MainWindow::appendRecentFile(const QString& filename)
 void MainWindow::appendRecentMacro(const QString& filename)
 {
     auto recent = this->findChild<RecentMacrosAction *>
-        (QString::fromLatin1("recentMacros"));
+        (QLatin1String("recentMacros"));
     if (recent) {
         recent->appendFile(filename);
     }
@@ -1929,7 +1929,7 @@ QPixmap MainWindow::aboutImage() const
 {
     // See if we have a custom About screen image set
     QPixmap about_image;
-    QFileInfo fi(QString::fromLatin1("images:about_image.png"));
+    QFileInfo fi(QLatin1String("images:about_image.png"));
     if (fi.isFile() && fi.exists())
         about_image.load(fi.filePath(), "PNG");
 
@@ -2008,7 +2008,7 @@ QPixmap MainWindow::splashImage() const
 {
     // search in the UserAppData dir as very first
     QPixmap splash_image;
-    QFileInfo fi(QString::fromLatin1("images:splash_image.png"));
+    QFileInfo fi(QLatin1String("images:splash_image.png"));
     if (fi.isFile() && fi.exists())
         splash_image.load(fi.filePath(), "PNG");
 
@@ -2340,10 +2340,10 @@ void MainWindow::loadUrls(App::Document* doc, const QList<QUrl>& urls)
             if (info.isSymLink())
                 info.setFile(info.symLinkTarget());
             std::vector<std::string> module = App::GetApplication()
-                .getImportModules(info.completeSuffix().toLatin1());
+                .getImportModules(info.completeSuffix().toUtf8());
             if (module.empty()) {
                 module = App::GetApplication()
-                    .getImportModules(info.suffix().toLatin1());
+                    .getImportModules(info.suffix().toUtf8());
             }
             if (!module.empty()) {
                 // ok, we support files with this extension
@@ -2381,7 +2381,7 @@ void MainWindow::loadUrls(App::Document* doc, const QList<QUrl>& urls)
     // load the files with the associated modules
     for (SelectModule::Dict::iterator it = dict.begin(); it != dict.end(); ++it) {
         // if the passed document name doesn't exist the module should create it, if needed
-        Application::Instance->importFrom(it.key().toUtf8(), docName, it.value().toLatin1());
+        Application::Instance->importFrom(it.key().toUtf8(), docName, it.value().toUtf8());
     }
 }
 
@@ -2418,7 +2418,7 @@ void MainWindow::changeEvent(QEvent *e)
 
 void MainWindow::clearStatus() {
     d->currentStatusType = 100;
-    statusBar()->setStyleSheet(QString::fromLatin1("#statusBar{}"));
+    statusBar()->setStyleSheet(QLatin1String("#statusBar{}"));
 }
 
 void MainWindow::statusMessageChanged() {
@@ -2477,7 +2477,7 @@ void MainWindow::showStatus(int type, const QString& message)
         statusBar()->setStyleSheet(d->status->wrn);
         break;
     case MainWindow::Pane:
-        statusBar()->setStyleSheet(QString::fromLatin1("#statusBar{}"));
+        statusBar()->setStyleSheet(QLatin1String("#statusBar{}"));
         break;
     default:
         statusBar()->setStyleSheet(d->status->msg);
@@ -2518,7 +2518,7 @@ void MainWindow::customEvent(QEvent* e)
                 if (d) {
                     auto view = new ViewProviderExtern();
                     try {
-                        view->setModeByString("1",msg.toLatin1().constData());
+                        view->setModeByString("1",msg.toUtf8().constData());
                         d->setAnnotationViewProvider("Vdbg",view);
                     }
                     catch (...) {
@@ -2559,7 +2559,7 @@ void MainWindow::setWindowTitle(const QString& string)
     QString title;
     QString appname = QCoreApplication::applicationName();
     if (appname.isEmpty()) {
-        appname = QString::fromLatin1(App::Application::Config()["ExeName"].c_str());
+        appname = QString::fromUtf8(App::Application::Config()["ExeName"].c_str());
     }
 
     // allow to disable version number
@@ -2592,9 +2592,9 @@ void MainWindow::setWindowTitle(const QString& string)
     StatusBarObserver::StatusBarObserver()
         : WindowParameter("OutputWindow")
     {
-        msg = QString::fromLatin1("#statusBar{color: #000000}");  // black
-        wrn = QString::fromLatin1("#statusBar{color: #ffaa00}");  // orange
-        err = QString::fromLatin1("#statusBar{color: #ff0000}");  // red
+        msg = QLatin1String("#statusBar{color: #000000}");  // black
+        wrn = QLatin1String("#statusBar{color: #ffaa00}");  // orange
+        err = QLatin1String("#statusBar{color: #ff0000}");  // red
         Base::Console().AttachObserver(this);
         getWindowParameter()->Attach(this);
         getWindowParameter()->NotifyAll();
@@ -2609,7 +2609,7 @@ void MainWindow::setWindowTitle(const QString& string)
     void StatusBarObserver::OnChange(Base::Subject<const char*> & rCaller, const char* sReason)
     {
         ParameterGrp& rclGrp = ((ParameterGrp&)rCaller);
-        auto format = QString::fromLatin1("#statusBar{color: %1}");
+        auto format = QLatin1String("#statusBar{color: %1}");
         if (strcmp(sReason, "colorText") == 0) {
             unsigned long col = rclGrp.GetUnsigned(sReason);
             this->msg = format.arg(App::Color::fromPackedRGB<QColor>(col).name());

@@ -371,7 +371,7 @@ public:
                 QString res;
                 // we resolved the property
                 if (propName) {
-                    res = QString::fromLatin1(propName);
+                    res = QString::fromUtf8(propName);
                     // resolve the property
                     if (sep && !noProperty && !retrieveSubPaths(prop).empty())
                         res += QLatin1Char('.');
@@ -381,7 +381,7 @@ public:
                     if (idx & 1)
                         res = QString::fromUtf8(quote(obj->Label.getStrValue()).c_str());
                     else
-                        res = QString::fromLatin1(obj->getNameInDocument());
+                        res = QString::fromUtf8(obj->getNameInDocument());
                     if (sep && !noProperty)
                         res += QLatin1Char('.');
                 }
@@ -390,7 +390,7 @@ public:
                     if (idx & 1)
                         res = QString::fromUtf8(quote(doc->Label.getStrValue()).c_str());
                     else
-                        res = QString::fromLatin1(doc->getName());
+                        res = QString::fromUtf8(doc->getName());
                     if (sep)
                         res += QLatin1Char('#');
                 }
@@ -421,7 +421,7 @@ public:
                     if (idx & 1)
                         res = QString::fromUtf8(quote(obj->Label.getStrValue()).c_str());
                     else
-                        res = QString::fromLatin1(obj->getNameInDocument());
+                        res = QString::fromUtf8(obj->getNameInDocument());
                     if (sep && !noProperty)
                         res += QLatin1Char('.');
                     v->setValue(res);
@@ -449,7 +449,7 @@ public:
                     *count = propSize;
                 }
                 if (v) {
-                    QString res = QString::fromLatin1(propName);
+                    QString res = QString::fromUtf8(propName);
 
                     // check to see if we have accessible paths from this prop name?
                     if (sep && !retrieveSubPaths(prop).empty())
@@ -479,10 +479,10 @@ public:
                 auto str = paths[idx].getSubPathStr();
                 if (str.size() && (str[0] == '.' || str[0] == '#')) {
                     // skip the "."
-                    *v = QString::fromLatin1(str.c_str() + 1);
+                    *v = QString::fromUtf8(str.c_str() + 1);
                 }
                 else {
-                    *v = QString::fromLatin1(str.c_str());
+                    *v = QString::fromUtf8(str.c_str());
                 }
             }
         }

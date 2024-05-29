@@ -290,11 +290,11 @@ void GraphvizView::updateSvgItem(const App::Document &doc)
 #endif
     bool pathChanged = false;
 #ifdef FC_OS_WIN32
-    QString dot = QString::fromLatin1("\"%1/dot\"").arg(path);
-    QString unflatten = QString::fromLatin1("\"%1/unflatten\"").arg(path);
+    QString dot = QString::fromUtf8("\"%1/dot\"").arg(path);
+    QString unflatten = QString::fromUtf8("\"%1/unflatten\"").arg(path);
 #else
-    QString dot = QString::fromLatin1("%1/dot").arg(path);
-    QString unflatten = QString::fromLatin1("%1/unflatten").arg(path);
+    QString dot = QString::fromUtf8("%1/dot").arg(path);
+    QString unflatten = QString::fromUtf8("%1/unflatten").arg(path);
 #endif
     dotProc->setEnvironment(QProcess::systemEnvironment());
     flatProc->setEnvironment(QProcess::systemEnvironment());
@@ -306,7 +306,7 @@ void GraphvizView::updateSvgItem(const App::Document &doc)
         if (!dotProc->waitForStarted()) {
             int ret = QMessageBox::warning(Gui::getMainWindow(),
                                            tr("Graphviz not found"),
-                                           QString::fromLatin1("<html><head/><body>%1 "
+                                           QString::fromUtf8("<html><head/><body>%1 "
                                                                "<a href=\"https://www.freecad.org/wiki/Std_DependencyGraph\">%2"
                                                                "</a><p>%3</p></body></html>")
                                            .arg(tr("Graphviz couldn't be found on your system."),
@@ -325,11 +325,11 @@ void GraphvizView::updateSvgItem(const App::Document &doc)
             }
             pathChanged = true;
 #ifdef FC_OS_WIN32
-            dot = QString::fromLatin1("\"%1/dot\"").arg(path);
-            unflatten = QString::fromLatin1("\"%1/unflatten\"").arg(path);
+            dot = QString::fromUtf8("\"%1/dot\"").arg(path);
+            unflatten = QString::fromUtf8("\"%1/unflatten\"").arg(path);
 #else
-            dot = QString::fromLatin1("%1/dot").arg(path);
-            unflatten = QString::fromLatin1("%1/unflatten").arg(path);
+            dot = QString::fromUtf8("%1/dot").arg(path);
+            unflatten = QString::fromUtf8("%1/unflatten").arg(path);
 #endif
         }
         else {
@@ -394,7 +394,7 @@ QByteArray GraphvizView::exportGraph(const QString& format)
     ParameterGrp::handle hGrp = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/Paths");
     QProcess dotProc, flatProc;
     QStringList args, flatArgs;
-    args << QString::fromLatin1("-T%1").arg(format);
+    args << QString::fromUtf8("-T%1").arg(format);
     flatArgs << QLatin1String("-c2 -l2");
 
 #ifdef FC_OS_LINUX
@@ -404,11 +404,11 @@ QByteArray GraphvizView::exportGraph(const QString& format)
 #endif
 
 #ifdef FC_OS_WIN32
-    QString exe = QString::fromLatin1("\"%1/dot\"").arg(path);
-    QString unflatten = QString::fromLatin1("\"%1/unflatten\"").arg(path);
+    QString exe = QString::fromUtf8("\"%1/dot\"").arg(path);
+    QString unflatten = QString::fromUtf8("\"%1/unflatten\"").arg(path);
 #else
-    QString exe = QString::fromLatin1("%1/dot").arg(path);
-    QString unflatten = QString::fromLatin1("%1/unflatten").arg(path);
+    QString exe = QString::fromUtf8("%1/dot").arg(path);
+    QString unflatten = QString::fromUtf8("%1/unflatten").arg(path);
 #endif
 
     dotProc.setEnvironment(QProcess::systemEnvironment());
@@ -445,13 +445,13 @@ bool GraphvizView::onMsg(const char* pMsg, const char**)
 {
     if (strcmp("Save",pMsg) == 0 || strcmp("SaveAs",pMsg) == 0) {
         QList< QPair<QString, QString> > formatMap;
-        formatMap << qMakePair(QString::fromLatin1("%1 (*.gv)").arg(tr("Graphviz format")), QString::fromLatin1("gv"));
-        formatMap << qMakePair(QString::fromLatin1("%1 (*.png)").arg(tr("PNG format")), QString::fromLatin1("png"));
-        formatMap << qMakePair(QString::fromLatin1("%1 (*.bmp)").arg(tr("Bitmap format")), QString::fromLatin1("bmp"));
-        formatMap << qMakePair(QString::fromLatin1("%1 (*.gif)").arg(tr("GIF format")), QString::fromLatin1("gif"));
-        formatMap << qMakePair(QString::fromLatin1("%1 (*.jpg)").arg(tr("JPG format")), QString::fromLatin1("jpg"));
-        formatMap << qMakePair(QString::fromLatin1("%1 (*.svg)").arg(tr("SVG format")), QString::fromLatin1("svg"));
-        formatMap << qMakePair(QString::fromLatin1("%1 (*.pdf)").arg(tr("PDF format")), QString::fromLatin1("pdf"));
+        formatMap << qMakePair(QString::fromUtf8("%1 (*.gv)").arg(tr("Graphviz format")), QLatin1String("gv"));
+        formatMap << qMakePair(QString::fromUtf8("%1 (*.png)").arg(tr("PNG format")), QLatin1String("png"));
+        formatMap << qMakePair(QString::fromUtf8("%1 (*.bmp)").arg(tr("Bitmap format")), QLatin1String("bmp"));
+        formatMap << qMakePair(QString::fromUtf8("%1 (*.gif)").arg(tr("GIF format")), QLatin1String("gif"));
+        formatMap << qMakePair(QString::fromUtf8("%1 (*.jpg)").arg(tr("JPG format")), QLatin1String("jpg"));
+        formatMap << qMakePair(QString::fromUtf8("%1 (*.svg)").arg(tr("SVG format")), QLatin1String("svg"));
+        formatMap << qMakePair(QString::fromUtf8("%1 (*.pdf)").arg(tr("PDF format")), QLatin1String("pdf"));
 
         QStringList filter;
         for (const auto & it : std::as_const(formatMap)) {
@@ -524,7 +524,7 @@ void GraphvizView::print(QPrinter* printer)
     QPainter p(printer);
     QRect rect = printer->pageLayout().paintRectPixels(printer->resolution());
     view->scene()->render(&p, rect);
-    //QByteArray buffer = exportGraph(QString::fromLatin1("svg"));
+    //QByteArray buffer = exportGraph(QLatin1String("svg"));
     //QSvgRenderer svg(buffer);
     //svg.render(&p, rect);
     p.end();
@@ -544,7 +544,7 @@ void GraphvizView::print()
 void GraphvizView::printPdf()
 {
     QStringList filter;
-    filter << QString::fromLatin1("%1 (*.pdf)").arg(tr("PDF format"));
+    filter << QString::fromUtf8("%1 (*.pdf)").arg(tr("PDF format"));
 
     QString selectedFilter;
     QString fn = Gui::FileDialog::getSaveFileName(this, tr("Export graph"), QString(), filter.join(QLatin1String(";;")), &selectedFilter);

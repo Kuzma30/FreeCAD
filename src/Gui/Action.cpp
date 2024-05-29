@@ -231,13 +231,13 @@ QString Action::cleanTitle(const QString & title)
 {
     QString text(title);
     // Deal with QAction title mnemonic
-    static QRegularExpression re(QStringLiteral("&(.)"));
-    text.replace(re, QStringLiteral("\\1"));
+    static QRegularExpression re(QLatin1String("&(.)"));
+    text.replace(re, QLatin1String("\\1"));
 
     // Probably not a good idea to trim ending punctuation
 #if 0
     // Trim line ending punctuation
-    static QRegularExpression rePunct(QStringLiteral("[[:punct:]]+$"));
+    static QRegularExpression rePunct(QLatin1String("[[:punct:]]+$"));
     text.replace(rePunct, QString());
 #endif
     return text;
@@ -371,12 +371,12 @@ QString Action::createToolTip(QString helpText,
         return tooltip + helpText + cmdName;
     }
 
-    tooltip += QStringLiteral(
+    tooltip += QLatin1String(
             "<p style='white-space:pre; margin:0;'>");
 
     // If the user supplied tooltip contains line break, we shall honour it.
     if (helpText.indexOf(QLatin1Char('\n')) >= 0) {
-        tooltip += helpText.toHtmlEscaped() + QStringLiteral("</p>") ;
+        tooltip += helpText.toHtmlEscaped() + QLatin1String("</p>") ;
     }
     else {
         // If not, try to end the non wrapping paragraph at some pre defined
@@ -385,7 +385,7 @@ QString Action::createToolTip(QString helpText,
         QFontMetrics fm(font);
         int width = QtTools::horizontalAdvance(fm, helpText);
         if (width <= tipWidth) {
-            tooltip += helpText.toHtmlEscaped() + QStringLiteral("</p>") ;
+            tooltip += helpText.toHtmlEscaped() + QLatin1String("</p>") ;
         }
         else {
             int index = tipWidth / width * helpText.size();
@@ -396,7 +396,7 @@ QString Action::createToolTip(QString helpText,
                 }
             }
             tooltip += helpText.left(index).toHtmlEscaped()
-                + QStringLiteral("</p>")
+                + QLatin1String("</p>")
                 + helpText.right(helpText.size()-index).trimmed().toHtmlEscaped();
         }
     }
@@ -475,7 +475,7 @@ void ActionGroup::addTo(QWidget *widget)
             widget->addAction(action());
             QToolButton* tb = widget->findChildren<QToolButton*>().constLast();
             tb->setPopupMode(QToolButton::MenuButtonPopup);
-            tb->setObjectName(QStringLiteral("qt_toolbutton_menubutton"));
+            tb->setObjectName(QLatin1String("qt_toolbutton_menubutton"));
             QList<QAction*> acts = groupAction()->actions();
             auto menu = new QMenu(tb);
             menu->addActions(acts);
@@ -1067,11 +1067,11 @@ void RecentMacrosAction::setFiles(const QStringList& files)
         for (int index = 0; index < accel_col.size(); index++) {
             msgMain += QStringLiteral(" %1").arg(accel_col[index]);
         }
-        msgMain += QStringLiteral(" disabled because of conflicts with");
+        msgMain += QLatin1String(" disabled because of conflicts with");
         for (int index = 0; index < existingCommands.count(); index++) {
             msgMain += QStringLiteral(" %1").arg(existingCommands[index]);
         }
-        msgMain += QStringLiteral(" respectively.\nHint: In Preferences -> Python -> Macro ->"
+        msgMain += QLatin1String(" respectively.\nHint: In Preferences -> Python -> Macro ->"
                              " Recent Macros menu -> Keyboard Modifiers this should be Ctrl+Shift+"
                              " by default, if this is now blank then you should revert it back to"
                              " Ctrl+Shift+ by pressing both keys at the same time.");

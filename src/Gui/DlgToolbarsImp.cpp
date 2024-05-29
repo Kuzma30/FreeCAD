@@ -84,11 +84,11 @@ DlgCustomToolbars::DlgCustomToolbars(DlgCustomToolbars::Type t, QWidget* parent)
     workbenches.sort();
     int index = 1;
     ui->workbenchBox->addItem(QApplication::windowIcon(), tr("Global"));
-    ui->workbenchBox->setItemData(0, QVariant(QStringLiteral("Global")), Qt::UserRole);
+    ui->workbenchBox->setItemData(0, QVariant(QLatin1String("Global")), Qt::UserRole);
     for (const auto & workbench : workbenches) {
         QPixmap px = Application::Instance->workbenchIcon(workbench);
         QString mt = Application::Instance->workbenchMenuText(workbench);
-        if (mt != QStringLiteral("<none>")) {
+        if (mt != QLatin1String("<none>")) {
             if (px.isNull())
                 ui->workbenchBox->addItem(mt);
             else
@@ -513,7 +513,7 @@ void DlgCustomToolbars::onModifyMacroAction(const QByteArray& macro)
 {
     QVariant data = ui->categoryBox->itemData(ui->categoryBox->currentIndex(), Qt::UserRole);
     QString group = data.toString();
-    if (group == QStringLiteral("Macros"))
+    if (group == QLatin1String("Macros"))
     {
         CommandManager & cCmdMgr = Application::Instance->commandManager();
         Command* pCmd = cCmdMgr.getCommandByName(macro);
@@ -653,7 +653,7 @@ void DlgCustomToolbarsImp::setActionGroup(QAction* action, const QList<QAction*>
             QMenu* menu = tb->menu();
             if (!menu) {
                 tb->setPopupMode(QToolButton::MenuButtonPopup);
-                tb->setObjectName(QStringLiteral("qt_toolbutton_menubutton"));
+                tb->setObjectName(QLatin1String("qt_toolbutton_menubutton"));
                 auto menu = new QMenu(tb);
                 menu->addActions(group);
                 tb->setMenu(menu);

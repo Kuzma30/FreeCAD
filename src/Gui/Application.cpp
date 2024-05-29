@@ -2270,13 +2270,13 @@ QString Application::replaceVariablesInQss(QString qssText)
 
     //convert them to hex.
     //Note: the ulong contains alpha channels so 8 hex characters when we need 6 here.
-    QString accentColor1 = QStringLiteral("#%1").arg(longAccentColor1, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
-    QString accentColor2 = QStringLiteral("#%1").arg(longAccentColor2, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
-    QString accentColor3 = QStringLiteral("#%1").arg(longAccentColor3, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
+    QString accentColor1 = QLatin1String("#%1").arg(longAccentColor1, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
+    QString accentColor2 = QLatin1String("#%1").arg(longAccentColor2, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
+    QString accentColor3 = QLatin1String("#%1").arg(longAccentColor3, 8, 16, QLatin1Char('0')).toUpper().mid(0, 7);
 
-    qssText = qssText.replace(QStringLiteral("@ThemeAccentColor1"), accentColor1);
-    qssText = qssText.replace(QStringLiteral("@ThemeAccentColor2"), accentColor2);
-    qssText = qssText.replace(QStringLiteral("@ThemeAccentColor3"), accentColor3);
+    qssText = qssText.replace(QLatin1String("@ThemeAccentColor1"), accentColor1);
+    qssText = qssText.replace(QLatin1String("@ThemeAccentColor2"), accentColor2);
+    qssText = qssText.replace(QLatin1String("@ThemeAccentColor3"), accentColor3);
 
     //Base::Console().Warning("%s\n", qssText.toStdString());
     return qssText;

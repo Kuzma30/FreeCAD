@@ -144,7 +144,7 @@ QList<App::SubObjectT> DlgPropertyLink::getLinksFromProperty(const App::Property
 QString DlgPropertyLink::formatObject(App::Document *ownerDoc, App::DocumentObject *obj, const char *sub)
 {
     if(!obj || !obj->isAttachedToDocument())
-        return QStringLiteral("?");
+        return QLatin1String("?");
 
     const char *objName = obj->getNameInDocument();
     std::string _objName;
@@ -191,7 +191,7 @@ QString DlgPropertyLink::formatLinks(App::Document *ownerDoc, QList<App::SubObje
 
     auto obj = links.front().getObject();
     if(!obj)
-        return QStringLiteral("?");
+        return QLatin1String("?");
 
     if(links.size() == 1 && links.front().getSubName().empty())
         return formatObject(ownerDoc, links.front());
@@ -205,8 +205,8 @@ QString DlgPropertyLink::formatLinks(App::Document *ownerDoc, QList<App::SubObje
                 break;
         }
         return QStringLiteral("%1 [%2%3]").arg(formatObject(ownerDoc,obj,nullptr),
-                                                    list.join(QStringLiteral(", ")),
-                links.size()>3?QStringLiteral(" ..."):QStringLiteral(""));
+                                                    list.join(QLatin1String(", ")),
+                links.size()>3?QLatin1String(" ..."):QLatin1String(""));
     }
 
     int i = 0;
@@ -215,8 +215,8 @@ QString DlgPropertyLink::formatLinks(App::Document *ownerDoc, QList<App::SubObje
         if( ++i >= 3)
             break;
     }
-    return QStringLiteral("[%1%2]").arg(list.join(QStringLiteral(", ")),
-                links.size() > 3 ? QStringLiteral(" ...") : QStringLiteral(""));
+    return QStringLiteral("[%1%2]").arg(list.join(QLatin1String(", ")),
+                links.size() > 3 ? QLatin1String(" ...") : QLatin1String(""));
 }
 
 void DlgPropertyLink::init(const App::DocumentObjectT &prop, bool tryFilter) {
@@ -672,7 +672,7 @@ void DlgPropertyLink::onSelectionChanged(const Gui::SelectionChanges& msg)
                 list = text.split(QLatin1Char(','));
             if(list.indexOf(element)<0) {
                 list << element;
-                item->setText(1, list.join(QStringLiteral(",")));
+                item->setText(1, list.join(QLatin1String(",")));
                 subSelections.insert(item);
             }
         } else if (subSelections.erase(item))
@@ -765,7 +765,7 @@ QList<App::SubObjectT> DlgPropertyLink::originalLinks() const
 
 QString DlgPropertyLink::linksToPython(const QList<App::SubObjectT>& links) {
     if(links.isEmpty())
-        return QStringLiteral("None");
+        return QLatin1String("None");
 
     if(links.size() == 1)
         return QString::fromUtf8(links.front().getSubObjectPython(false).c_str());

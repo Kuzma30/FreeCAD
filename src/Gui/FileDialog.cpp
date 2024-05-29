@@ -144,7 +144,7 @@ void FileDialog::accept()
             if (!ext.isEmpty() && (suffix.isEmpty() || !hasSuffix(suffix))) {
                 file = QString::fromUtf8("%1.%2").arg(file, ext);
                 // That's the built-in line edit
-                auto fileNameEdit = this->findChild<QLineEdit*>(QStringLiteral("fileNameEdit"));
+                auto fileNameEdit = this->findChild<QLineEdit*>(QLatin1String("fileNameEdit"));
                 if (fileNameEdit)
                     fileNameEdit->setText(file);
             }
@@ -506,7 +506,7 @@ void FileOptionsDialog::accept()
             fn = QString::fromUtf8("%1.%2").arg(fn, suf);
             selectFile(fn);
             // That's the built-in line edit (fixes Debian bug #811200)
-            auto fileNameEdit = this->findChild<QLineEdit*>(QStringLiteral("fileNameEdit"));
+            auto fileNameEdit = this->findChild<QLineEdit*>(QLatin1String("fileNameEdit"));
             if (fileNameEdit)
                 fileNameEdit->setText(fn);
         }
@@ -616,7 +616,7 @@ QIcon FileIconProvider::icon(const QFileInfo & info) const
                 return icon;
         }
 
-        return QIcon(QStringLiteral(":/icons/freecad-doc.png"));
+        return QIcon(QLatin1String(":/icons/freecad-doc.png"));
     };
 
     if (info.suffix().toLower() == QLatin1String("fcstd")) {
@@ -626,7 +626,7 @@ QIcon FileIconProvider::icon(const QFileInfo & info) const
         return iconFromFile(thumb);
     }
     else if (info.suffix().toLower().startsWith(QLatin1String("fcstd"))) {
-        QIcon icon(QStringLiteral(":/icons/freecad-doc.png"));
+        QIcon icon(QLatin1String(":/icons/freecad-doc.png"));
         QIcon darkIcon;
         int w = QApplication::style()->pixelMetric(QStyle::PM_ListViewIconSize);
         darkIcon.addPixmap(icon.pixmap(w, w, QIcon::Disabled, QIcon::Off), QIcon::Normal, QIcon::Off);

@@ -483,7 +483,7 @@ StdCmdOnlineHelp::StdCmdOnlineHelp()
 void StdCmdOnlineHelp::activated(int iMsg)
 {
     Q_UNUSED(iMsg);
-    Gui::getMainWindow()->showDocumentation(QStringLiteral("Online_Help_Startpage"));
+    Gui::getMainWindow()->showDocumentation(QLatin1String("Online_Help_Startpage"));
 }
 
 //===========================================================================

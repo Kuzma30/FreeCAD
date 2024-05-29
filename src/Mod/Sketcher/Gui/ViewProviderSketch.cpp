@@ -3401,7 +3401,7 @@ void ViewProviderSketch::onCameraChanged(SoCamera* cam)
         viewOrientationFactor = tmpFactor;
         draw();
 
-        QString cmdStr = QStringLiteral("ActiveSketch.ViewObject.TempoVis.sketchClipPlane("
+        QString cmdStr = QLatin1String("ActiveSketch.ViewObject.TempoVis.sketchClipPlane("
                                         "ActiveSketch, ActiveSketch.ViewObject.SectionView, %1)\n")
                              .arg(tmpFactor < 0 ? QLatin1String("True") : QLatin1String("False"));
         Base::Interpreter().runStringObject(cmdStr.toLatin1());

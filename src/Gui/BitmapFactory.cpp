@@ -74,10 +74,10 @@ BitmapFactoryInst& BitmapFactoryInst::instance()
             }
             _pcSingleton->addPath(path);
         }
-        _pcSingleton->addPath(QStringLiteral("%1/icons").arg(QString::fromStdString(App::Application::getHomePath())));
-        _pcSingleton->addPath(QStringLiteral("%1/icons").arg(QString::fromStdString(App::Application::getUserAppDataDir())));
-        _pcSingleton->addPath(QStringLiteral(":/icons/"));
-        _pcSingleton->addPath(QStringLiteral(":/Icons/"));
+        _pcSingleton->addPath(QLatin1String("%1/icons").arg(QString::fromStdString(App::Application::getHomePath())));
+        _pcSingleton->addPath(QLatin1String("%1/icons").arg(QString::fromStdString(App::Application::getUserAppDataDir())));
+        _pcSingleton->addPath(QLatin1String(":/icons/"));
+        _pcSingleton->addPath(QLatin1String(":/Icons/"));
     }
 
     return *_pcSingleton;
@@ -113,22 +113,22 @@ void BitmapFactoryInst::restoreCustomPaths()
 
 void BitmapFactoryInst::addPath(const QString& path)
 {
-    QDir::addSearchPath(QStringLiteral("icons"), path);
+    QDir::addSearchPath(QLatin1String("icons"), path);
 }
 
 void BitmapFactoryInst::removePath(const QString& path)
 {
-    QStringList iconPaths = QDir::searchPaths(QStringLiteral("icons"));
+    QStringList iconPaths = QDir::searchPaths(QLatin1String("icons"));
     int pos = iconPaths.indexOf(path);
     if (pos != -1) {
         iconPaths.removeAt(pos);
-        QDir::setSearchPaths(QStringLiteral("icons"), iconPaths);
+        QDir::setSearchPaths(QLatin1String("icons"), iconPaths);
     }
 }
 
 QStringList BitmapFactoryInst::getPaths() const
 {
-    return QDir::searchPaths(QStringLiteral("icons"));
+    return QDir::searchPaths(QLatin1String("icons"));
 }
 
 QStringList BitmapFactoryInst::findIconFiles() const
@@ -138,7 +138,7 @@ QStringList BitmapFactoryInst::findIconFiles() const
     for (QList<QByteArray>::iterator it = formats.begin(); it != formats.end(); ++it)
         filters << QStringLiteral("*.%1").arg(QString::fromUtf8(*it).toLower());
 
-    QStringList paths = QDir::searchPaths(QStringLiteral("icons"));
+    QStringList paths = QDir::searchPaths(QLatin1String("icons"));
     paths.removeDuplicates();
     for (QStringList::Iterator pt = paths.begin(); pt != paths.end(); ++pt) {
         QDir d(*pt);
@@ -232,7 +232,7 @@ QPixmap BitmapFactoryInst::pixmap(const char* name) const
         QList<QByteArray> formats = QImageReader::supportedImageFormats();
         formats.prepend("SVG"); // check first for SVG to use special import mechanism
 
-        QString fileName = QStringLiteral("icons:") + fn;
+        QString fileName = QLatin1String("icons:") + fn;
         if (!loadPixmap(fileName, icon)) {
             // Go through supported file formats
             for (QList<QByteArray>::iterator fm = formats.begin(); fm != formats.end(); ++fm) {
@@ -266,13 +266,13 @@ QPixmap BitmapFactoryInst::pixmapFromSvg(const char* name, const QSizeF& size,
 
     // try to find it in the 'icons' search paths
     if (iconPath.isEmpty()) {
-        QString fileName = QStringLiteral("icons:") + fn;
+        QString fileName = QLatin1String("icons:") + fn;
         QFileInfo fi(fileName);
         if (fi.exists()) {
             iconPath = fi.filePath();
         }
         else {
-            fileName += QStringLiteral(".svg");
+            fileName += QLatin1String(".svg");
             fi.setFile(fileName);
             if (fi.exists()) {
                 iconPath = fi.filePath();
@@ -308,8 +308,8 @@ QPixmap BitmapFactoryInst::pixmapFromSvg(const QByteArray& originalContents, con
     for ( const auto &colorToColor : colorMapping ) {
         ulong fromColor = colorToColor.first;
         ulong toColor = colorToColor.second;
-        QString fromColorString = QStringLiteral(":#%1;").arg(fromColor, 6, 16,  QChar::fromLatin1('0'));
-        QString toColorString = QStringLiteral(":#%1;").arg(toColor, 6, 16,  QChar::fromLatin1('0'));
+        QString fromColorString = QLatin1String(":#%1;").arg(fromColor, 6, 16,  QChar::fromLatin1('0'));
+        QString toColorString = QLatin1String(":#%1;").arg(toColor, 6, 16,  QChar::fromLatin1('0'));
         stringContents = stringContents.replace(fromColorString, toColorString);
     }
     QByteArray contents = stringContents.toUtf8();

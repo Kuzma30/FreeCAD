@@ -757,8 +757,8 @@ void ConstraintFilterList::languageChange()
     assert(static_cast<int>(filterItems.size()) == count());
     int i = 0;
     for (auto const& filterItem : filterItems) {
-        auto text = QStringLiteral("  ").repeated(filterItem.second - 1)
-            + (filterItem.second > 0 ? QStringLiteral("- ") : QStringLiteral(""))
+        auto text = QLatin1String("  ").repeated(filterItem.second - 1)
+            + (filterItem.second > 0 ? QLatin1String("- ") : QLatin1String(""))
             + tr(filterItem.first);
         item(i++)->setText(text);
     }

@@ -202,19 +202,19 @@ void StdCmdImport::activated(int iMsg)
     const char* supported = QT_TR_NOOP("Supported formats");
     const char* allFiles = QT_TR_NOOP("All files (*.*)");
     formatList = QObject::tr(supported);
-    formatList += QStringLiteral(" (");
+    formatList += QLatin1String(" (");
 
     std::vector<std::string> filetypes = App::GetApplication().getImportTypes();
     std::vector<std::string>::const_iterator it;
     for (it=filetypes.begin();it != filetypes.end();++it) {
         if (*it != "FCStd") {
             // ignore the project file format
-            formatList += QStringLiteral(" *.");
+            formatList += QLatin1String(" *.");
             formatList += QString::fromUtf8(it->c_str());
         }
     }
 
-    formatList += QStringLiteral(");;");
+    formatList += QLatin1String(");;");
 
     std::map<std::string, std::string> FilterList = App::GetApplication().getImportFilters();
     std::map<std::string, std::string>::const_iterator jt;
@@ -222,7 +222,7 @@ void StdCmdImport::activated(int iMsg)
         // ignore the project file format
         if (jt->first.find("(*.FCStd)") == std::string::npos) {
             formatList += QString::fromUtf8(jt->first.c_str());
-            formatList += QStringLiteral(";;");
+            formatList += QLatin1String(";;");
         }
     }
     formatList += QObject::tr(allFiles);
@@ -656,7 +656,7 @@ void StdCmdNew::activated(int iMsg)
 {
     Q_UNUSED(iMsg);
     QString cmd;
-    cmd = QStringLiteral("App.newDocument()");
+    cmd = QLatin1String("App.newDocument()");
     runCommand(Command::Doc,cmd.toUtf8());
     doCommand(Command::Gui,"Gui.activeDocument().activeView().viewDefaultOrientation()");
 
@@ -1435,7 +1435,7 @@ void StdCmdDelete::activated(int iMsg)
         e.ReportException();
     } catch (...) {
         QMessageBox::critical(getMainWindow(), QObject::tr("Delete failed"),
-                QStringLiteral("Unknown error"));
+                QLatin1String("Unknown error"));
     }
     commitCommand();
     Gui::getMainWindow()->setUpdatesEnabled(true);

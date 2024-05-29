@@ -834,7 +834,7 @@ void SearchBar::findText(bool skip, bool next, const QString& str)
 
     QString styleSheet;
     if (!found) {
-        styleSheet = QStringLiteral(
+        styleSheet = QLatin1String(
             " QLineEdit {\n"
             "     background-color: rgb(221,144,161);\n"
             " }\n"

@@ -2987,9 +2987,8 @@ QVariant PropertyEnumItem::value(const App::Property* prop) const
 
 void PropertyEnumItem::setValue(const QVariant& value)
 {
-    if (hasExpression()) {
+    if (hasExpression())
         return;
-    }
 
     QString data;
 
@@ -2997,23 +2996,17 @@ void PropertyEnumItem::setValue(const QVariant& value)
         QStringList values = value.toStringList();
         QTextStream str(&data);
         str << "[";
-        for (const auto & it : values) {
-            QString text(it);
-            text.replace(QString::fromUtf8("'"),QString::fromUtf8("\\'"));
-
-            std::string pystr = Base::Tools::escapedUnicodeFromUtf8(text.toUtf8());
-            pystr = Base::InterpreterSingleton::strToPython(pystr.c_str());
-            str << "u\"" << pystr.c_str() << "\", ";
+        for (QStringList::Iterator it = values.begin(); it != values.end(); ++it) {
+            str << "u\"" << Base::Tools::escapeEncodeString(*it) << "\", ";
         }
         str << "]";
-        setPropertyValue(data);
     }
-    else if (value.canConvert<QString>()) {
-        QByteArray val = value.toString().toUtf8();
-        std::string str = Base::Tools::escapedUnicodeFromUtf8(val);
-        data = QString::fromLatin1("u\"%1\"").arg(QString::fromStdString(str));
-        setPropertyValue(data);
+    else if (value.canConvert(QVariant::String)) {
+        data = QStringLiteral("u\"%1\"").arg(Base::Tools::escapeEncodeString(value.toString()));
     }
+    else
+        return;
+    setPropertyValue(data);
 }
 
 namespace  {

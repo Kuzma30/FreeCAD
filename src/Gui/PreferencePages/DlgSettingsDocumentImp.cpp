@@ -48,7 +48,7 @@ DlgSettingsDocumentImp::DlgSettingsDocumentImp( QWidget* parent )
     ui->prefSaveTransaction->hide();
     ui->prefDiscardTransaction->hide();
 
-    QString tip = QString::fromLatin1("<html><head/><body><p>%1</p>"
+    QString tip = QString::fromUtf8("<html><head/><body><p>%1</p>"
                                       "<p>%2: %Y%m%d-%H%M%S</p>"
                                       "<p>%3: <a href=\"http://www.cplusplus.com/reference/ctime/strftime/\">C++ strftime</a>"
                                       "</p></body></html>").arg(tr("The format of the date to use."), tr("Default"), tr("Format"));
@@ -167,7 +167,7 @@ void DlgSettingsDocumentImp::onLicenseTypeChanged(int index)
     if (index >= 0 && index < App::countOfLicenses) {
         // existing license
         const char* url {App::licenseItems.at(index).at(App::posnOfUrl)};
-        ui->prefLicenseUrl->setText(QString::fromLatin1(url));
+        ui->prefLicenseUrl->setText(QString::fromUtf8(url));
         ui->prefLicenseUrl->setReadOnly(true);
     }
     else {

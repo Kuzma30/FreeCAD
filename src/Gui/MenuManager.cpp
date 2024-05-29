@@ -265,12 +265,12 @@ void MenuManager::setup(MenuItem* menuItems) const
                 QMenu* menu = menuBar->addMenu(
                     QApplication::translate("Workbench", menuName.c_str()));
                 action = menu->menuAction();
-                menu->setObjectName(QString::fromLatin1(menuName.c_str()));
-                action->setObjectName(QString::fromLatin1(menuName.c_str()));
+                menu->setObjectName(QString::fromUtf8(menuName.c_str()));
+                action->setObjectName(QString::fromUtf8(menuName.c_str()));
             }
 
             // set the menu user data
-            action->setData(QString::fromLatin1((*it)->command().c_str()));
+            action->setData(QString::fromUtf8((*it)->command().c_str()));
         }
         else {
             // put the menu at the end
@@ -319,10 +319,10 @@ void MenuManager::setup(MenuItem* item, QMenu* menu) const
                     QMenu* submenu = menu->addMenu(
                         QApplication::translate("Workbench", menuName.c_str()));
                     QAction* action = submenu->menuAction();
-                    submenu->setObjectName(QString::fromLatin1((*it)->command().c_str()));
-                    action->setObjectName(QString::fromLatin1((*it)->command().c_str()));
+                    submenu->setObjectName(QString::fromUtf8((*it)->command().c_str()));
+                    action->setObjectName(QString::fromUtf8((*it)->command().c_str()));
                     // set the menu user data
-                    action->setData(QString::fromLatin1((*it)->command().c_str()));
+                    action->setData(QString::fromUtf8((*it)->command().c_str()));
                     used_actions.append(action);
                 }
                 else {
@@ -334,7 +334,7 @@ void MenuManager::setup(MenuItem* item, QMenu* menu) const
                         for (int i=count; i < acts.count(); i++) {
                             QAction* act = acts[i];
                             // set the menu user data
-                            act->setData(QString::fromLatin1((*it)->command().c_str()));
+                            act->setData(QString::fromUtf8((*it)->command().c_str()));
                             used_actions.append(act);
                         }
                     }

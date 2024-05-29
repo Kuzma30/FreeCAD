@@ -308,8 +308,8 @@ void ExpressionWidget::makeLabel(QLineEdit* le)
     iconLabel->setCursor(Qt::ArrowCursor);
     QPixmap pixmap = getIcon(":/icons/bound-expression-unset.svg", QSize(iconHeight, iconHeight));
     iconLabel->setPixmap(pixmap);
-    iconLabel->setStyleSheet(QString::fromLatin1("QLabel { border: none; padding: 0px; padding-top: %2px; width: %1px; height: %1px }").arg(iconHeight).arg(frameWidth/2));
+    iconLabel->setStyleSheet(QLatin1String("QLabel { border: none; padding: 0px; padding-top: %2px; width: %1px; height: %1px }").arg(iconHeight).arg(frameWidth/2));
     iconLabel->hide();
     iconLabel->setExpressionText(QString());
-    le->setStyleSheet(QString::fromLatin1("QLineEdit { padding-right: %1px } ").arg(iconHeight+frameWidth));
+    le->setStyleSheet(QLatin1String("QLineEdit { padding-right: %1px } ").arg(iconHeight+frameWidth));
 }

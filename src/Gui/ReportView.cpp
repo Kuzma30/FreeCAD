@@ -509,7 +509,7 @@ void ReportOutput::SendLog(const std::string& notifiername, const std::string& m
     if (style == ReportHighlighter::LogText) {
         if (messageSize > 0 && qMsg.size()>messageSize) {
             qMsg.truncate(messageSize);
-            qMsg += QString::fromLatin1("...\n");
+            qMsg += QLatin1String("...\n");
         }
     }
 
@@ -656,7 +656,7 @@ void ReportOutput::contextMenuEvent ( QContextMenuEvent * e )
     QAction* copy = menu->addAction(copyStr, this, &ReportOutput::copy);
     copy->setShortcut(QKeySequence(QKeySequence::Copy));
     copy->setEnabled(textCursor().hasSelection());
-    QIcon icon = QIcon::fromTheme(QString::fromLatin1("edit-copy"));
+    QIcon icon = QIcon::fromTheme(QLatin1String("edit-copy"));
     if (!icon.isNull())
         copy->setIcon(icon);
 
@@ -676,7 +676,7 @@ void ReportOutput::contextMenuEvent ( QContextMenuEvent * e )
 void ReportOutput::onSaveAs()
 {
     QString fn = QFileDialog::getSaveFileName(this, tr("Save Report Output"), QString(),
-        QString::fromLatin1("%1 (*.txt *.log)").arg(tr("Plain Text Files")));
+        QString::fromUtf8("%1 (*.txt *.log)").arg(tr("Plain Text Files")));
     if (!fn.isEmpty()) {
         QFileInfo fi(fn);
         if (fi.completeSuffix().isEmpty())
@@ -852,7 +852,7 @@ void ReportOutput::OnChange(Base::Subject<const char*> &rCaller, const char * sR
     }
     else if (strcmp(sReason, "FontSize") == 0 || strcmp(sReason, "Font") == 0) {
         int fontSize = rclGrp.GetInt("FontSize", 10);
-        QString fontFamily = QString::fromLatin1(rclGrp.GetASCII("Font", "Courier").c_str());
+        QString fontFamily = QString::fromUtf8(rclGrp.GetASCII("Font", "Courier").c_str());
 
         QFont font(fontFamily, fontSize);
         setFont(font);

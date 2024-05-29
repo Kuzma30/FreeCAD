@@ -296,7 +296,7 @@ void DlgSettingsGeneral::loadSettings()
     int index = 1;
     TStringMap list = Translator::instance()->supportedLocales();
     ui->Languages->clear();
-    ui->Languages->addItem(QString::fromLatin1("English"), QByteArray("English"));
+    ui->Languages->addItem(QLatin1String("English"), QByteArray("English"));
     for (auto it = list.begin(); it != list.end(); ++it, index++) {
         QByteArray lang = it->first.c_str();
         QString langname = QString::fromLatin1(lang.constData());
@@ -432,7 +432,7 @@ void DlgSettingsGeneral::loadThemes()
 
     ParameterGrp::handle hGrp = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/MainWindow");
 
-    QString currentTheme = QString::fromLatin1(hGrp->GetASCII("Theme", "").c_str());
+    QString currentTheme = QString::fromUtf8(hGrp->GetASCII("Theme", "").c_str());
 
     Application::Instance->prefPackManager()->rescan();
     auto packs = Application::Instance->prefPackManager()->preferencePacks();

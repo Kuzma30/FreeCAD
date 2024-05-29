@@ -129,7 +129,7 @@ public:
   qreal devicePixelRatio() const;
 
   void resetNavigationModeFile();
-  void setNavigationModeFile(const QUrl & url = QUrl(QString::fromLatin1(DEFAULT_NAVIGATIONFILE)));
+  void setNavigationModeFile(const QUrl & url = QUrl(QLatin1String(DEFAULT_NAVIGATIONFILE)));
   const QUrl & navigationModeFile() const;
 
   void setContextMenuEnabled(bool yes);

@@ -164,9 +164,9 @@ QString ShortcutManager::getShortcut(const char *cmdName, const char *accel)
     }
     QString shortcut;
     if (cmdName)
-        shortcut = QString::fromLatin1(hShortcuts->GetASCII(cmdName, accel).c_str());
+        shortcut = QString::fromUtf8(hShortcuts->GetASCII(cmdName, accel).c_str());
     else
-        shortcut = QString::fromLatin1(accel);
+        shortcut = QString::fromUtf8(accel);
     return QKeySequence(shortcut).toString(QKeySequence::NativeText);
 }
 
@@ -180,7 +180,7 @@ void ShortcutManager::setShortcut(const char *cmdName, const char *accel)
             auto defaultAccel = cmd->getAccel();
             if (!defaultAccel)
                defaultAccel = "";
-           if (QKeySequence(QString::fromLatin1(accel)) == QKeySequence(QString::fromLatin1(defaultAccel))) {
+           if (QKeySequence(QString::fromUtf8(accel)) == QKeySequence(QString::fromUtf8(defaultAccel))) {
                 hShortcuts->RemoveASCII(cmdName);
                 return;
            }

@@ -594,7 +594,7 @@ bool SoFCUnifiedSelection::setSelection(const std::vector<PickedInfo> &infos, bo
                         ,fabs(pt[1])>1e-7?pt[1]:0.0
                         ,fabs(pt[2])>1e-7?pt[2]:0.0);
 
-                getMainWindow()->showMessage(QString::fromLatin1(buf));
+                getMainWindow()->showMessage(QString::fromUtf8(buf));
             }
         }
         return true;
@@ -671,7 +671,7 @@ bool SoFCUnifiedSelection::setSelection(const std::vector<PickedInfo> &infos, bo
                 ,fabs(pt[1])>1e-7?pt[1]:0.0
                 ,fabs(pt[2])>1e-7?pt[2]:0.0);
 
-        getMainWindow()->showMessage(QString::fromLatin1(buf));
+        getMainWindow()->showMessage(QString::fromUtf8(buf));
     }
 
     if (pPath) {

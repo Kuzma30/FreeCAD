@@ -111,7 +111,7 @@ wbListItem::wbListItem(const QString& wbName, bool enabled, bool startupWb, bool
     textLabel->setEnabled(enableCheckBox->isChecked());
 
     // 4: shortcut
-    shortcutLabel = new QLabel(QString::fromLatin1("(W, %1)").arg(index + 1), this);
+    shortcutLabel = new QLabel(QLatin1String("(W, %1)").arg(index + 1), this);
     shortcutLabel->setToolTip(tr("Shortcut to activate this workbench."));
     shortcutLabel->setEnabled(enableCheckBox->isChecked());
     shortcutLabel->setVisible(index < 9);
@@ -188,7 +188,7 @@ void wbListItem::setStartupWb(bool val)
 
 void wbListItem::setShortcutLabel(int index)
 {
-    shortcutLabel->setText(QString::fromLatin1("(W, %1)").arg(index + 1));
+    shortcutLabel->setText(QLatin1String("(W, %1)").arg(index + 1));
     shortcutLabel->setVisible(index < 9);
 }
 
@@ -582,9 +582,9 @@ void DlgSettingsWorkbenchesImp::setStartWorkbenchComboItems()
     }
 
     {   // add special workbench to selection
-        QPixmap px = Application::Instance->workbenchIcon(QString::fromLatin1("NoneWorkbench"));
-        QString key = QString::fromLatin1("<last>");
-        QString value = QString::fromLatin1("$LastModule");
+        QPixmap px = Application::Instance->workbenchIcon(QLatin1String("NoneWorkbench"));
+        QString key = QLatin1String("<last>");
+        QString value = QLatin1String("$LastModule");
         if (px.isNull()) {
             ui->AutoloadModuleCombo->addItem(key, QVariant(value));
         }

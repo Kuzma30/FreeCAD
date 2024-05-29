@@ -167,7 +167,7 @@ QByteArray PythonOnlineHelp::loadHelpPage(const QString& filename) const
 QByteArray PythonOnlineHelp::fileNotFound() const
 {
     const int pageNotFound = 404;
-    QString contentType = QString::fromLatin1(
+    QString contentType = QLatin1String(
         "text/html\r\n"
         "\r\n"
         "<html><head><title>Error</title></head>"
@@ -187,10 +187,10 @@ QByteArray PythonOnlineHelp::fileNotFound() const
         "\r\n"
     );
 
-    QString header = QString::fromLatin1("content-type: %1\r\n").arg(contentType);
+    QString header = QLatin1String("content-type: %1\r\n").arg(contentType);
 
     QString http(QLatin1String("HTTP/1.1 %1 %2\r\n%3\r\n"));
-    QString httpResponseHeader = http.arg(pageNotFound).arg(QString::fromLatin1("File not found"), header);
+    QString httpResponseHeader = http.arg(pageNotFound).arg(QLatin1String("File not found"), header);
 
     QByteArray res = httpResponseHeader.toLatin1();
     return res;
@@ -199,7 +199,7 @@ QByteArray PythonOnlineHelp::fileNotFound() const
 QByteArray PythonOnlineHelp::loadFailed(const QString& error) const
 {
     const int pageNotFound = 404;
-    QString contentType = QString::fromLatin1(
+    QString contentType = QLatin1String(
         "text/html\r\n"
         "\r\n"
         "<html><head><title>Error</title></head>"
@@ -217,10 +217,10 @@ QByteArray PythonOnlineHelp::loadFailed(const QString& error) const
         "\r\n"
     ).arg(error);
 
-    QString header = QString::fromLatin1("content-type: %1\r\n").arg(contentType);
+    QString header = QLatin1String("content-type: %1\r\n").arg(contentType);
 
     QString http(QLatin1String("HTTP/1.1 %1 %2\r\n%3\r\n"));
-    QString httpResponseHeader = http.arg(pageNotFound).arg(QString::fromLatin1("File not found"), header);
+    QString httpResponseHeader = http.arg(pageNotFound).arg(QLatin1String("File not found"), header);
 
     QByteArray res = httpResponseHeader.toLatin1();
     return res;

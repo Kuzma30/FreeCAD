@@ -354,7 +354,7 @@ QString UnitsSchemaImperialCivil::schemaTranslate(const Base::Quantity& quant,
         factor = 4.448222 / 0.0254;
     }
     else if (unit == Unit::Velocity) {
-        unitString = QString::fromLatin1("mph");
+        unitString = QLatin1String("mph");
         factor = 447.04;  // 1mm/sec => mph
     }
     // this schema expresses angles in degrees + minutes + seconds

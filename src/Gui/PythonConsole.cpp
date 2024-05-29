@@ -444,7 +444,7 @@ PythonConsole::PythonConsole(QWidget *parent)
     try {
         d->interpreter = new InteractiveInterpreter();
     } catch (const Base::Exception& e) {
-        setPlainText(QString::fromLatin1(e.what()));
+        setPlainText(QString::fromUtf8(e.what()));
         setEnabled(false);
     }
 
@@ -494,7 +494,7 @@ PythonConsole::PythonConsole(QWidget *parent)
 
     const char* version  = PyUnicode_AsUTF8(PySys_GetObject("version"));
     const char* platform = PyUnicode_AsUTF8(PySys_GetObject("platform"));
-    d->info = QString::fromLatin1("Python %1 on %2\n"
+    d->info = QLatin1String("Python %1 on %2\n"
     "Type 'help', 'copyright', 'credits' or 'license' for more information.")
     .arg(QString::fromLatin1(version), QString::fromLatin1(platform));
     d->output = d->info;
@@ -538,7 +538,7 @@ void PythonConsole::OnChange(Base::Subject<const char*> &rCaller, const char* sR
 
     if (strcmp(sReason, "FontSize") == 0 || strcmp(sReason, "Font") == 0) {
         int fontSize = rGrp.GetInt("FontSize", 10);
-        QString fontFamily = QString::fromLatin1(rGrp.GetASCII("Font", "Courier").c_str());
+        QString fontFamily = QString::fromUtf8(rGrp.GetASCII("Font", "Courier").c_str());
 
         QFont font(fontFamily, fontSize);
         setFont(font);
@@ -812,10 +812,10 @@ void PythonConsole::printPrompt(PythonConsole::Prompt mode)
       switch (mode)
       {
       case PythonConsole::Incomplete:
-          cursor.insertText(QString::fromLatin1("... "));
+          cursor.insertText(QLatin1String("... "));
           break;
       case PythonConsole::Complete:
-          cursor.insertText(QString::fromLatin1(">>> "));
+          cursor.insertText(QLatin1String(">>> "));
           break;
       default:
           break;
@@ -865,7 +865,7 @@ void PythonConsole::runSource(const QString& line)
     }
 
     if (d->interpreter->isOccupied()) {
-        insertPythonError(QString::fromLatin1("Previous command still running!"));
+        insertPythonError(QLatin1String("Previous command still running!"));
         return;
     }
 
@@ -1059,7 +1059,7 @@ void PythonConsole::dropEvent (QDropEvent * e)
         for (int i=0; i<ctActions; i++) {
             QString action;
             dataStream >> action;
-            printStatement(QString::fromLatin1("Gui.runCommand(\"%1\")").arg(action));
+            printStatement(QString::fromUtf8("Gui.runCommand(\"%1\")").arg(action));
         }
 
         e->setDropAction(Qt::CopyAction);
@@ -1364,7 +1364,7 @@ void PythonConsole::contextMenuEvent ( QContextMenuEvent * e )
     bool mayPasteHere = cursorBeyond( this->textCursor(), this->inputBegin() );
 
     a = menu.addAction(tr("&Copy"), this, &PythonConsole::copy);
-    a->setShortcut(QKeySequence(QString::fromLatin1("CTRL+C")));
+    a->setShortcut(QKeySequence(QLatin1String("CTRL+C")));
     a->setEnabled(textCursor().hasSelection());
 
     a = menu.addAction(tr("&Copy command"), this, &PythonConsole::onCopyCommand);
@@ -1384,12 +1384,12 @@ void PythonConsole::contextMenuEvent ( QContextMenuEvent * e )
     menu.addSeparator();
 
     a = menu.addAction(tr("&Paste"), this, &PythonConsole::paste);
-    a->setShortcut(QKeySequence(QString::fromLatin1("CTRL+V")));
+    a->setShortcut(QKeySequence(QLatin1String("CTRL+V")));
     const QMimeData *md = QApplication::clipboard()->mimeData();
     a->setEnabled( mayPasteHere && md && canInsertFromMimeData(md));
 
     a = menu.addAction(tr("Select All"), this, &PythonConsole::selectAll);
-    a->setShortcut(QKeySequence(QString::fromLatin1("CTRL+A")));
+    a->setShortcut(QKeySequence(QLatin1String("CTRL+A")));
     a->setEnabled(!document()->isEmpty());
 
     a = menu.addAction(tr("Clear console"), this, &PythonConsole::onClearConsole);
@@ -1424,7 +1424,7 @@ void PythonConsole::onSaveHistoryAs()
     QString cMacroPath = QString::fromUtf8(getDefaultParameter()->GetGroup( "Macro" )->
         GetASCII("MacroPath",App::Application::getUserMacroDir().c_str()).c_str());
     QString fn = FileDialog::getSaveFileName(this, tr("Save History"), cMacroPath,
-        QString::fromLatin1("%1 (*.FCMacro *.py)").arg(tr("Macro Files")));
+        QString::fromUtf8("%1 (*.FCMacro *.py)").arg(tr("Macro Files")));
     if (!fn.isEmpty()) {
         int dot = fn.indexOf(QLatin1Char('.'));
         if (dot != -1) {
@@ -1444,7 +1444,7 @@ void PythonConsole::onSaveHistoryAs()
 void PythonConsole::onInsertFileName()
 {
     QString fn = Gui::FileDialog::getOpenFileName(Gui::getMainWindow(), tr("Insert file name"), QString(),
-        QString::fromLatin1("%1 (*.*)").arg(tr("All Files")));
+        QString::fromUtf8("%1 (*.*)").arg(tr("All Files")));
     if ( !fn.isEmpty() ) {
         insertPlainText(fn);
     }

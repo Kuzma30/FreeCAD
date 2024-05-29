@@ -93,7 +93,7 @@ InputField::InputField(QWidget * parent)
     iconLabel->hide();
     connect(this, &QLineEdit::textChanged, this, &InputField::updateIconLabel);
     int frameWidth = style()->pixelMetric(QStyle::PM_DefaultFrameWidth);
-    setStyleSheet(QString::fromLatin1("QLineEdit { padding-right: %1px } ").arg(iconLabel->sizeHint().width() + frameWidth + 1));
+    setStyleSheet(QLatin1String("QLineEdit { padding-right: %1px } ").arg(iconLabel->sizeHint().width() + frameWidth + 1));
     QSize msz = minimumSizeHint();
     setMinimumSize(qMax(msz.width(), iconLabel->sizeHint().height() + frameWidth * 2 + 2),
                    qMax(msz.height(), iconLabel->sizeHint().height() + frameWidth * 2 + 2));
@@ -475,7 +475,7 @@ QString InputField::rawText() const
     QString unit;
     double value = actQuantity.getValue();
     actQuantity.getUserString(factor, unit);
-    return QString::fromLatin1("%1 %2").arg(value / factor).arg(unit);
+    return QLatin1String("%1 %2").arg(value / factor).arg(unit);
 }
 
 /// expects the string in C locale and internally converts it into the OS-specific locale

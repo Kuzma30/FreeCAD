@@ -89,7 +89,7 @@ void SceneModel::setNode(SoNode* node)
 
 void SceneModel::setNode(QModelIndex index, SoNode* node)
 {
-    this->setData(index, QVariant(QString::fromLatin1(QByteArray(node->getTypeId().getName()))));
+    this->setData(index, QVariant(QString::fromUtf8(QByteArray(node->getTypeId().getName()))));
     if (node->getTypeId().isDerivedFrom(SoGroup::getClassTypeId())) {
         auto group = static_cast<SoGroup*>(node);
         // insert SoGroup icon

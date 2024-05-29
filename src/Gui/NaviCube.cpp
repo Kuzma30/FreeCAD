@@ -1164,7 +1164,7 @@ bool NaviCubeImplementation::processSoEvent(const SoEvent* ev) {
 }
 
 QString NaviCubeImplementation::str(const char* str) {
-    return QString::fromLatin1(str);
+    return QString::fromUtf8(str);
 }
 
 void NaviCube::setNaviCubeCommands(const std::vector<std::string>& cmd)

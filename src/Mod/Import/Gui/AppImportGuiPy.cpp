@@ -169,9 +169,11 @@ private:
                 auto handle = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/Mod/Import/hSTEP");
                 if(handle->GetBool("ReadShowDialogImport", false))
                 {
-                    Gui::Application::Instance->commandManager().runCommandByName("Std_DlgPreferences");
+                    Gui::Command::doCommand(Gui::Command::Gui,"Gui.showPreferences('Import-Export', 8)");
                 }
-                Resource_FormatType cp = ocaf.getImportCodePage();
+                Part::OCAF::ImportExportSettings settings;
+                Resource_FormatType cp = settings.getImportCodePage();
+                Base::Console().Message("Selected codepage = %i", cp);
                 if (mode && !pcDoc->isSaved()) {
                     auto gdoc = Gui::Application::Instance->getDocument(pcDoc);
                     if (!gdoc->save()) {

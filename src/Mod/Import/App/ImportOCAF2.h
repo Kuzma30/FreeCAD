@@ -64,7 +64,6 @@ struct ImportExport ImportOCAFOptions
     ImportOCAFOptions();
     App::Color defaultFaceColor;
     App::Color defaultEdgeColor;
-    bool showDialog = false;
     bool merge = false;
     bool useLinkGroup = false;
     bool useBaseName = true;
@@ -72,7 +71,7 @@ struct ImportExport ImportOCAFOptions
     bool reduceObjects = false;
     bool showProgress = false;
     bool expandCompound = false;
-    Resource_FormatType codePage = Resource_FormatType_NoConversion;
+    //Resource_FormatType codePage = Resource_FormatType_NoConversion;
     int mode = 0;
 };
 
@@ -85,10 +84,7 @@ public:
 
     static ImportOCAFOptions customImportOptions();
     void setImportOptions(ImportOCAFOptions opts);
-    void setShowDialog(bool enable)
-    {
-        options.showDialog = enable;
-    }
+
     void setMerge(bool enable)
     {
         options.merge = enable;
@@ -129,11 +125,11 @@ public:
     {
         return options.mode;
     }
-    void setImportCodePage(int cp);
-    Resource_FormatType getImportCodePage() const
-    {
-        return options.codePage;
-    }
+    // void setImportCodePage(int cp);
+    // Resource_FormatType getImportCodePage() const
+    // {
+    //     return options.codePage;
+    // }
 
 private:
     struct Info

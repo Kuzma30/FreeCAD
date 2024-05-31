@@ -173,7 +173,7 @@ private:
                 }
                 Part::OCAF::ImportExportSettings settings;
                 Resource_FormatType cp = settings.getImportCodePage();
-                Base::Console().Message("Selected codepage = %i", cp);
+
                 if (mode && !pcDoc->isSaved()) {
                     auto gdoc = Gui::Application::Instance->getDocument(pcDoc);
                     if (!gdoc->save()) {

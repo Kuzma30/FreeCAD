@@ -165,6 +165,12 @@ private:
                 if (mode < 0) {
                     mode = ocaf.getMode();
                 }
+
+                auto handle = App::GetApplication().GetParameterGroupByPath("User parameter:BaseApp/Preferences/Mod/Import/hSTEP");
+                if(handle->GetBool("ReadShowDialogImport", false))
+                {
+                    Gui::Application::Instance->commandManager().runCommandByName("Std_DlgPreferences");
+                }
                 Resource_FormatType cp = ocaf.getImportCodePage();
                 if (mode && !pcDoc->isSaved()) {
                     auto gdoc = Gui::Application::Instance->getDocument(pcDoc);

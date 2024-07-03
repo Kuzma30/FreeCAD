@@ -23,15 +23,17 @@ struct CAreaPocketParams
 	double extra_offset;
 	double stepover;
 	bool from_center;
-	PocketMode mode;
+	bool finishing_offset;
+        PocketMode mode;
 	double zig_angle;
 	bool only_cut_first_offset;
-	CAreaPocketParams(double Tool_radius, double Extra_offset, double Stepover, bool From_center, PocketMode Mode, double Zig_angle)
+	CAreaPocketParams(double Tool_radius, double Extra_offset, double Stepover, bool From_center, bool Finishing_offset, PocketMode Mode, double Zig_angle)
 	{
 		tool_radius = Tool_radius;
 		extra_offset = Extra_offset;
 		stepover = Stepover;
 		from_center = From_center;
+		finishing_offset = Finishing_offset;
 		mode = Mode;
 		zig_angle = Zig_angle;
 		only_cut_first_offset = false;

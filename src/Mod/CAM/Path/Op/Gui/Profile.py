@@ -77,6 +77,16 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         if obj.Direction != str(self.form.direction.currentData()):
             obj.Direction = str(self.form.direction.currentData())
         PathGuiUtil.updateInputField(obj, "OffsetExtra", self.form.extraOffset)
+        
+        PathGuiUtil.updateInputField(obj, "multiProfileWidth", self.form.multiProfileWidth)  
+        if obj.multiStepOver != self.form.multiStepOver.value():
+            obj.multiStepOver = self.form.multiStepOver.value()
+        
+        if obj.multiProfile != self.form.multiProfile.isChecked():  
+            obj.multiProfile = self.form.multiProfile.isChecked()
+            
+        if obj.cutOutsideIn != self.form.cutOutsideIn.isChecked():  
+            obj.cutOutsideIn = self.form.cutOutsideIn.isChecked()          
 
         if obj.UseComp != self.form.useCompensation.isChecked():
             obj.UseComp = self.form.useCompensation.isChecked()
@@ -89,9 +99,12 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
             obj.processPerimeter = self.form.processPerimeter.isChecked()
         if obj.processCircles != self.form.processCircles.isChecked():
             obj.processCircles = self.form.processCircles.isChecked()
+            
+        self.updatemultiProfile(obj)            
 
     def setFields(self, obj):
         """setFields(obj) ... transfers obj's property values to UI"""
+        self.form.multiStepOver.setValue(obj.multiStepOver)        
         self.setupToolController(obj, self.form.toolController)
         self.setupCoolant(obj, self.form.coolantController)
 
@@ -102,12 +115,22 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
                 obj.OffsetExtra.Value, FreeCAD.Units.Length
             ).UserString
         )
+        
+        self.form.multiProfileWidth.setText(                        
+            FreeCAD.Units.Quantity(
+                obj.multiProfileWidth.Value, FreeCAD.Units.Length
+            ).UserString
+        )         
 
         self.form.useCompensation.setChecked(obj.UseComp)
         self.form.useStartPoint.setChecked(obj.UseStartPoint)
         self.form.processHoles.setChecked(obj.processHoles)
         self.form.processPerimeter.setChecked(obj.processPerimeter)
         self.form.processCircles.setChecked(obj.processCircles)
+        self.form.multiProfile.setChecked(obj.multiProfile)  
+        self.form.cutOutsideIn.setChecked(obj.cutOutsideIn) 
+        
+        self.updatemultiProfile(obj)          
 
         self.updateVisibility()
 
@@ -124,6 +147,10 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         signals.append(self.form.processHoles.stateChanged)
         signals.append(self.form.processPerimeter.stateChanged)
         signals.append(self.form.processCircles.stateChanged)
+        signals.append(self.form.multiProfile.stateChanged)  
+        signals.append(self.form.multiProfileWidth.editingFinished)
+        signals.append(self.form.multiStepOver.editingFinished)
+        signals.append(self.form.cutOutsideIn.stateChanged)        
 
         return signals
 
@@ -153,6 +180,23 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
     def registerSignalHandlers(self, obj):
         self.form.useCompensation.stateChanged.connect(self.updateVisibility)
 
+    def updatemultiProfile(self, obj):  
+    
+        if hasattr(obj, "multiProfile") and not obj.multiProfile:   
+            self.form.multiProfileWidthLabel.hide()
+            self.form.cutOutsideIn.hide()
+            self.form.stepOverLabel.hide()
+            self.form.multiProfileWidth.hide() 
+            self.form.multiStepOver.hide()
+        else:     
+            self.form.multiProfileWidthLabel.show()
+            self.form.cutOutsideIn.show()
+            self.form.stepOverLabel.show()
+            self.form.multiProfileWidth.show() 
+            self.form.multiStepOver.show()                                                   
+
+    def registerSignalHandlers(self, obj):
+        self.form.useCompensation.stateChanged.connect(self.updateVisibility)
 
 # Eclass
 

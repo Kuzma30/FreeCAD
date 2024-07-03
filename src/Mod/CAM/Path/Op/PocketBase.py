@@ -104,13 +104,8 @@ class ObjectPocket(PathAreaOp.ObjectOp):
         Can safely be overwritten by subclass."""
         pass
 
-    def opExecute(self, obj):
-        if len(obj.Base) == 0:
-            return
-        super().opExecute(obj)
-
     def areaOpSetDefaultValues(self, obj, job):
-        obj.PocketLastStepOver = 0
+        obj.PocketLastStepOver = 3
 
     def pocketInvertExtraOffset(self):
         """pocketInvertExtraOffset() ... return True if ExtraOffset's direction is inward.
@@ -192,6 +187,15 @@ class ObjectPocket(PathAreaOp.ObjectOp):
         )
         obj.addProperty(
             "App::PropertyBool",
+            "NoPathReverse",
+            "Pocket",
+            QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Prevents Path Reverse on each Step Down if Start Point is used.",
+            ),
+        )         
+        obj.addProperty(
+            "App::PropertyBool",
             "UseRestMachining",
             "Pocket",
             QT_TRANSLATE_NOOP(
@@ -199,6 +203,15 @@ class ObjectPocket(PathAreaOp.ObjectOp):
                 "Skips machining regions that have already been cleared by previous operations.",
             ),
         )
+        obj.addProperty(
+            "App::PropertyBool",
+            "UseFinishingOffset",
+            "Pocket",
+            QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Finishing Pass only for Offset Pattern.",  
+            ),
+        )         
 
         for n in self.pocketPropertyEnumerations():
             setattr(obj, n[0], n[1])
@@ -230,6 +243,8 @@ class ObjectPocket(PathAreaOp.ObjectOp):
         params["PocketExtraOffset"] = extraOffset
         params["ToolRadius"] = self.radius
         params["PocketLastStepover"] = obj.PocketLastStepOver
+        finishingOffset = obj.UseFinishingOffset 
+        params["UseFinishingOffset"] = finishingOffset          
 
         Pattern = {
             "ZigZag": 1,
@@ -259,7 +274,7 @@ class ObjectPocket(PathAreaOp.ObjectOp):
                     "Last Stepover Radius.  If 0, 50% of cutter is used. Tuning this can be used to improve stepover for some shapes",
                 ),
             )
-            obj.PocketLastStepOver = 0
+            obj.PocketLastStepOver = 3
 
         if not hasattr(obj, "UseRestMachining"):
             obj.addProperty(
@@ -271,6 +286,27 @@ class ObjectPocket(PathAreaOp.ObjectOp):
                     "Skips machining regions that have already been cleared by previous operations.",
                 ),
             )
+        if not hasattr(obj, "NoPathReverse"):         
+            obj.addProperty(
+                "App::PropertyBool",
+                "NoPathReverse",
+                "Pocket",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "Prevents Path Reverse on each Step Down if Start Point is used.",
+                ),
+            )             
+
+        if not hasattr(obj, "UseFinishingOffset"):  
+            obj.addProperty(
+                "App::PropertyBool",
+                "UseFinishingOffset",
+                "Pocket",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "Finishing Pass only for Offset Pattern.",
+                ),
+            )             
 
         if hasattr(obj, "RestMachiningRegions"):
             obj.removeProperty("RestMachiningRegions")
@@ -311,4 +347,5 @@ def SetupProperties():
     setup.append("StartAt")
     setup.append("MinTravel")
     setup.append("KeepToolDown")
+    setup.append("UseFinishingOffset")    
     return setup

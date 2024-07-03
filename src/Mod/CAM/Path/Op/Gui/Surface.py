@@ -26,6 +26,7 @@ import FreeCADGui
 import Path
 import Path.Base.Gui.Util as PathGuiUtil
 import Path.Op.Gui.Base as PathOpGui
+import Path.Op.Gui.FeatureExtension as PathFeatureExtensionsGui
 import Path.Op.Surface as PathSurface
 import PathGui
 
@@ -135,6 +136,12 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
 
         if obj.OptimizeLinearPaths != self.form.optimizeEnabled.isChecked():
             obj.OptimizeLinearPaths = self.form.optimizeEnabled.isChecked()
+            
+        if obj.OptimizeLeadInOut != self.form.optimizeLeadInOut.isChecked():  
+            obj.OptimizeLeadInOut = self.form.optimizeLeadInOut.isChecked()
+            
+        if obj.CutPatternReversed != self.form.cutPatternReversed.isChecked():  
+            obj.CutPatternReversed = self.form.cutPatternReversed.isChecked()             
 
         if (
             obj.OptimizeStepOverTransitions
@@ -210,6 +217,16 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
             self.form.optimizeStepOverTransitions.setCheckState(QtCore.Qt.Checked)
         else:
             self.form.optimizeStepOverTransitions.setCheckState(QtCore.Qt.Unchecked)
+            
+        if obj.OptimizeLeadInOut: 
+            self.form.optimizeLeadInOut.setCheckState(QtCore.Qt.Checked)
+        else:
+            self.form.optimizeLeadInOut.setCheckState(QtCore.Qt.Unchecked)
+            
+        if obj.CutPatternReversed:  
+            self.form.cutPatternReversed.setCheckState(QtCore.Qt.Checked)
+        else:
+            self.form.cutPatternReversed.setCheckState(QtCore.Qt.Unchecked)             
 
         self.updateVisibility()
 
@@ -234,6 +251,8 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         signals.append(self.form.boundaryEnforcement.stateChanged)
         signals.append(self.form.optimizeEnabled.stateChanged)
         signals.append(self.form.optimizeStepOverTransitions.stateChanged)
+        signals.append(self.form.optimizeLeadInOut.stateChanged)  
+        signals.append(self.form.cutPatternReversed.stateChanged)        
 
         return signals
 
@@ -254,6 +273,13 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
             self.form.boundBoxExtraOffset_label.hide()
             self.form.dropCutterDirSelect.hide()
             self.form.dropCutterDirSelect_label.hide()
+            if self.form.optimizeStepOverTransitions.isChecked(): 
+                self.form.optimizeLeadInOut.show()
+            else:     
+                self.form.optimizeLeadInOut.setCheckState(QtCore.Qt.Unchecked)
+                self.form.optimizeLeadInOut.hide()
+            if self.form.optimizeLeadInOut.isChecked():
+                self.form.optimizeEnabled.setCheckState(QtCore.Qt.Unchecked)            
         elif self.form.scanType.currentText() == "Rotational":
             self.form.cutPattern.hide()
             self.form.cutPattern_label.hide()
@@ -272,7 +298,15 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
 
     def registerSignalHandlers(self, obj):
         self.form.scanType.currentIndexChanged.connect(self.updateVisibility)
+        self.form.optimizeStepOverTransitions.stateChanged.connect(self.updateVisibility)  
+        self.form.optimizeLeadInOut.stateChanged.connect(self.updateVisibility)       
 
+    def taskPanelBaseLocationPage(self, obj, features):
+        if not hasattr(self, "extensionsPanel"):
+            self.extensionsPanel = PathFeatureExtensionsGui.TaskPanelExtensionPage(
+                obj, features
+            )
+        return self.extensionsPanel
 
 Command = PathOpGui.SetupOperation(
     "Surface",

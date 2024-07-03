@@ -678,11 +678,7 @@ def Execute(op, obj):
         # Get list of working edges for adaptive algorithm
         pathArray = op.pathArray
         if not pathArray:
-            msg = translate(
-                "CAM",
-                "Adaptive operation couldn't determine the boundary wire. Did you select base geometry?",
-            )
-            FreeCAD.Console.PrintUserWarning(msg)
+            Path.Log.error("No wire data returned.")
             return
 
         path2d = convertTo2d(pathArray)
@@ -830,7 +826,19 @@ def _get_working_edges(op, obj):
 
     # Get extensions and identify faces to avoid
     extensions = FeatureExtensions.getExtensions(obj)
+    subtractExt = []                      
+    includeExt = []    
     for e in extensions:
+        if e.IndependentExtensionsList: 
+            eNms = e._getEdgeNamesOp()                     
+            for ind in e.IndependentExtensionsList:  
+                if eNms[0] in ind:
+                    if float(ind.split(eNms[0]+":",1)[1]) < 0:
+                        subtractExt.append(e)  
+                    else:
+                        includeExt.append(e)                 
+        else:
+            includeExt = extensions                                    
         if e.avoid:
             avoidFeatures.append(e.feature)
 
@@ -862,17 +870,31 @@ def _get_working_edges(op, obj):
                     edge_list.append([discretize(e)])
 
     # Apply regular Extensions
-    op.exts = []
-    for ext in extensions:
-        if not ext.avoid:
-            wire = ext.getWire()
+    op.exts = []    
+    if includeExt: 
+        for ext in includeExt:  
+            if not ext.avoid:
+                wire = ext.getWire()
+                if wire:
+                    faces = ext.getExtensionFaces(wire)
+                    for f in faces:
+                        all_regions.append(f)
+                        op.exts.append(f)  
+
+    op.subexts = []           
+    if subtractExt:
+        for sub in subtractExt:
+            wire = sub.getWire()
             if wire:
-                for f in ext.getExtensionFaces(wire):
-                    op.exts.append(f)
-                    all_regions.append(f)
+                faces = sub.getExtensionFaces(wire)
+                for f in faces:
+                    op.subexts.append(f)
 
     # Second face-combining method attempted
     horizontal = Path.Geom.combineHorizontalFaces(all_regions)
+    if op.subexts:   
+        op.cut = Path.Geom.combineHorizontalFaces(op.subexts)   
+        horizontal[0] = horizontal[0].cut(op.cut)    
     if horizontal:
         obj.removalshape = Part.makeCompound(horizontal)
         for f in horizontal:

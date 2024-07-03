@@ -1639,9 +1639,7 @@ std::vector<shared_ptr<Area> > Area::makeSections(
                 if (hitMin) continue;
                 hitMin = true;
                 double zNew = zMin + myParams.SectionTolerance;
-                //Silence the warning if _heights is not empty
-                if (_heights.empty() && FC_LOG_INSTANCE.isEnabled(FC_LOGLEVEL_LOG))
-                    AREA_WARN("hit bottom " << z << ',' << zMin << ',' << zNew);
+                //AREA_WARN("hit bottom " << z << ',' << zMin << ',' << zNew);
                 z = zNew;
             }
             else if (zMax - z < myParams.SectionTolerance) {
@@ -2282,13 +2280,19 @@ TopoDS_Shape Area::makePocket(int index, PARAM_ARGS(PARAM_FARG, AREA_PARAMS_POCK
         pm = SpiralPocketMode;
         break;
     case Area::PocketModeOffset: {
-        PARAM_DECLARE_INIT(PARAM_FNAME, AREA_PARAMS_OFFSET);
-        Offset = -tool_radius - extra_offset - shift;
-        ExtraPass = -1;
-        Stepover = -stepover;
-        LastStepover = -last_stepover;
-        // make offset and make sure the loop is CW (i.e. inner wires)
-        return makeOffset(index, PARAM_FIELDS(PARAM_FNAME, AREA_PARAMS_OFFSET), -1, from_center);
+        if (finishing_offset != true) {
+            PARAM_DECLARE_INIT(PARAM_FNAME, AREA_PARAMS_OFFSET);
+            Offset = -tool_radius - extra_offset - shift;
+            ExtraPass = -1;
+            Stepover = -stepover;
+            LastStepover = -last_stepover;
+            // make offset and make sure the loop is CW (i.e. inner wires)
+            return makeOffset(index, PARAM_FIELDS(PARAM_FNAME, AREA_PARAMS_OFFSET), -1, from_center);
+        }
+        else {
+            pm = SingleOffsetPocketMode;
+            break;
+        }
     }case Area::PocketModeZigZagOffset:
         pm = ZigZagThenSingleOffsetPocketMode;
         break;
@@ -2354,7 +2358,7 @@ TopoDS_Shape Area::makePocket(int index, PARAM_ARGS(PARAM_FARG, AREA_PARAMS_POCK
 
     if (!done) {
         CAreaPocketParams params(
-            tool_radius, extra_offset, stepover, from_center, pm, angle);
+            tool_radius, extra_offset, stepover, from_center, finishing_offset, pm, angle);
         CArea in(*myArea);
         // MakePocketToolPath internally uses libarea Offset which somehow demands
         // reorder before input, otherwise nothing is shown.

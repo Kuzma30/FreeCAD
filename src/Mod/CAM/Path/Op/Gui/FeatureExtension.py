@@ -28,6 +28,7 @@ import Path
 import Path.Base.Gui.Util as PathGuiUtil
 import Path.Op.FeatureExtension as FeatureExtensions
 import Path.Op.Gui.Base as PathOpGui
+import operator as op 
 
 # lazily loaded modules
 from lazy_loader.lazy_loader import LazyLoader
@@ -174,6 +175,8 @@ class _Extension(object):
 class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
     DataObject = QtCore.Qt.ItemDataRole.UserRole
     DataSwitch = QtCore.Qt.ItemDataRole.UserRole + 2
+    DataInde = QtCore.Qt.ItemDataRole.UserRole + 4  
+    DataLabel = QtCore.Qt.ItemDataRole.UserRole + 8    
 
     Direction = {
         FeatureExtensions.Extension.DirectionNormal: translate("CAM_Pocket", "Normal"),
@@ -194,8 +197,11 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
         self.extensionsReady = False
         self.enabled = True
         self.lastDefaultLength = ""
+        self.lostInLoop = False        
 
         self.extensions = list()
+        
+        self.independentExtensions = obj.IndependentExtensionsList         
 
         self.defaultLength = PathGuiUtil.QuantitySpinBox(
             self.form.defaultLength, obj, "ExtensionLengthDefault"
@@ -227,7 +233,7 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
     def cleanupPage(self, obj):
         try:
             self.obj.ViewObject.RootNode.removeChild(self.switch)
-        except (ReferenceError, RuntimeError) as e:
+        except:  
             Path.Log.debug("obj already destroyed - no cleanup required")
 
     def getForm(self):
@@ -235,6 +241,7 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
         return form
 
     def forAllItemsCall(self, cb):
+        tempList = []
         for modelRow in range(self.model.rowCount()):
             model = self.model.item(modelRow, 0)
             for featureRow in range(model.rowCount()):
@@ -243,6 +250,16 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
                     item = feature.child(edgeRow, 0)
                     ext = item.data(self.DataObject)
                     cb(item, ext)
+                    if self.form.independentExtensions.isChecked():                     
+                        for ind in range(item.rowCount()): 
+                            item0 = item.child(ind, 0)
+                            indeExt = str(item0.data(QtCore.Qt.EditRole))  
+                            indeLabel = item0.data(self.DataLabel)
+                            Div = ":"
+                            StringList = indeLabel+Div+indeExt
+                            tempList.append(StringList)                      
+        if tempList != self.independentExtensions and self.lostInLoop:  
+            self.independentExtensions = tempList                       
 
     def currentExtensions(self):
         Path.Log.debug("currentExtensions()")
@@ -261,6 +278,8 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
         Path.Log.debug("updateProxyExtensions()")
         self.extensions = self.currentExtensions()
         FeatureExtensions.setExtensions(obj, self.extensions)
+        FeatureExtensions.setIndependent(obj, self.independentExtensions) 
+        self.independentExtensions = []        
 
     def getFields(self, obj):
         Path.Log.track(obj.Label, self.model.rowCount(), self.model.columnCount())
@@ -268,6 +287,10 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
 
         if obj.ExtensionCorners != self.form.extendCorners.isChecked():
             obj.ExtensionCorners = self.form.extendCorners.isChecked()
+            
+        if obj.IndependentExtensions != self.form.independentExtensions.isChecked():  
+            obj.IndependentExtensions = self.form.independentExtensions.isChecked()              
+            
         self.defaultLength.updateProperty()
 
         self.updateProxyExtensions(obj)
@@ -279,6 +302,9 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
 
         if obj.ExtensionCorners != self.form.extendCorners.isChecked():
             self.form.extendCorners.toggle()
+            
+        if obj.IndependentExtensions != self.form.independentExtensions.isChecked():  
+            obj.IndependentExtensions = self.form.independentExtensions.isChecked()             
 
         self._autoEnableExtensions()  # Check edge count for auto-disable Extensions on initial Task Panel loading
         self._initializeExtensions(obj)  # Efficiently initialize Extensions
@@ -292,13 +318,18 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
         Subroutine called inside `setFields()` to initialize Extensions efficiently."""
         if self.enabled:
             self.extensions = FeatureExtensions.getExtensions(obj)
+            self.independentExtensions = FeatureExtensions.getIndependent(obj)  
+            self.lostInLoop = False          
         elif len(obj.ExtensionFeature) > 0:
             self.extensions = FeatureExtensions.getExtensions(obj)
+            self.independentExtensions = FeatureExtensions.getIndependent(obj)  
+            self.lostInLoop = False             
             self.form.enableExtensions.setChecked(True)
             self._includeEdgesAndWires()
         else:
             self.form.extensionEdit.setDisabled(True)
         self.setExtensions(self.extensions)
+        self.lostInLoop = True
 
     def _applyDefaultLengthChange(self, index=None):
         """_applyDefaultLengthChange(index=None)...
@@ -331,7 +362,29 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
                         item0.setCheckState(QtCore.Qt.Checked)
                         ext0.enable()
                         break
-                item.appendRow([item0])
+                                         
+                indExt = 0.0
+                f = False                                                                 
+                if label[:4] == "Edge" and self.form.independentExtensions.isChecked():
+                    for ind in self.independentExtensions:
+                        if label in ind:
+                            indExt = float(ind.split(":",1)[1])
+                            f = True
+                            break          
+                    if not f:
+                        Div = ":0.0"
+                        temP = label+Div
+                        self.independentExtensions.append(temP)                                                      
+      
+                    item2 = QtGui.QStandardItem()
+                    item2.isEditable()
+                    item2.setData(indExt, QtCore.Qt.EditRole)
+                    item2.setData(label, self.DataLabel)
+                    self.DataInde = item2.data(QtCore.Qt.EditRole)
+                                                                 
+                    item0.appendRow([item2])
+                    
+                item.appendRow([item0]) 
 
         # ext = self._cachedExtension(self.obj, base, sub, None)
         ext = None
@@ -414,10 +467,13 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
 
         # remember current visual state
         if hasattr(self, "selectionModel"):
-            selectedExtensions = [
-                self.model.itemFromIndex(index).data(self.DataObject).ext
-                for index in self.selectionModel.selectedIndexes()
-            ]
+            try:
+                selectedExtensions = [
+                    self.model.itemFromIndex(index).data(self.DataObject).ext
+                    for index in self.selectionModel.selectedIndexes()
+                ]
+            except:
+                selectedExtensions = []        
         else:
             selectedExtensions = []
         collapsedModels = []
@@ -464,8 +520,10 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
                     self.model.appendRow(baseItem)
 
         self.form.extensionTree.setModel(self.model)
-        self.form.extensionTree.expandAll()
+        #self.form.extensionTree.expandAll()  
         self.form.extensionTree.resizeColumnToContents(0)
+        self.form.extensionTree.setEditTriggers(QtGui.QAbstractItemView.DoubleClicked)  
+        self.form.extensionTree.expandToDepth(1)  
 
         # restore previous state - at least the parts that are still valid
         for modelRow in range(self.model.rowCount()):
@@ -583,12 +641,19 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
     def updateItemEnabled(self, item):
         Path.Log.track(item)
         ext = item.data(self.DataObject)
-        if item.checkState() == QtCore.Qt.Checked:
-            ext.enable()
-        else:
-            ext.disable()
+        if ext: 
+            if item.checkState() == QtCore.Qt.Checked:
+                ext.enable()
+            else:
+                ext.disable()                                                                                                                   
         self.updateProxyExtensions(self.obj)
         self.setDirty()
+        if not ext: 
+            self._resetCachedExtensions()
+            self.form.extensionEdit.setEnabled(True)
+            self.extensions = FeatureExtensions.getExtensions(self.obj) 
+            self.independentExtensions = FeatureExtensions.getIndependent(self.obj)
+            self.setExtensions(self.extensions) 
 
     def showHideExtension(self):
         if self.form.showExtensions.isChecked():
@@ -605,10 +670,28 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
 
             self.forAllItemsCall(disableExtensionEdit)
         # self.setDirty()
+        
+    def showHideIndependent(self):  
+        if self.form.independentExtensions.isChecked():
+            self.form.extendCorners.setChecked(False)  
+            self.form.extendCorners.setDisabled(True)                   
+        else:
+            self.form.extendCorners.setEnabled(True)
+
+        self.extensionsReady = False
+        extensions = FeatureExtensions.getExtensions(self.obj)
+        self.setExtensions(extensions) 
+        self.selectionChanged()
+        self.setDirty()         
 
     def toggleExtensionCorners(self):
         Path.Log.debug("toggleExtensionCorners()")
         Path.Log.track()
+        if self.form.extendCorners.isChecked():   
+            self.form.independentExtensions.setChecked(False)  
+            self.form.independentExtensions.setDisabled(True)           
+        else:
+            self.form.independentExtensions.setEnabled(True)         
         self.extensionsReady = False
         extensions = FeatureExtensions.getExtensions(self.obj)
         self.setExtensions(extensions)
@@ -625,6 +708,7 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
     def registerSignalHandlers(self, obj):
         self.form.showExtensions.clicked.connect(self.showHideExtension)
         self.form.extendCorners.clicked.connect(self.toggleExtensionCorners)
+        self.form.independentExtensions.clicked.connect(self.showHideIndependent)        
         self.form.buttonClear.clicked.connect(self.extensionsClear)
         self.form.buttonDisable.clicked.connect(self.extensionsDisable)
         self.form.buttonEnable.clicked.connect(self.extensionsEnable)
@@ -657,6 +741,10 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
                         ):
                             Path.Log.debug("Found useOutline checkbox")
                             self.useOutlineCheckbox = page.form.useOutline
+                            if hasattr(page.form, "clearEdges") and not page.form.clearEdges.isHidden():  
+                                page.form.useOutline.hide()
+                                self.form.extendCorners.setChecked(False)  
+                                self.form.extendCorners.setDisabled(True)                            
                             if page.form.useOutline.isChecked():
                                 self.useOutline = 1
                                 return
@@ -699,6 +787,7 @@ class TaskPanelExtensionPage(PathOpGui.TaskPanelPage):
             self.extensionsReady = False
             self.form.extensionEdit.setEnabled(True)
             self.extensions = FeatureExtensions.getExtensions(self.obj)
+            self.independentExtensions = FeatureExtensions.getIndependent(self.obj)            
             self.setExtensions(self.extensions)
         else:
             self.form.extensionEdit.setDisabled(True)

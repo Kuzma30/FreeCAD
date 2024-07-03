@@ -47,7 +47,7 @@ static PyObject * areaAbort(PyObject *, PyObject *args, PyObject *kwd) {
 
 static PyObject * areaSetParams(PyObject *, PyObject *args, PyObject *kwd) {
 
-    static const std::array<const char *, 43> kwlist {PARAM_FIELD_STRINGS(NAME,AREA_PARAMS_STATIC_CONF),nullptr};
+    static const std::array<const char *, 44> kwlist {PARAM_FIELD_STRINGS(NAME,AREA_PARAMS_STATIC_CONF),nullptr};
 
     if(args && PySequence_Size(args)>0)
         PyErr_SetString(PyExc_ValueError,"Non-keyword argument is not supported");
@@ -335,7 +335,7 @@ PyObject* AreaPy::makeOffset(PyObject *args, PyObject *keywds)
 
 PyObject* AreaPy::makePocket(PyObject *args, PyObject *keywds)
 {
-    static const std::array<const char *, 11> kwlist {"index",PARAM_FIELD_STRINGS(ARG,AREA_PARAMS_POCKET), nullptr};
+    static const std::array<const char *, 12> kwlist {"index",PARAM_FIELD_STRINGS(ARG,AREA_PARAMS_POCKET), nullptr};
     short index = -1;
 
     PARAM_PY_DECLARE_INIT(PARAM_FARG,AREA_PARAMS_POCKET)
@@ -477,7 +477,7 @@ PyObject* AreaPy::setDefaultParams(PyObject *, PyObject *)
 
 PyObject* AreaPy::setParams(PyObject *args, PyObject *keywds)
 {
-    static const std::array<const char *, 43> kwlist {PARAM_FIELD_STRINGS(NAME,AREA_PARAMS_CONF),nullptr};
+    static const std::array<const char *, 44> kwlist {PARAM_FIELD_STRINGS(NAME,AREA_PARAMS_CONF),nullptr};
 
     //Declare variables defined in the NAME field of the CONF parameter list
     PARAM_PY_DECLARE(PARAM_FNAME,AREA_PARAMS_CONF);

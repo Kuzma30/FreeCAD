@@ -130,6 +130,14 @@ class ObjectDressup:
                 "App::Property", "Apply LeadInOut to layers within an operation"
             ),
         )
+        obj.addProperty(
+            "App::PropertyBool",
+            "ReverseDirection",
+            "Path",
+            QT_TRANSLATE_NOOP(
+                "App::Property", "Reverse direction of LeadInOut"
+            ),
+        )
         obj.Proxy = self
 
         self.wire = None
@@ -153,6 +161,7 @@ class ObjectDressup:
         obj.ExtendLeadOut = 0
         obj.RapidPlunge = False
         obj.IncludeLayers = True
+        obj.ReverseDirection = False
 
     def execute(self, obj):
         if not obj.Base:
@@ -184,10 +193,16 @@ class ObjectDressup:
         side = op.Side if hasattr(op, "Side") else "Inside"
         direction = op.Direction if hasattr(op, "Direction") else "Conventional"
 
+        if obj.ReverseDirection:
+            if side == "Inside":
+                side = "Outside"
+            else:
+                side  = "Inside"
+
         if side == "Outside":
             return "left" if direction == "Climb" else "right"
-        else:
-            return "right" if direction == "Climb" else "left"
+        # else:
+        #    return "right" if direction == "Climb" else "left"
 
     def getArcDirection(self, obj):
         direction = self.getDirectionOfPath(obj)
@@ -359,31 +374,57 @@ class ObjectDressup:
         # we just use a flag and set it to false afterwards. To find the last
         # cutting move we need to search the list in reverse order.
         first = True
+        Sur = "(Surface)"
         lastCuttingMoveIndex = self.findLastCuttingMoveIndex(obj, source)
 
-        for i, instr in enumerate(source):
-            if not self.isCuttingMove(obj, instr):
-                # non-move instructions get added verbatim
-                if not instr.isMove():
-                    maneuver.addInstruction(instr)
-
-                # skip travel and plunge moves, travel moves will be added in
-                # getLeadStart and getLeadEnd
-                continue
-
-            if first or not self.isCuttingMove(obj, source[i - 1]):
-                # add lead start and travel moves
-                maneuver.addInstructions(self.getLeadStart(obj, instr, first))
-                first = False
-
-            # add current move
-            maneuver.addInstruction(instr)
-
-            last = i == lastCuttingMoveIndex
-            if last or not self.isCuttingMove(obj, source[i + 1]):
-                # add lead end and travel moves
-                maneuver.addInstructions(self.getLeadEnd(obj, instr, last))
-
+        if Sur in source[0].cmd.title():
+            LeadS = "--Start"
+            LeadE = "Break"
+            for i, instr in enumerate(source):
+                if LeadE in source[i-2].cmd.title() and obj.KeepToolDown:
+                    pass
+                else:
+                    if LeadS in source[i-3].cmd.title():
+                        # add lead start and travel moves
+                        maneuver.addInstructions(self.getLeadStart(obj, instr, first))
+                        first = False                    
+      
+                    elif LeadE in source[i-1].cmd.title():
+                        last = i == lastCuttingMoveIndex                    
+                        # add lead end and travel moves
+                        maneuver.addInstructions(self.getLeadEnd(obj, instr, last))
+                    elif LeadS in source[i-2].cmd.title(): 
+                        pass                    
+                        
+                    else: 
+                        # add current move
+                        maneuver.addInstruction(instr)  
+                         
+        else:
+            for i, instr in enumerate(source):
+                 
+                if not self.isCuttingMove(obj, instr):
+                    # non-move instructions get added verbatim
+                    if not instr.isMove():
+                        maneuver.addInstruction(instr)
+    
+                    # skip travel and plunge moves, travel moves will be added in
+                    # getLeadStart and getLeadEnd
+                    continue
+    
+                if first or not self.isCuttingMove(obj, source[i - 1]):
+                    # add lead start and travel moves
+                    maneuver.addInstructions(self.getLeadStart(obj, instr, first))
+                    first = False
+    
+                # add current move
+                maneuver.addInstruction(instr)
+    
+                last = i == lastCuttingMoveIndex
+                if last or not self.isCuttingMove(obj, source[i + 1]):
+                    # add lead end and travel moves
+                    maneuver.addInstructions(self.getLeadEnd(obj, instr, last))           
+            
         return maneuver.toPath()
 
 
@@ -403,6 +444,7 @@ class TaskDressupLeadInOut(SimpleEditPanel):
         self.connectWidget("RapidPlunge", self.form.chkRapidPlunge)
         self.connectWidget("IncludeLayers", self.form.chkLayers)
         self.connectWidget("KeepToolDown", self.form.chkKeepToolDown)
+        self.connectWidget("ReverseDirection", self.form.chkReverseDir)        
         self.setFields()
 
 
@@ -464,7 +506,8 @@ class CommandPathDressupLeadInOut:
             "MenuText": QT_TRANSLATE_NOOP("CAM_DressupLeadInOut", "LeadInOut"),
             "ToolTip": QT_TRANSLATE_NOOP(
                 "CAM_DressupLeadInOut",
-                "Creates a Cutter Radius Compensation G41/G42 Entry Dressup object from a selected path",
+                "Creates a Cutter Radius Compensation G41/G42 Entry Dressup object"
+                " from a selected path",
             ),
         }
 

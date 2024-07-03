@@ -67,7 +67,7 @@
        <property name="toolTip">
         <string>length or radius of the Lead-in</string>
        </property>
-       <property name="minimum">
+       <property name="minimum" stdset="0">
         <double>0.100000000000000</double>
        </property>
        <property name="unit" stdset="0">
@@ -89,6 +89,13 @@
        </property>
        <property name="unit" stdset="0">
         <string notr="true"/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="chkReverseDir">
+       <property name="text">
+        <string>Reverse Direction</string>
        </property>
       </widget>
      </item>
@@ -141,7 +148,7 @@
        <property name="toolTip">
         <string>length or radius of the Lead-out</string>
        </property>
-       <property name="minimum">
+       <property name="minimum" stdset="0">
         <double>0.100000000000000</double>
        </property>
        <property name="unit" stdset="0">

@@ -176,6 +176,40 @@ class ObjectProfile(PathAreaOp.ObjectOp):
                     "App::Property", "Make True, if using Cutter Radius Compensation"
                 ),
             ),
+            (
+                "App::PropertyBool",
+                "multiProfile",
+                "Profile",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "Multiple Profile Operations with Offset"
+                ),                   
+            ),
+            (
+                "App::PropertyDistance",
+                "multiProfileWidth",
+                "Profile",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "Width of the Multi Profile Operations",
+                ),
+            ),
+            (
+                "App::PropertyPercent",
+                "multiStepOver",
+                "Profile",
+                QT_TRANSLATE_NOOP(
+                    "App::Property",
+                    "Step Over of Multi Profile Operations on each step in % of tool diameter",
+                ),
+            ),
+            (
+                "App::PropertyBool",
+                "cutOutsideIn",
+                "Profile",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "Cut OutsideIn"
+                ),
+            ),            
         ]
 
     @classmethod
@@ -383,6 +417,39 @@ class ObjectProfile(PathAreaOp.ObjectOp):
             "The selected edge(s) are inaccessible. If multiple, re-ordering selection might work.",
         )
         self.offsetExtra = obj.OffsetExtra.Value
+        
+        self.multiProfile = True if obj.multiProfile else False            
+        self.multiProfileWidth = float(obj.multiProfileWidth)
+        self.multiStepOver = obj.multiStepOver
+        self.multiCutOutsideIn = obj.cutOutsideIn                      
+
+        self.multiProfileSteps = []
+        if self.multiProfile:
+              
+            multiStepOver = (self.radius * 2) * (self.multiStepOver / 100) 
+            nbrOfSteps = int(self.multiProfileWidth / multiStepOver)
+            
+            checkD = nbrOfSteps * multiStepOver
+            decLeft = self.multiProfileWidth - checkD
+            
+            Inc = 0
+            incStepOver = multiStepOver
+            if decLeft > 0:             
+                while Inc < nbrOfSteps:
+                    self.multiProfileSteps.append(incStepOver + decLeft)
+                    incStepOver = incStepOver + multiStepOver
+                    Inc = Inc + 1
+                self.multiProfileSteps.insert(0, decLeft) 
+            else:
+                while Inc < nbrOfSteps:
+                    self.multiProfileSteps.append(incStepOver) 
+                    incStepOver = incStepOver + multiStepOver
+                    Inc = Inc + 1          
+
+            self.multiProfileSteps.insert(0, 0)            
+            
+        else:
+            self.multiProfileSteps.append(0)          
 
         if self.isDebug:
             for grpNm in ["tmpDebugGrp", "tmpDebugGrp001"]:
@@ -474,6 +541,7 @@ class ObjectProfile(PathAreaOp.ObjectOp):
                             shapes.append(tup)
 
                 if faces and obj.processPerimeter:
+                    cont = False
                     if obj.HandleMultipleFeatures == "Collectively":
                         custDepthparams = self.depthparams
                         cont = True
@@ -604,42 +672,52 @@ class ObjectProfile(PathAreaOp.ObjectOp):
                     else:
                         flattened = self._flattenWire(obj, wire, obj.FinalDepth.Value)
                         zDiff = math.fabs(wire.BoundBox.ZMin - obj.FinalDepth.Value)
-                        if flattened and zDiff >= self.JOB.GeometryTolerance.Value:
-                            cutWireObjs = False
-                            openEdges = []
-                            passOffsets = [self.ofstRadius]
-                            (origWire, flatWire) = flattened
-
-                            self._addDebugObject("FlatWire", flatWire)
-
-                            for po in passOffsets:
-                                self.ofstRadius = po
-                                cutShp = self._getCutAreaCrossSection(
-                                    obj, base, origWire, flatWire
-                                )
-                                if cutShp:
-                                    cutWireObjs = self._extractPathWire(
-                                        obj, base, flatWire, cutShp
-                                    )
-
-                                if cutWireObjs:
-                                    for cW in cutWireObjs:
-                                        openEdges.append(cW)
+                        if flattened and zDiff >= self.JOB.GeometryTolerance.Value:       
+                            suppressErrMs = False
+                            storeRadius = self.ofstRadius  
+                            for st in self.multiProfileSteps:
+                                self.ofstRadius = self.ofstRadius + st
+                                if flattened:   
+                                    cutWireObjs = False
+                                    openEdges = []
+                                    passOffsets = [self.ofstRadius]
+                                    (origWire, flatWire) = flattened
+        
+                                    self._addDebugObject("FlatWire", flatWire)
+        
+                                    for po in passOffsets:
+                                        self.ofstRadius = po
+                                        cutShp = self._getCutAreaCrossSection(
+                                            obj, base, origWire, flatWire
+                                        )
+                                        if cutShp:
+                                            cutWireObjs = self._extractPathWire(
+                                                obj, base, flatWire, cutShp
+                                            )
+                                        if cutWireObjs:
+                                            for cW in cutWireObjs:
+                                                openEdges.append(cW)
+                                        else:
+                                            Path.Log.error(self.inaccessibleMsg)
+        
+                                    if openEdges:
+                                        tup = openEdges, False, "OpenEdge"
+                                        shapes.append(tup)                                                                
+    
                                 else:
-                                    Path.Log.error(self.inaccessibleMsg)
-
-                            if openEdges:
-                                tup = openEdges, False, "OpenEdge"
-                                shapes.append(tup)
-                        else:
-                            if zDiff < self.JOB.GeometryTolerance.Value:
-                                msg = translate(
-                                    "PathProfile",
-                                    "Check edge selection and Final Depth requirements for profiling open edge(s).",
-                                )
-                                Path.Log.error(msg)
-                            else:
-                                Path.Log.error(self.inaccessibleMsg)
+                                    if zDiff < self.JOB.GeometryTolerance.Value and not suppressErrMs:
+                                        if not suppressErrMs:
+                                            msg = translate(
+                                                "PathProfile",
+                                                "Check edge selection and Final Depth requirements for profiling open edge(s).",
+                                            )
+                                            Path.Log.error(msg)
+                                        if self.multiProfileSteps:  
+                                            suppressErrMs = True
+                                    else:
+                                        Path.Log.error(self.inaccessibleMsg)
+                                        
+                                self.ofstRadius = storeRadius
 
         return shapes
 
@@ -779,7 +857,7 @@ class ObjectProfile(PathAreaOp.ObjectOp):
         )  # Translate face to final depth
 
         # Make common of the two
-        comFC = topComp.common(botComp)
+        comFC = topComp.common(botComp, 1e-4)
 
         # Determine with which set of intersection tags the model intersects
         (cmnIntArea, cmnExtArea) = self._checkTagIntersection(iTAG, eTAG, "QRY", comFC)

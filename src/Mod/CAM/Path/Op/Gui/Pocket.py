@@ -23,6 +23,7 @@
 import FreeCAD
 import Path
 import Path.Op.Gui.Base as PathOpGui
+import Path.Op.Gui.FeatureExtension as PathFeatureExtensionsGui
 import Path.Op.Gui.PocketBase as PathPocketBaseGui
 import Path.Op.Pocket as PathPocket
 
@@ -48,6 +49,13 @@ class TaskPanelOpPage(PathPocketBaseGui.TaskPanelOpPage):
         """pocketFeatures() ... return FeaturePocket (see PathPocketBaseGui)"""
         return PathPocketBaseGui.FeaturePocket | PathPocketBaseGui.FeatureRestMachining
 
+    def taskPanelBaseLocationPage(self, obj, features):
+        if not hasattr(self, "extensionsPanel"):
+            self.extensionsPanel = PathFeatureExtensionsGui.TaskPanelExtensionPage(
+                obj, features
+            )
+   
+        return self.extensionsPanel
 
 Command = PathOpGui.SetupOperation(
     "Pocket3D",

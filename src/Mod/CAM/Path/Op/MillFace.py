@@ -23,6 +23,7 @@
 
 import FreeCAD
 import Path
+import Path.Op.Base as PathOp
 import Path.Op.PocketBase as PathPocketBase
 import PathScripts.PathUtils as PathUtils
 from PySide.QtCore import QT_TRANSLATE_NOOP
@@ -32,6 +33,10 @@ import numpy
 from lazy_loader.lazy_loader import LazyLoader
 
 Part = LazyLoader("Part", globals(), "Part")
+
+FeatureExtensions = LazyLoader(
+    "Path.Op.FeatureExtension", globals(), "Path.Op.FeatureExtension"
+)
 
 __title__ = "CAM Mill Face Operation"
 __author__ = "sliptonic (Brad Collette)"
@@ -85,6 +90,9 @@ class ObjectFace(PathPocketBase.ObjectPocket):
         Path.Log.debug(data)
 
         return data
+        
+    def areaOpFeatures(self, obj):
+        return super(self.__class__, self).areaOpFeatures(obj) | PathOp.FeatureLocations        
 
     def initPocketOp(self, obj):
         Path.Log.track()
@@ -115,6 +123,8 @@ class ObjectFace(PathPocketBase.ObjectPocket):
 
         for n in self.propertyEnumerations():
             setattr(obj, n[0], n[1])
+            
+        FeatureExtensions.initialize_properties(obj)            
 
     def pocketInvertExtraOffset(self):
         return True
@@ -152,21 +162,70 @@ class ObjectFace(PathPocketBase.ObjectPocket):
         # Facing is done either against base objects
         self.removalshapes = []
         holeShape = None
+        negativeExt = []   
 
         Path.Log.debug("depthparams: {}".format([i for i in self.depthparams]))
+
+        # Get extensions and identify faces to avoid  
+        extensions = FeatureExtensions.getExtensions(obj)
+        exts = []             
+        subexts = []
+        
+        subtractExt = []
+        includeExt = []
+        for e in extensions:
+            if not e.avoid:
+                if e.IndependentExtensionsList:    
+                    eNms = e._getEdgeNamesOp()  
+                    for ind in e.IndependentExtensionsList:  
+                        if eNms[0] in ind:
+                            if float(ind.split(eNms[0]+":",1)[1]) < 0: 
+                                subtractExt.append(e)  
+                            else: 
+                                includeExt.append(e)     
+                        else:
+                            includeExt.append(e)    
+                else:
+                    includeExt = extensions   
+                    
+        for exx in includeExt:                                
+            wire = exx.getWire()
+            if wire:
+                faces = exx.getExtensionFaces(wire)
+                for f in faces:
+                    if isinstance(f, Part.Face): 
+                        exts.append(f)
+        for xe in subtractExt:                                
+            wire = xe.getWire()
+            if wire:
+                faces = xe.getExtensionFaces(wire)
+                for f in faces:
+                    if isinstance(f, Part.Face): 
+                        subexts.append(f)  
 
         if obj.Base:
             Path.Log.debug("obj.Base: {}".format(obj.Base))
             faces = []
             holes = []
             holeEnvs = []
+            exEnvs = []
             oneBase = [obj.Base[0][0], True]
             sub0 = getattr(obj.Base[0][0].Shape, obj.Base[0][1][0])
             minHeight = sub0.BoundBox.ZMax
+            beenH = False
 
             for b in obj.Base:
-                for sub in b[1]:
-                    shape = getattr(b[0].Shape, sub)
+                bb = list(b[1])  
+                if beenH is False:         	
+                    for ex in exts:
+                        bb.append(ex)  
+                        beenH = True
+                for sub in bb:
+                    # Check if Face or Exten 
+                    if isinstance(sub, str):
+                        shape = getattr(b[0].Shape, sub)
+                    else:
+                        shape = sub # extension Face
                     if isinstance(shape, Part.Face):
                         faces.append(shape)
                         if shape.BoundBox.ZMin < minHeight:
@@ -191,6 +250,14 @@ class ObjectFace(PathPocketBase.ObjectPocket):
                                 sub
                             )
                         )
+
+            if subexts:  
+                for su in subexts:
+                    env = PathUtils.getEnvelope(
+                        shape, subshape=su, depthparams=self.depthparams
+                    )
+                    exEnvs.append(env)
+                    negativeExt.append(Part.makeCompound(exEnvs))   
 
             if obj.ExcludeRaisedAreas and len(holes) > 0:
                 for shape, wire in holes:
@@ -315,6 +382,18 @@ class ObjectFace(PathPocketBase.ObjectPocket):
         else:
             Path.Log.debug("Processing solid face ...")
             tup = env, False, "pathMillFace"
+            
+        if negativeExt:  
+            cutOut = []      
+            Path.Log.debug("Processing negative extensions ...") 
+            for hs in negativeExt:       
+                extEnv = PathUtils.getEnvelope(
+                    partshape=hs, depthparams=self.depthparams
+                )
+                cutOut.append(extEnv)
+            for cc in cutOut:    
+                neEnv = env.cut(cc)               
+            tup = neEnv, False, "pathMillFace"            
 
         self.removalshapes.append(tup)
         obj.removalshape = self.removalshapes[0][0]  # save removal shape
@@ -323,11 +402,11 @@ class ObjectFace(PathPocketBase.ObjectPocket):
 
     def areaOpSetDefaultValues(self, obj, job):
         """areaOpSetDefaultValues(obj, job) ... initialize mill facing properties"""
-        obj.StepOver = 50
-        obj.ZigZagAngle = 45.0
+        obj.StepOver = 85
+        obj.ZigZagAngle = 0.0
         obj.ExcludeRaisedAreas = False
         obj.ClearEdges = False
-
+        FeatureExtensions.set_default_property_values(obj, job)
         # need to overwrite the default depth calculations for facing
         if job and len(job.Model.Group) > 0:
             obj.OpStartDepth = job.Stock.Shape.BoundBox.ZMax
@@ -396,6 +475,9 @@ class ObjectFace(PathPocketBase.ObjectPocket):
 
 def SetupProperties():
     setup = PathPocketBase.SetupProperties()
+    setup.extend(
+        FeatureExtensions.SetupProperties()
+    )    
     setup.append("BoundaryShape")
     setup.append("ExcludeRaisedAreas")
     setup.append("ClearEdges")

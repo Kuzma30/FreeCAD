@@ -109,6 +109,7 @@
         "Cutter diameter to step over for the last loop when using offset pocket.\n"\
         "If =0, use 0.5*ToolRadius.", App::PropertyLength))\
 	((bool,from_center,FromCenter,false,"Start pocketing from center"))\
+	((bool,finishing_offset,UseFinishingOffset,false,"Finishing Offset Pass Only"))\ 	
 	((double,angle,Angle,45,"Pattern angle in degree",App::PropertyAngle))\
 	((double,angle_shift,AngleShift,0.0,"Pattern angle shift for each section", App::PropertyAngle))\
 	((double,shift,Shift,0.0,"Pattern shift distance for each section.\n"\

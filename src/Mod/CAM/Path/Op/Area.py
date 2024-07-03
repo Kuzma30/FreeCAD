@@ -223,26 +223,46 @@ class ObjectOp(PathOp.ObjectOp):
         area.add(baseobject)
 
         areaParams = self.areaOpAreaParams(obj, isHole)
-        areaParams["SectionTolerance"] = (
-            FreeCAD.Base.Precision.confusion() * 10
-        )  # basically 1e-06
+        areaParams["SectionTolerance"] = FreeCAD.Base.Precision.confusion() * 10 # basically 1e-06
 
         heights = [i for i in self.depthparams]
         Path.Log.debug("depths: {}".format(heights))
         area.setParams(**areaParams)
         obj.AreaParams = str(area.getParams())
+        
+        if hasattr(obj, "NoPathReverse") and obj.NoPathReverse:
+            heightsOr = heights
+            heights = heights[-1]        
 
         Path.Log.debug("Area with params: {}".format(area.getParams()))
 
         sections = area.makeSections(
             mode=0, project=self.areaOpUseProjection(obj), heights=heights
         )
+        if hasattr(obj, "multiProfile") and self.multiProfile:
+            sections = []  
+            restoreOff = obj.OffsetExtra.Value
+            
+            if self.multiCutOutsideIn:
+                heightsOr = heights
+                heights = heights[0] 
+        
+            for ts in self.multiProfileSteps:
+                obj.OffsetExtra.Value = obj.OffsetExtra.Value + ts
+                areaParams = self.areaOpAreaParams(obj, isHole)
+                area.setParams(**areaParams)         
+                MultiProfileSections = area.makeSections(
+                    mode=0, project=self.areaOpUseProjection(obj), heights=heights
+                )
+                obj.OffsetExtra.Value = restoreOff            
+ 
+                for w in MultiProfileSections:
+                    sections.append(w)                 
+        
         Path.Log.debug("sections = %s" % sections)
 
         # Rest machining
-        self.sectionShapes = self.sectionShapes + [
-            section.toTopoShape() for section in sections
-        ]
+        self.sectionShapes = self.sectionShapes + [section.toTopoShape() for section in sections]
         if hasattr(obj, "UseRestMachining") and obj.UseRestMachining:
             restSections = []
             for section in sections:
@@ -250,36 +270,15 @@ class ObjectOp(PathOp.ObjectOp):
                 z = bbox.ZMin
                 sectionClearedAreas = []
                 for op in self.job.Operations.Group:
-                    if self in [
-                        x.Proxy
-                        for x in [op] + op.OutListRecursive
-                        if hasattr(x, "Proxy")
-                    ]:
+                    if self in [x.Proxy for x in [op] + op.OutListRecursive if hasattr(x, "Proxy")]:
                         break
                     if hasattr(op, "Active") and op.Active and op.Path:
-                        tool = (
-                            op.Proxy.tool
-                            if hasattr(op.Proxy, "tool")
-                            else op.ToolController.Proxy.getTool(op.ToolController)
-                        )
+                        tool = op.Proxy.tool if hasattr(op.Proxy, "tool") else op.ToolController.Proxy.getTool(op.ToolController)
                         diameter = tool.Diameter.getValueAs("mm")
-                        dz = (
-                            0
-                            if not hasattr(tool, "TipAngle")
-                            else -PathUtils.drillTipLength(tool)
-                        )  # for drills, dz translates to the full width part of the tool
-                        sectionClearedAreas.append(
-                            section.getClearedArea(
-                                op.Path,
-                                diameter,
-                                z + dz + self.job.GeometryTolerance.getValueAs("mm"),
-                                bbox,
-                            )
-                        )
-                restSection = section.getRestArea(
-                    sectionClearedAreas, self.tool.Diameter.getValueAs("mm")
-                )
-                if restSection is not None:
+                        dz = 0 if not hasattr(tool, "TipAngle") else -PathUtils.drillTipLength(tool)  # for drills, dz translates to the full width part of the tool
+                        sectionClearedAreas.append(section.getClearedArea(op.Path, diameter, z+dz+self.job.GeometryTolerance.getValueAs("mm"), bbox))
+                restSection = section.getRestArea(sectionClearedAreas, self.tool.Diameter.getValueAs("mm"))
+                if (restSection is not None):
                     restSections.append(restSection)
             sections = restSections
 
@@ -298,13 +297,16 @@ class ObjectOp(PathOp.ObjectOp):
         pathParams["preamble"] = False
 
         # disable path sorting for offset and zigzag-offset paths
-        if (
-            hasattr(obj, "OffsetPattern")
-            and obj.OffsetPattern in ["ZigZagOffset", "Offset"]
-            and hasattr(obj, "MinTravel")
-            and not obj.MinTravel
-        ):
+        if hasattr(obj, "OffsetPattern") and obj.OffsetPattern in ["ZigZagOffset", "Offset"] and hasattr(obj, "MinTravel") and not obj.MinTravel:
             pathParams["sort_mode"] = 0
+            
+        ReverseMulti = False
+        if hasattr(obj, "multiProfile") and self.multiProfile:  
+            if self.multiCutOutsideIn:
+                pathParams["sort_mode"] = 1
+                ReverseMulti  = True
+            else:    
+                pathParams["sort_mode"] = 0             
 
         if not self.areaOpRetractTool(obj):
             pathParams["threshold"] = 2.001 * self.radius
@@ -335,6 +337,22 @@ class ObjectOp(PathOp.ObjectOp):
                 -1
             ].getShape()
             simobj = sec.extrude(FreeCAD.Vector(0, 0, baseobject.BoundBox.ZMax))
+            
+        if ReverseMulti  or (hasattr(obj, "NoPathReverse") and obj.NoPathReverse):
+            listR = []
+            incHeight = 0
+            countHeights = len(heightsOr)
+            
+            while countHeights > 0:
+                for c in pp.Commands:
+                    if c.Z == heights:
+                        c.Z = heightsOr[incHeight]
+                    listR.append(c)
+                incHeight = incHeight + 1
+                countHeights = countHeights - 1
+            pp.Commands = listR                
+            
+            return pp, simobj            
 
         return pp, simobj
 
@@ -446,6 +464,9 @@ class ObjectOp(PathOp.ObjectOp):
             locations = PathUtils.sort_locations(locations, ["x", "y"])
 
             shapes = [j["shape"] for j in locations]
+            
+            if hasattr(obj, "multiProfile") and self.multiCutOutsideIn:  
+                shapes.reverse()            
 
         sims = []
         self.sectionShapes = []
@@ -489,12 +510,13 @@ class ObjectOp(PathOp.ObjectOp):
                 and self.endVector is not None
                 and len(self.commandlist) > 1
             ):
-                self.endVector[2] = obj.ClearanceHeight.Value
-                self.commandlist.append(
-                    Path.Command(
-                        "G0", {"Z": obj.ClearanceHeight.Value, "F": self.vertRapid}
+                if not hasattr(obj, "multiProfile"):  
+                    self.endVector[2] = obj.ClearanceHeight.Value
+                    self.commandlist.append(
+                        Path.Command(
+                            "G0", {"Z": obj.ClearanceHeight.Value, "F": self.vertRapid}
+                        )
                     )
-                )
 
         Path.Log.debug("obj.Name: " + str(obj.Name) + "\n\n")
         return sims

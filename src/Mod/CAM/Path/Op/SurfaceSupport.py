@@ -491,7 +491,7 @@ class ProcessSelectedFaces:
     Calling the preProcessModel(module) method returns
     two compound objects as a tuple: (FACES, VOIDS) or False."""
 
-    def __init__(self, JOB, obj):
+    def __init__(self, JOB, obj, exts, subexts):
         self.modelSTLs = []
         self.profileShapes = []
         self.tempGroup = False
@@ -513,6 +513,8 @@ class ProcessSelectedFaces:
         self.JOB = JOB
         self.obj = obj
         self.profileEdges = "None"
+        self.exts = exts  
+        self.subexts = subexts        
 
         if hasattr(obj, "ProfileEdges"):
             self.profileEdges = obj.ProfileEdges
@@ -708,6 +710,18 @@ class ProcessSelectedFaces:
                     V[m].append((shape, faceIdx))
                     Path.Log.debug(".. Avoiding {}".format(sub))
                     hasVoid = True
+        if hasFace is True: 
+            fIdx = 100
+            for ext in self.exts:
+                F[m].append((ext, fIdx))  
+                fIdx += 1        
+        if hasFace is True and self.subexts:  
+            fIdx = 200
+            if V[m] is False:
+                V[m] = []
+            for subext in self.subexts:
+                V[m].append((subext, fIdx))  
+                fIdx += 1                       
         return (hasFace, hasVoid)
 
     def _preProcessFacesAndVoids(self, base, FCS, VDS):
@@ -2503,6 +2517,12 @@ class OCL_Tool:
                 if hasattr(self.tool, "ShapeName"):
                     self.toolType = self.tool.ShapeName  # Indicates ToolBit tool
                     self.toolMode = "ToolBit"
+                    if "endmill_flat" in self.toolType: 
+                        self.toolType = "endmill"
+                    if "endmill_ball" in self.toolType:
+                        self.toolType = "ballend"
+                    if "endmill_rad" in self.toolType:
+                        self.toolType = "bullnose"                      
         if self.toolType:
             Path.Log.debug(
                 "OCL_Tool tool mode, type: {}, {}".format(self.toolMode, self.toolType)

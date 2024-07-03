@@ -50,13 +50,14 @@ def debugEdge(edge, prefix, force=False):
         pf = edge.valueAt(edge.FirstParameter)
         pl = edge.valueAt(edge.LastParameter)
         if type(edge.Curve) == Part.Line or type(edge.Curve) == Part.LineSegment:
-            print(
+            pass
+            """print(
                 "%s %s((%.2f, %.2f, %.2f) - (%.2f, %.2f, %.2f))"
                 % (prefix, type(edge.Curve), pf.x, pf.y, pf.z, pl.x, pl.y, pl.z)
-            )
+            )"""
         else:
             pm = edge.valueAt((edge.FirstParameter + edge.LastParameter) / 2)
-            print(
+            """print(
                 "%s %s((%.2f, %.2f, %.2f) - (%.2f, %.2f, %.2f) - (%.2f, %.2f, %.2f))"
                 % (
                     prefix,
@@ -71,7 +72,7 @@ def debugEdge(edge, prefix, force=False):
                     pl.y,
                     pl.z,
                 )
-            )
+            )"""
 
 
 def debugMarker(vector, label, color=None, radius=0.5):

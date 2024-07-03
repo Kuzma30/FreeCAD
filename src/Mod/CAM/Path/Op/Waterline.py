@@ -921,7 +921,9 @@ class ObjectWaterline(PathOp.ObjectOp):
         # ######  MAIN COMMANDS FOR OPERATION ######
 
         # Begin processing obj.Base data and creating GCode
-        PSF = PathSurfaceSupport.ProcessSelectedFaces(JOB, obj)
+        exts = []  
+        subexts = []  
+        PSF = PathSurfaceSupport.ProcessSelectedFaces(JOB, obj, exts, subexts)  
         PSF.setShowDebugObjects(tempGroup, self.showDebugObjects)
         PSF.radius = self.radius
         PSF.depthParams = self.depthParams

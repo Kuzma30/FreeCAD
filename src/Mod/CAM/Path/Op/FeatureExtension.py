@@ -139,6 +139,7 @@ def createExtension(obj, extObj, extFeature, extSub):
         extFeature,
         extSub,
         obj.ExtensionLengthDefault,
+        obj.IndependentExtensionsList,        
         Extension.DirectionNormal,
     )
 
@@ -154,6 +155,12 @@ def readObjExtensionFeature(obj):
             extensions.append((extObj.Name, extFeature, extSub))
     return extensions
 
+def getIndependent(obj):
+    if not obj.IndependentExtensionsList:
+        obj.IndependentExtensionsList = []    
+    return obj.IndependentExtensionsList
+def setIndependent(obj, inde):
+    obj.IndependentExtensionsList = inde
 
 def getExtensions(obj):
     Path.Log.debug("getExtenstions()")
@@ -216,7 +223,7 @@ class Extension(object):
     DirectionX = 1
     DirectionY = 2
 
-    def __init__(self, op, obj, feature, sub, length, direction):
+    def __init__(self, op, obj, feature, sub, length, IndependentExtensionsList, direction):
         Path.Log.debug(
             "Extension(%s, %s, %s, %.2f, %s"
             % (obj.Label, feature, sub, length, direction)
@@ -229,6 +236,7 @@ class Extension(object):
         self.direction = direction
         self.extFaces = None
         self.isDebug = True if Path.Log.getLevel(Path.Log.thisModule()) == 4 else False
+        self.IndependentExtensionsList = IndependentExtensionsList
 
         self.avoid = False
         if sub.startswith("Avoid_"):
@@ -239,11 +247,12 @@ class Extension(object):
     def getSubLink(self):
         return "%s:%s" % (self.feature, self.sub)
 
-    def _extendEdge(self, feature, e0, direction):
+    def _extendEdge(self, feature, e0, direction, length):
         Path.Log.track(feature, e0, direction)
         if isinstance(e0.Curve, Part.Line) or isinstance(e0.Curve, Part.LineSegment):
             e2 = e0.copy()
-            off = self.length.Value * direction
+            #off = self.length.Value * direction
+            off = length * direction
             e2.translate(off)
             e2 = Path.Geom.flipEdge(e2)
             e1 = Part.Edge(
@@ -261,6 +270,17 @@ class Extension(object):
             return wire
 
         return extendWire(feature, Part.Wire([e0]), self.length.Value)
+        
+    def _getEdgeNumbersOp(self):
+        if "Wire" in self.sub:
+            numbers = [nr for nr in self.sub[5:-1].split(",")]
+        else:
+            numbers = [self.sub[4:]]
+        Path.Log.debug("_getEdgeNumbers() -> %s" % numbers)
+        return numbers
+
+    def _getEdgeNamesOp(self):
+        return ["Edge%s" % nr for nr in self._getEdgeNumbersOp()]          
 
     def _getEdgeNumbers(self):
         if "Wire" in self.sub:
@@ -269,7 +289,7 @@ class Extension(object):
             numbers = [self.sub[4:]]
 
         Path.Log.debug("_getEdgeNumbers() -> %s" % numbers)
-        return numbers
+        return numbers            
 
     def _getEdgeNames(self):
         return ["Edge%s" % nr for nr in self._getEdgeNumbers()]
@@ -331,6 +351,15 @@ class Extension(object):
 
         feature = self.obj.Shape.getElement(self.feature)
         edges = self._getEdges()
+        edgesName = self._getEdgeNames()   
+
+        if self.IndependentExtensionsList:
+            for ind in self.IndependentExtensionsList:  
+                if edgesName[0] in ind:
+                    newlength = float(ind.split(edgesName[0]+":",1)[1])
+                    if newlength != 0.0:
+                        length = newlength
+                    break          
         sub = Part.Wire(Part.sortEdges(edges)[0])
 
         if 1 == len(edges):
@@ -418,7 +447,7 @@ class Extension(object):
                 if direction is None:
                     return None
 
-            return self._extendEdge(feature, edges[0], direction)
+            return self._extendEdge(feature, edges[0], direction, length)
 
         elif sub.isClosed():
             Path.Log.debug("Extending multi-edge closed wire")
@@ -499,20 +528,41 @@ def initialize_properties(obj):
                 "When enabled connected extension edges are combined to wires.",
             ),
         )
-        obj.ExtensionCorners = True
+        obj.ExtensionCorners = False
+        
+    if not hasattr(obj, "IndependentExtensions"):
+        obj.addProperty(
+            "App::PropertyBool",
+            "IndependentExtensions",
+            "Extension",
+            QT_TRANSLATE_NOOP(
+                "App::Property",
+                "Extend Edges Independently.",
+            ),
+        ) 
+    if not hasattr(obj, "IndependentExtensionsList"):
+        obj.addProperty(
+            "App::PropertyStringList",
+            "IndependentExtensionsList",
+            "Extension",
+            QT_TRANSLATE_NOOP(
+                "App::Property",
+                "List of Edges to Extend Independently.",
+            ),
+        )         
 
     obj.setEditorMode("ExtensionFeature", 2)
 
 
 def set_default_property_values(obj, job):
     """set_default_property_values(obj, job) ... set default values for feature properties"""
-    obj.ExtensionCorners = True
+    obj.ExtensionCorners = False
     obj.setExpression("ExtensionLengthDefault", "OpToolDiameter / 2.0")
 
 
 def SetupProperties():
     """SetupProperties()... Returns list of feature property names"""
-    setup = ["ExtensionLengthDefault", "ExtensionFeature", "ExtensionCorners"]
+    setup = ["ExtensionLengthDefault", "ExtensionFeature", "ExtensionCorners", "IndependentExtensions", "IndependentExtensionsList"]
     return setup
 
 

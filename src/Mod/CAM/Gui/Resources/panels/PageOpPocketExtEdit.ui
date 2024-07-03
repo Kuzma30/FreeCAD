@@ -68,14 +68,20 @@
             <string>Extend Corners</string>
            </property>
            <property name="checked">
-            <bool>true</bool>
+            <bool>false</bool>
            </property>
           </widget>
          </item>
          <item row="3" column="0">
-          <widget class="QLabel" name="label">
+          <widget class="QCheckBox" name="independentExtensions">
+           <property name="toolTip">
+            <string>Extend Edges Independently.</string>
+           </property>
            <property name="text">
-            <string>Default Length</string>
+            <string>Extend Edges Ind</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
            </property>
           </widget>
          </item>

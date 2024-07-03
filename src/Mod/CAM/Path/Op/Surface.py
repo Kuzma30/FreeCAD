@@ -58,6 +58,9 @@ import time
 from lazy_loader.lazy_loader import LazyLoader
 
 Part = LazyLoader("Part", globals(), "Part")
+FeatureExtensions = LazyLoader(
+    "Path.Op.FeatureExtension", globals(), "Path.Op.FeatureExtension"
+)
 
 if FreeCAD.GuiUp:
     import FreeCADGui
@@ -82,6 +85,7 @@ class ObjectSurface(PathOp.ObjectOp):
             | PathOp.FeatureStepDown
             | PathOp.FeatureCoolant
             | PathOp.FeatureBaseFaces
+            | PathOp.FeatureLocations
         )
 
     def initOperation(self, obj):
@@ -97,6 +101,8 @@ class ObjectSurface(PathOp.ObjectOp):
 
         if not hasattr(obj, "DoNotSetDefaultValues"):
             self.setEditorProperties(obj)
+            
+        FeatureExtensions.initialize_properties(obj)            
 
     def initOpProperties(self, obj, warn=False):
         """initOpProperties(obj) ... create operation specific properties"""
@@ -388,6 +394,14 @@ class ObjectSurface(PathOp.ObjectOp):
             ),
             (
                 "App::PropertyBool",
+                "OptimizeLeadInOut",
+                "Optimization",
+                QT_TRANSLATE_NOOP(
+                    "App::Property", "Optimize for LeadInOut Dressup."
+                ),
+            ),             
+            (
+                "App::PropertyBool",
                 "CircularUseG2G3",
                 "Optimization",
                 QT_TRANSLATE_NOOP(
@@ -528,7 +542,7 @@ class ObjectSurface(PathOp.ObjectOp):
             "HandleMultipleFeatures": "Collectively",
             "PatternCenterAt": "CenterOfMass",
             "GapSizes": "No gaps identified.",
-            "StepOver": 100.0,
+            "StepOver": 85.0,
             "CutPatternAngle": 0.0,
             "CutterTilt": 0.0,
             "StartIndex": 0.0,
@@ -541,7 +555,7 @@ class ObjectSurface(PathOp.ObjectOp):
             "GapThreshold": 0.005,
             "AngularDeflection": 0.25,  # AngularDeflection is unused
             # Reasonable compromise between speed & precision
-            "LinearDeflection": 0.001,
+            "LinearDeflection": 0.01,
             # For debugging
             "ShowTempObjects": False,
         }
@@ -554,7 +568,7 @@ class ObjectSurface(PathOp.ObjectOp):
                 # avoid false collisions with the model mesh, so make sure we
                 # default to tessellating with greater precision than the target
                 # GeometryTolerance.
-                defaults["LinearDeflection"] = job.GeometryTolerance.Value / 4
+                defaults["LinearDeflection"] = job.GeometryTolerance.Value / 2
         if warn:
             msg = translate("PathSurface", "The GeometryTolerance for this Job is 0.0.")
             msg += translate(
@@ -617,6 +631,7 @@ class ObjectSurface(PathOp.ObjectOp):
                 setattr(obj, prop, val)
 
         self.setEditorProperties(obj)
+        FeatureExtensions.initialize_properties(obj)        
 
     def opApplyPropertyDefaults(self, obj, job, propList):
         # Set standard property defaults
@@ -657,6 +672,8 @@ class ObjectSurface(PathOp.ObjectOp):
         else:
             obj.OpFinalDepth.Value = -10
             obj.OpStartDepth.Value = 10
+
+        FeatureExtensions.set_default_property_values(obj, job)
 
         Path.Log.debug("Default OpFinalDepth: {}".format(obj.OpFinalDepth.Value))
         Path.Log.debug("Default OpStartDepth: {}".format(obj.OpStartDepth.Value))
@@ -917,9 +934,48 @@ class ObjectSurface(PathOp.ObjectOp):
                 self.boundBoxes.append(JOB.Stock.Shape.BoundBox)
 
         # ######  MAIN COMMANDS FOR OPERATION ######
+        
+        # Get extensions and identify faces to avoid Jim add Extensions
+        avoidFeatures = list()
+        extensions = FeatureExtensions.getExtensions(obj)
+        subtractExt = []                     
+        includeExt = []    
+        for e in extensions:
+            if e.IndependentExtensionsList: 
+                eNms = e._getEdgeNamesOp()                    
+                for ind in e.IndependentExtensionsList:  
+                    if eNms[0] in ind:
+                        if float(ind.split(eNms[0]+":",1)[1]) < 0:
+                            subtractExt.append(e)  
+                        else:
+                            includeExt.append(e)  
+            else:
+                includeExt = extensions                
+                                
+            if e.avoid:
+                avoidFeatures.append(e.feature)
+                
+        exts = []    
+        if includeExt: 
+            for ext in includeExt: 
+                if not ext.avoid:
+                    wire = ext.getWire()
+                    if wire:
+                        faces = ext.getExtensionFaces(wire)
+                        for f in faces:
+                            exts.append(f)  
+    
+        subexts = []      
+        if subtractExt:
+            for sub in subtractExt:
+                wire = sub.getWire()
+                if wire:
+                    faces = sub.getExtensionFaces(wire)
+                    for f in faces:
+                        subexts.append(f)         
 
         # Begin processing obj.Base data and creating GCode
-        PSF = PathSurfaceSupport.ProcessSelectedFaces(JOB, obj)
+        PSF = PathSurfaceSupport.ProcessSelectedFaces(JOB, obj, exts, subexts)
         PSF.setShowDebugObjects(tempGroup, self.showDebugObjects)
         PSF.radius = self.radius
         PSF.depthParams = self.depthParams
@@ -1516,6 +1572,7 @@ class ObjectSurface(PathOp.ObjectOp):
             Path.Log.debug("Multi-pass lyrDep: {}".format(round(lyrDep, 4)))
 
             # Cycle through step-over sections (line segments or arcs)
+            passBreak = False
             for so in range(0, len(SCANDATA)):
                 SO = SCANDATA[so]
                 lenSO = len(SO)
@@ -1523,8 +1580,10 @@ class ObjectSurface(PathOp.ObjectOp):
                 # Pre-process step-over parts for layer depth and holds
                 ADJPRTS = []
                 LMAX = []
+                AddBrk = []
                 soHasPnts = False
                 brkFlg = False
+                cAD = -1
                 for i in range(0, lenSO):
                     prt = SO[i]
                     lenPrt = len(prt)
@@ -1533,8 +1592,9 @@ class ObjectSurface(PathOp.ObjectOp):
                             ADJPRTS.append(prt)
                             LMAX.append(prt)
                             brkFlg = False
+                            cAD = cAD + 1
                     else:
-                        (PTS, lMax) = self._planarMultipassPreProcess(
+                        (PTS, lMax, Brk) = self._planarMultipassPreProcess(
                             obj, prt, prevDepth, lyrDep
                         )
                         if len(PTS) > 0:
@@ -1542,6 +1602,36 @@ class ObjectSurface(PathOp.ObjectOp):
                             soHasPnts = True
                             brkFlg = True
                             LMAX.append(lMax)
+                            cAD = cAD + 1  
+                            if Brk is True:
+                                AddBrk.append(cAD) 
+                if len(AddBrk):
+                    AddBrk.sort(reverse=True)
+                    for ti in AddBrk:
+                        NewADJP = []
+                        CntIn = 1
+                        KRBin = False
+                        for ri in ADJPRTS[ti]:
+                            if ri == 'KRB':
+                                if CntIn > 1:
+                                    CntIn = CntIn + 1
+                                ADJPRTS.insert((ti+CntIn), ("KRB"))  
+                                ADJPRTS.insert((ti+CntIn), NewADJP)
+                                NewADJP = []
+                                CntIn = CntIn + 1
+                                KRBin = True                              
+                            else:            
+                                NewADJP.append(ri)
+                                if obj.CutPattern == "Spiral" and KRBin is False:
+                                    ADJPRTS.insert((ti+1), ("KRB"))  
+                                    NewADJP = []
+                        if len(NewADJP) > 0:
+                            if KRBin is False:
+                                CntIn = 0
+                            ADJPRTS.insert((ti+(CntIn+1)), NewADJP)
+                            ADJPRTS.pop(ti)
+                            NewADJP = []                                 
+                                                    
                 # Efor
                 lenAdjPrts = len(ADJPRTS)
 
@@ -1580,10 +1670,14 @@ class ObjectSurface(PathOp.ObjectOp):
                     for i in range(0, lenAdjPrts):
                         prt = ADJPRTS[i]
                         lenPrt = len(prt)
-                        if prt == "BRK" and prtsHasCmds:
+                        if (prt == "BRK" or prt == "KRB") and prtsHasCmds: 
                             if i + 1 < lenAdjPrts:
                                 nxtStart = ADJPRTS[i + 1][0]
-                                prtsCmds.append(Path.Command("N (--Break)", {}))
+                                if prt == "BRK":
+                                    prtsCmds.append(Path.Command("N (--Break)", {}))
+                                else:
+                                    prtsCmds.append(Path.Command("N (--PassBreak)", {}))
+                                    passBreak = True  
                             else:
                                 # Transition straight up to Safe Height if no more parts
                                 nxtStart = FreeCAD.Vector(
@@ -1596,6 +1690,15 @@ class ObjectSurface(PathOp.ObjectOp):
                             )
                         else:
                             segCmds = False
+                            if passBreak is False:
+                                prtsCmds.append(
+                                    Path.Command("N (--Start)", {}) # Jim Surface LeadInOut fix                                   
+                                ) 
+                            else:
+                                prtsCmds.append(
+                                    Path.Command("N (--passStart)", {}) # Jim Surface LeadInOut fix                                   
+                                )
+                                passBreak = False                                                                                                   
                             prtsCmds.append(
                                 Path.Command("N (part {})".format(i + 1), {})
                             )
@@ -1683,19 +1786,65 @@ class ObjectSurface(PathOp.ObjectOp):
     def _planarMultipassPreProcess(self, obj, LN, prvDep, layDep):
         ALL = []
         PTS = []
+        Brk = False # Jim 
+        BrkFl = False
         optLinTrans = obj.OptimizeStepOverTransitions
-        safe = math.ceil(obj.SafeHeight.Value)
+        testlayDep = obj.OpStartDepth.Value - obj.StepDown.Value # Jim
+        SAFE = False
 
-        if optLinTrans is True:
+        if optLinTrans is True and layDep != testlayDep:
             for P in LN:
                 ALL.append(P)
                 # Handle layer depth AND hold points
                 if P.z <= layDep:
+                    ALL.append(P)
                     PTS.append(FreeCAD.Vector(P.x, P.y, layDep))
+                    BrkFl = False
                 elif P.z > prvDep:
-                    PTS.append(FreeCAD.Vector(P.x, P.y, safe))
+                    if BrkFl is False:
+                        PTS.append('KRB')
+                        BrkFl = True
+                        SAFE = True
                 else:
+                    ALL.append(P)
                     PTS.append(FreeCAD.Vector(P.x, P.y, P.z))
+                    BrkFl = False
+                    
+            if SAFE is True:
+                if obj.CutPattern in "Offset":
+                    Cnt = 0
+                    for i in range(0, len(PTS)):
+                        if PTS[i] == 'KRB':
+                            PTS.pop(i-Cnt)
+                            Cnt = Cnt + 1
+                        else:
+                            Brk = True
+                            break
+                    for i in range(len(PTS)-1, 0, -1):
+                        if PTS[i] == 'KRB':
+                            PTS.pop(i)
+                        else:
+                            Brk = True
+                            break
+                            
+                if obj.CutPattern in ["Line", "ZigZag", "CircularZigZag", "Circular"]:
+                    if PTS[0] == 'KRB':
+                        PTS.pop(0)
+                    for i in range(len(PTS)-1, 0, -1):
+                        if PTS[1] == 'KRB':
+                            PTS.pop(i)
+                        else:
+                            Brk = True
+                            break
+                            
+                if obj.CutPattern == "Spiral":
+                    if PTS[0] == 'KRB':
+                        PTS.pop(0)
+                    if len(PTS) > 1:
+                        if PTS[-1] == 'KRB':
+                            del PTS[-1]
+                            Brk = True                                                   
+                                    
             # Efor
         else:
             for P in LN:
@@ -1707,29 +1856,6 @@ class ObjectSurface(PathOp.ObjectOp):
                     PTS.append(FreeCAD.Vector(P.x, P.y, P.z))
             # Efor
 
-        if optLinTrans is True:
-            # Remove leading and trailing Hold Points
-            popList = []
-            for i in range(0, len(PTS)):  # identify leading string
-                if PTS[i].z == safe:
-                    popList.append(i)
-                else:
-                    break
-            popList.sort(reverse=True)
-            for p in popList:  # Remove hold points
-                PTS.pop(p)
-                ALL.pop(p)
-            popList = []
-            for i in range(len(PTS) - 1, -1, -1):  # identify trailing string
-                if PTS[i].z == safe:
-                    popList.append(i)
-                else:
-                    break
-            popList.sort(reverse=True)
-            for p in popList:  # Remove hold points
-                PTS.pop(p)
-                ALL.pop(p)
-
         # Determine max Z height for remaining points on line
         lMax = obj.FinalDepth.Value
         if len(ALL) > 0:
@@ -1738,7 +1864,7 @@ class ObjectSurface(PathOp.ObjectOp):
                 if P.z > lMax:
                     lMax = P.z
 
-        return (PTS, lMax)
+        return (PTS, lMax, Brk)
 
     def _planarMultipassProcess(self, obj, PNTS, lMax):
         output = []
@@ -1827,6 +1953,7 @@ class ObjectSurface(PathOp.ObjectOp):
         cmds = []
         rtpd = False
         height = obj.SafeHeight.Value
+        testlayDep = obj.OpStartDepth.Value - obj.StepDown.Value        
         # Allow cutter-down transitions with a distance up to 2x cutter
         # diameter. We might be able to extend this further to the
         # full-retract-and-rapid break even point in the future, but this will
@@ -1834,12 +1961,12 @@ class ObjectSurface(PathOp.ObjectOp):
         # to avoid inadvertent cutting.
         maxXYDistanceSqrd = (self.cutter.getDiameter() * 2) ** 2
 
-        if obj.OptimizeStepOverTransitions:
+        if obj.OptimizeStepOverTransitions and p2.z != testlayDep:
             if p1 and p2:
                 # Short distance within step over
                 xyDistanceSqrd = (p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2
                 # Try to keep cutting for short distances.
-                if xyDistanceSqrd <= maxXYDistanceSqrd:
+                if (xyDistanceSqrd <= maxXYDistanceSqrd) and not obj.OptimizeLeadInOut:
                     # Try to keep cutting, following the model shape
                     (transLine, minZ, maxZ) = self._getTransitionLine(
                         safePDC, p1, p2, obj
@@ -1887,7 +2014,7 @@ class ObjectSurface(PathOp.ObjectOp):
             cmds.append(
                 Path.Command("G0", {"X": p2.x, "Y": p2.y, "F": self.horizRapid})
             )
-        if rtpd is not False:  # ReturnToPreviousDepth
+        if rtpd is not False and not obj.OptimizeLeadInOut:  # ReturnToPreviousDepth
             cmds.append(Path.Command("G0", {"Z": rtpd, "F": self.vertRapid}))
 
         return cmds

@@ -81,9 +81,10 @@ class ObjectPocket(PathPocketBase.ObjectPocket):
 
     def areaOpSetDefaultValues(self, obj, job):
         """areaOpSetDefaultValues(obj, job) ... set default values"""
-        obj.StepOver = 100
+        obj.StepOver = 85
         obj.ZigZagAngle = 45
         obj.UseOutline = False
+        obj.PocketLastStepOver = 3
         FeatureExtensions.set_default_property_values(obj, job)
 
     def areaOpShapes(self, obj):
@@ -97,7 +98,20 @@ class ObjectPocket(PathPocketBase.ObjectPocket):
 
         # Get extensions and identify faces to avoid
         extensions = FeatureExtensions.getExtensions(obj)
+        subtractExt = []                    
+        includeExt = []
+
         for e in extensions:
+            if e.IndependentExtensionsList:
+                eNms = e._getEdgeNamesOp()                    
+                for ind in e.IndependentExtensionsList:  
+                    if eNms[0] in ind:
+                        if float(ind.split(eNms[0]+":",1)[1]) < 0:
+                            subtractExt.append(e)  
+                        else:
+                            includeExt.append(e)  
+            else:
+                includeExt = extensions                                          
             if e.avoid:
                 avoidFeatures.append(e.feature)
 
@@ -137,18 +151,32 @@ class ObjectPocket(PathPocketBase.ObjectPocket):
                         self.horiz.append(face)
 
             # Add faces for extensions
-            self.exts = []
-            for ext in extensions:
-                if not ext.avoid:
-                    wire = ext.getWire()
-                    if wire:
-                        faces = ext.getExtensionFaces(wire)
-                        for f in faces:
-                            self.horiz.append(f)
-                            self.exts.append(f)
+            self.exts = []   
+            if includeExt:    
+                for ext in includeExt:  
+                    if not ext.avoid:
+                        wire = ext.getWire()
+                        if wire:
+                            faces = ext.getExtensionFaces(wire)
+                            for f in faces:
+                                self.horiz.append(f)
+                                self.exts.append(f)  
 
-            # check all faces and see if they are touching/overlapping and combine and simplify
+            self.subexts = []          
+            if subtractExt:
+                for sub in subtractExt:
+                    wire = sub.getWire()
+                    if wire:
+                        faces = sub.getExtensionFaces(wire)
+                        for f in faces:
+                            self.subexts.append(f)                            
+
+            # check all faces and see if they are touching/overlapping and combine and simplify            
             self.horizontal = Path.Geom.combineHorizontalFaces(self.horiz)
+
+            if self.subexts:  
+                self.cut = Path.Geom.combineHorizontalFaces(self.subexts)   
+                self.horizontal[0] = self.horizontal[0].cut(self.cut)  
 
             # Move all faces to final depth less buffer before extrusion
             # Small negative buffer is applied to compensate for internal significant digits/rounding issue

@@ -68,14 +68,14 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
 
         comboToPropertyMap = [
             ("cutMode", "CutMode"),
-            ("offsetPattern", "OffsetPattern"),
+            ("offsetPattern", "OffsetPattern")
         ]
         enumTups = PathPocket.ObjectPocket.pocketPropertyEnumerations(dataType="raw")
 
         self.populateCombobox(form, enumTups, comboToPropertyMap)
 
         if not FeatureFacing & self.pocketFeatures():
-            form.facingWidget.hide()
+            #form.facingWidget.hide()
             form.clearEdges.hide()
 
         if FeaturePocket & self.pocketFeatures():
@@ -109,6 +109,32 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         if setModel:
             PathGuiUtil.updateInputField(obj, "ZigZagAngle", self.form.zigZagAngle)
 
+    def updateFinishingOffset(self, obj, setModel=True):   
+        if obj.OffsetPattern in ["Offset"] and hasattr(obj, "HandleMultipleFeatures"):   
+            self.form.useFinishingOffset.show()
+        else:
+            self.form.useFinishingOffset.hide()
+            
+    def updateNoPathReverse(self, obj, setModel=True):   
+        if self.form.useStartPoint.isChecked() and not hasattr(obj, "HandleMultipleFeatures"):  
+            self.form.NoPathReverse.show()
+        else:
+            self.form.NoPathReverse.hide()
+            self.form.NoPathReverse.setChecked(False)                       
+            
+    def updateRestMachining(self, obj, setModel=True):
+        if self.form.useFinishingOffset.isChecked() and obj.OffsetPattern in ["Offset"]:  
+            self.form.useRestMachining.setChecked(False)
+            self.form.useRestMachining.setEnabled(False)
+        else:
+            self.form.useRestMachining.setEnabled(True)           
+            
+    def updatestepOverPercent(self, obj, setModel=True):
+        if self.form.useFinishingOffset.isChecked() and obj.OffsetPattern in ["Offset"]:
+            self.form.stepOverPercent.setEnabled(False)
+        else:
+            self.form.stepOverPercent.setEnabled(True)
+
     def getFields(self, obj):
         """getFields(obj) ... transfers values from UI to obj's properties"""
         if obj.CutMode != str(self.form.cutMode.currentData()):
@@ -116,15 +142,24 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         if obj.StepOver != self.form.stepOverPercent.value():
             obj.StepOver = self.form.stepOverPercent.value()
         if obj.OffsetPattern != str(self.form.offsetPattern.currentData()):
-            obj.OffsetPattern = str(self.form.offsetPattern.currentData())
+            obj.OffsetPattern = str(self.form.offsetPattern.currentData())            
 
         PathGuiUtil.updateInputField(obj, "ExtraOffset", self.form.extraOffset)
         self.updateToolController(obj, self.form.toolController)
         self.updateCoolant(obj, self.form.coolantController)
         self.updateZigZagAngle(obj)
+        self.updateFinishingOffset(obj)  
+        self.updatestepOverPercent(obj)
+        self.updateRestMachining(obj)        
 
         if obj.UseStartPoint != self.form.useStartPoint.isChecked():
             obj.UseStartPoint = self.form.useStartPoint.isChecked()
+            
+        if obj.UseFinishingOffset != self.form.useFinishingOffset.isChecked():   
+            obj.UseFinishingOffset = self.form.useFinishingOffset.isChecked()      
+            
+        if obj.NoPathReverse != self.form.NoPathReverse.isChecked():   
+            obj.NoPathReverse = self.form.NoPathReverse.isChecked()             
 
         if obj.UseRestMachining != self.form.useRestMachining.isChecked():
             obj.UseRestMachining = self.form.useRestMachining.isChecked()
@@ -133,12 +168,10 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
             if obj.UseOutline != self.form.useOutline.isChecked():
                 obj.UseOutline = self.form.useOutline.isChecked()
 
-        self.updateMinTravel(obj)
+        self.updateMinTravel(obj) 
+        self.updateNoPathReverse(obj)        
 
         if FeatureFacing & self.pocketFeatures():
-            print(obj.BoundaryShape)
-            print(self.form.boundaryShape.currentText())
-            print(self.form.boundaryShape.currentData())
             if obj.BoundaryShape != str(self.form.boundaryShape.currentData()):
                 obj.BoundaryShape = str(self.form.boundaryShape.currentData())
             if obj.ClearEdges != self.form.clearEdges.isChecked():
@@ -153,6 +186,8 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
             ).UserString
         )
         self.form.useStartPoint.setChecked(obj.UseStartPoint)
+        self.form.useFinishingOffset.setChecked(obj.UseFinishingOffset)  
+        self.form.NoPathReverse.setChecked(obj.NoPathReverse)        
         self.form.useRestMachining.setChecked(obj.UseRestMachining)
         if FeatureOutline & self.pocketFeatures():
             self.form.useOutline.setChecked(obj.UseOutline)
@@ -164,8 +199,12 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
 
         self.form.minTravel.setChecked(obj.MinTravel)
         self.updateMinTravel(obj, False)
+        self.updateFinishingOffset(obj)  
+        self.updatestepOverPercent(obj)
+        self.updateRestMachining(obj)        
 
-        self.selectInComboBox(obj.OffsetPattern, self.form.offsetPattern)
+        self.selectInComboBox(obj.OffsetPattern, self.form.offsetPattern) 
+        self.updateNoPathReverse(obj)              
         self.selectInComboBox(obj.CutMode, self.form.cutMode)
         self.setupToolController(obj, self.form.toolController)
         self.setupCoolant(obj, self.form.coolantController)
@@ -179,12 +218,14 @@ class TaskPanelOpPage(PathOpGui.TaskPanelPage):
         signals = []
 
         signals.append(self.form.cutMode.currentIndexChanged)
-        signals.append(self.form.offsetPattern.currentIndexChanged)
+        signals.append(self.form.offsetPattern.currentIndexChanged)       
         signals.append(self.form.stepOverPercent.editingFinished)
         signals.append(self.form.zigZagAngle.editingFinished)
         signals.append(self.form.toolController.currentIndexChanged)
         signals.append(self.form.extraOffset.editingFinished)
         signals.append(self.form.useStartPoint.clicked)
+        signals.append(self.form.useFinishingOffset.clicked)  
+        signals.append(self.form.NoPathReverse.clicked)        
         signals.append(self.form.useRestMachining.clicked)
         signals.append(self.form.useOutline.clicked)
         signals.append(self.form.minTravel.clicked)

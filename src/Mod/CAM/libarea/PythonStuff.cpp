@@ -152,11 +152,11 @@ static boost::python::tuple nearest_point_to_curve(CCurve& c1, const CCurve& c2)
 	return bp::make_tuple(p, dist);
 }
 
-boost::python::list MakePocketToolpath(const CArea& a, double tool_radius, double extra_offset, double stepover, bool from_center, bool use_zig_zag, double zig_angle)
+boost::python::list MakePocketToolpath(const CArea& a, double tool_radius, double extra_offset, double stepover, bool from_center, bool finishing_offset, bool use_zig_zag, double zig_angle)
 {
 	std::list<CCurve> toolpath;
 
-	CAreaPocketParams params(tool_radius, extra_offset, stepover, from_center, use_zig_zag ? ZigZagPocketMode : SpiralPocketMode, zig_angle);
+	CAreaPocketParams params(tool_radius, extra_offset, stepover, from_center, finishing_offset, use_zig_zag ? ZigZagPocketMode : SpiralPocketMode, zig_angle);
 	a.SplitAndMakePocketToolpath(toolpath, params);
 
 	boost::python::list clist;

@@ -26,6 +26,7 @@
 #include <QFileInfo>
 #include <QImage>
 #include <QMenu>
+#include <QPainter>
 #include <QString>
 #include <QSvgRenderer>
 #include <Inventor/nodes/SoCoordinate3.h>
@@ -59,6 +60,13 @@ ViewProviderImagePlane::ViewProviderImagePlane()
 {
     ADD_PROPERTY_TYPE(Lighting, (1L), "Object Style", App::Prop_None, "Set object lighting.");
     Lighting.setEnums(LightingEnums);
+    ADD_PROPERTY_TYPE(OpaqueBackground,
+                      (false),
+                      "Object Style",
+                      App::Prop_None,
+                      "Replace a transparent background with white.\n"
+                      "Images rendered from PDF carry premultiplied alpha,\n"
+                      "which otherwise shows up as a black page.");
 
     texture = new SoTexture2;
     texture->ref();
@@ -162,6 +170,9 @@ void ViewProviderImagePlane::onChanged(const App::Property* prop)
             shapeHints->vertexOrdering = SoShapeHints::COUNTERCLOCKWISE;
         }
     }
+    if (prop == &OpaqueBackground) {
+        loadImage();
+    }
     ViewProviderGeometryObject::onChanged(prop);
 }
 
@@ -236,6 +247,22 @@ QImage ViewProviderImagePlane::loadRaster(const char* fileName) const
 {
     QImage img;
     img.load(QString::fromUtf8(fileName));
+
+    // Flatten onto white when asked. Images rendered from a PDF arrive in
+    // a premultiplied-alpha format whose transparent page background reads
+    // as black; other formats keep their alpha, so deliberate transparency
+    // is preserved.
+    if (!img.isNull() && img.hasAlphaChannel() && OpaqueBackground.getValue()) {
+        QImage opaque(img.size(), QImage::Format_RGB32);
+        opaque.fill(Qt::white);
+        QPainter painter(&opaque);
+        painter.drawImage(0, 0, img);
+        painter.end();
+        opaque.setDotsPerMeterX(img.dotsPerMeterX());
+        opaque.setDotsPerMeterY(img.dotsPerMeterY());
+        return opaque;
+    }
+
     return img;
 }
 

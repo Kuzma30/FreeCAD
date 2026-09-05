@@ -38,6 +38,24 @@ if (ENABLE_DEVELOPER_TESTS)
     list (APPEND FREECAD_QT_COMPONENTS Test)
 endif ()
 
+# Qt PDF for the native PDF viewer (optional).
+# Pdf gives QPdfDocument/QPdfSearchModel, PdfWidgets gives the QPdfView widget.
+# 6.4 is the floor: QPdfPageNavigator, QPdfLink and QPdfView's search
+# properties all arrived in that release.  Asking find_package for it means
+# older Qt6 simply leaves QtPdf_FOUND false and the viewer compiles away,
+# so no version checks are needed in the C++ sources.
+if(BUILD_GUI AND FREECAD_QT_MAJOR_VERSION EQUAL 6)
+    find_package(Qt6 6.4 QUIET COMPONENTS Pdf PdfWidgets)
+    if(Qt6Pdf_FOUND AND Qt6PdfWidgets_FOUND)
+        set(QtPdf_LIBRARIES Qt6::Pdf Qt6::PdfWidgets)
+        set(QtPdf_FOUND TRUE)
+        message(STATUS "Qt6::Pdf and Qt6::PdfWidgets found - PDF opens in a native viewer with text selection and search")
+    else()
+        set(QtPdf_FOUND FALSE)
+        message(STATUS "Qt6::PdfWidgets >= 6.4 not found - PDF falls back to raster image loading")
+    endif()
+endif()
+
 foreach(COMPONENT IN LISTS FREECAD_QT_COMPONENTS)
     find_package(Qt${FREECAD_QT_MAJOR_VERSION} REQUIRED COMPONENTS ${COMPONENT})
     if(TARGET Qt${FREECAD_QT_MAJOR_VERSION}::${COMPONENT})

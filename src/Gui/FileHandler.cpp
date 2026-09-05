@@ -33,6 +33,9 @@
 #include "BitmapFactory.h"
 #include "CommandT.h"
 #include "EditorView.h"
+#ifdef HAVE_QT_PDF_WIDGETS
+#include "PdfView.h"
+#endif
 #include "PythonEditor.h"
 #include "MainWindow.h"
 #include <App/Application.h>
@@ -146,6 +149,15 @@ bool FileHandler::openInternal()
         return true;
     }
 
+#ifdef HAVE_QT_PDF_WIDGETS
+    // Open PDF in the native viewer rather than rasterising it, so the text
+    // stays searchable.
+    if (hasExtension(QStringList() << QLatin1String("pdf"))) {
+        openPdf();
+        return true;
+    }
+#endif
+
     QStringList supportedFormats;
     auto imageFormats = QImageReader::supportedImageFormats();
     std::transform(
@@ -204,6 +216,19 @@ void FileHandler::openImage()
 {
     openInternal("Image::ImagePlane", "ImageFile");
 }
+
+#ifdef HAVE_QT_PDF_WIDGETS
+void FileHandler::openPdf()
+{
+    auto* view = new PdfView(getMainWindow());
+    if (!view->loadFile(filename)) {
+        delete view;
+        return;
+    }
+    view->resize(700, 850);
+    getMainWindow()->addWindow(view);
+}
+#endif
 
 void FileHandler::openPython()
 {

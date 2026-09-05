@@ -296,6 +296,27 @@ void MDIView::printPdf()
         printer.setOutputFileName(filename);
         printer.setCreator(QString::fromStdString(App::Application::getNameWithVersion()));
         print(&printer);
+        offerToAttachExport(filename);
+    }
+}
+
+void MDIView::offerToAttachExport(const QString& filename)  // NOLINT(*-convert-member-functions-to-static)
+{
+    // Let the Documentation module offer to keep the export with the model.
+    // It decides whether the user still wants to be asked, and this does
+    // nothing at all when the module is missing.
+    if (filename.isEmpty()) {
+        return;
+    }
+
+    try {
+        Base::Interpreter().runStringArg(
+            "import DocumentationCommands\n"
+            "DocumentationCommands.offerToAttachExport('%s')",
+            filename.toUtf8().constData());
+    }
+    catch (const Base::PyException&) {
+        // Module missing or disabled - exporting still succeeded.
     }
 }
 

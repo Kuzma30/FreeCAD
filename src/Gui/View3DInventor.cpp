@@ -29,6 +29,11 @@
 #include <QDragEnterEvent>
 #include <QLayout>
 #include <QMdiSubWindow>
+#include <QCheckBox>
+#include <QDialogButtonBox>
+#include <QFormLayout>
+#include <QSpinBox>
+#include <QDialog>
 #include <QMessageBox>
 #include <QMimeData>
 #include <QPainter>
@@ -294,8 +299,49 @@ void View3DInventor::printPdf()
         FileDialog::FilterList {{QStringLiteral("PDF"), {"*.pdf"}}}
     );
     if (!filename.isEmpty()) {
+        // The view is rasterised into the PDF, so both of these matter and
+        // neither has a good default for every job: a drawing to print wants
+        // white and plenty of dots, a figure to drop into a document often
+        // wants neither.
+        QDialog options(this);
+        options.setWindowTitle(tr("PDF export"));
+
+        // A PDF page is white paper by definition, so a transparent
+        // background is invisible in any viewer. It only shows once the
+        // file is placed into another document, which is worth saying
+        // rather than letting the option look broken.
+        auto* transparent = new QCheckBox(tr("Transparent background"), &options);
+        transparent->setChecked(pdfTransparentBackground);
+        transparent->setToolTip(
+            tr("PDF pages are always shown on white. This only has an\n"
+               "effect when the file is placed into another document."));
+
+        auto* dpi = new QSpinBox(&options);
+        dpi->setRange(72, 1200);
+        dpi->setSingleStep(50);
+        dpi->setSuffix(tr(" dpi"));
+        dpi->setValue(pdfResolution);
+
+        auto* buttons = new QDialogButtonBox(
+            QDialogButtonBox::Ok | QDialogButtonBox::Cancel, &options);
+        connect(buttons, &QDialogButtonBox::accepted, &options, &QDialog::accept);
+        connect(buttons, &QDialogButtonBox::rejected, &options, &QDialog::reject);
+
+        auto* form = new QFormLayout(&options);
+        form->addRow(tr("Resolution:"), dpi);
+        form->addRow(QString(), transparent);
+        form->addRow(buttons);
+
+        if (options.exec() != QDialog::Accepted) {
+            return;
+        }
+
+        pdfTransparentBackground = transparent->isChecked();
+        pdfResolution = dpi->value();
+
         Gui::WaitCursor wc;
-        QPrinter printer(QPrinter::ScreenResolution);
+        QPrinter printer(QPrinter::HighResolution);
+        printer.setResolution(pdfResolution);
         // setPdfVersion sets the printed PDF Version to what is chosen in
         // Preferences/Import-Export/PDF more details under:
         // https://www.kdab.com/creating-pdfa-documents-qt/
@@ -305,6 +351,7 @@ void View3DInventor::printPdf()
         printer.setOutputFileName(filename);
         printer.setCreator(QString::fromStdString(App::Application::getNameWithVersion()));
         print(&printer);
+        offerToAttachExport(filename);
     }
 }
 
@@ -345,7 +392,8 @@ void View3DInventor::print(QPrinter* printer)
     options.width = rect.width();
     options.height = rect.height();
     options.samples = 8;
-    options.background = QColor(255, 255, 255);
+    options.background =
+        pdfTransparentBackground ? QColor(Qt::transparent) : QColor(Qt::white);
     options.intent = View3DInventorViewer::RenderIntent::RasterCapture;
     QImage img = _viewer->renderToImage(options);
     p.drawImage(0, 0, img);

@@ -40,6 +40,7 @@
 #include <Base/Stream.h>
 #include <Base/Tools.h>
 #include <Gui/Application.h>
+#include <Gui/MDIView.h>
 #include <Gui/Command.h>
 #include <Gui/Document.h>
 #include <Gui/ViewProvider.h>
@@ -411,6 +412,11 @@ void PagePrinter::printPdf(ViewProviderPage* vpPage, const std::string& file)
 
     postRenderCleanUp(ourScene, dPage, ourTemplate);
     ourDoc->setModified(docModifiedState);
+
+    // QPdfWriter only finishes the file when the painter is done,
+    // so close it before offering the result.
+    painter.end();
+    Gui::MDIView::offerToAttachExport(outputFile);
 }
 
 void PagePrinter::preRenderSetUp(TechDrawGui::ViewProviderPage* vpp,

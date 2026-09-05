@@ -908,6 +908,7 @@ PyObject* ApplicationPy::sExport(PyObject* /*self*/, PyObject* args)
                     printer.setOutputFileName(fileName);
                     printer.setCreator(QString::fromStdString(App::Application::getNameWithVersion()));
                     view->print(&printer);
+                    Gui::MDIView::offerToAttachExport(fileName);
                 }
             }
         }

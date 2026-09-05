@@ -440,6 +440,14 @@ void StartupPostProcess::setImportImageFormats()
     std::stringstream str;
     str << "Image formats (";
     for (const auto& ext : supportedFormats) {
+        // PDF is listed here whenever the Qt PDF image plugin is installed,
+        // but it has dedicated handlers: Gui::PdfView for reading and the
+        // Documentation module for rasterising pages onto image planes.
+        // Offering it as a plain image only adds a choice that does the
+        // wrong thing.
+        if (ext.toLower() == "pdf") {
+            continue;
+        }
         str << "*." << ext.constData() << " *." << ext.toUpper().constData() << " ";
     }
     str << ")";

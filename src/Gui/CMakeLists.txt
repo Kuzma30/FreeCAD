@@ -1247,6 +1247,7 @@ SET(View_CPP_SRCS
     MDIViewWithCamera.cpp
     GraphvizView.cpp
     ImageView.cpp
+    PdfView.cpp
     ActiveObjectList.cpp
 )
 SET(View_HPP_SRCS
@@ -1256,6 +1257,7 @@ SET(View_HPP_SRCS
     MDIViewWithCamera.h
     GraphvizView.h
     ImageView.h
+    PdfView.h
     ActiveObjectList.h
 )
 SET(View_SRCS
@@ -1515,6 +1517,12 @@ endif ()
 
 target_sources(FreeCADGui PRIVATE ${FreeCADGui_SRCS})
 target_link_libraries(FreeCADGui PUBLIC ${FreeCADGui_LIBS})
+
+# Native PDF viewer (QPdfView + QPdfSearchModel)
+if(QtPdf_FOUND)
+    target_link_libraries(FreeCADGui PUBLIC ${QtPdf_LIBRARIES})
+    target_compile_definitions(FreeCADGui PRIVATE HAVE_QT_PDF_WIDGETS)
+endif()
 
 if (MSVC)
     target_compile_definitions(FreeCADGui PRIVATE WIN32_LEAN_AND_MEAN)

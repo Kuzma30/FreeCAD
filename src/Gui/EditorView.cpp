@@ -535,6 +535,7 @@ void EditorView::printPdf()
         printer.setOutputFileName(filename);
         printer.setCreator(QString::fromStdString(App::Application::getNameWithVersion()));
         d->textEdit->document()->print(&printer);
+        offerToAttachExport(filename);
     }
 }
 

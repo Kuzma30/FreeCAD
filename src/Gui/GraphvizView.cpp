@@ -621,6 +621,7 @@ void GraphvizView::printPdf()
         if (file.open(QFile::WriteOnly)) {
             file.write(buffer);
             file.close();
+            offerToAttachExport(fn);
         }
     }
 }

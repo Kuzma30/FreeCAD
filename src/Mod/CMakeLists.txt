@@ -124,6 +124,10 @@ if(BUILD_TEST)
   add_subdirectory(Test)
 endif(BUILD_TEST)
 
+if(BUILD_DOCUMENTATION)
+    add_subdirectory(Documentation)
+endif(BUILD_DOCUMENTATION)
+
 if(BUILD_TUX)
     add_subdirectory(Tux)
 endif(BUILD_TUX)

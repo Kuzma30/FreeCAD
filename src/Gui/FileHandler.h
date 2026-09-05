@@ -52,6 +52,9 @@ private:
     void openInventor();
     void openVRML();
     void openImage();
+#ifdef HAVE_QT_PDF_WIDGETS
+    void openPdf();
+#endif
     void openPython();
 
 private:

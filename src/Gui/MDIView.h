@@ -99,6 +99,11 @@ public:
     virtual void print();
     /** Print to PDF file */
     virtual void printPdf();
+    /** Offer to attach a just-exported file to the document.
+     *  Static so exporters that do not go through printPdf() - TechDraw
+     *  writes its pages itself - can offer the same thing.
+     */
+    static void offerToAttachExport(const QString& filename);
     /** Show a preview dialog */
     virtual void printPreview();
     /** Save the printer configuration */

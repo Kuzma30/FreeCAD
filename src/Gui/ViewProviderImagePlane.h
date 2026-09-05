@@ -43,6 +43,7 @@ public:
     ~ViewProviderImagePlane() override;
 
     App::PropertyEnumeration Lighting;
+    App::PropertyBool OpaqueBackground;
 
     void attach(App::DocumentObject* pcObject) override;
     void setDisplayMode(const char* ModeName) override;

@@ -111,6 +111,13 @@ public:
     void printPreview() override;
     void print(QPrinter*) override;
 
+private:
+    /// Set by printPdf() and read by print(), which has no way to ask.
+    bool pdfTransparentBackground {false};
+    int pdfResolution {150};
+
+public:
+
     PyObject* getPyObject() override;
     /**
      * If \a b is set to \a FullScreen the MDI view is displayed in full screen mode, if \a b

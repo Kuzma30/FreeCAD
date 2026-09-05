@@ -1,0 +1,15 @@
+<RCC>
+    <qresource>
+        <file>icons/DocumentationWorkbench.svg</file>
+        <file>icons/Documentation_AddDocument.svg</file>
+        <file>icons/Documentation_AddNote.svg</file>
+        <file>icons/Documentation_EditNote.svg</file>
+        <file>icons/Documentation_Export.svg</file>
+        <file>icons/Documentation_File.svg</file>
+        <file>icons/Documentation_Group.svg</file>
+        <file>icons/Documentation_Open.svg</file>
+        <file>icons/Documentation_Pdf.svg</file>
+        <file>icons/Documentation_Replace.svg</file>
+        <file>icons/Documentation_Text.svg</file>
+    </qresource>
+</RCC>

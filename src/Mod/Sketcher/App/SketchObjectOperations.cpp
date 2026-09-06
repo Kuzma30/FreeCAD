@@ -2505,6 +2505,23 @@ int SketchObject::addCopy(
 
         // handle geometry constraints
         for (const auto& constr : constrvals) {
+            // Group/Text constraints reference a variable number of geometries
+            // via the elements vector, so they need dedicated remapping.
+            if (constr->Type == Sketcher::Group || constr->Type == Sketcher::Text) {
+                if (geoIdMap.find(constr->First) == geoIdMap.end()) {
+                    continue;
+                }
+                Constraint* constNew = constr->copy();
+                for (int ei = 0; constNew->hasElement(ei); ++ei) {
+                    auto mit = geoIdMap.find(constr->getGeoId(ei));
+                    if (mit != geoIdMap.end()) {
+                        constNew->setGeoId(ei, mit->second);
+                    }
+                }
+                newconstrVals.push_back(constNew);
+                continue;
+            }
+
             auto fit = geoIdMap.find(constr->First);
 
             if (fit == geoIdMap.end()) {

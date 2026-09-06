@@ -577,6 +577,15 @@ private:
                     newConstr->First = firstIndex;
                     newConstr->Second = secondIndex;
                 }
+                else if ((cstr->Type == Group || cstr->Type == Text)
+                         && firstIndex != GeoEnum::GeoUndef) {
+                    for (int ei = 0; newConstr->hasElement(ei); ++ei) {
+                        int mapped = offsetGeoID(cstr->getGeoId(ei), firstCurveCreated);
+                        if (mapped != GeoEnum::GeoUndef) {
+                            newConstr->setGeoId(ei, mapped);
+                        }
+                    }
+                }
                 else {
                     continue;
                 }

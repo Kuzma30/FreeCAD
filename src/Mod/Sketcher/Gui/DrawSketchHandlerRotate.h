@@ -505,6 +505,21 @@ private:
                     else if ((cstr->Type == Block) && firstIndex >= 0) {
                         newConstr->First = firstIndexi;
                     }
+                    else if ((cstr->Type == Group || cstr->Type == Text)
+                             && firstIndex >= 0) {
+                        // Group/Text constraints reference a variable number of
+                        // geometries via the elements vector.  Remap every element
+                        // that belongs to the copied set.
+                        for (int ei = 0; newConstr->hasElement(ei); ++ei) {
+                            int idx = indexOfGeoId(listOfGeoIds, cstr->getGeoId(ei));
+                            if (idx >= 0) {
+                                newConstr->setGeoId(
+                                    ei,
+                                    firstCurveCreated + idx
+                                        + static_cast<int>(size * i));
+                            }
+                        }
+                    }
                     else {
                         continue;
                     }

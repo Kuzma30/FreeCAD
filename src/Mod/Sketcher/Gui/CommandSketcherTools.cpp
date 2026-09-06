@@ -187,6 +187,21 @@ std::vector<int> getListOfSelectedGeoIds(bool forceInternalSelection)
                 }
             }
         }
+
+        // If a group handle is selected, ensure all its member geometries
+        // are included so that transforms copy the whole group.
+        std::vector<int> groupMembersToAdd;
+        for (auto geoId : listOfGeoIds) {
+            if (Obj->isGroupHandle(geoId)) {
+                for (auto id : Obj->getGroupGeometries(geoId)) {
+                    if (std::ranges::find(listOfGeoIds, id) == listOfGeoIds.end()) {
+                        groupMembersToAdd.push_back(id);
+                    }
+                }
+            }
+        }
+        listOfGeoIds.insert(
+            listOfGeoIds.end(), groupMembersToAdd.begin(), groupMembersToAdd.end());
     }
 
     if (listOfGeoIds.empty()) {

@@ -493,6 +493,18 @@ private:
                     ) {
                         newConstr->First = firstIndexi;
                     }
+                    else if ((cstr->Type == Group || cstr->Type == Text)
+                             && firstIndex >= 0) {
+                        for (int ei = 0; newConstr->hasElement(ei); ++ei) {
+                            int idx = indexOfGeoId(listOfGeoIds, cstr->getGeoId(ei));
+                            if (idx >= 0) {
+                                newConstr->setGeoId(
+                                    ei,
+                                    firstCurveCreated + idx
+                                        + size * static_cast<int>(copyIndex));
+                            }
+                        }
+                    }
                     else {
                         continue;
                     }

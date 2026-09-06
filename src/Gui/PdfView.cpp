@@ -48,8 +48,14 @@
 #include <QPushButton>
 #include <QStandardPaths>
 #include <QMouseEvent>
+#include <QtMath>
 #include <QScrollBar>
 
+#include <QHeaderView>
+#include <QSplitter>
+#include <QTreeView>
+
+#include <QPdfBookmarkModel>
 #include <QPdfDocument>
 #include <QPdfPageNavigator>
 #include <QPdfSearchModel>
@@ -58,7 +64,6 @@
 
 #include <cmath>
 
-#include <Base/Console.h>
 #include <Base/Interpreter.h>
 #include <App/Application.h>
 #include <App/Document.h>
@@ -452,6 +457,22 @@ PdfView::PdfView(QWidget* parent)
     setupUi();
     setupActions();
 
+    bookmarkModel = new QPdfBookmarkModel(this);
+    bookmarkModel->setDocument(pdfDocument);
+    bookmarkView->setModel(bookmarkModel);
+    connect(bookmarkView, &QTreeView::activated, this, &PdfView::onBookmarkActivated);
+
+    // The model fills in after load() has already returned, so wait to be
+    // told rather than asking once and hiding the panel for good.
+    connect(bookmarkModel, &QAbstractItemModel::modelReset,
+            this, &PdfView::updateBookmarkPanel);
+    connect(bookmarkModel, &QAbstractItemModel::rowsInserted,
+            this, &PdfView::updateBookmarkPanel);
+    connect(pdfDocument, &QPdfDocument::statusChanged,
+            this, &PdfView::updateBookmarkPanel);
+    connect(bookmarkModel, &QPdfBookmarkModel::documentChanged,
+            this, &PdfView::updateBookmarkPanel);
+
     searchModel->setDocument(pdfDocument);
     pdfView->setDocument(pdfDocument);
     pdfView->invalidateLayout();
@@ -471,18 +492,15 @@ void PdfView::setupUi()
     auto* toolBar = new QHBoxLayout();
 
     searchEdit = new QLineEdit(this);
-    searchEdit->setPlaceholderText(tr("Find in document"));
     searchEdit->setClearButtonEnabled(true);
     searchEdit->setMaximumWidth(300);
 
     prevButton = new QToolButton(this);
     prevButton->setText(QStringLiteral("\u25c0"));
-    prevButton->setToolTip(tr("Previous match"));
     prevButton->setEnabled(false);
 
     nextButton = new QToolButton(this);
     nextButton->setText(QStringLiteral("\u25b6"));
-    nextButton->setToolTip(tr("Next match"));
     nextButton->setEnabled(false);
 
     resultLabel = new QLabel(this);
@@ -490,32 +508,32 @@ void PdfView::setupUi()
     // Page navigation
     prevPageButton = new QToolButton(this);
     prevPageButton->setText(QStringLiteral("\u25c0"));
-    prevPageButton->setToolTip(tr("Previous page"));
 
     nextPageButton = new QToolButton(this);
     nextPageButton->setText(QStringLiteral("\u25b6"));
-    nextPageButton->setToolTip(tr("Next page"));
 
     pageLabel = new QLabel(this);
     selectionLabel = new QLabel(this);
 
+    bookmarkButton = new QToolButton(this);
+    bookmarkButton->setText(QStringLiteral("\u2630"));
+    bookmarkButton->setCheckable(true);
+    bookmarkButton->setEnabled(false);
+
     regionButton = new QToolButton(this);
-    regionButton->setText(tr("Region"));
+    regionButton->setText(QStringLiteral("\u2b1a"));
     regionButton->setCheckable(true);
-    regionButton->setToolTip(tr("Drag a rectangle to crop part of the page"));
 
-    auto* zoomOut = new QToolButton(this);
-    zoomOut->setText(QStringLiteral("\u2212"));
-    zoomOut->setToolTip(tr("Zoom out"));
+    zoomOutButton = new QToolButton(this);
+    zoomOutButton->setText(QStringLiteral("\u2212"));
 
-    auto* zoomIn = new QToolButton(this);
-    zoomIn->setText(QStringLiteral("+"));
-    zoomIn->setToolTip(tr("Zoom in"));
+    zoomInButton = new QToolButton(this);
+    zoomInButton->setText(QStringLiteral("+"));
 
-    auto* zoomReset = new QToolButton(this);
-    zoomReset->setText(QStringLiteral("1:1"));
-    zoomReset->setToolTip(tr("Fit width"));
+    zoomFitButton = new QToolButton(this);
+    zoomFitButton->setText(QStringLiteral("1:1"));
 
+    toolBar->addWidget(bookmarkButton);
     toolBar->addWidget(searchEdit);
     toolBar->addWidget(prevButton);
     toolBar->addWidget(nextButton);
@@ -527,20 +545,36 @@ void PdfView::setupUi()
     toolBar->addStretch(1);
     toolBar->addWidget(selectionLabel);
     toolBar->addWidget(regionButton);
-    toolBar->addWidget(zoomOut);
-    toolBar->addWidget(zoomIn);
-    toolBar->addWidget(zoomReset);
+    toolBar->addWidget(zoomOutButton);
+    toolBar->addWidget(zoomInButton);
+    toolBar->addWidget(zoomFitButton);
+
+    // Table of contents on the left. Paging through a long catalogue to
+    // find one drawing is no fun, and most of them have bookmarks anyway.
+    bookmarkView = new QTreeView(this);
+    bookmarkView->setHeaderHidden(true);
+    bookmarkView->setMinimumWidth(160);
+    bookmarkView->setVisible(false);
+
+    splitter = new QSplitter(Qt::Horizontal, this);
+    splitter->addWidget(bookmarkView);
+    splitter->addWidget(pdfView);
+    splitter->setStretchFactor(0, 0);
+    splitter->setStretchFactor(1, 1);
+    splitter->setSizes({200, 800});
 
     auto* central = new QWidget(this);
     auto* layout = new QVBoxLayout(central);
     layout->setContentsMargins(0, 0, 0, 0);
     layout->addLayout(toolBar);
-    layout->addWidget(pdfView);
+    layout->addWidget(splitter);
     setCentralWidget(central);
 
-    connect(zoomIn, &QToolButton::clicked, this, &PdfView::onZoomIn);
-    connect(zoomOut, &QToolButton::clicked, this, &PdfView::onZoomOut);
-    connect(zoomReset, &QToolButton::clicked, this, &PdfView::onZoomReset);
+    retranslateUi();
+
+    connect(zoomInButton, &QToolButton::clicked, this, &PdfView::onZoomIn);
+    connect(zoomOutButton, &QToolButton::clicked, this, &PdfView::onZoomOut);
+    connect(zoomFitButton, &QToolButton::clicked, this, &PdfView::onZoomReset);
     connect(prevPageButton, &QToolButton::clicked, this, &PdfView::onPrevPage);
     connect(nextPageButton, &QToolButton::clicked, this, &PdfView::onNextPage);
 }
@@ -594,6 +628,9 @@ void PdfView::setupActions()
             this, &PdfView::onRegionChanged);
     connect(regionButton, &QToolButton::toggled,
             this, &PdfView::onDragModeToggled);
+    connect(bookmarkButton, &QToolButton::toggled, this, [this](bool on) {
+        bookmarkView->setVisible(on);
+    });
 
     setContextMenuPolicy(Qt::ActionsContextMenu);
 
@@ -638,6 +675,8 @@ bool PdfView::loadFile(const QString& fileName)
     setWindowFilePath(fileName);
     updateResultLabel();
     updatePageLabel();
+
+    updateBookmarkPanel();
     return true;
 }
 
@@ -660,6 +699,79 @@ QString PdfView::allText() const
     }
 
     return pages.join(QLatin1Char('\n'));
+}
+
+void PdfView::updateBookmarkPanel()
+{
+    // setupUi() ends with retranslateUi(), which reaches this before the
+    // constructor has built the model.
+    if (!bookmarkModel || !bookmarkButton || !bookmarkView) {
+        return;
+    }
+
+    const bool hasBookmarks = bookmarkModel->rowCount({}) > 0;
+
+    // Leave the button in place even with nothing to show, so an empty
+    // table of contents reads as empty rather than as a missing feature.
+    bookmarkButton->setEnabled(hasBookmarks);
+    bookmarkButton->setToolTip(hasBookmarks
+                                   ? tr("Show bookmarks")
+                                   : tr("This document has no bookmarks"));
+
+    if (hasBookmarks) {
+        bookmarkView->expandToDepth(0);
+        if (!bookmarkButton->isChecked()) {
+            bookmarkButton->setChecked(true);  // shows the panel too
+        }
+    }
+    else {
+        bookmarkButton->setChecked(false);
+    }
+    bookmarkView->setVisible(bookmarkButton->isChecked());
+}
+
+void PdfView::onBookmarkActivated(const QModelIndex& index)
+{
+    if (!index.isValid()) {
+        return;
+    }
+
+    // Role is a scoped enum; data() takes a plain int.
+    const int page =
+        index.data(static_cast<int>(QPdfBookmarkModel::Role::Page)).toInt();
+    const QPointF location =
+        index.data(static_cast<int>(QPdfBookmarkModel::Role::Location)).toPointF();
+
+    // Many PDFs bookmark a page without saying where on it. Qt returns a
+    // large negative sentinel for those, so fall back to the top of the page
+    // rather than scrolling somewhere meaningless.
+    const bool usable = qIsFinite(location.y()) && qAbs(location.y()) < 1e6;
+    pdfView->pageNavigator()->jump(page, usable ? QPointF(0, location.y()) : QPointF());
+}
+
+void PdfView::retranslateUi()
+{
+    searchEdit->setPlaceholderText(tr("Find in document"));
+    prevButton->setToolTip(tr("Previous match"));
+    nextButton->setToolTip(tr("Next match"));
+    prevPageButton->setToolTip(tr("Previous page"));
+    nextPageButton->setToolTip(tr("Next page"));
+    zoomOutButton->setToolTip(tr("Zoom out"));
+    zoomInButton->setToolTip(tr("Zoom in"));
+    zoomFitButton->setToolTip(tr("Fit width"));
+    regionButton->setToolTip(tr("Drag a rectangle to crop part of the page"));
+
+    updateResultLabel();
+    updatePageLabel();
+    updateBookmarkPanel();  // sets the bookmark button's tooltip
+}
+
+void PdfView::changeEvent(QEvent* event)
+{
+    if (event->type() == QEvent::LanguageChange) {
+        retranslateUi();
+    }
+    MDIView::changeEvent(event);
 }
 
 void PdfView::onPrevPage()
@@ -1026,13 +1138,6 @@ void PdfView::onImportRegionToSketch()
         return;
     }
 
-    Base::Console().message("PdfView: crop %d x %d pt at %d,%d\n",
-                            cropW, cropH, cropX, cropY);
-    Base::Console().message("PdfView: intermediate PDF %s\n",
-                            tmpPdf.toUtf8().constData());
-    Base::Console().message("PdfView: intermediate SVG %s\n",
-                            tmpSvg.toUtf8().constData());
-
     App::Document* appDoc = App::GetApplication().getActiveDocument();
     if (!appDoc) {
         appDoc = App::GetApplication().newDocument();
@@ -1047,8 +1152,8 @@ void PdfView::onImportRegionToSketch()
 
     Base::Interpreter().runString(script.toUtf8().constData());
 
-    // Temporaries are kept on purpose while the two-pass crop is being
-    // checked; opening them is the quickest way to see what went wrong.
+    QFile::remove(tmpPdf);
+    QFile::remove(tmpSvg);
 }
 
 void PdfView::onCopyPageText()

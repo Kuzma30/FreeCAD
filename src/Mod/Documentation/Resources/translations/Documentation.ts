@@ -52,102 +52,102 @@
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="128"/>
+      <location filename="../../DocumentationCommands.py" line="135"/>
       <source>How should this be stored?</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="137"/>
+      <location filename="../../DocumentationCommands.py" line="144"/>
       <source>Selected: %s file(s), %s</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="141"/>
+      <location filename="../../DocumentationCommands.py" line="148"/>
       <source>Embed in FCStd</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="144"/>
+      <location filename="../../DocumentationCommands.py" line="151"/>
       <source>Link to file</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="171"/>
+      <location filename="../../DocumentationCommands.py" line="178"/>
       <source>Note</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="182"/>
+      <location filename="../../DocumentationCommands.py" line="189"/>
       <source>Note written in FreeCAD</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="198"/>
+      <location filename="../../DocumentationCommands.py" line="205"/>
       <source>New note</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="202"/>
+      <location filename="../../DocumentationCommands.py" line="209"/>
       <source>Title</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="270"/>
+      <location filename="../../DocumentationCommands.py" line="277"/>
       <source>Size:</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="308"/>
+      <location filename="../../DocumentationCommands.py" line="315"/>
       <source>Insert link</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="309"/>
+      <location filename="../../DocumentationCommands.py" line="316"/>
       <source>URL:</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="418"/>
+      <location filename="../../DocumentationCommands.py" line="425"/>
       <source>Document unavailable</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="419"/>
+      <location filename="../../DocumentationCommands.py" line="426"/>
       <source>There is no file to save for '%s'.</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="425"/>
+      <location filename="../../DocumentationCommands.py" line="432"/>
       <source>Save a copy</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="436"/>
+      <location filename="../../DocumentationCommands.py" line="443"/>
       <source>Could not save</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="445"/>
+      <location filename="../../DocumentationCommands.py" line="452"/>
       <source>Select the new revision</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="479"/>
+      <location filename="../../DocumentationCommands.py" line="486"/>
       <source>Edit: %s</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="576"/>
+      <location filename="../../DocumentationCommands.py" line="583"/>
       <source>Keep this export with the model?</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="593"/>
+      <location filename="../../DocumentationCommands.py" line="600"/>
       <source>Do not ask again</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="616"/>
+      <location filename="../../DocumentationCommands.py" line="623"/>
       <source>Exported from this model</source>
       <translation type="unfinished"></translation>
     </message>
@@ -157,77 +157,77 @@
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationRaster.py" line="123"/>
+      <location filename="../../DocumentationRaster.py" line="117"/>
       <source>Import PDF as image</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationRaster.py" line="128"/>
+      <location filename="../../DocumentationRaster.py" line="122"/>
       <source>“%s” has %s page(s).</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationRaster.py" line="134"/>
+      <location filename="../../DocumentationRaster.py" line="128"/>
       <source>e.g. 1,3,5-8 or all</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationRaster.py" line="153"/>
+      <location filename="../../DocumentationRaster.py" line="147"/>
       <source>Opaque (white) background</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationRaster.py" line="164"/>
+      <location filename="../../DocumentationRaster.py" line="158"/>
       <source>Pages:</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationRaster.py" line="165"/>
+      <location filename="../../DocumentationRaster.py" line="159"/>
       <source>Resolution:</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationRaster.py" line="193"/>
+      <location filename="../../DocumentationRaster.py" line="187"/>
       <source>Invalid page selection</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationRaster.py" line="231"/>
+      <location filename="../../DocumentationRaster.py" line="225"/>
       <source>Cannot read document</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationRaster.py" line="232"/>
+      <location filename="../../DocumentationRaster.py" line="226"/>
       <source>No pages could be read from %s.</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationViewers.py" line="86"/>
+      <location filename="../../DocumentationViewers.py" line="212"/>
       <source>Cannot open document</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationViewers.py" line="148"/>
+      <location filename="../../DocumentationViewers.py" line="274"/>
       <source>Open externally</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../ViewProviders.py" line="147"/>
+      <location filename="../../ViewProviders.py" line="150"/>
       <source>Open</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../ViewProviders.py" line="154"/>
+      <location filename="../../ViewProviders.py" line="157"/>
       <source>Edit</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../ViewProviders.py" line="157"/>
+      <location filename="../../ViewProviders.py" line="160"/>
       <source>Save a copy...</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../ViewProviders.py" line="160"/>
+      <location filename="../../ViewProviders.py" line="163"/>
       <source>Replace file...</source>
       <translation type="unfinished"></translation>
     </message>
@@ -243,7 +243,7 @@
   <context>
     <name>Documentation_AddGroup</name>
     <message>
-      <location filename="../../DocumentationCommands.py" line="321"/>
+      <location filename="../../DocumentationCommands.py" line="328"/>
       <source>Add folder</source>
       <translation type="unfinished"></translation>
     </message>
@@ -251,7 +251,7 @@
   <context>
     <name>Documentation_AddNote</name>
     <message>
-      <location filename="../../DocumentationCommands.py" line="160"/>
+      <location filename="../../DocumentationCommands.py" line="167"/>
       <source>Add note</source>
       <translation type="unfinished"></translation>
     </message>
@@ -259,7 +259,7 @@
   <context>
     <name>Documentation_EditNote</name>
     <message>
-      <location filename="../../DocumentationCommands.py" line="513"/>
+      <location filename="../../DocumentationCommands.py" line="520"/>
       <source>Edit note</source>
       <translation type="unfinished"></translation>
     </message>
@@ -267,7 +267,7 @@
   <context>
     <name>Documentation_Export</name>
     <message>
-      <location filename="../../DocumentationCommands.py" line="355"/>
+      <location filename="../../DocumentationCommands.py" line="362"/>
       <source>Save a copy</source>
       <translation type="unfinished"></translation>
     </message>
@@ -275,12 +275,12 @@
   <context>
     <name>Documentation_Open</name>
     <message>
-      <location filename="../../DocumentationCommands.py" line="340"/>
+      <location filename="../../DocumentationCommands.py" line="347"/>
       <source>Open</source>
       <translation type="unfinished"></translation>
     </message>
     <message>
-      <location filename="../../DocumentationCommands.py" line="341"/>
+      <location filename="../../DocumentationCommands.py" line="348"/>
       <source>Open the selected document</source>
       <translation type="unfinished"></translation>
     </message>
@@ -288,7 +288,7 @@
   <context>
     <name>Documentation_Replace</name>
     <message>
-      <location filename="../../DocumentationCommands.py" line="370"/>
+      <location filename="../../DocumentationCommands.py" line="377"/>
       <source>Replace file</source>
       <translation type="unfinished"></translation>
     </message>

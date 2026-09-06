@@ -40,8 +40,12 @@ class QLabel;
 class QLineEdit;
 class QPagedPaintDevice;
 class QToolButton;
+class QModelIndex;
+class QPdfBookmarkModel;
 class QPdfDocument;
 class QPdfSearchModel;
+class QSplitter;
+class QTreeView;
 
 namespace Gui
 {
@@ -173,6 +177,9 @@ public:
     bool onMsg(const char* pMsg) override;
     bool onHasMsg(const char* pMsg) const override;
 
+protected:
+    void changeEvent(QEvent* event) override;
+
     /** @name Printing */
     //@{
     using MDIView::print;
@@ -208,6 +215,8 @@ private Q_SLOTS:
     void onNextPage();
     void onPageChanged(int page);
     void updatePageLabel();
+    void onBookmarkActivated(const QModelIndex& index);
+    void updateBookmarkPanel();
 
 private:
     /// Change zoom while keeping the same content under the viewport.
@@ -217,13 +226,18 @@ private:
 
     void setupUi();
     void setupActions();
+    /// Re-apply every visible string. Called when the language changes.
+    void retranslateUi();
     /// Move the view to search result *index* and update the counter label.
     void showResult(int index);
     void updateResultLabel();
 
     QPdfDocument* pdfDocument {nullptr};
     QPdfSearchModel* searchModel {nullptr};
+    QPdfBookmarkModel* bookmarkModel {nullptr};
     PdfSelectionView* pdfView {nullptr};
+    QSplitter* splitter {nullptr};
+    QTreeView* bookmarkView {nullptr};
 
     QLineEdit* searchEdit {nullptr};
     QToolButton* prevPageButton {nullptr};
@@ -231,7 +245,11 @@ private:
     QLabel* pageLabel {nullptr};
     QLabel* resultLabel {nullptr};
     QLabel* selectionLabel {nullptr};
+    QToolButton* bookmarkButton {nullptr};
     QToolButton* regionButton {nullptr};
+    QToolButton* zoomInButton {nullptr};
+    QToolButton* zoomOutButton {nullptr};
+    QToolButton* zoomFitButton {nullptr};
     QAction* insertRegionAction {nullptr};
     QAction* importSketchAction {nullptr};
     QToolButton* prevButton {nullptr};
